@@ -37401,6 +37401,131 @@
 				"m": "a melee weapon worth at least 1 sp"
 			},
 			"uniqueId": "6d621888-525f-45af-877e-3fe825864f5b"
+		},
+		{
+			"uniqueId": "4ffaeebd-0e61-4923-af51-12a54fa4f59b",
+			"name": "Final Thrust",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Deliver a final powerful thrust, loosing all adrenaline and finishing off low health creatures.",
+				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 3d8} damage. If the target was below 50% of their maximum hit points, the target takes an additional {@damage 3d8} damage.",
+				"{@bold Adrenaline.} You lose all adrenaline.",
+				"{@bold Adrenaline.} Instead of expending a spell slot, you cast this spell by expending 10 adrenaline. When casting this spell at a higher level, expend an additional 10 adrenaline per level above the original level."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Final Thrust",
+					"Sword Attack. Lose all adrenaline. If Final Thrust hits, you deal 1...32...40 more damage. This damage is doubled if your target was below 50% Health."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/5/58/Final_Thrust.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Warrior",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Swordsmanship",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "a melee weapon worth at least 1 sp"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th or 5th level, the number of attacks increases by 1. When you cast this spell using a spell slot of 6th or 7th level, the number of attacks increases by 2. When you use a spell slot of 8th level or higher, the number of attacks increases by 3."
+					]
+				}
+			]
 		}
 	],
 	"table": [
@@ -44601,7 +44726,7 @@
 				{
 					"name": "Overcharge Effigy (Costs 3 Actions)",
 					"entries": [
-						"Bonfaaz Burntfur chooses a titan effigy he can see and overcharges it, inspiring all charr within 15-feet of it. Each charr affected has advantage on their next attack roll, has their movement speed doubled for 1 round, and gains one additional action."
+						"Bonfaaz Burntfur chooses a titan effigy he can see and overcharges it, inspiring all charr within 60-feet of it. Each charr affected has advantage on their next attack roll, has their movement speed doubled for 1 round, and gains one additional action."
 					]
 				}
 			],
@@ -44614,13 +44739,6 @@
 				"source": "GuildWars"
 			},
 			"uniqueId": "64d9c38f-acde-4f3f-9478-77247d70b671",
-			"damageTagsLegendary": [
-				"B",
-				"F"
-			],
-			"savingThrowForcedLegendary": [
-				"dexterity"
-			],
 			"tokenHref": {
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Charr_Flame_Wielder_Boss_Token.png"
@@ -44629,7 +44747,18 @@
 				"F"
 			],
 			"damageTagsSpell": [
+				"B",
 				"F"
+			],
+			"damageTagsLegendary": [
+				"B",
+				"F"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			],
+			"savingThrowForcedLegendary": [
+				"dexterity"
 			]
 		},
 		{
@@ -45052,10 +45181,6 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"token": {
-				"name": "Centaur",
-				"source": "MM"
-			},
 			"fluff": {
 				"entries": [
 					"Rubi Spottedmane is a Centaur boss that can appear at various places in the Northern Shiverpeaks."
@@ -45065,7 +45190,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://wiki.guildwars.com/images/6/68/Rubi_Spottedmane.jpg"
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Mountain_Centaur_Longbow_Boss.jpg"
 						}
 					}
 				]
@@ -45144,6 +45269,11 @@
 				}
 			],
 			"legendaryActions": 1,
+			"uniqueId": "c0491fca-f65d-400b-8d87-8ca2e7884292",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Mountain_Centaur_Longbow_Boss_Token.png"
+			},
 			"damageTags": [
 				"B",
 				"P"
@@ -45153,8 +45283,7 @@
 			],
 			"savingThrowForcedSpell": [
 				"strength"
-			],
-			"uniqueId": "c0491fca-f65d-400b-8d87-8ca2e7884292"
+			]
 		},
 		{
 			"name": "Modniir Warrior",
@@ -45435,10 +45564,6 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"token": {
-				"name": "Centaur",
-				"source": "MM"
-			},
 			"fluff": {
 				"entries": [
 					"Yino Burlyhaunch is a Centaur boss that can appear in the Deldrimor Bowl."
@@ -45448,7 +45573,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://wiki.guildwars.com/images/4/46/Mountain_Centaur_martial.jpg"
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Mountain_Centaur_Warrior_Boss.jpg"
 						}
 					}
 				]
@@ -45527,11 +45652,15 @@
 					]
 				}
 			],
+			"uniqueId": "5ef302a3-58cc-4a9d-b451-7efb8a10d1d9",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Mountain_Centaur_Warrior_Boss_Token.png"
+			},
 			"damageTags": [
 				"B",
 				"P"
-			],
-			"uniqueId": "5ef302a3-58cc-4a9d-b451-7efb8a10d1d9"
+			]
 		},
 		{
 			"name": "Modniir Protector",
@@ -45796,10 +45925,6 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"token": {
-				"name": "Centaur",
-				"source": "MM"
-			},
 			"fluff": {
 				"entries": [
 					"Jolo Lighthaunch is a Centaur boss. "
@@ -45809,7 +45934,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://wiki.guildwars.com/images/4/46/Mountain_Centaur_martial.jpg"
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Mountain_Centaur_Protector_Boss.jpg"
 						}
 					}
 				]
@@ -45869,11 +45994,15 @@
 			"spellcastingTags": [
 				"O"
 			],
+			"uniqueId": "08164d88-2d38-4a9d-855f-d75fccb287a6",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Mountain_Centaur_Protector_Boss_Token.png"
+			},
 			"damageTags": [
 				"B",
 				"P"
-			],
-			"uniqueId": "08164d88-2d38-4a9d-855f-d75fccb287a6"
+			]
 		},
 		{
 			"name": "Drake",
@@ -46059,10 +46188,6 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"token": {
-				"name": "Guard Drake",
-				"source": "MPMM"
-			},
 			"fluff": {
 				"entries": [
 					"Whiskar Featherstorm is a Drake boss that appears in Griffon's Mouth and sometimes replaces Ice Drake as the boss that must be killed to complete the bonus in Borlis Pass."
@@ -46072,7 +46197,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://wiki.guildwars.com/images/9/9c/Drake_blue.jpg"
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ice_Drake_Elementalist_Boss .jpg"
 						}
 					}
 				]
@@ -46164,11 +46289,18 @@
 					]
 				}
 			],
+			"uniqueId": "c44d2f80-f3f0-4c30-9021-7f8fe9b834fb",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ice_Drake_Elementalist_Boss _Token.png"
+			},
 			"damageTags": [
 				"B",
 				"P"
 			],
-			"uniqueId": "c44d2f80-f3f0-4c30-9021-7f8fe9b834fb"
+			"damageTagsSpell": [
+				"L"
+			]
 		},
 		{
 			"name": "Dwarf",
@@ -46937,7 +47069,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://wiki.guildwars.com/images/4/43/Stone_Summit_caster.jpg"
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Stone_Summit_Sage_Boss.jpg"
 						}
 					}
 				]
@@ -46987,10 +47119,6 @@
 				"MLW",
 				"RW"
 			],
-			"token": {
-				"name": "Duergar",
-				"source": "MM"
-			},
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
@@ -47064,11 +47192,15 @@
 				}
 			],
 			"legendaryActions": 1,
+			"uniqueId": "e52b11ea-8bdd-4c00-8ab7-6c5cf24bb62a",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Stone_Summit_Sage_Boss_Token.png"
+			},
 			"damageTags": [
 				"B",
 				"P"
-			],
-			"uniqueId": "e52b11ea-8bdd-4c00-8ab7-6c5cf24bb62a"
+			]
 		},
 		{
 			"name": "Stone Summit Howler",
@@ -47313,7 +47445,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://wiki.guildwars.com/images/4/43/Stone_Summit_caster.jpg"
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Stone_Summit_Howler_Boss.jpg"
 						}
 					}
 				]
@@ -47363,10 +47495,6 @@
 				"MLW",
 				"RW"
 			],
-			"token": {
-				"name": "Duergar",
-				"source": "MM"
-			},
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
@@ -47441,14 +47569,18 @@
 				}
 			],
 			"legendaryActions": 1,
+			"uniqueId": "84f19114-ec1d-432f-8249-9296be57954a",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Stone_Summit_Howler_Boss_Token.png"
+			},
 			"damageTags": [
 				"B",
 				"P"
 			],
 			"damageTagsSpell": [
 				"N"
-			],
-			"uniqueId": "84f19114-ec1d-432f-8249-9296be57954a"
+			]
 		},
 		{
 			"name": "Stone Summit Crusher",
@@ -47854,7 +47986,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://wiki.guildwars.com/images/2/2b/Stone_Summit_warrior.jpg"
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Stone_Summit_Axe_Wielde_Boss.jpg"
 						}
 					}
 				]
@@ -47910,10 +48042,6 @@
 				"MLW",
 				"RW"
 			],
-			"token": {
-				"name": "Duergar",
-				"source": "MM"
-			},
 			"actionTags": [
 				"Multiattack"
 			],
@@ -47979,11 +48107,388 @@
 					]
 				}
 			],
+			"uniqueId": "35723bd0-b2a5-4e6f-8e32-079cafc43868",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Stone_Summit_Axe_Wielde_Boss_Token.png"
+			},
 			"damageTags": [
 				"P",
 				"S"
+			]
+		},
+		{
+			"name": "Spirit of the Fallen",
+			"source": "GuildWars",
+			"size": [
+				"M"
 			],
-			"uniqueId": "35723bd0-b2a5-4e6f-8e32-079cafc43868"
+			"type": "undead",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"average": 45,
+				"formula": "6d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 16,
+			"int": 8,
+			"wis": 10,
+			"cha": 14,
+			"skill": {
+				"perception": "+2",
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"any languages it knew in life"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Ethereal Sight",
+					"entries": [
+						"The Spirit of the Fallen can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The Spirit of the Fallen can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				},
+				{
+					"name": "Spectral Armor and Shield",
+					"entries": [
+						"The Spirit of the Fallen AC accounts for its spectral armor and shield."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Spirit of the Fallen makes two attacks: two with its Spectral Longsword, it can forgo one of these attacks to cast a spell."
+					]
+				},
+				{
+					"name": "Spectral Longsword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 4}) force damage."
+					]
+				},
+				{
+					"name": "Etherealness",
+					"entries": [
+						"The Spirit of the Fallen enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane."
+					]
+				}
+			],
+			"traitTags": [
+				"Incorporeal Movement",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Spirits of the Fallen are undead foes encountered in Nolani Academy. They have the appearance of translucent Ascalonian Guard/Soldiers."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ascalon_Guard_m_Ghost.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "e946a5ac-a919-4ce1-9d7d-8a6b1b794b42",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ascalon_Guard_m_Ghost_Token.png"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Spirit of the Fallen is a 5th-level spellcaster. Its spellcasting ability is Strength (spell save {@dc 14}, +6 to hit with spell attacks). The Spirit of the Fallen has the following Warrior (GW) spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell hamstring|GuildWars}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell \"for great justice!\"|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						},
+						"3": {
+							"spells": [
+								"{@spell final thrust|GuildWars}",
+								"{@spell skull crack|GuildWars}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "str",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"damageTags": [
+				"O"
+			]
+		},
+		{
+			"name": "Stone Summit Dolyak Rider",
+			"source": "GuildWars",
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item chain mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 40",
+				"average": 95
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 18,
+			"dex": 8,
+			"con": 18,
+			"int": 6,
+			"wis": 20,
+			"cha": 6,
+			"passive": 15,
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Dwarven Resilience",
+					"entries": [
+						"They have advantage on saving throws against poison, and they have resistance to poison damage."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The Stone Summit Dolyak Rider deals double damage to objects and structures."
+					]
+				},
+				{
+					"name": "Mount and Rider",
+					"entries": [
+						"The Stone Summit Dolyak Rider is a combination of a mount and a rider, while mounted they share all statistics. If the rider is forced to dismount, treat them as a commoner and the mount acts according to its alignment."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"One of the oldest races on Tyria, the Dwarves are humanoids that are stocky, short, and are almost always bearded. The dwarves live in the Shiverpeak Mountains - specifically the Northern Shiverpeaks and the Southern Shiverpeaks.",
+					"In recent years, the dwarves have been plunged into a civil war between the older Deldrimor dwarves and the recent Stone Summit faction. This war has caused unrest throughout the Shiverpeaks and hold up most travel between Ascalon and the other human nations. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Stone_Summit_Dolyak_Rider.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Dwarvish"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"skill": {
+				"athletics": "+6",
+				"religion": "+0"
+			},
+			"reaction": [
+				{
+					"name": "Invoke the Great Destroyer",
+					"entries": [
+						"Once per day, if the stone summit dwarf fails a saving throw, it can choose to cast {@spell Hellish Rebuke}."
+					]
+				}
+			],
+			"save": {
+				"con": "+6",
+				"wis": "+7"
+			},
+			"traitTags": [
+				"Siege Monster"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"conditionImmune": [
+				"stunned"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Stone Summit Dolyak Rider is a 7th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 15}, +7 to hit with spell attacks). The Stone Summit Dolyak Rider has the following Monk (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Stone Summit Dolyak Rider casts these spells on an ally before combat."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell banish|GuildWars}",
+								"{@spell remove hex|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell heal other|GuildWars}",
+								"{@spell shielding hands|GuildWars}",
+								"{@spell strength of honor|GuildWars}*"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell mark of protection|GuildWars}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"uniqueId": "20fbadb6-dcbd-493a-a177-9d31b559fd24",
+			"action": [
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Radiant Scepter",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 60/120 ft., one target. {@h}14 ({@damage 2d8 + 5}) radiant damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Stone_Summit_Dolyak_Rider_Token.png"
+			},
+			"damageTags": [
+				"P",
+				"R"
+			]
 		}
 	],
 	"legendaryGroup": [

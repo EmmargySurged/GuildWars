@@ -40694,6 +40694,9 @@
 			},
 			"damageTags": [
 				"S"
+			],
+			"damageTagsSpell": [
+				"F"
 			]
 		},
 		{
@@ -41787,7 +41790,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The Charr Martyr is a 6th-level spellcaster. Its spellcasting ability is Strength (spell save {@dc 14}, +6 to hit with spell attacks). The Charr Martyr has the following monk spells prepared:"
+						"The Charr Martyr is a 6th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 14}, +6 to hit with spell attacks). The Charr Martyr has the following monk spells prepared:"
 					],
 					"spells": {
 						"1": {
@@ -41811,7 +41814,7 @@
 							"slots": 3
 						}
 					},
-					"ability": "str",
+					"ability": "wis",
 					"type": "spellcasting"
 				}
 			],
@@ -41928,7 +41931,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The Charr Ashen Claw is a 6th-level spellcaster. Its spellcasting ability is Strength (spell save {@dc 14}, +6 to hit with spell attacks). The Charr Ashen Claw has the following necromancer spells prepared:"
+						"The Charr Ashen Claw is a 6th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 14}, +6 to hit with spell attacks). The Charr Ashen Claw has the following necromancer spells prepared:"
 					],
 					"spells": {
 						"1": {
@@ -41952,7 +41955,7 @@
 							"slots": 3
 						}
 					},
-					"ability": "str",
+					"ability": "cha",
 					"type": "spellcasting"
 				}
 			],
@@ -42069,7 +42072,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The Charr Chaot is a 3rd-level spellcaster. Its spellcasting ability is Strength (spell save {@dc 14}, +6 to hit with spell attacks). The Charr Chaot has the following mesmer spells prepared:"
+						"The Charr Chaot is a 3rd-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 14}, +6 to hit with spell attacks). The Charr Chaot has the following mesmer spells prepared:"
 					],
 					"spells": {
 						"1": {
@@ -42093,7 +42096,7 @@
 							"slots": 3
 						}
 					},
-					"ability": "str",
+					"ability": "cha",
 					"type": "spellcasting"
 				}
 			],
@@ -42204,7 +42207,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The Charr Flame Wielder is a 6th-level spellcaster. Its spellcasting ability is Strength (spell save {@dc 14}, +6 to hit with spell attacks). The Charr Flame Wielder has the following elementalist spells prepared:"
+						"The Charr Flame Wielder is a 6th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, +6 to hit with spell attacks). The Charr Flame Wielder has the following elementalist spells prepared:"
 					],
 					"spells": {
 						"1": {
@@ -42232,7 +42235,7 @@
 							"slots": 1
 						}
 					},
-					"ability": "str",
+					"ability": "int",
 					"type": "spellcasting"
 				}
 			],
@@ -44636,7 +44639,8 @@
 								"{@spell aura of restoration|GuildWars}*",
 								"{@spell fire attunement|GuildWars|fire attunement}*",
 								"{@spell flare|GuildWars}",
-								"{@spell mage armor}*"
+								"{@spell mage armor}*",
+								"{@spell mind burn|GuildWars}"
 							],
 							"slots": 2
 						},
@@ -48485,6 +48489,223 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Stone_Summit_Dolyak_Rider_Token.png"
 			},
+			"damageTags": [
+				"P",
+				"R"
+			]
+		},
+		{
+			"name": "Stone Summit Dolyak Rider Boss",
+			"source": "GuildWars",
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item splint armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d10 + 60",
+				"average": 126
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 18,
+			"dex": 8,
+			"con": 20,
+			"int": 6,
+			"wis": 20,
+			"cha": 6,
+			"passive": 15,
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Dwarven Resilience",
+					"entries": [
+						"They have advantage on saving throws against poison, and they have resistance to poison damage."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The Stone Summit Dolyak Rider Boss deals double damage to objects and structures."
+					]
+				},
+				{
+					"name": "Mount and Rider",
+					"entries": [
+						"The Stone Summit Dolyak Rider Boss is a combination of a mount and a rider, while mounted they share all statistics. If the rider is forced to dismount, treat them as a commoner and the mount acts according to its alignment."
+					]
+				},
+				{
+					"name": "Legendary Resistance (1/Day)",
+					"entries": [
+						"If the stone summit dolyak rider boss fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Hussar Ironfeast is a Stone Summit boss that appears in Traveler's Vale.",
+					"Shalis Ironmantle is a Stone Summit boss that appears in Iron Horse Mine and The Frost Gate."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Stone_Summit_Dolyak_Rider_Boss.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Dwarvish"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"skill": {
+				"athletics": "+7",
+				"religion": "+1"
+			},
+			"reaction": [
+				{
+					"name": "Invoke the Great Destroyer",
+					"entries": [
+						"Once per day, if the stone summit dwarf fails a saving throw, it can choose to cast {@spell Hellish Rebuke}."
+					]
+				}
+			],
+			"save": {
+				"con": "+8",
+				"wis": "+8"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Siege Monster"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"conditionImmune": [
+				"stunned"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Stone Summit Dolyak Rider Boss is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 16}, +8 to hit with spell attacks). The Stone Summit Dolyak Rider Boss has the following Monk (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Stone Summit Dolyak Rider Boss casts these spells on an ally before combat."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell banish|GuildWars}",
+								"{@spell remove hex|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell heal other|GuildWars}",
+								"{@spell shielding hands|GuildWars}",
+								"{@spell strength of honor|GuildWars}*"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell mark of protection|GuildWars}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}18 ({@damage 4d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Radiant Scepter",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 60/120 ft., one target. {@h}24 ({@damage 4d8 + 6}) radiant damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"uniqueId": "de66e3c1-6508-42a5-874f-a65362366d59",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Stone_Summit_Dolyak_Rider_Boss_Token.png"
+			},
+			"legendaryActions": 1,
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The Stone Summit Dolyak Rider Boss moves up to its speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Spellcasting",
+					"entries": [
+						"The Stone Summit Dolyak Rider Boss uses Spellcasting."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"The Stone Summit Dolyak Rider Boss attacks using one of it attacks."
+					]
+				}
+			],
 			"damageTags": [
 				"P",
 				"R"

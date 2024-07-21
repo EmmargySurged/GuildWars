@@ -17239,10 +17239,8 @@
 					"type": "timed",
 					"duration": {
 						"type": "round",
-						"amount": 1,
-						"upTo": true
-					},
-					"concentration": true
+						"amount": 1
+					}
 				}
 			],
 			"classes": {
@@ -17297,7 +17295,8 @@
 				"Conjure a lightning bolt above a creature's head.",
 				"Choose one creature that you can see within range. The target must make a Dexterity saving throw. On a failed save, the target takes {@damage 3d8} lightning damage. On a successful save, the target takes half as much damage.",
 				"{@bold Armor Penetration.} This spell's lightning damage cannot be reduced in any way, except by immunities.",
-				"{@bold While Overcast.} You can keep {@status concentration} on this spell to repeat the effect next turn as a bonus action."
+				"{@bold While Overcast.} You can make this spell a hex to repeat the effect next turn as a bonus action.",
+				"{@bold Hex.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast. Additionally, you cannot choose to end {@status concentration} on this spell."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -23825,7 +23824,7 @@
 				]
 			},
 			"entries": [
-				"Channel some of the surrounding soul energy into your spell, improving your initiative every time you cast a spell.",
+				"Channel some of the surrounding soul energy into your spells, improving your spellcasting.",
 				"For the Duration, when you would expend a spell slot to cast a spell, roll a {@dice d20}. On a 20 or higher, the spell does not expend a spell slot. The number you need to roll decreases by 1 for each hostile creature within range.",
 				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
 			],
@@ -37526,6 +37525,469 @@
 					]
 				}
 			]
+		},
+		{
+			"uniqueId": "445357ba-6219-458d-992f-0a2b6120a739",
+			"name": "Balanced Stance",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 3
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Perfectly balance yourself, gaining immunity to being knocked {@condition prone} and not tacking extra damage from critical hits.",
+				"For the duration, you are immune to the {@condition prone} condition, and you do not take extra damage from critical hits.",
+				"{@bold Stance.} If you enter a new stance, this stance ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Balanced Stance",
+					"Stance. For 8...18...20 seconds, you cannot be knocked down and you do not suffer extra damage from a critical attack."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/f/f1/Balanced_Stance.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Adept of the Black Robes",
+					"source": "DSotDQ"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Southwestern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Warrior",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Tactics",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the duration increases by 1 round for each slot level above 2nd."
+					]
+				}
+			]
+		},
+		{
+			"name": "Apply Poison",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Sheath your arrows in {@condition corruption|GuildWars} frog venom, making them inflict {@condition corruption|GuildWars} on a hit.",
+				"For the duration, when you hit a target with a ranged weapon attack, they must make a Constitution saving throw. On a failed save, a target is {@condition corruption|GuildWars|corrupted} for 1 minute, taking {@damage 2d4} damage.",
+				"At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends.",
+				"{@bold Preparation.} If you cast a new preparation, this preparation ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Apply Poison",
+					"Preparation. For 24 seconds, foes struck by your physical attacks become Poisoned for 3...13...15 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/9/91/Apply_Poison.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Adept of the Black Robes",
+					"source": "DSotDQ"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Wilderness Survival",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "a vial of frog venom"
+			},
+			"meta": {
+				"ritual": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage of the corrupted condition increases by {@dice 1d4} for each slot level above 2nd."
+					]
+				}
+			],
+			"uniqueId": "36a28e3e-9fef-42f3-bc0a-39b001243ab2",
+			"conditionInflict": [
+				"corruption|guildwars|corrupted"
+			]
+		},
+		{
+			"name": "Arcane Echo",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 2
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Create an arcane echo of the next spell you cast, casting it twice in quick succession.",
+				"For the duration, the next time you finish casting a spell of 2nd level or lower, you cast that spell again (no action required), without expending a spell slot or requiring material components."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Arcane Echo",
+					"Enchantment Spell. If you cast a spell in the next 20 seconds, Arcane Echo is replaced with that spell for 20 seconds. Arcane Echo ends prematurely if you use a non-spell skill."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/b/b2/Arcane_Echo.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the number of casts increases by 1 for every three slot level above 1st."
+					]
+				}
+			],
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Divinely Favored",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Fey Touched",
+					"source": "TCE"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "No Attribute",
+					"source": "GuildWars"
+				}
+			],
+			"uniqueId": "64c717bd-708d-406b-a566-1e83bfac7efd"
+		},
+		{
+			"name": "Dwayna's Kiss",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Send a prayer to Dwayna, goddess of light and life, to restore health to a creature, increasing for each spell on them. ",
+				"Choose one creature that you can see within range. The target regains hit points equal to {@dice 1d6} + your spellcasting ability modifier{@dice  + 1d6} per spell on the target."
+			],
+			"source": "GuildWars",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the base healing increases by {@dice 1d6} for each slot level above 1st."
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			],
+			"fluff": {
+				"entries": [
+					"Dwayna's Kiss",
+					"Spell. Heal target other ally for 15...51...60 Health and an additional 10...30...35 Health for each enchantment or hex on that ally."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/e/e5/Dwayna%27s_Kiss.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Monk",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Healing Prayers",
+					"source": "GuildWars"
+				}
+			],
+			"uniqueId": "831f33cb-96c1-4696-abd2-a178309df3d1"
 		}
 	],
 	"table": [
@@ -45938,7 +46400,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Mountain_Centaur_Protector_Boss.jpg"
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Mountain_Centaur_Priest_Boss.jpg"
 						}
 					}
 				]
@@ -46001,7 +46463,7 @@
 			"uniqueId": "08164d88-2d38-4a9d-855f-d75fccb287a6",
 			"tokenHref": {
 				"type": "external",
-				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Mountain_Centaur_Protector_Boss_Token.png"
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Mountain_Centaur_Priest_Boss_Token.png"
 			},
 			"damageTags": [
 				"B",
@@ -48709,6 +49171,968 @@
 			"damageTags": [
 				"P",
 				"R"
+			]
+		},
+		{
+			"name": "Stone Summit Scout",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Dwarf"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item scale mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 36",
+				"average": 90
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 16,
+			"int": 8,
+			"wis": 12,
+			"cha": 10,
+			"passive": 11,
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Dwarven Resilience",
+					"entries": [
+						"They have advantage on saving throws against poison, and they have resistance to poison damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"longbow|phb",
+				"shortsword|phb"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"One of the oldest races on Tyria, the Dwarves are humanoids that are stocky, short, and are almost always bearded. The dwarves live in the Shiverpeak Mountains - specifically the Northern Shiverpeaks and the Southern Shiverpeaks.",
+					"In recent years, the dwarves have been plunged into a civil war between the older Deldrimor dwarves and the recent Stone Summit faction. This war has caused unrest throughout the Shiverpeaks and hold up most travel between Ascalon and the other human nations. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Stone_Summit_Ranger.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Dwarvish"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"skill": {
+				"athletics": "+4",
+				"religion": "+1"
+			},
+			"reaction": [
+				{
+					"name": "Invoke the Great Destroyer",
+					"entries": [
+						"Once per day, if the stone summit dwarf fails a saving throw, it can choose to cast {@spell Hellish Rebuke}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Stone Summit Scout makes two attacks: two with its Shortsword or two with its Longbow, it can forgo one of these attacks to cast a spell."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6+5}) slashing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 100/400 ft., one target. {@h}14 ({@damage 2d8 + 5}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Stone Summit Scout is a 7th-level spellcaster. Its spellcasting ability is Dexterity (spell save {@dc 15}, +7 to hit with spell attacks). The Stone Summit Scout has the following Ranger (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Stone Summit Scout casts these spells on itself before combat."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell called shot|GuildWars}",
+								"{@spell pin down|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell melandru's arrows|GuildWars}*"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "dex",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CR"
+			],
+			"uniqueId": "fc85d582-0b19-4fd1-bbc1-9072d722222d",
+			"save": {
+				"dex": "+7",
+				"wis": "+3"
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Stone_Summit_Ranger_Token.png"
+			},
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Dryder",
+			"source": "GuildWars",
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d10 + 24",
+				"average": 90
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 14,
+			"int": 18,
+			"wis": 8,
+			"cha": 6,
+			"skill": {
+				"perception": "+1",
+				"stealth": "+6"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Demoinc Ancestry",
+					"entries": [
+						"The Dryder has advantage on saving throws against being {@condition frightened}, and magic can't put the Dryder to sleep."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The Dryder can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the Dryder has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The Dryder ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Dryder makes two attacks: two with its bite, it can forgo one of these attacks to cast a spell."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}6 ({@damage 1d4+4}) piercing damage plus 9 ({@damage 2d8}) necrotic damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Spider Climb",
+				"Sunlight Sensitivity",
+				"Web Walker"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"uniqueId": "08703c19-65d5-4d55-84df-3bacc39bdd75",
+			"save": {
+				"int": "+6",
+				"dex": "+6"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Dryder is a 7th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, +6 to hit with spell attacks). The Dryder has the following Necromancer (GW) spells prepared:"
+					],
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"environment": [
+				"mountain"
+			],
+			"fluff": {
+				"entries": [
+					"Dryders are spider-like creatures that can be found throughout Tyria and the Mists.",
+					"They are almost exclusively offensive spellcasters, mostly encountered as hex-based necromancers throughout Tyria, and more frequently as elementalists and mesmers in The Mists, where they usually serve Dhuum.",
+					"They tend to prefer very cold or icy places, such as the Shiverpeaks mountains, or on the contrary extremely hot places, such as the Ring of Fire Islands.",
+					"They also seem to feed on souls as they are frequently seen next to dead bodies or souls, and their skills (Soul Leech, Soul Torture) further references that.",
+					"According to Nicholas the Traveler, Frostfire Dryders have poisonous fangs, however none of the Dryders in the game can actually inflict poison. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Silver_Dryder.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Silver_Dryder_Token.png"
+			},
+			"damageTags": [
+				"N",
+				"P"
+			]
+		},
+		{
+			"name": "Frostfire Dryder",
+			"source": "GuildWars",
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d10 + 24",
+				"average": 90
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 14,
+			"int": 18,
+			"wis": 8,
+			"cha": 6,
+			"skill": {
+				"perception": "+1",
+				"stealth": "+6"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Demoinc Ancestry",
+					"entries": [
+						"The Dryder has advantage on saving throws against being {@condition frightened}, and magic can't put the Dryder to sleep."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The Dryder can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the Dryder has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The Dryder ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Dryder makes two attacks: two with its bite, it can forgo one of these attacks to cast a spell."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}6 ({@damage 1d4+4}) piercing damage plus 9 ({@damage 2d8}) necrotic damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Spider Climb",
+				"Sunlight Sensitivity",
+				"Web Walker"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"save": {
+				"int": "+6",
+				"dex": "+6"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Dryder is a 7th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, +6 to hit with spell attacks). The Dryder has the following Necromancer (GW) spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell defile flesh|GuildWars}",
+								"{@spell faintheartedness|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell shadow strike|GuildWars}",
+								"{@spell soul leech|GuildWars}",
+								"{@spell suffering|GuildWars}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"environment": [
+				"mountain"
+			],
+			"fluff": {
+				"entries": [
+					"Frostfire Dryders are common throughout the frozen tunnels of the Northern Shiverpeaks. They can make life difficult for groups not prepared with hex removing skills."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Silver_Dryder.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Silver_Dryder_Token.png"
+			},
+			"uniqueId": "a64a5208-baa1-4f69-a3bf-bfcff9a99ac1",
+			"damageTags": [
+				"N",
+				"P"
+			],
+			"damageTagsSpell": [
+				"N",
+				"Y"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Ettin",
+			"source": "GuildWars",
+			"size": [
+				"L"
+			],
+			"type": "giant",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 85,
+				"formula": "10d10 + 30"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 21,
+			"dex": 8,
+			"con": 17,
+			"int": 6,
+			"wis": 10,
+			"cha": 8,
+			"skill": {
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"languages": [
+				"Giant",
+				"Orc"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Two Heads",
+					"entries": [
+						"The ettin has advantage on Wisdom ({@skill Perception}) checks and on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}."
+					]
+				},
+				{
+					"name": "Wakeful",
+					"entries": [
+						"When one of the ettin's heads is asleep, its other head is awake."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Ettin makes two attacks: one with its Battleaxe and one with its Morningstar or two with its Rock, it can forgo one of these attacks to cast a spell."
+					]
+				},
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Morningstar",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 30/90 ft., one target. {@h}11 ({@damage 2d6 + 5}) bludgeoning damage."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/ettin.mp3"
+			},
+			"attachedItems": [
+				"battleaxe|phb",
+				"morningstar|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI",
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Ettins are large, usually gray-skinned, ogres with a double faced head."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ettin.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "694bf43a-16c4-4520-925b-90c3ba83983c",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Ettin is a 7th-level spellcaster. Its spellcasting ability is Strength (spell save {@dc 15}, +7 to hit with spell attacks). The Ettin has the following Warrior (GW) spells prepared:"
+					],
+					"ability": "str",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ettin_Token.png"
+			},
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Snow Ettin",
+			"source": "GuildWars",
+			"size": [
+				"L"
+			],
+			"type": "giant",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 85,
+				"formula": "10d10 + 30"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 21,
+			"dex": 8,
+			"con": 17,
+			"int": 6,
+			"wis": 10,
+			"cha": 8,
+			"skill": {
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"languages": [
+				"Giant",
+				"Orc"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Two Heads",
+					"entries": [
+						"The ettin has advantage on Wisdom ({@skill Perception}) checks and on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}."
+					]
+				},
+				{
+					"name": "Wakeful",
+					"entries": [
+						"When one of the ettin's heads is asleep, its other head is awake."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Ettin makes two attacks: one with its Battleaxe and one with its Morningstar or two with its Rock, it can forgo one of these attacks to cast a spell."
+					]
+				},
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Morningstar",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 30/90 ft., one target. {@h}11 ({@damage 2d6 + 5}) bludgeoning damage."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/ettin.mp3"
+			},
+			"attachedItems": [
+				"battleaxe|phb",
+				"morningstar|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI",
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Ettins are large, usually gray-skinned, ogres with a double faced head."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ettin.jpg"
+						}
+					}
+				]
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Ettin is a 7th-level spellcaster. Its spellcasting ability is Strength (spell save {@dc 15}, +7 to hit with spell attacks). The Ettin has the following Warrior (GW) spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell \"for great justice!\"|GuildWars}",
+								"{@spell devastating bash|GuildWars}",
+								"{@spell power attack|GuildWars}",
+								"{@spell staggering blow|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell balanced stance|GuildWars}"
+							],
+							"slots": 0
+						}
+					},
+					"ability": "str",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ettin_Token.png"
+			},
+			"uniqueId": "f424b80e-9ade-45b9-ad80-a3527fb87021",
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Ice Golem",
+			"source": "GuildWars",
+			"size": [
+				"L"
+			],
+			"type": "elemental",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"from": [
+						"natural armor"
+					],
+					"ac": 14
+				}
+			],
+			"hp": {
+				"formula": "11d10 + 11",
+				"average": 71
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 6,
+			"con": 12,
+			"int": 6,
+			"wis": 6,
+			"cha": 18,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"vulnerable": [
+				"fire"
+			],
+			"languages": [
+				"Aquan"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Ice Walk",
+					"entries": [
+						"The ice elemental can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra movement."
+					]
+				},
+				{
+					"name": "Splinter",
+					"entries": [
+						"A creature that hits the ice elemental with a melee weapon attack that deals bludgeoning damage while within 5 feet of the elemental takes 10 ({@damage 3d6}) piercing damage as shards of ice fly out from the elemental's body."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Ice Golem makes two attacks: one with its Ice Claw, it can forgo one of these attacks to cast a spell."
+					]
+				},
+				{
+					"name": "Ice Claw",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}17 ({@damage 3d8 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Encase in Ice",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one creature. {@h}14 ({@damage 4d6}) cold damage, and the target must make a {@dc 13} Constitution saving throw. On a failure, ice begins to form around the creature, and it is {@condition restrained}. The {@condition restrained} creature must repeat the saving throw at the end of its next turn, becoming {@condition petrified} in ice on a failure or ending the effect on a success. The petrification lasts until the creature spends at least 1 hour in a warm environment. Alternatively, a creature can be freed of the {@condition restrained} or {@condition petrified} conditions if it takes at least 10 fire damage."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AQ"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"uniqueId": "2928226d-0222-48dd-9826-5ff5765238ba",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Ice Golem is a 7th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 14}, +6 to hit with spell attacks). The Ice Golem has the following Elementalist (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Ice Golem casts these spells on itself before combat."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell water attunement|GuildWars}*",
+								"{@spell water trident|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell frozen burst|GuildWars}",
+								"{@spell ice spikes|GuildWars}"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"fluff": {
+				"entries": [
+					"Ice Golems are elementals made out of ice, constructed by the Dwarves of the Stone Summit to aid them in combat. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ice_Elemental.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ice_Elemental_Token.png"
+			},
+			"damageTags": [
+				"C",
+				"F",
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"C"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
 			]
 		}
 	],

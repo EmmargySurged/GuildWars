@@ -13398,7 +13398,7 @@
 			"entries": [
 				"Envelop yourself in a magnetic aura, deflecting damage back to an attacker.",
 				"For the duration, if you are the target of an attack roll, the attack roll misses you, the attacker must make a Dexterity saving throw and this spell ends. On a failed save, the attacker takes {@damage 3d6} force damage. ",
-				"{@bold While Overcast.} Choose any number of friendly creatures that you can see within range. A target also gains the effect of this spell.",
+				"{@bold While Overcast.} Choose any number of friendly creatures that you can see within 150-feet. A target also gains the effect of this spell.",
 				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
 			],
 			"source": "GuildWars",
@@ -37988,6 +37988,751 @@
 				}
 			],
 			"uniqueId": "831f33cb-96c1-4696-abd2-a178309df3d1"
+		},
+		{
+			"name": "Rush",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Channel your adrenaline into increasing your movement speed.",
+				"For the duration, your speed is increased by 30%.",
+				"{@bold Stance.} If you enter a new stance, this stance ends.",
+				"{@bold Adrenaline.} Instead of expending a spell slot, you cast this spell by expending 4 adrenaline. When casting this spell at a higher level, expend an additional 2 adrenaline per level above the original level."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Rush",
+					"Stance. For 8...18...20 seconds, you move 25% faster."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/f/fb/Rush.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"s": true
+			},
+			"uniqueId": "fb86f382-3f09-4863-a1e1-3b0bbfd25476",
+			"feats": [
+				{
+					"name": "Artificer Initiate",
+					"source": "TCE"
+				},
+				{
+					"name": "Fey Touched",
+					"source": "TCE"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Southern Shiverpeaks",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Warrior",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Strength",
+					"source": "GuildWars"
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the % increases by 10% for each slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"uniqueId": "ebfd8a9b-4ae3-4730-a8d0-240356865a1e",
+			"name": "Blood of the Master",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Sacrifice your own blood for each undead minion you control, healing them.",
+				"{@bold Sacrifice.} You take necrotic damage equal to 5% + 2% per undead minion chosen by you, of your maximum hit points, which can't be reduced in any way. ",
+				"Choose any number of friendly undead creatures that you can see. Each target regains hit points equal to {@dice 2d4} + your spellcasting ability modifier."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Blood of the Master",
+					"Spell. All of your undead allies are healed for 30...99...116 Health. You sacrifice an additional 2% maximum Health per minion healed in this way."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/d/d5/Blood_of_the_Master.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Divinely Favored",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Shadow Touched",
+					"source": "TCE"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Blood Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "a drop of blood"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases each by {@dice 2d4} for each slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"name": "Holy Veil",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Conjure up a holy veil around a creature, obscuring them from harmful spells.",
+				"Choose one creature that you can see within range. For the duration If the target is the target of a harmful spell which requires {@status concentration} or is an Enchantment/Hex, that spell requires twice as long to cast.",
+				"When this spell ends, the latest harmful spell on the target ends.",
+				"{@bold Bond.} For the duration, your spell save DC and spell attack bonus are reduced by 1.  You can have a maximum number of bonds active at any one time, equal to your spell casting ability modifier (minimum 1). The bond ends if the target of your bond is ever not within 300 feet of you, or you fall {@condition unconscious}. You can end a bond at any time (no action required).",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Holy Veil",
+					"Enchantment Spell. While you maintain this enchantment, any hex cast on target ally takes twice as long to cast. When Holy Veil ends, one hex is removed from target ally."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/8/85/Holy_Veil.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"HL"
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a veil and a drop of holy water"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 1st and the reduction to your spell save DC and spell attack bonus increases by 1 for each slot level above 2nd."
+					]
+				}
+			],
+			"uniqueId": "0521af31-778f-4d94-a658-46f0d4fed8c8",
+			"feats": [
+				{
+					"name": "Adept of the Black Robes",
+					"source": "DSotDQ"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Monk",
+					"source": "GuildWars"
+				},
+				{
+					"name": "No Attribute",
+					"source": "GuildWars"
+				}
+			]
+		},
+		{
+			"name": "Bestial Pounce",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Command your pet to attempt a Bestial Pounce, knocking down creatures who cast a spell on their last turn.",
+				"Choose one beast, which obeys your verbal commands, that can hear you within range. The beast uses its reaction to make an attack against a creature of your choice that the beast can see within the beast's range. On a hit, the target suffers the attack's normal effects and takes {@damage 2d6} damage and, if the target cast a spell on its last turn, the target must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}"
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Bestial Pounce",
+					"Pet Attack. Your animal companion attempts a Bestial Pounce that deals +5...17...20 damage. If the attack strikes a foe who is casting a spell, that foe is knocked down."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/6/6a/Bestial_Pounce.jpg"
+						}
+					}
+				]
+			},
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"feats": [
+				{
+					"name": "Divinely Favored",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Beast Mastery",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for each slot level above 1st. "
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"uniqueId": "9fb10398-83a9-47fb-9f68-e07ba8a82e51"
+		},
+		{
+			"name": "Fertile Season",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Summon a nature spirit of the fertile season, improving health and reducing damage take for anyone affected.",
+				"Summon a nature spirit for the duration. If a creature is within 120 feet of the nature spirit, the creature's hit point maximum and current hit points increase by 10 and when a creature takes damage, you roll {@dice 1d4} and subtract the number rolled from the damage.",
+				"{@bold Summoning Ritual} Only one of each type of Summoning Ritual can be active at a time, if a new one is created in the range of this Summoning Ritual, this one ends. The spirit created by this ritual uses the {@creature Nature Ritual|GuildWars} stat block."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Fertile Season",
+					"Nature Ritual. Create a level 1...8...10 spirit. Non-spirit creatures within range have +50...130...150 maximum Health and gain +8 armor. This spirit dies after 15...39...45 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/1/13/Fertile_Season.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Southwestern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Beast Mastery",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "freshly cut grass"
+			},
+			"meta": {
+				"ritual": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, use the higher level wherever the spell's level appears in the stat block and when you cast this spell using a spell slot of 3rd or 4th level, the duration increases to 8 hours. When you use a spell slot of 5th level or higher, the duration increases to 24 hours.",
+						"Additionally, when you cast this spell using a spell slot of 3rd level or higher, a creature's hit points increase by an additional 5 for each slot level above 2nd and the number subtracted increases by {@dice 1d4} for each slot level above 2nd."
+					]
+				}
+			],
+			"uniqueId": "48397d02-4f3f-4e08-acda-43f2b6d7fedd"
+		},
+		{
+			"name": "Precision Shot",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Fire an extremely precise shot, which deals more damage on a hit and ignores any temporary AC bonuses.",
+				"Choose one creature that you can see within range of your weapon. Make a ranged weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d8} damage.",
+				"{@bold Unblockable.} This spell ignores any temporary bonuses to AC."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Precision Shot",
+					"Bow Attack. If Precision Shot hits, you strike for +3...9...10 damage. Precision Shot cannot be blocked. This action is easily interrupted."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/b/ba/Precision_Shot.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"s": true,
+				"m": "a ranged weapon worth at least 1 sp"
+			},
+			"feats": [
+				{
+					"name": "Artificer Initiate",
+					"source": "TCE"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Crystal Desert",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Marksmanship",
+					"source": "GuildWars"
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
+					]
+				}
+			],
+			"uniqueId": "89a50537-e985-4bef-9073-0f35845b8491"
+		},
+		{
+			"name": "Tiger's Fury",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 2
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Invoke the great spirit of the tiger, entering a fury in which you can attack more often but cannot cast any spells.",
+				"For the duration, you can attack one additional time when you take the attack action on your turn, but you cannot cast spells.",
+				"{@bold Stance.} If you enter a new stance, this stance ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Tiger's Fury",
+					"Stance. All your non-attack skills are disabled for 5 seconds. For 5...10...11 seconds, you attack 25% faster."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/c/c6/Tiger%27s_Fury.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"UBA"
+			],
+			"backgrounds": [
+				{
+					"name": "Crystal Desert",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Beast Mastery",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the duration increases by 1 round for each slot level above 1st."
+					]
+				}
+			],
+			"uniqueId": "54dd87f0-23ed-4930-a0cc-9ce11c5af8be"
 		}
 	],
 	"table": [
@@ -50133,6 +50878,483 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
+			]
+		},
+		{
+			"name": "Minotaur (Shiverpeaks)",
+			"source": "GuildWars",
+			"basicRules": true,
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 85,
+				"formula": "9d10 + 36"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 13,
+			"con": 18,
+			"int": 6,
+			"wis": 16,
+			"cha": 9,
+			"skill": {
+				"perception": "+7"
+			},
+			"passive": 17,
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the minotaur moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 ({@damage 2d8}) piercing damage. If the target is a creature, it must succeed on a {@dc 15} Strength saving throw or be pushed up to 10 feet away and knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Tribal Recall",
+					"entries": [
+						"The minotaur can perfectly recall any path it has traveled."
+					]
+				},
+				{
+					"name": "Reckless",
+					"entries": [
+						"At the start of its turn, the minotaur can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) piercing damage."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/minotaur.mp3"
+			},
+			"traitTags": [
+				"Charge",
+				"Reckless"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"An old folk legend states the only reason Dolyaks were domesticated instead of minotaurs is because minotaurs would rather be beaten to death than obey a command. Dolyaks, simply put, were less stubborn. Minotaurs are one of the oldest species in Tyria and are very much prized by the Norn for their warm, furry coats. They were once extremely populous throughout the Shiverpeaks but now reside solely in the northern regions, where they have sheltered valleys and caves to make their homes."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Berserking_Minotaur.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "5c3177a9-4fb8-42b3-892d-7bba8402b0e8",
+			"save": {
+				"str": "+7",
+				"con": "+6"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Minotaur is a 7th-level spellcaster. Its spellcasting ability is Strength (spell save {@dc 15}, +7 to hit with spell attacks). The Minotaur has the following Warrior (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Minotaur casts these spells on itself before combat."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell \"for great justice!\"|GuildWars}*",
+								"{@spell bull's strike|GuildWars}",
+								"{@spell rush|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell endure pain|GuildWars}",
+								"{@spell irresistible blow|GuildWars}"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "str",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Berserking_Minotaur_Token.png"
+			},
+			"damageTags": [
+				"P"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Juniper Bark",
+			"source": "GuildWars",
+			"basicRules": true,
+			"size": [
+				"S"
+			],
+			"type": "plant",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d6 - 20",
+				"average": 50
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 6,
+			"dex": 18,
+			"con": 8,
+			"int": 4,
+			"wis": 8,
+			"cha": 16,
+			"skill": {
+				"stealth": "+8"
+			},
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 9,
+			"vulnerable": [
+				"fire",
+				"slashing"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened"
+			],
+			"languages": [
+				"understands Common but can't speak"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the Juniper Bark remains motionless, it is indistinguishable from an alpine shrub."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}20 ({@damage 7d4 + 4}) piercing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"False Appearance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Juniper Barks are plant creatures that populate the Shiverpeak Mountains. They spend most of their time just below the surface of the ground, but pop up to attack when enemies come near. While not particularly dangerous by themselves, when they appear during a battle with other, more dangerous creatures, they cease to be a mere nuisance and become a true threat."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Aloe.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "0efc7d9b-443a-4134-9a34-a4d2e8ca0c19",
+			"save": {
+				"dex": "+6",
+				"cha": "+5"
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Aloe_Token.png"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Juniper Bark is a 7th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 13}, +5 to hit with spell attacks). The Juniper Bark has the following Monk (GW) spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell reversal of fortune|GuildWars}",
+								"{@spell signet of judgment|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell holy veil|GuildWars}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell mending bond|GuildWars}",
+								"{@spell pacifism|GuildWars}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"R"
+			],
+			"savingThrowForcedSpell": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Stone Summit Scout Boss",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Dwarf"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item half plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 56",
+				"average": 119
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 18,
+			"int": 8,
+			"wis": 12,
+			"cha": 10,
+			"passive": 11,
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Dwarven Resilience",
+					"entries": [
+						"They have advantage on saving throws against poison, and they have resistance to poison damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"longbow|phb",
+				"shortsword|phb"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Garris Nightwatch is a Stone Summit boss that appears in Iron Horse Mine and The Frost Gate.",
+					"Ulhar Stonehound appears in Traveler's Vale, the Borlis Pass mission and the Thunderhead Keep mission. In Thunderhead Keep he can spawn on the hill outside the city, in the center of the city or outside the fort during the siege."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Stone_Summit_Ranger_Boss.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Dwarvish"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"skill": {
+				"athletics": "+5",
+				"religion": "+2"
+			},
+			"reaction": [
+				{
+					"name": "Invoke the Great Destroyer",
+					"entries": [
+						"Once per day, if the stone summit dwarf fails a saving throw, it can choose to cast {@spell Hellish Rebuke}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Stone Summit Scout makes two attacks: two with its Shortsword or two with its Longbow, it can forgo one of these attacks to cast a spell."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}19 ({@damage 4d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 100/400 ft., one target. {@h}23 ({@damage 4d8 + 5}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Stone Summit Sage Boss is a 10th-level spellcaster. Its spellcasting ability is Dexterity (spell save {@dc 16}, +8 to hit with spell attacks). The Stone Summit Sage Boss has the following Ranger (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Stone Summit Scout Boss casts these spells on itself before combat."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell pin down|GuildWars}",
+								"{@spell precision shot|GuildWars}",
+								"{@spell tiger's fury|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell fertile season|GuildWars}*",
+								"{@spell melandru's arrows|GuildWars}*"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "dex",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CR"
+			],
+			"save": {
+				"dex": "+8",
+				"wis": "+4"
+			},
+			"uniqueId": "d59b488d-221c-4fc7-9c1b-1d6252b40a8e",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Stone_Summit_Ranger_Boss_Token.png"
+			},
+			"damageTags": [
+				"P",
+				"S"
 			]
 		}
 	],

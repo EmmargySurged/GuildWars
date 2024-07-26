@@ -2899,7 +2899,7 @@
 			},
 			"entries": [
 				"You sacrifice some of your health to mend another creature's injuries. ",
-				"Choose one friendly creature, other than yourself, that you can see within range. You take necrotic damage equal to 50% of your current hit points, which can't be reduced in any way. The target regains hit points equal to 100% of the necrotic damage taken."
+				"Choose one friendly creature, other than yourself, that you can see within range. You lose equal to 50% of your current hit points. The target regains hit points equal to 100% of the health lost."
 			],
 			"source": "GuildWars",
 			"components": {
@@ -3325,7 +3325,7 @@
 			},
 			"entries": [
 				"Use some of your own blood in a ritual of renewal.",
-				"{@bold Sacrifice.} You take necrotic damage equal to 15% of your maximum hit points, which can't be reduced in any way.",
+				"{@bold Sacrifice.} You lose health equal to 15% of your maximum hit points.",
 				"For the duration, at the start of each of your turns, you regain hit points equal to {@dice 1d4} + your spellcasting ability modifier.",
 				"When this spell ends, you regain hit points equal to {@dice 2d4} + spellcasting ability modifier.",
 				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
@@ -6954,7 +6954,7 @@
 			},
 			"entries": [
 				"Corrupt some of your own blood, to weaken an area.",
-				"{@bold Sacrifice.} You take necrotic damage equal to 10% of your maximum hit points, which can't be reduced in any way.",
+				"{@bold Sacrifice.} You lose health equal to 10% of your maximum hit points.",
 				"Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target is {@condition weakness|GuildWars|weakened} for the duration.",
 				"At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
 			],
@@ -8362,7 +8362,7 @@
 			},
 			"entries": [
 				"Call upon a dark force, sacrificing blood to inflict harm.",
-				"{@bold Sacrifice.} You take necrotic damage equal to 10% of your maximum hit points, which can't be reduced in any way.",
+				"{@bold Sacrifice.} You lose health equal to 10% of your maximum hit points.",
 				"Choose one creature that you can see within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 4d4} necrotic damage.",
 				"This spell's damage increases by {@dice 2d4} when you reach 5th level ({@dice 6d4}), 11th level ({@dice 8d4}), and 17th level ({@dice 10d4})."
 			],
@@ -27983,7 +27983,7 @@
 			},
 			"entries": [
 				"Sacrifice some of your own blood to fuel a creature's spells.",
-				"{@bold Sacrifice.} You take necrotic damage equal to 33% of your maximum hit points, which can't be reduced in any way.",
+				"{@bold Sacrifice.} You lose health equal to 33% of your maximum hit points.",
 				"Choose one friendly creature that you can see within range. For the duration, when the creature would expend a spell slot to cast a spell of 1st level, roll a {@dice d20}. On a 15 or higher, the spell does not expend a spell slot.",
 				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast.",
 				"{@bold Elite.} When preparing your spells, you can only prepare one elite spell."
@@ -30738,7 +30738,7 @@
 			},
 			"entries": [
 				"Offer your blood in a ritual to gain more magical power.",
-				"{@bold Sacrifice.} You take necrotic damage equal to 20% of your maximum hit points, which can't be reduced in any way.",
+				"{@bold Sacrifice.} You lose health equal to 20% of your maximum hit points.",
 				"For the duration, when you cast a spell of 2nd level or lower, the spell does not expend a spell slot. After this spell triggers {@dice 2d4} times, this spell ends.",
 				"{@bold Elite.} When preparing your spells, you can only prepare one elite spell."
 			],
@@ -31770,7 +31770,7 @@
 			},
 			"entries": [
 				"Induct your allies into the Order of the Vampire, giving their attacks life steal.",
-				"{@bold Sacrifice.} You take necrotic damage equal to 17% of your maximum hit points, which can't be reduced in any way.",
+				"{@bold Sacrifice.} You lose health equal to 17% of your maximum hit points.",
 				"Target each friendly creature within range. For the duration, a target's weapon attacks deal an additional {@damage 1d6} necrotic damage and a target regains hit points equal to the amount of that necrotic damage dealt.",
 				"{@bold Order.} If another order is applied to you, this order ends.",
 				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast.",
@@ -33525,7 +33525,8 @@
 					"duration": {
 						"type": "minute",
 						"amount": 1
-					}
+					},
+					"concentration": true
 				}
 			],
 			"classes": {
@@ -33542,7 +33543,7 @@
 			},
 			"entries": [
 				"Make your attacks rip the souls out of your foes body, dealing more damage but also hurting you every time you attack.",
-				"For the duration, when you make an attack with a weapon, you take necrotic damage equal to {@dice 1d4}, which can't be reduced in any way. Additionally, your weapon attacks deal an additional {@damage 4d6} damage.",
+				"For the duration, when you make an attack with a weapon, you loose health equal to {@dice 2d4}. Additionally, your weapon attacks deal an additional {@damage 4d6} damage.",
 				"{@bold Elite.} When preparing your spells, you can only prepare one elite spell."
 			],
 			"source": "GuildWars",
@@ -38165,7 +38166,7 @@
 			},
 			"entries": [
 				"Sacrifice your own blood for each undead minion you control, healing them.",
-				"{@bold Sacrifice.} You take necrotic damage equal to 5% + 2% per undead minion chosen by you, of your maximum hit points, which can't be reduced in any way. ",
+				"{@bold Sacrifice.} You lose health equal to 5% + 2% per undead minion chosen by you, of your maximum hit points.",
 				"Choose any number of friendly undead creatures that you can see. Each target regains hit points equal to {@dice 2d4} + your spellcasting ability modifier."
 			],
 			"source": "GuildWars",
@@ -38733,6 +38734,243 @@
 				}
 			],
 			"uniqueId": "54dd87f0-23ed-4930-a0cc-9ce11c5af8be"
+		},
+		{
+			"name": "Blood Ritual",
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 3
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Sacrifice some of your own blood to fuel another creature's spells.",
+				"{@bold Sacrifice.} You lose health equal to 17% of your maximum hit points.",
+				"You touch a creature, other than yourself. For the duration, when the creature would expend a spell slot to cast a spell of 1st level, roll a {@dice d20}. On a 17 or higher, the spell does not expend a spell slot.",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Blood Ritual",
+					"Enchantment Spell. For 8...13...14 seconds, target touched ally gains +3 Energy regeneration. Blood Ritual cannot be used on the caster. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/8/83/Blood_Ritual.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Adept of the Black Robes",
+					"source": "DSotDQ"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Blood Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "a small knife"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the duration increases by 1 round for each slot level above 2nd."
+					]
+				}
+			],
+			"uniqueId": "9b89a818-02f5-4107-8927-0d0ed495516f"
+		},
+		{
+			"name": "Cry of Frustration",
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you see a creature within range cast a spell or using an ability"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Unleash a psychic scream, disrupting a group of creatures.",
+				"Choose one creature, which is casting a spell or using an ability, that you can see within range. Target each creature other than you in a 15-foot-radius centered on the target.  Each target must make a Charisma saving throw. On a failed save, If the creature is casting a spell of 3rd level or lower or using an ability, the spell/ability fails and has no effect. Otherwise, on a failed save, a target can't cast a spell or use an ability on their next turn."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Cry of Frustration",
+					"Spell. If target foe is using a skill, that foe and all foes in the area are interrupted and suffer 15...63...75 damage."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/e/e7/Cry_of_Frustration.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"v": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used - 1."
+					]
+				}
+			],
+			"uniqueId": "7602977e-e2b1-410a-abd6-18395ad4488d",
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Domination Magic",
+					"source": "GuildWars"
+				}
+			]
 		}
 	],
 	"table": [
@@ -51385,6 +51623,416 @@
 			"damageTags": [
 				"P",
 				"S"
+			]
+		},
+		{
+			"name": "Frostfire Dryder Necromancer Boss",
+			"source": "GuildWars",
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d10 + 32",
+				"average": 120
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 14,
+			"int": 20,
+			"wis": 8,
+			"cha": 6,
+			"skill": {
+				"perception": "+2",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 12,
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Demoinc Ancestry",
+					"entries": [
+						"The Dryder has advantage on saving throws against being {@condition frightened}, and magic can't put the Dryder to sleep."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The Dryder can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the Dryder has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The Dryder ignores movement restrictions caused by webbing."
+					]
+				},
+				{
+					"name": "Legendary Resistance (1/Day)",
+					"entries": [
+						"If the frostfire dryder necromancer boss fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Dryder makes two attacks: two with its bite, it can forgo one of these attacks to cast a spell."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one creature. {@h}9 ({@damage 2d4 + 4}) piercing damage plus 13 ({@damage 3d8}) necrotic damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Legendary Resistances",
+				"Spider Climb",
+				"Sunlight Sensitivity",
+				"Web Walker"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"save": {
+				"int": "+8",
+				"dex": "+7"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Frostfire Dryder Necromancer Boss is a 10th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 16}, +8 to hit with spell attacks). The Frostfire Dryder Necromancer Boss has the following Necromancer (GW) spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell defile flesh|GuildWars}",
+								"{@spell faintheartedness|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell shadow strike|GuildWars}",
+								"{@spell soul leech|GuildWars}",
+								"{@spell suffering|GuildWars}",
+								"{@spell vampire touch|GuildWars}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"environment": [
+				"mountain"
+			],
+			"fluff": {
+				"entries": [
+					"Frostfire Dryder is a Dryder boss that appears in Iron Horse Mine."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Silver_Dryder_Necromancer_Boss.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "74c39dd4-590d-45c4-8f8d-1044ad028edf",
+			"legendaryActions": 1,
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The Frostfire Dryder Necromancer Boss moves up to its speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Spellcasting",
+					"entries": [
+						"The Frostfire Dryder Necromancer Boss uses Spellcasting."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"The Frostfire Dryder Necromancer Boss attacks using one of it attacks."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Silver_Dryder_Necromancer_Boss_Token.png"
+			},
+			"damageTags": [
+				"N",
+				"P"
+			]
+		},
+		{
+			"name": "Ice Golem Boss (Northern Shiverpeaks)",
+			"source": "GuildWars",
+			"size": [
+				"L"
+			],
+			"type": "elemental",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"from": [
+						"natural armor"
+					],
+					"ac": 15
+				}
+			],
+			"hp": {
+				"formula": "14d10 + 14",
+				"average": 91
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 8,
+			"con": 12,
+			"int": 6,
+			"wis": 6,
+			"cha": 20,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"vulnerable": [
+				"fire"
+			],
+			"languages": [
+				"Aquan"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Ice Walk",
+					"entries": [
+						"The ice elemental can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra movement."
+					]
+				},
+				{
+					"name": "Splinter",
+					"entries": [
+						"A creature that hits the ice elemental with a melee weapon attack that deals bludgeoning damage while within 5 feet of the elemental takes 14 ({@damage 4d6}) piercing damage as shards of ice fly out from the elemental's body."
+					]
+				},
+				{
+					"name": "Legendary Resistance (1/Day)",
+					"entries": [
+						"If the ice golem boss fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Ice Golem makes two attacks: two with its Ice Claw, it can forgo one of these attacks to cast a spell."
+					]
+				},
+				{
+					"name": "Ice Claw",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}27 ({@damage 5d8 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Encase in Ice",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one creature. {@h}21 ({@damage 6d6}) cold damage, and the target must make a {@dc 14} Constitution saving throw. On a failure, ice begins to form around the creature, and it is {@condition restrained}. The {@condition restrained} creature must repeat the saving throw at the end of its next turn, becoming {@condition petrified} in ice on a failure or ending the effect on a success. The petrification lasts until the creature spends at least 1 hour in a warm environment. Alternatively, a creature can be freed of the {@condition restrained} or {@condition petrified} conditions if it takes at least 10 fire damage."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AQ"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Ice Golem Boss is a 10th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 16}, +8 to hit with spell attacks). The Ice Golem Boss has the following Elementalist (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Ice Golem casts these spells on itself before combat."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell aura of restoration|GuildWars}*",
+								"{@spell water attunement|GuildWars}*",
+								"{@spell water trident|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell frozen burst|GuildWars}",
+								"{@spell ice spikes|GuildWars}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"fluff": {
+				"entries": [
+					"The Judge is an Elemental boss that appears in Traveler's Vale and Thunderhead Keep."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ice_Elemental_Elementalist_Boss.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "d34a7776-f21f-4e7a-a347-c9b0238bda6c",
+			"save": {
+				"cha": "+8"
+			},
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"legendaryActions": 1,
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The Ice Golem Boss moves up to its speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Spellcasting",
+					"entries": [
+						"The Ice Golem Boss uses Spellcasting."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"The Ice Golem Boss attacks using one of it attacks."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ice_Elemental_Elementalist_Boss_Token.png"
+			},
+			"damageTags": [
+				"C",
+				"F",
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"constitution"
 			]
 		}
 	],

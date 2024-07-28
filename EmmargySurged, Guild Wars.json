@@ -102,7 +102,7 @@
 			"entries": [
 				"Activate the ancient Keystone Signet, recharging most of your signets and giving them extra power.",
 				"You regain all expended uses of your signets which require you to finish a short rest, except {@spell Keystone Signet|GuildWars}.",
-				"For the duration, when you target a hostile creature with a signet, target each creature other than the target in a 10-foot-radius sphere centered on the target. Each target must make a Charisma saving throw. On a failed save, a target takes {@dice 2d12} psychic damage and can't cast a spell or use an ability on their next turn. After this spell triggers {@dice 1d4 + 1} times, this spell ends.",
+				"For the duration, when you target a hostile creature with a signet, target each creature other than the target in a 10-foot-radius sphere centered on the target. Each target must make a Charisma saving throw. On a failed save, a target takes {@dice 2d12} psychic damage and can't cast spells or use abilities until the end of their next turn. After this spell triggers {@dice 1d4 + 1} times, this spell ends.",
 				"{@bold Signet.} Casting this spell does not cost a spell slot. Once you cast this spell, you cannot do so again until you finish a short or long rest.",
 				"{@bold Elite.} When preparing your spells, you can only prepare one elite spell."
 			],
@@ -17296,7 +17296,7 @@
 				"Choose one creature that you can see within range. The target must make a Dexterity saving throw. On a failed save, the target takes {@damage 3d8} lightning damage. On a successful save, the target takes half as much damage.",
 				"{@bold Armor Penetration.} This spell's lightning damage cannot be reduced in any way, except by immunities.",
 				"{@bold While Overcast.} You can make this spell a hex to repeat the effect next turn as a bonus action.",
-				"{@bold Hex.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast. Additionally, you cannot choose to end {@status concentration} on this spell."
+				"{@bold Hex.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast. "
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -24764,7 +24764,7 @@
 			},
 			"entries": [
 				"Quickly swipe at your foes, potentially disrupting their spell or ability.",
-				"Choose one creature, which is casting a spell or using an ability, that you can see within range of your weapon. Target each creature other than you in a 5-foot-radius centered on the target. Make a melee weapon attack against each target. On a hit, a target must make a Constitution saving throw. On a failed save, if a target is casting a spell or using an ability, the ability/spell fails and has no effect. Otherwise, on a failed save, a target can't cast a spell or use an ability on their next turn."
+				"Choose one creature, which is casting a spell or using an ability, that you can see within range of your weapon. Target each creature other than you in a 5-foot-radius centered on the target. Make a melee weapon attack against each target. On a hit, a target must make a Constitution saving throw. On a failed save, if a target is casting a spell or using an ability, the ability/spell fails and has no effect. Otherwise, on a failed save, a target can't cast spells or use abilities until the end of their next turn."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -32475,7 +32475,7 @@
 			},
 			"entries": [
 				"Channel the ancient fighting style of the dwarfs, gaining an additional attack, taking less damage and disrupting foes with your attack as long as you are using a heavy weapon.",
-				"For the duration, if you are wielding a melee weapon with the heavy property, you can attack one additional time when you take the attack action on your turn, when you take damage, you can roll {@dice 4d4} and subtract the number rolled from the damage, and when you hit a target a melee weapon attack, the target must make a Constitution saving throw. On a failed save, the target can't cast a spell or use an ability on their next turn.",
+				"For the duration, if you are wielding a melee weapon with the heavy property, you can attack one additional time when you take the attack action on your turn, when you take damage, you can roll {@dice 4d4} and subtract the number rolled from the damage, and when you hit a target a melee weapon attack, the target must make a Constitution saving throw. On a failed save, the target can't cast spells or use abilities until the end of their next turn.",
 				"{@bold Stance.} If you enter a new stance, this stance ends.",
 				"{@bold Elite.} When preparing your spells, you can only prepare one elite spell."
 			],
@@ -38926,7 +38926,7 @@
 			},
 			"entries": [
 				"Unleash a psychic scream, disrupting a group of creatures.",
-				"Choose one creature, which is casting a spell or using an ability, that you can see within range. Target each creature other than you in a 15-foot-radius centered on the target.  Each target must make a Charisma saving throw. On a failed save, If the creature is casting a spell of 3rd level or lower or using an ability, the spell/ability fails and has no effect. Otherwise, on a failed save, a target can't cast a spell or use an ability on their next turn."
+				"Choose one creature, which is casting a spell or using an ability, that you can see within range. Target each creature other than you in a 15-foot-radius centered on the target.  Each target must make a Charisma saving throw. On a failed save, If the creature is casting a spell of 3rd level or lower or using an ability, the spell/ability fails and has no effect. Otherwise, on a failed save, a target can't cast spells or use abilities until the end of their next turn."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -38970,6 +38970,745 @@
 					"name": "Domination Magic",
 					"source": "GuildWars"
 				}
+			]
+		},
+		{
+			"uniqueId": "dc522979-2fe6-4e09-aa49-ea5f160755e1",
+			"name": "Dark Aura",
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Surround a creature with an ominous aura, which lashes out at creatures around it as they sacrifice health, fueled by your blood.",
+				"Choose one friendly creature that you can see within range. For the duration, when the target loses health as part of their own spell effect, except by taking damage, target each creature other than the target in a 10-foot-radius sphere centered on the target. Each new target takes {@damage 4d6} necrotic damage, and you lose health equal to {@dice 1d6}, which cannot trigger Dark Aura.",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Dark Aura",
+					"Enchantment Spell. For 30 seconds, whenever target ally sacrifices Health, Dark Aura deals 5...41...50 shadow damage to adjacent foes, and you lose 5...17...20 Health."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/e/ee/Dark_Aura.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Death Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d6} for each slot level above 4th and the health loss increases by {@dice 1d6} for every two slot levels above 4th."
+					]
+				}
+			]
+		},
+		{
+			"uniqueId": "d5dd6b44-e2da-452b-b32c-6da940827cdd",
+			"name": "Armor of Frost",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Conjure up a suit of frost armor around you, encasing you in protective ice that also improves your water magic.",
+				"For the duration, when you cast a water themed spell of 1st level or higher, you can cast that spell by using a spell slot which is one level higher than the one used in the casting. Additionally, when you take bludgeoning, piercing or slashing damage, you can roll {@dice 2d4} and subtract the number rolled from the damage.",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast. "
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Armor of Frost",
+					"Enchantment Spell. For 10...29...34 seconds, you gain +40 armor against physical damage and have +1 Water Magic."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/2/29/Armor_of_Frost.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Water Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the number subtracted increases by {@dice 1d4} for each slot level above 3rd."
+					]
+				}
+			]
+		},
+		{
+			"name": "Maelstrom",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Conjure a maelstrom, which crushes and disrupts everything trapped inside its maw.",
+				"Choose a point that you can see within range. For the duration, each creature in a 10-foot-radius, 10-foot-high cylinder centered on that point must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 6d6} cold damage and  can't cast spells on their next turn. On a successful save, a target takes half as much damage.",
+				"{@bold Overcast.} You become {@condition overcast|GuildWars} for 5 rounds."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Maelstrom",
+					"Spell. Create a Maelstrom at target foe's location. For 10 seconds, foes adjacent to that area are struck for 10...22...25 cold damage each second. Maelstrom interrupts spell-casting when it hits."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/d/dd/Maelstrom.jpg"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"bludgeoning",
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d6} for each slot level above 4th."
+					]
+				}
+			],
+			"uniqueId": "c56d45b6-70ea-4a76-8c3d-ae0283eeedce",
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Water Magic",
+					"source": "GuildWars"
+				}
+			]
+		},
+		{
+			"name": "Spirit of Failure",
+			"level": 3,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Create an illusion in a creature's mind, instilling them with an intense feeling of failure, making them more likely to miss with attacks and improving your initiative every time they do so.",
+				"Choose one creature that you can see within range. The target must make a Charisma saving throw. On a failed save for the duration when the target makes an attack roll with a weapon, they must roll a {@dice d20}. On a 5 or lower, the attack misses. Additionally, if the target misses with a weapon attack, your next initiative roll gets increased by {@dice 1d4}.",
+				"{@bold Hex.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Spirit of Failure",
+					"Hex Spell. For 30 seconds, target foe has a 25% chance to miss with attacks. You gain 1...3...3 Energy whenever that foe fails to hit in combat."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/b/ba/Spirit_of_Failure.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd."
+					]
+				}
+			],
+			"uniqueId": "037639ea-4158-4465-b591-6bbd7e81a704",
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Inspiration Magic",
+					"source": "GuildWars"
+				}
+			]
+		},
+		{
+			"uniqueId": "5a9418fe-c5cf-41d1-b282-eab5749fdf08",
+			"name": "Illusion of Weakness",
+			"level": 2,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"trigger"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Create an illusion of {@condition weakness|GuildWars}, tricking your opponents into thinking you are weaker than you appear.",
+				"{@bold Sacrifice.} You can choose to lose up to a maximum of 20 hit points.",
+				"For the duration, if you are below 25% of your maximum hit points, this spell ends.",
+				"When this spell ends, you regain hit points equal to the health lost.",
+				"If you drop to 0 hit points, this spell ends without healing you.",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast. Additionally, you cannot choose to end {@status concentration} on this spell."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Illusion of Weakness",
+					"Enchantment Spell. You lose 50...202...240 Health. Illusion of Weakness ends if damage drops your Health below 25% of your maximum. When Illusion of Weakness ends, you gain 50...202...240 Health."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/1/1a/Illusion_of_Weakness.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Adept of the Red Robes",
+					"source": "DSotDQ"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Illusion Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the maximum increases by 10 for each slot level above 2nd."
+					]
+				}
+			]
+		},
+		{
+			"uniqueId": "b079891f-c0bd-4736-a9c9-11eb3b693afb",
+			"name": "Enfeeble",
+			"level": 0,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Utter an enfeebling curse, {@condition weakness|GuildWars|weakening} a creature.",
+				"Choose one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target is {@condition weakness|GuildWars|weakened} for the duration.",
+				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends.",
+				"The amount of targets you can target with this spell increases by 1 when you reach 5th level (2), 11th level (3), and 17th level (4)."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Enfeeble",
+					"Spell. Target suffers from Weakness for 10...26...30 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/2/28/Enfeeble.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"v": true
+			},
+			"conditionInflict": [
+				"weakness|guildwars|weakened"
 			]
 		}
 	],
@@ -52033,6 +52772,871 @@
 			],
 			"savingThrowForced": [
 				"constitution"
+			]
+		},
+		{
+			"name": "Ice Imp",
+			"source": "GuildWars",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "8d6 + 24",
+				"average": 52
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 40
+			},
+			"str": 6,
+			"dex": 20,
+			"con": 16,
+			"int": 20,
+			"wis": 12,
+			"cha": 14,
+			"skill": {
+				"deception": "+4",
+				"insight": "+3",
+				"persuasion": "+4",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"cold"
+			],
+			"languages": [
+				"Infernal",
+				"Common"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The imp can use its action to polymorph into a beast form that resembles a rat (speed 20 ft.), a raven (20 ft., fly 60 ft.), or a spider (20 ft., climb 20 ft.), or back into its true form. Its statistics are the same in each form, except for the speed changes noted. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				},
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"Magical darkness doesn't impede the imp's darkvision."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The imp has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Sting (Bite in Beast Form)",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}12 ({@damage 3d4 + 5}) piercing damage, and the target must make a {@dc 12} Constitution saving throw, taking 24 ({@damage 7d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"The imp magically turns {@condition invisible} until it attacks, or until its {@status concentration} ends (as if {@status concentration||concentrating} on a spell). Any equipment the imp wears or carries is {@condition invisible} with it."
+					]
+				}
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Magic Resistance",
+				"Shapechanger"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"I",
+				"C"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"invisible"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Ice Imps are water elementalists found in Shiverpeak Mountains."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ice_Imp.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "582e458f-af42-4c7c-bdba-210e6bc45df0",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Ice Imp is a 7th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 15}, +7 to hit with spell attacks). The Ice Imp has the following Elementalist (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Ice Imp casts these spells on itself before combat."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell aura of restoration|GuildWars}*",
+								"{@spell ice spear|GuildWars}",
+								"{@spell mind freeze|GuildWars}",
+								"{@spell water attunement|GuildWars}*"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell maelstrom|GuildWars}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ice_Imp_Token.png"
+			},
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"damageTagsSpell": [
+				"B",
+				"F"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Ice Imp Elementalist Boss",
+			"source": "GuildWars",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d6 + 40",
+				"average": 75
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 40
+			},
+			"str": 6,
+			"dex": 20,
+			"con": 18,
+			"int": 22,
+			"wis": 12,
+			"cha": 14,
+			"skill": {
+				"deception": "+5",
+				"insight": "+4",
+				"persuasion": "+5",
+				"stealth": "+8"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"cold"
+			],
+			"languages": [
+				"Infernal",
+				"Common"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The imp can use its action to polymorph into a beast form that resembles a rat (speed 20 ft.), a raven (20 ft., fly 60 ft.), or a spider (20 ft., climb 20 ft.), or back into its true form. Its statistics are the same in each form, except for the speed changes noted. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				},
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"Magical darkness doesn't impede the imp's darkvision."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The imp has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Legendary Resistance (1/Day)",
+					"entries": [
+						"If the ice imp boss fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Ice Imp Boss makes two attacks: two with its sting, it can forgo one of these attacks to cast a spell or use Invisibility."
+					]
+				},
+				{
+					"name": "Sting (Bite in Beast Form)",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}17 ({@damage 5d4 + 5}) piercing damage, and the target must make a {@dc 13} Constitution saving throw, taking 38 ({@damage 11d6}) cold damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"The imp magically turns {@condition invisible} until it attacks, or until its {@status concentration} ends (as if {@status concentration||concentrating} on a spell). Any equipment the imp wears or carries is {@condition invisible} with it."
+					]
+				}
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Shapechanger"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"I",
+				"C"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"invisible"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Maak Frostfriend is an Ice Imp boss in the Shiverpeaks. ",
+					"Skitt Skizzle is an Ice Imp boss that appears in the Ice Floe. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ice_Imp_Elementalist_Boss.jpg"
+						}
+					}
+				]
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Ice Imp Boss is a 10th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 17}, +9 to hit with spell attacks). The Ice Imp Boss has the following Elementalist (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Ice Imp Boss casts these spells on itself before combat."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell aura of restoration|GuildWars}*",
+								"{@spell ice spear|GuildWars}",
+								"{@spell mind freeze|GuildWars}",
+								"{@spell water attunement|GuildWars}*"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell maelstrom|GuildWars}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"uniqueId": "b88016d9-8ed8-4aee-83a9-e7df9d8757d9",
+			"legendaryActions": 1,
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The Ice Imp Boss moves up to its speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Spellcasting",
+					"entries": [
+						"The Ice Imp Boss uses Spellcasting."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"The Ice Imp Boss attacks using one of it attacks."
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"The Ice Imp Boss uses Invisibility."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ice_Imp_Token_Elementalist_Boss.png"
+			},
+			"damageTags": [
+				"C",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Ice Imp Mesmer Boss",
+			"source": "GuildWars",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d6 + 40",
+				"average": 75
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 40
+			},
+			"str": 6,
+			"dex": 20,
+			"con": 18,
+			"int": 14,
+			"wis": 12,
+			"cha": 22,
+			"skill": {
+				"insight": "+4",
+				"persuasion": "+9",
+				"stealth": "+8",
+				"deception": "+9"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"cold"
+			],
+			"languages": [
+				"Infernal",
+				"Common"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The imp can use its action to polymorph into a beast form that resembles a rat (speed 20 ft.), a raven (20 ft., fly 60 ft.), or a spider (20 ft., climb 20 ft.), or back into its true form. Its statistics are the same in each form, except for the speed changes noted. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				},
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"Magical darkness doesn't impede the imp's darkvision."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The imp has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Legendary Resistance (1/Day)",
+					"entries": [
+						"If the ice imp boss fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Ice Imp Boss makes two attacks: two with its sting, it can forgo one of these attacks to cast a spell or use Invisibility."
+					]
+				},
+				{
+					"name": "Sting (Bite in Beast Form)",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}17 ({@damage 5d4 + 5}) piercing damage, and the target must make a {@dc 13} Intelligence saving throw, taking 38 ({@damage 11d6}) psychic damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"The imp magically turns {@condition invisible} until it attacks, or until its {@status concentration} ends (as if {@status concentration||concentrating} on a spell). Any equipment the imp wears or carries is {@condition invisible} with it."
+					]
+				}
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Shapechanger"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"I",
+				"C"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"invisible"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Gambol Headrainer is an Ice Imp boss that appears in the Ice Floe.",
+					"Sniik Hungrymind is an Ice Imp boss that can be found in the Southern Shiverpeaks."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ice_Imp_Mesmer_Boss.jpg"
+						}
+					}
+				]
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Ice Imp Boss is a 10th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 17}, +9 to hit with spell attacks). The Ice Imp Boss has the following Mesmer (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Ice Imp Boss casts these spells on itself before combat."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell ether feast|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell diversion|GuildWars}",
+								"{@spell energy burn|GuildWars}",
+								"{@spell energy drain|GuildWars}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell spirit of failure|GuildWars}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"legendaryActions": 1,
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The Ice Imp Boss moves up to its speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Spellcasting",
+					"entries": [
+						"The Ice Imp Boss uses Spellcasting."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"The Ice Imp Boss attacks using one of it attacks."
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"The Ice Imp Boss uses Invisibility."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"uniqueId": "89bbb986-0569-46d2-9b3c-824aab4bab92",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ice_Imp_Token_Mesmer_Boss.png"
+			},
+			"damageTags": [
+				"P",
+				"Y"
+			],
+			"savingThrowForced": [
+				"intelligence"
+			]
+		},
+		{
+			"name": "Stone Summit Beastmaster Warrior Boss",
+			"source": "GuildWars",
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"{@item +1 plate armor|dmg}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d10 + 60",
+				"average": 126
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 24,
+			"dex": 8,
+			"con": 20,
+			"int": 6,
+			"wis": 6,
+			"cha": 6,
+			"passive": 8,
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Dwarven Resilience",
+					"entries": [
+						"They have advantage on saving throws against poison, and they have resistance to poison damage."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The stone summit beastmaster deals double damage to objects and structures."
+					]
+				},
+				{
+					"name": "Mount and Rider",
+					"entries": [
+						"The Stone Summit Beastmaster is a combination of a mount and a rider, while mounted they share all statistics. If the rider is forced to dismount, treat them as a commoner and the mount acts according to its alignment."
+					]
+				},
+				{
+					"name": "Legendary Resistance (2/Day)",
+					"entries": [
+						"If the stone summit beastmaster boss fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Ore Darkwhip is a warrior dwarf boss in Iron Horse Mine that you need to kill in order to obtain War Machine Plans to complete the quest Minaar's Worry."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Stone_Summit_Giant_Rider_Warrior_Boss.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Dwarvish"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"skill": {
+				"athletics": "+10",
+				"religion": "+1"
+			},
+			"reaction": [
+				{
+					"name": "Invoke the Great Destroyer",
+					"entries": [
+						"Once per day, if the stone summit dwarf fails a saving throw, it can choose to cast {@spell Hellish Rebuke} at 3rd level using this ability."
+					]
+				}
+			],
+			"save": {
+				"str": "+10",
+				"con": "+8"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Siege Monster"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Stone Summit Beastmaster makes two attacks: one with its stomp and one with its swipe, it can forgo one of these attacks to cast a spell or use its giant stomp."
+					]
+				},
+				{
+					"name": "Stomp",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}29 ({@damage 4d10 + 7}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Swipe",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}28 ({@damage 6d6 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Giant Stomp {@recharge}",
+					"entries": [
+						"Target each creature other than you within 150-feet of you. Each target must make a Strength saving throw ({@dc 18}). On a failed save, a target takes {@damage 2d6} bludgeoning damage and is knocked {@condition prone}."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"conditionImmune": [
+				"stunned"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Stone Summit Beastmaster Boss is a 10th-level spellcaster. Its spellcasting ability is Strength (spell save {@dc 18}, +10 to hit with spell attacks). The Stone Summit Beastmaster Boss has the following Warrior (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Stone Summit Beastmaster casts these spells on itself before combat."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell \"for great justice!\"|GuildWars}*",
+								"{@spell bull's strike|GuildWars}",
+								"{@spell devastating bash|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell dolyak signet|GuildWars}",
+								"{@spell healing signet|GuildWars}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "str",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"uniqueId": "512b77db-47ad-40b1-b585-ec5908f3874e",
+			"legendaryActions": 2,
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The Stone Summit Beastmaster Boss moves up to its speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"The Stone Summit Beastmaster Boss attacks using one of it attacks."
+					]
+				},
+				{
+					"name": "Spellcasting",
+					"entries": [
+						"The Stone Summit Beastmaster Boss uses Spellcasting."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Stone_Summit_Giant_Rider_Warrior_BossToken.png"
+			},
+			"damageTags": [
+				"B",
+				"S"
 			]
 		}
 	],

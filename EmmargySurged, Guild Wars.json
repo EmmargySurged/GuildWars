@@ -3122,7 +3122,7 @@
 				"type": "point",
 				"distance": {
 					"type": "feet",
-					"amount": 30
+					"amount": 90
 				}
 			},
 			"duration": [
@@ -3202,7 +3202,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, use the higher level wherever the spell's level appears in the stat block."
+						"When you cast this spell using a spell slot of 2nd level or higher, use the higher level wherever the spell's level appears in the stat block. When you cast this spell using a spell slot of 3rd or 4th level, the duration increases to 8 hours. When you use a spell slot of 5th level or higher, the duration increases to 24 hours."
 					]
 				}
 			],
@@ -8762,8 +8762,7 @@
 			"entries": [
 				"Encase yourself in a shielding armor of earth, improving your defense at the cost of your agility.",
 				"For the duration, your speed is reduced by 50%, and when you take damage, you can roll {@dice 2d4} and subtract the number rolled from the damage.",
-				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast.",
-				"Amity"
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -27381,7 +27380,7 @@
 			},
 			"entries": [
 				"Don the necrotic aura of a powerful lich, creating {@creature Bone Horror|GuildWars|Bone Horrors} from all corpses in range and increasing the potency of your death magic spells.",
-				"Target each dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, within range. Exploit a target, turning them into a {@creature Bone Horror|GuildWars}. Then create an additional {@creature Bone Horror|GuildWars}.",
+				"Target each non-undead dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, within range. Exploit each target, turning them into a {@creature Bone Horror|GuildWars}. Then create an additional {@creature Bone Horror|GuildWars} at your location.",
 				"A {@creature Bone Horror|GuildWars} remains for the duration or until it reaches zero hit points, at which point it will disintegrate into ash.",
 				"A {@creature Bone Horror|GuildWars} is friendly to you and your allies while you are conscious. If you fall {@condition unconscious}, a {@creature Bone Horror|GuildWars} becomes hostile towards everything. A {@creature Bone Horror|GuildWars} acts on your initiative, but takes it turn directly after yours. A {@creature Bone Horror|GuildWars} is in the DMs control.",
 				"For the duration, when you cast a death themed spell of 1st level or higher, you can cast that spell by using a spell slot which is one level higher than the one used in the casting.",
@@ -27431,7 +27430,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 7th or 8th level, you can maintain your {@status concentration} on the spell for up to 8 hours. When you use a spell slot of 9th level, you can maintain your {@status concentration} on the spell for up to 24 hours."
+						"When you cast this spell using a spell slot of 7th or 8th level, the duration increases to 8 hours. When you use a spell slot of 9th level, the duration increases to 24 hours."
 					]
 				}
 			],
@@ -39710,6 +39709,724 @@
 			"conditionInflict": [
 				"weakness|guildwars|weakened"
 			]
+		},
+		{
+			"name": "Leech Signet",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you see a creature within range cast a spell or using an ability"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"You attempt to interrupt a creature in the process of casting a spell or using an ability, and drain their energy on successfully interrupting a spell. ",
+				"Choose one creature, which is casting a spell or using an ability, that you can see within range. If the creature is casting a spell of 3rd level or lower or using an ability, the spell/ability fails and has no effect.",
+				"If you successfully interrupt a spell this way, your next initiative roll gets increased by {@dice 2d4}.",
+				"{@bold Signet.} Casting this spell does not cost a spell slot. Once you cast this spell, you cannot do so again until you finish a short or long rest."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Leech Signet",
+					"Signet. Interrupt target foe's action. If that action was a spell, you gain 3...13...15 Energy."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/5/53/Leech_Signet.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Inspiration Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"uniqueId": "791c551b-0062-42fd-a2db-b1754689550f"
+		},
+		{
+			"name": "Holy Wrath",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "TCE"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Give a creature a blessing of divine retribution, reflecting back attack damage on any who dare attack them.",
+				"Choose one friendly creature that you can see within range. For the duration, when the target takes damage from a weapon attack, target the creature that dealt the damage. The new target must make a Wisdom saving throw. On a failed save, the new target takes 66% of the damage they dealt as radiant damage (minimum 1, maximum 20). On a successful save, the new target takes half as much damage.",
+				"After this spell triggers {@dice 1d4} times on the target, this spell ends.",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
+			],
+			"source": "GuildWars",
+			"components": {
+				"v": true
+			},
+			"damageInflict": [
+				"radiant"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"miscTags": [
+				"SGT",
+				"UBA"
+			],
+			"fluff": {
+				"entries": [
+					"Holy Wrath",
+					"Enchantment Spell. For 10...26...30 seconds, the next 1...8...10 time[s] target other ally takes attack damage, this spell deals 66% of the damage back to the source (maximum of 5...41...50 damage)."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/6/65/Holy_Wrath.jpg"
+						}
+					}
+				]
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage maximum increases by 10 for each slot level above 2nd and the amount of time this spell can trigger increases by {@dice 1d4} for each slot level above 2nd."
+					]
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Monk",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Smiting Prayers",
+					"source": "GuildWars"
+				}
+			],
+			"uniqueId": "819b9934-4fc1-4b89-a10f-d4d659a18302"
+		},
+		{
+			"name": "Malign Intervention",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Put a curse of undeath on a creature, reducing their healing and animating them as a masterless {@creature Bone Horror|GuildWars} if they die.",
+				"Choose one non-undead creature that you can see within range. The target must make a Constitution saving throw. On a failed save, for the duration, when the target regains hit points, they regain 20% less hit points.",
+				"If the target dies, a {@creature Bone Horror|GuildWars} is created at the target's location. The {@creature Bone Horror|GuildWars} acts on the target's initiative, is hostile towards everything, and is in the DMs control.",
+				"The {@creature Bone Horror|GuildWars} remains for the duration or until it reaches zero hit points, at which point it will disintegrate into ash.",
+				"{@bold Hex.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Malign Intervention",
+					"Hex Spell. For 5...17...20 seconds, target foe receives 20% less benefit from healing. If target foe dies while hexed with Malign Intervention, a level 1...14...17 masterless bone horror is summoned."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/6/66/Malign_Intervention.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Divinely Favored",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Shadow Touched",
+					"source": "TCE"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Death Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st and use the higher level wherever the spell's level appears in the stat block."
+					]
+				}
+			],
+			"uniqueId": "6c062950-58ad-49aa-847f-79a933ebdfb6"
+		},
+		{
+			"name": "Determined Shot",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Fire a shot, determined to hit, allowing you to immediately cast a spell if you miss.",
+				"Choose one creature that you can see within range of your weapon. Make a ranged weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 2d8} damage.",
+				"On a miss, you can immediately cast another spell without requiring an action."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Determined Shot",
+					"Bow Attack. If Determined Shot hits, you strike for +5...17...20 damage. If Determined Shot fails to hit, all of your attack skills are recharged."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/b/bd/Determined_Shot.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"s": true,
+				"m": "a ranged weapon worth at least 1 sp"
+			},
+			"feats": [
+				{
+					"name": "Artificer Initiate",
+					"source": "TCE"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Marksmanship",
+					"source": "GuildWars"
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
+					]
+				}
+			],
+			"uniqueId": "807186e5-0dd6-4510-b0f9-048d060e84a8"
+		},
+		{
+			"name": "Armor of Mist",
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Encase yourself in a shielding armor of mist, improving your defense and agility.",
+				"For the duration, your speed is increased by 33%, and when you take damage, you can roll {@dice 2d4} and subtract the number rolled from the damage.",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Armor of Mist",
+					"Enchantment Spell. For 8...18...20 seconds, you gain +10...34...40 armor and move 33% faster. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/a/ad/Armor_of_Mist.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the number subtracted increases by {@dice 1d4} for each slot level above 4th."
+					]
+				}
+			],
+			"uniqueId": "e9a1780b-08cb-4d8d-9564-b7d054f321dc",
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Water Magic",
+					"source": "GuildWars"
+				}
+			]
+		},
+		{
+			"name": "Inspired Enchantment",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Remove a positive spell on a creature, gain initiative and replace this spell with the removed spell for the duration.",
+				"Choose one hostile creature that you can see within range. The Target must make a Charisma saving throw. On a failed safe, the latest beneficial spell on the target ends. If a beneficial spell was ended this way, your next initiative roll gets increased by {@dice 2d4} and replace this spell with the ended spell for the duration."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Inspired Enchantment",
+					"Spell. Removes an enchantment from target foe and gain 3...13...15 Energy. For 20 seconds, Inspired Enchantment is replaced with the enchantment removed from target foe."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/1/12/Inspired_Enchantment.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Adept of the White Robes",
+					"source": "DSotDQ"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Inspiration Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the increase of initiative increases by {@dice 2d4} for each slot level above 2nd."
+					]
+				}
+			],
+			"uniqueId": "6497841a-cd91-475e-85e6-387945394510"
 		}
 	],
 	"table": [
@@ -53485,7 +54202,8 @@
 			"hasFluffImages": true,
 			"fluff": {
 				"entries": [
-					"Ore Darkwhip is a warrior dwarf boss in Iron Horse Mine that you need to kill in order to obtain War Machine Plans to complete the quest Minaar's Worry."
+					"Ore Darkwhip is a warrior dwarf boss in Iron Horse Mine that you need to kill in order to obtain War Machine Plans to complete the quest Minaar's Worry.",
+					"Thorgrim Beastlasher is the leader of the Stone Summit beastmasters."
 				],
 				"images": [
 					{

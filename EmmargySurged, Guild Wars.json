@@ -13069,7 +13069,7 @@
 			},
 			"entries": [
 				"Feast on the remains of a creature.",
-				"Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range of your weapon. Exploit that target, you regain hit point equal to {@dice 3d6} + your spellcasting ability modifier."
+				"Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, you regain hit point equal to {@dice 3d6} + your spellcasting ability modifier."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -37263,21 +37263,21 @@
 			},
 			"entries": [
 				"Touch a creature with plague infested hands, transferring conditions.",
-				"Choose one creature within range. Make a melee spell attack against the target. On a hit, the target gains a copy of the latest 2 of the following conditions on yourself: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars}, {@condition Charmed}, {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Exhaustion}, {@condition Frightened}, {@condition Poisoned}, {@condition Weakness|GuildWars}. End all copied conditions on yourself.",
+				"Choose one creature within range. Make a melee spell attack against the target. On a hit, the target gains a copy of the latest {@dice 1d4} of the following conditions on yourself: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars}, {@condition Charmed}, {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Exhaustion}, {@condition Frightened}, {@condition Poisoned}, {@condition Weakness|GuildWars}. End all copied conditions on yourself.",
 				"At the end of each of its turns, the target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends."
 			],
 			"source": "GuildWars",
 			"fluff": {
 				"entries": [
-					"Plague Signet",
-					"Elite Signet. Transfer all negative conditions with 100...180...200% of their remaining durations from yourself to target foe. (50% failure chance with Curses 4 or less.) "
+					"Plague Touch",
+					"Skill. Transfer 1...3...3 negative condition[s] and [its/their] remaining duration[s] from yourself to target touched foe."
 				],
 				"images": [
 					{
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://wiki.guildwars.com/images/b/b1/Plague_Signet.jpg"
+							"url": "https://wiki.guildwars.com/images/7/7e/Plague_Touch.jpg"
 						}
 					}
 				]
@@ -37304,7 +37304,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, copy one additional condition for each slot level above 2nd."
+						"When you cast this spell using a spell slot of 3rd level or higher, copy {@dice 1d4} additional conditions for each slot level above 2nd."
 					]
 				}
 			],
@@ -40427,6 +40427,341 @@
 				}
 			],
 			"uniqueId": "6497841a-cd91-475e-85e6-387945394510"
+		},
+		{
+			"uniqueId": "eb8b3f81-05cd-48fc-b405-bcb661c5f5e7",
+			"name": "Essence Bond",
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Create an essence bond between you and a creature, charging up your magical abilities every time the creature takes damage.",
+				"Choose one friendly creature that you can see within range. For the duration, when you would expend a spell slot to cast a spell, roll a {@dice d20}. On a 21 or higher, the spell does not expend a spell slot. When the target takes damage from a non-friendly source, reduce the number you need to roll for the next roll by 2.",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast. ",
+				"{@bold Bond.} For the duration, your spell save DC and spell attack bonus are reduced by 1.  You can have a maximum number of bonds active at any one time, equal to your spell casting ability modifier (minimum 1). The bond ends if the target of your bond is ever not within 300 feet of you, or you fall {@condition unconscious}. You can end a bond at any time (no action required)."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Essence Bond",
+					"Enchantment Spell. While you maintain this enchantment, whenever target ally takes physical or elemental damage, you gain 1 Energy."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/1/1f/Essence_Bond.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Monk",
+					"source": "GuildWars"
+				},
+				{
+					"name": "No Attribute",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd and the reduction to your spell save DC and spell attack bonus increases by 1 for each slot level above 3rd."
+					]
+				}
+			]
+		},
+		{
+			"name": "Plague Sending",
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Sacrifice some life essence to transfer a number of conditions from yourself to a group of creatures.",
+				"{@bold Sacrifice.} You lose health equal to 10% of your maximum hit points.",
+				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, each target gains a copy of the latest {@dice 1d4} of the following conditions on yourself: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars}, {@condition Charmed}, {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Exhaustion}, {@condition Frightened}, {@condition Poisoned}, {@condition Weakness|GuildWars}. End all copied conditions on yourself.",
+				"At the end of each of its turns, a target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Plague Sending",
+					"Spell. Transfer 1...3...3 negative condition[s] and [its/their] remaining duration[s] from yourself to target foe and all adjacent foes."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/1/16/Plague_Sending.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Curses",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, copy {@dice 1d4} additional condition for each slot level above 2nd."
+					]
+				}
+			],
+			"uniqueId": "59936d72-afa2-48b6-bc28-8aee24615824"
+		},
+		{
+			"name": "Healing Spring",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "day",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Prepare a healing spring, which heals creatures which trigger it.",
+				"Conjure a 15-foot radius stationary {@condition invisible} trap at your location for the duration and choose any number of creatures. The next time a chosen creature enters the spell's area, the trap triggers, applying the following effects for 5 rounds: ",
+				"Each chosen creature regains hit points equal to {@dice 2d6} + your spellcasting ability modifier when it enters the spell's area for the first time on a turn or starts its turn there."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Healing Spring",
+					"Trap. For 10 seconds, all adjacent allies are healed for 15...51...60 every 2 seconds. While activating this skill, you are easily interrupted."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/1/12/Healing_Spring.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"s": true,
+				"m": "a drop of spring water"
+			},
+			"feats": [
+				{
+					"name": "Adept of the White Robes",
+					"source": "DSotDQ"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Wilderness Survival",
+					"source": "GuildWars"
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the healing increases by {@dice 1d6} for each slot level above 2nd."
+					]
+				}
+			],
+			"uniqueId": "0b29f9f6-c756-4200-927b-21891ac0565a"
 		}
 	],
 	"table": [

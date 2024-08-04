@@ -23483,7 +23483,7 @@
 			},
 			"entries": [
 				"Utter a foul curse, exploding a corpse into a well of blood, healing allies in its area every turn. ",
-				"Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, for the duration, each friendly creature in a 20-foot-radius centered on that point regains hit points equal to {@dice 2d6} + your spellcasting ability modifier when it enters the spell's area for the first time on a turn or starts its turn there."
+				"Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, for the duration, each friendly creature in a 20-foot-radius centered on that point gains temporary hit points equal to {@dice 2d6} + your spellcasting ability modifier when it enters the spell's area for the first time on a turn or starts its turn there."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -23529,7 +23529,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the healing increases each by {@dice 2d6} for each slot level above 2nd."
+						"When you cast this spell using a spell slot of 3rd level or higher, the temporary hit points increase by {@dice 2d6} for each slot level above 2nd."
 					]
 				}
 			],
@@ -34373,7 +34373,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://wiki.guildwars.com/wiki/File:Over_the_Limit.jpg"
+							"url": "https://wiki.guildwars.com/images/5/5a/Over_the_Limit.jpg"
 						}
 					}
 				]
@@ -34966,7 +34966,7 @@
 			"uniqueId": "845cc62c-ff1e-4ac0-9688-e59507eff6bf"
 		},
 		{
-			"name": "Massive Thunderclap",
+			"name": "Thunderclap of Destruction",
 			"level": 3,
 			"school": "V",
 			"time": [
@@ -39233,7 +39233,7 @@
 			]
 		},
 		{
-			"name": "Maelstrom",
+			"name": "Maelstrom of Disruption",
 			"level": 4,
 			"school": "V",
 			"time": [
@@ -39708,6 +39708,20 @@
 			},
 			"conditionInflict": [
 				"weakness|guildwars|weakened"
+			],
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Curses",
+					"source": "GuildWars"
+				}
 			]
 		},
 		{
@@ -40762,6 +40776,268 @@
 				}
 			],
 			"uniqueId": "0b29f9f6-c756-4200-927b-21891ac0565a"
+		},
+		{
+			"name": "Grasping Earth",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Make the earth around you cling to creatures, slowing them down.",
+				"Target each creature other than you within range. Each target must make a Dexterity saving throw. On a failed save, a target's speed is reduced by 50% for the duration.",
+				"{@bold Hex.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Grasping Earth",
+					"Hex Spell. For 5...17...20 seconds, all nearby foes move 50% slower. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/0/0c/Grasping_Earth.jpg"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Earth Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"uniqueId": "add4872c-779f-40e5-adc5-ee04d1aea21e",
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the radius of the spell increases by 5 feet for each slot level above 2nd."
+					]
+				}
+			]
+		},
+		{
+			"name": "Mantra of Concentration",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 3
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Start chanting a Mantra of Concentration, improving your ability to maintain {@status concentration} on the next spell.",
+				"For the duration, the next time you cast a {@status concentration}, enchantment or hex spell, you cannot be interrupted while casting it, and you have a +5 bonus to Constitution saving throws made to hold {@status concentration} on that spell.",
+				"{@bold Stance.} If you enter a new stance, this stance ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Mantra of Concentration",
+					"Stance. For 1...31...38 seconds, the next time you would be interrupted, you are not interrupted."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/2/2a/Mantra_of_Concentration.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Northeastern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Inspiration Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the duration increases by 2 rounds for each slot level above 1st."
+					]
+				}
+			],
+			"uniqueId": "a408357b-e7f8-44bb-9974-3a359615b9f0"
 		}
 	],
 	"table": [

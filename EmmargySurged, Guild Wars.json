@@ -43229,6 +43229,238 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Aegis",
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 3
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Conjure up a protective aegis around all party members, increasing their AC.",
+				"Choose any number of friendly creatures within range. For the duration, a target has a +5 bonus to AC.",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Aegis",
+					"Enchantment Spell. For 5...10...11 seconds, all party members within earshot have a 50% chance to block attacks."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/b/bf/Aegis.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Monk",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Protection Prayers",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the duration increases by 1 round for each slot level above 4th."
+					]
+				}
+			],
+			"uniqueId": "f247176b-f255-4162-bdb7-c2e126b34999"
+		},
+		{
+			"name": "Arcane Mimicry",
+			"level": 3,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Weave your magic into an exact duplicate of an Elite spell of a friendly creature.",
+				"Choose one friendly creature that you can see within range. For the duration, replace this spell with the elite spell of the target."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Arcane Mimicry",
+					"Spell. For 20 seconds, Arcane Mimicry becomes the non-form elite skill from target other ally."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/d/d4/Arcane_Mimicry.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"uniqueId": "76259eda-7b0b-4dd5-adde-704aff91ea1a",
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "No Attribute",
+					"source": "GuildWars"
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th or 6th level, the duration increases to 8 hours. When you use a spell slot of 7th level or higher, the duration increases to 24 hours."
+					]
+				}
+			]
 		}
 	],
 	"table": [
@@ -49851,7 +50083,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://wiki.guildwars.com/images/4/4d/Justiciar_Hablion.jpg"
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Justiciar_Hablion.jpg"
 						}
 					}
 				]
@@ -49946,11 +50178,15 @@
 				"heavy crossbow|phb",
 				"shortsword|phb"
 			],
+			"uniqueId": "8454fe8e-7a9f-4c9a-86b5-a8f710f75c41",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Justiciar_Hablion_Token.png"
+			},
 			"damageTags": [
 				"P",
 				"S"
-			],
-			"uniqueId": "8454fe8e-7a9f-4c9a-86b5-a8f710f75c41"
+			]
 		},
 		{
 			"name": "Wooden Charr Trebuchet",
@@ -56699,7 +56935,7 @@
 			],
 			"tokenHref": {
 				"type": "external",
-				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ice_Imp_Token_Elementalist_Boss.png"
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ice_Imp_Elementalist_Boss_Token.png"
 			},
 			"damageTags": [
 				"C",
@@ -56930,7 +57166,7 @@
 			"uniqueId": "89bbb986-0569-46d2-9b3c-824aab4bab92",
 			"tokenHref": {
 				"type": "external",
-				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ice_Imp_Token_Mesmer_Boss.png"
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ice_Imp_Mesmer_Boss_Token.png"
 			},
 			"damageTags": [
 				"P",
@@ -57012,7 +57248,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Stone_Summit_Giant_Rider_Warrior_Boss.jpg"
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Stone_Summit_Beastmaster_Warrior_Boss.jpg"
 						}
 					}
 				]
@@ -57152,7 +57388,7 @@
 			],
 			"tokenHref": {
 				"type": "external",
-				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Stone_Summit_Giant_Rider_Warrior_BossToken.png"
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Stone_Summit_Beastmaster_Warrior_Boss_Token.png"
 			},
 			"damageTags": [
 				"B",

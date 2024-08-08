@@ -26229,7 +26229,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, one additional spell ends for each slot level above 1st."
+						"When you cast this spell using a spell slot of 4th level or higher, one additional spell ends for each slot level above 3rd."
 					]
 				}
 			],
@@ -43461,6 +43461,236 @@
 					]
 				}
 			]
+		},
+		{
+			"uniqueId": "76242f08-f9e1-4aa6-ade2-755070767493",
+			"name": "Contemplation of Purity",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Purge yourself of all impurities by stripping yourself of all your beneficial spells.",
+				"End all beneficial spells on yourself. For each beneficial spell ended this way, repeat all the following effects:",
+				"- You regain {@dice 1d4} hit points.",
+				"- The latest harmful spell on yourself ends.",
+				"- End the latest of the following conditions on yourself: {@condition Corruption|GuildWars}, {@condition Disease|GuildWars}, {@condition blinded|phb|Blindness}, {@condition Dazed|GuildWars}, {@condition Bleeding|GuildWars}, {@condition Crippled|GuildWars}, {@condition Burning|GuildWars}, {@condition Weakness|GuildWars}, {@condition Cracked Armor|GuildWars}, or {@condition Deep Wound|GuildWars}.",
+				"You can end a maximum of 2 harmful spells and/or conditions this way."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Contemplation of Purity",
+					"Skill. Lose all enchantments. For each one lost, you gain 0...64...80 Health, lose one hex, and lose one condition (maximum 1...7...8 hexes and conditions)."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/8/81/Contemplation_of_Purity.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Divinely Favored",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Monk",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Divine Favor",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@dice 1d4} for each slot level above 1st and the maximum increases by 2 for each slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"uniqueId": "82fd7ebc-e6fc-408b-ad88-3eadfc5351bc",
+			"name": "Awaken the Blood",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Imbue your blood with necromantic energy, drawing out its true potential.",
+				"For the duration, when you cast a blood or curses themed spell of 1st level or higher, you can cast that spell by using a spell slot which is one level higher than the one used in the casting. Additionally, when you sacrifice health for a spell, you must sacrifice 50% more.",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast. "
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Awaken the Blood",
+					"Enchantment Spell. For 20...39...44 seconds, you gain +2 Blood Magic and +2 Curses, but whenever you sacrifice Health, you sacrifice 50% more than the normal amount."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/e/e4/Awaken_the_Blood.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Blood Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th or 6th level, the duration increases to 8 hours. When you use a spell slot of 7th level or higher, the duration increases to 24 hours."
+					]
+				}
+			]
 		}
 	],
 	"table": [
@@ -57393,6 +57623,175 @@
 			"damageTags": [
 				"B",
 				"S"
+			]
+		},
+		{
+			"source": "GuildWars",
+			"name": "Minaar Stonesledge",
+			"group": [
+				"Dwarf",
+				"Dwarves"
+			],
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dwarf"
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item scale mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 54",
+				"average": 94
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 19,
+			"dex": 14,
+			"con": 22,
+			"int": 15,
+			"wis": 9,
+			"cha": 10,
+			"save": {
+				"dex": "+5",
+				"con": "+9"
+			},
+			"skill": {
+				"arcana": "+5",
+				"intimidation": "+3"
+			},
+			"resist": [
+				"fire",
+				"poison",
+				"thunder"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Dwarvish"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Dwarven Fleet Foot",
+					"entries": [
+						"When Minaar Stonesledge takes fire damage, her speed increases by 10 feet until the end of her next turn. In addition, she has advantage on her next initiative roll."
+					]
+				},
+				{
+					"name": "Siege Expert",
+					"entries": [
+						"Minaar Stonesledge deals double damage to objects and structures."
+					]
+				}
+			],
+			"traitTags": [
+				"Siege Monster"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Minaar Stonesledge makes two Wrecking Maul or Fire Blast attacks."
+					]
+				},
+				{
+					"name": "Wrecking Maul",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}18 ({@damage 4d6 + 4}) bludgeoning damage plus 3 ({@damage 1d6}) fire damage. The target must succeed on a {@dc 15} Strength saving throw or be pushed up to 15 feet away from Minaar Stonesledge and knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Fire Blast",
+					"entries": [
+						"{@atk rs} {@hit 6} to hit, range 60 ft., one target. {@h}20 ({@damage 5d6 + 3}) fire damage."
+					]
+				},
+				{
+					"name": "Combustion Wave {@recharge 5}",
+					"entries": [
+						"Minaar Stonesledge slams her massive hammer into the ground, battering herself and its foes with a fiery shockwave. Each creature within 20 feet of Minaar Stonesledge, including herself, must make a {@dc 15} Constitution saving throw, taking 17 ({@damage 5d6}) fire damage and 17 ({@damage 5d6}) thunder damage on a failed save, or half as much damage on a successful one. Creatures behind cover have advantage on the saving throw."
+					]
+				},
+				{
+					"name": "Thunder Bomb",
+					"entries": [
+						"Minaar Stonesledge lights a grapefruit-sized bomb and throws it at a point up to 60 feet away, where it explodes. Each creature within a 10-foot-radius sphere centered on that point must make a {@dc 15} Dexterity saving throw, taking 18 ({@damage 4d8}) thunder damage on a failed save, or half as much damage on a successful one. After Minaar Stonesledge throws the bomb, roll a {@dice d6}; on a roll of 4 or lower, Minaar Stonesledge has no more bombs to throw."
+					]
+				},
+				{
+					"name": "Thunder Bomb (Enhanced)",
+					"entries": [
+						"Minaar Stonesledge lights a grapefruit-sized bomb and throws it at a point up to 60 feet away, where it explodes. Each creature within a 10-foot-radius sphere centered on that point must make a {@dc 15} Dexterity saving throw, taking 18 ({@damage 4d8}) thunder damage and 18 ({@damage 4d8}) fire damage on a failed save, or half as much damage on a successful one. After Minaar Stonesledge throws the bomb, roll a {@dice d6}; on a roll of 4 or lower, Minaar Stonesledge has no more bombs to throw."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"AOE"
+			],
+			"environment": [
+				"any"
+			],
+			"fluff": {
+				"entries": [
+					"Minaar Stonesledge is a Deldrimor dwarf who has been captured by the Stone Summit and put to work in the Iron Horse Mine. While in captivity, he has heard about some Stone Summit plans for a new war machine, which become the focus of the quest Minaar's Worry. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Minaar_Stonesledge.jpeg"
+						}
+					}
+				]
+			},
+			"uniqueId": "cbd49bde-f485-4e8c-a23d-9d27208f4279",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Minaar_Stonesledge_Token.png"
+			},
+			"damageTags": [
+				"B",
+				"F",
+				"T"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"strength"
 			]
 		}
 	],

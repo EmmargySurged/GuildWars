@@ -43340,6 +43340,187 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Antidote Signet",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Activate your antidote signet, cleansing yourself of some conditions.",
+				"End {@condition Corruption|GuildWars}, {@condition Disease|GuildWars}, {@condition blinded|phb|Blindness} and the latest of the following conditions on yourself: {@condition Dazed|GuildWars}, {@condition Bleeding|GuildWars}, {@condition Crippled|GuildWars}, {@condition Burning|GuildWars}, {@condition Weakness|GuildWars}, {@condition Cracked Armor|GuildWars}, and {@condition Deep Wound|GuildWars}.",
+				"{@bold Signet.} Casting this spell does not cost a spell slot. Once you cast this spell, you cannot do so again until you roll for initiative."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Antidote Signet",
+					"Signet. Cleanse yourself of Poison, Disease, and Blindness, and one additional condition. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/9/90/Antidote_Signet.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"components": {
+				"s": true
+			},
+			"feats": [
+				{
+					"name": "Artificer Initiate",
+					"source": "TCE"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "No Attribute",
+					"source": "GuildWars"
+				}
+			]
+		},
+		{
+			"name": "\"I Will Survive!\"",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Shout, “I Will Survive!”, granting yourself the strength you need to though out conditions affecting you.",
+				"For the duration, at the start of each of your turns, you regain hit points equal to {@dice 2d4} per condition affecting you. ",
+				"If you drop to 0 hit points, this spell ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"\"I Will Survive!\"",
+					"Shout. You gain +3 Health regeneration for each condition you are suffering. This regeneration expires after 5...10...11 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/2/23/%22I_Will_Survive%21%22.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Artificer Initiate",
+					"source": "TCE"
+				},
+				{
+					"name": "Fey Touched",
+					"source": "TCE"
+				}
+			],
+			"components": {
+				"v": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@dice 1d4} for each slot level above 1st."
+					]
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Warrior",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Strength",
+					"source": "GuildWars"
+				}
+			]
 		}
 	],
 	"table": [
@@ -45348,6 +45529,25 @@
 		}
 	],
 	"item": [
+		{
+			"name": "Light of Deldrimor",
+			"source": "GuildWars",
+			"type": "T",
+			"rarity": "legendary",
+			"entries": [
+				"The Light of Deldrimor is a legendary torch, said to have lit the way for the great dwarf as he made his way though the dark caves of Tyria, creating the dwarfs from the very stone of the earth. The fire it ignites can dispel any spell if used properly.",
+				"The torch glows in a warm teal light.",
+				"As and action, a character holding the torch can ignite an object not being worn or carried within 5-feet of the wielder, transferring some of the warding magic.",
+				"Any creature friendly to the wielder within 10-feet of the Light of Deldrimor or any flame lit by it does not take damage from environmental cold effects.",
+				"While wielding the torch the following spells can be cast from it (fires ignite this way do not have the warding properties granted by the torch):"
+				"Cantrips (at will): {@spell Firebolt|PHB}, {@spell Control Flames|XGE}, {@spell Create Bonfire|XGE}, {@spell Produce Flame|PHB}",
+				"1st Level (1/day each):{@spell Burning Hands|PHB}, {@spell Chromatic Orb|PHB} (Fire), {@spell Faerie Fire|PHB}, {@spell Fire Bolt Storm|GuildWars}, {@spell Flare|GuildWars}, {@spell Hellish Rebuke|PHB}, {@spell Mind Burn|GuildWars}",
+				"2nd Level (1/day each):{@spell Aganazzar's Scorcher|XGE}, {@spell Continual Flame|PHB}, {@spell Inferno|GuildWars}, {@spell Minor Fireball|GuildWars}",
+				"3rd Level (1/day each):{@spell Dispel Magic|PHB}, {@spell Fireball|PHB}, {@spell Immolate|PHB}",
+				"4th Level (2/day):{@spell Conjure Minor Elementals|PHB} ({@creature Azer|MM}), {@spell Fire Shield|PHB} (Warm), {@spell Phoenix|GuildWars}",
+				"4th Level (1/day):{@spell Meteor Shower|GuildWars}"
+			]
+		},
 		{
 			"name": "Minaar's Explosive",
 			"source": "GuildWars",

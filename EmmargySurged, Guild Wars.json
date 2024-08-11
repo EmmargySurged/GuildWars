@@ -21342,7 +21342,7 @@
 			]
 		},
 		{
-			"name": "Minor Fireball",
+			"name": "Fireball of Precision",
 			"level": 2,
 			"school": "V",
 			"time": [
@@ -21408,7 +21408,7 @@
 				]
 			},
 			"entries": [
-				"Send out a ball of fire that explodes on impact.",
+				"Send out a precise ball of fire that explodes on impact.",
 				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 6d6} fire damage. On a successful save, a target takes half as much damage."
 			],
 			"source": "GuildWars",
@@ -35676,7 +35676,7 @@
 				]
 			},
 			"entries": [
-				"Prepare a spike trap, which damages, cripples and knock creatures {@condition prone} which trigger it.",
+				"Prepare a spike trap, which damages, cripples and knocks creatures {@condition prone} which trigger it.",
 				"Conjure a 15-foot radius stationary {@condition invisible} trap at your location for the duration and choose any number of creatures. The next time a non-chosen creature enters the spell's area, the trap triggers, applying the following effects for 2 rounds: ",
 				"Each non-chosen creature must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 3d8} piercing damage, becomes {@condition crippled|GuildWars} for one minute and is knocked {@condition prone}.",
 				"At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends.",
@@ -43521,6 +43521,886 @@
 					"source": "GuildWars"
 				}
 			]
+		},
+		{
+			"name": "Arcane Thievery",
+			"level": 1,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Use your arcane skills to steal an enemies spell.",
+				"Choose one hostile creature that you can see within range. The Target must make a Charisma saving throw. On a failed safe, one random spell the target has prepared cannot be used for the duration. Also replace this spell with the disabled spell for the duration."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Arcane Thievery",
+					"Spell. For 5...29...35 seconds, one random spell is disabled for target foe, and Arcane Thievery is replaced by that spell. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/a/a6/Arcane_Thievery.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Divinely Favored",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Shadow Touched",
+					"source": "TCE"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "No Attribute",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the target makes its saving throw with disadvantage. When you cast this spell using a spell slot of 5th level or higher, you can choose which spell gets disabled. "
+					]
+				}
+			]
+		},
+		{
+			"name": "Healing Seed",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Plant a healing seed on a friendly creature, which bursts with healing energy every time the creature takes damage.",
+				"Choose one friendly creature, other than yourself, that you can see within range. For the duration when the target takes damage from a non-friendly source, target each friendly creature in a 10-foot-radius sphere centered on the target. Each new target regains hit points equal to {@dice 1d4}.",
+				"If the target drops to 0 hit points, this spell ends.",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Healing Seed",
+					"Enchantment Spell. For 10 seconds, whenever target other ally takes damage, that ally and all adjacent allies gain 3...25...30 Health."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/e/eb/Healing_Seed.jpg"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"HL"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the healing increases by {@dice 1d4} for each slot level above 2nd."
+					]
+				}
+			],
+			"feats": [
+				{
+					"name": "Adept of the White Robes",
+					"source": "DSotDQ"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Monk",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Healing Prayers",
+					"source": "GuildWars"
+				}
+			]
+		},
+		{
+			"name": "Barbed Signet",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Activate your barbed signet, making necrotic vines sprout in an area, lacerating creatures.",
+				"{@bold Sacrifice.} You lose health equal to 8% of your maximum hit points.",
+				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target begins {@condition bleeding|GuildWars} for the duration, taking {@damage 4d4} damage.",
+				"At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends.",
+				"{@bold Signet.} Casting this spell does not cost a spell slot. Once you cast this spell, you cannot do so again until you finish a short or long rest."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Barbed Signet",
+					"Signet. You inflict Bleeding for 3...13...15 seconds on target foe and all adjacent foes."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/d/d1/Barbed_Signet.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Divinely Favored",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Shadow Touched",
+					"source": "TCE"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Blood Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			}
+		},
+		{
+			"name": "Barbed Trap",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "day",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Prepare a barbed trap, which damages, cripples and bleeds creatures which trigger it.",
+				"Conjure a 15-foot radius stationary {@condition invisible} trap at your location for the duration and choose any number of creatures. The next time a non-chosen creature enters the spell's area, the trap triggers, applying the following effect for 1 round: ",
+				"Each non-chosen creature must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 4d8} piercing damage, starts {@condition bleeding|GuildWars} for one minute, taking {@damage 4d4} damage and becomes {@condition crippled|GuildWars} for one minute.",
+				"At the end of each of its turns, the target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Barbed Trap",
+					"Trap. When Barbed Trap is triggered, all nearby foes are struck for 7...20...23 piercing damage, become Crippled, and begin Bleeding for 3...21...25 seconds. Barbed Trap ends after 90 seconds. While activating this skill, you are easily interrupted."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/6/64/Barbed_Trap.jpg"
+						}
+					}
+				]
+			},
+			"meta": {
+				"ritual": true
+			},
+			"components": {
+				"s": true,
+				"m": "thorned vines"
+			},
+			"conditionInflict": [
+				"crippled|guildwars"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d8} for each slot level above 3rd and the damage of the {@condition bleeding|GuildWars} condition increases by {@dice 1d4} for each slot level above 3rd."
+					]
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Wilderness Survival",
+					"source": "GuildWars"
+				}
+			]
+		},
+		{
+			"name": "Axe Rake",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Go for the legs of a creature with a {@condition deep wound|GuildWars}, dealing increased damage and crippling them.",
+				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and, if the target has a {@condition deep wound|GuildWars}, the target becomes {@condition crippled|GuildWars} for the duration and takes an additional {@damage 2d8} damage.",
+				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends.",
+				"{@bold Adrenaline.} Instead of expending a spell slot, you cast this spell by expending 5 adrenaline. When casting this spell at a higher level, expend an additional 5 adrenaline per level above the original level."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Axe Rake",
+					"Axe Attack. If this attack hits a foe suffering from a Deep Wound, you strike for +1...8...10 damage, and that foe becomes Crippled for 15 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/4/42/Axe_Rake.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon worth at least 1 sp"
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd or 3rd level, the number of attacks increases by 1. When you cast this spell using a spell slot of 4th or 5th level, the number of attacks increases by 2. When you use a spell slot of 6th level or higher, the number of attacks increases by 3."
+					]
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"AAD"
+			],
+			"feats": [
+				{
+					"name": "Artificer Initiate",
+					"source": "TCE"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Warrior",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Axe Mastery",
+					"source": "GuildWars"
+				}
+			],
+			"conditionInflict": [
+				"crippled|guildwars"
+			]
+		},
+		{
+			"name": "Chain-Bounce Lightning",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Conjure a bolt of lightning which bounces between enemies. ",
+				"Choose one creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 8d6} lightning damage.",
+				"If you hit the target, the attack leaps from the target to a different creature of your choice within 15-feet of the target. Make a new attack roll with disadvantage against the new target, and make a new damage roll, which could cause the attack to leap again.",
+				"A creature can be targeted only once by each casting of this spell. ",
+				"{@bold Armor Penetration.} This spell's lightning damage cannot be reduced in any way, except by immunities."
+			],
+			"source": "GuildWars",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d6} for each slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"fluff": {
+				"entries": [
+					"Chain Lightning",
+					"Spell. Target foe and up to two other foes near your target are struck for 10...70...85 lightning damage. This spell has 25% armor penetration."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/a/aa/Chain_Lightning.jpg"
+						}
+					}
+				]
+			},
+			"spellAttack": [
+				"R"
+			],
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Air Magic",
+					"source": "GuildWars"
+				}
+			]
+		},
+		{
+			"name": "Ethereal Burden",
+			"level": 2,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Put ethereal shackles on a creature.",
+				"Choose one creature that you can see within range. The Target must make a Wisdom saving throw. On a failed save, for the duration, the target's speed is halved.",
+				"When this spell ends, your next initiative roll gets increased by {@dice 4d4}.",
+				"{@bold Hex.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast. Additionally, you cannot choose to end {@status concentration} on this spell."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Ethereal Burden",
+					"Hex Spell. For 10 seconds, target foe moves 50% slower. When Ethereal Burden ends, you gain 10...16...18 Energy."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/f/f4/Ethereal_Burden.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the increase of initiative increases by {@dice 2d4} for each slot level above 2nd."
+					]
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"feats": [
+				{
+					"name": "Adept of the Red Robes",
+					"source": "DSotDQ"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Illusion Magic",
+					"source": "GuildWars"
+				}
+			]
 		}
 	],
 	"table": [
@@ -45535,7 +46415,7 @@
 			"type": "G",
 			"rarity": "legendary",
 			"entries": [
-				"The Light of Deldrimor is a legendary torch, said to have lit the way for the great dwarf as he made his way though the dark caves of Tyria, creating the dwarfs from the very stone of the earth. The fire it ignites can dispel any spell if used properly.",
+				"The Light of Deldrimor is a legendary torch, said to have been forged by the Great Dwarf himself, when he forged the Dwarfs in Anvil Rock, to guide their way through the dark caves of the Shiverpeak Mountains.",
 				"The torch glows in a warm teal light.",
 				"As and action, a character holding the torch can ignite an object not being worn or carried within 5-feet of the wielder, transferring some of the warding magic.",
 				"Any creature friendly to the wielder within 10-feet of the Light of Deldrimor or any flame lit by it does not take damage from environmental cold effects.",

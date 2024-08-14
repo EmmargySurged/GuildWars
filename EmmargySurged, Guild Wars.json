@@ -102,7 +102,7 @@
 			"entries": [
 				"Activate the ancient Keystone Signet, recharging most of your signets and giving them extra power.",
 				"You regain all expended uses of your signets which require you to finish a short rest, except {@spell Keystone Signet|GuildWars}.",
-				"For the duration, when you target a hostile creature with a signet, target each creature other than the target in a 10-foot-radius sphere centered on the target. Each target must make a Charisma saving throw. On a failed save, a target takes {@dice 2d12} psychic damage and can't cast spells or use abilities until the end of their next turn. After this spell triggers {@dice 1d4 + 1} times, this spell ends.",
+				"For the duration, when you target a hostile creature with a signet, target each creature other than the target in a 10-foot-radius sphere centered on the target. Each target must make a Charisma saving throw. On a failed save, a target takes {@dice 2d12} psychic damage and can't cast spells or use abilities until the end of their next turn. On a successful save, a target takes half as much damage, but suffers no other effect. After this spell triggers {@dice 1d4 + 1} times, this spell ends.",
 				"{@bold Signet.} Casting this spell does not cost a spell slot. Once you cast this spell, you cannot do so again until you finish a short or long rest.",
 				"{@bold Elite.} When preparing your spells, you can only prepare one elite spell."
 			],
@@ -469,7 +469,7 @@
 			"entries": [
 				"Send out a searing hot flare.",
 				"Choose one creature that you can see within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 4d6} fire damage.",
-				"{@bold While Overcast}. On a hit, each creature other than the target in a 10-foot-radius sphere centered on the target, must make a Dexterity saving throw. On a failed save, a target takes {@damage 4d6} fire damage."
+				"{@bold While Overcast}. On a hit, each creature other than the target in a 10-foot-radius sphere centered on the target, must make a Dexterity saving throw. On a failed save, a target takes {@damage 4d6} fire damage. On a successful save, a target takes half as much damage."
 			],
 			"source": "GuildWars",
 			"components": {
@@ -712,7 +712,7 @@
 			},
 			"entries": [
 				"You attempt to interrupt a creature in the process of making an attack roll.",
-				"Choose one attacking creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes {@damage 1d8} radiant damage, is knocked {@condition prone} and the attack roll misses. On a successful save, the target takes half as much damage.",
+				"Choose one attacking creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes {@damage 1d8} radiant damage, is knocked {@condition prone} and the attack roll misses. On a successful save, the target takes half as much damage, but suffers no other effect.",
 				"{@bold Signet.} Casting this spell does not cost a spell slot. Once you cast this spell, you cannot do so again until you finish a short or long rest."
 			],
 			"source": "GuildWars",
@@ -987,7 +987,7 @@
 			},
 			"entries": [
 				"Enchant a friendly creature to explode on death, damaging and {@condition corruption|GuildWars|corrupting} everything around it.",
-				"Choose one friendly creature that you can see within range. For the duration, if the creature drops to 0 hit points, this spell ends on the creature and then target each other creature in a 10-foot-radius sphere centered on the creature. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 3d6} necrotic damage and is corrupted for 1 minute, taking {@damage 1d4} damage. ",
+				"Choose one friendly creature that you can see within range. For the duration, if the creature drops to 0 hit points, this spell ends on the creature and then target each other creature in a 10-foot-radius sphere centered on the creature. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 3d6} necrotic damage and is corrupted for 1 minute, taking {@damage 1d4} damage. On a successful save, a target takes half as much damage, but suffers no other effect.",
 				"At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
 			],
 			"source": "GuildWars",
@@ -1746,7 +1746,7 @@
 				"Conjure a lighting javelin in your hand and throw it in a straight line, passing through all creatures along its path to its target.",
 				"Choose one creature that you can see within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 6d6} lightning damage.",
 				"This attack ignores cover provided by other creatures.",
-				"Target each creature, other than you and the target, on the line between you and the target. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 6d6} lightning damage.",
+				"On a hit, target each creature, other than you and the target, on the line between you and the target. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 6d6} lightning damage. On a successful save, a target takes half as much damage.",
 				"{@bold Armor Penetration.}  This spell's lightning damage cannot be reduced in any way, except by immunities."
 			],
 			"source": "GuildWars",
@@ -1880,7 +1880,7 @@
 			},
 			"entries": [
 				"Summon a meteor to crash down.",
-				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 4d6} bludgeoning damage, {@damage 4d6} fire damage and is knocked {@condition prone}. On a successful save, a target takes half as much damage.",
+				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 4d6} bludgeoning damage, {@damage 4d6} fire damage and is knocked {@condition prone}. On a successful save, a target takes half as much damage, but suffers no other effect.",
 				"{@bold Overcast.} You become {@condition overcast|GuildWars} for 5 rounds."
 			],
 			"source": "GuildWars",
@@ -2117,7 +2117,7 @@
 			},
 			"entries": [
 				"Invoke the hellish flames of Rodgort.",
-				"Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 12d6} fire damage and starts {@condition burning|GuildWars} for the duration, taking {@damage 2d6} damage. On a successful save, a target takes half as much damage.",
+				"Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 12d6} fire damage and starts {@condition burning|GuildWars} for the duration, taking {@damage 2d6} damage. On a successful save, a target takes half as much damage, but suffers no other effect.",
 				"At the end of each of its turns, a target can make a Dexterity saving throw. On a success, the condition ends."
 			],
 			"source": "GuildWars",
@@ -4182,8 +4182,7 @@
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "feet",
-					"amount": 10
+					"type": "self"
 				}
 			},
 			"duration": [
@@ -4218,7 +4217,7 @@
 			},
 			"entries": [
 				"Create fissures around you, which spew out lava, melting everything within range. ",
-				"Choose a point that you can see within range. For the duration, each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 3d8} fire damage.",
+				"Conjure a 10-foot radius, 10-foot high stationary lava font at your location for the duration. Each creature, other than you, must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 3d8} fire damage. On a successful save, a target takes half as much damage.",
 				"{@bold While Overcast.} The radius of the spell increases by 5 feet."
 			],
 			"source": "GuildWars",
@@ -7995,7 +7994,7 @@
 			},
 			"entries": [
 				"Ignite a creature with searing flames.",
-				"Choose one creature that you can see within range. The target must make a Dexterity saving throw. On a failed save, the target takes {@damage 6d6} fire damage and starts {@condition burning|GuildWars} for the duration, taking {@damage 2d6} damage. On a successful save, the target takes half as much damage.",
+				"Choose one creature that you can see within range. The target must make a Dexterity saving throw. On a failed save, the target takes {@damage 6d6} fire damage and starts {@condition burning|GuildWars} for the duration, taking {@damage 2d6} damage. On a successful save, the target takes half as much damage, but suffers no other effect.",
 				"At the end of each of its turns, the target can make a Dexterity saving throw. On a success, the condition ends."
 			],
 			"source": "GuildWars",
@@ -9543,7 +9542,7 @@
 			},
 			"entries": [
 				"Intimidate nearby creatures to give you an opportunity to slip past their defenses, reducing their initiative and increasing your chance to critical hit them.",
-				"Target each creature other than you that can hear you within range. Each target must make a Wisdom saving throw. On a failed save, a target's next initiative roll gets reduced by {@dice 1d8} and the number you need to roll to score a critical hit against a target gets reduced by {@dice 1d4} for the duration. On a successful save, a target's next initiative roll gets reduced by half as much.",
+				"Target each creature other than you that can hear you within range. Each target must make a Wisdom saving throw. On a failed save, a target's next initiative roll gets reduced by {@dice 1d8} and the number you need to roll to score a critical hit against a target gets reduced by {@dice 1d4} for the duration. On a successful save, a target's next initiative roll gets reduced by half as much, but suffers no other effect.",
 				"At the end of each of its turns, a target can make a Wisdom saving throw. On a success, the spell ends.",
 				"Initiative cannot be reduced below 0 with this spell."
 			],
@@ -11006,7 +11005,7 @@
 			},
 			"entries": [
 				"Cause an eruption of dust and rocks at a location of your choosing.",
-				"Choose a point that you can see within range. For the duration, each creature in a 15-foot-radius, 60-foot-high cylinder centered on that point must make a Constitution saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 4d6} bludgeoning damage and is {@condition blinded} for 1 minute. On a successful save, a target takes half as much damage.",
+				"Choose a point that you can see within range. For the duration, each creature in a 15-foot-radius, 60-foot-high cylinder centered on that point must make a Constitution saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 4d6} bludgeoning damage and is {@condition blinded} for 1 minute. On a successful save, a target takes half as much damage, but suffers no other effect.",
 				"At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
 			],
 			"source": "GuildWars",
@@ -11745,7 +11744,7 @@
 			},
 			"entries": [
 				"Make spikes of ice burst out from you, slowing creatures down.",
-				"Target each creature other than you within range. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 4d6} cold damage, and for the duration the target's speed is reduced by 66%. On a successful save, a target takes half as much damage.",
+				"Target each creature other than you within range. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 4d6} cold damage, and for the duration the target's speed is reduced by 66%. On a successful save, a target takes half as much damage, but suffers no other effect.",
 				"{@bold Hex.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
 			],
 			"source": "GuildWars",
@@ -12619,7 +12618,7 @@
 			},
 			"entries": [
 				"Cause icy spikes to burst out from the ground.",
-				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 4d6} cold damage, and for the duration the target's speed is reduced by 66%. On a successful save, a target takes half as much damage.",
+				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 4d6} cold damage, and for the duration the target's speed is reduced by 66%. On a successful save, a target takes half as much damage, but suffers no other effect.",
 				"{@bold Hex.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
 			],
 			"source": "GuildWars",
@@ -13396,7 +13395,7 @@
 			},
 			"entries": [
 				"Envelop yourself in a magnetic aura, deflecting damage back to an attacker.",
-				"For the duration, if you are the target of an attack roll, the attack roll misses you, the attacker must make a Dexterity saving throw and this spell ends. On a failed save, the attacker takes {@damage 3d6} force damage. ",
+				"For the duration, if you are the target of an attack roll, the attack roll misses you, the attacker must make a Dexterity saving throw and this spell ends. On a failed save, the attacker takes {@damage 3d6} force damage. On a successful save, the attacker takes half as much damage.",
 				"{@bold While Overcast.} Choose any number of friendly creatures that you can see within 150-feet. A target also gains the effect of this spell.",
 				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
 			],
@@ -15090,7 +15089,7 @@
 			},
 			"entries": [
 				"Shield a creature with the shield of judgment, which knocks attackers {@condition prone} if they hit the creature.",
-				"Choose one creature that you can see within range. For the duration, when the target takes damage from an attack, target the creature that dealt the damage. The target must make a Wisdom saving throw. On a failed save, the target takes {@damage 3d8} radiant damage and is knocked {@condition prone}. On a successful save, the target takes half as much damage.",
+				"Choose one creature that you can see within range. For the duration, when the target takes damage from an attack, target the creature that dealt the damage. The target must make a Wisdom saving throw. On a failed save, the target takes {@damage 3d8} radiant damage and is knocked {@condition prone}. On a successful save, a target takes half as much damage, but suffers no other effect.",
 				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast.",
 				"{@bold Elite.} When preparing your spells, you can only prepare one elite spell."
 			],
@@ -15721,7 +15720,7 @@
 			},
 			"entries": [
 				"Summon a shower of meteors at a specific location every turn.",
-				"Choose a point that you can see within range. For the duration, each creature in a 10-foot-radius, 120-foot-high cylinder centered on that point must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 4d6} bludgeoning damage, {@damage 4d6} fire damage and is knocked {@condition prone}. On a successful save, a target takes half as much damage.",
+				"Choose a point that you can see within range. For the duration, each creature in a 10-foot-radius, 120-foot-high cylinder centered on that point must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 4d6} bludgeoning damage, {@damage 4d6} fire damage and is knocked {@condition prone}. On a successful save, a target takes half as much damage, but suffers no other effect.",
 				"{@bold Overcast.} You become {@condition overcast|GuildWars} for 5 rounds."
 			],
 			"source": "GuildWars",
@@ -17394,7 +17393,7 @@
 					"type": "timed",
 					"duration": {
 						"type": "round",
-						"amount": 2
+						"amount": 1
 					}
 				}
 			],
@@ -17448,7 +17447,7 @@
 			},
 			"entries": [
 				"Start charging up a lightning sure above a creature, which comes crashing down at the beginning of that creature's turn.",
-				"Choose one creature that you can see within range. The target must make a Dexterity saving throw. On a failed save at the start of the target's next turn if you are {@status concentration||concentrating} on this spell, the target takes {@damage 8d6} lightning damage, is knocked {@condition prone} and has {@condition cracked armor|GuildWars} for 1 minute. On a successful save at the start of the target's next turn if you are {@status concentration||concentrating} on this spell, the target takes half as much damage.",
+				"Choose one creature that you can see within range. The target must make a Dexterity saving throw. On a failed save, when this spell ends because its duration ran out, the target takes {@damage 8d6} lightning damage, is knocked {@condition prone} and has {@condition cracked armor|GuildWars} for 1 minute. On a successful save, the target takes half as much damage, but suffers no other effect.",
 				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends.",
 				"{@bold Armor Penetration.} This spell's lightning damage cannot be reduced in any way, except by immunities.",
 				"{@bold Hex.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast.",
@@ -24657,7 +24656,7 @@
 			},
 			"entries": [
 				"Create a chilling blast of air which swirls around you, damaging all creatures and knocking them {@condition prone} if they attacked during their last turn.",
-				"Target each creature other than you within range. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 3d6} cold damage and, if a target attacked on its last turn, is knocked {@condition prone}. On a successful save, a target takes half as much damage.",
+				"Target each creature other than you within range. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 3d6} cold damage and, if a target attacked on its last turn, is knocked {@condition prone}. On a successful save, a target takes half as much damage. On a successful save, a target takes half as much damage, but suffers no other effect.",
 				"{@bold While Overcast.} The radius of the spell increases by 5 feet."
 			],
 			"source": "GuildWars",
@@ -28607,7 +28606,7 @@
 			},
 			"entries": [
 				"Summon the ravenous maw of {@condition corruption|GuildWars}, feasting on everything in an area, damaging and potentially stealing health from everything in its maw.",
-				"Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 6d8} necrotic damage. If a target was under the effect of a detrimental spell, a target takes an additional {@damage 3d8} necrotic damage, and you regain hit points equal to the amount of that necrotic damage dealt.",
+				"Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 6d8} necrotic damage. If a target was under the effect of a detrimental spell, a target takes an additional {@damage 3d8} necrotic damage, and you regain hit points equal to the amount of that necrotic damage dealt. On a successful save, a target takes half as much damage, but suffers no other effect.",
 				"{@bold Elite.} When preparing your spells, you can only prepare one elite spell."
 			],
 			"source": "GuildWars",
@@ -28871,7 +28870,7 @@
 			},
 			"entries": [
 				"Inscribe a glimmering mark into the flesh of an enemy with lightning, damaging them and everyone around them every turn and inflicting blind.",
-				"Choose one creature that you can see within range. For the duration at the start of each of the target's turns, target each creature in a 10-foot-radius centered on the target. Each target must make a Constitution saving throw. On a failed save, a target takes {@damage 6d6} lightning damage and is {@condition blinded} for 1 round. On a successful save, a target takes half as much damage.",
+				"Choose one creature that you can see within range. For the duration at the start of each of the target's turns, target each creature in a 10-foot-radius centered on the target. Each target must make a Constitution saving throw. On a failed save, a target takes {@damage 6d6} lightning damage and is {@condition blinded} for 1 round. On a successful save, a target takes half as much damage, but suffers no other effect.",
 				"If you target the creature with a spell, this spell ends.",
 				"{@bold Armor Penetration.} This spell's lightning damage cannot be reduced in any way, except by immunities.",
 				"{@bold Hex.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast.",
@@ -30997,7 +30996,7 @@
 			},
 			"entries": [
 				"Use the power of your mind to sear a group of enemies, inflicting more damage and {@condition burning|GuildWars} if you have a higher initiative than them.",
-				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make an Intelligence saving throw. On a failed save, a target takes {@damage 2d6} fire damage and if a target has a lower initiative than you, they take an additional {@damage 2d6} fire damage and start {@condition burning|GuildWars} for the duration, taking {@damage 1d4} damage.",
+				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make an Intelligence saving throw. On a failed save, a target takes {@damage 2d6} fire damage and if a target has a lower initiative than you, they take an additional {@damage 2d6} fire damage and start {@condition burning|GuildWars} for the duration, taking {@damage 1d4} damage. On a successful save, a target takes half as much damage, but suffers no other effect.",
 				"At the end of each of its turns, a target can make a Dexterity saving throw. On a success, the condition ends.",
 				"{@bold Overcast.} You become {@condition overcast|GuildWars} for 3 rounds.",
 				"{@bold Elite.} When preparing your spells, you can only prepare one elite spell."
@@ -31162,7 +31161,7 @@
 			},
 			"entries": [
 				"Use the power of your mind to freeze a group of enemies, inflicting more damage and slowing them down if you have a higher initiative than them.",
-				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make an Intelligence saving throw. On a failed save, a target takes {@damage 3d6} cold damage and if a target has a lower initiative than you, they take an additional {@damage 3d6} cold damage and their speed is reduced by 90% to a minimum of 5 feet.",
+				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make an Intelligence saving throw. On a failed save, a target takes {@damage 3d6} cold damage and if a target has a lower initiative than you, they take an additional {@damage 3d6} cold damage and their speed is reduced by 90% to a minimum of 5 feet. On a successful save, the target takes half as much damage, but suffers no other effect.",
 				"{@bold Overcast.} You become {@condition overcast|GuildWars} for 3 rounds.",
 				"{@bold Hex.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast.",
 				"{@bold Elite.} When preparing your spells, you can only prepare one elite spell."
@@ -31305,7 +31304,7 @@
 			},
 			"entries": [
 				"Use the power of your mind to shock a group of enemies, inflicting more damage and knocking them {@condition prone} if you have a higher initiative than them.",
-				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make an Intelligence saving throw. On a failed save, a target takes {@damage 3d6} lightning damage and if a target has a lower initiative than you, they take an additional {@damage 3d6} lightning damage and are knocked {@condition prone}.",
+				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make an Intelligence saving throw. On a failed save, a target takes {@damage 3d6} lightning damage and if a target has a lower initiative than you, they take an additional {@damage 3d6} lightning damage and are knocked {@condition prone}. On a successful save, a target takes half as much damage, but suffers no other effect.",
 				"{@bold Armor Penetration.} This spell's lightning damage cannot be reduced in any way, except by immunities.",
 				"{@bold Overcast.} You become {@condition overcast|GuildWars} for 3 rounds.",
 				"{@bold Elite.} When preparing your spells, you can only prepare one elite spell."
@@ -35041,7 +35040,7 @@
 			},
 			"entries": [
 				"Cause a massive thunderclap at a location of your choice, disrupting and damaging foes.",
-				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 3d6} lightning damage, {@damage 3d6} thunder damage and must make a Constitution saving throw. On a successful save, a target takes half as much damage. ",
+				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 3d6} lightning damage, {@damage 3d6} thunder damage and must make a Constitution saving throw. On a successful save, a target takes half as much damage, but suffers no other effect.",
 				"On a failed Constitution save, a target is {@condition weakness|GuildWars|weakened} and has {@condition cracked armor|GuildWars} for the duration, and can't cast spells or use abilities on their next turn.",
 				"At the end of each of its turns, the target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends.",
 				"{@bold Armor Penetration.} This spell's lightning/thunder damage cannot be reduced in any way, except by immunities.",
@@ -35966,7 +35965,7 @@
 			"entries": [
 				"Prepare a spike trap, which damages, cripples and knocks creatures {@condition prone} which trigger it.",
 				"Conjure a 15-foot radius stationary {@condition invisible} trap at your location for the duration and choose any number of creatures. The next time a non-chosen creature enters the spell's area, the trap triggers, applying the following effects for 2 rounds: ",
-				"Each non-chosen creature must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 3d8} piercing damage, becomes {@condition crippled|GuildWars} for one minute and is knocked {@condition prone}.",
+				"Each non-chosen creature must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 3d8} piercing damage, becomes {@condition crippled|GuildWars} for one minute and is knocked {@condition prone}. On a successful save, a target takes half as much damage, but suffers no other effect.",
 				"At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends.",
 				"{@bold Elite.} When preparing your spells, you can only prepare one elite spell."
 			],
@@ -36767,7 +36766,7 @@
 			},
 			"entries": [
 				"You attempt to interrupt a creature in the process of making an attack roll and smite all creatures around it.",
-				"Choose one attacking creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target is knocked {@condition prone}, the attack roll misses and target each creature in a 10-foot-radius sphere centered on the target. A target takes {@damage 3d8} radiant damage. On a successful save, a target takes half as much damage.",
+				"Choose one attacking creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target is knocked {@condition prone}, the attack roll misses and target each creature in a 10-foot-radius sphere centered on the target. A target takes {@damage 3d8} radiant damage. On a successful save, a target takes half as much damage, but suffers no other effect.",
 				"{@bold Signet.} Casting this spell does not cost a spell slot. Once you cast this spell, you cannot do so again until you finish a short or long rest.",
 				"{@bold Elite.} When preparing your spells, you can only prepare one elite spell."
 			],
@@ -38858,7 +38857,7 @@
 		},
 		{
 			"name": "Cry of Frustration",
-			"level": 4,
+			"level": 5,
 			"school": "A",
 			"time": [
 				{
@@ -38925,7 +38924,8 @@
 			},
 			"entries": [
 				"Unleash a psychic scream, disrupting a group of creatures.",
-				"Choose one creature, which is casting a spell or using an ability, that you can see within range. Target each creature other than you in a 15-foot-radius centered on the target.  Each target must make a Charisma saving throw. On a failed save, If the creature is casting a spell of 3rd level or lower or using an ability, the spell/ability fails and has no effect. Otherwise, on a failed save, a target can't cast spells or use abilities until the end of their next turn."
+				"Choose one creature, which is casting a spell or using an ability, that you can see within range. Target each creature other than you in a 15-foot-radius centered on the target.  Each target must make a Charisma saving throw. On a failed save, If the creature is casting a spell of 3rd level or lower or using an ability, the spell/ability fails and has no effect. Otherwise, on a failed save, a target can't cast spells or use abilities until the end of their next turn.",
+				"If you successfully interrupt a spell this way, a target must make an Intelligence saving throw with disadvantage. On a failed save, a target takes {@damage 2d6} psychic damage. If you did not successfully interrupt a spell this way, a creature makes the saving throw with advantage."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -38951,7 +38951,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 5th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used - 1."
+						"When you cast this spell using a spell slot of 6th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used - 1 and the the damage increases by {@dice 1d6} for each slot level above 1st."
 					]
 				}
 			],
@@ -39321,7 +39321,7 @@
 			},
 			"entries": [
 				"Conjure a maelstrom, which crushes and disrupts everything trapped inside its maw.",
-				"Choose a point that you can see within range. For the duration, each creature in a 10-foot-radius, 10-foot-high cylinder centered on that point must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 6d6} cold damage and  can't cast spells on their next turn. On a successful save, a target takes half as much damage.",
+				"Choose a point that you can see within range. For the duration, each creature in a 10-foot-radius, 10-foot-high cylinder centered on that point must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 6d6} cold damage and  can't cast spells on their next turn. On a successful save, a target takes half as much damage, but suffers no other effect.",
 				"{@bold Overcast.} You become {@condition overcast|GuildWars} for 5 rounds."
 			],
 			"source": "GuildWars",
@@ -44321,7 +44321,7 @@
 			"entries": [
 				"Prepare a barbed trap, which damages, cripples and bleeds creatures which trigger it.",
 				"Conjure a 15-foot radius stationary {@condition invisible} trap at your location for the duration and choose any number of creatures. The next time a non-chosen creature enters the spell's area, the trap triggers, applying the following effect for 1 round: ",
-				"Each non-chosen creature must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 4d8} piercing damage, starts {@condition bleeding|GuildWars} for one minute, taking {@damage 4d4} damage and becomes {@condition crippled|GuildWars} for one minute.",
+				"Each non-chosen creature must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 4d8} piercing damage, starts {@condition bleeding|GuildWars} for one minute, taking {@damage 4d4} damage and becomes {@condition crippled|GuildWars} for one minute. On a successful save, a target takes half as much damage, but suffers no other effect.",
 				"At the end of each of its turns, the target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends."
 			],
 			"source": "GuildWars",
@@ -45281,8 +45281,8 @@
 			},
 			"entries": [
 				"Release a wave of crystal energy, which purifies any negative conditions affecting a creature, dealing more damage for each removed.",
-				"Target each creature other than you within range. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 8d6} piercing damage. On a successful save, a target takes half as much damage. ",
-				"Also end all of the following conditions on a target: {@condition Corruption|GuildWars}, {@condition Disease|GuildWars}, {@condition blinded|phb|Blindness}, {@condition Dazed|GuildWars}, {@condition Bleeding|GuildWars}, {@condition Crippled|GuildWars}, {@condition Burning|GuildWars}, {@condition Weakness|GuildWars}, {@condition Cracked Armor|GuildWars}, and {@condition Deep Wound|GuildWars}. A target takes {@damage 2d4} piercing damage for each condition ended."
+				"Target each creature other than you within range. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 8d6} force damage. On a successful save, a target takes half as much damage. ",
+				"Also end all of the following conditions on a target: {@condition Corruption|GuildWars}, {@condition Disease|GuildWars}, {@condition blinded|phb|Blindness}, {@condition Dazed|GuildWars}, {@condition Bleeding|GuildWars}, {@condition Crippled|GuildWars}, {@condition Burning|GuildWars}, {@condition Weakness|GuildWars}, {@condition Cracked Armor|GuildWars}, and {@condition Deep Wound|GuildWars}. A target takes {@damage 2d4} force damage for each condition ended."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -59809,6 +59809,211 @@
 				"S"
 			],
 			"uniqueId": "ec5c9bb0-2bb8-42d9-a2b1-c060c1b5bcfb"
+		},
+		{
+			"name": "King Jalis Ironhammer",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dwarf"
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"{@item +3 plate armor|dmg}"
+					]
+				}
+			],
+			"hp": {
+				"average": 202,
+				"formula": "27d8 + 81"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 20,
+			"dex": 15,
+			"con": 16,
+			"int": 15,
+			"wis": 14,
+			"cha": 12,
+			"save": {
+				"str": "+10",
+				"con": "+8"
+			},
+			"skill": {
+				"perception": "+7",
+				"religion": "+7",
+				"persuasion": "+6",
+				"intimidation": "+11",
+				"athletics": "+15",
+				"history": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 17,
+			"resist": [
+				"poison"
+			],
+			"languages": [
+				"Common",
+				"Dwarvish"
+			],
+			"cr": "15",
+			"trait": [
+				{
+					"name": "Dwarven Resilience",
+					"entries": [
+						"King Jalis Ironhammer has advantage on saving throws against being {@condition poisoned}."
+					]
+				},
+				{
+					"name": "Indomitable (2/Day)",
+					"entries": [
+						"King Jalis Ironhammer can reroll a saving throw that he fails. He must use the new roll."
+					]
+				},
+				{
+					"name": "Second Wind (Recharges after a Short or Long Rest)",
+					"entries": [
+						"As a bonus action, King Jalis Ironhammer can regain 20 hit points."
+					]
+				},
+				{
+					"name": "Extra Damage",
+					"entries": [
+						"If King Jalis Ironhammer has more than half his hit points remaining he deals an extra 10 ({@damage 3d6}) slashing damage on every hit."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The King Jalis Ironhammer makes three attacks: three with its Greataxe, he can forgo one of these attacks to cast a spell."
+					]
+				},
+				{
+					"name": "Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}18 ({@damage 2d12 + 5}) slashing damage"
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 100/400 ft., one target. {@h}13 ({@damage 2d10 + 2}) piercing damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"greataxe|phb",
+				"heavy crossbow|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"The wise king of the Deldrimor dwarves, King Jalis Ironhammer rules his people from the peaks of the Shiverpeak mountains. He is a smart, strong, patient man who makes decisions based solely on how they will affect the well-being of all the dwarves in Deldrimor. He lives to serve his people, and they love and respect him for it.",
+					"There are those, however, who wish to see the good king taken out of power. Namely, the Stone Summit, a group of xenophobic dwarves who had broken their ties with Deldrimor and are trying to take control of the dwarven nation. Over the past several years, the Summit have been growing their power, and a civil war is brewing.",
+					"King Jalis Ironhammer does not want to fight other dwarves, but he will do what he must to keep his people safe. Along with his loyal brother, Brechnar Ironhammer, the king has rallied his forces, and they stand ready to defend their home. The question on the king's mind though is this: Can he win? "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/King_Jalis_Ironhammer.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "2b5774fa-4504-4b9d-b6d7-ae17adca9ffe",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/King_Jalis_Ironhammer_Token.png"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The King Jalis Ironhammer is a 18th-level spellcaster. His spellcasting ability is Strength (spell save {@dc 18}, +10 to hit with spell attacks). King Jalis Ironhammer has the following Warrior (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*King Jalis Ironhammer casts these spells on himself before combat."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell \"for great justice!\"|GuildWars}*",
+								"{@spell crude swing|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell healing signet|GuildWars}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell mighty blow|GuildWars}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell dwarven battle stance|GuildWars}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "str",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			]
 		}
 	],
 	"legendaryGroup": [

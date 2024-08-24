@@ -3121,7 +3121,7 @@
 				"type": "point",
 				"distance": {
 					"type": "feet",
-					"amount": 90
+					"amount": 150
 				}
 			},
 			"duration": [
@@ -3188,7 +3188,9 @@
 				"Exploit a nearby corpse to create a Bone Horror.",
 				"Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, the target becomes a {@creature Bone Horror|GuildWars}. ",
 				"The {@creature Bone Horror|GuildWars} remains for the duration or until it reaches zero hit points, at which point it will disintegrate into ash.",
-				"The {@creature Bone Horror|GuildWars} is friendly to you and your allies while you are conscious. If you fall {@condition unconscious}, the {@creature Bone Horror|GuildWars} becomes hostile towards everything. The {@creature Bone Horror|GuildWars} acts on your initiative, but takes it turn directly after yours. The {@creature Bone Horror|GuildWars} is in the DMs control."
+				"The {@creature Bone Horror|GuildWars} is friendly to you and your allies for the duration. If you fall {@condition unconscious}, the {@creature Bone Horror|GuildWars} becomes hostile towards everything, instead of disintegrating into ash. The {@creature Bone Horror|GuildWars} acts on your initiative, but takes it turn directly after yours. The {@creature Bone Horror|GuildWars} is in the DMs control.",
+				"On each of your turns until the spell ends, you can use your action to animate another bone horror this way.",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast. "
 			],
 			"source": "GuildWars",
 			"components": {
@@ -12090,7 +12092,7 @@
 			},
 			"entries": [
 				"Summon a nature spirit of favorable winds, improving ranged weapon attacks for everyone in the area.",
-				"Summon a nature spirit for the duration. If a creature is within 120 feet of the nature spirit, they have advantage on ranged weapon attack rolls, and their ranged weapon attacks deal an additional {@damage 1d6} damage.",
+				"Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit, they have advantage on ranged weapon attack rolls, and their ranged weapon attacks deal an additional {@damage 1d6} damage.",
 				"{@bold Summoning Ritual} Only one of each type of Summoning Ritual can be active at a time, if a new one is created in the range of this Summoning Ritual, this one ends. The spirit created by this ritual uses the {@creature Nature Ritual|GuildWars} stat block."
 			],
 			"source": "GuildWars",
@@ -20108,7 +20110,7 @@
 			},
 			"entries": [
 				"Summon a nature spirit of quickening zephyr, allowing multiple spells to be cast per turn, but increasing the spell slot usage.",
-				"Summon a nature spirit for the duration. If a creature is within 120 feet of the nature spirit, they can cast spells as an action, even if they already cast a spell as a bonus action on their turn, and they must expend additional spell slots to cast a spell.",
+				"Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit, they can cast spells as an action, even if they already cast a spell as a bonus action on their turn, and they must expend additional spell slots to cast a spell.",
 				{
 					"type": "table",
 					"caption": "Quickening Zephyr",
@@ -22132,7 +22134,7 @@
 			},
 			"entries": [
 				"Call forth a spirit of winter, which converts all elemental damage to cold damage.",
-				"Summon a nature spirit for the duration. If a creature is within 120 feet of the nature spirit and takes acid, fire, lightning or thunder damage, they take cold damage instead.",
+				"Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit and takes acid, fire, lightning or thunder damage, they take cold damage instead.",
 				"{@bold Summoning Ritual} Only one of each type of Summoning Ritual can be active at a time, if a new one is created in the range of this Summoning Ritual, this one ends. The spirit created by this ritual uses the {@creature Nature Ritual|GuildWars} stat block."
 			],
 			"source": "GuildWars",
@@ -24015,104 +24017,6 @@
 				}
 			],
 			"uniqueId": "9271ed41-76cf-43a9-9dc1-ac3ff9c41109"
-		},
-		{
-			"name": "Bonetti's Defense",
-			"level": 2,
-			"school": "A",
-			"time": [
-				{
-					"number": 1,
-					"unit": "bonus"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "self"
-				}
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "round",
-						"amount": 4
-					}
-				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Artificer",
-						"source": "TCE"
-					},
-					{
-						"name": "Paladin",
-						"source": "PHB"
-					},
-					{
-						"name": "Ranger",
-						"source": "PHB"
-					}
-				]
-			},
-			"entries": [
-				"Magically invoke the stance of the famous fencer Bonetti, and increase your AC against weapon attacks until you use a spell.",
-				"For the duration, you have a +5 bonus to AC against weapon attacks and if an attack misses you because of this bonus, your next initiative roll gets increased by {@dice 1d8}.",
-				"When you cast a spell, this spell ends.",
-				"{@bold Stance.} If you enter a new stance, this stance ends.",
-				"{@bold Adrenaline.} Instead of expending a spell slot, you cast this spell by expending 8 adrenaline. When casting this spell at a higher level, expend an additional 4 adrenaline per level above the original level."
-			],
-			"source": "GuildWars",
-			"fluff": {
-				"entries": [
-					"Bonetti's Defense",
-					"Stance. For 5...10...11 seconds, you have a 75% chance to block melee and projectile attacks. You gain 5 Energy for each successful melee attack blocked. Bonetti's Defense ends if you use a skill."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/d/db/Bonetti%27s_Defense.jpg"
-						}
-					}
-				]
-			},
-			"feats": [
-				{
-					"name": "Adept of the White Robes",
-					"source": "DSotDQ"
-				}
-			],
-			"backgrounds": [
-				{
-					"name": "Northern Shiverpeaks",
-					"source": "GuildWars"
-				},
-				{
-					"name": "Warrior",
-					"source": "GuildWars"
-				},
-				{
-					"name": "Tactics",
-					"source": "GuildWars"
-				}
-			],
-			"components": {
-				"s": true
-			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the duration increases by 1 round for each slot level above 2nd."
-					]
-				}
-			],
-			"uniqueId": "d80bd7aa-2eb8-4e41-b784-7b609337d043"
 		},
 		{
 			"name": "Pin Down",
@@ -29786,7 +29690,7 @@
 			},
 			"entries": [
 				"Call forth a spirit of fire, which converts all physical damage to fire damage.",
-				"Summon a nature spirit for the duration. If a creature is within 120 feet of the nature spirit and takes bludgeoning, piercing or slashing damage, they take fire damage instead.",
+				"Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit and takes bludgeoning, piercing or slashing damage, they take fire damage instead.",
 				"{@bold Summoning Ritual} Only one of each type of Summoning Ritual can be active at a time, if a new one is created in the range of this Summoning Ritual, this one ends. The spirit created by this ritual uses the {@creature Nature Ritual|GuildWars} stat block.",
 				"{@bold Elite.} When preparing your spells, you can only prepare one elite spell."
 			],
@@ -38497,7 +38401,7 @@
 			},
 			"entries": [
 				"Summon a nature spirit of the fertile season, improving health and reducing damage take for anyone affected.",
-				"Summon a nature spirit for the duration. If a creature is within 120 feet of the nature spirit, the creature's hit point maximum and current hit points increase by 10 and when a creature takes damage, you roll {@dice 1d4} and subtract the number rolled from the damage.",
+				"Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit, the creature's hit point maximum and current hit points increase by 10 and when a creature takes damage, you roll {@dice 1d4} and subtract the number rolled from the damage.",
 				"{@bold Summoning Ritual} Only one of each type of Summoning Ritual can be active at a time, if a new one is created in the range of this Summoning Ritual, this one ends. The spirit created by this ritual uses the {@creature Nature Ritual|GuildWars} stat block."
 			],
 			"source": "GuildWars",
@@ -42191,7 +42095,7 @@
 			},
 			"entries": [
 				"Summon a nature spirit of the Symbiosis, improving health for every beneficial spell on a creature.",
-				"Summon a nature spirit for the duration. If a creature is within 120 feet of the nature spirit, the creature's hit point maximum and current hit points increase by 5 for each beneficial spell on them.",
+				"Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit, the creature's hit point maximum and current hit points increase by 5 for each beneficial spell on them.",
 				"{@bold Summoning Ritual} Only one of each type of Summoning Ritual can be active at a time, if a new one is created in the range of this Summoning Ritual, this one ends. The spirit created by this ritual uses the {@creature Nature Ritual|GuildWars} stat block."
 			],
 			"source": "GuildWars",
@@ -46171,6 +46075,1188 @@
 					]
 				}
 			]
+		},
+		{
+			"uniqueId": "99d79de2-ee78-4941-95a0-7c84035b8eb4",
+			"name": "Purge Signet",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Activate your Purge Signet, removing all negative effects from a creature at the cost of your initiative.",
+				"Choose one creature that you can see within range. End {@condition Corruption|GuildWars}, {@condition Disease|GuildWars}, {@condition blinded|phb|Blindness}, {@condition Dazed|GuildWars}, {@condition Bleeding|GuildWars}, {@condition Crippled|GuildWars}, {@condition Burning|GuildWars}, {@condition Weakness|GuildWars}, {@condition Cracked Armor|GuildWars}, and {@condition Deep Wound|GuildWars} on the target. Also, all harmful spells on the target end.",
+				"Your next N initiative roll gets reduced by Nd6, where N is the number of conditions and harmful spells ended this way.",
+				"{@bold Signet.} Casting this spell does not cost a spell slot. Once you cast this spell, you cannot do so again until you finish a short or long rest."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Purge Signet",
+					"Signet. Remove all hexes and conditions from target ally. You lose 10 Energy for each hex and each condition removed."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/f/f2/Purge_Signet.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Monk",
+					"source": "GuildWars"
+				},
+				{
+					"name": "No Attribute",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			}
+		},
+		{
+			"name": "Rend Enchantments",
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Forcefully rend beneficial spell from a creature, taking damage for each holy themed spell.",
+				"Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, the latest {@dice 1d4+1} beneficial spells on the target end. On a successful save, half as many spells are ended.",
+				"If a holy themed beneficial spell was ended this way, you lose health equal {@dice 1d6} per holy themed spell ended this way."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Rend Enchantments",
+					"Spell. Remove 5...8...9 enchantments from target foe. For each Monk enchantment removed, you lose 55...31...25 Health."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/d/d9/Rend_Enchantments.jpg"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"areaTags": [
+				"MT"
+			],
+			"uniqueId": "61139c93-1c35-4fce-92d7-b7cc0628c157",
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Curses",
+					"source": "GuildWars"
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, {@dice 1d4} additional spells are ended for each slot level above 4th."
+					]
+				}
+			]
+		},
+		{
+			"name": "Predatory Season",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Summon a nature spirit of the Predatory Season, reducing healing and making creatures gain health every time they hit with a weapon attack.",
+				"Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit, when the creature regains hit points, they regain 20% less hit points and when the creature hits with a weapon attack, they regain hit points equal to {@dice 2d4}, which is not reduced by this spell.",
+				"{@bold Summoning Ritual} Only one of each type of Summoning Ritual can be active at a time, if a new one is created in the range of this Summoning Ritual, this one ends. The spirit created by this ritual uses the {@creature Nature Ritual|GuildWars} stat block."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Predatory Season",
+					"Nature Ritual. Create a level 1...8...10 spirit. For non-spirit creatures within its range, all healing is reduced by 20%. If any of your attacks hit, you gain 5 Health. This spirit dies after 30...126...150 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/f/fd/Predatory_Season.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Southwestern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Beast Mastery",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "fresh blood"
+			},
+			"meta": {
+				"ritual": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, use the higher level wherever the spell's level appears in the stat block and when you cast this spell using a spell slot of 3rd or 4th level, the duration increases to 8 hours. When you use a spell slot of 5th level or higher, the duration increases to 24 hours."
+					]
+				}
+			],
+			"uniqueId": "f4f1f4fc-653c-4dcc-bed9-44b990102f70"
+		},
+		{
+			"name": "Bonetti's Defense",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 3
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Magically invoke the stance of the famous fencer Bonetti, and increase your AC against weapon attacks until you use a spell.",
+				"For the duration, you have a +5 bonus to AC against weapon attacks and if an attack misses you because of this bonus, your next initiative roll gets increased by {@dice 1d8}.",
+				"When you cast a spell, this spell ends.",
+				"{@bold Stance.} If you enter a new stance, this stance ends.",
+				"{@bold Adrenaline.} Instead of expending a spell slot, you cast this spell by expending 8 adrenaline. When casting this spell at a higher level, expend an additional 4 adrenaline per level above the original level."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Bonetti's Defense",
+					"Stance. For 5...10...11 seconds, you have a 75% chance to block melee and projectile attacks. You gain 5 Energy for each successful melee attack blocked. Bonetti's Defense ends if you use a skill."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/d/db/Bonetti%27s_Defense.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Adept of the White Robes",
+					"source": "DSotDQ"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Northern Shiverpeaks",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Warrior",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Tactics",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the duration increases by 1 round for each slot level above 2nd."
+					]
+				}
+			],
+			"uniqueId": "1917be62-9230-4365-b4ef-9e081273b697"
+		},
+		{
+			"name": "Disciplined Stance",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 3
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Refuse to give into the adrenaline of battle, and focus on your training, improving AC and reducing damage, as long as you do not expend adrenaline.",
+				"For the duration, you have a +5 bonus to AC against weapon attacks and when you take damage, you can roll {@dice 1d4} and subtract the number rolled from the damage.",
+				"When you cast a spell which requires adrenaline, this spell ends.",
+				"{@bold Stance.} If you enter a new stance, this stance ends.",
+				"{@bold Adrenaline.} Adrenaline must be used to cast some spells instead of expending a spell slot."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Disciplined Stance",
+					"Stance. For 1...3...4 second[s], you gain +10 armor and have a 75% chance to block attacks. Disciplined Stance ends if you use an adrenal skill."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/1/11/Disciplined_Stance.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Warrior",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Tactics",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the duration increases by 1 round for each slot level above 3rd."
+					]
+				}
+			],
+			"uniqueId": "e8e94461-b133-4f0f-8a4f-4666b1f69920"
+		},
+		{
+			"name": "Kinetic Armor",
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 2
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Conjure an armor around you, which renews itself by siphoning off a small amount of spell energy.",
+				"For the duration, when you take damage, you can roll {@dice 2d4} and subtract the number rolled from the damage. Additionally, when you cast a spell of 1st level or higher, the duration of this spell resets.",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Kinetic Armor",
+					"Enchantment Spell. For 8 seconds, you gain +20...68...80 armor. Whenever you cast a spell, Kinetic Armor is renewed for 8 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/f/fc/Kinetic_Armor.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"components": {
+				"s": true
+			},
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Earth Magic",
+					"source": "PHB"
+				}
+			],
+			"uniqueId": "979ea013-114b-413f-82ca-b8217da6bdd4",
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the number subtracted increases by {@dice 1d4} for each slot level above 4th."
+					]
+				}
+			]
+		},
+		{
+			"uniqueId": "4398ba3c-8bab-40b6-8694-45e3daeac38b",
+			"name": "Signet of Humility",
+			"level": 4,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Activate your Signet of Humility, humbling your target into not using their Elite skill.",
+				"Choose one hostile creature that you can see within range. The Target must make a Charisma saving throw. On a failed safe, the target cannot use Elite spells for the duration.",
+				"{@bold Signet.} Casting this spell does not cost a spell slot. Once you cast this spell, you cannot do so again until you finish a short or long rest."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Signet of Humility",
+					"Signet. Target foe's elite skill is disabled for 1...13...16 second[s]. Your non-Mesmer skills are disabled for 10 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/7/7d/Signet_of_Humility.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Inspiration Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			}
+		},
+		{
+			"name": "Rebirth",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Resurrect and teleport a creature from a large range, with a large magical backlash.",
+				"Choose one friendly creature, which has not been dead for more than 1 minute, that you can see within range. The target returns to life with 25% of their maximum hit points. On the target's next turn, the target can use either an action or a bonus action, not both. Your next initiative roll gets reduced by 30.",
+				"This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Rebirth",
+					"Spell. Resurrect target party member. Target party member is returned to life with 25% Health and zero Energy, and is teleported to your current location. All of target's skills are disabled for 10...4...3 seconds. This spell consumes all of your remaining Energy."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/9/97/Rebirth.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "gems worth 30 gp, which the spell consumes",
+					"consume": true,
+					"cost": 6000000
+				}
+			},
+			"uniqueId": "91ff39a1-4227-4d8f-a60d-07ce0495a39d",
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Monk",
+					"source": "GuildWars"
+				},
+				{
+					"name": "No Attribute",
+					"source": "GuildWars"
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the range of the spell increases by 30 feet for each slot level above 3rd."
+					]
+				}
+			]
+		},
+		{
+			"uniqueId": "e37f511e-4e82-45c2-9d56-7f0a15f17945",
+			"name": "Spinal Shivers",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Make a creature extremely sensitive to the cold, interrupting them every time they take cold damage.",
+				"Choose one creature that you can see within range. For the duration, when the target takes cold damage, the target must make a Constitution saving throw. On a failed save, the target can't cast spells or use abilities until the end of their next turn."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Spinal Shivers",
+					"Hex Spell. For 10...34...40 seconds, whenever target foe is struck for cold damage while using a skill, that foe is interrupted, and you lose 10...6...5 Energy or Spinal Shivers ends."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/6/6f/Spinal_Shivers.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Curses",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd."
+					]
+				}
+			]
+		},
+		{
+			"name": "Savage Shot",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you see a creature within range cast a spell or using an ability"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You attempt to interrupt a creature in the process of using an ability or casting a spell, if you interrupt a spell this way, the target takes additional damage.",
+				"Choose one creature, which is casting a spell or using an ability, that you can see within range of your weapon. Make a ranged weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw. On a failed save, the ability/spell fails and has no effect.",
+				"If a spell failed this way, the target takes an additional {@damage 3d8} damage."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Savage Shot",
+					"Bow Attack. If Savage Shot hits, your target's action is interrupted. If that action was a spell, you strike for +13...25...28 damage."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/f/fd/Savage_Shot.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"s": true,
+				"m": "a ranged weapon worth at least 1 sp"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the number of attacks increases by 1 for every two slot levels above 3rd. "
+					]
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Marksmanship",
+					"source": "GuildWars"
+				}
+			],
+			"uniqueId": "e77e6a5e-b6c3-49b6-b3df-8fa5e74e7110"
+		},
+		{
+			"name": "Heavy Blow",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Put all your adrenaline into a powerful blow, which knocks down weakened foes.",
+				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and, if the target is weakened, the target is knocked {@condition prone} and takes an additional {@damage 6d8} damage.",
+				"{@bold Adrenaline.} Instead of expending a spell slot, you cast this spell by expending 5 adrenaline. When casting this spell at a higher level, expend an additional 5 adrenaline per level above the original level.",
+				"{@bold Adrenaline.} You lose all adrenaline."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Heavy Blow",
+					"Hammer Attack. Lose all adrenaline. If this attack hits a foe suffering from Weakness, that foe is knocked down and you strike for +1...24...30 damage."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/d/d5/Heavy_Blow.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon worth at least 1 sp"
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th or 5th level, the number of attacks increases by 1. When you cast this spell using a spell slot of 6th or 7th level, the number of attacks increases by 2. When you use a spell slot of 8th level or higher, the number of attacks increases by 3."
+					]
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"AAD"
+			],
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Warrior",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Hammer Mastery",
+					"source": "GuildWars"
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"uniqueId": "37b59665-98aa-4948-bb9f-eb8df4ab8716"
 		}
 	],
 	"table": [
@@ -48613,7 +49699,8 @@
 			},
 			"damageTags": [
 				"B"
-			]
+			],
+			"uniqueId": "8b1bb9a2-db58-4353-bb63-26c01bfd00d1"
 		},
 		{
 			"name": "Charr",
@@ -48690,7 +49777,8 @@
 			"tokenHref": {
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Charr_Stalker_Token.png"
-			}
+			},
+			"uniqueId": "793d1013-8b3f-437f-af1f-8ee1d2d6dff2"
 		},
 		{
 			"name": "Grasp of Chaos",
@@ -48807,7 +49895,8 @@
 			],
 			"savingThrowForced": [
 				"strength"
-			]
+			],
+			"uniqueId": "163ff894-a2bb-4c63-8843-6da27648897d"
 		},
 		{
 			"name": "Oni",
@@ -48944,7 +50033,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "b0d2a58f-c80e-4bb5-8549-bef68a3771f0"
 		},
 		{
 			"name": "Nature Ritual",
@@ -49011,7 +50101,8 @@
 			"tokenHref": {
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Nature_Spirit_Token.png"
-			}
+			},
+			"uniqueId": "96b61841-7b5b-48fa-8072-88ebcedf2e41"
 		},
 		{
 			"name": "Charr Axe Fiend Boss",
@@ -49191,7 +50282,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "1d292569-c4c9-4ec5-9d24-1d74f34b6e2e"
 		},
 		{
 			"name": "Charr Stalker Boss",
@@ -49376,7 +50468,8 @@
 			],
 			"damageTagsSpell": [
 				"F"
-			]
+			],
+			"uniqueId": "df0ea1a9-d4ba-46d6-96c8-286122ede64c"
 		},
 		{
 			"name": "Charr Martyr Boss",
@@ -49548,7 +50641,8 @@
 			},
 			"damageTags": [
 				"R"
-			]
+			],
+			"uniqueId": "d3f6af3c-e41e-4d3d-b8fd-3ce40a2d5653"
 		},
 		{
 			"name": "Charr Ashen Claw Boss",
@@ -49720,7 +50814,8 @@
 			},
 			"damageTags": [
 				"N"
-			]
+			],
+			"uniqueId": "41e90cd6-e3ba-4b70-b49b-4d788621b38a"
 		},
 		{
 			"name": "Charr Chaot Boss",
@@ -49900,7 +50995,8 @@
 			},
 			"damageTags": [
 				"Y"
-			]
+			],
+			"uniqueId": "92bb85d5-66b0-4184-8194-cbf0af35d3a5"
 		},
 		{
 			"name": "Charr Flame Wielder Boss",
@@ -50066,7 +51162,8 @@
 			},
 			"damageTags": [
 				"F"
-			]
+			],
+			"uniqueId": "fe14aa31-0818-4e38-bf99-b9a61a764e0a"
 		},
 		{
 			"name": "Charr Axe Fiend",
@@ -50216,7 +51313,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "87b66b7d-25b1-4fcd-b222-011af2f0db24"
 		},
 		{
 			"name": "Charr Stalker",
@@ -50367,7 +51465,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "2690f040-c2d9-4d6c-949f-c1ae2388df03"
 		},
 		{
 			"name": "Charr Martyr",
@@ -50506,7 +51605,8 @@
 			},
 			"damageTags": [
 				"R"
-			]
+			],
+			"uniqueId": "1bbf59b5-556d-4273-bcfa-6b11af417d45"
 		},
 		{
 			"name": "Charr Ashen Claw",
@@ -50646,7 +51746,8 @@
 			},
 			"damageTags": [
 				"N"
-			]
+			],
+			"uniqueId": "70c889f2-0cb1-4ca2-9e83-18eadc886b0f"
 		},
 		{
 			"name": "Charr Chaot",
@@ -50786,7 +51887,8 @@
 			},
 			"damageTags": [
 				"Y"
-			]
+			],
+			"uniqueId": "b93d1228-422a-46c5-9a44-07d8d1897aeb"
 		},
 		{
 			"name": "Charr Flame Wielder",
@@ -50925,7 +52027,8 @@
 			},
 			"damageTags": [
 				"F"
-			]
+			],
+			"uniqueId": "0d887ad7-203c-441e-8195-3fdf78c54ce0"
 		},
 		{
 			"name": "Whiptail Devourer",
@@ -51091,7 +52194,8 @@
 			},
 			"damageTags": [
 				"P"
-			]
+			],
+			"uniqueId": "08ef48d8-3fa7-4ed0-be70-fceefc4973ed"
 		},
 		{
 			"name": "Carrion Devourer",
@@ -51264,7 +52368,8 @@
 			},
 			"damageTags": [
 				"P"
-			]
+			],
+			"uniqueId": "241b6dff-12bb-47be-bd70-603f71a6b6c5"
 		},
 		{
 			"name": "Plague Devourer",
@@ -51423,7 +52528,8 @@
 			},
 			"damageTags": [
 				"P"
-			]
+			],
+			"uniqueId": "08555877-47cc-47e8-9d66-27b6410fefbd"
 		},
 		{
 			"name": "Hydra (Ascalon)",
@@ -51582,7 +52688,8 @@
 			},
 			"damageTags": [
 				"P"
-			]
+			],
+			"uniqueId": "8d5ffcaa-968f-4ae9-baeb-02621e0d3194"
 		},
 		{
 			"name": "Resurrect Gargoyle",
@@ -51707,7 +52814,8 @@
 			},
 			"damageTags": [
 				"L"
-			]
+			],
+			"uniqueId": "9c3925f4-d79a-4dad-9b83-9ab9fe30fd7c"
 		},
 		{
 			"name": "Shatter Gargoyle",
@@ -51852,7 +52960,8 @@
 			},
 			"damageTags": [
 				"Y"
-			]
+			],
+			"uniqueId": "ce8b867b-1bc5-4afa-814f-b8e0c0ba0e89"
 		},
 		{
 			"name": "Flash Gargoyle",
@@ -52003,7 +53112,8 @@
 			},
 			"damageTags": [
 				"L"
-			]
+			],
+			"uniqueId": "1e0674b5-5b82-4f25-907e-15c6b2b9a105"
 		},
 		{
 			"name": "Grawl (Ascalon)",
@@ -52169,7 +53279,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "6b2ccae4-2683-4ae1-bb46-1b8815c2ea87"
 		},
 		{
 			"name": "Grawl Ulodyte",
@@ -52322,7 +53433,8 @@
 			},
 			"damageTags": [
 				"R"
-			]
+			],
+			"uniqueId": "a14bc54c-6dd2-4ec6-ab3e-ff9a8f415f9f"
 		},
 		{
 			"name": "Boulder Elemental",
@@ -52448,7 +53560,8 @@
 			},
 			"damageTags": [
 				"B"
-			]
+			],
+			"uniqueId": "06af8055-92bc-41ea-bfc8-f0896c83552e"
 		},
 		{
 			"name": "Margonite Executioner",
@@ -52611,7 +53724,8 @@
 			},
 			"damageTags": [
 				"B"
-			]
+			],
+			"uniqueId": "7052b9fa-45c4-44fa-aff5-8a286cceeb6f"
 		},
 		{
 			"name": "White Mantle Knight",
@@ -52753,7 +53867,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "c987cfa6-d625-4fc3-9049-d15195bfe5a8"
 		},
 		{
 			"name": "Justiciar Hablion",
@@ -52907,7 +54022,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "3f5db7e2-a9fd-48a6-bb50-ebe1ae487f70"
 		},
 		{
 			"name": "Wooden Charr Trebuchet",
@@ -53054,7 +54170,8 @@
 			],
 			"savingThrowForced": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "35c65d29-642c-43f0-a8ea-7a4b8140728c"
 		},
 		{
 			"name": "Mage channeling an Obelisk",
@@ -53183,7 +54300,8 @@
 			},
 			"damageTags": [
 				"L"
-			]
+			],
+			"uniqueId": "4fd3892a-1b4d-437c-8141-3745c33e09a8"
 		},
 		{
 			"name": "Bonfaaz Burntfur",
@@ -53420,7 +54538,8 @@
 			],
 			"savingThrowForcedLegendary": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "243984a5-0d27-4583-97be-1a0b2e8bea4b"
 		},
 		{
 			"name": "Modniir Centaur",
@@ -53549,7 +54668,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "fbd9bafc-6db0-4bc6-a87d-7b0feb14504e"
 		},
 		{
 			"name": "Modniir Longbow",
@@ -53727,7 +54847,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"strength"
-			]
+			],
+			"uniqueId": "97ebfaa7-6344-41e8-8050-7e1a356712c8"
 		},
 		{
 			"name": "Modniir Longbow Boss",
@@ -53941,7 +55062,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"strength"
-			]
+			],
+			"uniqueId": "d46b1617-08fe-41ca-a30a-c53113c4bf65"
 		},
 		{
 			"name": "Modniir Warrior",
@@ -54108,7 +55230,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "0cd7255c-7ee5-446e-af98-9335fcb0fa8c"
 		},
 		{
 			"name": "Modniir Warrior Boss",
@@ -54316,7 +55439,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "c4deda24-b589-42ec-9958-9df85218570c"
 		},
 		{
 			"name": "Modniir Protector",
@@ -54474,7 +55598,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "c53165b2-b9cb-43da-9ad2-5f80102b2760"
 		},
 		{
 			"name": "Modniir Protector Boss",
@@ -54656,7 +55781,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "de9e96f3-7be2-460e-aabd-2421c03f515a"
 		},
 		{
 			"name": "Drake",
@@ -54762,7 +55888,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "18430355-ae41-424b-8b4c-d3399b63a6a4"
 		},
 		{
 			"name": "Ice Drake Elementalist Boss",
@@ -54952,7 +56079,8 @@
 			],
 			"damageTagsSpell": [
 				"L"
-			]
+			],
+			"uniqueId": "f51238da-770b-4269-8b7e-151da73f5a38"
 		},
 		{
 			"name": "Dwarf",
@@ -55059,7 +56187,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "0ac36b48-0bfd-47e7-82d0-ec876c0e6606"
 		},
 		{
 			"name": "Deldrimor Dwarf",
@@ -55177,7 +56306,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "461fdd88-442a-41d7-9b93-06fd26acce1b"
 		},
 		{
 			"name": "Stone Summit Dwarf",
@@ -55294,7 +56424,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "b6722ef5-db67-46e9-96b1-a3f48700e7f7"
 		},
 		{
 			"name": "Stone Summit Beastmaster",
@@ -55477,7 +56608,8 @@
 			"damageTags": [
 				"B",
 				"S"
-			]
+			],
+			"uniqueId": "8999cf05-32c7-452f-8a97-a07e6d90c84c"
 		},
 		{
 			"name": "Stone Summit Sage",
@@ -55646,7 +56778,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "16177556-8add-4704-9d11-b37feaf13719"
 		},
 		{
 			"name": "Stone Summit Sage Boss",
@@ -55846,7 +56979,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "ce90df2c-96c4-41de-9a86-78b6e7a97341"
 		},
 		{
 			"name": "Stone Summit Howler",
@@ -56020,7 +57154,8 @@
 			],
 			"damageTagsSpell": [
 				"N"
-			]
+			],
+			"uniqueId": "fea29a85-8398-45c3-8fff-50e8fd4733cd"
 		},
 		{
 			"name": "Stone Summit Howler Boss",
@@ -56224,7 +57359,8 @@
 			],
 			"damageTagsSpell": [
 				"N"
-			]
+			],
+			"uniqueId": "a312ec3d-95e0-45e3-a84a-5c106992601e"
 		},
 		{
 			"name": "Stone Summit Crusher",
@@ -56388,7 +57524,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "6a7a29b7-d6ac-44b8-b7e8-90a6054085b1"
 		},
 		{
 			"name": "Stone Summit Axe Wielder",
@@ -56557,7 +57694,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "5a4fc840-ac49-4c39-a124-baf435736488"
 		},
 		{
 			"name": "Stone Summit Axe Wielder Boss",
@@ -56756,7 +57894,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "c7096944-1ef8-4043-9143-57a360d8d911"
 		},
 		{
 			"name": "Spirit of the Fallen",
@@ -56945,7 +58084,8 @@
 			],
 			"damageTags": [
 				"O"
-			]
+			],
+			"uniqueId": "8e2dd65e-62b3-4022-9e32-152cf910f62b"
 		},
 		{
 			"name": "Stone Summit Dolyak Rider",
@@ -57127,7 +58267,8 @@
 			"damageTags": [
 				"P",
 				"R"
-			]
+			],
+			"uniqueId": "c96109f6-dcab-4e32-a375-6dd48de2491f"
 		},
 		{
 			"name": "Stone Summit Dolyak Rider Boss",
@@ -57343,7 +58484,8 @@
 			"damageTags": [
 				"P",
 				"R"
-			]
+			],
+			"uniqueId": "35aef043-a192-45b3-a307-91b40d697d43"
 		},
 		{
 			"name": "Stone Summit Scout",
@@ -57509,7 +58651,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "98dc5037-1da2-4fa0-9eb4-5708535736dc"
 		},
 		{
 			"name": "Dryder",
@@ -57655,7 +58798,8 @@
 			"damageTags": [
 				"N",
 				"P"
-			]
+			],
+			"uniqueId": "734758fc-194b-4c6d-a5a9-7369d4f47000"
 		},
 		{
 			"name": "Frostfire Dryder",
@@ -57834,7 +58978,8 @@
 			"savingThrowForcedSpell": [
 				"constitution",
 				"wisdom"
-			]
+			],
+			"uniqueId": "f6ebff32-9b00-4d88-9928-e394d2d7b3c2"
 		},
 		{
 			"name": "Ettin",
@@ -57980,7 +59125,8 @@
 				"B",
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "5badf526-be4f-4433-9b02-56d582451d93"
 		},
 		{
 			"name": "Snow Ettin",
@@ -58143,7 +59289,8 @@
 				"B",
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "004abe70-24d4-48f3-a96b-7cfe6eea7334"
 		},
 		{
 			"name": "Ice Golem",
@@ -58299,7 +59446,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "6880f205-f3b2-4eb9-aead-512a630e7bd5"
 		},
 		{
 			"name": "Minotaur (Shiverpeaks)",
@@ -58443,7 +59591,8 @@
 			],
 			"savingThrowForced": [
 				"strength"
-			]
+			],
+			"uniqueId": "ab6d6690-fd44-4e85-a90a-88aabda721e8"
 		},
 		{
 			"name": "Juniper Bark",
@@ -58599,7 +59748,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"constitution"
-			]
+			],
+			"uniqueId": "0fa57d95-a466-4aad-af5a-4984bbaf9f88"
 		},
 		{
 			"name": "Stone Summit Scout Boss",
@@ -58803,7 +59953,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "92045dac-5eaa-4a98-93e2-2190318b5f83"
 		},
 		{
 			"name": "Frostfire Dryder Necromancer Boss",
@@ -59009,7 +60160,8 @@
 			"damageTags": [
 				"N",
 				"P"
-			]
+			],
+			"uniqueId": "c751685a-f7c8-4b39-bd27-30fe839f71a2"
 		},
 		{
 			"name": "Ice Golem Boss (Northern Shiverpeaks)",
@@ -59211,7 +60363,8 @@
 			],
 			"savingThrowForced": [
 				"constitution"
-			]
+			],
+			"uniqueId": "aab9e33b-4949-4db6-803a-d758693450e2"
 		},
 		{
 			"name": "Ice Imp",
@@ -59394,7 +60547,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "a9074a70-9ce4-4631-978d-81c39d1fbdf5"
 		},
 		{
 			"name": "Ice Imp Elementalist Boss",
@@ -59625,7 +60779,8 @@
 			],
 			"savingThrowForced": [
 				"constitution"
-			]
+			],
+			"uniqueId": "b6817799-e00c-465d-88c5-f2272d6e56b0"
 		},
 		{
 			"name": "Ice Imp Mesmer Boss",
@@ -59855,7 +61010,8 @@
 			],
 			"savingThrowForced": [
 				"intelligence"
-			]
+			],
+			"uniqueId": "8efd6877-69a2-400a-8a3b-8d59dce8cb11"
 		},
 		{
 			"name": "Stone Summit Beastmaster Warrior Boss",
@@ -60073,7 +61229,8 @@
 			"damageTags": [
 				"B",
 				"S"
-			]
+			],
+			"uniqueId": "90960aba-3cf0-4742-a290-616cd4e473ed"
 		},
 		{
 			"source": "GuildWars",
@@ -60241,7 +61398,8 @@
 				"constitution",
 				"dexterity",
 				"strength"
-			]
+			],
+			"uniqueId": "ebc228e4-36a6-41fe-9fa2-50ce41eaac31"
 		},
 		{
 			"name": "King Jalis Ironhammer",
@@ -60442,7 +61600,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "b034c9a4-e865-40f6-badd-396ed00126fd"
 		},
 		{
 			"name": "King Jalis Ironhammer",
@@ -60646,6 +61805,351 @@
 			"damageTags": [
 				"P",
 				"S"
+			],
+			"uniqueId": "8b67afb3-0b34-48df-9d00-1d658d1a894d"
+		},
+		{
+			"name": "Volatile Ice Elemental",
+			"source": "GuildWars",
+			"size": [
+				"S"
+			],
+			"type": "elemental",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				8
+			],
+			"hp": {
+				"special": "1"
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 6,
+			"dex": 14,
+			"con": 6,
+			"int": 14,
+			"wis": 8,
+			"cha": 8,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"cr": "1/8",
+			"trait": [
+				{
+					"name": "Death Burst",
+					"entries": [
+						"When the Volatile Ice Elemental, it explodes in a burst of jagged ice. Each creature within 5 feet of it must make a {@dc 10} Dexterity saving throw, taking 4 ({@damage 2d4}) cold damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the Volatile Ice Elemental remains motionless, it is indistinguishable from an ordinary shard of ice."
+					]
+				}
+			],
+			"traitTags": [
+				"Death Burst",
+				"False Appearance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ice_Elemental.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "bd82414e-67fe-431d-a130-51fd69d961ea",
+			"skill": {
+				"stealth": "+6",
+				"acrobatics": "+6"
+			},
+			"action": [
+				{
+					"name": "Explode",
+					"entries": [
+						"The Volatile Ice Elemental explodes, killing itself and empowering its Death Burst trait:",
+						"- The DC increases to {@dc 14}.",
+						"- The radius increases to 10 feet.",
+						"- The damage increases to 8 ({@damage 4d4}) cold damage."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ice_Elemental_Token.png"
+			},
+			"alias": [
+				"Mini Ice Elemental"
+			],
+			"damageTags": [
+				"C"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Nicholas the Traveler",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"average": 68,
+				"formula": "8d8 + 32"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 12,
+			"dex": 19,
+			"con": 18,
+			"int": 11,
+			"wis": 17,
+			"cha": 11,
+			"skill": {
+				"athletics": "+4",
+				"perception": "+9",
+				"stealth": "+10",
+				"survival": "+9"
+			},
+			"passive": 19,
+			"languages": [
+				"Any two"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The urban ranger is a 14th-level spellcaster that uses Wisdom as its spellcasting ability (spell save {@dc 14}; {@hit 6} to hit with spell attacks). It knows the following spells from the ranger spell list:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell bestial pounce|GuildWars}",
+								"{@spell comfort animal|GuildWars}",
+								"{@spell cure wounds}",
+								"{@spell longstrider}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell heal other|GuildWars}",
+								"{@spell maiming strike|GuildWars}",
+								"{@spell pass without trace}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell call of haste|GuildWars}",
+								"{@spell thunderclap of destruction|GuildWars}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The urban ranger makes two melee attacks or two ranged attacks."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, ranged 150/600 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"longbow|phb",
+				"shortsword|phb"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"spellcastingTags": [
+				"CR"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Nicholas Sandford (born 1035 AE) is an Ascalonian traveler, a craftsman and a writer.",
+					"Nicholas met his dolyak friend, Professor Yakkington, during a snowstorm in the Northern Shiverpeaks. The two managed to survive by huddling together for warmth and they have been together ever since.",
+					"Due to the Searing, Nicholas lost his parents, friends and beloved Mary Malone. After having mourned in seclusion for years, his hair grown white, he started to travel the world and dropped his last name in favor of the moniker \"the Traveler\".",
+					"He has made many friends, including Gwen and Durmand, and is often seen collecting items to aid them (especially Durmand or Zinn) in some form, or catering to Yakkington's whims.",
+					"A true craftsman, Nicholas is able to make various tools and even small sculptures out of various items he finds. Once he helped Vael by making a disguise out of Quetzal Crests so Vael could spy on the Tengu of Cantha.",
+					"In exchange, he has gathered up a hefty supply of exotic and unique items to put in his Gifts of the Traveler, which he trades with adventurers in exchange for the items he needs.",
+					"Nicholas is very interested in local folklore, in fauna and flora. As a writer he has written a novel entitled \"There with Yakkington: A Traveler's Tale.\".",
+					"He also claims to be a gourmet chef, thanks to the various different foods he has tasted throughout his travels, which his friendship with Imperial Chef Yileng may suggest to be true, and a medic, as he is often seen trying to come up with some remedy to counteract various poisons (notably those inflicted by Dryders or Rot Wallows). "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Nicholas_the_Traveler.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "5837dbfd-9969-4d82-b0f1-60917725cb21",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Nicholas_the_Traveler_Token.png"
+			},
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Professor Yakkington",
+			"source": "GuildWars",
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "10d10 + 10",
+				"average": 65
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 12,
+			"int": 2,
+			"wis": 10,
+			"cha": 6,
+			"passive": 10,
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the yak moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 ({@dice 2d6}) damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ram",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}17 ({@damage 4d6 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one {@condition prone} creature. {@h}18 ({@damage 6d4 + 3}) bludgeoning damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Charge"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"uniqueId": "2191ade7-f1ec-477e-9160-9a8f7ff806d0",
+			"skill": {
+				"athletics": "+7"
+			},
+			"fluff": {
+				"entries": [
+					"Professor Yakkington (born in 1057 AE) is the companion of Nicholas Sandford the Traveler. He was found by Nicholas during a blizzard in Traveler's Vale, having been abandoned by his mother like most young Dolyaks perceived to be weak. After using each other for warmth in the blizzard, Yakkington has joined Nicholas in his travels across Tyria.",
+					"In their travels, Yakkington is the fighter of the pair, holding back the wildlife for Nick. He also has a good sense of smell which comes in handy when trying to find their path again should they get lost.",
+					"Since his travels, Yakkington has become pampered by Nicholas, and often becomes stubborn. He enjoys having daily sweets and eating Red Iris Flowers, but has a strong fear of snakes and darkness. Because of his fears, Nick often puts Enchanted Lodestones to act as lights at night when Yakkington sleeps. According to Nick, he is 6'8\", weighs about a ton, and his lucky number is 5. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Professor_Yakkington.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Professor_Yakkington_Token.png"
+			},
+			"damageTags": [
+				"B"
+			],
+			"savingThrowForced": [
+				"strength"
 			]
 		}
 	],
@@ -60661,7 +62165,8 @@
 				"If the Stormcaller horn has been blown, all charr become vulnerable to all damage, and deal only half damage."
 			],
 			"mythicEncounter": [],
-			"source": "GuildWars"
+			"source": "GuildWars",
+			"uniqueId": "8e7c34eb-b8aa-49ca-999b-142054c2c967"
 		}
 	],
 	"race": [

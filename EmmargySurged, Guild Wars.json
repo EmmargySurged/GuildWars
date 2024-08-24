@@ -60926,9 +60926,6 @@
 					"headerEntries": [
 						"The Ice Imp Boss is a 10th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 17}, +9 to hit with spell attacks). The Ice Imp Boss has the following Mesmer (GW) spells prepared:"
 					],
-					"footerEntries": [
-						"*The Ice Imp Boss casts these spells on itself before combat."
-					],
 					"spells": {
 						"1": {
 							"spells": [
@@ -61004,14 +61001,14 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ice_Imp_Mesmer_Boss_Token.png"
 			},
+			"uniqueId": "8efd6877-69a2-400a-8a3b-8d59dce8cb11",
 			"damageTags": [
 				"P",
 				"Y"
 			],
 			"savingThrowForced": [
 				"intelligence"
-			],
-			"uniqueId": "8efd6877-69a2-400a-8a3b-8d59dce8cb11"
+			]
 		},
 		{
 			"name": "Stone Summit Beastmaster Warrior Boss",
@@ -62150,6 +62147,314 @@
 			],
 			"savingThrowForced": [
 				"strength"
+			]
+		},
+		{
+			"name": "Pitney",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"Soldier"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|PHB}",
+						"{@item shield|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 60,
+				"formula": "8d8 + 24"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 16,
+			"int": 10,
+			"wis": 12,
+			"cha": 10,
+			"skill": {
+				"intimidation": "+4",
+				"perception": "+3"
+			},
+			"passive": 13,
+			"languages": [
+				"Common"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Exploit Opening (3/Day)",
+					"entries": [
+						"When the knave makes an attack, they have advantage on the attack roll."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The knave makes two Morningstar or two Javelin attacks. They can replace one attack with a Shield Bash attack."
+					]
+				},
+				{
+					"name": "Morningstar",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage, or 13 ({@damage 2d8 + 4}) piercing damage if the target is {@condition prone}."
+					]
+				},
+				{
+					"name": "Shield Bash",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) bludgeoning damage, and if the target is a Medium or smaller creature, they must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Javelin",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 30/120 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Stay Down",
+					"entries": [
+						"The knave kicks one {@condition prone} creature within 5 feet of them. The target must succeed on a {@dc 14} Constitution saving throw or their speed is reduced to 0 until the end of their next turn."
+					]
+				}
+			],
+			"attachedItems": [
+				"javelin|phb",
+				"morningstar|phb"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"foundryTokenScale": 1.5,
+			"uniqueId": "cc9bc848-ce39-4125-abd0-5aac4ed9712c",
+			"fluff": {
+				"entries": [
+					"Pitney was a farmer whose field was plagued by worms and resided in Ashford. After the Searing, he has joined the Ascalon Army wanting revenge on the Charr. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Pitney.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Pitney_Token.png"
+			},
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"strength"
+			]
+		},
+		{
+			"name": "Hilde Starseer",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"norn"
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 90,
+				"formula": "20d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 11,
+			"int": 18,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"int": "+7",
+				"wis": "+4"
+			},
+			"skill": {
+				"arcana": "+7",
+				"history": "+7"
+			},
+			"passive": 11,
+			"languages": [
+				"any four languages"
+			],
+			"cr": "8",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The diviner casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 15}):"
+					],
+					"will": [
+						"{@spell mage hand}",
+						"{@spell message}",
+						"{@spell prestidigitation}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell arcane eye}",
+							"{@spell detect magic}",
+							"{@spell detect thoughts}",
+							"{@spell fly}",
+							"{@spell lightning bolt}",
+							"{@spell locate object}",
+							"{@spell mage armor}",
+							"{@spell Rary's telepathic bond}"
+						],
+						"1e": [
+							"{@spell true seeing}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The diviner makes three Arcane Burst attacks."
+					]
+				},
+				{
+					"name": "Arcane Burst",
+					"entries": [
+						"{@atk ms,rs} {@hit 7} to hit, reach 5 ft. or range 120 ft., one target. {@h}20 ({@damage 3d10 + 4}) radiant damage."
+					]
+				},
+				{
+					"name": "Overwhelming Revelation {@recharge 5}",
+					"entries": [
+						"The diviner magically creates a burst of illumination in a 10-foot-radius sphere centered on a point within 120 feet of it. Each creature in that area must make a {@dc 15} Wisdom saving throw. On a failed save, a creature takes 45 ({@damage 10d8}) psychic damage and is {@condition stunned} until the end of the diviner's next turn. On a successful save, the creature takes half as much damage and isn't {@condition stunned}."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Portent (3/Day)",
+					"entries": [
+						"When the diviner or a creature it can see makes an attack roll, a saving throw, or an ability check, the diviner rolls a {@dice d20} and chooses whether to use that roll in place of the {@dice d20} rolled for the attack roll, saving throw, or ability check. "
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/diviner.mp3"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"X"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Mother of Ivy the Rabbit Slayer  (Web view) and Ben  (Web view), wife of Sven  (Web view).",
+					"A part of a group that went north off the wall, the group she is a part of is still missing.",
+					"Have been missing for the last three months, were supposed to be back four months ago.",
+					"Hope is that they had to take a longer route back.  Fear is that they are dead or captured."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Hilde_Starseer.jpeg"
+						}
+					}
+				]
+			},
+			"uniqueId": "3c18e6fc-fa73-4b65-82dd-4dcec295e000",
+			"resist": [
+				"cold"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Hilde_Starseer_Token.png"
+			},
+			"damageTags": [
+				"R",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"L"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
 			]
 		}
 	],

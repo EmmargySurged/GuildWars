@@ -47257,6 +47257,292 @@
 				"prone"
 			],
 			"uniqueId": "37b59665-98aa-4948-bb9f-eb8df4ab8716"
+		},
+		{
+			"name": "Shock",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Infuse your hands with lightning energy and punch a creature, knocking them {@condition prone} on a hit.",
+				"Choose one creature that you can see within range. Make a melee spell attack against the target. On a hit, the target takes {@damage 4d6} lightning damage and must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}.",
+				"{@bold Armor Penetration.} This spell's lightning damage cannot be reduced in any way, except by immunities.",
+				"{@bold Overcast.} You become {@condition overcast|GuildWars} for 5 rounds."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Shock",
+					"Skill. Target touched foe is knocked down and struck for 10...50...60 lightning damage. This skill has 25% armor penetration."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/6/61/Shock.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"uniqueId": "adeff243-2509-4ae1-8633-4127a753ed3d",
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Artificer Initiate",
+					"source": "TCE"
+				},
+				{
+					"name": "Divinely Favored",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Air Magic",
+					"source": "GuildWars"
+				}
+			]
+		},
+		{
+			"uniqueId": "726a2f4a-a900-4c75-ad90-cc69c6b86ac3",
+			"name": "Spirit Shackles",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Throw a spectral pair of shackles around a creature's hand, reducing their initiative every time they attack.",
+				"Choose one creature that you can see within range. Make a ranged spell attack against the target. On a hit for the duration, when the target makes a weapon attack, the target's next initiative roll gets reduced by {@dice 1d6}.",
+				"{@bold Hex.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Spirit Shackles",
+					"Hex Spell. For 5...17...20 seconds, target foe loses 5 Energy whenever that foe attacks."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/2/25/Spirit_Shackles.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Divinely Favored",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Fey Touched",
+					"source": "TCE"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Inspiration Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "a pair of shackles"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the reduction of initiative increases by {@dice 1d6} for each slot level above 1st, and you can target one additional creature for every two slot levels above 1st."
+					]
+				}
+			]
 		}
 	],
 	"table": [
@@ -55788,7 +56074,7 @@
 			"name": "Drake",
 			"source": "GuildWars",
 			"size": [
-				"M"
+				"L"
 			],
 			"type": "dragon",
 			"alignment": [
@@ -55885,17 +56171,17 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Drake_Blue_Token.png"
 			},
+			"uniqueId": "18430355-ae41-424b-8b4c-d3399b63a6a4",
 			"damageTags": [
 				"B",
 				"P"
-			],
-			"uniqueId": "18430355-ae41-424b-8b4c-d3399b63a6a4"
+			]
 		},
 		{
 			"name": "Ice Drake Elementalist Boss",
 			"source": "GuildWars",
 			"size": [
-				"M"
+				"L"
 			],
 			"type": "dragon",
 			"alignment": [
@@ -56073,14 +56359,11 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ice_Drake_Elementalist_Boss _Token.png"
 			},
+			"uniqueId": "f51238da-770b-4269-8b7e-151da73f5a38",
 			"damageTags": [
 				"B",
 				"P"
-			],
-			"damageTagsSpell": [
-				"L"
-			],
-			"uniqueId": "f51238da-770b-4269-8b7e-151da73f5a38"
+			]
 		},
 		{
 			"name": "Dwarf",

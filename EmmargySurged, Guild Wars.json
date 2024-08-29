@@ -32376,7 +32376,7 @@
 			},
 			"entries": [
 				"Channel the ancient fighting style of the dwarfs, gaining an additional attack, taking less damage and disrupting foes with your attack as long as you are using a heavy weapon.",
-				"For the duration, if you are wielding a melee weapon with the heavy property, you can attack one additional time when you take the attack action on your turn, when you take damage, you can roll {@dice 4d4} and subtract the number rolled from the damage, and when you hit a target a melee weapon attack, the target must make a Constitution saving throw. On a failed save, the target can't cast spells or use abilities until the end of their next turn.",
+				"For the duration, if you are wielding a melee weapon with the heavy property, you can attack one additional time when you take the attack action on your turn, when you take damage, you can roll {@dice 4d4} and subtract the number rolled from the damage, and when you hit a target with a melee weapon attack, the target must make a Constitution saving throw. On a failed save, the target can't cast spells or use abilities until the end of their next turn.",
 				"{@bold Stance.} If you enter a new stance, this stance ends.",
 				"{@bold Elite.} When preparing your spells, you can only prepare one elite spell."
 			],
@@ -47540,6 +47540,759 @@
 					"name": "At Higher Levels",
 					"entries": [
 						"When you cast this spell using a spell slot of 2nd level or higher, the reduction of initiative increases by {@dice 1d6} for each slot level above 1st, and you can target one additional creature for every two slot levels above 1st."
+					]
+				}
+			]
+		},
+		{
+			"name": "Smite Hex",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Smite a harmful spell on a friendly creature to deal damage to everyone around it.",
+				"Choose one friendly creature that you can see within range. The latest harmful spell on the target ends. If a harmful spell was ended this way, target each creature other than the target in a 20-foot-radius sphere centered on the target. A target takes {@damage 2d8} radiant damage."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Smite Hex",
+					"Spell. Remove a hex from target ally. If a hex is removed, foes in the area suffer 10...70...85 holy damage."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/4/41/Smite_Hex.jpg"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d8} for each slot level above 1st."
+					]
+				}
+			],
+			"areaTags": [
+				"MT"
+			],
+			"uniqueId": "4a9144e8-2cc7-417d-a5c9-6996770bf63b",
+			"feats": [
+				{
+					"name": "Adept of the Red Robes",
+					"source": "DSotDQ"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Monk",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Smiting Prayers",
+					"source": "GuildWars"
+				}
+			]
+		},
+		{
+			"name": "Unholy Feast",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Suck out the life force from creatures around you, feasting on their energy.",
+				"Target each creature other than you within range. Each target must make a Constitution saving throw. On a failed save, a target takes {@damage 4d8} necrotic damage, and you regain hit points equal to the amount of necrotic damage dealt. On a successful save, a target takes half as much damage."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Unholy Feast",
+					"Spell. Steal up to 10...54...65 Health from up to 1...3...4 foes [sic] in the area."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/b/bd/Unholy_Feast.jpg"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d8} for each slot level above 3rd."
+					]
+				}
+			],
+			"uniqueId": "9054c5c4-70f5-49dd-a697-406dc0f87ff0",
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Blood Magic",
+					"source": "GuildWars"
+				}
+			]
+		},
+		{
+			"name": "Scavenger Strike",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Command your pet to attempt a Scavenger Strike.",
+				"Choose one beast, which obeys your verbal commands, that can hear you within range. The beast uses its reaction to make an attack against a creature of your choice that the beast can see within the beast's range. On a hit, the target suffers the attack's normal effects and takes {@damage 2d6} damage, and if the target is suffering from a condition, your next initiative roll gets increased by {@dice 2d4}."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Scavenger Strike",
+					"Pet Attack. Your animal companion attempts a Scavenger Strike that deals +10...22...25 damage. If the attack strikes a foe who is suffering a condition, you gain 3...13...15 Energy."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/8/85/Scavenger_Strike.jpg"
+						}
+					}
+				]
+			},
+			"spellAttack": [
+				"M"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"HL",
+				"UBA",
+				"AAD"
+			],
+			"components": {
+				"v": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for each slot level above 1st. "
+					]
+				}
+			],
+			"feats": [
+				{
+					"name": "Divinely Favored",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Beast Mastery",
+					"source": "GuildWars"
+				}
+			],
+			"uniqueId": "1b96d2ba-2c29-41c5-80c5-a4df90e2e299"
+		},
+		{
+			"name": "Pure Strike",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Perform a pure strike, untainted by any stances.",
+				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 2d8} damage.",
+				"If you are not in a stance, this attack gains the Unblockable property.",
+				"{@bold Unblockable.} This spell ignores any temporary bonuses to AC."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Pure Strike",
+					"Sword Attack. If Pure Strike hits, you strike for +1...24...30 damage. If you are not using a stance, Pure Strike cannot be blocked."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/c/c8/Pure_Strike.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Artificer Initiate",
+					"source": "TCE"
+				},
+				{
+					"name": "Divinely Favored",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Warrior",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Swordsmanship",
+					"source": "GuildWars"
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
+					]
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "a melee weapon worth at least 1 sp"
+			},
+			"uniqueId": "c3bf4085-b3be-4184-b263-36ae31d170d8"
+		},
+		{
+			"name": "Stone Daggers",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Conjure two stone daggers and hurl them at a creature, inflicting {@condition bleeding|GuildWars} if you are {@condition overcast|GuildWars}.",
+				"Choose one creature that you can see within range. Make two ranged spell attack against the target. On a hit, the target takes {@damage 1d12} piercing damage.",
+				"{@bold While Overcast}. Additionally, the target must make a Constitution saving throw. On a failed save, the target starts {@condition bleeding|GuildWars} for the duration, taking {@damage 1d4} damage."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Stone Daggers",
+					"Spell. Send out two Stone Daggers. Each Stone Dagger strikes target foe for 8...28...33 earth damage if it hits. If you are Overcast, each projectile inflicts Bleeding for 1...4...5 second[s]."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/3/3e/Stone_Daggers.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Divinely Favored",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for each slot level above 1st. "
+					]
+				}
+			],
+			"uniqueId": "70acc562-ed8c-4a9a-945c-bf125431b939",
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Earth Magic",
+					"source": "GuildWars"
+				}
+			],
+			"conditionInflict": [
+				"bleeding|guildwars"
+			]
+		},
+		{
+			"uniqueId": "f021a6ad-e1ea-47e6-8832-b122fadb3971",
+			"name": "Sympathetic Visage",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Create a visage for a friendly creature, which punishes all those who attack them.",
+				"Choose one friendly creature that you can see within range. For the duration, when the target gets hit by a melee weapon attack, target each hostile creature in a 10-foot-radius sphere centered on the target. Each target loses all adrenaline and their next initiative roll gets reduced by {@dice 1d4}.",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast. "
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Sympathetic Visage",
+					"Enchantment Spell. For 4...9...10 seconds, whenever target ally is hit by a melee attack, all adjacent foes lose all adrenaline and 3 Energy. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/6/63/Sympathetic_Visage.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Adept of the White Robes",
+					"source": "DSotDQ"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Illusion Magic",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
 					]
 				}
 			]

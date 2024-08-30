@@ -48296,6 +48296,458 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Watchful Spirit",
+			"level": 4,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Use some of your divine energy to place a watchful spirit over a creature, healing them every turn and for a larger amount when the spell ends.",
+				"Choose one creature that you can see within range. For the duration at the start of each of the target's turns, the target regains hit points equal to {@dice 1d4}.",
+				"When this spell ends, the target regains hit points equal to {@dice 8d4} + your spellcasting ability.",
+				"If the target drops to 0 hit points, this spell ends without healing the target.",
+				"{@bold Bond.} For the duration, your spell save DC and spell attack bonus are reduced by 1.  You can have a maximum number of bonds active at any one time, equal to your spell casting ability modifier (minimum 1). The bond ends if the target of your bond is ever not within 300 feet of you, or you fall {@condition unconscious}. You can end a bond at any time (no action required).",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Watchful Spirit",
+					"Enchantment Spell. While you maintain this enchantment, target ally gains +2 Health regeneration. That ally is healed for 30...150...180 Health when Watchful Spirit ends."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/a/a0/Watchful_Spirit.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"HL"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the healing on spell end increases each by {@dice 4d4} for each slot level above 4th and the reduction to your spell save DC and spell attack bonus increases by 1 for each slot level above 4th."
+					]
+				}
+			],
+			"uniqueId": "1fa21b21-6378-4f5e-9f49-64fcf29c0771",
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				}
+			]
+		},
+		{
+			"name": "Well of Suffering",
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Utter a foul curse, exploding a corpse into a well of suffering, damaging foes in its area every turn. ",
+				"Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, for the duration, each hostile creature in a 20-foot-radius centered on that point must make a Constitution saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 3d8} necrotic damage. On a successful save, a target takes half as much damage."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Well of Suffering",
+					"Well Spell. Exploit nearest corpse to create a Well of Suffering at its location. For 10...26...30 seconds, foes in that area suffer -1...5...6 Health degeneration. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/3/31/Well_of_Suffering.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Adept of the Black Robes",
+					"source": "DSotDQ"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d8} for each slot level above 2nd."
+					]
+				}
+			],
+			"uniqueId": "fb635a6b-4540-40ae-81d9-7af4f8f8f03f",
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Death Magic",
+					"source": "GuildWars"
+				}
+			]
+		},
+		{
+			"name": "Storm Chaser",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Channel elemental energy throughout your body, imbuing it with unnatural speed.",
+				"For the duration, your speed is increased by 25% and when you take acid, cold, fire, lightning, or thunder damage, your next initiative roll gets increased by {@dice 1d4}.",
+				"{@bold Stance.} If you enter a new stance, this stance ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Storm Chaser",
+					"Stance. For 8...18...20 seconds, you move 25% faster, and you gain 1...4...5 Energy whenever you take elemental damage."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/f/fa/Storm_Chaser.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Artificer Initiate",
+					"source": "TCE"
+				},
+				{
+					"name": "Fey Touched",
+					"source": "TCE"
+				},
+				{
+					"name": "Divinely Favored",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Wilderness Survival",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the increase of initiative increases by {@dice 1d4} for each slot level above 1st."
+					]
+				}
+			],
+			"uniqueId": "b884affd-e121-4bec-beaa-2f04753c7cf4"
+		},
+		{
+			"name": "Thrill of Victory",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You gloat over a creature, gaining adrenaline if you have more health than them.",
+				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d8} damage and if you have more hit points than the target, you gain {@dice 1d4} strikes of adrenalin.",
+				"{@bold Adrenaline.} Adrenaline must be used to cast some spells instead of expending a spell slot."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Thrill of Victory",
+					"Melee Attack. If this blow hits, you deal +20...36...40 damage. If you have more Health than target foe, you gain 1...2...2 strike[s] of adrenaline. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/a/ae/Thrill_of_Victory.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon worth at least 1 sp"
+				}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"AAD"
+			],
+			"feats": [
+				{
+					"name": "Artificer Initiate",
+					"source": "TCE"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Maguuma Jungle",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Warrior",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Tactics",
+					"source": "GuildWars"
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
+					]
+				}
+			],
+			"uniqueId": "79c7d22e-b97a-43f1-92a1-be0a27b613de"
 		}
 	],
 	"table": [

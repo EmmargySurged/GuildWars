@@ -28773,7 +28773,7 @@
 			},
 			"entries": [
 				"Inscribe a glimmering mark into the flesh of an enemy with lightning, damaging them and everyone around them every turn and inflicting blind.",
-				"Choose one creature that you can see within range. For the duration at the start of each of the target's turns, target each creature in a 10-foot-radius centered on the target. Each target must make a Constitution saving throw. On a failed save, a target takes {@damage 6d6} lightning damage and is {@condition blinded} for 1 round. On a successful save, a target takes half as much damage, but suffers no other effect.",
+				"Choose one hostile creature that you can see within range. For the duration at the start of each of the target's turns, target each creature in a 10-foot-radius centered on the target. Each target must make a Constitution saving throw. On a failed save, a target takes {@damage 6d6} lightning damage and is {@condition blinded} for 1 round. On a successful save, a target takes half as much damage, but suffers no other effect.",
 				"If you target the creature with a spell, this spell ends.",
 				"{@bold Armor Penetration.} This spell's lightning damage cannot be reduced in any way, except by immunities.",
 				"{@bold Hex.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast.",
@@ -48748,6 +48748,250 @@
 				}
 			],
 			"uniqueId": "79c7d22e-b97a-43f1-92a1-be0a27b613de"
+		},
+		{
+			"uniqueId": "16ab3514-e2a9-448a-a80b-bebeefdf9d85",
+			"name": "Balthazar's Aura",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Sheath an ally in a radiant aura of Balthazar, which burns all those close to them every turn.",
+				"Choose one friendly creature that you can see within range. For the duration at the start of each of the target's turns, target each creature other than the target in a 10-foot-radius centered on the target. Each new target must make a Wisdom saving throw. On a failed save, a target takes {@damage 4d8} radiant damage. On a successful save, a target takes half as much damage."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Balthazar's Aura",
+					"Enchantment Spell. For 8 seconds, foes adjacent to target ally take 10...22...25 holy damage each second."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/e/e3/Balthazar%27s_Aura.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Southwestern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Monk",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Smiting Prayers",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d8} for each slot level above 4th."
+					]
+				}
+			]
+		},
+		{
+			"name": "Animate Bone Minions",
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Exploit a nearby corpse to create a two low-level Bone Horrors. ",
+				"Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, the target becomes two {@creature Bone Horror|GuildWars|Bone Horrors}. When using the level which appears in the stat block, subtract 2.",
+				"The {@creature Bone Horror|GuildWars|Bone Horrors} remain for the duration or until they reach zero hit points, at which point they will disintegrate into ash.",
+				"{@creature Bone Horror|GuildWars|Bone Horrors} are friendly to you and your allies for the duration. If you fall {@condition unconscious}, the {@creature Bone Horror|GuildWars|Bone Horrors} becomes hostile towards everything, instead of disintegrating into ash. The {@creature Bone Horror|GuildWars|Bone Horrors} act on your initiative, but take their turn directly after yours. The {@creature Bone Horror|GuildWars|Bone Horrors} are in the DMs control.",
+				"On each of your turns until the spell ends, you can use your action to animate another two {@creature Bone Horror|GuildWars|Bone Horrors} this way.",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast. "
+			],
+			"source": "GuildWars",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "pages of an old pamphlet"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, use the higher level wherever the spell's level appears in the stat block. When you cast this spell using a spell slot of 4th or 5th level, the duration increases to 8 hours. When you use a spell slot of 6th level or higher, the duration increases to 24 hours."
+					]
+				}
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"fluff": {
+				"entries": [
+					"Animate Bone Minions",
+					"Spell. Exploit nearest corpse to animate two level 0...10...12 bone minions."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/a/ab/Animate_Bone_Minions.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Adept of the Black Robes",
+					"source": "DSotDQ"
+				}
+			],
+			"uniqueId": "9114bfc1-0f7b-483e-b8a7-d53c58191833",
+			"backgrounds": [
+				{
+					"name": "Southwestern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Death Magic",
+					"source": "GuildWars"
+				}
+			]
 		}
 	],
 	"table": [

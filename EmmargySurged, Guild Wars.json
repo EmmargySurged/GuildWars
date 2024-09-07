@@ -46382,7 +46382,7 @@
 			},
 			"backgrounds": [
 				{
-					"name": "Southwestern Kryta",
+					"name": "Maguuma Jungle",
 					"source": "GuildWars"
 				},
 				{
@@ -46407,7 +46407,8 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, use the higher level wherever the spell's level appears in the stat block and when you cast this spell using a spell slot of 3rd or 4th level, the duration increases to 8 hours. When you use a spell slot of 5th level or higher, the duration increases to 24 hours."
+						"When you cast this spell using a spell slot of 4th level or higher, use the higher level wherever the spell's level appears in the stat block and the healing increases each by {@dice 1d4} for each slot level above 3rd.",
+						"When you cast this spell using a spell slot of 4th or 5th level, the duration increases to 8 hours. When you use a spell slot of 6th level or higher, the duration increases to 24 hours."
 					]
 				}
 			],
@@ -50262,6 +50263,233 @@
 				},
 				{
 					"name": "Curses",
+					"source": "GuildWars"
+				}
+			]
+		},
+		{
+			"name": "Edge of Extinction",
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Summon a nature spirit of Extinction, damaging all creatures of the same type when one of them dies.",
+				"Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit, and they drop to 0 hit points, all creatures of the same creature type take {@damage 3d6} force damage, if they are also within 120 feet of the nature spirit.",
+				"{@bold Summoning Ritual} Only one of each type of Summoning Ritual can be active at a time, if a new one is created in the range of this Summoning Ritual, this one ends. The spirit created by this ritual uses the {@creature Nature Ritual|GuildWars} stat block."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Edge of Extinction",
+					"Nature Ritual. Create a level 1...8...10 spirit. If a non-spirit creature within range dies, Edge of Extinction deals 14...43...50 damage to all creatures of the same type that are below 90% Health and within range of the spirit. This spirit dies after 30...126...150 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/2/2b/Edge_of_Extinction.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Southwestern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Beast Mastery",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"meta": {
+				"ritual": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, use the higher level wherever the spell's level appears in the stat block, and the damage increases by {@dice 1d6} for each slot level above 4th. ",
+						"When you cast this spell using a spell slot of 5th or 6th level, the duration increases to 8 hours. When you use a spell slot of 7th level or higher, the duration increases to 24 hours."
+					]
+				}
+			],
+			"uniqueId": "99cc6bb0-2fd2-445a-b2fb-a176f37722c8"
+		},
+		{
+			"name": "Savage Slash",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you see a creature within range cast a spell or using an ability"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"You attempt to interrupt a creature in the process of using an ability or casting a spell. ",
+				"Choose one creature, which is casting a spell or using an ability, that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw. On a failed save, the ability/spell fails and has no effect. ",
+				"If a spell failed this way, the target takes an additional {@damage 4d6} damage."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Savage Slash",
+					"Sword Attack. If this attack hits, it interrupts target foe's action. If that action was a spell, you deal 1...32...40 extra damage."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/7/7e/Savage_Slash.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"s": true,
+				"m": "a melee weapon worth at least 1 sp"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the number of attacks increases by 1 for every two slot levels above 3rd. "
+					]
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"uniqueId": "af4b435d-8933-448b-b347-42c6ee10abd8",
+			"backgrounds": [
+				{
+					"name": "Southwestern Kryta",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Warrior",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Swordsmanship",
 					"source": "GuildWars"
 				}
 			]

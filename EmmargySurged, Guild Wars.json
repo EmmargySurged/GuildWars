@@ -19920,7 +19920,7 @@
 			},
 			"entries": [
 				"Channel your magic into increasing your movement speed.",
-				"For the duration, your speed is increased by 10.",
+				"For the duration, your speed is increased by 10 feet.",
 				"{@bold Stance.} If you enter a new stance, this stance ends.",
 				"This spell's duration increases by 1 round when you reach 5th level (2 rounds), 11th level (3 rounds), and 17th level (4 rounds)."
 			],
@@ -50493,6 +50493,527 @@
 					"source": "GuildWars"
 				}
 			]
+		},
+		{
+			"name": "Flame Burst",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"A burst of flames shoots out from you, searing all creatures near you.",
+				"Target each creature other than you within range. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 3d6} fire damage. On a successful save, a target takes half as much damage."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Flame Burst",
+					"Spell. All nearby foes are struck for 15...99...120 fire damage."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/8/85/Flame_Burst.jpg"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
+					]
+				}
+			],
+			"uniqueId": "70e64532-491a-48b5-83f2-4d5c63e81634",
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Artificer Initiate",
+					"source": "TCE"
+				},
+				{
+					"name": "Divinely Favored",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Crystal Desert",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Fire Magic",
+					"source": "GuildWars"
+				}
+			]
+		},
+		{
+			"uniqueId": "5a84ba46-93e5-49b1-ba4b-e0ecb949a646",
+			"name": "Blessed Aura",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Surround yourself with a shimmering blessed aura, extending the duration of your spells.",
+				"For the duration, when you cast a Cleric, Druid or Paladin spell, with a timed duration, extend that duration by 25%.",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast. ",
+				"{@bold Bond.} For the duration, your spell save DC and spell attack bonus are reduced by 1.  You can have a maximum number of bonds active at any one time, equal to your spell casting ability modifier (minimum 1). The bond ends if the target of your bond is ever not within 300 feet of you, or you fall {@condition unconscious}. You can end a bond at any time (no action required)."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Blessed Aura",
+					"Enchantment Spell. While you maintain this enchantment, Monk enchantments you cast last 10...30...35% longer. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/b/b7/Blessed_Aura.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Adept of the Black Robes",
+					"source": "DSotDQ"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Crystal Desert",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Monk",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Divine Favor",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the reduction to your spell save DC and spell attack bonus increases by 1 for each slot level above 2nd and the % increases by 25% for each slot level above 2nd."
+					]
+				}
+			]
+		},
+		{
+			"name": "Animate Bone Fiend",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Exploit a nearby corpse to create a Bone Fiend.",
+				"Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, the target becomes a {@creature Bone Fiend|GuildWars}. ",
+				"The {@creature Bone Fiend|GuildWars} remains for the duration or until it reaches zero hit points, at which point it will disintegrate into ash.",
+				"The {@creature Bone Fiend|GuildWars} is friendly to you and your allies for the duration. If you fall {@condition unconscious}, the {@creature Bone Fiend|GuildWars} becomes hostile towards everything, instead of disintegrating into ash. The {@creature Bone Fiend|GuildWars} acts on your initiative, but takes it turn directly after yours. The {@creature Bone Fiend|GuildWars} is in the DMs control.",
+				"On each of your turns until the spell ends, you can use your action to animate another Bone Fiend this way.",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast. "
+			],
+			"source": "GuildWars",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "the tail bone of a devourer"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, use the higher level wherever the spell's level appears in the stat block. When you cast this spell using a spell slot of 5th or 6th level, the duration increases to 8 hours. When you use a spell slot of 7th level or higher, the duration increases to 24 hours."
+					]
+				}
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"fluff": {
+				"entries": [
+					"Animate Bone Fiend",
+					"Spell. Exploit nearest corpse to animate a level 1...14...17 bone fiend. Bone fiends can attack at range."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/0/0b/Animate_Bone_Fiend.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Crystal Desert",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Death Magic",
+					"source": "GuildWars"
+				}
+			],
+			"uniqueId": "93c9391b-b99b-4038-962a-82afa9202822"
+		},
+		{
+			"name": "Incendiary Bonds",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Tether yourself to a creature, charging up a flame expulsion, damaging and {@condition burning|GuildWars} all creatures around the target after a short delay.",
+				"Choose one creature that you can see within range. When this spell ends because its duration ran out, or the target drops to 0 hit points, target each creature in a 15-foot-radius sphere centered on the target. Each new target must make a Dexterity saving throw. On a failed save, a target takes {@damage 6d6} fire damage and starts {@condition burning|GuildWars} for 1 round, taking {@damage 2d6} damage. On a successful save, a target takes half as much damage, but suffers no other effect.",
+				"{@bold Overcast.} You become {@condition overcast|GuildWars} for 3 rounds.",
+				"{@bold Hex.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Incendiary Bonds",
+					"Hex Spell. After 3 seconds, target foe and all nearby foes are struck for 20...68...80 fire damage and are set on fire for 1...3...3 second[s]. Activates early if target foe dies."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/d/d5/Incendiary_Bonds.jpg"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"lightning"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"backgrounds": [
+				{
+					"name": "Crystal Desert",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Fire Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"conditionInflict": [
+				"burning|guildwars"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d6} for each slot level above 3rd. "
+					]
+				}
+			],
+			"uniqueId": "cf4769bf-208c-46f8-b6d0-05f64f7af02e"
 		}
 	],
 	"table": [
@@ -56475,13 +56996,13 @@
 							"spells": [
 								"{@spell backbreaker|GuildWars}"
 							],
-							"slots": 0
+							"slots": 1
 						},
 						"3": {
 							"spells": [
 								"{@spell mighty blow|GuildWars}"
 							],
-							"slots": 0
+							"slots": 1
 						}
 					},
 					"ability": "str",
@@ -56512,11 +57033,11 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Grawl_Martial_Token.png"
 			},
+			"uniqueId": "6b2ccae4-2683-4ae1-bb46-1b8815c2ea87",
 			"damageTags": [
 				"B",
 				"P"
-			],
-			"uniqueId": "6b2ccae4-2683-4ae1-bb46-1b8815c2ea87"
+			]
 		},
 		{
 			"name": "Grawl Ulodyte",
@@ -65688,6 +66209,735 @@
 			"savingThrowForcedSpell": [
 				"dexterity",
 				"wisdom"
+			]
+		},
+		{
+			"uniqueId": "b4f601f4-d78a-4c66-8861-99bf2e715df2",
+			"name": "Ursan Transformation (Level 04-07)",
+			"size": [
+				"L"
+			],
+			"type": "humanoid",
+			"source": "GuildWars",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d10 + 12",
+				"average": 34
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 30
+			},
+			"str": 19,
+			"dex": 10,
+			"con": 16,
+			"int": 2,
+			"wis": 13,
+			"cha": 7,
+			"passive": 13,
+			"cr": "1",
+			"skill": {
+				"perception": "+3"
+			},
+			"traitTags": [
+				"Keen Senses"
+			],
+			"shortName": "Ursan Transformation",
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The ursan transformation has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ursan Strike",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage, plus 7 ({@damage 2d6}) slashing damage."
+					]
+				},
+				{
+					"name": "Ursan Rage {@recharge 5}",
+					"entries": [
+						"Choose one creature that you can see within 5-feet of you. Target each creature other than you in a 5-foot-radius centered on the target. Make a melee attack against each target. On a hit, a target takes {@damage 3d6 + 4} slashing damage and must make a Strength saving throw. On a failed save, a target is knocked {@condition prone}."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"prone",
+				"weakness|guildwars|weakened"
+			],
+			"bonus": [
+				{
+					"name": "Ursan Force {@recharge 4}",
+					"entries": [
+						"For 3 rounds, your speed is increased by 10 feet, and you cannot be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Ursan Roar {@recharge}",
+					"entries": [
+						"Choose any number of friendly creatures that can hear you and are within 150-feet of you. For 1 round, the next time a target hits with a weapon attack, they deal an additional {@damage 1d6} damage. ",
+						"Additionally, choose any number of hostile creatures that can hear you and are within 150-feet of you. Each target must make a Wisdom saving throw. On a failed save, a target is {@condition weakness|GuildWars|weakened} for 1 round."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"As the Spirit of ferocity and confidence and the natural embodiment of all bears, Bear is the most revered of all the Spirits of the Wild and is said to be an icon of strength, insight, and wisdom. According to ancient myths, she bestowed the norn with the totem ability to Become the Bear. The norn view Bear as both a Mother who protects her cubs and a Sister who helps people find their inner strength. She is said to give norn the power to face all odds, but some norn are aware that she can also strike with surprising speed. Because of the ursine appearance of the kodan, some norn believe that the kodan are blessed by Bear. Some followers of Bear claim that she has appeared in their dreams to give them guidance."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bear_Form_model.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bear_Form_model_Token.png"
+			},
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Ursan Transformation (Level 08-11)",
+			"size": [
+				"L"
+			],
+			"type": "humanoid",
+			"source": "GuildWars",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d10 + 15",
+				"average": 42
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 30
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 16,
+			"int": 2,
+			"wis": 13,
+			"cha": 7,
+			"passive": 13,
+			"cr": "2",
+			"skill": {
+				"perception": "+3"
+			},
+			"traitTags": [
+				"Keen Senses"
+			],
+			"shortName": "Ursan Transformation",
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The ursan transformation has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ursan Strike",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) piercing damage, plus 10 ({@damage 3d6}) slashing damage."
+					]
+				},
+				{
+					"name": "Ursan Rage {@recharge 5}",
+					"entries": [
+						"Choose one creature that you can see within 5-feet of you. Target each creature other than you in a 5-foot-radius centered on the target. Make a melee attack against each target. On a hit, a target takes {@damage 4d6 + 5} slashing damage and must make a Strength saving throw. On a failed save, a target is knocked {@condition prone}."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"prone",
+				"weakness|guildwars|weakened"
+			],
+			"bonus": [
+				{
+					"name": "Ursan Force {@recharge 4}",
+					"entries": [
+						"For 3 rounds, your speed is increased by 15 feet, and you cannot be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Ursan Roar {@recharge}",
+					"entries": [
+						"Choose any number of friendly creatures that can hear you and are within 150-feet of you. For 1 round, the next time a target hits with a weapon attack, they deal an additional {@damage 2d6} damage. ",
+						"Additionally, choose any number of hostile creatures that can hear you and are within 150-feet of you. Each target must make a Wisdom saving throw. On a failed save, a target is {@condition weakness|GuildWars|weakened} for 2 rounds."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"As the Spirit of ferocity and confidence and the natural embodiment of all bears, Bear is the most revered of all the Spirits of the Wild and is said to be an icon of strength, insight, and wisdom. According to ancient myths, she bestowed the norn with the totem ability to Become the Bear. The norn view Bear as both a Mother who protects her cubs and a Sister who helps people find their inner strength. She is said to give norn the power to face all odds, but some norn are aware that she can also strike with surprising speed. Because of the ursine appearance of the kodan, some norn believe that the kodan are blessed by Bear. Some followers of Bear claim that she has appeared in their dreams to give them guidance."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bear_Form_model.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bear_Form_model_Token.png"
+			},
+			"uniqueId": "c65bd5c8-a729-482f-9f5d-a21f4c620c73",
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Ursan Transformation (Level 12-15)",
+			"size": [
+				"L"
+			],
+			"type": "humanoid",
+			"source": "GuildWars",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d10 + 24",
+				"average": 68
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 30
+			},
+			"str": 22,
+			"dex": 10,
+			"con": 16,
+			"int": 2,
+			"wis": 14,
+			"cha": 7,
+			"passive": 14,
+			"cr": "3",
+			"skill": {
+				"perception": "+4"
+			},
+			"traitTags": [
+				"Keen Senses"
+			],
+			"shortName": "Ursan Transformation",
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The ursan transformation has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ursan Strike",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}19 ({@damage 3d8 + 6}) piercing damage, plus 14 ({@damage 4d6}) slashing damage."
+					]
+				},
+				{
+					"name": "Ursan Rage {@recharge 5}",
+					"entries": [
+						"Choose one creature that you can see within 5-feet of you. Target each creature other than you in a 5-foot-radius centered on the target. Make a melee attack against each target. On a hit, a target takes {@damage 5d6 + 6} slashing damage and must make a Strength saving throw. On a failed save, a target is knocked {@condition prone}."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"prone",
+				"weakness|guildwars|weakened"
+			],
+			"bonus": [
+				{
+					"name": "Ursan Force {@recharge 4}",
+					"entries": [
+						"For 3 rounds, your speed is increased by 20 feet, and you cannot be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Ursan Roar {@recharge}",
+					"entries": [
+						"Choose any number of friendly creatures that can hear you and are within 150-feet of you. For 1 round, the next time a target hits with a weapon attack, they deal an additional {@damage 3d6} damage. ",
+						"Additionally, choose any number of hostile creatures that can hear you and are within 150-feet of you. Each target must make a Wisdom saving throw. On a failed save, a target is {@condition weakness|GuildWars|weakened} for 3 rounds."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"As the Spirit of ferocity and confidence and the natural embodiment of all bears, Bear is the most revered of all the Spirits of the Wild and is said to be an icon of strength, insight, and wisdom. According to ancient myths, she bestowed the norn with the totem ability to Become the Bear. The norn view Bear as both a Mother who protects her cubs and a Sister who helps people find their inner strength. She is said to give norn the power to face all odds, but some norn are aware that she can also strike with surprising speed. Because of the ursine appearance of the kodan, some norn believe that the kodan are blessed by Bear. Some followers of Bear claim that she has appeared in their dreams to give them guidance."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bear_Form_model.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bear_Form_model_Token.png"
+			},
+			"uniqueId": "eace32f6-47d1-4461-9322-9d0b01520121",
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Ursan Transformation (Level 16-19)",
+			"size": [
+				"L"
+			],
+			"type": "humanoid",
+			"source": "GuildWars",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 40",
+				"average": 95
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 30
+			},
+			"str": 24,
+			"dex": 12,
+			"con": 18,
+			"int": 2,
+			"wis": 14,
+			"cha": 7,
+			"passive": 14,
+			"cr": "4",
+			"skill": {
+				"perception": "+4"
+			},
+			"traitTags": [
+				"Keen Senses"
+			],
+			"shortName": "Ursan Transformation",
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The ursan transformation has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ursan Strike",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}25 ({@damage 4d8 + 7}) piercing damage, plus 16 ({@damage 5d6}) slashing damage."
+					]
+				},
+				{
+					"name": "Ursan Rage {@recharge 5}",
+					"entries": [
+						"Choose one creature that you can see within 5-feet of you. Target each creature other than you in a 5-foot-radius centered on the target. Make a melee attack against each target. On a hit, a target takes {@damage 6d6 + 7} slashing damage and must make a Strength saving throw. On a failed save, a target is knocked {@condition prone}."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"prone",
+				"weakness|guildwars|weakened"
+			],
+			"bonus": [
+				{
+					"name": "Ursan Force {@recharge 4}",
+					"entries": [
+						"For 3 rounds, your speed is increased by 25 feet, and you cannot be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Ursan Roar {@recharge}",
+					"entries": [
+						"Choose any number of friendly creatures that can hear you and are within 150-feet of you. For 1 round, the next time a target hits with a weapon attack, they deal an additional {@damage 4d6} damage. ",
+						"Additionally, choose any number of hostile creatures that can hear you and are within 150-feet of you. Each target must make a Wisdom saving throw. On a failed save, a target is {@condition weakness|GuildWars|weakened} for 4 rounds."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"As the Spirit of ferocity and confidence and the natural embodiment of all bears, Bear is the most revered of all the Spirits of the Wild and is said to be an icon of strength, insight, and wisdom. According to ancient myths, she bestowed the norn with the totem ability to Become the Bear. The norn view Bear as both a Mother who protects her cubs and a Sister who helps people find their inner strength. She is said to give norn the power to face all odds, but some norn are aware that she can also strike with surprising speed. Because of the ursine appearance of the kodan, some norn believe that the kodan are blessed by Bear. Some followers of Bear claim that she has appeared in their dreams to give them guidance."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bear_Form_model.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bear_Form_model_Token.png"
+			},
+			"uniqueId": "1408e491-744c-47f4-8f1b-e08ccf8b1daa",
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Ursan Transformation (Level 20)",
+			"size": [
+				"L"
+			],
+			"type": "humanoid",
+			"source": "GuildWars",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d10 + 48",
+				"average": 114
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 30
+			},
+			"str": 26,
+			"dex": 12,
+			"con": 18,
+			"int": 2,
+			"wis": 14,
+			"cha": 8,
+			"passive": 14,
+			"cr": "5",
+			"skill": {
+				"perception": "+4"
+			},
+			"traitTags": [
+				"Keen Senses"
+			],
+			"shortName": "Ursan Transformation",
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The ursan transformation has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ursan Strike",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}30 ({@damage 5d8 + 8}) piercing damage, plus 21 ({@damage 6d6}) slashing damage."
+					]
+				},
+				{
+					"name": "Ursan Rage {@recharge 5}",
+					"entries": [
+						"Choose one creature that you can see within 5-feet of you. Target each creature other than you in a 5-foot-radius centered on the target. Make a melee attack against each target. On a hit, a target takes {@damage 7d6 + 8} slashing damage and must make a Strength saving throw. On a failed save, a target is knocked {@condition prone}."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"prone",
+				"weakness|guildwars|weakened"
+			],
+			"bonus": [
+				{
+					"name": "Ursan Force {@recharge 4}",
+					"entries": [
+						"For 3 rounds, your speed is increased by 30 feet, and you cannot be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Ursan Roar {@recharge}",
+					"entries": [
+						"Choose any number of friendly creatures that can hear you and are within 150-feet of you. For 1 round, the next time a target hits with a weapon attack, they deal an additional {@damage 5d6} damage. ",
+						"Additionally, choose any number of hostile creatures that can hear you and are within 150-feet of you. Each target must make a Wisdom saving throw. On a failed save, a target is {@condition weakness|GuildWars|weakened} for 5 rounds."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"As the Spirit of ferocity and confidence and the natural embodiment of all bears, Bear is the most revered of all the Spirits of the Wild and is said to be an icon of strength, insight, and wisdom. According to ancient myths, she bestowed the norn with the totem ability to Become the Bear. The norn view Bear as both a Mother who protects her cubs and a Sister who helps people find their inner strength. She is said to give norn the power to face all odds, but some norn are aware that she can also strike with surprising speed. Because of the ursine appearance of the kodan, some norn believe that the kodan are blessed by Bear. Some followers of Bear claim that she has appeared in their dreams to give them guidance."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bear_Form_model.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bear_Form_model_Token.png"
+			},
+			"uniqueId": "a3a0a951-1b10-4ae3-afb5-6091683cda62",
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Ursan Transformation (Level 01-03)",
+			"size": [
+				"L"
+			],
+			"type": "humanoid",
+			"source": "GuildWars",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 10,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d10 + 6",
+				"average": 17
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 16,
+			"int": 2,
+			"wis": 12,
+			"cha": 7,
+			"passive": 13,
+			"cr": "1/2",
+			"skill": {
+				"perception": "+3"
+			},
+			"traitTags": [
+				"Keen Senses"
+			],
+			"shortName": "Ursan Transformation",
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The ursan transformation has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ursan Strike",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage, plus 3 ({@damage 1d6}) slashing damage."
+					]
+				},
+				{
+					"name": "Ursan Rage {@recharge 5}",
+					"entries": [
+						"Choose one creature that you can see within 5-feet of you. Target each creature other than you in a 5-foot-radius centered on the target. Make a melee attack against each target. On a hit, a target takes {@damage 2d6 + 4} slashing damage and must make a Strength saving throw. On a failed save, a target is knocked {@condition prone}."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"bonus": [
+				{
+					"name": "Ursan Force {@recharge 4}",
+					"entries": [
+						"For 3 rounds, your speed is increased by 5 feet, and you cannot be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Ursan Roar {@recharge}",
+					"entries": [
+						"Choose any number of friendly creatures that can hear you and are within 150-feet of you. For 1 round, the next time a target hits with a weapon attack, they deal an additional {@damage 1d4} damage. "
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"As the Spirit of ferocity and confidence and the natural embodiment of all bears, Bear is the most revered of all the Spirits of the Wild and is said to be an icon of strength, insight, and wisdom. According to ancient myths, she bestowed the norn with the totem ability to Become the Bear. The norn view Bear as both a Mother who protects her cubs and a Sister who helps people find their inner strength. She is said to give norn the power to face all odds, but some norn are aware that she can also strike with surprising speed. Because of the ursine appearance of the kodan, some norn believe that the kodan are blessed by Bear. Some followers of Bear claim that she has appeared in their dreams to give them guidance."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bear_Form_model.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bear_Form_model_Token.png"
+			},
+			"uniqueId": "23ec50c6-5fc0-441c-a500-6d6497473380",
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Bone Fiend",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "GuildWars",
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 7,
+					"condition": "+ Spell Level"
+				}
+			],
+			"hp": {
+				"special": "5 + Spell Level * 5"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"dex": 16,
+			"con": 14,
+			"int": 4,
+			"wis": 6,
+			"cha": 4,
+			"passive": 8,
+			"pbNote": "2 + Spell Level / 2 (Rounded down)",
+			"conditionImmune": [
+				"poisoned"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The bone fiend makes a number of Spike attacks equal to half the level of the spell (rounded down) (minimum 1)."
+					]
+				},
+				{
+					"name": "Spike",
+					"entries": [
+						"{@atk} {@hit 3 + PB} to hit, range 80/120 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"fluff": {
+				"entries": [
+					"Bone Horrors are minions created by certain Necromancer skills (Animate Bone Horror, Malign Intervention, and Aura of the Lich) and the Minion Apocalypse Flux."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bone_Horror.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bone_Horror_Token.png"
+			},
+			"uniqueId": "54edd535-57df-418a-9295-23905dd02566",
+			"str": 8,
+			"damageTags": [
+				"P"
 			]
 		}
 	],

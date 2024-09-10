@@ -51113,6 +51113,243 @@
 				}
 			],
 			"uniqueId": "c06cc0c2-8a72-4c58-82f5-b2e24b69b78f"
+		},
+		{
+			"uniqueId": "b714c8fd-179f-46c9-94af-298d55d946d8",
+			"name": "Arcane Conundrum",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Befuddle a group of creatures with an arcane conundrum, increasing the casting time of their spells.",
+				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save for the duration, a target can't cast spells as reactions, must cast spells which take a bonus action as an action, and any other spell takes twice as long to cast.",
+				"When this spell ends on a target, your next initiative roll gets increased by {@dice 2d4}.",
+				"{@bold Hex.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast. "
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Arcane Conundrum",
+					"Hex Spell. For 5...13...15 seconds, spells cast by target foe and all adjacent foes take twice as long to cast. When this hex ends, you gain 1...6...7 energy."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/6/6a/Arcane_Conundrum.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Adept of the Black Robes",
+					"source": "DSotDQ"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Crystal Desert",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Illusion Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the increase of initiative increases by {@dice 1d4} for each slot level above 2nd."
+					]
+				}
+			]
+		},
+		{
+			"uniqueId": "1b8a2239-a08b-4721-9672-5f91dbb1b95a",
+			"name": "Healing Touch",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"You magically imbue a creature with vitality by touching them.",
+				"You touch a creature. The target regains hit points equal to {@dice 2d8} + twice your spellcasting ability modifier."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Healing Touch",
+					"Spell. Heal target touched ally for 16...51...60 Health. Health gain from Divine Favor is doubled for this spell. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/a/aa/Healing_Touch.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Crystal Desert",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Monk",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Healing Prayers",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the healing increases by your spellcasting ability modifier for each slot level above 2nd."
+					]
+				}
+			]
 		}
 	],
 	"table": [
@@ -59652,11 +59889,38 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Mountain_Centaur_Priest_Boss_Token.png"
 			},
+			"uniqueId": "e8e43178-6145-4c9b-97ea-8c28b291d510",
+			"legendaryActions": 1,
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The Modniir Protector Boss moves up to their speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Pike",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 10 ft., one target. {@h}17 ({@damage 3d10 + 1}) piercing damage."
+					]
+				},
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}22 ({@damage 6d6 + 1}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 150/600 ft., one target. {@h}22 ({@damage 4d8 + 4}) piercing damage."
+					]
+				}
+			],
 			"damageTags": [
 				"B",
 				"P"
-			],
-			"uniqueId": "e8e43178-6145-4c9b-97ea-8c28b291d510"
+			]
 		},
 		{
 			"name": "Drake",

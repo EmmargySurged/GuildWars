@@ -52254,6 +52254,275 @@
 				}
 			],
 			"uniqueId": "4751032c-b62f-41ad-85c2-6234d756e7df"
+		},
+		{
+			"name": "Swirling Aura",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 2
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Envelop yourself in a watery aura, regaining health every turn and increasing your defense against projectiles.",
+				"For the duration, at the start of each of your turns, you regain hit points equal to {@dice 2d6}. Additionally, for the duration, you have a +5 bonus to AC against ranged weapon attacks.",
+				"{@bold While Overcast.} Choose any number of friendly creatures that you can see within 150-feet. A target also gains the effect of this spell.",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Swirling Aura",
+					"Enchantment Spell. For 5 seconds, you are enchanted with Swirling Aura and have 1...5...6 Health regeneration and a 50% chance to block projectiles. If you are Overcast when you cast this spell, all party members in earshot are also enchanted. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/8/88/Swirling_Aura.jpg"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"force"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"feats": [
+				{
+					"name": "Adept of the White Robes",
+					"source": "DSotDQ"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the healing increases by {@dice 1d6} for each slot level above 2nd."
+					]
+				}
+			],
+			"uniqueId": "bbe5a752-a905-4b85-92e3-71efbfc93fb8",
+			"backgrounds": [
+				{
+					"name": "Crystal Desert",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Water Magic",
+					"source": "GuildWars"
+				}
+			]
+		},
+		{
+			"name": "Guilt",
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Worm yourself into the consciousness of a creature by inducing an intense feeling of guilt.",
+				"Choose one creature that you can see within range. The target must make a Charisma saving throw. On a failed save, for the duration, the next time the target casts a spell that targets an enemy of theirs, the spell fails and has no effect, the target's next initiative roll gets reduced by {@dice 4d8}, and your next initiative roll gets increased by the initiative lost.",
+				"{@bold Hex.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Guilt",
+					"Hex Spell. For 6 seconds, the next time target foe casts a spell that targets a foe, the spell fails and you steal up to 5...12...14 Energy from that foe."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/c/c7/Guilt.jpg"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the reduction of initiative increases by {@dice 1d8} for each slot level above 3rd."
+					]
+				}
+			],
+			"uniqueId": "85c93118-f733-4c37-981e-c88dacb7ddf3",
+			"backgrounds": [
+				{
+					"name": "Crystal Desert",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Domination Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true
+			}
 		}
 	],
 	"table": [

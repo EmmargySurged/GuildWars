@@ -12031,7 +12031,7 @@
 			"uniqueId": "ca2fd69a-e14b-4b2a-b502-afb66f755343"
 		},
 		{
-			"name": "Mending Bond",
+			"name": "Mending (Guild Wars)",
 			"level": 3,
 			"school": "E",
 			"time": [
@@ -52523,6 +52523,747 @@
 			"components": {
 				"v": true
 			}
+		},
+		{
+			"name": "Vengeance",
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Bring back a dead creature for a short duration to enact vengeance.",
+				"Choose one friendly creature, which has not been dead for more than 1 minute, that you can see within range. The target returns to life with 100% of their maximum hit points. For the duration, the target deals an additional 25% damage.",
+				"When this spell ends, any target returned to life by this spell dies.",
+				"This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts.",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast. Additionally, you cannot choose to end {@status concentration} on this spell."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Vengeance",
+					"Enchantment Spell. Bring target dead party member back to life at full Health and full Energy. For 30 seconds, that party member deals 25% more damage. When this enchantment ends, target party member dies. Deaths while under the effects of this enchantment do not incur a death penalty. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/1/17/Vengeance.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"backgrounds": [
+				{
+					"name": "Ascalon",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Monk",
+					"source": "GuildWars"
+				},
+				{
+					"name": "No Attribute",
+					"source": "GuildWars"
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, you can target one additional creature for each slot level above 5th."
+					]
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "gems worth 150 gp for each target, which the spell consumes",
+					"consume": true,
+					"cost": 1500000
+				}
+			},
+			"uniqueId": "a02f6a5a-aae7-4df4-b746-7f10dba110e7"
+		},
+		{
+			"uniqueId": "c7ec07f2-6d79-407a-8b8e-345828af2034",
+			"name": "Signet of Agony",
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Feed your signet of agony with your blood, to release a devastating blast of necromantic energy around you.",
+				"{@bold Sacrifice.} You lose health equal to 10% of your maximum hit points.",
+				"For the duration, you start {@condition bleeding|GuildWars}, taking {@damage 1d4} damage.",
+				"Target each creature other than you within range. Each target must make a Constitution saving throw. On a failed save, a target takes {@damage 6d8} necrotic damage. On a successful save, a target takes half as much damage.",
+				"At the end of each of your turns, you can make a Constitution saving throw. On a success, the condition ends.",
+				"{@bold Signet.} Casting this spell does not cost a spell slot. Once you cast this spell, you cannot do so again until you finish a short or long rest."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Signet of Agony",
+					"Signet. You suffer from Bleeding for 25 seconds. All nearby foes take 10...58...70 damage."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/4/46/Signet_of_Agony.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Adept of the Black Robes",
+					"source": "DSotDQ"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Crystal Desert",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Blood Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			}
+		},
+		{
+			"name": "Flame Trap",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "day",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Prepare a flame trap, which damages and burns creatures which trigger it.",
+				"Conjure a 15-foot radius stationary {@condition invisible} trap at your location for the duration and choose any number of creatures. The next time a non-chosen creature enters the spell's area, the trap triggers, applying the following effect for 3 rounds: ",
+				"Each non-chosen creature must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 2d4} fire damage and starts {@condition burning} for one minute, taking {@damage 1d4} damage. On a successful save, a target takes half as much damage, but suffers no other effect.",
+				"At the end of each of its turns, a target can make a Dexterity saving throw. On a success, the condition ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Flame Trap",
+					"Trap. When Flame Trap is triggered, every second (for 3 seconds total), all nearby foes are struck for 5...17...20 fire damage and set on fire for 1...3...3 second[s]. Flame Trap ends after 90 seconds. While activating this skill, you are easily interrupted. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/5/5b/Flame_Trap.jpg"
+						}
+					}
+				]
+			},
+			"meta": {
+				"ritual": true
+			},
+			"components": {
+				"s": true,
+				"m": "pitch"
+			},
+			"conditionInflict": [
+				"burning"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage each increases by {@dice 1d4} for each slot level above 1st."
+					]
+				}
+			],
+			"optionalfeatures": [
+				{
+					"name": "Book of Ancient Secrets",
+					"source": "PHB",
+					"featureType": [
+						"EI"
+					]
+				}
+			],
+			"feats": [
+				{
+					"name": "Artificer Initiate",
+					"source": "TCE"
+				},
+				{
+					"name": "Divinely Favored",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Ritual Caster",
+					"source": "PHB"
+				},
+				{
+					"name": "Quicksmithing",
+					"source": "PSK"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Crystal Desert",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Wilderness Survival",
+					"source": "GuildWars"
+				}
+			],
+			"uniqueId": "806d974a-5167-4d0a-8d4f-3a3ea27ce11a"
+		},
+		{
+			"uniqueId": "5ad61d70-8231-495b-bcd5-0155451f6063",
+			"name": "Defensive Stance",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Assume a defensive stance, gaining adrenaline at the end of it for each melee weapon attack spell you have prepared.",
+				"For the duration, you have a +5 bonus to AC against weapon attacks.",
+				"When this spell ends, you gain one strike of adrenalin for each melee weapon attack spell you have prepared (maximum 2).",
+				"{@bold Stance.} If you enter a new stance, this stance ends.",
+				"{@bold Adrenaline.} Instead of expending a spell slot, you cast this spell by expending 5 adrenaline. When casting this spell at a higher level, expend an additional 2 adrenaline per level above the original level."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Defensive Stance",
+					"Stance. For 1...4...5 second[s], you have a 75% chance to block melee and projectile attacks. When Defensive Stance ends, you gain one strike of adrenaline for each melee attack skill you have (maximum 0...3...4)."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/1/14/Defensive_Stance.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Artificer Initiate",
+					"source": "TCE"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Crystal Desert",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Warrior",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Tactics",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the duration increases by 1 round for each slot level above 1st and the maximum increases by 1 for each slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"uniqueId": "8f854d83-e1eb-40a8-9231-3b544d47e5d3",
+			"name": "Windborne Speed",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Imbue a creature with the speed of the wind.",
+				"Choose one friendly creature that you can see within range. For the duration, the target's speed is increased by 33%.",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast. "
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Windborne Speed",
+					"Enchantment Spell. For 5...11...13 seconds, target ally moves 33% faster."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/c/c4/Windborne_Speed.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Artificer Initiate",
+					"source": "TCE"
+				},
+				{
+					"name": "Fey Touched",
+					"source": "TCE"
+				},
+				{
+					"name": "Divinely Favored",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Crystal Desert",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Air Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a quill"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"uniqueId": "96480130-8f6b-45a3-a4ff-0f078f9f8a53",
+			"name": "Mantra of Persistence",
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Start repeating a mantra pf persistence, extending the duration of your illusion themed spells.",
+				"For the duration, when you cast an illusion themed spell, which targets an enemy, with a timed duration, extend that duration by 25%.",
+				"{@bold Stance.} If you enter a new stance, this stance ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Mantra of Persistence",
+					"Stance. For 5...21...25 seconds, any Illusion Magic hex you cast lasts 10...34...40% longer."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/e/e7/Mantra_of_Persistence.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Adept of the White Robes",
+					"source": "DSotDQ"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Crystal Desert",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Inspiration Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the % increases by 25% for each slot level above 2nd."
+					]
+				}
+			]
 		}
 	],
 	"table": [
@@ -54939,10 +55680,10 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bone_Horror_Token.png"
 			},
+			"uniqueId": "3d221c87-1a05-42a3-9c42-965f8d0eacea",
 			"damageTags": [
 				"B"
-			],
-			"uniqueId": "3d221c87-1a05-42a3-9c42-965f8d0eacea"
+			]
 		},
 		{
 			"name": "Charr",
@@ -65146,7 +65887,7 @@
 						},
 						"3": {
 							"spells": [
-								"{@spell mending bond|GuildWars}",
+								"{@spell mending (Guild Wars)|GuildWars}",
 								"{@spell pacifism|GuildWars}"
 							],
 							"slots": 3
@@ -65165,16 +65906,10 @@
 			"spellcastingTags": [
 				"O"
 			],
+			"uniqueId": "8cad85f1-2a81-44e7-b70f-75fb337eaa29",
 			"damageTags": [
 				"P"
-			],
-			"damageTagsSpell": [
-				"R"
-			],
-			"savingThrowForcedSpell": [
-				"constitution"
-			],
-			"uniqueId": "8cad85f1-2a81-44e7-b70f-75fb337eaa29"
+			]
 		},
 		{
 			"name": "Stone Summit Scout Boss",
@@ -66980,7 +67715,8 @@
 			"miscTags": [
 				"MW",
 				"MLW",
-				"RW"
+				"RW",
+				"RNG"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
@@ -67053,11 +67789,11 @@
 			"spellcastingTags": [
 				"O"
 			],
+			"uniqueId": "1c389321-7e76-4acd-b9e1-bd2839913531",
 			"damageTags": [
 				"P",
 				"S"
-			],
-			"uniqueId": "1c389321-7e76-4acd-b9e1-bd2839913531"
+			]
 		},
 		{
 			"name": "Volatile Ice Elemental",

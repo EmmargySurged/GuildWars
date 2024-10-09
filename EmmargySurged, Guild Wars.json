@@ -56507,6 +56507,181 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Slayer's Spear",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Empower your spear to fell great enemies, inflicting a {@condition deep wound|GuildWars} to a creature with more health than you.",
+				"Choose one creature that you can see within range of your weapon. Make a melee or ranged weapon attack against the target (the ranged weapon attack can be made with a -2 penalty, to have the weapon immediately return to you, after it was made). On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d8} damage and if you have less hit points than the target, must make a Constitution saving throw. On a failed save, the target gains a {@condition deep wound|GuildWars} for the duration.",
+				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Slayer's Spear",
+					"Spear Attack. If this attack hits, you deal +5...21...25 damage. If that foe has more Health than you, that foe suffers from a Deep Wound for 5...17...20 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/a/a2/Slayer%27s_Spear.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"s": true,
+				"m": "a melee weapon worth at least 1 sp with the thrown property"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the number of attacks increases by 1 for each slot level above 2nd. "
+					]
+				}
+			],
+			"uniqueId": "221937d2-56b4-40f6-8a07-c175ffb92a45",
+			"backgrounds": [
+				{
+					"name": "Kourna",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Paragon",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Spear Mastery",
+					"source": "GuildWars"
+				}
+			],
+			"conditionInflict": [
+				"deep wound|guildwars"
+			]
+		},
+		{
+			"name": "Disrupting Throw",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you see a creature within range cast a spell or using an ability"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Quickly throw a spear, disrupting a creature suffering from at least one condition.",
+				"Choose one creature, which is casting a spell or using an ability, that you can see within range of your weapon. Make a melee or ranged weapon attack against the target (the ranged weapon attack can be made with a -2 penalty, to have the weapon immediately return to you, after it was made). On a hit, the target suffers the weapon attack's normal effects and, if the target is suffering from a condition, must make a Constitution saving throw. On a failed save, the ability/spell fails and has no effect. "
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Disrupting Throw",
+					"Spear Attack. If this attack hits a foe suffering from a condition, that foe is interrupted. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/9/92/Disrupting_Throw.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"s": true,
+				"m": "a melee weapon worth at least 1 sp with the thrown property"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the number of attacks increases by 1 for each slot level above 2nd. "
+					]
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Kourna",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Paragon",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Spear Mastery",
+					"source": "GuildWars"
+				}
+			],
+			"uniqueId": "2e66d745-b120-437d-9dac-d186381d49dd"
 		}
 	],
 	"table": [

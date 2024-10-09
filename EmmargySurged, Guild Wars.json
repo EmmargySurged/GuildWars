@@ -45687,7 +45687,8 @@
 			},
 			"entries": [
 				"Counter an opponent's attack with a deadly riposte.",
-				"If you are wielding a one-handed melee weapon with the light and/or finesse properties, choose one attacking creature that you can see within range. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d8} damage, starts {@condition bleeding|GuildWars} for the duration, taking {@damage 1d4} damage and the attack roll misses."
+				"If you are wielding a one-handed melee weapon with the light and/or finesse properties, choose one attacking creature that you can see within range. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d8} damage, starts {@condition bleeding|GuildWars} for the duration, taking {@damage 1d4} damage and the attack roll misses.",
+				"At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -56256,6 +56257,253 @@
 					"name": "At Higher Levels",
 					"entries": [
 						"When you cast this spell using a spell slot of 4th or 5th level, the duration increases to 1 hour. When you use a spell slot of 6th level or higher, the duration increases to 8 hours."
+					]
+				}
+			]
+		},
+		{
+			"uniqueId": "d6712c10-c836-45e2-b2ec-da6026864ff4",
+			"name": "Light of Dwayna",
+			"level": 7,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Shine the light of Dwayna down on your fallen allies, brining them back to life.",
+				"Choose any number of friendly creatures, which have not been dead for more than 1 minute, that you can see within range. A target returns to life with 25% of their maximum hit points. A target is {@condition incapacitated} until the end of their next turn.",
+				"This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Light of Dwayna",
+					"Spell. Resurrect all dead party members in the area. They are returned to life with 25% Health and zero Energy."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/3/31/Light_of_Dwayna.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Southern Shiverpeaks",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Monk",
+					"source": "GuildWars"
+				},
+				{
+					"name": "No Attribute",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "diamonds worth 300 gp for each target, which the spell consumes"
+			},
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 8th level or higher, the radius of the spell increases by 5 feet for each slot level above 7th."
+					]
+				}
+			]
+		},
+		{
+			"uniqueId": "431096c4-eb7f-4220-9f49-c035375878ee",
+			"name": "Dark Fury",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 2
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Channel dark energies through your allies, whipping them into a frenzy, allowing them to generate adrenaline.",
+				"{@bold Sacrifice.} You lose health equal to 17% of your maximum hit points.",
+				"Target each friendly creature within range. For the duration, a target gains one strike of adrenaline when they take damage, or when they hit with a weapon attack.",
+				"{@bold Adrenaline.} Adrenaline must be used to cast some spells instead of expending a spell slot. ",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast.",
+				"{@bold Order.} If another order is applied to you, this order ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Dark Fury",
+					"Enchantment Spell. For 5 seconds, whenever any party member hits with an attack, that party member gains one hit of adrenaline. (50% failure chance with Blood Magic of 4 or less.)"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/d/d4/Dark_Fury.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Divinely Favored",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Shadow Touched",
+					"source": "TCE"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Southern Shiverpeaks",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Blood Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of flesh of a rabid warg"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the duration increases by 1 round for each slot level above 1st."
 					]
 				}
 			]

@@ -36475,8 +36475,8 @@
 				]
 			},
 			"entries": [
-				"Shadow step to a creature, draining their magic and empowering your own.",
-				"Choose one creature that you can see within range. Teleport within 5 feet of the target to an unoccupied space. The target must make a Wisdom saving throw. On a failed save for the duration, the target must cast spells by using a spell slot which is one level lower than the one used in the casting, and you can cast spells by using a spell slot which is one level higher than the one used in the casting.",
+				"Shadow step to a creature, draining their power and empowering your own.",
+				"Choose one creature that you can see within range. Teleport within 5 feet of the target to an unoccupied space. The target must make a Wisdom saving throw. On a failed save for the duration, each of the target's ability scores are reduced by {@dice 1d4} each, and each of yours are increased correspondingly by the amount lost.",
 				"{@bold Lead Attack.} On a failed save, this spell is considered a lead attack. Additionally, you can, immediately after a failed save, cast an off-hand attack spell as an action or bonus action.",
 				"{@bold Enchantment/Hex.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast.",
 				"{@bold Elite.} When preparing your spells, you can only prepare one elite spell."
@@ -52625,7 +52625,7 @@
 			],
 			"backgrounds": [
 				{
-					"name": "Ascalon",
+					"name": "Crystal Desert",
 					"source": "GuildWars"
 				},
 				{
@@ -56682,6 +56682,537 @@
 				}
 			],
 			"uniqueId": "2e66d745-b120-437d-9dac-d186381d49dd"
+		},
+		{
+			"name": "Muddy Terrain",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Call forth a spirit of muddy terrain, slowing down all creatures.",
+				"Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit, a creature's speed is reduced by 5 feet, and they cannot benefit from any effects which increase their speed.",
+				"{@bold Summoning Ritual} Only one of each type of Summoning Ritual can be active at a time, if a new one is created in the range of this Summoning Ritual, this one ends. The spirit created by this ritual uses the {@creature Nature Ritual|GuildWars} stat block."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Muddy Terrain",
+					"Nature Ritual. Create a level 1...8...10 spirit. Non-spirit creatures within its range move 10% slower and speed boosts have no effect. This spirit dies after 30...78...90 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/8/87/Muddy_Terrain.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a handful of dirt and a cup of water"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, use the higher level wherever the spell's level appears in the stat block and when you cast this spell using a spell slot of 3rd or 4th level, the duration increases to 8 hours. When you use a spell slot of 5th level or higher, the duration increases to 24 hours."
+					]
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"optionalfeatures": [
+				{
+					"name": "Book of Ancient Secrets",
+					"source": "PHB",
+					"featureType": [
+						"EI"
+					]
+				}
+			],
+			"feats": [
+				{
+					"name": "Artificer Initiate",
+					"source": "TCE"
+				},
+				{
+					"name": "Divinely Favored",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Ritual Caster",
+					"source": "PHB"
+				},
+				{
+					"name": "Quicksmithing",
+					"source": "PSK"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Southern Shiverpeaks",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Wilderness Survival",
+					"source": "GuildWars"
+				}
+			],
+			"uniqueId": "4cbac280-b783-434a-9a55-133113dd3efe"
+		},
+		{
+			"name": "Riposte",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you are hit by a melee attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Counter an opponent's attack with a riposte.",
+				"If you are wielding a one-handed melee weapon with the light and/or finesse properties, choose one attacking creature that you can see within range. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d8} damage and the attack roll misses.",
+				"{@bold Adrenaline.} Instead of expending a spell slot, you cast this spell by expending 4 adrenaline. When casting this spell at a higher level, expend an additional 4 adrenaline per level above the original level."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Riposte",
+					"Skill. For 8 seconds, while you have a sword equipped, you block the next melee attack against you and your attacker is struck for 20...68...80 damage."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/b/b2/Riposte.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"s": true,
+				"m": "a one-handed melee weapon worth at least 1 sp with the light and/or finesse properties"
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"UBA"
+			],
+			"feats": [
+				{
+					"name": "Artificer Initiate",
+					"source": "TCE"
+				},
+				{
+					"name": "Divinely Favored",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd or 3rd level, the number of attacks increases by 1. When you cast this spell using a spell slot of 4th or 5th level, the number of attacks increases by 2. When you use a spell slot of 6th level or higher, the number of attacks increases by 3."
+					]
+				}
+			],
+			"uniqueId": "f5bf3fdb-5645-4602-9e48-c35803c92c00",
+			"backgrounds": [
+				{
+					"name": "Southern Shiverpeaks",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Warrior",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Swordsmanship",
+					"source": "GuildWars"
+				}
+			]
+		},
+		{
+			"uniqueId": "f0062cae-cbf1-4eab-8b5f-a98b1199a956",
+			"name": "Glyph of Sacrifice",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Inscribe the glyph of sacrifice on your arcane focus, allowing you to cast any spell as a reaction, by temporarily disabling it.",
+				"For the duration, the next {@dice 1d4} spells can be cast as a reaction, but if cast this way, cannot be cast again until you finish a short rest."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Glyph of Sacrifice",
+					"Glyph. For 15 seconds, your next spell casts instantly, but it takes an additional 30 seconds to recharge. Ends prematurely if you use a non-spell skill. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/1/10/Glyph_of_Sacrifice.jpg"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Southern Shiverpeaks",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "No Attribute",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the amount of time this spell can trigger increases by {@dice 1d4} for each slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"uniqueId": "b3ace2bc-a912-426a-bec5-d9937d194b62",
+			"name": "Mantra of Signets",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Start chanting a mantra of signets, improving your defense for every signet prepared, and healing yourself every time you use a signet.",
+				"For the duration, when you take damage, you can roll {@dice 1d4} for every two signet spells you have prepared and subtract the number rolled from the damage. Additionally, when you cast a signet spell, you regain hit points equal to {@dice 2d4} + your spellcasting ability modifier.",
+				"{@bold Stance.} If you enter a new stance, this stance ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Mantra of Signets",
+					"Stance. For 10...34...40 seconds, you have +3 armor for each signet you have equipped. Whenever you use a signet you gain 5...49...60 health."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/c/c4/Mantra_of_Signets.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Southern Shiverpeaks",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Inspiration Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th or 6th level, the duration increases to 1 hour. When you use a spell slot of 7th level or higher, the duration increases to 8 hours."
+					]
+				}
+			]
 		}
 	],
 	"table": [

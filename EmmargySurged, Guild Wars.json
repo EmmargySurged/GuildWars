@@ -24444,7 +24444,7 @@
 			"entries": [
 				"Sacrifice your own blood for each undead minion you control, healing them.",
 				"{@bold Sacrifice.} You lose health equal to 5% + 2% per undead minion chosen by you, of your maximum hit points.",
-				"Choose any number of friendly undead creatures that you can see. Each target regains hit points equal to {@dice 2d4} + your spellcasting ability modifier."
+				"Choose any number of friendly undead creature, which have been created by a spell or an ability, that you can see. Each target regains hit points equal to {@dice 2d4} + your spellcasting ability modifier."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -28696,7 +28696,7 @@
 			],
 			"entries": [
 				"Form a dark bond between yourself and your undead minions, diverting damage from yourself to them.",
-				"For the duration, when you would take damage, the closest undead creature within 30-feet of you, takes 75% of the damage you would have taken.",
+				"For the duration, when you would take damage, the closest friendly undead creature, which has been created by a spell or an ability, within 30-feet of you, takes 75% of the damage you would have taken.",
 				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast. Additionally, you cannot choose to end {@status concentration} on this spell."
 			],
 			"source": "GuildWars",
@@ -36921,6 +36921,163 @@
 				}
 			],
 			"uniqueId": "f59bebe5-bb5b-4e1d-b18a-248cf09cab5a"
+		},
+		{
+			"uniqueId": "e791e9bd-9431-48cf-8496-268dc3de25b8",
+			"name": "Mark of Rodgort",
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Inscribe the mark of Rodgort into the flesh of group of creatures, causing them to erupt into flames whenever they take fire damage.",
+				"Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save, for the duration, when a target takes fire damage except from {@condition burning|GuildWars}, it starts {@condition burning|GuildWars} for 1 round, taking {@damage 4d6} damage.",
+				"{@bold Hex.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast. "
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Mark of Rodgort",
+					"Hex Spell. Target foe and all nearby foes are hexed with Mark of Rodgort. For 10...30...35 seconds, whenever each foe is struck for fire damage, that foe is set on fire for 1...3...4 second[s]."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/f/f3/Mark_of_Rodgort.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Southern Shiverpeaks",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Fire Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the duration of the {@condition burning|GuildWars} condition increases by 1 round for each slot level above 3rd."
+					]
+				}
+			]
+		},
+		{
+			"uniqueId": "cfacfa3d-d35f-431a-a0ee-22b3ebac248e",
+			"name": "Infuse Condition",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Create a tether between yourself and any undead minions you have, automatically transferring conditions from yourself to them.",
+				"For the duration, when you would gain one or more of the following conditions, the closest friendly undead creature, which has been created by a spell or an ability, within 30-feet of you, gains it instead: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} or {@condition Weakness|GuildWars}.",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast. "
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Infuse Condition",
+					"Enchantment Spell. For the next 15...51...60 seconds, whenever you receive a condition, that condition is transferred to your closest minion instead. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/4/4e/Infuse_Condition.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Southern Shiverpeaks",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Death Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th or 6th level, the duration increases to 8 hours. When you use a spell slot of 7th level or higher, the duration increases to 24 hours.",
+						"When you cast this spell using a spell slot of 4th level or higher, the radius of the spell increases by 15 feet for each slot level above 3rd."
+					]
+				}
+			]
 		}
 	],
 	"table": [
@@ -39397,7 +39554,8 @@
 			},
 			"damageTags": [
 				"B"
-			]
+			],
+			"uniqueId": "f3e1f7ab-c339-4493-a360-4a5f808f49a5"
 		},
 		{
 			"name": "Charr",
@@ -39474,7 +39632,8 @@
 			"tokenHref": {
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Charr_Stalker_Token.png"
-			}
+			},
+			"uniqueId": "f4c25ddc-48d0-4f0e-8fd7-c11d20488aba"
 		},
 		{
 			"name": "Grasp of Chaos",
@@ -39591,7 +39750,8 @@
 			],
 			"savingThrowForced": [
 				"strength"
-			]
+			],
+			"uniqueId": "0e326d8b-7e54-48db-8b6e-901d2e986347"
 		},
 		{
 			"name": "Oni",
@@ -39739,7 +39899,8 @@
 				"constitution",
 				"dexterity",
 				"strength"
-			]
+			],
+			"uniqueId": "3364c3a9-8881-43ca-a89a-3fb8c954ecc7"
 		},
 		{
 			"name": "Nature Ritual",
@@ -39806,7 +39967,8 @@
 			"tokenHref": {
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Nature_Spirit_Token.png"
-			}
+			},
+			"uniqueId": "33700ef2-8221-42ca-bd07-d1e317af255e"
 		},
 		{
 			"name": "Charr Axe Fiend Boss",
@@ -39986,7 +40148,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "a75db9b7-d2c8-4cbd-9df4-7cd5941acd5d"
 		},
 		{
 			"name": "Charr Stalker Boss",
@@ -40171,7 +40334,8 @@
 			],
 			"damageTagsSpell": [
 				"F"
-			]
+			],
+			"uniqueId": "86d14681-79a3-4d0f-bad1-9e3457962a88"
 		},
 		{
 			"name": "Charr Martyr Boss",
@@ -40343,7 +40507,8 @@
 			},
 			"damageTags": [
 				"R"
-			]
+			],
+			"uniqueId": "15816a24-8d62-4ff6-8ba0-9b1f4e34a8fa"
 		},
 		{
 			"name": "Charr Ashen Claw Boss",
@@ -40515,7 +40680,8 @@
 			},
 			"damageTags": [
 				"N"
-			]
+			],
+			"uniqueId": "338030ee-0158-4509-a671-e9e6e44b6304"
 		},
 		{
 			"name": "Charr Chaot Boss",
@@ -40695,7 +40861,8 @@
 			},
 			"damageTags": [
 				"Y"
-			]
+			],
+			"uniqueId": "0020df1d-e100-433c-b453-2d4f23b9fbe9"
 		},
 		{
 			"name": "Charr Flame Wielder Boss",
@@ -40861,7 +41028,8 @@
 			},
 			"damageTags": [
 				"F"
-			]
+			],
+			"uniqueId": "fdb442fa-05ba-4a7f-befd-d9a1dac484ca"
 		},
 		{
 			"name": "Charr Axe Fiend",
@@ -41011,7 +41179,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "18ab51e8-497a-4940-a14f-9c9dcc713a2c"
 		},
 		{
 			"name": "Charr Stalker",
@@ -41162,7 +41331,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "5a41b775-2654-46f1-91c9-e29581c2daea"
 		},
 		{
 			"name": "Charr Martyr",
@@ -41309,7 +41479,8 @@
 			"savingThrowForcedSpell": [
 				"constitution",
 				"dexterity"
-			]
+			],
+			"uniqueId": "475190e4-b465-4562-9584-89101f30ecae"
 		},
 		{
 			"name": "Charr Ashen Claw",
@@ -41456,7 +41627,8 @@
 			"savingThrowForcedSpell": [
 				"constitution",
 				"wisdom"
-			]
+			],
+			"uniqueId": "68f147cb-3eee-4557-8e05-d6156f08f979"
 		},
 		{
 			"name": "Charr Chaot",
@@ -41596,7 +41768,8 @@
 			},
 			"damageTags": [
 				"Y"
-			]
+			],
+			"uniqueId": "63010c87-d051-4beb-846a-d351a7b33ad1"
 		},
 		{
 			"name": "Charr Flame Wielder",
@@ -41741,7 +41914,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "90c9ae2b-0700-4661-a9b2-787e65881aa4"
 		},
 		{
 			"name": "Whiptail Devourer",
@@ -41906,7 +42080,8 @@
 			},
 			"damageTags": [
 				"P"
-			]
+			],
+			"uniqueId": "091df2c3-ead5-4179-b905-de2613003954"
 		},
 		{
 			"name": "Carrion Devourer",
@@ -42078,7 +42253,8 @@
 			},
 			"damageTags": [
 				"P"
-			]
+			],
+			"uniqueId": "4cb591a9-65f9-43c3-8fb4-8f273f8b3911"
 		},
 		{
 			"name": "Plague Devourer",
@@ -42236,7 +42412,8 @@
 			},
 			"damageTags": [
 				"P"
-			]
+			],
+			"uniqueId": "9a8525d0-b4f5-4243-b2e4-ff2c05213516"
 		},
 		{
 			"name": "Hydra (Ascalon)",
@@ -42395,7 +42572,8 @@
 			},
 			"damageTags": [
 				"P"
-			]
+			],
+			"uniqueId": "6b43dd43-f352-468d-8e12-6cd83d7f89b8"
 		},
 		{
 			"name": "Resurrect Gargoyle",
@@ -42517,7 +42695,8 @@
 			},
 			"damageTags": [
 				"L"
-			]
+			],
+			"uniqueId": "a5a92e76-89ca-4f9f-afc0-693ff1aa1536"
 		},
 		{
 			"name": "Shatter Gargoyle",
@@ -42662,7 +42841,8 @@
 			},
 			"damageTags": [
 				"Y"
-			]
+			],
+			"uniqueId": "81617741-6a15-4757-9a8b-41df8cd95001"
 		},
 		{
 			"name": "Flash Gargoyle",
@@ -42819,7 +42999,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "187cba22-3b1a-435d-8280-ac50f107280d"
 		},
 		{
 			"name": "Grawl (Ascalon)",
@@ -42982,7 +43163,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"strength"
-			]
+			],
+			"uniqueId": "06cdcbda-a7bc-4157-8573-92a54883d99a"
 		},
 		{
 			"name": "Grawl Ulodyte",
@@ -43134,7 +43316,8 @@
 			},
 			"damageTags": [
 				"R"
-			]
+			],
+			"uniqueId": "2c235058-8e92-432d-bab3-5f8ddc01147a"
 		},
 		{
 			"name": "Boulder Elemental",
@@ -43260,7 +43443,8 @@
 			},
 			"damageTags": [
 				"B"
-			]
+			],
+			"uniqueId": "de3de1ee-aa5b-4cae-9f77-c935e083dd8a"
 		},
 		{
 			"name": "Margonite Executioner",
@@ -43423,7 +43607,8 @@
 			},
 			"damageTags": [
 				"B"
-			]
+			],
+			"uniqueId": "40822c6d-19dc-4a15-b86c-175c49597f37"
 		},
 		{
 			"name": "White Mantle Knight",
@@ -43572,7 +43757,8 @@
 			],
 			"damageTagsSpell": [
 				"I"
-			]
+			],
+			"uniqueId": "e3919410-6ac4-488d-aa1b-3d7f92eaff7f"
 		},
 		{
 			"name": "Justiciar Hablion",
@@ -43729,7 +43915,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "34691c8e-4c45-4be3-a089-1ebf7c752046"
 		},
 		{
 			"name": "Wooden Charr Trebuchet",
@@ -43876,7 +44063,8 @@
 			],
 			"savingThrowForced": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "52f18678-c9c3-477e-93dc-76da66194655"
 		},
 		{
 			"name": "Mage channeling an Obelisk",
@@ -44005,7 +44193,8 @@
 			},
 			"damageTags": [
 				"L"
-			]
+			],
+			"uniqueId": "2f1f0cc4-ff4f-4bd5-827c-8f169a5314c4"
 		},
 		{
 			"name": "Bonfaaz Burntfur",
@@ -44238,7 +44427,8 @@
 			],
 			"damageTagsSpell": [
 				"F"
-			]
+			],
+			"uniqueId": "6939baea-46aa-4c83-b7ff-ead4ab440206"
 		},
 		{
 			"name": "Modniir Centaur",
@@ -44367,7 +44557,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "2870d140-bb34-4fdc-b8ce-7ee5267433b7"
 		},
 		{
 			"name": "Modniir Longbow",
@@ -44544,7 +44735,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"strength"
-			]
+			],
+			"uniqueId": "7d55840d-70b5-4000-91cc-2602b3788b42"
 		},
 		{
 			"name": "Modniir Longbow Boss",
@@ -44758,7 +44950,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"strength"
-			]
+			],
+			"uniqueId": "38d598f3-1fcc-45de-a39f-f40c7910c1dd"
 		},
 		{
 			"name": "Modniir Warrior",
@@ -44925,7 +45118,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "677f0f01-6281-43e1-ae9f-5a997771f47b"
 		},
 		{
 			"name": "Modniir Warrior Boss",
@@ -45133,7 +45327,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "5d7c6dea-d7dd-4137-abdb-4a5b429dc5ee"
 		},
 		{
 			"name": "Modniir Protector",
@@ -45303,7 +45498,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "c768772f-1320-4e2c-82a7-b1ead707cde7"
 		},
 		{
 			"name": "Modniir Protector Boss",
@@ -45512,7 +45708,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "abe6cd01-bff3-43eb-9a76-126254c65a1b"
 		},
 		{
 			"name": "Drake",
@@ -45618,7 +45815,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "95702a31-85de-4bda-8c1c-392f197d477a"
 		},
 		{
 			"name": "Ice Drake Elementalist Boss",
@@ -45808,7 +46006,8 @@
 			],
 			"damageTagsSpell": [
 				"L"
-			]
+			],
+			"uniqueId": "97b0eade-30fe-4bd2-b708-e884c3c10261"
 		},
 		{
 			"name": "Dwarf",
@@ -45915,7 +46114,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "c1238d08-b815-4070-84dc-4fa0777c2282"
 		},
 		{
 			"name": "Deldrimor Dwarf",
@@ -46033,7 +46233,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "c8ac87ce-9d12-4cb4-832b-b792a8a48729"
 		},
 		{
 			"name": "Stone Summit Dwarf",
@@ -46175,7 +46376,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "690617ba-23ee-40db-a0c4-6a4bc103433d"
 		},
 		{
 			"name": "Stone Summit Beastmaster",
@@ -46369,7 +46571,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "80b4e138-600a-41fa-b83a-18515b4c905a"
 		},
 		{
 			"name": "Stone Summit Sage",
@@ -46550,7 +46753,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "992edf24-fc25-401c-a560-2992759ecd4d"
 		},
 		{
 			"name": "Stone Summit Sage Boss",
@@ -46762,7 +46966,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "67475182-0bcc-45b4-a733-9506517748da"
 		},
 		{
 			"name": "Stone Summit Howler",
@@ -46946,7 +47151,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "7efb498b-60ba-4760-836f-cb3c4ab7f45a"
 		},
 		{
 			"name": "Stone Summit Howler Boss",
@@ -47160,7 +47366,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "8c9e9c3c-66a5-4806-bffc-17a3c5de69df"
 		},
 		{
 			"name": "Stone Summit Crusher",
@@ -47331,7 +47538,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "2c3aa9af-7b89-479a-a458-0d1905b9ed32"
 		},
 		{
 			"name": "Stone Summit Axe Wielder",
@@ -47506,7 +47714,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "3198f8d0-02e8-4978-a77c-e0731cbe30d7"
 		},
 		{
 			"name": "Stone Summit Axe Wielder Boss",
@@ -47718,7 +47927,8 @@
 			"savingThrowForcedSpell": [
 				"constitution",
 				"dexterity"
-			]
+			],
+			"uniqueId": "a3f0feb4-e79f-4040-836e-52ad5bc54e18"
 		},
 		{
 			"name": "Spirit of the Fallen",
@@ -47906,7 +48116,8 @@
 			],
 			"damageTags": [
 				"O"
-			]
+			],
+			"uniqueId": "3dba2afa-bd09-485b-b767-499c76522225"
 		},
 		{
 			"name": "Stone Summit Dolyak Rider",
@@ -48099,7 +48310,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "2e5b2690-03d8-4cce-bb59-35f38a780416"
 		},
 		{
 			"name": "Stone Summit Dolyak Rider Boss",
@@ -48326,7 +48538,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "f6a4d429-5bb9-4896-8754-528e969144f9"
 		},
 		{
 			"name": "Stone Summit Scout",
@@ -48504,7 +48717,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "57a5dc08-38e5-49c7-a11a-455c3421d581"
 		},
 		{
 			"name": "Dryder",
@@ -48637,7 +48851,8 @@
 			"damageTags": [
 				"N",
 				"P"
-			]
+			],
+			"uniqueId": "8cca6c8e-395c-4c49-887c-d98ea952879c"
 		},
 		{
 			"name": "Frostfire Dryder",
@@ -48808,7 +49023,8 @@
 			"damageTags": [
 				"N",
 				"P"
-			]
+			],
+			"uniqueId": "5ac72dd5-e65b-48cb-8b4d-323efb5ecc94"
 		},
 		{
 			"name": "Ettin",
@@ -48941,7 +49157,8 @@
 				"B",
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "c3552695-d9b2-4a3f-ba14-588fd4075e5d"
 		},
 		{
 			"name": "Snow Ettin",
@@ -49104,7 +49321,8 @@
 				"B",
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "832837cb-3a7a-46f5-a0f8-8bd7c00aaf51"
 		},
 		{
 			"name": "Ice Golem",
@@ -49266,7 +49484,8 @@
 			],
 			"savingThrowForced": [
 				"constitution"
-			]
+			],
+			"uniqueId": "52b6a32d-b69b-4bfa-bdd5-1518e2f971b3"
 		},
 		{
 			"name": "Minotaur (Shiverpeaks)",
@@ -49410,7 +49629,8 @@
 			],
 			"savingThrowForced": [
 				"strength"
-			]
+			],
+			"uniqueId": "27bbf3e3-3acd-4ac5-83d5-9e3af68e60f4"
 		},
 		{
 			"name": "Juniper Bark",
@@ -49560,7 +49780,8 @@
 			],
 			"damageTags": [
 				"P"
-			]
+			],
+			"uniqueId": "d9b9a17a-2123-415b-ba26-46448cd6d6db"
 		},
 		{
 			"name": "Stone Summit Scout Boss",
@@ -49776,7 +49997,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "0b4f11a2-91bf-458c-8b21-d4dd35e605a3"
 		},
 		{
 			"name": "Frostfire Dryder Necromancer Boss",
@@ -49982,7 +50204,8 @@
 			"damageTags": [
 				"N",
 				"P"
-			]
+			],
+			"uniqueId": "3a02ed32-207f-4cae-9bca-5c7bcc8fa8da"
 		},
 		{
 			"name": "Ice Golem Boss (Northern Shiverpeaks)",
@@ -50184,7 +50407,8 @@
 			],
 			"savingThrowForced": [
 				"constitution"
-			]
+			],
+			"uniqueId": "7c87060a-3cd4-4ac5-99bf-3136c55f63c7"
 		},
 		{
 			"name": "Ice Imp",
@@ -50367,7 +50591,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "dd4a0d84-a465-44ed-a70a-0a9ed7867a70"
 		},
 		{
 			"name": "Ice Imp Elementalist Boss",
@@ -50598,7 +50823,8 @@
 			],
 			"savingThrowForced": [
 				"constitution"
-			]
+			],
+			"uniqueId": "58d0d0e9-5a91-4c6f-94e3-dfa7da66982d"
 		},
 		{
 			"name": "Ice Imp Mesmer Boss",
@@ -50831,7 +51057,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"charisma"
-			]
+			],
+			"uniqueId": "1d19d48d-e834-4b99-9001-ad722f891875"
 		},
 		{
 			"name": "Stone Summit Beastmaster Warrior Boss",
@@ -51060,7 +51287,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "43a9a009-260b-42a6-8a61-4f54654b97c2"
 		},
 		{
 			"source": "GuildWars",
@@ -51233,7 +51461,8 @@
 				"constitution",
 				"dexterity",
 				"strength"
-			]
+			],
+			"uniqueId": "f430d442-cf29-4d1f-9b22-1495f3806d1a"
 		},
 		{
 			"name": "King Jalis Ironhammer",
@@ -51435,7 +51664,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "ca3bf34b-ff0b-4ad8-b71a-1498795eb81c"
 		},
 		{
 			"name": "Volatile Ice Elemental",
@@ -51535,7 +51765,8 @@
 			],
 			"savingThrowForced": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "ee026e7e-bfe1-4abb-bc30-deffc7a35907"
 		},
 		{
 			"name": "Nicholas the Traveler",
@@ -51695,7 +51926,8 @@
 			],
 			"damageTags": [
 				"P"
-			]
+			],
+			"uniqueId": "406a8e81-c22c-4f5f-afe0-d547866b7807"
 		},
 		{
 			"name": "Professor Yakkington",
@@ -51785,7 +52017,8 @@
 			],
 			"savingThrowForced": [
 				"strength"
-			]
+			],
+			"uniqueId": "b4c4f677-fc77-4941-91a7-54f99c40ae70"
 		},
 		{
 			"name": "Pitney",
@@ -51922,7 +52155,8 @@
 			"savingThrowForced": [
 				"constitution",
 				"strength"
-			]
+			],
+			"uniqueId": "17a275bc-df55-438e-a349-a2dff5d83d66"
 		},
 		{
 			"name": "Hilde Starseer",
@@ -52087,7 +52321,8 @@
 			"savingThrowForcedSpell": [
 				"dexterity",
 				"wisdom"
-			]
+			],
+			"uniqueId": "117527a1-f107-4b8b-8441-dfff93293b53"
 		},
 		{
 			"name": "Ursan Transformation (Level 04-07)",
@@ -52193,7 +52428,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "f65ec433-aa5f-4fdc-b0fd-428d3c214f13"
 		},
 		{
 			"name": "Ursan Transformation (Level 08-11)",
@@ -52299,7 +52535,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "e74bf7ec-4de2-4479-a0ee-53aae53ab52a"
 		},
 		{
 			"name": "Ursan Transformation (Level 12-15)",
@@ -52405,7 +52642,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "6e0f0a81-8ba7-4662-be09-84c21695ee9a"
 		},
 		{
 			"name": "Ursan Transformation (Level 16-19)",
@@ -52511,7 +52749,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "8f991e5f-1a40-4a15-a50a-9b2ca36c781b"
 		},
 		{
 			"name": "Ursan Transformation (Level 20)",
@@ -52617,7 +52856,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "5b232111-5dd6-4883-99c5-3646d5edb256"
 		},
 		{
 			"name": "Ursan Transformation (Level 01-03)",
@@ -52721,7 +52961,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "d078f8c6-c58a-42ed-a7d4-3b1d549e8ed7"
 		},
 		{
 			"name": "Bone Fiend",
@@ -52791,7 +53032,8 @@
 			},
 			"damageTags": [
 				"P"
-			]
+			],
+			"uniqueId": "6bd0f218-e975-4c96-99ef-f60ae7c68e87"
 		},
 		{
 			"name": "Madam Featherbutt",
@@ -52900,7 +53142,8 @@
 					]
 				}
 			],
-			"isNpc": true
+			"isNpc": true,
+			"uniqueId": "bde10f2f-2916-49ff-acf2-647186b103a5"
 		},
 		{
 			"name": "Rornark Stonesledge",
@@ -53050,7 +53293,8 @@
 			"isNpc": true,
 			"damageTags": [
 				"P"
-			]
+			],
+			"uniqueId": "5577567e-5a89-48d1-98e8-b639f4306780"
 		},
 		{
 			"name": "Corvid Transformation (Level 04-07)",
@@ -53157,7 +53401,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "17060c28-eaaa-4e0c-9b1b-4e40f5b1a492"
 		},
 		{
 			"name": "Corvid Transformation (Level 01-03)",
@@ -53262,7 +53507,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "43691e2e-b5c9-46fc-96a3-111db995a8a4"
 		},
 		{
 			"name": "Corvid Transformation (Level 08-11)",
@@ -53369,7 +53615,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "32a7f2bb-6106-4c41-8d0d-534df01982e3"
 		},
 		{
 			"name": "Corvid Transformation (Level 12-15)",
@@ -53476,7 +53723,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "47bcda18-16b3-4c9c-80b3-7c61d32caad9"
 		},
 		{
 			"name": "Corvid Transformation (Level 16-19)",
@@ -53583,7 +53831,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "5f5aea33-6706-4a61-8043-c4ed48b922e1"
 		},
 		{
 			"name": "Corvid Transformation (Level 20)",
@@ -53690,7 +53939,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "ec262028-d514-4781-bc5a-20ab14501ef7"
 		},
 		{
 			"name": "Strigid Transformation (Level 04-07)",
@@ -53802,7 +54052,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "09fb371b-21a5-4281-a382-f64b141bdb33"
 		},
 		{
 			"name": "Strigid Transformation (Level 01-03)",
@@ -53912,7 +54163,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "a294f00e-0b53-4c24-aed2-219904e0146c"
 		},
 		{
 			"name": "Strigid Transformation (Level 08-11)",
@@ -54024,7 +54276,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "3da38ab9-a5bf-49b3-b385-6e40ddb01c3b"
 		},
 		{
 			"name": "Strigid Transformation (Level 12-15)",
@@ -54136,7 +54389,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "5321515d-eb19-4699-8cc6-2c27db396eae"
 		},
 		{
 			"name": "Strigid Transformation (Level 16-19)",
@@ -54248,7 +54502,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "a0442828-cdc3-4af9-bd1b-c85d805ae8f6"
 		},
 		{
 			"name": "Strigid Transformation (Level 20)",
@@ -54360,7 +54615,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "8d0e3c7f-cb7c-4555-a1ae-5460d1385eda"
 		},
 		{
 			"name": "Volfen Transformation (Level 04-07)",
@@ -54467,7 +54723,8 @@
 						"Choose any number of friendly creatures that can hear you and are within 150-feet of you. For 1 round, each target can attack one additional time when they take the attack action on their turn."
 					]
 				}
-			]
+			],
+			"uniqueId": "bab33b14-c915-4c4a-9098-b965975cf1ca"
 		},
 		{
 			"name": "Volfen Transformation (Level 01-03)",
@@ -54573,7 +54830,8 @@
 						"Choose any number of friendly creatures that can hear you and are within 150-feet of you. For 1 round, each target can attack one additional time when they take the attack action on their turn."
 					]
 				}
-			]
+			],
+			"uniqueId": "b784bde4-24db-454c-b082-1bda4b8e3210"
 		},
 		{
 			"name": "Volfen Transformation (Level 08-11)",
@@ -54680,7 +54938,8 @@
 						"Choose any number of friendly creatures that can hear you and are within 150-feet of you. For 1 round, each target can attack one additional time when they take the attack action on their turn."
 					]
 				}
-			]
+			],
+			"uniqueId": "36defc19-1c26-4905-89fc-c1e87cd699c8"
 		},
 		{
 			"name": "Volfen Transformation (Level 12-15)",
@@ -54787,7 +55046,8 @@
 						"Choose any number of friendly creatures that can hear you and are within 150-feet of you. For 1 round, each target can attack one additional time when they take the attack action on their turn."
 					]
 				}
-			]
+			],
+			"uniqueId": "7a54bb57-ada4-4c15-ab2b-0b12bbc66198"
 		},
 		{
 			"name": "Volfen Transformation (Level 16-19)",
@@ -54894,7 +55154,8 @@
 						"Choose any number of friendly creatures that can hear you and are within 150-feet of you. For 1 round, each target can attack one additional time when they take the attack action on their turn."
 					]
 				}
-			]
+			],
+			"uniqueId": "45b0b4af-22ff-41ac-8d6c-cae32bd0e771"
 		},
 		{
 			"name": "Volfen Transformation (Level 20)",
@@ -55001,7 +55262,8 @@
 						"Choose any number of friendly creatures that can hear you and are within 150-feet of you. For 2 rounds, each target can attack one additional time when they take the attack action on their turn."
 					]
 				}
-			]
+			],
+			"uniqueId": "5aa4756a-d176-4cfc-bc6d-6590cfe181aa"
 		},
 		{
 			"name": "Incomplete Dragon Skeleton",
@@ -55142,7 +55404,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "11b11226-f2a6-4ab5-bab9-b167bff4b416"
 		},
 		{
 			"name": "Stone Summit Conjurer",
@@ -55368,7 +55631,8 @@
 			"savingThrowForcedSpell": [
 				"dexterity",
 				"wisdom"
-			]
+			],
+			"uniqueId": "e117de2c-fee0-414f-a837-97a6a396a75e"
 		}
 	],
 	"legendaryGroup": [
@@ -55383,7 +55647,8 @@
 				"If the Stormcaller horn has been blown, all charr become vulnerable to all damage, and deal only half damage."
 			],
 			"mythicEncounter": [],
-			"source": "GuildWars"
+			"source": "GuildWars",
+			"uniqueId": "e1c6e942-6cba-4dd3-91cb-32035206f487"
 		}
 	],
 	"race": [

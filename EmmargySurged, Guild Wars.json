@@ -37078,6 +37078,166 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Primal Echoes",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Summon a nature spirit of the Primal Echoes, making signets cost spell slots.",
+				"Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit, when the creature casts a signet spell, the spell still consumes a spell slot.",
+				"{@bold Summoning Ritual} Only one of each type of Summoning Ritual can be active at a time, if a new one is created in the range of this Summoning Ritual, this one ends. The spirit created by this ritual uses the {@creature Nature Ritual|GuildWars} stat block."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Primal Echoes",
+					"Nature Ritual. Create a level 1...8...10 Spirit. For non-Spirit creatures within its range, Signets cost 10 Energy to use. This Spirit dies after 30...126...150 seconds. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/6/68/Primal_Echoes.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Southern Shiverpeaks",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Beast Mastery",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"meta": {
+				"ritual": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th or 5th level, the duration increases to 8 hours. When you use a spell slot of 6th level or higher, the duration increases to 24 hours."
+					]
+				}
+			],
+			"uniqueId": "2cf37883-e99e-4e32-b602-2d40c012ee15"
+		},
+		{
+			"uniqueId": "99fb61f9-6106-4a9d-80f7-e223606e8d5c",
+			"name": "Rust",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Cause rust to appear on a group of creature's gear and signets, dealing damage and disrupting signets.",
+				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target takes {@damage 2d12} cold damage and signet spells take twice as long to cast for the duration. On a successful save, a target takes half as much damage, but suffers no other effect.",
+				"{@bold While Overcast}. Creatures who failed the saving throw cannot use their signets for the duration, instead of them taking twice as long to cast.",
+				"{@bold Hex.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast. "
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Rust",
+					"Hex Spell. Deals 10...58...70 cold damage to target and adjacent foes. For 5...17...20 seconds, target foe and all adjacent foes take twice as long to activate signets. If you are Overcast, foes struck with Rust have their signets interrupted and disabled for 1...8...10 second[s]. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/3/33/Rust.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Southern Shiverpeaks",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Water Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a drop of water, and a pocketwatch"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d12} for each slot level above 2nd."
+					]
+				}
+			]
 		}
 	],
 	"table": [

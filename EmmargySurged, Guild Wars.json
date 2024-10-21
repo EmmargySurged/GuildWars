@@ -1769,7 +1769,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases each by {@dice 1d4} for each slot level above 1st."
+						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@dice 1d4} for each slot level above 1st."
 					]
 				}
 			],
@@ -24444,7 +24444,7 @@
 			"entries": [
 				"Sacrifice your own blood for each undead minion you control, healing them.",
 				"{@bold Sacrifice.} You lose health equal to 5% + 2% per undead minion chosen by you, of your maximum hit points.",
-				"Choose any number of friendly undead creature, which have been created by a spell or an ability, that you can see. Each target regains hit points equal to {@dice 2d4} + your spellcasting ability modifier."
+				"Choose any number of friendly undead creatures, which have been created by a spell or an ability, that you can see. Each target regains hit points equal to {@dice 2d4} + your spellcasting ability modifier."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -37235,6 +37235,643 @@
 					"name": "At Higher Levels",
 					"entries": [
 						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d12} for each slot level above 2nd."
+					]
+				}
+			]
+		},
+		{
+			"uniqueId": "3e435fd9-b69a-4880-9531-03b40293b998",
+			"name": "Signet of Weariness",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Tire out a group of enemies with your signet of weariness, afflicting them with {@condition weakness|GuildWars} and lowering their initiative.",
+				"Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target is {@condition weakness|GuildWars|weakened} for the duration and their next initiative roll gets reduced by {@dice 1d8}.",
+				"At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends.",
+				"{@bold Signet.} Casting this spell does not cost a spell slot. Once you cast this spell, you cannot do so again until you finish a short or long rest."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Signet of Weariness",
+					"Signet. Target foe and all nearby foes lose 3...7...8 Energy and suffer from Weakness for 1...10...12 second[s]."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/f/fd/Signet_of_Weariness.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Southern Shiverpeaks",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Domination Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"conditionInflict": [
+				"weakness|guildwars|weakened"
+			]
+		},
+		{
+			"name": "Searing Heat",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Cause an area of extreme heat, searing all those inside.",
+				"Choose a point that you can see within range. For the duration, each creature in a 15-foot-radius sphere centered on that point must make a Constitution saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 4d8} fire damage. On a successful save, a target takes half as much damage.",
+				"When this spell ends, all creatures in the spell's area start {@condition burning|GuildWars} for 1 minute, taking {@damage 2d6} damage.",
+				"At the end of each of its turns, a target can make a Dexterity saving throw. On a success, the condition ends."
+			],
+			"source": "GuildWars",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "coals and a bellow"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d8} for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"MT",
+				"Y"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"fluff": {
+				"entries": [
+					"Searing Heat",
+					"Spell. Cause Searing Heat at target foe's location. For 5 seconds, foes near this location are struck for 10...34...40 fire damage each second. When Searing Heat ends, foes in the area of effect are set on fire for 3 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/8/87/Searing_Heat.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Southern Shiverpeaks",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Fire Magic",
+					"source": "GuildWars"
+				}
+			],
+			"uniqueId": "88ed2236-e66e-4b16-a1cd-3c54ff71a2ba"
+		},
+		{
+			"uniqueId": "f5460f63-203c-4606-9fce-7a1dbec4936b",
+			"name": "Soothing Images",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Project calming images into a group of creature's minds, quenching their battle fury, preventing them from gaining Adrenaline.",
+				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Charisma saving throw. On a failed save, for the duration, a target cannot gain Adrenaline.",
+				"{@bold Hex.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Soothing Images",
+					"Hex Spell. For 8...18...20 seconds, target foe and all adjacent foes cannot gain adrenaline."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/9/97/Soothing_Images.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Southern Shiverpeaks",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Illusion Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "a painting of a kitten"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the radius of the spell increases by 5 feet for each slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"name": "Order of Pain",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 2
+					}
+				}
+			],
+			"entries": [
+				"Induct your allies into the Order of Pain, making their physical attacks stronger.",
+				"{@bold Sacrifice.} You lose health equal to 17% of your maximum hit points.",
+				"Target each friendly creature within range. For the duration, a target's weapon attacks, which deal bludgeoning, piercing or slashing damage, deal an additional {@damage 1d6} necrotic damage.",
+				"{@bold Order.} If another order is applied to you, this order ends.",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Order of Pain",
+					"Enchantment Spell. For 5 seconds, whenever a party member hits a foe with physical damage, that party member does +3...13...16 damage."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/7/7c/Order_of_Pain.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Southern Shiverpeaks",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Blood Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of barbed wire"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
+					]
+				}
+			],
+			"uniqueId": "c81c9402-11a1-483a-9f40-b6bdfa8daa37"
+		},
+		{
+			"uniqueId": "ee1b19df-b156-44d7-bf5a-5352ffc96762",
+			"name": "Scourge Sacrifice",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Muddle the power of blood for a group of creatures, requiring them to sacrifice twice as much health for sacrifice spells.",
+				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save, for the duration, when a target sacrifices health for a spell, they must sacrifice 100% more.",
+				"{@bold Hex.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast. "
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Scourge Sacrifice",
+					"Hex Spell. For 8...18...20 seconds, every time target foe and adjacent foes sacrifice life, they sacrifice twice the normal amount."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/c/c6/Scourge_Sacrifice.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Southern Shiverpeaks",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Monk",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Smiting Prayers",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the radius of the spell increases by 5 feet for each slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"uniqueId": "ac7602a9-b924-430a-99d7-841e654f7683",
+			"name": "Verata's Sacrifice",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 2
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Channel the devotion to his minions the great Necromancer Verata had, sacrificing yourself to heal them and cleanse them of most conditions. ",
+				"{@bold Sacrifice.} You lose health equal to 15% of your maximum hit points.",
+				"Choose any number of friendly undead creatures, which have been created by a spell or an ability, that you can see. For the duration at the start of each of a target's turns, a target regains hit points equal to {@dice 4d4}. Additionally, you gain a copy of each of the following conditions on a target: Bleeding, Blinded, Burning, Corruption, Cracked Armor, Crippled, Dazed, Deafened, Deep Wound, Disease, Poisoned and Weakness. End all copied conditions on a target.",
+				"If a target drops to 0 hit points, this spell ends on them.",
+				"If you cast this spell while you have control over less than 4 friendly undead creatures, which have been created by a spell or an ability, you regain the spell slot expended in the casting."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Verata's Sacrifice",
+					"Spell. For 5...9...10 seconds, your undead allies gain +10 Health regeneration. All conditions are removed from those allies and transferred to you. If this spell is successful and you have control of 3 or fewer minions, Verata's Sacrifice instantly recharges. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/4/41/Verata%27s_Sacrifice.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Southern Shiverpeaks",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Death Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "a drop of blood"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the duration increases by 1 round for each slot level above 3rd."
+					]
+				}
+			]
+		},
+		{
+			"uniqueId": "c10d1e22-9c69-418e-b1ee-fe9cc43cacfc",
+			"name": "Symbiotic Bond",
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Form a symbiotic bond between yourself and an animal companion, giving them health regeneration, and absorbing damage for them.",
+				"Choose one beast, which obeys your verbal commands, that can hear you within range. For the duration, the target has resistance to all damage. Also, each time the target takes damage, you lose health equal to the damage taken. Additionally, for the duration, at the start of each of the target's turns, the target regains hit points equal to {@dice 1d4}.",
+				"If the target drops to 0 hit points, this spell ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Symbiotic Bond",
+					"Shout. For 120...264...300 seconds, your animal companion gains 1...3...3 Health regeneration, and half of all damage dealt to your animal companion is redirected to you."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/e/e4/Symbiotic_Bond.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Southern Shiverpeaks",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Beast Mastery",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the healing increases by {@dice 1d4} for each slot level above 3rd.",
+						"When you cast this spell using a spell slot of 5th or 6th level, the duration increases to 8 hours. When you use a spell slot of 7th level or higher, the duration increases to 24 hours."
+					]
+				}
+			]
+		},
+		{
+			"uniqueId": "8f5d7c22-dcce-4bf3-b018-0075444be0a6",
+			"name": "Warrior's Cunning",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Draw upon your knowledge, overcoming any unexpected defenses.",
+				"For the duration, your attacks gain the Unblockable property.",
+				"{@bold Unblockable.} Ignores any temporary bonuses to AC."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Warrior's Cunning",
+					"Skill. For 5...10...11 seconds, your melee attacks cannot be blocked."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/3/32/Warrior%27s_Cunning.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Southern Shiverpeaks",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Warrior",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Strength",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th or 5th level, the duration increases to 10 minutes. When you use a spell slot of 6th level or higher, the duration increases to 1 hour."
 					]
 				}
 			]

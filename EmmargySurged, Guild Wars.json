@@ -37876,6 +37876,88 @@
 					]
 				}
 			]
+		},
+		{
+			"uniqueId": "da3d7901-bc3f-4138-aafa-db4c8de79a6d",
+			"name": "Ash Blast",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Spray a group of enemies with a handful of ashes, blinding {@condition burning|GuildWars} creatures.",
+				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target takes {@damage 4d4} force damage and, if a target is {@condition burning|GuildWars}, is {@condition blinded} for the duration.",
+				"At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Ash Blast",
+					"Hex Spell. Target and adjacent foes are struck for 35...59...65 earth damage. Burning foes struck by Ash Blast are hexed for 5 seconds and have a 20...64...75% chance to miss with attacks."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/3/3c/Ash_Blast.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Earth Magic",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "a pocket full of sand"
+			},
+			"conditionInflict": [
+				"burning|guildwars"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 2d4} for each slot level above 2nd."
+					]
+				}
+			]
 		}
 	],
 	"table": [
@@ -40291,7 +40373,9 @@
 			],
 			"type": "undead",
 			"source": "GuildWars",
-			"alignment": null,
+			"alignment": [
+				"N"
+			],
 			"ac": [
 				{
 					"ac": 8,
@@ -40311,7 +40395,6 @@
 			"wis": 6,
 			"cha": 4,
 			"passive": 8,
-			"pbNote": "2 + Spell Level / 2 (Rounded down)",
 			"conditionImmune": [
 				"poisoned"
 			],
@@ -40325,7 +40408,7 @@
 				{
 					"name": "Swipe",
 					"entries": [
-						"Natural Weapon: 3 + PB to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 3}) bludgeoning damage."
+						"Natural Weapon: your spell attack modifier to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 3 + Spell Level}) bludgeoning damage."
 					]
 				}
 			],
@@ -40350,9 +40433,6 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bone_Horror_Token.png"
 			},
-			"damageTags": [
-				"B"
-			],
 			"uniqueId": "f3e1f7ab-c339-4493-a360-4a5f808f49a5"
 		},
 		{
@@ -53769,7 +53849,9 @@
 			],
 			"type": "undead",
 			"source": "GuildWars",
-			"alignment": null,
+			"alignment": [
+				"N"
+			],
 			"ac": [
 				{
 					"ac": 7,
@@ -53788,7 +53870,6 @@
 			"wis": 6,
 			"cha": 4,
 			"passive": 8,
-			"pbNote": "2 + Spell Level / 2 (Rounded down)",
 			"conditionImmune": [
 				"poisoned"
 			],
@@ -53802,7 +53883,7 @@
 				{
 					"name": "Spike",
 					"entries": [
-						"{@atk} {@hit 3 + PB} to hit, range 80/120 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+						"{@atk} your spell attack modifier to hit, range 80/120 ft., one target. {@h}6 ({@damage 1d6 + 3 + Spell Level}) piercing damage."
 					]
 				}
 			],
@@ -53828,9 +53909,6 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bone_Fiend_Token.png"
 			},
-			"damageTags": [
-				"P"
-			],
 			"uniqueId": "6bd0f218-e975-4c96-99ef-f60ae7c68e87"
 		},
 		{
@@ -56431,6 +56509,516 @@
 				"wisdom"
 			],
 			"uniqueId": "e117de2c-fee0-414f-a837-97a6a396a75e"
+		},
+		{
+			"name": "Wraith",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "12d8 + 36",
+				"average": 90
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 6,
+			"dex": 16,
+			"con": 16,
+			"int": 12,
+			"wis": 14,
+			"cha": 18,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"immune": [],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The wraith can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the wraith has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Life Drain",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}21 ({@damage 4d8 + 3}) necrotic damage. The target must succeed on a {@dc 15} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+					]
+				},
+				{
+					"name": "Create Specter",
+					"entries": [
+						"The wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a {@creature specter} in the space of its corpse or in the nearest unoccupied space. The {@creature specter} is under the wraith's control. The wraith can have no more than seven specters under its control at one time."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/wraith.mp3"
+			},
+			"traitTags": [
+				"Incorporeal Movement",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"miscTags": [
+				"MW",
+				"HPR"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Wraiths are undead mesmers found in Kryta."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Wraith.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "ea034e3f-4c99-4427-a1e7-f30ce97d708d",
+			"save": {
+				"dex": "+6",
+				"cha": "+7"
+			},
+			"vulnerable": [
+				"radiant"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Wraith_Token.png"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Wraith is an 8th-level spellcaster. Their spellcasting ability is Charisma (spell save {@dc 15}, +7 to hit with spell attacks). The Wraith has the following Mesmer (GW) spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell chaos storm|GuildWars}",
+								"{@spell epidemic|GuildWars}",
+								"{@spell signet of weariness|GuildWars}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell guilt|GuildWars}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Smoke Phantom",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "10d8 + 30",
+				"average": 75
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 6,
+			"dex": 16,
+			"con": 16,
+			"int": 18,
+			"wis": 14,
+			"cha": 12,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"immune": [],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The Smoke Phantom can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Static Shock",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}12 ({@damage 2d8 + 3}) lightning damage. The target must succeed on a {@dc 15} Constitution saving throw or be {@condition stunned} until the end of their next turn."
+					]
+				}
+			],
+			"traitTags": [
+				"Incorporeal Movement",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Smoke Phantoms are the Elementalist of the Undead army, they can be annoying for low armor groups due to their Chain Lightning spell. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Voice_of_Grenth.jpg"
+						}
+					}
+				]
+			},
+			"save": {
+				"dex": "+6",
+				"int": "+7"
+			},
+			"vulnerable": [],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Smoke Phantom is an 8th-level spellcaster. Their spellcasting ability is Intelligence (spell save {@dc 15}, +7 to hit with spell attacks). The Smoke Phantom has the following Elementalist (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Smoke Phantom casts this spell on themselves before combat.",
+						"**The Smoke Phantom casts this spell on an ally before combat."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell aura of restoration|GuildWars}*",
+								"{@spell blinding flash|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell enervating charge|GuildWars}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell conjure lightning|GuildWars}**"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell chain lightning (guild wars)|GuildWars}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"uniqueId": "aabeb372-385e-417f-a5f6-76918ae27cb4",
+			"conditionInflict": [
+				"stunned"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Voice_of_Grenth_Token.png"
+			},
+			"damageTags": [
+				"L",
+				"O"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Oakheart (Kryta)",
+			"source": "GuildWars",
+			"size": [
+				"H"
+			],
+			"type": "plant",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d12 + 40",
+				"average": 92
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 8,
+			"con": 21,
+			"int": 12,
+			"wis": 16,
+			"cha": 12,
+			"passive": 13,
+			"resist": [],
+			"languages": [
+				"Druidic"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "False Appearance (Treant)",
+					"entries": [
+						"While the Oakheart (Kryta) remains motionless, it appears as a great oak."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The Oakheart (Kryta) deals double damage to objects and structures."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Oakheart (Kryta) makes two slam or Rock attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}16 ({@damage 3d6 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 60/180 ft., one target. {@h}28 ({@damage 4d10 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Animate Trees (1/Day)",
+					"entries": [
+						"The Oakheart (Kryta) magically animates one or two trees it can see within 60 feet of him. These trees have the same statistics as the Oakheart (Kryta), except they have Intelligence and Charisma scores of 1, they can't speak, and they have only the Slam action option. An animated tree acts as an ally of the Oakheart (Kryta). The tree remains animate for 1 day or until it dies; until the Oakheart (Kryta) dies or is more than 120 feet from the tree; or until the Oakheart (Kryta) takes a bonus action to turn them back into an inanimate tree. The tree then takes root if possible."
+					]
+				}
+			],
+			"traitTags": [
+				"False Appearance",
+				"Siege Monster"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"DU"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Oakhearts are sturdy plants found in Kryta. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Sentient_Tree.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "4d0ecfb9-46e8-459e-b97f-98290a2ca9aa",
+			"save": {
+				"str": "+8",
+				"con": "+8"
+			},
+			"vulnerable": [
+				"fire",
+				"slashing"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Sentient_Tree_Token.png"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Oakheart (Kryta) is a 6th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 14}, +6 to hit with spell attacks). The Oakheart (Kryta) has the following Ranger (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Oakheart (Kryta) casts these spells on itself before combat."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell dust trap|GuildWars}*"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell power shot|GuildWars}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell barbed trap|GuildWars}*"
+							],
+							"slots": 3
+						}
+					},
+					"daily": {
+						"1": [
+							"{@spell energizing wind|GuildWars}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CR"
+			],
+			"damageTags": [
+				"B"
+			]
 		}
 	],
 	"legendaryGroup": [

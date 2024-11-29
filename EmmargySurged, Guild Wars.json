@@ -38119,6 +38119,167 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Bloodsong",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Bind a Spirit of Bloodsong to your will, siphoning off health with its attacks.",
+				"Summon a {@creature Spirit of Bloodsong|GuildWars} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative, but takes it turn directly after yours. The spirit is in the DMs control.",
+				"{@bold Summoning Ritual} Only one of each type of Summoning Ritual can be active for your allies at a time, if a new one is created in the range of this Summoning Ritual by one of your allies, this one ends. The spirit created by this ritual uses the {@creature Spirit of Bloodsong|GuildWars} stat block."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Bloodsong",
+					"Binding Ritual. Create a level 1...10...12 spirit who dies after 30...126...150 seconds. Attacks by that spirit steal up to 5...21...25 Health."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/b/bc/Bloodsong.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"AAD"
+			],
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Channeling Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a poem written in blood"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, use the higher level wherever the spell's level appears in the stat block."
+					]
+				}
+			],
+			"uniqueId": "752181e1-cb28-40b7-852f-a0bc330ee793"
+		},
+		{
+			"uniqueId": "efd404b7-c7ee-4632-9cda-fa75b67c1d3b",
+			"name": "Boon of Creation",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Receive a boon every time you create a new creature.",
+				"For the duration, when you summon/create a creature, you regain hit points equal to {@dice 2d4} + spellcasting ability modifier and your next initiative roll gets increased by {@dice 1d4} + spellcasting ability modifier.",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status Concentration|XPHB} on it, except that it does not break {@status Concentration|XPHB} of other {@status Concentration|XPHB} spells when cast, nor does it break {@status Concentration|XPHB} on itself when other {@status Concentration|XPHB} spells are cast. "
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Boon of Creation",
+					"Enchantment Spell. For 15...51...60 seconds, whenever you create a creature, you gain 5...41...50 Health and 1...5...6 Energy."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/1/1a/Boon_of_Creation.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Spawning Power",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd or 4th level, the duration increases to 1 hour. When you use a spell slot of 5th level or higher, the duration increases to 8 hours."
+					]
+				}
+			]
 		}
 	],
 	"table": [
@@ -40614,7 +40775,8 @@
 			"tokenHref": {
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bone_Horror_Token.png"
-			}
+			},
+			"uniqueId": "0dc224c0-e64d-4cf8-b980-1ffa172caa16"
 		},
 		{
 			"name": "Charr",
@@ -40691,7 +40853,8 @@
 			"tokenHref": {
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Charr_Stalker_Token.png"
-			}
+			},
+			"uniqueId": "c917bff0-50a2-45bd-b718-a19521e1ce4a"
 		},
 		{
 			"name": "Grasp of Chaos",
@@ -40808,7 +40971,8 @@
 			],
 			"savingThrowForced": [
 				"strength"
-			]
+			],
+			"uniqueId": "b54cd2ca-fa49-4126-adc5-47f36c42db36"
 		},
 		{
 			"name": "Oni",
@@ -40956,7 +41120,8 @@
 				"constitution",
 				"dexterity",
 				"strength"
-			]
+			],
+			"uniqueId": "9095165f-8997-4021-91e0-83a8a0cd2fe5"
 		},
 		{
 			"name": "Nature Ritual",
@@ -41023,7 +41188,8 @@
 			"tokenHref": {
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Nature_Spirit_Token.png"
-			}
+			},
+			"uniqueId": "d5dd4d58-0f12-40a6-8a46-4a1a6aa97861"
 		},
 		{
 			"name": "Charr Axe Fiend Boss",
@@ -41203,7 +41369,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "8008b992-2bac-4951-bd43-7e6bce37585e"
 		},
 		{
 			"name": "Charr Stalker Boss",
@@ -41388,7 +41555,8 @@
 			],
 			"damageTagsSpell": [
 				"F"
-			]
+			],
+			"uniqueId": "900b9fa2-5df7-49d2-947f-543d51658c9f"
 		},
 		{
 			"name": "Charr Martyr Boss",
@@ -41560,7 +41728,8 @@
 			},
 			"damageTags": [
 				"R"
-			]
+			],
+			"uniqueId": "705e1355-0e5c-44e7-9b5d-207fd090456c"
 		},
 		{
 			"name": "Charr Ashen Claw Boss",
@@ -41732,7 +41901,8 @@
 			},
 			"damageTags": [
 				"N"
-			]
+			],
+			"uniqueId": "fb0534da-9a5f-40e1-a4c6-d8da0d447011"
 		},
 		{
 			"name": "Charr Chaot Boss",
@@ -41912,7 +42082,8 @@
 			},
 			"damageTags": [
 				"Y"
-			]
+			],
+			"uniqueId": "53cb0913-107e-4674-a4ba-8d293c8cbd27"
 		},
 		{
 			"name": "Charr Flame Wielder Boss",
@@ -42078,7 +42249,8 @@
 			},
 			"damageTags": [
 				"F"
-			]
+			],
+			"uniqueId": "b4f04fe0-822e-4e92-b635-a9b33b244191"
 		},
 		{
 			"name": "Charr Axe Fiend",
@@ -42228,7 +42400,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "31fc1a6e-edca-4322-9fe6-d6169973ebff"
 		},
 		{
 			"name": "Charr Stalker",
@@ -42379,7 +42552,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "50fdf63d-3d92-496c-942c-4e5b0ecad4b3"
 		},
 		{
 			"name": "Charr Martyr",
@@ -42526,7 +42700,8 @@
 			"savingThrowForcedSpell": [
 				"constitution",
 				"dexterity"
-			]
+			],
+			"uniqueId": "02a55147-4739-44de-bf13-183d4eb6328c"
 		},
 		{
 			"name": "Charr Ashen Claw",
@@ -42673,7 +42848,8 @@
 			"savingThrowForcedSpell": [
 				"constitution",
 				"wisdom"
-			]
+			],
+			"uniqueId": "f82c745e-80b8-4942-89bf-9cbd9229fad1"
 		},
 		{
 			"name": "Charr Chaot",
@@ -42813,7 +42989,8 @@
 			},
 			"damageTags": [
 				"Y"
-			]
+			],
+			"uniqueId": "fa375f08-36cc-4e44-8b4e-d9cbbda89314"
 		},
 		{
 			"name": "Charr Flame Wielder",
@@ -42958,7 +43135,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "80d47d11-51eb-4e9f-ad61-79ca8c8438a6"
 		},
 		{
 			"name": "Whiptail Devourer",
@@ -43123,7 +43301,8 @@
 			},
 			"damageTags": [
 				"P"
-			]
+			],
+			"uniqueId": "5a0d5571-bb12-4521-993f-2f34891c77ec"
 		},
 		{
 			"name": "Carrion Devourer",
@@ -43295,7 +43474,8 @@
 			},
 			"damageTags": [
 				"P"
-			]
+			],
+			"uniqueId": "253a2b2e-20ce-4bf1-b158-8ed1514a4358"
 		},
 		{
 			"name": "Plague Devourer",
@@ -43453,7 +43633,8 @@
 			},
 			"damageTags": [
 				"P"
-			]
+			],
+			"uniqueId": "4d90046b-448e-4acd-8480-7883c8891d64"
 		},
 		{
 			"name": "Hydra (Ascalon)",
@@ -43612,7 +43793,8 @@
 			},
 			"damageTags": [
 				"P"
-			]
+			],
+			"uniqueId": "fe9730b6-a298-41e9-9f65-2278a0ce9c2b"
 		},
 		{
 			"name": "Resurrect Gargoyle",
@@ -43734,7 +43916,8 @@
 			},
 			"damageTags": [
 				"L"
-			]
+			],
+			"uniqueId": "78e652bd-a0ac-462e-bfff-574f6a9c8d3e"
 		},
 		{
 			"name": "Shatter Gargoyle",
@@ -43879,7 +44062,8 @@
 			},
 			"damageTags": [
 				"Y"
-			]
+			],
+			"uniqueId": "be36db24-6a11-4e4c-a4b8-ad380dac383e"
 		},
 		{
 			"name": "Flash Gargoyle",
@@ -44036,7 +44220,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "b5645d55-d21f-45f4-ab1b-2ca7c37a7daf"
 		},
 		{
 			"name": "Grawl (Ascalon)",
@@ -44199,7 +44384,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"strength"
-			]
+			],
+			"uniqueId": "b7dcdee0-3756-4280-ab29-243d5a88d7a1"
 		},
 		{
 			"name": "Grawl Ulodyte",
@@ -44351,7 +44537,8 @@
 			},
 			"damageTags": [
 				"R"
-			]
+			],
+			"uniqueId": "5c0570ac-9037-469b-b8c9-b9986162ac4d"
 		},
 		{
 			"name": "Boulder Elemental",
@@ -44477,7 +44664,8 @@
 			},
 			"damageTags": [
 				"B"
-			]
+			],
+			"uniqueId": "75444b86-aaed-4e5f-88e3-b906ae24d8c7"
 		},
 		{
 			"name": "Margonite Executioner",
@@ -44640,7 +44828,8 @@
 			},
 			"damageTags": [
 				"B"
-			]
+			],
+			"uniqueId": "d31396f1-9e3a-4012-9213-e3ad69caf113"
 		},
 		{
 			"name": "White Mantle Knight",
@@ -44789,7 +44978,8 @@
 			],
 			"damageTagsSpell": [
 				"I"
-			]
+			],
+			"uniqueId": "69d7886b-9418-40d7-a290-c0c5f7425440"
 		},
 		{
 			"name": "Justiciar Hablion",
@@ -44946,7 +45136,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "84b8c0a8-0cdf-47ef-828f-91391af05bd3"
 		},
 		{
 			"name": "Wooden Charr Trebuchet",
@@ -45093,7 +45284,8 @@
 			],
 			"savingThrowForced": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "c13393f5-4370-44d2-821e-0201a43bec60"
 		},
 		{
 			"name": "Mage channeling an Obelisk",
@@ -45222,7 +45414,8 @@
 			},
 			"damageTags": [
 				"L"
-			]
+			],
+			"uniqueId": "5b782337-ba2f-4d97-9d34-dccf8ac1118a"
 		},
 		{
 			"name": "Bonfaaz Burntfur",
@@ -45455,7 +45648,8 @@
 			],
 			"damageTagsSpell": [
 				"F"
-			]
+			],
+			"uniqueId": "742411e1-82a0-4601-831c-16b2d5ded6a7"
 		},
 		{
 			"name": "Modniir Centaur",
@@ -45584,7 +45778,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "4f5bbd5e-1675-4864-b83b-ad30facf2d8f"
 		},
 		{
 			"name": "Modniir Longbow",
@@ -45761,7 +45956,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"strength"
-			]
+			],
+			"uniqueId": "e9f33af0-b79a-4964-a4fb-b09005a92212"
 		},
 		{
 			"name": "Modniir Longbow Boss",
@@ -45975,7 +46171,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"strength"
-			]
+			],
+			"uniqueId": "bb1a6c11-b81c-4de1-b1ca-f63968c3f738"
 		},
 		{
 			"name": "Modniir Warrior",
@@ -46142,7 +46339,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "5fb3a932-abfb-40c0-ab93-ebc9b75c1b52"
 		},
 		{
 			"name": "Modniir Warrior Boss",
@@ -46350,7 +46548,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "4c40774f-6273-49f5-81df-590745eedf89"
 		},
 		{
 			"name": "Modniir Protector",
@@ -46520,7 +46719,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "fdcfcdf4-22e5-428d-9da6-c7f9107c718c"
 		},
 		{
 			"name": "Modniir Protector Boss",
@@ -46729,7 +46929,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "127e3c5c-ebeb-4a3c-a6dd-57293d060e8b"
 		},
 		{
 			"name": "Drake",
@@ -46835,7 +47036,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "5d3aef4b-3d67-4efd-927b-792c089ddc3c"
 		},
 		{
 			"name": "Ice Drake Elementalist Boss",
@@ -47025,7 +47227,8 @@
 			],
 			"damageTagsSpell": [
 				"L"
-			]
+			],
+			"uniqueId": "2ccbec15-69db-4fd0-aa6f-3204167f2dea"
 		},
 		{
 			"name": "Dwarf",
@@ -47132,7 +47335,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "9fa16050-ef22-4f83-8863-238f6d929613"
 		},
 		{
 			"name": "Deldrimor Dwarf",
@@ -47250,7 +47454,8 @@
 			"damageTags": [
 				"B",
 				"P"
-			]
+			],
+			"uniqueId": "3ac3c86e-3e29-4ce9-9daa-6dfc20a7a90d"
 		},
 		{
 			"name": "Stone Summit Dwarf",
@@ -47392,7 +47597,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "b91c3b32-a5e8-4ea5-8347-c47a0d12fc2f"
 		},
 		{
 			"name": "Stone Summit Beastmaster",
@@ -47586,7 +47792,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "54082e66-1a8f-41be-8645-868356761aaa"
 		},
 		{
 			"name": "Stone Summit Sage",
@@ -47767,7 +47974,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "fd0f077c-8e09-4b4b-9363-ee8276c3f177"
 		},
 		{
 			"name": "Stone Summit Sage Boss",
@@ -47979,7 +48187,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "a5314840-94ef-43e4-8579-9050afbbdeca"
 		},
 		{
 			"name": "Stone Summit Howler",
@@ -48163,7 +48372,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "14b9224c-62bd-470f-8789-4fe90d5f4da5"
 		},
 		{
 			"name": "Stone Summit Howler Boss",
@@ -48377,7 +48587,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "359b76f1-9ef1-4458-bd97-20022ff319d7"
 		},
 		{
 			"name": "Stone Summit Crusher",
@@ -48548,7 +48759,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "611b9802-f9b0-4dc6-86a5-7c1c913f27ab"
 		},
 		{
 			"name": "Stone Summit Axe Wielder",
@@ -48723,7 +48935,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "dd976cd4-1642-4516-99a2-87d2066c1749"
 		},
 		{
 			"name": "Stone Summit Axe Wielder Boss",
@@ -48935,7 +49148,8 @@
 			"savingThrowForcedSpell": [
 				"constitution",
 				"dexterity"
-			]
+			],
+			"uniqueId": "1ddc7344-0b71-4cb7-91dc-e8bf3112eb59"
 		},
 		{
 			"name": "Spirit of the Fallen",
@@ -49123,7 +49337,8 @@
 			],
 			"damageTags": [
 				"O"
-			]
+			],
+			"uniqueId": "3a0ea7ff-ed09-4a48-ad03-596e9219910b"
 		},
 		{
 			"name": "Stone Summit Dolyak Rider",
@@ -49316,7 +49531,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "f9d90a51-6b15-4830-b3e2-28a84c12d7ad"
 		},
 		{
 			"name": "Stone Summit Dolyak Rider Boss",
@@ -49543,7 +49759,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "74f0227c-56d7-46a3-8f16-d4c95c8d6b00"
 		},
 		{
 			"name": "Stone Summit Scout",
@@ -49721,7 +49938,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "8af3a451-0f96-47d2-841e-afc669a34311"
 		},
 		{
 			"name": "Dryder",
@@ -49854,7 +50072,8 @@
 			"damageTags": [
 				"N",
 				"P"
-			]
+			],
+			"uniqueId": "fa71c284-be1e-4da8-a81b-7bb366de9575"
 		},
 		{
 			"name": "Frostfire Dryder",
@@ -50025,7 +50244,8 @@
 			"damageTags": [
 				"N",
 				"P"
-			]
+			],
+			"uniqueId": "32a4b72b-a026-49a0-8b08-69dda74aca78"
 		},
 		{
 			"name": "Ettin",
@@ -50158,7 +50378,8 @@
 				"B",
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "81e884fa-b904-4ff8-b5bd-5f557a10d0d9"
 		},
 		{
 			"name": "Snow Ettin",
@@ -50321,7 +50542,8 @@
 				"B",
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "ed8de2ff-0439-46f5-bb7a-94cd66475348"
 		},
 		{
 			"name": "Ice Golem",
@@ -50483,7 +50705,8 @@
 			],
 			"savingThrowForced": [
 				"constitution"
-			]
+			],
+			"uniqueId": "349a9257-8eb9-4be9-966d-148b49649770"
 		},
 		{
 			"name": "Minotaur (Shiverpeaks)",
@@ -50627,7 +50850,8 @@
 			],
 			"savingThrowForced": [
 				"strength"
-			]
+			],
+			"uniqueId": "9c357b60-5204-468d-9187-1da09cd99ae8"
 		},
 		{
 			"name": "Juniper Bark",
@@ -50777,7 +51001,8 @@
 			],
 			"damageTags": [
 				"P"
-			]
+			],
+			"uniqueId": "a22b1e9e-8d4a-4eaf-93e3-12731e2619fa"
 		},
 		{
 			"name": "Stone Summit Scout Boss",
@@ -50993,7 +51218,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "07ca507b-e5ca-4305-870e-66f51b17cb90"
 		},
 		{
 			"name": "Frostfire Dryder Necromancer Boss",
@@ -51199,7 +51425,8 @@
 			"damageTags": [
 				"N",
 				"P"
-			]
+			],
+			"uniqueId": "a0e287c9-7537-4368-9091-f16fab22ab5f"
 		},
 		{
 			"name": "Ice Golem Boss (Northern Shiverpeaks)",
@@ -51401,7 +51628,8 @@
 			],
 			"savingThrowForced": [
 				"constitution"
-			]
+			],
+			"uniqueId": "0b01ed31-661b-4a57-a122-70affcf292d3"
 		},
 		{
 			"name": "Ice Imp",
@@ -51584,7 +51812,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "91152068-7ad9-44d2-8433-1b7180084ad2"
 		},
 		{
 			"name": "Ice Imp Elementalist Boss",
@@ -51815,7 +52044,8 @@
 			],
 			"savingThrowForced": [
 				"constitution"
-			]
+			],
+			"uniqueId": "c97ebb22-327b-4f49-a5ca-96e523de5d3f"
 		},
 		{
 			"name": "Ice Imp Mesmer Boss",
@@ -52048,7 +52278,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"charisma"
-			]
+			],
+			"uniqueId": "860db235-4a27-4556-a85a-a0143858d8f1"
 		},
 		{
 			"name": "Stone Summit Beastmaster Warrior Boss",
@@ -52277,7 +52508,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "237682e0-5b31-4b23-832a-84ab9fcb01a5"
 		},
 		{
 			"source": "GuildWars",
@@ -52450,7 +52682,8 @@
 				"constitution",
 				"dexterity",
 				"strength"
-			]
+			],
+			"uniqueId": "db53b5c0-58ee-4e4e-a788-ce67532fa3c3"
 		},
 		{
 			"name": "King Jalis Ironhammer",
@@ -52652,7 +52885,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "007da270-f426-4b2d-9753-993129a49224"
 		},
 		{
 			"name": "Volatile Ice Elemental",
@@ -52752,7 +52986,8 @@
 			],
 			"savingThrowForced": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "9c6604e3-fedd-4882-b4cf-75ca9aeeec88"
 		},
 		{
 			"name": "Nicholas the Traveler",
@@ -52912,7 +53147,8 @@
 			],
 			"damageTags": [
 				"P"
-			]
+			],
+			"uniqueId": "a31c14ce-7694-4fb1-845d-1305dc2d52fd"
 		},
 		{
 			"name": "Professor Yakkington",
@@ -53002,7 +53238,8 @@
 			],
 			"savingThrowForced": [
 				"strength"
-			]
+			],
+			"uniqueId": "a24682f9-4fd5-433b-96f9-721256aa45de"
 		},
 		{
 			"name": "Pitney",
@@ -53139,7 +53376,8 @@
 			"savingThrowForced": [
 				"constitution",
 				"strength"
-			]
+			],
+			"uniqueId": "82b20980-9060-417e-a7cd-769b3e47cd85"
 		},
 		{
 			"name": "Hilde Starseer",
@@ -53304,7 +53542,8 @@
 			"savingThrowForcedSpell": [
 				"dexterity",
 				"wisdom"
-			]
+			],
+			"uniqueId": "e93d8d90-5b2d-4425-bc60-bb19ce14d41d"
 		},
 		{
 			"name": "Ursan Transformation (Level 04-07)",
@@ -53410,7 +53649,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "1d553421-fb88-4b0b-afe5-82c0074d0f4c"
 		},
 		{
 			"name": "Ursan Transformation (Level 08-11)",
@@ -53516,7 +53756,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "bc49c9d3-aba6-4803-9096-9a9b5a109a50"
 		},
 		{
 			"name": "Ursan Transformation (Level 12-15)",
@@ -53622,7 +53863,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "d2d4fbd7-3da4-402f-83bc-3c53bfd0a728"
 		},
 		{
 			"name": "Ursan Transformation (Level 16-19)",
@@ -53728,7 +53970,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "daf9e0ab-ad1f-44b8-aed1-26056950edf8"
 		},
 		{
 			"name": "Ursan Transformation (Level 20)",
@@ -53834,7 +54077,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "82ffa90d-f72d-4083-9f2c-583b1bb98134"
 		},
 		{
 			"name": "Ursan Transformation (Level 01-03)",
@@ -53938,7 +54182,8 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
+			],
+			"uniqueId": "0a932664-5aef-48b9-b363-a82d80be6eb4"
 		},
 		{
 			"name": "Bone Fiend",
@@ -54006,7 +54251,8 @@
 			"tokenHref": {
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bone_Fiend_Token.png"
-			}
+			},
+			"uniqueId": "c7f62753-b447-48b5-91dd-ae550eb684be"
 		},
 		{
 			"name": "Madam Featherbutt",
@@ -54115,7 +54361,8 @@
 					]
 				}
 			],
-			"isNpc": true
+			"isNpc": true,
+			"uniqueId": "98adbaab-dfb9-482c-b373-6c14557b2402"
 		},
 		{
 			"name": "Rornark Stonesledge",
@@ -54265,7 +54512,8 @@
 			"isNpc": true,
 			"damageTags": [
 				"P"
-			]
+			],
+			"uniqueId": "465bbe56-bfc4-4522-b4fd-e35ced2378f2"
 		},
 		{
 			"name": "Corvid Transformation (Level 04-07)",
@@ -54372,7 +54620,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "6e268dbe-a8c6-4fe5-a023-88cf504be2a8"
 		},
 		{
 			"name": "Corvid Transformation (Level 01-03)",
@@ -54477,7 +54726,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "6a57a998-320b-47aa-95b7-f704638cedac"
 		},
 		{
 			"name": "Corvid Transformation (Level 08-11)",
@@ -54584,7 +54834,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "148df7f6-199a-4ea8-b465-165cb453ba83"
 		},
 		{
 			"name": "Corvid Transformation (Level 12-15)",
@@ -54691,7 +54942,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "a0617834-908e-46cd-a0c4-2777185265fa"
 		},
 		{
 			"name": "Corvid Transformation (Level 16-19)",
@@ -54798,7 +55050,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "68018304-4c2c-470a-b8e5-f7f34fbe68eb"
 		},
 		{
 			"name": "Corvid Transformation (Level 20)",
@@ -54905,7 +55158,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "8a50415f-d660-4ebd-90dc-97afa7e62c0e"
 		},
 		{
 			"name": "Strigid Transformation (Level 04-07)",
@@ -55017,7 +55271,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "002756b7-23d5-4bb0-909f-7f85f0e28477"
 		},
 		{
 			"name": "Strigid Transformation (Level 01-03)",
@@ -55127,7 +55382,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "b570f1f1-2a55-4cf9-baf8-871f37cc1aeb"
 		},
 		{
 			"name": "Strigid Transformation (Level 08-11)",
@@ -55239,7 +55495,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "168b4ac1-aa00-4cf4-94be-2ac5597741e6"
 		},
 		{
 			"name": "Strigid Transformation (Level 12-15)",
@@ -55351,7 +55608,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "7e220fed-8299-4187-89b2-83afa43ff21b"
 		},
 		{
 			"name": "Strigid Transformation (Level 16-19)",
@@ -55463,7 +55721,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "d7b984b1-eccd-4da5-8562-628c1242c8c3"
 		},
 		{
 			"name": "Strigid Transformation (Level 20)",
@@ -55575,7 +55834,8 @@
 			},
 			"damageTags": [
 				"S"
-			]
+			],
+			"uniqueId": "ae38b553-5679-436d-9a89-ecddb6b3983c"
 		},
 		{
 			"name": "Volfen Transformation (Level 04-07)",
@@ -55682,7 +55942,8 @@
 						"Choose any number of friendly creatures that can hear you and are within 150-feet of you. For 1 round, each target can attack one additional time when they take the attack action on their turn."
 					]
 				}
-			]
+			],
+			"uniqueId": "53e85a32-d0e3-4f14-9328-ed9c012ecf63"
 		},
 		{
 			"name": "Volfen Transformation (Level 01-03)",
@@ -55788,7 +56049,8 @@
 						"Choose any number of friendly creatures that can hear you and are within 150-feet of you. For 1 round, each target can attack one additional time when they take the attack action on their turn."
 					]
 				}
-			]
+			],
+			"uniqueId": "dc20476f-1fc9-4887-8192-005d8ec4783c"
 		},
 		{
 			"name": "Volfen Transformation (Level 08-11)",
@@ -55895,7 +56157,8 @@
 						"Choose any number of friendly creatures that can hear you and are within 150-feet of you. For 1 round, each target can attack one additional time when they take the attack action on their turn."
 					]
 				}
-			]
+			],
+			"uniqueId": "5bf8097a-3a5f-419f-845a-b71ad383356d"
 		},
 		{
 			"name": "Volfen Transformation (Level 12-15)",
@@ -56002,7 +56265,8 @@
 						"Choose any number of friendly creatures that can hear you and are within 150-feet of you. For 1 round, each target can attack one additional time when they take the attack action on their turn."
 					]
 				}
-			]
+			],
+			"uniqueId": "0bd84614-f0f5-4aeb-a085-981eb3095ec9"
 		},
 		{
 			"name": "Volfen Transformation (Level 16-19)",
@@ -56109,7 +56373,8 @@
 						"Choose any number of friendly creatures that can hear you and are within 150-feet of you. For 1 round, each target can attack one additional time when they take the attack action on their turn."
 					]
 				}
-			]
+			],
+			"uniqueId": "8ef89a80-b186-436a-b018-7c300375a39a"
 		},
 		{
 			"name": "Volfen Transformation (Level 20)",
@@ -56216,7 +56481,8 @@
 						"Choose any number of friendly creatures that can hear you and are within 150-feet of you. For 2 rounds, each target can attack one additional time when they take the attack action on their turn."
 					]
 				}
-			]
+			],
+			"uniqueId": "c057ee88-0dd9-4df2-853b-3dcf6ba7f160"
 		},
 		{
 			"name": "Incomplete Dragon Skeleton",
@@ -56357,7 +56623,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "84b979df-0376-41fc-8391-fb87b815e12f"
 		},
 		{
 			"name": "Stone Summit Conjurer",
@@ -56583,7 +56850,8 @@
 			"savingThrowForcedSpell": [
 				"dexterity",
 				"wisdom"
-			]
+			],
+			"uniqueId": "bd3ce7ca-2486-4285-98d1-7b5d02de8385"
 		},
 		{
 			"name": "Wraith",
@@ -56761,7 +57029,8 @@
 			],
 			"savingThrowForced": [
 				"constitution"
-			]
+			],
+			"uniqueId": "af7c3581-5f77-46cd-b0fb-979d58e0217a"
 		},
 		{
 			"name": "Smoke Phantom",
@@ -56926,7 +57195,8 @@
 			],
 			"savingThrowForced": [
 				"constitution"
-			]
+			],
+			"uniqueId": "d6947bf6-9271-419b-b950-1fd3b3b23a26"
 		},
 		{
 			"name": "Oakheart (Kryta)",
@@ -57090,7 +57360,8 @@
 			],
 			"damageTags": [
 				"B"
-			]
+			],
+			"uniqueId": "38249ee5-ac7f-4ed7-905e-189201db6b19"
 		},
 		{
 			"name": "Ancient Oakheart",
@@ -57260,7 +57531,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"uniqueId": "013f0516-7c24-4bd9-90e9-14e74f06279e"
 		},
 		{
 			"name": "Large Spined Aloe",
@@ -57401,7 +57673,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"constitution"
-			]
+			],
+			"uniqueId": "11852713-8f09-47ae-a943-e6fa3144b4f5"
 		},
 		{
 			"uniqueId": "6b27edbc-3fb7-4915-8071-463ca82a7bee",
@@ -57569,6 +57842,398 @@
 				"S",
 				"Y"
 			]
+		},
+		{
+			"name": "Spirit of Bloodsong",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "GuildWars",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 10,
+					"condition": "+ Spell Level",
+					"braces": true
+				}
+			],
+			"hp": {
+				"special": "5 + Spell Level * 5"
+			},
+			"speed": {},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"actionTags": [
+				"Multiattack"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"fluff": {
+				"entries": [
+					"Binding Ritual. Create a level 1...10...12 spirit who dies after 30...126...150 seconds. Attacks by that spirit steal up to 5...21...25 Health. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Aggressive_binding_spirit.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "da53fa08-62bc-47b5-9971-bc397bab31a3",
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Spirit of Bloodsong makes a number of bloodsong attacks equal to half the level of the spell (rounded down, minimum 1)."
+					]
+				},
+				{
+					"name": "Bloodsong",
+					"entries": [
+						"{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}3 ({@damage 1d6 + Spell Level}) necrotic damage, the Spirit of Bloodsong regains health equal to the damage dealt."
+					]
+				}
+			],
+			"miscTags": [
+				"RA"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Aggressive_binding_spirit_Token.png"
+			}
+		},
+		{
+			"name": "Hell Hound",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 16",
+				"average": 52
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 17,
+			"dex": 12,
+			"con": 14,
+			"int": 6,
+			"wis": 13,
+			"cha": 6,
+			"skill": {
+				"perception": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"languages": [
+				"understands Infernal but can't speak it"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The hound has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The hound has advantage on an attack roll against a creature if at least one of the hound's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage plus 7 ({@damage 2d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Necrotic Breath {@recharge 5}",
+					"entries": [
+						"The hound exhales necrotic energy in a 15-foot cone. Each creature in that area must make a {@dc 12} Dexterity saving throw, taking 21 ({@damage 6d6}) necrotic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/hell-hound.mp3"
+			},
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"CS",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Hellhounds are undead creatures that are usually accompanied by a handler, like an Executioner or a Hellhound Keeper. Though they may appear like standard undead, they are actually constructs, much like a necromancer's minion. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Skeleton_hound.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "66d7708e-46f1-424c-98f3-6ea91eccecca",
+			"vulnerable": [
+				"fire"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Skeleton_hound_Token.png"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Hellhound is a 3rd-level spellcaster. Its spellcasting ability is Strength (spell save {@dc 13}, +5 to hit with spell attacks). The Hellhound has the following Warrior (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Hellhound casts these spells on itself before combat."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell for great justice!|GuildWars}*",
+								"{@spell frenzy|GuildWars}",
+								"{@spell gash|GuildWars}",
+								"{@spell sever artery|GuildWars}"
+							],
+							"slots": 3
+						},
+						"2": {
+							"spells": [
+								"{@spell endure pain|GuildWars}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "str",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"N",
+				"P"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Skeleton Bowmaster",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "5d8 + 15",
+				"average": 37
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 17,
+			"int": 6,
+			"wis": 8,
+			"cha": 5,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages it knew in life but can't speak"
+			],
+			"cr": "2",
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atkr m} {@hit 5}, reach 5 ft. {@h}25 ({@damage 3d6 + 4}) Piercing damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atkr r} {@hit 5}, range 80/320 ft. {@h}25 ({@damage 3d6 + 4}) Piercing damage."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/skeleton.mp3"
+			},
+			"attachedItems": [
+				"shortbow|phb",
+				"shortsword|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"miscTags": [
+				"MA",
+				"MLW",
+				"RA",
+				"RNG"
+			],
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Skeleton Bowmasters are skeleton Rangers found throughout Kryta."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Skeleton_ranger.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "f9e8384b-d041-45e9-844c-6a296d6527f7",
+			"resist": [
+				"piercing"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Skeleton Bowmaster is a 3rd-level spellcaster. Their spellcasting ability is Dexterity (spell save {@dc 14}, +6 to hit with spell attacks). The Skeleton Bowmaster has the following Ranger (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Skeleton Bowmaster casts these spells on themselves before combat as a ritual."
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell hunter's shot|GuildWars}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell pin down|GuildWars}"
+							],
+							"slots": 3
+						},
+						"2": {
+							"spells": [
+								"{@spell apply poison|GuildWars}*"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "dex",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CR"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Skeleton_ranger_Token.png"
+			},
+			"damageTags": [
+				"P"
+			]
 		}
 	],
 	"legendaryGroup": [
@@ -57583,7 +58248,8 @@
 				"If the Stormcaller horn has been blown, all charr become vulnerable to all damage, and deal only half damage."
 			],
 			"mythicEncounter": [],
-			"source": "GuildWars"
+			"source": "GuildWars",
+			"uniqueId": "a9fd8120-8f01-4910-8bd6-fa169b2513eb"
 		}
 	],
 	"race": [

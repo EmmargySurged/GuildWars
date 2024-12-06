@@ -6265,7 +6265,7 @@
 				"Slash at your foe with a serrated edge.",
 				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw. On a failed save, the target starts {@condition bleeding|GuildWars} for the duration, taking {@damage 1d4} damage.",
 				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends.",
-				"{@bold Lead Attack.} On a hit, this attack is considered a lead attack. Additionally, you can, immediately after you hit, cast an off-hand attack spell as an action or bonus action.",
+				"{@bold Lead Attack.} On a hit, this attack is considered a lead attack. Additionally, you can, immediately after you hit the target, cast an off-hand attack spell as an action or bonus action against the target.",
 				"At 5th level, the melee attack also deals an extra {@damage 1d8} piercing damage to the target on a hit. This damage increases by {@dice 1d8} when you reach 11th level ({@dice 2d8}), and 17th level ({@dice 3d8})."
 			],
 			"source": "GuildWars",
@@ -6292,15 +6292,6 @@
 			],
 			"areaTags": [
 				"ST"
-			],
-			"optionalfeatures": [
-				{
-					"name": "Pact of the Tome",
-					"source": "PHB",
-					"featureType": [
-						"PB"
-					]
-				}
 			],
 			"conditionInflict": [
 				"bleeding|guildwars"
@@ -6351,7 +6342,7 @@
 				"Slip past your foes defenses with a foxes' agility.",
 				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 2d6} damage.",
 				"{@bold Unblockable.} This spell ignores any temporary bonuses to AC.",
-				"{@bold Off-Hand Attack.} This attack must follow a lead attack and can be cast as a bonus action if the action this turn was a lead attack. On a hit, this attack is considered an off-hand attack. Additionally, you can, immediately after you hit, cast a dual attack spell as an action or bonus action."
+				"{@bold Off-Hand Attack.} This spell must follow a lead attack and can be cast as a bonus action if the action this turn was a lead attack. On a hit, this attack is considered an off-hand attack. Additionally, you can, immediately after you hit the target, cast a dual attack spell as an action or bonus action against the target."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -6432,7 +6423,7 @@
 			"entries": [
 				"Strike your foe with the strength of an ox.",
 				"Choose one creature that you can see within range of your weapon. Make two melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d6} damage and, if the target is not within 5-feet of one of the target's allies, is knocked {@condition prone}.",
-				"{@bold Dual Attack.} This attack must follow an off-hand attack and can be cast as a bonus action if the action this turn was an off-hand attack. On a hit, this attack is considered a dual attack."
+				"{@bold Dual Attack.} This spell must follow an off-hand attack and can be cast as a bonus action if the action this turn was an off-hand attack. On a hit, this attack is considered a dual attack."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -23477,7 +23468,7 @@
 			"entries": [
 				"Shadow step to a creature, draining their power and empowering your own.",
 				"Choose one creature that you can see within range. Teleport within 5 feet of the target to an unoccupied space. The target must make a Wisdom saving throw. On a failed save for the duration, each of the target's ability scores are reduced by {@dice 1d4} each, and each of yours are increased correspondingly by the amount lost.",
-				"{@bold Lead Attack.} On a failed save, this spell is considered a lead attack. Additionally, you can, immediately after a failed save, cast an off-hand attack spell as an action or bonus action.",
+				"{@bold Lead Attack.} If successfully cast, this spell is considered a lead attack. Additionally, you can, immediately after you successfully cast this spell against the target, cast an off-hand attack spell as an action or bonus action against the target.",
 				"{@bold Enchantment/Hex.} Treat this spell as if you were maintaining {@status concentration} on it, except that it does not break {@status concentration} of other {@status concentration} spells when cast, nor does it break {@status concentration} on itself when other {@status concentration} spells are cast.",
 				"{@bold Elite.} When preparing your spells, you can only prepare one elite spell."
 			],
@@ -38071,7 +38062,7 @@
 				"Create a scarlet urn containing the ashes of Mingson, blinding creatures around you when you drop them.",
 				"You create an urn in your hands. When you drop this urn, target each creature other than you within range. Each target must make a Constitution saving throw. On a failed save, a target is {@condition blinded} for 1 minute.",
 				"At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends.",
-				"{@bold Urn.} The urn created by this spell must be held with two hands and cannot be thrown. The urn can be used as a spellcasting focus, and does not prevent you from casting spells requiring somatic or material componenets as normal. When creating another urn while already holding one, this spell ends. When this spell ends you drop the urn. The urn disappears when you drop it. You can drop the urn on your turn as a free action, or as a reaction if it is not your turn."
+				"{@bold Urn.} The urn created by this spell must be held with two hands and cannot be thrown. The urn can be used as a spellcasting focus, and does not prevent you from casting spells requiring somatic or material components as normal. When creating another urn while already holding one, this spell ends. When this spell ends, you drop the urn. The urn disappears when you drop it. You can drop the urn on your turn as a free action, or as a reaction if it is not your turn."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -38279,6 +38270,236 @@
 						"When you cast this spell using a spell slot of 3rd or 4th level, the duration increases to 1 hour. When you use a spell slot of 5th level or higher, the duration increases to 8 hours."
 					]
 				}
+			]
+		},
+		{
+			"uniqueId": "ba045cf5-fc47-4cab-bf05-c2e43b045342",
+			"name": "Brutal Weapon",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Temporarily transform a weapon into a brutal weapon, visibly making its appearance more brutal and increasing its damage as long as the wielder is not under the effect of any enchantment spells.",
+				"Choose one friendly creature, which is wielding a weapon, that you can see within range. For the duration, while the target is not under the effect of a beneficial {@status Concentration|XPHB}/enchantment spell, the target's weapon attacks deal an additional {@damage 1d6} damage.",
+				"{@bold Weapon Spell.} If the target gains a new weapon spell, this spell ends. If the target drops or lets go of the weapon affected by this spell, this spell ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Brutal Weapon",
+					"Weapon Spell. Give target ally a Brutal Weapon for 10...34...40 seconds. The bearer's weapon strikes for +5...13...15 damage as long as the bearer is under no enchantments."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/8/87/Brutal_Weapon.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Communing",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for every two slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"uniqueId": "e5ec7ffd-c66f-4f5b-abfb-155f91a6558b",
+			"name": "Channeled Strike",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Channel your magic into a lightning bolt, increasing its power if you are holding an object created by a spell.",
+				"Choose one creature that you can see within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 3d12} lightning damage. If you are holding an object created by a spell, the target takes an additional {@damage 2d6} lightning damage."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Channeled Strike",
+					"Spell. Target foe is struck for 5...77...95 lightning damage. That foe is struck for an additional 5...29...35 lightning damage if you are holding an item."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/6/6c/Channeled_Strike.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Channeling Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the initial damage increases by {@dice 1d12} for each slot level above 2nd and the conditional damage increases by {@dice 1d6} for each slot level above 2nd."
+					]
+				}
+			]
+		},
+		{
+			"uniqueId": "47fab5c3-951e-4be1-afca-935c24c15dec",
+			"name": "Blinding Powder",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				},
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Quickly throw a handful of blinding powder at a group of creatures.",
+				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target is {@condition blinded} for the duration.",
+				"At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends.",
+				"{@bold Off-Hand Attack.} This spell must follow a lead attack and can be cast as a bonus action if the action this turn was a lead attack."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Blinding Powder",
+					"Spell. Must follow an off-hand attack. Target foe and all adjacent foes become Blinded for 3...13...15 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/8/80/Blinding_Powder.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Shadow Arts",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "a handful of sand"
+			},
+			"conditionInflict": [
+				"blinded"
 			]
 		}
 	],
@@ -58233,6 +58454,601 @@
 			},
 			"damageTags": [
 				"P"
+			]
+		},
+		{
+			"name": "Skeleton Monk",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "5d8 + 15",
+				"average": 37
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"con": 16,
+			"int": 6,
+			"wis": 18,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages it knew in life but can't speak"
+			],
+			"cr": "3",
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atkr m} {@hit 3}, reach 5 ft. {@h}4 ({@damage 1d6 + 1}) Piercing damage."
+					]
+				},
+				{
+					"name": "Radiant Staff",
+					"entries": [
+						"{@atk rs} {@hit 6} to hit, range 60/120 ft., one target. {@h}8 ({@damage 2d6 + 4}) radiant damage."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/skeleton.mp3"
+			},
+			"attachedItems": [
+				"shortsword|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"miscTags": [
+				"MA",
+				"MLW",
+				"RA"
+			],
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Skeleton Monks are undead healers and smiters found with other Skeletons throughout Kryta. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Skeleton_monk.jpg"
+						}
+					}
+				]
+			},
+			"resist": [
+				"piercing"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Skeleton Monk is a 6th-level spellcaster. Their spellcasting ability is Wisdom (spell save {@dc 14}, +6 to hit with spell attacks). The Skeleton Monk has the following Monk (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Skeleton Monk casts these spells on themselves before combat as a ritual."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell healing breeze|GuildWars}*",
+								"{@spell infuse health|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell smite hex|GuildWars}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						}
+					},
+					"daily": {
+						"1": [
+							"{@spell vengeance|GuildWars}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"uniqueId": "3bc18635-2e83-4d29-84fa-d28c942ab887",
+			"dex": 12,
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Skeleton_monk_Token.png"
+			},
+			"damageTags": [
+				"P",
+				"R"
+			],
+			"damageTagsSpell": [
+				"N",
+				"Y"
+			]
+		},
+		{
+			"name": "Skeleton Mesmer",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "5d8 + 20",
+				"average": 42
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"con": 18,
+			"int": 20,
+			"wis": 6,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages it knew in life but can't speak"
+			],
+			"cr": "4",
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Piercing damage."
+					]
+				},
+				{
+					"name": "Chotic Staff",
+					"entries": [
+						"{@atk rs} {@hit 7} to hit, range 60/120 ft., one target. {@h}11 ({@damage 2d6 + 5}) psychic damage."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/skeleton.mp3"
+			},
+			"attachedItems": [
+				"shortsword|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"miscTags": [
+				"MA",
+				"MLW",
+				"RA"
+			],
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Skeleton Monks are undead healers and smiters found with other Skeletons throughout Kryta. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Skeleton_monk.jpg"
+						}
+					}
+				]
+			},
+			"resist": [
+				"piercing"
+			],
+			"dex": 14,
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Skeleton_monk_Token.png"
+			},
+			"uniqueId": "fb531e6b-805e-47c3-a84a-4fc1f2ad15c5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Skeleton Mesmer is a 7th-level spellcaster. Their spellcasting ability is Intelligence (spell save {@dc 15}, +7 to hit with spell attacks). The Skeleton Mesmer has the following Mesmer (GW) spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell fragility|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell ineptitude|GuildWars}",
+								"{@spell phantom pain|GuildWars}",
+								"{@spell shatter hex|GuildWars}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"P",
+				"Y"
+			]
+		},
+		{
+			"name": "Skeleton Sorcerer",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 21",
+				"average": 52
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"con": 16,
+			"int": 8,
+			"wis": 6,
+			"cha": 20,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages it knew in life but can't speak"
+			],
+			"cr": "5",
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atkr m} {@hit 6}, reach 5 ft. {@h}5 ({@damage 1d6 + 3}) Piercing damage."
+					]
+				},
+				{
+					"name": "Dust Lightning",
+					"entries": [
+						"{@atk rs} {@hit 8} to hit, range 80/320 ft., one target. {@h}10 ({@damage 2d6 + 5}) force damage, plus 7 ({@damage 2d6}) lightning damage."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/skeleton.mp3"
+			},
+			"attachedItems": [
+				"shortsword|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"miscTags": [
+				"MA",
+				"MLW",
+				"RA"
+			],
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Skeleton Sorcerers are undead Elementalists found throughout Kryta. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Skeleton_elementalist.jpg"
+						}
+					}
+				]
+			},
+			"resist": [
+				"piercing"
+			],
+			"dex": 16,
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Skeleton Sorcerer is an 8th-level spellcaster. Their spellcasting ability is Charisma (spell save {@dc 16}, +8 to hit with spell attacks). The Skeleton Sorcerer has the following Elementalist (GW) spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell blinding flash|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell aftershock|GuildWars}",
+								"{@spell lightning touch|GuildWars}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						}
+					},
+					"daily": {
+						"1": [
+							"{@spell earthquake (guild wars)|GuildWars}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"uniqueId": "f5d10185-580e-47f7-b588-60717f693028",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Skeleton_elementalist_token.png"
+			},
+			"damageTags": [
+				"L",
+				"O",
+				"P"
+			]
+		},
+		{
+			"name": "Executioner",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"average": 95,
+				"formula": "10d10 + 40"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 21,
+			"dex": 6,
+			"con": 18,
+			"int": 3,
+			"wis": 6,
+			"cha": 5,
+			"save": {
+				"wis": "+0"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"understands Common but can't speak"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the Executioner to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the Executioner drops to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Morningstar",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"morningstar|phb"
+			],
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Executioners are large, hammer-wielding undead warriors often accompanied by hellhounds. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Zombie_warrior.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "b306963f-b1fb-4770-b800-1ba89be88c87",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Executioner is a 3rd-level spellcaster. Their spellcasting ability is Strength (spell save {@dc 15}, +7 to hit with spell attacks). The Executioner has the following Warrior (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Executioner casts these spells on themselves before combat."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell devastating hammer|GuildWars}",
+								"{@spell for great justice!|GuildWars}*",
+								"{@spell staggering blow|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell warrior's cunning|GuildWars}"
+							],
+							"slots": 2
+						}
+					},
+					"daily": {
+						"1": [
+							"{@spell heavy blow|GuildWars}"
+						]
+					},
+					"ability": "str",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Zombie_warrior_Token.png"
+			},
+			"damageTags": [
+				"B"
 			]
 		}
 	],

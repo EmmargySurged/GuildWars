@@ -38501,6 +38501,88 @@
 			"conditionInflict": [
 				"blinded"
 			]
+		},
+		{
+			"uniqueId": "4bd2bd69-8664-48e7-8457-b97361faa8bd",
+			"name": "Caltrops",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Throw out a handful of caltrops, crippling creatures in an area.",
+				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target is {@condition crippled|GuildWars} for the duration.",
+				"At the end of each of its turns, a target can make a Dexterity saving throw. On a success, the condition ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Caltrops",
+					"Spell. Target foe and all foes adjacent to your target are Crippled for 5...13...15 seconds. Caltrops has half the normal range."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/9/93/Caltrops.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Shadow Arts",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "a handful of metal spike"
+			},
+			"conditionInflict": [
+				"crippled|guildwars"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the radius of the spell increases by 5 feet for each slot level above 1st."
+					]
+				}
+			]
 		}
 	],
 	"table": [
@@ -59049,6 +59131,129 @@
 			},
 			"damageTags": [
 				"B"
+			]
+		},
+		{
+			"name": "Grasping Ghoul",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "7d8",
+				"average": 31
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 18,
+			"con": 10,
+			"int": 7,
+			"wis": 10,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "1",
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}9 ({@damage 2d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Crippling Attack",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 4}) slashing damage. On a hit the target is  {@condition crippled} for 2 rounds."
+					]
+				},
+				{
+					"name": "Nibble",
+					"entries": [
+						"Touch one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell. You regain hit points equal to {@dice 2d6 + 4}."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"crippled"
+			],
+			"uniqueId": "6e1f6ddd-c312-4e53-b77d-c2fb4ce261a7",
+			"vulnerable": [
+				"radiant"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Grasping Ghoul is a 2nd-level spellcaster. Their spellcasting ability is Dexterity (spell save {@dc 14}, +6 to hit with spell attacks). The Grasping Ghoul has the following Warrior (GW) spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell victory is mine!|GuildWars}"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "dex",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"fluff": {
+				"entries": [
+					"Grasping Ghouls are undead infantry that can often be found escorting Zombie Warlocks (either above ground or below - in the latter case, they will often popup out of the ground when players venture near them). "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ghoul.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ghoul_Token.png"
+			},
+			"damageTags": [
+				"P",
+				"S"
 			]
 		}
 	],

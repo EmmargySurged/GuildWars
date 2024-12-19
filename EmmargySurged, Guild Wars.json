@@ -2710,6 +2710,10 @@
 				}
 			],
 			"fluff": {
+				"entries": [
+					"Ether Feast",
+					"Spell. Target foe loses 3 Energy. You are healed 20...56...65 for each point of Energy lost."
+				],
 				"images": [
 					{
 						"type": "image",
@@ -5595,26 +5599,22 @@
 				}
 			],
 			"range": {
-				"type": "radius",
+				"type": "point",
 				"distance": {
-					"type": "feet",
-					"amount": 150
+					"type": "self"
 				}
 			},
 			"duration": [
 				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 1
-					}
+					"type": "permanent"
 				}
 			],
 			"entries": [
-				"You shout \"For Great Justice!\" to pump yourself up, generating Adrenaline on hit and when getting hit.",
-				"For the duration, your adrenaline gain is doubled. Additionally, you gain one strike of adrenaline when you take damage, or when you hit with a weapon attack.",
+				"Imbue yourself with a sense of justice, generating adrenaline when hitting or getting hit and doubling any adrenaline gain.",
+				"For the duration, your adrenaline gain is doubled. Additionally, you gain one strike of adrenaline when you take damage from a non-friendly source, or when you hit a hostile object with a weapon attack.",
 				"When this spell ends, you lose all adrenaline.",
-				"{@bold Adrenaline.} Adrenaline must be used to cast some spells instead of expending a spell slot."
+				"{@bold Adrenaline.} Adrenaline must be used to cast some spells instead of expending a spell slot.",
+				"{@bold Bond.} For the duration, your spell save DC and spell attack bonus are reduced by 1.  You can have a maximum number of bonds active at any one time, equal to your spell casting ability modifier (minimum 1). The bond ends if the target of your bond is ever not within 300 feet of you, or you fall {@condition unconscious}. You can end a bond at any time (no action required)."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -5641,15 +5641,6 @@
 			"components": {
 				"v": true
 			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 3rd or 4th level, the duration increases to 8 hours. When you use a spell slot of 5th level or higher, the duration increases to 24 hours."
-					]
-				}
-			],
 			"backgrounds": [
 				{
 					"name": "Ascalon",
@@ -5664,7 +5655,16 @@
 					"source": "GuildWars"
 				}
 			],
-			"uniqueId": "b7ea302a-69f6-4b6d-a679-8b1e2c50ca4c"
+			"uniqueId": "b7ea302a-69f6-4b6d-a679-8b1e2c50ca4c",
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the adrenaline gain increases by 1 for every two slot level above 1st."
+					]
+				}
+			]
 		},
 		{
 			"name": "Call of Haste",
@@ -15436,7 +15436,7 @@
 			],
 			"entries": [
 				"Create a chilling blast of air which swirls around you, damaging all creatures and knocking them {@condition prone} if they attacked during their last turn.",
-				"Target each creature other than you within range. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 3d6} cold damage and, if a target attacked on its last turn, is knocked {@condition prone}. On a successful save, a target takes half as much damage. On a successful save, a target takes half as much damage, but suffers no other effect.",
+				"Target each creature other than you within range. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 3d6} cold damage and, if a target attacked on its last turn, is knocked {@condition prone}. On a successful save, a target takes half as much damage, but suffers no other effect.",
 				"{@bold While Overcast.} The radius of the spell increases by 5 feet."
 			],
 			"source": "GuildWars",
@@ -38659,11 +38659,81 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the radius of the spell increases by 5 feet for each slot level above 1st."
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage each increases by {@dice 1d8} for each slot level above 2nd."
 					]
 				}
 			],
 			"uniqueId": "b7954658-36e7-4570-9c16-6c7701ecfe72"
+		},
+		{
+			"uniqueId": "ef260ea2-8cc5-4f07-acda-56e79ec7bf12",
+			"name": "Crippling Dagger",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Throw out a crippling projectile.",
+				"Choose one creature that you can see within the throw range of your weapon. Make a ranged weapon attack against the target (the ranged weapon attack can be made with a -2 penalty, to have the weapon immediately return to you, after it was made). On a hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw. On a failed save, the target becomes {@condition crippled|GuildWars} for the duration.",
+				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends.",
+				"At 5th level, the ranged attack also deals an extra {@damage 1d8} piercing damage to the target on a hit. This damage increases by {@dice 1d8} when you reach 11th level ({@dice 2d8}), and 17th level ({@dice 3d8})."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Crippling Dagger",
+					"Spell. Send out a Crippling Dagger at target foe. Crippling Dagger strikes for 15...51...60 earth damage if it hits, and Cripples moving foes for 3...13...15 seconds. This spell has half the normal range."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/d/d8/Crippling_Dagger.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Deadly Arts",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "a melee weapon worth at least 1 sp with the light and thrown property"
+			},
+			"conditionInflict": [
+				"crippled|guildwars"
+			]
 		}
 	],
 	"table": [
@@ -59335,6 +59405,153 @@
 			"damageTags": [
 				"P",
 				"S"
+			]
+		},
+		{
+			"name": "Damned Cleric",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "8d8 + 32",
+				"average": 68
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 6,
+			"dex": 6,
+			"con": 18,
+			"int": 3,
+			"wis": 18,
+			"cha": 5,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages it knew in life but can't speak"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the Damned Cleric to 0 Hit Points, it must make a Constitution saving throw with a DC of 5 plus the damage taken unless the damage is Radiant or from a Critical Hit. On a successful save, the zombie drops to 1 Hit Point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atkr m} {@hit 0}, reach 5 ft. {@h}16 ({@damage 4d6 - 2}) Bludgeoning damage."
+					]
+				},
+				{
+					"name": "Corrupted Scepter",
+					"entries": [
+						"{@atk rs} {@hit 6} to hit, range 90/180 ft., one target. {@h}2 ({@damage 1d8 + 4}) radiant damage, plus 4 ({@damage 1d8}) necrotic damage."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/zombie.mp3"
+			},
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"miscTags": [
+				"MA",
+				"RA"
+			],
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Damned Clerics are undead smiters. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Zombie_monk.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "afc68e93-a9fd-467f-9930-ab9feb1bd719",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Damned Cleric is a 5th-level spellcaster. Their spellcasting ability is Wisdom (spell save {@dc 14}, +6 to hit with spell attacks). The Damned Cleric has the following Monk (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Damned Cleric casts these spells on themselves before combat at 3rd level."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell bane signet|GuildWars}",
+								"{@spell infuse health|GuildWars}",
+								"{@spell reversal of fortune|GuildWars}",
+								"{@spell zealot's fire|GuildWars}*"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Zombie_monk_Token.png"
+			},
+			"damageTags": [
+				"B",
+				"N",
+				"R"
 			]
 		}
 	],

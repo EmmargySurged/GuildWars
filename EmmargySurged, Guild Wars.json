@@ -38734,6 +38734,83 @@
 			"conditionInflict": [
 				"crippled|guildwars"
 			]
+		},
+		{
+			"uniqueId": "9e2e5b48-e0b6-4e30-9e42-142e8d29b77e",
+			"name": "Critical Eye",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Enhance your vision to quickly spot critical weak spots in an enemies defenses.",
+				"For the duration, the number you need to roll to score a critical hit gets reduced by 1 and when you score a critical hit, your next initiative roll gets increased by {@dice 1d4}."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Critical Eye",
+					"Skill. For 10...30...35 seconds, you have an additional 3...13...15% chance to land a critical hit when attacking. You gain 1 Energy whenever you score a critical hit."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/5/57/Critical_Eye.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Critical Strikes",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "a jewelers lens"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the number you need to roll to score a critical hit get reduced by 1 for every two spell slot level above 1st and the increase of initiative increases by {@dice 1d4} for each slot level above 1st."
+					]
+				}
+			]
 		}
 	],
 	"table": [
@@ -59552,6 +59629,179 @@
 				"B",
 				"N",
 				"R"
+			]
+		},
+		{
+			"name": "Necrid Horseman",
+			"shortName": "centaur",
+			"group": [
+				"Skeletons"
+			],
+			"source": "GuildWars",
+			"size": [
+				"L"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 59,
+				"formula": "7d10 + 21"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 16,
+			"dex": 18,
+			"con": 16,
+			"int": 6,
+			"wis": 18,
+			"cha": 5,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands Common but can't speak"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the Necrid Horseman moves at least 30 feet straight toward a target and then hits it with a pike attack on the same turn, the target takes an extra 17 ({@damage 5d6}) piercing damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Necrid Horseman skeleton makes two attacks: one with its pike and one with its hooves, or two with its longbow."
+					]
+				},
+				{
+					"name": "Pike",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}15 ({@damage 3d6 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Necrotic Scpeter",
+					"entries": [
+						"{@atk rs} {@hit 6} to hit, range 150/600 ft., one target. {@h}8 ({@damage 1d8 + 4}) necrotic damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"pike|phb"
+			],
+			"traitTags": [
+				"Charge"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"MLW",
+				"RA"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Necrid Horsemen are undead found all over Kryta. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Zombie_Horseman.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "d232da6c-1e67-48d4-b108-315adcf32056",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Zombie_Horseman_Token.png"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Necrid Horseman is a 7th-level spellcaster. Their spellcasting ability is Wisdom (spell save {@dc 14}, +6 to hit with spell attacks). The Necrid Horseman has the following Necromancer (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Necrid Horseman casts these spells on themselves before combat.",
+						"**The Necrid Horseman casts these spells on their allies before combat at 4th level."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell tainted flesh|GuildWars}**"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell barbs|GuildWars}",
+								"{@spell desecrate enchantments|GuildWars}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell animate bone fiend|GuildWars}*"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"P"
 			]
 		}
 	],

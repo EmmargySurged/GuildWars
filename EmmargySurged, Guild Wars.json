@@ -38811,6 +38811,68 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Lava Arrows",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Conjure up a volley of lava arrows and yeet them at up to three targets.",
+				"Choose one creature that you can see within range. Target up to two other creatures other than the target in a 10-foot-radius sphere centered on the target. Make a ranged spell attack against each target. On a hit, a target takes {@damage 1d4} fire damage.",
+				"This spell's damage increases by {@dice 1d4} when you reach 5th level ({@dice 2d4}), 11th level ({@dice 3d4}), and 17th level ({@dice 4d4})."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Lava Arrows",
+					"Spell. Lava Arrows fly toward up to 3 foes near your target and strike for 20...56...65 fire damage if they hit."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/8/8b/Lava_Arrows.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Fire Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"uniqueId": "5521bdf9-3bb9-4a3d-9cf9-f7d608c4e55d"
 		}
 	],
 	"table": [
@@ -59802,6 +59864,145 @@
 				"B",
 				"N",
 				"P"
+			]
+		},
+		{
+			"name": "Zombie Warlock",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "6d8 + 18",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 6,
+			"dex": 6,
+			"con": 16,
+			"int": 3,
+			"wis": 5,
+			"cha": 18,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 7,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages it knew in life but can't speak"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the Zombie Warlock to 0 Hit Points, it must make a Constitution saving throw with a DC of 5 plus the damage taken unless the damage is Radiant or from a Critical Hit. On a successful save, the zombie drops to 1 Hit Point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atkr m} {@hit 0}, reach 5 ft. {@h}8 ({@damage 2d6 + 1}) Bludgeoning damage."
+					]
+				},
+				{
+					"name": "Corrupted Scepter",
+					"entries": [
+						"{@atk rs} {@hit 6} to hit, range 90/180 ft., one target. {@h}7 ({@damage 2d8 + 4}) necrotic damage."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/zombie.mp3"
+			},
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"miscTags": [
+				"MA",
+				"RA"
+			],
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Zombie Warlocks are Undead Necromancers that can be found roaming some areas of Kryta, often accompanied by a couple of Grasping Ghouls."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Zombie_necromancer.jpg"
+						}
+					}
+				]
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Zombie Warlock is a 4th-level spellcaster. Their spellcasting ability is Charisma (spell save {@dc 14}, +6 to hit with spell attacks). The Zombie Warlock has the following Necromancer (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Zombie Warlock casts these spells on themselves before combat.",
+						"**The Zombie Warlock casts these spells on an ally before combat."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell dark bond|GuildWars}*",
+								"{@spell death nova|GuildWars}**"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell animate bone minions|GuildWars}*"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CL"
+			],
+			"uniqueId": "f00b578e-e48b-42e6-b30e-fc564352c01c",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Zombie_necromancer_Token.png"
+			},
+			"damageTags": [
+				"B",
+				"N"
 			]
 		}
 	],

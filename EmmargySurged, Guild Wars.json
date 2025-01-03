@@ -38873,6 +38873,84 @@
 				"s": true
 			},
 			"uniqueId": "5521bdf9-3bb9-4a3d-9cf9-f7d608c4e55d"
+		},
+		{
+			"uniqueId": "0ccc5fa2-14de-484f-a035-c5c235bf0a49",
+			"name": "Images of Remorse",
+			"level": 2,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Conjure up an illusion which shows a creature images of remorse, forcing them to relive their most horrible moments, inflicting damage to them every turn, and extra damage if they attacked on their last turn.",
+				"Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save if the target attacked on its last turn, the target takes {@damage 2d10} psychic damage. Additionally, for the duration, at the start of each of the target's turns, the target takes {@damage 1d6} psychic damage. On a successful save, the target takes half as much damage, but suffers no other effect.",
+				"{@bold Hex.} Treat this spell as if you were maintaining {@status Concentration|XPHB} on it, except that it does not break {@status Concentration|XPHB} of other {@status Concentration|XPHB} spells when cast, nor does it break {@status Concentration|XPHB} on itself when other {@status Concentration|XPHB} spells are cast."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Images of Remorse",
+					"Hex Spell. For 5...9...10 seconds, target foe suffers -1...3...3 Health degeneration. If that foe was attacking, that foe takes 10...44...52 damage."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/a/aa/Images_of_Remorse.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Illusion Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the initial damage increases by {@dice 1d10} for each slot level above 2nd and the damage over time increases by {@dice 1d6} for each slot level above 2nd."
+					]
+				}
+			]
 		}
 	],
 	"table": [
@@ -60003,6 +60081,170 @@
 			"damageTags": [
 				"B",
 				"N"
+			]
+		},
+		{
+			"name": "Hill Giant (Guild Wars)",
+			"source": "GuildWars",
+			"size": [
+				"H"
+			],
+			"type": "giant",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 105,
+				"formula": "10d12 + 40"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 21,
+			"dex": 8,
+			"con": 19,
+			"int": 5,
+			"wis": 9,
+			"cha": 6,
+			"skill": {
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Giant"
+			],
+			"cr": "5",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The giant makes two greatclub attacks."
+					]
+				},
+				{
+					"name": "Greatclub",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}18 ({@damage 3d8 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 60/240 ft., one target. {@h}21 ({@damage 3d10 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Giant Stomp {@recharge}",
+					"entries": [
+						"Target each creature other than you within 150-feet of you. Each target must make a Strength saving throw ({@dc 16}). On a failed save, a target takes {@damage 2d6} bludgeoning damage and is knocked {@condition prone}."
+					]
+				}
+			],
+			"attachedItems": [
+				"greatclub|phb"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"MLW",
+				"RW"
+			],
+			"uniqueId": "5ea7872f-f5d4-44b3-a5b9-ad7a112d50ce",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Hill Giant is an 8th-level spellcaster. Their spellcasting ability is Strength (spell save {@dc 16}, +8 to hit with spell attacks). The Hill Giant has the following Warrior (GW) spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell crushing blow|GuildWars}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "str",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"resist": [
+				"bludgeoning"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"trait": [
+				{
+					"name": "Stun on Critical Hit",
+					"entries": [
+						"When scoring a critical hit, the target of the critical hit is kocked {@condition prone}."
+					]
+				}
+			],
+			"conditionImmune": [
+				"prone",
+				"stunned"
+			],
+			"fluff": {
+				"entries": [
+					"Hill Giants are knock down-focused giants found in Kryta."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Hill_Giant.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Hill_Giant_Token.png"
+			},
+			"damageTags": [
+				"B"
 			]
 		}
 	],

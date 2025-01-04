@@ -38951,6 +38951,84 @@
 					]
 				}
 			]
+		},
+		{
+			"uniqueId": "441eb70a-c741-4e84-adc0-1c60560e76e7",
+			"name": "Dwayna's Sorrow",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Create a small connection to Dwayna in a group of allies, causing her to shed healing tears when any of them reach 0 hit points.",
+				"Choose a point that you can see within range. Each friendly creature in a 15-foot-radius sphere centered on that point is under the effect of Dwayna's Sorrow. For the duration, if a creature drops to 0 hit points, you can choose any number of friendly creatures, except the creature that dropped to 0 hit points, within 300-feet. A target regains hit points equal to {@dice 1d4} + your spellcasting ability modifier.",
+				"{@bold Enchantment.} Treat this spell as if you were maintaining {@status Concentration|XPHB} on it, except that it does not break {@status Concentration|XPHB} of other {@status Concentration|XPHB} spells when cast, nor does it break {@status Concentration|XPHB} on itself when other {@status Concentration|XPHB} spells are cast."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Dwayna's Sorrow",
+					"Enchantment Spell. For 30 seconds, target ally and all nearby allies are enchanted with Dwayna's Sorrow. If an ally dies while under the effects of Dwayna's Sorrow, your party is healed for 5...41...50."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/d/d8/Dwayna%27s_Sorrow.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Monk",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Healing Prayers",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases each by {@dice 1d4} for each slot level above 1st."
+					]
+				}
+			]
 		}
 	],
 	"table": [
@@ -60245,6 +60323,162 @@
 			},
 			"damageTags": [
 				"B"
+			]
+		},
+		{
+			"name": "Eyes of Verata",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"average": 75,
+				"formula": "10d8 + 30"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 18,
+			"con": 16,
+			"int": 10,
+			"wis": 14,
+			"cha": 10,
+			"skill": {
+				"acrobatics": "+6",
+				"perception": "+6"
+			},
+			"passive": 16,
+			"cr": "3",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The archer makes two Shortsword or Longbow attacks."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 150/600 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Archer's Eye (3/Day)",
+					"entries": [
+						"Immediately after making an attack roll or a damage roll with a ranged weapon, the archer can roll a {@dice d10} and add the number rolled to the total."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"urban"
+			],
+			"attachedItems": [
+				"longbow|phb",
+				"shortsword|phb"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"uniqueId": "21d5eabb-d39e-4e57-b2a9-6c29df1c997a",
+			"languages": [
+				"Common",
+				"Krytan"
+			],
+			"languageTags": [
+				"C"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Eyes of Verata is a 3rd-level spellcaster. Their spellcasting ability is Wisdom (spell save {@dc 12}, +4 to hit with spell attacks). The Eyes of Verata has the following Ranger (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Eyes of Verata casts these spells on themselves before combat."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell flame trap|GuildWars}*"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell punishing shot|GuildWars}"
+							],
+							"slots": 2
+						}
+					},
+					"daily": {
+						"1e": [
+							"{@spell barbed trap|GuildWars}*",
+							"{@spell choking gas|GuildWars}*"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CR"
+			],
+			"fluff": {
+				"entries": [
+					"Eyes of Verata are Rangers that spawn in the Southern Kessex Peak area."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bandit_(Kryta).jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bandit_(Kryta)_Token.png"
+			},
+			"damageTags": [
+				"P"
 			]
 		}
 	],

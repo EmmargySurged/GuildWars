@@ -39029,6 +39029,80 @@
 					]
 				}
 			]
+		},
+		{
+			"uniqueId": "794acc0b-876a-4dfd-87cd-04c73e7d9b0c",
+			"name": "Bitter Chill",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Chill a creature to the bones.",
+				"Choose one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes {@damage 3d6} cold damage and if the target had more hit points than you do, you regain the spell slot expended in the casting. On a successful save, the target takes half as much damage, but you cannot regain a spell slot."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Bitter Chill",
+					"Spell. Target foe is struck for 15...51...60 cold damage. If that foe had more Health than you, Bitter Chill recharges instantly."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/2/2c/Bitter_Chill.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Death Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "bottled cold air"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
+					]
+				}
+			]
 		}
 	],
 	"table": [
@@ -60396,10 +60470,6 @@
 					]
 				}
 			],
-			"environment": [
-				"forest",
-				"urban"
-			],
 			"attachedItems": [
 				"longbow|phb",
 				"shortsword|phb"
@@ -60479,6 +60549,153 @@
 			},
 			"damageTags": [
 				"P"
+			]
+		},
+		{
+			"name": "Shepherd of Verata",
+			"source": "GuildWars",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 32",
+				"average": 68
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 18,
+			"int": 10,
+			"wis": 20,
+			"cha": 10,
+			"skill": {
+				"perception": "+7",
+				"religion": "+2"
+			},
+			"passive": 17,
+			"cr": "4",
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Radiant Staff",
+					"entries": [
+						"{@atk rs} {@hit 7} to hit, range 120/320 ft., one target. {@h}10 ({@damage 2d6 + 5}) radiant damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"shortsword|phb"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RA"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"languages": [
+				"Common",
+				"Krytan"
+			],
+			"languageTags": [
+				"C"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Shepherd of Verata is a 7th-level spellcaster. Their spellcasting ability is Wisdom (spell save {@dc 14}, +6 to hit with spell attacks). The Shepherd of Verata has the following Monk (GW) spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell divine healing|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell essence bond|GuildWars}**",
+								"{@spell healing hands|GuildWars}",
+								"{@spell purge signet|GuildWars}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						}
+					},
+					"daily": {
+						"1": [
+							"{@spell light of dwayna|GuildWars}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"fluff": {
+				"entries": [
+					"Shepherds of Verata are monks serving the Cult of Verata. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bandit_Firestarter.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "7bb9d89b-8382-446c-80e0-18b92cf16830",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bandit_Firestarter_Token.png"
+			},
+			"damageTags": [
+				"P",
+				"R"
 			]
 		}
 	],

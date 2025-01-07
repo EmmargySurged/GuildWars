@@ -39103,6 +39103,156 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Dissonance",
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Bind a Spirit of Dissonance to your will, interrupting attacks.",
+				"Summon a {@creature Spirit of Dissonance|GuildWars} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative, but takes it turn directly after yours. The spirit is in the DMs control.",
+				"{@bold Summoning Ritual} Only one of each type of Summoning Ritual can be active for your allies at a time, if a new one is created in the range of this Summoning Ritual by one of your allies, this one ends. The spirit created by this ritual uses the {@creature Spirit of Dissonance|GuildWars} stat block."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Dissonance",
+					"Binding Ritual. Create a level 1...10...12 spirit. This spirit deals 5...17...20 damage and anyone struck by its attack is interrupted. This spirit dies after 10...22...25 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/e/e0/Dissonance.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"AAD"
+			],
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Communing",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a poem written about strife"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, use the higher level wherever the spell's level appears in the stat block."
+					]
+				}
+			],
+			"uniqueId": "2d7cdde6-8668-4923-9c90-80b0763e362a"
+		},
+		{
+			"uniqueId": "cf78fb53-8d34-4e7c-bcf6-f8fb13952274",
+			"name": "Dancing Daggers",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Throw out three projectiles in quick succession.",
+				"Choose one creature that you can see within the throw range of your weapon. Make three ranged weapon attacks against the target (a ranged weapon attack can be made with a -2 penalty, to have the weapon immediately return to you, after it was made). On a hit, the target suffers the weapon attack's normal effects.",
+				"{@bold Lead Attack.} On a hit, this attack is considered a lead attack. Additionally, you can, immediately after you hit against the target, cast an off-hand attack spell as an action or bonus action against the target.",
+				"The number of attacks you can make when you cast this spell increases by 1 when you reach 5th level (4 attacks), 11th level (5 attacks), and 17th level (6 attacks)."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Dancing Daggers",
+					"Spell. Send out three Dancing Daggers at target foe, each striking for 5...29...35 earth damage if they hit. Dancing Daggers has half the normal range. This skill counts as a lead attack."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/f/f4/Dancing_Daggers.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Deadly Arts",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "a melee weapon worth at least 1 sp with the light and thrown property"
+			}
 		}
 	],
 	"table": [
@@ -60560,7 +60710,7 @@
 			"type": {
 				"type": "humanoid",
 				"tags": [
-					"human"
+					"halfling"
 				]
 			},
 			"alignment": [
@@ -60632,8 +60782,13 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The Shepherd of Verata is a 7th-level spellcaster. Their spellcasting ability is Wisdom (spell save {@dc 14}, +6 to hit with spell attacks). The Shepherd of Verata has the following Monk (GW) spells prepared:"
+						"The Shepherd of Verata is a 7th-level spellcaster. Their spellcasting ability is Wisdom (spell save {@dc 15}, +7 to hit with spell attacks). The Shepherd of Verata has the following Monk (GW) spells prepared:"
 					],
+					"daily": {
+						"1": [
+							"{@spell light of dwayna|GuildWars}"
+						]
+					},
 					"spells": {
 						"1": {
 							"spells": [
@@ -60659,13 +60814,8 @@
 							"spells": [
 								"Placeholder"
 							],
-							"slots": 2
+							"slots": 1
 						}
-					},
-					"daily": {
-						"1": [
-							"{@spell light of dwayna|GuildWars}"
-						]
 					},
 					"ability": "wis",
 					"type": "spellcasting"
@@ -60696,6 +60846,405 @@
 			"damageTags": [
 				"P",
 				"R"
+			]
+		},
+		{
+			"name": "Spirit of Dissonance",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "GuildWars",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 10,
+					"condition": "+ Spell Level",
+					"braces": true
+				}
+			],
+			"hp": {
+				"special": "5 + Spell Level * 5"
+			},
+			"speed": {},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"actionTags": [
+				"Multiattack"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"fluff": {
+				"entries": [
+					"Binding Ritual. Create a level 1...10...12 spirit who dies after 30...126...150 seconds. Attacks by that spirit steal up to 5...21...25 Health. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Aggressive_binding_spirit.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Spirit of Dissonance makes a number of Dissonance attacks equal to half the level of the spell (rounded down, minimum 1)."
+					]
+				},
+				{
+					"name": "Dissonance",
+					"entries": [
+						"{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}3 ({@damage 1d6 + Spell Level}) force damage, the target must succeed on a Constitution saving throw against your spell save DC, or miss with their next attack until the end of their next turn."
+					]
+				}
+			],
+			"miscTags": [
+				"RA"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Aggressive_binding_spirit_Token.png"
+			},
+			"uniqueId": "49d71935-a821-4cda-8e40-6ad673c8fdf3"
+		},
+		{
+			"name": "Apprentice of Verata",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d6 + 36",
+				"average": 67
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 18,
+			"int": 20,
+			"wis": 12,
+			"cha": 10,
+			"skill": {
+				"perception": "+8",
+				"religion": "+3"
+			},
+			"passive": 18,
+			"cr": "5",
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Necrotic Staff",
+					"entries": [
+						"{@atk rs} {@hit 8} to hit, range 120/320 ft., one target. {@h}13 ({@damage 2d6 + 6}) necrotic damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"shortsword|phb"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RA"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"languages": [
+				"Common",
+				"Krytan"
+			],
+			"languageTags": [
+				"C"
+			],
+			"fluff": {
+				"entries": [
+					"Apprentices of Verata are necromancers that spawn in the Southern Kessex Peak area. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Masked_hermit.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "cc7d67f9-33ef-4468-bf88-5be6a2706501",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Apprentice of Verata is an 8th-level spellcaster. Their spellcasting ability is Intelligence (spell save {@dc 16}, +8 to hit with spell attacks). The Apprentice of Verata has the following Necromancer (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Apprentice of Verata casts these spells on themselves before combat."
+					],
+					"daily": {
+						"1": [
+							"{@spell grenth's balance|GuildWars}"
+						]
+					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell taste of death|GuildWars}",
+								"{@spell verata's gaze|GuildWars}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell blood of the master|GuildWars}",
+								"{@spell enfeebling blood|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell animate bone fiend|GuildWars}*"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Masked_hermit_Token.png"
+			},
+			"damageTags": [
+				"N",
+				"P"
+			]
+		},
+		{
+			"name": "Sage of Verata",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 32",
+				"average": 68
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 18,
+			"int": 10,
+			"wis": 12,
+			"cha": 20,
+			"passive": 11,
+			"cr": "4",
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Chaotic Staff",
+					"entries": [
+						"{@atk rs} {@hit 8} to hit, range 120/320 ft., one target. {@h}12 ({@damage 2d6 + 5}) psychic damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"shortsword|phb"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RA"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"languages": [
+				"Common",
+				"Krytan"
+			],
+			"languageTags": [
+				"C"
+			],
+			"fluff": {
+				"entries": [
+					"Sages of Verata are Mesmers that spawn in the Southern Kessex Peak area. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bandit_f.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "f06c02d1-a2a2-4094-91e4-ed1ac6a6c1f3",
+			"skill": {
+				"insight": "+3",
+				"deception": "+7"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Sage of Verata is a 7th-level spellcaster. Their spellcasting ability is Charisma (spell save {@dc 15}, +7 to hit with spell attacks). The Sage of Verata has the following Mesmer (GW) spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell imagined burden|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell distortion|GuildWars}",
+								"{@spell phantom pain|GuildWars}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
+					},
+					"daily": {
+						"1": [
+							"{@spell migraine|GuildWars}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bandit_f_Token.png"
+			},
+			"damageTags": [
+				"P",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			]
 		}
 	],

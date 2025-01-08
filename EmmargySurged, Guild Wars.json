@@ -39253,6 +39253,95 @@
 				"s": true,
 				"m": "a melee weapon worth at least 1 sp with the light and thrown property"
 			}
+		},
+		{
+			"name": "Lightning Hammer",
+			"level": 6,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Conjure a lightning hammer above a creature's head, and smite them with thunderous force.",
+				"Choose one creature that you can see within range. Make a melee spell attack against the target. On a hit, the target takes {@damage 12d8} lightning damage and must make a Constitution saving throw. On a failed save, the target has {@condition cracked armor|GuildWars} for the duration.",
+				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends.",
+				"{@bold Armor Penetration.}  This spell's lightning damage cannot be reduced in any way, except by immunities."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Lightning Hammer",
+					"Spell. Target foe is struck for 10...82...100 lightning damage and applies[sic] Cracked Armor for 5...17...20 seconds. Lightning Hammer has 25% armor penetration."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/a/ac/Lightning_Hammer.jpg"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"lightning"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Air Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"m": "a light hammer"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 7th level or higher, the damage increases by {@dice 1d8} for each slot level above 6th."
+					]
+				}
+			],
+			"uniqueId": "a6709c20-9832-4dcb-9ff5-311a374dccfb",
+			"conditionInflict": [
+				"cracked armor|guildwars"
+			]
 		}
 	],
 	"table": [
@@ -61245,6 +61334,151 @@
 			],
 			"savingThrowForcedSpell": [
 				"wisdom"
+			]
+		},
+		{
+			"name": "Forest Minotaur",
+			"source": "GuildWars",
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 68,
+				"formula": "8d10 + 24"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 16,
+			"int": 6,
+			"wis": 16,
+			"cha": 9,
+			"skill": {
+				"perception": "+5"
+			},
+			"passive": 15,
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the minotaur moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 4 ({@damage 1d8}) piercing damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be pushed up to 10 feet away and knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Tribal Recall",
+					"entries": [
+						"The minotaur can perfectly recall any path it has traveled."
+					]
+				},
+				{
+					"name": "Reckless",
+					"entries": [
+						"At the start of its turn, the minotaur can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d8 + 2}) piercing damage."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/minotaur.mp3"
+			},
+			"traitTags": [
+				"Charge",
+				"Reckless"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Forest Minotaurs are brown-skinned minotaurs found in Kryta. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Forest_Minotaur.jpg"
+						}
+					}
+				]
+			},
+			"save": {
+				"str": "+6",
+				"con": "+5"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Forest Minotaur is a 3rd-level spellcaster. Its spellcasting ability is Strength (spell save {@dc 14}, +6 to hit with spell attacks). The Forest Minotaur has the following Warrior (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Minotaur casts these spells on itself before combat."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell bull's strike|GuildWars}",
+								"{@spell flurry|GuildWars}",
+								"{@spell for great justice!|GuildWars}*",
+								"{@spell rush|GuildWars}",
+								"{@spell wary stance|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "str",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"uniqueId": "7df3def3-ae60-4082-9c45-73bdd7d6e1d2",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Forest_Minotaur_Token.png"
+			},
+			"damageTags": [
+				"P"
+			],
+			"savingThrowForced": [
+				"strength"
 			]
 		}
 	],

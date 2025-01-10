@@ -39342,6 +39342,162 @@
 			"conditionInflict": [
 				"cracked armor|guildwars"
 			]
+		},
+		{
+			"name": "Healing Whisper",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Whisper words of healing to a creature, mending their wounds. ",
+				"Choose one creature that you can see within range. The target regains hit points equal to {@dice 1d6} + {@dice 1d8} + your spellcasting ability modifier."
+			],
+			"source": "GuildWars",
+			"components": {
+				"v": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@dice 1d6} and {@dice 1d8} for each slot level above 1st."
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			],
+			"fluff": {
+				"entries": [
+					"Healing Whisper",
+					"Spell. Target other ally is healed for 40...88...100. This spell has half the normal range."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/2/20/Healing_Whisper.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Monk",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Healing Prayers",
+					"source": "GuildWars"
+				}
+			],
+			"uniqueId": "a4bbddbf-446a-4e6c-b188-6fa80386f33b"
+		},
+		{
+			"uniqueId": "3c3da45c-0ef4-4413-b4cb-171957028fd2",
+			"name": "Blood Bond",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Establish a blood bond between yourself and a group of creatures, healing allies that hit them or are in the area when they die.",
+				"Choose a point that you can see within range. Each hostile creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, your allies regain hit points equal to {@dice 1d4} when they hit a target with a weapon attack and {@dice 2d4} if they are within 10 feet of a target if it reaches 0 hit points.",
+				"{@bold Hex.} Treat this spell as if you were maintaining {@status Concentration|XPHB} on it, except that it does not break {@status Concentration|XPHB} of other {@status Concentration|XPHB} spells when cast, nor does it break {@status Concentration|XPHB} on itself when other {@status Concentration|XPHB} spells are cast. "
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Blood Bond",
+					"Hex Spell. For 3...10...12 seconds, target foe and all adjacent foes are hexed with Blood Bond. Whenever an ally hits one of them with an attack, that ally gains 5...17...20 Health. If one of these foes dies while hexed, all allies adjacent to that foe are healed for 20...84...100 Health."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/6/66/Blood_Bond.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Blood Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "blood matching the targets type"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the on hit healing increases by {@dice 1d4} and the on death healing increases by {@dice 2d4} for each slot level above 1st."
+					]
+				}
+			]
 		}
 	],
 	"table": [
@@ -61479,6 +61635,414 @@
 			],
 			"savingThrowForced": [
 				"strength"
+			]
+		},
+		{
+			"name": "Dagnar Stonepate",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Dwarf"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item padded armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 64",
+				"average": 136
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 18,
+			"int": 22,
+			"wis": 16,
+			"cha": 14,
+			"passive": 23,
+			"cr": "15",
+			"trait": [
+				{
+					"name": "Dwarven Resilience",
+					"entries": [
+						"They have advantage on saving throws against poison, and they have resistance to poison damage."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the stone summit sage boss fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"attachedItems": [
+				"shortbow|phb",
+				"warhammer|phb"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Dagnar Stonepate is the cousin of Jalis Ironhammer and the founder and original leader of the xenophobic Stone Summit. With the Stone Summit, he has begun a civil war in the Shiverpeak Mountains with the Deldrimor Dwarves, enslaved many other races including Dolyaks, snow beasts, and humans, and aspires to rule all of Tyria. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Dagnar_Stonepate.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Dwarvish"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"skill": {
+				"religion": "+16",
+				"insight": "+8",
+				"history": "+11",
+				"deception": "+12",
+				"athletics": "+8",
+				"perception": "+13"
+			},
+			"reaction": [
+				{
+					"name": "Invoke the Great Destroyer",
+					"entries": [
+						"Once per day, the stone summit dwarf can cast {@spell Hellish Rebuke} at 5th level using this ability."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Warhammer",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}21 ({@damage 4d8 + 3}) bludgeoning damage, or 25 ({@damage 4d10 + 3}) bludgeoning damage if used with both hands."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 80/320 ft., one target. {@h}12 ({@damage 3d6 + 2}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Dagnar Stonepate is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 19}, +11 to hit with spell attacks). Dagnar Stonepate has the following Elementalist (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*Placeholder casts these spells on itself before combat."
+					],
+					"daily": {
+						"1": [
+							"{@spell hellish rebuke} (5th Level)"
+						]
+					},
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell aura of restoration|GuildWars}*",
+								"{@spell ice knife|XPHB}",
+								"{@spell mind freeze|GuildWars}",
+								"{@spell water attunement|GuildWars}*",
+								"{@spell water trident|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell frozen burst|GuildWars}",
+								"{@spell ice spikes|GuildWars}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell deep freeze|GuildWars}",
+								"{@spell ice storm|XPHB}",
+								"{@spell maelstrom (guild wars)|GuildWars}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"Dagnar Stonepate moves up to its speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Cast a Spell (Cost 2)",
+					"entries": [
+						"Dagnar Stonepate uses Spellcasting."
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"save": {
+				"con": "+9",
+				"int": "+11"
+			},
+			"uniqueId": "0b1f2b4a-1475-40d4-8c0d-45e0b4739656",
+			"isNamedCreature": true,
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Dagnar_Stonepate_Token.png"
+			},
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"F",
+				"P"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Fog Nightmare",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"formula": "6d8 + 12",
+				"average": 39
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 6,
+			"dex": 16,
+			"con": 15,
+			"int": 6,
+			"wis": 10,
+			"cha": 8,
+			"skill": {
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					]
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The Fog Nightmare can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"While in dim light or darkness, the Fog Nightmare can take the Hide action as a bonus action. Its stealth bonus is also improved to +7."
+					]
+				},
+				{
+					"name": "Sunlight Weakness",
+					"entries": [
+						"While in sunlight, the Fog Nightmare has disadvantage on attack rolls, ability checks, and saving throws."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Strength Drain",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}20 ({@damage 5d6 + 3}) necrotic damage, and the target's Strength score is reduced by {@dice 1d4}. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest.",
+						"If a non-evil humanoid dies from this attack, a new Fog Nightmare rises from the corpse {@dice 1d4} hours later."
+					]
+				}
+			],
+			"traitTags": [
+				"Amorphous"
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "c11e81a2-84e8-4323-8b97-a50ed1fd090c",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Fog Nightmare is a 5th-level spellcaster. Its spellcasting ability is Dexterity (spell save {@dc 13}, +5 to hit with spell attacks). The Fog Nightmare has the following Necromancer (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Fog Nightmare casts these spells on itself before combat."
+					],
+					"daily": {
+						"1": [
+							"{@spell dark aura|GuildWars}*",
+							"{@spell grenth's balance|GuildWars}"
+						]
+					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell touch of agony|GuildWars}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell enfeebling blood|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell vampiric touch (guild wars)|GuildWars}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell mark of subversion|GuildWars}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "dex",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"fluff": {
+				"entries": [
+					"Fog Nightmares are Nightmare-typed creatures which popup often all over Kryta. They spawn in great numbers in Kessex Peak. If you see one, there are usually many more to come. They are not fleshy creatures. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Nightmare_necromancer.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Nightmare_necromancer_Token.png"
+			},
+			"damageTags": [
+				"N"
 			]
 		}
 	],

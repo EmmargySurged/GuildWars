@@ -20195,7 +20195,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
+						"When you cast this spell using a spell slot of 2nd level or higher, the duration increases by 1 round for each slot level above 1st."
 					]
 				}
 			],
@@ -39495,6 +39495,304 @@
 					"name": "At Higher Levels",
 					"entries": [
 						"When you cast this spell using a spell slot of 2nd level or higher, the on hit healing increases by {@dice 1d4} and the on death healing increases by {@dice 2d4} for each slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"name": "Brambles",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Call forth a spirit of brambles, hurting and making creature bleed, which fall {@condition prone}.",
+				"Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit and falls {@condition prone}, they take {@damage 4d4} damage and start {@condition bleeding|GuildWars} for 1 minute, taking {@damage 2d4} damage.",
+				"At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends.",
+				"{@bold Summoning Ritual} Only one of each type of Summoning Ritual can be active at a time, if a new one is created in the range of this Summoning Ritual, this one ends. The spirit created by this ritual uses the {@creature Nature Ritual|GuildWars} stat block."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Brambles",
+					"Nature Ritual. Create a level 1...8...10 Spirit. Non-Spirit creatures that are knocked down in its range take 5 damage and begin Bleeding for 5...17...20 seconds. This Spirit dies after 30...126...150 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/7/72/Brambles.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, use the higher level wherever the spell's level appears in the stat block and when you cast this spell using a spell slot of 3rd or 4th level, the duration increases to 8 hours. When you use a spell slot of 5th level or higher, the duration increases to 24 hours.",
+						"Additionally, when you cast this spell using a spell slot of 2nd level or higher, the damage each increases by {@dice 1d4} for each slot level above 1st."
+					]
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Wilderness Survival",
+					"source": "GuildWars"
+				}
+			],
+			"uniqueId": "2fb1dec7-d710-4360-b80c-c872fb733f74",
+			"conditionInflict": [
+				"bleeding|guildwars"
+			]
+		},
+		{
+			"uniqueId": "31ba35bb-0ed7-4258-8e20-a4d14003c2d3",
+			"name": "Doom",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Spell out a person's doom by making all your summoning rituals whisper eldritch truths to them.",
+				"Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, the target takes {@damage 3d6} lighting damage per summoning ritual within range. On a successful save, the target takes half as much damage."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Doom",
+					"Spell. Strike target foe for 10...34...40 lightning (maximum 135) damage for every recharging binding ritual you have."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/8/85/Doom.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Spawning Power",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the final damage increases by {@dice 1d6} for each slot level above 2nd."
+					]
+				}
+			]
+		},
+		{
+			"name": "Furious Axe",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Channel your fury into a strike, gaining adrenaline on a miss.",
+				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d8} damage.",
+				"On a miss, you gain {@dice 1d4} strikes of adrenaline."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Furious Axe",
+					"Axe Attack. If Furious Axe hits, you strike for +5...29...35 damage. If it is blocked you gain 3 strikes worth of adrenaline."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/0/00/Furious_Axe.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Warrior",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Axe Mastery",
+					"source": "GuildWars"
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
+					]
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "a melee weapon worth at least 1 sp"
+			},
+			"uniqueId": "a7e02cb6-56ec-459d-b572-3bc185d42b09"
+		},
+		{
+			"name": "Dash",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Quickly dash to a new location.",
+				"For the duration, your speed is increased by 50%.",
+				"{@bold Stance.} If you enter a new stance, this stance ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Dash",
+					"Stance. For 3 seconds, you run 50% faster."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/2/20/Dash.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "No Attribute",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"uniqueId": "aae8c075-febf-4076-a62a-d717f4bdd35c",
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the duration increases by 1 round for each slot level above 1st."
 					]
 				}
 			]
@@ -62043,6 +62341,780 @@
 			},
 			"damageTags": [
 				"N"
+			]
+		},
+		{
+			"name": "Snow Ettin Warrior Boss",
+			"source": "GuildWars",
+			"size": [
+				"L"
+			],
+			"type": "giant",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 104,
+				"formula": "11d10 + 44"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 21,
+			"dex": 10,
+			"con": 19,
+			"int": 6,
+			"wis": 10,
+			"cha": 8,
+			"skill": {
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"languages": [
+				"Giant",
+				"Orc"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Two Heads",
+					"entries": [
+						"The ettin has advantage on Wisdom ({@skill Perception}) checks and on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}."
+					]
+				},
+				{
+					"name": "Wakeful",
+					"entries": [
+						"When one of the ettin's heads is asleep, its other head is awake."
+					]
+				},
+				{
+					"name": "Legendary Resistance (2/Day)",
+					"entries": [
+						"If the snow ettin warrior boss fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Ettin makes two attacks: one with its Battleaxe and one with its Morningstar or two with its Rock, it can forgo one of these attacks to cast a spell."
+					]
+				},
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}18 ({@damage 3d8 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Morningstar",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}18 ({@damage 3d8 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 30/90 ft., one target. {@h}15 ({@damage 3d6 + 5}) bludgeoning damage."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/ettin.mp3"
+			},
+			"attachedItems": [
+				"battleaxe|phb",
+				"morningstar|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI",
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Agnar the Foot is the ettin that has taken up residence in Duke Barradin's vineyard. He will only be there during the quest Warrior's Challenge. He is the only ettin (and ogre) found in Ascalon.",
+					"The Snow Ettin is an unnamed warrior boss found in the caves of the Northern Shiverpeaks."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ettin_Warrior_Boss.jpg"
+						}
+					}
+				]
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Snow Ettin Warrior Boss is a 5th-level spellcaster. Their spellcasting ability is Strength (spell save {@dc 16}, +8 to hit with spell attacks). The Snow Ettin Warrior Boss has the following Warrior (GW) spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell devastating hammer|GuildWars}",
+								"{@spell for great justice!|GuildWars}",
+								"{@spell power attack|GuildWars}",
+								"{@spell staggering blow|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell balanced stance|GuildWars}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "str",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"uniqueId": "bfb41705-fb61-4c61-960f-7d52e877f0b9",
+			"reaction": [
+				{
+					"name": "Agnar's Rage (1/day)",
+					"entries": [
+						"When falling below 50%, Agnar lets out a terrifying howl, forcing all creatures within 15 feet of him to make Constitution saving throw, or fall {@condition prone} and take {@damage 3d6} bludgeoning damage. Additionally, he regains 10 hit points at the start of each turn for 3 rounds."
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"conditionImmune": [
+				"prone",
+				"stunned"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Ettin_Warrior_Boss_Token.png"
+			},
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"legendaryActions": 2,
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The Snow Ettin Warrior Boss moves up to their speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"The Snow Ettin Warrior Boss attacks using one of their attacks."
+					]
+				},
+				{
+					"name": "Spellcasting",
+					"entries": [
+						"The Snow Ettin Warrior Boss uses Spellcasting."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Fen Troll",
+			"source": "GuildWars",
+			"size": [
+				"L"
+			],
+			"type": "giant",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 84,
+				"formula": "8d10 + 40"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 13,
+			"con": 20,
+			"int": 7,
+			"wis": 9,
+			"cha": 7,
+			"skill": {
+				"perception": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"Giant"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The troll has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The troll regains 10 hit points at the start of its turn. If the troll takes acid or fire damage, this trait doesn't function at the start of the troll's next turn. The troll dies only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The troll makes three attacks: one with its bite and two with its claws, they can forgo one of these attacks to cast a spell."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Regeneration"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "551f5d8c-eadb-4c57-b1a1-4d2ff5e6fc40",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Fen Troll is a 4th-level spellcaster. Their spellcasting ability is Constitution (spell save {@dc 16}, +8 to hit with spell attacks). The Fen Troll has the following Warrior (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Fen Troll casts these spells on themselves before combat."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell for great justice!|GuildWars}*",
+								"{@spell pure strike|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell endure pain|GuildWars}"
+							],
+							"slots": 3
+						}
+					},
+					"daily": {
+						"1": [
+							"{@spell savage slash|GuildWars}",
+							"{@spell skull crack|GuildWars}"
+						]
+					},
+					"ability": "con",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"fluff": {
+				"entries": [
+					"Fen Trolls are a rare variety of trolls that can be only found in the deepest regions of Kryta. They are found in Kessex Peak."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Fen_Troll.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Fen_Troll_Token.png"
+			},
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Skeleton Sorcerer Elementalist Boss",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 27",
+				"average": 67
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"con": 16,
+			"int": 8,
+			"wis": 6,
+			"cha": 22,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages it knew in life but can't speak"
+			],
+			"cr": "8",
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atkr m} {@hit 7}, reach 5 ft. {@h}7 ({@damage 1d6 + 4}) Piercing damage."
+					]
+				},
+				{
+					"name": "Dust Lightning",
+					"entries": [
+						"{@atk rs} {@hit 9} to hit, range 80/320 ft., one target. {@h}15 ({@damage 3d6 + 5}) force damage, plus 10 ({@damage 3d6}) lightning damage."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/skeleton.mp3"
+			},
+			"attachedItems": [
+				"shortsword|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"miscTags": [
+				"MA",
+				"MLW",
+				"RA"
+			],
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Najja Doombringer is an Undead boss that has a chance to appear at one of the three spawn points during the Divinity Coast mission. It also has a chance to spawn in Majesty's Rest on the path behind Rotscale.",
+					"Aziz Rottenscalp is an Skeleton Sorcerer boss found in the southern areas of Nebo Terrace.",
+					"Gezna Shadowstalker is an undead boss.",
+					"Nazeem the Damned is a Skeleton elementalist boss that appears during the Gates of Kryta mission."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Skeleton_elementalist_Boss.jpg"
+						}
+					}
+				]
+			},
+			"resist": [
+				"piercing"
+			],
+			"dex": 18,
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Skeleton Sorcerer Elementalist Boss is an 11th-level spellcaster. Their spellcasting ability is Charisma (spell save {@dc 17}, +9 to hit with spell attacks). The Skeleton Sorcerer Elementalist Boss has the following Elementalist (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Skeleton Sorcerer Elementalist Boss casts these spells on themselves before combat."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell aura of restoration|GuildWars}*",
+								"{@spell blinding flash|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell aftershock|GuildWars}",
+								"{@spell lightning touch|GuildWars}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell thunderclap (guild wars)|GuildWars}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell earthquake (guild wars)|GuildWars}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"uniqueId": "6292fd60-ce66-49aa-a0ef-b023a8236c7a",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Skeleton_elementalist_Boss_Token.png"
+			},
+			"trait": [
+				{
+					"name": "Legendary Resistance (1/Day)",
+					"entries": [
+						"If the skeleton sorcerer elementalist boss fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The Skeleton Sorcerer Elementalist Boss moves up to their speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"The Skeleton Sorcerer Elementalist Boss attacks using one of their attacks."
+					]
+				},
+				{
+					"name": "Spellcasting (2)",
+					"entries": [
+						"The Skeleton Sorcerer Elementalist Boss uses Spellcasting."
+					]
+				}
+			],
+			"legendaryActions": 2,
+			"damageTags": [
+				"L",
+				"O",
+				"P"
+			]
+		},
+		{
+			"name": "Executioner Warrior Boss",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"average": 138,
+				"formula": "12d10 + 72"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 23,
+			"dex": 10,
+			"con": 22,
+			"int": 8,
+			"wis": 10,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"understands Common but can't speak"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the Executioner to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the Executioner drops to 1 hit point instead."
+					]
+				},
+				{
+					"name": "Legendary Resistance (2/Day)",
+					"entries": [
+						"If the executioner warrior boss fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Executioner Warrior Boss makes two attacks: two with their Morningstar or two with their Spear Throw, they can forgo one of these attacks to cast a spell."
+					]
+				},
+				{
+					"name": "Morningstar",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}24 ({@damage 4d8 + 6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Spear Throw",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 30 ft., one target. {@h}16 ({@damage 3d6 + 6}) piercing damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"morningstar|phb"
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Asad the Ignoble is a Executioner boss who spawns occasionally in Nebo Terrace.",
+					"Essam Festerskull is an Executioner boss found only during Riverside Province.",
+					"Fareed the Unworthy is an undead boss in the Sanctum Cay Mission. ",
+					"Haja Bloodwail is an Undead Warrior boss who is found in the Gates of Kryta mission.",
+					"Nizza the Sickle is an Executioner boss."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Zombie_warrior_Boss.jpg"
+						}
+					}
+				]
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Executioner Warrior Boss is a 5th-level spellcaster. Their spellcasting ability is Strength (spell save {@dc 17}, +9 to hit with spell attacks). The Executioner Warrior Boss has the following Warrior (GW) spells prepared:"
+					],
+					"footerEntries": [
+						"*The Executioner Warrior Boss casts these spells on themselves before combat."
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell hamstring|GuildWars}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell for great justice!|GuildWars}*",
+								"{@spell i will survive!|GuildWars}",
+								"{@spell irresistible blow|GuildWars}",
+								"{@spell sever artery|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell deflect arrows|GuildWars}",
+								"{@spell healing signet|GuildWars}",
+								"{@spell warrior's cunning|GuildWars}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell heavy blow|GuildWars}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "str",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"uniqueId": "d0220c9e-d919-4d9c-884c-7def0d7f3ab5",
+			"actionTags": [
+				"Multiattack"
+			],
+			"save": {
+				"str": "+9",
+				"con": "+9"
+			},
+			"skill": {
+				"athletics": "+12"
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Zombie_warrior_Boss_Token.png"
+			},
+			"legendaryActions": 2,
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The Executioner Warrior Boss moves up to their speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"The Executioner Warrior Boss attacks using one of their attacks."
+					]
+				},
+				{
+					"name": "Spellcasting (2)",
+					"entries": [
+						"The Executioner Warrior Boss uses Spellcasting."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P"
 			]
 		}
 	],

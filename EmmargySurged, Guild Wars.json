@@ -35733,7 +35733,7 @@
 			],
 			"entries": [
 				"Repeat the mantra of inscriptions, imbuing your signet with improved alacrity.",
-				"For the duration, when you cast a signet, which requires a short rest to before it can be cast again, it instead only requires you to exit initiative before you can cast it again.",
+				"For the duration, when you cast a signet, which requires a short rest before it can be cast again, it instead only requires you to exit initiative before you can cast it again.",
 				"{@bold Stance.} If you enter a new stance, this stance ends."
 			],
 			"source": "GuildWars",
@@ -40096,6 +40096,86 @@
 				}
 			],
 			"uniqueId": "20f497ad-46aa-4114-b5d6-517d71be7022"
+		},
+		{
+			"name": "Predatory Bond",
+			"level": 4,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Form a bond with a beat companion, imbuing it with unnatural speed and siphoning health with its attacks.",
+				"Choose one beast, which obeys your verbal commands, that can hear you within range. For the duration, the target can attack one additional time when it takes the attack action on its turn and when the target hits with an attack, you regain hit points equal to {@dice 2d4}."
+			],
+			"source": "GuildWars",
+			"components": {
+				"v": true
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Beast Mastery",
+					"source": "GuildWars"
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Predatory Bond",
+					"Shout. For 5...17...20 seconds, your animal companion attacks 25% faster and heals you for 1...25...31 Health with each successful attack."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/8/83/Predatory_Bond.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"UBA"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the healing increases by {@dice 2d4} for each slot level above 4th."
+					]
+				}
+			],
+			"uniqueId": "032ea1b6-dea1-4d56-843c-7d7af5617489"
 		}
 	],
 	"table": [
@@ -64187,6 +64267,230 @@
 			"damageTags": [
 				"P",
 				"S"
+			]
+		},
+		{
+			"name": "Wraith Mesmer Boss",
+			"source": "GuildWars",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "15d8 + 45",
+				"average": 112
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 6,
+			"dex": 18,
+			"con": 16,
+			"int": 12,
+			"wis": 14,
+			"cha": 20,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"immune": [],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The wraith can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the wraith has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Legendary Resistance (2/Day)",
+					"entries": [
+						"If the wraith mesmer boss fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Life Drain",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one creature. {@h}31 ({@damage 6d8 + 4}) necrotic damage. The target must succeed on a {@dc 16} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+					]
+				},
+				{
+					"name": "Create Specter",
+					"entries": [
+						"The wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a {@creature specter} in the space of its corpse or in the nearest unoccupied space. The {@creature specter} is under the wraith's control. The wraith can have no more than seven specters under its control at one time."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/wraith.mp3"
+			},
+			"traitTags": [
+				"Incorporeal Movement",
+				"Legendary Resistances",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"miscTags": [
+				"MW",
+				"HPR"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Gaiza Deadeye is a Wraith boss found only during Riverside Province. ",
+					"Zaim Grimeclaw is an undead boss in the Sanctum Cay mission."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Wraith_Mesmer_Boss.jpg"
+						}
+					}
+				]
+			},
+			"save": {
+				"cha": "+8",
+				"dex": "+7"
+			},
+			"vulnerable": [
+				"radiant"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Wraith Mesmer Boss is an 11th-level spellcaster. Their spellcasting ability is Charisma (spell save {@dc 16}, +8 to hit with spell attacks). The Wraith Mesmer Boss has the following Mesmer (GW) spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell ether feast|GuildWars}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell chaos storm|GuildWars}",
+								"{@spell epidemic|GuildWars}",
+								"{@spell ineptitude|GuildWars}",
+								"{@spell signet of weariness|GuildWars}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"uniqueId": "80c2c8fd-ced4-4aad-a380-5794367f4a98",
+			"skill": {
+				"stealth": "+10",
+				"deception": "+11"
+			},
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The Wraith Mesmer Boss moves up to their speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"The Wraith Mesmer Boss attacks using one of their attacks."
+					]
+				},
+				{
+					"name": "Spellcasting (Costs 2 Actions)",
+					"entries": [
+						"The Wraith Mesmer Boss uses Spellcasting."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Wraith_Mesmer_Boss_Token.png"
+			},
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"savingThrowForced": [
+				"constitution"
 			]
 		}
 	],

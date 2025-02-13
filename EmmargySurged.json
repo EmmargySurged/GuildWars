@@ -1,0 +1,171 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "EmmargySurged",
+				"abbreviation": "ES",
+				"full": "EmmargySurged",
+				"version": "1.0.0",
+				"authors": [
+					"EmmargySurged"
+				],
+				"color": "400040"
+			}
+		],
+		"status": "ready",
+		"dateAdded": 1701938868,
+		"dateLastModified": 1701938868
+	},
+	"spell": [],
+	"table": [],
+	"background": [],
+	"condition": [],
+	"item": [],
+	"monster": [
+		{
+			"name": "Incomplete Dragon Skeleton",
+			"source": "EmmargySurged",
+			"size": [
+				"L"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d10 + 14",
+				"average": 91
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 15,
+			"dex": 18,
+			"con": 12,
+			"int": 15,
+			"wis": 15,
+			"cha": 20,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"paralyzed",
+				"poisoned"
+			],
+			"languages": [
+				"Common plus one other language"
+			],
+			"cr": "8",
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one creature. {@h}11 ({@damage 2d6 + 4}) piercing damage plus 7 ({@damage 2d6}) poison damage."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"token": {
+				"name": "Incomplete Dragon Skeleton",
+				"source": "DSotDQ"
+			},
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Incomplete Dragon Skeleton is an 11th-level spellcaster. Their spellcasting ability is Charisma (spell save {@dc 16}, +8 to hit with spell attacks). The Incomplete Dragon Skeleton has the following Warlock spells prepared:"
+					],
+					"daily": {
+						"1": [
+							"{@spell aura of the lich|GuildWars}"
+						]
+					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell taste of death|GuildWars}"
+							]
+						},
+						"5": {
+							"spells": [
+								"{@spell dark bond|GuildWars}",
+								"{@spell death nova|GuildWars}",
+								"{@spell malign intervention|GuildWars}"
+							],
+							"slots": 3,
+							"lower": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CL"
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"The Incomplete Dragon Skeleton attacks using one of their attacks."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"The Incomplete Dragon Skeleton moves up to their speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Spellcasting (Costs 2 Actions)",
+					"entries": [
+						"The Incomplete Dragon Skeleton uses Spellcasting."
+					]
+				}
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"damageTagsSpell": [
+				"N"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			]
+		}
+	],
+	"legendaryGroup": [],
+	"race": [],
+	"raceFluff": [],
+	"language": []
+}

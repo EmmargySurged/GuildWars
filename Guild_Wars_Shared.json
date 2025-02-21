@@ -1859,8 +1859,9 @@
 				}
 			],
 			"entries": [
+				"{@bold Sacrifice:} 50% (Current) ",
 				"You sacrifice some of your health to mend another creature's injuries. ",
-				"Choose one friendly creature, other than yourself, that you can see within range. You lose equal to 50% of your current hit points. The target regains hit points equal to 100% of the health lost."
+				"Choose one friendly creature, other than yourself, that you can see within range. The target regains hit points equal to 100% of the health sacrificed."
 			],
 			"source": "GuildWars",
 			"components": {
@@ -6466,7 +6467,7 @@
 			"entries": [
 				"{@bold Dual Attack}",
 				"Strike your foe with the strength of an ox.",
-				"Choose one creature that you can see within range of your weapon. Make two melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d6} damage and, if the target is not within 5-feet of one of the target's allies, is knocked {@condition prone}."
+				"Choose one creature that you can see within range of your weapon. Make two melee weapon attacks against the target. On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d6} damage and, if the target is not within 5-feet of one of the target's allies, is knocked {@condition prone}."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -41368,6 +41369,384 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Yeti Smash",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@bold Adrenaline:} 6",
+				"Smash the ground like a yeti, knocking down adjacent creatures who are suffering from a condition.",
+				"Target each creature, other than you, that you can see within range of your weapon. Make a melee weapon attack against each target. On a hit, a target suffers the weapon attack's normal effects and, if the target is suffering from a condition, must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}."
+			],
+			"source": "GuildWars",
+			"components": {
+				"v": true
+			},
+			"fluff": {
+				"entries": [
+					"Yeti Smash",
+					"Hammer Attack. Lose all adrenaline. Attack all adjacent foes. If this attack strikes a foe suffering from a condition, that foe is knocked down. (50% failure chance with Hammer Mastery 4 or less.) "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/c/cd/Yeti_Smash.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"MT",
+				"R"
+			],
+			"miscTags": [
+				"AAD"
+			],
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Warrior",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Hammer Mastery",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Adrenaline",
+					"source": "GuildWars"
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Teinai's Heat",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Conjure a ward at your location, projecting the legendary heat of the Canthan hero Teinai.",
+				"Conjure a 20-foot radius stationary ward at your location for the duration and choose any number of creatures. Each non-chosen creature takes {@damage 4d4} fire damage when it enters the spell's area for the first time on a turn or starts its turn there. Additionally, non-chosen creatures, who are in the spell's area and are weakened, can take either an action or a Bonus Action, not both, and it can make only one attack if it takes the Attack action."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Teinai's Heat",
+					"Ward Spell. Place a ward of Teinai's Heat at your location for 10...14...15 seconds. Foes within the ward suffer 2...4...5 health [sic] degeneration. Weakened foes attack 33% slower. This skill is disabled for 20 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/5/51/Teinai%27s_Heat.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Fire Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 2d4} for each slot level above 2nd."
+					]
+				}
+			]
+		},
+		{
+			"name": "Teinai's Wind",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Conjure up the twin winds of Teinai, chilling and potentially disrupting and immolating {@condition burning|GuildWars} creatures.",
+				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 2d6} cold damage. If a target was {@condition burning|GuildWars}, the target takes an additional {@damage 2d8} fire damage and has disadvantage on attack roll until the end of their next turn. On a successful save, a target takes half as much damage."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Teinai's Wind",
+					"Spell. Target foe and all adjacent foes take 10...34...40 cold damage. Burning foes struck by Teinai's Wind take an additional 40...72...80 damage and are interrupted."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/b/ba/Teinai%27s_Wind.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Air Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the cold damage and the fire damage increases by {@dice 1d6} and {@dice 1d8} respectively for each slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"name": "Death Blossom",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				},
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@bold Dual Attack}",
+				"Create a blossom of death, by making your weapons dance through your foes.",
+				"Choose one creature that you can see within range of your weapon. Make two melee weapon attacks against the target. On a hit, the target and all other creatures other than you in a 5-foot-radius centered on the target suffer the weapon attack's normal effects and take {@damage 1d6} damage,"
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Death Blossom",
+					"Dual Attack. Must follow an off-hand attack. If it hits, Death Blossom strikes target foe for +20...40...45 damage and all adjacent foes take 20...40...45 damage."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/0/04/Death_Blossom.jpg"
+						}
+					}
+				]
+			},
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"AAD"
+			],
+			"components": {
+				"s": true,
+				"m": "a melee weapon worth at least 1 sp with the light property"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
+					]
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Dagger Mastery",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Dual Attack",
+					"source": "GuildWars"
+				}
+			]
+		},
+		{
+			"name": "Flesh of My Flesh",
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@bold Sacrifice:} 50% (Current)",
+				"Sacrifice some of your own vitality to resurrect a creature.",
+				"Choose one friendly creature, which has not been dead for more than 1 minute, that you can see within range. The target returns to life with hit points equal to 100% of the health sacrificed. On the target's next turn, the target can use either an action or a bonus action, not both."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Flesh of My Flesh",
+					"Spell. Lose half your Health. Resurrect target party member with your current Health and 5...17...20% Energy."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/c/c3/Flesh_of_My_Flesh.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Restoration Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "a diamond worth 300+ GP, which the spell consumes"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 10% for each slot level above 1st."
+					]
+				}
+			]
 		}
 	],
 	"table": [
@@ -43519,7 +43898,7 @@
 			"source": "GuildWars",
 			"page": 0,
 			"entries": [
-				"• A dazed creature can't cast spells as reactions, must cast spells which take a bonus action as an action, and any other spell takes twice as long to cast."
+				"• A dazed creature can't cast spells as reactions, must cast spells which take a bonus action as an action, any other spell takes twice as long to cast, and they have disadvantage on Constitution saving throws that they make to maintain Concentration."
 			],
 			"color": "A78635"
 		},
@@ -43548,7 +43927,7 @@
 			"source": "GuildWars",
 			"page": 0,
 			"entries": [
-				"• An Overcast creature temporarily loses access to spell slots level equal to their level/CR (minimum 1, maximum 20) for the duration of the condition.",
+				"• An Overcast creature temporarily loses access to spell slots level equal to twice their highest level spell slot for the duration of the condition.",
 				"• The creature decides which spell slots it looses access to. They can choose expended spell slots.",
 				"• Further applications of overcast add to the existing duration.",
 				"• Spells which have the Overcast property gain additional effects when cast while having at least one round of overcast."
@@ -43570,7 +43949,7 @@
 			"source": "GuildWars",
 			"page": 0,
 			"entries": [
-				"• A weakened creature deals only half damage with weapon attacks until the condition ends."
+				"• A weakened creature deals only half damage with strength based weapon attacks until the condition ends."
 			],
 			"color": "A78635"
 		}

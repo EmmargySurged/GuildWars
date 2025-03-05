@@ -294,6 +294,7 @@
 				"• You gain a +1 bonus to spell attack rolls and the saving throw DCs of your spells.",
 				"• When you hit with an attack using this weapon, the target takes an extra 1d6 force damage.",
 				"• Once per turn, as an action, you can teleport up to 60 feet next to a creature, which is concentrating on a spell, and make one attack using this weapon with advantage. You can use this feature a number of times equal to your proficiency bonus and regain all expended uses when you finish a long rest.",
+				"• This magic weapon returns to your hand immediately after it is used to make a ranged attack roll.",
 				"{@bold Mastery: Sap.} If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
 			],
 			"tier": "major",
@@ -431,7 +432,7 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
+					"number": 0,
 					"unit": "special",
 					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
@@ -471,8 +472,7 @@
 				]
 			},
 			"components": {
-				"v": true,
-				"s": true
+				"v": true
 			},
 			"savingThrow": [
 				"constitution"
@@ -511,8 +511,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
 			],
 			"range": {
@@ -526,7 +527,7 @@
 			"entries": [
 				"{@bold Unblockable} ",
 				"You imbue your weapon with as much magical power as possible, striking with all your might.",
-				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's critical effects and must make a Strength saving throw. On a failed save, any stance on the target ends.",
+				"On a hit, the target suffers the weapon attack's critical effects and must make a Strength saving throw. On a failed save, any stance on the target ends.",
 				"You lose all adrenaline."
 			],
 			"source": "GuildWars",
@@ -555,8 +556,7 @@
 				"strength"
 			],
 			"components": {
-				"s": true,
-				"m": "a melee weapon worth at least 1 sp"
+				"v": true
 			},
 			"backgrounds": [
 				{
@@ -574,15 +574,6 @@
 				{
 					"name": "Unblockable",
 					"source": "GuildWars"
-				}
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 6th level or higher, the number of attacks increases by 1 for every two slot levels above 5th. "
-					]
 				}
 			]
 		},
@@ -1679,7 +1670,7 @@
 			],
 			"entries": [
 				"Invoke the hellish flames of Rodgort.",
-				"Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 12d6} fire damage and starts {@condition burning|GuildWars} for the duration, taking {@damage 2d6} damage. On a successful save, a target takes half as much damage, but suffers no other effect.",
+				"Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 14d6} fire damage and starts {@condition burning|GuildWars} for the duration, taking {@damage 2d6} damage. On a successful save, a target takes half as much damage, but suffers no other effect.",
 				"At the end of each of its turns, a target can make a Dexterity saving throw. On a success, the condition ends."
 			],
 			"source": "GuildWars",
@@ -1721,7 +1712,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 7th level or higher, the damage each increases by {@dice 1d6} for each slot level above 6th."
+						"When you cast this spell using a spell slot of 7th level or higher, the damage each increases by {@dice 2d6} for each slot level above 6th."
 					]
 				}
 			],
@@ -3198,8 +3189,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
 			],
 			"range": {
@@ -3216,10 +3208,7 @@
 			],
 			"source": "GuildWars",
 			"components": {
-				"s": true,
-				"m": {
-					"text": "a melee weapon worth at least 1 sp"
-				}
+				"v": true
 			},
 			"fluff": {
 				"entries": [
@@ -3236,15 +3225,6 @@
 					}
 				]
 			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
-				}
-			],
 			"areaTags": [
 				"MT",
 				"R"
@@ -3273,7 +3253,7 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
+					"number": 0,
 					"unit": "special",
 					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
@@ -3341,7 +3321,7 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
+					"number": 0,
 					"unit": "special",
 					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
@@ -3412,7 +3392,7 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
+					"number": 0,
 					"unit": "special",
 					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
@@ -3482,8 +3462,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Ranged weapon"
 				}
 			],
 			"range": {
@@ -3496,7 +3477,7 @@
 			],
 			"entries": [
 				"You infuse your next projectile with deadly force.",
-				"Choose one creature that you can see within range of your weapon. Make a ranged weapon attack against the target. On a hit, the target takes {@damage 2d6 + 10} force damage."
+				"On a hit, the target takes {@damage 2d6 + 10} force damage."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -3515,20 +3496,8 @@
 				]
 			},
 			"components": {
-				"s": true,
-				"m": {
-					"text": "a ranged weapon worth at least 1 sp"
-				}
+				"v": true
 			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the number of attacks increases by 1 for every two slot levels above 2nd. "
-					]
-				}
-			],
 			"damageInflict": [
 				"force"
 			],
@@ -4125,8 +4094,9 @@
 			"school": "C",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Ranged weapon"
 				}
 			],
 			"range": {
@@ -4139,7 +4109,7 @@
 			],
 			"entries": [
 				"You duplicate your next projectile.",
-				"Choose one creature that you can see within range of your weapon. Make two ranged weapon attacks against the target. On a hit, the target suffers the weapon attack's normal effects."
+				"Make two ranged weapon attacks against the target. On a hit, the target suffers the weapon attack's normal effects."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -4158,20 +4128,8 @@
 				]
 			},
 			"components": {
-				"s": true,
-				"m": {
-					"text": "a ranged weapon worth at least 1 sp"
-				}
+				"v": true
 			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
-				}
-			],
 			"areaTags": [
 				"ST"
 			],
@@ -4182,6 +4140,14 @@
 			"backgrounds": [
 				{
 					"name": "Pre-Searing",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "No Attribute",
 					"source": "GuildWars"
 				}
 			]
@@ -4283,8 +4249,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Ranged weapon within half the range of the weapon"
 				}
 			],
 			"range": {
@@ -4297,8 +4264,8 @@
 			],
 			"entries": [
 				"You shoot an enemy point-blank.",
-				"Choose one creature that you can see within half the range of your weapon. Make a ranged weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d8} damage.",
-				"At 5th level, the ranged attack also deals an extra {@damage 1d8} piercing damage to the target on a hit. This damage increases by {@dice 1d8} when you reach 11th level ({@dice 2d8}), and 17th level ({@dice 3d8})."
+				"On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d8} damage.",
+				"At 5th level, the ranged attack deals an extra {@damage 1d8} piercing damage to the target on a hit ({@dice 2d8}). This damage increases by {@dice 1d8} when you reach 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -4317,10 +4284,7 @@
 				]
 			},
 			"components": {
-				"s": true,
-				"m": {
-					"text": "a ranged weapon worth at least 1 sp"
-				}
+				"v": true
 			},
 			"areaTags": [
 				"ST"
@@ -5460,8 +5424,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Ranged weapon"
 				}
 			],
 			"range": {
@@ -5478,7 +5443,7 @@
 			],
 			"entries": [
 				"Fire a well aimed shot to make a creature bleed.",
-				"Choose one creature that you can see within range of your weapon. Make a ranged weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw. On a failed save, the target starts {@condition bleeding|GuildWars} for the duration, taking {@damage 1d4} damage.",
+				"On a hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw. On a failed save, the target starts {@condition bleeding|GuildWars} for the duration, taking {@damage 1d4} damage.",
 				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends.",
 				"At 5th level, the ranged attack also deals an extra {@damage 1d8} piercing damage to the target on a hit. This damage increases by {@dice 1d8} when you reach 11th level ({@dice 2d8}), and 17th level ({@dice 3d8})."
 			],
@@ -5508,21 +5473,11 @@
 				"SGT",
 				"AAD"
 			],
-			"optionalfeatures": [
-				{
-					"name": "Pact of the Tome",
-					"source": "PHB",
-					"featureType": [
-						"PB"
-					]
-				}
-			],
 			"conditionInflict": [
 				"bleeding|guildwars"
 			],
 			"components": {
-				"s": true,
-				"m": "a ranged weapon worth at least 1 sp"
+				"v": true
 			},
 			"backgrounds": [
 				{
@@ -6533,7 +6488,7 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
+					"number": 0,
 					"unit": "special",
 					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
@@ -6612,8 +6567,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon with the light property"
 				}
 			],
 			"range": {
@@ -6631,7 +6587,7 @@
 			"entries": [
 				"{@bold Lead Attack}",
 				"Slash at your foe with a serrated edge.",
-				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw. On a failed save, the target starts {@condition bleeding|GuildWars} for the duration, taking {@damage 1d4} damage.",
+				"On a hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw. On a failed save, the target starts {@condition bleeding|GuildWars} for the duration, taking {@damage 1d4} damage.",
 				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends.",
 				"At 5th level, the melee attack also deals an extra {@damage 1d8} piercing damage to the target on a hit. This damage increases by {@dice 1d8} when you reach 11th level ({@dice 2d8}), and 17th level ({@dice 3d8})."
 			],
@@ -6664,8 +6620,7 @@
 				"bleeding|guildwars"
 			],
 			"components": {
-				"s": true,
-				"m": "a melee weapon worth at least 1 sp with the light property"
+				"v": true
 			},
 			"backgrounds": [
 				{
@@ -6692,12 +6647,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
-				},
-				{
-					"number": 1,
-					"unit": "bonus"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon with the light property"
 				}
 			],
 			"range": {
@@ -6711,7 +6663,7 @@
 			"entries": [
 				"{@bold Off-Hand Attack}, {@bold Unblockable}",
 				"Slip past your foes defenses with a foxes' agility.",
-				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 2d6} damage."
+				"On a hit, the target suffers the weapon attack's normal effects and takes {@damage 2d6} damage."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -6739,18 +6691,8 @@
 				"AAD"
 			],
 			"components": {
-				"s": true,
-				"m": "a melee weapon worth at least 1 sp with the light property"
+				"v": true
 			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
-				}
-			],
 			"backgrounds": [
 				{
 					"name": "Shing Jea Island",
@@ -6780,12 +6722,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
-				},
-				{
-					"number": 1,
-					"unit": "bonus"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon with the light and thrown property"
 				}
 			],
 			"range": {
@@ -6799,7 +6738,7 @@
 			"entries": [
 				"{@bold Dual Attack}",
 				"Strike your foe with the strength of an ox.",
-				"Choose one creature that you can see within range of your weapon. Make two melee weapon attacks against the target. On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d6} damage and, if the target is not within 5-feet of one of the target's allies, is knocked {@condition prone}."
+				"Make two melee weapon attacks against the target. On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d6} damage and, if the target is not within 5-feet of one of the target's allies, is knocked {@condition prone}."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -6830,20 +6769,10 @@
 				"AAD"
 			],
 			"components": {
-				"s": true,
-				"m": "a melee weapon worth at least 1 sp with the light property"
+				"v": true
 			},
 			"conditionInflict": [
 				"prone"
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
-				}
 			],
 			"backgrounds": [
 				{
@@ -7793,8 +7722,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
 			],
 			"range": {
@@ -7811,7 +7741,7 @@
 			],
 			"entries": [
 				"You attempt to cripple a creature, slowing their movement.",
-				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw. On a failed save, the target becomes {@condition crippled|GuildWars} for the duration.",
+				"On a hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw. On a failed save, the target becomes {@condition crippled|GuildWars} for the duration.",
 				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends.",
 				"At 5th level, the melee attack also deals an extra {@damage 1d8} slashing damage to the target on a hit. This damage increases by {@dice 1d8} when you reach 11th level ({@dice 2d8}), and 17th level ({@dice 3d8})."
 			],
@@ -7838,8 +7768,7 @@
 				"ST"
 			],
 			"components": {
-				"s": true,
-				"m": "a melee weapon worth at least 1 sp"
+				"v": true
 			},
 			"conditionInflict": [
 				"crippled|guildwars"
@@ -8291,7 +8220,7 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
+					"number": 0,
 					"unit": "special",
 					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
@@ -8757,7 +8686,7 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
+					"number": 0,
 					"unit": "special",
 					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
@@ -8994,8 +8923,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Ranged weapon"
 				}
 			],
 			"range": {
@@ -9009,7 +8939,7 @@
 			"entries": [
 				"{@bold Armor Penetration}",
 				"You fire a penetrating shot, which pierces your enemies defenses.",
-				"Choose one creature that you can see within range of your weapon. Make a ranged weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d8} damage."
+				"On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d8} damage."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -9028,10 +8958,7 @@
 				]
 			},
 			"components": {
-				"s": true,
-				"m": {
-					"text": "a ranged weapon worth at least 1 sp"
-				}
+				"v": true
 			},
 			"areaTags": [
 				"ST"
@@ -9056,15 +8983,6 @@
 				{
 					"name": "Armor Penetration",
 					"source": "GuildWars"
-				}
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
 				}
 			]
 		},
@@ -9724,7 +9642,7 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
+					"number": 0,
 					"unit": "special",
 					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
@@ -10325,8 +10243,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Ranged weapon"
 				}
 			],
 			"range": {
@@ -10340,7 +10259,7 @@
 			"entries": [
 				"{@bold Unblockable} ",
 				"Fire an extremely fast shot, which is more likely to hit and ignores any temporary AC bonuses.",
-				"Choose one creature that you can see within range of your weapon. Make a ranged weapon attack with advantage against the target. On a hit, the target suffers the weapon attack's normal effects."
+				"You advantage on the attack roll. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d6} damage."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -10359,8 +10278,7 @@
 				]
 			},
 			"components": {
-				"s": true,
-				"m": "a ranged weapon worth at least 1 sp"
+				"v": true
 			},
 			"backgrounds": [
 				{
@@ -10379,15 +10297,6 @@
 					"name": "Unblockable",
 					"source": "GuildWars"
 				}
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
-				}
 			]
 		},
 		{
@@ -10396,8 +10305,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Ranged weapon"
 				}
 			],
 			"range": {
@@ -10411,8 +10321,7 @@
 			"entries": [
 				"{@bold Elite}",
 				"Fire a quick shot, which is more likely to hit.",
-				"Choose one creature that you can see within range of your weapon. Make a ranged weapon attack with advantage against the target. On a hit, the target suffers the weapon attack's normal effects.",
-				"The number of ranged attacks you can make when you cast this spell increases by 1 when you reach 5th level (2 attacks), 11th level (3 attacks), and 17th level (4 attacks)."
+				"Make a ranged weapon attack with advantage against the target. On a hit, the target suffers the weapon attack's normal effects."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -10431,8 +10340,7 @@
 				]
 			},
 			"components": {
-				"s": true,
-				"m": "a ranged weapon worth at least 1 sp"
+				"v": true
 			},
 			"backgrounds": [
 				{
@@ -12258,7 +12166,7 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
+					"number": 0,
 					"unit": "special",
 					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
@@ -12326,7 +12234,7 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
+					"number": 0,
 					"unit": "special",
 					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
@@ -12566,8 +12474,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
 			],
 			"range": {
@@ -12580,7 +12489,7 @@
 			],
 			"entries": [
 				"Strike your target and all creatures within 5 feet of them with a wide-reaching swing.",
-				"Choose one creature that you can see within range of your weapon. Target each creature other than you in a 5-foot-radius centered on the target. Make a melee weapon attack against each target. On a hit, a target suffers the weapon attack's normal effects."
+				"Target each creature other than you in a 5-foot-radius centered on the target. Make a melee weapon attack against each target. On a hit, a target suffers the weapon attack's normal effects."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -12616,18 +12525,8 @@
 				}
 			],
 			"components": {
-				"s": true,
-				"m": "a melee weapon worth at least 1 sp"
-			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
-				}
-			]
+				"v": true
+			}
 		},
 		{
 			"name": "Warrior's Endurance",
@@ -12712,7 +12611,7 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
+					"number": 0,
 					"unit": "special",
 					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
@@ -12782,8 +12681,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
 			],
 			"range": {
@@ -12800,7 +12700,7 @@
 			],
 			"entries": [
 				"Exploit a creature's momentary vulnerability if they are {@condition prone}, to daze them.",
-				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d6} damage and, if the target is knocked {@condition prone}, must make a Constitution saving throw. On a failed save, the target is {@condition dazed|GuildWars} for the duration.",
+				"On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d6} damage and, if the target is knocked {@condition prone}, must make a Constitution saving throw. On a failed save, the target is {@condition dazed|GuildWars} for the duration.",
 				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
 			],
 			"source": "GuildWars",
@@ -12820,21 +12720,11 @@
 				]
 			},
 			"components": {
-				"s": true,
-				"m": "a melee weapon worth at least 1 sp"
+				"v": true
 			},
 			"conditionInflict": [
 				"dazed|guildwars",
 				"prone"
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the number of attacks increases by 1 for every two slot levels above 2nd. "
-					]
-				}
 			],
 			"miscTags": [
 				"AAD"
@@ -12860,7 +12750,7 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
+					"number": 0,
 					"unit": "special",
 					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
@@ -12934,15 +12824,13 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
 			],
 			"range": {
-				"type": "point",
-				"distance": {
-					"type": "self"
-				}
+				"type": "special"
 			},
 			"duration": [
 				{
@@ -12951,7 +12839,7 @@
 			],
 			"entries": [
 				"Imbue your weapon with powerful magic.",
-				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 3d8} damage."
+				"On a hit, the target suffers the weapon attack's normal effects and takes {@damage 3d8} damage."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -12987,18 +12875,8 @@
 				}
 			],
 			"components": {
-				"s": true,
-				"m": "a melee weapon worth at least 1 sp"
-			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
-				}
-			]
+				"v": true
+			}
 		},
 		{
 			"name": "Sprint",
@@ -14583,8 +14461,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
 			],
 			"range": {
@@ -14597,7 +14476,7 @@
 			],
 			"entries": [
 				"Deliver a mighty blow which is sure to hit.",
-				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d6} damage. ",
+				"On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d6} damage. ",
 				"On a miss, the target takes {@damage 1d6} damage and must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}. "
 			],
 			"source": "GuildWars",
@@ -14617,20 +14496,10 @@
 				]
 			},
 			"components": {
-				"s": true,
-				"m": "a melee weapon worth at least 1 sp"
+				"v": true
 			},
 			"conditionInflict": [
 				"prone"
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 2nd. "
-					]
-				}
 			],
 			"backgrounds": [
 				{
@@ -14653,8 +14522,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Ranged weapon"
 				}
 			],
 			"range": {
@@ -14667,7 +14537,7 @@
 			],
 			"entries": [
 				"Fire a debilitating shot, lowering initiative on hit.",
-				"Choose one creature that you can see within range of your weapon. Make a ranged weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and the target's initiative gets reduced by {@dice 2d6}."
+				"On a hit, the target suffers the weapon attack's normal effects and the target's initiative gets reduced by {@dice 2d6}."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -14699,18 +14569,8 @@
 					"source": "GuildWars"
 				}
 			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
-				}
-			],
 			"components": {
-				"s": true,
-				"m": "a ranged weapon worth at least 1 sp"
+				"v": true
 			}
 		},
 		{
@@ -14955,8 +14815,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
 			],
 			"range": {
@@ -14973,7 +14834,7 @@
 			],
 			"entries": [
 				"Strike with magical precision, {@condition bleeding|GuildWars} and damaging even on a miss.",
-				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d8} damage.",
+				"On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d8} damage.",
 				"On a miss, the target takes {@damage 1d8} damage and must make a Constitution saving throw. On a failed save, the target starts {@condition bleeding|GuildWars} for the duration, taking {@damage 1d6} damage.",
 				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
 			],
@@ -15010,18 +14871,8 @@
 			"conditionInflict": [
 				"bleeding|guildwars"
 			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
-				}
-			],
 			"components": {
-				"s": true,
-				"m": "a melee weapon worth at least 1 sp"
+				"v": true
 			}
 		},
 		{
@@ -15251,7 +15102,7 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
+					"number": 0,
 					"unit": "special",
 					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
@@ -15554,8 +15405,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Ranged weapon"
 				}
 			],
 			"range": {
@@ -15572,7 +15424,7 @@
 			],
 			"entries": [
 				"Attempt to cripple a creature, by pinning down their foot to the floor.",
-				"Choose one creature that you can see within range of your weapon. Make a ranged weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and must make a Dexterity saving throw. On a failed save, the target is {@condition crippled|GuildWars} for the duration.",
+				"On a hit, the target suffers the weapon attack's normal effects and must make a Dexterity saving throw. On a failed save, the target is {@condition crippled|GuildWars} for the duration.",
 				"At the end of each of its turns, the target can make a Dexterity saving throw. On a success, the condition ends."
 			],
 			"source": "GuildWars",
@@ -15608,18 +15460,8 @@
 			"conditionInflict": [
 				"crippled|guildwars"
 			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
-				}
-			],
 			"components": {
-				"s": true,
-				"m": "a ranged weapon worth at least 1 sp"
+				"v": true
 			}
 		},
 		{
@@ -17123,8 +16965,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
 			],
 			"range": {
@@ -17141,7 +16984,7 @@
 			],
 			"entries": [
 				"Deliver a swift chop which is sure to hit.",
-				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d8} damage. ",
+				"On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d8} damage. ",
 				"On a miss, the target takes {@damage 1d8} damage and must make a Constitution saving throw. On a failed save, the target gains a {@condition deep wound|GuildWars} for the duration. ",
 				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
 			],
@@ -17176,20 +17019,10 @@
 				}
 			],
 			"components": {
-				"s": true,
-				"m": "a melee weapon worth at least 1 sp"
+				"v": true
 			},
 			"conditionInflict": [
 				"deep wound|guildwars"
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the number of attacks increases by 1 for every two slot levels above 2nd. "
-					]
-				}
 			]
 		},
 		{
@@ -17902,8 +17735,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Ranged weapon"
 				}
 			],
 			"range": {
@@ -17921,7 +17755,7 @@
 			"entries": [
 				"{@bold Elite}, {@bold Unblockable}",
 				"Fire a shot attempting to cripple a creature.",
-				"Choose one creature that you can see within range of your weapon. Make a ranged weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and is {@condition crippled|GuildWars} for the duration.",
+				"On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d6} damage and is {@condition crippled|GuildWars} for the duration.",
 				"At the end of each of its turns, the target can make a Dexterity saving throw. On a success, the condition ends."
 			],
 			"source": "GuildWars",
@@ -17963,20 +17797,10 @@
 				}
 			],
 			"components": {
-				"s": true,
-				"m": "a ranged weapon worth at least 1 sp"
+				"v": true
 			},
 			"conditionInflict": [
 				"crippled|guildwars"
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
-				}
 			]
 		},
 		{
@@ -19595,9 +19419,10 @@
 			"entries": [
 				"{@bold Elite}, {@bold Enchantment}",
 				"Conjure up an Illusionary Sword for the duration. ",
-				"This magic sword lasts until the spell ends. It counts as a simple melee weapon with which you are proficient. It deals {@damage 2d8} psychic damage on a hit or miss, cannot critical hit and has the finesse and light property.",
+				"This magic sword lasts until the spell ends. It counts as a simple melee weapon with which you are proficient. It deals {@damage 2d8} psychic damage on a hit or miss, cannot critical hit and has the finesse, light and thrown property.",
 				"While wielding at least one sword conjured by this spell, when you take damage, you can roll {@dice 1d4} for every two illusion themed spells you have prepared and subtract the number rolled from the damage. ",
-				"You can conjure up to two swords, which can only be wielded by you."
+				"You can conjure up to two swords, which can only be wielded by you.",
+				"If you drop the sword or throw it, it dissipates at the end of the turn. Thereafter, while the spell persists, you can use a bonus action to cause all swords conjured by this spell to reappear in your hands."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -20403,7 +20228,7 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
+					"number": 0,
 					"unit": "special",
 					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
@@ -20805,7 +20630,7 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
+					"number": 0,
 					"unit": "special",
 					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
@@ -21626,7 +21451,7 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
+					"number": 0,
 					"unit": "special",
 					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
@@ -21698,8 +21523,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Ranged weapon"
 				}
 			],
 			"range": {
@@ -21712,8 +21538,8 @@
 			],
 			"entries": [
 				"{@bold Elite}",
-				"Fire an all or nothing shot, which allows you to immediately cast another spell on a hit, but prevents you from using spells or abilities on a miss.",
-				"Choose one creature that you can see within range of your weapon. Make a ranged weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects, and you can immediately cast another spell without requiring an action.",
+				"Fire an all or nothing shot, which allows you to immediately attack again on a hit, but prevents you from using spells or abilities on a miss.",
+				"On a hit, the target suffers the weapon attack's normal effects, and you can immediately attack again.",
 				"On a miss, you cannot cast spells or use abilities until the end of your next turn."
 			],
 			"source": "GuildWars",
@@ -21733,8 +21559,7 @@
 				]
 			},
 			"components": {
-				"s": true,
-				"m": "a ranged weapon worth at least 1 sp"
+				"v": true
 			},
 			"backgrounds": [
 				{
@@ -21752,15 +21577,6 @@
 				{
 					"name": "Elite",
 					"source": "GuildWars"
-				}
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
 				}
 			]
 		},
@@ -22103,15 +21919,13 @@
 			"school": "T",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
 			],
 			"range": {
-				"type": "point",
-				"distance": {
-					"type": "self"
-				}
+				"type": "special"
 			},
 			"duration": [
 				{
@@ -22121,7 +21935,7 @@
 			"entries": [
 				"{@bold Elite}",
 				"Perform a magical flourish, allowing you to immediately afterward cast an attack spell.",
-				"Cast any non-elite spell which requires a weapon attack roll, which is of a level equal or lower than this one, ignoring requirements, casting time and components."
+				"Cast any non-elite spell which has a Special casting time, which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike, which is of a level equal or lower than this one, ignoring requirements, casting time and components."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -22158,17 +21972,8 @@
 				}
 			],
 			"components": {
-				"s": true
-			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the level of the spell increases by 1 for each slot level above 1st."
-					]
-				}
-			]
+				"v": true
+			}
 		},
 		{
 			"name": "Poison Arrow",
@@ -24306,8 +24111,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
 			],
 			"range": {
@@ -24320,7 +24126,7 @@
 			],
 			"entries": [
 				"Attempt a bull's strike, knocking {@condition prone} moving foes.",
-				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and if the target willingly moved on its last turn, the target takes an additional {@damage 2d8} damage and must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}."
+				"On a hit, the target suffers the weapon attack's normal effects and if the target willingly moved on its last turn, the target takes an additional {@damage 2d6} damage and must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -24352,22 +24158,12 @@
 					"source": "GuildWars"
 				}
 			],
-			"components": {
-				"s": true,
-				"m": "a melee weapon worth at least 1 sp"
-			},
 			"conditionInflict": [
 				"prone"
 			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
-				}
-			]
+			"components": {
+				"v": true
+			}
 		},
 		{
 			"name": "Plague Touch",
@@ -24444,8 +24240,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
 			],
 			"range": {
@@ -24458,7 +24255,7 @@
 			],
 			"entries": [
 				"Channel the power of the griffon, dive attacking, knocking {@condition prone} and damaging even on a miss.",
-				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 2d8} damage.",
+				"On a hit, the target suffers the weapon attack's normal effects and takes {@damage 2d8} damage.",
 				"On a miss, the target takes {@damage 2d8} damage and must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}."
 			],
 			"source": "GuildWars",
@@ -24494,18 +24291,8 @@
 			"conditionInflict": [
 				"prone"
 			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 4th level or higher, the number of attacks increases by 1 for every two slot levels above 3rd. "
-					]
-				}
-			],
 			"components": {
-				"s": true,
-				"m": "a melee weapon worth at least 1 sp"
+				"v": true
 			}
 		},
 		{
@@ -24514,7 +24301,7 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
+					"number": 0,
 					"unit": "special",
 					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
@@ -25293,8 +25080,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Ranged weapon"
 				}
 			],
 			"range": {
@@ -25308,7 +25096,7 @@
 			"entries": [
 				"{@bold Unblockable}",
 				"Fire an extremely precise shot, which deals more damage on a hit and ignores any temporary AC bonuses.",
-				"Choose one creature that you can see within range of your weapon. Make a ranged weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d8} damage."
+				"On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d8} damage."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -25327,8 +25115,7 @@
 				]
 			},
 			"components": {
-				"s": true,
-				"m": "a ranged weapon worth at least 1 sp"
+				"v": true
 			},
 			"backgrounds": [
 				{
@@ -25346,15 +25133,6 @@
 				{
 					"name": "Unblockable",
 					"source": "GuildWars"
-				}
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
 				}
 			]
 		},
@@ -26316,8 +26094,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Ranged weapon"
 				}
 			],
 			"range": {
@@ -26330,8 +26109,8 @@
 			],
 			"entries": [
 				"Fire a shot, determined to hit, allowing you to immediately cast a spell if you miss.",
-				"Choose one creature that you can see within range of your weapon. Make a ranged weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 2d8} damage.",
-				"On a miss, you can immediately cast another spell without requiring an action."
+				"On a hit, the target suffers the weapon attack's normal effects and takes {@damage 2d8} damage.",
+				"On a miss, you can immediately attack again."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -26350,8 +26129,7 @@
 				]
 			},
 			"components": {
-				"s": true,
-				"m": "a ranged weapon worth at least 1 sp"
+				"v": true
 			},
 			"backgrounds": [
 				{
@@ -26365,15 +26143,6 @@
 				{
 					"name": "Marksmanship",
 					"source": "GuildWars"
-				}
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
 				}
 			]
 		},
@@ -27168,7 +26937,7 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
+					"number": 0,
 					"unit": "special",
 					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
@@ -27655,8 +27424,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
 			],
 			"range": {
@@ -27673,7 +27443,7 @@
 			],
 			"entries": [
 				"Strike a {@condition prone} creature so hard that the blood spatter of the impact blinds adjacent creatures.",
-				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and, if the target is knocked {@condition prone}, target each creature other than you in a 5-foot-radius sphere centered on the target. Each new target is {@condition blinded} for the duration.",
+				"On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d6} damage and, if the target is knocked {@condition prone}, target each creature other than you in a 5-foot-radius sphere centered on the target. Each new target is {@condition blinded} for the duration.",
 				"At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
 			],
 			"source": "GuildWars",
@@ -27692,21 +27462,6 @@
 					}
 				]
 			},
-			"components": {
-				"s": true,
-				"m": {
-					"text": "a melee weapon worth at least 1 sp"
-				}
-			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
-				}
-			],
 			"savingThrow": [
 				"constitution"
 			],
@@ -27733,7 +27488,10 @@
 			"conditionInflict": [
 				"blinded",
 				"prone"
-			]
+			],
+			"components": {
+				"v": true
+			}
 		},
 		{
 			"name": "Ward Against Melee",
@@ -28115,8 +27873,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
 			],
 			"range": {
@@ -28133,7 +27892,7 @@
 			],
 			"entries": [
 				"You attempt a desperate blow, uncertain of the outcome.",
-				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d12} damage and must make a Constitution saving throw. On a failed save, roll a {@dice d4}. Depending on the result, the target gains one of the following conditions for the duration: 1 - {@condition Deep Wound|GuildWars}, 2 - {@condition Weakness|GuildWars}, 3 - {@condition Bleeding|GuildWars} ({@damage 2d4} damage), 4 - {@condition Crippled|GuildWars}.",
+				"On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d12} damage and must make a Constitution saving throw. On a failed save, roll a {@dice d4}. Depending on the result, the target gains one of the following conditions for the duration: 1 - {@condition Deep Wound|GuildWars}, 2 - {@condition Weakness|GuildWars}, 3 - {@condition Bleeding|GuildWars} ({@damage 2d4} damage), 4 - {@condition Crippled|GuildWars}.",
 				"You are knocked {@condition prone}, and cannot stand up this turn.",
 				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
 			],
@@ -28154,10 +27913,7 @@
 				]
 			},
 			"components": {
-				"s": true,
-				"m": {
-					"text": "a melee weapon worth at least 1 sp"
-				}
+				"v": true
 			},
 			"areaTags": [
 				"ST"
@@ -28177,15 +27933,6 @@
 				{
 					"name": "Tactics",
 					"source": "GuildWars"
-				}
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
 				}
 			]
 		},
@@ -29441,8 +29188,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
 			],
 			"range": {
@@ -29458,8 +29206,8 @@
 				}
 			],
 			"entries": [
-				"Strike a creature while they are {@condition prone} to crush an appendage, inflicting a {@condition deep wound|GuildWars}.",
-				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d8} damage and, if the target is knocked {@condition prone}, suffers from a {@condition deep wound|GuildWars} for the duration.",
+				"Strike a creature while they are prone to crush an appendage, inflicting a {@condition deep wound|GuildWars}.",
+				"On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d8} damage and, if the target is knocked {@condition prone}, suffers from a {@condition deep wound|GuildWars} for the duration.",
 				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
 			],
 			"source": "GuildWars",
@@ -29478,21 +29226,6 @@
 					}
 				]
 			},
-			"components": {
-				"s": true,
-				"m": {
-					"text": "a melee weapon worth at least 1 sp"
-				}
-			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
-				}
-			],
 			"savingThrow": [
 				"constitution"
 			],
@@ -29518,7 +29251,10 @@
 					"name": "Hammer Mastery",
 					"source": "GuildWars"
 				}
-			]
+			],
+			"components": {
+				"v": true
+			}
 		},
 		{
 			"name": "Crystal Wave",
@@ -30910,7 +30646,7 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
+					"number": 0,
 					"unit": "special",
 					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
@@ -31380,8 +31116,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
 			],
 			"range": {
@@ -31395,7 +31132,7 @@
 			"entries": [
 				"{@bold Unblockable}",
 				"Perform a pure strike, untainted by any stances.",
-				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 2d8} damage.",
+				"On a hit, the target suffers the weapon attack's normal effects and takes {@damage 3d6} damage.",
 				"If you are not in a stance, this attack gains the Unblockable property."
 			],
 			"source": "GuildWars",
@@ -31432,18 +31169,8 @@
 					"source": "GuildWars"
 				}
 			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
-				}
-			],
 			"components": {
-				"s": true,
-				"m": "a melee weapon worth at least 1 sp"
+				"v": true
 			}
 		},
 		{
@@ -36245,8 +35972,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon with the thrown property"
 				}
 			],
 			"range": {
@@ -36260,7 +35988,7 @@
 			"entries": [
 				"{@bold Armor Penetration}",
 				"Sheath your weapon in lightning, penetrating your enemies defenses.",
-				"Choose one creature that you can see within range of your weapon. Make a melee or ranged weapon attack against the target (the ranged weapon attack can be made with a -2 penalty, to have the weapon immediately return to you, after it was made). On a hit, the target suffers the weapon attack's normal effects and takes {@damage 2d8} lightning damage."
+				"On a hit, the target suffers the weapon attack's normal effects and takes {@damage 2d8} lightning damage."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -36297,18 +36025,8 @@
 				}
 			],
 			"components": {
-				"s": true,
-				"m": "a melee weapon worth at least 1 sp with the thrown property"
-			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for each slot level above 1st. "
-					]
-				}
-			]
+				"v": true
+			}
 		},
 		{
 			"name": "Berserker Stance",
@@ -37082,8 +36800,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon with the thrown property"
 				}
 			],
 			"range": {
@@ -37100,7 +36819,7 @@
 			],
 			"entries": [
 				"Empower your spear to fell great enemies, inflicting a {@condition deep wound|GuildWars} to a creature with more health than you.",
-				"Choose one creature that you can see within range of your weapon. Make a melee or ranged weapon attack against the target (the ranged weapon attack can be made with a -2 penalty, to have the weapon immediately return to you, after it was made). On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d8} damage and if you have less hit points than the target, must make a Constitution saving throw. On a failed save, the target gains a {@condition deep wound|GuildWars} for the duration.",
+				"On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d8} damage and if you have less hit points than the target, must make a Constitution saving throw. On a failed save, the target gains a {@condition deep wound|GuildWars} for the duration.",
 				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
 			],
 			"source": "GuildWars",
@@ -37119,19 +36838,6 @@
 					}
 				]
 			},
-			"components": {
-				"s": true,
-				"m": "a melee weapon worth at least 1 sp with the thrown property"
-			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the number of attacks increases by 1 for each slot level above 2nd. "
-					]
-				}
-			],
 			"backgrounds": [
 				{
 					"name": "Kourna",
@@ -37148,7 +36854,10 @@
 			],
 			"conditionInflict": [
 				"deep wound|guildwars"
-			]
+			],
+			"components": {
+				"v": true
+			}
 		},
 		{
 			"name": "Disrupting Throw",
@@ -39484,8 +39193,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon with the light and thrown property"
 				}
 			],
 			"range": {
@@ -39505,7 +39215,7 @@
 			},
 			"entries": [
 				"Throw out a crippling projectile.",
-				"Choose one creature that you can see within the throw range of your weapon. Make a ranged weapon attack against the target (the ranged weapon attack can be made with a -2 penalty, to have the weapon immediately return to you, after it was made). On a hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw. On a failed save, the target becomes {@condition crippled|GuildWars} for the duration.",
+				"On a hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw. On a failed save, the target becomes {@condition crippled|GuildWars} for the duration.",
 				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends.",
 				"At 5th level, the ranged attack also deals an extra {@damage 1d8} piercing damage to the target on a hit. This damage increases by {@dice 1d8} when you reach 11th level ({@dice 2d8}), and 17th level ({@dice 3d8})."
 			],
@@ -39540,8 +39250,7 @@
 				}
 			],
 			"components": {
-				"s": true,
-				"m": "a melee weapon worth at least 1 sp with the light and thrown property"
+				"v": true
 			},
 			"conditionInflict": [
 				"crippled|guildwars"
@@ -40002,8 +39711,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon with the light and thrown property"
 				}
 			],
 			"range": {
@@ -40024,8 +39734,8 @@
 			"entries": [
 				"{@bold Lead Attack}",
 				"Throw out three projectiles in quick succession.",
-				"Choose one creature that you can see within the throw range of your weapon. Make three ranged weapon attacks against the target (a ranged weapon attack can be made with a -2 penalty, to have the weapon immediately return to you, after it was made). On a hit, the target suffers the weapon attack's normal effects.",
-				"The number of attacks you can make when you cast this spell increases by 1 when you reach 5th level (4 attacks), 11th level (5 attacks), and 17th level (6 attacks)."
+				"Choose three creatures that you can see within the throw range of your weapon. Make a ranged weapon attacks against each target. On a hit, a target suffers the weapon attack's normal effects.",
+				"The number of targets you can target when you cast this spell increases by 1 when you reach 5th level (4 targets), 11th level (5 targets), and 17th level (6 targets)."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -40062,8 +39772,7 @@
 				}
 			],
 			"components": {
-				"s": true,
-				"m": "a melee weapon worth at least 1 sp with the light and thrown property"
+				"v": true
 			}
 		},
 		{
@@ -40480,8 +40189,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
 			],
 			"range": {
@@ -40494,7 +40204,7 @@
 			],
 			"entries": [
 				"Channel your fury into a strike, gaining adrenaline on a miss.",
-				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d8} damage.",
+				"On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d8} damage.",
 				"On a miss, you gain {@dice 1d4} strikes of adrenaline."
 			],
 			"source": "GuildWars",
@@ -40527,18 +40237,8 @@
 					"source": "GuildWars"
 				}
 			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
-				}
-			],
 			"components": {
-				"s": true,
-				"m": "a melee weapon worth at least 1 sp"
+				"v": true
 			}
 		},
 		{
@@ -41642,8 +41342,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
 			],
 			"range": {
@@ -41659,7 +41360,7 @@
 			},
 			"entries": [
 				"Gloat in your victory over a creature, gaining health if you have more health than them.",
-				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d8} damage and if you have more hit points than the target, you regain hit points equal to {@dice 2d8}."
+				"On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d8} damage and if you have more hit points than the target, you regain hit points equal to {@dice 2d8}."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -41692,18 +41393,8 @@
 				}
 			],
 			"components": {
-				"s": true,
-				"m": "a melee weapon worth at least 1 sp"
-			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
-				}
-			]
+				"v": true
+			}
 		},
 		{
 			"name": "Yeti Smash",
@@ -41711,8 +41402,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
 			],
 			"range": {
@@ -41928,12 +41620,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
-				},
-				{
-					"number": 1,
-					"unit": "bonus"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon with the light property"
 				}
 			],
 			"range": {
@@ -41947,7 +41636,7 @@
 			"entries": [
 				"{@bold Dual Attack}",
 				"Create a blossom of death, by making your weapons dance through your foes.",
-				"Choose one creature that you can see within range of your weapon. Make two melee weapon attacks against the target. On a hit, the target and all other creatures other than you in a 5-foot-radius centered on the target suffer the weapon attack's normal effects and take {@damage 1d6} damage,"
+				"Make two melee weapon attacks against the target. On a hit, the target and all other creatures other than you in a 5-foot-radius centered on the target suffer the weapon attack's normal effects and take {@damage 1d6} damage."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -41976,19 +41665,6 @@
 			],
 			"miscTags": [
 				"AAD"
-			],
-			"components": {
-				"s": true,
-				"m": "a melee weapon worth at least 1 sp with the light property"
-			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
-				}
 			],
 			"backgrounds": [
 				{
@@ -42332,6 +42008,159 @@
 						"When you cast this spell using a spell slot of 3rd level or higher, the damage of the corrupted condition increases by {@dice 1d6} for each slot level above 2nd."
 					]
 				}
+			]
+		},
+		{
+			"name": "Mend Body and Soul",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Channel the energy of nearby spirits to heal and cleanse a creature.",
+				"Choose one creature that you can see within range. The target regains hit points equal to {@dice 2d4} and you end the latest N of the following conditions on the target: {@condition Corruption|GuildWars}, {@condition Disease|GuildWars}, {@condition blinded|phb|Blindness}, {@condition Dazed|GuildWars}, {@condition Bleeding|GuildWars}, {@condition Crippled|GuildWars}, {@condition Burning|GuildWars}, {@condition Weakness|GuildWars}, {@condition Cracked Armor|GuildWars}, or {@condition Deep Wound|GuildWars}, where N is the number of friendly summoning rituals within range."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Mend Body and Soul",
+					"Spell. Target ally is healed for 20...96...115 Health. That ally loses one condition for each spirit within earshot."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/8/84/Mend_Body_and_Soul.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Restoration Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@dice 2d4} for each slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"name": "Expunge Enchantments",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 3
+					}
+				}
+			],
+			"entries": [
+				"Hit a creature with an expunging strike, removing beneficial spells.",
+				"Choose one creature within range. Make a melee spell attack against the target. On a hit, the latest beneficial spell on the target ends. Additionally, you cannot cast spells which require an attack roll, except this one, for the duration, and you end additional beneficial spells equal to the spells disabled by this spell."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Expunge Enchantments",
+					"Skill. Target foe loses 1 enchantment. All of your other non-attack skills are disabled for 10...6...5 seconds. For each skill disabled in this way, target touched foe loses 1 additional enchantment. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/2/29/Expunge_Enchantments.jpg"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level, the duration decreases to 2 rounds.",
+						"When you cast this spell using a spell slot of 4th level or higher, the duration decreases to 1 round.",
+						"When you cast this spell using a spell slot of 5th level or higher, one additional spell ends for each slot level above 4th."
+					]
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Deadly Arts",
+					"source": "GuildWars"
+				}
+			],
+			"areaTags": [
+				"MT"
 			]
 		}
 	],

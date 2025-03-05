@@ -21981,8 +21981,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Ranged weapon"
 				}
 			],
 			"range": {
@@ -22000,7 +22001,7 @@
 			"entries": [
 				"{@bold Elite}",
 				"Attempt to poison and corrupt a creature, by hitting them with a {@condition poisoned} tipped arrow.",
-				"Choose one creature that you can see within range of your weapon. Make a ranged weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw. On a failed save, the target is {@condition poisoned} and {@condition corruption|GuildWars|corrupted} for the duration, taking {@damage 2d4} damage.",
+				"On a hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw. On a failed save, the target is {@condition poisoned} and {@condition corruption|GuildWars|corrupted} for the duration, taking {@damage 2d4} damage.",
 				"At the end of each of its turns, the target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends."
 			],
 			"source": "GuildWars",
@@ -22023,19 +22024,6 @@
 				"corruption|guildwars",
 				"poisoned"
 			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
-				}
-			],
-			"components": {
-				"s": true,
-				"m": "a ranged weapon worth at least 1 sp"
-			},
 			"backgrounds": [
 				{
 					"name": "Southern Shiverpeaks",
@@ -22053,7 +22041,10 @@
 					"name": "Elite",
 					"source": "GuildWars"
 				}
-			]
+			],
+			"components": {
+				"v": true
+			}
 		},
 		{
 			"name": "Spiteful Spirit",
@@ -33269,17 +33260,17 @@
 			],
 			"entries": [
 				"Channel your magic into tracking down and charming a wild animal.",
-				"As part of the casting of this spell, you can spend {@dice 1d4} hours magically searching for an appropriate beast to charm. If you do so, roll on the {@table Charm Animal Beast List - 1st Level|GuildWars} table by making either a Wisdom (Animal Handling), a Wisdom (Survival) or an Intelligence (Nature) check to determine which beast will appear (your DM might decide to replace animals from the list).",
-				"When you find an appropriate beast to charm, either by searching for it or having already encountered one (in which case it needs to be challenge rating 1 or lower), you can attempt to charm it by touching it. ",
+				"As part of the casting of this spell, you can spend {@dice 1d4} hours magically searching for an appropriate creature to charm. If you do so, roll on the {@table Charm Animal Beast List|GuildWars} table by making either a Wisdom (Animal Handling), a Wisdom (Survival) or an Intelligence (Nature) check to determine which beast will appear (your DM might decide to replace animals from the list).",
+				"When you find an appropriate creature to charm, either by searching for it or having already encountered one (in which case it needs to be a beast of challenge rating 1 or lower, with an Intelligence of 3 or less), you can attempt to charm it by touching it. ",
 				"When you successfully touch it, it must make Wisdom saving throw. On a failed save, the target is {@condition charmed} by you until next dawn, at which point you can expend a spell slot of equal or higher level than the one used in the casting of this spell to maintain the {@condition charmed} condition on the beast. To do this, you must have the Charm Animal spell prepared, or any other spell which says that it can be used instead.",
-				"The {@condition charmed} creature is friendly to you and your companions. While the creature is {@condition charmed}, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.",
-				"After charming an animal with this spell, you cannot cast this spell again until {@dice 2d6} days have passed."
+				"The {@condition charmed} creature is friendly to you and your companions. While the creature is {@condition charmed}, you have a telepathic link with it as long as the two of you are on the same plane of existence and within 1 mile of each other. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.",
+				"After charming a creature with this spell, you cannot cast this spell again until {@dice 1d6} days have passed."
 			],
 			"source": "GuildWars",
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a morsel of food"
+				"m": "expensive feed worth 100 GP"
 			},
 			"conditionInflict": [
 				"charmed"
@@ -33289,16 +33280,16 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the duration to find an appropriate animal increases by 1 hour, the table changes to the one appropriate to the spell level and the maximum challenge rating for beasts not found via a table increases by 1 for each slot level above 1st.",
-						"Other tables:",
-						"- {@table Charm Animal Beast List - 2nd Level|GuildWars}",
-						"- {@table Charm Animal Beast List - 3rd Level|GuildWars}",
-						"- {@table Charm Animal Beast List - 4th Level|GuildWars}",
-						"- {@table Charm Animal Beast List - 5th Level|GuildWars}",
-						"- {@table Charm Animal Beast List - 6th Level|GuildWars}",
-						"- {@table Charm Animal Beast List - 7th Level|GuildWars}",
-						"- {@table Charm Animal Beast List - 8th Level|GuildWars}",
-						"- {@table Charm Animal Beast List - 9th Level|GuildWars}"
+						"When you cast this spell using a spell slot of 2nd level or higher, the material cost increases according to the number in the table below, the duration to find an appropriate animal increases by {@dice 1d4} hours for each slot level above 1st, you gain a {@dice 1d4} bonus to the ability check for each slot level above 1st, the maximum challenge rating for beasts not found via a table increases by 1 for each slot level above 1st and the time until you can cast the spell again increases by {@dice 1d6} for each slot level above 1st.",
+						"Feed cost table:",
+						"- 2nd Level: - Feed Cost: 200 GP",
+						"- 3rd Level: - Feed Cost: 500 GP",
+						"- 4th Level: - Feed Cost: 1000 GP",
+						"- 5th Level: - Feed Cost: 1750 GP",
+						"- 6th Level: - Feed Cost: 3000 GP",
+						"- 7th Level: - Feed Cost: 5000 GP",
+						"- 8th Level: - Feed Cost: 9000 GP",
+						"- 9th Level: - Feed Cost: 15000 GP"
 					]
 				}
 			],
@@ -42166,13 +42157,13 @@
 	],
 	"table": [
 		{
-			"name": "Charm Animal Beast List - 1st Level",
-			"caption": "Charm Animal Beast List - 1st Level",
+			"name": "Charm Animal Beast List",
+			"caption": "Charm Animal Beast List",
 			"footnotes": [
-				"Anything below a 1 counts as a 1 and anything above a 20 counts as a 20."
+				"Anything below a 1 counts as a 1."
 			],
 			"intro": [
-				"Used in the casting of 1st level {@spell Charm Animal|GuildWars} spells."
+				"Used in the casting of the {@spell Charm Animal|GuildWars} Spell."
 			],
 			"source": "GuildWars",
 			"page": 0,
@@ -42187,92 +42178,92 @@
 			"rows": [
 				[
 					"1",
-					"{@creature Rat|MM}",
+					"{@creature Rat|XMM}",
 					"0"
 				],
 				[
 					"2",
-					"{@creature Fox|IDRotF}",
+					"{@creature Weasel|XMM}",
 					"0"
 				],
 				[
 					"3",
-					"{@creature Hawk|MM}",
+					"{@creature Hawk|XMM}",
 					"0"
 				],
 				[
 					"4",
-					"{@creature Owl|MM}",
+					"{@creature Owl|XMM}",
 					"0"
 				],
 				[
 					"5",
-					"{@creature Giant Rat|MM}",
+					"{@creature Giant Rat|XMM}",
 					"1/8"
 				],
 				[
 					"6",
-					"{@creature Mastiff|MM}",
+					"{@creature Mastiff|XMM}",
 					"1/8"
 				],
 				[
 					"7",
-					"{@creature Poisonous Snake|MM}",
+					"{@creature Venomous Snake|XMM}",
 					"1/8"
 				],
 				[
 					"8",
-					"{@creature Blood Hawk|MM}",
+					"{@creature Blood Hawk|XMM}",
 					"1/8"
 				],
 				[
 					"9",
-					"{@creature Boar|MM}",
+					"{@creature Boar|XMM}",
 					"1/4"
 				],
 				[
 					"10",
-					"{@creature Wolf|MM}",
+					"{@creature Wolf|XMM}",
 					"1/4"
 				],
 				[
 					"11",
-					"{@creature Elk|MM}",
+					"{@creature Elk|XMM}",
 					"1/4"
 				],
 				[
 					"12",
-					"{@creature Giant Owl|MM}",
+					"{@creature Pteranodon|XMM}",
 					"1/4"
 				],
 				[
 					"13",
-					"{@creature Oxen|PSZ}",
+					"{@creature Giant Goat|XMM}",
 					"1/2"
 				],
 				[
 					"14",
-					"{@creature Black Bear|MM}",
+					"{@creature Black Bear|XMM}",
 					"1/2"
 				],
 				[
 					"15",
-					"{@creature Jaculi|ToA}",
+					"{@creature Warhorse|XMM}",
 					"1/2"
 				],
 				[
 					"16",
-					"{@creature Moon Weaver|ToB3}",
+					"{@creature Giant Wasp|XMM}",
 					"1/2"
 				],
 				[
 					"17",
-					"{@creature Brown Bear|MM}",
+					"{@creature Brown Bear|XMM}",
 					"1"
 				],
 				[
 					"18",
-					"{@creature Dire Wolf|MM}",
+					"{@creature Dire Wolf|XMM}",
 					"1"
 				],
 				[
@@ -42284,1276 +42275,166 @@
 					"20",
 					"{@creature Large Drake|PSA}",
 					"1"
-				]
-			]
-		},
-		{
-			"name": "Charm Animal Beast List - 2nd Level",
-			"caption": "Charm Animal Beast List - 2nd Level",
-			"footnotes": [
-				"Anything below a 1 counts as a 1 and anything above a 20 counts as a 20."
-			],
-			"intro": [
-				"Used in the casting of 2nd level {@spell Charm Animal|GuildWars} spells."
-			],
-			"source": "GuildWars",
-			"page": 0,
-			"colLabels": [
-				"d20",
-				"Beast",
-				"CR"
-			],
-			"colStyles": [
-				"col-3 text-center"
-			],
-			"rows": [
-				[
-					"1",
-					"{@creature Giant Rat|MM}",
-					"1/8"
 				],
 				[
-					"2",
-					"{@creature Mastiff|MM}",
-					"1/8"
-				],
-				[
-					"3",
-					"{@creature Poisonous Snake|MM}",
-					"1/8"
-				],
-				[
-					"4",
-					"{@creature Blood Hawk|MM}",
-					"1/8"
-				],
-				[
-					"5",
-					"{@creature Boar|MM}",
-					"1/4"
-				],
-				[
-					"6",
-					"{@creature Wolf|MM}",
-					"1/4"
-				],
-				[
-					"7",
-					"{@creature Elk|MM}",
-					"1/4"
-				],
-				[
-					"8",
-					"{@creature Giant Owl|MM}",
-					"1/4"
-				],
-				[
-					"9",
-					"{@creature Oxen|PSZ}",
-					"1/2"
-				],
-				[
-					"10",
-					"{@creature Black Bear|MM}",
-					"1/2"
-				],
-				[
-					"11",
-					"{@creature Jaculi|ToA}",
-					"1/2"
-				],
-				[
-					"12",
-					"{@creature Moon Weaver|ToB3}",
-					"1/2"
-				],
-				[
-					"13",
-					"{@creature Brown Bear|MM}",
-					"1"
-				],
-				[
-					"14",
-					"{@creature Dire Wolf|MM}",
-					"1"
-				],
-				[
-					"15",
-					"{@creature Giant Raven|SKT}",
-					"1"
-				],
-				[
-					"16",
-					"{@creature Large Drake|PSA}",
-					"1"
-				],
-				[
-					"17",
-					"{@creature Cave Bear|MM}",
+					"21",
+					"{@creature Polar Bear|XMM}",
 					"2"
 				],
 				[
-					"18",
-					"{@creature Saber-Toothed Tiger|MM}",
+					"22",
+					"{@creature Saber-Toothed Tiger|XMM}",
 					"2"
 				],
 				[
-					"19",
-					"{@creature Megantereon|ToB3}",
+					"23",
+					"{@creature Allosaurus|XMM}",
 					"2"
 				],
 				[
-					"20",
-					"{@creature Young Bulette|PotA}",
-					"2"
-				]
-			]
-		},
-		{
-			"name": "Charm Animal Beast List - 3rd Level",
-			"caption": "Charm Animal Beast List - 3rd Level",
-			"footnotes": [
-				"Anything below a 1 counts as a 1 and anything above a 20 counts as a 20."
-			],
-			"intro": [
-				"Used in the casting of 3rd level {@spell Charm Animal|GuildWars} spells."
-			],
-			"source": "GuildWars",
-			"page": 0,
-			"colLabels": [
-				"d20",
-				"Beast",
-				"CR"
-			],
-			"colStyles": [
-				"col-3 text-center"
-			],
-			"rows": [
-				[
-					"1",
-					"{@creature Boar|MM}",
-					"1/4"
-				],
-				[
-					"2",
-					"{@creature Wolf|MM}",
-					"1/4"
-				],
-				[
-					"3",
-					"{@creature Elk|MM}",
-					"1/4"
-				],
-				[
-					"4",
-					"{@creature Giant Owl|MM}",
-					"1/4"
-				],
-				[
-					"5",
-					"{@creature Oxen|PSZ}",
-					"1/2"
-				],
-				[
-					"6",
-					"{@creature Black Bear|MM}",
-					"1/2"
-				],
-				[
-					"7",
-					"{@creature Jaculi|ToA}",
-					"1/2"
-				],
-				[
-					"8",
-					"{@creature Moon Weaver|ToB3}",
-					"1/2"
-				],
-				[
-					"9",
-					"{@creature Brown Bear|MM}",
-					"1"
-				],
-				[
-					"10",
-					"{@creature Dire Wolf|MM}",
-					"1"
-				],
-				[
-					"11",
-					"{@creature Giant Raven|SKT}",
-					"1"
-				],
-				[
-					"12",
-					"{@creature Large Drake|PSA}",
-					"1"
-				],
-				[
-					"13",
-					"{@creature Cave Bear|MM}",
+					"24",
+					"{@creature Wakwak|ToB3}",
 					"2"
 				],
 				[
-					"14",
-					"{@creature Saber-Toothed Tiger|MM}",
-					"2"
-				],
-				[
-					"15",
-					"{@creature Megantereon|ToB3}",
-					"2"
-				],
-				[
-					"16",
-					"{@creature Young Bulette|PotA}",
-					"2"
-				],
-				[
-					"17",
-					"{@creature Giant Scorpion|MM}",
+					"25",
+					"{@creature Giant Scorpion|XMM}",
 					"3"
 				],
 				[
-					"18",
+					"26",
+					"{@creature Ankylosaurus|XMM}",
+					"3"
+				],
+				[
+					"27",
 					"{@creature Grolar Bear|ToB3}",
 					"3"
 				],
 				[
-					"19",
-					"{@creature Hippopotamus|ToB3}",
+					"28",
+					"{@creature Amphiptere|ToB1-2023}",
 					"3"
 				],
 				[
-					"20",
-					"{@creature Amphiptere|ToB}",
-					"3"
-				]
-			]
-		},
-		{
-			"name": "Charm Animal Beast List - 4th Level",
-			"caption": "Charm Animal Beast List - 4th Level",
-			"footnotes": [
-				"Anything below a 1 counts as a 1 and anything above a 20 counts as a 20."
-			],
-			"intro": [
-				"Used in the casting of 4th level {@spell Charm Animal|GuildWars} spells."
-			],
-			"source": "GuildWars",
-			"page": 0,
-			"colLabels": [
-				"d20",
-				"Beast",
-				"CR"
-			],
-			"colStyles": [
-				"col-3 text-center"
-			],
-			"rows": [
-				[
-					"1",
-					"{@creature Oxen|PSZ}",
-					"1/2"
-				],
-				[
-					"2",
-					"{@creature Black Bear|MM}",
-					"1/2"
-				],
-				[
-					"3",
-					"{@creature Jaculi|ToA}",
-					"1/2"
-				],
-				[
-					"4",
-					"{@creature Moon Weaver|ToB3}",
-					"1/2"
-				],
-				[
-					"5",
-					"{@creature Brown Bear|MM}",
-					"1"
-				],
-				[
-					"6",
-					"{@creature Dire Wolf|MM}",
-					"1"
-				],
-				[
-					"7",
-					"{@creature Giant Raven|SKT}",
-					"1"
-				],
-				[
-					"8",
-					"{@creature Large Drake|PSA}",
-					"1"
-				],
-				[
-					"9",
-					"{@creature Cave Bear|MM}",
-					"2"
-				],
-				[
-					"10",
-					"{@creature Saber-Toothed Tiger|MM}",
-					"2"
-				],
-				[
-					"11",
-					"{@creature Megantereon|ToB3}",
-					"2"
-				],
-				[
-					"12",
-					"{@creature Young Bulette|PotA}",
-					"2"
-				],
-				[
-					"13",
-					"{@creature Giant Scorpion|MM}",
-					"3"
-				],
-				[
-					"14",
-					"{@creature Grolar Bear|ToB3}",
-					"3"
-				],
-				[
-					"15",
-					"{@creature Hippopotamus|ToB3}",
-					"3"
-				],
-				[
-					"16",
-					"{@creature Amphiptere|ToB}",
-					"3"
-				],
-				[
-					"17",
-					"{@creature Elephant|MM}",
+					"29",
+					"{@creature Elephant|XMM}",
 					"4"
 				],
 				[
-					"18",
-					"{@creature Carrion Beetle|ToB}",
+					"30",
+					"{@creature Hippopotamus|XMM}",
 					"4"
 				],
 				[
-					"19",
+					"31",
 					"{@creature Dire Pangolin|ToB3}",
 					"4"
 				],
 				[
-					"20",
-					"{@creature Jubjub Bird|ToB3}",
-					"4"
-				]
-			]
-		},
-		{
-			"name": "Charm Animal Beast List - 5th Level",
-			"caption": "Charm Animal Beast List - 5th Level",
-			"footnotes": [
-				"Anything below a 1 counts as a 1 and anything above a 20 counts as a 20."
-			],
-			"intro": [
-				"Used in the casting of 5th level {@spell Charm Animal|GuildWars} spells."
-			],
-			"source": "GuildWars",
-			"page": 0,
-			"colLabels": [
-				"d20",
-				"Beast",
-				"CR"
-			],
-			"colStyles": [
-				"col-3 text-center"
-			],
-			"rows": [
-				[
-					"1",
-					"{@creature Brown Bear|MM}",
-					"1"
-				],
-				[
-					"2",
-					"{@creature Dire Wolf|MM}",
-					"1"
-				],
-				[
-					"3",
-					"{@creature Giant Raven|SKT}",
-					"1"
-				],
-				[
-					"4",
-					"{@creature Large Drake|PSA}",
-					"1"
-				],
-				[
-					"5",
-					"{@creature Cave Bear|MM}",
-					"2"
-				],
-				[
-					"6",
-					"{@creature Saber-Toothed Tiger|MM}",
-					"2"
-				],
-				[
-					"7",
-					"{@creature Megantereon|ToB3}",
-					"2"
-				],
-				[
-					"8",
-					"{@creature Young Bulette|PotA}",
-					"2"
-				],
-				[
-					"9",
-					"{@creature Giant Scorpion|MM}",
-					"3"
-				],
-				[
-					"10",
-					"{@creature Grolar Bear|ToB3}",
-					"3"
-				],
-				[
-					"11",
-					"{@creature Hippopotamus|ToB3}",
-					"3"
-				],
-				[
-					"12",
-					"{@creature Amphiptere|ToB}",
-					"3"
-				],
-				[
-					"13",
-					"{@creature Elephant|MM}",
-					"4"
-				],
-				[
-					"14",
-					"{@creature Carrion Beetle|ToB}",
-					"4"
-				],
-				[
-					"15",
-					"{@creature Dire Pangolin|ToB3}",
-					"4"
-				],
-				[
-					"16",
+					"32",
 					"{@creature Jubjub Bird|ToB3}",
 					"4"
 				],
 				[
-					"17",
-					"{@creature Ammit|PSA}",
+					"33",
+					"{@creature Triceratops|XMM}",
 					"5"
 				],
 				[
-					"18",
-					"{@creature Giant Crocodile|MM}",
+					"34",
+					"{@creature Giant Crocodile|XMM}",
 					"5"
 				],
 				[
-					"19",
+					"35",
 					"{@creature Sailback|PSX}",
 					"5"
 				],
 				[
-					"20",
-					"{@creature Kongamato|ToB}",
-					"5"
-				]
-			]
-		},
-		{
-			"name": "Charm Animal Beast List - 6th Level",
-			"caption": "Charm Animal Beast List - 6th Level",
-			"footnotes": [
-				"Anything below a 1 counts as a 1 and anything above a 20 counts as a 20."
-			],
-			"intro": [
-				"Used in the casting of 6th level {@spell Charm Animal|GuildWars} spells."
-			],
-			"source": "GuildWars",
-			"page": 0,
-			"colLabels": [
-				"d20",
-				"Beast",
-				"CR"
-			],
-			"colStyles": [
-				"col-3 text-center"
-			],
-			"rows": [
-				[
-					"1",
-					"{@creature Cave Bear|MM}",
-					"2"
-				],
-				[
-					"2",
-					"{@creature Saber-Toothed Tiger|MM}",
-					"2"
-				],
-				[
-					"3",
-					"{@creature Megantereon|ToB3}",
-					"2"
-				],
-				[
-					"4",
-					"{@creature Young Bulette|PotA}",
-					"2"
-				],
-				[
-					"5",
-					"{@creature Giant Scorpion|MM}",
-					"3"
-				],
-				[
-					"6",
-					"{@creature Grolar Bear|ToB3}",
-					"3"
-				],
-				[
-					"7",
-					"{@creature Hippopotamus|ToB3}",
-					"3"
-				],
-				[
-					"8",
-					"{@creature Amphiptere|ToB}",
-					"3"
-				],
-				[
-					"9",
-					"{@creature Elephant|MM}",
-					"4"
-				],
-				[
-					"10",
-					"{@creature Carrion Beetle|ToB}",
-					"4"
-				],
-				[
-					"11",
-					"{@creature Dire Pangolin|ToB3}",
-					"4"
-				],
-				[
-					"12",
-					"{@creature Jubjub Bird|ToB3}",
-					"4"
-				],
-				[
-					"13",
-					"{@creature Ammit|PSA}",
+					"36",
+					"{@creature Kongamato|ToB1-2023}",
 					"5"
 				],
 				[
-					"14",
-					"{@creature Giant Crocodile|MM}",
-					"5"
-				],
-				[
-					"15",
-					"{@creature Sailback|PSX}",
-					"5"
-				],
-				[
-					"16",
-					"{@creature Kongamato|ToB}",
-					"5"
-				],
-				[
-					"17",
-					"{@creature Mammoth|MM}",
+					"37",
+					"{@creature Mammoth|XMM}",
 					"6"
 				],
 				[
-					"18",
+					"38",
 					"{@creature Akhlut|ToB2}",
 					"6"
 				],
 				[
-					"19",
+					"39",
 					"{@creature Samurai Crab|ToB3}",
 					"6"
 				],
 				[
-					"20",
-					"{@creature Wakewyrm|HWCS}",
-					"6"
-				]
-			]
-		},
-		{
-			"name": "Charm Animal Beast List - 7th Level",
-			"caption": "Charm Animal Beast List - 7th Level",
-			"footnotes": [
-				"Anything below a 1 counts as a 1 and anything above a 20 counts as a 20."
-			],
-			"intro": [
-				"Used in the casting of 7th level {@spell Charm Animal|GuildWars} spells."
-			],
-			"source": "GuildWars",
-			"page": 0,
-			"colLabels": [
-				"d20",
-				"Beast",
-				"CR"
-			],
-			"colStyles": [
-				"col-3 text-center"
-			],
-			"rows": [
-				[
-					"1",
-					"{@creature Giant Scorpion|MM}",
-					"3"
-				],
-				[
-					"2",
-					"{@creature Grolar Bear|ToB3}",
-					"3"
-				],
-				[
-					"3",
-					"{@creature Hippopotamus|ToB3}",
-					"3"
-				],
-				[
-					"4",
-					"{@creature Amphiptere|ToB}",
-					"3"
-				],
-				[
-					"5",
-					"{@creature Elephant|MM}",
-					"4"
-				],
-				[
-					"6",
-					"{@creature Carrion Beetle|ToB}",
-					"4"
-				],
-				[
-					"7",
-					"{@creature Dire Pangolin|ToB3}",
-					"4"
-				],
-				[
-					"8",
-					"{@creature Jubjub Bird|ToB3}",
-					"4"
-				],
-				[
-					"9",
-					"{@creature Ammit|PSA}",
-					"5"
-				],
-				[
-					"10",
-					"{@creature Giant Crocodile|MM}",
-					"5"
-				],
-				[
-					"11",
-					"{@creature Sailback|PSX}",
-					"5"
-				],
-				[
-					"12",
-					"{@creature Kongamato|ToB}",
-					"5"
-				],
-				[
-					"13",
-					"{@creature Mammoth|MM}",
+					"40",
+					"{@creature Wakewyrm|humblewoodcampaignsetting}",
 					"6"
 				],
 				[
-					"14",
-					"{@creature Akhlut|ToB2}",
-					"6"
-				],
-				[
-					"15",
-					"{@creature Samurai Crab|ToB3}",
-					"6"
-				],
-				[
-					"16",
-					"{@creature Wakewyrm|HWCS}",
-					"6"
-				],
-				[
-					"17",
+					"41",
 					"{@creature Deep Spider|MaBJoV}",
 					"7"
 				],
 				[
-					"18",
+					"42",
 					"{@creature Dire Wildebeest|ToB3}",
 					"7"
 				],
 				[
-					"19",
-					"{@creature Giant Ape|MM}",
+					"43",
+					"{@creature Giant Ape|XMM}",
 					"7"
 				],
 				[
-					"20",
-					"{@creature Mei Jiao Shou|ToB2}",
-					"7"
-				]
-			]
-		},
-		{
-			"name": "Charm Animal Beast List - 8th Level",
-			"caption": "Charm Animal Beast List - 8th Level",
-			"footnotes": [
-				"Anything below a 1 counts as a 1 and anything above a 20 counts as a 20."
-			],
-			"intro": [
-				"Used in the casting of 8th level {@spell Charm Animal|GuildWars} spells."
-			],
-			"source": "GuildWars",
-			"page": 0,
-			"colLabels": [
-				"d20",
-				"Beast",
-				"CR"
-			],
-			"colStyles": [
-				"col-3 text-center"
-			],
-			"rows": [
-				[
-					"1",
-					"{@creature Elephant|MM}",
-					"4"
-				],
-				[
-					"2",
-					"{@creature Carrion Beetle|ToB}",
-					"4"
-				],
-				[
-					"3",
-					"{@creature Dire Pangolin|ToB3}",
-					"4"
-				],
-				[
-					"4",
-					"{@creature Jubjub Bird|ToB3}",
-					"4"
-				],
-				[
-					"5",
-					"{@creature Ammit|PSA}",
-					"5"
-				],
-				[
-					"6",
-					"{@creature Giant Crocodile|MM}",
-					"5"
-				],
-				[
-					"7",
-					"{@creature Sailback|PSX}",
-					"5"
-				],
-				[
-					"8",
-					"{@creature Kongamato|ToB}",
-					"5"
-				],
-				[
-					"9",
-					"{@creature Mammoth|MM}",
-					"6"
-				],
-				[
-					"10",
-					"{@creature Akhlut|ToB2}",
-					"6"
-				],
-				[
-					"11",
-					"{@creature Samurai Crab|ToB3}",
-					"6"
-				],
-				[
-					"12",
-					"{@creature Wakewyrm|HWCS}",
-					"6"
-				],
-				[
-					"13",
-					"{@creature Deep Spider|MaBJoV}",
-					"7"
-				],
-				[
-					"14",
-					"{@creature Dire Wildebeest|ToB3}",
-					"7"
-				],
-				[
-					"15",
-					"{@creature Giant Ape|MM}",
-					"7"
-				],
-				[
-					"16",
+					"44",
 					"{@creature Mei Jiao Shou|ToB2}",
 					"7"
 				],
 				[
-					"17",
+					"45",
 					"{@creature Huge Giant Crab|TftYP}",
 					"8"
 				],
 				[
-					"18",
+					"46",
 					"{@creature Terra Stomper|PSZ}",
 					"8"
 				],
 				[
-					"19",
-					"{@creature Savager|ToB}",
+					"47",
+					"{@creature Savager|ToB1-2023}",
 					"8"
 				],
 				[
-					"20",
-					"{@creature Tyrannosaurus Rex|MM}",
-					"8"
-				]
-			]
-		},
-		{
-			"name": "Charm Animal Beast List - 9th Level",
-			"caption": "Charm Animal Beast List - 9th Level",
-			"footnotes": [
-				"Anything below a 1 counts as a 1 and anything above a 20 counts as a 20."
-			],
-			"intro": [
-				"Used in the casting of 9th level {@spell Charm Animal|GuildWars} spells."
-			],
-			"source": "GuildWars",
-			"page": 0,
-			"colLabels": [
-				"d20",
-				"Beast",
-				"CR"
-			],
-			"colStyles": [
-				"col-3 text-center"
-			],
-			"rows": [
-				[
-					"1",
-					"{@creature Ammit|PSA}",
-					"5"
-				],
-				[
-					"2",
-					"{@creature Giant Crocodile|MM}",
-					"5"
-				],
-				[
-					"3",
-					"{@creature Sailback|PSX}",
-					"5"
-				],
-				[
-					"4",
-					"{@creature Kongamato|ToB}",
-					"5"
-				],
-				[
-					"5",
-					"{@creature Mammoth|MM}",
-					"6"
-				],
-				[
-					"6",
-					"{@creature Akhlut|ToB2}",
-					"6"
-				],
-				[
-					"7",
-					"{@creature Samurai Crab|ToB3}",
-					"6"
-				],
-				[
-					"8",
-					"{@creature Wakewyrm|HWCS}",
-					"6"
-				],
-				[
-					"9",
-					"{@creature Deep Spider|MaBJoV}",
-					"7"
-				],
-				[
-					"10",
-					"{@creature Dire Wildebeest|ToB3}",
-					"7"
-				],
-				[
-					"11",
-					"{@creature Giant Ape|MM}",
-					"7"
-				],
-				[
-					"12",
-					"{@creature Mei Jiao Shou|ToB2}",
-					"7"
-				],
-				[
-					"13",
-					"{@creature Huge Giant Crab|TftYP}",
+					"48",
+					"{@creature Tyrannosaurus Rex|XMM}",
 					"8"
 				],
 				[
-					"14",
-					"{@creature Terra Stomper|PSZ}",
-					"8"
-				],
-				[
-					"15",
-					"{@creature Savager|ToB}",
-					"8"
-				],
-				[
-					"16",
-					"{@creature Tyrannosaurus Rex|MM}",
-					"8"
-				],
-				[
-					"17",
+					"49",
 					"{@creature Ceratops|BGG}",
 					"9"
 				],
 				[
-					"18",
+					"50",
 					"{@creature Deep Crow|AI}",
 					"9"
 				],
 				[
-					"19",
-					"{@creature Ghostwalk Spider|ToB}",
+					"51",
+					"{@creature Ghostwalk Spider|ToB1-2023}",
 					"9"
 				],
 				[
-					"20",
+					"52",
 					"{@creature Shriekbat|ToB2}",
 					"9"
-				]
-			]
-		},
-		{
-			"name": "Random Combat Encounters Ascalon with Charr",
-			"caption": "Random Combat Encounters Ascalon with Charr",
-			"intro": [
-				"Roll for every one hour of travel time, skip duplicate encounters per travel."
-			],
-			"source": "GuildWars",
-			"page": 0,
-			"colLabels": [
-				"d20",
-				"Encounter"
-			],
-			"colStyles": [
-				"col-3 text-center"
-			],
-			"rows": [
-				[
-					"1",
-					"Random Charr Very Hard"
-				],
-				[
-					"2",
-					"Hyrda Hard"
-				],
-				[
-					"3",
-					"Random Charr Hard"
-				],
-				[
-					"4",
-					"Devourer Hard"
-				],
-				[
-					"5",
-					"Hyrda Medium"
-				],
-				[
-					"6",
-					"Random Charr Medium"
-				],
-				[
-					"7",
-					"Gargoyle Medium"
-				],
-				[
-					"8",
-					"Devourer Medium"
-				],
-				[
-					"9",
-					"Grawl Medium"
-				],
-				[
-					"10",
-					"Boulder Elementals Medium"
-				],
-				[
-					"11",
-					"Random Charr Easy"
-				],
-				[
-					"12",
-					"Gargoyle Easy"
-				],
-				[
-					"13",
-					"Devourer Easy"
-				],
-				[
-					"14",
-					"Grawl Easy"
-				],
-				[
-					"15",
-					"Boulder Elementals Easy"
-				],
-				[
-					"16",
-					"Nothing"
-				],
-				[
-					"17",
-					"Nothing"
-				],
-				[
-					"18",
-					"Nothing"
-				],
-				[
-					"19",
-					"Nothing"
-				],
-				[
-					"20",
-					"1 random Magic Item"
-				]
-			]
-		},
-		{
-			"name": "Random Combat Encounters Ascalon without Charr",
-			"caption": "Random Combat Encounters Ascalon without Charr",
-			"intro": [
-				"Roll for every one hour of travel time, skip duplicate encounters per travel."
-			],
-			"source": "GuildWars",
-			"page": 0,
-			"colLabels": [
-				"d20",
-				"Encounter"
-			],
-			"colStyles": [
-				"col-3 text-center"
-			],
-			"rows": [
-				[
-					"1",
-					"Hydra Hard"
-				],
-				[
-					"2",
-					"Devourer Hard"
-				],
-				[
-					"3",
-					"Hydra Medium"
-				],
-				[
-					"4",
-					"Devourer Medium"
-				],
-				[
-					"5",
-					"Gargoyle Medium"
-				],
-				[
-					"6",
-					"Boulder Elementals Medium"
-				],
-				[
-					"7",
-					"Gargoyle Easy"
-				],
-				[
-					"8",
-					"Devourer Easy"
-				],
-				[
-					"9",
-					"Grawl Easy"
-				],
-				[
-					"10",
-					"Boulder Elementals Easy"
-				],
-				[
-					"11",
-					"Nothing"
-				],
-				[
-					"12",
-					"Nothing"
-				],
-				[
-					"13",
-					"Nothing"
-				],
-				[
-					"14",
-					"Nothing"
-				],
-				[
-					"15",
-					"Nothing"
-				],
-				[
-					"16",
-					"Nothing"
-				],
-				[
-					"17",
-					"Nothing"
-				],
-				[
-					"18",
-					"Nothing"
-				],
-				[
-					"19",
-					"Nothing"
-				],
-				[
-					"20",
-					"1 random Magic Item"
-				]
-			]
-		},
-		{
-			"name": "Random Enemy Group Ruins of Surmia",
-			"caption": "Random Enemy Group Ruins of Surmia",
-			"intro": [
-				"Roll at initiative 0 which enemies show up next round."
-			],
-			"source": "GuildWars",
-			"page": 0,
-			"colLabels": [
-				"d20",
-				"Group"
-			],
-			"colStyles": [
-				"col-3 text-center"
-			],
-			"rows": [
-				[
-					"1",
-					"1 {@creature Hydra (Ascalon)|GuildWars}"
-				],
-				[
-					"2",
-					"1 Random Charr Boss + 1 Random Charr"
-				],
-				[
-					"3",
-					"1 Random Charr Boss"
-				],
-				[
-					"4",
-					"3 Random Charr"
-				],
-				[
-					"5",
-					"2 Random Charr and 2 Random Devourer"
-				],
-				[
-					"6",
-					"2 Random Charr and 1 Random Devourer"
-				],
-				[
-					"7",
-					"1 Random Charr and 2 Random Devourer"
-				],
-				[
-					"8",
-					"1 Random Charr and 1 Random Devourer"
-				],
-				[
-					"9",
-					"1 Random Charr"
-				],
-				[
-					"10",
-					"3 Random Devourer"
-				],
-				[
-					"11",
-					"2 Random Devourer"
-				],
-				[
-					"12",
-					"1 Random Devourer"
-				],
-				[
-					"13",
-					"Nothing"
-				],
-				[
-					"14",
-					"Nothing"
-				],
-				[
-					"15",
-					"Nothing"
-				],
-				[
-					"16",
-					"Nothing"
-				],
-				[
-					"17",
-					"Nothing"
-				],
-				[
-					"18",
-					"Nothing"
-				],
-				[
-					"19",
-					"1 Friendly {@creature White Mantle Knight|GuildWars}"
-				],
-				[
-					"20",
-					"2 Friendly {@creature White Mantle Knight|GuildWars}"
 				]
 			]
 		}

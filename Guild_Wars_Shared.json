@@ -23784,16 +23784,13 @@
 			"school": "T",
 			"time": [
 				{
-					"number": 1,
-					"unit": "bonus"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon with the light and thrown property"
 				}
 			],
 			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 90
-				}
+				"type": "special"
 			},
 			"duration": [
 				{
@@ -23807,7 +23804,7 @@
 			"entries": [
 				"{@bold Elite}, {@bold Enchantment}, {@bold Hex}, {@bold Lead Attack}",
 				"Shadow step to a creature, draining their power and empowering your own.",
-				"Choose one creature that you can see within range. Teleport within 5 feet of the target to an unoccupied space. The target must make a Wisdom saving throw. On a failed save for the duration, each of the target's ability scores are reduced by {@dice 1d4} each, and each of yours are increased correspondingly by the amount lost."
+				"On a hit, teleport within 5 feet of the target to an unoccupied space. The target must make a Wisdom saving throw. On a failed save for the duration, each of the target's ability scores are reduced by {@dice 1d4} each, and each of yours are increased correspondingly by the amount lost."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -23826,17 +23823,9 @@
 				]
 			},
 			"components": {
+				"v": true,
 				"s": true
 			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 6th level or higher, the range of the spell increases by 45 feet for each slot level above 5th."
-					]
-				}
-			],
 			"backgrounds": [
 				{
 					"name": "Kaineng City",
@@ -38926,20 +38915,13 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
-				},
-				{
-					"number": 1,
-					"unit": "bonus"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon with the light and thrown property"
 				}
 			],
 			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 30
-				}
+				"type": "special"
 			},
 			"duration": [
 				{
@@ -38956,7 +38938,7 @@
 			"entries": [
 				"{@bold Off-Hand Attack}",
 				"Quickly throw a handful of blinding powder at a group of creatures.",
-				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target is {@condition blinded} for the duration.",
+				"Choose a point that you can see within range. Target each creature in a 10-foot-radius sphere centered on that point. Make a ranged weapon attack against each target. On a hit, a target is {@condition blinded} for the duration.",
 				"At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
 			],
 			"source": "GuildWars",
@@ -38999,15 +38981,6 @@
 			},
 			"conditionInflict": [
 				"blinded"
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the range of the spell increases by 15 feet for each slot level above 1st and the radius of the spell increases by 5 feet for each slot level above 1st."
-					]
-				}
 			]
 		},
 		{
@@ -39708,11 +39681,7 @@
 				}
 			],
 			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 20
-				}
+				"type": "special"
 			},
 			"duration": [
 				{
@@ -41916,20 +41885,13 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
-				},
-				{
-					"number": 1,
-					"unit": "bonus"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon with the light and thrown property"
 				}
 			],
 			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 30
-				}
+				"type": "special"
 			},
 			"duration": [
 				{
@@ -41945,8 +41907,8 @@
 			},
 			"entries": [
 				"{@bold Off-Hand Attack}",
-				"Conjure a deadly asp, which strikes a foe, knocking them {@condition prone} and {@condition corruption|GuildWars|corrupting} them.",
-				"Choose one creature that you can see within range. The target must make a Dexterity saving throw. On a failed save, the target is knocked {@condition prone} and is {@condition corruption|GuildWars|corrupted} for the duration, taking {@damage 2d6} damage.",
+				"Transform your weapon into a deadly asp temporarily, which strikes a foe, knocking them {@condition prone} and {@condition corruption|GuildWars|corrupting} them.",
+				"On a hit, the target must make a Constitution saving throw. On failed save, the target is knocked {@condition prone} and is {@condition corruption|GuildWars|corrupted} for the duration, taking {@damage 2d6} damage.",
 				"At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
 			],
 			"source": "GuildWars",
@@ -41984,21 +41946,13 @@
 				}
 			],
 			"components": {
+				"v": true,
 				"s": true,
 				"m": "the venom of a an asp"
 			},
 			"conditionInflict": [
 				"corruption|guildwars",
 				"prone"
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the damage of the corrupted condition increases by {@dice 1d6} for each slot level above 2nd."
-					]
-				}
 			]
 		},
 		{
@@ -42774,8 +42728,8 @@
 			"name": "Dual Attack",
 			"source": "GuildWars",
 			"entries": [
-				"The spell must follow an off-hand attack and can be cast as a bonus action if the action this turn was a lead attack.",
-				"On a hit, the attack/If successfully cast, the spell is considered a dual attack."
+				"This spell can only be cast if your last successful attack against the target was an off-hand attack.",
+				"On a hit, this attack is considered a dual attack."
 			]
 		},
 		{
@@ -42928,8 +42882,7 @@
 			"name": "Lead Attack",
 			"source": "GuildWars",
 			"entries": [
-				"On a hit, the attack/If successfully cast, the spell is considered a lead attack.",
-				"Additionally, you can, immediately after you hit/successfully cast the spell against the/a target, cast an off-hand attack spell as an action or bonus action against the same target/one of the targets."
+				"On a hit, this attack is considered a lead attack."
 			]
 		},
 		{
@@ -43017,9 +42970,8 @@
 			"name": "Off-Hand Attack",
 			"source": "GuildWars",
 			"entries": [
-				"The spell must follow a lead attack and can be cast as a bonus action if the action this turn was a lead attack.",
-				"On a hit, the attack/If successfully cast, the spell is considered an off-hand attack.",
-				"Additionally, you can, immediately after you hit/successfully cast the spell against the/a target, cast a dual attack spell as an action or bonus action against the same target/one of the targets."
+				"This spell can only be cast if your last successful attack against the target was a lead attack.",
+				"On a hit, this attack is considered an off-hand attack."
 			]
 		},
 		{

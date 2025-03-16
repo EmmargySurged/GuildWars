@@ -311,7 +311,484 @@
 			]
 		}
 	],
-	"monster": [],
+	"monster": [
+		{
+			"name": "Spirit of Pain",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "GuildWars",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 10,
+					"condition": "+ Spell Level",
+					"braces": true
+				}
+			],
+			"hp": {
+				"special": "5 + Spell Level * 5"
+			},
+			"speed": {},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"actionTags": [
+				"Multiattack"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"fluff": {
+				"entries": [
+					"Binding Ritual. Create a level 1...10...12 spirit. This spirit's attacks deal 5...25...30 damage. This spirit dies after 30...126...150 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Aggressive_binding_spirit.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Spirit of Pain makes a number of pain attacks equal to half the level of the spell (rounded down, minimum 1)."
+					]
+				},
+				{
+					"name": "Pain",
+					"entries": [
+						"{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}8 ({@damage 2d6 + Spell Level}) force damage."
+					]
+				}
+			],
+			"miscTags": [
+				"RA"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Aggressive_binding_spirit_Token.png"
+			}
+		},
+		{
+			"name": "Spirit of Bloodsong",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "GuildWars",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 10,
+					"condition": "+ Spell Level",
+					"braces": true
+				}
+			],
+			"hp": {
+				"special": "5 + Spell Level * 5"
+			},
+			"speed": {},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"actionTags": [
+				"Multiattack"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"fluff": {
+				"entries": [
+					"Binding Ritual. Create a level 1...10...12 spirit who dies after 30...126...150 seconds. Attacks by that spirit steal up to 5...21...25 Health. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Aggressive_binding_spirit.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Spirit of Bloodsong makes a number of bloodsong attacks equal to half the level of the spell (rounded down, minimum 1)."
+					]
+				},
+				{
+					"name": "Bloodsong",
+					"entries": [
+						"{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}3 ({@damage 1d6 + Spell Level}) necrotic damage, the Spirit of Bloodsong regains health equal to the damage dealt."
+					]
+				}
+			],
+			"miscTags": [
+				"RA"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Aggressive_binding_spirit_Token.png"
+			}
+		},
+		{
+			"name": "Spirit of Dissonance",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "GuildWars",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 10,
+					"condition": "+ Spell Level",
+					"braces": true
+				}
+			],
+			"hp": {
+				"special": "5 + Spell Level * 5"
+			},
+			"speed": {},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"actionTags": [
+				"Multiattack"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"fluff": {
+				"entries": [
+					"Binding Ritual. Create a level 1...10...12 spirit who dies after 30...126...150 seconds. Attacks by that spirit steal up to 5...21...25 Health. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Aggressive_binding_spirit.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Spirit of Dissonance makes a number of Dissonance attacks equal to half the level of the spell (rounded down, minimum 1)."
+					]
+				},
+				{
+					"name": "Dissonance",
+					"entries": [
+						"{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}3 ({@damage 1d6 + Spell Level}) force damage, the target must succeed on a Constitution saving throw against your spell save DC, or miss with their next attack until the end of their next turn."
+					]
+				}
+			],
+			"miscTags": [
+				"RA"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Aggressive_binding_spirit_Token.png"
+			}
+		},
+		{
+			"name": "Nature Ritual",
+			"size": [
+				"M"
+			],
+			"type": "fey",
+			"source": "GuildWars",
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 10,
+					"condition": "+ Spell Level",
+					"braces": true
+				}
+			],
+			"hp": {
+				"special": "10 + Spell Level * 5"
+			},
+			"speed": {},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"actionTags": [
+				"Multiattack"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"fluff": {
+				"entries": [
+					"Nature Rituals are a type of rituals unique to the ranger profession. These skills summon a spirit that provides a global effect to all those in its area of effect. Unlike Binding Rituals, Nature Rituals affect everyone in their range, enemies and allies alike.",
+					"The Nature Ritual spirits resemble miniature druids from the Maguuma Jungle and Melandru's Watcher, the avatar of Melandru, the patron goddess of rangers. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Nature_Spirit.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Nature_Spirit_Token.png"
+			}
+		},
+		{
+			"name": "Bone Horror",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "GuildWars",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 8,
+					"condition": "+ Spell Level"
+				}
+			],
+			"hp": {
+				"special": "5 + Spell Level * 5"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 8,
+			"con": 14,
+			"int": 4,
+			"wis": 6,
+			"cha": 4,
+			"passive": 8,
+			"conditionImmune": [
+				"poisoned"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The bone horror makes a number of Swipe attacks equal to half the level of the spell (rounded down) (minimum 1)."
+					]
+				},
+				{
+					"name": "Swipe",
+					"entries": [
+						"Natural Weapon: your spell attack modifier to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 3} + Spell Level) bludgeoning damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"fluff": {
+				"entries": [
+					"Bone Horrors are minions created by certain Necromancer skills (Animate Bone Horror, Malign Intervention, and Aura of the Lich) and the Minion Apocalypse Flux."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bone_Horror.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bone_Horror_Token.png"
+			}
+		},
+		{
+			"name": "Bone Fiend",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "GuildWars",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 7,
+					"condition": "+ Spell Level"
+				}
+			],
+			"hp": {
+				"special": "5 + Spell Level * 5"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"dex": 16,
+			"con": 14,
+			"int": 4,
+			"wis": 6,
+			"cha": 4,
+			"passive": 8,
+			"conditionImmune": [
+				"poisoned"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The bone fiend makes a number of Spike attacks equal to half the level of the spell (rounded down) (minimum 1)."
+					]
+				},
+				{
+					"name": "Spike",
+					"entries": [
+						"{@atk} your spell attack modifier to hit, range 80/120 ft., one target. {@h}6 ({@damage 1d6 + 3} + Spell Level) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"fluff": {
+				"entries": [
+					"Bone Horrors are minions created by certain Necromancer skills (Animate Bone Horror, Malign Intervention, and Aura of the Lich) and the Minion Apocalypse Flux."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bone_Fiend.jpg"
+						}
+					}
+				]
+			},
+			"str": 8,
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bone_Fiend_Token.png"
+			}
+		}
+	],
 	"feat": [
 		{
 			"name": "Arcane Assassin",
@@ -42251,6 +42728,83 @@
 			],
 			"components": {
 				"v": true
+			}
+		},
+		{
+			"name": "Pain",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Summoning Ritual:} {@creature Spirit of Pain|GuildWars}",
+				"Bind a Spirit of Pain to your will, dealing heavy damage health with its attacks.",
+				"Summon a {@creature Spirit of Pain|GuildWars} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative, but takes it turn directly after yours. The spirit is in the DMs control."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Pain",
+					"Binding Ritual. Create a level 1...10...12 spirit. This spirit's attacks deal 5...25...30 damage. This spirit dies after 30...126...150 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/1/1a/Pain.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"AAD"
+			],
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Communing",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Summoning Ritual",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a poem written about pain"
 			}
 		}
 	],

@@ -42806,6 +42806,170 @@
 				"s": true,
 				"m": "a poem written about pain"
 			}
+		},
+		{
+			"name": "Iron Palm",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon with the light property"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@bold Armor Penetration}, {@bold Lead Attack}, {@bold Unblockable}",
+				"Strike the flat of your weapon into a vital part of a creature, knocking them {@condition prone} if they are suffering from a hex or condition.",
+				"On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d10} damage, and if the target is suffering from a condition and/or under the effect of a detrimental spell the target is kocked {@condition prone}."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Iron Palm",
+					"Skill. Target touched foe suffers 5...41...50 damage, and if that foe is suffering from a hex or condition that foe is knocked down. Iron Palm counts as a lead attack."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/c/cb/Iron_Palm.jpg"
+						}
+					}
+				]
+			},
+			"spellAttack": [
+				"M"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"AAD"
+			],
+			"components": {
+				"v": true
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Deadly Arts",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Lead Attack",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Unblockable",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Armor Penetration",
+					"source": "GuildWars"
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Painful Bond",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@bold Hex}",
+				"Create a painful bond to the spirit realm in a group of creatures, making your summoned spirits appear as loved ones to them, increasing the damage they take from them.",
+				"Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save for the duration, when a target is hit by an attack from a Summoning Ritual, they take {@damage 1d6} necrotic damage."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Painful Bond",
+					"Hex Spell. For 10...18...20 seconds, target foe and all nearby foes are hexed with Painful Bond and take 8...18...20 damage whenever hit by a spirit's attack."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/3/3f/Painful_Bond.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Channeling Magic",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Hex",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"m": "a wedding ring from a widow"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage each increases by {@dice 1d6} for each slot level above 2nd."
+					]
+				}
+			]
 		}
 	],
 	"table": [

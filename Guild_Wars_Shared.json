@@ -787,6 +787,88 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bone_Fiend_Token.png"
 			}
+		},
+		{
+			"name": "Spirit of Recuperation",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "GuildWars",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 10,
+					"condition": "+ Spell Level",
+					"braces": true
+				}
+			],
+			"hp": {
+				"special": "5 + Spell Level * 5"
+			},
+			"speed": {},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"actionTags": [
+				"Multiattack"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"fluff": {
+				"entries": [
+					"Binding Ritual. Create a level 1...11...14 spirit. Non-spirit allies within its range gain +1...3...3 Health regeneration. This spirit dies after 15...39...45 seconds. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Defensive_binding_spirit.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"trait": [
+				{
+					"name": "Recuperation",
+					"entries": [
+						"Any creature, who is not a Summoning Ritual, friendly to the creature who summoned the spirit regains hit points equal to the level of the spell at the start of their turn if they are within 150-feet of the spirit and have at least 1 hit point."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Defensive_binding_spirit_Token.png"
+			}
 		}
 	],
 	"feat": [
@@ -39298,6 +39380,10 @@
 				{
 					"name": "Communing",
 					"source": "GuildWars"
+				},
+				{
+					"name": "Weapon Spell",
+					"source": "GuildWars"
 				}
 			],
 			"components": {
@@ -42970,6 +43056,400 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Leaping Mantis Sting",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon with the light property"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Lead Attack}",
+				"Leap at your target with a precise strike, punishing moving targets.",
+				"On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d6} damage and, if the target willingly moved on its last turn, is {@condition crippled|GuildWars} for the duration.",
+				"At the end of each of its turns, the target can make a Dexterity saving throw. On a success, the condition ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Leaping Mantis Sting",
+					"Lead Attack. If Mantis Sting hits, target foe takes +5...13...15 damage. If this attack strikes a moving foe, that foe is Crippled for 3...13...15 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/a/ae/Leaping_Mantis_Sting.jpg"
+						}
+					}
+				]
+			},
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"components": {
+				"v": true
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Dagger Mastery",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Lead Attack",
+					"source": "GuildWars"
+				}
+			]
+		},
+		{
+			"name": "Recuperation",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Summoning Ritual:} {@creature Spirit of Recuperation|GuildWars}",
+				"Bind a Spirit of Recuperation to your will, healing your allies.",
+				"Summon a {@creature Spirit of Recuperation|GuildWars} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative, but takes it turn directly after yours. The spirit is in the DMs control."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Recuperation",
+					"Binding Ritual. Create a level 1...11...14 spirit. Non-spirit allies within its range gain +1...3...3 Health regeneration. This spirit dies after 15...39...45 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/a/a2/Recuperation.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"AAD"
+			],
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Restoration Magic",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Summoning Ritual",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a poem written about health"
+			}
+		},
+		{
+			"name": "Nine Tail Strike",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon with the light property"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@bold Dual Attack}, {@bold Unblockable}",
+				"Quickly make a flurry of faints, strike twice and bypassing any defenses.",
+				"Make two melee weapon attacks against the target. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 2d6} damage."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Nine Tail Strike",
+					"Dual Attack. Must follow an off-hand attack. Nine Tail Strike cannot be blocked and strikes for +15...35...40 damage if it hits."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/a/a7/Nine_Tail_Strike.jpg"
+						}
+					}
+				]
+			},
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"AAD"
+			],
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Dagger Mastery",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Dual Attack",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Unblockable",
+					"source": "GuildWars"
+				}
+			]
+		},
+		{
+			"name": "Resilient Weapon",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@bold Weapon Spell} ",
+				"Temporarily transform a weapon into a resilient weapon, visibly making its appearance more defensive and increasing the wielders' vitality in a time of need.",
+				"Choose one friendly creature, which is wielding a weapon, that you can see within range. For the duration, while the target is under the effect of a detrimental spell or suffering from one of the following conditions: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} and/or {@condition Weakness|GuildWars}, the target gains the following effects:",
+				"- When the target takes damage, you can roll {@dice 2d4} and subtract the number rolled from the damage.",
+				"- At the start of each of the target's turns, if the target is above 0 hit points, the target regains hit points equal to {@dice 1d4}."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Resilient Weapon",
+					"Weapon Spell. For 3...10...12 seconds, target ally has a Resilient Weapon. While suffering from a hex or condition, that ally gains +1...5...6 Health regeneration and +24 armor."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/1/1e/Resilient_Weapon.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Restoration Magic",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Weapon Spell",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the number subtracted increases by {@dice 1d4} for each slot level above 2nd and the healing increases by {@dice 1d4} for each slot level above 2nd."
+					]
+				}
+			],
+			"conditionInflict": [
+				"bleeding|guildwars",
+				"blinded",
+				"burning|guildwars"
+			]
+		},
+		{
+			"name": "Recall",
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@bold Bond}, {@bold Enchantment}",
+				"Create a shadowy tether between yourself to an ally of yours, which you can cut at any time to teleport yourself to them.",
+				"Choose one willing friendly creature, other than yourself, that you can see within range. For the duration, when this spell ends, while the two of you are on the same plane of existence, you teleport within 5 feet of the target to an unoccupied space.",
+				"When you teleport this way, you must succeed on a DC 15 Constitution saving throw, or be {@condition stunned} until the end of your next turn."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Recall",
+					"Enchantment Spell. While you maintain Recall, nothing happens. When Recall ends, you Shadow Step to the ally you targeted when you activated this skill and all of your skills are disabled for 10 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/3/3f/Recall.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "No Attribute",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Bond",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Enchantment",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"m": {
+					"text": "a thread woven from gold worth 200+ GP",
+					"cost": 20000
+				}
+			}
 		}
 	],
 	"table": [

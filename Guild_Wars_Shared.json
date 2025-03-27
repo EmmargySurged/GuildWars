@@ -7676,7 +7676,10 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a shiny silver coin"
+				"m": {
+					"text": "a shiny silver coin worth 1+ SP",
+					"cost": 10
+				}
 			},
 			"entriesHigherLevel": [
 				{
@@ -13705,7 +13708,10 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a phial of amphetamine"
+				"m": {
+					"text": "a phial of amphetamine worth 50+ GP",
+					"cost": 5000
+				}
 			},
 			"meta": {
 				"ritual": true
@@ -16091,7 +16097,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a small woode statue"
+				"m": "a small wooden statue"
 			},
 			"entriesHigherLevel": [
 				{
@@ -16771,7 +16777,10 @@
 			],
 			"components": {
 				"s": true,
-				"m": "a pair of reading glasses"
+				"m": {
+					"text": "a pair of reading glasses worth 10+ GP",
+					"cost": 1000
+				}
 			},
 			"entriesHigherLevel": [
 				{
@@ -17726,7 +17735,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": true
+				"m": "a small model house"
 			},
 			"entriesHigherLevel": [
 				{
@@ -19385,7 +19394,7 @@
 			],
 			"entries": [
 				"{@bold Elite}",
-				"Invoke the judgement of the god of deat and balance out your health with a creature of your choice.",
+				"Invoke the judgment of the god of death and balance out your health with a creature of your choice.",
 				"Choose one creature that you can see within range. The target must make an Intelligence saving throw. On a failed save, if the target has more hit points than you do, you regain hit points equal to up to half the difference and the target takes necrotic damage equal to the amount of hit points you gained. On a successful save, you regain hit points equal to up to a quarter the difference, and the target takes necrotic damage equal to the amount of hit points you gained."
 			],
 			"source": "GuildWars",
@@ -19424,7 +19433,10 @@
 			],
 			"components": {
 				"v": true,
-				"m": "a small silver scale"
+				"m": {
+					"text": "a small platinum scale worth 3000+ GP",
+					"cost": 300000
+				}
 			},
 			"entriesHigherLevel": [
 				{
@@ -22296,7 +22308,10 @@
 			],
 			"components": {
 				"s": true,
-				"m": "a small clouded pearl"
+				"m": {
+					"text": "a small clouded pearl worth 450+ GP",
+					"cost": 45000
+				}
 			},
 			"entriesHigherLevel": [
 				{
@@ -25041,7 +25056,10 @@
 			],
 			"components": {
 				"s": true,
-				"m": "a vial of frog venom"
+				"m": {
+					"text": "a vial of venom worth 25+ GP",
+					"cost": 2500
+				}
 			},
 			"meta": {
 				"ritual": true
@@ -29194,7 +29212,7 @@
 			},
 			"components": {
 				"s": true,
-				"m": "thorned vines"
+				"m": "a  handful of thorned vines"
 			},
 			"conditionInflict": [
 				"crippled|guildwars"
@@ -29855,7 +29873,9 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a crystal shard"
+				"m": {
+					"text": "a crystal shard worth 300+ GP"
+				}
 			},
 			"entriesHigherLevel": [
 				{
@@ -30628,7 +30648,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "fresh blood"
+				"m": "a drop of fresh blood"
 			},
 			"meta": {
 				"ritual": true
@@ -33810,15 +33830,19 @@
 				"Channel your magic into tracking down and charming a wild animal.",
 				"As part of the casting of this spell, you can spend {@dice 1d4} hours magically searching for an appropriate creature to charm. If you do so, roll on the {@table Charm Animal Beast List|GuildWars} table by making either a Wisdom (Animal Handling), a Wisdom (Survival) or an Intelligence (Nature) check to determine which beast will appear (your DM might decide to replace animals from the list).",
 				"When you find an appropriate creature to charm, either by searching for it or having already encountered one (in which case it needs to be a beast of challenge rating 1 or lower, with an Intelligence of 3 or less), you can attempt to charm it by touching it. ",
-				"When you successfully touch it, it must make Wisdom saving throw. On a failed save, the target is {@condition charmed} by you until next dawn, at which point you can expend a spell slot of equal or higher level than the one used in the casting of this spell to maintain the {@condition charmed} condition on the beast. To do this, you must have the Charm Animal spell prepared, or any other spell which says that it can be used instead.",
-				"The {@condition charmed} creature is friendly to you and your companions. While the creature is {@condition charmed}, you have a telepathic link with it as long as the two of you are on the same plane of existence and within 1 mile of each other. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.",
+				"When you successfully touch it, it must make a Wisdom saving throw. On a failed save, the target is {@condition charmed} by you until next dawn, at which point you can expend a spell slot of equal or higher level than the one used in the casting of this spell to maintain the {@condition charmed} condition on the beast. To do this, you must have the Charm Animal spell prepared, or any other spell which says that it can be used instead.",
+				"The {@condition charmed} creature is friendly to you and your companions. While the creature is {@condition charmed}, you have a telepathic link with it as long as the two of you are on the same plane of existence and are within 1 mile of each other. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.",
 				"After charming a creature with this spell, you cannot cast this spell again until {@dice 1d6} days have passed."
 			],
 			"source": "GuildWars",
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "expensive feed worth 100 GP"
+				"m": {
+					"text": "expensive feed worth 100+ GP, which the spell consumes",
+					"consume": true,
+					"cost": 10000
+				}
 			},
 			"conditionInflict": [
 				"charmed"
@@ -33830,14 +33854,14 @@
 					"entries": [
 						"When you cast this spell using a spell slot of 2nd level or higher, the material cost increases according to the number in the table below, the duration to find an appropriate animal increases by {@dice 1d4} hours for each slot level above 1st, you gain a {@dice 1d4} bonus to the ability check for each slot level above 1st, the maximum challenge rating for beasts not found via a table increases by 1 for each slot level above 1st and the time until you can cast the spell again increases by {@dice 1d6} for each slot level above 1st.",
 						"Feed cost table:",
-						"- 2nd Level: - Feed Cost: 200 GP",
-						"- 3rd Level: - Feed Cost: 500 GP",
-						"- 4th Level: - Feed Cost: 1000 GP",
-						"- 5th Level: - Feed Cost: 1750 GP",
-						"- 6th Level: - Feed Cost: 3000 GP",
-						"- 7th Level: - Feed Cost: 5000 GP",
-						"- 8th Level: - Feed Cost: 9000 GP",
-						"- 9th Level: - Feed Cost: 15000 GP"
+						"- 2nd Level: - Feed Cost: 200+ GP",
+						"- 3rd Level: - Feed Cost: 500+ GP",
+						"- 4th Level: - Feed Cost: 1000+ GP",
+						"- 5th Level: - Feed Cost: 1750+ GP",
+						"- 6th Level: - Feed Cost: 3000+ GP",
+						"- 7th Level: - Feed Cost: 5000+ GP",
+						"- 8th Level: - Feed Cost: 9000+ GP",
+						"- 9th Level: - Feed Cost: 15000+ GP"
 					]
 				}
 			],
@@ -34968,7 +34992,7 @@
 			},
 			"components": {
 				"s": true,
-				"m": "pitch"
+				"m": "a bucket full of pitch"
 			},
 			"conditionInflict": [
 				"burning"
@@ -36392,7 +36416,7 @@
 			},
 			"components": {
 				"s": true,
-				"m": true
+				"m": "a treatise written on necromancy written by a powerful necromancer"
 			},
 			"backgrounds": [
 				{
@@ -38370,7 +38394,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "coals and a bellow"
+				"m": "a handful of coals and a bellow"
 			},
 			"entriesHigherLevel": [
 				{
@@ -39062,7 +39086,10 @@
 			],
 			"components": {
 				"s": true,
-				"m": "a sliver of deldrimor steel"
+				"m": {
+					"text": "a sliver of deldrimor steel worth 50+ GP",
+					"cost": 5000
+				}
 			},
 			"entriesHigherLevel": [
 				{
@@ -39847,7 +39874,10 @@
 			],
 			"components": {
 				"s": true,
-				"m": "a jewelers lens"
+				"m": {
+					"text": "a jewelers lens worth 100+ GP",
+					"cost": 10000
+				}
 			},
 			"entriesHigherLevel": [
 				{
@@ -40375,7 +40405,10 @@
 			],
 			"components": {
 				"v": true,
-				"m": "a light hammer"
+				"m": {
+					"text": "a gold hammer worth 1000+ GP",
+					"cost": 100000
+				}
 			},
 			"entriesHigherLevel": [
 				{
@@ -42430,7 +42463,7 @@
 			],
 			"components": {
 				"s": true,
-				"m": "the ashes of a blind creature"
+				"m": "the ashes of a philanthropist"
 			},
 			"entriesHigherLevel": [
 				{
@@ -43450,6 +43483,83 @@
 					"cost": 20000
 				}
 			}
+		},
+		{
+			"name": "Rupture Soul",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Rupture Soul",
+					"Spell. Target allied spirit is destroyed. All nearby enemies are struck for 50...122...140 lightning damage and become blinded for 3...10...12 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/3/31/Rupture_Soul.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Spawning Power",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "an animal bladder filled with gas and a needle"
+			},
+			"entries": [
+				"Violently sever the connection a conjured soul has to the afterlife, sending them back in an explosive flash.",
+				"Choose one friendly summoning ritual that you can see within range. The target dies, then you target each other creature in a 15-foot-radius sphere centered on the creature. Each new target must make a Dexterity saving throw. On a failed save, a target takes {@damage 6d6} lightning damage and is {@condition blinded} for 1 minute.",
+				"At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
+					]
+				}
+			]
 		}
 	],
 	"table": [

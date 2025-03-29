@@ -75,12 +75,12 @@
 				"• The weapon's bonus to attack rolls increases to +2.",
 				"• The bonus to spell attack rolls and your spell save DC increases to +2.",
 				"• The extra piercing damage dealt by the weapon increases to 2d6.",
-				"• The first attack roll you make with this weapon each turn scores a critical hit on a 19 or 20, if you attack with advantage. If another feature or trait already gives you an increased critical hit range, increase that range by one instead.",
+				"• At the end of a short rest you can choose one of the following damage types; Acid, Cold, Fire, Lightning, Piercing or Poison. Any bolt shot from this weapon and the extra damage of this weapon now deal damage of the damage type chosen and are considered magical. You can also change the damage type as a bonus action by expending a spell slot of level 1+.",
 				"{@bold Exalted.} When Seeker reaches an exalted state, you gain the following benefits:",
 				"• The weapon's bonus to attack rolls increases to +3.",
 				"• The bonus to spell attack rolls and your spell save DC increases to +3.",
 				"• The extra piercing damage dealt by the weapon increases to 3d6.",
-				"• The first attack roll you make with this weapon each turn scores a critical hit on a 19 or 20, while you are concentrating on a spell. If another feature or trait already gives you an increased critical hit range, increase that range by one instead.",
+				"• The first attack roll you make with this weapon each turn scores a critical hit on a 19 or 20, if you attack with advantage. If another feature or trait already gives you an increased critical hit range, increase that range by one instead.",
 				"{@bold Mastery: Slow.} If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
 			],
 			"tier": "major",
@@ -338,7 +338,7 @@
 			"fluff": {
 				"entries": [
 					"Loot:",
-					"1 Enspelled Staff (Level 1) (Remove Hex, with 6 charges, reduced by 1 for each time she casts it.)",
+					"1 Enspelled Staff (Level 1) (Remove Hex, with 6 charges, reduced by 1 for each time she casts it.)  (Unidentified)",
 					"If resurrect was not cast:",
 					"1 Ruby worth 325 GP and 1 Opal worth 355 GP."
 				],
@@ -664,9 +664,9 @@
 			],
 			"bonus": [
 				{
-					"name": "Captain's Charm",
+					"name": "{@spell Banishing Smite} {@recharge 4}",
 					"entries": [
-						"{@actSave wis} {@dc 14}, one creature Captain Manzo can see within 30 feet. {@actSaveFail} The target has the {@condition Charmed|XPHB} condition until the start of the pirate's next turn."
+						"The target hit by the attack roll takes an extra {@damage 5d10} Force damage from the attack. If the attack reduces the target to 50 Hit Points or fewer, the target must succeed on a Charisma saving throw or be transported to a harmless demiplane for the duration. While there, the target has the {@condition Incapacitated|XPHB} condition. When the spell ends, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied."
 					]
 				}
 			],
@@ -695,7 +695,7 @@
 				"RNG"
 			],
 			"conditionInflict": [
-				"charmed"
+				"incapacitated"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
@@ -706,7 +706,7 @@
 			"fluff": {
 				"entries": [
 					"Loot:",
-					"1 Potion of Gaseous Form"
+					"1 Potion of Gaseous Form (Unidentified)"
 				],
 				"images": [
 					{
@@ -774,9 +774,6 @@
 			],
 			"damageTags": [
 				"P"
-			],
-			"savingThrowForced": [
-				"wisdom"
 			]
 		},
 		{
@@ -899,7 +896,7 @@
 			"fluff": {
 				"entries": [
 					"Loot:",
-					"1 Moon-Touched Greatsword"
+					"1 Moon-Touched Greatsword (Unidentified)"
 				],
 				"images": [
 					{
@@ -1099,7 +1096,7 @@
 			"fluff": {
 				"entries": [
 					"Loot:",
-					"1 Potion of Climbing"
+					"1 Potion of Climbing (Unidentified)"
 				],
 				"images": [
 					{
@@ -1295,7 +1292,7 @@
 			"fluff": {
 				"entries": [
 					"Loot:",
-					"1 Periapt of Wound Closure"
+					"1 Periapt of Wound Closure (Unidentified)"
 				],
 				"images": [
 					{

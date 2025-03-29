@@ -869,6 +869,100 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Defensive_binding_spirit_Token.png"
 			}
+		},
+		{
+			"name": "Spirit of Shadowsong",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "GuildWars",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 10,
+					"condition": "+ Spell Level",
+					"braces": true
+				}
+			],
+			"hp": {
+				"special": "5 + Spell Level * 5"
+			},
+			"speed": {},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"actionTags": [
+				"Multiattack"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"fluff": {
+				"entries": [
+					"Binding Ritual. Create a level 1...8...10 spirit. The spirit's attacks deal 5...17...20 damage and cause Blindness for 1...5...6 second[s]. This spirit dies after 30 second[s]."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Aggressive_binding_spirit.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Spirit of Shadowsong makes a number of Shadowsong attacks equal to half the level of the spell (rounded down, minimum 1)."
+					]
+				},
+				{
+					"name": "Shadowsong",
+					"entries": [
+						"{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}3 ({@damage 1d4 + Spell Level}) necrotic damage, the target is {@condition blinded} until the end of their next turn."
+					]
+				}
+			],
+			"miscTags": [
+				"RA"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Aggressive_binding_spirit_Token.png"
+			},
+			"conditionInflict": [
+				"blinded"
+			]
 		}
 	],
 	"feat": [
@@ -43627,6 +43721,168 @@
 					"source": "GuildWars"
 				}
 			]
+		},
+		{
+			"name": "Shadowsong",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Summoning Ritual:} {@creature Spirit of Shadowsong|GuildWars}",
+				"Bind a Spirit of Shadowsong to your will, blinding creatures with its attacks.",
+				"Summon a {@creature Spirit of Shadowsong|GuildWars} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative, but takes it turn directly after yours. The spirit is in the DMs control."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Shadowsong",
+					"Binding Ritual. Create a level 1...8...10 spirit. The spirit's attacks deal 5...17...20 damage and cause Blindness for 1...5...6 second[s]. This spirit dies after 30 second[s]."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/3/34/Shadowsong.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"AAD"
+			],
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Communing",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Summoning Ritual",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a poem written by a blind creature"
+			}
+		},
+		{
+			"name": "Shadow of Haste",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@bold Stance}",
+				"Create a shadowy tether to your current location and move quickly away from it, teleporting back to it at the end of the spell.",
+				"For the duration, your speed is increased by 15%.",
+				"When this spell ends, teleport to an unoccupied space within 5 feet of the location you originally cast this spell, if you are still on the same plane of existence and within 300 feet of it."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Shadow of Haste",
+					"Stance. For 10...34...40 seconds you move 15% faster than normal. When Shadow of Haste ends, you shadow step to your original location."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/c/c9/Shadow_of_Haste.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Shadow Arts",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Stance",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"m": {
+					"text": "a loadstone worth 100+ GP",
+					"cost": 10000
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th or 5th level, the duration increases to 1 hour. When you use a spell slot of 6th level or higher, the duration increases to 8 hours."
+					]
+				}
+			]
 		}
 	],
 	"table": [
@@ -44592,7 +44848,8 @@
 			"source": "GuildWars",
 			"entries": [
 				"You can only ever be in one Stance at a time.",
-				"If you enter a new Stance, the old one ends immediately."
+				"If you enter a new Stance, the old one ends immediately.",
+				"If you are Incapacitated any Stance on you ends immediately."
 			]
 		},
 		{

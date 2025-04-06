@@ -43882,6 +43882,405 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Soothing Memories",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Heal a creature's wounds by reminding it of pleasant memories, enhancing your own initiative in the process if you are channeling through an object.",
+				"Choose one creature that you can see within range. The target regains hit points equal to {@dice 1d12} + your spellcasting ability modifier. If you are holding an object created by a spell, your initiative gets increased by {@dice 1d4}."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Soothing Memories",
+					"Spell. Target ally is healed for 10...82...100 Health. If you are holding an item, you gain 3 Energy."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/f/f3/Soothing_Memories.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Restoration Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@dice 1d12} for each slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"name": "Shadow Refuge",
+			"level": 1,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Enchantment}",
+				"Weave shadows around your body, which rejuvenate you every round and heal you when they dissipate.",
+				"For the duration, at the start of each of your turns, you regain hit points equal to {@dice 1d4}.",
+				"When this spell ends, you regain hit points equal to {@dice 2d4}.",
+				"If you drop to 0 hit points, this spell ends without healing you."
+			],
+			"source": "GuildWars",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases each by {@dice 1d4} for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"miscTags": [
+				"HL",
+				"UBA"
+			],
+			"fluff": {
+				"entries": [
+					"Shadow Refuge",
+					"Enchantment Spell. For 6 seconds, you gain 5...9...10 Health regeneration. When Shadow Refuge ends, you gain 40...88...100 Health if you are attacking."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/b/b5/Shadow_Refuge.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Shadow Arts",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Enchantment",
+					"source": "GuildWars"
+				}
+			]
+		},
+		{
+			"name": "Spirit Boon Strike",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Strike a foe with lightning and channel a portion of the energy to heal your spirits.",
+				"Choose one creature that you can see within range. The target must make a Dexterity saving throw. On a failed save, the target takes {@damage 3d6} lightning damage. On a successful save, the target takes half as much damage.",
+				"Target each friendly summoning rituals that you can see within range. A target regains hit points equal to {@dice 2d4}."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Spirit Boon Strike",
+					"Spell. Target foe is struck for 20...56...65 lightning damage, and all spirits you control within earshot gain 20...56...65 Health."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/8/86/Spirit_Boon_Strike.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Channeling Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@dice 1d4} for each slot level above 1st and the damage increases by {@dice 1d6} for each slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"name": "Sharpen Daggers",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Enchantment}",
+				"Magically sharpen your daggers to a supernatural degree, making them inflict {@condition bleeding|GuildWars} with every hit.",
+				"For the duration, when you hit a target with a melee weapon attack, they must make a Constitution saving throw. On a failed save, a target starts {@condition bleeding|GuildWars} for 1 minute, taking {@damage 2d6} damage.",
+				"At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Sharpen Daggers",
+					"Enchantment Spell. For 5...25...30 seconds, your dagger attacks cause Bleeding for 5...13...15 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/1/1c/Sharpen_Daggers.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Critical Strikes",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Enchantment",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a whetstone worth 10+ GP",
+					"cost": 1000
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage of the {@condition bleeding|GuildWars} condition increases by {@dice 1d6} for each slot level above 2nd."
+					]
+				}
+			]
+		},
+		{
+			"name": "Spirit Light",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@bold Sacrifice:} 17%",
+				"Channel your own life force through the afterlife to heal a creature, preventing the sacrifice if there is a spirit close by.",
+				"Choose one creature that you can see within range. The target regains hit points equal to {@dice 4d8} + your spellcasting ability modifier.",
+				"If there is at least one friendly summoning ritual within range, you do not sacrifice health to cast this spell. "
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Spirit Light",
+					"Spell. Target ally is healed for 60...156...180. If any spirits are within earshot, you don't sacrifice Health."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/c/ca/Spirit_Light.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Restoration Magic",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Sacrifice",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a drop of blood"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the healing increases by {@dice 2d8} for each slot level above 2nd."
+					]
+				}
+			]
 		}
 	],
 	"table": [

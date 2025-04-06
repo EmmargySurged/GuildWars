@@ -474,6 +474,7 @@
 					"daily": {
 						"1": [
 							"{@spell dimension door|XPHB}",
+							"{@spell dominate monster|XPHB}",
 							"{@spell spirit of failure|GuildWars} (level 5 version)"
 						]
 					},
@@ -580,6 +581,9 @@
 				"O"
 			],
 			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
 				"wisdom"
 			]
 		},
@@ -1319,6 +1323,691 @@
 			],
 			"savingThrowForced": [
 				"constitution"
+			]
+		},
+		{
+			"name": "Mad King Thorn",
+			"group": [
+				"Beholders"
+			],
+			"source": "GuildWarsDev",
+			"page": 95,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"beholder"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				19
+			],
+			"hp": {
+				"average": 195,
+				"formula": "26d10 + 52"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": {
+					"number": 40,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"initiative": {
+				"proficiency": 2
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 14,
+			"int": 19,
+			"wis": 15,
+			"cha": 19,
+			"save": {
+				"con": "+7",
+				"wis": "+7"
+			},
+			"skill": {
+				"perception": "+12"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 22,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone"
+			],
+			"languages": [
+				"Deep Speech",
+				"Undercommon",
+				"Krytan"
+			],
+			"cr": {
+				"cr": "14",
+				"xpLair": 13000
+			},
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
+					"entries": [
+						"If the death tyrant fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The death tyrant uses Eye Rays three times."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atkr m} {@hit 9}, reach 5 feet. {@h}13 ({@damage 2d8 + 4}) Piercing damage."
+					]
+				},
+				{
+					"name": "Eye Rays",
+					"entries": [
+						"The death tyrant randomly shoots one of the following magical rays at a target it can see within 120 feet of itself (roll {@dice 1d10}; reroll if the death tyrant has already used that ray during this turn):",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "1: Charm Ray",
+									"entries": [
+										"{@actSave wis} {@dc 17}. {@actSaveFail} 13 ({@damage 3d8}) Psychic damage, and the target has the {@condition Charmed|XPHB} condition for 1 hour or until it takes damage. {@actSaveSuccess} Half damage only."
+									]
+								},
+								{
+									"type": "item",
+									"name": "2: Paralyzing Ray",
+									"entries": [
+										"{@actSave con} {@dc 17}. {@actSaveFail} The target has the {@condition Paralyzed|XPHB} condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
+									]
+								},
+								{
+									"type": "item",
+									"name": "3: Fear Ray",
+									"entries": [
+										"{@actSave wis} {@dc 17}. {@actSaveFail} 10 ({@damage 3d6}) Psychic damage, and the target has the {@condition Frightened|XPHB} condition until the end of its next turn. {@actSaveSuccess} Half damage only."
+									]
+								},
+								{
+									"type": "item",
+									"name": "4: Slowing Ray",
+									"entries": [
+										"{@actSave con} {@dc 17}. {@actSaveFail} 18 ({@damage 4d8}) Necrotic damage. Until the end of the target's next turn, the target can't take Reactions; its {@variantrule Speed|XPHB} is halved; and it can take either an action or a {@variantrule Bonus Action|XPHB} on its turn, not both. {@actSaveSuccess} Half damage only."
+									]
+								},
+								{
+									"type": "item",
+									"name": "5: Enervation Ray",
+									"entries": [
+										"{@actSave con} {@dc 17}. {@actSaveFail} 16 ({@damage 3d10}) Poison damage, and the target has the {@condition Poisoned|XPHB} condition until the end of its next turn. While {@condition Poisoned|XPHB}, the target can't regain {@variantrule Hit Points|XPHB}. {@actSaveSuccess} Half damage only."
+									]
+								},
+								{
+									"type": "item",
+									"name": "6: Telekinetic Ray",
+									"entries": [
+										"{@actSave str} {@dc 17} (the target succeeds automatically if it is Gargantuan). {@actSaveFail} The death tyrant moves the target up to 30 feet in any direction. The target has the {@condition Restrained|XPHB} condition until the start of the death tyrant's next turn or until the death tyrant has the {@condition Incapacitated|XPHB} condition. The death tyrant can also exert fine control on objects with this ray, such as manipulating a tool or opening a door or container."
+									]
+								},
+								{
+									"type": "item",
+									"name": "7: Sleep Ray",
+									"entries": [
+										"{@actSave wis} {@dc 17} (the target succeeds automatically if it is a Construct or an Undead). {@actSaveFail} The target has the {@condition Unconscious|XPHB} condition for 1 minute. The condition ends if the target takes damage or a creature within 5 feet of it takes an action to wake it."
+									]
+								},
+								{
+									"type": "item",
+									"name": "8: Petrification Ray",
+									"entries": [
+										"{@actSave con} {@dc 17}. {@actSaveFail 1} The target has the {@condition Restrained|XPHB} condition and repeats the save at the end of its next turn if it is still {@condition Restrained|XPHB}, ending the effect on itself on a success. {@actSaveFail 2} The target has the {@condition Petrified|XPHB} condition instead of the {@condition Restrained|XPHB} condition."
+									]
+								},
+								{
+									"type": "item",
+									"name": "9: Disintegration Ray",
+									"entries": [
+										"{@actSave dex} {@dc 17}. {@actSaveFail} 36 ({@damage 8d8}) Force damage. If the target is a nonmagical object or a creation of magical force, a 10-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} of it disintegrates into dust. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} If the target is a creature and this damage reduces it to 0 {@variantrule Hit Points|XPHB}, it disintegrates into dust."
+									]
+								},
+								{
+									"type": "item",
+									"name": "10: Death Ray",
+									"entries": [
+										"{@actSave dex} {@dc 17}. {@actSaveFail} 55 ({@damage 10d10}) Necrotic damage. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} The target dies if the ray reduces it to 0 {@variantrule Hit Points|XPHB}."
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Negative Energy Cone",
+					"entries": [
+						"The death tyrant's central eye emits an imperceptible, magical wave of negative energy in a 150-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. Creatures in that area can't regain {@variantrule Hit Points|XPHB} until the start of the death tyrant's next turn. An intact Humanoid corpse there instantly rises as a {@creature Zombie|XMM} under the death tyrant's control and takes its turn immediately after the death tyrant on the same initiative count."
+					]
+				}
+			],
+			"legendaryActionsLair": 4,
+			"legendary": [
+				{
+					"name": "Chomp",
+					"entries": [
+						"The death tyrant makes two Bite attacks."
+					]
+				},
+				{
+					"name": "Glare",
+					"entries": [
+						"The death tyrant uses Eye Rays."
+					]
+				},
+				{
+					"name": "Elite Spell",
+					"entries": [
+						"Mad King Thorn casts {@spell Virulence|GuildWars} using the same spellcasting ability as Spellcasting."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Death Tyrant",
+				"source": "XMM"
+			},
+			"treasure": [
+				"any"
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"DS",
+				"U"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"conditionInflict": [
+				"charmed",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"restrained",
+				"unconscious"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Loot:",
+					"Staff of Flowers",
+					"Sending Stones"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Mad_King_Thorn.jpg"
+						}
+					}
+				]
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Mad King Thorn casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 17}, +9 to hit with spell attacks.)"
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Mad_King_Thorn_Token.png"
+			},
+			"damageTags": [
+				"I",
+				"N",
+				"O",
+				"P",
+				"Y"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			],
+			"savingThrowForcedLegendary": [
+				"wisdom"
+			]
+		},
+		{
+			"source": "GuildWarsDev",
+			"name": "Arboria Woodcurse",
+			"size": [
+				"M"
+			],
+			"type": "fey",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 80",
+				"average": 170
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 18,
+			"int": 12,
+			"wis": 21,
+			"cha": 15,
+			"save": {
+				"str": "+7",
+				"con": "+8",
+				"wis": "+9"
+			},
+			"skill": {
+				"deception": "+6",
+				"perception": "+9",
+				"stealth": "+6",
+				"survival": "+9"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 19,
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"Sylvan"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"S"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "One with the Woods",
+					"entries": [
+						"While the hag remains motionless in forest terrain, she is indistinguishable from an old, decomposing log or tree stump."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The wood hag has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Speak with Beasts and Plants",
+					"entries": [
+						"The wood hag can communicate with Beasts and Plants as if they shared a language."
+					]
+				},
+				{
+					"name": "Woodland Walk",
+					"entries": [
+						"Difficult terrain composed of plants doesn't cost the wood hag extra movement. In addition, she can pass through plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The wood hag makes two Claw or Toxic Splinter attacks."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage plus 18 ({@damage 4d8}) poison damage."
+					]
+				},
+				{
+					"name": "Toxic Splinter",
+					"entries": [
+						"{@atk rs} {@hit 9} to hit, range 60 ft., one target. {@h}7 ({@damage 1d4 + 5}) piercing damage plus 18 ({@damage 4d8}) poison damage, and the target must succeed on a {@dc 16} Constitution saving throw or be {@condition poisoned} for 1 minute. While {@condition poisoned} in this way, the target is {@condition paralyzed}. A {@condition poisoned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature within 5 feet of the target can take its action to remove the splinter with a successful {@dc 13} Wisdom ({@skill Medicine}) check, ending the {@condition poisoned} condition on the target."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Nettling Word",
+					"entries": [
+						"The wood hag heckles, mocks, or jeers at one creature she can see within 30 feet of her. If the creature can hear and understand the hag, it must succeed on a {@dc 16} Charisma saving throw or become enraged until the end of its next turn. While enraged, a creature has advantage on melee attack rolls, is unable to distinguish friend from foe, and must move to and attack the nearest creature other than the hag. If no other creature is near enough to move to and attack, the enraged creature stalks off in a random direction. Attack rolls against an enraged creature have advantage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The wood hag casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save {@dc 17}):"
+					],
+					"will": [
+						"{@spell charm person}",
+						"{@spell entangle}",
+						"{@spell silent image|XPHB}"
+					],
+					"daily": {
+						"1": [
+							"{@spell animate hut|WorldsBeyondNumberWitch}",
+							"{@spell contagion}",
+							"{@spell glyph of warding|XPHB}"
+						],
+						"3": [
+							"{@spell plant growth}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"charmed",
+				"poisoned",
+				"restrained",
+				"stunned"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"poisoned"
+			],
+			"miscTags": [
+				"MW",
+				"RA"
+			],
+			"environment": [
+				"forest",
+				"hill",
+				"mountain",
+				"swamp"
+			],
+			"fluff": {
+				"entries": [
+					"Loot:",
+					"1 Lock of Trickery (Unidentified)"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB3/creature/Wood Hag.webp"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB3/creature/token/Wood Hag.webp",
+			"spellcastingTags": [
+				"O"
+			],
+			"legendaryActions": 1,
+			"isNamedCreature": true,
+			"legendary": [
+				{
+					"name": "Elite Spell",
+					"entries": [
+						"Arboria Woodcurse casts {@spell Fevered Dreams|GuildWars} using the same spellcasting ability as Spellcasting."
+					]
+				}
+			],
+			"damageTags": [
+				"I",
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"L",
+				"T"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Livia",
+			"source": "GuildWarsDev",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 110,
+				"formula": "20d8 + 20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 12,
+			"int": 17,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"int": "+7",
+				"wis": "+5"
+			},
+			"skill": {
+				"arcana": "+7",
+				"history": "+7"
+			},
+			"passive": 11,
+			"resist": [
+				"necrotic"
+			],
+			"languages": [
+				"Common",
+				"Orrian",
+				"Krytan",
+				"Abyssal"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The necromancer casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 15}):"
+					],
+					"will": [
+						"{@spell dancing lights}",
+						"{@spell life transfer|GuildWars}",
+						"{@spell mage hand}",
+						"{@spell prestidigitation}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell bestow curse}",
+							"{@spell dimension door}",
+							"{@spell mage armor}",
+							"{@spell web}"
+						],
+						"1e": [
+							"{@spell circle of death}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The necromancer makes three Arcane Burst attacks."
+					]
+				},
+				{
+					"name": "Arcane Burst",
+					"entries": [
+						"{@atk ms,rs} {@hit 7} to hit, reach 5 ft. or range 120 ft., one target. {@h}25 ({@damage 4d10 + 3}) necrotic damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Summon Undead (1/Day)",
+					"entries": [
+						"The necromancer magically summons five {@creature skeleton||skeletons} or {@creature zombie||zombies}. The summoned creatures appear in unoccupied spaces within 60 feet of the necromancer, whom they obey. They take their turns immediately after the necromancer. Each lasts for 1 hour, until it or the necromancer dies, or until the necromancer dismisses it as a bonus action."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Grim Harvest (1/Turn)",
+					"entries": [
+						"When the necromancer kills a creature with necrotic damage, the necromancer regains 9 ({@damage 2d8}) hit points. "
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"AB"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"conditionInflictSpell": [
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"While the war between the White Mantle and the Shining Blade tears apart her Krytan homeland, Livia risks everything to keep her people safe. She joined the Shining Blade to protect them; she killed to defend them. Now freed from the control of the deadly Mursaat, Kryta struggles to survive, its leaders destroyed and its population beset by civil disorder.",
+					"Tasked by her superiors with finding a way to end the civil war, Livia has traveled into the Depths. She seeks a weapon of power—anything that will keep Kryta safe. And she is willing to give her life for it... as well as the lives of those around her. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Livia.jpg"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"RA",
+				"MA"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Livia_Token.png"
+			},
+			"damageTags": [
+				"N"
+			],
+			"damageTagsSpell": [
+				"F",
+				"N",
+				"O"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
 			]
 		}
 	],

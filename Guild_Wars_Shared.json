@@ -44281,6 +44281,239 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Shroud of Distress",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Enchantment}",
+				"Let shadow seep from your wounds, protecting and healing you as long as you are below 50% of your health.",
+				"For the duration, while you are below 50% of your maximum hit points, you have a +5 bonus to AC against weapon attacks and at the start of each of your turns, you regain hit points equal to {@dice 2d6} + spellcasting ability modifier."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Shroud of Distress",
+					"Enchantment Spell. For 30...54...60 seconds, if you are below 50% Health, you have 3...7...8 health regeneration and a 75% chance to block attacks. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/8/85/Shroud_of_Distress.jpg"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"force"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the healing increases by {@dice 1d6} for each slot level above 3rd."
+					]
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Shadow Arts",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Enchantment",
+					"source": "GuildWars"
+				}
+			]
+		},
+		{
+			"name": "Spirit Rift",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Open a temporary rift to another plane at a location, which violently collapses at the start of your next turn.",
+				"Choose a point that you can see within range. When this spell ends, each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 12d6} lightning damage and has {@condition cracked armor|GuildWars} for 1 minute. On a successful save, a target takes half as much damage, and has {@condition cracked armor|GuildWars} for 1 round."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Spirit Rift",
+					"Spell. Open a Spirit Rift at target foe's location. After 3 seconds, all adjacent foes are struck for 25...105...125 lightning damage and suffer from Cracked Armor for 1...16...20 second[s]. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/5/53/Spirit_Rift.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Channeling Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true
+			},
+			"conditionInflict": [
+				"cracked armor|guildwars"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@dice 2d6} for each slot level above 5th, and you create an additional rift for every two slot levels above 5th. A creature in the area of more than one rift is affected only once."
+					]
+				}
+			]
+		},
+		{
+			"name": "Signet of Shadows",
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@bold Signet:} Initiative",
+				"Activate your signet of shadows, plunging a creature into darkness for a brief moment, which is amplified if the creature is {@condition blinded}.",
+				"Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, the target takes {@damage 4d6} psychic damage, and if the target is {@condition blinded}, they take an additional {@damage 6d6} psychic damage. On a successful save, the target takes half as much damage."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Signet of Shadows",
+					"Signet. Target foe takes 5...29...35 damage. If your target was Blinded, that foe suffers an additional 15...51...60 damage."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/1/1b/Signet_of_Shadows.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Deadly Arts",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Signet",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"conditionInflict": [
+				"blinded"
+			]
 		}
 	],
 	"table": [

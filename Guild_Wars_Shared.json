@@ -4833,7 +4833,7 @@
 			"entries": [
 				"{@bold Preparation}",
 				"Tip your arrows with explosives.",
-				"For the duration, your ranged weapon attacks deal an additional {@damage 1d4} fire damage in a 5-foot radius around the attack target."
+				"For the duration, your ranged weapon attacks deal an additional {@damage 1d4} fire damage to all creatures in a 5-foot radius around the attack target."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -4904,7 +4904,7 @@
 				{
 					"number": 0,
 					"unit": "special",
-					"condition": "which you take immediately before hitting a target with a Ranged weapon within half the range of the weapon"
+					"condition": "which you take immediately before hitting a target with a Ranged weapon within a quarter of the range increments of the weapon"
 				}
 			],
 			"range": {
@@ -4917,7 +4917,7 @@
 			],
 			"entries": [
 				"You shoot an enemy point-blank.",
-				"On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d8} damage.",
+				"You have advantage on the attack roll if the target is within 5-feet of you. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d8} damage.",
 				"At 5th level, the ranged attack deals an extra {@damage 1d8} piercing damage to the target on a hit ({@dice 2d8}). This damage increases by {@dice 1d8} when you reach 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
 			],
 			"source": "GuildWars",
@@ -20084,7 +20084,7 @@
 			"entries": [
 				"{@bold Elite}, {@bold Enchantment}",
 				"Conjure up an Illusionary Sword for the duration. ",
-				"This magic sword lasts until the spell ends. It counts as a simple melee weapon with which you are proficient. It deals {@damage 2d8} psychic damage on a hit or miss, cannot critical hit and has the finesse, light and thrown property.",
+				"This magic sword lasts until the spell ends. It counts as a simple melee weapon with which you are proficient. It deals {@damage 2d8} psychic damage on a hit or miss, cannot critical hit and has the finesse, light and thrown property (range 20/60).",
 				"While wielding at least one sword conjured by this spell, when you take damage, you can roll {@dice 1d4} for every two illusion themed spells you have prepared and subtract the number rolled from the damage. ",
 				"You can conjure up to two swords, which can only be wielded by you.",
 				"If you drop the sword or throw it, it dissipates at the end of the turn. Thereafter, while the spell persists, you can use a bonus action to cause all swords conjured by this spell to reappear in your hands."
@@ -33922,8 +33922,8 @@
 			"entries": [
 				"Channel your magic into tracking down and charming a wild animal.",
 				"As part of the casting of this spell, you can spend {@dice 1d4} hours magically searching for an appropriate creature to charm. If you do so, roll on the {@table Charm Animal Beast List|GuildWars} table by making either a Wisdom (Animal Handling), a Wisdom (Survival) or an Intelligence (Nature) check to determine which beast will appear (your DM might decide to replace animals from the list).",
-				"When you find an appropriate creature to charm, either by searching for it or having already encountered one (in which case it needs to be a beast of challenge rating 1 or lower, with an Intelligence of 3 or less), you can attempt to charm it by touching it. ",
-				"When you successfully touch it, it must make a Wisdom saving throw. On a failed save, the target is {@condition charmed} by you until next dawn, at which point you can expend a spell slot of equal or higher level than the one used in the casting of this spell to maintain the {@condition charmed} condition on the beast. To do this, you must have the Charm Animal spell prepared, or any other spell which says that it can be used instead.",
+				"When you find an appropriate creature to charm, either by searching for it or having already encountered one (in which case it needs to be a beast of challenge rating 1 or lower, with Intelligence of 3 or less), you can attempt to charm it by touching it. ",
+				"When you successfully touch it, it must make a Wisdom saving throw. On a failed save, the target is {@condition charmed} by you for the next 24 hours, while the creature is {@condition charmed} in this way, you can expend a spell slot of equal or higher level than the one used in the casting of this spell to maintain the {@condition charmed} condition on the beast, by spending 1 minute with it while it is within 5-feet of you. To do this, you must have the Charm Animal spell prepared, or any other spell which says that it can be used instead.",
 				"The {@condition charmed} creature is friendly to you and your companions. While the creature is {@condition charmed}, you have a telepathic link with it as long as the two of you are on the same plane of existence and are within 1 mile of each other. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.",
 				"After charming a creature with this spell, you cannot cast this spell again until {@dice 1d6} days have passed."
 			],
@@ -44513,6 +44513,89 @@
 			},
 			"conditionInflict": [
 				"blinded"
+			]
+		},
+		{
+			"name": "Splinter Weapon",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@bold Weapon Spell}",
+				"Transform a weapon by giving splinters which fly off in every direction on a hit.",
+				"Choose one friendly creature, which is wielding a weapon, that you can see within range. For the duration, the next two attacks deal an additional {@damage 2d6} piercing damage to all creatures in a 10-foot radius around the attack target, except the creature wielding the weapon."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Splinter Weapon",
+					"Weapon Spell. For 20 seconds, target ally has a Splinter Weapon. Target ally's next 1...4...5 attack[s] deal 5...41...50 damage to up to 4 adjacent foes."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/8/8e/Splinter_Weapon.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Channeling Magic",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Weapon Spell",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage each increases by {@dice 1d6} for each slot level above 3rd.",
+						"When you cast this spell using a spell slot of 5th level or higher, the amount of time this spell can trigger increases by 1 for every two slot level above 3rd."
+					]
+				}
 			]
 		}
 	],

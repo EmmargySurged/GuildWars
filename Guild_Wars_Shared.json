@@ -963,6 +963,88 @@
 			"conditionInflict": [
 				"blinded"
 			]
+		},
+		{
+			"name": "Spirit of Union",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "GuildWars",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 10,
+					"condition": "+ Spell Level",
+					"braces": true
+				}
+			],
+			"hp": {
+				"special": "5 + Spell Level * 5"
+			},
+			"speed": {},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"actionTags": [
+				"Multiattack"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"fluff": {
+				"entries": [
+					"Binding Ritual. Create a level 1...10...12 spirit. Whenever a non-spirit ally in its range takes damage or life steal, it is reduced by 15 and the spirit takes 15 damage. This spirit dies after 30...54...60 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Defensive_binding_spirit.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"trait": [
+				{
+					"name": "Union",
+					"entries": [
+						"Any creature who takes damage, who is not a Summoning Ritual, who is friendly to the creature who summoned the spirit and while they are within 150-feet of the spirit can roll a number of d4s equal to the spell level and subtract the number rolled from the damage. This spirit then takes necrotic damage equal to damage subtracted."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Defensive_binding_spirit_Token.png"
+			}
 		}
 	],
 	"feat": [
@@ -2945,7 +3027,9 @@
 			"fluff": {
 				"entries": [
 					"Symbol of Wrath",
-					"Spell. For 5 seconds, foes adjacent to the location in which the spell was cast take 8...27...32 holy damage each second. "
+					"Spell. For 5 seconds, foes adjacent to the location in which the spell was cast take 8...27...32 holy damage each second. ",
+					"Kirin's Wrath",
+					"Spell. For 5 seconds, foes adjacent to the location in which the spell was cast take 8...27...32 holy damage each second."
 				],
 				"images": [
 					{
@@ -2953,6 +3037,13 @@
 						"href": {
 							"type": "external",
 							"url": "https://wiki.guildwars.com/images/e/e1/Symbol_of_Wrath.jpg"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/7/70/Kirin%27s_Wrath.jpg"
 						}
 					}
 				]
@@ -4924,6 +5015,8 @@
 			"fluff": {
 				"entries": [
 					"Point Blank Shot",
+					"Bow Attack. Shoot an arrow that has half the normal range, but strikes for +10...34...40 damage.",
+					"Zojun's Shot",
 					"Bow Attack. Shoot an arrow that has half the normal range, but strikes for +10...34...40 damage."
 				],
 				"images": [
@@ -4932,6 +5025,13 @@
 						"href": {
 							"type": "external",
 							"url": "https://wiki.guildwars.com/images/3/35/Point_Blank_Shot.jpg"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/e/ea/Zojun%27s_Shot.jpg"
 						}
 					}
 				]
@@ -8650,6 +8750,8 @@
 			"fluff": {
 				"entries": [
 					"Shadow Strike",
+					"Spell. Target foe takes 12...41...48 shadow damage. If that foe's Health is above 50%, you steal up to 12...41...48 Health.",
+					"Lifebane Strike",
 					"Spell. Target foe takes 12...41...48 shadow damage. If that foe's Health is above 50%, you steal up to 12...41...48 Health."
 				],
 				"images": [
@@ -8658,6 +8760,13 @@
 						"href": {
 							"type": "external",
 							"url": "https://wiki.guildwars.com/images/0/08/Shadow_Strike.jpg"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/c/c5/Lifebane_Strike.jpg"
 						}
 					}
 				]
@@ -9364,6 +9473,8 @@
 			"fluff": {
 				"entries": [
 					"Penetrating Blow",
+					"Axe Attack. If this attack hits, you strike for +5...17...20 damage. This axe attack has 20% armor penetration.",
+					"Penetrating Chop",
 					"Axe Attack. If this attack hits, you strike for +5...17...20 damage. This axe attack has 20% armor penetration."
 				],
 				"images": [
@@ -9372,6 +9483,13 @@
 						"href": {
 							"type": "external",
 							"url": "https://wiki.guildwars.com/images/e/e1/Penetrating_Blow.jpg"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/c/cf/Penetrating_Chop.jpg"
 						}
 					}
 				]
@@ -9601,7 +9719,9 @@
 			"fluff": {
 				"entries": [
 					"Penetrating Attack",
-					"Bow Attack. If Penetrating Attack hits, you strike for +5...21...25 damage and this attack has 10% armor penetration."
+					"Bow Attack. If Penetrating Attack hits, you strike for +5...21...25 damage and this attack has 10% armor penetration.",
+					"Sundering Attack",
+					"Bow Attack. If Sundering Attack hits, you strike for +5...21...25 damage and this attack has 10% armor penetration."
 				],
 				"images": [
 					{
@@ -9609,6 +9729,13 @@
 						"href": {
 							"type": "external",
 							"url": "https://wiki.guildwars.com/images/1/17/Penetrating_Attack.jpg"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/2/2b/Sundering_Attack.jpg"
 						}
 					}
 				]
@@ -15783,6 +15910,8 @@
 			"fluff": {
 				"entries": [
 					"Galrath Slash",
+					"Sword Attack. This attack strikes for +1...32...40 damage if it hits.",
+					"Silverwing Slash",
 					"Sword Attack. This attack strikes for +1...32...40 damage if it hits."
 				],
 				"images": [
@@ -15791,6 +15920,13 @@
 						"href": {
 							"type": "external",
 							"url": "https://wiki.guildwars.com/images/6/6d/Galrath_Slash.jpg"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/9/9c/Silverwing_Slash.jpg"
 						}
 					}
 				]
@@ -22524,10 +22660,9 @@
 				}
 			],
 			"entries": [
-				"{@bold Elite}, {@bold Enchantment}",
+				"{@bold Bond}, {@bold Elite}, {@bold Enchantment}",
 				"Partially turn your flesh into obsidian, reducing the damage you take, making you non-targetable by spells but preventing you from attacking and reducing your ability to cast spells.",
-				"For the duration, you cannot be targeted by hostile spells and when you take damage, you can roll {@dice 2d4} and subtract the number rolled from the damage. Additionally, regardless of your abilities or magic items, you can't make melee or ranged weapon attacks.",
-				"{@bold Bond.} For the duration, your spell save DC and spell attack bonus are reduced by 2.  You can have a maximum number of bonds active at any one time, equal to your spell casting ability modifier (minimum 1). The bond ends if the target of your bond is ever not within 300 feet of you, or you fall {@condition unconscious}. You can end a bond at any time (no action required)."
+				"For the duration, you cannot be targeted by hostile spells and when you take damage, you can roll {@dice 2d4} and subtract the number rolled from the damage. Additionally, regardless of your abilities or magic items, you can't make melee or ranged weapon attacks."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -22564,6 +22699,10 @@
 				},
 				{
 					"name": "Enchantment",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Bond",
 					"source": "GuildWars"
 				}
 			],
@@ -24909,6 +25048,8 @@
 			"fluff": {
 				"entries": [
 					"Griffon's Sweep",
+					"Melee Attack. If this attack hits, you strike for +5...17...20 damage. If this attack is blocked, your target is knocked down and suffers 10...29...34 damage.",
+					"Leviathan's Sweep",
 					"Melee Attack. If this attack hits, you strike for +5...17...20 damage. If this attack is blocked, your target is knocked down and suffers 10...29...34 damage."
 				],
 				"images": [
@@ -24917,6 +25058,13 @@
 						"href": {
 							"type": "external",
 							"url": "https://wiki.guildwars.com/images/0/0f/Griffon%27s_Sweep.jpg"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/9/9c/Leviathan%27s_Sweep.jpg"
 						}
 					}
 				]
@@ -25820,6 +25968,8 @@
 			"fluff": {
 				"entries": [
 					"Tiger's Fury",
+					"Stance. All your non-attack skills are disabled for 5 seconds. For 5...10...11 seconds, you attack 25% faster.",
+					"Bestial Fury",
 					"Stance. All your non-attack skills are disabled for 5 seconds. For 5...10...11 seconds, you attack 25% faster."
 				],
 				"images": [
@@ -25828,6 +25978,13 @@
 						"href": {
 							"type": "external",
 							"url": "https://wiki.guildwars.com/images/c/c6/Tiger%27s_Fury.jpg"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/b/bc/Bestial_Fury.jpg"
 						}
 					}
 				]
@@ -26911,7 +27068,9 @@
 			"fluff": {
 				"entries": [
 					"Inspired Enchantment",
-					"Spell. Removes an enchantment from target foe and gain 3...13...15 Energy. For 20 seconds, Inspired Enchantment is replaced with the enchantment removed from target foe."
+					"Spell. Removes an enchantment from target foe and gain 3...13...15 Energy. For 20 seconds, Inspired Enchantment is replaced with the enchantment removed from target foe.",
+					"Revealed Enchantment",
+					"Spell. Remove an enchantment from target foe and gain 3...13...15 Energy. For 20 seconds, Revealed Enchantment is replaced with the enchantment removed from target foe."
 				],
 				"images": [
 					{
@@ -26919,6 +27078,13 @@
 						"href": {
 							"type": "external",
 							"url": "https://wiki.guildwars.com/images/1/12/Inspired_Enchantment.jpg"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/5/5d/Revealed_Enchantment.jpg"
 						}
 					}
 				]
@@ -28550,7 +28716,9 @@
 			"fluff": {
 				"entries": [
 					"Desperation Blow",
-					"Melee Attack. If this attack hits, you strike for +10...34...40 damage, and your target suffers from one of the following conditions: Deep Wound (for 20 seconds), Weakness (for 20 seconds), Bleeding (for 25 seconds), or Crippled (for 15 seconds). After making a Desperation Blow, you are knocked down."
+					"Melee Attack. If this attack hits, you strike for +10...34...40 damage, and your target suffers from one of the following conditions: Deep Wound (for 20 seconds), Weakness (for 20 seconds), Bleeding (for 25 seconds), or Crippled (for 15 seconds). After making a Desperation Blow, you are knocked down.",
+					"Drunken Blow",
+					"Melee Attack. If this attack hits, you strike for +10...34...40 damage and your target suffers from one of the following conditions: Deep Wound (for 20 seconds), Weakness (for 20 seconds), Bleeding (for 25 seconds), or Crippled (for 15 seconds). After making a Drunken Blow, you are knocked down."
 				],
 				"images": [
 					{
@@ -28558,6 +28726,13 @@
 						"href": {
 							"type": "external",
 							"url": "https://wiki.guildwars.com/images/2/24/Desperation_Blow.jpg"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/0/0b/Drunken_Blow.jpg"
 						}
 					}
 				]
@@ -43262,7 +43437,7 @@
 		{
 			"name": "Recuperation",
 			"level": 3,
-			"school": "A",
+			"school": "N",
 			"time": [
 				{
 					"number": 1,
@@ -44594,6 +44769,479 @@
 					"entries": [
 						"When you cast this spell using a spell slot of 4th level or higher, the damage each increases by {@dice 1d6} for each slot level above 3rd.",
 						"When you cast this spell using a spell slot of 5th level or higher, the amount of time this spell can trigger increases by 1 for every two slot level above 3rd."
+					]
+				}
+			]
+		},
+		{
+			"name": "Twisting Fangs",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon with the light and thrown property"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Dual Attack}",
+				"Twist your weapons deep into an enemy's vital organs, causing internal ruptures.",
+				"Make two melee weapon attacks against the target. On a hit, the target suffers the weapon attack's normal effects, takes {@damage 3d6} damage and must make a Constitution saving throw. On a failed save, the target has a {@condition deep wound|GuildWars} and starts {@condition bleeding|GuildWars} for duration, taking {@damage 2d6} damage."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Twisting Fangs",
+					"Dual Attack. Must follow an off-hand attack. If it hits, Twisting Fangs strikes for +10...18...20 damage and struck foe suffers from Bleeding and Deep Wound for 5...17...20 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/8/8e/Twisting_Fangs.jpg"
+						}
+					}
+				]
+			},
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"AAD"
+			],
+			"components": {
+				"v": true
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Critical Strikes",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Dual Attack",
+					"source": "GuildWars"
+				}
+			],
+			"conditionInflict": [
+				"deep wound|guildwars"
+			]
+		},
+		{
+			"name": "Union",
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Summoning Ritual:} {@creature Spirit of Union|GuildWars}",
+				"Bind a Spirit of Union to your will, absorbing damage to your allies.",
+				"Summon a {@creature Spirit of Union|GuildWars} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative, but takes it turn directly after yours. The spirit is in the DMs control."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Union",
+					"Binding Ritual. Create a level 1...10...12 spirit. Whenever a non-spirit ally in its range takes damage or life steal, it is reduced by 15 and the spirit takes 15 damage. This spirit dies after 30...54...60 seconds. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/2/28/Union.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"AAD"
+			],
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Communing",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Summoning Ritual",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a poem written about unity"
+			}
+		},
+		{
+			"name": "Unsuspecting Strike",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon with the light property"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@bold Lead Attack}",
+				"Hit your target with a strike in an unexpected location, dealing critical damage if they are at high health.",
+				"On a hit, the target suffers the weapon attack's normal effects and takes {@damage 4d4} damage. If the target was above 90% of their maximum hit points, the attack is a critical hit."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Unsuspecting Strike",
+					"Lead Attack. If this attack hits, you strike for +19...29...31 damage. If your target was above 90% Health you deal an additional 15...63...75 damage."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/6/64/Unsuspecting_Strike.jpg"
+						}
+					}
+				]
+			},
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"components": {
+				"v": true
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Critical Strikes",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Lead Attack",
+					"source": "GuildWars"
+				}
+			]
+		},
+		{
+			"name": "Vengeful Weapon",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@bold Weapon Spell} ",
+				"Temporarily transform a weapon into a vengeful weapon, visibly making its appearance more wicked and punishing anyone damaging the wielder.",
+				"Choose one friendly creature, which is wielding a weapon, that you can see within range. For the duration, the next time the target takes damage from a creature, target that creature. The new target takes {@damage 1d4} necrotic damage, and the old target regains hit points equal to the amount of necrotic damage dealt."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Vengeful Weapon",
+					"Weapon Spell. For 8 seconds, the next time target ally takes damage or life steal from a foe, that ally steals up to 15...51...60 Health from that foe."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/d/d8/Vengeful_Weapon.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Restoration Magic",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Weapon Spell",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d4} for each slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"name": "Way of Perfection",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@bold Enchantment}",
+				"Achieve perfection through precision.",
+				"For the duration, when you score a critical hit, you regain hit points equal to {@dice 2d4} + your spellcasting ability modifier."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Way of Perfection",
+					"Enchantment Spell. For 60 seconds, whenever you successfully land a critical hit, you gain 10...34...40 Health."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/d/dd/Way_of_Perfection.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Shadow Arts",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Enchantment",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@dice 2d4} for each slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"name": "Weapon of Warding",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@bold Weapon Spell} ",
+				"Temporarily transform a weapon into a warding weapon, visibly making its appearance more defensive and increasing the wielders' defenses.",
+				"Choose one friendly creature, which is wielding a weapon, that you can see within range. For the duration, the target has a +5 bonus to AC and at the start of each of the target's turns, if the target is above 0 hit points, the target regains hit points equal to {@dice 2d4}."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Weapon of Warding",
+					"Weapon Spell. For 3...7...8 seconds, target ally has a Weapon of Warding that grants target ally +2...4...4 Health regeneration and a 50% chance to block."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/f/f9/Weapon_of_Warding.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Restoration Magic",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Weapon Spell",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the healing increases by {@dice 2d4} for each slot level above 4th."
 					]
 				}
 			]

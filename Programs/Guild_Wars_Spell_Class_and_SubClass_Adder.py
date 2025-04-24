@@ -217,10 +217,10 @@ def update_spells_with_classes(json_path, file_path, sheet_name, valid_backgroun
 # Example Usage
 if __name__ == "__main__":
     # File paths
-    json_path = "../Guild_Wars_Shared.json"
+    json_path = "../Guild Wars.json"
     file_path = "C:/Users/emmae/OneDrive/Shared/D&D/Tools/Guild Wars Spell Conversion - Spreadsheet.xlsx"
     sheet_name = "Spell Distribution"
-    output_path = "../Updated_Guild_Wars_Spells.json"
+    output_path = "../Guild_Wars_Shared.json.json"
 
     # Define your lists as provided
     classes_list = [

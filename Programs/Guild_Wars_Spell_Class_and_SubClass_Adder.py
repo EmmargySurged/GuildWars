@@ -220,7 +220,7 @@ if __name__ == "__main__":
     json_path = "../Guild Wars.json"
     file_path = "C:/Users/emmae/OneDrive/Shared/D&D/Tools/Guild Wars Spell Conversion - Spreadsheet.xlsx"
     sheet_name = "Spell Distribution"
-    output_path = "../Guild_Wars_Shared.json.json"
+    output_path = "../Guild_Wars_Shared.json"
 
     # Define your lists as provided
     classes_list = [

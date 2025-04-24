@@ -242,8 +242,8 @@ if __name__ == "__main__":
             {"name": "Circle of Spores", "shortName": "Spores", "source": "TCE"},
             {"name": "Circle of Stars", "shortName": "Stars", "source": "XPHB"}
         ]},
-        {"name": "Illrigger", "source": "IllR", "sub_classes": [
-            {"name": "Architect of Ruin", "shortName": "Architect of Ruin", "source": "IllR"}
+        {"name": "Illrigger", "source": "IllriggerRevised", "sub_classes": [
+            {"name": "Architect of Ruin", "shortName": "Architect of Ruin", "source": "IllriggerRevised"}
         ]},
         {"name": "Paladin", "source": "XPHB", "sub_classes": [
             {"name": "Oath of Ancients", "shortName": "Ancients", "source": "XPHB"}
@@ -258,8 +258,8 @@ if __name__ == "__main__":
             {"name": "The Fathomless", "shortName": "Fathomless", "source": "TCE"},
             {"name": "The Hexblade", "shortName": "Hexblade", "source": "XGE"}
         ]},
-        {"name": "Witch", "source": "WBNW", "sub_classes": [
-            {"name": "Coven of the Claw", "shortName": "Claw", "source": "WBNW"}
+        {"name": "Witch", "source": "WorldsBeyondNumberWitch", "sub_classes": [
+            {"name": "Coven of the Claw", "shortName": "Claw", "source": "WorldsBeyondNumberWitch"}
         ]},
         {"name": "Wizard", "source": "XPHB", "sub_classes": [
             {"name": "Bladesinging", "shortName": "Bladesinging", "source": "TCE"},

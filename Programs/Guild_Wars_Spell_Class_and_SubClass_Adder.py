@@ -235,7 +235,7 @@ if __name__ == "__main__":
             {"name": "Collage of Swords", "shortName": "Swords", "source": "XGE"}
         ]},
         {"name": "Cleric", "source": "XPHB", "sub_classes": [
-            {"name": "Inquisition Domain", "shortName": "Inquisition", "source": "GH:PP"},
+            {"name": "Inquisition Domain", "shortName": "Inquisition", "source": "GrimHollowPlayerPack"},
             {"name": "Light Domain", "shortName": "Light", "source": "XPHB"}
         ]},
         {"name": "Druid", "source": "XPHB", "sub_classes": [

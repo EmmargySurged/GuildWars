@@ -9141,7 +9141,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 150
@@ -9955,7 +9955,7 @@
                 }
             ],
             "range": {
-                "type": "sphere",
+                "type": "emanation",
                 "distance": {
                     "type": "feet",
                     "amount": 10
@@ -9968,7 +9968,7 @@
             ],
             "entries": [
                 "Heal every creature in an area around you.",
-                "Target each creature within range. A target regains hit points equal to {@dice 4d4} + your spellcasting ability modifier."
+                "Target each creature within a 10-foot Emanation. A target regains hit points equal to {@dice 4d4} + your spellcasting ability modifier."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -10732,7 +10732,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 150
@@ -11248,7 +11248,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 15
@@ -13604,7 +13604,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "emanation",
                 "distance": {
                     "type": "feet",
                     "amount": 15
@@ -13622,7 +13622,7 @@
             "entries": [
                 "{@bold Hex}",
                 "Make spikes of ice burst out from you, slowing creatures down.",
-                "Target each creature other than you within range. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 4d6} cold damage, and for the duration the target's speed is reduced by 66%. On a successful save, a target takes half as much damage, but suffers no other effect."
+                "Target each creature other than you within a 15-foot Emanation. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 4d6} cold damage, and for the duration the target's speed is reduced by 66%. On a successful save, a target takes half as much damage, but suffers no other effect."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -18822,7 +18822,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "emanation",
                 "distance": {
                     "type": "feet",
                     "amount": 10
@@ -18835,7 +18835,7 @@
             ],
             "entries": [
                 "Create an inferno of flames at your location.",
-                "Target each creature other than you within range. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 8d6} fire damage. On a successful save, a target takes half as much damage."
+                "Target each creature other than you within a 10-foot Emanation. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 8d6} fire damage. On a successful save, a target takes half as much damage."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -22189,7 +22189,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 150
@@ -22199,7 +22199,7 @@
                 {
                     "type": "timed",
                     "duration": {
-                        "type": "minute",
+                        "type": "round",
                         "amount": 1
                     }
                 }
@@ -22347,7 +22347,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 5
@@ -26218,7 +26218,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "emanation",
                 "distance": {
                     "type": "feet",
                     "amount": 20
@@ -26236,7 +26236,7 @@
             "entries": [
                 "{@bold Enchantment}",
                 "Channel some of the surrounding soul energy into your spells, improving your spellcasting.",
-                "For the Duration, when you would expend a spell slot to cast a spell, roll a {@dice d20}. On a 20 or higher, the spell does not expend a spell slot. The number you need to roll decreases by 1 for each hostile creature within range."
+                "For the Duration, when you would expend a spell slot to cast a spell, roll a {@dice d20}. On a 20 or higher, the spell does not expend a spell slot. The number you need to roll decreases by 1 for each hostile creature within a 20-foot Emanation."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -27005,7 +27005,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "emanation",
                 "distance": {
                     "type": "feet",
                     "amount": 10
@@ -27018,7 +27018,7 @@
             ],
             "entries": [
                 "Create a chilling blast of air which swirls around you, damaging all creatures and knocking them {@condition prone} if they attacked during their last turn.",
-                "Target each creature other than you within range. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 3d6} cold damage and, if a target attacked on its last turn, is knocked {@condition prone}. On a successful save, a target takes half as much damage, but suffers no other effect.",
+                "Target each creature other than you within a 10-foot Emanation. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 2d6} cold damage and, if a target attacked on its last turn, is knocked {@condition prone}. On a successful save, a target takes half as much damage, but suffers no other effect.",
                 "{@bold Overcast:} The radius of the spell increases by 5 feet."
             ],
             "source": "GuildWars",
@@ -27267,7 +27267,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "emanation",
                 "distance": {
                     "type": "feet",
                     "amount": 15
@@ -27280,7 +27280,7 @@
             ],
             "entries": [
                 "Restore to life any number of fallen animal companions in range.",
-                "Choose any number of friendly dead beasts, which obey your verbal commands and which have not been dead for more than 1 minute, that you can see within range. A target returns to life with 30% of their maximum hit points.",
+                "Choose any number of friendly dead beasts, which obey your verbal commands and which have not been dead for more than 1 minute, that you can see within a 15-foot Emanation. A target returns to life with 30% of their maximum hit points.",
                 "This spell can be used instead of the {@spell Charm Animal|GuildWars} spell, to maintain the {@condition charmed} condition on a beast {@condition charmed} by it."
             ],
             "source": "GuildWars",
@@ -28548,7 +28548,7 @@
             "entries": [
                 "{@bold Stance}",
                 "Whirl around, blocking incoming attacks, and deflecting projectiles, damaging all creatures around you.",
-                "For the duration, you have a +5 bonus to AC against weapon attacks and if a ranged attack misses you because of this bonus, target each creature other than you within range. A target takes {@damage 1d6} slashing damage."
+                "For the duration, you have a +5 bonus to AC against weapon attacks and if a ranged attack misses you because of this bonus, target each creature other than you within a 10-foot Emanation. A target takes {@damage 1d6} slashing damage."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -29269,7 +29269,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 150
@@ -29858,7 +29858,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 150
@@ -29866,7 +29866,11 @@
             },
             "duration": [
                 {
-                    "type": "instant"
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
                 }
             ],
             "entries": [
@@ -29969,7 +29973,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "emanation",
                 "distance": {
                     "type": "feet",
                     "amount": 150
@@ -29987,7 +29991,7 @@
             "entries": [
                 "{@bold Elite}, {@bold Enchantment}",
                 "Don the necrotic aura of a powerful lich, creating {@creature Bone Horror|GuildWars|Bone Horrors} from all corpses in range and increasing the potency of your death magic spells.",
-                "Target each non-undead dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, within range. Exploit each target, turning them into a {@creature Bone Horror|GuildWars}. Then create an additional {@creature Bone Horror|GuildWars} at your location.",
+                "Target each non-undead dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, within a 150-foot Emanation. Exploit each target, turning them into a {@creature Bone Horror|GuildWars}. Then create an additional {@creature Bone Horror|GuildWars} at your location.",
                 "A {@creature Bone Horror|GuildWars} remains for the duration or until it reaches zero hit points, at which point it will disintegrate into ash.",
                 "A {@creature Bone Horror|GuildWars} is friendly to you and your allies while you are conscious. If you fall {@condition unconscious}, a {@creature Bone Horror|GuildWars} becomes hostile towards everything. A {@creature Bone Horror|GuildWars} acts on your initiative, but takes it turn directly after yours. A {@creature Bone Horror|GuildWars} is in the DMs control.",
                 "For the duration, when you cast a death themed spell of 1st level or higher, you can cast that spell by using a spell slot which is one level higher than the one used in the casting."
@@ -31715,7 +31719,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 150
@@ -31870,7 +31874,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 150
@@ -31976,7 +31980,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 5
@@ -32483,7 +32487,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 150
@@ -34688,7 +34692,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 300
@@ -34783,7 +34787,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 300
@@ -34794,7 +34798,7 @@
                     "type": "timed",
                     "duration": {
                         "type": "round",
-                        "amount": 2
+                        "amount": 1
                     }
                 }
             ],
@@ -38931,7 +38935,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 90
@@ -42327,7 +42331,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 5
@@ -44948,7 +44952,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "emanation",
                 "distance": {
                     "type": "feet",
                     "amount": 15
@@ -44966,7 +44970,7 @@
             "entries": [
                 "{@bold Hex}",
                 "Make the earth around you cling to creatures, slowing them down.",
-                "Target each creature other than you within range. Each target must make a Dexterity saving throw. On a failed save, a target's speed is reduced by 50% for the duration."
+                "Target each creature other than you within a 15-foot Emanation. Each target must make a Dexterity saving throw. On a failed save, a target's speed is reduced by 50% for the duration."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -45471,7 +45475,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 150
@@ -46275,7 +46279,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 5
@@ -47859,10 +47863,9 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
-                    "type": "feet",
-                    "amount": 150
+                    "type": "self"
                 }
             },
             "duration": [
@@ -49189,7 +49192,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 150
@@ -49422,7 +49425,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "emanation",
                 "distance": {
                     "type": "feet",
                     "amount": 10
@@ -49435,7 +49438,7 @@
             ],
             "entries": [
                 "Release a wave of crystal energy, which purifies any negative conditions affecting a creature, dealing more damage for each removed.",
-                "Target each creature other than you within range. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 8d6} force damage. On a successful save, a target takes half as much damage. ",
+                "Target each creature other than you within a 10-foot Emanation. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 8d6} force damage. On a successful save, a target takes half as much damage. ",
                 "Also end all of the following conditions on a target: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} and {@condition Weakness|GuildWars}. A target takes {@damage 2d4} force damage for each condition ended."
             ],
             "source": "GuildWars",
@@ -50718,7 +50721,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 5
@@ -52288,7 +52291,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "emanation",
                 "distance": {
                     "type": "feet",
                     "amount": 20
@@ -52301,7 +52304,7 @@
             ],
             "entries": [
                 "Suck out the life force from creatures around you, feasting on their energy.",
-                "Target each creature other than you within range. Each target must make a Constitution saving throw. On a failed save, a target takes {@damage 4d8} necrotic damage, and you regain hit points equal to the amount of necrotic damage dealt. On a successful save, a target takes half as much damage."
+                "Target each creature other than you within a 20-foot Emanation. Each target must make a Constitution saving throw. On a failed save, a target takes {@damage 4d8} necrotic damage, and you regain hit points equal to the amount of necrotic damage dealt. On a successful save, a target takes half as much damage."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -52434,7 +52437,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 150
@@ -54272,7 +54275,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "emanation",
                 "distance": {
                     "type": "feet",
                     "amount": 10
@@ -54290,7 +54293,7 @@
             "entries": [
                 "{@bold Enchantment}",
                 "Turn your own flesh demonic, letting it lash out creatures around you when you cast a spell.",
-                "When you cast a spell of 1st level or higher that targets a hostile creature, target each creature other than you, that you can see within range. Each target must make a Wisdom saving throw.  On a failed save, a target takes {@damage 2d6} necrotic damage. On a successful save, a target takes half as much damage."
+                "When you cast a spell of 1st level or higher that targets a hostile creature, target each creature other than you, that you can see within a 10-foot Emanation. Each target must make a Wisdom saving throw.  On a failed save, a target takes {@damage 2d6} necrotic damage. On a successful save, a target takes half as much damage."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -54556,7 +54559,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 150
@@ -54573,7 +54576,7 @@
             ],
             "entries": [
                 "Push yourself to your limit, overcoming your fatigue.",
-                "You gain {@dice 1d4} strikes of adrenaline for each hostile creature within range.",
+                "You gain {@dice 1d2} strikes of adrenaline for each hostile creature within range.",
                 "For the duration, your hit point maximum and current hit points increase by {@dice 2d10}."
             ],
             "source": "GuildWars",
@@ -55266,7 +55269,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 5
@@ -55535,7 +55538,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "emanation",
                 "distance": {
                     "type": "feet",
                     "amount": 15
@@ -55548,7 +55551,7 @@
             ],
             "entries": [
                 "A burst of flames shoots out from you, searing all creatures near you.",
-                "Target each creature other than you within range. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 3d6} fire damage. On a successful save, a target takes half as much damage."
+                "Target each creature other than you within a 15-foot Emanation. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 3d6} fire damage. On a successful save, a target takes half as much damage."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -56152,7 +56155,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 150
@@ -57157,7 +57160,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 150
@@ -57168,7 +57171,7 @@
                     "type": "timed",
                     "duration": {
                         "type": "round",
-                        "amount": 3
+                        "amount": 1
                     }
                 }
             ],
@@ -58000,7 +58003,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "emanation",
                 "distance": {
                     "type": "feet",
                     "amount": 15
@@ -58019,7 +58022,7 @@
                 "{@bold Sacrifice:} 10%, {@bold Signet:} Short Rest",
                 "Feed your signet of agony with your blood, to release a devastating blast of necromantic energy around you.",
                 "For the duration, you start {@condition bleeding|GuildWars}, taking {@damage 1d4} damage.",
-                "Target each creature other than you within range. Each target must make a Constitution saving throw. On a failed save, a target takes {@damage 6d8} necrotic damage. On a successful save, a target takes half as much damage.",
+                "Target each creature other than you within a 15-foot Emanation. Each target must make a Constitution saving throw. On a failed save, a target takes {@damage 6d8} necrotic damage. On a successful save, a target takes half as much damage.",
                 "At the end of each of your turns, you can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GuildWars",
@@ -59858,7 +59861,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 150
@@ -59870,7 +59873,7 @@
                 }
             ],
             "entries": [
-                "Heal your party.",
+                "Bestow upon your party the divine grace of your deity.",
                 "Choose any number of friendly creatures within range. A target regains hit points equal to {@dice 1d4}."
             ],
             "source": "GuildWars",
@@ -60492,7 +60495,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 20
@@ -60640,7 +60643,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 5
@@ -61011,7 +61014,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "emanation",
                 "distance": {
                     "type": "feet",
                     "amount": 15
@@ -61024,7 +61027,7 @@
             ],
             "entries": [
                 "Violently send out a shockwave, dealing more damage to {@condition prone} targets.",
-                "Target each creature other than you within range. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 4d8} force damage. If a target was {@condition prone}, the target takes an additional {@damage 2d8} force damage. On a successful save, a target takes half as much damage."
+                "Target each creature other than you within a 15-foot Emanation. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 4d8} force damage. If a target was {@condition prone}, the target takes an additional {@damage 2d8} force damage. On a successful save, a target takes half as much damage."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -61472,10 +61475,10 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "emanation",
                 "distance": {
                     "type": "feet",
-                    "amount": 5
+                    "amount": 10
                 }
             },
             "duration": [
@@ -61490,7 +61493,7 @@
             "entries": [
                 "{@bold Adrenaline:} 5, {@bold Stance}",
                 "Ready yourself to redirect arrows at your enemies vitals, inflicting {@condition bleeding|GuildWars} on a successful block.",
-                "For the duration, you have a +5 bonus to AC against weapon attacks and if a ranged weapon attack misses you, target each creature other than you within range. A target starts {@condition bleeding|GuildWars}, taking {@damage 2d4} damage for 1 minute.",
+                "For the duration, you have a +5 bonus to AC against weapon attacks and if a ranged weapon attack misses you, target each creature other than you within a 10-foot Emanation. A target starts {@condition bleeding|GuildWars}, taking {@damage 2d4} damage for 1 minute.",
                 "At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GuildWars",
@@ -61867,7 +61870,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "emanation",
                 "distance": {
                     "type": "feet",
                     "amount": 20
@@ -61880,7 +61883,7 @@
             ],
             "entries": [
                 "Shine the light of Dwayna down on your fallen allies, brining them back to life.",
-                "Choose any number of friendly creatures, which have not been dead for more than 1 minute, that you can see within range. A target returns to life with 25% of their maximum hit points. A target is {@condition incapacitated} until the end of their next turn.",
+                "Choose any number of friendly creatures, which have not been dead for more than 1 minute, that you can see within a 20-foot Emanation. A target returns to life with 25% of their maximum hit points. A target is {@condition incapacitated} until the end of their next turn.",
                 "This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts."
             ],
             "source": "GuildWars",
@@ -61971,7 +61974,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 300
@@ -63469,7 +63472,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 5
@@ -64180,7 +64183,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 300
@@ -64612,7 +64615,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 150
@@ -65094,7 +65097,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "emanation",
                 "distance": {
                     "type": "feet",
                     "amount": 15
@@ -65149,7 +65152,7 @@
             "entries": [
                 "{@bold Urn}",
                 "Create a scarlet urn containing the ashes of Mingson, blinding creatures around you when you drop them.",
-                "You create an urn in your hands. When you drop this urn, target each creature other than you within range. Each target must make a Constitution saving throw. On a failed save, a target is {@condition blinded} for 1 minute.",
+                "You create an urn in your hands. When you drop this urn, target each creature other than you within a 15-foot Emanation. Each target must make a Constitution saving throw. On a failed save, a target is {@condition blinded} for 1 minute.",
                 "At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GuildWars",
@@ -66056,7 +66059,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "emanation",
                 "distance": {
                     "type": "feet",
                     "amount": 15
@@ -66134,7 +66137,7 @@
                 "{@bold Armor Penetration}, {@bold Urn}",
                 "Create a scarlet urn containing the ashes of Daoshen, granting your lightning spells the ability to penetrate armor, and dealing lightning damage when dropping them.",
                 "You create an urn in your hands. While holding the Urn created by this spell, your Ritualist themed spells which deal lightning damage gain the armor penetration property.",
-                "When you drop this urn, target each creature other than you within range. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 4d8} lightning damage. On a successful save, a target takes half as much damage."
+                "When you drop this urn, target each creature other than you within a 15-foot Emanation. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 4d8} lightning damage. On a successful save, a target takes half as much damage."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -68293,7 +68296,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "emanation",
                 "distance": {
                     "type": "feet",
                     "amount": 15
@@ -68311,7 +68314,7 @@
             "entries": [
                 "{@bold Enchantment}",
                 "Conjure an armor of obsidian slivers around your body, blocking attacks and lashing out around you when attacked.",
-                "For the duration, you have a +3 bonus to AC against weapon attacks and if you are the target of an attack or spell, target one random creature other than you within range. The target takes {@damage 2d6} force damage."
+                "For the duration, you have a +3 bonus to AC against weapon attacks and if you are the target of an attack or spell, target one random creature other than you within a 15-foot Emanation. The target takes {@damage 2d6} force damage."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -68842,7 +68845,7 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
                     "type": "feet",
                     "amount": 150
@@ -70105,7 +70108,7 @@
             ],
             "entries": [
                 "Conjure a ward at your location, projecting the legendary heat of the Canthan hero Teinai.",
-                "Conjure a 20-foot radius stationary ward at your location for the duration and choose any number of creatures. Each non-chosen creature takes {@damage 4d4} fire damage when it enters the spell's area for the first time on a turn or starts its turn there. Additionally, non-chosen creatures, who are in the spell's area and are weakened, can take either an action or a Bonus Action, not both, and it can make only one attack if it takes the Attack action."
+                "Conjure a 20-foot radius stationary ward at your location for the duration and choose any number of creatures. Each non-chosen creature takes {@damage 4d4} fire damage when it enters the spell's area for the first time on a turn or starts its turn there. Additionally, non-chosen creatures, who are in the spell's area and are {@condition weakness|GuildWars|weakened}, can take either an action or a Bonus Action, not both, and it can make only one attack if it takes the Attack action."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -70810,10 +70813,9 @@
                 }
             ],
             "range": {
-                "type": "radius",
+                "type": "point",
                 "distance": {
-                    "type": "feet",
-                    "amount": 15
+                    "type": "self"
                 }
             },
             "duration": [

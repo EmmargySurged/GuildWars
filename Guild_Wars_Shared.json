@@ -1157,6 +1157,122 @@
                 "type": "external",
                 "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Defensive_binding_spirit_Token.png"
             }
+        },
+        {
+            "name": "Flesh Golem",
+            "source": "GuildWars",
+            "size": [
+                "M"
+            ],
+            "type": "undead",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "ac": 10,
+                    "condition": "+ Spell Level"
+                }
+            ],
+            "hp": {
+                "special": "50 + Spell Level * 10"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 19,
+            "dex": 9,
+            "con": 18,
+            "int": 6,
+            "wis": 10,
+            "cha": 5,
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 10,
+            "immune": [
+                "necrotic",
+                "poison"
+            ],
+            "conditionImmune": [
+                "charmed",
+                "exhaustion",
+                "frightened",
+                "paralyzed",
+                "petrified",
+                "poisoned"
+            ],
+            "trait": [
+                {
+                    "name": "Immutable Form",
+                    "entries": [
+                        "The golem can't shape-shift."
+                    ]
+                },
+                {
+                    "name": "Necrotic Absorption",
+                    "entries": [
+                        "Whenever the golem is subjected to Necrotic damage, it regains a number of {@variantrule Hit Points|XPHB} equal to the Necrotic damage dealt."
+                    ]
+                },
+                {
+                    "name": "Magic Resistance",
+                    "entries": [
+                        "The golem has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The golem makes a number of Slam attacks equal to half the level of the spell (rounded down) (minimum 1)."
+                    ]
+                },
+                {
+                    "name": "Slam",
+                    "entries": [
+                        "{@atkr m}  your spell attack modifier to hit, reach 5 ft. {@h}13 ({@damage 2d8 + 4 + Spell Level}) Bludgeoning damage plus 4 ({@damage 1d8}) Necrotic damage."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Damage Absorption",
+                "Immutable Form",
+                "Magic Resistance"
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "miscTags": [
+                "MA"
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "fluff": {
+                "entries": [
+                    "A Flesh Golem is a minion created using Animate Flesh Golem."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Flesh_Golem.jpg"
+                        }
+                    }
+                ]
+            },
+            "tokenHref": {
+                "type": "external",
+                "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Flesh_Golem_Token.png"
+            },
+            "damageTags": [
+                "N"
+            ]
         }
     ],
     "feat": [
@@ -62272,7 +62388,7 @@
             ],
             "entries": [
                 "Quickly throw a spear, disrupting a creature suffering from at least one condition.",
-                "Choose one creature, which is casting a spell or using an ability, that you can see within range of your weapon. Make a melee or ranged weapon attack against the target (the ranged weapon attack can be made with a -2 penalty, to have the weapon immediately return to you, after it was made). On a hit, the target suffers the weapon attack's normal effects and, if the target is suffering from a condition, must make a Constitution saving throw. On a failed save, the ability/spell fails and has no effect. "
+                "Choose one creature, which is casting a spell or using an ability, that you can see within range of your weapon. Make a melee or ranged weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and, if the target is suffering from a condition, must make a Constitution saving throw. On a failed save, the ability/spell fails and has no effect. "
             ],
             "source": "GuildWars",
             "fluff": {
@@ -76136,6 +76252,1500 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "Selfless Spirit",
+            "level": 4,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@bold Enchantment}",
+                "Become selfless in the casting of your spells, improving your casting abilities when targeting allies.",
+                "For the duration, when you cast a spell of 2nd level or higher, that targets a friendly creature, other than yourself, you can cast that spell by using a spell slot which is one level lower than required."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Selfless Spirit",
+                    "Enchantment Spell. For 15...20 seconds, spells you cast that target another ally cost 3 less energy."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/3/3e/Selfless_Spirit.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Echovald Forest",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Monk",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Allegiance rank",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Enchantment",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "No Attribute - Monk",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th or 7th level, you can maintain your {@status concentration} on the spell for up to 8 hours. When you use a spell slot of 8th level or higher, you can maintain your {@status concentration} on the spell for up to 24 hours."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Divine soul",
+                            "shortName": "Divine Soul",
+                            "source": "XGE"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Signet of Corruption",
+            "level": 5,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Divine soul",
+                            "shortName": "Divine Soul",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@bold Signet:} Long Rest",
+                "Activate your wicked signet of {@condition corruption|GuildWars}, siphoning off spell energy from afflicted creatures.",
+                "Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target takes {@damage 3d6} necrotic damage and if the target is under the effect of a detrimental spell or suffering from one of the following conditions: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars}, {@condition Charmed},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Frightened}, {@condition Grappled}, {@condition Incapacitated},  {@condition Paralyzed},  {@condition Petrified}, {@condition Poisoned},  {@condition Restrained}, {@condition Stunned}, {@condition Unconscious}, and/or {@condition Weakness|GuildWars}, you can choose expended spell slots to recover. The spell slots can have a combined level equal to the number of detrimental spells and conditions on all targets who failed the saving throw (maximum 5)."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Signet of Corruption",
+                    "Signet. Target foe and all nearby foes take 20...30 damage. For each affected foe suffering from a condition or hex, you gain 2 Energy (maximum 12...20 Energy)."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/1/18/Signet_of_Corruption.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Echovald Forest",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Necromancer",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Allegiance rank",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "No Attribute - Necromancer",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Signet",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "s": true
+            },
+            "conditionInflict": [
+                "bleeding|guildwars",
+                "blinded",
+                "burning|guildwars",
+                "charmed"
+            ]
+        },
+        {
+            "name": "Spear of Fury",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "special",
+                    "condition": "which you take immediately before hitting a target with a Melee weapon with the thrown property"
+                }
+            ],
+            "range": {
+                "type": "special"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "Let yourself become overwhelmed with fury, throwing out a spear, which rewards you for your brutality by giving you adrenaline if hitting a creature suffering from a condition.",
+                "On a hit, the target suffers the weapon attack's normal effects and takes {@damage 2d8} damage and, if the target is suffering from a negative condition, you gain {@dice 1d6} strikes of adrenaline."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Spear of Fury",
+                    "Spear Attack. This attack deals +30...40 damage. If this attack hits a foe suffering from a condition, you gain 3...6 strikes of adrenaline."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/b/be/Spear_of_Fury.jpg"
+                        }
+                    }
+                ]
+            },
+            "components": {
+                "v": true
+            },
+            "backgrounds": [
+                {
+                    "name": "Echovald Forest",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Paragon",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Allegiance rank",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "No Attribute - Paragon",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Adrenaline",
+                    "source": "GuildWars"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Divine soul",
+                            "shortName": "Divine Soul",
+                            "source": "XGE"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Triple Shot",
+            "level": 3,
+            "school": "C",
+            "time": [
+                {
+                    "number": 0,
+                    "unit": "special",
+                    "condition": "which you take immediately before hitting a target with a Ranged weapon"
+                }
+            ],
+            "range": {
+                "type": "special"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You triple your next projectile.",
+                "Make three ranged weapon attacks against the target. On a hit, the target suffers the weapon attack's normal effects, but has resistance against the damage."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Triple Shot",
+                    "Bow Attack. Shoot 3 arrows simultaneously at target foe. These arrows deal 40...25% less damage."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/f/f0/Triple_Shot.jpg"
+                        }
+                    }
+                ]
+            },
+            "components": {
+                "v": true
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT",
+                "AAD"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Echovald Forest",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "No Attribute - Ranger",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Allegiance rank",
+                    "source": "GuildWars"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": []
+            }
+        },
+        {
+            "name": "Save Yourselves!",
+            "level": 4,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@bold Adrenaline:} 8",
+                "Heavily increase your group's resilience.",
+                "Choose any number of creatures that can hear you within range. For the duration, when a target takes damage, you can roll {@dice 4d4} and subtract the number rolled from the damage. "
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "\"Save Yourselves!\"",
+                    "Shout. For 4...6 seconds, all other party members gain +100 armor."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/1/1c/%22Save_Yourselves%21%22.jpg"
+                        }
+                    }
+                ]
+            },
+            "miscTags": [
+                "MAC"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Echovald Forest",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Warrior",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "No Attribute - Warrior",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Adrenaline",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Allegiance rank",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the number subtracted increases by {@dice 2d4} for each slot level above 4th."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "TCE"
+                        },
+                        "subclass": {
+                            "name": "Battle smith",
+                            "shortName": "Battle Smith",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Double Dragon",
+            "level": 6,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "TCE"
+                        },
+                        "subclass": {
+                            "name": "Artillerist",
+                            "shortName": "Artillerist",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Collage of lore",
+                            "shortName": "Lore",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Light domain",
+                            "shortName": "Light",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@bold Elite}, {@bold Enchantment}",
+                "Conjure two twin dragons around yourself and an ally, incinerating anything around you two.",
+                "Choose one creature that you can see within range. For the duration, you and the target gain the following benefits:",
+                "- At the start of each of your turns, target each creature other than yourself in a 10-foot Emanation. Each new target must make a Dexterity saving throw. On a failed save, a target takes {@damage 5d6} fire damage. On a successful save, a target takes half as much damage.",
+                "- For the duration, when you hit a target with an attack, they must make a Dexterity saving throw. On a failed save, a target starts {@condition burning} for 1 minute, taking {@damage 2d6} damage.",
+                "At the end of each of its turns, a target can make a Dexterity saving throw. On a success, the condition ends."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Double Dragon",
+                    "Elite Enchantment Spell. Invoke the power of the Dragon. For 8 seconds, you and target ally are enchanted with Double Dragon. Adjacent foes are dealt 5...25...30 fire damage each second. Additionally, when you or your ally use skills that target a foe, that foe is set on fire for 0...2...3 second[s]. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/7/7a/Double_Dragon.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elementalist",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Fire Magic",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Enchantment",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true,
+                "m": "the tounge of a red dragon"
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 7th level or higher, the damage each increases by {@dice 1d6} for each slot level above 6th."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Arcane Languor",
+            "level": 3,
+            "school": "I",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@bold Elite}, {@bold Hex}",
+                "Cause incredibly lethargy every time a creature casts a spell by forcing them to see an illusion of the most exhausting thing possible.",
+                "Choose one creature that you can see within range. For the duration when the target casts a spell, the target must make a Wisdom saving throw. On a failed save, they gain 5 rounds of {@condition overcast|GuildWars}."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Arcane Languor",
+                    "Elite Hex Spell. For 1...8...10 second[s], all spells cast by the target foe cause 10 Overcast."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/d/d5/Arcane_Languor.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Mesmer",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Fast Casting",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Hex",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Air of Enchantment",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 2
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Divine soul",
+                            "shortName": "Divine Soul",
+                            "source": "XGE"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@bold Elite}, {@bold Enchantment}",
+                "Invoke the blessed winds of Dwayna around a creature, improving enchantments cast on them.",
+                "Choose one creature, other than yourself, that you can see within range. For the duration, any beneficial {@status Concentration|XPHB} spell cast on them, of 1st level or higher, can be cast by using a spell slot which is one level higher than the one used in the casting."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Air of Enchantment",
+                    "Elite Enchantment Spell. For 4...9...10 seconds, enchantments cast on target other ally cost 5 less Energy (minimum 1 Energy)."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/b/bb/Air_of_Enchantment.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Echovald Forest",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "The Jade Sea",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Monk",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Protection Prayers",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Enchantment",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "s": true,
+                "m": "a fan and a stick of burning incense"
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the duration increases by 2 rounds for each slot level above 1st."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Animate Flesh Golem",
+            "level": 3,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "duration": [
+                {
+                    "type": "permanent"
+                }
+            ],
+            "entries": [
+                "{@bold Elite}",
+                "Exploit a nearby corpse to create a Flesh Golem.",
+                "Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, the target becomes a {@creature Flesh Golem|GuildWars}. ",
+                "The {@creature Flesh Golem|GuildWars} remains for the duration, until it reaches zero hit points, you create a new one or you unprepare this spell, at which point it will leave behind an exploitable corpse.",
+                "The {@creature Flesh Golem|GuildWars} is friendly to you and your allies. The {@creature Flesh Golem|GuildWars} acts on your initiative, but takes it turn directly after yours. The {@creature Flesh Golem|GuildWars} is in the DMs control."
+            ],
+            "source": "GuildWars",
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "the horn of a rhinoceros"
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, use the higher level wherever the spell's level appears in the stat block. "
+                    ]
+                }
+            ],
+            "miscTags": [
+                "SMN"
+            ],
+            "fluff": {
+                "entries": [
+                    "Animate Flesh Golem",
+                    "Elite Spell. Exploit nearest corpse to animate a level 3...21...25 Flesh Golem. The Flesh Golem leaves an exploitable corpse. You can have only one Flesh Golem at a time."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/7/71/Animate_Flesh_Golem.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Necromancer",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Death Magic",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Druid",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Circle of spores",
+                            "shortName": "Spores",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Divine soul",
+                            "shortName": "Divine Soul",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Archer's Signet",
+            "level": 1,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@bold Elite}, {@bold Signet:} Initiative",
+                "Activate your signet bestowed upon you by the goddess of nature herself, greatly increasing the potency of your conditions.",
+                "For the duration, while wielding a ranged weapon, any condition you inflict has their duration doubled, and creatures have disadvantage on saving throws to resist your effects which apply conditions or to get rid of them."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Archer's Signet",
+                    "Elite Signet. For 1...19...24 second[s], conditions you apply while wielding a bow last 100% longer."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/b/b2/Archer%27s_Signet.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Echovald Forest",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Expertise",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Signet",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "s": true
+            }
+        },
+        {
+            "name": "Attuned Was Songkai",
+            "level": 9,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Divine soul",
+                            "shortName": "Divine Soul",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "School of necromancy",
+                            "shortName": "Necromancy",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            },
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Attuned Was Songkai",
+                    "Elite Item Spell. Hold Songkai's ashes for up to 45 seconds. While you hold her ashes, your spells and binding rituals cost -5...41...50% of the base Energy to cast."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/2/24/Attuned_Was_Songkai.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Echovald Forest",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Ritualist",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Spawning Power",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Urn",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "s": true,
+                "m": "the ashes of a creature who died while communing with a god"
+            },
+            "entries": [
+                "{@bold Elite}, {@bold Urn}",
+                "Conjure the golden urn of the legendary High Priestess Songkai, who is said to have reached enlightenment, empowering your spell with divine power.",
+                "You create an urn in your hands. While holding the Urn created by this spell, when you cast a spell of 1st level or higher, you can cast that spell by using a spell slot which is {@dice 1d12} levels higher than the one used in the casting."
+            ]
+        },
+        {
+            "name": "Coward!",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "TCE"
+                        },
+                        "subclass": {
+                            "name": "Battle smith",
+                            "shortName": "Battle Smith",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@bold Adrenaline:} 4, {@bold Elite}",
+                "Insult someone for not standing their ground so hard they are knocked {@condition prone}.",
+                "Choose one creature that can hear you within range. If the target willingly moved on its last turn, the target is knocked {@condition prone}."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "\"Coward!\"",
+                    "Elite Shout. If target foe is moving, that foe is knocked down."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/9/9c/%22Coward%21%22.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "The Jade Sea",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Warrior",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "No Attribute - Warrior",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Adrenaline",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "conditionInflict": [
+                "prone"
+            ]
         }
     ],
     "table": [

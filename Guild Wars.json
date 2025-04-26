@@ -77770,14 +77770,106 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Battle smith",
+							"shortName": "Battle Smith",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Bard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Collage of swords",
+							"shortName": "Swords",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Inquisition domain",
+							"shortName": "Inquisition",
+							"source": "GrimHollowPlayerPack"
+						}
+					},
+					{
+						"class": {
+							"name": "Illrigger",
+							"source": "IllriggerRevised"
+						},
+						"subclass": {
+							"name": "Architect of ruin",
+							"shortName": "Architect of Ruin",
+							"source": "IllriggerRevised"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Bladesinging",
+							"shortName": "Bladesinging",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Eldritch knight",
+							"shortName": "Eldritch Knight",
+							"source": "XPHB"
+						}
+					}
+				]
 			},
 			"entries": [
 				"{@bold Elite}",
 				"Pen a magical contract to eliminate a creature, getting a reward upon it being fulfilled.",
 				"Choose one hostile creature that you can see within range. If the target drops to 0 hit points, this spell ends, and you gain the following benefits:",
 				"- Your initiative, if in combat, gets increased by {@dice 1d12}. Otherwise, you can add {@dice 1d12} to your next initiative roll within the next 24 hours.",
-				"- You learn the location of where the creature is, and who reduced it to 0 hit points.",
+				"- You learn the location of where the creature is, and who/what reduced it to 0 hit points.",
 				"- If that location is on the same plane of existence, you can use your reaction to teleport within 5 feet of the target.",
 				"- As part of the same reaction, or if you chose not to teleport, as its own reaction, you can cast a spell of 4th level or lower without expending a spell slot.",
 				"Destroying the contract ends the spell. You can only have one of these contracts at a time, if you create a new one, the old gets destroyed. Ending the spell destroys the contract."
@@ -77819,7 +77911,11 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a scroll of parchment and ink worth 25+ GP"
+				"m": {
+					"text": "a scroll of parchment and ink worth 200+ GP, which the spell consumes",
+					"consume": true,
+					"cost": 20000
+				}
 			},
 			"entriesHigherLevel": [
 				{

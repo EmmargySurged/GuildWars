@@ -30730,7 +30730,14 @@
 						}
 					}
 				]
-			}
+			},
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			]
 		},
 		{
 			"name": "Blood is Power",
@@ -47524,7 +47531,13 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"MT"
+			],
+			"miscTags": [
+				"MAC"
+			]
 		},
 		{
 			"name": "Arcane Mimicry",
@@ -56075,7 +56088,16 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"piercing"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"MT"
+			]
 		},
 		{
 			"name": "Incendiary Bonds",
@@ -61235,7 +61257,17 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			]
 		},
 		{
 			"name": "Mantra of Inscriptions",
@@ -68319,7 +68351,16 @@
 				}
 			],
 			"classes": {
-				"fromClassList": [],
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					}
+				],
 				"fromSubclass": [
 					{
 						"class": {
@@ -72799,7 +72840,16 @@
 				}
 			],
 			"classes": {
-				"fromClassList": [],
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					}
+				],
 				"fromSubclass": [
 					{
 						"class": {
@@ -75617,7 +75667,16 @@
 				}
 			],
 			"classes": {
-				"fromClassList": [],
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					}
+				],
 				"fromSubclass": [
 					{
 						"class": {
@@ -77923,6 +77982,256 @@
 					"name": "At Higher Levels",
 					"entries": [
 						"When you cast this spell using a spell slot of 4th level or higher, the level of the spell increases by 1 for each slot level above 3rd and the increase in initiative increases by {@dice 1d12} each for each slot level above 3rd."
+					]
+				}
+			]
+		},
+		{
+			"name": "Energy Boon",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@bold Elite}, {@bold Enchantment}",
+				"Bestow upon yourself and an ally an arcane boon, boosting your initiative and vitality.",
+				"Choose one creature that you can see within range. You and the target gain the following benefits:",
+				"- Your initiative gets increased by {@dice 2d8}.",
+				"- For the duration, your hit point maximum and current hit points increase by 1 per 1 initiative you have."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Energy Boon",
+					"Elite Enchantment Spell. For 36...55...60 seconds, Energy Boon raises the maximum Health of you and target ally by 1...3...3 for each point of your respective maximum Energy. When this enchantment is first applied, you and your target gain 1...10...12 Energy. You gain an additional 1 Energy for every 2 points you have in Energy Storage. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/0/00/Energy_Boon.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Echovald Forest",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Energy Storage",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Enchantment",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the increase in initiative increases by {@dice 1d8} for each slot level above 4th."
+					]
+				}
+			]
+		},
+		{
+			"name": "Expel Hexes",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@bold Elite}",
+				"Safely expel two hexes from a creature, by bending the weave around them.",
+				"Choose one friendly creature that you can see within range. The latest two harmful spells on the target ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Expel Hexes",
+					"Elite Spell. Remove up to 2 Hexes from target ally."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/4/44/Expel_Hexes.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "No Attribute - Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT",
+				"SCT",
+				"UBA"
+			]
+		},
+		{
+			"name": "Blessed Light",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@bold Elite}",
+				"Shine down the blessed light of the gods on a creature, ailing them of hurt and malediction.",
+				"Choose one creature that you can see within range. The target regains hit points equal to {@dice 4d4} + your spellcasting ability modifier, and you end the latest harmful spell and the latest of the following conditions on the target: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars}, {@condition Charmed},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Frightened}, {@condition Grappled}, {@condition Incapacitated},  {@condition Paralyzed},  {@condition Petrified}, {@condition Poisoned},  {@condition Restrained}, {@condition Stunned}, {@condition Unconscious}, or {@condition Weakness|GuildWars}"
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Blessed Light",
+					"Elite Spell. Heal target ally for 10...114...140 Health and remove one condition and one hex."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/4/40/Blessed_Light.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "The Jade Sea",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Monk",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Divine Favor",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the healing increases by {@dice 2d4} for each slot level above 2nd."
 					]
 				}
 			]

@@ -29377,6 +29377,7 @@
                 }
             ],
             "entries": [
+                "{@bold Elite}",
                 "Invoke the Glyph of Energy by drawing it into the air as a glowing symbol.",
                 "For the duration, when you cast a spell of 1st level or lower (except Glyph of Energy), the spell does not expend a spell slot, does not cause {@condition overcast|GuildWars}, and you can cast that spell by using a spell slot which is one level higher than the one used in the casting. After this spell triggers {@dice 1d4 + 1} times, this spell ends."
             ],
@@ -37772,7 +37773,10 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "areaTags": [
+                "ST"
+            ]
         },
         {
             "name": "Dwayna's Kiss",
@@ -42906,7 +42910,10 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "areaTags": [
+                "ST"
+            ]
         },
         {
             "name": "Contemplation of Purity",
@@ -43390,7 +43397,13 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "savingThrow": [
+                "charisma"
+            ],
+            "areaTags": [
+                "ST"
+            ]
         },
         {
             "name": "Healing Seed",
@@ -51059,7 +51072,14 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "wisdom"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ]
         },
         {
             "name": "Healing Touch",
@@ -69451,7 +69471,7 @@
         },
         {
             "name": "Arcane Languor",
-            "level": 3,
+            "level": 1,
             "school": "I",
             "time": [
                 {
@@ -69546,6 +69566,12 @@
                         "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd."
                     ]
                 }
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "areaTags": [
+                "ST"
             ]
         },
         {
@@ -70716,6 +70742,158 @@
             "areaTags": [
                 "ST"
             ]
+        },
+        {
+            "name": "Broad Head Arrow",
+            "level": 2,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "reaction",
+                    "condition": "which you take when you see a creature within range cast a spell"
+                }
+            ],
+            "range": {
+                "type": "special"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "Fire a broad head arrow, which flies slower, but dazes creatures on impact.",
+                "Choose one creature, which is casting a spell, that you can see within the first range increment of your weapon. Make a ranged weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects, is {@condition dazed|GuildWars} for the duration and must make a Constitution saving throw. On a failed save, the spell fails and has no effect."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Broad Head Arrow",
+                    "Elite Bow Attack. You shoot a broad head arrow that moves slower than normal. If it hits, target foe is Dazed for 5...17...20 seconds, and if target foe is casting a spell that spell is interrupted."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/5/51/Broad_Head_Arrow.jpg"
+                        }
+                    }
+                ]
+            },
+            "components": {
+                "s": true,
+                "m": "a ranged weapon worth at least 1 sp"
+            },
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Marksmanship",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Collage of swords",
+                            "shortName": "Swords",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            }
         }
     ],
     "table": [

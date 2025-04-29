@@ -1,4 +1,5 @@
 import pandas as pd
+import openpyxl
 
 
 def preload_classes(file_path, sheet_name, classes_list):

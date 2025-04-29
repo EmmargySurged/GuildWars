@@ -70894,6 +70894,1040 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "Clamor of Souls",
+            "level": 2,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "School of necromancy",
+                            "shortName": "Necromancy",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@bold Elite}",
+                "Create a cacophony of gibbering souls in an area, discharging their pent-up frustration.",
+                "Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save, a target takes {@damage 3d12} lightning damage. On a successful save, a target takes half as much damage.",
+                "If you are holding an object created by a spell or if there is at least one friendly summoning ritual within range, you regain the spell slot expended in the casting."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Clamor of Souls",
+                    "Elite Spell. Target foe and all nearby foes take 10...54...65 lightning damage. If you are within earshot of a spirit or holding a bundle item, you gain 10 Energy."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/4/4d/Clamor_of_Souls.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Echovald Forest",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Ritualist",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Channeling Magic",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true,
+                "m": {
+                    "text": "a golden bell blessed by a priest, worth 100+ GP",
+                    "cost": 10000
+                }
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d12} for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "lightning"
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ]
+        },
+        {
+            "name": "Auspicious Parry",
+            "level": 1,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@bold Adrenaline:} 1, {@bold Elite}, {@bold Stance}",
+                "Get ready to block an attack, and have an adrenaline rush when this stance ends.",
+                "For the duration, the next time you are attacked, the attack misses and this spell ends.",
+                "When this spell ends, you gain {@dice 1d4} strikes of Adrenaline."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Auspicious Parry",
+                    "Elite Stance. For 8 seconds, the next attack against you is blocked. You gain 1...3...4 strike[s] of adrenaline when this stance ends."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/0/09/Auspicious_Parry.jpg"
+                        }
+                    }
+                ]
+            },
+            "components": {
+                "s": true
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Warrior",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Tactics",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Adrenaline",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Stance",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "TCE"
+                        },
+                        "subclass": {
+                            "name": "Battle smith",
+                            "shortName": "Battle Smith",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Bladesinging",
+                            "shortName": "Bladesinging",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the adrenaline gain increases by {@dice 1d4} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "UBA"
+            ]
+        },
+        {
+            "name": "Aura of Displacement",
+            "level": 2,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "duration": [
+                {
+                    "type": "permanent"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "TCE"
+                        },
+                        "subclass": {
+                            "name": "Battle smith",
+                            "shortName": "Battle Smith",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Collage of swords",
+                            "shortName": "Swords",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@bold Bond}, {@bold Enchantment}",
+                "Shadow step to a creature, leaving behind a faint glowing aura, which allows you to teleport back.",
+                "Choose one hostile creature that you can see within range. Teleport within 5 feet of the target to an unoccupied space. When this spell ends, teleport to an unoccupied space within 5 feet of the location you originally cast this spell, if you are still on the same plane of existence and within 1000 feet of it."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Aura of Displacement",
+                    "Elite Enchantment Spell. When you cast Aura of Displacement, Shadow Step to target foe. When you stop maintaining Aura of Displacement you return to your original location."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/b/b9/Aura_of_Displacement.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Echovald Forest",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Assassin",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "No Attribute - Assassin",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Bond",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Enchantment",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true,
+                "m": "a displacer beast's tentacle piece"
+            }
+        },
+        {
+            "name": "Gust",
+            "level": 4,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "entries": [
+                "{@bold Elite}, {@bold Enchantment}",
+                "Conjure the breath of twin air elementals around you and an ally.",
+                "Choose one creature that you can see within range. For the duration, you and the target gain the following benefits:",
+                "- For the duration, your speed is increased by 33%.",
+                "- Target each creature other than you within a 10-foot Emanation. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 6d6} cold damage and, if a target attacked on its last turn, is knocked {@condition prone}. On a successful save, a target takes half as much damage, but suffers no other effect."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Gust",
+                    "Elite Enchantment Spell. For 5...10...11 seconds, both you and target ally move 33% faster. When you cast this spell, all foes near you and your target take 15...59...70 cold damage. Foes struck by Gust while attacking or moving are knocked down."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/a/a1/Gust.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Echovald Forest",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "The Jade Sea",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elementalist",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Air Magic",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Enchantment",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "s": true,
+                "m": "the bottled breath of an air elemental"
+            },
+            "conditionInflict": [
+                "prone"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 2d6} for each slot level above 4th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "cold"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ]
+        },
+        {
+            "name": "Lyssa's Aura",
+            "level": 3,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 2
+                    }
+                }
+            ],
+            "entries": [
+                "{@bold Elite}, {@bold Enchantment}",
+                "Invoke the power of the goddess of beauty and illusions.",
+                "For the duration, when you would expend a spell slot to cast a spell of 3rd level or lower, roll a {@dice d20}. On a 12 or higher, the spell does not expend a spell slot.",
+                "When you cast a spell, the duration of this spell resets."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Lyssa's Aura",
+                    "Elite Enchantment Spell. For 10 seconds, you have +0...4...5 Energy regeneration. This enchantment reapplies itself every time you cast a spell on a foe."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/c/c1/Lyssa%27s_Aura.jpg"
+                        }
+                    }
+                ]
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a statue of Lyssa, worth 300+ GP",
+                    "cost": 30000
+                }
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the level of the spell increases by 1 for every two slot levels above 3rd."
+                    ]
+                }
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Mesmer",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Inspiration Magic",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Enchantment",
+                    "source": "GuildWars"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "areaTags": [
+                "ST"
+            ]
+        },
+        {
+            "name": "Boon Signet",
+            "level": 4,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "permanent",
+                    "ends": [
+                        "trigger"
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "entries": [
+                "{@bold Elite}, {@bold Signet:} Short Rest",
+                "Choose one creature that you can see within range. The target regains hit points equal to {@dice 4d6} + your spellcasting ability modifier.",
+                "The next spell you cast that targets only one creature and heals them, heals them for twice the amount."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Boon Signet",
+                    "Elite Signet. Heal target ally for 20...68...80 Health. Your next Healing or Protection Prayer [sic] spell that targets an ally heals for an additional 20...68...80 Health."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/a/a7/Boon_Signet.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Echovald Forest",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Monk",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Divine Favor",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Signet",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "s": true
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL"
+            ]
+        },
+        {
+            "name": "Discord",
+            "level": 0,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Druid",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Circle of spores",
+                            "shortName": "Spores",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@bold Elite}",
+                "Sow discord in a creature's mind, by amplifying it's already present suffering.",
+                "Choose one creature that you can see within range. If the target is suffering from a negative condition and under the effect of a detrimental spell, the target takes {@damage 2d12} necrotic damage.",
+                "This spell's damage increases by {@dice 1d12} when you reach 5th level ({@dice 3d12}), 11th level ({@dice 4d12}), and 17th level ({@dice 5d12})."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Discord",
+                    "Elite Spell. If target foe is suffering from a condition and under the effects of a hex or an enchantment, that foe suffers 30...94...110 damage."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/6/64/Discord.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "The Jade Sea",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Necromancer",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Death Magic",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "damageInflict": [
+                "necrotic"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
+        },
+        {
+            "name": "Enraged Lunge",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "Command your pet to attempt an Enraged Lunge, inflicting a {@condition deep wound|GuildWars} on a hit.",
+                "Choose one beast, which obeys your verbal commands, that can hear you within range. The beast uses its reaction to make an attack against a creature of your choice that the beast can see within the beast's range. On a hit, the target suffers the attack's normal effects and takes {@damage 2d6} damage and must make a Constitution saving throw. On a failed save, the target gains a {@condition deep wound|GuildWars} for the duration.",
+                "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Enraged Lunge",
+                    "Elite Pet Attack. Your animal companion attempts an Enraged Lunge that applies a Deep Wound to target foe for 5...17...20 seconds and deals +10...42...50 damage."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/4/43/Enraged_Lunge.jpg"
+                        }
+                    }
+                ]
+            },
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Beast Mastery",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for each slot level above 1st. "
+                    ]
+                }
+            ],
+            "conditionInflict": [
+                "deep wound|guildwars"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "miscTags": [
+                "UBA",
+                "AAD"
+            ]
         }
     ],
     "table": [

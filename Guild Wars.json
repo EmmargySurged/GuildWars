@@ -6176,7 +6176,8 @@
 				]
 			},
 			"miscTags": [
-				"HL"
+				"HL",
+				"UBA"
 			],
 			"components": {
 				"v": true,
@@ -6221,7 +6222,10 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Blinding Flash",
@@ -27417,7 +27421,20 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"SMN"
+			]
 		},
 		{
 			"name": "Echo",
@@ -27871,6 +27888,9 @@
 			"areaTags": [
 				"MT",
 				"S"
+			],
+			"miscTags": [
+				"SGT"
 			]
 		},
 		{
@@ -28396,7 +28416,14 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT",
+				"UBA"
+			]
 		},
 		{
 			"name": "Feast of Corruption",
@@ -42916,6 +42943,9 @@
 			},
 			"areaTags": [
 				"ST"
+			],
+			"miscTags": [
+				"SGT"
 			]
 		},
 		{
@@ -43406,6 +43436,9 @@
 			],
 			"areaTags": [
 				"ST"
+			],
+			"miscTags": [
+				"SGT"
 			]
 		},
 		{
@@ -51082,6 +51115,9 @@
 			"areaTags": [
 				"MT",
 				"S"
+			],
+			"miscTags": [
+				"SGT"
 			]
 		},
 		{
@@ -58557,6 +58593,9 @@
 			],
 			"areaTags": [
 				"MT"
+			],
+			"miscTags": [
+				"SGT"
 			]
 		},
 		{
@@ -58670,6 +58709,9 @@
 			],
 			"areaTags": [
 				"MT"
+			],
+			"miscTags": [
+				"SGT"
 			]
 		},
 		{
@@ -68504,6 +68546,15 @@
 						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d8} for each slot level above 2nd"
 					]
 				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"MT"
 			]
 		},
 		{
@@ -69587,6 +69638,9 @@
 			],
 			"areaTags": [
 				"ST"
+			],
+			"miscTags": [
+				"SGT"
 			]
 		},
 		{
@@ -69695,6 +69749,10 @@
 						"When you cast this spell using a spell slot of 2nd level or higher, the duration increases by 2 rounds for each slot level above 1st."
 					]
 				}
+			],
+			"miscTags": [
+				"SGT",
+				"UBA"
 			]
 		},
 		{
@@ -70029,6 +70087,9 @@
 				"{@bold Elite}, {@bold Urn}",
 				"Conjure the golden urn of the legendary High Priestess Songkai, who is said to have reached enlightenment, empowering your spell with divine power.",
 				"You create an urn in your hands. While holding the Urn created by this spell, when you cast a spell of 1st level or higher, you can cast that spell by using a spell slot which is {@dice 1d12} levels higher than the one used in the casting."
+			],
+			"areaTags": [
+				"ST"
 			]
 		},
 		{
@@ -71397,7 +71458,11 @@
 			"components": {
 				"v": true,
 				"m": "a displacer beast's tentacle piece"
-			}
+			},
+			"miscTags": [
+				"SGT",
+				"TP"
+			]
 		},
 		{
 			"name": "Gust",
@@ -72047,6 +72112,95 @@
 			"miscTags": [
 				"HL",
 				"SGT"
+			]
+		},
+		{
+			"name": "Beguiling Haze",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Elite}",
+				"Conjure a beguiling haze around a creature, while teleporting to them.",
+				"Choose one creature that you can see within range. Teleport within 5 feet of the target to an unoccupied space. The target must make a Constitution saving throw. On a failed save, the target is {@condition dazed|GuildWars} for the duration.",
+				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Beguiling Haze",
+					"Elite Spell. Shadow Step to target foe. That foe becomes Dazed for 3...8...9 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/9/9b/Beguiling_Haze.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"s": true
+			},
+			"backgrounds": [
+				{
+					"name": "Echovald Forest",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "No Attribute - Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				},
+				{
+					"name": "The Jade Sea",
+					"source": "GuildWars"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"conditionInflict": [
+				"dazed|guildwars"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the range of the spell increases by 15 feet for each slot level above 3rd."
+					]
+				}
 			]
 		}
 	],

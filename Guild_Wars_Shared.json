@@ -2723,7 +2723,7 @@
             "entries": [
                 "{@bold Hex}",
                 "Create an arcane feedback loop in the mind of one creature, causing their spells to become volatile.",
-                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save for the duration when the target casts a spell of 1st level or higher, the target takes {@damage 1d10} psychic damage per spell slot level."
+                "Choose one creature that you can see within range. For the duration when the target casts a spell of 1st level or higher, the target must make a Wisdom saving throw. On a failed save, the target takes {@damage 1d10} psychic damage per spell slot level."
             ],
             "source": "GuildWars",
             "entriesHigherLevel": [
@@ -2737,9 +2737,6 @@
             ],
             "damageInflict": [
                 "psychic"
-            ],
-            "savingThrow": [
-                "wisdom"
             ],
             "areaTags": [
                 "ST"
@@ -2832,7 +2829,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "wisdom"
+            ]
         },
         {
             "name": "Lightning Javelin",
@@ -19215,7 +19215,11 @@
                         }
                     }
                 ]
-            }
+            },
+            "miscTags": [
+                "SGT",
+                "AAD"
+            ]
         },
         {
             "name": "Heal Other",
@@ -24456,7 +24460,14 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT",
+                "PRM"
+            ]
         },
         {
             "name": "Mark of Subversion",
@@ -37583,7 +37594,13 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "UBA"
+            ]
         },
         {
             "name": "Apply Poison",
@@ -41233,13 +41250,11 @@
                     }
                 ]
             },
-            "savingThrow": [
-                "constitution"
-            ],
             "areaTags": [
                 "ST"
             ],
             "miscTags": [
+                "SGT",
                 "AAD"
             ],
             "backgrounds": [
@@ -43137,7 +43152,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST"
+            ]
         },
         {
             "name": "Antidote Signet",
@@ -43576,9 +43594,8 @@
                 }
             ],
             "entries": [
-                "{@bold Signet} Short Rest",
+                "{@bold Sacrifice:} 8%, {@bold Signet} Short Rest",
                 "Activate your barbed signet, making necrotic vines sprout in an area, lacerating creatures.",
-                "{@bold Sacrifice.} You lose health equal to 8% of your maximum hit points.",
                 "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target begins {@condition bleeding|GuildWars} for the duration, taking {@damage 4d4} damage.",
                 "At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
             ],
@@ -43609,6 +43626,10 @@
                 },
                 {
                     "name": "Blood Magic",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Sacrifice",
                     "source": "GuildWars"
                 }
             ],
@@ -43643,7 +43664,20 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "damageInflict": [
+                "slashing"
+            ]
         },
         {
             "name": "Barbed Trap",
@@ -43758,7 +43792,18 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "piercing",
+                "slashing"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ]
         },
         {
             "name": "Axe Rake",
@@ -43808,14 +43853,8 @@
             "components": {
                 "v": true
             },
-            "savingThrow": [
-                "constitution"
-            ],
             "areaTags": [
                 "ST"
-            ],
-            "miscTags": [
-                "AAD"
             ],
             "backgrounds": [
                 {
@@ -43906,7 +43945,11 @@
                         }
                     }
                 ]
-            }
+            },
+            "miscTags": [
+                "SGT",
+                "AAD"
+            ]
         },
         {
             "name": "Chain Lightning (Guild Wars)",
@@ -48348,7 +48391,7 @@
             "entries": [
                 "{@bold Enchantment}",
                 "Sheath an ally in a radiant aura of Balthazar, which burns all those close to them every turn.",
-                "Choose one friendly creature that you can see within range. For the duration at the start of each of the target's turns, target each creature other than the target in a 10-foot-radius centered on the target. Each new target must make a Wisdom saving throw. On a failed save, a target takes {@damage 4d8} radiant damage. On a successful save, a target takes half as much damage."
+                "Choose one friendly creature that you can see within range. For the duration at the start of each of the target's turns, target each creature other than the target in a 10-foot Emanation centered on the target. Each new target must make a Wisdom saving throw. On a failed save, a target takes {@damage 4d8} radiant damage. On a successful save, a target takes half as much damage."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -48432,7 +48475,21 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "radiant"
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "areaTags": [
+                "ST",
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Animate Bone Minions",
@@ -72304,6 +72361,142 @@
                         "When you cast this spell using a spell slot of 4th level or higher, the range of the spell increases by 15 feet for each slot level above 3rd."
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Mirror of Ice",
+            "level": 3,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The fathomless",
+                            "shortName": "Fathomless",
+                            "source": "TCE"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@bold Elite}, {@bold Hex}",
+                "Summon two mirrors of ice around yourself and an ally, then shatter them.",
+                "Choose one creature that you can see within range. You and the target are both the origin of the following effect:",
+                "- Target each creature other than you within a 15-foot Emanation. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 4d6} cold damage, and for the duration the target's speed is reduced by 66%. On a successful save, a target takes half as much damage, but suffers no other effect.",
+                "If you damage a creature already under the effect of a detrimental water themed spell, roll a {@dice d20}. On an 11 or higher, this spell does not expend a spell slot."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Mirror of Ice",
+                    "Elite Hex Spell. Shatter a Mirror of Ice. All foes near you and target ally take 15...59...70 cold damage and move 66% slower for 2...5...6 seconds. If you strike a foe hexed with Water Magic, Mirror of Ice recharges 50% faster. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/3/33/Mirror_of_Ice.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elementalist",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Water Magic",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Hex",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "s": true,
+                "m": "a shard of a reflection"
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 2d6} for each slot level above 4th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "cold"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
             ]
         }
     ],

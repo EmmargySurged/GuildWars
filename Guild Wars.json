@@ -24811,6 +24811,10 @@
 					}
 				],
 				"fromSubclass": []
+			},
+			"components": {
+				"s": true,
+				"m": "a large fan"
 			}
 		},
 		{
@@ -30366,7 +30370,13 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"UBA"
+			]
 		},
 		{
 			"name": "Incendiary Arrows",
@@ -38308,9 +38318,6 @@
 					}
 				]
 			},
-			"savingThrow": [
-				"constitution"
-			],
 			"areaTags": [
 				"ST"
 			],
@@ -38363,7 +38370,13 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"UBA"
+			]
 		},
 		{
 			"name": "Fertile Season",
@@ -41962,14 +41975,10 @@
 					}
 				]
 			},
-			"savingThrow": [
-				"constitution"
-			],
 			"areaTags": [
-				"ST"
-			],
-			"miscTags": [
-				"AAD"
+				"ST",
+				"MT",
+				"S"
 			],
 			"backgrounds": [
 				{
@@ -42060,7 +42069,13 @@
 						}
 					}
 				]
-			}
+			},
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"AAD"
+			]
 		},
 		{
 			"name": "Ward Against Melee",
@@ -53889,7 +53904,17 @@
 						}
 					}
 				]
-			}
+			},
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT",
+				"AAD"
+			]
 		},
 		{
 			"name": "Disrupting Lunge",
@@ -55143,7 +55168,13 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"UBA"
+			]
 		},
 		{
 			"name": "Aftershock",
@@ -72361,12 +72392,23 @@
 						"When you cast this spell using a spell slot of 4th level or higher, the range of the spell increases by 15 feet for each slot level above 3rd."
 					]
 				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT",
+				"TP",
+				"UBA"
 			]
 		},
 		{
 			"name": "Mirror of Ice",
 			"level": 3,
-			"school": "E",
+			"school": "V",
 			"time": [
 				{
 					"number": 1,
@@ -72390,7 +72432,45 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Druid",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "The fathomless",
+							"shortName": "Fathomless",
+							"source": "TCE"
+						}
+					}
+				]
 			},
 			"entries": [
 				"{@bold Elite}, {@bold Hex}",
@@ -72460,6 +72540,92 @@
 				"MT",
 				"S"
 			]
+		},
+		{
+			"name": "Power Leech",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you see a creature within range cast a spell"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Violently interrupt the casting of a spell by implanting a psychic leech. ",
+				"Choose one creature, which is casting a spell, that you can see within range. If the creature is casting a spell of 2nd level or lower, the spell fails and has no effect.",
+				"If you successfully interrupt a spell this way, for the duration when the target casts a spell of 1st level or higher, the target must make a Charisma saving throw. On a failed save, the target's initiative gets reduced by {@dice 1d4} per spell slot level and your initiative gets increased by the amount lost."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Power Leech",
+					"Elite Hex Spell. If target foe is casting a spell or chant, that skill is interrupted and for 10 seconds, whenever that foe casts a spell, you steal up to 5...13...15 Energy from that foe."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/b/b8/Power_Leech.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "The Jade Sea",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Inspiration Magic",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Hex",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			}
 		}
 	],
 	"table": [

@@ -6255,7 +6255,8 @@
             ],
             "entries": [
                 "Conjure an extremely bright flash of light right in front of a creature's eyes.",
-                "Choose one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target is {@condition blinded} for the duration."
+                "Choose one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target is {@condition blinded} for the duration.",
+                "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -49010,7 +49011,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST"
+            ]
         },
         {
             "name": "Blessed Signet",
@@ -49036,7 +49040,7 @@
             "entries": [
                 "{@bold Signet:} Long Rest",
                 "Activate your blessed signet, drawing divine power, refueling spell slots expended in the casting of bonds.",
-                "If you are maintaining one or more bonds, regain spell slots expended in the casting of those bonds."
+                "If you are maintaining one or more bonds, regain the spell slots expended in the casting of those bonds."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -49087,7 +49091,10 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "areaTags": [
+                "ST"
+            ]
         },
         {
             "name": "Demonic Flesh",
@@ -50512,7 +50519,13 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "PRM"
+            ]
         },
         {
             "name": "Animate Bone Fiend",
@@ -58900,6 +58913,13 @@
                         "When you cast this spell using a spell slot of 2nd level or higher, the radius of the spell increases by 5 feet for each slot level above 1st."
                     ]
                 }
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
             ]
         },
         {
@@ -59512,6 +59532,13 @@
             },
             "conditionInflict": [
                 "blinded"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
             ]
         },
         {
@@ -60596,6 +60623,18 @@
                         "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
                     ]
                 }
+            ],
+            "damageInflict": [
+                "cold"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
             ]
         },
         {
@@ -70794,6 +70833,13 @@
                         "When you cast this spell using a spell slot of 3rd level or higher, the healing increases by {@dice 2d4} for each slot level above 2nd."
                     ]
                 }
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
             ]
         },
         {
@@ -72640,6 +72686,101 @@
                 ],
                 "fromSubclass": []
             }
+        },
+        {
+            "name": "Empathic Removal",
+            "level": 2,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "entries": [
+                "{@bold Elite}",
+                "Relive the burden of yourself and an ally.",
+                "Choose one creature, other than yourself, that you can see within range. You and the target regain 5 hit points, and you end the latest harmful spell and the latest of the following conditions on yourself and the target: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars}, {@condition Charmed},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Frightened}, {@condition Grappled}, {@condition Incapacitated},  {@condition Paralyzed},  {@condition Petrified}, {@condition Poisoned},  {@condition Restrained}, {@condition Stunned}, {@condition Unconscious}, or {@condition Weakness|GuildWars}"
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Empathic Removal",
+                    "Elite Spell. You and target other ally lose 1 condition and 1 hex, and are healed for 50."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/2/20/Empathic_Removal.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Echovald Forest",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Monk",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "No Attribute - Monk",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 5 for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "MT"
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
+            ]
         }
     ],
     "table": [

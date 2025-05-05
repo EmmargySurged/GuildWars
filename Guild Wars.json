@@ -72710,7 +72710,17 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": []
 			},
 			"entries": [
 				"{@bold Elite}",
@@ -72770,6 +72780,103 @@
 			"miscTags": [
 				"HL",
 				"SGT"
+			]
+		},
+		{
+			"name": "Icy Veins",
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Elite}, {@bold Hex}",
+				"Rapidly freeze a creature's insides, making them explode when they die.",
+				"Choose one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes {@damage 4d6} cold damage. ",
+				"Additionally, for the duration, if the target drops to 0 hit points, this spell ends on the target and then target each other hostile creature in a 15-foot-radius sphere centered on the creature. Each new target must make a Dexterity saving throw. On a failed save, a new target takes {@damage 6d6} cold damage. On a successful save, a new target takes half as much damage."
+			],
+			"source": "GuildWars",
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage each increases by {@dice 1d6} for each slot level above 2nd."
+					]
+				}
+			],
+			"areaTags": [
+				"ST",
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"fluff": {
+				"entries": [
+					"Icy Veins",
+					"Elite Hex Spell. Target foe is struck for 10...74...90 cold damage. For 10...30...35 seconds, if target foe dies all nearby foes are struck for 20...92...110 cold damage. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/8/89/Icy_Veins.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Echovald Forest",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Soul Reaping",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Hex",
+					"source": "GuildWars"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"dexterity",
+				"constitution"
 			]
 		}
 	],

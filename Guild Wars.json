@@ -4395,9 +4395,6 @@
 					]
 				}
 			],
-			"damageInflict": [
-				"necrotic"
-			],
 			"miscTags": [
 				"HL",
 				"UBA"
@@ -9806,7 +9803,7 @@
 				}
 			],
 			"entries": [
-				"{bold Companion}",
+				"{@bold Companion}",
 				"Call to your pet to imbue it with haste.",
 				"Choose one companion, that can hear you within range. For the duration, the companion can attack one additional time when it takes the attack action on its turn and the companion's speed increases by 10 feet."
 			],
@@ -23431,6 +23428,7 @@
 				}
 			],
 			"entries": [
+				"{@bold Companion}",
 				"Imbue your animal companion with Melandru's wild strength, striking everything around it.",
 				"Choose one companion, that can hear you within range. The companion uses its reaction to make a melee attack against all creatures that the companion can see within double the companion's range. On a hit, a target suffers the attack's normal effects and takes {@damage 1d6} damage."
 			],
@@ -25434,7 +25432,7 @@
 			"entries": [
 				"{@bold Hex}",
 				"Conjure up a fog, which makes your opponents more likely to miss with their attacks.",
-				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save for the duration when a target makes an attack roll with a weapon, they must roll a {@dice d20}. On a 10 or lower, the attack misses."
+				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save for the duration when a target makes an attack roll with a weapon, they must roll a {@dice d20}. On a 10 or lower, the attack misses."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -25473,7 +25471,7 @@
 			"components": {
 				"s": true,
 				"m": {
-					"text": "a pair of reading glasses worth 10+ GP",
+					"text": "a pair of smudged reading glasses worth 10+ GP",
 					"cost": 1000
 				}
 			},
@@ -25526,7 +25524,17 @@
 						}
 					}
 				]
-			}
+			},
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Dolyak Signet",
@@ -27964,15 +27972,15 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "round",
-						"amount": 3
+						"type": "minute",
+						"amount": 1
 					}
 				}
 			],
 			"entries": [
 				"{@bold Elite}, {@bold Enchantment}, {@bold Sacrifice:} 33%",
 				"Sacrifice some of your own blood to fuel a creature's spells.",
-				"Choose one friendly creature that you can see within range. For the duration, when the creature would expend a spell slot to cast a spell of 3rd level or lower, roll a {@dice d20}. On a 15 or higher, the spell does not expend a spell slot."
+				"Choose one friendly creature that you can see within range. For the duration, when the creature would expend a spell slot to cast a spell of 7th level or lower, roll a {@dice d20}. On a 15 or higher, the spell does not expend a spell slot."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -28025,7 +28033,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the number you need to roll decreases by 1 for every 2 slot level above 2nd."
+						"When you cast this spell using a spell slot of 3rd level or higher, the number you need to roll decreases by 1 for each slot level above 2nd."
 					]
 				}
 			],
@@ -28057,7 +28065,14 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT",
+				"UBA"
+			]
 		},
 		{
 			"name": "Energy Drain",
@@ -38213,7 +38228,14 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"MT"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			]
 		},
 		{
 			"name": "Holy Veil",
@@ -38802,15 +38824,15 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "round",
-						"amount": 3
+						"type": "minute",
+						"amount": 1
 					}
 				}
 			],
 			"entries": [
 				"{@bold Enchantment}, {@bold Sacrifice:} 17%",
 				"Sacrifice some of your own blood to fuel another creature's spells.",
-				"You touch a creature, other than yourself. For the duration, when the creature would expend a spell slot to cast a spell of 1st level, roll a {@dice d20}. On a 17 or higher, the spell does not expend a spell slot."
+				"You touch a creature, other than yourself. For the duration, when the creature would expend a spell slot to cast a spell of 5th level or lower, roll a {@dice d20}. On a 17 or higher, the spell does not expend a spell slot."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -38859,7 +38881,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the duration increases by 1 round for each slot level above 2nd."
+						"When you cast this spell using a spell slot of 3rd level or higher, the number you need to roll decreases by 1 for each slot level above 2nd."
 					]
 				}
 			],
@@ -38891,7 +38913,10 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Cry of Frustration",
@@ -59040,12 +59065,9 @@
 					}
 				]
 			},
-			"areaTags": [
-				"MT",
-				"S"
-			],
 			"miscTags": [
-				"AAD"
+				"SGT",
+				"SMN"
 			],
 			"backgrounds": [
 				{
@@ -59117,7 +59139,16 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Boon of Creation",
@@ -61315,6 +61346,16 @@
 						"When you cast this spell using a spell slot of 2nd level or higher, the on hit healing increases by {@dice 1d4} and the on death healing increases by {@dice 2d4} for each slot level above 1st."
 					]
 				}
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"HL"
 			]
 		},
 		{
@@ -62324,6 +62365,7 @@
 				}
 			],
 			"entries": [
+				"{@bold Companion}",
 				"Form a bond with a companion, imbuing it with unnatural speed and siphoning health with its attacks.",
 				"Choose one companion, that can hear you within range. For the duration, the companion can attack one additional time when it takes the attack action on its turn and when the target hits with an attack, you regain hit points equal to {@dice 2d4}."
 			],
@@ -72984,6 +73026,97 @@
 			"savingThrow": [
 				"dexterity",
 				"constitution"
+			]
+		},
+		{
+			"name": "Equinox",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Elite}, {@bold Summoning Ritual:} {@creature Nature Ritual|GuildWars} ",
+				"Call forth a spirit of equinox, draining spell casters of energy when they cast spells.",
+				"Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit and casts a spell, a creature must make a Wisdom saving throw. On a failed save, they gain 2 rounds of {@condition overcast|GuildWars}."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Equinox",
+					"Elite Nature Ritual. Create a level 1...8...10 spirit. Spells cast within its range that cause Overcast cause an additional 10 Overcast. This spirit dies after 30...126...150 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/d/db/Equinox.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd or 4th level, the duration increases to 8 hours. When you use a spell slot of 5th level or higher, the duration increases to 24 hours."
+					]
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Wilderness Survival",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Summoning Ritual",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"areaTags": [
+				"MT"
 			]
 		}
 	],

@@ -9443,12 +9443,9 @@
                     "source": "GuildWars"
                 }
             ],
-            "savingThrow": [
-                "charisma"
-            ],
             "areaTags": [
                 "MT",
-                "Y"
+                "S"
             ],
             "miscTags": [
                 "SGT"
@@ -9513,7 +9510,19 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "acid",
+                "cold",
+                "fire",
+                "force",
+                "lightning",
+                "poison",
+                "psychic"
+            ],
+            "savingThrow": [
+                "charisma"
+            ]
         },
         {
             "name": "Armor of Earth",
@@ -9803,7 +9812,7 @@
             "entries": [
                 "{@bold Companion}",
                 "Call to your pet to imbue it with haste.",
-                "Choose one companion, that can hear you within range. For the duration, the companion can attack one additional time when it takes the attack action on its turn and the companion's speed increases by 10 feet."
+                "Choose one companion, that can hear you within range. For the duration, the companion can attack one additional time when it takes the attack action on its turn, and the companion's speed increases by 33%."
             ],
             "source": "GuildWars",
             "components": {
@@ -9847,15 +9856,6 @@
             ],
             "miscTags": [
                 "UBA"
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 4th level or higher, the speed increases by 10 feet for each slot level above 3rd and the number of attacks increases by 1 for every three slot levels above 3rd. "
-                    ]
-                }
             ],
             "classes": {
                 "fromClassList": [
@@ -16576,7 +16576,14 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT",
+                "AAD"
+            ]
         },
         {
             "name": "Quick Shot",
@@ -23929,9 +23936,6 @@
                     }
                 ]
             },
-            "damageInflict": [
-                "poison"
-            ],
             "backgrounds": [
                 {
                     "name": "Ring of Fire Islands",
@@ -24022,7 +24026,13 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "strength"
+            ],
+            "miscTags": [
+                "UBA"
+            ]
         },
         {
             "name": "Channeling",
@@ -24117,7 +24127,10 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "areaTags": [
+                "ST"
+            ]
         },
         {
             "name": "Ward Against Foes",
@@ -26840,7 +26853,13 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "areaTags": [
+                "MT"
+            ],
+            "miscTags": [
+                "UBA"
+            ]
         },
         {
             "name": "Succor",
@@ -37081,7 +37100,16 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "strength"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "AAD"
+            ]
         },
         {
             "name": "Plague Touch",
@@ -44080,10 +44108,8 @@
                     ]
                 }
             ],
-            "damageInflict": [
-                "necrotic"
-            ],
             "areaTags": [
+                "ST",
                 "MT"
             ],
             "miscTags": [
@@ -44157,7 +44183,10 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "damageInflict": [
+                "lightning"
+            ]
         },
         {
             "name": "Ethereal Burden",
@@ -44550,14 +44579,10 @@
                     }
                 ]
             },
-            "spellAttack": [
-                "M"
-            ],
             "areaTags": [
                 "ST"
             ],
             "miscTags": [
-                "HL",
                 "UBA",
                 "AAD"
             ],
@@ -46162,7 +46187,13 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "UBA"
+            ]
         },
         {
             "name": "Disciplined Stance",
@@ -59253,6 +59284,12 @@
                         "When you cast this spell using a spell slot of 3rd or 4th level, the duration increases to 1 hour. When you use a spell slot of 5th level or higher, the duration increases to 8 hours."
                     ]
                 }
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL"
             ]
         },
         {
@@ -59317,7 +59354,7 @@
             "entries": [
                 "{@bold Weapon Spell} ",
                 "Temporarily transform a weapon into a brutal weapon, visibly making its appearance more brutal and increasing its damage as long as the wielder is not under the effect of any enchantment spells.",
-                "Choose one friendly creature, which is wielding a weapon, that you can see within range. For the duration, while the target is not under the effect of a beneficial {@status Concentration|XPHB}/enchantment spell, the target's weapon attacks deal an additional {@damage 1d6} damage."
+                "Choose one friendly creature, which is wielding a weapon, that you can see within range. For the duration, while the target is not under the effect of a beneficial {@status Concentration|XPHB} spell, the target's weapon attacks deal an additional {@damage 1d6} damage."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -59365,6 +59402,13 @@
                         "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for every two slot level above 1st."
                     ]
                 }
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT",
+                "AAD"
             ]
         },
         {
@@ -59482,6 +59526,18 @@
                         "When you cast this spell using a spell slot of 3rd level or higher, the initial damage increases by {@dice 1d12} for each slot level above 2nd and the conditional damage increases by {@dice 1d6} for each slot level above 2nd."
                     ]
                 }
+            ],
+            "damageInflict": [
+                "lightning"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
             ]
         },
         {
@@ -59798,6 +59854,13 @@
                         "When you cast this spell using a spell slot of 2nd level or higher, the radius of the spell increases by 5 feet for each slot level above 1st."
                     ]
                 }
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
             ]
         },
         {
@@ -59927,7 +59990,7 @@
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 3rd level or higher, the damage each increases by {@dice 1d8} for each slot level above 2nd."
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d8} for each slot level above 2nd."
                     ]
                 }
             ]
@@ -61384,7 +61447,7 @@
             "entries": [
                 "{@bold Summoning Ritual:} {@creature Nature Ritual|GuildWars} ",
                 "Call forth a spirit of brambles, hurting and making creature bleed, which fall {@condition prone}.",
-                "Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit and falls {@condition prone}, they take {@damage 4d4} damage and start {@condition bleeding|GuildWars} for 1 minute, taking {@damage 2d4} damage.",
+                "Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit and falls {@condition prone}, they take {@damage 4d4} slashing damage and start {@condition bleeding|GuildWars} for 1 minute, taking {@damage 2d4} damage.",
                 "At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GuildWars",
@@ -61473,7 +61536,17 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "slashing"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ],
+            "savingThrow": [
+                "constitution"
+            ]
         },
         {
             "name": "Doom",
@@ -71127,9 +71200,6 @@
                 "s": true,
                 "m": "a ranged weapon worth at least 1 sp"
             },
-            "savingThrow": [
-                "constitution"
-            ],
             "areaTags": [
                 "ST"
             ],
@@ -71230,7 +71300,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "constitution"
+            ]
         },
         {
             "name": "Clamor of Souls",
@@ -73145,6 +73218,117 @@
             },
             "areaTags": [
                 "MT"
+            ]
+        },
+        {
+            "name": "Defiant Was Xinrae",
+            "level": 3,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "emanation",
+                "distance": {
+                    "type": "feet",
+                    "amount": 15
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "entries": [
+                "{@bold Elite}, {@bold Urn}",
+                "Create a scarlet urn containing the ashes of Xinrae, protecting you from large impacts, and siphoning off health when you drop it.",
+                "You create an urn in your hands. While holding the Urn created by this spell, when you would take damage, if that damage would be more than 20% of your maximum hit points, reduce the damage to 20% of your maximum hit points.",
+                "When you drop this urn, target each hostile creature within a 15-foot Emanation. Each target must make a Constitution saving throw. On a failed save, a target takes {@damage 4d8} necrotic damage. On a successful save, a target takes half as much damage. You regain hit points equal to the amount of necrotic damage dealt."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Defiant Was Xinrae",
+                    "Elite Item Spell. Hold Xinrae's ashes for up to 15...51...60 seconds. While you hold her ashes, you cannot lose more than 20% of your max Health from a single hit. When you drop her ashes, you steal 5...41...50 Health from all nearby foes. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/3/3c/Defiant_Was_Xinrae.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Ritualist",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Restoration Magic",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Urn",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "s": true,
+                "m": "the ashes of a revolutionary"
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 2d8} for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "necrotic"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
             ]
         }
     ],

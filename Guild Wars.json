@@ -29045,7 +29045,13 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"MT"
+			],
+			"miscTags": [
+				"UBA"
+			]
 		},
 		{
 			"name": "Ferocious Strike",
@@ -48871,7 +48877,21 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"poison"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST",
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"AAD"
+			]
 		},
 		{
 			"name": "Deep Freeze",
@@ -51084,7 +51104,7 @@
 				"As part of the casting of this spell, you can spend {@dice 1d4} hours magically searching for an appropriate creature to charm. If you do so, roll on the {@table Charm Animal Beast List|GuildWars} table by making either a Wisdom (Animal Handling), a Wisdom (Survival) or an Intelligence (Nature) check to determine which beast will appear (your DM might decide to replace animals from the list).",
 				"When you find an appropriate creature to charm, either by searching for it or having already encountered one (in which case it needs to be a beast of challenge rating 1 or lower, with Intelligence of 3 or less), you can attempt to charm it by touching it. ",
 				"When you successfully touch it, it must make a Wisdom saving throw. On a failed save, the target is {@condition charmed} by you for the next 24 hours, while the creature is {@condition charmed} in this way, you can expend a spell slot of equal or higher level than the one used in the casting of this spell to maintain the {@condition charmed} condition on the beast, by spending 1 minute with it while it is within 5-feet of you. To do this, you must have the Charm Animal spell prepared, or any other spell which says that it can be used instead.",
-				"The {@condition charmed} creature is friendly to you, is considered your companion and your allies. While the creature is {@condition charmed}, you have a telepathic link with it as long as the two of you are on the same plane of existence and are within 1 mile of each other. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.",
+				"The {@condition charmed} creature is friendly to you and your allies and is considered your companion. While the creature is {@condition charmed}, you have a telepathic link with it as long as the two of you are on the same plane of existence and are within 1 mile of each other. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.",
 				"After charming a creature with this spell, you cannot cast this spell again until {@dice 1d6} days have passed."
 			],
 			"source": "GuildWars",
@@ -51443,7 +51463,7 @@
 			"entries": [
 				"Corrupt your blood to curse an area to wither away their enchantments.",
 				"Choose a point that you can see within range. Each creature in a 20-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target takes {@damage 4d8} necrotic damage and the latest beneficial spell on a target ends. On a successful save, a target takes half as much damage, but suffers no other effect.",
-				"You are  {@condition Corruption|GuildWars|corrupted} for the duration, taking {@damage 1d4} damage}.",
+				"You are  {@condition Corruption|GuildWars|corrupted} for the duration, taking {@damage 1d4} damage.",
 				"At the end of each of your turns, you can make a Constitution saving throw. On a success, the condition ends."
 			],
 			"source": "GuildWars",
@@ -51529,7 +51549,20 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Obsidian Flame",
@@ -53814,7 +53847,20 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Convert Hexes",
@@ -71440,6 +71486,9 @@
 			"areaTags": [
 				"MT",
 				"S"
+			],
+			"miscTags": [
+				"SGT"
 			]
 		},
 		{
@@ -73247,7 +73296,21 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					}
+				],
+				"fromSubclass": []
 			},
 			"entries": [
 				"{@bold Elite}, {@bold Urn}",
@@ -73316,6 +73379,81 @@
 				"MT",
 				"S"
 			]
+		},
+		{
+			"name": "Dragon Slash",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@bold Adrenaline:} 10, {@bold Elite}",
+				"Channel the dragon of the canthan empire, striking with the ferocity of a dragon's claw.",
+				"On a hit, the target suffers the weapon attack's normal effects and takes {@damage 4d10} damage, and you gain {@dice 1d4} strikes of adrenaline."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Dragon Slash",
+					"Elite Sword Attack. If Dragon Slash hits, you strike for +10...34...40 damage and gain 1...4...5 strike[s] of adrenaline."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/6/6a/Dragon_Slash.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"v": true
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"AAD"
+			],
+			"backgrounds": [
+				{
+					"name": "The Jade Sea",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Warrior",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Swordsmanship",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Adrenaline",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			}
 		}
 	],
 	"table": [

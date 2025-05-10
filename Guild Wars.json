@@ -18043,7 +18043,13 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Lightning Orb",
@@ -19813,7 +19819,10 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"MT"
+			]
 		},
 		{
 			"name": "Warrior's Endurance",
@@ -28080,7 +28089,16 @@
 						}
 					}
 				]
-			}
+			},
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"AAD"
+			]
 		},
 		{
 			"name": "Amity",
@@ -44922,17 +44940,8 @@
 					}
 				]
 			},
-			"savingThrow": [
-				"constitution"
-			],
 			"areaTags": [
 				"ST"
-			],
-			"miscTags": [
-				"AAD"
-			],
-			"conditionInflict": [
-				"prone"
 			],
 			"backgrounds": [
 				{
@@ -45019,7 +45028,16 @@
 						}
 					}
 				]
-			}
+			},
+			"savingThrow": [
+				"constitution"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"miscTags": [
+				"AAD"
+			]
 		},
 		{
 			"name": "Crystal Wave",
@@ -60288,6 +60306,16 @@
 						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d8} for each slot level above 2nd."
 					]
 				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"MT",
+				"S"
 			]
 		},
 		{
@@ -60456,6 +60484,18 @@
 			},
 			"conditionInflict": [
 				"crippled|guildwars"
+			],
+			"damageInflict": [
+				"piercing"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"AAD"
 			]
 		},
 		{
@@ -60623,6 +60663,12 @@
 						"When you cast this spell using a spell slot of 2nd level or higher, the number you need to roll to score a critical hit get reduced by 1 for every two spell slot level above 1st and the increase of initiative increases by {@dice 1d4} for each slot level above 1st."
 					]
 				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"UBA"
 			]
 		},
 		{
@@ -70842,6 +70888,12 @@
 			},
 			"conditionInflict": [
 				"prone"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"UBA"
 			]
 		},
 		{
@@ -73829,7 +73881,95 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Bard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Collage of swords",
+							"shortName": "Swords",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Inquisition domain",
+							"shortName": "Inquisition",
+							"source": "GrimHollowPlayerPack"
+						}
+					},
+					{
+						"class": {
+							"name": "Illrigger",
+							"source": "IllriggerRevised"
+						},
+						"subclass": {
+							"name": "Architect of ruin",
+							"shortName": "Architect of Ruin",
+							"source": "IllriggerRevised"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "The hexblade",
+							"shortName": "Hexblade",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Bladesinging",
+							"shortName": "Bladesinging",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Eldritch knight",
+							"shortName": "Eldritch Knight",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
 			},
 			"entries": [
 				"{@bold Elite}, {@bold Enchantment}",
@@ -73886,6 +74026,105 @@
 			],
 			"miscTags": [
 				"UBA"
+			]
+		},
+		{
+			"name": "Ride the Lightning (Guild Wars)",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Ride the Lightning",
+					"Elite Spell. You Ride the Lightning to target. All adjacent foes are Blinded for 1...4...5 second[s]. If your target is a foe, it is struck for 10...58...70 lightning damage. This spell has 25% armor penetration."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/f/fc/Ride_the_Lightning.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "The Jade Sea",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Air Magic",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "a lute strung with metal strings"
+			},
+			"entries": [
+				"{@bold Elite}",
+				"Transform yourself into a lightning bolt, instantly transporting yourself and exploding in a blinding flash.",
+				"Choose an unoccupied space that you can see within range. Teleport to that space, and each creature of your choice in a 10-Emination must make a Dexterity saving throw. On a failed save, a target takes {@damage 8d8} lightning damage and is {@condition blinded} for the duration. On a successful save, a target takes half as much damage.",
+				"At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d8} for each slot level above 3rd and the range of the spell increases by 50 feet for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"miscTags": [
+				"SGT",
+				"TP"
 			]
 		}
 	],

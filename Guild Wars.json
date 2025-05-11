@@ -5648,9 +5648,6 @@
 				"MT",
 				"R"
 			],
-			"miscTags": [
-				"AAD"
-			],
 			"backgrounds": [
 				{
 					"name": "Pre-Searing",
@@ -5733,7 +5730,10 @@
 						}
 					}
 				]
-			}
+			},
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Executioner's Strike",
@@ -39221,8 +39221,7 @@
 			],
 			"entries": [
 				"Unleash a psychic scream, disrupting a group of creatures.",
-				"Choose one creature, which is casting a spell or using an ability, that you can see within range. Target each creature other than you in a 15-foot-radius centered on the target.  Each target must make a Charisma saving throw. On a failed save, If the creature is casting a spell of 3rd level or lower or using an ability, the spell/ability fails and has no effect. Otherwise, on a failed save, a target can't cast spells or use abilities until the end of their next turn.",
-				"If you successfully interrupt a spell this way, a target must make an Intelligence saving throw with disadvantage. On a failed save, a target takes {@damage 2d6} psychic damage. If you did not successfully interrupt a spell this way, a creature makes the saving throw with advantage."
+				"Choose one creature, which is casting a spell or using an ability, that you can see within range. Target each creature other than you in a 15-foot-radius centered on the target.  Each target must make a Charisma saving throw. On a failed save, If the creature is casting a spell of 3rd level or lower or using an ability, the spell/ability fails, has no effect and the creature takes {@damage 2d6} psychic damage. Otherwise, on a failed save, a target can't cast spells or use abilities until the end of their next turn and takes {@damage 2d6} psychic damage."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -39248,7 +39247,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 6th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used - 1 and the the damage increases by {@dice 1d6} for each slot level above 1st."
+						"When you cast this spell using a spell slot of 6th level or higher, damage increases by {@dice 1d6} for each slot level above 5th."
 					]
 				}
 			],
@@ -39313,7 +39312,20 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Dark Aura",
@@ -39432,7 +39444,17 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Armor of Frost",
@@ -44792,7 +44814,10 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Brutal Strike",
@@ -45140,7 +45165,17 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			]
 		},
 		{
 			"name": "Hex Breaker",
@@ -56586,7 +56621,10 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"MT"
+			]
 		},
 		{
 			"name": "Slayer's Spear",
@@ -61415,7 +61453,13 @@
 			],
 			"components": {
 				"v": true
-			}
+			},
+			"areaTags": [
+				"MT"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Lightning Hammer",
@@ -74055,7 +74099,33 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Druid",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": []
 			},
 			"source": "GuildWars",
 			"fluff": {
@@ -74125,6 +74195,98 @@
 			"miscTags": [
 				"SGT",
 				"TP"
+			]
+		},
+		{
+			"name": "Psychic Distraction",
+			"level": 1,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you see a creature within range cast a spell or using an ability"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 2
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@bold Elite}",
+				"Cause a momentary distraction in a creature's mind, potentially interrupting their action and making them unable to use it again for a short while.",
+				"For the duration, you cannot cast spells other than {@spell Psychic Distraction|GuildWars} or use any abilities. ",
+				"Choose one creature, which is casting a spell or using an ability, that you can see within range. The creature makes an Intelligence saving throw. On a failed save, the spell/abilities dissipates with no effect, the action, Bonus Action, or Reaction used to cast/use it is wasted, and the creature cannot use that spell/ability again for the duration. If a spell was cast with a spell slot, the slot isn't expended."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Psychic Distraction",
+					"Elite Spell. All of your other skills are disabled for 8 seconds. If target foe is using a skill, that skill is interrupted and disabled for an additional 5...11...12 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/7/70/Psychic_Distraction.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Domination Magic",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the duration increases by 1 round for each slot level above 1st."
+					]
+				}
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
 			]
 		}
 	],

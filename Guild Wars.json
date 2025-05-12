@@ -2385,7 +2385,7 @@
 			"entries": [
 				"{@bold Enchantment}",
 				"Enchant a friendly creature to explode on death, damaging and {@condition corruption|GuildWars|corrupting} everything around it.",
-				"Choose one friendly creature that you can see within range. For the duration, if the creature drops to 0 hit points, this spell ends on the creature and then target each other creature in a 10-foot-radius sphere centered on the creature. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 3d6} necrotic damage and is corrupted for 1 minute, taking {@damage 1d4} damage. On a successful save, a target takes half as much damage, but suffers no other effect.",
+				"Choose one friendly creature that you can see within range. For the duration, if the creature drops to 0 hit points, this spell ends on the creature and then target each hostile creature in a 10-foot-radius sphere centered on the creature. Each new target must make a Dexterity saving throw. On a failed save, a new target takes {@damage 3d6} necrotic damage and is {@condition corruption|GuildWars|corrupted} for 1 minute, taking {@damage 1d4} damage. On a successful save, a new target takes half as much damage, but suffers no other effect.",
 				"At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
 			],
 			"source": "GuildWars",
@@ -2403,7 +2403,8 @@
 				}
 			],
 			"damageInflict": [
-				"necrotic"
+				"necrotic",
+				"poison"
 			],
 			"savingThrow": [
 				"dexterity"
@@ -2534,10 +2535,8 @@
 					]
 				}
 			],
-			"damageInflict": [
-				"necrotic"
-			],
 			"areaTags": [
+				"ST",
 				"MT"
 			],
 			"miscTags": [
@@ -2614,7 +2613,10 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"necrotic"
+			]
 		},
 		{
 			"name": "Empathy",
@@ -45447,14 +45449,10 @@
 			"damageInflict": [
 				"necrotic"
 			],
-			"spellAttack": [
-				"R"
-			],
 			"areaTags": [
 				"ST"
 			],
 			"miscTags": [
-				"HL",
 				"SGT"
 			],
 			"components": {
@@ -45522,7 +45520,10 @@
 						}
 					}
 				]
-			}
+			},
+			"savingThrow": [
+				"constitution"
+			]
 		},
 		{
 			"name": "Maiming Strike",
@@ -45682,7 +45683,7 @@
 				"ST"
 			],
 			"miscTags": [
-				"UBA"
+				"SGT"
 			],
 			"backgrounds": [
 				{
@@ -45801,7 +45802,10 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"slashing"
+			]
 		},
 		{
 			"name": "Iron Mist",
@@ -62313,7 +62317,13 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"UBA"
+			]
 		},
 		{
 			"name": "Sliver Armor",
@@ -64272,14 +64282,10 @@
 					}
 				]
 			},
-			"spellAttack": [
-				"M"
-			],
-			"savingThrow": [
-				"strength"
-			],
 			"areaTags": [
-				"ST"
+				"ST",
+				"MT",
+				"S"
 			],
 			"miscTags": [
 				"AAD"
@@ -64641,6 +64647,15 @@
 						"When you cast this spell using a spell slot of 3rd level or higher, the healing increases by {@dice 2d4} for each slot level above 2nd."
 					]
 				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"HL",
+				"SGT",
+				"TP",
+				"UBA"
 			]
 		},
 		{
@@ -74225,7 +74240,52 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Inquisition domain",
+							"shortName": "Inquisition",
+							"source": "GrimHollowPlayerPack"
+						}
+					},
+					{
+						"class": {
+							"name": "Illrigger",
+							"source": "IllriggerRevised"
+						},
+						"subclass": {
+							"name": "Architect of ruin",
+							"shortName": "Architect of Ruin",
+							"source": "IllriggerRevised"
+						}
+					}
+				]
 			},
 			"entries": [
 				"{@bold Elite}",
@@ -74287,6 +74347,94 @@
 			],
 			"miscTags": [
 				"SGT"
+			]
+		},
+		{
+			"name": "Healing Burst",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@bold Elite}",
+				"Fire a projectile of healing energy, which explodes into a flash of healing energy. ",
+				"Choose one friendly creature that you can see within range. The target regains hit points equal to {@dice 2d6}. Additionally, each friendly creature, which the target can see, within a 150-foot Emanation centered on the target, regains hit points equal to your spellcasting ability modifier."
+			],
+			"source": "GuildWars",
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the healing each increases by {@dice 2d6} for each slot level above 2nd."
+					]
+				}
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			],
+			"fluff": {
+				"entries": [
+					"Healing Burst",
+					"Elite Spell. Target ally is healed for 10...130...160. All party members in earshot of your target gain Health equal to the Divine Favor bonus from this spell. Your Smiting Prayers are disabled for 20 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/6/6d/Healing_Burst.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Echovald Forest",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Monk",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Healing Prayers",
+					"source": "GuildWars"
+				},
+				{
+					"name": "The Jade Sea",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"areaTags": [
+				"MT"
 			]
 		}
 	],

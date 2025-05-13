@@ -22874,7 +22874,16 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Irresistible Blow",
@@ -23141,7 +23150,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST"
+            ]
         },
         {
             "name": "Pacifism",
@@ -32047,6 +32059,7 @@
                 "ST"
             ],
             "miscTags": [
+                "HL",
                 "UBA"
             ],
             "backgrounds": [
@@ -40403,7 +40416,7 @@
                 }
             ],
             "entries": [
-                "Fire a shot, determined to hit, allowing you to immediately cast a spell if you miss.",
+                "Fire a shot, determined to hit, allowing you to immediately attack again if you miss.",
                 "On a hit, the target suffers the weapon attack's normal effects and takes {@damage 2d8} damage.",
                 "On a miss, you can immediately attack again."
             ],
@@ -40519,7 +40532,13 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "AAD"
+            ]
         },
         {
             "name": "Armor of Mist",
@@ -49234,9 +49253,6 @@
             "damageInflict": [
                 "cold"
             ],
-            "savingThrow": [
-                "dexterity"
-            ],
             "areaTags": [
                 "MT",
                 "S"
@@ -49313,7 +49329,13 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Blackout",
@@ -49629,7 +49651,17 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "necrotic"
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ]
         },
         {
             "name": "Concussion Shot",
@@ -53188,7 +53220,7 @@
                 "{@bold Adrenaline:} 5, {@bold Stance}",
                 "Assume a defensive stance, gaining adrenaline at the end of it for each melee weapon attack spell you have prepared.",
                 "For the duration, you have a +5 bonus to AC against weapon attacks.",
-                "When this spell ends, you gain one strike of adrenalin for each melee weapon attack spell you have prepared (maximum 2)."
+                "When this spell ends, you gain one strike of adrenaline for each melee weapon attack spell you have prepared (maximum 2)."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -53334,7 +53366,14 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "MAC",
+                "UBA"
+            ]
         },
         {
             "name": "Windborne Speed",
@@ -56239,7 +56278,21 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "slashing"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "MAC",
+                "UBA"
+            ]
         },
         {
             "name": "Glyph of Elemental Power",
@@ -57436,7 +57489,7 @@
             },
             "entries": [
                 "Turn the enchantments of a group of creatures against them, dealing increased damage per enchantment on them.",
-                "Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target takes {@damage 2d8} necrotic damage. If a target was under the effect of a beneficial spell, a target takes an additional {@damage 1d8} necrotic damage per beneficial spell on them. On a successful save, a target takes half as much damage, but suffers no other effect."
+                "Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target takes {@damage 2d8} necrotic damage. If a target was under the effect of a beneficial spell, a target takes an additional {@damage 1d8} necrotic damage per beneficial spell on them. On a successful save, a target takes half as much damage."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -57479,6 +57532,19 @@
                         "When you cast this spell using a spell slot of 3rd level or higher, the base damage increases by {@dice 1d8} for each slot level above 2nd."
                     ]
                 }
+            ],
+            "damageInflict": [
+                "necrotic"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "SGT"
             ]
         },
         {
@@ -58496,7 +58562,7 @@
                     "type": "timed",
                     "duration": {
                         "type": "round",
-                        "amount": 2
+                        "amount": 1
                     }
                 }
             ],
@@ -73738,6 +73804,9 @@
             "areaTags": [
                 "MT",
                 "S"
+            ],
+            "miscTags": [
+                "HL"
             ]
         },
         {
@@ -74454,6 +74523,142 @@
                     }
                 ],
                 "fromSubclass": []
+            },
+            "areaTags": [
+                "MT"
+            ]
+        },
+        {
+            "name": "Order of Apostasy",
+            "level": 1,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 300
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@bold Elite}, {@bold Enchantment}, {@bold Order}, {@bold Sacrifice:} 10%",
+                "Induct your allies into the Order of Apostasy, dragging creatures down to their heretical levels by removing their protections.",
+                "Target each friendly creature within range. For the duration, when a target hits with a weapon attack, the latest beneficial spell on the attack target ends. "
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Order of Apostasy",
+                    "Elite Enchantment Spell. For 5 seconds, whenever a party member hits a foe with physical damage, that foe loses one enchantment. For each Monk enchantment removed, you lose 25...17...15% maximum Health."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/9/91/Order_of_Apostasy.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Necromancer",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Curses",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Enchantment",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Order",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Sacrifice",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a holy text sullied by demon ichor"
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the duration increases by 1 round for each slot level above 1st."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    }
+                ]
             },
             "areaTags": [
                 "MT"

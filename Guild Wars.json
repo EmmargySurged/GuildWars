@@ -7263,13 +7263,6 @@
 			"components": {
 				"v": true
 			},
-			"areaTags": [
-				"ST"
-			],
-			"miscTags": [
-				"SGT",
-				"AAD"
-			],
 			"backgrounds": [
 				{
 					"name": "Pre-Searing",
@@ -7292,7 +7285,10 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Ignite Arrows",
@@ -14505,7 +14501,7 @@
 			"entries": [
 				"{@bold Stance}",
 				"You focus on dodging ranged attacks.",
-				"For the duration, your speed increases by 10 feet, and you have a +2 bonus to AC against ranged weapon attacks.",
+				"For the duration, your speed increases by 33%, and you have a +2 bonus to AC against ranged weapon attacks.",
 				"When you make an attack roll, this spell ends."
 			],
 			"source": "GuildWars",
@@ -14528,6 +14524,7 @@
 				"ST"
 			],
 			"miscTags": [
+				"MAC",
 				"UBA"
 			],
 			"backgrounds": [
@@ -14551,15 +14548,6 @@
 			"components": {
 				"s": true
 			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the AC bonus increases by 1 for each slot level above 2nd."
-					]
-				}
-			],
 			"classes": {
 				"fromClassList": [
 					{
@@ -25939,7 +25927,13 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"UBA"
+			]
 		},
 		{
 			"name": "Serpent's Quickness",
@@ -26723,9 +26717,6 @@
 					}
 				]
 			},
-			"damageInflict": [
-				"psychic"
-			],
 			"components": {
 				"s": true
 			},
@@ -26742,9 +26733,6 @@
 					"name": "Inspiration Magic",
 					"source": "GuildWars"
 				}
-			],
-			"areaTags": [
-				"MT"
 			],
 			"entriesHigherLevel": [
 				{
@@ -26771,7 +26759,16 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"savingThrow": [
+				"charisma"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"HL"
+			]
 		},
 		{
 			"name": "Ice Spear",
@@ -52240,7 +52237,17 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"MT",
+				"Y"
+			]
 		},
 		{
 			"name": "Shields Up!",
@@ -54949,6 +54956,7 @@
 				"ST"
 			],
 			"miscTags": [
+				"MAC",
 				"UBA"
 			],
 			"components": {
@@ -56028,7 +56036,15 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"HL",
+				"SGT",
+				"UBA"
+			]
 		},
 		{
 			"name": "Frozen Soil",
@@ -62148,6 +62164,18 @@
 						"When you cast this spell using a spell slot of 3rd level or higher, the final damage increases by {@dice 1d6} for each slot level above 2nd."
 					]
 				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
 			]
 		},
 		{
@@ -63112,7 +63140,16 @@
 			],
 			"components": {
 				"s": true
-			}
+			},
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"miscTags": [
+				"SGT",
+				"TP",
+				"UBA"
+			]
 		},
 		{
 			"name": "Summon Spirits",
@@ -70364,6 +70401,20 @@
 						"When you cast this spell using a spell slot of 7th level or higher, the damage each increases by {@dice 1d6} for each slot level above 6th."
 					]
 				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"ST",
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"SGT"
 			]
 		},
 		{
@@ -74799,10 +74850,139 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Druid",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
 			},
 			"areaTags": [
 				"MT"
+			]
+		},
+		{
+			"name": "Grasping Was Kuurong",
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "emanation",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@bold Elite}, {@bold Urn}",
+				"Create a scarlet urn containing the ashes of Kuurong, releasing her spirit in a whirlwind of energy, when dropping the ashes.",
+				"You create an urn in your hands. When you drop this urn, target each creature other than you within a 15-foot Emanation. Each target must make a Strength saving throw. On a failed save, a target takes {@damage 8d8} lightning damage and is knocked {@condition prone}. On a successful save, a target takes half as much damage and is knocked {@condition prone}."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Grasping Was Kuurong",
+					"Elite Item Spell. Hold Kuurong's ashes for up to 15...51...60 seconds. When you drop his ashes, all nearby foes are struck for 15...63...75 damage and knocked down."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/f/f2/Grasping_Was_Kuurong.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "The Jade Sea",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Channeling Magic",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Urn",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "the ashes of a Gulthias Blight"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d8} for each slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"conditionInflict": [
+				"prone"
 			]
 		}
 	],

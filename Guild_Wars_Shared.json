@@ -8073,9 +8073,6 @@
                     }
                 ]
             },
-            "savingThrow": [
-                "constitution"
-            ],
             "areaTags": [
                 "MT",
                 "S"
@@ -8158,7 +8155,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "constitution"
+            ]
         },
         {
             "name": "Epidemic",
@@ -8311,9 +8311,6 @@
             "areaTags": [
                 "ST"
             ],
-            "miscTags": [
-                "SGT"
-            ],
             "components": {
                 "v": true,
                 "s": true
@@ -8376,7 +8373,13 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Wary Stance",
@@ -12145,6 +12148,7 @@
                 "ST"
             ],
             "miscTags": [
+                "HL",
                 "UBA"
             ],
             "backgrounds": [
@@ -12694,7 +12698,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Frozen Burst",
@@ -13495,7 +13502,10 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Ice Spikes",
@@ -28465,7 +28475,10 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Ether Renewal",
@@ -28934,9 +28947,6 @@
             "savingThrow": [
                 "charisma"
             ],
-            "areaTags": [
-                "ST"
-            ],
             "backgrounds": [
                 {
                     "name": "Crystal Desert",
@@ -29030,7 +29040,14 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Glimmering Mark",
@@ -40040,7 +40057,7 @@
                 "v": true
             },
             "conditionInflict": [
-                "weakness|guildwars|weakened"
+                "weakness|guildwars"
             ],
             "backgrounds": [
                 {
@@ -40096,7 +40113,17 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "ST",
+                "MT"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Leech Signet",
@@ -55429,7 +55456,7 @@
             "entries": [
                 "{@bold Summoning Ritual:} {@creature Nature Ritual|GuildWars}",
                 "Summon a nature spirit of the Energizing Wind, reducing spell slot usage but preventing repeated usage.",
-                "Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit, when they cast a spell of 1st level or higher, they cast that spell by using a spell slot which is one level lower than required, but they cannot cast spells of the same level for 3 rounds."
+                "Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit, when they cast a spell of 1st level or higher, they cast that spell by using a spell slot which is one level lower than required, but they cannot cast spells of the same original level for 3 rounds."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -55502,7 +55529,10 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "areaTags": [
+                "MT"
+            ]
         },
         {
             "name": "Spear of Lightning",
@@ -65123,6 +65153,12 @@
             "conditionInflict": [
                 "corruption|guildwars",
                 "prone"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "ST"
             ]
         },
         {
@@ -71362,7 +71398,7 @@
         },
         {
             "name": "Energy Boon",
-            "level": 4,
+            "level": 2,
             "school": "T",
             "time": [
                 {
@@ -71451,11 +71487,18 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 5th level or higher, the increase in initiative increases by {@dice 1d8} for each slot level above 4th."
+                        "When you cast this spell using a spell slot of 3rd level or higher, the increase in initiative increases by {@dice 1d8} for each slot level above 2nd."
                     ]
                 }
+            ],
+            "areaTags": [
+                "MT"
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
             ]
         },
         {
@@ -72963,6 +73006,7 @@
                 "fromSubclass": []
             },
             "miscTags": [
+                "SGT",
                 "UBA",
                 "AAD"
             ]
@@ -75216,6 +75260,194 @@
             "miscTags": [
                 "AAD"
             ]
+        },
+        {
+            "name": "Flashing Blades",
+            "level": 2,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@bold Elite}, {@bold Stance}",
+                "Conjure a cloud of daggers around yourself, which block incoming attack and retaliate at attackers.",
+                "For the duration, you have a +5 bonus to AC against weapon attacks and if an attack misses you because of this bonus, target the attacking creature. The target takes {@damage 2d6} slashing damage."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Flashing Blades",
+                    "Elite Stance. For 5...25...30 seconds, you have a 75% chance to block incoming attacks while attacking. If you block an attack in this way, your attacker takes 5...17...20 damage."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/3/38/Flashing_Blades.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Assassin",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Dagger Mastery",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Stance",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "s": true,
+                "m": {
+                    "text": "a dagger worth 2+ GP, which the spell consumes",
+                    "consume": true,
+                    "cost": 200
+                }
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d6} for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "TCE"
+                        },
+                        "subclass": {
+                            "name": "Battle smith",
+                            "shortName": "Battle Smith",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Collage of swords",
+                            "shortName": "Swords",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Bladesinging",
+                            "shortName": "Bladesinging",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            }
         }
     ],
     "table": [
@@ -75745,10 +75977,8 @@
             "name": "Enchantment",
             "source": "GuildWars",
             "entries": [
-                "This spell is always treated as a concentration spell.",
-                "Treat this spell as if you were maintaining concentration on it, except that it does not break concentration of other concentration spells or abilities when cast, nor does it break concentration on itself when other concentration spells or abilities are cast.",
-                "Sometimes spells have an addendum after the tag, explaining certain changes to how the spell functions as a concentration spell.",
-                "If you are concentrating on more than one spell/ability at a time you make your concentration saving throws with disadvantage and if you fail your saving throw you lose concentration on all spells/abilities."
+                "Treat this spell as if you were maintaining concentration on it, except that it does not break concentration of other concentration spells when cast, nor does it break concentration on itself when other concentration spells are cast.",
+                "Sometime spells have an addendum after the tag, explaining certain changes to how the spell functions as a concentration spell."
             ]
         },
         {
@@ -76745,7 +76975,7 @@
                     "type": "entries",
                     "name": "Owl's Wisdom",
                     "entries": [
-                        "When failing a Wisdom d20 test you can add a d4 to that roll as a reaction. You can use this reaction a number of times equal to your proficiency bonus and you regain all expended uses when you finish a long rest."
+                        "When making a Wisdom ability check or saving throw you can add a d4 to that roll."
                     ]
                 }
             ],

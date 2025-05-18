@@ -5488,7 +5488,6 @@
                 "ST"
             ],
             "miscTags": [
-                "HL",
                 "SGT"
             ],
             "backgrounds": [
@@ -8184,7 +8183,7 @@
             ],
             "entries": [
                 "Make your enemies conditions contagious.",
-                "Choose one creature that you can see within range. Target each creature other than the chosen target in a 10-foot-radius sphere centered on the target. Each target must make a Constitution saving throw. On a failed save, a creature gains a copy of each of the following conditions on the chosen target: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} and {@condition Weakness|GuildWars}.",
+                "Choose one creature that you can see within range. Target each creature other than the chosen target in a 10-foot-radius sphere centered on the target. Each new target must make a Constitution saving throw. On a failed save, a creature gains a copy of each of the following conditions on the chosen target: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} and {@condition Weakness|GuildWars}.",
                 "At the end of each of its turns, a target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends."
             ],
             "source": "GuildWars",
@@ -28625,6 +28624,7 @@
                 "ST"
             ],
             "miscTags": [
+                "MAC",
                 "UBA"
             ],
             "backgrounds": [
@@ -40911,7 +40911,13 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Plague Sending",
@@ -73881,6 +73887,9 @@
             },
             "areaTags": [
                 "MT"
+            ],
+            "savingThrow": [
+                "wisdom"
             ]
         },
         {
@@ -75448,6 +75457,89 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "Second Wind",
+            "level": 1,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "entries": [
+                "{@bold Elite}, {@bold Overcast:} 2",
+                "Gain a second wind by redistributing your Overcast.",
+                "You regain hit points equal to {@dice 1d4} per round of Overcast on you, and your initiative gets increased by 1 per round of Overcast."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Second Wind",
+                    "Elite Spell. You gain 1 Energy and 5 Health for each point of Energy restricted by Overcast. You lose all enchantments."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/f/f9/Second_Wind.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "The Jade Sea",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elementalist",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "No Attribute - Elementalist",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Overcast",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "s": true
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL"
+            ]
         }
     ],
     "table": [

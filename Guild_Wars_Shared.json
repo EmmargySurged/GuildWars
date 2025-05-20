@@ -27898,15 +27898,17 @@
                 {
                     "type": "timed",
                     "duration": {
-                        "type": "round",
-                        "amount": 3
+                        "type": "minute",
+                        "amount": 1
                     }
                 }
             ],
             "entries": [
-                "{@bold Elite}, {@bold Enchantment},{@bold Overcast:} 5",
+                "{@bold Elite}, {@bold Enchantment}, {@bold Overcast:} 5",
                 "Channel the latent energy of the ether into you, improving your spellcasting.",
-                "For the duration, when you would expend a spell slot to cast a spell of 1st level, roll a {@dice d20}. On a 9 or higher, the spell does not expend a spell slot."
+                "End all beneficial {@status Concentration|XPHB} spells on yourself.",
+                "For the duration, when you would expend a spell slot to cast a spell of 5th level or lower, roll a {@dice d20}. On a 9 or higher, the spell does not expend a spell slot.",
+                "When this spell ends, you take necrotic damage equal to {@dice 1d4} per level of spell slot saved due to this spell. This damage cannot be reduced in any way."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -27931,9 +27933,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 3rd level or higher, the duration increases by 1 round for each slot level above 2nd."
+                        "When you cast this spell using a spell slot of 5th level or higher, the level of the spell increases by 1 for every three slot level above 2nd."
                     ]
                 }
             ],
@@ -52582,7 +52584,10 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "areaTags": [
+                "ST"
+            ]
         },
         {
             "name": "Malaise",
@@ -69819,7 +69824,10 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Selfless Spirit",
@@ -75539,6 +75547,105 @@
             ],
             "miscTags": [
                 "HL"
+            ]
+        },
+        {
+            "name": "Psychic Instability",
+            "level": 3,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "reaction",
+                    "condition": "which you take when you see a creature within range cast a spell or using an ability"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "{@bold Elite}",
+                "Interrupt a foe and create a psychic shockwave on a success, knocking creatures {@condition prone}. ",
+                "Choose one creature, which is casting a spell or using an ability, that you can see within range. The creature makes a Constitution saving throw. On a failed save, the spell/ability dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If that spell was cast with a spell slot, the slot isn't expended.",
+                "If you successfully interrupt a spell this way, each creature in a 15-foot-radius sphere centered on that point must make an Intelligence saving throw. On a failed save, a target takes is knocked {@condition prone}.",
+                "To stand up from {@condition prone}, a target must first succeed on an Intelligence saving throw or waste its movement in the attempt."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Psychic Instability",
+                    "Elite Spell. Interrupt the target foe's action. If that action was a skill, that foe and nearby foes are knocked down for 2...4...4 seconds. (50% failure chance with Fast Casting 4 or less.) "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/d/db/Psychic_Instability.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "The Jade Sea",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Mesmer",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Fast Casting",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "s": true
+            },
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "areaTags": [
+                "ST",
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "conditionInflict": [
+                "prone"
+            ],
+            "savingThrow": [
+                "intelligence"
             ]
         }
     ],

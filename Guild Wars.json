@@ -10526,9 +10526,6 @@
 			"areaTags": [
 				"MT"
 			],
-			"miscTags": [
-				"UBA"
-			],
 			"backgrounds": [
 				{
 					"name": "Crystal Desert",
@@ -13054,11 +13051,7 @@
 				]
 			},
 			"areaTags": [
-				"MT",
-				"S"
-			],
-			"miscTags": [
-				"AAD"
+				"MT"
 			],
 			"backgrounds": [
 				{
@@ -13174,7 +13167,11 @@
 						}
 					}
 				]
-			}
+			},
+			"miscTags": [
+				"AAD",
+				"ADV"
+			]
 		},
 		{
 			"name": "Mending (Guild Wars)",
@@ -13884,7 +13881,13 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"damageInflict": [
+				"slashing"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Purge Conditions",
@@ -15834,9 +15837,6 @@
 					}
 				]
 			},
-			"spellAttack": [
-				"M"
-			],
 			"abilityCheck": [
 				"constitution"
 			],
@@ -15939,7 +15939,10 @@
 						}
 					}
 				]
-			}
+			},
+			"miscTags": [
+				"AAD"
+			]
 		},
 		{
 			"name": "Shield of Judgment",
@@ -28574,7 +28577,13 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"HL"
+			]
 		},
 		{
 			"name": "Escape",
@@ -28824,7 +28833,7 @@
 			"entries": [
 				"{@bold Elite}",
 				"Summon the ravenous maw of {@condition corruption|GuildWars}, feasting on everything in an area, damaging and potentially stealing health from everything in its maw.",
-				"Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 6d8} necrotic damage. If a target was under the effect of a detrimental spell, a target takes an additional {@damage 3d8} necrotic damage, and you regain hit points equal to the amount of that necrotic damage dealt. On a successful save, a target takes half as much damage, but suffers no other effect."
+				"Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 6d8} necrotic damage. If a target was under the effect of a detrimental spell, a target takes an additional {@damage 3d8} necrotic damage, and you regain hit points equal to the amount of that necrotic damage dealt. On a successful save, a target takes half as much damage."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -28912,7 +28921,21 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			]
 		},
 		{
 			"name": "Energy Surge",
@@ -29392,14 +29415,11 @@
 					}
 				]
 			},
-			"spellAttack": [
-				"M"
-			],
 			"areaTags": [
 				"ST"
 			],
 			"miscTags": [
-				"HL",
+				"SGT",
 				"UBA",
 				"AAD"
 			],
@@ -63553,6 +63573,12 @@
 						"When you cast this spell using a spell slot of 3rd level or higher, the duration increases by 1 round for each slot level above 1st and the healing increases by {@dice 1d4} for each slot level above 2nd."
 					]
 				}
+			],
+			"areaTags": [
+				"MT"
+			],
+			"miscTags": [
+				"HL"
 			]
 		},
 		{
@@ -65304,9 +65330,6 @@
 					}
 				]
 			},
-			"damageInflict": [
-				"psychic"
-			],
 			"components": {
 				"s": true
 			},
@@ -65336,7 +65359,7 @@
 				}
 			],
 			"areaTags": [
-				"MT"
+				"ST"
 			],
 			"classes": {
 				"fromClassList": [
@@ -67213,93 +67236,6 @@
 					"name": "At Higher Levels",
 					"entries": [
 						"When you cast this spell using a spell slot of 4th or 5th level, the duration increases to 1 hour. When you use a spell slot of 6th level or higher, the duration increases to 8 hours."
-					]
-				}
-			]
-		},
-		{
-			"name": "Soothing Memories",
-			"level": 1,
-			"school": "V",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 60
-				}
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "XPHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "XPHB"
-					},
-					{
-						"name": "Witch",
-						"source": "WorldsBeyondNumberWitch"
-					}
-				],
-				"fromSubclass": []
-			},
-			"entries": [
-				"Heal a creature's wounds by reminding it of pleasant memories, enhancing your own initiative in the process if you are channeling through an object.",
-				"Choose one creature that you can see within range. The target regains hit points equal to {@dice 1d12} + your spellcasting ability modifier. If you are holding an object created by a spell, your initiative gets increased by {@dice 1d4}."
-			],
-			"source": "GuildWars",
-			"fluff": {
-				"entries": [
-					"Soothing Memories",
-					"Spell. Target ally is healed for 10...82...100 Health. If you are holding an item, you gain 3 Energy."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/f/f3/Soothing_Memories.jpg"
-						}
-					}
-				]
-			},
-			"backgrounds": [
-				{
-					"name": "Shing Jea Island",
-					"source": "GuildWars"
-				},
-				{
-					"name": "Ritualist",
-					"source": "GuildWars"
-				},
-				{
-					"name": "Restoration Magic",
-					"source": "GuildWars"
-				}
-			],
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@dice 1d12} for each slot level above 1st."
 					]
 				}
 			]
@@ -71606,8 +71542,7 @@
 			],
 			"miscTags": [
 				"SGT",
-				"SCT",
-				"UBA"
+				"SCT"
 			]
 		},
 		{
@@ -74989,6 +74924,9 @@
 			},
 			"areaTags": [
 				"MT"
+			],
+			"damageInflict": [
+				"necrotic"
 			]
 		},
 		{
@@ -75617,7 +75555,21 @@
 				"s": true
 			},
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": []
 			},
 			"areaTags": [
 				"ST",
@@ -75632,6 +75584,176 @@
 			],
 			"savingThrow": [
 				"intelligence"
+			]
+		},
+		{
+			"name": "Soothing Memories",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					}
+				],
+				"fromSubclass": []
+			},
+			"entries": [
+				"Heal a creature's wounds by reminding it of pleasant memories.",
+				"Choose one creature that you can see within range. The target regains hit points equal to {@dice 1d12} + your spellcasting ability modifier. If you are holding an object created by a spell, you regain the spell slot expended in the casting. You can only regain a spell slot this way once per short rest."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Soothing Memories",
+					"Spell. Target ally is healed for 10...82...100 Health. If you are holding an item, you gain 3 Energy."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/f/f3/Soothing_Memories.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Shing Jea Island",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Restoration Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@dice 1d12} for each slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"name": "Healing Light",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Bathe a creature in healing light.",
+				"Choose one creature that you can see within range. The target regains hit points equal to {@dice 2d8} + your spellcasting ability modifier. If you are under the effect of a beneficial {@status Concentration|XPHB} spell, you regain the spell slot expended in the casting. You can only regain a spell slot this way thrice per short rest."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Healing Light",
+					"Elite Spell. Heal target ally for 40...88...100 Health. If your target has an enchantment, you gain 1...3...3 Energy."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/4/45/Healing_Light.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "The Jade Sea",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Monk",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Healing Prayers",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@dice 2d8} for each slot level above 1st."
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
 			]
 		}
 	],

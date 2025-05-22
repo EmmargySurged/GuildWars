@@ -267,16 +267,16 @@
 			"rarity": "Very Rare",
 			"entries": [
 				"This special Tome was crafted by Magi Malaquire and entrusted to you. He wants you to 'Capture them all', whatever that means.",
-				"As a reaction, when a hostile boss enemy within 120 feet reaches 0 hit points, or as a magic action, you can cast the {@spell Signet of Capture (9th level)|GuildWars|Signet of Capture} spell at 9th level using this tome.",
-				"When doing so, you can capture an unlimited number of spells in one casting of {@spell Signet of Capture (9th level)|GuildWars|Signet of Capture}, but instead of learning them, they are recorded in this tome and if you used your reaction the range of the {@spell Signet of Capture (9th level)|GuildWars|Signet of Capture} spell increases to 120 feet.",
+				"As a reaction, when a hostile boss enemy within 150 feet reaches 0 hit points, or as a magic action, you can cast the {@spell Signet of Capture|GuildWars} spell at using this tome.",
+				"When doing so, you can capture an unlimited number of spells in one casting of {@spell Signet of Capture|GuildWars}, but instead of learning them, they are recorded in this tome. Each spell captured rewards XP individually and can be freely distribute between all creatures holding the tome or a bonded {@item Signet Ring of Signet of Capture|GuildWars}.",
 				"You can also record a spell scroll into this book by spending 1 hour in study.",
 				"Certain powerful trainers can record spells in this book by spending 1 minute in study.",
 				"",
-				"When recording a spell in the tome you must spend 50 gp per spell level, which can be drawn from any willing creature holding the tome or a bonded Signet Ring of Signet of Capture.",
+				"When recording a spell in the tome you must spend 25 gp per spell level, which can be drawn from any willing creature holding the tome or a bonded {@item Signet Ring of Signet of Capture|GuildWars}.",
 				"",
 				"Any creature can learn a spell recorded in this tome, if it is on the creatures spell list, by spending 1 minute in study per spell level.",
-				"When doing so, the creature replaces a previously learned spell of it's learned spell list with the spell learned from this tome.",
-				"A spell can be learned from this tome an unlimited number of times by any creature holding the tome or a bonded Signet Ring of Signet of Capture."
+				"When doing so, the creature cam replace a currently prepared spell with the spell learned from this tome.",
+				"A spell can be learned from this tome an unlimited number of times by any creature holding the tome or a bonded {@item Signet Ring of Signet of Capture|GuildWars}."
 			]
 		},
 		{
@@ -286,9 +286,10 @@
 			"rarity": "Rare",
 			"entries": [
 				"This special Ring was crafted by Magi Malaquire and entrusted to you. He wants you to 'Capture them all', whatever that means.",
-				"As a reaction, when a hostile boss enemy within 120 feet reaches 0 hit points, or as a magic action, you can cast the {@spell Signet of Capture (9th level)|GuildWars|Signet of Capture} spell at 9th level using this ring.",
-				"When doing so, you can capture an unlimited number of spells in one casting of {@spell Signet of Capture (9th level)|GuildWars|Signet of Capture}, but instead of learning them, they are recorded in the {@item Tome of Capture|GuildWars} this ring is bonded to and if you used your reaction the range of the {@spell Signet of Capture (9th level)|GuildWars|Signet of Capture} spell increases to 120 feet.",
-				"",
+				"As a reaction, when a hostile boss enemy within 150 feet reaches 0 hit points, or as a magic action, you can cast the {@spell Signet of Capture|GuildWars} spell using this ring.",
+				"When doing so, you can capture an unlimited number of spells in one casting of {@spell Signet of Capture|GuildWars}, but instead of learning them, they are recorded in the {@item Tome of Capture|GuildWars} this ring is bonded to. Each spell captured rewards XP individually and can be freely distribute between all creatures holding the tome or a bonded {@item Signet Ring of Signet of Capture|GuildWars}.",
+				"When recording a spell in the tome you must spend 25 gp per spell level, which can be drawn from any willing creature holding the tome or a bonded {@item Signet Ring of Signet of Capture|GuildWars}.",
+                "",
 				"As a magic action you can bond this ring to a {@item Tome of Capture|GuildWars}."
 			]
 		},
@@ -2517,7 +2518,7 @@
 			"entries": [
 				"You send out a swarm of undead locusts. ",
 				"Choose one creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 3d6} necrotic damage.",
-				"If you hit the target, the attack leaps from the target to a different creature of your choice within 20 feet of the target. Make a new attack roll with disadvantage against the new target, and make a new damage roll, which could cause the attack to leap again.",
+				"If you hit the target, the attack leaps from the target to a different creature of your choice within 30 feet of the target. Make a new attack roll with disadvantage against the new target, and make a new damage roll, which could cause the attack to leap again.",
 				"A creature can be targeted only once by each casting of this spell. "
 			],
 			"source": "GuildWars",
@@ -2786,7 +2787,8 @@
 			],
 			"entries": [
 				"Conjure a storm of fiery bolts, which rain down from the sky.",
-				"Choose a point that you can see within range. For the duration, each creature in a 10-foot-radius, 120-foot-high cylinder centered on that point must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 1d10} fire damage. On a successful save, a target takes half as much damage."
+				"Choose a point that you can see within range. For the duration, you create a 10-foot-radius, 120-foot-high Cylinder centered on that point. Each creature in that Cylinder must make a Dexterity saving throw. On a failed save, a target takes {@damage 1d10} fire damage. On a successful save, a target takes half as much damage. A creature also makes this save if it enters the Cylinder or ends its turn there, or if the Cylinder move into its space. A creature makes this save only once per turn.",
+				"On your later turns, you can take a {@action Magic|XPHB} action to teleport the Cylinder up to 30 feet."
 			],
 			"source": "GuildWars",
 			"components": {
@@ -4319,7 +4321,8 @@
 			],
 			"entries": [
 				"Sear a holy symbol of wrath on the surrounding ground, smiting all hostile creatures within 10 feet.",
-				"Conjure a 10-foot radius, 10-foot high stationary symbol of wrath at your location for the duration. Each creature, other than you, must make a Constitution saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 2d6} radiant damage. On a successful save, a target takes half as much damage."
+				"Conjure a 10-foot radius, 10-foot high stationary Cylinder at your location for the duration. Each creature, other than you, in that Cylinder must make a Wisadom saving throw. On a failed save, a target takes {@damage 2d8} radiant damage. On a successful save, a target takes half as much damage. A creature also makes this save if it enters the Cylinder or ends its turn there, or if the Cylinder move into its space. A creature makes this save only once per turn.",
+				"On your later turns, you can take a {@action Magic|XPHB} action to teleport the Cylinder to your location."
 			],
 			"source": "GuildWars",
 			"components": {
@@ -4329,9 +4332,9 @@
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
-					"name": "At Higher Levels",
+					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d8} for each slot level above 1st."
 					]
 				}
 			],
@@ -5309,7 +5312,8 @@
 			],
 			"entries": [
 				"Create fissures around you, which spew out lava, melting everything within range. ",
-				"Conjure a 10-foot radius, 10-foot high stationary lava font at your location for the duration. Each creature, other than you, must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 3d8} fire damage. On a successful save, a target takes half as much damage.",
+				"Conjure a 10-foot radius, 10-foot high stationary Cylinder at your location for the duration. Each creature, other than you, in that Cylinder must make a Dexterity saving throw. On a failed save, a target takes {@damage 3d8} fire damage. On a successful save, a target takes half as much damage. A creature also makes this save if it enters the Cylinder or ends its turn there, or if the Cylinder move into its space. A creature makes this save only once per turn.",
+				"On your later turns, you can take a {@action Magic|XPHB} action to teleport the Cylinder to your location.",
 				"{@bold Overcast:} The radius of the spell increases by 5 feet."
 			],
 			"source": "GuildWars",
@@ -9534,7 +9538,7 @@
 			],
 			"entries": [
 				"Conjure a storm of chaotic energy, harming and draining the energy from an area for multiple rounds.",
-				"Choose a point that you can see within range. For the duration, each creature in a 10-foot-radius sphere centered on that point must make a Charisma saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 2d8} damage. On a successful save, a target takes half as much damage. Choose one of the d8s. The number rolled on that die determines the spell's damage type, as shown below.",
+				"Choose a point that you can see within range. For the duration, you create a 10-foot Cube centered on that point. Each creature in that Cube must make a Charisma saving throw. On a failed save, a target takes {@damage 2d8} damage. On a successful save, a target takes half as much damage. Choose one of the d8s. The number rolled on that die determines the spell's damage type, as shown below.",
 				{
 					"type": "table",
 					"caption": "Chaos Storm",
@@ -9621,7 +9625,9 @@
 						]
 					]
 				},
-				"If you roll the same number on two or more d8s, a target's initiative gets reduced by the number."
+				"If you roll the same number on two or more d8s, a target's initiative gets reduced by the number.",
+				"A creature also makes this save if it enters the Cube or ends its turn there, or if the Cube move into its space. A creature makes this save only once per turn.",
+				"On your later turns, you can take a {@action Magic|XPHB} action to teleport the Cube up to 30 feet."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -10343,15 +10349,15 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "round",
-						"amount": 2
+						"type": "minute",
+						"amount": 1
 					}
 				}
 			],
 			"entries": [
 				"{@bold Stance}",
 				"You magically distort space around you, making attacks miss you.",
-				"For the duration, you have a +5 bonus to AC. If an attack misses you because of this bonus, your initiative gets reduced by {@dice 1d6} or this spell ends. ",
+				"For the duration, you have a +5 bonus to AC. If an attack misses you because of this bonus, your initiative gets reduced by {@dice 2d4} or this spell ends. ",
 				"Initiative cannot be reduced below 0 with this spell."
 			],
 			"source": "GuildWars",
@@ -10394,15 +10400,6 @@
 			"components": {
 				"s": true
 			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the duration increases by 1 round for each slot level above 2nd."
-					]
-				}
-			],
 			"classes": {
 				"fromClassList": [
 					{
@@ -12002,7 +11999,8 @@
 			],
 			"entries": [
 				"Cause an eruption of dust and rocks at a location of your choosing.",
-				"Choose a point that you can see within range. For the duration, each creature in a 15-foot-radius, 60-foot-high cylinder centered on that point must make a Constitution saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 4d6} bludgeoning damage and is {@condition blinded} for 1 minute. On a successful save, a target takes half as much damage, but suffers no other effect.",
+				"Choose a point that you can see within range. For the duration, you create a 15-foot-radius, 60-foot-high cylinder centered on that point. Each creature in that Cylinder must make a Constitution saving throw. On a failed save, a target takes {@damage 4d6} bludgeoning damage and is {@condition blinded} for 1 minute. On a successful save, a target takes half as much damage, but suffers no other effect. A creature also makes this save if it enters the Cylinder or ends its turn there, or if the Cylinder move into its space. A creature makes this save only once per turn.",
+				"On your later turns, you can take a {@action Magic|XPHB} action to teleport the Cylinder up to 30 feet.",
 				"At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
 			],
 			"source": "GuildWars",
@@ -16615,7 +16613,8 @@
 			"entries": [
 				"{@bold Overcast:} 5",
 				"Summon a shower of meteors at a specific location every turn.",
-				"Choose a point that you can see within range. For the duration, each creature in a 10-foot-radius, 120-foot-high cylinder centered on that point must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 4d6} bludgeoning damage, {@damage 4d6} fire damage and is knocked {@condition prone}. On a successful save, a target takes half as much damage, but suffers no other effect."
+				"Choose a point that you can see within range. For the duration, you create a 10-foot-radius, 300-foot-high cylinder centered on that point. Each creature in that Cylinder must make a Dexterity saving throw. On a failed save, a target takes {@damage 4d6} bludgeoning damage, {@damage 4d6} fire damage and is knocked {@condition prone}. On a successful save, a target takes half as much damage, but suffers no other effect. A creature also makes this save if it enters the Cylinder or ends its turn there, or if the Cylinder move into its space. A creature makes this save only once per turn.",
+				"On your later turns, you can take a {@action Magic|XPHB} action to teleport the Cylinder up to 60 feet."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -18506,150 +18505,12 @@
 			}
 		},
 		{
-			"name": "Signet of Capture (Cantrip)",
-			"level": 0,
-			"school": "N",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 30
-				}
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"{@bold Signet:} Replaced",
-				"Capture the knowledge of a powerful creature.",
-				"Choose one hostile dead boss creature, which has not been dead for more than 5 minutes, that you can see within range. Choose one spell which the target had prepared, that you could learn and that is equal to or lower than this spell's level, and replace this spell with the chosen spell permanently."
-			],
-			"source": "GuildWars",
-			"fluff": {
-				"entries": [
-					"Signet of Capture",
-					"Signet. Choose one skill from a nearby dead Boss of your profession. Signet of Capture is permanently replaced by that skill. If that skill was elite, gain 250 XP for every level you have earned."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/8/8d/Signet_of_Capture.jpg"
-						}
-					}
-				]
-			},
-			"areaTags": [
-				"ST"
-			],
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"backgrounds": [
-				{
-					"name": "Northeastern Kryta",
-					"source": "GuildWars"
-				},
-				{
-					"name": "No Profession",
-					"source": "GuildWars"
-				},
-				{
-					"name": "No Attribute",
-					"source": "GuildWars"
-				},
-				{
-					"name": "Signet",
-					"source": "GuildWars"
-				}
-			]
-		},
-		{
-			"name": "Signet of Capture (1st level)",
+			"name": "Signet of Capture",
 			"level": 1,
 			"school": "N",
 			"time": [
 				{
 					"number": 1,
-					"unit": "minute"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 30
-				}
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"{@bold Signet:} Replaced",
-				"Capture the knowledge of a powerful creature.",
-				"Choose one hostile dead boss creature, which has not been dead for more than 5 minutes, that you can see within range. Choose one spell which the target had prepared, that you could learn and that is equal to or lower than this spell's level, and replace this spell with the chosen spell permanently."
-			],
-			"source": "GuildWars",
-			"fluff": {
-				"entries": [
-					"Signet of Capture",
-					"Signet. Choose one skill from a nearby dead Boss of your profession. Signet of Capture is permanently replaced by that skill. If that skill was elite, gain 250 XP for every level you have earned."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/8/8d/Signet_of_Capture.jpg"
-						}
-					}
-				]
-			},
-			"areaTags": [
-				"ST"
-			],
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"backgrounds": [
-				{
-					"name": "Northeastern Kryta",
-					"source": "GuildWars"
-				},
-				{
-					"name": "No Profession",
-					"source": "GuildWars"
-				},
-				{
-					"name": "No Attribute",
-					"source": "GuildWars"
-				},
-				{
-					"name": "Signet",
-					"source": "GuildWars"
-				}
-			]
-		},
-		{
-			"name": "Signet of Capture (2nd level)",
-			"level": 2,
-			"school": "N",
-			"time": [
-				{
-					"number": 1,
 					"unit": "action"
 				}
 			],
@@ -18657,7 +18518,7 @@
 				"type": "point",
 				"distance": {
 					"type": "feet",
-					"amount": 30
+					"amount": 150
 				}
 			},
 			"duration": [
@@ -18667,8 +18528,9 @@
 			],
 			"entries": [
 				"{@bold Signet:} Replaced",
-				"Capture the knowledge of a powerful creature.",
-				"Choose one hostile dead boss creature, which has not been dead for more than 5 minutes, that you can see within range. Choose one spell which the target had prepared, that you could learn and that is equal to or lower than this spell's level, and replace this spell with the chosen spell permanently."
+				"Capture the knowledge of a powerful creature by activating your Signet of Capture.",
+				"Choose one hostile dead boss creature, which has not been dead for more than 1 day, that you can see within range. Choose one spell which the target had prepared, that you could learn, and replace this spell with the chosen spell permanently.",
+				"You also gain XP equal to 250 times the level of the spell captured (minium 250)."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -18690,490 +18552,6 @@
 				"ST"
 			],
 			"components": {
-				"v": true,
-				"s": true
-			},
-			"backgrounds": [
-				{
-					"name": "Northeastern Kryta",
-					"source": "GuildWars"
-				},
-				{
-					"name": "No Profession",
-					"source": "GuildWars"
-				},
-				{
-					"name": "No Attribute",
-					"source": "GuildWars"
-				},
-				{
-					"name": "Signet",
-					"source": "GuildWars"
-				}
-			]
-		},
-		{
-			"name": "Signet of Capture (3rd level)",
-			"level": 3,
-			"school": "N",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 30
-				}
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"{@bold Signet:} Replaced",
-				"Capture the knowledge of a powerful creature.",
-				"Choose one hostile dead boss creature, which has not been dead for more than 5 minutes, that you can see within range. Choose one spell which the target had prepared, that you could learn and that is equal to or lower than this spell's level, and replace this spell with the chosen spell permanently."
-			],
-			"source": "GuildWars",
-			"fluff": {
-				"entries": [
-					"Signet of Capture",
-					"Signet. Choose one skill from a nearby dead Boss of your profession. Signet of Capture is permanently replaced by that skill. If that skill was elite, gain 250 XP for every level you have earned."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/8/8d/Signet_of_Capture.jpg"
-						}
-					}
-				]
-			},
-			"areaTags": [
-				"ST"
-			],
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"backgrounds": [
-				{
-					"name": "Northeastern Kryta",
-					"source": "GuildWars"
-				},
-				{
-					"name": "No Profession",
-					"source": "GuildWars"
-				},
-				{
-					"name": "No Attribute",
-					"source": "GuildWars"
-				},
-				{
-					"name": "Signet",
-					"source": "GuildWars"
-				}
-			]
-		},
-		{
-			"name": "Signet of Capture (4th level)",
-			"level": 4,
-			"school": "N",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 30
-				}
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"{@bold Signet:} Replaced",
-				"Capture the knowledge of a powerful creature.",
-				"Choose one hostile dead boss creature, which has not been dead for more than 5 minutes, that you can see within range. Choose one spell which the target had prepared, that you could learn and that is equal to or lower than this spell's level, and replace this spell with the chosen spell permanently."
-			],
-			"source": "GuildWars",
-			"fluff": {
-				"entries": [
-					"Signet of Capture",
-					"Signet. Choose one skill from a nearby dead Boss of your profession. Signet of Capture is permanently replaced by that skill. If that skill was elite, gain 250 XP for every level you have earned."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/8/8d/Signet_of_Capture.jpg"
-						}
-					}
-				]
-			},
-			"areaTags": [
-				"ST"
-			],
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"backgrounds": [
-				{
-					"name": "Northeastern Kryta",
-					"source": "GuildWars"
-				},
-				{
-					"name": "No Profession",
-					"source": "GuildWars"
-				},
-				{
-					"name": "No Attribute",
-					"source": "GuildWars"
-				},
-				{
-					"name": "Signet",
-					"source": "GuildWars"
-				}
-			]
-		},
-		{
-			"name": "Signet of Capture (5th level)",
-			"level": 5,
-			"school": "N",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 30
-				}
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"{@bold Signet:} Replaced",
-				"Capture the knowledge of a powerful creature.",
-				"Choose one hostile dead boss creature, which has not been dead for more than 5 minutes, that you can see within range. Choose one spell which the target had prepared, that you could learn and that is equal to or lower than this spell's level, and replace this spell with the chosen spell permanently."
-			],
-			"source": "GuildWars",
-			"fluff": {
-				"entries": [
-					"Signet of Capture",
-					"Signet. Choose one skill from a nearby dead Boss of your profession. Signet of Capture is permanently replaced by that skill. If that skill was elite, gain 250 XP for every level you have earned."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/8/8d/Signet_of_Capture.jpg"
-						}
-					}
-				]
-			},
-			"areaTags": [
-				"ST"
-			],
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"backgrounds": [
-				{
-					"name": "Northeastern Kryta",
-					"source": "GuildWars"
-				},
-				{
-					"name": "No Profession",
-					"source": "GuildWars"
-				},
-				{
-					"name": "No Attribute",
-					"source": "GuildWars"
-				},
-				{
-					"name": "Signet",
-					"source": "GuildWars"
-				}
-			]
-		},
-		{
-			"name": "Signet of Capture (6th level)",
-			"level": 6,
-			"school": "N",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 30
-				}
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"{@bold Signet:} Replaced",
-				"Capture the knowledge of a powerful creature.",
-				"Choose one hostile dead boss creature, which has not been dead for more than 5 minutes, that you can see within range. Choose one spell which the target had prepared, that you could learn and that is equal to or lower than this spell's level, and replace this spell with the chosen spell permanently."
-			],
-			"source": "GuildWars",
-			"fluff": {
-				"entries": [
-					"Signet of Capture",
-					"Signet. Choose one skill from a nearby dead Boss of your profession. Signet of Capture is permanently replaced by that skill. If that skill was elite, gain 250 XP for every level you have earned."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/8/8d/Signet_of_Capture.jpg"
-						}
-					}
-				]
-			},
-			"areaTags": [
-				"ST"
-			],
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"backgrounds": [
-				{
-					"name": "Northeastern Kryta",
-					"source": "GuildWars"
-				},
-				{
-					"name": "No Profession",
-					"source": "GuildWars"
-				},
-				{
-					"name": "No Attribute",
-					"source": "GuildWars"
-				},
-				{
-					"name": "Signet",
-					"source": "GuildWars"
-				}
-			]
-		},
-		{
-			"name": "Signet of Capture (7th level)",
-			"level": 7,
-			"school": "N",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 30
-				}
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"{@bold Signet:} Replaced",
-				"Capture the knowledge of a powerful creature.",
-				"Choose one hostile dead boss creature, which has not been dead for more than 5 minutes, that you can see within range. Choose one spell which the target had prepared, that you could learn and that is equal to or lower than this spell's level, and replace this spell with the chosen spell permanently."
-			],
-			"source": "GuildWars",
-			"fluff": {
-				"entries": [
-					"Signet of Capture",
-					"Signet. Choose one skill from a nearby dead Boss of your profession. Signet of Capture is permanently replaced by that skill. If that skill was elite, gain 250 XP for every level you have earned."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/8/8d/Signet_of_Capture.jpg"
-						}
-					}
-				]
-			},
-			"areaTags": [
-				"ST"
-			],
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"backgrounds": [
-				{
-					"name": "Northeastern Kryta",
-					"source": "GuildWars"
-				},
-				{
-					"name": "No Profession",
-					"source": "GuildWars"
-				},
-				{
-					"name": "No Attribute",
-					"source": "GuildWars"
-				},
-				{
-					"name": "Signet",
-					"source": "GuildWars"
-				}
-			]
-		},
-		{
-			"name": "Signet of Capture (8th level)",
-			"level": 8,
-			"school": "N",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 30
-				}
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"{@bold Signet:} Replaced",
-				"Capture the knowledge of a powerful creature.",
-				"Choose one hostile dead boss creature, which has not been dead for more than 5 minutes, that you can see within range. Choose one spell which the target had prepared, that you could learn and that is equal to or lower than this spell's level, and replace this spell with the chosen spell permanently."
-			],
-			"source": "GuildWars",
-			"fluff": {
-				"entries": [
-					"Signet of Capture",
-					"Signet. Choose one skill from a nearby dead Boss of your profession. Signet of Capture is permanently replaced by that skill. If that skill was elite, gain 250 XP for every level you have earned."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/8/8d/Signet_of_Capture.jpg"
-						}
-					}
-				]
-			},
-			"areaTags": [
-				"ST"
-			],
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"backgrounds": [
-				{
-					"name": "Northeastern Kryta",
-					"source": "GuildWars"
-				},
-				{
-					"name": "No Profession",
-					"source": "GuildWars"
-				},
-				{
-					"name": "No Attribute",
-					"source": "GuildWars"
-				},
-				{
-					"name": "Signet",
-					"source": "GuildWars"
-				}
-			]
-		},
-		{
-			"name": "Signet of Capture (9th level)",
-			"level": 9,
-			"school": "N",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 30
-				}
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"{@bold Signet:} Replaced",
-				"Capture the knowledge of a powerful creature.",
-				"Choose one hostile dead boss creature, which has not been dead for more than 5 minutes, that you can see within range. Choose one spell which the target had prepared, that you could learn and that is equal to or lower than this spell's level, and replace this spell with the chosen spell permanently."
-			],
-			"source": "GuildWars",
-			"fluff": {
-				"entries": [
-					"Signet of Capture",
-					"Signet. Choose one skill from a nearby dead Boss of your profession. Signet of Capture is permanently replaced by that skill. If that skill was elite, gain 250 XP for every level you have earned."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/8/8d/Signet_of_Capture.jpg"
-						}
-					}
-				]
-			},
-			"areaTags": [
-				"ST"
-			],
-			"components": {
-				"v": true,
 				"s": true
 			},
 			"backgrounds": [
@@ -23898,7 +23276,8 @@
 			],
 			"entries": [
 				"Utter a foul curse, exploding a corpse into a well of blood, healing allies in its area every turn. ",
-				"Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, for the duration, each friendly creature in a 20-foot-radius centered on that point gains temporary hit points equal to {@dice 2d6} + your spellcasting ability modifier when it enters the spell's area for the first time on a turn or starts its turn there."
+				"Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, for the duration, you create a 20-foot-radius, 10-foot-high Cylinder centered on that point. Each friendly creature in that Cylinder gains temporary hit points equal to {@dice 2d6} + your spellcasting ability modifier. A creature also gains these temporary hit points if it enters the Cylinder or ends its turn there, or if the Cylinder move into its space. A creature can only gain these temporary hit points only once per turn.",
+				"On your later turns, you can take a {@action Magic|XPHB} action to exploit another corpse within range, which has not been dead for more than 5 minutes and which has not been exploited by a spell, to teleport the Cylinder to the location of the new corpse."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -29704,8 +29083,8 @@
 			"entries": [
 				"{@bold Elite}, {@bold Hex}",
 				"Spin out your foes condition induced dreams, infecting creatures around them with conditions every time they suffer from a new one.",
-				"Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save for the duration when the target gains a condition, target each creature other than the target in a 20-foot-radius sphere centered on the target. Each target must make a Constitution saving throw. On a failed save, a creature gains a copy of the condition gained if it's one of the following conditions: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} and {@condition Weakness|GuildWars}.",
-				"Additionally, if the target is suffering from two or more conditions, the target is {@condition dazed|GuildWars} for 1 round.",
+				"Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save for the duration when the target gains a condition, target each hostile creature other than the target in a 20-foot-radius sphere centered on the target. Each new target must make a Constitution saving throw. On a failed save, a creature gains a copy of the condition gained if it's one of the following conditions: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} and {@condition Weakness|GuildWars}.",
+				"Additionally, if the original target is suffering from two or more conditions, the target is {@condition dazed|GuildWars} for 1 round.",
 				"At the end of each of its turns, a target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends."
 			],
 			"source": "GuildWars",
@@ -29725,7 +29104,8 @@
 				]
 			},
 			"savingThrow": [
-				"constitution"
+				"constitution",
+				"wisdom"
 			],
 			"areaTags": [
 				"MT",
@@ -35851,7 +35231,8 @@
 			"entries": [
 				"{@bold Elite}",
 				"Extract the remaining magic of a corpse, healing allies in its area every turn, and empowering their magic. ",
-				"Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, for the duration, each friendly creature in a 20-foot-radius centered on that point regains hit points equal to {@dice 2d6} + your spellcasting ability modifier when it enters the spell's area for the first time on a turn or starts its turn there. Additionally, when a friendly creature casts a spell while inside the spell's area, roll a {@dice d20}. On a 16 or higher, the spell does not expend a spell slot."
+				"Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, for the duration, you create a 20-foot-radius, 10-foot-high Cylinder centered on that point. Each friendly creature in that Cylinder regains hit points equal to {@dice 2d6} + your spellcasting ability modifier. Additionally, when a friendly creature casts a spell while inside the spell's area, roll a {@dice d20}. On a 16 or higher, the spell does not expend a spell slot. A creature also regains these hit points if it enters the Cylinder or ends its turn there, or if the Cylinder move into its space. A creature can only regain these hit points only once per turn.",
+				"On your later turns, you can take a {@action Magic|XPHB} action to exploit another corpse within range, which has not been dead for more than 5 minutes and which has not been exploited by a spell, to teleport the Cylinder to the location of the new corpse."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -37850,7 +37231,13 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"AAD"
+			]
 		},
 		{
 			"name": "Balanced Stance",
@@ -38911,7 +38298,13 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"areaTags": [
+				"MT"
+			],
+			"miscTags": [
+				"HL"
+			]
 		},
 		{
 			"name": "Precision Shot",
@@ -39695,7 +39088,8 @@
 			"entries": [
 				"{@bold Overcast:} 5",
 				"Conjure a maelstrom, which crushes and disrupts everything trapped inside its maw.",
-				"Choose a point that you can see within range. For the duration, each creature in a 10-foot-radius, 10-foot-high cylinder centered on that point must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 6d6} cold damage and  can't cast spells on their next turn. On a successful save, a target takes half as much damage, but suffers no other effect."
+				"Choose a point that you can see within range. For the duration, you create a 10-foot-radius, 10-foot-high Cylinder centered on that point. Each creature in that Cylinder must make a Constitution saving throw. On a failed save, a target takes {@damage 6d6} cold damage and can't cast spells on their next turn. On a successful save, a target takes half as much damage, but suffers no other effect. A creature also makes this save if it enters the Cylinder or ends its turn there, or if the Cylinder move into its space. A creature makes this save only once per turn.",
+				"On your later turns, you can take a {@action Magic|XPHB} action to teleport the Cylinder up to 60 feet."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -39716,9 +39110,6 @@
 			"damageInflict": [
 				"bludgeoning",
 				"fire"
-			],
-			"savingThrow": [
-				"dexterity"
 			],
 			"areaTags": [
 				"MT",
@@ -39798,7 +39189,10 @@
 						}
 					}
 				]
-			}
+			},
+			"savingThrow": [
+				"constitution"
+			]
 		},
 		{
 			"name": "Spirit of Failure",
@@ -44479,7 +43873,7 @@
 				"{@bold Armor Penetration}, {@bold Overcast:} 2",
 				"Conjure a bolt of lightning which bounces between enemies. ",
 				"Choose one creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 8d6} lightning damage.",
-				"If you hit the target, the attack leaps from the target to a different creature of your choice within 15-feet of the target. Make a new attack roll with disadvantage against the new target, and make a new damage roll, which could cause the attack to leap again.",
+				"If you hit the target, the attack leaps from the target to a different creature of your choice within 30-feet of the target. Make a new attack roll with disadvantage against the new target, and make a new damage roll, which could cause the attack to leap again.",
 				"A creature can be targeted only once by each casting of this spell. "
 			],
 			"source": "GuildWars",
@@ -48535,7 +47929,8 @@
 			],
 			"entries": [
 				"Utter a foul curse, exploding a corpse into a well of suffering, damaging foes in its area every turn. ",
-				"Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, for the duration, each hostile creature in a 20-foot-radius centered on that point must make a Constitution saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 3d8} necrotic damage. On a successful save, a target takes half as much damage."
+				"Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, for the duration, you create a 20-foot-radius, 10-foot-high Cylinder centered on that point. Each hostile creature in that Cylinder must make a Constitution saving throw. On a failed save, a target takes {@damage 3d8} necrotic damage. On a successful save, a target takes half as much damage. A creature also makes this save if it enters the Cylinder or ends its turn there, or if the Cylinder move into its space. A creature makes this save only once per turn.",
+				"On your later turns, you can take a {@action Magic|XPHB} action to exploit another corpse within range, which has not been dead for more than 5 minutes and which has not been exploited by a spell, to teleport the Cylinder to the location of the new corpse."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -48933,7 +48328,7 @@
 			"entries": [
 				"{@bold Enchantment}",
 				"Sheath an ally in a radiant aura of Balthazar, which burns all those close to them every turn.",
-				"Choose one friendly creature that you can see within range. For the duration at the start of each of the target's turns, target each creature other than the target in a 10-foot Emanation centered on the target. Each new target must make a Wisdom saving throw. On a failed save, a target takes {@damage 4d8} radiant damage. On a successful save, a target takes half as much damage."
+				"Choose one friendly creature that you can see within range. For the duration at the start of each of the target's turns, target each hostile creature other than the target in a 10-foot Emanation centered on the target. Each new target must make a Wisdom saving throw. On a failed save, a target takes {@damage 4d8} radiant damage. On a successful save, a target takes half as much damage."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -53845,7 +53240,8 @@
 			],
 			"entries": [
 				"Turn a corpse into a profane well, stripping all enemies of beneficial spells, and preventing new ones from being applied. ",
-				"Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, for the duration, each hostile creature in a 20-foot-radius centered on that point must make a Constitution saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, all beneficial spells on a target end, and the target cannot be the target of or benefit from beneficial spells."
+				"Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, for the duration, you create a 20-foot-radius, 10-foot-high Cylinder centered on that point. Each hostile creature in that Cylinder must make a Constitution saving throw. On a failed save, all beneficial spells on a target end, and the target cannot be the target of or benefit from beneficial spells while inside the Cylinder. A creature also makes this save if it enters the Cylinder or ends its turn there, or if the Cylinder move into its space. A creature makes this save only once per turn.",
+				"On your later turns, you can take a {@action Magic|XPHB} action to exploit another corpse within range, which has not been dead for more than 5 minutes and which has not been exploited by a spell, to teleport the Cylinder to the location of the new corpse."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -58446,7 +57842,8 @@
 			],
 			"entries": [
 				"Cause an area of extreme heat, searing all those inside.",
-				"Choose a point that you can see within range. For the duration, each creature in a 15-foot-radius sphere centered on that point must make a Constitution saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 4d8} fire damage. On a successful save, a target takes half as much damage.",
+				"Choose a point that you can see within range. For the duration, you create a 15-foot-radius Sphere centered on that point.  Each creature in that Sphere must make a Constitution saving throw. On a failed save, a target takes {@damage 4d8} fire damage. On a successful save, a target takes half as much damage. A creature also makes this save if it enters the Sphere or ends its turn there, or if the Sphere move into its space. A creature makes this save only once per turn.",
+				"On your later turns, you can take a {@action Magic|XPHB} action to teleport the Sphere up to 60 feet.",
 				"When this spell ends, all creatures in the spell's area start {@condition burning|GuildWars} for 1 minute, taking {@damage 2d6} damage.",
 				"At the end of each of its turns, a target can make a Dexterity saving throw. On a success, the condition ends."
 			],
@@ -75696,7 +75093,29 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Druid",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					}
+				],
+				"fromSubclass": []
 			},
 			"entries": [
 				"Bathe a creature in healing light.",
@@ -75754,6 +75173,104 @@
 			"miscTags": [
 				"HL",
 				"SGT"
+			]
+		},
+		{
+			"name": "Soul Bind",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Elite}, {@bold Hex}",
+				"Bind up a soul of a creature, retaliating at all who dare help it.",
+				"Choose one creature that you can see within range. The target must make a Charisma saving throw. On a failed save, for the duration, when the target regains hit points, target the healer. The new target takes {@damage 2d12} necrotic damage."
+			],
+			"source": "GuildWars",
+			"components": {
+				"s": true,
+				"m": "a length of rope made of phase spider silk"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d12} for each slot level above 1st."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Soul Bind",
+					"Elite Hex Spell. For 30 seconds, every time target foe is healed, the healer takes 20...68...80 damage. This hex ends if target is suffering from a Smiting Prayers hex."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/6/6c/Soul_Bind.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Curses",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Hex",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"charisma"
 			]
 		}
 	],

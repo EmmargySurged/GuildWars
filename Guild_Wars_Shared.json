@@ -1884,7 +1884,8 @@
             ],
             "areaTags": [
                 "ST",
-                "MT"
+                "MT",
+                "S"
             ],
             "miscTags": [
                 "SGT"
@@ -1961,7 +1962,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "dexterity"
+            ]
         },
         {
             "name": "Frenzy",
@@ -1984,7 +1988,7 @@
                     "type": "timed",
                     "duration": {
                         "type": "round",
-                        "amount": 2
+                        "amount": 1
                     }
                 }
             ],
@@ -2023,9 +2027,6 @@
                         "When you cast this spell using a spell slot of 2nd level or higher, the duration increases by 1 round for each slot level above 1st."
                     ]
                 }
-            ],
-            "miscTags": [
-                "UBA"
             ],
             "backgrounds": [
                 {
@@ -9870,7 +9871,7 @@
             "entries": [
                 "{@bold Bond}",
                 "Imbue yourself with a sense of justice, generating adrenaline when hitting or getting hit and doubling any adrenaline gain.",
-                "For the duration, your adrenaline gain is doubled. Additionally, you gain one strike of adrenaline when you take damage from a non-friendly source, or when you hit a hostile object with a weapon attack.",
+                "For the duration, your adrenaline gain is doubled. Additionally, you gain one strike of adrenaline when you take damage from a non-friendly source, or when you hit a hostile creature with a weapon attack.",
                 "When this spell ends, you lose all adrenaline."
             ],
             "source": "GuildWars",
@@ -11114,9 +11115,6 @@
                     }
                 ]
             },
-            "spellAttack": [
-                "M"
-            ],
             "areaTags": [
                 "ST"
             ],
@@ -17026,7 +17024,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST"
+            ]
         },
         {
             "name": "Skull Crack",
@@ -21442,7 +21443,7 @@
                 "type": "point",
                 "distance": {
                     "type": "feet",
-                    "amount": 150
+                    "amount": 120
                 }
             },
             "duration": [
@@ -21492,7 +21493,8 @@
             ],
             "components": {
                 "v": true,
-                "s": true
+                "s": true,
+                "m": "a glass bottle filled with high percentage alcohol and rag in its neck"
             },
             "entriesHigherLevel": [
                 {
@@ -21557,7 +21559,14 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Fire Attunement",
@@ -24278,7 +24287,7 @@
             "entries": [
                 "{@bold Hex}",
                 "Make an area of creatures fragile, taking damage every time a condition is applied or ends on them.",
-                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, for the duration, when a target gains or loses a condition (except {@condition Charmed|XPHB}, {@condition Invisible|XPHB} or {@condition Unconscious|XPHB}), a target takes {@damage 1d6} psychic damage."
+                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save, for the duration, when a target gains or loses a condition (except {@condition Charmed|XPHB}, {@condition Invisible|XPHB} or {@condition Unconscious|XPHB}), a target takes {@damage 1d6} psychic damage."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -24378,7 +24387,14 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "wisdom"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ]
         },
         {
             "name": "Whirlwind (Guild Wars)",
@@ -31818,9 +31834,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 3rd level or higher, the damage each increases by {@dice 1d6} for each slot level above 2nd and the damage of the {@condition bleeding|GuildWars} condition increases by {@dice 1d4} for each slot level above 2nd."
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d6} for each slot level above 2nd and the damage of the {@condition bleeding|GuildWars} condition increases by {@dice 1d4} for each slot level above 2nd."
                     ]
                 }
             ],
@@ -52706,7 +52722,17 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "fire"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ]
         },
         {
             "name": "Defensive Stance",
@@ -55637,7 +55663,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "MT"
+            ]
         },
         {
             "name": "Deflect Arrows",
@@ -61797,7 +61826,13 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "AAD"
+            ]
         },
         {
             "name": "Dash",
@@ -74795,7 +74830,16 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "slashing"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "MAC"
+            ]
         },
         {
             "name": "Second Wind",
@@ -75306,6 +75350,124 @@
             "savingThrow": [
                 "charisma"
             ]
+        },
+        {
+            "name": "Glass Arrows",
+            "level": 3,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@bold Elite}, {@bold Preparation}",
+                "Tip your arrows with glass heads, which shatter on impact, {@condition bleeding|GuildWars} if blocked.",
+                "For the duration, when you miss a target with a ranged weapon attack, they must make a Dexterity saving throw. On a failed save, a target starts {@condition bleeding|GuildWars} for 1 minute, taking {@damage 3d4} damage. Additionally, if you hit a target, they take an additional {@damage 3d4} damage.",
+                "At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Glass Arrows",
+                    "Elite Preparation. For 10...30...35 seconds, your arrows strike for +5...17...20 damage if they hit and cause Bleeding for 10...18...20 seconds if they are blocked."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/3/3a/Glass_Arrows.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Echovald Forest",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Expertise",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Preparation",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "The Jade Sea",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "s": true,
+                "m": {
+                    "text": "arrowheads made of glass worth 50+ GP, which the spell consumes",
+                    "cost": 5000
+                }
+            },
+            "meta": {
+                "ritual": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d4} for each slot level above 3rd and the damage of the {@condition bleeding|GuildWars} condition increases by {@dice 2d4} for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            }
         }
     ],
     "table": [

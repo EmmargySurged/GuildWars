@@ -21,15 +21,15 @@
 	},
 	"item": [
 		{
-        "name": "Lesser Vision Crystal",
-        "source": "GuildWars",
-        "type": "TG",
-        "rarity": "Rare",
-		"value": 50000,
-        "entries": [
-            "This poor imitation of the real thing still hums with immense power, almost in defiance to it's original.",
-			"Lesser Vision Crystals are used in the crafting of very powerful magical items."
-        ],
+			"name": "Lesser Vision Crystal",
+			"source": "GuildWars",
+			"type": "TG",
+			"rarity": "Rare",
+			"value": 50000,
+			"entries": [
+				"This poor imitation of the real thing still hums with immense power, almost in defiance to it's original.",
+				"Lesser Vision Crystals are used in the crafting of very powerful magical items."
+			],
 			"fluff": {
 				"images": [
 					{
@@ -41,17 +41,17 @@
 					}
 				]
 			}
-    	},
+		},
 		{
-        "name": "Spiritwood Plank",
-        "source": "GuildWars",
-        "type": "TG",
-        "rarity": "Rare",
-		"value": 20000,
-        "entries": [
-            "Infused with the spirits of the fallen this wood is desired by the greatest artisans of the world for it's incredibly strength and flexibility.",
-			"Spiritwood Planks are used in the crafting of very powerful magical items."
-        ],
+			"name": "Spiritwood Plank",
+			"source": "GuildWars",
+			"type": "TG",
+			"rarity": "Rare",
+			"value": 20000,
+			"entries": [
+				"Infused with the spirits of the fallen this wood is desired by the greatest artisans of the world for it's incredibly strength and flexibility.",
+				"Spiritwood Planks are used in the crafting of very powerful magical items."
+			],
 			"fluff": {
 				"images": [
 					{
@@ -63,17 +63,17 @@
 					}
 				]
 			}
-    	},
+		},
 		{
-        "name": "Deldrimor Steel Ingot",
-        "source": "GuildWars",
-        "type": "TG",
-        "rarity": "Rare",
-		"value": 30000,
-        "entries": [
-            "The creation process of Deldrimor Steel is one of the closest guarded secrets by the Deldrimor Dwarves. Very vew non-dwarves know how to create this ally, which is so much more than the sum of it's parts.",
-			"Deldrimor Steel Ingots are used in the crafting of very powerful magical items."
-        ],
+			"name": "Deldrimor Steel Ingot",
+			"source": "GuildWars",
+			"type": "TG",
+			"rarity": "Rare",
+			"value": 30000,
+			"entries": [
+				"The creation process of Deldrimor Steel is one of the closest guarded secrets by the Deldrimor Dwarves. Very vew non-dwarves know how to create this ally, which is so much more than the sum of it's parts.",
+				"Deldrimor Steel Ingots are used in the crafting of very powerful magical items."
+			],
 			"fluff": {
 				"images": [
 					{
@@ -85,7 +85,7 @@
 					}
 				]
 			}
-    	},
+		},
 		{
 			"name": "Scepter of Orr",
 			"source": "GuildWars",
@@ -2621,6 +2621,214 @@
 			],
 			"savingThrowForced": [
 				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Mursaat Elementalist",
+			"source": "GuildWarsDev",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"average": 143,
+				"formula": "26d8 + 26"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 30,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 13,
+			"int": 20,
+			"wis": 17,
+			"cha": 17,
+			"save": {
+				"dex": "+6",
+				"int": "+9",
+				"wis": "+7",
+				"cha": "+7"
+			},
+			"skill": {
+				"arcana": "+13",
+				"insight": "+7",
+				"perception": "+7",
+				"stealth": "+6"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 17,
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"Mursaat",
+				"Common",
+				"Krytan",
+				"telepathy 120 ft."
+			],
+			"cr": "11",
+			"gear": [
+				"breastplate|xphb"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Mursaat Elementalist casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save {@dc 17}):"
+					],
+					"will": [
+						"{@spell Detect Magic|XPHB}",
+						"{@spell Detect Thoughts|XPHB}",
+						"{@spell Disguise Self|XPHB}",
+						"{@spell invisibility|XPHB}",
+						"{@spell Mage Hand|XPHB} (the hand is Invisible)"
+					],
+					"daily": {
+						"1e": [
+							"{@spell chain lightning (guild wars)|GuildWars}",
+							"{@spell Clairvoyance|XPHB}",
+							"{@spell Dimension Door|XPHB}",
+							"{@spell enervating charge|GuildWars} (level 5)",
+							"{@spell lightning orb|GuildWars} (level 6)",
+							"{@spell Sending|XPHB}",
+							"{@spell teleport|XPHB}",
+							"{@spell thunderclap (guild wars)|GuildWars} (level 5)"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The Mursaat Elementalist has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Mursaat Elementalist makes three Arcane Burst attacks."
+					]
+				},
+				{
+					"name": "Arcane Burst",
+					"entries": [
+						"{@atkr m,r} {@hit 9}, reach 5 ft. or range 150 ft. {@h}27 ({@damage 4d10 + 5}) Lightning or Thunder damage."
+					]
+				}
+			],
+			"treasure": [
+				"arcana"
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"TP"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RA",
+				"MA"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Mursaat Elementalists can cause significant damage with their Air Magic skills and Spectral Agony on an ill-prepared player. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Mursaat_caster.jpg"
+						}
+					}
+				]
+			},
+			"bonus": [
+				{
+					"name": "Spectral Agony {@recharge 4}",
+					"entries": [
+						"{@actSave int} {@dc 17}, one creature within 120-feet range. {@actSaveFail} 41 ({@damage 8d8 + 5}) Psychic damage, and is under the following effects for 2 rounds:",
+						"- Speed reduced by 90%.",
+						"- Can either take an action or bonus action, not both.",
+						"- Can't take reactions.",
+						"- Can only make one attack per turn.",
+						"- Takes {@damage 8d8} psychic damage at the start of their turn.",
+						"{@actSaveSuccess} Half damage only.",
+						"Creatures not infused have disadvantage on the Saving Throw. Infused creatures have advantage."
+					]
+				},
+				{
+					"name": "Misty Step (3/Day)",
+					"entries": [
+						"The Mursaat Elementalist casts {@spell Misty Step}, using the same spellcasting ability as Spellcasting."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Mursaat_caster_Token.png"
+			},
+			"reaction": [
+				{
+					"name": "Protective Magic (3/Day)",
+					"entries": [
+						"The Mursaat Elementalist casts {@spell Counterspell} or {@spell Shield} in response to the spell's trigger, using the same spellcasting ability as Spellcasting."
+					]
+				}
+			],
+			"damageTags": [
+				"L",
+				"T",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"O"
+			],
+			"savingThrowForced": [
+				"intelligence"
 			],
 			"savingThrowForcedSpell": [
 				"wisdom"

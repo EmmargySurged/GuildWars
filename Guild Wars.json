@@ -1364,6 +1364,88 @@
 			"damageTags": [
 				"N"
 			]
+		},
+		{
+			"name": "Spirit of Preservation",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "GuildWars",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 10,
+					"condition": "+ Spell Level",
+					"braces": true
+				}
+			],
+			"hp": {
+				"special": "5 + Spell Level * 5"
+			},
+			"speed": {},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"actionTags": [
+				"Multiattack"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"fluff": {
+				"entries": [
+					"Elite Binding Ritual. Create a level 1...11...14 spirit. Every 4 seconds, this spirit heals one non-spirit ally in the area for 10...94...115 Health. This spirit dies after 90 seconds. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Defensive_binding_spirit.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Defensive_binding_spirit_Token.png"
+			},
+			"action": [
+				{
+					"name": "Preservation",
+					"entries": [
+						"Choose one creature that you can see within 150-feet. The target regains hit points equal to a number of {@dice d6} equal to two times the Spell Level + your spellcasting ability modifier."
+					]
+				}
+			]
 		}
 	],
 	"feat": [
@@ -1545,9 +1627,6 @@
 			"components": {
 				"v": true
 			},
-			"savingThrow": [
-				"constitution"
-			],
 			"areaTags": [
 				"ST"
 			],
@@ -1676,7 +1755,10 @@
 						}
 					}
 				]
-			}
+			},
+			"savingThrow": [
+				"constitution"
+			]
 		},
 		{
 			"name": "Wild Blow",
@@ -5602,7 +5684,10 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Cyclone Axe",
@@ -25581,7 +25666,7 @@
 			"entries": [
 				"{@bold Overcast:} 5",
 				"Create a large burst of air, to knock a creature {@condition prone}.",
-				"Choose one creature that you can see within range. The target must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}."
+				"Choose one creature that you can see within range. If the target is large or smaller, it's knocked {@condition prone}."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -25603,9 +25688,6 @@
 				"s": true,
 				"m": "a large fan"
 			},
-			"conditionInflict": [
-				"prone"
-			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
@@ -25661,7 +25743,14 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Protector's Strike",
@@ -28582,7 +28671,21 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST",
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Charge!",
@@ -29266,7 +29369,10 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Victory Is Mine!",
@@ -29952,7 +30058,7 @@
 			"entries": [
 				"{@bold Elite}",
 				"Etch a glyph of renewal into the air, causing your next spell slot to come back quicker.",
-				"For the duration, the next time you cast a spell of 1st level or higher, the spell slot expended in that casting is regained when you finish a short rest instead of a long rest."
+				"For the duration, the next time you cast a spell of 1st level or higher, the spell slot expended in that casting is regained when you finish a short rest or exit initiative."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -30012,7 +30118,10 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Battle Rage",
@@ -34200,7 +34309,16 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"slashing"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"MAC"
+			]
 		},
 		{
 			"name": "Practiced Stance",
@@ -36657,7 +36775,7 @@
 			],
 			"entries": [
 				"Inscribe a glyph of {@status concentration} into your spellcasting focus, improving the next {@status concentration} spell you cast.",
-				"For the duration, the next time you cast a {@status concentration}, enchantment or hex spell, you cannot be interrupted while casting it, you have a +5 bonus to Constitution saving throws made to hold {@status concentration} on that spell, and you ignore the {@condition dazed|GuildWars} condition for the casting of that spell."
+				"For the duration, the next time you cast a {@status concentration} spell, you cannot be interrupted while casting it, you have a +5 bonus to Constitution saving throws made to hold {@status concentration} on that spell, and you ignore the {@condition dazed|GuildWars} condition for the casting of that spell."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -36713,7 +36831,10 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Bull's Strike",
@@ -55943,7 +56064,10 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Mantra of Resolve",
@@ -56903,7 +57027,10 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Mantra of Signets",
@@ -64443,6 +64570,12 @@
 						"When you cast this spell using a spell slot of 4th level or higher, your hit points increase by an additional {@dice 2d10} for each slot level above 3rd and the healing increases by {@dice 2d10} for each slot level above 3rd."
 					]
 				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"HL"
 			]
 		},
 		{
@@ -75443,6 +75576,125 @@
 					]
 				}
 			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"slashing"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"AAD"
+			]
+		},
+		{
+			"name": "Preservation",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Summoning Ritual:} {@creature Spirit of Preservation|GuildWars}",
+				"Bind a Spirit of Preservation to your will, healing one of your allies every turn.",
+				"Summon a {@creature Spirit of Preservation|GuildWars} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative, but takes it turn directly after yours. The spirit is in the DMs control."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Preservation",
+					"Elite Binding Ritual. Create a level 1...11...14 spirit. Every 4 seconds, this spirit heals one non-spirit ally in the area for 10...94...115 Health. This spirit dies after 90 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/b/b9/Preservation.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"AAD"
+			],
+			"backgrounds": [
+				{
+					"name": "Echovald Forest",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Restoration Magic",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Summoning Ritual",
+					"source": "GuildWars"
+				},
+				{
+					"name": "The Jade Sea",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a poem written about preservation"
+			},
 			"classes": {
 				"fromClassList": []
 			}

@@ -6422,7 +6422,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "strength"
+            ]
         },
         {
             "name": "Sever Artery",
@@ -7615,7 +7618,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST"
+            ]
         },
         {
             "name": "Comfort Animal",
@@ -13758,9 +13764,6 @@
                     }
                 ]
             },
-            "abilityCheck": [
-                "constitution"
-            ],
             "areaTags": [
                 "ST"
             ],
@@ -13885,7 +13888,13 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "AAD"
+            ]
         },
         {
             "name": "Favorable Winds",
@@ -20548,7 +20557,10 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "areaTags": [
+                "ST"
+            ]
         },
         {
             "name": "Crude Swing",
@@ -43835,7 +43847,7 @@
             ],
             "entries": [
                 "Prepare a healing spring, which heals creatures which trigger it.",
-                "Conjure a 15-foot radius stationary {@condition invisible} trap at your location for the duration and choose any number of creatures. The next time a chosen creature enters the spell's area, the trap triggers, applying the following effects for 5 rounds: ",
+                "Conjure a 15-foot radius stationary {@condition invisible} trap at your location for the duration and choose any number of creatures. The next time a chosen creature enters the spell's area, while it does not have all its hit points, the trap triggers, applying the following effects for 5 rounds: ",
                 "Each chosen creature regains hit points equal to {@dice 2d6} + your spellcasting ability modifier when it enters the spell's area for the first time on a turn or starts its turn there."
             ],
             "source": "GuildWars",
@@ -43913,7 +43925,13 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "MT"
+            ],
+            "miscTags": [
+                "HL"
+            ]
         },
         {
             "name": "Grasping Earth",
@@ -47007,7 +47025,7 @@
             "entries": [
                 "{@bold Enchantment}",
                 "Plant a healing seed on a friendly creature, which bursts with healing energy every time the creature takes damage.",
-                "Choose one friendly creature, other than yourself, that you can see within range. For the duration when the target takes damage from a non-friendly source, target each friendly creature in a 10-foot-radius sphere centered on the target. Each new target regains hit points equal to {@dice 1d4}.",
+                "Choose one friendly creature, other than yourself, that you can see within range. For the duration when the target takes damage from a non-friendly source, target each friendly creature in a 10-foot Emanation centered on the target. Each new target regains hit points equal to {@dice 1d4}.",
                 "If the target drops to 0 hit points, this spell ends."
             ],
             "source": "GuildWars",
@@ -47084,7 +47102,12 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "areaTags": [
+                "ST",
+                "MT",
+                "S"
+            ]
         },
         {
             "name": "Barbed Signet",
@@ -55526,7 +55549,13 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL"
+            ]
         },
         {
             "name": "Chilblains",
@@ -56672,9 +56701,6 @@
                     }
                 ]
             },
-            "damageInflict": [
-                "necrotic"
-            ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
@@ -56774,7 +56800,16 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "charisma"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Vengeance",
@@ -80836,6 +80871,7 @@
                 "fromSubclass": []
             },
             "entries": [
+                "{@bold Elite}",
                 "Bathe a creature in healing light.",
                 "Choose one creature that you can see within range. The target regains hit points equal to {@dice 2d8} + your spellcasting ability modifier. If you are under the effect of a beneficial {@status Concentration|XPHB} spell, you regain the spell slot expended in the casting. You can only regain a spell slot this way thrice per short rest."
             ],
@@ -81432,6 +81468,182 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "Locust's Fury",
+            "level": 4,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Collage of swords",
+                            "shortName": "Swords",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Bladesinging",
+                            "shortName": "Bladesinging",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@bold Elite}, {@bold Enchantment}",
+                "Unleash a swam of locust, which sometimes strike at your opponents.",
+                "For the duration, when you make a weapon attach with a weapon with light and thrown property, if you roll a 16 or higher on the die, you can immediately attack again."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Locust's Fury",
+                    "Elite Enchantment Spell. For 10...30...35 seconds, you have an additional 50% chance to double strike while using daggers."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/5/5d/Locust%27s_Fury.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Echovald Forest",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Assassin",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Critical Strikes",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Enchantment",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "s": true,
+                "m": "a jar of live locust"
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the number you need to roll decreases by 1 for each slot level above 4th."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "ST"
+            ]
         }
     ],
     "table": [

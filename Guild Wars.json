@@ -9832,7 +9832,6 @@
 				"ST"
 			],
 			"miscTags": [
-				"SGT",
 				"AAD"
 			],
 			"conditionInflict": [
@@ -9934,7 +9933,11 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"piercing",
+				"slashing"
+			]
 		},
 		{
 			"name": "Heal Area",
@@ -12035,7 +12038,7 @@
 			"entries": [
 				"{@bold Dual Attack}",
 				"Strike your foe with the strength of an ox.",
-				"Make two melee weapon attacks against the target. On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d6} damage and, if the target is not within 5-feet of one of the target's allies, is knocked {@condition prone}."
+				"Make two melee weapon attacks against the target. On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d6} damage and, if the target is not within 5-feet of one of the it's allies, is knocked {@condition prone}."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -12053,12 +12056,6 @@
 					}
 				]
 			},
-			"spellAttack": [
-				"M"
-			],
-			"savingThrow": [
-				"strength"
-			],
 			"areaTags": [
 				"ST"
 			],
@@ -27446,9 +27443,6 @@
 			"components": {
 				"s": true
 			},
-			"conditionInflict": [
-				"prone"
-			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
@@ -27507,7 +27501,19 @@
 						}
 					}
 				]
-			}
+			},
+			"conditionInflict": [
+				"prone"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"damageInflict": [
+				"radiant"
+			]
 		},
 		{
 			"name": "Gale",
@@ -37980,7 +37986,14 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"AAD"
+			]
 		},
 		{
 			"name": "Unyielding Aura",
@@ -41103,7 +41116,7 @@
 			"entries": [
 				"{@bold Bond}, {@bold Enchantment}",
 				"Conjure up a holy veil around a creature, obscuring them from harmful spells.",
-				"Choose one creature that you can see within range. For the duration If the target is the target of a harmful spell which requires {@status concentration} or is an Enchantment/Hex, that spell requires twice as long to cast.",
+				"Choose one creature that you can see within range. For the duration If the target is the target of a harmful spell which requires {@status concentration}, that spell requires twice as long to cast.",
 				"When this spell ends, the latest harmful spell on the target ends."
 			],
 			"source": "GuildWars",
@@ -41124,9 +41137,6 @@
 			},
 			"areaTags": [
 				"ST"
-			],
-			"miscTags": [
-				"HL"
 			],
 			"components": {
 				"v": true,
@@ -41176,7 +41186,10 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Bestial Pounce",
@@ -42943,12 +42956,8 @@
 			"damageInflict": [
 				"radiant"
 			],
-			"areaTags": [
-				"MT"
-			],
 			"miscTags": [
-				"SGT",
-				"UBA"
+				"SGT"
 			],
 			"fluff": {
 				"entries": [
@@ -43027,7 +43036,13 @@
 						}
 					}
 				]
-			}
+			},
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Malign Intervention",
@@ -48454,7 +48469,7 @@
 			"entries": [
 				"{@bold Stance}",
 				"Assume the stance of the hex breaker, preventing the next hex on yourself and retaliating against the caster.",
-				"For the duration, the next time you are the target of a harmful spell which requires {@status concentration} or is a Hex, you are immune to the spell's effects and the caster takes {@damage 1d6} psychic damage."
+				"For the duration, the next time you are the target of a harmful spell which requires {@status concentration}, you are immune to the spell's effects and the caster takes {@damage 1d6} psychic damage."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -48571,7 +48586,13 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Protective Spirit",
@@ -50698,9 +50719,6 @@
 			"components": {
 				"v": true
 			},
-			"savingThrow": [
-				"constitution"
-			],
 			"areaTags": [
 				"ST"
 			],
@@ -81495,7 +81513,95 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Bard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Collage of swords",
+							"shortName": "Swords",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Inquisition domain",
+							"shortName": "Inquisition",
+							"source": "GrimHollowPlayerPack"
+						}
+					},
+					{
+						"class": {
+							"name": "Illrigger",
+							"source": "IllriggerRevised"
+						},
+						"subclass": {
+							"name": "Architect of ruin",
+							"shortName": "Architect of Ruin",
+							"source": "IllriggerRevised"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "The hexblade",
+							"shortName": "Hexblade",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Bladesinging",
+							"shortName": "Bladesinging",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Eldritch knight",
+							"shortName": "Eldritch Knight",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
 			},
 			"entries": [
 				"{@bold Elite}, {@bold Enchantment}",
@@ -81555,6 +81661,113 @@
 			],
 			"areaTags": [
 				"ST"
+			]
+		},
+		{
+			"name": "Shatterstone",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Elite}, {@bold Hex}",
+				"Lodge an unstable chunk of ice into a creature's flesh, which explodes in a violent explosion of ice shards a few seconds later.",
+				"Choose one creature that you can see within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 8d6} cold damage and is hexed with Shatterstone. When this spell ends, target each hostile creature in a 15-foot Emanation centered on the target. Each new target must make a Dexterity saving throw. On a failed save, a target takes {@damage 8d6} cold damage. On a successful save, a target takes half as much damage."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Shatterstone",
+					"Elite Hex Spell. Target foe is struck for 25...85...100 cold damage and is hexed with Shatterstone for 3 seconds. When Shatterstone ends, that foe and all nearby foes are struck for 25...85...100 cold damage."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/3/36/Shatterstone.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST",
+				"MT",
+				"S"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"backgrounds": [
+				{
+					"name": "Echovald Forest",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Water Magic",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Hex",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				},
+				{
+					"name": "The Jade Sea",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage each increases by {@dice 1d6} for each slot level above 3rd. "
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"damageInflict": [
+				"cold"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"SGT"
 			]
 		}
 	],

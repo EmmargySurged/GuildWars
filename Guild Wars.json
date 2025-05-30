@@ -5217,9 +5217,6 @@
 			"damageInflict": [
 				"necrotic"
 			],
-			"spellAttack": [
-				"R"
-			],
 			"areaTags": [
 				"ST"
 			],
@@ -5295,7 +5292,10 @@
 						}
 					}
 				]
-			}
+			},
+			"savingThrow": [
+				"constitution"
+			]
 		},
 		{
 			"name": "Soul Barbs",
@@ -32809,7 +32809,13 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Life Transfer",
@@ -32874,11 +32880,9 @@
 			"damageInflict": [
 				"necrotic"
 			],
-			"spellAttack": [
-				"R"
-			],
 			"areaTags": [
-				"ST"
+				"MT",
+				"S"
 			],
 			"miscTags": [
 				"HL",
@@ -32956,7 +32960,10 @@
 						}
 					}
 				]
-			}
+			},
+			"savingThrow": [
+				"constitution"
+			]
 		},
 		{
 			"name": "Illusionary Weaponry",
@@ -43865,7 +43872,13 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Holy Wrath",
@@ -45271,7 +45284,13 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Rigor Mortis",
@@ -46056,7 +46075,13 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Taste of Death",
@@ -62117,7 +62142,14 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"areaTags": [
+				"MT"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			]
 		},
 		{
 			"name": "Dark Fury",
@@ -66729,8 +66761,8 @@
 			],
 			"entries": [
 				"Conjure up a volley of lava arrows and yeet them at up to three targets.",
-				"Choose one creature that you can see within range. Target up to two other creatures other than the target in a 10-foot-radius sphere centered on the target. Make a ranged spell attack against each target. On a hit, a target takes {@damage 1d4} fire damage.",
-				"This spell's damage increases by {@dice 1d4} when you reach 5th level ({@dice 2d4}), 11th level ({@dice 3d4}), and 17th level ({@dice 4d4})."
+				"Choose one creature that you can see within range. Target up to two other creatures other than the target in a 10-foot-radius sphere centered on the target. Make a ranged spell attack against each target. On a hit, a target takes {@damage 1d6} fire damage.",
+				"This spell's damage increases by {@dice 1d6} when you reach 5th level ({@dice 2d6}), 11th level ({@dice 3d6}), and 17th level ({@dice 4d6})."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -66852,7 +66884,20 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"fire"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Images of Remorse",
@@ -69405,7 +69450,7 @@
 			},
 			"entries": [
 				"Shout \"Lead the way\", encouraging a party member to blaze the way forward.",
-				"Choose one friendly creature that you can see within range. For the duration, the target's speed is increased by 25%.",
+				"Choose one friendly creature that can hear you within range. For the duration, the target's speed is increased by 25%.",
 				"The duration increases by 1 round for each ally within range."
 			],
 			"source": "GuildWars",
@@ -69449,6 +69494,9 @@
 						"When you cast this spell using a spell slot of 2nd level or higher, the duration for each ally increases by 1 round for each slot level above 1st."
 					]
 				}
+			],
+			"areaTags": [
+				"ST"
 			]
 		},
 		{
@@ -72296,12 +72344,6 @@
 					}
 				]
 			},
-			"spellAttack": [
-				"M"
-			],
-			"savingThrow": [
-				"constitution"
-			],
 			"areaTags": [
 				"ST"
 			],
@@ -72427,7 +72469,13 @@
 						}
 					}
 				]
-			}
+			},
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"AAD"
+			]
 		},
 		{
 			"name": "Recuperation",
@@ -83588,8 +83636,127 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Druid",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					}
+				],
+				"fromSubclass": []
 			}
+		},
+		{
+			"name": "Spoil Victor",
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@bold Elite}, {@bold Hex}",
+				"Punish a creature for targeting weaker creatures than it with a crown made of blood, which spikes them.",
+				"Choose one creature that you can see within range. For the duration, when the target targets a creature with less hit points than it, with an attack or spell, the target must succeed on a Wisdom saving throw. On a failed save, the target takes {@damage 3d10} necrotic damage. On a successful save, the target takes half as much damage."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Spoil Victor",
+					"Elite Hex Spell. For 3...13...15 seconds, whenever target foe attacks or casts a spell on a creature with less Health, that foe loses 25...85...100 Health. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/7/76/Spoil_Victor.jpg"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"backgrounds": [
+				{
+					"name": "Echovald Forest",
+					"source": "GuildWars"
+				},
+				{
+					"name": "The Jade Sea",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Blood Magic",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Hex",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d10} for each slot level above 2nd."
+					]
+				}
+			]
 		}
 	],
 	"table": [

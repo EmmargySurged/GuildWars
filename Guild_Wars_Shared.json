@@ -13367,9 +13367,6 @@
             "areaTags": [
                 "ST"
             ],
-            "miscTags": [
-                "UBA"
-            ],
             "backgrounds": [
                 {
                     "name": "Ascalon",
@@ -13424,7 +13421,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "miscTags": [
+                "MAC"
+            ]
         },
         {
             "name": "Live Vicariously",
@@ -13532,7 +13532,10 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "areaTags": [
+                "ST"
+            ]
         },
         {
             "name": "Putrid Explosion",
@@ -17779,7 +17782,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Shatter Hex",
@@ -20013,7 +20019,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Lightning Strike",
@@ -20164,7 +20173,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "miscTags": [
+                "UBA"
+            ]
         },
         {
             "name": "Lightning Surge",
@@ -20195,7 +20207,7 @@
             "entries": [
                 "{@bold Armor Penetration}, {@bold Elite}, {@bold Hex}",
                 "Start charging up a lightning sure above a creature, which comes crashing down at the beginning of that creature's turn.",
-                "Choose one creature that you can see within range. The target must make a Dexterity saving throw. On a failed save, when this spell ends because its duration ran out, the target takes {@damage 8d6} lightning damage, is knocked {@condition prone} and has {@condition cracked armor|GuildWars} for 1 minute. On a successful save, the target takes half as much damage, but suffers no other effect.",
+                "Choose one creature that you can see within range. The target must make a Dexterity saving throw. On a failed save, when this spell ends because its duration ran out, the target takes {@damage 8d6} lightning damage, is knocked {@condition prone} and has {@condition cracked armor|GuildWars} for 1 minute. On a successful save, the target is also hexed as above, takes half as much damage, but suffers no other effect.",
                 "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GuildWars",
@@ -20316,7 +20328,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Resurrection Signet",
@@ -45824,7 +45839,20 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "lightning"
+            ],
+            "spellAttack": [
+                "M"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Shame",
@@ -67644,7 +67672,7 @@
                 "lightning"
             ],
             "spellAttack": [
-                "R"
+                "M"
             ],
             "areaTags": [
                 "ST"
@@ -67737,7 +67765,13 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Healing Whisper",
@@ -69081,6 +69115,12 @@
                         "When you cast this spell using a spell slot of 3rd level or higher, the healing increases by {@dice 1d6} for each slot level above 1st, the adrenaline gain increases by {@dice 1d4} for each slot level above 1st and the duration increases by 2 rounds for each slot level above 2nd."
                     ]
                 }
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL"
             ]
         },
         {
@@ -83804,6 +83844,119 @@
                         "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d10} for each slot level above 2nd."
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Heal as One",
+            "level": 1,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "entries": [
+                "{@bold Companion}, {@bold Elite}",
+                "Channel the primal bond of wilderness between yourself and your companion.",
+                "Choose one companion that you can see within range. You and the target regain hit points equal to {@dice 2d6} + your spell casting ability modifier. Additionally, for the duration, the target's weapon attacks deal an additional {@damage 1d6} necrotic damage and the target regains hit points equal to the amount of that necrotic damage dealt.",
+                "Alternatively, you target a companion that has died within the last minute. The companion returns to life with 10% of their maximum hit points. This spell can't return to life a companion that has died of old age, nor can it restore any missing body parts.",
+                "This spell can be used instead of the {@spell Charm Animal|GuildWars} spell, to maintain the {@condition charmed} condition on a companion {@condition charmed} by it."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Heal as One",
+                    "Elite Skill. For 15 seconds, your animal companion steals 1...16...20 Health whenever it hits with an attack. You and your companion are both healed for 20...87...104 Health. If your companion is dead, it's resurrected with 50% Health. If you have this skill equipped, your companion will travel with you. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/9/97/Heal_as_One.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Echovald Forest",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Beast Mastery",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Companion",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@dice 2d6} for each slot level above 1st, the damage increases by {@dice 1d6} for each slot level above 1st and the % increases by 10% for each slot level above 1st."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "ST",
+                "MT"
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
             ]
         }
     ],

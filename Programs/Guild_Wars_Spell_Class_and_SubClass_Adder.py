@@ -225,11 +225,13 @@ if __name__ == "__main__":
 
     # Define your lists as provided
     classes_list = [
-        {"name": "Artificer", "source": "TCE", "sub_classes": [
-            {"name": "Alchemist", "shortName": "Alchemist", "source": "TCE"},
-            {"name": "Armorer", "shortName": "Armorer", "source": "TCE"},
-            {"name": "Artillerist", "shortName": "Artillerist", "source": "TCE"},
-            {"name": "Battle Smith", "shortName": "Battle Smith", "source": "TCE"}
+        {"name": "Artificer", "source": "xua2025eberronupdates", "sub_classes": [
+            {"name": "Alchemist", "shortName": "Alchemist", "source": "xua2025artificer"},
+            {"name": "Armorer", "shortName": "Armorer", "source": "xua2025artificer"},
+            {"name": "Artillerist", "shortName": "Artillerist", "source": "xua2025artificer"},
+            {"name": "Battle Smith", "shortName": "Battle Smith", "source": "xua2025artificer"},
+            {"name": "Cartographer", "shortName": "Cartographer", "source": "xua2025eberronupdates"},
+            {"name": "Reanimator", "shortName": "Reanimator", "source": "xua2025horrorsubclasses"}
         ]},
         {"name": "Bard", "source": "XPHB", "sub_classes": [
             {"name": "Collage of Lore", "shortName": "Lore", "source": "XPHB"},

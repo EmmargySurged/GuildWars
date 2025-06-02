@@ -3422,7 +3422,8 @@
                 "dexterity"
             ],
             "areaTags": [
-                "MT"
+                "MT",
+                "S"
             ],
             "miscTags": [
                 "SGT"
@@ -11160,7 +11161,7 @@
             "entries": [
                 "{@bold Hex}",
                 "You magically inscribe a mark of pain on a creature, which causes all creatures around to take damage when it takes physical damage.",
-                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save for the duration when the target takes bludgeoning, piercing or slashing damage, target each creature other than the target in a 5-foot-radius sphere centered on the target. A target takes {@damage 4d6} necrotic damage."
+                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save for the duration when the target takes bludgeoning, piercing or slashing damage, target each creature other than the target in a 5-foot-radius sphere centered on the target. A new target takes {@damage 4d6} necrotic damage."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -11182,11 +11183,9 @@
                 "necrotic"
             ],
             "areaTags": [
+                "ST",
                 "MT",
                 "S"
-            ],
-            "miscTags": [
-                "SGT"
             ],
             "backgrounds": [
                 {
@@ -11284,7 +11283,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Distortion",
@@ -14401,7 +14403,8 @@
                 "ST"
             ],
             "miscTags": [
-                "HL"
+                "HL",
+                "SGT"
             ],
             "backgrounds": [
                 {
@@ -25542,7 +25545,12 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "areaTags": [
+                "ST",
+                "MT",
+                "S"
+            ]
         },
         {
             "name": "Vigorous Spirit",
@@ -26774,7 +26782,17 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "wisdom"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
+            ]
         },
         {
             "name": "Fragility",
@@ -33629,7 +33647,14 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
+            ]
         },
         {
             "name": "Offering of Blood",
@@ -34644,7 +34669,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST"
+            ]
         },
         {
             "name": "Martyr",
@@ -34723,7 +34751,10 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "areaTags": [
+                "MT"
+            ]
         },
         {
             "name": "Order of the Vampire",
@@ -35216,7 +35247,8 @@
             "entries": [
                 "{@bold Elite}, {@bold Preparation}",
                 "Sheath your arrows in Melandru's wild magic, making them inflict bleed and deal extra damage against enchanted foes.",
-                "For the duration, when you hit a target with a ranged weapon attack, they must make a Constitution saving throw. On a failed save, a target starts {@condition bleeding|GuildWars} for 1 minute, taking {@damage 2d4} damage. Additionally, if a target is under the effect of a beneficial spell, they take {@damage 2d6} damage.",
+                "For the duration, when you hit a target with a ranged weapon attack, they must make a Constitution saving throw. On a failed save, a target starts {@condition bleeding|GuildWars} for 1 minute, taking {@damage 2d4} damage. ",
+                "Additionally, if a target is under the effect of a beneficial spell, they take {@damage 2d6} damage.",
                 "At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GuildWars",
@@ -35305,7 +35337,19 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "slashing"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "AAD"
+            ]
         },
         {
             "name": "Peace and Harmony",
@@ -35807,7 +35851,13 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL"
+            ]
         },
         {
             "name": "Restore Condition",
@@ -40574,7 +40624,14 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
+            ]
         },
         {
             "name": "Glyph of Concentration",
@@ -57203,9 +57260,6 @@
                     }
                 ]
             },
-            "areaTags": [
-                "ST"
-            ],
             "components": {
                 "v": true,
                 "s": true
@@ -57253,7 +57307,14 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
+            ]
         },
         {
             "name": "Dust Trap",
@@ -63626,6 +63687,19 @@
                         "When you cast this spell using a spell slot of 4th level or higher, the duration of the {@condition burning|GuildWars} condition increases by 1 round for each slot level above 3rd."
                     ]
                 }
+            ],
+            "damageInflict": [
+                "fire"
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "SGT"
             ]
         },
         {
@@ -71521,6 +71595,13 @@
                         "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@dice 2d4} for each slot level above 1st."
                     ]
                 }
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
             ]
         },
         {
@@ -84133,6 +84214,167 @@
             ],
             "components": {
                 "v": true
+            },
+            "areaTags": [
+                "ST"
+            ]
+        },
+        {
+            "name": "Primal Rage",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@bold Adrenaline:} 4, {@bold Elite}, {@bold Stance}",
+                "Channel the primal rage of ancient times, letting a spirit of the wild overtake you.",
+                "For the duration, you can attack one additional time when you take the attack action on your turn and your speed is increased by 25%, but you take 50% more damage."
+            ],
+            "source": "GuildWars",
+            "components": {
+                "s": true
+            },
+            "fluff": {
+                "entries": [
+                    "Primal Rage",
+                    "Elite Stance. For 1...12...15 second[s], you attack 33% faster and move 25% faster, but you take double damage. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/d/d8/Primal_Rage.jpg"
+                        }
+                    }
+                ]
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the duration increases by 1 round for each slot level above 1st."
+                    ]
+                }
+            ],
+            "backgrounds": [
+                {
+                    "name": "Echovald Forest",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Warrior",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Strength",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Stance",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "The Jade Sea",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Adrenaline",
+                    "source": "GuildWars"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "TCE"
+                        },
+                        "subclass": {
+                            "name": "Battle smith",
+                            "shortName": "Battle Smith",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
             },
             "areaTags": [
                 "ST"

@@ -250,6 +250,12 @@ if __name__ == "__main__":
         {"name": "Paladin", "source": "XPHB", "sub_classes": [
             {"name": "Oath of Ancients", "shortName": "Ancients", "source": "XPHB"}
         ]},
+        {"name": "Psion", "source": "xua2025psion", "sub_classes": [
+            {"name": "Metamorph", "shortName": "Metamorph", "source": "xua2025psion"},
+            {"name": "Psi Warper", "shortName": "Psi Warper", "source": "xua2025psion"},
+            {"name": "Psykinetic", "shortName": "Psykinetic", "source": "xua2025psion"},
+            {"name": "Telepath", "shortName": "Telepath", "source": "xua2025psion"}
+        ]},
         {"name": "Ranger", "source": "XPHB", "sub_classes": [
             {"name": "Beast Master", "shortName": "Beast Master", "source": "XPHB"}
         ]},

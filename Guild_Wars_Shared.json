@@ -15869,12 +15869,6 @@
                     }
                 ]
             },
-            "spellAttack": [
-                "M"
-            ],
-            "areaTags": [
-                "ST"
-            ],
             "miscTags": [
                 "AAD"
             ],
@@ -16000,7 +15994,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST"
+            ]
         },
         {
             "name": "Feral Lunge",
@@ -35891,7 +35888,20 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "fire"
+            ],
+            "savingThrow": [
+                "intelligence"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Mind Freeze",
@@ -36040,7 +36050,20 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "cold"
+            ],
+            "savingThrow": [
+                "intelligence"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Mind Shock",
@@ -36065,10 +36088,9 @@
                 }
             ],
             "entries": [
-                "{@bold Elite}, {@bold Overcast:} 2",
+                "{@bold Armor Penetration}, {@bold Elite}, {@bold Overcast:} 2",
                 "Use the power of your mind to shock a group of enemies, inflicting more damage and knocking them {@condition prone} if you have a higher initiative than them.",
-                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make an Intelligence saving throw. On a failed save, a target takes {@damage 3d6} lightning damage and if a target has a lower initiative than you, they take an additional {@damage 3d6} lightning damage and are knocked {@condition prone}. On a successful save, a target takes half as much damage, but suffers no other effect.",
-                "{@bold Armor Penetration.} This spell's lightning damage cannot be reduced in any way, except by immunities."
+                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make an Intelligence saving throw. On a failed save, a target takes {@damage 3d6} lightning damage and if a target has a lower initiative than you, they take an additional {@damage 3d6} lightning damage and are knocked {@condition prone}. On a successful save, a target takes half as much damage, but suffers no other effect."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -36117,6 +36139,10 @@
                 },
                 {
                     "name": "Overcast",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Armor Penetration",
                     "source": "GuildWars"
                 }
             ],
@@ -36174,7 +36200,19 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "lightning"
+            ],
+            "savingThrow": [
+                "intelligence"
+            ],
+            "areaTags": [
+                "MT"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Cleave",
@@ -38201,7 +38239,14 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST",
+                "MT"
+            ],
+            "miscTags": [
+                "HL"
+            ]
         },
         {
             "name": "Earth Shaker",
@@ -39512,7 +39557,19 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "intelligence"
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Over the Limit",
@@ -57874,7 +57931,7 @@
             "entries": [
                 "{@bold Hex}",
                 "Fray a creatures' mind, sending psychic shockwaves through them every time you target them with one of your other spells.",
-                "Choose one creature that you can see within range with an initiative higher than 0. The Target must make a Wisdom saving throw. On a failed save, for the duration, if the target is the target of a Mesmer themed spell, which does not require {@status concentration} or is not an Enchantment/Hex, the target initiative gets reduced by {@dice 1d4}. If this spell reduces the target's initiative, the target takes 2 psychic damage per initiative lost. ",
+                "Choose one creature that you can see within range with an initiative higher than 0. The Target must make a Wisdom saving throw. On a failed save, for the duration, if the target is the target of a Mesmer themed spell, which does not require {@status concentration}, the target initiative gets reduced by {@dice 1d4}. If this spell reduces the target's initiative, the target takes 2 psychic damage per initiative lost. ",
                 "If the target's initiative is ever 0 or lower, this spell ends, and the target takes {@damage 4d6} psychic damage."
             ],
             "source": "GuildWars",
@@ -57997,7 +58054,19 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "psychic"
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Scourge Healing",
@@ -65980,7 +66049,13 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "MT"
+            ],
+            "miscTags": [
+                "SMN"
+            ]
         },
         {
             "name": "Riposte",
@@ -73465,6 +73540,12 @@
                         "When you cast this spell using a spell slot of 3rd level or higher, the final healing increases by {@dice 2d4} for each slot level above 1st."
                     ]
                 }
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL"
             ]
         },
         {
@@ -75246,7 +75327,7 @@
             "entries": [
                 "{@bold Armor Penetration}, {@bold Urn}",
                 "Create a golden urn containing the ashes of Vorizun, granting you improved defenses and spellcasting abilities.",
-                "You create an urn in your hands. While holding the Urn created by this spell, you gain an additional 4th level spell slot and when you take damage, you can roll {@dice 2d4} and subtract the number rolled from the damage."
+                "You create an urn in your hands. While holding the Urn created by this spell, you gain an additional level 4 spell slot and when you take damage, you can roll {@dice 2d4} and subtract the number rolled from the damage."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -75289,9 +75370,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 4th level or higher, the level of the spell slot increases by 1 for each slot level above 3rd level and the number subtracted increases by {@dice 1d4} for each slot level above 3rd."
+                        "When you cast this spell using a spell slot of 4th level or higher, the level of the spell slot increases by 1 (maximum level 8) for each slot level above 3rd level and the number subtracted increases by {@dice 1d4} for each slot level above 3rd."
                     ]
                 }
             ]
@@ -83700,12 +83781,15 @@
             "damageInflict": [
                 "cold"
             ],
-            "savingThrow": [
-                "dexterity"
-            ],
             "areaTags": [
                 "MT",
                 "S"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "miscTags": [
+                "SGT"
             ]
         },
         {

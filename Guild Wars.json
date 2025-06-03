@@ -22794,10 +22794,6 @@
 			"components": {
 				"v": true
 			},
-			"conditionInflict": [
-				"dazed|guildwars",
-				"prone"
-			],
 			"miscTags": [
 				"AAD"
 			],
@@ -22916,7 +22912,17 @@
 						}
 					}
 				]
-			}
+			},
+			"conditionInflict": [
+				"dazed|guildwars",
+				"prone"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Magehunter's Smash",
@@ -26456,7 +26462,7 @@
 				}
 			],
 			"conditionInflict": [
-				"corruption|guildwars|corrupted"
+				"corruption|guildwars"
 			],
 			"classes": {
 				"fromClassList": [
@@ -26530,7 +26536,20 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"poison"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT",
+				"TP"
+			]
 		},
 		{
 			"name": "Ice Prison",
@@ -35536,7 +35555,10 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Ineptitude",
@@ -36746,7 +36768,17 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"miscTags": [
+				"HL",
+				"AAD"
+			]
 		},
 		{
 			"name": "Defy Pain",
@@ -38498,7 +38530,10 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Shield of Regeneration",
@@ -39030,7 +39065,10 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Flourish",
@@ -39686,7 +39724,10 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Gladiator's Defense",
@@ -47862,7 +47903,10 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"areaTags": [
+				"MT"
+			]
 		},
 		{
 			"name": "Axe Twist",
@@ -60118,7 +60162,19 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Mend Condition",
@@ -66652,7 +66708,7 @@
 			"entries": [
 				"{@bold Summoning Ritual:} {@creature Nature Ritual|GuildWars}",
 				"Call forth a spirit of Nature's Renewal, which increases the casting time of all {@status concentration} spells and increases the load of bonds.",
-				"Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit and casts a spell, which requires {@status concentration} or is an Enchantment/Hex, that spell requires twice as long to cast. Additionally, creatures within 120 feet of the nature spirit, which have bonds active, reduce their spell save DC and spell attack bonus by a further 1 for each active bond."
+				"Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit and casts a spell, which requires {@status concentration}, that spell requires twice as long to cast. Additionally, creatures within 120 feet of the nature spirit, which have bonds active, reduce their spell save DC and spell attack bonus by a further 1 for each active bond."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -66747,7 +66803,13 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"MT"
+			],
+			"miscTags": [
+				"SMN"
+			]
 		},
 		{
 			"name": "Mark of Rodgort",
@@ -67992,7 +68054,16 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"miscTags": [
+				"AAD"
+			]
 		},
 		{
 			"name": "Scourge Sacrifice",
@@ -76302,7 +76373,7 @@
 			],
 			"entries": [
 				"{@bold Dual Attack}, {@bold Unblockable}",
-				"Quickly make a flurry of faints, strike twice and bypassing any defenses.",
+				"Quickly make a flurry of faints, strike twice and bypass any defenses.",
 				"Make two melee weapon attacks against the target. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 2d6} damage."
 			],
 			"source": "GuildWars",
@@ -76321,15 +76392,6 @@
 					}
 				]
 			},
-			"spellAttack": [
-				"M"
-			],
-			"savingThrow": [
-				"strength"
-			],
-			"areaTags": [
-				"ST"
-			],
 			"miscTags": [
 				"AAD"
 			],
@@ -76478,7 +76540,10 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Resilient Weapon",
@@ -88257,6 +88322,81 @@
 			"areaTags": [
 				"ST"
 			]
+		},
+		{
+			"name": "Moebius Strike",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon with the light and thrown property"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@bold Elite}, {@bold Off-Hand Attack:} Must instead follow a {@background Dual Attack|GuildWars}.",
+				"Weave your dagger in a geometric shape, bending space-time and allowing you to act quicker than normal.",
+				"On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d6} damage and, if the target is now below 50% of their maximum hit points, you can immediately attack again."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Moebius Strike",
+					"Elite Off-Hand Attack. Must follow a Dual Attack. If it hits, Moebius Strike strikes for +10...30...35 damage. If you strike a foe whose Health is below 50%, all your other attack skills are recharged. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/4/49/Moebius_Strike.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"AAD"
+			],
+			"components": {
+				"v": true
+			},
+			"backgrounds": [
+				{
+					"name": "Echovald Forest",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Dagger Mastery",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Off-Hand Attack",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			}
 		}
 	],
 	"table": [
@@ -88661,7 +88801,7 @@
 			"name": "Companion",
 			"source": "GuildWars",
 			"entries": [
-				"Valid targets for companion spells are creatures charmed by via the Charm Animal spell, or other creatures under your control, like a Beast Master Ranger’s beast companion.",
+				"Valid targets for companion spells are creatures charmed via the Charm Animal spell, or other creatures under your control, like a Beast Master Ranger’s beast companion.",
 				"Non-Valid targets are any form of summoned or created creatures, like undead created by Animate Dead or summoned by spells like Summon Fey."
 			]
 		},

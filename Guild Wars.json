@@ -8597,8 +8597,8 @@
 			],
 			"entries": [
 				"You shoot an enemy point-blank.",
-				"You have advantage on the attack roll if the target is within 5-feet of you. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d8} damage.",
-				"At 5th level, the ranged attack deals an extra {@damage 1d8} piercing damage to the target on a hit ({@dice 2d8}). This damage increases by {@dice 1d8} when you reach 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
+				"You have advantage on the attack roll if the target is within 5-feet of you. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d6} damage.",
+				"At 5th level, the ranged attack deals an extra {@damage 1d6} damage to the target on a hit ({@dice 2d6}). This damage increases by {@dice 1d6} when you reach 11th level ({@dice 3d6}), and 17th level ({@dice 4d6})."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -8632,7 +8632,6 @@
 				"ST"
 			],
 			"miscTags": [
-				"SGT",
 				"AAD"
 			],
 			"backgrounds": [
@@ -10314,9 +10313,6 @@
 			},
 			"areaTags": [
 				"ST"
-			],
-			"miscTags": [
-				"UBA"
 			],
 			"components": {
 				"s": true
@@ -13605,14 +13601,12 @@
 			"damageInflict": [
 				"necrotic"
 			],
-			"savingThrow": [
-				"wisdom"
-			],
 			"areaTags": [
 				"ST"
 			],
 			"miscTags": [
-				"HL"
+				"HL",
+				"SGT"
 			],
 			"backgrounds": [
 				{
@@ -13698,7 +13692,10 @@
 						}
 					}
 				]
-			}
+			},
+			"savingThrow": [
+				"constitution"
+			]
 		},
 		{
 			"name": "Diversion",
@@ -17202,7 +17199,6 @@
 				"ST"
 			],
 			"miscTags": [
-				"SGT",
 				"AAD"
 			],
 			"backgrounds": [
@@ -20708,7 +20704,11 @@
 						}
 					}
 				]
-			}
+			},
+			"miscTags": [
+				"THP",
+				"SGT"
+			]
 		},
 		{
 			"name": "Resurrect",
@@ -24378,7 +24378,7 @@
 					"type": "timed",
 					"duration": {
 						"type": "round",
-						"amount": 3
+						"amount": 2
 					}
 				}
 			],
@@ -24507,7 +24507,13 @@
 						}
 					}
 				]
-			}
+			},
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Power Leak",
@@ -26385,7 +26391,16 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Necrotic Traversal",
@@ -28049,7 +28064,13 @@
 						}
 					}
 				]
-			}
+			},
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Balthazar's Spirit",
@@ -37334,7 +37355,13 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Plague Signet",
@@ -37467,7 +37494,16 @@
 						}
 					}
 				]
-			}
+			},
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Dwarven Battle Stance",
@@ -40464,7 +40500,17 @@
 						}
 					}
 				]
-			}
+			},
+			"savingThrow": [
+				"charisma"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Thunderclap (Guild Wars)",
@@ -43062,7 +43108,13 @@
 						}
 					}
 				]
-			}
+			},
+			"spellAttack": [
+				"M"
+			],
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Griffon's Sweep",
@@ -47152,7 +47204,17 @@
 						}
 					}
 				]
-			}
+			},
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Healing Spring",
@@ -75691,11 +75753,9 @@
 					}
 				]
 			},
-			"areaTags": [
-				"MT",
-				"S"
-			],
 			"miscTags": [
+				"SGT",
+				"SMN",
 				"AAD"
 			],
 			"backgrounds": [
@@ -75753,7 +75813,16 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"damageInflict": [
+				"force"
+			]
 		},
 		{
 			"name": "Iron Palm",
@@ -76061,6 +76130,16 @@
 						"When you cast this spell using a spell slot of 3rd level or higher, the damage each increases by {@dice 1d6} for each slot level above 2nd."
 					]
 				}
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"AAD"
 			]
 		},
 		{
@@ -88523,6 +88602,112 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Shockwave",
+			"level": 7,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "emanation",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@bold Elite}",
+				"Release a massive shockwave at your location, kicking up dust and debris.",
+				"Target each creature other than you within a 10-foot Emanation. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 5d8} force damage, and is {@condition blinded} for the duration.",
+				"Then, target each creature other than you within a 15-foot Emanation. Each target must make a Constitution saving throw. On a failed save, a target takes {@damage 5d8} force damage, and has {@condition cracked armor|GuildWars} for the duration.",
+				"Finally, target each creature other than you within a 20-foot Emanation. Each target must make a Strength saving throw. On a failed save, a target takes {@damage 5d8} force damage, and is {@condition weakness|GuildWars|weakened} for the duration.",
+				"At the end of each of its turns, the target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Shockwave",
+					"Elite Spell. All foes in the area take 15...51...60 earth damage and are Weakened for 1...8...10 second[s]. Nearby foes also take +15...51...60 earth damage and have Cracked Armor for 1...8...10 second[s]. Adjacent foes suffer the previous effects, take +15...51...60 earth damage, and are Blinded for 1...8...10 second[s]. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/1/18/Shockwave.jpg"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"strength",
+				"dexterity",
+				"constitution"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"backgrounds": [
+				{
+					"name": "Echovald Forest",
+					"source": "GuildWars"
+				},
+				{
+					"name": "The Jade Sea",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Earth Magic",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"conditionInflict": [
+				"blinded",
+				"cracked armor|guildwars",
+				"weakness|guildwars"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 8th level or higher, the damage each increases by {@dice 1d8} for each slot level above 7th."
+					]
+				}
+			]
 		}
 	],
 	"table": [

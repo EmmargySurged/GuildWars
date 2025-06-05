@@ -7217,10 +7217,6 @@
             "areaTags": [
                 "ST"
             ],
-            "miscTags": [
-                "SGT",
-                "AAD"
-            ],
             "backgrounds": [
                 {
                     "name": "Pre-Searing",
@@ -19234,7 +19230,7 @@
             "entries": [
                 "{@bold Elite}",
                 "You attempt to interrupt a creature in the process of casting a spell and lock them out of spells of the same school of magic. ",
-                "Choose one creature that you can see within range. If the creature is casting a spell of 3rd level or lower, the spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.",
+                "Choose one creature, which is casting a spell, that you can see within range. The creature makes a Constitution saving throw. On a failed save, the spell dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If that spell was cast with a spell slot, the slot isn't expended.",
                 "If you successfully interrupt a spell this way, the target must make an Intelligence saving throw with disadvantage. On a failure, spells of the same school of magic can't be used again for the duration. If you did not successfully interrupt a spell this way, the creature makes the saving throw with advantage."
             ],
             "source": "GuildWars",
@@ -19274,15 +19270,6 @@
             "components": {
                 "s": true
             },
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used and the duration increases by 1 round for each slot level above 3rd."
-                    ]
-                }
-            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -19356,7 +19343,17 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "constitution",
+                "intelligence"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "areaTags": [
+                "ST"
+            ]
         },
         {
             "name": "Meteor Shower",
@@ -23210,7 +23207,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST"
+            ]
         },
         {
             "name": "Sprint",
@@ -24540,7 +24540,7 @@
             ],
             "entries": [
                 "You attempt to interrupt a creature in the process of casting a spell and drain their energy. ",
-                "Choose one creature that you can see within range. If the creature is casting a spell of 3rd level or lower, the spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.",
+                "Choose one creature, which is casting a spell, that you can see within range. The creature makes a Constitution saving throw. On a failed save, the spell dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If that spell was cast with a spell slot, the slot isn't expended.",
                 "If you successfully interrupt a spell this way, the target must make a Charisma saving throw with disadvantage. On a failure, the target's initiative gets reduced by {@dice 1d12}. If you did not successfully interrupt a spell this way, the creature makes the saving throw with advantage."
             ],
             "source": "GuildWars",
@@ -24576,15 +24576,6 @@
             "components": {
                 "s": true
             },
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 5th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used - 1, and the reduction of initiative increases by {@dice 1d12} for each slot level above 4th."
-                    ]
-                }
-            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -24658,7 +24649,26 @@
                         }
                     }
                 ]
-            }
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the reduction in initiative increases by {@dice 1d12} for each slot level above 4th."
+                    ]
+                }
+            ],
+            "savingThrow": [
+                "constitution",
+                "charisma"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Shard Storm",
@@ -29177,7 +29187,7 @@
             ],
             "entries": [
                 "You attempt to interrupt a creature in the process of casting a spell and drive a psychic spike into their brain. ",
-                "Choose one creature that you can see within range. If the creature is casting a spell of 3rd level or lower, the spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.",
+                "Choose one creature, which is casting a spell, that you can see within range. The creature makes a Constitution saving throw. On a failed save, the spell dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If that spell was cast with a spell slot, the slot isn't expended.",
                 "If you successfully interrupt a spell this way, the target must make an Intelligence saving throw with disadvantage. On a failed save, the target takes {@damage 4d6} psychic damage. If you did not successfully interrupt a spell this way, the creature makes the saving throw with advantage."
             ],
             "source": "GuildWars",
@@ -29213,15 +29223,6 @@
             "components": {
                 "s": true
             },
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 5th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used -1 and the damage increases by {@dice 1d6} for each slot level above 4th."
-                    ]
-                }
-            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -29295,7 +29296,29 @@
                         }
                     }
                 ]
-            }
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 2d6} for each slot level above 4th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "savingThrow": [
+                "constitution",
+                "intelligence"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Blurred Vision",
@@ -39323,7 +39346,19 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "poison"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "AAD"
+            ]
         },
         {
             "name": "Spiteful Spirit",
@@ -53103,7 +53138,7 @@
                 "type": "point",
                 "distance": {
                     "type": "feet",
-                    "amount": 60
+                    "amount": 45
                 }
             },
             "duration": [
@@ -53113,7 +53148,7 @@
             ],
             "entries": [
                 "You attempt to interrupt a creature in the process of casting a spell, and drain their energy on successfully interrupting a spell. ",
-                "Choose one creature, which is casting a spell, that you can see within range. If the creature is casting a spell of 3rd level or lower, the spell fails and has no effect.",
+                "Choose one creature, which is casting a spell, that you can see within range. The creature makes a Constitution saving throw. On a failed save, the spell dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If that spell was cast with a spell slot, the slot isn't expended.",
                 "If you successfully interrupt a spell this way, your initiative gets increased by {@dice 2d4}."
             ],
             "source": "GuildWars",
@@ -53150,15 +53185,6 @@
                 "v": true,
                 "s": true
             },
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used."
-                    ]
-                }
-            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -53202,7 +53228,25 @@
                         }
                     }
                 ]
-            }
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the increase in initiative increases by {@dice 1d4} for each slot level above 3rd."
+                    ]
+                }
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Purge Signet",
@@ -83943,7 +83987,7 @@
         },
         {
             "name": "Power Leech",
-            "level": 2,
+            "level": 3,
             "school": "A",
             "time": [
                 {
@@ -83969,8 +84013,9 @@
                 }
             ],
             "entries": [
+                "{@bold Elite}, {@bold Hex}",
                 "Violently interrupt the casting of a spell by implanting a psychic leech. ",
-                "Choose one creature, which is casting a spell, that you can see within range. If the creature is casting a spell of 2nd level or lower, the spell fails and has no effect.",
+                "Choose one creature, which is casting a spell, that you can see within range. The creature makes a Constitution saving throw. On a failed save, the spell dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If that spell was cast with a spell slot, the slot isn't expended.",
                 "If you successfully interrupt a spell this way, for the duration when the target casts a spell of 1st level or higher, the target must make a Charisma saving throw. On a failed save, the target's initiative gets reduced by {@dice 1d4} per spell slot level and your initiative gets increased by the amount lost."
             ],
             "source": "GuildWars",
@@ -84014,15 +84059,6 @@
             "components": {
                 "s": true
             },
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 3rd level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used."
-                    ]
-                }
-            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -84066,7 +84102,26 @@
                         }
                     }
                 ]
-            }
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the final reduction in initiative increases by {@dice 2d4} for each slot level above 3rd."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "savingThrow": [
+                "constitution",
+                "charisma"
+            ]
         },
         {
             "name": "Empathic Removal",
@@ -88767,6 +88822,170 @@
                         "When you cast this spell using a spell slot of 8th level or higher, the damage each increases by {@dice 1d8} for each slot level above 7th."
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Shared Burden",
+            "level": 2,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@bold Elite}, {@bold Hex}",
+                "Send flashes of traumatic experiences through a group of creatures, slowing them down. ",
+                "Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save for the duration, a target can't cast spells as reactions, must cast spells which take a bonus action as an action, and any other spell takes twice as long to cast. Additionally, for the duration, a target's speed is halved, regardless of a target's abilities or magic items, a target can't make more than one melee or ranged attack during its turn."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Shared Burden",
+                    "Elite Hex Spell. For 5...17...20 seconds, target foe and all nearby foes attack, cast spells, and move 50% slower."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/7/72/Shared_Burden.jpg"
+                        }
+                    }
+                ]
+            },
+            "savingThrow": [
+                "wisdom"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Echovald Forest",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Mesmer",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Illusion Magic",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Hex",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "The Jade Sea",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true,
+                "m": "a loop of rope"
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the radius of the spell increases by 5 feet for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "xua2025eberronupdates"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Psion",
+                        "source": "xua2025psion"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "miscTags": [
+                "SGT"
             ]
         }
     ],

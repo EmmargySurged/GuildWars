@@ -4021,7 +4021,7 @@
                 "type": "point",
                 "distance": {
                     "type": "feet",
-                    "amount": 120
+                    "amount": 150
                 }
             },
             "duration": [
@@ -4035,7 +4035,7 @@
             ],
             "entries": [
                 "Invoke the hellish flames of Rodgort.",
-                "Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 14d6} fire damage and starts {@condition burning|GuildWars} for the duration, taking {@damage 2d6} damage. On a successful save, a target takes half as much damage, but suffers no other effect.",
+                "Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 20d6} fire damage and starts {@condition burning|GuildWars} for the duration, taking {@damage 4d6} damage. On a successful save, a target takes half as much damage, but suffers no other effect.",
                 "At the end of each of its turns, a target can make a Dexterity saving throw. On a success, the condition ends."
             ],
             "source": "GuildWars",
@@ -29318,7 +29318,7 @@
                 "m": "the remains of a zombie"
             },
             "conditionInflict": [
-                "disease|guildwars|diseased"
+                "disease|guildwars"
             ],
             "entriesHigherLevel": [
                 {
@@ -29401,7 +29401,19 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "necrotic"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Power Spike",
@@ -44456,7 +44468,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST"
+            ]
         },
         {
             "name": "Blood of the Master",
@@ -48164,7 +48179,17 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "SGT",
+                "MAC"
+            ]
         },
         {
             "name": "Otyugh's Cry",
@@ -66593,7 +66618,9 @@
                 "ST"
             ],
             "miscTags": [
-                "UBA"
+                "SGT",
+                "UBA",
+                "AAD"
             ],
             "backgrounds": [
                 {
@@ -67841,6 +67868,19 @@
                         "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d12} for each slot level above 2nd."
                     ]
                 }
+            ],
+            "damageInflict": [
+                "cold"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "SGT"
             ]
         },
         {
@@ -73050,6 +73090,20 @@
                         "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
                     ]
                 }
+            ],
+            "damageInflict": [
+                "necrotic"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "ST",
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "SGT"
             ]
         },
         {
@@ -77343,8 +77397,8 @@
             },
             "entries": [
                 "Violently sever the connection a conjured soul has to the afterlife, sending them back in an explosive flash.",
-                "Choose one friendly summoning ritual that you can see within range. The target dies, then you target each other creature in a 15-foot-radius sphere centered on the creature. Each new target must make a Dexterity saving throw. On a failed save, a target takes {@damage 6d6} lightning damage and is {@condition blinded} for 1 minute.",
-                "At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
+                "Choose one friendly summoning ritual that you can see within range. The target dies, then you target each other creature in a 15-foot-radius sphere centered on the creature. Each new target must make a Dexterity saving throw. On a failed save, a target takes {@damage 6d6} lightning damage and is {@condition blinded} for 1 minute. On a successful save, a target takes half as much damage, but suffers no other effect.",
+                "At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends. "
             ],
             "conditionInflict": [
                 "blinded"
@@ -77352,11 +77406,25 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
                     ]
                 }
+            ],
+            "damageInflict": [
+                "lightning"
+            ],
+            "savingThrow": [
+                "dexterity",
+                "constitution"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "SGT"
             ]
         },
         {
@@ -85482,7 +85550,8 @@
                 "dexterity"
             ],
             "areaTags": [
-                "MT"
+                "MT",
+                "S"
             ],
             "miscTags": [
                 "SGT",
@@ -89631,6 +89700,131 @@
             ],
             "damageInflict": [
                 "necrotic"
+            ]
+        },
+        {
+            "name": "Lacerate",
+            "level": 2,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 5
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@bold Elite}, {@bold Summoning Ritual:} {@creature Nature Ritual|GuildWars}",
+                "Summon a nature spirit of laceration, intensifying slashing damage and {@condition bleeding|GuildWars} everything on death.",
+                "Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit and takes slashing damage, they take an additional {@damage 4d4} damage. Additionally, when the spirit disappears, each creature within 120 feet of it starts {@condition bleeding|GuildWars} for 1 minute, taking {@damage 4d4} damage.",
+                "At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Lacerate",
+                    "Elite Nature Ritual. Create a level 1...8...10 spirit. Bleeding creatures within its range suffer -2 Health degeneration. When this spirit dies, all non-spirit creatures within its range that have less than 90% Health begin Bleeding for 5...21...25 seconds. This spirit dies after 30...126...150 seconds."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/f/fa/Lacerate.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Echovald Forest",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Beast Mastery",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Summoning Ritual",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a section of barbed wire"
+            },
+            "meta": {
+                "ritual": true
+            },
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Psion",
+                        "source": "xua2025psion"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "areaTags": [
+                "MT"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage each increases by {@dice 2d4} for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "slashing"
+            ],
+            "miscTags": [
+                "SMN"
+            ],
+            "savingThrow": [
+                "constitution"
             ]
         }
     ],

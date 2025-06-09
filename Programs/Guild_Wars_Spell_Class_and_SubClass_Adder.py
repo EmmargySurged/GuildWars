@@ -259,7 +259,8 @@ if __name__ == "__main__":
             {"name": "Telepath", "shortName": "Telepath", "source": "xua2025psion"}
         ]},
         {"name": "Ranger", "source": "XPHB", "sub_classes": [
-            {"name": "Beast Master", "shortName": "Beast Master", "source": "XPHB"}
+            {"name": "Beast Master", "shortName": "Beast Master", "source": "XPHB"},
+            {"name": "Hollow Warden", "shortName": "Hollow Warden", "source": "xua2025horrorsubclasses"}
         ]},
         {"name": "Sorcerer", "source": "XPHB", "sub_classes": [
             {"name": "Divine Soul", "shortName": "Divine Soul", "source": "XGE"}

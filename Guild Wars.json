@@ -11947,14 +11947,17 @@
 			},
 			"duration": [
 				{
-					"type": "permanent"
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
 				}
 			],
 			"entries": [
-				"{@bold Bond}",
-				"Imbue yourself with a sense of justice, generating adrenaline when hitting or getting hit and doubling any adrenaline gain.",
-				"For the duration, your adrenaline gain is doubled. Additionally, you gain one strike of adrenaline when you take damage from a non-friendly source, or when you hit a hostile creature with a weapon attack.",
-				"When this spell ends, you lose all adrenaline."
+				"{@bold Adrenaline}",
+				"Imbue yourself with a sense of justice, generating adrenaline at an increased rate.",
+				"For the duration, your adrenaline gain is doubled. "
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -11995,16 +11998,16 @@
 					"source": "GuildWars"
 				},
 				{
-					"name": "Bond",
+					"name": "Adrenaline",
 					"source": "GuildWars"
 				}
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
-					"name": "At Higher Levels",
+					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the adrenaline gain increases by 1 for every two slot level above 1st."
+						"When you cast this spell using a spell slot of 3rd or 4th level, the duration increases to 8 hours. When you use a spell slot of 5th level or higher, the duration increases to 24 hours."
 					]
 				}
 			],
@@ -90234,7 +90237,63 @@
 				"s": true
 			},
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Illrigger",
+							"source": "IllriggerRevised"
+						},
+						"subclass": {
+							"name": "Architect of ruin",
+							"shortName": "Architect of Ruin",
+							"source": "IllriggerRevised"
+						}
+					},
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "School of necromancy",
+							"shortName": "Necromancy",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
 			},
 			"spellAttack": [
 				"R"

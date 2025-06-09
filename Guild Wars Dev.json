@@ -2625,6 +2625,286 @@
 			"savingThrowForcedSpell": [
 				"wisdom"
 			]
+		},
+		{
+			"name": "White Mantle Knight",
+			"source": "GuildWarsDev",
+			"size": [
+				"S",
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item shield|xphb}",
+						"{@item chain mail|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 40",
+				"average": 85
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 18,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"skill": {
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Common",
+				"Krytan"
+			],
+			"cr": "4",
+			"gear": [
+				"{@item shield|xphb}",
+				"{@item chain mail|xphb}",
+				"{@item shortsword|xphb}",
+				"{@item shortbow|xphb}"
+			],
+			"languageTags": [
+				"C"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"White Mantle Knights are the warriors of the White Mantle. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/White_Mantle_Warrior_m.jpg"
+						}
+					}
+				]
+			},
+			"attachedItems": [
+				"shortbow|phb",
+				"shortsword|phb"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/White_Mantle_Warrior_m_Token.png"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The White Mantle Knight make two Shortsword or Shortbow attacks in any combination."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit +6} to hit, reach 5 ft., one target. {@h}7 ({@damage 3d6 + 4}) Slashing damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 3d6 + 2}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The White Mantle Knight is a 4th-level spellcaster. Their spellcasting ability is Strength (spell save {@dc 14}, +6 to hit with spell attacks). The White Mantle Knight has the following Warrior (GW) spells prepared:"
+					],
+					"will": [
+						"{@spell galrath slash|GuildWars}",
+						"{@spell watch yourself!|GuildWars}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell bull's charge|GuildWars}",
+							"{@spell i will avenge you!|GuildWars}"
+						]
+					},
+					"ability": "str",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForcedSpell": [
+				"strength"
+			]
+		},
+		{
+			"name": "White Mantle Knight Warrior Boss",
+			"source": "GuildWarsDev",
+			"size": [
+				"S",
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item shield|xphb}",
+						"{@item plate armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 60",
+				"average": 114
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 20,
+			"int": 10,
+			"wis": 12,
+			"cha": 10,
+			"skill": {
+				"perception": "+7"
+			},
+			"passive": 17,
+			"languages": [
+				"Common",
+				"Krytan"
+			],
+			"cr": "6",
+			"gear": [
+				"{@item shield|xphb}",
+				"{@item plate armor|xphb}",
+				"{@item +1 shortsword|xphb}",
+				"{@item shortbow|xphb}"
+			],
+			"languageTags": [
+				"C"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Cyrus the Unflattering is a White Mantle boss that appears in Riverside Province. ",
+					"Elvina the Pious is a White Mantle boss located in Twin Serpent Lakes. ",
+					"Holt the Iron Boot Heel is a White Mantle boss that is part of the expedition seeking to gain access to the Henge of Denravi ahead of the Shining Blade.",
+					"Inner Council Member Bolivar is a White Mantle member meeting with the Mursaat in the Ring of Fire Islands. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/White_Mantle_Warrior_m_Warrior_Boss.jpg"
+						}
+					}
+				]
+			},
+			"attachedItems": [
+				"+1 shortsword|dmg",
+				"shortbow|phb"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The White Mantle Knight make three +1 Shortsword or Shortbow attacks in any combination."
+					]
+				},
+				{
+					"name": "+1 Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}18 ({@damage 4d6 + 6}) Slashing damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 80/320 ft., one target. {@h}16 ({@damage 4d6 + 2}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The White Mantle Knight Warrior Boss is a 5th-level spellcaster. Their spellcasting ability is Strength (spell save {@dc 16}, +8 to hit with spell attacks). The White Mantle Knight Warrior Boss has the following Warrior (GW) spells prepared:"
+					],
+					"will": [
+						"{@spell galrath slash|GuildWars}",
+						"{@spell watch yourself!|GuildWars}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell bull's charge|GuildWars}",
+							"{@spell i will avenge you!|GuildWars}"
+						]
+					},
+					"ability": "str",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/White_Mantle_Warrior_m_Warrior_Boss_Token.png"
+			},
+			"damageTags": [
+				"P",
+				"S"
+			]
 		}
 	],
 	"feat": [],

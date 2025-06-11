@@ -2205,7 +2205,7 @@
 		},
 		{
 			"name": "Wild Blow",
-			"level": 5,
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -8955,7 +8955,19 @@
 						"source": "XPHB"
 					}
 				],
-				"fromSubclass": []
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
 			},
 			"areaTags": [
 				"ST"
@@ -9942,7 +9954,7 @@
 			],
 			"entries": [
 				"Make your enemies conditions contagious.",
-				"Choose one creature that you can see within range. Target each creature other than the chosen target in a 10-foot-radius sphere centered on the target. Each new target must make a Constitution saving throw. On a failed save, a creature gains a copy of each of the following conditions on the chosen target: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} and {@condition Weakness|GuildWars}.",
+				"Choose one creature that you can see within range. Target each creature other than the chosen target in a 10-foot-radius sphere centered on the target. Each new target must make a Constitution saving throw. On a failed save, a creature gains a copy of each harmful condition on the chosen target.",
 				"At the end of each of its turns, a target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends."
 			],
 			"source": "GuildWars",
@@ -16693,7 +16705,7 @@
 			],
 			"entries": [
 				"Purge most conditions on a creature.",
-				"Choose one creature that you can see within range. End {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} and {@condition Weakness|GuildWars} on the target."
+				"Choose one creature that you can see within range. End all harmful conditions on the target."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -20210,7 +20222,19 @@
 						"source": "XPHB"
 					}
 				],
-				"fromSubclass": []
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
 			},
 			"areaTags": [
 				"ST"
@@ -20288,7 +20312,19 @@
 						"source": "XPHB"
 					}
 				],
-				"fromSubclass": []
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
 			},
 			"areaTags": [
 				"ST"
@@ -20808,7 +20844,7 @@
 			"entries": [
 				"{@bold Elite}",
 				"Inflict multiple conditions on a creature already suffering from a condition.",
-				"Choose one creature that you can see within range. The target must make a Constitution saving throw. On a failed save for the duration, if the target is suffering from a condition, the target is {@condition Weakness|GuildWars|weakened}, is {@condition corruption|GuildWars|corrupted} taking {@damage 2d6} damage and is {@condition disease|GuildWars|diseased} taking {@damage 3d4} damage.",
+				"Choose one creature that you can see within range. The target must make a Constitution saving throw. On a failed save for the duration, if the target is suffering from a harmful condition, the target is {@condition Weakness|GuildWars|weakened}, is {@condition corruption|GuildWars|corrupted} taking {@damage 4d6} damage and is {@condition disease|GuildWars|diseased} taking {@damage 6d4} damage.",
 				"At the end of each of its turns, the target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends."
 			],
 			"source": "GuildWars",
@@ -22281,6 +22317,9 @@
 					"name": "Signet",
 					"source": "GuildWars"
 				}
+			],
+			"miscTags": [
+				"SGT"
 			]
 		},
 		{
@@ -29609,7 +29648,7 @@
 			"entries": [
 				"{@bold Enchantment}",
 				"Suffuse yourself with the spirit of the divine, accessing your spells for less cost.",
-				"For the duration, when you cast a Cleric, Druid or Paladin spell of 2nd level or higher, you can cast that spell by using a spell slot which is one level lower than required."
+				"For the duration, when you cast a holy themed spell of 2nd level or higher, you can cast that spell by using a spell slot which is one level lower than required."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -34681,7 +34720,7 @@
 			"entries": [
 				"{@bold Elite}, {@bold Hex}",
 				"Spin out your foes condition induced dreams, infecting creatures around them with conditions every time they suffer from a new one.",
-				"Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save for the duration when the target gains a condition, target each hostile creature other than the target in a 20-foot-radius sphere centered on the target. Each new target must make a Constitution saving throw. On a failed save, a creature gains a copy of the condition gained if it's one of the following conditions: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} and {@condition Weakness|GuildWars}.",
+				"Choose one creature that you can see within range. For the duration when the target gains a harmful condition, target each hostile creature other than the target in a 20-foot-radius sphere centered on the target. Each new target must make a Constitution saving throw. On a failed save, a creature gains a copy of the condition gained.",
 				"Additionally, if the original target is suffering from two or more conditions, the target is {@condition dazed|GuildWars} for 1 round.",
 				"At the end of each of its turns, a target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends."
 			],
@@ -37314,7 +37353,7 @@
 			"entries": [
 				"{@bold Elite} ",
 				"Martyr yourself by transferring all conditions on allies to yourself.",
-				"Target each friendly creature other than you within range. You gain a copy of each of the following conditions on a target: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} and {@condition Weakness|GuildWars}. End all copied conditions on a target."
+				"Target each friendly creature other than you within range. You gain a copy of each harmful condition on a target. End all copied conditions on a target."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -38034,7 +38073,7 @@
 			"entries": [
 				"{@bold Elite}, {@bold Enchantment}",
 				"Invoke peace and harmony on a creature, removing negative effects and reducing their duration.",
-				"Choose one friendly creature that you can see within range. End the latest two of the following conditions on the target: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} or {@condition Weakness|GuildWars}. Additionally, the latest two harmful spells on the target end.",
+				"Choose one friendly creature that you can see within range. End the latest two harmful conditions on the target. Additionally, the latest two harmful spells on the target end.",
 				"For the duration, conditions and harmful spells expire 90% faster on the target."
 			],
 			"source": "GuildWars",
@@ -38133,7 +38172,7 @@
 			"entries": [
 				"{@bold Elite}, {@bold Signet:} Short Rest",
 				"Activate your Plague Signet to transfer most of your conditions to an enemy.",
-				"Choose one hostile creature that you can see within range. The target gains a copy of each of the following conditions on yourself: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} and {@condition Weakness|GuildWars}. End all copied conditions on yourself.",
+				"Choose one hostile creature that you can see within range. The target gains a copy of each harmful condition on yourself. End all copied conditions on yourself.",
 				"At the end of each of its turns, the target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends."
 			],
 			"source": "GuildWars",
@@ -38538,7 +38577,7 @@
 			"entries": [
 				"{@bold Elite}",
 				"Purge most conditions on a creature and heal them for each condition removed.",
-				"Choose one creature that you can see within range. End {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} and {@condition Weakness|GuildWars} on the target and the target regains hit points equal to {@dice 2d4} per condition removed."
+				"Choose one creature that you can see within range. End all harmful conditions on the target, and the target regains hit points equal to {@dice 2d4} per condition removed."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -39314,7 +39353,19 @@
 						"source": "XPHB"
 					}
 				],
-				"fromSubclass": []
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
 			},
 			"areaTags": [
 				"ST"
@@ -40889,8 +40940,8 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "round",
-						"amount": 3
+						"type": "minute",
+						"amount": 1
 					}
 				}
 			],
@@ -40922,9 +40973,9 @@
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
-					"name": "At Higher Levels",
+					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"When you cast this spell using a spell slot of 9th level, the duration increases by 1 round."
+						"When you cast this spell using a spell slot of 9th level or higher, you can target one additional creature for each slot level above 8th."
 					]
 				}
 			],
@@ -42185,7 +42236,10 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Ward Against Harm",
@@ -43370,7 +43424,7 @@
 			"entries": [
 				"{@bold Elite}, {@bold Signet:} Short Rest",
 				"You attempt to interrupt a creature in the process of making an attack roll and smite all creatures around it.",
-				"Choose one attacking creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target is knocked {@condition prone}, the attack roll misses and target each creature in a 10-foot-radius sphere centered on the target. A target takes {@damage 3d8} radiant damage. On a successful save, a target takes half as much damage, but suffers no other effect."
+				"Choose one attacking creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target is knocked {@condition prone}, the attack roll misses, and you target each hostile creature in a 10-foot-radius sphere centered on the target. A target takes {@damage 3d8} radiant damage."
 			],
 			"source": "GuildWars",
 			"components": {
@@ -43384,7 +43438,9 @@
 				"constitution"
 			],
 			"areaTags": [
-				"ST"
+				"ST",
+				"MT",
+				"S"
 			],
 			"miscTags": [
 				"SGT"
@@ -43490,7 +43546,7 @@
 			],
 			"entries": [
 				"Magically cure a condition from a creature, healing them for every condition remaining on them.",
-				"Choose one creature that you can see within range. End the latest of the following conditions on the target: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} or {@condition Weakness|GuildWars}. Then the target regains hit points equal to {@dice 1d4} per condition affecting it."
+				"Choose one creature that you can see within range. End the latest of harmful condition on the target. Then the target regains hit points equal to {@dice 1d4} per condition affecting it."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -43787,7 +43843,7 @@
 			],
 			"entries": [
 				"Touch a creature with plague infested hands, transferring conditions.",
-				"Choose one creature within range. Make a melee spell attack against the target. On a hit, the target gains a copy of the latest {@dice 1d4} of the following conditions on yourself: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} or {@condition Weakness|GuildWars}. End all copied conditions on yourself.",
+				"Choose one creature within range. Make a melee spell attack against the target. On a hit, the target gains a copy of the latest {@dice 1d4} harmful conditions on yourself. End all copied conditions on yourself.",
 				"At the end of each of its turns, the target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends."
 			],
 			"source": "GuildWars",
@@ -47899,7 +47955,7 @@
 			"entries": [
 				"{@bold Sacrifice:} 10%",
 				"Sacrifice some life essence to transfer a number of conditions from yourself to a group of creatures.",
-				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, each target gains a copy of the latest {@dice 1d4} of the following conditions on yourself: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} or {@condition Weakness|GuildWars}. End all copied conditions on yourself.",
+				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, each target gains a copy of the latest {@dice 1d4} harmful conditions on yourself. End all copied conditions on yourself.",
 				"At the end of each of its turns, a target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends."
 			],
 			"source": "GuildWars",
@@ -50904,7 +50960,7 @@
 				"End all beneficial spells on yourself. For each beneficial spell ended this way, repeat all the following effects:",
 				"- You regain {@dice 1d4} hit points.",
 				"- The latest harmful spell on yourself ends.",
-				"- End the latest of the following conditions on yourself: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} or {@condition Weakness|GuildWars}",
+				"- End the latest harmful condition on yourself.",
 				"You can end a maximum of 2 harmful spells and/or conditions this way."
 			],
 			"source": "GuildWars",
@@ -51146,7 +51202,7 @@
 			"entries": [
 				"{@bold Signet:} Initiative",
 				"Activate your antidote signet, cleansing yourself of some conditions.",
-				"End {@condition Corruption|GuildWars}, {@condition Disease|GuildWars}, {@condition blinded|phb|Blindness} and the latest of the following conditions on yourself: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} or {@condition Weakness|GuildWars}."
+				"End {@condition Corruption|GuildWars}, {@condition Disease|GuildWars}, {@condition blinded|phb|Blindness}, {@condition Poisoned|XPHB} and the latest of harmful condition on yourself."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -51195,7 +51251,19 @@
 						"source": "XPHB"
 					}
 				],
-				"fromSubclass": []
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
 			}
 		},
 		{
@@ -52931,7 +52999,7 @@
 			"entries": [
 				"Release a wave of crystal energy, which purifies any negative conditions affecting a creature, dealing more damage for each removed.",
 				"Target each creature other than you within a 10-foot Emanation. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 8d6} force damage. On a successful save, a target takes half as much damage. ",
-				"Also end all of the following conditions on a target: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} and {@condition Weakness|GuildWars}. A target takes {@damage 2d4} force damage for each condition ended."
+				"Also end all harmful conditions on a target. A target takes {@damage 2d4} force damage for each condition ended."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -54083,7 +54151,7 @@
 			"entries": [
 				"{@bold Signet:} Short Rest",
 				"Activate your Purge Signet, removing all negative effects from a creature at the cost of your initiative.",
-				"Choose one creature that you can see within range. End {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} and {@condition Weakness|GuildWars} on the target. Also, all harmful spells on the target end.",
+				"Choose one creature that you can see within range. End all harmful conditions on the target. Also, all harmful spells on the target end.",
 				"Your initiative roll gets reduced by Nd6, where N is the number of conditions and harmful spells ended this way."
 			],
 			"source": "GuildWars",
@@ -55085,7 +55153,16 @@
 						}
 					}
 				]
-			}
+			},
+			"savingThrow": [
+				"charisma"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Rebirth",
@@ -55966,7 +56043,7 @@
 			],
 			"entries": [
 				"Smite a harmful spell on a friendly creature to deal damage to everyone around it.",
-				"Choose one friendly creature that you can see within range. The latest harmful spell on the target ends. If a harmful spell was ended this way, target each creature other than the target in a 20-foot-radius sphere centered on the target. A target takes {@damage 2d8} radiant damage."
+				"Choose one friendly creature that you can see within range. The latest harmful spell on the target ends. If a harmful spell was ended this way, target each hostile creature other than the target in a 20-foot-radius sphere centered on the target. A target takes {@damage 2d8} radiant damage."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -59890,7 +59967,7 @@
 			"entries": [
 				"{@bold Bond}, {@bold Enchantment} ",
 				"Surround yourself with a shimmering blessed aura, extending the duration of your spells.",
-				"For the duration, when you cast a Cleric, Druid or Paladin spell, with a timed duration, extend that duration by 25%."
+				"For the duration, when you cast a holy themed spell, with a timed duration, extend that duration by 25%."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -61195,7 +61272,7 @@
 			],
 			"entries": [
 				"Purge one condition on a creature and heal them.",
-				"Choose one creature that you can see within range. End the latest of the following conditions on the target: {@condition Corruption|GuildWars}, {@condition Disease|GuildWars}, {@condition blinded|phb|Blindness}, {@condition Dazed|GuildWars}, {@condition Bleeding|GuildWars}, {@condition Crippled|GuildWars}, {@condition Burning|GuildWars}, {@condition Weakness|GuildWars}, {@condition Cracked Armor|GuildWars}, or {@condition Deep Wound|GuildWars}. Then the target regains hit points equal to {@dice 2d4} if a condition was removed."
+				"Choose one creature that you can see within range. End the latest of harmful condition on the target. Then the target regains hit points equal to {@dice 2d4} if a condition was removed."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -62460,7 +62537,18 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"necrotic",
+				"slashing"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			]
 		},
 		{
 			"name": "Flame Trap",
@@ -65759,7 +65847,7 @@
 			],
 			"entries": [
 				"Sacrifice yourself for a companion by taking all their conditions.",
-				"Choose one friendly creature other than you within range. You gain a copy of each of the following conditions on the target: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} and {@condition Weakness|GuildWars}. End all copied conditions on the target, and you regain hit points equal to {@dice 1d4} per condition removed."
+				"Choose one friendly creature other than you within range. You gain a copy of each harmful condition on the target. End all copied conditions on the target, and you regain hit points equal to {@dice 1d4} per condition removed."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -68121,7 +68209,7 @@
 			"entries": [
 				"{@bold Enchantment}",
 				"Create a tether between yourself and any undead minions you have, automatically transferring conditions from yourself to them.",
-				"For the duration, when you would gain one or more of the following conditions, the closest friendly undead creature, which has been created by a spell or an ability, within 30-feet of you, gains it instead: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} or {@condition Weakness|GuildWars}."
+				"For the duration, when you would gain one or more harmful conditions, the closest friendly undead creature, which has been created by a spell or an ability, within 30-feet of you, gains it instead."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -68594,6 +68682,16 @@
 			},
 			"conditionInflict": [
 				"weakness|guildwars"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
 			]
 		},
 		{
@@ -69339,7 +69437,7 @@
 			"entries": [
 				"{@bold Sacrifice:} 15%",
 				"Channel the devotion to his minions the great Necromancer Verata had, sacrificing yourself to heal them and cleanse them of most conditions. ",
-				"Choose any number of friendly undead creatures, which have been created by a spell or an ability, that you can see. For the duration at the start of each of a target's turns, a target regains hit points equal to {@dice 4d4}. Additionally, you gain a copy of each of the following conditions on a target: Bleeding, {@condition Blinded|XPHB}, Burning, Corruption, Cracked Armor, Crippled, Dazed, {@condition Deafened|XPHB}, Deep Wound, Disease, {@condition Poisoned|XPHB} and Weakness. End all copied conditions on a target.",
+				"Choose any number of friendly undead creatures, which have been created by a spell or an ability, that you can see. You gain a copy of each harmful conditions on a target. End all copied conditions on a target. Additionally, for the duration at the start of each of a target's turns, a target regains hit points equal to {@dice 4d4}. ",
 				"If a target drops to 0 hit points, this spell ends on them.",
 				"If you cast this spell while you have control over less than 4 friendly undead creatures, which have been created by a spell or an ability, you regain the spell slot expended in the casting."
 			],
@@ -73426,7 +73524,7 @@
 				{
 					"number": 1,
 					"unit": "reaction",
-					"condition": "which you take when you see a creature within 60 feet of you casting a spell or a hexed creature using an ability"
+					"condition": "which you take when you see a creature within 60 feet of you casting a spell or a creature under effect of a detrimental concentration spell using an ability"
 				}
 			],
 			"range": {
@@ -73444,7 +73542,7 @@
 			"entries": [
 				"{@bold Signet:} Short Rest",
 				"You activate your signet of disruption in response to a creature casting a spell or a hexed creature using an ability, sending out a psychic spike, potentially disrupting that creature. ",
-				"Choose one creature that you can see within range. If the creature is casting a spell of 3rd level or lower or if that creature is hexed and is using an ability, the spell/ability fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.",
+				"Choose one creature, which is casting a spell or, if the creature is under the effect of a detrimental {@status Concentration|XPHB} spell, using an ability, that you can see within range. The creature makes a Constitution saving throw. On a failed save, the spell/ability dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If that spell was cast with a spell slot, the slot isn't expended.",
 				"If you successfully interrupt a spell/ability this way, the target must make an Intelligence saving throw with disadvantage. On a failed save, the target takes {@damage 3d6} psychic damage. If you did not successfully interrupt a spell/ability this way, the creature makes the saving throw with advantage."
 			],
 			"source": "GuildWars",
@@ -73557,7 +73655,20 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"constitution",
+				"intelligence"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Rising Bile",
@@ -76233,7 +76344,7 @@
 			},
 			"entries": [
 				"Channel the energy of nearby spirits to heal and cleanse a creature.",
-				"Choose one creature that you can see within range. The target regains hit points equal to {@dice 2d4} and you end the latest N of the following conditions on the target: {@condition Corruption|GuildWars}, {@condition Disease|GuildWars}, {@condition blinded|phb|Blindness}, {@condition Dazed|GuildWars}, {@condition Bleeding|GuildWars}, {@condition Crippled|GuildWars}, {@condition Burning|GuildWars}, {@condition Weakness|GuildWars}, {@condition Cracked Armor|GuildWars}, or {@condition Deep Wound|GuildWars}, where N is the number of friendly summoning rituals within range."
+				"Choose one creature that you can see within range. The target regains hit points equal to {@dice 2d4} and you end the latest N harmful conditions on the target, where N is the number of friendly summoning rituals within range."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -76896,7 +77007,7 @@
 			"entries": [
 				"{@bold Armor Penetration}, {@bold Lead Attack}, {@bold Unblockable}",
 				"Strike the flat of your weapon into a vital part of a creature, knocking them {@condition prone} if they are suffering from a hex or condition.",
-				"On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d10} damage, and if the target is suffering from a condition and/or under the effect of a detrimental spell the target is kocked {@condition prone}."
+				"On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d10} damage, and if the target is suffering from a harmful condition and/or under the effect of a detrimental spell the target is knocked {@condition prone}."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -77725,7 +77836,7 @@
 			"entries": [
 				"{@bold Weapon Spell} ",
 				"Temporarily transform a weapon into a resilient weapon, visibly making its appearance more defensive and increasing the wielders' vitality in a time of need.",
-				"Choose one friendly creature, which is wielding a weapon, that you can see within range. For the duration, while the target is under the effect of a detrimental spell or suffering from one of the following conditions: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Poisoned} and/or {@condition Weakness|GuildWars}, the target gains the following effects:",
+				"Choose one friendly creature, which is wielding a weapon, that you can see within range. For the duration, while the target is under the effect of a detrimental spell or suffering from at least one harmful condition, the target gains the following effects:",
 				"- When the target takes damage, you can roll {@dice 2d4} and subtract the number rolled from the damage.",
 				"- At the start of each of the target's turns, if the target is above 0 hit points, the target regains hit points equal to {@dice 1d4}."
 			],
@@ -77775,11 +77886,6 @@
 						"When you cast this spell using a spell slot of 3rd level or higher, the number subtracted increases by {@dice 1d4} for each slot level above 2nd and the healing increases by {@dice 1d4} for each slot level above 2nd."
 					]
 				}
-			],
-			"conditionInflict": [
-				"bleeding|guildwars",
-				"blinded",
-				"burning|guildwars"
 			],
 			"areaTags": [
 				"ST"
@@ -79428,8 +79534,20 @@
 			"components": {
 				"s": true
 			},
+			"savingThrow": [
+				"wisdom"
+			],
+			"damageInflict": [
+				"psychic"
+			],
 			"conditionInflict": [
 				"blinded"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
 			]
 		},
 		{
@@ -80698,7 +80816,7 @@
 			"entries": [
 				"{@bold Enchantment}",
 				"Empower your elemental magic, by attuning to all four elements at once.",
-				"For the Duration, when you cast a fire, air, lightning, thunder, water or earth themed spell of 1st level or higher, you can cast that spell by using a spell slot which is one level higher than the one used in the casting. Additionally, when you would expend a spell slot to cast a fire, air, lightning, thunder, water or earth themed spell, roll a {@dice d20}. On a 15 or higher, the spell does not expend a spell slot. "
+				"For the Duration, when you cast an elemental themed spell of 1st level or higher, you can cast that spell by using a spell slot which is one level higher than the one used in the casting. Additionally, when you would expend a spell slot to cast an elemental themed spell, roll a {@dice d20}. On a 15 or higher, the spell does not expend a spell slot. "
 			],
 			"source": "GuildWars",
 			"components": {
@@ -80824,7 +80942,7 @@
 			"entries": [
 				"{@bold Enchantment}",
 				"Channel the power of an Elemental Lord, arcane magics swirling around you.",
-				"For the Duration, when you cast a fire, air, lightning, thunder, water or earth themed spell of 1st level or higher, you can roll a {@dice d20}. On a 10 or higher, you can cast that spell by using a spell slot which is one level higher than the one used in the casting. Additionally, when you cast a spell of 1st level or higher, you regain hit points equal to {@dice 1d4} per spell slot level."
+				"For the Duration, when you cast an elemental themed spell of 1st level or higher, you can roll a {@dice d20}. On a 10 or higher, you can cast that spell by using a spell slot which is one level higher than the one used in the casting. Additionally, when you cast a spell of 1st level or higher, you regain hit points equal to {@dice 1d4} per spell slot level."
 			],
 			"source": "GuildWars",
 			"components": {
@@ -81210,7 +81328,7 @@
 			"entries": [
 				"{@bold Signet:} Long Rest",
 				"Activate your wicked signet of {@condition corruption|GuildWars}, siphoning off spell energy from afflicted creatures.",
-				"Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target takes {@damage 3d6} necrotic damage and if the target is under the effect of a detrimental spell or suffering from one of the following conditions: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars}, {@condition Charmed},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Frightened}, {@condition Grappled}, {@condition Incapacitated},  {@condition Paralyzed},  {@condition Petrified}, {@condition Poisoned},  {@condition Restrained}, {@condition Stunned}, {@condition Unconscious}, and/or {@condition Weakness|GuildWars}, you can choose expended spell slots to recover. The spell slots can have a combined level equal to the number of detrimental spells and conditions on all targets who failed the saving throw (maximum 5)."
+				"Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target takes {@damage 3d6} necrotic damage and if the target is under the effect of a detrimental spell or suffering from a detrimental condition, you can choose expended spell slots to recover. The spell slots can have a combined level equal to the number of detrimental spells and conditions on all targets who failed the saving throw (maximum 5)."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -81257,11 +81375,18 @@
 			"components": {
 				"s": true
 			},
-			"conditionInflict": [
-				"bleeding|guildwars",
-				"blinded",
-				"burning|guildwars",
-				"charmed"
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"SGT"
 			]
 		},
 		{
@@ -81432,7 +81557,19 @@
 						"source": "XPHB"
 					}
 				],
-				"fromSubclass": []
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
 			}
 		},
 		{
@@ -82293,7 +82430,7 @@
 			"entries": [
 				"{@bold Elite}, {@bold Signet:} Initiative",
 				"Activate your signet bestowed upon you by the goddess of nature herself, greatly increasing the potency of your conditions.",
-				"For the duration, while wielding a ranged weapon, any condition you inflict has their duration doubled, and creatures have disadvantage on saving throws to resist your effects which apply conditions or to get rid of them."
+				"For the duration, while wielding a ranged weapon, any harmful condition you inflict has their duration doubled, and creatures have disadvantage on saving throws to resist your effects which apply conditions or to get rid of them."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -82443,6 +82580,15 @@
 			],
 			"areaTags": [
 				"ST"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 10th level or higher, the level of the spell increases by {@dice 1d4} for each slot level above 9th."
+					]
+				}
 			]
 		},
 		{
@@ -83089,7 +83235,7 @@
 			"entries": [
 				"{@bold Elite}",
 				"Shine down the blessed light of the gods on a creature, ailing them of hurt and malediction.",
-				"Choose one creature that you can see within range. The target regains hit points equal to {@dice 4d4} + your spellcasting ability modifier, and you end the latest harmful spell and the latest of the following conditions on the target: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars}, {@condition Charmed},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Frightened}, {@condition Grappled}, {@condition Incapacitated},  {@condition Paralyzed},  {@condition Petrified}, {@condition Poisoned},  {@condition Restrained}, {@condition Stunned}, {@condition Unconscious}, or {@condition Weakness|GuildWars}"
+				"Choose one creature that you can see within range. The target regains hit points equal to {@dice 4d4} + your spellcasting ability modifier, and you end the latest harmful spell and the latest harmful condition on the target."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -84002,6 +84148,16 @@
 			"miscTags": [
 				"SGT",
 				"TP"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the range restriction of the spell increases by 1000 feet for each slot level above 2nd.",
+						"When you cast this spell using a spell slot of 7th level or higher, you do not need to be on the same plane of existence to teleport back."
+					]
+				}
 			]
 		},
 		{
@@ -85276,7 +85432,7 @@
 			"entries": [
 				"{@bold Elite}",
 				"Relive the burden of yourself and an ally.",
-				"Choose one creature, other than yourself, that you can see within range. You and the target regain 5 hit points, and you end the latest harmful spell and the latest of the following conditions on yourself and the target: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars}, {@condition Charmed},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Frightened}, {@condition Grappled}, {@condition Incapacitated},  {@condition Paralyzed},  {@condition Petrified}, {@condition Poisoned},  {@condition Restrained}, {@condition Stunned}, {@condition Unconscious}, or {@condition Weakness|GuildWars}"
+				"Choose one creature, other than yourself, that you can see within range. You and the target regain 5 hit points, and you end the latest harmful spell and the latest harmful condition on yourself and the target."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -88979,7 +89135,7 @@
 			"entries": [
 				"{@bold Elite}, {@bold Enchantment} ",
 				"Sheath a creature in a reversing aura.",
-				"Choose one friendly creature that you can see within range. End the latest two of the following conditions on the target: {@condition Bleeding|GuildWars}, {@condition Blinded}, {@condition Burning|GuildWars}, {@condition Charmed},  {@condition Corruption|GuildWars}, {@condition Cracked Armor|GuildWars}, {@condition Crippled|GuildWars}, {@condition Dazed|GuildWars}, {@condition Deafened}, {@condition Deep Wound|GuildWars}, {@condition Disease|GuildWars}, {@condition Frightened}, {@condition Grappled}, {@condition Incapacitated},  {@condition Paralyzed},  {@condition Petrified}, {@condition Poisoned},  {@condition Restrained}, {@condition Stunned}, {@condition Unconscious}, or {@condition Weakness|GuildWars}. Additionally, for the duration, the next time the target takes damage, you can roll {@dice 2d6} and subtract the number rolled from the damage and the target regains hit points equal to the number rolled."
+				"Choose one friendly creature that you can see within range. End the latest two harmful conditions on the target. Additionally, for the duration, the next time the target takes damage, you can roll {@dice 2d6} and subtract the number rolled from the damage and the target regains hit points equal to the number rolled."
 			],
 			"source": "GuildWars",
 			"components": {
@@ -90562,7 +90718,7 @@
 		},
 		{
 			"name": "Signet of Spirits",
-			"level": 2,
+			"level": 4,
 			"school": "N",
 			"time": [
 				{
@@ -90781,7 +90937,139 @@
 				"v": true
 			},
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "xua2025eberronupdates"
+						},
+						"subclass": {
+							"name": "Armorer",
+							"shortName": "Armorer",
+							"source": "xua2025eberronupdates"
+						}
+					},
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "xua2025eberronupdates"
+						},
+						"subclass": {
+							"name": "Battle smith",
+							"shortName": "Battle Smith",
+							"source": "xua2025eberronupdates"
+						}
+					},
+					{
+						"class": {
+							"name": "Bard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Collage of swords",
+							"shortName": "Swords",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Inquisition domain",
+							"shortName": "Inquisition",
+							"source": "GrimHollowPlayerPack"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "War domain",
+							"shortName": "War",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Illrigger",
+							"source": "IllriggerRevised"
+						},
+						"subclass": {
+							"name": "Architect of ruin",
+							"shortName": "Architect of Ruin",
+							"source": "IllriggerRevised"
+						}
+					},
+					{
+						"class": {
+							"name": "Psion",
+							"source": "xua2025psion"
+						},
+						"subclass": {
+							"name": "Metamorph",
+							"shortName": "Metamorph",
+							"source": "xua2025psion"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "The hexblade",
+							"shortName": "Hexblade",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Bladesinging",
+							"shortName": "Bladesinging",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Eldritch knight",
+							"shortName": "Eldritch Knight",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
 			},
 			"areaTags": [
 				"ST"
@@ -90795,6 +91083,77 @@
 			"savingThrow": [
 				"constitution"
 			]
+		},
+		{
+			"name": "Palm Strike",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon with the light property"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@bold Elite}",
+				"Deliver a palm strike to a creature's legs, crippling them.",
+				"On a hit, the target suffers the weapon attack's normal effects takes {@damage 2d6} damage, is {@condition crippled|GuildWars} for 1 round and this attack counts as an {@background Off-Hand Attack|GuildWars}."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Palm Strike",
+					"Elite Skill. Target touched foe takes 10...54...65 damage and is Crippled for 1...4...5 second[s]. This skill counts as an off-hand attack."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/c/c5/Palm_Strike.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"AAD"
+			],
+			"components": {
+				"v": true
+			},
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Critical Strikes",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			}
 		}
 	],
 	"table": [

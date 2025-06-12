@@ -6077,7 +6077,7 @@
             "entries": [
                 "{@bold Hex}",
                 "Curse a target to suffer each time they are targeted by another spell.",
-                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save for the duration if the target is the target of a spell which requires {@status concentration} or is an Enchantment/Hex, the target takes {@damage 2d10} necrotic damage."
+                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, for the duration, if the target is the target of a {@status Concentration|XPHB} spell, the target takes {@damage 2d10} necrotic damage."
             ],
             "source": "GuildWars",
             "components": {
@@ -16816,7 +16816,8 @@
                 "ST"
             ],
             "miscTags": [
-                "HL"
+                "HL",
+                "SGT"
             ],
             "backgrounds": [
                 {
@@ -16840,9 +16841,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@dice 1d6} for each slot level above 1st."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@dice 3d6} for each slot level above 1st."
                     ]
                 }
             ],
@@ -20668,7 +20669,16 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Weaken Armor",
@@ -24484,7 +24494,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Strength of Honor",
@@ -38657,7 +38670,7 @@
         },
         {
             "name": "Soul Leech",
-            "level": 2,
+            "level": 1,
             "school": "N",
             "time": [
                 {
@@ -38690,14 +38703,11 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 3rd level or higher, the final damage increases by {@dice 1d10} for each slot level above 2nd."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the final damage increases by {@dice 1d10} for each slot level above 1st."
                     ]
                 }
-            ],
-            "damageInflict": [
-                "psychic"
             ],
             "savingThrow": [
                 "wisdom"
@@ -38706,8 +38716,8 @@
                 "ST"
             ],
             "miscTags": [
-                "SGT",
-                "SCL"
+                "HL",
+                "SGT"
             ],
             "components": {
                 "v": true,
@@ -38822,7 +38832,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "necrotic"
+            ]
         },
         {
             "name": "Mantra of Recall",
@@ -39505,14 +39518,13 @@
                     "duration": {
                         "type": "minute",
                         "amount": 1
-                    },
-                    "concentration": true
+                    }
                 }
             ],
             "entries": [
-                "{@bold Elite}",
+                "{@bold Elite}, {@bold Enchantment}, {@bold Sacrifice:} {@dice 2d4}",
                 "Make your attacks rip the souls out of your foes body, dealing more damage but also hurting you every time you attack.",
-                "For the duration, when you make an attack with a weapon, you loose health equal to {@dice 2d4}. Additionally, your weapon attacks deal an additional {@damage 4d6} necrotic damage."
+                "For the duration, when you make an attack with a weapon, you sacrifice health equal to {@dice 2d4}. Additionally, your weapon attacks deal an additional {@damage 4d8} necrotic damage."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -39546,6 +39558,14 @@
                 {
                     "name": "Elite",
                     "source": "GuildWars"
+                },
+                {
+                    "name": "Sacrifice",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Enchantment",
+                    "source": "GuildWars"
                 }
             ],
             "components": {
@@ -39558,9 +39578,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 6th level or higher, the additional weapon damage increases by {@dice 1d6} for each slot level above 5th."
+                        "When you cast this spell using a spell slot of 6th level or higher, the additional weapon damage increases by {@dice 2d8} for each slot level above 5th."
                     ]
                 }
             ],
@@ -39614,7 +39634,16 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "necrotic"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "AAD"
+            ]
         },
         {
             "name": "Mantra of Recovery",
@@ -56061,9 +56090,6 @@
                     }
                 ]
             },
-            "damageInflict": [
-                "psychic"
-            ],
             "components": {
                 "v": true,
                 "s": true
@@ -56129,7 +56155,13 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "radiant"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Unholy Feast",
@@ -66906,7 +66938,13 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "AAD"
+            ]
         },
         {
             "name": "Disrupting Throw",
@@ -69040,6 +69078,16 @@
                         "When you cast this spell using a spell slot of 2nd level or higher, the radius of the spell increases by 5 feet for each slot level above 1st."
                     ]
                 }
+            ],
+            "savingThrow": [
+                "charisma"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "SGT"
             ]
         },
         {
@@ -73403,7 +73451,7 @@
             "entries": [
                 "{@bold Enchantment}",
                 "Conjure an armor of obsidian slivers around your body, blocking attacks and lashing out around you when attacked.",
-                "For the duration, you have a +3 bonus to AC against weapon attacks and if you are the target of an attack or spell, target one random creature other than you within a 15-foot Emanation. The target takes {@damage 2d6} force damage."
+                "For the duration, you have a +5 bonus to AC against weapon attacks and if you are the target of an attack or spell, target one random hostile creature other than you within a 15-foot Emanation. The target takes {@damage 2d6} force damage."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -73514,7 +73562,16 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "force"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "MAC"
+            ]
         },
         {
             "name": "Signet of Disruption",
@@ -87868,6 +87925,13 @@
                         "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@dice 1d12} for each slot level above 1st."
                     ]
                 }
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
             ]
         },
         {
@@ -91253,6 +91317,195 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "Star Burst",
+            "level": 2,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "{@bold Elite}",
+                "Release a miniature supernova from your hands, incinerating everything.",
+                "You touch a creature. Target each hostile creature in a 20-foot Emanation centered on the target. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 6d6} fire damage and starts {@condition burning|GuildWars} for 1 round, taking {@damage 2d6} damage. On a successful save, a target takes half as much damage, but suffers no other effect.",
+                "If the number of creatures who took damage is equal or greater to the level of the spell slot expended, you regain that spell slot."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Star Burst",
+                    "Elite Spell. Target touched foe and all foes in the area are struck for 7...91...112 fire damage and set on fire for 1...3...4 second[s]. For each foe you hit, gain 2 Energy. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/5/5a/Star_Burst.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elementalist",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Fire Magic",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 2d6} for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Alchemist",
+                            "shortName": "Alchemist",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Artillerist",
+                            "shortName": "Artillerist",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Light domain",
+                            "shortName": "Light",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "damageInflict": [
+                "fire"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "conditionInflict": [
+                "burning|guildwars"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ]
         }
     ],
     "table": [

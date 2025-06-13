@@ -4286,7 +4286,7 @@
             "school": "V",
             "time": [
                 {
-                    "number": 2,
+                    "number": 1,
                     "unit": "round"
                 }
             ],
@@ -40196,7 +40196,7 @@
             "entries": [
                 "{@bold Elite}, {@bold Hex}",
                 "Utter a spiteful curse, hexing a target to damage everything around them every time they attack or cast a spell.",
-                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save for the duration when the target casts a spell or makes an attack roll, target each creature in a 10-foot-radius centered on the target. Each target takes {@damage 3d10} necrotic damage."
+                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save for the duration when the target casts a spell or makes an attack roll, target each hostile creature in a 10-foot-radius centered on the target. Each target takes {@damage 3d10} necrotic damage."
             ],
             "source": "GuildWars",
             "entriesHigherLevel": [
@@ -40209,17 +40209,15 @@
                 }
             ],
             "damageInflict": [
-                "psychic"
-            ],
-            "savingThrow": [
-                "wisdom"
+                "necrotic"
             ],
             "areaTags": [
-                "ST"
+                "ST",
+                "MT",
+                "S"
             ],
             "miscTags": [
-                "SGT",
-                "SCL"
+                "SGT"
             ],
             "components": {
                 "s": true
@@ -40323,7 +40321,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "wisdom"
+            ]
         },
         {
             "name": "Migraine",
@@ -41042,7 +41043,13 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Tainted Flesh",
@@ -42671,7 +42678,17 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "piercing"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ]
         },
         {
             "name": "Word of Healing",
@@ -46701,7 +46718,16 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "charisma"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Illusion of Weakness",
@@ -55315,6 +55341,7 @@
                 }
             ],
             "entries": [
+                "{@bold Hex}",
                 "Make a creature extremely sensitive to the cold, interrupting them every time they take cold damage.",
                 "Choose one creature that you can see within range. For the duration, when the target takes cold damage, the target must make a Constitution saving throw. On a failed save, the target can't cast spells or use abilities until the end of their next turn."
             ],
@@ -55345,6 +55372,10 @@
                 },
                 {
                     "name": "Curses",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Hex",
                     "source": "GuildWars"
                 }
             ],
@@ -55422,7 +55453,13 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "ST"
+            ]
         },
         {
             "name": "Savage Shot",
@@ -56046,7 +56083,16 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "spellAttack": [
+                "R"
+            ]
         },
         {
             "name": "Smite Hex",
@@ -65459,7 +65505,16 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "lightning"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "AAD"
+            ]
         },
         {
             "name": "Berserker Stance",
@@ -78786,7 +78841,7 @@
             "entries": [
                 "Strike a foe with lightning and channel a portion of the energy to heal your spirits.",
                 "Choose one creature that you can see within range. The target must make a Dexterity saving throw. On a failed save, the target takes {@damage 3d6} lightning damage. On a successful save, the target takes half as much damage.",
-                "Target each friendly summoning rituals that you can see within range. A target regains hit points equal to {@dice 2d4}."
+                "Target each friendly summoning ritual that you can see within range. A target regains hit points equal to {@dice 2d4}."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -78830,6 +78885,19 @@
                         "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@dice 1d4} for each slot level above 1st and the damage increases by {@dice 1d6} for each slot level above 1st."
                     ]
                 }
+            ],
+            "damageInflict": [
+                "lightning"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
             ]
         },
         {
@@ -79120,6 +79188,13 @@
                         "When you cast this spell using a spell slot of 3rd level or higher, the healing increases by {@dice 2d8} for each slot level above 2nd."
                     ]
                 }
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
             ]
         },
         {
@@ -79434,6 +79509,19 @@
                         "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@dice 2d6} for each slot level above 5th, and you create an additional rift for every two slot levels above 5th. A creature in the area of more than one rift is affected only once."
                     ]
                 }
+            ],
+            "damageInflict": [
+                "lightning"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "SGT"
             ]
         },
         {
@@ -79695,7 +79783,7 @@
             "entries": [
                 "{@bold Weapon Spell}",
                 "Transform a weapon by giving splinters which fly off in every direction on a hit.",
-                "Choose one friendly creature, which is wielding a weapon, that you can see within range. For the duration, the next two attacks deal an additional {@damage 2d6} piercing damage to all creatures in a 10-foot radius around the attack target, except the creature wielding the weapon."
+                "Choose one friendly creature, which is wielding a weapon, that you can see within range. For the duration, the next two attacks deal an additional {@damage 2d6} piercing damage to all hostile creatures in a 10-foot radius around the attack target."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -81534,7 +81622,13 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "AAD"
+            ]
         },
         {
             "name": "Triple Shot",
@@ -85629,6 +85723,10 @@
                 },
                 {
                     "name": "Hex",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
                     "source": "GuildWars"
                 }
             ],
@@ -91506,6 +91604,117 @@
             "savingThrow": [
                 "dexterity"
             ]
+        },
+        {
+            "name": "Shatter Storm",
+            "level": 1,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Psion",
+                        "source": "xua2025psion"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@bold Elite}",
+                "Bombard a creature with a flurry of magic shattering spikes, removing all beneficial spells from them.",
+                "Choose one creature that you can see within range. All beneficial spells on the target end. If a beneficial spell was ended this way, {@spell Shatter Storm|GuildWars} cannot be used again until N rounds have passed, where N is the number of spells ended."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Shatter Storm",
+                    "Elite Spell. Target foe loses all enchantments. For each enchantment removed this way, Shatter Storm is disabled for an additional 7 seconds."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/5/5e/Shatter_Storm.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Mesmer",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "No Attribute - Mesmer",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "s": true
+            }
         }
     ],
     "table": [

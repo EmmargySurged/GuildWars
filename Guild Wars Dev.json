@@ -2893,6 +2893,164 @@
 				"P",
 				"S"
 			]
+		},
+		{
+			"name": "Lord Khobay",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "GuildWarsDev",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"{@spell Mage Armor}",
+						"Bladesong"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d6 + 15",
+				"average": 67
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 12,
+			"int": 20,
+			"wis": 8,
+			"cha": 12,
+			"passive": 13,
+			"cr": "12",
+			"languages": [
+				"Common",
+				"Krytan"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"int": "+9",
+				"wis": "+3",
+				"con": "+10"
+			},
+			"skill": {
+				"acrobatics": "+8",
+				"arcana": "+13",
+				"deception": "+5",
+				"history": "+9",
+				"perception": "+3"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Lord Khobay is a 15th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 17}, +9 to hit with spell attacks). Lord Khobay has the following Wizard spells prepared:"
+					],
+					"footerEntries": [
+						"*Lord Khobay casts these spells on himself before combat."
+					],
+					"will": [
+						"{@spell booming blade|TCE}",
+						"{@spell mage armor|XPHB}*",
+						"{@spell mage hand|XPHB}",
+						"{@spell misty step|XPHB}",
+						"{@spell shield|XPHB}",
+						"{@spell shock|GuildWars}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell earthquake (guild wars)|GuildWars}",
+							"{@spell power spike|GuildWars}",
+							"{@spell sliver armor|GuildWars}*"
+						],
+						"1e": [
+							"{@spell rodgort's invocation|GuildWars}",
+							"{@spell soul taker|GuildWars}*"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"trait": [
+				{
+					"name": "War Caster",
+					"entries": [
+						"{@bold Concentration.} You have Advantage on Constitution saving throws that you make to maintain {@status Concentration|XPHB}.",
+						"{@bold Reactive Spell.} When a creature provokes an Opportunity Attack from you by leaving your reach, you can take a Reaction to cast a spell at the creature rather than making an Opportunity Attack. The spell must have a casting time of one action and must target only that creature.",
+						"{@bold Somatic Components.} You can perform the Somatic components of spells even when you have weapons or a Shield in one or both hands."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Bladesong",
+					"entries": [
+						"The Bladesong lasts for 1 minute and ends early if you have the {@condition Incapacitated|XPHB} condition, if you don armor or a Shield, or if you use two hands to make an attack with a weapon. You can dismiss the Bladesong at any time (no action required). While the Bladesong is active, you gain the following benefits.",
+						"{@bold Agility.} You gain a bonus to your AC equal to your Intelligence modifier (minimum of +1), and your Speed increases by 10 feet.",
+						"{@bold Bladework.} Whenever you attack with a weapon with which you have proficiency, you can use your Intelligence modifier for the attack and damage rolls instead of using Strength or Dexterity.",
+						"{@bold Focus.} When you make a Constitution saving throw to maintain {@status Concentration|XPHB}, you can add your Intelligence modifier to the total."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Lord Khobay makes three attacks with his Charged Rapier, he can forgo one of these attacks to cast a spell."
+					]
+				},
+				{
+					"name": "{@item Charged Rapier|GriffonsSaddlebag2}",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 6}) piercing damage, plus 2 ({@damage 1d4}) lightning damage, plus {@damage 4d8} necrotic damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Foreman_the_Crier.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Foreman_the_Crier_Token.png"
+			},
+			"damageTags": [
+				"L",
+				"P"
+			],
+			"damageTagsSpell": [
+				"T"
+			]
 		}
 	],
 	"feat": [],

@@ -148,9 +148,9 @@
             "rarity": "Very Rare",
             "entries": [
                 "This special Tome was crafted by Magi Malaquire and entrusted to you. He wants you to 'Capture them all', whatever that means.",
-                "As a reaction, when a hostile boss enemy within 150 feet reaches 0 hit points, or as a magic action, you can cast the {@spell Signet of Capture|GuildWars} spell at using this tome.",
-                "When doing so, you can capture an unlimited number of spells in one casting of {@spell Signet of Capture|GuildWars}, but instead of learning them, they are recorded in this tome. Each spell captured rewards XP individually and can be freely distributed between all creatures holding the tome or a bonded {@item Signet Ring of Signet of Capture|GuildWars}.",
-                "You can also record a spell scroll into this book by spending 1 hour in study. Certain powerful trainers can record spells in this book by spending 1 minute in study.",
+                "As a reaction, when a hostile boss enemy within 150 feet reaches 0 hit points, or as a magic action, you can cast the {@spell Signet of Capture|GuildWars} spell using this tome.",
+                "When doing so, you can capture an unlimited number of spells in one casting of {@spell Signet of Capture|GuildWars}, but instead of learning them, they are recorded in this tome. Each spell captured rewards XP individually and is equally distributed between all creatures holding the tome or a bonded {@item Signet Ring of Signet of Capture|GuildWars}.",
+                "Certain powerful trainers can record spells in this book by spending 1 minute in study.",
                 "When recording a spell in the tome you must spend 25 gp per spell level, which can be drawn from any willing creature holding the tome or a bonded {@item Signet Ring of Signet of Capture|GuildWars}.",
                 "Any creature can learn a spell recorded in this tome, if it is on the creatures spell list, by spending 1 minute in study with the tome per spell level. When doing so, the creature can replace a currently prepared spell with the spell learned from this tome.",
                 "A spell can be learned from this tome an unlimited number of times by any creature holding the tome or a bonded {@item Signet Ring of Signet of Capture|GuildWars}."
@@ -164,7 +164,7 @@
             "entries": [
                 "This special Ring was crafted by Magi Malaquire and entrusted to you. He wants you to 'Capture them all', whatever that means.",
                 "As a reaction, when a hostile boss enemy within 150 feet reaches 0 hit points, or as a magic action, you can cast the {@spell Signet of Capture|GuildWars} spell using this ring.",
-                "When doing so, you can capture an unlimited number of spells in one casting of {@spell Signet of Capture|GuildWars}, but instead of learning them, they are recorded in the {@item Tome of Capture|GuildWars} this ring is bonded to. Each spell captured rewards XP individually and can be freely distribute between all creatures holding the tome or a bonded {@item Signet Ring of Signet of Capture|GuildWars}.",
+                "When doing so, you can capture an unlimited number of spells in one casting of {@spell Signet of Capture|GuildWars}, but instead of learning them, they are recorded in the {@item Tome of Capture|GuildWars} this ring is bonded to. Each spell captured rewards XP individually and is equally distributed between all creatures holding the tome or a bonded {@item Signet Ring of Signet of Capture|GuildWars}.",
                 "When recording a spell in the tome you must spend 25 gp per spell level, which can be drawn from any willing creature holding the tome or a bonded {@item Signet Ring of Signet of Capture|GuildWars}.",
                 "",
                 "As a magic action you can bond this ring to a {@item Tome of Capture|GuildWars}."
@@ -10528,7 +10528,7 @@
             "school": "N",
             "time": [
                 {
-                    "number": 2,
+                    "number": 1,
                     "unit": "round"
                 }
             ],
@@ -22285,7 +22285,7 @@
             "entries": [
                 "{@bold Signet:} Replaced",
                 "Capture the knowledge of a powerful creature by activating your Signet of Capture.",
-                "Choose one hostile dead boss creature, which has not been dead for more than 1 day, that you can see within range. Choose one spell which the target had prepared, that you could learn, and replace this spell with the chosen spell permanently.",
+                "Choose one hostile dead boss creature, which has not been dead for more than 1 day, or spell scroll that you can see within range. Choose one spell which the target had prepared or is inscribed on the scroll, that you could learn and is a Guild Wars spell, and replace this spell with the chosen spell permanently.",
                 "You also gain XP equal to your level * 30 * the level of the spell captured (minimum 30)."
             ],
             "source": "GuildWars",
@@ -46036,7 +46036,8 @@
             ],
             "entries": [
                 "Unleash a psychic scream, disrupting a group of creatures.",
-                "Choose one creature, which is casting a spell or using an ability, that you can see within range. Target each creature other than you in a 15-foot-radius centered on the target.  Each target must make a Charisma saving throw. On a failed save, If the creature is casting a spell of 3rd level or lower or using an ability, the spell/ability fails, has no effect and the creature takes {@damage 2d6} psychic damage. Otherwise, on a failed save, a target can't cast spells or use abilities until the end of their next turn and takes {@damage 2d6} psychic damage."
+                "Choose one creature, which is casting a spell or using an ability, that you can see within range. Target each hostile creature in a 15-foot Emanation centered on the target. Each target must make a Charisma saving throw. On a failed save, if the creature is casting a spell or is using an ability the spell/ability dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted, and the creature takes {@damage 8d6} psychic damage. If that spell was cast with a spell slot, the slot isn't expended. ",
+                "Otherwise, on a failed save, a target can't cast spells or use abilities until the end of their next turn and takes {@damage 4d6} psychic damage."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -87882,7 +87883,7 @@
                 "{@bold Elite}",
                 "Interrupt a foe and create a psychic shockwave on a success, knocking creatures {@condition prone}. ",
                 "Choose one creature, which is casting a spell or using an ability, that you can see within range. The creature makes a Constitution saving throw. On a failed save, the spell/ability dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If that spell was cast with a spell slot, the slot isn't expended.",
-                "If you successfully interrupt a spell this way, each creature in a 15-foot-radius sphere centered on that point must make an Intelligence saving throw. On a failed save, a target takes is knocked {@condition prone}.",
+                "If you successfully interrupt a spell this way, each hostile creature in a 15-foot-radius sphere centered on that point must make an Intelligence saving throw. On a failed save, a target takes is knocked {@condition prone}.",
                 "To stand up from {@condition prone}, a target must first succeed on an Intelligence saving throw or waste its movement in the attempt."
             ],
             "source": "GuildWars",

@@ -16,10 +16,6 @@
 		"dateAdded": 1701938868,
 		"dateLastModified": 1701938868
 	},
-	"spell": [],
-	"table": [],
-	"background": [],
-	"condition": [],
 	"item": [],
 	"monster": [
 		{
@@ -164,7 +160,7 @@
 			]
 		},
 		{
-			"name": "Tav",
+			"name": "Tav (LV 10)",
 			"size": [
 				"M"
 			],
@@ -367,8 +363,225 @@
 				"O",
 				"S"
 			]
+		},
+		{
+			"name": "Tav (LV 11)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Winged Teifling"
+				]
+			},
+			"source": "EmmargySurged",
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"{@item +2 studded leather armor|xdmg}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "80d1",
+				"average": 80
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"str": 9,
+			"dex": 20,
+			"con": 14,
+			"int": 16,
+			"wis": 12,
+			"cha": 14,
+			"passive": 11,
+			"level": 11,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Infernal",
+				"Common Sign Language",
+				"Thieves' cant"
+			],
+			"languageTags": [
+				"C",
+				"I",
+				"TC"
+			],
+			"save": {
+				"dex": "+9",
+				"int": "+7"
+			},
+			"skill": {
+				"acrobatics": "+9",
+				"sleight of hand": "+9",
+				"stealth": "+13",
+				"arcana": "+11",
+				"history": "+11",
+				"investigation": "+11",
+				"religion": "+11",
+				"initiative": "+9"
+			},
+			"resist": [
+				"fire",
+				"poison"
+			],
+			"damageTagsSpell": [
+				"N"
+			],
+			"trait": [
+				{
+					"name": "Sneak Attack",
+					"entries": [
+						"You know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra {@damage 6d6} damage to one creature you hit with an attack roll if you have Advantage on the roll and the attack uses a Finesse or a Ranged weapon. The extra damage's type is the same as the weapon's type.",
+						"You don't need Advantage on the attack roll if at least one of your allies is within 5 feet of the target, the ally doesn't have the {@condition Incapacitated|XPHB} condition, and you don't have Disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Weapon Mastery",
+					"entries": [
+						"Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency. Whenever you finish a Long Rest, you can change the kinds of weapons you chose.",
+						"Whip",
+						"Shortbow"
+					]
+				},
+				{
+					"name": "Bloodthirst",
+					"entries": [
+						"If your Sneak Attack hits a Bloodied creature, the target takes extra damage of the weapon's type equal to half your Rogue level (round up)."
+					]
+				},
+				{
+					"name": "Dread Allegiance",
+					"entries": [
+						"Choose one of the Dead Three: Bane, Bhaal, or Myrkul. You gain Resistance to one type of damage and the ability to cast a cantrip, as detailed in the table below; Intelligence is your spellcasting ability for this cantrip. When you finish a Long Rest, you can change your choice.",
+						"Bane: Psychic, {@spell Minor Illusion}",
+						"Bhaal: Poison, {@spell Blade Ward}",
+						"Myrkul: Necrotic, {@spell Chill Touch}"
+					]
+				},
+				{
+					"name": "Cunning Strike",
+					"entries": [
+						"You've developed cunning ways to use your Sneak Attack. When you deal Sneak Attack damage, you can add one of the following Cunning Strike effects. Each effect has a die cost, which is the number of Sneak Attack damage dice you must forgo to add the effect. You remove the die before rolling, and the effect occurs immediately after the attack's damage is dealt. ",
+						"If a Cunning Strike effect requires a saving throw, the DC equals 8 plus your Dexterity modifier and Proficiency Bonus.",
+						"Poison (Cost: {@dice 1d6}). You add a toxin to your strike, forcing the target to make a Constitution saving throw. On a failed save, the target has the {@condition Poisoned|XPHB} condition for 1 minute. At the end of each of its turns, the {@condition Poisoned|XPHB} target repeats the save, ending the effect on itself on a success.",
+						"To use this effect, you must have a Poisoner's Kit on your person.",
+						"Trip (Cost: {@dice 1d6}). If the target is Large or smaller, it must succeed on a Dexterity saving throw or have the {@condition Prone|XPHB} condition.",
+						"Withdraw (Cost: {@dice 1d6}). Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"You can nimbly dodge out of the way of certain dangers. When you're subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can't use this feature if you have the {@condition Incapacitated|XPHB} condition."
+					]
+				},
+				{
+					"name": "Reliable Talent",
+					"entries": [
+						"Whenever you make an ability check that uses one of your skill or tool proficiencies, you can treat a {@dice d20} roll of 9 or lower as a 10."
+					]
+				},
+				{
+					"name": "Strike Fear",
+					"entries": [
+						"You gain the following Cunning Strike option.",
+						"Terrify (Cost: {@dice 1d6}). The target must succeed on a Wisdom saving throw, or it has the {@condition Frightened|XPHB} condition for 1 minute. The {@condition Frightened|XPHB} target repeats the save at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Alert",
+					"entries": [
+						"When you roll Initiative, you can add your Proficiency Bonus to the roll.",
+						"Immediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can't make this swap if you or the ally has the {@condition Incapacitated|XPHB} condition."
+					]
+				},
+				{
+					"name": "Improved Cunning Strike",
+					"entries": [
+						"You can use up to two Cunning Strike effects when you deal Sneak Attack damage, paying the die cost for each effect."
+					]
+				}
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"bonus": [
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"Your quick thinking and agility allow you to move and act quickly. On your turn, you can take one of the following actions as a Bonus Action: Dash, Disengage, or Hide."
+					]
+				},
+				{
+					"name": "Steady Aim",
+					"entries": [
+						"As a Bonus Action, you give yourself Advantage on your next attack roll on the current turn. You can use this feature only if you haven't moved during this turn, and after you use it, your Speed is 0 until the end of the current turn."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Bloodthirst",
+					"entries": [
+						"In addition, when an enemy you can see is reduced to 0 Hit Points, you can take a Reaction and teleport to an unoccupied space you can see within 30 feet of yourself. You can then make one melee attack. You can use this Reaction a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest."
+					]
+				},
+				{
+					"name": "Uncanny Dodge",
+					"entries": [
+						"When an attacker that you can see hits you with an attack roll, you can take a Reaction to halve the attack's damage against you (round down)."
+					]
+				}
+			],
+			"conditionInflict": [
+				"frightened",
+				"incapacitated",
+				"poisoned"
+			],
+			"action": [
+				{
+					"name": "{@item Gelatinous Whip|GriffonsSaddlebag2}",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 15 ft., one target. {@h}7 ({@damage 1d4 + 5}) slashing damage, plus 2 ({@damage 1d4}) acid damage."
+					]
+				},
+				{
+					"name": "{@item Bow of the Eldritch Archer|GriffonsSaddlebag2}",
+					"entries": [
+						"{@atk rw} {@hit 9} to hit, range 80/300 ft., one target. {@h}10 ({@damage 1d10 + 5}) force damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"MLW",
+				"RW"
+			],
+			"damageTags": [
+				"A",
+				"O",
+				"S"
+			]
 		}
 	],
+	"feat": [],
+	"spell": [],
+	"table": [],
+	"background": [],
+	"condition": [],
 	"legendaryGroup": [],
 	"race": [],
 	"raceFluff": [],

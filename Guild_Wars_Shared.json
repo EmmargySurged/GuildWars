@@ -10827,7 +10827,7 @@
             "entries": [
                 "{@bold Stance}",
                 "Enhance your physical defense at the cost of becoming vulnerable to elemental damage.",
-                "For the duration, you have resistance to bludgeoning, piercing and slashing damage, but have vulnerability to acid, cold, fire, lightning, and thunder damage."
+                "For the duration, you have resistance to bludgeoning, piercing and slashing damage, but have vulnerability to acid, cold, fire, force, lightning, and thunder damage."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -14452,7 +14452,7 @@
             ],
             "entries": [
                 "Cause an eruption of dust and rocks at a location of your choosing.",
-                "Choose a point that you can see within range. For the duration, you create a 15-foot-radius, 60-foot-high cylinder centered on that point. Each creature in that Cylinder must make a Constitution saving throw. On a failed save, a target takes {@damage 4d6} bludgeoning damage and is {@condition blinded} for 1 minute. On a successful save, a target takes half as much damage, but suffers no other effect. A creature also makes this save if it enters the Cylinder or ends its turn there, or if the Cylinder move into its space. A creature makes this save only once per turn.",
+                "Choose a point that you can see within range. For the duration, you create a 15-foot-radius, 60-foot-high cylinder centered on that point. Each creature in that Cylinder must make a Constitution saving throw. On a failed save, a target takes {@damage 4d6} force damage and is {@condition blinded} for 1 minute. On a successful save, a target takes half as much damage, but suffers no other effect. A creature also makes this save if it enters the Cylinder or ends its turn there, or if the Cylinder move into its space. A creature makes this save only once per turn.",
                 "On your later turns, you can take a {@action Magic|XPHB} action to teleport the Cylinder up to 30 feet.",
                 "At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
             ],
@@ -14473,7 +14473,7 @@
                 ]
             },
             "damageInflict": [
-                "bludgeoning"
+                "force"
             ],
             "savingThrow": [
                 "constitution"
@@ -18434,7 +18434,7 @@
             "entries": [
                 "{@bold Stance}",
                 "Enhance your elemental defense at the cost of becoming vulnerable to physical damage.",
-                "For the duration, you have resistance to acid, cold, fire, lightning and thunder damage, but you have vulnerability to bludgeoning, piercing and slashing damage."
+                "For the duration, you have resistance to acid, cold, fire, force, lightning and thunder damage, but you have vulnerability to bludgeoning, piercing and slashing damage."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -23408,7 +23408,16 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "strength"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "AAD"
+            ]
         },
         {
             "name": "Overbearing Smash",
@@ -23988,7 +23997,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST"
+            ]
         },
         {
             "name": "Watch Yourself!",
@@ -24543,6 +24555,7 @@
                 ]
             },
             "miscTags": [
+                "SGT",
                 "AAD"
             ],
             "backgrounds": [
@@ -24615,7 +24628,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST"
+            ]
         },
         {
             "name": "Vital Blessing",
@@ -25541,7 +25557,7 @@
             ],
             "entries": [
                 "Conjure a ward at your location, protecting your allies from elemental damage.",
-                "Conjure a 20-foot radius stationary ward at your location for the duration and choose any number of creatures. When a target takes acid, cold, fire, lightning, or thunder damage, if the target is in the radius of the spell, you can roll {@dice 2d6} and subtract the number rolled from the damage."
+                "Conjure a 20-foot radius stationary ward at your location for the duration and choose any number of creatures. When a target takes acid, cold, fire, force, lightning, or thunder damage, if the target is in the radius of the spell, you can roll {@dice 2d6} and subtract the number rolled from the damage."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -26320,7 +26336,7 @@
             "entries": [
                 "{@bold Summoning Ritual:} {@creature Nature Ritual|GuildWars}",
                 "Call forth a spirit of winter, which converts all elemental damage to cold damage.",
-                "Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit and takes acid, fire, lightning or thunder damage, they take cold damage instead."
+                "Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit and takes acid, fire, force, lightning or thunder damage, they take cold damage instead."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -31078,9 +31094,6 @@
                     "source": "GuildWars"
                 }
             ],
-            "areaTags": [
-                "MT"
-            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -31153,7 +31166,17 @@
                         }
                     }
                 ]
-            }
+            },
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
+            ]
         },
         {
             "name": "Drain Enchantment",
@@ -32088,7 +32111,7 @@
             ],
             "entries": [
                 "Hurl a large stone at a creature, potentially knocking them {@condition prone} if they are weak.",
-                "Choose one creature that you can see within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 4d6} bludgeoning damage and if the target is {@condition weakness|GuildWars|weakened} is knocked {@condition prone}."
+                "Choose one creature that you can see within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 4d6} force damage and if the target is {@condition weakness|GuildWars|weakened} is knocked {@condition prone}."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -32126,7 +32149,7 @@
             },
             "conditionInflict": [
                 "prone",
-                "weakness|guildwars|weakened"
+                "weakness|guildwars"
             ],
             "entriesHigherLevel": [
                 {
@@ -32199,7 +32222,19 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "force"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Together as One!",
@@ -42306,7 +42341,7 @@
             "entries": [
                 "{@bold Elite}",
                 "Conjure a watery ward at your location, protecting your allies from damage and healing them every turn.",
-                "Conjure a 20-foot radius stationary ward at your location for the duration and choose any number of creatures. When a target takes acid, cold, fire, lightning, or thunder damage, if the target is in the radius of the spell, you can roll {@dice 2d6} and subtract the number rolled from the damage. ",
+                "Conjure a 20-foot radius stationary ward at your location for the duration and choose any number of creatures. When a target takes acid, cold, fire, force, lightning, or thunder damage, if the target is in the radius of the spell, you can roll {@dice 2d6} and subtract the number rolled from the damage. ",
                 "Additionally, when a target takes damage, if the target is in the radius of the spell, you can roll {@dice 2d6} and subtract the number rolled from the damage. ",
                 "Also, each friendly creature regains hit points equal to {@dice 2d6} + your spellcasting ability modifier when it enters the ward's area for the first time on a turn or starts its turn there."
             ],
@@ -56697,7 +56732,7 @@
             ],
             "entries": [
                 "Conjure two stone daggers and hurl them at a creature, inflicting {@condition bleeding|GuildWars} if you are {@condition overcast|GuildWars}.",
-                "Choose one creature that you can see within range. Make two ranged spell attack against the target. On a hit, the target takes {@damage 1d12} piercing damage.",
+                "Choose one creature that you can see within range. Make two ranged spell attack against the target. On a hit, the target takes {@damage 1d12} force damage.",
                 "{@bold Overcast:}. Additionally, the target must make a Constitution saving throw. On a failed save, the target starts {@condition bleeding|GuildWars} for 1 round, taking {@damage 1d4} damage."
             ],
             "source": "GuildWars",
@@ -56811,7 +56846,23 @@
                         }
                     }
                 ]
-            }
+            },
+            "damageInflict": [
+                "force",
+                "slashing"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         },
         {
             "name": "Sympathetic Visage",
@@ -57242,7 +57293,7 @@
             "entries": [
                 "{@bold Stance}",
                 "Channel elemental energy throughout your body, imbuing it with unnatural speed.",
-                "For the duration, your speed is increased by 25% and when you take acid, cold, fire, lightning, or thunder damage, your initiative gets increased by {@dice 1d4}."
+                "For the duration, your speed is increased by 25% and when you take acid, cold, fire, force, lightning, or thunder damage, your initiative gets increased by {@dice 1d4}."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -57333,7 +57384,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "areaTags": [
+                "ST"
+            ]
         },
         {
             "name": "Thrill of Victory",
@@ -64723,7 +64777,7 @@
             "entries": [
                 "{@bold Stance}",
                 "Channel the magical defenses of dryder's, increasing your armor against attacks and taking less damage from elemental damage.",
-                "For the duration, you have a +5 bonus to AC against weapon attacks and when you take acid, cold, fire, lightning, or thunder damage, you can roll {@dice 2d6} and subtract the number rolled from the damage. "
+                "For the duration, you have a +5 bonus to AC against weapon attacks and when you take acid, cold, fire, force, lightning, or thunder damage, you can roll {@dice 2d6} and subtract the number rolled from the damage. "
             ],
             "source": "GuildWars",
             "fluff": {
@@ -91715,6 +91769,100 @@
             "components": {
                 "s": true
             }
+        },
+        {
+            "name": "Withdraw Hexes",
+            "level": 3,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "entries": [
+                "{@bold Elite}",
+                "Gently ease the suffering of a group of allies.",
+                "Choose a point that you can see within range. Target each friendly creature in a 10-foot-radius sphere centered on that point. All harmful {@status Concentration|XPHB} spells on a target end. If a harmful spell was ended this way, {@spell Withdraw Hexes|GuildWars} cannot be used again until N rounds have passed, where N is the number of spells ended."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Withdraw Hexes",
+                    "Elite Spell. Remove all hexes from target ally and all adjacent allies. This spell takes an additional 20...8...5 seconds to recharge for each hex removed in this way."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/8/85/Withdraw_Hexes.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "backgrounds": [
+                {
+                    "name": "The Jade Sea",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Monk",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Divine Favor",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the radius of the spell increases by 5 feet for each slot level above 3rd."
+                    ]
+                }
+            ]
         }
     ],
     "table": [

@@ -1,13 +1,45 @@
 @echo off
 rem -----------------------------------------------------------
-rem  setup_gh_prereqs_windows_fixed.bat
+rem  gh_aftersession_update_windows.bat
 rem -----------------------------------------------------------
 
 set "DIRNAME=%USERPROFILE%\privat\DnD\GuildWars"
 set "FILENAME=Character Sheets\Character - Faze Coremaker.pdf"
 
-cd "%DIRNAME%"
-git pull || exit /b 1
-git add "%DIRNAME%\%FILENAME%" || exit /b 1
-git commit -m "After Session update" || exit /b 1
-git push || exit /b 1
+rem ---------- Vorbedingungen prüfen ----------
+where git >nul 2>&1 || (echo [FEHLER] Git nicht gefunden & exit /b 1)
+gh auth status --hostname github.com >nul 2>&1 || (
+    echo [INFO] Nicht eingeloggt - bitte gh auth login ausführen.
+    exit /b 1
+)
+
+if not exist "%DIRNAME%" (
+    echo [FEHLER] Verzeichnis "%DIRNAME%" existiert nicht & exit /b 1
+)
+
+rem ---------- In Repo wechseln (und später sauber zurück) ----------
+pushd "%DIRNAME%"
+if errorlevel 1 (echo [FEHLER] Kein Zugriff auf "%DIRNAME%" & popd & exit /b 1)
+
+rem ---------- Sicherstellen, dass wir *wirklich* in einem Git-Repo sind ----------
+git rev-parse --is-inside-work-tree >nul 2>&1 || (
+    echo [FEHLER] "%DIRNAME%" ist kein Git-Repository.
+    popd & exit /b 1
+)
+
+rem ---------- Änderungen committen – nur falls nötig ----------
+git pull || (popd & exit /b 1)
+
+rem Prüfen, ob es Änderungen an der Datei gibt
+git diff-index --quiet HEAD -- "%FILENAME%"
+if errorlevel 1 (
+    git add "%FILENAME%" || (popd & exit /b 1)
+    set "MSG=After Session update %DATE% %TIME%"
+    git commit -m "%MSG%" || (popd & exit /b 1)
+    git push || (popd & exit /b 1)
+) else (
+    echo [INFO] Keine Aenderungen - nichts zu committen.
+)
+
+popd
+endlocal

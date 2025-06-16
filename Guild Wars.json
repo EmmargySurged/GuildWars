@@ -9324,7 +9324,10 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Disrupting Chop",
@@ -32415,7 +32418,14 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"MT"
+			],
+			"miscTags": [
+				"HL",
+				"AAD"
+			]
 		},
 		{
 			"name": "Aura of the Lich",
@@ -41180,7 +41190,7 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "minute",
+						"type": "hour",
 						"amount": 1
 					}
 				}
@@ -41317,7 +41327,19 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Panic",
@@ -41624,7 +41646,22 @@
 						}
 					}
 				]
-			}
+			},
+			"savingThrow": [
+				"dexterity",
+				"constitution"
+			],
+			"damageInflict": [
+				"lightning",
+				"thunder"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Punishing Shot",
@@ -43160,9 +43197,9 @@
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
-					"name": "At Higher Levels",
+					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"When you cast this spell using a spell slot of 9th level, the duration increases to 1 hour."
+						"When you cast this spell using a spell slot of 9th level or higher, the duration increases to 1 hour."
 					]
 				}
 			],
@@ -43220,7 +43257,10 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"MT"
+			]
 		},
 		{
 			"name": "Water Trident",
@@ -49766,7 +49806,14 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			]
 		},
 		{
 			"name": "Symbiosis",
@@ -50682,7 +50729,17 @@
 						}
 					}
 				]
-			}
+			},
+			"spellAttack": [
+				"M"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Desperation Blow",
@@ -57494,8 +57551,9 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
 			],
 			"range": {
@@ -57512,7 +57570,7 @@
 			],
 			"entries": [
 				"You gloat over a creature, gaining adrenaline if you have more health than them.",
-				"Choose one creature that you can see within range of your weapon. Make a melee weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d8} damage and if you have more hit points than the target, you gain {@dice 1d4} strikes of adrenaline."
+				"On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d8} damage and if you have more hit points than the target, you gain {@dice 1d4} strikes of adrenaline."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -57554,15 +57612,6 @@
 				{
 					"name": "Tactics",
 					"source": "GuildWars"
-				}
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for every two slot levels above 1st. "
-					]
 				}
 			],
 			"classes": {
@@ -59069,7 +59118,13 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"HL"
+			]
 		},
 		{
 			"name": "Earthquake (Guild Wars)",
@@ -74959,6 +75014,9 @@
 						"When you cast this spell using a spell slot of 3rd level or higher, the duration increases by 1 round for each slot level above 1st."
 					]
 				}
+			],
+			"areaTags": [
+				"MT"
 			]
 		},
 		{
@@ -75646,7 +75704,7 @@
 			],
 			"entries": [
 				"Conjure a ward at your location, projecting the legendary heat of the Canthan hero Teinai.",
-				"Conjure a 20-foot radius stationary ward at your location for the duration and choose any number of creatures. Each non-chosen creature takes {@damage 4d4} fire damage when it enters the spell's area for the first time on a turn or starts its turn there. Additionally, non-chosen creatures, who are in the spell's area and are {@condition weakness|GuildWars|weakened}, can take either an action or a Bonus Action, not both, and it can make only one attack if it takes the Attack action."
+				"Conjure a 20-foot radius stationary ward at your location for the duration and choose any number of creatures. Each non-chosen creature takes {@damage 4d4} fire damage when it enters the spell's area for the first time on a turn or starts its turn there. Additionally, non-chosen creatures, who are in the spell's area and are {@condition weakness|GuildWars|weakened}, can take either an action or a Bonus Action, not both, and can make only one attack if they take the Attack action."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -75789,7 +75847,14 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"fire"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			]
 		},
 		{
 			"name": "Teinai's Wind",
@@ -75867,7 +75932,7 @@
 			},
 			"entries": [
 				"Conjure up the twin winds of Teinai, chilling and potentially disrupting and immolating {@condition burning|GuildWars} creatures.",
-				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 2d6} cold damage. If a target was {@condition burning|GuildWars}, the target takes an additional {@damage 2d8} fire damage and has disadvantage on attack roll until the end of their next turn. On a successful save, a target takes half as much damage."
+				"Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 2d6} cold damage. If a target was {@condition burning|GuildWars}, the target takes an additional {@damage 2d8} fire damage and has disadvantage on attack rolls until the end of their next turn. On a successful save, a target takes half as much damage."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -75910,6 +75975,20 @@
 						"When you cast this spell using a spell slot of 2nd level or higher, the cold damage and the fire damage increases by {@dice 1d6} and {@dice 1d8} respectively for each slot level above 1st."
 					]
 				}
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"damageInflict": [
+				"cold",
+				"fire"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"SGT"
 			]
 		},
 		{
@@ -80247,17 +80326,8 @@
 					}
 				]
 			},
-			"spellAttack": [
-				"M"
-			],
-			"savingThrow": [
-				"strength"
-			],
 			"areaTags": [
 				"ST"
-			],
-			"miscTags": [
-				"AAD"
 			],
 			"components": {
 				"v": true
@@ -80395,7 +80465,16 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"slashing"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"AAD"
+			]
 		},
 		{
 			"name": "Union",
@@ -82078,7 +82157,6 @@
 				"ST"
 			],
 			"miscTags": [
-				"SGT",
 				"AAD"
 			],
 			"backgrounds": [
@@ -92305,7 +92383,55 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Illrigger",
+							"source": "IllriggerRevised"
+						},
+						"subclass": {
+							"name": "Architect of ruin",
+							"shortName": "Architect of Ruin",
+							"source": "IllriggerRevised"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Eldritch knight",
+							"shortName": "Eldritch Knight",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
 			},
 			"entries": [
 				"{@bold Elite}, {@bold Hex}, {@bold Sacrifice:} 10%",
@@ -92368,6 +92494,88 @@
 						"When you cast this spell using a spell slot of 10th level or higher, you can target one additional creature for each slot level above 9th."
 					]
 				}
+			]
+		},
+		{
+			"name": "Melandru's Shot",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Ranged weapon"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Elite}",
+				"Invoke the vine wrath of Melandru with your next shot.",
+				"On a hit, the target suffers the weapon attack's normal effects, starts {@condition bleeding|GuildWars} for the duration, taking {@damage 3d4} damage and if the target willingly moved on its last turn or is {@condition prone}, the target takes an additional {@damage 2d6} damage and is also {@condition crippled|GuildWars} for the duration.",
+				"At the end of each of its turns, the target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Melandru's Shot",
+					"Elite Bow Attack. If Melandru's Shot hits, your target begins Bleeding for 5...21...25 seconds. If it hits a foe that is moving or knocked down, that foe takes +10...22...25 damage and is Crippled for 5...13...15 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/a/ac/Melandru%27s_Shot.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "The Jade Sea",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Marksmanship",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true
+			},
+			"classes": {
+				"fromClassList": []
+			},
+			"areaTags": [
+				"ST"
+			],
+			"conditionInflict": [
+				"crippled|guildwars"
+			],
+			"damageInflict": [
+				"slashing"
+			],
+			"miscTags": [
+				"AAD"
 			]
 		}
 	],

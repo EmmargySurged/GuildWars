@@ -42153,7 +42153,14 @@
                     }
                 ],
                 "fromSubclass": []
-            }
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL",
+                "TP"
+            ]
         },
         {
             "name": "Well of Power",
@@ -56436,10 +56443,7 @@
                 ]
             },
             "damageInflict": [
-                "cold"
-            ],
-            "savingThrow": [
-                "dexterity"
+                "necrotic"
             ],
             "areaTags": [
                 "MT",
@@ -56544,7 +56548,13 @@
                         }
                     }
                 ]
-            }
+            },
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "HL"
+            ]
         },
         {
             "name": "Scavenger Strike",
@@ -80523,10 +80533,10 @@
                 ]
             },
             "areaTags": [
-                "MT",
-                "S"
+                "MT"
             ],
             "miscTags": [
+                "SMN",
                 "AAD"
             ],
             "backgrounds": [
@@ -80626,12 +80636,6 @@
                     }
                 ]
             },
-            "spellAttack": [
-                "M"
-            ],
-            "savingThrow": [
-                "constitution"
-            ],
             "areaTags": [
                 "ST"
             ],
@@ -80768,7 +80772,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "miscTags": [
+                "AAD"
+            ]
         },
         {
             "name": "Vengeful Weapon",
@@ -92675,6 +92682,120 @@
             ],
             "miscTags": [
                 "AAD"
+            ]
+        },
+        {
+            "name": "Soul Twisting",
+            "level": 5,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "School of necromancy",
+                            "shortName": "Necromancy",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@bold Elite}",
+                "Twist the souls of the creatures summoned by your Summoning Rituals, reducing the burden on yourself.",
+                "For the duration, when you cast a spell which summons/creates a creature, you can cast that spell by using a spell slot which is {@dice 1d4} levels lower than required (minimum 1). The creature summoned/created this way still treats the spell slot used as the original one for the purpose of determining its stat block.",
+                "Additionally, you can take any {@action Magic|XPHB} Action which summons/creates creatures as a bonus action. "
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Soul Twisting",
+                    "Elite Skill. For 5...37...45 seconds, your Binding Rituals cost 15 less Energy (minimum 10) and recharge instantly. Soul Twisting ends after 1...3...3 Binding Ritual[s]."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/2/24/Soul_Twisting.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Echovald Forest",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Ritualist",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Spawning Power",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "s": true,
+                "m": {
+                    "text": "a knotted rope made of spirit fiber worth 750+ GP",
+                    "cost": 75000
+                }
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th level or higher, the spell slot reduction increases by 1 for each slot level above 5th."
+                    ]
+                }
             ]
         }
     ],

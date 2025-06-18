@@ -20901,7 +20901,7 @@
 			"entries": [
 				"{@bold Elite}",
 				"Inflict multiple conditions on a creature already suffering from a condition.",
-				"Choose one creature that you can see within range. The target must make a Constitution saving throw. On a failed save for the duration, if the target is suffering from a harmful condition, the target is {@condition Weakness|GuildWars|weakened}, is {@condition corruption|GuildWars|corrupted} taking {@damage 4d6} damage and is {@condition disease|GuildWars|diseased} taking {@damage 6d4} damage.",
+				"Choose one creature that you can see within range. If the target is suffering from a harmful condition, it must make a Constitution saving throw. On a failed save, for the duration, the target is {@condition Weakness|GuildWars|weakened}, is {@condition corruption|GuildWars|corrupted} taking {@damage 4d6} damage and is {@condition disease|GuildWars|diseased} taking {@damage 6d4} damage.",
 				"At the end of each of its turns, the target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends."
 			],
 			"source": "GuildWars",
@@ -24779,7 +24779,14 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			]
 		},
 		{
 			"name": "Shadow of Fear",
@@ -27922,7 +27929,14 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			]
 		},
 		{
 			"name": "Well of Blood",
@@ -35281,7 +35295,14 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			]
 		},
 		{
 			"name": "Greater Conflagration",
@@ -62687,7 +62708,11 @@
 					}
 				],
 				"fromSubclass": []
-			}
+			},
+			"miscTags": [
+				"HL",
+				"SGT"
+			]
 		},
 		{
 			"name": "Signet of Agony",
@@ -65167,7 +65192,7 @@
 			],
 			"entries": [
 				"Channel the master necromancer Verata and gain control of an undead minion.",
-				"Choose one undead creature, which has been created by a spell or an ability, that you can see within range. The target must make a Wisdom saving throw. On a failed save, the target becomes friendly to you.",
+				"Choose one undead creature, which has been created by a spell or an ability, that you can see within range. The target must make a Wisdom saving throw. On a failed save, the target becomes friendly to you and your allies and hostile towards its original creator and their allies.",
 				"The amount of targets you can target with this spell increases by 1 when you reach 5th level (2), 11th level (3), and 17th level (4)."
 			],
 			"source": "GuildWars",
@@ -65298,7 +65323,13 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Verata's Aura",
@@ -65311,7 +65342,7 @@
 				}
 			],
 			"range": {
-				"type": "point",
+				"type": "emanation",
 				"distance": {
 					"type": "feet",
 					"amount": 20
@@ -65329,7 +65360,7 @@
 			"entries": [
 				"{@bold Sacrifice} 33%",
 				"Suffuse an area around you with the commanding presence of Verata, the master Necromancer, and gain control of all undead minions.",
-				"Choose any number of undead creatures, which have been created by a spell or an ability, that you can see within range. Each target must make a Wisdom saving throw. On a failed save, a target becomes friendly to you for the duration."
+				"Choose any number of hostile undead creatures, which have been created by a spell or an ability, that you can see within range. Each target must make a Wisdom saving throw. On a failed save, for the duration, a target becomes friendly to you and your allies and hostile towards its original creator and their allies."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -65450,7 +65481,17 @@
 						}
 					}
 				]
-			}
+			},
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Energizing Wind",
@@ -69672,15 +69713,15 @@
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "self"
+					"type": "sight"
 				}
 			},
 			"duration": [
 				{
 					"type": "timed",
 					"duration": {
-						"type": "round",
-						"amount": 2
+						"type": "minute",
+						"amount": 1
 					}
 				}
 			],
@@ -69760,7 +69801,7 @@
 			"entries": [
 				"{@bold Sacrifice:} 15%",
 				"Channel the devotion to his minions the great Necromancer Verata had, sacrificing yourself to heal them and cleanse them of most conditions. ",
-				"Choose any number of friendly undead creatures, which have been created by a spell or an ability, that you can see. You gain a copy of each harmful conditions on a target. End all copied conditions on a target. Additionally, for the duration at the start of each of a target's turns, a target regains hit points equal to {@dice 4d4}. ",
+				"Choose any number of friendly undead creatures, which have been created by a spell or an ability, that you can see. You gain a copy of each harmful condition on a target. End all copied conditions on a target. Additionally, for the duration at the start of each of a target's turns, a target regains hit points equal to {@dice 4d4}. ",
 				"If a target drops to 0 hit points, this spell ends on them.",
 				"If you cast this spell while you have control over less than 4 friendly undead creatures, which have been created by a spell or an ability, you regain the spell slot expended in the casting."
 			],
@@ -69805,11 +69846,18 @@
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
-					"name": "At Higher Levels",
+					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"When you cast this spell using a spell slot of 4th level or higher, the duration increases by 1 round for each slot level above 3rd."
+						"When you cast this spell using a spell slot of 4th level or higher, the healing increases each by {@dice 2d4} for each slot level above 3rd."
 					]
 				}
+			],
+			"areaTags": [
+				"MT"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
 			]
 		},
 		{
@@ -75510,7 +75558,14 @@
 			],
 			"components": {
 				"v": true
-			}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"HL",
+				"AAD"
+			]
 		},
 		{
 			"name": "Yeti Smash",
@@ -80823,7 +80878,7 @@
 			"entries": [
 				"{@bold Weapon Spell} ",
 				"Temporarily transform a weapon into a vengeful weapon, visibly making its appearance more wicked and punishing anyone damaging the wielder.",
-				"Choose one friendly creature, which is wielding a weapon, that you can see within range. For the duration, the next time the target takes damage from a creature, target that creature. The new target takes {@damage 1d4} necrotic damage, and the old target regains hit points equal to the amount of necrotic damage dealt."
+				"Choose one friendly creature, which is wielding a weapon, that you can see within range. For the duration, the next time the target takes damage from a creature, target that creature. The new target takes {@damage 1d8} necrotic damage, and the old target regains hit points equal to the amount of necrotic damage dealt."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -80866,11 +80921,21 @@
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
-					"name": "At Higher Levels",
+					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d4} for each slot level above 1st."
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d8} for each slot level above 1st."
 					]
 				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
 			]
 		},
 		{
@@ -92770,6 +92835,103 @@
 						"When you cast this spell using a spell slot of 6th level or higher, the spell slot reduction increases by 1 for each slot level above 5th."
 					]
 				}
+			]
+		},
+		{
+			"name": "Seeping Wound",
+			"level": 4,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Elite}, {@bold Hex}",
+				"Magically worsen an already existing wound by making acid start pouring from it. ",
+				"Choose one creature that you can see within range. The target must make a Constitution saving throw. For the duration, the target's speed is reduced by 33%, and at the start of each of the target's turns, if the target is suffering from at least one harmful condition, the target takes {@damage 8d4} acid damage. On a successful save, a target takes half as much damage at the start of each turn for the duration, but suffers no other effect."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Seeping Wound",
+					"Elite Hex Spell. For 1...6...7 second[s], target foe moves 33% slower. That foe takes 5...21...25 damage each second while suffering from a condition. This spell has half the normal range."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/9/96/Seeping_Wound.jpg"
+						}
+					}
+				]
+			},
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Critical Strikes",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Hex",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 2d4} for each slot level above 4th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"damageInflict": [
+				"acid"
+			],
+			"miscTags": [
+				"SGT"
 			]
 		}
 	],

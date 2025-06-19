@@ -249,8 +249,8 @@ if __name__ == "__main__":
         {"name": "Fighter", "source": "XPHB", "sub_classes": [
             {"name": "Eldritch Knight", "shortName": "Eldritch Knight", "source": "XPHB"}
         ]},
-        {"name": "Gunslinger", "source": "gunslinger_valdagunslinger", "sub_classes": [
-            {"name": "Spellslinger", "shortName": "Spellslinger", "source": "gunslinger_valdagunslinger"}
+        {"name": "Gunslinger", "source": "ValdaGunslinger", "sub_classes": [
+            {"name": "Spellslinger", "shortName": "Spellslinger", "source": "ValdaGunslinger"}
         ]},
         {"name": "Illrigger", "source": "IllriggerRevised", "sub_classes": [
             {"name": "Architect of Ruin", "shortName": "Architect of Ruin", "source": "IllriggerRevised"}

@@ -5294,7 +5294,7 @@
 			],
 			"entries": [
 				"Sear a holy symbol of wrath on the surrounding ground, smiting all hostile creatures within 10 feet.",
-				"Conjure a 10-foot radius, 10-foot high stationary Cylinder at your location for the duration. Each creature, other than you, in that Cylinder must make a Wisadom saving throw. On a failed save, a target takes {@damage 2d8} radiant damage. On a successful save, a target takes half as much damage. A creature also makes this save if it enters the Cylinder or ends its turn there, or if the Cylinder move into its space. A creature makes this save only once per turn.",
+				"Conjure a 10-foot radius, 10-foot high stationary Cylinder at your location for the duration. Each creature, other than you, in that Cylinder must make a Wisdom saving throw. On a failed save, a target takes {@damage 2d8} radiant damage. On a successful save, a target takes half as much damage. A creature also makes this save if it enters the Cylinder or ends its turn there, or if the Cylinder move into its space. A creature makes this save only once per turn.",
 				"On your later turns, you can take a {@action Magic|XPHB} action to teleport the Cylinder to your location."
 			],
 			"source": "GuildWars",
@@ -10211,7 +10211,8 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "bonus"
+					"unit": "reaction",
+					"condition": "which you take when you are the target of a spell which requires a melee attack roll"
 				}
 			],
 			"range": {
@@ -10232,8 +10233,7 @@
 			"entries": [
 				"{@bold Stance}",
 				"You enter a stance, to block any incoming melee spell.",
-				"For the duration, if you are the target of a spell which requires a melee attack roll, the attack roll misses you, your initiative gets increased by {@dice 1d4} and you gain {@dice 1d4} strikes of adrenalin.",
-				"When you cast a spell, this spell ends."
+				"For the duration, if you are the target of a spell which requires a melee attack roll, the attack roll misses you, your initiative gets increased by {@dice 1d4} and you gain {@dice 1d4} strikes of adrenalin."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -10254,9 +10254,9 @@
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
-					"name": "At Higher Levels",
+					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the duration increases by 1 round for each slot level above 1st."
+						"When you cast this spell using a spell slot of 2nd level or higher, the adrenaline gain increases by {@dice 1d4} for each slot level above 1st and the increase in initiative increases by {@dice 1d4} for each slot level above 1st."
 					]
 				}
 			],
@@ -20870,7 +20870,10 @@
 						}
 					}
 				]
-			}
+			},
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Virulence",
@@ -23283,7 +23286,10 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"ST"
+			]
 		},
 		{
 			"name": "Staggering Blow",
@@ -24256,7 +24262,10 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"MT"
+			]
 		},
 		{
 			"name": "Quickening Zephyr",
@@ -25718,7 +25727,11 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"MT",
+				"S"
+			]
 		},
 		{
 			"name": "Fireball (Guild Wars)",
@@ -26486,7 +26499,13 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"MT"
+			],
+			"miscTags": [
+				"SMN"
+			]
 		},
 		{
 			"name": "Divine Boon",
@@ -28083,7 +28102,15 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"MT",
+				"Y"
+			],
+			"miscTags": [
+				"THP",
+				"SGT"
+			]
 		},
 		{
 			"name": "Galrath Slash",
@@ -28579,7 +28606,7 @@
 			],
 			"entries": [
 				"Conjure a ward at your location, slowing down foes.",
-				"Conjure a 20-foot radius stationary ward at your location for the duration and choose any number of creatures. If a target is in the radius of the spell, a target's speed is halved."
+				"Conjure a 20-foot radius stationary ward at your location for the duration and choose any number of creatures. If a non-chosen creature is in the radius of the spell, a target's speed is halved."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -29440,7 +29467,17 @@
 			"components": {
 				"s": true,
 				"m": "a large fan"
-			}
+			},
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			]
 		},
 		{
 			"name": "Distracting Blow",
@@ -30903,7 +30940,7 @@
 				}
 			],
 			"range": {
-				"type": "radius",
+				"type": "emanation",
 				"distance": {
 					"type": "feet",
 					"amount": 5
@@ -30921,7 +30958,7 @@
 			"entries": [
 				"{@bold Stance}",
 				"Whirl around, blocking incoming attacks, and deflecting projectiles, damaging all creatures around you.",
-				"For the duration, you have a +5 bonus to AC against weapon attacks and if a ranged attack misses you because of this bonus, target each creature other than you within a 10-foot Emanation. A target takes {@damage 1d6} slashing damage."
+				"For the duration, you have a +5 bonus to AC against weapon attacks and if a ranged attack misses you because of this bonus, target each hostile creature other than you within a 10-foot Emanation. A target takes {@damage 1d6} slashing damage."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -30993,7 +31030,17 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"slashing"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"MAC"
+			]
 		},
 		{
 			"name": "Remove Hex",
@@ -42333,7 +42380,15 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"MT",
+				"Y"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			]
 		},
 		{
 			"name": "Signet of Midnight",
@@ -42592,7 +42647,14 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"HL"
+			]
 		},
 		{
 			"name": "Seven Weapons Stance",
@@ -43428,7 +43490,20 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"cold"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Shadow Theft",
@@ -50272,7 +50347,14 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"MAC"
+			]
 		},
 		{
 			"name": "Wastrel's Worry",
@@ -50424,7 +50506,21 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"areaTags": [
+				"ST",
+				"MT",
+				"S"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Signet of Devotion",
@@ -57253,7 +57349,8 @@
 				"ST"
 			],
 			"miscTags": [
-				"HL"
+				"HL",
+				"SGT"
 			],
 			"components": {
 				"v": true,
@@ -57450,7 +57547,20 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"MT",
+				"Y"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Storm Chaser",
@@ -63366,7 +63476,13 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Mantra of Persistence",
@@ -63520,7 +63636,7 @@
 			"entries": [
 				"{@bold Enchantment}",
 				"Wreath allies your target with your spells in the Zealot's Flame, {@condition burning|GuildWars} everything around them.",
-				"For the duration, when you cast a spell that targets an ally, target each creature other than the target in a 10-foot-radius sphere centered on the target. Each new target must make a Wisdom saving throw. On a failed save, a target takes  {@damage 2d6} fire damage."
+				"For the duration, when you cast a spell that targets an ally, target each hostile creature other than the target in a 10-foot-radius sphere centered on the target. Each new target must make a Wisdom saving throw. On a failed save, a target takes  {@damage 2d6} fire damage."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -63603,7 +63719,17 @@
 						}
 					}
 				]
-			}
+			},
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			]
 		},
 		{
 			"name": "Well of The Profane",
@@ -63751,7 +63877,17 @@
 						}
 					}
 				]
-			}
+			},
+			"abilityCheck": [
+				"constitution"
+			],
+			"areaTags": [
+				"MT",
+				"Y"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Winnowing",
@@ -63877,7 +64013,14 @@
 						}
 					}
 				]
-			}
+			},
+			"areaTags": [
+				"MT"
+			],
+			"miscTags": [
+				"SMN",
+				"AAD"
+			]
 		},
 		{
 			"name": "Shield Bash",
@@ -70090,6 +70233,9 @@
 						"When you cast this spell using a spell slot of 4th or 5th level, the duration increases to 10 minutes. When you use a spell slot of 6th level or higher, the duration increases to 1 hour."
 					]
 				}
+			],
+			"areaTags": [
+				"ST"
 			]
 		},
 		{
@@ -75615,7 +75761,7 @@
 				"R"
 			],
 			"miscTags": [
-				"AAD"
+				"SGT"
 			],
 			"backgrounds": [
 				{
@@ -75739,7 +75885,10 @@
 						}
 					}
 				]
-			}
+			},
+			"savingThrow": [
+				"strength"
+			]
 		},
 		{
 			"name": "Teinai's Heat",
@@ -81119,6 +81268,12 @@
 						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@dice 2d4} for each slot level above 1st."
 					]
 				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"HL"
 			]
 		},
 		{
@@ -81215,6 +81370,14 @@
 						"When you cast this spell using a spell slot of 5th level or higher, the healing increases by {@dice 2d4} for each slot level above 4th."
 					]
 				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"HL",
+				"SGT",
+				"MAC"
 			]
 		},
 		{
@@ -92775,7 +92938,33 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "School of necromancy",
+							"shortName": "Necromancy",
+							"source": "PHB"
+						}
+					}
+				]
 			},
 			"entries": [
 				"{@bold Elite}",
@@ -92925,13 +93114,283 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Bard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Collage of swords",
+							"shortName": "Swords",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Inquisition domain",
+							"shortName": "Inquisition",
+							"source": "GrimHollowPlayerPack"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "War domain",
+							"shortName": "War",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Illrigger",
+							"source": "IllriggerRevised"
+						},
+						"subclass": {
+							"name": "Architect of ruin",
+							"shortName": "Architect of Ruin",
+							"source": "IllriggerRevised"
+						}
+					},
+					{
+						"class": {
+							"name": "Psion",
+							"source": "xua2025psion"
+						},
+						"subclass": {
+							"name": "Metamorph",
+							"shortName": "Metamorph",
+							"source": "xua2025psion"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "The hexblade",
+							"shortName": "Hexblade",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Bladesinging",
+							"shortName": "Bladesinging",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Eldritch knight",
+							"shortName": "Eldritch Knight",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
 			},
 			"damageInflict": [
 				"acid"
 			],
 			"miscTags": [
 				"SGT"
+			]
+		},
+		{
+			"name": "Unsteady Ground",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"{@bold Elite}",
+				"Create an area of unstable ground by causing extreme vibrations.",
+				"Choose a point that you can see within range. For the duration, you create a 15-foot-radius, 10-foot-high cylinder centered on that point. Each creature in that Cylinder must make a Strength saving throw. On a failed save, a target takes {@damage 8d8} force damage and a target attacked on its last turn they are knocked {@condition prone}. On a successful save, a target takes half as much damage, but suffers no other effect. A creature also makes this save if it enters the Cylinder or ends its turn there, or if the Cylinder move into its space. A creature makes this save only once per turn.",
+				"On your later turns, you can take a {@action Magic|XPHB} action to teleport the Cylinder up to 30 feet."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Unsteady Ground",
+					"Elite Spell. You create Unsteady Ground at target foe's location. For 5 seconds, nearby foes take 10...34...40 earth damage each second. Attacking foes struck by Unsteady Ground are knocked down."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/b/bf/Unsteady_Ground.jpg"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"force"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"backgrounds": [
+				{
+					"name": "The Jade Sea",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Earth Magic",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "a small branch with leaves and a handful of sand"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@dice 1d8} for each slot level above 5th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Druid",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Psion",
+							"source": "xua2025psion"
+						},
+						"subclass": {
+							"name": "Psykinetic",
+							"shortName": "Psykinetic",
+							"source": "xua2025psion"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Eldritch knight",
+							"shortName": "Eldritch Knight",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
+			},
+			"savingThrow": [
+				"strength"
+			],
+			"conditionInflict": [
+				"prone"
 			]
 		}
 	],

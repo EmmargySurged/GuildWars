@@ -246,6 +246,12 @@ if __name__ == "__main__":
             {"name": "Circle of Spores", "shortName": "Spores", "source": "TCE"},
             {"name": "Circle of Stars", "shortName": "Stars", "source": "XPHB"}
         ]},
+        {"name": "Fighter", "source": "XPHB", "sub_classes": [
+            {"name": "Eldritch Knight", "shortName": "Eldritch Knight", "source": "XPHB"}
+        ]},
+        {"name": "Gunslinger", "source": "gunslinger_valdagunslinger", "sub_classes": [
+            {"name": "Spellslinger", "shortName": "Spellslinger", "source": "gunslinger_valdagunslinger"}
+        ]},
         {"name": "Illrigger", "source": "IllriggerRevised", "sub_classes": [
             {"name": "Architect of Ruin", "shortName": "Architect of Ruin", "source": "IllriggerRevised"}
         ]},
@@ -262,6 +268,9 @@ if __name__ == "__main__":
             {"name": "Beast Master", "shortName": "Beast Master", "source": "XPHB"},
             {"name": "Hollow Warden", "shortName": "Hollow Warden", "source": "xua2025horrorsubclasses"}
         ]},
+        {"name": "Rogue", "source": "XPHB", "sub_classes": [
+            {"name": "Arcane Trickster", "shortName": "Arcane Trickster", "source": "XPHB"}
+        ]},
         {"name": "Sorcerer", "source": "XPHB", "sub_classes": [
             {"name": "Divine Soul", "shortName": "Divine Soul", "source": "XGE"}
         ]},
@@ -275,13 +284,6 @@ if __name__ == "__main__":
         {"name": "Wizard", "source": "XPHB", "sub_classes": [
             {"name": "Bladesinging", "shortName": "Bladesinging", "source": "TCE"},
             {"name": "School of Necromancy", "shortName": "Necromancy", "source": "PHB"}
-        ]},
-        {"name": "Rogue", "source": "XPHB", "sub_classes": [
-            {"name": "Arcane Trickster", "shortName": "Arcane Trickster", "source": "XPHB"}
-        ]}
-        ,
-        {"name": "Fighter", "source": "XPHB", "sub_classes": [
-            {"name": "Eldritch Knight", "shortName": "Eldritch Knight", "source": "XPHB"}
         ]}
     ]
     # Unused, maybe make custom classes the players can then also check.

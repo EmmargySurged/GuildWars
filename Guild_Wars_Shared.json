@@ -41266,7 +41266,7 @@
             "entries": [
                 "{@bold Elite}",
                 "Fire an all or nothing shot, which allows you to immediately attack again on a hit, but prevents you from using spells or abilities on a miss.",
-                "On a hit, the target suffers the weapon attack's normal effects, and you can immediately attack again.",
+                "On a hit, the target suffers the weapon attack's normal effects, you can immediately attack again, and the spell slot expended in the casting of this spell does not prevent you from casting other spells with spell slots this turn.",
                 "On a miss, you cannot cast spells or use abilities until the end of your next turn."
             ],
             "source": "GuildWars",
@@ -97599,6 +97599,287 @@
             ],
             "conditionInflict": [
                 "prone"
+            ]
+        },
+        {
+            "name": "Stolen Speed",
+            "level": 2,
+            "school": "I",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@bold Elite}, {@bold Hex} ",
+                "Slow down creatures and invert the time flow around them.",
+                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save for the duration, a target can't cast spells as reactions, must cast spells which take a bonus action as an action, and any other spell takes twice as long to cast. Additionally, any spell, which takes an action to cast, targeting only creatures affected by Stolen Speed, can be cast as a bonus action."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Stolen Speed",
+                    "Elite Hex Spell. For 1...8...10 seconds, spells cast by the target foe and all adjacent foes take 100% longer to cast. Spells targeting these foes that are cast by you or your allies take 50% less time to cast. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/f/f0/Stolen_Speed.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Mesmer",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Fast Casting",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Hex",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the radius of the spell increases by 5 feet for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Psion",
+                        "source": "xua2025psion"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Cartographer",
+                            "shortName": "Cartographer",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "savingThrow": [
+                "wisdom"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
+        },
+        {
+            "name": "Word of Censure",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Druid",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Circle of stars",
+                            "shortName": "Stars",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@bold Elite}",
+                "Speak a word of censure, restricting a creatures' life force.",
+                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, the target takes {@damage 5d8} radiant damage. On a successful save, the target takes half as much damage.",
+                "If the target was below 33% of their maximum hit points, {@spell Word of Censure|GuildWars} cannot be used again until 2 rounds have passed."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Word of Censure",
+                    "Elite Spell. Target foe takes 15...63...75 holy damage. If your target was below 33% Health, Word of Censure takes 20 additional seconds to recharge."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/6/6b/Word_of_Censure.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Monk",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Smiting Prayers",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "damageInflict": [
+                "radiant"
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 2d8} for each slot level above 1st."
+                    ]
+                }
             ]
         }
     ],

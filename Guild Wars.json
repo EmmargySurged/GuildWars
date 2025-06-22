@@ -97909,7 +97909,78 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Illrigger",
+							"source": "IllriggerRevised"
+						},
+						"subclass": {
+							"name": "Architect of ruin",
+							"shortName": "Architect of Ruin",
+							"source": "IllriggerRevised"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Eldritch knight",
+							"shortName": "Eldritch Knight",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Gunslinger",
+							"source": "ValdaGunslinger"
+						},
+						"subclass": {
+							"name": "Spellslinger",
+							"shortName": "Spellslinger",
+							"source": "ValdaGunslinger"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
 			},
 			"entries": [
 				"{@bold Elite}, {@bold Hex}",
@@ -98006,7 +98077,40 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Gunslinger",
+							"source": "ValdaGunslinger"
+						},
+						"subclass": {
+							"name": "Spellslinger",
+							"shortName": "Spellslinger",
+							"source": "ValdaGunslinger"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
 			},
 			"entries": [
 				"{@bold Elite}, {@bold Preparation}",
@@ -98064,6 +98168,176 @@
 					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
 						"When you cast this spell using a spell slot of 2nd level or higher, the level of the spell slot increases by 1 for each slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"name": "Spirit Channeling",
+			"level": 4,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Elite}, {@bold Enchantment}",
+				"Channel the spirits of great spellcasters.",
+				"For the duration, when you would expend a spell slot to cast a spell of 4th level or lower, roll a {@dice d20}. On a 12 or higher, the spell does not expend a spell slot.",
+				"If there is at least one friendly summoning ritual within 150-feet of you, you regain the spell slot expended in the casting."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Spirit Channeling",
+					"Elite Enchantment Spell. For 12 seconds, you have +1...5...6 Energy regeneration. When you cast this spell, you gain 3...10...12 Energy if you are within earshot of a spirit."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/0/0b/Spirit_Channeling.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the number you need to roll decreases by 1 for each slot level above 4th."
+					]
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Spawning Power",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Enchantment",
+					"source": "GuildWars"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Shove",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@bold Elite}",
+				"Choose one creature within range. If the target is large or smaller, it's knocked {@condition prone}. If the target willingly moved on its last turn, they take {@damage 4d6} bludgeoning damage."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Shove",
+					"Elite Skill. Target touched foe is knocked down. If that foe was moving, that foe's stance ends and that foe takes 15...63...75 damage before being knocked down."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/b/bb/Shove.jpg"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"backgrounds": [
+				{
+					"name": "Echovald Wild",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Warrior",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Tactics",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st.",
+						"When you cast this spell using a spell slot of 3rd level or higher, the affected size category increases by 1 for every two slot level above 1st."
 					]
 				}
 			]

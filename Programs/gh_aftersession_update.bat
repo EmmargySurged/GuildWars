@@ -46,8 +46,7 @@ if "%NEED_COMMIT%"=="0" (
 rem -- 2) Nur committen, wenn wirklich nötig
 if "%NEED_COMMIT%"=="1" (
     git add "%FILENAME%" || (popd & exit /b 1)
-    set "MSG=After Session update %DATE% %TIME%"
-    git commit -m "%MSG%" || (popd & exit /b 1)
+    git commit -m "After Session update %DATE% %TIME%" || (popd & exit /b 1)
     git push || (popd & exit /b 1)
 ) else (
     echo [INFO] Keine Aenderungen – nichts zu committen.

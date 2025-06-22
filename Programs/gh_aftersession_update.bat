@@ -30,15 +30,27 @@ git rev-parse --is-inside-work-tree >nul 2>&1 || (
 rem ---------- Änderungen committen – nur falls nötig ----------
 git pull || (popd & exit /b 1)
 
-rem Prüfen, ob es Änderungen an der Datei gibt
-git diff-index --quiet HEAD -- "%FILENAME%"
-if errorlevel 1 (
+rem -- 1) Braucht die Datei einen Commit?
+set "NEED_COMMIT=0"
+
+rem --- a) Datei NICHT im Index?
+git ls-files --error-unmatch "%FILENAME%" >nul 2>&1
+if errorlevel 1 set "NEED_COMMIT=1"
+
+rem --- b) Datei zwar getrackt, aber geändert?
+if "%NEED_COMMIT%"=="0" (
+    git diff-index --quiet HEAD -- "%FILENAME%"
+    if errorlevel 1 set "NEED_COMMIT=1"
+)
+
+rem -- 2) Nur committen, wenn wirklich nötig
+if "%NEED_COMMIT%"=="1" (
     git add "%FILENAME%" || (popd & exit /b 1)
     set "MSG=After Session update %DATE% %TIME%"
     git commit -m "%MSG%" || (popd & exit /b 1)
     git push || (popd & exit /b 1)
 ) else (
-    echo [INFO] Keine Aenderungen - nichts zu committen.
+    echo [INFO] Keine Aenderungen – nichts zu committen.
 )
 
 popd

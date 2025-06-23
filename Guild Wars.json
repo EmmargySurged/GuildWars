@@ -5187,7 +5187,8 @@
 				"ST"
 			],
 			"miscTags": [
-				"HL"
+				"HL",
+				"SGT"
 			],
 			"backgrounds": [
 				{
@@ -41773,8 +41774,8 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "round",
-						"amount": 3
+						"type": "minute",
+						"amount": 1
 					}
 				}
 			],
@@ -41832,9 +41833,9 @@
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
-					"name": "At Higher Levels",
+					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"When you cast this spell using a spell slot of 7th level or higher, the duration increases by 1 round for each slot level above 6th."
+						"When you cast this spell using a spell slot of 7th level or higher, the number subtracted increases by {@dice 2d4} for each slot level above 6th."
 					]
 				}
 			],
@@ -98254,7 +98255,33 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "School of necromancy",
+							"shortName": "Necromancy",
+							"source": "PHB"
+						}
+					}
+				]
 			},
 			"areaTags": [
 				"ST"
@@ -98282,7 +98309,143 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "xua2025eberronupdates"
+						},
+						"subclass": {
+							"name": "Armorer",
+							"shortName": "Armorer",
+							"source": "xua2025eberronupdates"
+						}
+					},
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "xua2025eberronupdates"
+						},
+						"subclass": {
+							"name": "Battle smith",
+							"shortName": "Battle Smith",
+							"source": "xua2025eberronupdates"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Inquisition domain",
+							"shortName": "Inquisition",
+							"source": "GrimHollowPlayerPack"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "War domain",
+							"shortName": "War",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Illrigger",
+							"source": "IllriggerRevised"
+						},
+						"subclass": {
+							"name": "Architect of ruin",
+							"shortName": "Architect of Ruin",
+							"source": "IllriggerRevised"
+						}
+					},
+					{
+						"class": {
+							"name": "Psion",
+							"source": "xua2025psion"
+						},
+						"subclass": {
+							"name": "Metamorph",
+							"shortName": "Metamorph",
+							"source": "xua2025psion"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "The hexblade",
+							"shortName": "Hexblade",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Bladesinging",
+							"shortName": "Bladesinging",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Eldritch knight",
+							"shortName": "Eldritch Knight",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Gunslinger",
+							"source": "ValdaGunslinger"
+						},
+						"subclass": {
+							"name": "Spellslinger",
+							"shortName": "Spellslinger",
+							"source": "ValdaGunslinger"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
 			},
 			"entries": [
 				"{@bold Elite}",
@@ -98341,6 +98504,269 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Shove",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@bold Elite}",
+				"Choose one creature within range. If the target is large or smaller, it's knocked {@condition prone}. If the target willingly moved on its last turn, they take {@damage 4d6} bludgeoning damage and any stance they are in ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Shove",
+					"Elite Skill. Target touched foe is knocked down. If that foe was moving, that foe's stance ends and that foe takes 15...63...75 damage before being knocked down."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/b/bb/Shove.jpg"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"backgrounds": [
+				{
+					"name": "Echovald Wild",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Warrior",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Tactics",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st.",
+						"When you cast this spell using a spell slot of 3rd level or higher, the affected size category increases by 1 for every two slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"name": "Shadow Form",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Elite}, {@bold Enchantment}",
+				"Turn your body into shadows.",
+				"For the duration, you cannot be targeted by hostile spells and when you take damage, you can roll {@dice 1d4} per beneficial assassin themed spell on you and subtract the number rolled from the damage. Additionally, for the duration, you cannot deal more than 10 damage with a single damage roll."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Shadow Form",
+					"Elite Enchantment Spell. For 5...18...21 seconds, you cannot be the target of enemy spells, and you gain 5 damage reduction for each Assassin enchantment on you. You cannot deal more than 5...21...25 damage with a single skill or attack. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/e/e4/Shadow_Form.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Shadow Arts",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Enchantment",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the final number subtracted increases by {@dice 1d4} for each slot level above 4th and the damage maximum increases by 5 for each slot level above 4th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Spirit Light Weapon",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Elite}, {@bold Weapon Spell}",
+				"Infuse a weapon with the calming light of a good spirit.",
+				"Choose one friendly creature, which is wielding a weapon, that you can see within range. For the duration, at the start of each of the target's turns, the target regains hit points equal to {@dice 1d4} + your spellcasting ability modifier. Additionally, while the creature is within 150-feet of a friendly summoning ritual, they regain additional hit points equal to {@dice 1d4} + your spellcasting ability modifier at the start of their turn.",
+				"If the target drops to 0 hit points, this spell ends."
+			],
+			"source": "GuildWars",
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the healing each increases by {@dice 2d4} for each slot level above 1st."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Spirit Light Weapon",
+					"Elite Weapon Spell. For 10 seconds, target ally gains 1...12...15 Health per second and an additional 1...12...15 Health per second if that ally is within earshot of a spirit."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/a/a3/Spirit_Light_Weapon.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			],
+			"backgrounds": [
+				{
+					"name": "Echovald Forest",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Restoration Magic",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Weapon Spell",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elite",
+					"source": "GuildWars"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			}
 		}
 	],
 	"table": [

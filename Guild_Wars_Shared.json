@@ -17660,8 +17660,8 @@
                 {
                     "type": "timed",
                     "duration": {
-                        "type": "round",
-                        "amount": 3
+                        "type": "minute",
+                        "amount": 1
                     }
                 }
             ],
@@ -17669,7 +17669,7 @@
                 "{@bold Enchantment}",
                 "Temporarily move faster, but slow down after.",
                 "End the {@condition crippled|GuildWars} condition on yourself. For the duration, your speed is increased by 33%. When this spell ends, you become {@condition crippled|GuildWars} for 2 rounds.",
-                "This spell's duration increases by 1 round when you reach 5th level (4 rounds), 11th level (5 rounds), and 17th level (6 rounds)."
+                "This speed increases by 15% when you reach 5th level (48%), 11th level (63%), and 17th level (78%)."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -44723,7 +44723,7 @@
         },
         {
             "name": "Spike Trap",
-            "level": 2,
+            "level": 1,
             "school": "A",
             "time": [
                 {
@@ -44751,7 +44751,7 @@
                 "{@bold Elite}",
                 "Prepare a spike trap, which damages, cripples and knocks creatures {@condition prone} which trigger it.",
                 "Conjure a 15-foot radius stationary {@condition invisible} trap at your location for the duration and choose any number of creatures. The next time a non-chosen creature enters the spell's area, the trap triggers, applying the following effects for 2 rounds: ",
-                "Each non-chosen creature must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 3d8} piercing damage, becomes {@condition crippled|GuildWars} for one minute and is knocked {@condition prone}. On a successful save, a target takes half as much damage, but suffers no other effect.",
+                "Each non-chosen creature must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 2d8} piercing damage, becomes {@condition crippled|GuildWars} for one minute and is knocked {@condition prone}. On a successful save, a target takes half as much damage, but suffers no other effect.",
                 "At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends.",
                 "This trap is nearly {@condition invisible}, requiring a successful Intelligence (Investigation) check against your spell save DC to be discerned."
             ],
@@ -44802,9 +44802,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 2d8} for each slot level above 2nd."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 2d8} for each slot level above 1st."
                     ]
                 }
             ],
@@ -54617,7 +54617,7 @@
             "entries": [
                 "Prepare a barbed trap, which damages, cripples and bleeds creatures which trigger it.",
                 "Conjure a 15-foot radius stationary {@condition invisible} trap at your location for the duration and choose any number of creatures. The next time a non-chosen creature enters the spell's area, the trap triggers, applying the following effect for 1 round: ",
-                "Each non-chosen creature must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 4d8} piercing damage, starts {@condition bleeding|GuildWars} for one minute, taking {@damage 4d4} damage and becomes {@condition crippled|GuildWars} for one minute. On a successful save, a target takes half as much damage, but suffers no other effect.",
+                "Each non-chosen creature must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 4d8} piercing damage, starts {@condition bleeding|GuildWars} for one minute, taking {@damage 4d4} damage and is {@condition crippled|GuildWars} for one minute. On a successful save, a target takes half as much damage, but suffers no other effect.",
                 "At the end of each of its turns, the target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends.",
                 "This trap is nearly {@condition invisible}, requiring a successful Intelligence (Investigation) check against your spell save DC to be discerned."
             ],
@@ -54642,7 +54642,7 @@
             },
             "components": {
                 "s": true,
-                "m": "a  handful of thorned vines"
+                "m": "a handful of thorned vines"
             },
             "conditionInflict": [
                 "crippled|guildwars"
@@ -99163,6 +99163,236 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "Aura of Stability",
+            "level": 0,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "entries": [
+                "{@bold Enchantment}",
+                "Give a creature a short burst of divine stability.",
+                "Choose one creature, other than yourself, that you can see within range. For the duration, the target is immune to the {@condition prone} condition.",
+                "The amount of targets you can target with this spell increases by 1 when you reach 5th level (2), 11th level (3), and 17th level (4)."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Aura of Stability",
+                    "Enchantment Spell. For 3...7...8 seconds, target other ally cannot be knocked down."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/9/95/Aura_of_Stability.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Far Shiverpeaks",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Monk",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Protection Prayers",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Enchantment",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "s": true
+            },
+            "conditionInflict": [
+                "prone"
+            ]
+        },
+        {
+            "name": "Snare (Guild Wars)",
+            "level": 0,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "radius",
+                "distance": {
+                    "type": "feet",
+                    "amount": 15
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "Prepare a snare trap, crippling anyone stepping inside.",
+                "Conjure a 15-foot radius stationary {@condition invisible} trap at your location for the duration and choose any number of creatures. The next time a non-chosen creature enters the spell's area, the trap triggers, applying the following effect for 1 round: ",
+                "Each non-chosen creature must make a Strength saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, is {@condition crippled|GuildWars} for one minute.",
+                "At the end of each of its turns, a target can make a Strength saving throw. On a success, the condition ends.",
+                "This trap is nearly {@condition invisible}, requiring a successful Intelligence (Investigation) check against your spell save DC to be discerned."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Snare",
+                    "Trap. When Snare is triggered, all nearby foes become Crippled for 3...13...15 seconds. Snare ends after 90 seconds. While activating this skill, you are easily interrupted. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/4/41/Snare.jpg"
+                        }
+                    }
+                ]
+            },
+            "components": {
+                "s": true,
+                "m": "a wire"
+            },
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Wilderness Survival",
+                    "source": "GuildWars"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Alchemist",
+                            "shortName": "Alchemist",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "MT",
+                "S"
+            ],
+            "savingThrow": [
+                "strength"
+            ]
         }
     ],
     "table": [
@@ -99708,6 +99938,13 @@
             "source": "GuildWars",
             "entries": [
                 "For each rank of Expertise, the Energy cost of all of your attacks, Rituals, touch skills and Rangers [sic] skills are decreased by 4%. Several skills, especially those related to Energy costs and skill recharge times, become more effective with higher Expertise. "
+            ]
+        },
+        {
+            "name": "Far Shiverpeaks",
+            "source": "GuildWars",
+            "entries": [
+                "The Far Shiverpeaks is the northernmost section of the Shiverpeak Mountains that, until 1078 AE and the Destroyer threat, was unexplored and unknown to most Tyrians. It is the home of the individualistic Norn, the gigantic Jotun, and the Centaurs of the Shiverpeaks, the Modniir."
             ]
         },
         {
@@ -100815,14 +101052,8 @@
                             "acid",
                             "psychic"
                         ],
-                        "count": 2
+                        "count": 1
                     }
-                }
-            ],
-            "languageProficiencies": [
-                {
-                    "common": true,
-                    "any": 1
                 }
             ],
             "additionalSpells": [
@@ -100831,15 +101062,14 @@
                         "1": {
                             "rest": {
                                 "1": [
-                                    "orison of healing|GuildWars"
+                                    "Word of Healing|GuildWars"
                                 ]
                             }
                         }
                     },
-                    "ability": "wis",
                     "known": {
                         "1": [
-                            "guidance#c"
+                            "Aura of Stability|GuildWars#c"
                         ]
                     }
                 },
@@ -100848,15 +101078,14 @@
                         "1": {
                             "rest": {
                                 "1": [
-                                    "deathly swarm|GuildWars"
+                                    "Life Transfer|GuildWars"
                                 ]
                             }
                         }
                     },
-                    "ability": "int",
                     "known": {
                         "1": [
-                            "toll the dead|xge#c"
+                            "Dark Pact|GuildWars#c"
                         ]
                     }
                 },
@@ -100865,15 +101094,14 @@
                         "1": {
                             "rest": {
                                 "1": [
-                                    "frenzy|GuildWars"
+                                    "Warrior's Endurance|GuildWars"
                                 ]
                             }
                         }
                     },
-                    "ability": "str",
                     "known": {
                         "1": [
-                            "Hamstring|GuildWars#c"
+                            "Sprint|GuildWars#c"
                         ]
                     }
                 },
@@ -100882,15 +101110,14 @@
                         "1": {
                             "rest": {
                                 "1": [
-                                    "charm animal|GuildWars"
+                                    "Spike Trap|GuildWars"
                                 ]
                             }
                         }
                     },
-                    "ability": "dex",
                     "known": {
                         "1": [
-                            "thorn whip#c"
+                            "Snare (Guild Wars)|GuildWars#c"
                         ]
                     }
                 },
@@ -100899,15 +101126,14 @@
                         "1": {
                             "rest": {
                                 "1": [
-                                    "empathy|GuildWars"
+                                    "Expel Hexes|GuildWars"
                                 ]
                             }
                         }
                     },
-                    "ability": "cha",
                     "known": {
                         "1": [
-                            "minor illusion#c"
+                            "Illusion of Haste|GuildWars#c"
                         ]
                     }
                 }
@@ -100938,7 +101164,7 @@
                     "type": "entries",
                     "name": "Favoured by the Gods",
                     "entries": [
-                        "When choosing this race choose a patron god. The patron god gives you a small amount of power in the form a cantrip, a spell and a resistance to a specific damage type. Your spellcasting ability for those spells is dependent on the god. You can cast the spell once per short rest."
+                        "When choosing this species choose a patron god. The patron god gives you a small amount of power in the form a cantrip, a spell and a resistance to a specific damage type. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage). You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Short Rest."
                     ]
                 },
                 {
@@ -100946,8 +101172,7 @@
                     "name": "Dwayna",
                     "entries": [
                         "",
-                        "Spellcasting ability: Wisdom",
-                        "Cantrip: {@spell Guidance|phb}",
+                        "Cantrip: {@spell Aura of Stability|GuildWars}",
                         "Spell: {@spell Orison of Healing|GuildWars}",
                         "Damage Resistance: Radiant"
                     ]
@@ -100957,9 +101182,8 @@
                     "name": "Grenth",
                     "entries": [
                         "",
-                        "Spellcasting ability: Intelligence",
-                        "Cantrip: {@spell Toll the Dead|xge}",
-                        "Spell: {@spell Deathly Swarm|GuildWars}",
+                        "Cantrip: {@spell Dark Pact|GuildWars}",
+                        "Spell: {@spell Life Transfer|GuildWars}",
                         "Damage Resistance: Necrotic"
                     ]
                 },
@@ -100968,9 +101192,8 @@
                     "name": "Balthazar",
                     "entries": [
                         "",
-                        "Spellcasting ability: Strength",
-                        "Cantrip: {@spell Hamstring|GuildWars}",
-                        "Spell: {@spell Frenzy|GuildWars}",
+                        "Cantrip: {@spell Sprint|GuildWars}",
+                        "Spell: {@spell Warrior's Endurance|GuildWars}",
                         "Damage Resistance: Fire"
                     ]
                 },
@@ -100979,10 +101202,9 @@
                     "name": "Melandru",
                     "entries": [
                         "",
-                        "Spellcasting ability: Dexterity",
-                        "Cantrip: {@spell Thorn Whip|phb}",
-                        "Spell: {@spell Charm Animal|GuildWars}",
-                        "Damage Resistance: Poison and Acid"
+                        "Cantrip: {@spell Snare(Guild Wars)|GuildWars)}",
+                        "Spell: {@spell Spike Trap|GuildWars}",
+                        "Damage Resistance: Poison"
                     ]
                 },
                 {
@@ -100990,9 +101212,8 @@
                     "name": "Lyssa",
                     "entries": [
                         "",
-                        "Spellcasting ability: Charisma",
-                        "Cantrip: {@spell Minor Illusion|phb}",
-                        "Spell: {@spell Empathy|GuildWars}",
+                        "Cantrip: {@spell Illusion of Haste|GuildWars}",
+                        "Spell: {@spell Expel Hexes|GuildWars}",
                         "Damage Resistance: Psychic"
                     ]
                 }
@@ -101017,10 +101238,7 @@
             },
             "traitTags": [
                 "Spellcasting",
-                "Damage Resistance",
-                "Armor Proficiency",
-                "Weapon Proficiency",
-                "Skill Proficiency"
+                "Damage Resistance"
             ],
             "resist": [
                 {
@@ -101033,26 +101251,8 @@
                             "acid",
                             "psychic"
                         ],
-                        "count": 2
+                        "count": 1
                     }
-                }
-            ],
-            "languageProficiencies": [
-                {
-                    "common": true,
-                    "ascalonian": true,
-                    "any": 1
-                }
-            ],
-            "weaponProficiencies": [
-                {
-                    "shortsword|phb": true,
-                    "longbow|phb": true
-                }
-            ],
-            "armorProficiencies": [
-                {
-                    "shield|phb": true
                 }
             ],
             "additionalSpells": [
@@ -101061,15 +101261,14 @@
                         "1": {
                             "rest": {
                                 "1": [
-                                    "orison of healing|GuildWars"
+                                    "Word of Healing|GuildWars"
                                 ]
                             }
                         }
                     },
-                    "ability": "wis",
                     "known": {
                         "1": [
-                            "guidance#c"
+                            "Aura of Stability|GuildWars#c"
                         ]
                     }
                 },
@@ -101078,15 +101277,14 @@
                         "1": {
                             "rest": {
                                 "1": [
-                                    "deathly swarm|GuildWars"
+                                    "Life Transfer|GuildWars"
                                 ]
                             }
                         }
                     },
-                    "ability": "int",
                     "known": {
                         "1": [
-                            "toll the dead|xge#c"
+                            "Dark Pact|GuildWars#c"
                         ]
                     }
                 },
@@ -101095,15 +101293,14 @@
                         "1": {
                             "rest": {
                                 "1": [
-                                    "frenzy|GuildWars"
+                                    "Warrior's Endurance|GuildWars"
                                 ]
                             }
                         }
                     },
-                    "ability": "str",
                     "known": {
                         "1": [
-                            "hamstring|GuildWars#c"
+                            "Sprint|GuildWars#c"
                         ]
                     }
                 },
@@ -101112,15 +101309,14 @@
                         "1": {
                             "rest": {
                                 "1": [
-                                    "charm animal|GuildWars"
+                                    "Spike Trap|GuildWars"
                                 ]
                             }
                         }
                     },
-                    "ability": "dex",
                     "known": {
                         "1": [
-                            "thorn whip#c"
+                            "Snare (Guild Wars)|GuildWars#c"
                         ]
                     }
                 },
@@ -101134,10 +101330,9 @@
                             }
                         }
                     },
-                    "ability": "cha",
                     "known": {
                         "1": [
-                            "minor illusion#c"
+                            "Illusion of Haste|GuildWars#c"
                         ]
                     }
                 }
@@ -101168,7 +101363,7 @@
                     "type": "entries",
                     "name": "Favoured by the Gods",
                     "entries": [
-                        "When choosing this race choose a patron god. The patron god gives you a small amount of power in the form a cantrip, a spell and a resistance to a specific damage type. Your spellcasting ability for those spells is dependent on the god. You can cast the spell once per short rest."
+                        "When choosing this species choose a patron god. The patron god gives you a small amount of power in the form a cantrip, a spell and a resistance to a specific damage type. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage). You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Short Rest."
                     ]
                 },
                 {
@@ -101176,8 +101371,7 @@
                     "name": "Dwayna",
                     "entries": [
                         "",
-                        "Spellcasting ability: Wisdom",
-                        "Cantrip: {@spell Guidance|phb}",
+                        "Cantrip: {@spell Aura of Stability|GuildWars}",
                         "Spell: {@spell Orison of Healing|GuildWars}",
                         "Damage Resistance: Radiant"
                     ]
@@ -101187,9 +101381,8 @@
                     "name": "Grenth",
                     "entries": [
                         "",
-                        "Spellcasting ability: Intelligence",
-                        "Cantrip: {@spell Toll the Dead|xge}",
-                        "Spell: {@spell Deathly Swarm|GuildWars}",
+                        "Cantrip: {@spell Dark Pact|GuildWars}",
+                        "Spell: {@spell Life Transfer|GuildWars}",
                         "Damage Resistance: Necrotic"
                     ]
                 },
@@ -101198,9 +101391,8 @@
                     "name": "Balthazar",
                     "entries": [
                         "",
-                        "Spellcasting ability: Strength",
-                        "Cantrip: {@spell Hamstring|GuildWars}",
-                        "Spell: {@spell Frenzy|GuildWars}",
+                        "Cantrip: {@spell Sprint|GuildWars}",
+                        "Spell: {@spell Warrior's Endurance|GuildWars}",
                         "Damage Resistance: Fire"
                     ]
                 },
@@ -101209,10 +101401,9 @@
                     "name": "Melandru",
                     "entries": [
                         "",
-                        "Spellcasting ability: Dexterity",
-                        "Cantrip: {@spell Thorn Whip|phb}",
-                        "Spell: {@spell Charm Animal|GuildWars}",
-                        "Damage Resistance: Poison and Acid"
+                        "Cantrip: {@spell Snare(Guild Wars)|GuildWars)}",
+                        "Spell: {@spell Spike Trap|GuildWars}",
+                        "Damage Resistance: Poison"
                     ]
                 },
                 {
@@ -101220,17 +101411,9 @@
                     "name": "Lyssa",
                     "entries": [
                         "",
-                        "Spellcasting ability: Charisma",
-                        "Cantrip: {@spell Minor Illusion|phb}",
-                        "Spell: {@spell Empathy|GuildWars}",
+                        "Cantrip: {@spell Illusion of Haste|GuildWars}",
+                        "Spell: {@spell Expel Hexes|GuildWars}",
                         "Damage Resistance: Psychic"
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Ascalonian Military Training",
-                    "entries": [
-                        "You have proficiency with all simple weapons, shortswords, longbows and Shields. If you already have proficiency with all simple weapons, shortsword, longbows and shields, you instead gain two skill proficiencies of your choice."
                     ]
                 }
             ],
@@ -101267,15 +101450,8 @@
                             "acid",
                             "psychic"
                         ],
-                        "count": 2
+                        "count": 1
                     }
-                }
-            ],
-            "languageProficiencies": [
-                {
-                    "common": true,
-                    "krytan": true,
-                    "any": 1
                 }
             ],
             "additionalSpells": [
@@ -101284,15 +101460,14 @@
                         "1": {
                             "rest": {
                                 "1": [
-                                    "orison of healing|GuildWars"
+                                    "Word of Healing|GuildWars"
                                 ]
                             }
                         }
                     },
-                    "ability": "wis",
                     "known": {
                         "1": [
-                            "guidance#c"
+                            "Aura of Stability|GuildWars#c"
                         ]
                     }
                 },
@@ -101301,15 +101476,14 @@
                         "1": {
                             "rest": {
                                 "1": [
-                                    "deathly swarm|GuildWars"
+                                    "Life Transfer|GuildWars"
                                 ]
                             }
                         }
                     },
-                    "ability": "int",
                     "known": {
                         "1": [
-                            "toll the dead|xge#c"
+                            "Dark Pact|GuildWars#c"
                         ]
                     }
                 },
@@ -101318,15 +101492,14 @@
                         "1": {
                             "rest": {
                                 "1": [
-                                    "frenzy|GuildWars"
+                                    "Warrior's Endurance|GuildWars"
                                 ]
                             }
                         }
                     },
-                    "ability": "str",
                     "known": {
                         "1": [
-                            "Hamstring|GuildWars#c"
+                            "Sprint|GuildWars#c"
                         ]
                     }
                 },
@@ -101335,15 +101508,14 @@
                         "1": {
                             "rest": {
                                 "1": [
-                                    "charm animal|GuildWars"
+                                    "Spike Trap|GuildWars"
                                 ]
                             }
                         }
                     },
-                    "ability": "dex",
                     "known": {
                         "1": [
-                            "thorn whip#c"
+                            "Snare (Guild Wars)|GuildWars#c"
                         ]
                     }
                 },
@@ -101357,10 +101529,9 @@
                             }
                         }
                     },
-                    "ability": "cha",
                     "known": {
                         "1": [
-                            "minor illusion#c"
+                            "Illusion of Haste|GuildWars#c"
                         ]
                     }
                 }
@@ -101391,7 +101562,7 @@
                     "type": "entries",
                     "name": "Favoured by the Gods",
                     "entries": [
-                        "When choosing this race choose a patron god. The patron god gives you a small amount of power in the form a cantrip, a spell and a resistance to a specific damage type. Your spellcasting ability for those spells is dependent on the god. You can cast the spell once per short rest."
+                        "When choosing this species choose a patron god. The patron god gives you a small amount of power in the form a cantrip, a spell and a resistance to a specific damage type. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage). You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Short Rest."
                     ]
                 },
                 {
@@ -101399,8 +101570,7 @@
                     "name": "Dwayna",
                     "entries": [
                         "",
-                        "Spellcasting ability: Wisdom",
-                        "Cantrip: {@spell Guidance|phb}",
+                        "Cantrip: {@spell Aura of Stability|GuildWars}",
                         "Spell: {@spell Orison of Healing|GuildWars}",
                         "Damage Resistance: Radiant"
                     ]
@@ -101410,9 +101580,8 @@
                     "name": "Grenth",
                     "entries": [
                         "",
-                        "Spellcasting ability: Intelligence",
-                        "Cantrip: {@spell Toll the Dead|xge}",
-                        "Spell: {@spell Deathly Swarm|GuildWars}",
+                        "Cantrip: {@spell Dark Pact|GuildWars}",
+                        "Spell: {@spell Life Transfer|GuildWars}",
                         "Damage Resistance: Necrotic"
                     ]
                 },
@@ -101421,9 +101590,8 @@
                     "name": "Balthazar",
                     "entries": [
                         "",
-                        "Spellcasting ability: Strength",
-                        "Cantrip: {@spell Hamstring|GuildWars}",
-                        "Spell: {@spell Frenzy|GuildWars}",
+                        "Cantrip: {@spell Sprint|GuildWars}",
+                        "Spell: {@spell Warrior's Endurance|GuildWars}",
                         "Damage Resistance: Fire"
                     ]
                 },
@@ -101432,10 +101600,9 @@
                     "name": "Melandru",
                     "entries": [
                         "",
-                        "Spellcasting ability: Dexterity",
-                        "Cantrip: {@spell Thorn Whip|phb}",
-                        "Spell: {@spell Charm Animal|GuildWars}",
-                        "Damage Resistance: Poison and Acid"
+                        "Cantrip: {@spell Snare(Guild Wars)|GuildWars)}",
+                        "Spell: {@spell Spike Trap|GuildWars}",
+                        "Damage Resistance: Poison"
                     ]
                 },
                 {
@@ -101443,9 +101610,8 @@
                     "name": "Lyssa",
                     "entries": [
                         "",
-                        "Spellcasting ability: Charisma",
-                        "Cantrip: {@spell Minor Illusion|phb}",
-                        "Spell: {@spell Empathy|GuildWars}",
+                        "Cantrip: {@spell Illusion of Haste|GuildWars}",
+                        "Spell: {@spell Expel Hexes|GuildWars}",
                         "Damage Resistance: Psychic"
                     ]
                 },
@@ -101490,15 +101656,8 @@
                             "acid",
                             "psychic"
                         ],
-                        "count": 3
+                        "count": 2
                     }
-                }
-            ],
-            "languageProficiencies": [
-                {
-                    "common": true,
-                    "orrian": true,
-                    "any": 1
                 }
             ],
             "additionalSpells": [
@@ -101506,16 +101665,15 @@
                     "innate": {
                         "1": {
                             "rest": {
-                                "2": [
-                                    "orison of healing|GuildWars"
+                                "1": [
+                                    "Word of Healing|GuildWars"
                                 ]
                             }
                         }
                     },
-                    "ability": "wis",
                     "known": {
                         "1": [
-                            "guidance#c"
+                            "Aura of Stability|GuildWars#c"
                         ]
                     }
                 },
@@ -101523,16 +101681,15 @@
                     "innate": {
                         "1": {
                             "rest": {
-                                "2": [
-                                    "deathly swarm|GuildWars"
+                                "1": [
+                                    "Life Transfer|GuildWars"
                                 ]
                             }
                         }
                     },
-                    "ability": "int",
                     "known": {
                         "1": [
-                            "toll the dead|xge#c"
+                            "Dark Pact|GuildWars#c"
                         ]
                     }
                 },
@@ -101540,16 +101697,15 @@
                     "innate": {
                         "1": {
                             "rest": {
-                                "2": [
-                                    "frenzy|GuildWars"
+                                "1": [
+                                    "Warrior's Endurance|GuildWars"
                                 ]
                             }
                         }
                     },
-                    "ability": "str",
                     "known": {
                         "1": [
-                            "Hamstring|GuildWars#c"
+                            "Sprint|GuildWars#c"
                         ]
                     }
                 },
@@ -101557,16 +101713,15 @@
                     "innate": {
                         "1": {
                             "rest": {
-                                "2": [
-                                    "charm animal|GuildWars"
+                                "1": [
+                                    "Spike Trap|GuildWars"
                                 ]
                             }
                         }
                     },
-                    "ability": "dex",
                     "known": {
                         "1": [
-                            "thorn whip#c"
+                            "Snare (Guild Wars)|GuildWars#c"
                         ]
                     }
                 },
@@ -101574,16 +101729,15 @@
                     "innate": {
                         "1": {
                             "rest": {
-                                "2": [
+                                "1": [
                                     "empathy|GuildWars"
                                 ]
                             }
                         }
                     },
-                    "ability": "cha",
                     "known": {
                         "1": [
-                            "minor illusion#c"
+                            "Illusion of Haste|GuildWars#c"
                         ]
                     }
                 }
@@ -101614,7 +101768,7 @@
                     "type": "entries",
                     "name": "Favoured by the Gods",
                     "entries": [
-                        "When choosing this race choose a patron god. The patron god gives you a small amount of power in the form a cantrip, a spell and a resistance to a specific damage type. Your spellcasting ability for those spells is dependent on the god. You can cast the spell once per long rest."
+                        "When choosing this species choose a patron god. The patron god gives you a small amount of power in the form a cantrip, a spell and a resistance to a specific damage type. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage). You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Short Rest."
                     ]
                 },
                 {
@@ -101622,8 +101776,7 @@
                     "name": "Dwayna",
                     "entries": [
                         "",
-                        "Spellcasting ability: Wisdom",
-                        "Cantrip: {@spell Guidance|phb}",
+                        "Cantrip: {@spell Aura of Stability|GuildWars}",
                         "Spell: {@spell Orison of Healing|GuildWars}",
                         "Damage Resistance: Radiant"
                     ]
@@ -101633,9 +101786,8 @@
                     "name": "Grenth",
                     "entries": [
                         "",
-                        "Spellcasting ability: Intelligence",
-                        "Cantrip: {@spell Toll the Dead|xge}",
-                        "Spell: {@spell Deathly Swarm|GuildWars}",
+                        "Cantrip: {@spell Dark Pact|GuildWars}",
+                        "Spell: {@spell Life Transfer|GuildWars}",
                         "Damage Resistance: Necrotic"
                     ]
                 },
@@ -101644,9 +101796,8 @@
                     "name": "Balthazar",
                     "entries": [
                         "",
-                        "Spellcasting ability: Strength",
-                        "Cantrip: {@spell Hamstring|GuildWars}",
-                        "Spell: {@spell Frenzy|GuildWars}",
+                        "Cantrip: {@spell Sprint|GuildWars}",
+                        "Spell: {@spell Warrior's Endurance|GuildWars}",
                         "Damage Resistance: Fire"
                     ]
                 },
@@ -101655,10 +101806,9 @@
                     "name": "Melandru",
                     "entries": [
                         "",
-                        "Spellcasting ability: Dexterity",
-                        "Cantrip: {@spell Thorn Whip|phb}",
-                        "Spell: {@spell Charm Animal|GuildWars}",
-                        "Damage Resistance: Poison and Acid"
+                        "Cantrip: {@spell Snare(Guild Wars)|GuildWars)}",
+                        "Spell: {@spell Spike Trap|GuildWars}",
+                        "Damage Resistance: Poison"
                     ]
                 },
                 {
@@ -101666,9 +101816,8 @@
                     "name": "Lyssa",
                     "entries": [
                         "",
-                        "Spellcasting ability: Charisma",
-                        "Cantrip: {@spell Minor Illusion|phb}",
-                        "Spell: {@spell Empathy|GuildWars}",
+                        "Cantrip: {@spell Illusion of Haste|GuildWars}",
+                        "Spell: {@spell Expel Hexes|GuildWars}",
                         "Damage Resistance: Psychic"
                     ]
                 },
@@ -101713,15 +101862,8 @@
                             "acid",
                             "psychic"
                         ],
-                        "count": 2
+                        "count": 1
                     }
-                }
-            ],
-            "languageProficiencies": [
-                {
-                    "common": true,
-                    "elonian": true,
-                    "any": 1
                 }
             ],
             "additionalSpells": [
@@ -101730,15 +101872,14 @@
                         "1": {
                             "rest": {
                                 "1": [
-                                    "orison of healing|GuildWars"
+                                    "Word of Healing|GuildWars"
                                 ]
                             }
                         }
                     },
-                    "ability": "wis",
                     "known": {
                         "1": [
-                            "guidance#c"
+                            "Aura of Stability|GuildWars#c"
                         ]
                     }
                 },
@@ -101747,15 +101888,14 @@
                         "1": {
                             "rest": {
                                 "1": [
-                                    "deathly swarm|GuildWars"
+                                    "Life Transfer|GuildWars"
                                 ]
                             }
                         }
                     },
-                    "ability": "int",
                     "known": {
                         "1": [
-                            "toll the dead|xge#c"
+                            "Dark Pact|GuildWars#c"
                         ]
                     }
                 },
@@ -101764,15 +101904,14 @@
                         "1": {
                             "rest": {
                                 "1": [
-                                    "frenzy|GuildWars"
+                                    "Warrior's Endurance|GuildWars"
                                 ]
                             }
                         }
                     },
-                    "ability": "str",
                     "known": {
                         "1": [
-                            "Hamstring|GuildWars#c"
+                            "Sprint|GuildWars#c"
                         ]
                     }
                 },
@@ -101781,15 +101920,14 @@
                         "1": {
                             "rest": {
                                 "1": [
-                                    "charm animal|GuildWars"
+                                    "Spike Trap|GuildWars"
                                 ]
                             }
                         }
                     },
-                    "ability": "dex",
                     "known": {
                         "1": [
-                            "thorn whip#c"
+                            "Snare (Guild Wars)|GuildWars#c"
                         ]
                     }
                 },
@@ -101803,10 +101941,9 @@
                             }
                         }
                     },
-                    "ability": "cha",
                     "known": {
                         "1": [
-                            "minor illusion#c"
+                            "Illusion of Haste|GuildWars#c"
                         ]
                     }
                 }
@@ -101837,7 +101974,7 @@
                     "type": "entries",
                     "name": "Favoured by the Gods",
                     "entries": [
-                        "When choosing this race choose a patron god. The patron god gives you a small amount of power in the form a cantrip, a spell and a resistance to a specific damage type. Your spellcasting ability for those spells is dependent on the god. You can cast the spell once per short rest."
+                        "When choosing this species choose a patron god. The patron god gives you a small amount of power in the form a cantrip, a spell and a resistance to a specific damage type. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage). You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Short Rest."
                     ]
                 },
                 {
@@ -101845,8 +101982,7 @@
                     "name": "Dwayna",
                     "entries": [
                         "",
-                        "Spellcasting ability: Wisdom",
-                        "Cantrip: {@spell Guidance|phb}",
+                        "Cantrip: {@spell Aura of Stability|GuildWars}",
                         "Spell: {@spell Orison of Healing|GuildWars}",
                         "Damage Resistance: Radiant"
                     ]
@@ -101856,9 +101992,8 @@
                     "name": "Grenth",
                     "entries": [
                         "",
-                        "Spellcasting ability: Intelligence",
-                        "Cantrip: {@spell Toll the Dead|xge}",
-                        "Spell: {@spell Deathly Swarm|GuildWars}",
+                        "Cantrip: {@spell Dark Pact|GuildWars}",
+                        "Spell: {@spell Life Transfer|GuildWars}",
                         "Damage Resistance: Necrotic"
                     ]
                 },
@@ -101867,9 +102002,8 @@
                     "name": "Balthazar",
                     "entries": [
                         "",
-                        "Spellcasting ability: Strength",
-                        "Cantrip: {@spell Hamstring|GuildWars}",
-                        "Spell: {@spell Frenzy|GuildWars}",
+                        "Cantrip: {@spell Sprint|GuildWars}",
+                        "Spell: {@spell Warrior's Endurance|GuildWars}",
                         "Damage Resistance: Fire"
                     ]
                 },
@@ -101878,10 +102012,9 @@
                     "name": "Melandru",
                     "entries": [
                         "",
-                        "Spellcasting ability: Dexterity",
-                        "Cantrip: {@spell Thorn Whip|phb}",
-                        "Spell: {@spell Charm Animal|GuildWars}",
-                        "Damage Resistance: Poison and Acid"
+                        "Cantrip: {@spell Snare(Guild Wars)|GuildWars)}",
+                        "Spell: {@spell Spike Trap|GuildWars}",
+                        "Damage Resistance: Poison"
                     ]
                 },
                 {
@@ -101889,9 +102022,8 @@
                     "name": "Lyssa",
                     "entries": [
                         "",
-                        "Spellcasting ability: Charisma",
-                        "Cantrip: {@spell Minor Illusion|phb}",
-                        "Spell: {@spell Empathy|GuildWars}",
+                        "Cantrip: {@spell Illusion of Haste|GuildWars}",
+                        "Spell: {@spell Expel Hexes|GuildWars}",
                         "Damage Resistance: Psychic"
                     ]
                 },

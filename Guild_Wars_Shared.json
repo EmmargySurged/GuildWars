@@ -1808,6 +1808,108 @@
                 "type": "external",
                 "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Aggressive_binding_spirit_Token.png"
             }
+        },
+        {
+            "name": "Spirit of Wanderlust",
+            "size": [
+                "M"
+            ],
+            "type": "undead",
+            "source": "GuildWars",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "ac": 10,
+                    "condition": "+ Spell Level",
+                    "braces": true
+                }
+            ],
+            "hp": {
+                "special": "5 + Spell Level * 5"
+            },
+            "speed": {},
+            "str": 10,
+            "dex": 10,
+            "con": 10,
+            "int": 10,
+            "wis": 10,
+            "cha": 10,
+            "passive": 10,
+            "actionTags": [
+                "Multiattack"
+            ],
+            "immune": [
+                "poison"
+            ],
+            "conditionImmune": [
+                "blinded",
+                "charmed",
+                "deafened",
+                "exhaustion",
+                "frightened",
+                "grappled",
+                "incapacitated",
+                "paralyzed",
+                "petrified",
+                "poisoned",
+                "restrained",
+                "stunned",
+                "unconscious"
+            ],
+            "fluff": {
+                "entries": [
+                    "Binding Ritual. Create a level 1...10...12 spirit. This spirit's attacks deal 5...25...30 damage. This spirit dies after 30...126...150 seconds."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Aggressive_binding_spirit.jpg"
+                        }
+                    }
+                ]
+            },
+            "senses": [
+                "blindsight 120 ft."
+            ],
+            "senseTags": [
+                "B"
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The Spirit of Wanderlust makes a number of Wanderlust attacks equal to half the level of the spell (rounded down, minimum 1)."
+                    ]
+                },
+                {
+                    "name": "Wanderlust",
+                    "entries": [
+                        "{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}4 ({@damage 1d6 + Spell Level}) force damage, if the target did not willingly move on its last turn, it is knocked {@condition prone}."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "RA"
+            ],
+            "tokenHref": {
+                "type": "external",
+                "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Aggressive_binding_spirit_Token.png"
+            },
+            "conditionInflict": [
+                "prone"
+            ],
+            "trait": [
+                {
+                    "name": "Bring down the Punishment",
+                    "entries": [
+                        "The Spirit of Wanderlust cannot have disadvantage on ranged attacks because a creature is {@condition prone}."
+                    ]
+                }
+            ]
         }
     ],
     "feat": [
@@ -99986,6 +100088,317 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Siphon Strength",
+            "level": 1,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@bold Elite}, {@bold Hex}",
+                "Tap into the energy flows of a creature, disrupting theirs and improving your understanding of them.",
+                "Choose one creature that you can see within range. For the duration when the target makes a damage roll using a weapon, you can roll {@dice 2d4} and subtract the number rolled from the damage. Additionally, for the duration, the number someone needs to roll to score a critical hit against the target gets reduced by {@dice 1d4}"
+            ],
+            "source": "GuildWars",
+            "components": {
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the number subtracted increases by {@dice 2d4} for each slot level above 1st and the number someone needs to roll to score a critical hit against the target get reduced by 1 for each slot level above 1st."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "fluff": {
+                "entries": [
+                    "Siphon Strength",
+                    "Elite Hex Spell. For 5...17...20 seconds, target foe deals 5...41...50 less damage with attacks and all of your attacks against that foe have an additional 33% chance of being a critical hit."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/6/64/Siphon_Strength.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "The Jade Sea",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Assassin",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Deadly Arts",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Hex",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Collage of swords",
+                            "shortName": "Swords",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Bladesinging",
+                            "shortName": "Bladesinging",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "miscTags": [
+                "SGT"
+            ]
+        },
+        {
+            "name": "Wanderlust",
+            "level": 1,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "School of necromancy",
+                            "shortName": "Necromancy",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@bold Elite}, {@bold Summoning Ritual:} {@creature Spirit of Wanderlust|GuildWars}",
+                "Call forth a spirit of wanderlust, punishing those who are not moving.",
+                "Summon a {@creature Spirit of Wanderlust|GuildWars} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative, but takes it turn directly after yours. The spirit is in the DMs control."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Wanderlust",
+                    "Elite Binding Ritual. Create a level 1...10...12 spirit. Whenever this spirit's attack hits a stationary foe, that foe is knocked down and the spirit loses 70...54...50 Health. This spirit dies after 30...54...60 seconds."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/c/cb/Wanderlust.jpg"
+                        }
+                    }
+                ]
+            },
+            "miscTags": [
+                "SMN"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Ritualist",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Communing",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Summoning Ritual",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a poem written about wanderlust"
+            }
         }
     ],
     "table": [

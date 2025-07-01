@@ -11449,7 +11449,7 @@
         },
         {
             "name": "Immolate",
-            "level": 3,
+            "level": 2,
             "school": "V",
             "time": [
                 {
@@ -11515,9 +11515,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 4th level or higher, the damage each increases by {@dice 1d6} for each slot level above 3rd."
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage each increases by {@dice 1d6} for each slot level above 2nd."
                     ]
                 }
             ],
@@ -101393,6 +101393,274 @@
             ],
             "savingThrow": [
                 "dexterity"
+            ]
+        },
+        {
+            "name": "Accumulated Pain",
+            "level": 2,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "xua2025eberronupdates"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Psion",
+                        "source": "xua2025psion"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Ranger",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Hollow warden",
+                            "shortName": "Hollow Warden",
+                            "source": "xua2025horrorsubclasses"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "Suddenly intensify an already suffering creature's pain.",
+                "Choose one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes {@damage 6d6} psychic damage and if the target is suffering from at least two different spells, they gain a {@condition deep wound|GuildWars} for the duration.",
+                "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Accumulated Pain",
+                    "Spell. Target foe takes 15...63...75 damage. If target foe is suffering from 2 or more hexes, that foe suffers a Deep Wound for 5...17...20 seconds. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/3/30/Accumulated_Pain.jpg"
+                        }
+                    }
+                ]
+            },
+            "damageInflict": [
+                "psychic"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Mesmer",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Illusion Magic",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "conditionInflict": [
+                "deep wound|guildwars"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d6} for each slot level above 2nd."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Deny Hexes",
+            "level": 2,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "entries": [
+                "Deny any hexes by invoking your divine connection.",
+                "Choose one friendly creature that you can see within range. The latest N harmful spell on the target ends, where N is the number of spell slots expended since the last long rest, in the casting of divine themed spells, including this one."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Deny Hexes",
+                    "Spell. Remove one hex from target ally and one additional hex for each recharging Divine Favor skill you have."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/4/45/Deny_Hexes.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Monk",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Divine Favor",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true,
+                "m": "a cross"
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the final N increases by 1 for each slot level above 2nd."
+                    ]
+                }
             ]
         }
     ],

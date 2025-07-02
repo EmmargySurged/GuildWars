@@ -1910,6 +1910,74 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Vampiric Horror",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "GuildWars",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 7,
+					"condition": "+ Spell Level"
+				}
+			],
+			"hp": {
+				"special": "4 + Spell Level * 4"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 8,
+			"con": 16,
+			"int": 4,
+			"wis": 6,
+			"cha": 4,
+			"passive": 8,
+			"conditionImmune": [
+				"poisoned"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The bone horror makes a number of Bite attacks equal to half the level of the spell (rounded down) (minimum 1)."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"Natural Weapon: your spell attack modifier to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 3} + Spell Level) piercing damage, you regain health equal to the piercing damage dealt."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"fluff": {
+				"entries": [
+					"Vampiric Horrors are minions created by the Animate Vampiric Horror spell. When one of them does damage, the creature who controls them is healed by the same amount. Vampiric Horrors will not provide healing if they are masterless. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bone_Horror.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bone_Horror_Token.png"
+			}
 		}
 	],
 	"feat": [
@@ -101422,7 +101490,93 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "xua2025eberronupdates"
+					},
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Psion",
+						"source": "xua2025psion"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Illrigger",
+							"source": "IllriggerRevised"
+						},
+						"subclass": {
+							"name": "Architect of ruin",
+							"shortName": "Architect of Ruin",
+							"source": "IllriggerRevised"
+						}
+					},
+					{
+						"class": {
+							"name": "Ranger",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Hollow warden",
+							"shortName": "Hollow Warden",
+							"source": "xua2025horrorsubclasses"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Eldritch knight",
+							"shortName": "Eldritch Knight",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Gunslinger",
+							"source": "ValdaGunslinger"
+						},
+						"subclass": {
+							"name": "Spellslinger",
+							"shortName": "Spellslinger",
+							"source": "ValdaGunslinger"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
 			},
 			"entries": [
 				"Suddenly intensify an already suffering creature's pain.",
@@ -101511,7 +101665,17 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": []
 			},
 			"entries": [
 				"Deny any hexes by invoking your divine connection.",
@@ -101565,6 +101729,302 @@
 						"When you cast this spell using a spell slot of 3rd level or higher, the final N increases by 1 for each slot level above 2nd."
 					]
 				}
+			]
+		},
+		{
+			"name": "Animate Vampiric Horror",
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"{@bold Enchantment}",
+				"Exploit a nearby corpse to create a Vampiric Horror.",
+				"Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, the target becomes a {@creature Vampiric Horror|GuildWars}. ",
+				"The {@creature Vampiric Horror|GuildWars} remains for the duration or until it reaches zero hit points, at which point it will disintegrate into ash.",
+				"The {@creature Vampiric Horror|GuildWars} is friendly to you and your allies for the duration. If you fall {@condition unconscious}, the {@creature Vampiric Horror|GuildWars} becomes hostile towards everything, instead of disintegrating into ash. The {@creature Vampiric Horror|GuildWars} acts on your initiative, but takes it turn directly after yours. The {@creature Vampiric Horror|GuildWars} is in the DMs control.",
+				"On each of your turns until the spell ends, you can use your action to animate another bone horror this way."
+			],
+			"source": "GuildWars",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "the fang of a vampire"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, use the higher level wherever the spell's level appears in the stat block. When you cast this spell using a spell slot of 3rd or 4th level, the duration increases to 8 hours. When you use a spell slot of 5th level or higher, the duration increases to 24 hours."
+					]
+				}
+			],
+			"miscTags": [
+				"HL",
+				"SGT",
+				"SMN"
+			],
+			"fluff": {
+				"entries": [
+					"Animate Vampiric Horror",
+					"Spell. Exploit nearest corpse to animate a level 1...14...17 Vampiric Horror. Whenever a Vampiric Horror you control deals damage, you gain the same amount of Health."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/0/01/Animate_Vampiric_Horror.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Necromancer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Death Magic",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Enchantment",
+					"source": "GuildWars"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "xua2025eberronupdates"
+						},
+						"subclass": {
+							"name": "Reanimator",
+							"shortName": "Reanimator",
+							"source": "xua2025horrorsubclasses"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Circle of spores",
+							"shortName": "Spores",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Illrigger",
+							"source": "IllriggerRevised"
+						},
+						"subclass": {
+							"name": "Architect of ruin",
+							"shortName": "Architect of Ruin",
+							"source": "IllriggerRevised"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Eldritch knight",
+							"shortName": "Eldritch Knight",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Gunslinger",
+							"source": "ValdaGunslinger"
+						},
+						"subclass": {
+							"name": "Spellslinger",
+							"shortName": "Spellslinger",
+							"source": "ValdaGunslinger"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
+			},
+			"spellAttack": [
+				"M"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"damageInflict": [
+				"piercing"
+			]
+		},
+		{
+			"name": "Bestial Mauling",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Companion}",
+				"Command your companion to brutally maul a {@condition prone} creature.",
+				"Choose one companion, that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 6d6} damage, and if the target is {@condition prone}, it is {@condition dazed|GuildWars} for the duration.",
+				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Bestial Mauling",
+					"Pet Attack. Your animal companion attempts a Bestial Mauling that deals +5...17...20 damage. If the attack strikes a knocked-down foe, that foe is Dazed for 4...9...10 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/a/ac/Bestial_Mauling.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT",
+				"AAD"
+			],
+			"components": {
+				"v": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the number of attacks increases by 1 for each slot level above 3rd. "
+					]
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Beast Mastery",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Companion",
+					"source": "GuildWars"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Druid",
+						"source": "XPHB"
+					},
+					{
+						"name": "Psion",
+						"source": "xua2025psion"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					}
+				],
+				"fromSubclass": []
+			},
+			"conditionInflict": [
+				"dazed|guildwars",
+				"prone"
 			]
 		}
 	],

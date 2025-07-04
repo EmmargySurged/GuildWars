@@ -1821,17 +1821,14 @@
 			]
 		},
 		{
-			"name": "Mad King Jadon",
-			"group": [
-				"Beholders"
-			],
+			"name": "Lazarus the Dire",
 			"source": "GuildWarsDev",
 			"size": [
-				"L"
+				"M"
 			],
-			"type": "aberration",
+			"type": "fiend",
 			"alignment": [
-				"C",
+				"L",
 				"E"
 			],
 			"ac": [
@@ -1842,9 +1839,9 @@
 				"formula": "20d10 + 80"
 			},
 			"speed": {
-				"walk": 5,
+				"walk": 30,
 				"fly": {
-					"number": 40,
+					"number": 30,
 					"condition": "(hover)"
 				},
 				"canHover": true
@@ -1855,27 +1852,26 @@
 			"str": 16,
 			"dex": 14,
 			"con": 18,
-			"int": 17,
-			"wis": 15,
-			"cha": 17,
+			"int": 18,
+			"wis": 16,
+			"cha": 18,
 			"save": {
 				"con": "+9",
-				"wis": "+7"
+				"wis": "+8"
 			},
 			"skill": {
-				"perception": "+12"
+				"perception": "+13",
+				"arcana": "+14",
+				"deception": "+14"
 			},
 			"senses": [
-				"darkvision 120 ft."
+				"truesight 120 ft."
 			],
-			"passive": 22,
+			"passive": 23,
 			"conditionImmune": [
+				"charmed",
+				"frightened",
 				"prone"
-			],
-			"languages": [
-				"Deep Speech",
-				"Undercommon",
-				"Krytan"
 			],
 			"cr": {
 				"cr": "13",
@@ -1885,7 +1881,7 @@
 				{
 					"name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
 					"entries": [
-						"If Mad King Jadon fails a saving throw, it can choose to succeed instead."
+						"If Lazarus the Dire fails a saving throw, he can choose to succeed instead."
 					]
 				}
 			],
@@ -1893,19 +1889,19 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Mad King Jadon uses Eye Rays three times."
+						"Lazarus the Dire uses Mursaat Magic three times."
 					]
 				},
 				{
-					"name": "Bite",
+					"name": "Slash",
 					"entries": [
-						"{@atkr m} {@hit 8}, reach 5 ft. {@h}13 ({@damage 3d6 + 3}) Piercing damage."
+						"{@atkr m} {@hit 8}, reach 5 ft. {@h}13 ({@damage 3d6 + 3}) Slashing damage."
 					]
 				},
 				{
-					"name": "Eye Rays",
+					"name": "Mursaat Magic",
 					"entries": [
-						"Mad King Jadon randomly shoots one of the following magical rays at a target it can see within 120 feet of itself (roll {@dice 1d10}; reroll if Mad King Jadon has already used that ray during this turn):",
+						"Lazarus the Dire randomly shoots one of the following magical rays at a target it can see within 120 feet of itself (roll {@dice 1d10}; reroll if Lazarus the Dire has already used that ray during this turn):",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -1949,7 +1945,7 @@
 									"type": "item",
 									"name": "6: Telekinetic Ray",
 									"entries": [
-										"{@actSave str} {@dc 16} (the target succeeds automatically if it is Gargantuan). {@actSaveFail} The beholder moves the target up to 30 feet in any direction. The target has the {@condition Restrained|XPHB} condition until the start of the beholder's next turn or until the beholder has the {@condition Incapacitated|XPHB} condition. Mad King Jadon can also exert fine control on objects with this ray, such as manipulating a tool or opening a door or container."
+										"{@actSave str} {@dc 16} (the target succeeds automatically if it is Gargantuan). {@actSaveFail} Lazarus the Dire moves the target up to 30 feet in any direction. The target has the {@condition Restrained|XPHB} condition until the start of Lazarus the Dire's next turn or until Lazarus the Dire has the {@condition Incapacitated|XPHB} condition. Lazarus the Dire can also exert fine control on objects with this ray, such as manipulating a tool or opening a door or container."
 									]
 								},
 								{
@@ -1989,35 +1985,50 @@
 				{
 					"name": "Antimagic Cone",
 					"entries": [
-						"Mad King Jadon's central eye emits an antimagic wave in a 150-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. Until the start of the beholder's next turn, that area acts as an {@spell Antimagic Field|XPHB} spell, and that area works against the beholder's own Eye Rays."
+						"Lazarus the Dire emits an antimagic wave in a 150-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. Until the start of Lazarus the Dire's next turn, that area acts as an {@spell Antimagic Field|XPHB} spell, and that area works against Lazarus the Dire's own Eye Rays."
+					]
+				},
+				{
+					"name": "Spectral Agony {@recharge 4}",
+					"entries": [
+						"{@actSave int} {@dc 17}, one creature within 120-feet range. {@actSaveFail} 41 ({@damage 8d8 + 5}) Psychic damage, and is under the following effects for 2 rounds:",
+						"- Speed reduced by 90%.",
+						"- Can either take an action or bonus action, not both.",
+						"- Can't take reactions.",
+						"- Can only make one attack per turn.",
+						"- Takes {@damage 8d8} psychic damage at the start of their turn.",
+						"{@actSaveSuccess} Half damage only.",
+						"Creatures not infused have disadvantage on the Saving Throw. Infused creatures have advantage."
+					]
+				},
+				{
+					"name": "Misty Step (3/Day)",
+					"entries": [
+						"Lazarus the Dire casts Misty Step, using the same spellcasting ability as Spellcasting."
 					]
 				}
 			],
 			"legendaryActionsLair": 4,
 			"legendary": [
 				{
-					"name": "Chomp",
+					"name": "Swipe",
 					"entries": [
-						"Mad King Jadon makes two Bite attacks."
+						"Lazarus the Dire makes two Slash attacks."
 					]
 				},
 				{
 					"name": "Glare",
 					"entries": [
-						"Mad King Jadon uses Eye Rays."
+						"Lazarus the Dire uses Mursaat Magic."
 					]
 				},
 				{
 					"name": "Elite Spell",
 					"entries": [
-						"Mad King Jadon casts {@spell Virulence|GuildWars} using the same spellcasting ability as Spellcasting."
+						"Lazarus the Dire casts {@spell Virulence|GuildWars} or {@spell Shockwave|GuildWars} using the same spellcasting ability as Spellcasting."
 					]
 				}
 			],
-			"legendaryGroup": {
-				"name": "Beholder",
-				"source": "XMM"
-			},
 			"treasure": [
 				"arcana"
 			],
@@ -2025,14 +2036,10 @@
 				"Legendary Resistances"
 			],
 			"senseTags": [
-				"SD"
+				"U"
 			],
 			"actionTags": [
 				"Multiattack"
-			],
-			"languageTags": [
-				"DS",
-				"U"
 			],
 			"miscTags": [
 				"MA"
@@ -2050,17 +2057,12 @@
 			"hasFluff": true,
 			"hasFluffImages": true,
 			"fluff": {
-				"entries": [
-					"Loot:",
-					"Staff of Flowers",
-					"Sending Stones"
-				],
 				"images": [
 					{
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://5e.tools/img/bestiary/XMM/Beholder.webp"
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Mursaat_caster_Necromancer_Boss.jpg"
 						}
 					}
 				]
@@ -2069,9 +2071,12 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Mad King Jadon casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 17}, +9 to hit with spell attacks.)"
+						"Lazarus the Dire casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 17}, +9 to hit with spell attacks.)"
 					],
 					"will": [
+						"{@spell plane shift|XPHB}",
+						"{@spell shockwave|GuildWars}",
+						"{@spell teleport|XPHB}",
 						"{@spell virulence|GuildWars}"
 					],
 					"ability": "cha",
@@ -2081,24 +2086,38 @@
 			"spellcastingTags": [
 				"O"
 			],
-			"token": {
-				"name": "Beholder",
-				"source": "XMM"
+			"languages": [
+				"Mursaat",
+				"Common",
+				"Krytan",
+				"telepathy 120 ft."
+			],
+			"languageTags": [
+				"C",
+				"TP"
+			],
+			"savingThrowForcedLegendary": [
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Mursaat_caster_Necromancer_Boss_Token.png"
 			},
 			"damageTags": [
 				"I",
 				"N",
 				"O",
-				"P",
+				"S",
 				"Y"
+			],
+			"damageTagsSpell": [
+				"O"
 			],
 			"savingThrowForced": [
 				"constitution",
 				"dexterity",
+				"intelligence",
 				"strength",
-				"wisdom"
-			],
-			"savingThrowForcedLegendary": [
 				"wisdom"
 			]
 		},

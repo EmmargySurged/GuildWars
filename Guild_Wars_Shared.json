@@ -60447,7 +60447,9 @@
             "fluff": {
                 "entries": [
                     "Sympathetic Visage",
-                    "Enchantment Spell. For 4...9...10 seconds, whenever target ally is hit by a melee attack, all adjacent foes lose all adrenaline and 3 Energy. "
+                    "Enchantment Spell. For 4...9...10 seconds, whenever target ally is hit by a melee attack, all adjacent foes lose all adrenaline and 3 Energy. ",
+                    "Ancestor's Visage",
+                    "Enchantment Spell. For 4...9...10 seconds, whenever target ally is hit by a melee attack, all adjacent foes lose all adrenaline and 3 Energy."
                 ],
                 "images": [
                     {
@@ -60455,6 +60457,13 @@
                         "href": {
                             "type": "external",
                             "url": "https://wiki.guildwars.com/images/6/63/Sympathetic_Visage.jpg"
+                        }
+                    },
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/c/c0/Ancestor%27s_Visage.jpg"
                         }
                     }
                 ]
@@ -103538,6 +103547,304 @@
             "conditionInflict": [
                 "prone"
             ]
+        },
+        {
+            "name": "Ethereal Light",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "round"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "Channel ethereal light into a creature. ",
+                "Choose one creature that you can see within range. The target regains hit points equal to {@dice 2d10} + your spellcasting ability modifier."
+            ],
+            "source": "GuildWars",
+            "components": {
+                "v": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@dice 2d10} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
+            ],
+            "fluff": {
+                "entries": [
+                    "Ethereal Light",
+                    "Spell. Target ally is healed for 25...85...100. This spell is easily interrupted."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/a/a4/Ethereal_Light.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Monk",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Healing Prayers",
+                    "source": "GuildWars"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Alchemist",
+                            "shortName": "Alchemist",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Psion",
+                            "source": "xua2025psion"
+                        },
+                        "subclass": {
+                            "name": "Metamorph",
+                            "shortName": "Metamorph",
+                            "source": "xua2025psion"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Blood Drinker",
+            "level": 1,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "Steal the life force from a creature, becoming more effective the more desperate you are.",
+                "If you are above 50% of your maximum hit points, you start {@condition bleeding|GuildWars} for the duration, taking {@damage 2d4} damage.",
+                "Choose one creature that you can see within range. The target takes {@damage 3d8} necrotic damage, and you regain hit points equal to the amount of necrotic damage dealt.",
+                "At the end of each of your turns, you can make a Constitution saving throw. On a success, the condition ends."
+            ],
+            "source": "GuildWars",
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d8} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "fluff": {
+                "entries": [
+                    "Blood Drinker",
+                    "Spell. If your Health is above 50%, you begin Bleeding for 10 seconds. Steal up to 20...56...65 Health from target foe."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/7/72/Blood_Drinker.jpg"
+                        }
+                    }
+                ]
+            },
+            "damageInflict": [
+                "necrotic",
+                "slashing"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Necromancer",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Blood Magic",
+                    "source": "GuildWars"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Reanimator",
+                            "shortName": "Reanimator",
+                            "source": "xua2025horrorsubclasses"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Psion",
+                            "source": "xua2025psion"
+                        },
+                        "subclass": {
+                            "name": "Metamorph",
+                            "shortName": "Metamorph",
+                            "source": "xua2025psion"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "savingThrow": [
+                "constitution"
+            ],
+            "components": {
+                "v": true,
+                "m": "a chalice"
+            }
         }
     ],
     "table": [

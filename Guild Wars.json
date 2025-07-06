@@ -42391,8 +42391,9 @@
 			"school": "T",
 			"time": [
 				{
-					"number": 1,
-					"unit": "action"
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
 				}
 			],
 			"range": {
@@ -42406,7 +42407,7 @@
 			"entries": [
 				"{@bold Elite}",
 				"Perform a magical flourish, allowing you to immediately afterward cast an attack spell.",
-				"Cast any non-elite spell which has a Special casting time, which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike, which is of a level equal or lower than this one, ignoring adrenaline cost, casting time and components, which you have prepared."
+				"Cast any spell which has a Special casting time, which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike, without using a spell slot, ignoring adrenaline cost, casting time and components, which you have prepared."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -42487,7 +42488,16 @@
 						}
 					}
 				]
-			}
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the level of the spell increases by 1 for each slot level above 1st."
+					]
+				}
+			]
 		},
 		{
 			"name": "Poison Arrow",
@@ -103821,6 +103831,170 @@
 				"v": true,
 				"m": "a chalice"
 			}
+		},
+		{
+			"name": "Anguished Was Lingwah",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@bold Urn}",
+				"Create a scarlet urn containing the ashes of Lingwah, amplifying the anguish you inflict.",
+				"You create an urn in your hands. While holding the Urn created by this spell, your detrimental Ritualist themed spells which require {@status Concentration|XPHB} have their duration extended by 100%. When you cast one such spell of 1st level or higher, you can cast that spell by using a spell slot which is one level higher than the one used in the casting."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Anguished Was Lingwah",
+					"Item Spell. Hold Lingwah's ashes for up to 10...50...60 seconds. While you hold her ashes, your Ritualist hexes cost 1...4...5 less energy and last 33% longer. When you drop her ashes all your Ritualist hexes are recharged."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/a/a2/Anguished_Was_Lingwah.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Spawning Power",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Spawning Power",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Urn",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "the ashes of a tortured creature"
+			},
+			"areaTags": [
+				"ST"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the level of the spell increases by 1 for each slot level above 3rd and the % increases by 50% for each slot level above 3rd. "
+					]
+				}
+			]
+		},
+		{
+			"name": "On Your Knees!",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "emanation",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@bold Adrenaline:} 6",
+				"You lose all Adrenaline.",
+				"If there are any hostile {@condition prone} creatures within range, you can immediately cast any stance spell without using a spell slot, ignoring adrenaline cost, casting time and components, which you have prepared."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"\"On Your Knees!\"",
+					"Shout. Lose all adrenaline. If any adjacent foes are knocked down, all of your stances are recharged."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/7/7b/%22On_Your_Knees%21%22.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Warrior",
+					"source": "GuildWars"
+				},
+				{
+					"name": "No Attribute - Warrior",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Adrenaline",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the level of the spell increases by 1 for each slot level above 1st."
+					]
+				}
+			]
 		}
 	],
 	"table": [

@@ -72151,6 +72151,8 @@
 			"fluff": {
 				"entries": [
 					"Desecrate Enchantments",
+					"Spell. Target foe and all nearby foes take 6...49...60 shadow damage and 4...17...20 shadow damage for each enchantment on them.",
+					"Defile Enchantments",
 					"Spell. Target foe and all nearby foes take 6...49...60 shadow damage and 4...17...20 shadow damage for each enchantment on them."
 				],
 				"images": [
@@ -72159,6 +72161,13 @@
 						"href": {
 							"type": "external",
 							"url": "https://wiki.guildwars.com/images/0/0a/Desecrate_Enchantments.jpg"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/c/c3/Defile_Enchantments.jpg"
 						}
 					}
 				]
@@ -78562,7 +78571,7 @@
 				"{@bold Hex:} You cannot choose to end {@status Concentration|XPHB} on this spell.",
 				"Start festering a glob of bile in a creature's stomach, making it explode when the spell ends.",
 				"Choose one hostile creature that you can see within range. The target is hexed with {@spell Rising Bile|GuildWars}.",
-				"When this spell ends, target each hostile creature in a 20-foot-radius sphere centered on the target. Each new target must make a Constitution saving throw. On a failed save, a target takes {@damage 1d6} necrotic damage per round {@spell Rising Bile|GuildWars} was on the initial target before ending. On a successful save, a target takes half as much damage."
+				"When this spell ends, target each hostile creature in a 20-foot-radius sphere centered on the target. Each new target must make a Constitution saving throw. On a failed save, a target takes {@damage 1d6} acid damage per round {@spell Rising Bile|GuildWars} was on the initial target before ending. On a successful save, a target takes half as much damage."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -78611,9 +78620,6 @@
 					]
 				}
 			],
-			"damageInflict": [
-				"necrotic"
-			],
 			"savingThrow": [
 				"constitution"
 			],
@@ -78624,6 +78630,9 @@
 			],
 			"miscTags": [
 				"SGT"
+			],
+			"damageInflict": [
+				"acid"
 			]
 		},
 		{
@@ -104818,8 +104827,265 @@
 				]
 			},
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Druid",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					}
+				],
+				"fromSubclass": []
 			}
+		},
+		{
+			"name": "Conflagration",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Summoning Ritual:} {@creature Nature Ritual|GuildWars}",
+				"Call forth a spirit of Conflagration, which ignites all projectiles.",
+				"Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit and deals non-fire damage with a ranged weapon attack, they instead deal fire damage."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Conflagration",
+					"Nature Ritual. Create a level 1...8...10 spirit. For non-spirit creatures within its range, all arrows that hit strike for fire damage. This spirit dies after 30...126...150 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/7/75/Conflagration.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Wilderness Survival",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Summoning Ritual",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a lit candle"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th or 5th level, the duration increases to 8 hours. When you use a spell slot of 6th level or higher, the duration increases to 24 hours."
+					]
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Druid",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "xua2025eberronupdates"
+						},
+						"subclass": {
+							"name": "Alchemist",
+							"shortName": "Alchemist",
+							"source": "xua2025eberronupdates"
+						}
+					},
+					{
+						"class": {
+							"name": "Gunslinger",
+							"source": "ValdaGunslinger"
+						},
+						"subclass": {
+							"name": "Spellslinger",
+							"shortName": "Spellslinger",
+							"source": "ValdaGunslinger"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"MT"
+			],
+			"miscTags": [
+				"SMN"
+			]
+		},
+		{
+			"name": "Binding Chains",
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@bold Hex}",
+				"Conjure up the chains of the damned.",
+				"Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Strength saving throw. On a failed save, for the duration, a target's speed is reduced by 90%, and for every foot a target travels, they take {@damage 1d4} necrotic damage."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Binding Chains",
+					"Hex Spell. For 3 seconds, target foe and all nearby foes move 90% slower and take 1...24...30 damage each second while moving. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/1/19/Binding_Chains.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Communing",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Hex",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a chain woven of soulfiber"
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d4} for each slot level above 4th."
+					]
+				}
+			]
 		}
 	],
 	"table": [

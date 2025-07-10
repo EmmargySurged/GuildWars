@@ -1954,6 +1954,95 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Bone_Horror_Token.png"
 			}
+		},
+		{
+			"name": "Spirit of Destruction",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "GuildWars",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"condition": "+ Spell Level",
+					"braces": true
+				}
+			],
+			"hp": {
+				"special": "10 + Spell Level * 10"
+			},
+			"speed": {},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"actionTags": [
+				"Multiattack"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"fluff": {
+				"entries": [
+					"Destruction",
+					"Binding Ritual. Create a level 1...11...14 Spirit that dies after 30 seconds. When this Spirit dies, all foes in the area take 5...21...25 damage for each second the Spirit was alive (maximum 150 damage). "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Defensive_binding_spirit.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Defensive_binding_spirit_Token.png"
+			},
+			"trait": [
+				{
+					"name": "Destruction",
+					"entries": [
+						"The Spirit of Destruction explodes when it dies. {@actSave dex} Your spell save DC, each hostile creature in a 20-foot Emanation originating from the Spirit of Destruction. {@actSaveFail} Nd10 Lightning damage. {@actSaveSuccess} Half damage. N is the number of rounds the Spirit of Destruction was alive for plus the level of the spell. This damage has the {@background Armor Penetration|GuildWars} property."
+					]
+				}
+			],
+			"damageTags": [
+				"L"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
 		}
 	],
 	"feat": [
@@ -74680,7 +74769,7 @@
 			"entries": [
 				"{@bold Summoning Ritual:} {@creature Spirit of Bloodsong|GuildWars}",
 				"Bind a Spirit of Bloodsong to your will, siphoning off health with its attacks.",
-				"Summon a {@creature Spirit of Bloodsong|GuildWars} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative, but takes it turn directly after yours. The spirit is in the DMs control."
+				"Summon a {@creature Spirit of Bloodsong|GuildWars} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative but takes its turn directly after yours. The spirit is in the DM's control."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -81891,8 +81980,8 @@
 			],
 			"entries": [
 				"{@bold Summoning Ritual:} {@creature Spirit of Pain|GuildWars}",
-				"Bind a Spirit of Pain to your will, dealing heavy damage health with its attacks.",
-				"Summon a {@creature Spirit of Pain|GuildWars} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative, but takes it turn directly after yours. The spirit is in the DMs control."
+				"Bind a Spirit of Pain to your will, dealing heavy damage with its attacks.",
+				"Summon a {@creature Spirit of Pain|GuildWars} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative but takes its turn directly after yours. The spirit is in the DM's control."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -101133,7 +101222,7 @@
 			"entries": [
 				"{@bold Elite}, {@bold Summoning Ritual:} {@creature Spirit of Wanderlust|GuildWars}",
 				"Call forth a spirit of wanderlust, punishing those who are not moving.",
-				"Summon a {@creature Spirit of Wanderlust|GuildWars} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative, but takes it turn directly after yours. The spirit is in the DMs control."
+				"Summon a {@creature Spirit of Wanderlust|GuildWars} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative but takes its turn directly after yours. The spirit is in the DM's control."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -105018,7 +105107,37 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "School of necromancy",
+							"shortName": "Necromancy",
+							"source": "PHB"
+						}
+					}
+				]
 			},
 			"entries": [
 				"{@bold Hex}",
@@ -105083,6 +105202,177 @@
 					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
 						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d4} for each slot level above 4th."
+					]
+				}
+			]
+		},
+		{
+			"name": "Destruction",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Armor Penetration}, {@bold Summoning Ritual:} {@creature Spirit of Destruction|GuildWars}",
+				"Bind a Spirit of Destruction to your will, which violently explodes upon death.",
+				"Summon a {@creature Spirit of Destruction|GuildWars} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative but takes its turn directly after yours. The spirit is in the DM's control."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Destruction",
+					"Binding Ritual. Create a level 1...11...14 Spirit that dies after 30 seconds. When this Spirit dies, all foes in the area take 5...21...25 damage for each second the Spirit was alive (maximum 150 damage)."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/5/57/Destruction.jpg"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"SGT",
+				"SMN",
+				"AAD"
+			],
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Channeling Magic",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Summoning Ritual",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Armor Penetration",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a poem written about destruction"
+			},
+			"classes": {
+				"fromClassList": []
+			},
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Retreat!",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Command your allies to \"Retreat!\" increasing their movement speed.",
+				"If there is an {@condition unconscious} or dead ally within range, choose any number of friendly creatures that can hear you within range. For the duration, a target's speed is increased by 33%."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"\"Retreat!\"",
+					"Shout. If there are any dead allies within earshot, your party moves 33% faster for 5...10...11 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/6/64/%22Retreat%21%22.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Warrior",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Tactics",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true
+			},
+			"areaTags": [
+				"MT"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the speed increases by 15% for each slot level above 1st."
 					]
 				}
 			]

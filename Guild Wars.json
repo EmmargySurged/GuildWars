@@ -105285,7 +105285,63 @@
 				"m": "a poem written about destruction"
 			},
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Illrigger",
+							"source": "IllriggerRevised"
+						},
+						"subclass": {
+							"name": "Architect of ruin",
+							"shortName": "Architect of Ruin",
+							"source": "IllriggerRevised"
+						}
+					},
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "School of necromancy",
+							"shortName": "Necromancy",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
 			},
 			"areaTags": [
 				"MT",
@@ -105325,7 +105381,143 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "xua2025eberronupdates"
+						},
+						"subclass": {
+							"name": "Armorer",
+							"shortName": "Armorer",
+							"source": "xua2025eberronupdates"
+						}
+					},
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "xua2025eberronupdates"
+						},
+						"subclass": {
+							"name": "Battle smith",
+							"shortName": "Battle Smith",
+							"source": "xua2025eberronupdates"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Inquisition domain",
+							"shortName": "Inquisition",
+							"source": "GrimHollowPlayerPack"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "War domain",
+							"shortName": "War",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Illrigger",
+							"source": "IllriggerRevised"
+						},
+						"subclass": {
+							"name": "Architect of ruin",
+							"shortName": "Architect of Ruin",
+							"source": "IllriggerRevised"
+						}
+					},
+					{
+						"class": {
+							"name": "Psion",
+							"source": "xua2025psion"
+						},
+						"subclass": {
+							"name": "Metamorph",
+							"shortName": "Metamorph",
+							"source": "xua2025psion"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "The hexblade",
+							"shortName": "Hexblade",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Bladesinging",
+							"shortName": "Bladesinging",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Eldritch knight",
+							"shortName": "Eldritch Knight",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Gunslinger",
+							"source": "ValdaGunslinger"
+						},
+						"subclass": {
+							"name": "Spellslinger",
+							"shortName": "Spellslinger",
+							"source": "ValdaGunslinger"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
 			},
 			"entries": [
 				"Command your allies to \"Retreat!\" increasing their movement speed.",
@@ -105376,6 +105568,170 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Critical Strike",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon with the light and thrown property"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@bold Dual Attack}",
+				"Aim for the weak spot of a creature.",
+				"Make two melee weapon attacks against the target. On a hit, the target suffers the weapon attack's critical effects, takes {@damage 1d10} damage, and you regain a level 1 spell slot."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Critical Strike",
+					"Dual Attack. Must follow an off-hand attack. If it hits, this attack strikes for +10...26...30 damage, results in a critical hit, and you gain 1...3...3 Energy."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/f/ff/Critical_Strike.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"AAD"
+			],
+			"components": {
+				"v": true
+			},
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Critical Strikes",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Dual Attack",
+					"source": "GuildWars"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the target also takes {@damage 1d10} damage for each slot level above 3rd on a hit."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dark Escape",
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Stance}",
+				"Briefly turn into shadow to escape.",
+				"For the duration, your speed increases by 25%, and you have resistance against all damage.",
+				"When you hit with an attack roll, this spell ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Dark Escape",
+					"Stance. For 5...13...15 seconds, you move 25% faster and take half damage. Dark Escape ends if you successfully hit with an attack."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/8/8e/Dark_Escape.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Shadow Arts",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Stance",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the speed increases by 25% for each slot level above 4th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			}
 		}
 	],
 	"table": [

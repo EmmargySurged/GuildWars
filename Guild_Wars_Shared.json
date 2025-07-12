@@ -105967,6 +105967,330 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "Burning Speed",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Alchemist",
+                            "shortName": "Alchemist",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Artillerist",
+                            "shortName": "Artillerist",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Light domain",
+                            "shortName": "Light",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@bold Enchantment}",
+                "Use flames to boost your speed.",
+                "For the duration, you start {@condition burning|GuildWars}, taking {@damage 1d6} damage. Additionally, for the duration, your speed is increased by 30%.",
+                "When this spell ends, each hostile creature in a 10-foot Emanation starts {@condition burning|GuildWars} for 1 round, taking {@damage 1d6} damage.",
+                "This spell's hostile {@condition burning|GuildWars} duration increases by 1 round when you reach 5th level (2 rounds), 11th level (3 rounds), and 17th level (4 rounds). Additionally, this spell's speed increase increases by 10% when you reach 5th level (40%), 11th level (50%), and 17th level (60%)."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Burning Speed",
+                    "Enchantment Spell. For 7 seconds, you are set on fire and move 30...42...45% faster. When Burning Speed ends, all adjacent foes are set on fire for 3...8...9 seconds."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/8/89/Burning_Speed.jpg"
+                        }
+                    }
+                ]
+            },
+            "damageInflict": [
+                "fire"
+            ],
+            "areaTags": [
+                "ST",
+                "MT",
+                "S"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Fire Magic",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Elementalist",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Enchantment",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true
+            }
+        },
+        {
+            "name": "Auspicious Incantation",
+            "level": 1,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Psion",
+                        "source": "xua2025psion"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@bold Enchantment}",
+                "Incant a long-forgotten incantation, warping your spellcasting.",
+                "For the duration, the next spell of 5th level or lower you cast does not expend a spell slot but cannot be cast again until you finish a short rest."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Auspicious Incantation",
+                    "Enchantment Spell. For 20 seconds, the next spell you cast is disabled for an additional 10...6...5 seconds, and you gain 110...182...200% of that spell's Energy cost."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/a/ae/Auspicious_Incantation.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Mesmer",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Inspiration Magic",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Enchantment",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the amount of time this spell can trigger increases by 1 for every two slot levels above 1st."
+                    ]
+                }
+            ]
         }
     ],
     "table": [

@@ -654,7 +654,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The Spirit of Pain makes a number of pain attacks equal to half the level of the spell (rounded down, minimum 1)."
+						"The Spirit of Pain makes a number of Pain attacks equal to half the level of the spell (rounded down, minimum 1)."
 					]
 				},
 				{
@@ -842,7 +842,7 @@
 				{
 					"name": "Dissonance",
 					"entries": [
-						"{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}3 ({@damage 1d6 + Spell Level}) force damage, the target must succeed on a Constitution saving throw against your spell save DC, or miss with their next attack until the end of their next turn."
+						"{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}3 ({@damage 1d6 + Spell Level}) psychic damage; the target must succeed on a Constitution saving throw against your spell save DC or miss with their next attack before the end of their next turn."
 					]
 				}
 			],
@@ -938,7 +938,7 @@
 				}
 			],
 			"hp": {
-				"special": "5 + Spell Level * 5"
+				"special": "6 + Spell Level * 6"
 			},
 			"speed": {
 				"walk": 30
@@ -1006,7 +1006,7 @@
 				}
 			],
 			"hp": {
-				"special": "5 + Spell Level * 5"
+				"special": "4 + Spell Level * 4"
 			},
 			"speed": {
 				"walk": 30
@@ -1075,7 +1075,7 @@
 				}
 			],
 			"hp": {
-				"special": "5 + Spell Level * 5"
+				"special": "10 + Spell Level * 10"
 			},
 			"speed": {},
 			"str": 10,
@@ -1130,7 +1130,7 @@
 				{
 					"name": "Recuperation",
 					"entries": [
-						"Any creature, who is not a Summoning Ritual, friendly to the creature who summoned the spirit regains hit points equal to the level of the spell at the start of their turn if they are within 150-feet of the spirit and have at least 1 hit point."
+						"Any friendly non-summoning ritual creature regains hit points equal to the level of the spell at the start of their turn if they are within 150-feet of the spirit and have at least 1 hit point."
 					]
 				}
 			],
@@ -1251,7 +1251,7 @@
 				}
 			],
 			"hp": {
-				"special": "5 + Spell Level * 5"
+				"special": "10 + Spell Level * 10"
 			},
 			"speed": {},
 			"str": 10,
@@ -1306,7 +1306,7 @@
 				{
 					"name": "Union",
 					"entries": [
-						"Any creature who takes damage, who is not a Summoning Ritual, who is friendly to the creature who summoned the spirit and while they are within 150-feet of the spirit can roll a number of d4s equal to the spell level and subtract the number rolled from the damage. This spirit then takes necrotic damage equal to damage subtracted."
+						"Any friendly non-summoning ritual creature who takes damage while they are within 150-feet of the spirit can roll a number of d4s equal to the spell level and subtract the number rolled from the damage. This spirit then takes necrotic damage equal to damage subtracted."
 					]
 				}
 			],
@@ -1448,7 +1448,7 @@
 				}
 			],
 			"hp": {
-				"special": "5 + Spell Level * 5"
+				"special": "10 + Spell Level * 10"
 			},
 			"speed": {},
 			"str": 10,
@@ -1507,7 +1507,7 @@
 				{
 					"name": "Preservation",
 					"entries": [
-						"Choose one creature that you can see within 150-feet. The target regains hit points equal to a number of {@dice d6} equal to two times the Spell Level + your spellcasting ability modifier."
+						"Choose one creature that you can see within 150-feet. The target regains hit points equal to {@dice Nd6} + your spellcasting ability modifier, where N is twice the level of the spell."
 					]
 				}
 			]
@@ -1585,13 +1585,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The Spirit of Anger makes a number of pain attacks equal to half the level of the spell (rounded down, minimum 1)."
+						"The Spirit of Anger makes a number of Anger attacks equal to half the level of the spell (rounded down, minimum 1)."
 					]
 				},
 				{
-					"name": "Pain",
+					"name": "Anger",
 					"entries": [
-						"{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}8 ({@damage 1d8 + Spell Level}) force damage."
+						"{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}8 ({@damage 1d8 + Spell Level}) fire damage."
 					]
 				}
 			],
@@ -1676,13 +1676,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The Spirit of Hate makes a number of pain attacks equal to half the level of the spell (rounded down, minimum 1)."
+						"The Spirit of Hate makes a number of Hate attacks equal to half the level of the spell (rounded down, minimum 1)."
 					]
 				},
 				{
-					"name": "Pain",
+					"name": "Hate",
 					"entries": [
-						"{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}8 ({@damage 1d8 + Spell Level}) force damage."
+						"{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}8 ({@damage 1d8 + Spell Level}) psychic damage."
 					]
 				}
 			],
@@ -1771,9 +1771,9 @@
 					]
 				},
 				{
-					"name": "Pain",
+					"name": "Suffering",
 					"entries": [
-						"{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}8 ({@damage 1d8 + Spell Level}) force damage."
+						"{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}8 ({@damage 1d8 + Spell Level}) necrotic damage."
 					]
 				}
 			],
@@ -1803,7 +1803,7 @@
 				}
 			],
 			"hp": {
-				"special": "5 + Spell Level * 5"
+				"special": "10 + Spell Level * 10"
 			},
 			"speed": {},
 			"str": 10,
@@ -1904,7 +1904,7 @@
 				}
 			],
 			"hp": {
-				"special": "4 + Spell Level * 4"
+				"special": "5 + Spell Level * 5"
 			},
 			"speed": {
 				"walk": 30
@@ -2043,6 +2043,97 @@
 			"savingThrowForced": [
 				"dexterity"
 			]
+		},
+		{
+			"name": "Spirit of Disenchantment",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "GuildWars",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 10,
+					"condition": "+ Spell Level",
+					"braces": true
+				}
+			],
+			"hp": {
+				"special": "5 + Spell Level * 5"
+			},
+			"speed": {},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"actionTags": [
+				"Multiattack"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"fluff": {
+				"entries": [
+					"Binding Ritual. Create a level 1...10...12 spirit. This spirit's attacks deal 5...25...30 damage. This spirit dies after 30...126...150 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Aggressive_binding_spirit.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Spirit of Disenchantment makes a number of Disenchantment attacks equal to half the level of the spell (rounded down, minimum 1)."
+					]
+				},
+				{
+					"name": "Disenchantment",
+					"entries": [
+						"{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}4 ({@damage 1d4 + Spell Level}) psychic damage, the latest beneficial spell on the target ends."
+					]
+				}
+			],
+			"miscTags": [
+				"RA"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Aggressive_binding_spirit_Token.png"
+			}
 		}
 	],
 	"feat": [
@@ -106495,10 +106586,263 @@
 				"s": true
 			},
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Illrigger",
+							"source": "IllriggerRevised"
+						},
+						"subclass": {
+							"name": "Architect of ruin",
+							"shortName": "Architect of Ruin",
+							"source": "IllriggerRevised"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Eldritch knight",
+							"shortName": "Eldritch Knight",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Gunslinger",
+							"source": "ValdaGunslinger"
+						},
+						"subclass": {
+							"name": "Spellslinger",
+							"shortName": "Spellslinger",
+							"source": "ValdaGunslinger"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
 			},
 			"conditionInflict": [
 				"weakness|guildwars"
+			]
+		},
+		{
+			"name": "Focused Shot",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Ranged weapon"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Focus fully on this one shot, disregarding any other options.",
+				"On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d6} damage, and you cannot use other spells with a Special casting time for 2 rounds. ",
+				"At 5th level, the ranged attack deals an extra {@damage 1d6} damage to the target on a hit ({@dice 2d6}). This damage increases by {@dice 1d6} when you reach 11th level ({@dice 3d6}), and 17th level ({@dice 4d6})."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Focused Shot",
+					"Bow Attack. If Focused Shot hits, you strike for +10...22...25 damage but all of your other attack skills are disabled for 5...3...3 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/1/1d/Focused_Shot.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"AAD"
+			],
+			"components": {
+				"v": true
+			},
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ranger",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Marksmanship",
+					"source": "GuildWars"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"damageInflict": [
+				"piercing"
+			]
+		},
+		{
+			"name": "Disenchantment",
+			"level": 6,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "School of necromancy",
+							"shortName": "Necromancy",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"{@bold Summoning Ritual:} {@creature Spirit of Disenchantment|GuildWars}",
+				"Call forth a spirit of disenchantment, pulling creatures back to reality.",
+				"Summon a {@creature Spirit of Disenchantment|GuildWars} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative but takes its turn directly after yours. The spirit is in the DM's control."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Disenchantment",
+					"Binding Ritual. Create a level 1...10...12 spirit. This spirit deals 5...17...20 damage and anyone struck by its attack loses one enchantment. This spirit dies after 10...30...35 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/c/c4/Disenchantment.jpg"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"SMN"
+			],
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Communing",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Summoning Ritual",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a poem written about disenchantment"
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"areaTags": [
+				"ST"
 			]
 		}
 	],
@@ -107588,9 +107932,9 @@
 			"page": 0,
 			"entries": [
 				"A bleeding creature takes slashing damage at the start of each of its turns.",
-                "The amount of slashing damage is determined by the effect that applied it.",
-                "The condition can be ended early by regaining hit points.",
-                "Multiple instances of bleeding are independent of each other."
+				"The amount of slashing damage is determined by the effect that applied it.",
+				"The condition can be ended early by regaining hit points.",
+				"Multiple instances of bleeding are independent of each other."
 			],
 			"color": "F44D2B"
 		},
@@ -107602,7 +107946,7 @@
 				"A burning creature takes fire damage at the start of each of its turns.",
 				"The amount of fire damage is determined by the effect that applied it.",
 				"The condition can be ended early by using an action to smother the flames.",
-                "Multiple instances of bleeding are independent of each other."
+				"Multiple instances of bleeding are independent of each other."
 			],
 			"color": "F44D2B"
 		},
@@ -107630,8 +107974,8 @@
 			"page": 0,
 			"entries": [
 				"A dazed creature can't cast spells as reactions and must cast spells that take a bonus action as an action; any other spell takes twice as long to cast.",
-                "Additionally, they have disadvantage on Constitution saving throws that they make to maintain Concentration.",
-                "The condition can be removed by any effect that can remove the blinded, deafened, exhaustion or stunned condition."
+				"Additionally, they have disadvantage on Constitution saving throws that they make to maintain Concentration.",
+				"The condition can be removed by any effect that can remove the blinded, deafened, exhaustion or stunned condition."
 			],
 			"color": "A78635"
 		},
@@ -107652,8 +107996,8 @@
 				"A diseased creature takes necrotic damage at the start of each of its turns.",
 				"The amount of necrotic damage is determined by the effect that applied it.",
 				"Any creature of the same creature type as the diseased creature that is within 10 feet of it when it starts its turn must succeed on a Constitution saving throw or gain a copy of the condition.",
-                "Multiple instances of disease are independent of each other.",
-                "The condition can be removed by any effect that can remove the poisoned condition."
+				"Multiple instances of disease are independent of each other.",
+				"The condition can be removed by any effect that can remove the poisoned condition."
 			],
 			"color": "F44D2B"
 		},
@@ -107675,8 +108019,8 @@
 			"entries": [
 				"A corrupted creature takes poison damage at the start of each of its turns.",
 				"The amount of poison damage is determined by the effect that applied it.",
-                "Multiple instances of corruption are independent of each other.",
-                "The condition can be removed by any effect that can remove the poisoned condition."
+				"Multiple instances of corruption are independent of each other.",
+				"The condition can be removed by any effect that can remove the poisoned condition."
 			],
 			"color": "F44D2B"
 		},
@@ -107686,7 +108030,7 @@
 			"page": 0,
 			"entries": [
 				"A weakened creature deals half damage with weapons and suffers a –1 penalty to all ability scores.",
-                "Additional damage that is added to an attack is not halved (e.g., Divine Smite)."
+				"Additional damage that is added to an attack is not halved (e.g., Divine Smite)."
 			],
 			"color": "A78635"
 		}

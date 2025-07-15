@@ -2134,6 +2134,91 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Aggressive_binding_spirit_Token.png"
 			}
+		},
+		{
+			"name": "Spirit of Displacement",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "GuildWars",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 10,
+					"condition": "+ Spell Level",
+					"braces": true
+				}
+			],
+			"hp": {
+				"special": "10 + Spell Level * 10"
+			},
+			"speed": {},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"actionTags": [
+				"Multiattack"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"fluff": {
+				"entries": [
+					"Binding Ritual. Create a level 1...10...12 spirit. Whenever a non-spirit ally in its range takes damage or life steal, it is reduced by 15 and the spirit takes 15 damage. This spirit dies after 30...54...60 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Defensive_binding_spirit.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"trait": [
+				{
+					"name": "Displacement",
+					"entries": [
+						"Any friendly, non-summoning ritual creature within 150 feet of the spirit has a +5 bonus to AC. If an attack misses a target because of this bonus, this spirit takes 10 force damage."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Defensive_binding_spirit_Token.png"
+			},
+			"damageTags": [
+				"O"
+			]
 		}
 	],
 	"feat": [
@@ -85321,7 +85406,7 @@
 			"entries": [
 				"{@bold Summoning Ritual:} {@creature Spirit of Union|GuildWars}",
 				"Bind a Spirit of Union to your will, absorbing damage to your allies.",
-				"Summon a {@creature Spirit of Union|GuildWars} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative, but takes it turn directly after yours. The spirit is in the DMs control."
+				"Summon a {@creature Spirit of Union|GuildWars} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative but takes its turn directly after yours. The spirit is in the DM's control."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -106727,7 +106812,117 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "xua2025eberronupdates"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Bard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Collage of swords",
+							"shortName": "Swords",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Inquisition domain",
+							"shortName": "Inquisition",
+							"source": "GrimHollowPlayerPack"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "War domain",
+							"shortName": "War",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Illrigger",
+							"source": "IllriggerRevised"
+						},
+						"subclass": {
+							"name": "Architect of ruin",
+							"shortName": "Architect of Ruin",
+							"source": "IllriggerRevised"
+						}
+					},
+					{
+						"class": {
+							"name": "Psion",
+							"source": "xua2025psion"
+						},
+						"subclass": {
+							"name": "Metamorph",
+							"shortName": "Metamorph",
+							"source": "xua2025psion"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "The hexblade",
+							"shortName": "Hexblade",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Eldritch knight",
+							"shortName": "Eldritch Knight",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Gunslinger",
+							"source": "ValdaGunslinger"
+						},
+						"subclass": {
+							"name": "Spellslinger",
+							"shortName": "Spellslinger",
+							"source": "ValdaGunslinger"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
 			},
 			"damageInflict": [
 				"piercing"
@@ -106844,6 +107039,187 @@
 			"areaTags": [
 				"ST"
 			]
+		},
+		{
+			"name": "Displacement",
+			"level": 7,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Summoning Ritual:} {@creature Spirit of Displacement|GuildWars}",
+				"Bind a Spirit of Displacement to your will, blurring reality around your allies.",
+				"Summon a {@creature Spirit of Displacement|GuildWars} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative but takes its turn directly after yours. The spirit is in the DM's control."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Displacement",
+					"Binding Ritual. Create a level 1...11...14 spirit. All non-spirit allies within its range have a 75% chance to block incoming attacks. Every time an attack is blocked in this way, this spirit takes 60 damage. This spirit dies after 30...54...60 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/a/a4/Displacement.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"MT"
+			],
+			"miscTags": [
+				"SMN",
+				"AAD"
+			],
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Communing",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Summoning Ritual",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a poem written about displacement"
+			},
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "School of necromancy",
+							"shortName": "Necromancy",
+							"source": "PHB"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "You Will Die!",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Promise death to a creature, pumping yourself up for the next strike.",
+				"Choose one hostile creature that can hear you within range. If the target is bloodied, you gain {@dice 1d4} strikes of adrenaline.",
+				"This spell's adrenaline gain increases by {@dice 1d4} when you reach 5th level ({@dice 2d4}), 11th level ({@dice 3d4}), and 17th level ({@dice 4d4})."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"\"You Will Die!\"",
+					"Shout. If target foe is below 50% Health, you gain 1...3...3 strike[s] of adrenaline."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/6/6d/%22You_Will_Die%21%22.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Warrior",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Strength",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Adrenaline",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true
+			}
 		}
 	],
 	"table": [

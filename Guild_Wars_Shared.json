@@ -107260,6 +107260,417 @@
             "components": {
                 "v": true
             }
+        },
+        {
+            "name": "Dark Prison",
+            "level": 2,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Collage of swords",
+                            "shortName": "Swords",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Bladesinging",
+                            "shortName": "Bladesinging",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@bold Hex}",
+                "Conjure a dark prison around a creature for a short while.",
+                "Choose one creature that you can see within range. Teleport within 5 feet of the target to an unoccupied space. The target must make a Wisdom saving throw. On a failed save, the target is {@condition restrained} for the duration."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Dark Prison",
+                    "Hex Spell. Shadow Step to target foe. For 1...5...6 seconds, that foe moves 33% slower."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/0/0b/Dark_Prison.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Assassin",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Deadly Arts",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Hex",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the duration increases by 1 round for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT",
+                "TP"
+            ],
+            "conditionInflict": [
+                "restrained"
+            ]
+        },
+        {
+            "name": "Desperate Strike",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 0,
+                    "unit": "special",
+                    "condition": "which you take immediately before hitting a target with a Melee weapon with the light property"
+                }
+            ],
+            "range": {
+                "type": "special"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@bold Lead Attack}",
+                "Use your desperation to inflict harm.",
+                "On a hit, the target suffers the weapon attack's normal effects, and if you were below 50% of your maximum hit points, the target takes {@damage 1d8} damage.",
+                "At 5th level, the ranged attack deals an extra {@damage 1d8} damage to the target on a hit ({@dice 2d8}). This damage increases by {@dice 1d8} when you reach 11th level ({@dice 3d8}) and 17th level ({@dice 4d8}).",
+                "Additionally, this spell's % increases by 10% when you reach 5th level (60%), 11th level (70%), and 17th level (80%)."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Desperate Strike",
+                    "Lead Attack. If you have less than 50...74...80% Health, you deal +15...51...60 damage."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/b/bb/Desperate_Strike.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "components": {
+                "v": true
+            },
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Assassin",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Dagger Mastery",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Lead Attack",
+                    "source": "GuildWars"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Armorer",
+                            "shortName": "Armorer",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Battle smith",
+                            "shortName": "Battle Smith",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Collage of swords",
+                            "shortName": "Swords",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Psion",
+                            "source": "xua2025psion"
+                        },
+                        "subclass": {
+                            "name": "Metamorph",
+                            "shortName": "Metamorph",
+                            "source": "xua2025psion"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Bladesinging",
+                            "shortName": "Bladesinging",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "miscTags": [
+                "AAD"
+            ]
         }
     ],
     "table": [

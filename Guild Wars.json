@@ -62939,7 +62939,7 @@
 			]
 		},
 		{
-			"name": "Earthquake (Guild Wars)",
+			"name": "Dragon's Stomp",
 			"level": 5,
 			"school": "V",
 			"time": [
@@ -62969,7 +62969,9 @@
 			"fluff": {
 				"entries": [
 					"Earthquake",
-					"Spell. You invoke an Earthquake at target foe's location. All foes near this location are knocked down and are struck for 26...85...100 earth damage."
+					"Spell. You invoke an Earthquake at target foe's location. All foes near this location are knocked down and are struck for 26...85...100 earth damage.",
+					"Dragon's Stomp",
+					"Spell. You invoke a Dragon's Stomp at target foe's location. All foes near this location are knocked down and are struck for 26...85...100 earth damage."
 				],
 				"images": [
 					{
@@ -62977,6 +62979,13 @@
 						"href": {
 							"type": "external",
 							"url": "https://wiki.guildwars.com/images/b/b9/Earthquake.jpg"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/1/1f/Dragon%27s_Stomp.jpg"
 						}
 					}
 				]
@@ -92462,7 +92471,7 @@
 				"{@bold Elite}",
 				"Cause a momentary distraction in a creature's mind, potentially interrupting their action and making them unable to use it again for a short while.",
 				"For the duration, you cannot cast spells other than {@spell Psychic Distraction|GuildWars} or use any abilities. ",
-				"Choose one creature, which is casting a spell or using an ability, that you can see within range. The creature makes an Intelligence saving throw. On a failed save, the spell/abilities dissipates with no effect, the action, Bonus Action, or Reaction used to cast/use it is wasted, and the creature cannot use that spell/ability again for the duration. If a spell was cast with a spell slot, the slot isn't expended."
+				"Choose one creature, which is casting a spell or using an ability, that you can see within range. The creature makes an Intelligence saving throw. On a failed save, the spell/ability dissipates with no effect, the action, Bonus Action, or Reaction used to cast/use it is wasted, and the creature cannot use that spell/ability again for the duration. If a spell was cast with a spell slot, the slot isn't expended."
 			],
 			"source": "GuildWars",
 			"fluff": {
@@ -107288,7 +107297,117 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Bard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Collage of swords",
+							"shortName": "Swords",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Inquisition domain",
+							"shortName": "Inquisition",
+							"source": "GrimHollowPlayerPack"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "War domain",
+							"shortName": "War",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Illrigger",
+							"source": "IllriggerRevised"
+						},
+						"subclass": {
+							"name": "Architect of ruin",
+							"shortName": "Architect of Ruin",
+							"source": "IllriggerRevised"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "The hexblade",
+							"shortName": "Hexblade",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Bladesinging",
+							"shortName": "Bladesinging",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Eldritch knight",
+							"shortName": "Eldritch Knight",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Gunslinger",
+							"source": "ValdaGunslinger"
+						},
+						"subclass": {
+							"name": "Spellslinger",
+							"shortName": "Spellslinger",
+							"source": "ValdaGunslinger"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
 			},
 			"entries": [
 				"{@bold Hex}",
@@ -107424,11 +107543,477 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "xua2025eberronupdates"
+						},
+						"subclass": {
+							"name": "Armorer",
+							"shortName": "Armorer",
+							"source": "xua2025eberronupdates"
+						}
+					},
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "xua2025eberronupdates"
+						},
+						"subclass": {
+							"name": "Battle smith",
+							"shortName": "Battle Smith",
+							"source": "xua2025eberronupdates"
+						}
+					},
+					{
+						"class": {
+							"name": "Bard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Collage of swords",
+							"shortName": "Swords",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Inquisition domain",
+							"shortName": "Inquisition",
+							"source": "GrimHollowPlayerPack"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "War domain",
+							"shortName": "War",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Illrigger",
+							"source": "IllriggerRevised"
+						},
+						"subclass": {
+							"name": "Architect of ruin",
+							"shortName": "Architect of Ruin",
+							"source": "IllriggerRevised"
+						}
+					},
+					{
+						"class": {
+							"name": "Psion",
+							"source": "xua2025psion"
+						},
+						"subclass": {
+							"name": "Metamorph",
+							"shortName": "Metamorph",
+							"source": "xua2025psion"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "The hexblade",
+							"shortName": "Hexblade",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Bladesinging",
+							"shortName": "Bladesinging",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Eldritch knight",
+							"shortName": "Eldritch Knight",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
 			},
 			"miscTags": [
 				"AAD"
 			]
+		},
+		{
+			"name": "Churning Earth",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Create an area of churning earth, which grasps at everything passing through.",
+				"Choose a point that you can see within range. For the duration, you create a 15-foot-radius, 10-foot-high cylinder centered on that point. Each creature in that Cylinder must make a Dexterity saving throw. On a failed save, a target takes {@damage 1d8} force damage, and targets who willingly moved on their last turn are knocked {@condition prone}. On a successful save, a target takes half as much damage, but suffers no other effect. A creature also makes this save if it enters the Cylinder or ends its turn there, or if the Cylinder moves into its space. A creature makes this save only once per turn.",
+				"On your later turns, you can take a {@action Magic|XPHB} action to teleport the Cylinder up to 30 feet."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Churning Earth",
+					"Spell. Create Churning Earth at target foe's location. For the next 5 seconds, Churning Earth strikes foes near that location for 10...34...40 earth damage each second. Any foe moving faster than normal when struck by Churning Earth is knocked down."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/5/51/Churning_Earth.jpg"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"force"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Elementalist",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Earth Magic",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": "an obsidian dagger"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d8} for each slot level above 1st."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Druid",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Psion",
+							"source": "xua2025psion"
+						},
+						"subclass": {
+							"name": "Psykinetic",
+							"shortName": "Psykinetic",
+							"source": "xua2025psion"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Eldritch knight",
+							"shortName": "Eldritch Knight",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Gunslinger",
+							"source": "ValdaGunslinger"
+						},
+						"subclass": {
+							"name": "Spellslinger",
+							"shortName": "Spellslinger",
+							"source": "ValdaGunslinger"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
+			},
+			"savingThrow": [
+				"dexterity"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Complicate",
+			"level": 4,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you see a creature within range cast a spell or using an ability"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Psion",
+						"source": "xua2025psion"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Inquisition domain",
+							"shortName": "Inquisition",
+							"source": "GrimHollowPlayerPack"
+						}
+					},
+					{
+						"class": {
+							"name": "Illrigger",
+							"source": "IllriggerRevised"
+						},
+						"subclass": {
+							"name": "Architect of ruin",
+							"shortName": "Architect of Ruin",
+							"source": "IllriggerRevised"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Eldritch knight",
+							"shortName": "Eldritch Knight",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Gunslinger",
+							"source": "ValdaGunslinger"
+						},
+						"subclass": {
+							"name": "Spellslinger",
+							"shortName": "Spellslinger",
+							"source": "ValdaGunslinger"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Arcane trickster",
+							"shortName": "Arcane Trickster",
+							"source": "XPHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Distract a creature with a string of complicated arcane interruptions.",
+				"Choose one creature, which is casting a spell or using an ability, that you can see within range. The creature makes an Intelligence saving throw. On a failed save, the spell/ability dissipates with no effect, the action, Bonus Action, or Reaction used to cast/use it is wasted, and the creature and all hostile creatures within 20 feet of it, cannot use that spell/ability for the duration. If a spell was cast with a spell slot, the slot isn't expended."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Complicate",
+					"Spell. If target foe is using a skill, that skill is interrupted and disabled for target foe and all foes in the area for an additional 5...11...12 seconds. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/9/93/Complicate.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Mesmer",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Domination Magic",
+					"source": "GuildWars"
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the duration increases by 1 round for each slot level above 3rd."
+					]
+				}
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"components": {
+				"v": true
+			}
 		}
 	],
 	"table": [

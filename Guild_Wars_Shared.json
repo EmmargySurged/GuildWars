@@ -2219,6 +2219,91 @@
             "damageTags": [
                 "O"
             ]
+        },
+        {
+            "name": "Spirit of Earthbind",
+            "size": [
+                "M"
+            ],
+            "type": "undead",
+            "source": "GuildWars",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "ac": 10,
+                    "condition": "+ Spell Level",
+                    "braces": true
+                }
+            ],
+            "hp": {
+                "special": "10 + Spell Level * 10"
+            },
+            "speed": {},
+            "str": 10,
+            "dex": 10,
+            "con": 10,
+            "int": 10,
+            "wis": 10,
+            "cha": 10,
+            "passive": 10,
+            "actionTags": [
+                "Multiattack"
+            ],
+            "immune": [
+                "poison"
+            ],
+            "conditionImmune": [
+                "blinded",
+                "charmed",
+                "deafened",
+                "exhaustion",
+                "frightened",
+                "grappled",
+                "incapacitated",
+                "paralyzed",
+                "petrified",
+                "poisoned",
+                "restrained",
+                "stunned",
+                "unconscious"
+            ],
+            "fluff": {
+                "entries": [
+                    "Binding Ritual. Create a level 1...11...14 spirit. Non-spirit allies within its range gain +1...3...3 Health regeneration. This spirit dies after 15...39...45 seconds. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Defensive_binding_spirit.jpg"
+                        }
+                    }
+                ]
+            },
+            "senses": [
+                "blindsight 120 ft."
+            ],
+            "senseTags": [
+                "B"
+            ],
+            "trait": [
+                {
+                    "name": "Earthbind",
+                    "entries": [
+                        "Any hostile non-summoning ritual creature that attempts to stand up from {@condition prone} while they are within 150 feet of the spirit must first succeed on a Strength saving throw or waste their movement in the attempt. Each time a creature is forced to make this saving throw this spirit takes 10 force damage."
+                    ]
+                }
+            ],
+            "tokenHref": {
+                "type": "external",
+                "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Defensive_binding_spirit_Token.png"
+            },
+            "damageTags": [
+                "O"
+            ]
         }
     ],
     "feat": [
@@ -82861,7 +82946,7 @@
             "entries": [
                 "{@bold Summoning Ritual:} {@creature Spirit of Recuperation|GuildWars}",
                 "Bind a Spirit of Recuperation to your will, healing your allies.",
-                "Summon a {@creature Spirit of Recuperation|GuildWars} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative, but takes it turn directly after yours. The spirit is in the DMs control."
+                "Summon a {@creature Spirit of Recuperation|GuildWars} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative but takes its turn directly after yours. The spirit is in the DM control."
             ],
             "source": "GuildWars",
             "fluff": {
@@ -82884,7 +82969,7 @@
             ],
             "miscTags": [
                 "HL",
-                "AAD"
+                "SMN"
             ],
             "backgrounds": [
                 {
@@ -108370,6 +108455,233 @@
             },
             "damageInflict": [
                 "piercing"
+            ]
+        },
+        {
+            "name": "Dulled Weapon",
+            "level": 2,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "School of necromancy",
+                            "shortName": "Necromancy",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@bold Hex}",
+                "Dull the weapons of a group of creatures by calling forth tired spirits.",
+                "Choose a point that you can see within range. Each weapon in a 10-foot-radius sphere centered on that point has its damage die reduced by one stage for the duration ({@dice d20} -> {@dice d12} -> {@dice d10} -> {@dice d8} -> {@dice d6} -> {@dice d4} -> 1) and can no longer critical hit. A creature wielding an affected weapon can make a Wisdom saving throw to avoid the effect."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Dulled Weapon",
+                    "Hex Spell. For 5...13...15 seconds, target foe and all adjacent foes cannot achieve a critical hit and deal 1...12...15 less damage."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/9/97/Dulled_Weapon.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Ritualist",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Communing",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Hex",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true,
+                "m": "a whetstone made of rubber"
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the die type decreases by an additional one stage for every two slot levels above 2nd."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Earthbind",
+            "level": 2,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@bold Summoning Ritual:} {@creature Spirit of Earthbind|GuildWars}",
+                "Bind a Spirit of Earthbind to your will, preventing creatures from standing up.",
+                "Summon a {@creature Spirit of Earthbind|GuildWars} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative but takes its turn directly after yours. The spirit is in the DM's control."
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Earthbind",
+                    "Binding Ritual. Create a level 1...11...14 spirit. All non-spirit foes knocked down within its range are knocked down for at least 3 seconds. Whenever this happens, this spirit loses 50...30...25 Health. This spirit dies after 15...39...45 seconds."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/6/6f/Earthbind.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "MT"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Ritualist",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Communing",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Summoning Ritual",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a poem written about earth"
+            },
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "School of necromancy",
+                            "shortName": "Necromancy",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            },
+            "savingThrow": [
+                "strength"
+            ],
+            "miscTags": [
+                "SMN"
             ]
         }
     ],

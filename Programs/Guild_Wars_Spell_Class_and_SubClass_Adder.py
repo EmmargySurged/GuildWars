@@ -235,7 +235,8 @@ if __name__ == "__main__":
         ]},
         {"name": "Bard", "source": "XPHB", "sub_classes": [
             {"name": "Collage of Lore", "shortName": "Lore", "source": "XPHB"},
-            {"name": "Collage of Swords", "shortName": "Swords", "source": "XGE"}
+            {"name": "Collage of Swords", "shortName": "Swords", "source": "XGE"},
+            {"name": "Virtuoso", "shortName": "Virtuoso", "source": "GW2EoD"}
         ]},
         {"name": "Cleric", "source": "XPHB", "sub_classes": [
             {"name": "Inquisition Domain", "shortName": "Inquisition", "source": "GrimHollowPlayerPack"},

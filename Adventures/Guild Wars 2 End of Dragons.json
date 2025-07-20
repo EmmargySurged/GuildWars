@@ -1,0 +1,554 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "GW2EoD",
+				"abbreviation": "GW2EoD",
+				"full": "Guild Wars 2 End of Dragons",
+				"url": "",
+				"authors": [
+					"EmmargySurged",
+					"CaptainDJUli",
+					"ArenaNet"
+				],
+				"convertedBy": [
+					"EmmargySurged [She/They]",
+					"CaptainDJUli [She/Her]"
+				],
+				"color": "013f38"
+			}
+		],
+		"status": "ready"
+	},
+	"subclass": [
+		{
+			"name": "Virtuoso",
+			"source": "GW2EoD",
+			"className": "Bard",
+			"classSource": "XPHB",
+			"shortName": "Virtuoso",
+			"subclassTableGroups": [
+				{
+					"title": "Virtuoso",
+					"colLabels": [
+						"Max. Blades"
+					],
+					"rows": [
+						[
+							"-"
+						],
+						[
+							"-"
+						],
+						[
+							"4"
+						],
+						[
+							"4"
+						],
+						[
+							"6"
+						],
+						[
+							"6"
+						],
+						[
+							"6"
+						],
+						[
+							"6"
+						],
+						[
+							"8"
+						],
+						[
+							"8"
+						],
+						[
+							"8"
+						],
+						[
+							"8"
+						],
+						[
+							"10"
+						],
+						[
+							"10"
+						],
+						[
+							"10"
+						],
+						[
+							"10"
+						],
+						[
+							"12"
+						],
+						[
+							"12"
+						],
+						[
+							"12"
+						],
+						[
+							"12"
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"Level 3: Psychic Blades|Bard|XPHB|Virtuoso|GW2EoD|3|GW2EoD",
+				"Level 3: Bladesongs|Bard|XPHB|Virtuoso|GW2EoD|3|GW2EoD"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Level 3: Psychic Blades",
+			"source": "GW2EoD",
+			"className": "Bard",
+			"classSource": "XPHB",
+			"subclassShortName": "Virtuoso",
+			"subclassSource": "GW2EoD",
+			"level": 3,
+			"entries": [
+				"You learned to weave your bardic magics into metaphysical manifestations of your talent. Whenever you expend a use of your Bardic Inspiration or expend a spell slot to cast a Bard spell you stock psychic Blades. When you stock Blades by expending a use of your Bardic Inspiration, you stock an amount equal to your Proficiency Bonus. When you stock Blades via a spell you stock an amount equal to the slot level expended. You can have a maximum number of Blades stocked at one time equal to your half your Bard level (rounded up). The Blades last until used or you die.\nSome features require you to make attack rolls with your Blades or force creatures to make saving throws against your Blades. In either case, use your Bard Spellcasting feature to determine the attack bonus and saving throw DC.\n"
+			]
+		},
+		{
+			"name": "Level 3: Bladesongs",
+			"source": "GW2EoD",
+			"className": "Bard",
+			"classSource": "XPHB",
+			"subclassShortName": "Virtuoso",
+			"subclassSource": "GW2EoD",
+			"level": 3,
+			"entries": [
+				"You know five special spells called Bladesongs, which use your Blades in various ways. You always have them prepared, and they don’t count against the number of Bard spells you can prepare. Each Bladesong indicates how many Blades you must have at a minimum to use them. All Bladesongs expend all stocked Blades in their casting.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Bladesong",
+						"Minimum Blades"
+					],
+					"colStyles": [
+						"col-4",
+						"col-4"
+					],
+					"rows": [
+						[
+							"{@spell Bladesong Harmony|GW2EoD}",
+							"1"
+						],
+						[
+							"{@spell Bladesong Sorrow|GW2EoD}",
+							"2"
+						],
+						[
+							"{@spell Bladesong Dissonance|GW2EoD}",
+							"3"
+						],
+						[
+							"{@spell Bladesong Distortion|GW2EoD}",
+							"4"
+						],
+						[
+							"{@spell Bladesong Requiem|GW2EoD}",
+							"2"
+						]
+					]
+				}
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Bladesong Harmony",
+			"level": 1,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Bard",
+							"source": "GW2EoD"
+						},
+						"subclass": {
+							"name": "Virtuoso",
+							"shortName": "Virtuoso",
+							"source": "GW2EoD"
+						}
+					}
+				]
+			},
+			"entries": [
+				"{@bold Minimum expended Blades:} 1",
+				"You unleash your stocked Blades in a flurry, piercing through creatures to your target.",
+				"Choose one creature that you can see within range. Make N ranged spell attacks against the target, where N is the amount of Blades expended. The target cannot benefit from cover provided by other creatures. On a hit, the target takes your choice of psychic or piercing damage equal to one roll of your Bardic Inspiration die. ",
+				"Any creature between you and the target must succeed on a Dexterity saving throw or take half the damage total rolled on all attacks that hit. On a success they take no damage.",
+				"Instead of rolling with advantage or disadvantage, you instead gain a +5 bonus to hit when you would have advantage or a -5 penalty to hit when you would have disadvantage."
+			],
+			"source": "GW2EoD",
+			"fluff": {
+				"entries": [
+					"Bladesong. Fire all stocked blades at your target."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/End of Dragons/Bladesong_Harmony.png"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"piercing",
+				"psychic"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST",
+				"MT",
+				"L"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			}
+		},
+		{
+			"name": "Bladesong Sorrow",
+			"level": 1,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Bard",
+							"source": "GW2EoD"
+						},
+						"subclass": {
+							"name": "Virtuoso",
+							"shortName": "Virtuoso",
+							"source": "GW2EoD"
+						}
+					}
+				]
+			},
+			"entries": [
+				"{@bold Minimum expended Blades:} 2",
+				"Your Blades cut through reality to spike themselves into a creature’s mind.",
+				"Choose one creature that you can see within range. Make N ranged spell attacks against the target, where N is the amount of Blades expended. The target cannot benefit from cover provided by other creatures. On a hit, the target takes your choice of psychic or piercing damage equal to one roll of your Bardic Inspiration die and is afflicted with Bladesong Sorrow. Any creature between you and the target must succeed on a Dexterity saving throw or take half the damage total rolled on all attacks that hit and also be afflicted with Bladesong Sorrow. On a success they take no damage and are not afflicted.",
+				"A creature afflicted with Baldesong Sorrow takes psychic damage equal to one roll of your Bardic Inspiration die each time they take the Attack or Magic action. The affliction lasts for a number of turns equal to half the number of Blades expended. A creature can be afflicted multiple times with Baldesong Sorrow.",
+				"Instead of rolling with advantage or disadvantage, you instead gain a +5 bonus to hit when you would have advantage or a -5 penalty to hit when you would have disadvantage."
+			],
+			"source": "GW2EoD",
+			"fluff": {
+				"entries": [
+					"Bladesong. Fire all stocked blades, inflicting your target with conditions. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/End of Dragons/Bladesong_Sorrow.png"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"piercing",
+				"psychic"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST",
+				"MT",
+				"L"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			}
+		},
+		{
+			"name": "Bladesong Dissonance",
+			"level": 1,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Bard",
+							"source": "GW2EoD"
+						},
+						"subclass": {
+							"name": "Virtuoso",
+							"shortName": "Virtuoso",
+							"source": "GW2EoD"
+						}
+					}
+				]
+			},
+			"entries": [
+				"{@bold Minimum expended Blades:} 3",
+				"Combine your Blades into one and drive it into the mind of a creature.",
+				"Choose one creature that you can see within range. The target must succeed on an Intelligence saving throw or take your choice of piercing or psychic damage equal to one roll of your Bardic Inspiration die and be {@condition stunned} for a number of rounds equal to a third of the amount of Blades expended. At the end of each of its turns, the creature can make an Intelligence saving throw. On a success, the condition ends. "
+			],
+			"source": "GW2EoD",
+			"fluff": {
+				"entries": [
+					"Bladesong. Combine all your blades into one large blade that dazes targets based on the number of blades consumed. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/End of Dragons/Bladesong_Dissonance.png"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"piercing",
+				"psychic"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"savingThrow": [
+				"intelligence"
+			],
+			"conditionInflict": [
+				"stunned"
+			]
+		},
+		{
+			"name": "Bladesong Distortion",
+			"level": 1,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Bard",
+							"source": "GW2EoD"
+						},
+						"subclass": {
+							"name": "Virtuoso",
+							"shortName": "Virtuoso",
+							"source": "GW2EoD"
+						}
+					}
+				]
+			},
+			"entries": [
+				"{@bold Minimum expended Blades:} 4",
+				"Use your Blades to distort reality around yourself. ",
+				"For a number of rounds equal to a fourth of the amount of Blades expended you gain resistance against all damage. Additionally, for the duration, your AC increases by an amount equal to N number of rolls of your Bardic Inspiration die, where N is a fourth of the amount of Blades expended."
+			],
+			"source": "GW2EoD",
+			"fluff": {
+				"entries": [
+					"Bladesong. Gain distortion and consume all stocked blades, gaining additional distortion for each consumed blade."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Distortion.png"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"miscTags": [
+				"MAC"
+			]
+		},
+		{
+			"name": "Bladesong Requiem",
+			"level": 1,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "emanation",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Bard",
+							"source": "GW2EoD"
+						},
+						"subclass": {
+							"name": "Virtuoso",
+							"shortName": "Virtuoso",
+							"source": "GW2EoD"
+						}
+					}
+				]
+			},
+			"entries": [
+				"{@bold Minimum expended Blades:} 2",
+				"Create a ring of deadly Blades around yourself. ",
+				"Psychic Blades spin around you in a 10-foot Emanation for a number of rounds equal to half of the amount of Blades expended. When you cast this Bladesong, you can designate creatures to be unaffected by it. Any other creature's Speed is halved in the Emanation, and whenever the Emanation enters a creature's space and whenever a creature enters the Emanation or ends its turn there, the creature must make a Dexterity saving throw. On a failed save, the creature takes your choice of psychic or piercing damage equal to N number of rolls of your Bardic Inspiration die, where N is half of the amount of Blades expended. On a successful save, the creature takes half as much damage. A creature makes this save only once per turn."
+			],
+			"source": "GW2EoD",
+			"fluff": {
+				"entries": [
+					"Bladesong. Fire all stocked blades at your target."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/End of Dragons/Bladesong_Harmony.png"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"piercing",
+				"psychic"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			}
+		}
+	]
+}

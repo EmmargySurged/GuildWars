@@ -179,9 +179,9 @@
 			"level": 3,
 			"entries": [
 				"You just learned to be a virtuoso; choose one of the following three disciplines, and you gain the benefit of that choice until you finish a long rest, at which point you can choose again.",
-				"{@bold Bladeturn Refrain.} You learned to keep an echo of your Blades around as a defensive measure when casting a Bladesong. When you cast a Bladesong, your AC increases equal to one roll of your Bardic Inspiration die against the next attack for 1 round.",
-				"{@bold Mental Focus.} You learned to focus your mind on the weaknesses of close creatures. Once per turn when you deal damage to a creature within 30 feet of yourself you can add one roll of your Bardic Inspiration die to that damage.",
-				"{@bold Jagged Mind.} You learned to sharpen your Blades to perfection with the power of your mind. When you deal piercing damage to a creature, that creature must succeed on a Constitution saving throw or start {@condition Bleeding|GuildWars} for a number of rounds equal to your proficiency bonus, taking damage equal to half the roll of one of your Bardic Inspiration die. If you critically hit the creature, they automatically fail their saving throw. At the end of each of its turns, the creature can make a Constitution saving throw. On a success, the condition ends. Additionally, once per turn when you inflict damage via a bleeding condition you inflicted, you regain hit points equal to one roll of your Bardic Inspiration die."
+				"{@bold Bladeturn Refrain.} You learned to keep an echo of your Blades around as a defensive measure when casting a Bladesong. When you cast a Bladesong, until the start of your next turn, your AC increases equal to your Charisma modifier.",
+				"{@bold Mental Focus.} You learned to focus your mind on the weaknesses of close creatures. When you deal damage to a creature within 30 feet of yourself you can add half your Charisma modifier to that damage.",
+				"{@bold Jagged Mind.} You learned to sharpen your Blades to perfection with the power of your mind. When you deal piercing damage to a creature, that creature must succeed on a Constitution saving throw or start {@condition Bleeding|GuildWars} for a number of rounds equal to your proficiency bonus, taking damage equal to half your Charisma modifier. If you critically hit the creature, they automatically fail their saving throw. At the end of each of its turns, the creature can make a Constitution saving throw. On a success, the condition ends. Additionally, once per turn when you inflict damage via a {@condition Bleeding|GuildWars} condition you inflicted, you regain hit points equal to one roll of your Bardic Inspiration die."
 			]
 		},
 		{
@@ -194,7 +194,7 @@
 			"level": 6,
 			"entries": [
 				"Your Blades have become much more deadly, piercing most defenses.",
-				"When you deal piercing damage to a creature, that creature must succeed on a Constitution saving throw or have {@condition Cracked Armor|Guild Wars} for a number of rounds equal to your proficiency bonus. If you critically hit the creature, they automatically fail their saving throw. Additionally, after you cast a Bladesong, the next time you deal damage before the end of your next turn with a spell or a weapon, you can add one roll of your Bardic Inspiration die to that damage."
+				"When you deal piercing damage to a creature, that creature must succeed on a Constitution saving throw or have {@condition Cracked Armor|GuildWars} for a number of rounds equal to your proficiency bonus. If you critically hit the creature, they automatically fail their saving throw. Additionally, after you cast a Bladesong, the next time you deal damage before the end of your next turn with a spell or a weapon, you can add one roll of your Bardic Inspiration die to that damage."
 			]
 		},
 		{
@@ -207,7 +207,7 @@
 			"level": 6,
 			"entries": [
 				"You have become a master virtuoso; choose one of the following three disciplines, and you gain the benefit of that choice until you finish a long rest, at which point you can choose again.",
-				"{@bold Duelist’s Reversal.} You learned to quickly retaliate against creatures who miss you. When an attack roll misses you, you can expend one use of your Bardic Inspiration to gain the following benefits until the end of your next turn:",
+				"{@bold Duelist’s Reversal.} You learned to quickly retaliate against creatures who miss you. When an attack roll misses you, you can expend one use of your Bardic Inspiration to gain the following benefits for a number of rounds equal to your proficiency bonus:",
 				"- The number you need to roll to score a critical hit gets reduced by 5.",
 				"- You gain an additional action during your turn. That action can be used to take only the Attack (one attack only), Dash, Disengage, Hide, or Utilize action.",
 				"- At the start of your turn, you regain a number of hit points equal to one roll of your Bardic Inspiration die.",
@@ -241,8 +241,9 @@
 			"entries": [
 				"You are the pinnacle of what a virtuoso can become; choose one of the following three disciplines, and you gain the benefit of that choice until you finish a long rest, at which point you can choose again.",
 				"{@bold Psychic Riposte.} You learned to use your opponent’s momentary failure to your advantage. When an attack roll misses you, you can stock an amount of Blades equal to your Proficiency Bonus. Additionally, the next Bladesong you use before the end of your next turn gains the {@background Unblockable|GuildWars} property, and you have advantage on the attack rolls.",
-				"{@bold Infinite Forge.} You learned the rhythm of combat; stocking Blades becomes second nature to you while in combat. When you roll initiative at the start of combat and at the start of your turn during combat, you stock an amount of Blades equal to half your Proficiency Bonus. Additionally, when you cast a Bladesong while having the maximum number of Blades stocked, you regain an amount of Blades equal to half your Proficiency Bonus. Furthermore, when you deal piercing or psychic damage, you can deal extra damage equal to half your proficiency bonus.",
-				"{@bold Bloodsong.} You learned to serrate the edges of your Blades, making them much more deadly. {@condition Bleeding|GuildWars} you inflict deals double damage. At the start of your turn you regain a number of Blades equal to a fifth of the damage inflicted via your {@condition bleeding|GuildWars} since the end of your last turn."
+				"{@bold Infinite Forge.} You learned the rhythm of combat; stocking Blades becomes second nature to you while in combat. When you roll initiative at the start of combat and at the start of your turn during combat, you stock an amount of Blades equal to half your Proficiency Bonus. Additionally, when you cast a Bladesong while having the maximum number of Blades stocked, you regain an amount of Blades equal to your Proficiency Bonus.",
+				"Furthermore, when you deal piercing or psychic damage, you can deal extra damage equal to half your Proficiency Bonus.",
+				"{@bold Bloodsong.} You learned to serrate the edges of your Blades, making them much more deadly. {@condition Bleeding|GuildWars} you inflict deals double damage. At the start of your turn you regain a number of Blades equal to a fifth of the damage inflicted via your {@condition Bleeding|GuildWars} since the end of your last turn."
 			]
 		}
 	],
@@ -371,7 +372,7 @@
 			"entries": [
 				"{@bold Minimum expended Blades:} 2",
 				"Your Blades cut through reality to spike themselves into a creature’s mind.",
-				"Choose one creature that you can see within range. Make N ranged spell attacks against the target, where N half the amount of Blades expended. The target cannot benefit from cover provided by other creatures. On a hit, the target takes your choice of psychic or piercing damage equal to one roll of your Bardic Inspiration die and is afflicted with Bladesong Sorrow.",
+				"Choose one creature that you can see within range. Make N ranged spell attacks against the target, where N is half the amount of Blades expended. The target cannot benefit from cover provided by other creatures. On a hit, the target takes your choice of psychic or piercing damage equal to one roll of your Bardic Inspiration die and is afflicted with Bladesong Sorrow.",
 				"Any creature between you and the target must succeed on a Dexterity saving throw or take half the damage total rolled on all attacks that hit and also be afflicted with Bladesong Sorrow. On a success they take no damage and are not afflicted.",
 				"A creature afflicted with Baldesong Sorrow takes psychic damage equal to one roll of your Bardic Inspiration die each time they take the Attack or Magic action. The affliction lasts for a number of turns equal to half the number of Blades expended. A creature can be afflicted multiple times with Baldesong Sorrow.",
 				"Instead of rolling with advantage or disadvantage, you instead gain a +5 bonus to hit when you would have advantage or a -5 penalty to hit when you would have disadvantage."

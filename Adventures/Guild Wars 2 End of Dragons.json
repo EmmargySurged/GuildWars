@@ -179,9 +179,9 @@
 			"level": 3,
 			"entries": [
 				"You just learned to be a virtuoso; choose one of the following three disciplines, and you gain the benefit of that choice until you finish a long rest, at which point you can choose again.",
-				"{@bold Bladeturn Refrain.} You learned to keep an echo of your Blades around as a defensive measure when casting a Bladesong. When you cast a Bladesong, your AC increases equal to your Proficiency Bonus against the next attack for 1 round.",
-				"{@bold Mental Focus.} You learned to focus your mind on the weakness of a particular creature while being close to them. Once per turn when you deal damage to a creature within 30 feet of yourself you can add one roll of your Bardic Inspiration die to that damage.",
-				"{@bold Jagged Mind.} You learned to sharpen your Blades to perfection with the power of your mind. When you deal piercing damage to a creature, that creature must succeed on a Constiution saving throw or start bleeding for a number of rounds equal to your proficiency bonus, taking damage equal to one roll of your Proficiency Bonus. If you critically hit the creature, they automatically fail their saving throw. At the end of each of its turns, the creature can make a Constitution saving throw. On a success, the condition ends. Additionally, once per turn when you inflict damage via a bleeding condition you inflicted, you regain hit points equal to one roll of your Bardic Inspiration die."
+				"{@bold Bladeturn Refrain.} You learned to keep an echo of your Blades around as a defensive measure when casting a Bladesong. When you cast a Bladesong, your AC increases equal to one roll of your Bardic Inspiration die against the next attack for 1 round.",
+				"{@bold Mental Focus.} You learned to focus your mind on the weaknesses of close creatures. Once per turn when you deal damage to a creature within 30 feet of yourself you can add one roll of your Bardic Inspiration die to that damage.",
+				"{@bold Jagged Mind.} You learned to sharpen your Blades to perfection with the power of your mind. When you deal piercing damage to a creature, that creature must succeed on a Constitution saving throw or start {@condition Bleeding|GuildWars} for a number of rounds equal to your proficiency bonus, taking damage equal to half the roll of one of your Bardic Inspiration die. If you critically hit the creature, they automatically fail their saving throw. At the end of each of its turns, the creature can make a Constitution saving throw. On a success, the condition ends. Additionally, once per turn when you inflict damage via a bleeding condition you inflicted, you regain hit points equal to one roll of your Bardic Inspiration die."
 			]
 		},
 		{
@@ -193,7 +193,8 @@
 			"subclassSource": "GW2EoD",
 			"level": 6,
 			"entries": [
-				"Your Blades have become much more deadly, piercing most defenses. When you deal piercing damage to a creature, that creature must succeed on a Constiution saving throw or have cracked armor for a number of rounds equal to your proficiency bonus. If you critically hit the creature, they automatically fail their saving throw. Additionally, after you cast a Bladesong, the next time you deal damage before the end of your next turn, you can add one roll of your Bardic Inspiration die to that damage."
+				"Your Blades have become much more deadly, piercing most defenses.",
+				"When you deal piercing damage to a creature, that creature must succeed on a Constitution saving throw or have {@condition Cracked Armor|Guild Wars} for a number of rounds equal to your proficiency bonus. If you critically hit the creature, they automatically fail their saving throw. Additionally, after you cast a Bladesong, the next time you deal damage before the end of your next turn with a spell or a weapon, you can add one roll of your Bardic Inspiration die to that damage."
 			]
 		},
 		{
@@ -370,7 +371,8 @@
 			"entries": [
 				"{@bold Minimum expended Blades:} 2",
 				"Your Blades cut through reality to spike themselves into a creature’s mind.",
-				"Choose one creature that you can see within range. Make N ranged spell attacks against the target, where N is the amount of Blades expended. The target cannot benefit from cover provided by other creatures. On a hit, the target takes your choice of psychic or piercing damage equal to one roll of your Bardic Inspiration die and is afflicted with Bladesong Sorrow. Any creature between you and the target must succeed on a Dexterity saving throw or take half the damage total rolled on all attacks that hit and also be afflicted with Bladesong Sorrow. On a success they take no damage and are not afflicted.",
+				"Choose one creature that you can see within range. Make N ranged spell attacks against the target, where N half the amount of Blades expended. The target cannot benefit from cover provided by other creatures. On a hit, the target takes your choice of psychic or piercing damage equal to one roll of your Bardic Inspiration die and is afflicted with Bladesong Sorrow.",
+				"Any creature between you and the target must succeed on a Dexterity saving throw or take half the damage total rolled on all attacks that hit and also be afflicted with Bladesong Sorrow. On a success they take no damage and are not afflicted.",
 				"A creature afflicted with Baldesong Sorrow takes psychic damage equal to one roll of your Bardic Inspiration die each time they take the Attack or Magic action. The affliction lasts for a number of turns equal to half the number of Blades expended. A creature can be afflicted multiple times with Baldesong Sorrow.",
 				"Instead of rolling with advantage or disadvantage, you instead gain a +5 bonus to hit when you would have advantage or a -5 penalty to hit when you would have disadvantage."
 			],
@@ -453,7 +455,8 @@
 			"entries": [
 				"{@bold Minimum expended Blades:} 3",
 				"Combine your Blades into one and drive it into the mind of a creature.",
-				"Choose one creature that you can see within range. The target must succeed on an Intelligence saving throw or take your choice of piercing or psychic damage equal to one roll of your Bardic Inspiration die and be {@condition stunned} for a number of rounds equal to a third of the amount of Blades expended. At the end of each of its turns, the creature can make an Intelligence saving throw. On a success, the condition ends. "
+				"Choose one creature that you can see within range. The target must succeed on an Intelligence saving throw or take your choice of piercing or psychic damage equal to one roll of your Bardic Inspiration die and be {@condition stunned} for a number of rounds equal to a third of the amount of Blades expended.",
+				"At the end of each of its turns, the creature can make an Intelligence saving throw. On a success, the condition ends. "
 			],
 			"source": "GW2EoD",
 			"fluff": {
@@ -531,7 +534,7 @@
 			"entries": [
 				"{@bold Minimum expended Blades:} 4",
 				"Use your Blades to distort reality around yourself. ",
-				"For a number of rounds equal to a fourth of the amount of Blades expended you gain resistance against all damage. Additionally, for the duration, your AC increases by an amount equal to N number of rolls of your Bardic Inspiration die, where N is a fourth of the amount of Blades expended."
+				"For a number of rounds equal to a fourth of the amount of Blades expended you gain resistance against all damage. Additionally, for the duration, your AC increases by an amount equal to N rolls of your Bardic Inspiration die, where N is a fourth of the amount of Blades expended."
 			],
 			"source": "GW2EoD",
 			"fluff": {
@@ -600,7 +603,7 @@
 			"entries": [
 				"{@bold Minimum expended Blades:} 2",
 				"Create a ring of deadly Blades around yourself. ",
-				"Psychic Blades spin around you in a 10-foot Emanation for a number of rounds equal to half of the amount of Blades expended. When you cast this Bladesong, you can designate creatures to be unaffected by it. Any other creature's Speed is halved in the Emanation, and whenever the Emanation enters a creature's space and whenever a creature enters the Emanation or ends its turn there, the creature must make a Dexterity saving throw. On a failed save, the creature takes your choice of psychic or piercing damage equal to N number of rolls of your Bardic Inspiration die, where N is half of the amount of Blades expended. On a successful save, the creature takes half as much damage. A creature makes this save only once per turn."
+				"Psychic Blades spin around you in a 10-foot Emanation for a number of rounds equal to half of the amount of Blades expended. When you cast this Bladesong, you can designate creatures to be unaffected by it. Any other creature's Speed is halved in the Emanation, and whenever the Emanation enters a creature's space and whenever a creature enters the Emanation or ends its turn there, the creature must make a Dexterity saving throw. On a failed save, the creature takes your choice of psychic or piercing damage equal to N rolls of your Bardic Inspiration die, where N is half of the amount of Blades expended. On a successful save, the creature takes half as much damage. A creature makes this save only once per turn."
 			],
 			"source": "GW2EoD",
 			"fluff": {

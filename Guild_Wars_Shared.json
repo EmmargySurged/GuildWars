@@ -110137,6 +110137,335 @@
             "components": {
                 "s": true
             }
+        },
+        {
+            "name": "Needling Shot",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 0,
+                    "unit": "special",
+                    "condition": "which you take immediately before hitting a target with a Ranged weapon"
+                }
+            ],
+            "range": {
+                "type": "special"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "Fire a volley of low-impact shots.",
+                "Make a ranged weapon attack with advantage against the target. On a hit, the target takes {@damage 1d6 + 5} piercing damage, and you can immediately make another attack, if you also cast Needling Shot as part of that attack. If you do so, you can ignore the rule that you only cast one spell with a spell slot per turn.",
+                "Hit or miss, you cannot use other spells with a Special casting time for 2 rounds. "
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Needling Shot",
+                    "Bow Attack. Needling Shot strikes for only 10...26...30 damage and moves faster than normal. If Needling Shot strikes a foe below 50% Health, Needling Shot recharges instantly. Your other attack skills are disabled for 2 seconds."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Kaineng City/Needling_Shot.jpg"
+                        }
+                    }
+                ]
+            },
+            "components": {
+                "v": true
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Marksmanship",
+                    "source": "GuildWars"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "xua2025eberronupdates"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Collage of swords",
+                            "shortName": "Swords",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Psion",
+                            "source": "xua2025psion"
+                        },
+                        "subclass": {
+                            "name": "Metamorph",
+                            "shortName": "Metamorph",
+                            "source": "xua2025psion"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d6 + 5} piercing damage for each slot level above 1st on a hit."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "piercing"
+            ]
+        },
+        {
+            "name": "Essence Strike",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "School of necromancy",
+                            "shortName": "Necromancy",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "Use life essence to shock a creature; you can draw that essence from a friendly spirit nearby.",
+                "Choose one creature that you can see within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 2d12} lightning damage.",
+                "If there is at least one friendly summoning ritual within range, you do not expend a spell slot to cast this spell. "
+            ],
+            "source": "GuildWars",
+            "fluff": {
+                "entries": [
+                    "Essence Strike",
+                    "Spell. Target foe is struck for 15...51...60 lightning damage. If any spirits are within earshot, you gain 1...7...9 Energy."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Kaineng City/Essence_Strike.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Ritualist",
+                    "source": "GuildWars"
+                },
+                {
+                    "name": "Channeling Magic",
+                    "source": "GuildWars"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a copper wire"
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d12} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "lightning"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         }
     ],
     "table": [

@@ -110493,7 +110493,33 @@
 				}
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "School of necromancy",
+							"shortName": "Necromancy",
+							"source": "PHB"
+						}
+					}
+				]
 			},
 			"entries": [
 				"{@bold Enchantment}",
@@ -110635,7 +110661,106 @@
 				"weakness|guildwars"
 			],
 			"classes": {
-				"fromClassList": []
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "xua2025eberronupdates"
+						},
+						"subclass": {
+							"name": "Armorer",
+							"shortName": "Armorer",
+							"source": "xua2025eberronupdates"
+						}
+					},
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "xua2025eberronupdates"
+						},
+						"subclass": {
+							"name": "Battle smith",
+							"shortName": "Battle Smith",
+							"source": "xua2025eberronupdates"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Inquisition domain",
+							"shortName": "Inquisition",
+							"source": "GrimHollowPlayerPack"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "War domain",
+							"shortName": "War",
+							"source": "XPHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Illrigger",
+							"source": "IllriggerRevised"
+						},
+						"subclass": {
+							"name": "Architect of ruin",
+							"shortName": "Architect of Ruin",
+							"source": "IllriggerRevised"
+						}
+					},
+					{
+						"class": {
+							"name": "Psion",
+							"source": "xua2025psion"
+						},
+						"subclass": {
+							"name": "Metamorph",
+							"shortName": "Metamorph",
+							"source": "xua2025psion"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "The hexblade",
+							"shortName": "Hexblade",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Eldritch knight",
+							"shortName": "Eldritch Knight",
+							"source": "XPHB"
+						}
+					}
+				]
 			},
 			"savingThrow": [
 				"constitution"
@@ -110646,6 +110771,181 @@
 					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
 						"When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d6} damage for each slot level above 1st on a hit."
+					]
+				}
+			]
+		},
+		{
+			"name": "Exhausting Assault",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon with the light and thrown property"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@bold Dual Attack}",
+				"Sever a creature's energy flows, exhausting them instantly.",
+				"Make two melee weapon attacks against the target. On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d12} damage and the target is {@condition overcast|GuildWars} and {@condition exhaustion|XPHB|exhausted} for the duration.",
+				"At the end of each of its turns, the target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Exhausting Assault",
+					"Dual Attack. Must follow a lead attack. Target foe's action is interrupted. If that action was casting a spell, target foe suffers 10 Overcast."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Kaineng City/Exhausting_Assault.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"AAD"
+			],
+			"components": {
+				"v": true
+			},
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Dagger Mastery",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Dual Attack",
+					"source": "GuildWars"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the target also takes {@damage 1d12} damage for each slot level above 4th on a hit."
+					]
+				}
+			],
+			"conditionInflict": [
+				"exhaustion",
+				"overcast|guildwars"
+			]
+		},
+		{
+			"name": "Expose Defenses",
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@bold Hex},",
+				"Choose one creature that you can see within range. The target must make a Charisma saving throw. On a failed save, for the duration, your attacks automatically hit the target and gain the {@background Unblockable|GuildWars} property."
+			],
+			"source": "GuildWars",
+			"fluff": {
+				"entries": [
+					"Expose Defenses",
+					"Hex Spell. For 1...9...11 second[s], target foe cannot block your attacks. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Kaineng City/Expose_Defenses.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"backgrounds": [
+				{
+					"name": "Kaineng City",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Assassin",
+					"source": "GuildWars"
+				},
+				{
+					"name": "Deadly Arts",
+					"source": "GuildWars"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the number you need to score a critical hit against the target decreases by 1 for each slot level above 3rd."
 					]
 				}
 			]
@@ -111669,7 +111969,8 @@
 			"name": "Unblockable",
 			"source": "GuildWars",
 			"entries": [
-				"Attacks with the Unblockable tag ignore any non-permanent increases to the AC of the target. This includes things like the {@spell Shield|XPHB} or {@spell Shield of Faith|XPHB} spell. It does not include things like the +1 AC bonus from a {@item +1 Shield|XDMG}."
+				"Attacks with the Unblockable tag ignore any non-permanent increases to the AC of the target. This includes things like the {@spell Shield|XPHB} or {@spell Shield of Faith|XPHB} spell. It does not include things like the +1 AC bonus from a {@item +1 Shield|XDMG}.",
+                "Furthermore, attacks with the Unblockable tag ignore any effect that causes the attack to automatically miss."
 			]
 		},
 		{
@@ -114639,5 +114940,7 @@
 				"{@race Charr|GuildWars}"
 			]
 		}
-	]
+	],
+	"subclass": [],
+	"subclassFeature": []
 }

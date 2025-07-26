@@ -20,12 +20,1733 @@
     ],
     "status": "ready"
   },
-  "item": [],
-  "monster": [],
+  "item": [
+    {
+      "name": "Spear of Archemorus (Dormant)",
+      "source": "GWF",
+      "type": "M",
+      "rarity": "Legendary",
+      "entries": [
+        "This spear is made from the bones of the legendary Luxon hero Archemorus, who single handedly slew Shiro the Betrayer.",
+        "'They who neither hesitate nor stumble shall be rewarded.' is etched into the bone of the shaft.",
+        "You can use the Spear of Archemorus as a spellcasting focus for your spells while attuned to it.",
+        "{@bold Dormant.} While the Spear of Archemorus is in a dormant state, you gain the following benefits:",
+        "• You gain a +1 bonus to attack rolls made with this magic weapon.",
+        "• You gain a +1 bonus to spell attack rolls and the saving throw DCs of your spells.",
+        "• When you hit with an attack using this weapon, the target takes an extra 1d6 force damage.",
+        "• Once per turn, as an action, you can teleport up to 60 feet next to a creature, which is concentrating on a spell, and make one attack using this weapon with advantage. You can use this feature a number of times equal to your proficiency bonus and regain all expended uses when you finish a long rest.",
+        "• This magic weapon returns to your hand immediately after it is used to make a ranged attack roll.",
+        "{@bold Mastery: Sap.} If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
+      ],
+      "tier": "major",
+      "reqAttune": "by a Luxon",
+      "focus": true,
+      "weaponCategory": "simple",
+      "dmg1": "1d6",
+      "dmg2": "1d8",
+      "dmgType": "P",
+      "range": "60/120",
+      "property": [
+        "T",
+        "V"
+      ]
+    }
+  ],
+  "monster": [
+    {
+      "name": "Spirit of Pain",
+      "size": [
+        "M"
+      ],
+      "type": "undead",
+      "source": "GWF",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 10,
+          "condition": "+ Spell Level",
+          "braces": true
+        }
+      ],
+      "hp": {
+        "special": "5 + Spell Level * 5"
+      },
+      "speed": {},
+      "str": 10,
+      "dex": 10,
+      "con": 10,
+      "int": 10,
+      "wis": 10,
+      "cha": 10,
+      "passive": 10,
+      "actionTags": [
+        "Multiattack"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "grappled",
+        "incapacitated",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "restrained",
+        "stunned",
+        "unconscious"
+      ],
+      "fluff": {
+        "entries": [
+          "Binding Ritual. Create a level 1...10...12 spirit. This spirit's attacks deal 5...25...30 damage. This spirit dies after 30...126...150 seconds."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit.jpg"
+            }
+          }
+        ]
+      },
+      "senses": [
+        "blindsight 120 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The Spirit of Pain makes a number of Pain attacks equal to half the level of the spell (rounded down, minimum 1)."
+          ]
+        },
+        {
+          "name": "Pain",
+          "entries": [
+            "{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}8 ({@damage 2d6 + Spell Level}) force damage."
+          ]
+        }
+      ],
+      "miscTags": [
+        "RA"
+      ],
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit_Token.png"
+      }
+    },
+    {
+      "name": "Spirit of Bloodsong",
+      "size": [
+        "M"
+      ],
+      "type": "undead",
+      "source": "GWF",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 10,
+          "condition": "+ Spell Level",
+          "braces": true
+        }
+      ],
+      "hp": {
+        "special": "5 + Spell Level * 5"
+      },
+      "speed": {},
+      "str": 10,
+      "dex": 10,
+      "con": 10,
+      "int": 10,
+      "wis": 10,
+      "cha": 10,
+      "passive": 10,
+      "actionTags": [
+        "Multiattack"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "grappled",
+        "incapacitated",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "restrained",
+        "stunned",
+        "unconscious"
+      ],
+      "fluff": {
+        "entries": [
+          "Binding Ritual. Create a level 1...10...12 spirit who dies after 30...126...150 seconds. Attacks by that spirit steal up to 5...21...25 Health. "
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit.jpg"
+            }
+          }
+        ]
+      },
+      "senses": [
+        "blindsight 120 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The Spirit of Bloodsong makes a number of bloodsong attacks equal to half the level of the spell (rounded down, minimum 1)."
+          ]
+        },
+        {
+          "name": "Bloodsong",
+          "entries": [
+            "{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}3 ({@damage 1d6 + Spell Level}) necrotic damage, the Spirit of Bloodsong regains health equal to the damage dealt."
+          ]
+        }
+      ],
+      "miscTags": [
+        "RA"
+      ],
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit_Token.png"
+      }
+    },
+    {
+      "name": "Spirit of Dissonance",
+      "size": [
+        "M"
+      ],
+      "type": "undead",
+      "source": "GWF",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 10,
+          "condition": "+ Spell Level",
+          "braces": true
+        }
+      ],
+      "hp": {
+        "special": "5 + Spell Level * 5"
+      },
+      "speed": {},
+      "str": 10,
+      "dex": 10,
+      "con": 10,
+      "int": 10,
+      "wis": 10,
+      "cha": 10,
+      "passive": 10,
+      "actionTags": [
+        "Multiattack"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "grappled",
+        "incapacitated",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "restrained",
+        "stunned",
+        "unconscious"
+      ],
+      "fluff": {
+        "entries": [
+          "Binding Ritual. Create a level 1...10...12 spirit who dies after 30...126...150 seconds. Attacks by that spirit steal up to 5...21...25 Health. "
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit.jpg"
+            }
+          }
+        ]
+      },
+      "senses": [
+        "blindsight 120 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The Spirit of Dissonance makes a number of Dissonance attacks equal to half the level of the spell (rounded down, minimum 1)."
+          ]
+        },
+        {
+          "name": "Dissonance",
+          "entries": [
+            "{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}3 ({@damage 1d6 + Spell Level}) psychic damage; the target must succeed on a Constitution saving throw against your spell save DC or miss with their next attack before the end of their next turn."
+          ]
+        }
+      ],
+      "miscTags": [
+        "RA"
+      ],
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit_Token.png"
+      }
+    },
+    {
+      "name": "Spirit of Recuperation",
+      "size": [
+        "M"
+      ],
+      "type": "undead",
+      "source": "GWF",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 10,
+          "condition": "+ Spell Level",
+          "braces": true
+        }
+      ],
+      "hp": {
+        "special": "10 + Spell Level * 10"
+      },
+      "speed": {},
+      "str": 10,
+      "dex": 10,
+      "con": 10,
+      "int": 10,
+      "wis": 10,
+      "cha": 10,
+      "passive": 10,
+      "actionTags": [
+        "Multiattack"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "grappled",
+        "incapacitated",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "restrained",
+        "stunned",
+        "unconscious"
+      ],
+      "fluff": {
+        "entries": [
+          "Binding Ritual. Create a level 1...11...14 spirit. Non-spirit allies within its range gain +1...3...3 Health regeneration. This spirit dies after 15...39...45 seconds. "
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Defensive_binding_spirit.jpg"
+            }
+          }
+        ]
+      },
+      "senses": [
+        "blindsight 120 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "trait": [
+        {
+          "name": "Recuperation",
+          "entries": [
+            "Any friendly non-summoning ritual creature regains hit points equal to the level of the spell at the start of their turn if they are within 150-feet of the spirit and have at least 1 hit point."
+          ]
+        }
+      ],
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Defensive_binding_spirit_Token.png"
+      }
+    },
+    {
+      "name": "Spirit of Shadowsong",
+      "size": [
+        "M"
+      ],
+      "type": "undead",
+      "source": "GWF",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 10,
+          "condition": "+ Spell Level",
+          "braces": true
+        }
+      ],
+      "hp": {
+        "special": "5 + Spell Level * 5"
+      },
+      "speed": {},
+      "str": 10,
+      "dex": 10,
+      "con": 10,
+      "int": 10,
+      "wis": 10,
+      "cha": 10,
+      "passive": 10,
+      "actionTags": [
+        "Multiattack"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "grappled",
+        "incapacitated",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "restrained",
+        "stunned",
+        "unconscious"
+      ],
+      "fluff": {
+        "entries": [
+          "Binding Ritual. Create a level 1...8...10 spirit. The spirit's attacks deal 5...17...20 damage and cause Blindness for 1...5...6 second[s]. This spirit dies after 30 second[s]."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit.jpg"
+            }
+          }
+        ]
+      },
+      "senses": [
+        "blindsight 120 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The Spirit of Shadowsong makes a number of Shadowsong attacks equal to half the level of the spell (rounded down, minimum 1)."
+          ]
+        },
+        {
+          "name": "Shadowsong",
+          "entries": [
+            "{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}3 ({@damage 1d4 + Spell Level}) necrotic damage, the target is {@condition blinded} until the end of their next turn."
+          ]
+        }
+      ],
+      "miscTags": [
+        "RA"
+      ],
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit_Token.png"
+      },
+      "conditionInflict": [
+        "blinded"
+      ]
+    },
+    {
+      "name": "Spirit of Union",
+      "size": [
+        "M"
+      ],
+      "type": "undead",
+      "source": "GWF",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 10,
+          "condition": "+ Spell Level",
+          "braces": true
+        }
+      ],
+      "hp": {
+        "special": "10 + Spell Level * 10"
+      },
+      "speed": {},
+      "str": 10,
+      "dex": 10,
+      "con": 10,
+      "int": 10,
+      "wis": 10,
+      "cha": 10,
+      "passive": 10,
+      "actionTags": [
+        "Multiattack"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "grappled",
+        "incapacitated",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "restrained",
+        "stunned",
+        "unconscious"
+      ],
+      "fluff": {
+        "entries": [
+          "Binding Ritual. Create a level 1...10...12 spirit. Whenever a non-spirit ally in its range takes damage or life steal, it is reduced by 15 and the spirit takes 15 damage. This spirit dies after 30...54...60 seconds."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Defensive_binding_spirit.jpg"
+            }
+          }
+        ]
+      },
+      "senses": [
+        "blindsight 120 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "trait": [
+        {
+          "name": "Union",
+          "entries": [
+            "Any friendly non-summoning ritual creature who takes damage while they are within 150-feet of the spirit can roll a number of d4s equal to the spell level and subtract the number rolled from the damage. This spirit then takes necrotic damage equal to damage subtracted."
+          ]
+        }
+      ],
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Defensive_binding_spirit_Token.png"
+      }
+    },
+    {
+      "name": "Flesh Golem",
+      "source": "GWF",
+      "size": [
+        "M"
+      ],
+      "type": "undead",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 10,
+          "condition": "+ Spell Level"
+        }
+      ],
+      "hp": {
+        "special": "50 + Spell Level * 10"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 19,
+      "dex": 9,
+      "con": 18,
+      "int": 6,
+      "wis": 10,
+      "cha": 5,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 10,
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "petrified",
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Immutable Form",
+          "entries": [
+            "The golem can't shape-shift."
+          ]
+        },
+        {
+          "name": "Necrotic Absorption",
+          "entries": [
+            "Whenever the golem is subjected to Necrotic damage, it regains a number of {@variantrule Hit Points|XPHB} equal to the Necrotic damage dealt instead of taking damage."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The golem has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The golem makes a number of Slam attacks equal to half the level of the spell (rounded down) (minimum 1)."
+          ]
+        },
+        {
+          "name": "Slam",
+          "entries": [
+            "{@atkr m}  your spell attack modifier to hit, reach 5 ft. {@h}13 ({@damage 2d8 + 4 + Spell Level}) Bludgeoning damage plus 4 ({@damage 1d8}) Necrotic damage."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Damage Absorption",
+        "Immutable Form",
+        "Magic Resistance"
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "fluff": {
+        "entries": [
+          "A Flesh Golem is a minion created using Animate Flesh Golem."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Flesh_Golem.jpg"
+            }
+          }
+        ]
+      },
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Flesh_Golem_Token.png"
+      },
+      "damageTags": [
+        "N"
+      ]
+    },
+    {
+      "name": "Spirit of Preservation",
+      "size": [
+        "M"
+      ],
+      "type": "undead",
+      "source": "GWF",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 10,
+          "condition": "+ Spell Level",
+          "braces": true
+        }
+      ],
+      "hp": {
+        "special": "10 + Spell Level * 10"
+      },
+      "speed": {},
+      "str": 10,
+      "dex": 10,
+      "con": 10,
+      "int": 10,
+      "wis": 10,
+      "cha": 10,
+      "passive": 10,
+      "actionTags": [
+        "Multiattack"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "grappled",
+        "incapacitated",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "restrained",
+        "stunned",
+        "unconscious"
+      ],
+      "fluff": {
+        "entries": [
+          "Elite Binding Ritual. Create a level 1...11...14 spirit. Every 4 seconds, this spirit heals one non-spirit ally in the area for 10...94...115 Health. This spirit dies after 90 seconds. "
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Defensive_binding_spirit.jpg"
+            }
+          }
+        ]
+      },
+      "senses": [
+        "blindsight 120 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Defensive_binding_spirit_Token.png"
+      },
+      "action": [
+        {
+          "name": "Preservation",
+          "entries": [
+            "Choose one creature that you can see within 150-feet. The target regains hit points equal to {@dice Nd6} + your spellcasting ability modifier, where N is twice the level of the spell."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Spirit of Anger",
+      "size": [
+        "M"
+      ],
+      "type": "undead",
+      "source": "GWF",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 10,
+          "condition": "+ Spell Level",
+          "braces": true
+        }
+      ],
+      "hp": {
+        "special": "5 + Spell Level * 5"
+      },
+      "speed": {},
+      "str": 10,
+      "dex": 10,
+      "con": 10,
+      "int": 10,
+      "wis": 10,
+      "cha": 10,
+      "passive": 10,
+      "actionTags": [
+        "Multiattack"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "grappled",
+        "incapacitated",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "restrained",
+        "stunned",
+        "unconscious"
+      ],
+      "fluff": {
+        "entries": [
+          "Elite Signet. Create 3 level 1...10...12 spirits. These spirits deal 5...17...20 damage with attacks and die after 60 seconds."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit.jpg"
+            }
+          }
+        ]
+      },
+      "senses": [
+        "blindsight 120 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The Spirit of Anger makes a number of Anger attacks equal to half the level of the spell (rounded down, minimum 1)."
+          ]
+        },
+        {
+          "name": "Anger",
+          "entries": [
+            "{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}8 ({@damage 1d8 + Spell Level}) fire damage."
+          ]
+        }
+      ],
+      "miscTags": [
+        "RA"
+      ],
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit_Token.png"
+      }
+    },
+    {
+      "name": "Spirit of Hate",
+      "size": [
+        "M"
+      ],
+      "type": "undead",
+      "source": "GWF",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 10,
+          "condition": "+ Spell Level",
+          "braces": true
+        }
+      ],
+      "hp": {
+        "special": "5 + Spell Level * 5"
+      },
+      "speed": {},
+      "str": 10,
+      "dex": 10,
+      "con": 10,
+      "int": 10,
+      "wis": 10,
+      "cha": 10,
+      "passive": 10,
+      "actionTags": [
+        "Multiattack"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "grappled",
+        "incapacitated",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "restrained",
+        "stunned",
+        "unconscious"
+      ],
+      "fluff": {
+        "entries": [
+          "Elite Signet. Create 3 level 1...10...12 spirits. These spirits deal 5...17...20 damage with attacks and die after 60 seconds."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit.jpg"
+            }
+          }
+        ]
+      },
+      "senses": [
+        "blindsight 120 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The Spirit of Hate makes a number of Hate attacks equal to half the level of the spell (rounded down, minimum 1)."
+          ]
+        },
+        {
+          "name": "Hate",
+          "entries": [
+            "{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}8 ({@damage 1d8 + Spell Level}) psychic damage."
+          ]
+        }
+      ],
+      "miscTags": [
+        "RA"
+      ],
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit_Token.png"
+      }
+    },
+    {
+      "name": "Spirit of Suffering",
+      "size": [
+        "M"
+      ],
+      "type": "undead",
+      "source": "GWF",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 10,
+          "condition": "+ Spell Level",
+          "braces": true
+        }
+      ],
+      "hp": {
+        "special": "5 + Spell Level * 5"
+      },
+      "speed": {},
+      "str": 10,
+      "dex": 10,
+      "con": 10,
+      "int": 10,
+      "wis": 10,
+      "cha": 10,
+      "passive": 10,
+      "actionTags": [
+        "Multiattack"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "grappled",
+        "incapacitated",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "restrained",
+        "stunned",
+        "unconscious"
+      ],
+      "fluff": {
+        "entries": [
+          "Elite Signet. Create 3 level 1...10...12 spirits. These spirits deal 5...17...20 damage with attacks and die after 60 seconds."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit.jpg"
+            }
+          }
+        ]
+      },
+      "senses": [
+        "blindsight 120 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The Spirit of Suffering makes a number of pain attacks equal to half the level of the spell (rounded down, minimum 1)."
+          ]
+        },
+        {
+          "name": "Suffering",
+          "entries": [
+            "{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}8 ({@damage 1d8 + Spell Level}) necrotic damage."
+          ]
+        }
+      ],
+      "miscTags": [
+        "RA"
+      ],
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit_Token.png"
+      }
+    },
+    {
+      "name": "Spirit of Wanderlust",
+      "size": [
+        "M"
+      ],
+      "type": "undead",
+      "source": "GWF",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 10,
+          "condition": "+ Spell Level",
+          "braces": true
+        }
+      ],
+      "hp": {
+        "special": "10 + Spell Level * 10"
+      },
+      "speed": {},
+      "str": 10,
+      "dex": 10,
+      "con": 10,
+      "int": 10,
+      "wis": 10,
+      "cha": 10,
+      "passive": 10,
+      "actionTags": [
+        "Multiattack"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "grappled",
+        "incapacitated",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "restrained",
+        "stunned",
+        "unconscious"
+      ],
+      "fluff": {
+        "entries": [
+          "Binding Ritual. Create a level 1...10...12 spirit. This spirit's attacks deal 5...25...30 damage. This spirit dies after 30...126...150 seconds."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit.jpg"
+            }
+          }
+        ]
+      },
+      "senses": [
+        "blindsight 120 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The Spirit of Wanderlust makes a number of Wanderlust attacks equal to half the level of the spell (rounded down, minimum 1)."
+          ]
+        },
+        {
+          "name": "Wanderlust",
+          "entries": [
+            "{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}4 ({@damage 1d6 + Spell Level}) force damage, if the target did not willingly move on its last turn, it is knocked {@condition prone}."
+          ]
+        }
+      ],
+      "miscTags": [
+        "RA"
+      ],
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit_Token.png"
+      },
+      "conditionInflict": [
+        "prone"
+      ],
+      "trait": [
+        {
+          "name": "Bring down the Punishment",
+          "entries": [
+            "The Spirit of Wanderlust cannot have disadvantage on ranged attacks because a creature is {@condition prone}."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vampiric Horror",
+      "size": [
+        "M"
+      ],
+      "type": "undead",
+      "source": "GWF",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 7,
+          "condition": "+ Spell Level"
+        }
+      ],
+      "hp": {
+        "special": "5 + Spell Level * 5"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 12,
+      "dex": 8,
+      "con": 16,
+      "int": 4,
+      "wis": 6,
+      "cha": 4,
+      "passive": 8,
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The bone horror makes a number of Bite attacks equal to half the level of the spell (rounded down) (minimum 1)."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "Natural Weapon: your spell attack modifier to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 3} + Spell Level) piercing damage, you regain health equal to the piercing damage dealt."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "fluff": {
+        "entries": [
+          "Vampiric Horrors are minions created by the Animate Vampiric Horror spell. When one of them does damage, the creature who controls them is healed by the same amount. Vampiric Horrors will not provide healing if they are masterless. "
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Bone_Horror.jpg"
+            }
+          }
+        ]
+      },
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Bone_Horror_Token.png"
+      }
+    },
+    {
+      "name": "Spirit of Destruction",
+      "size": [
+        "M"
+      ],
+      "type": "undead",
+      "source": "GWF",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "condition": "+ Spell Level",
+          "braces": true
+        }
+      ],
+      "hp": {
+        "special": "10 + Spell Level * 10"
+      },
+      "speed": {},
+      "str": 10,
+      "dex": 10,
+      "con": 10,
+      "int": 10,
+      "wis": 10,
+      "cha": 10,
+      "passive": 10,
+      "actionTags": [
+        "Multiattack"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "grappled",
+        "incapacitated",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "restrained",
+        "stunned",
+        "unconscious"
+      ],
+      "fluff": {
+        "entries": [
+          "Destruction",
+          "Binding Ritual. Create a level 1...11...14 Spirit that dies after 30 seconds. When this Spirit dies, all foes in the area take 5...21...25 damage for each second the Spirit was alive (maximum 150 damage). "
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Defensive_binding_spirit.jpg"
+            }
+          }
+        ]
+      },
+      "senses": [
+        "blindsight 120 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Defensive_binding_spirit_Token.png"
+      },
+      "trait": [
+        {
+          "name": "Destruction",
+          "entries": [
+            "The Spirit of Destruction explodes when it dies. {@actSave dex} Your spell save DC, each hostile creature in a 20-foot Emanation originating from the Spirit of Destruction. {@actSaveFail} Nd10 Lightning damage. {@actSaveSuccess} Half damage. N is the number of rounds the Spirit of Destruction was alive for plus the level of the spell. This damage has the {@background Armor Penetration|GW} property."
+          ]
+        }
+      ],
+      "damageTags": [
+        "L"
+      ],
+      "savingThrowForced": [
+        "dexterity"
+      ]
+    },
+    {
+      "name": "Spirit of Disenchantment",
+      "size": [
+        "M"
+      ],
+      "type": "undead",
+      "source": "GWF",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 10,
+          "condition": "+ Spell Level",
+          "braces": true
+        }
+      ],
+      "hp": {
+        "special": "5 + Spell Level * 5"
+      },
+      "speed": {},
+      "str": 10,
+      "dex": 10,
+      "con": 10,
+      "int": 10,
+      "wis": 10,
+      "cha": 10,
+      "passive": 10,
+      "actionTags": [
+        "Multiattack"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "grappled",
+        "incapacitated",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "restrained",
+        "stunned",
+        "unconscious"
+      ],
+      "fluff": {
+        "entries": [
+          "Binding Ritual. Create a level 1...10...12 spirit. This spirit's attacks deal 5...25...30 damage. This spirit dies after 30...126...150 seconds."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit.jpg"
+            }
+          }
+        ]
+      },
+      "senses": [
+        "blindsight 120 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The Spirit of Disenchantment makes a number of Disenchantment attacks equal to half the level of the spell (rounded down, minimum 1)."
+          ]
+        },
+        {
+          "name": "Disenchantment",
+          "entries": [
+            "{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h}4 ({@damage 1d4 + Spell Level}) psychic damage, the latest beneficial spell on the target ends."
+          ]
+        }
+      ],
+      "miscTags": [
+        "RA"
+      ],
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit_Token.png"
+      }
+    },
+    {
+      "name": "Spirit of Displacement",
+      "size": [
+        "M"
+      ],
+      "type": "undead",
+      "source": "GWF",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 10,
+          "condition": "+ Spell Level",
+          "braces": true
+        }
+      ],
+      "hp": {
+        "special": "10 + Spell Level * 10"
+      },
+      "speed": {},
+      "str": 10,
+      "dex": 10,
+      "con": 10,
+      "int": 10,
+      "wis": 10,
+      "cha": 10,
+      "passive": 10,
+      "actionTags": [
+        "Multiattack"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "grappled",
+        "incapacitated",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "restrained",
+        "stunned",
+        "unconscious"
+      ],
+      "fluff": {
+        "entries": [
+          "Binding Ritual. Create a level 1...10...12 spirit. Whenever a non-spirit ally in its range takes damage or life steal, it is reduced by 15 and the spirit takes 15 damage. This spirit dies after 30...54...60 seconds."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Defensive_binding_spirit.jpg"
+            }
+          }
+        ]
+      },
+      "senses": [
+        "blindsight 120 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "trait": [
+        {
+          "name": "Displacement",
+          "entries": [
+            "Any friendly, non-summoning ritual creature within 150 feet of the spirit has a +5 bonus to AC. If an attack misses a target because of this bonus, this spirit takes 10 force damage."
+          ]
+        }
+      ],
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Defensive_binding_spirit_Token.png"
+      },
+      "damageTags": [
+        "O"
+      ]
+    },
+    {
+      "name": "Spirit of Earthbind",
+      "size": [
+        "M"
+      ],
+      "type": "undead",
+      "source": "GWF",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 10,
+          "condition": "+ Spell Level",
+          "braces": true
+        }
+      ],
+      "hp": {
+        "special": "10 + Spell Level * 10"
+      },
+      "speed": {},
+      "str": 10,
+      "dex": 10,
+      "con": 10,
+      "int": 10,
+      "wis": 10,
+      "cha": 10,
+      "passive": 10,
+      "actionTags": [
+        "Multiattack"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "grappled",
+        "incapacitated",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "restrained",
+        "stunned",
+        "unconscious"
+      ],
+      "fluff": {
+        "entries": [
+          "Binding Ritual. Create a level 1...11...14 spirit. Non-spirit allies within its range gain +1...3...3 Health regeneration. This spirit dies after 15...39...45 seconds. "
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Defensive_binding_spirit.jpg"
+            }
+          }
+        ]
+      },
+      "senses": [
+        "blindsight 120 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "trait": [
+        {
+          "name": "Earthbind",
+          "entries": [
+            "Any hostile non-summoning ritual creature that attempts to stand up from {@condition prone} while they are within 150 feet of the spirit must first succeed on a Strength saving throw or waste their movement in the attempt. Each time a creature is forced to make this saving throw this spirit takes 10 force damage."
+          ]
+        }
+      ],
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Defensive_binding_spirit_Token.png"
+      },
+      "damageTags": [
+        "O"
+      ]
+    }
+  ],
   "feat": [],
   "spell": [],
   "table": [],
-  "background": [],
+  "variantrule": [
+    {
+      "name": "Dual Attack",
+      "source": "GWF",
+      "entries": [
+        "This spell can only be cast if your last successful attack against the target was an off-hand attack.",
+        "On a hit, this attack is considered a dual attack.",
+        "Using a spell slot to cast a Dual Attack does not prevent you from using spell slots to cast Lead, Off-Hand or Dual Attacks on the same turn."
+      ]
+    },
+    {
+      "name": "Lead Attack",
+      "source": "GWF",
+      "entries": [
+        "On a hit, this attack is considered a lead attack.",
+        "Using a spell slot to cast a Lead Attack does not prevent you from using spell slots to cast Lead, Off-Hand or Dual Attacks on the same turn."
+      ]
+    },
+    {
+      "name": "Off-Hand Attack",
+      "source": "GWF",
+      "entries": [
+        "This spell can only be cast if your last successful attack against the target was a lead attack.",
+        "On a hit, this attack is considered an off-hand attack.",
+        "Using a spell slot to cast an Off-Hand Attack does not prevent you from using spell slots to cast Lead, Off-Hand or Dual Attacks on the same turn."
+      ]
+    },
+    {
+      "name": "Urn",
+      "source": "GWF",
+      "entries": [
+        "The urn created by the spell must be held with two hands and cannot be thrown.",
+        "The urn can be used as a spellcasting focus, and does not prevent you from casting spells requiring somatic or material components as normal.",
+        "When creating another urn while already holding one, the spell ends.",
+        "When the spell ends, you drop the urn.",
+        "The urn disappears when you drop it.",
+        "You can drop the urn on your turn as a free action, or as a reaction if it is not your turn."
+      ]
+    },
+    {
+      "name": "Weapon Spell",
+      "source": "GWF",
+      "entries": [
+        "If a target gains a new Weapon Spell, the spell ends.",
+        "If a target drops or lets go of the weapon affected by the spell, the spell ends."
+      ]
+    }
+  ],
+  "background": [
+    {
+      "name": "Allegiance rank",
+      "source": "GWF",
+      "entries": [
+        "Allegiance rank is a term for a pair of title tracks: the Friend of the Kurzicks title track and the Friend of the Luxons title track. They are earned for your account through the transfer of Kurzick faction or Luxon faction. These titles can be displayed in the 'Honor' monument from tier 4 onwards."
+      ]
+    },
+    {
+      "name": "Assassin",
+      "source": "GWF",
+      "entries": [
+        "The Assassin walks the shadows, a deadly viper ready to strike at the heart when the enemy least expects it, nowhere and everywhere all at once. Assassins are masters of their chosen weapon, the dagger, and are expert at inflicting Critical Strikes that cause massive damage. The Assassin is trained to efficiently link attacks together in a chain that does not give the enemy a chance to hit back. They have mastered the ability to move as shadows—Assassins wear only lightweight armor and prefer to avoid damage by not being there when the enemy’s strike lands. Their other magical skills include Hexes that lower the target’s defenses and protect the Assassin from harm."
+      ]
+    },
+    {
+      "name": "Channeling Magic",
+      "source": "GWF",
+      "entries": [
+        "No inherent effect. Many Ritualist skills, especially those related to lightning damage and Energy, become more effective with higher Channeling Magic."
+      ]
+    },
+    {
+      "name": "Communing",
+      "source": "GWF",
+      "entries": [
+        "No inherent effect. Many Ritualist skills, especially those related to summoning Spirits, become more effective with higher Communing."
+      ]
+    },
+    {
+      "name": "Critical Strikes",
+      "source": "GWF",
+      "entries": [
+        "For each rank of Critical Strikes you have, you gain an additional 1% chance to critical hit. Whenever you critical hit, you gain 1 energy at ranks 3 and above, 2 energy at ranks 8 and above, and 3 energy at 13 ranks above."
+      ]
+    },
+    {
+      "name": "Dagger Mastery",
+      "source": "GWF",
+      "entries": [
+        "Dagger Mastery increases the damage you do with daggers and your chance to inflict a critical hit when using a dagger. There is a 2% chance per rank of Dagger Mastery that attacks from your daggers will double strike. Many skills, especially dagger attack skills, become more effective with higher Dagger Mastery."
+      ]
+    },
+    {
+      "name": "Deadly Arts",
+      "source": "GWF",
+      "entries": [
+        "No Inherent effect. Many Assassins skills, especially those related to harming enemies, become more effective with higher Deadly Arts."
+      ]
+    },
+    {
+      "name": "Echovald Forest",
+      "source": "GWF",
+      "entries": [
+        "The Echovald Forest is the ancestral home of the Kurzick people. Originally teeming with life, the Jade Wind has since petrified all natural life within the forest. Silence pervades the air that the music of life once filled. Despite the calamity that has befallen their home, the Kurzicks stayed, as only they were able to adapt to their new environment and carve dwellings amongst the petrified trees. Through the generations, life has found a way back into the forest, with unique species of flora and fauna thriving within the petrified forest."
+      ]
+    },
+    {
+      "name": "The Jade Sea",
+      "source": "GWF",
+      "entries": [
+        "The Jade Sea is located on the southeastern side of the Canthan continent. It is the home of the Luxons, whose entire watery realm was frozen into solid jade when the Jade Wind swept across the region."
+      ]
+    },
+    {
+      "name": "Kaineng City",
+      "source": "GWF",
+      "entries": [
+        "Kaineng City is the capital of the Empire of the Dragon. It is a huge metropolis that covers a large portion of northwestern Cantha. 'Kaineng' is Old Canthan for 'Emperor', giving the city the name of 'Emperor City.'"
+      ]
+    },
+    {
+      "name": "No Attribute - Assassin",
+      "source": "GWF",
+      "entries": [
+        "No Attribute skills are those which are not tied to a particular attribute. Effects of these unlinked skills are almost always constant; for example, Remove Hex always removes a single hex, whereas the Protection Prayers spell, Divert Hexes removes 1...3...3 hexes, depending on the caster's rank in that attribute. "
+      ]
+    },
+    {
+      "name": "No Attribute - Ritualist",
+      "source": "GWF",
+      "entries": [
+        "No Attribute skills are those which are not tied to a particular attribute. Effects of these unlinked skills are almost always constant; for example, Remove Hex always removes a single hex, whereas the Protection Prayers spell, Divert Hexes removes 1...3...3 hexes, depending on the caster's rank in that attribute. "
+      ]
+    },
+    {
+      "name": "Restoration Magic",
+      "source": "GWF",
+      "entries": [
+        "No inherent effect. Many Ritualist skills, especially those related to healing, life-stealing, and defense, become more effective with higher Restoration Magic."
+      ]
+    },
+    {
+      "name": "Ritualist",
+      "source": "GWF",
+      "entries": [
+        "Ritualists channel other-worldly energies that summon allies from the void and employ mystic binding rituals that bend those allies to the Ritualist's will. They hood their eyes to better commune with spirits that grant great power and protection to Ritualists and their comrades. The energy they channel drives Ritualist skills which enhance the deadliness of an ally's weapon and wreak havoc on an enemy's health. The Ritualist can also use the remains of the dead to defend the living-not by reanimating corpses as a Necromancer would, but through the ritual use of urns and ashes. Where the Ranger lives as one with the spirit world, the Ritualist can and will be its master. "
+      ]
+    },
+    {
+      "name": "Shadow Arts",
+      "source": "GWF",
+      "entries": [
+        "No inherent effect. Many Assassin skills, especially those related to defense and moving as a shadow, become more effective with higher Shadow Arts."
+      ]
+    },
+    {
+      "name": "Shing Jea Island",
+      "source": "GWF",
+      "entries": [
+        "Shing Jea Island lies to the west of the Canthan mainland, southwest across the sea from Kaineng City. It is an idyllic place with farming and fishing settlements sparsely dotting the rural countryside. The primary population centers include Shing Jea Monastery and Seitung Harbor; the former being a center for profession training and latter the primary docks and center of trade for the island."
+      ]
+    },
+    {
+      "name": "Spawning Power",
+      "source": "GWF",
+      "entries": [
+        "For each rank of Spawning Power you have, creatures you create (or animate) have 4% more Health, and weapon Spells you cast last 4% longer. Some Ritualist skills, especially those related to Spirit creatures, become more effective with higher Spawning Power."
+      ]
+    }
+  ],
   "condition": [],
   "legendaryGroup": [],
   "race": [],

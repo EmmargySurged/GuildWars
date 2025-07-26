@@ -218,10 +218,11 @@ def update_spells_with_classes(json_path, file_path, sheet_name, valid_backgroun
 # Example Usage
 if __name__ == "__main__":
     # File paths
-    json_path = "../Guild Wars.json"
+    json_paths = ["../Guild Wars.json"]
+    output_paths = ["../Guild_Wars_Shared.json"]
     file_path = "C:/Users/emmae/OneDrive/Shared/D&D/Tools/Guild Wars D&D.xlsx"
     sheet_name = "Spell Distribution"
-    output_path = "../Guild_Wars_Shared.json"
+
 
     # Define your lists as provided
     classes_list = [
@@ -305,14 +306,15 @@ if __name__ == "__main__":
     locations_list = ['Pre-Searing', 'Ascalon', 'Northern Shiverpeaks', 'Northeastern Kryta']
 
     # Call the function to update spells
-    update_spells_with_classes(
-        json_path=json_path,
-        file_path=file_path,
-        sheet_name=sheet_name,
-        valid_backgrounds=valid_backgrounds,
-        locations=locations_list,
-        classes_list=classes_list,
-        output_json_path=output_path,
-        verbose=True
-    )
+    for json_path in json_paths:
+        update_spells_with_classes(
+            json_path=json_path,
+            file_path=file_path,
+            sheet_name=sheet_name,
+            valid_backgrounds=valid_backgrounds,
+            locations=locations_list,
+            classes_list=classes_list,
+            output_json_path=json_path,
+            verbose=True
+        )
 

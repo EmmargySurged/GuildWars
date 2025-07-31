@@ -40397,6 +40397,262 @@
             "miscTags": [
                 "SGT"
             ]
+        },
+        {
+            "name": "Feast of Souls",
+            "level": 2,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "emanation",
+                "distance": {
+                    "type": "feet",
+                    "amount": 15
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "School of necromancy",
+                            "shortName": "Necromancy",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "Feast on the souls of nearby spirits to heal your allies.",
+                "Target each friendly {@variantrule summoning ritual|GW} within range. They die. For each {@variantrule summoning ritual|GW} that died this way, friendly creatures within 300 feet of you regain hit points equal to {@dice 2d4} + your spellcasting ability modifier."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Feast of Souls",
+                    "Spell. Destroy all nearby allies' spirits. For each spirit destroyed in this way, all party members are healed for 50...90...100 Health."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Feast_of_Souls.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "MT"
+            ],
+            "miscTags": [
+                "HL"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Ritualist",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Spawning Power",
+                    "source": "GWF"
+                }
+            ],
+            "components": {
+                "s": true,
+                "m": "a fork and knife"
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the final healing increases by {@dice 2d4} for each slot level above 2nd."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Gaze from Beyond",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "School of necromancy",
+                            "shortName": "Necromancy",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "Shoot out a streak of lightning from your or a spirit's eyes at a creature.",
+                "Choose one creature that you can see within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 2d12} lightning damage.",
+                "If there is at least one friendly summoning ritual within range, the target is {@condition blinded} for the duration. ",
+                "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Gaze from Beyond",
+                    "Spell. Target foe is struck for 20...56...65 lightning damage. If you are within earshot of a spirit, that foe is Blinded for 2...5...6 seconds."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Gaze_from_Beyond.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Ritualist",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Channeling Magic",
+                    "source": "GWF"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a pair of glasses"
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d12} for each slot level above 1st and the duration increases by 1 round for each slot level above 1st."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "lightning"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "conditionInflict": [
+                "blinded"
+            ]
         }
     ],
     "table": [],

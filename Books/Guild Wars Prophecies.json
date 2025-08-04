@@ -4434,9 +4434,10 @@
             "entries": [
                 "{@variantrule Armor Penetration|GW}",
                 "Conjure a lighting javelin in your hand and throw it in a straight line, passing through all creatures along its path to its target.",
-                "Choose one creature that you can see within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 6d6} lightning damage.",
+                "Choose one creature that you can see within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 3d12} lightning damage.",
                 "This attack ignores cover provided by other creatures.",
-                "On a hit, target each creature, other than you and the target, on the line between you and the target. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 3d6} lightning damage. On a successful save, a target takes half as much damage."
+                "On a hit, target each creature, other than you and the target, on the line between you and the target. Each new target must make a Dexterity saving throw. On a failed save, a new target takes {@damage 2d12} lightning damage. On a successful save, a new target takes half as much damage.",
+                "On a miss, the target and all creatures behind the target within range are also included and must make a Dexterity saving throw."
             ],
             "source": "GWP",
             "components": {
@@ -16811,8 +16812,8 @@
             ],
             "entries": [
                 "{@variantrule Armor Penetration|GW}, {@variantrule Elite|GW}, {@variantrule Hex|GW}",
-                "Inscribe a glimmering mark into the flesh of an enemy with lightning, damaging them and everyone around them every turn and inflicting blind.",
-                "Choose one hostile creature that you can see within range. For the duration at the start of each of the target's turns, target each creature in a 10-foot-radius centered on the target. Each target must make a Constitution saving throw. On a failed save, a target takes {@damage 6d6} lightning damage and is {@condition blinded} for 1 round. On a successful save, a target takes half as much damage, but suffers no other effect.",
+                "Inscribe a glimmering mark into the flesh of an enemy with lightning, damaging them and everyone around them every turn and inflicting blindness.",
+                "Choose one hostile creature that you can see within range. For the duration at the start of each of the target's turns, target each creature in a 10-foot Emanation around the target. Each target must make a Constitution saving throw. On a failed save, a target takes {@damage 3d12} lightning damage and is {@condition blinded} for 1 round. On a successful save, a target takes half as much damage but suffers no other effect.",
                 "If you target the creature with a spell, this spell ends."
             ],
             "source": "GWP",
@@ -16866,9 +16867,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d6} for each slot level above 4th."
+                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d12} for each slot level above 4th."
                     ]
                 }
             ],
@@ -18822,7 +18823,7 @@
             "entries": [
                 "{@variantrule Armor Penetration|GW}, {@variantrule Elite|GW}, {@variantrule Overcast|GW|Overcast:} 2",
                 "Use the power of your mind to shock a group of enemies, inflicting more damage and knocking them {@condition prone} if you have a higher initiative than them.",
-                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make an Intelligence saving throw. On a failed save, a target takes {@damage 3d6} lightning damage and if a target has a lower initiative than you, they take an additional {@damage 3d6} lightning damage and are knocked {@condition prone}. On a successful save, a target takes half as much damage, but suffers no other effect."
+                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make an Intelligence saving throw. On a failed save, a target takes {@damage 2d12} lightning damage, and if a target has a lower initiative than you, they take an additional {@damage 1d12} lightning damage and are knocked {@condition prone}. On a successful save, a target takes half as much damage but suffers no other effect."
             ],
             "source": "GWP",
             "fluff": {
@@ -18846,9 +18847,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the damage each increases by {@dice 1d6} for each slot level above 1st."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage each increases by {@dice 1d12} for each slot level above 1st."
                     ]
                 }
             ],
@@ -21973,8 +21974,7 @@
             "entries": [
                 "{@variantrule Armor Penetration|GW}, {@variantrule Elite|GW}",
                 "Cause a massive thunderclap at a location of your choice, disrupting and damaging foes.",
-                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 3d6} lightning damage, {@damage 3d6} thunder damage and must make a Constitution saving throw. On a successful save, a target takes half as much damage, but suffers no other effect.",
-                "On a failed Constitution save, a target is {@condition weakness|GW|weakened} and has {@condition cracked armor|GW} for the duration, and can't cast spells or use abilities on their next turn.",
+                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target takes {@damage 2d12} lightning damage, {@damage 2d8} thunder damage and is {@condition weakness|GW|weakened} and has {@condition cracked armor|GW} for the duration and can't cast spells or use abilities on their next turn. On a successful save, a target takes half as much damage but suffers no other effect.",
                 "At the end of each of its turns, the target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends."
             ],
             "source": "GWP",
@@ -22025,9 +22025,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 4th level or higher, the damage each increases by {@dice 1d6} for each slot level above 3rd."
+                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d12} and {@dice 1d8} respectively for each slot level above 3rd."
                     ]
                 }
             ],
@@ -22095,7 +22095,6 @@
                 ]
             },
             "savingThrow": [
-                "dexterity",
                 "constitution"
             ],
             "damageInflict": [
@@ -28301,9 +28300,9 @@
             ],
             "entries": [
                 "{@variantrule Armor Penetration|GW}, {@variantrule Overcast|GW|Overcast:} 2",
-                "Conjure a bolt of lightning which bounces between enemies. ",
-                "Choose one creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 8d6} lightning damage.",
-                "If you hit the target, the attack leaps from the target to a different creature of your choice within 30-feet of the target. Make a new attack roll with disadvantage against the new target, and make a new damage roll, which could cause the attack to leap again.",
+                "Conjure a bolt of lightning that bounces between enemies. ",
+                "Choose one creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 5d12} lightning damage.",
+                "If you hit the target, the attack leaps from the target to a different creature of your choice within 30 feet of the target. Make a new attack roll with disadvantage against the new target, and make a new damage roll, which could cause the attack to leap again.",
                 "A creature can be targeted only once by each casting of this spell. "
             ],
             "source": "GWP",
@@ -28314,9 +28313,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d6} for each slot level above 4th."
+                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d12} for each slot level above 4th."
                     ]
                 }
             ],
@@ -30606,7 +30605,7 @@
             "entries": [
                 "{@variantrule Armor Penetration|GW}, {@variantrule Overcast|GW|Overcast:} 5",
                 "Infuse your hands with lightning energy and punch a creature, knocking them {@condition prone} on a hit.",
-                "Choose one creature that you can see within range. Make a melee spell attack against the target. On a hit, the target takes {@damage 4d6} lightning damage and must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}."
+                "Choose one creature that you can see within range. Make a melee spell attack against the target. On a hit, the target takes {@damage 2d12} lightning damage and must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}."
             ],
             "source": "GWP",
             "fluff": {
@@ -30630,9 +30629,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d12} for each slot level above 1st."
                     ]
                 }
             ],

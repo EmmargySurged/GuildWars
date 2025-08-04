@@ -501,19 +501,19 @@
         }
       ],
       "subclassFeatures": [
-        "Level 3: Psychic Blades|Bard|XPHB|Virtuoso|GW2EoD|3|GW2EoD",
-        "Level 3: Bladesongs|Bard|XPHB|Virtuoso|GW2EoD|3|GW2EoD",
-        "Level 3: Adept Virtuoso|Bard|XPHB|Virtuoso|GW2EoD|3|GW2EoD",
-        "Level 6: Deadly Blades|Bard|XPHB|Virtuoso|GW2EoD|6|GW2EoD",
-        "Level 6: Master Virtuoso|Bard|XPHB|Virtuoso|GW2EoD|6|GW2EoD",
-        "Level 14: Quiet Intensity|Bard|XPHB|Virtuoso|GW2EoD|14|GW2EoD",
-        "Level 14: Grandmaster Virtuoso|Bard|XPHB|Virtuoso|GW2EoD|14|GW2EoD"
+        "Psychic Blades|Bard|XPHB|Virtuoso|GW2EoD|3|GW2EoD",
+        "Bladesongs|Bard|XPHB|Virtuoso|GW2EoD|3|GW2EoD",
+        "Adept Virtuoso|Bard|XPHB|Virtuoso|GW2EoD|3|GW2EoD",
+        "Deadly Blades|Bard|XPHB|Virtuoso|GW2EoD|6|GW2EoD",
+        "Master Virtuoso|Bard|XPHB|Virtuoso|GW2EoD|6|GW2EoD",
+        "Quiet Intensity|Bard|XPHB|Virtuoso|GW2EoD|14|GW2EoD",
+        "Grandmaster Virtuoso|Bard|XPHB|Virtuoso|GW2EoD|14|GW2EoD"
       ]
     }
   ],
   "subclassFeature": [
     {
-      "name": "Level 3: Psychic Blades",
+      "name": "Psychic Blades",
       "source": "GW2EoD",
       "className": "Bard",
       "classSource": "XPHB",
@@ -527,7 +527,7 @@
       ]
     },
     {
-      "name": "Level 3: Bladesongs",
+      "name": "Bladesongs",
       "source": "GW2EoD",
       "className": "Bard",
       "classSource": "XPHB",
@@ -573,7 +573,7 @@
       ]
     },
     {
-      "name": "Level 3: Adept Virtuoso",
+      "name": "Adept Virtuoso",
       "source": "GW2EoD",
       "className": "Bard",
       "classSource": "XPHB",
@@ -582,13 +582,13 @@
       "level": 3,
       "entries": [
         "You just learned to be a virtuoso; choose one of the following three disciplines, and you gain the benefit of that choice until you finish a long rest, at which point you can choose again.",
-        "{@bold Bladeturn Refrain.} You learned to keep an echo of your Blades around as a defensive measure when casting a Bladesong. When you cast a Bladesong, until the start of your next turn, your AC increases equal to your Charisma modifier.",
+        "{@bold Bladeturn Refrain.} You learned to keep an echo of your Blades around as a defensive measure when casting a Bladesong. When you cast a Bladesong, you gain 1 round of {@variantrule Aegis|GW2}.",
         "{@bold Mental Focus.} You learned to focus your mind on the weaknesses of close creatures. When you deal damage to a creature within 30 feet of yourself you can add half your Charisma modifier to that damage.",
-        "{@bold Jagged Mind.} You learned to sharpen your Blades to perfection with the power of your mind. When you deal piercing damage to a creature, that creature must succeed on a Constitution saving throw or start {@condition Bleeding|GuildWars} for a number of rounds equal to your proficiency bonus, taking damage equal to half your Charisma modifier. If you critically hit the creature, they automatically fail their saving throw. At the end of each of its turns, the creature can make a Constitution saving throw. On a success, the condition ends. Additionally, once per turn when you inflict damage via a {@condition Bleeding|GuildWars} condition you inflicted, you regain hit points equal to one roll of your Bardic Inspiration die."
+        "{@bold Jagged Mind.} You learned to sharpen your Blades to perfection with the power of your mind. When you deal piercing damage to a creature, that creature must succeed on a Constitution saving throw or start {@variantrule Bleeding|GW2} for a number of rounds equal to your proficiency bonus, taking damage equal to half your Charisma modifier. If you critically hit the creature, they automatically fail their saving throw. At the end of each of its turns, the creature can make a Constitution saving throw. On a success, the condition ends. Additionally, once per turn when you inflict damage via a {@variantrule Bleeding|GW2} condition you inflicted, you regain hit points equal to one roll of your Bardic Inspiration die."
       ]
     },
     {
-      "name": "Level 6: Deadly Blades",
+      "name": "Deadly Blades",
       "source": "GW2EoD",
       "className": "Bard",
       "classSource": "XPHB",
@@ -597,11 +597,11 @@
       "level": 6,
       "entries": [
         "Your Blades have become much more deadly, piercing most defenses.",
-        "When you deal piercing damage to a creature, that creature must succeed on a Constitution saving throw or have {@condition Cracked Armor|GuildWars} for a number of rounds equal to your proficiency bonus. If you critically hit the creature, they automatically fail their saving throw. Additionally, after you cast a Bladesong, the next time you deal damage before the end of your next turn with a spell or a weapon, you can add one roll of your Bardic Inspiration die to that damage."
+        "When you deal piercing damage to a creature, that creature must succeed on a Constitution saving throw or have {@variantrule Vulnerability|GW2} for a number of rounds equal to your proficiency bonus. If you critically hit the creature, they automatically fail their saving throw. Additionally, after you cast a Bladesong, the next time you deal damage before the end of your next turn with a spell or a weapon, you can add one roll of your Bardic Inspiration die to that damage."
       ]
     },
     {
-      "name": "Level 6: Master Virtuoso",
+      "name": "Master Virtuoso",
       "source": "GW2EoD",
       "className": "Bard",
       "classSource": "XPHB",
@@ -609,20 +609,16 @@
       "subclassSource": "GW2EoD",
       "level": 6,
       "entries": [
-        "You have become a master virtuoso; choose one of the following three disciplines, and you gain the benefit of that choice until you finish a long rest, at which point you can choose again.",
-        "{@bold Duelist’s Reversal.} You learned to quickly retaliate against creatures who miss you. When an attack roll misses you, you can expend one use of your Bardic Inspiration to gain the following benefits for a number of rounds equal to your proficiency bonus:",
-        "- The number you need to roll to score a critical hit gets reduced by 5.",
-        "- You gain an additional action during your turn. That action can be used to take only the Attack (one attack only), Dash, Disengage, Hide, or Utilize action.",
-        "- At the start of your turn, you regain a number of hit points equal to one roll of your Bardic Inspiration die.",
-        "{@bold Phantasmal Blades.} You learned to weave your arcane magics into quick Blades. When you deal damage to one or more creatures with a spell, or one or more creatures fail a saving throw against a non-damage-dealing spell of yours, you can fire a psychic Blade against each of them by expending one use of your Bardic Inspiration. Make a ranged spell attack against each creature of your choice who took damage or failed their saving throw. On a hit, a target takes your choice of psychic or piercing damage equal to one roll of your Bardic Inspiration die.",
-        "Additionally, the number you need to roll to score a critical hit gets reduced by 5 for a number of rounds equal to your proficiency bonus.",
-        "{@bold Sharpening Sorrow.} You learned to turn a creature's sorrow into a momentary boost in precision for you. When you cast {@spell Bladesong Sorrow|GW2EoD}, you gain the following benefits for a number of rounds equal to your proficiency bonus by expending a use of your Bardic Inspiration:",
-        "- The number you need to roll to score a critical hit gets reduced by 5.",
-        "- The duration of conditions you inflict increases by an amount equal to your Proficiency Bonus, and the DC of the saving throw creatures can make to end a condition inflicted by you increases by your Proficiency Bonus."
+        "You have become a master virtuoso. Choose one of the following disciplines. You gain the benefits of your choice until you finish a long rest, at which point you can choose again.",
+        "{@bold Duelist’s Reversal.} You have learned to quickly retaliate against creatures that miss you. When an attack roll misses you, you can expend one use of your Bardic Inspiration to gain the following Boons for a number of rounds equal to your proficiency bonus: {@variantrule Quickness|GW2}, {@variantrule Fury|GW2}, and {@variantrule Regeneration|GW2}.",
+        "{@bold Phantasmal Blades.} You weave your arcane magics into swift blades. When you deal damage to one or more creatures with a spell, or one or more creatures fail a saving throw against a non-damaging spell of yours, you can expend one use of your Bardic Inspiration to fire a psychic blade at each affected creature. Make a ranged spell attack against each target. On a hit, the target takes psychic or piercing damage (your choice) equal to one roll of your Bardic Inspiration die.",
+        "Additionally, you gain {@variantrule Fury|GW2} for a number of rounds equal to your proficiency bonus.",
+        "{@bold Sharpening Sorrow.} You turn a creature’s sorrow into a momentary boost of precision. When you cast Bladesong Sorrow, you can expend one use of your Bardic Inspiration to gain Fury for a number of rounds equal to your proficiency bonus.",
+        "Additionally, while you have {@variantrule Fury|GW2}, the duration of any {@variantrule condition|GW2|conditions} you inflict is doubled."
       ]
     },
     {
-      "name": "Level 14: Quiet Intensity",
+      "name": "Quiet Intensity",
       "source": "GW2EoD",
       "className": "Bard",
       "classSource": "XPHB",
@@ -630,11 +626,11 @@
       "subclassSource": "GW2EoD",
       "level": 14,
       "entries": [
-        "Through calm grace and fluid movements you perfect the art of your Bladesongs. The number you need to roll to score a critical hit gets reduced by 3. When you score a critical hit you can add one roll of your Bardic Inspiration die to the final damage."
+        "Through calm grace and fluid movement, you have perfected the art of your Bladesongs. While you have {@variantrule Fury|GW2}, the number you need to roll to score a critical hit is reduced by 3. Additionally, when you score a critical hit, you can add one roll of your Bardic Inspiration die to the damage."
       ]
     },
     {
-      "name": "Level 14: Grandmaster Virtuoso",
+      "name": "Grandmaster Virtuoso",
       "source": "GW2EoD",
       "className": "Bard",
       "classSource": "XPHB",
@@ -644,9 +640,9 @@
       "entries": [
         "You are the pinnacle of what a virtuoso can become; choose one of the following three disciplines, and you gain the benefit of that choice until you finish a long rest, at which point you can choose again.",
         "{@bold Psychic Riposte.} You learned to use your opponent’s momentary failure to your advantage. When an attack roll misses you, you can stock an amount of Blades equal to your Proficiency Bonus. Additionally, the next Bladesong you use before the end of your next turn gains the {@background Unblockable|GuildWars} property, and you have advantage on the attack rolls.",
-        "{@bold Infinite Forge.} You learned the rhythm of combat; stocking Blades becomes second nature to you while in combat. When you roll initiative at the start of combat and at the start of your turn during combat, you stock an amount of Blades equal to half your Proficiency Bonus. Additionally, when you cast a Bladesong while having the maximum number of Blades stocked, you regain an amount of Blades equal to your Proficiency Bonus.",
+        "{@bold Infinite Forge.} You learned the rhythm of combat; stocking Blades becomes second nature to you while in combat. When you roll initiative and at the start of your turn during combat, you stock an amount of Blades equal to half your Proficiency Bonus. Additionally, when you cast a Bladesong while having the maximum number of Blades stocked, you regain an amount of Blades equal to your Proficiency Bonus.",
         "Furthermore, when you deal piercing or psychic damage, you can deal extra damage equal to half your Proficiency Bonus.",
-        "{@bold Bloodsong.} You learned to serrate the edges of your Blades, making them much more deadly. {@condition Bleeding|GuildWars} you inflict deals double damage. At the start of your turn you regain a number of Blades equal to a fifth of the damage inflicted via your {@condition Bleeding|GuildWars} since the end of your last turn."
+        "{@bold Bloodsong.} You learned to serrate the edges of your Blades, making them much more deadly. {@variantrule Bleeding|GW2} you inflict deals double damage. At the start of your turn you regain a number of Blades equal to a fifth of the damage inflicted via your {@variantrule Bleeding|GW2} since the end of your last turn."
       ]
     }
   ]

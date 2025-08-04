@@ -25,6 +25,158 @@
   "feat": [],
   "spell": [],
   "table": [],
+  "variantrule": [
+    {
+      "name": "Aegis",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Boon|GW2}",
+        "While you are under the effect of this {@variantrule Boon|GW2}, the next attack roll made against you automatically misses. The {@variantrule Boon|GW2} then ends.",
+        "Stacks duration.",
+        "This {@variantrule Boon|GW2} corrupts into 1 stack of {@variantrule Burning|GW2} for 1 round, dealing damage equal to the PB of the creature who corrupted the Boon."
+      ]
+    },
+    {
+      "name": "Bleeding",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Condition|GW2}",
+        "A bleeding creature takes slashing damage at the start of each of its turns.",
+        "The amount of slashing damage is determined by the effect that applied it.",
+        "The condition can be ended early by regaining hit points.",
+        "Stacks intensity.",
+        "This {@variantrule Condition|GW2} get converted into 2 rounds of {@variantrule Vigor|GW2}."
+      ]
+    },
+    {
+      "name": "Blindness",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Condition|GW2}",
+        "While you are under the effect of this {@variantrule Condition|GW2}, the next attack roll you make automatically misses. The {@variantrule Condition|GW2} then ends.",
+        "Stacks duration.",
+        "This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Fury|GW2}."
+      ]
+    },
+    {
+      "name": "Boon",
+      "source": "GW2",
+      "entries": [
+        "Boons are beneficial effects with a set duration applied by various features.",
+        "They are the opposite of {@variantrule Condition|GW2|Conditions}",
+        "Each Boon has an associated {@variantrule Condition|GW2}, which it can be corrupted into or converted from.",
+        "If a creature already under the effect of a Boon receives the same Boon again, one of two outcomes occurs, depending on the Boon’s properties:",
+        "{@bold Stacks Duration:} The Boon’s duration is extended by the duration of the new instance.",
+        "{@bold Stacks Intensity:} The Boon’s effects are applied again. Each instance functions independently, with its own duration. If one instance of the Boon becomes corrupted, all active instances become corrupted. Any {@variantrule condition|GW2} imposed by the corruption is applied only once."
+      ]
+    },
+    {
+      "name": "Burning",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Condition|GW2}",
+        "A burning creature takes fire damage at the start of each of its turns.",
+        "The amount of fire damage is determined by the effect that applied it.",
+        "The condition can be ended early by using an action to smother the flames.",
+        "Stacks intensity.",
+        "This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Aegis|GW2}."
+      ]
+    },
+    {
+      "name": "Condition",
+      "source": "GW2",
+      "entries": [
+        "Conditions are detrimental effects with a set duration applied by various features.",
+        "They are the opposite of {@variantrule Boon|GW2|Boons}",
+        "Each Condition has an associated {@variantrule Boon|GW2}, which it can be converted into or corrupted from.",
+        "If a creature already under the effect of a Condition receives the same Condition again, one of two outcomes occurs, depending on the Condition’s properties:",
+        "{@bold Stacks Duration:} The Condition’s duration is extended by the duration of the new instance.",
+        "{@bold Stacks Intensity:} The Condition’s effects are applied again. Each instance functions independently, with its own duration. If one instance of the Condition becomes converted, all active instances become converted. Any {@variantrule Boon|GW2} imposed by the conversion is applied only once."
+      ]
+    },
+    {
+      "name": "Fury",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Boon|GW2}",
+        "While you are under the effect of this {@variantrule Boon|GW2}, the number you need to roll to score a critical hit is reduced by 5.",
+        "Stacks duration.",
+        "This {@variantrule Boon|GW2} corrupts into 1 round of {@variantrule Blindness|GW2}."
+      ]
+    },
+    {
+      "name": "Poison",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Condition|GW2}",
+        "A poisoned creature takes poison damage at the start of each of its turns.",
+        "The amount of poison damage is determined by the effect that applied it.",
+        "While you are under this {@variantrule Condition|GW2}, you regain only two-thirds of the hit points you would normally heal.",
+        "Stacks intensity.",
+        "This {@variantrule Condition|GW2} get converted into 2 rounds of {@variantrule Regeneration|GW2}."
+      ]
+    },
+    {
+      "name": "Protection",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Boon|GW2}",
+        "While you are under the effect of this {@variantrule Boon|GW2}, you reduce all damage you take by an amount equal to your proficiency bonus (to a minimum of 1 damage).",
+        "Stacks duration.",
+        "This {@variantrule Boon|GW2} corrupts into 3 stacks of {@variantrule Vulnerability|GW2} for 2 rounds."
+      ]
+    },
+    {
+      "name": "Quickness",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Boon|GW2}",
+        "While you are under the effect of this {@variantrule Boon|GW2}, you gain one additional action on your turn. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Utilize action.",
+        "Stacks duration.",
+        "This {@variantrule Boon|GW2} corrupts into 1 round of {@variantrule Slow|GW2}."
+      ]
+    },
+    {
+      "name": "Vigor",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Boon|GW2}",
+        "While you are under the effect of this {@variantrule Boon|GW2}, you gain a bonus to your AC and Dexterity saving throws equal to you PB.",
+        "Stacks duration.",
+        "This {@variantrule Boon|GW2} corrupts into 2 stacks of {@variantrule Bleeding|GW2} for 2 rounds, dealing damage equal to the half the PB of the creature who corrupted the Boon."
+      ]
+    },
+    {
+      "name": "Regeneration",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Boon|GW2}",
+        "While you are under the effect of this {@variantrule Boon|GW2}, at the start of your turn, if you have at least 1 hit point, you regain hit points equal to your PB.",
+        "Stacks duration.",
+        "This {@variantrule Boon|GW2} corrupts into 1 stack of {@variantrule Poison|GW2} for 2 rounds, dealing damage equal to the half the PB of the creature who corrupted the Boon."
+      ]
+    },
+    {
+      "name": "Slow",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Condition|GW2}",
+        "While you are under the effect of this {@variantrule condition|GW2}, on your turn, you can take either an action or a bonus action, but not both. If you take the Attack action, you can make only one attack regardless of the number of attacks you can normally make.",
+        "Stacks Duration.",
+        "This {@variantrule Condition|GW2} converts into 1 round of {@variantrule Quickness|GW2}."
+      ]
+    },
+    {
+      "name": "Vulnerability",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Condition|GW2}",
+        "While you are under the effect of this {@variantrule condition|GW2}, you take 1 additional damage whenever you take damage.",
+        "Stacks intensity.",
+        "This {@variantrule Condition|GW2} converts into 1 round of {@variantrule Protection|GW2}."
+      ]
+    }
+  ],
   "background": [],
   "condition": [],
   "legendaryGroup": [],

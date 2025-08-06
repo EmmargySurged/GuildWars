@@ -1252,7 +1252,7 @@
             "entries": [
                 "{@variantrule Unblockable|GW} ",
                 "You imbue your weapon with as much magical power as possible, striking with all your might.",
-                "On a hit, the target suffers the weapon attack's critical effects and must make a Strength saving throw. On a failed save, any stance on the target ends.",
+                "On a hit, the target suffers the weapon attack's critical effects and must make a Strength saving throw. On a failed save, any {@variantrule stance|GW}on the target ends.",
                 "You lose all adrenaline."
             ],
             "source": "GW",
@@ -11508,7 +11508,7 @@
             "entries": [
                 "{@variantrule Hex|GW}",
                 "Cause icy spikes to burst out from the ground.",
-                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 4d6} cold damage, and for the duration the target's speed is reduced by 66%. On a successful save, a target takes half as much damage, but suffers no other effect."
+                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 3d8} cold damage, and for the duration the target's speed is reduced by 66%. On a successful save, a target takes half as much damage but suffers no other effect."
             ],
             "source": "GW",
             "fluff": {
@@ -11570,9 +11570,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d6} for each slot level above 2nd."
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d8} for each slot level above 2nd."
                     ]
                 }
             ],
@@ -12314,6 +12314,14 @@
                 {
                     "name": "Stance",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Vabbi",
+                    "source": "GWN"
                 }
             ],
             "fluff": {
@@ -12326,7 +12334,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/f/f8/Mantra_of_Flame.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Mantra_of_Flame.jpg"
                         }
                     }
                 ]
@@ -12450,6 +12458,14 @@
                 {
                     "name": "Stance",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Vabbi",
+                    "source": "GWN"
                 }
             ],
             "fluff": {
@@ -12462,7 +12478,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/6/6a/Mantra_of_Frost.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Mantra_of_Frost.jpg"
                         }
                     }
                 ]
@@ -12722,6 +12738,14 @@
                 {
                     "name": "Stance",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Vabbi",
+                    "source": "GWN"
                 }
             ],
             "fluff": {
@@ -12734,7 +12758,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/0/00/Mantra_of_Earth.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Mantra_of_Earth.jpg"
                         }
                     }
                 ]
@@ -20341,8 +20365,8 @@
             ],
             "entries": [
                 "Conjure up an ice spear and hurl it at a creature, healing yourself if you are {@condition overcast|GW}.",
-                "Choose one creature that you can see within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 4d6} cold damage.",
-                "{@variantrule Overcast|GW|Overcast:} At the start of your next turn, you regain hit points equal to {@dice 1d6}."
+                "Choose one creature that you can see within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 3d8} cold damage.",
+                "{@variantrule Overcast|GW|Overcast:} At the start of your next turn, you regain hit points equal to {@dice 1d8}."
             ],
             "source": "GW",
             "fluff": {
@@ -20393,9 +20417,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the damage and healing each increases by {@dice 1d6} for each slot level above 1st."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage and healing each increase by {@dice 1d8} for each slot level above 1st."
                     ]
                 }
             ],
@@ -22912,7 +22936,7 @@
             "entries": [
                 "{@variantrule Elite|GW}, {@variantrule Hex|GW}, {@variantrule Overcast|GW|Overcast:} 2",
                 "Use the power of your mind to freeze a group of enemies, inflicting more damage and slowing them down if you have a higher initiative than them.",
-                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make an Intelligence saving throw. On a failed save, a target takes {@damage 3d6} cold damage and if a target has a lower initiative than you, they take an additional {@damage 3d6} cold damage and their speed is reduced by 90% to a minimum of 5 feet for the duration. On a successful save, the target takes half as much damage, but suffers no other effect."
+                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make an Intelligence saving throw. On a failed save, a target takes {@damage 2d8} cold damage, and if a target has a lower initiative than you, they take an additional {@damage 2d8} cold damage, and their speed is reduced by 90% to a minimum of 5 feet for the duration. On a successful save, the target takes half as much damage but suffers no other effect."
             ],
             "source": "GW",
             "fluff": {
@@ -22936,9 +22960,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the damage each increases by {@dice 1d6} for each slot level above 1st."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage each increases by {@dice 1d8} for each slot level above 1st."
                     ]
                 }
             ],
@@ -27827,7 +27851,7 @@
             "entries": [
                 "{@variantrule Overcast|GW|Overcast:} 5",
                 "Conjure a maelstrom, which crushes and disrupts everything trapped inside its maw.",
-                "Choose a point that you can see within range. For the duration, you create a 10-foot-radius, 10-foot-high Cylinder centered on that point. Each creature in that Cylinder must make a Constitution saving throw. On a failed save, a target takes {@damage 6d6} cold damage and can't cast spells on their next turn. On a successful save, a target takes half as much damage, but suffers no other effect. A creature also makes this save if it enters the Cylinder or ends its turn there, or if the Cylinder moves into its space. A creature makes this save only once per turn.",
+                "Choose a point that you can see within range. For the duration, you create a 10-foot-radius, 10-foot-high Cylinder centered on that point. Each creature in that Cylinder must make a Constitution saving throw. On a failed save, a target takes {@damage 4d8 + 4} cold damage and can't cast spells on their next turn. On a successful save, a target takes half as much damage but suffers no other effect. A creature also makes this save if it enters the Cylinder or ends its turn there, or if the Cylinder moves into its space. A creature makes this save only once per turn.",
                 "On your later turns, you can take a {@action Magic|XPHB} action to teleport the Cylinder up to 60 feet."
             ],
             "source": "GW",
@@ -27841,7 +27865,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/d/dd/Maelstrom.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Maelstrom.jpg"
                         }
                     }
                 ]
@@ -27860,9 +27884,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d6} for each slot level above 4th."
+                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d8 + 1} for each slot level above 4th."
                     ]
                 }
             ],
@@ -27882,6 +27906,14 @@
                 {
                     "name": "Overcast",
                     "source": "GW"
+                },
+                {
+                    "name": "Shing Jea Island",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Vabbi",
+                    "source": "GWN"
                 }
             ],
             "classes": {
@@ -30319,7 +30351,7 @@
             ],
             "entries": [
                 "{@variantrule Stance|GW}",
-                "Assume the stance of the hex breaker, preventing the next hex on yourself and retaliating against the caster.",
+                "Assume the {@variantrule stance|GW}of the hex breaker, preventing the next hex on yourself and retaliating against the caster.",
                 "For the duration, the next time you are the target of a harmful spell which requires {@status concentration}, you are immune to the spell's effects and the caster takes {@damage 1d6} psychic damage."
             ],
             "source": "GW",
@@ -30576,7 +30608,7 @@
         },
         {
             "name": "Maiming Strike",
-            "level": 2,
+            "level": 1,
             "school": "V",
             "time": [
                 {
@@ -30603,7 +30635,7 @@
             "entries": [
                 "{@variantrule Companion|GW}",
                 "Command your companion to maim a creature.",
-                "Choose one companion, that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 4d6} damage and, if the target willingly moved on its last turn, the target must make a Dexterity saving throw. On a failed save, the target is {@condition crippled|GW} for the duration.",
+                "Choose one companion, that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 3d6} damage and, if the target willingly moved on its last turn, the target must make a Dexterity saving throw. On a failed save, the target is {@condition crippled|GW} for the duration.",
                 "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -30617,7 +30649,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/7/72/Maiming_Strike.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Maiming_Strike.jpg"
                         }
                     }
                 ]
@@ -30638,20 +30670,28 @@
                 {
                     "name": "Companion",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Istan",
+                    "source": "GWN"
                 }
             ],
             "components": {
                 "v": true
             },
             "conditionInflict": [
-                "crippled|GW"
+                "crippled|gw"
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 3rd level or higher, the number of attacks increases by 1 for each slot level above 2nd. "
+                        "When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for each slot level above 1st. "
                     ]
                 }
             ],
@@ -33237,7 +33277,7 @@
             "entries": [
                 "{@variantrule Hex|GW}",
                 "Rapidly freeze an area, slowing down all creatures inside it.",
-                "Choose a point that you can see within range. Each creature in a 20-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target takes {@damage 8d6} cold damage, and for the duration the target's speed is reduced by 66%. On a successful save, a target takes half as much damage, but suffers no other effect."
+                "Choose a point that you can see within range. Each creature in a 20-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target takes {@damage 6d8} cold damage, and for the duration the target's speed is reduced by 66%. On a successful save, a target takes half as much damage but suffers no other effect."
             ],
             "source": "GW",
             "fluff": {
@@ -33296,9 +33336,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d6} for each slot level above 4th."
+                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d8} for each slot level above 4th."
                     ]
                 }
             ],
@@ -38162,7 +38202,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/d/da/Mantra_of_Inscriptions.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Mantra_of_Inscriptions.jpg"
                         }
                     }
                 ]
@@ -38183,6 +38223,14 @@
                 {
                     "name": "Stance",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "The Desolation",
+                    "source": "GWN"
                 }
             ],
             "components": {
@@ -38989,7 +39037,7 @@
             "entries": [
                 "{@variantrule Hex|GW} ",
                 "Cause rust to appear on a group of creature's gear and signets, dealing damage and disrupting signets.",
-                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target takes {@damage 2d12} cold damage and signet spells take twice as long to cast for the duration. On a successful save, a target takes half as much damage, but suffers no other effect.",
+                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target takes {@damage 2d8 + 4} cold damage and signet spells take twice as long to cast for the duration. On a successful save, a target takes half as much damage, but suffers no other effect.",
                 "{@variantrule Overcast|GW|Overcast:}. Creatures who failed the saving throw cannot use their signets for the duration, instead of them taking twice as long to cast."
             ],
             "source": "GW",
@@ -39038,9 +39086,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d12} for each slot level above 2nd."
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d8 + 2} for each slot level above 2nd."
                     ]
                 }
             ],

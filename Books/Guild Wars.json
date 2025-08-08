@@ -2625,7 +2625,7 @@
             ],
             "entries": [
                 "Conjure a storm of fiery bolts, which rain down from the sky.",
-                "Choose a point that you can see within range. For the duration, you create a 10-foot-radius, 120-foot-high Cylinder centered on that point. Each creature in that Cylinder must make a Dexterity saving throw. On a failed save, a target takes {@damage 1d10} fire damage. On a successful save, a target takes half as much damage. A creature also makes this save if it enters the Cylinder or ends its turn there, or if the Cylinder moves into its space. A creature makes this save only once per turn.",
+                "Choose a point that you can see within range. For the duration, you create a 10-foot-radius, 120-foot-high Cylinder centered on that point. Each creature in that Cylinder must make a Dexterity saving throw. On a failed save, a target takes {@damage 2d6} fire damage. On a successful save, a target takes half as much damage. A creature also makes this save if it enters the Cylinder or ends its turn there, or if the Cylinder moves into its space. A creature makes this save only once per turn.",
                 "On your later turns, you can take a {@action Magic|XPHB} action to teleport the Cylinder up to 30 feet."
             ],
             "source": "GW",
@@ -2637,9 +2637,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d10} for each slot level above 1st."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
                     ]
                 }
             ],
@@ -3057,7 +3057,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/c/cf/Meteor.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Meteor.jpg"
                         }
                     }
                 ]
@@ -3078,6 +3078,14 @@
                 {
                     "name": "Overcast",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Istan",
+                    "source": "GWN"
                 }
             ],
             "classes": {
@@ -7378,7 +7386,7 @@
             "entries": [
                 "{@variantrule Preparation|GW}",
                 "Ignite your arrows.",
-                "For the duration, your ranged weapon attacks deal fire damage and deal an additional {@damage 1d4} fire damage."
+                "For the duration, your ranged weapon attacks deal fire damage and deal an additional {@damage 1d6} fire damage."
             ],
             "source": "GW",
             "components": {
@@ -7388,9 +7396,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d4} for each slot level above 1st."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
                     ]
                 }
             ],
@@ -9219,7 +9227,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/b/b0/Mark_of_Pain.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Mark_of_Pain.jpg"
                         }
                     }
                 ]
@@ -9248,6 +9256,14 @@
                 {
                     "name": "Hex",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Vabbi",
+                    "source": "GWN"
                 }
             ],
             "components": {
@@ -11239,7 +11255,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/3/39/Mending.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Mending.jpg"
                         }
                     }
                 ]
@@ -11271,6 +11287,14 @@
                 {
                     "name": "Enchantment",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Kourna",
+                    "source": "GWN"
                 }
             ],
             "components": {
@@ -22735,7 +22759,7 @@
             "entries": [
                 "{@variantrule Elite|GW}, {@variantrule Overcast|GW|Overcast:} 2",
                 "Use the power of your mind to sear a group of enemies, inflicting more damage and {@condition burning|GW} if you have a higher initiative than them.",
-                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make an Intelligence saving throw. On a failed save, a target takes {@damage 2d6} fire damage and if a target has a lower initiative than you, they take an additional {@damage 2d6} fire damage and start {@condition burning|GW} for the duration, taking {@damage 1d4} damage. On a successful save, a target takes half as much damage, but suffers no other effect.",
+                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make an Intelligence saving throw. On a failed save, a target takes {@damage 2d6} fire damage, and if a target has a lower initiative than you, they take an additional {@damage 2d6} fire damage and start {@condition burning|GW} for the duration, taking {@damage 1d6} damage. On a successful save, a target takes half as much damage but suffers no other effect.",
                 "At the end of each of its turns, a target can make a Dexterity saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -22780,14 +22804,14 @@
                 "s": true
             },
             "conditionInflict": [
-                "burning|GW"
+                "burning|gw"
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the fire damage each increases by {@dice 1d6} for each slot level above 1st and the damage of the {@condition burning|GW} condition increases by {@dice 1d4} for each slot level above 1st."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the fire damage each increases by {@dice 1d6} for each slot level above 1st, and the damage of the {@condition burning|GW} condition increases by {@dice 1d6} for each slot level above 1st."
                     ]
                 }
             ],
@@ -23321,7 +23345,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/a/a9/Martyr.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Elite/Martyr.jpg"
                         }
                     }
                 ]
@@ -23342,6 +23366,14 @@
                 {
                     "name": "Elite",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "The Desolation",
+                    "source": "GWN"
                 }
             ],
             "components": {
@@ -25921,7 +25953,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/a/a5/Mend_Ailment.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Mend_Ailment.jpg"
                         }
                     }
                 ]
@@ -25938,6 +25970,14 @@
                 {
                     "name": "Protection Prayers",
                     "source": "GW"
+                },
+                {
+                    "name": "Shing Jea Island",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Istan",
+                    "source": "GWN"
                 }
             ],
             "components": {
@@ -35818,7 +35858,7 @@
             "entries": [
                 "Prepare a flame trap, which damages and burns creatures which trigger it.",
                 "Conjure a 15-foot radius stationary {@condition invisible} trap at your location for the duration and choose any number of creatures. The next time a non-chosen creature enters the spell's area, the trap triggers, applying the following effect for 3 rounds: ",
-                "Each non-chosen creature must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 2d4} fire damage and starts {@condition burning} for one minute, taking {@damage 1d4} damage. On a successful save, a target takes half as much damage, but suffers no other effect.",
+                "Each non-chosen creature must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 2d6} fire damage and starts {@condition burning} for one minute, taking {@damage 1d6} damage. On a successful save, a target takes half as much damage, but suffers no other effect.",
                 "At the end of each of its turns, a target can make a Dexterity saving throw. On a success, the condition ends.",
                 "This trap is nearly {@condition invisible}, requiring a successful Intelligence (Investigation) check against your spell save DC to be discerned."
             ],
@@ -35851,9 +35891,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the damage each increases by {@dice 1d4} for each slot level above 1st."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage each increases by {@dice 1d6} for each slot level above 1st."
                     ]
                 }
             ],

@@ -8024,7 +8024,7 @@
             ],
             "entries": [
                 "Conjure a ward at your location, projecting the legendary heat of the Canthan hero Teinai.",
-                "Conjure a 20-foot radius stationary ward at your location for the duration and choose any number of creatures. Each non-chosen creature takes {@damage 4d4} fire damage when it enters the spell's area for the first time on a turn or starts its turn there. Additionally, non-chosen creatures, who are in the spell's area and are {@condition weakness|GW|weakened}, can take either an action or a Bonus Action, not both, and can make only one attack if they take the Attack action."
+                "Conjure a 20-foot-radius stationary ward at your location for the duration and choose any number of creatures. Each non-chosen creature takes {@damage 4d6} fire damage when it enters the spell's area for the first time on a turn or starts its turn there. Additionally, non-chosen creatures who are in the spell's area and are {@condition weakness|GW|weakened} can take either an action or a Bonus Action, not both, and can make only one attack if they take the Attack action."
             ],
             "source": "GWF",
             "fluff": {
@@ -8063,9 +8063,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 2d4} for each slot level above 2nd."
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d6} for each slot level above 2nd."
                     ]
                 }
             ],
@@ -31774,7 +31774,7 @@
             "entries": [
                 "{@variantrule Overcast|GW|Overcast:} 5",
                 "Release a continuous stream of dragon fire at a location.",
-                "Choose a point that you can see within range. For the duration, you create a 10-foot-radius, 10-foot-high Cylinder centered on that point. Each creature in that Cylinder must make a Dexterity saving throw. On a failed save, a target takes {@damage 5d10} fire damage. On a successful save, a target takes half as much damage. A creature also makes this save if it enters the Cylinder or ends its turn there, or if the Cylinder moves into its space. A creature makes this save only once per turn.",
+                "Choose a point that you can see within range. For the duration, you create a 10-foot-radius, 10-foot-high Cylinder centered on that point. Each creature in that Cylinder must make a Dexterity saving throw. On a failed save, a target takes {@damage 8d6} fire damage. On a successful save, a target takes half as much damage. A creature also makes this save if it enters the Cylinder or ends its turn there, or if the Cylinder moves into its space. A creature makes this save only once per turn.",
                 "On your later turns, you can take a {@action Magic|XPHB} action to teleport the Cylinder up to 60 feet."
             ],
             "source": "GWF",
@@ -31787,7 +31787,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d10} for each slot level above 1st."
+                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
                     ]
                 }
             ],
@@ -43545,6 +43545,342 @@
                         "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d10} for each slot level above 1st."
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Smoldering Embers",
+            "level": 4,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "Lodge {@condition burning|GW} coals into a creature's body.",
+                "Choose one creature that you can see within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 8d6} fire damage.",
+                "{@variantrule Hex|GW}",
+                "{@variantrule Overcast:|GW} On a hit, for the duration at the start of each of the target's turns, the target must make a Constiution saving throw. On a failed save, the target takes {@damage 8d6} fire damage. On a successful save, the target takes half as much damage."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Smoldering Embers",
+                    "Hex Spell. Target foe is struck for 10...58...70 fire damage. If you are Overcast, that foe is hexed with Smoldering Embers for 3 seconds and takes 5...21...25 additional fire damage each second."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Smoldering_Embers.jpg"
+                        }
+                    }
+                ]
+            },
+            "damageInflict": [
+                "fire"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "burning coals"
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the damage each increases by {@dice 1d6} for each slot level above 4th."
+                    ]
+                }
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Elementalist",
+                    "source": "GW"
+                },
+                {
+                    "name": "Fire Magic",
+                    "source": "GW"
+                },
+                {
+                    "name": "Hex",
+                    "source": "GW"
+                },
+                {
+                    "name": "Overcast",
+                    "source": "GW"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Alchemist",
+                            "shortName": "Alchemist",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Artillerist",
+                            "shortName": "Artillerist",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Light domain",
+                            "shortName": "Light",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "savingThrow": [
+                "constitution"
+            ],
+            "spellAttack": [
+                "R"
+            ]
+        },
+        {
+            "name": "Hex Eater Signet",
+            "level": 4,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "{@variantrule Signet|GW|Signet:} Short Rest",
+                "Activate your Hex Eater Signet, transforming harmful spells into power.",
+                "You touch a creature. The latest harmful spell on the target ends. Additionally, end the latest harmful spell on {@dice 1d4} creatures of your choice within 10 feet of you. For each harmful spell ended this way, you regain a level 1 spell slot."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Hex Eater Signet",
+                    "Signet. Target touched ally and up to 2...4...5 adjacent allies each lose one hex. You gain 1...3...4 Energy for each hex removed this way. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Hex_Eater_Signet.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Mesmer",
+                    "source": "GW"
+                },
+                {
+                    "name": "Inspiration Magic",
+                    "source": "GW"
+                },
+                {
+                    "name": "Signet",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "s": true
+            },
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Psion",
+                        "source": "xua2025psion"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "miscTags": [
+                "SGT"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
             ]
         }
     ],

@@ -3014,7 +3014,7 @@
             "entries": [
                 "{@variantrule Overcast|GW|Overcast:} 5",
                 "Summon a meteor to crash down.",
-                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 4d6} bludgeoning damage, {@damage 4d6} fire damage and is knocked {@condition prone}. On a successful save, a target takes half as much damage, but suffers no other effect."
+                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 2d12} bludgeoning damage and {@damage 4d6} fire damage and is knocked {@condition prone}. On a successful save, a target takes half as much damage but suffers no other effect."
             ],
             "source": "GW",
             "components": {
@@ -3027,9 +3027,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 4th level or higher, the bludgeoning damage or the fire damage (your choice) increases by {@dice 1d6} for each slot level above 3rd."
+                        "When you cast this spell using a spell slot of 4th level or higher, the bludgeoning damage and the fire damage increase by {@dice 1d12} and {@dice 1d6} respectively for each slot level above 3rd."
                     ]
                 }
             ],
@@ -8360,10 +8360,10 @@
                 }
             ],
             "entries": [
-                "Fire a well aimed shot to make a creature bleed.",
-                "On a hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw. On a failed save, the target starts {@condition bleeding|GW} for the duration, taking {@damage 1d4} damage.",
+                "Fire a well-aimed shot to make a creature bleed.",
+                "On a hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw. On a failed save, the target starts {@condition bleeding|GW} for the duration, taking {@damage 1d6} damage.",
                 "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends.",
-                "At 5th level, the ranged attack also deals an extra {@damage 1d8} piercing damage to the target on a hit. This damage increases by {@dice 1d8} when you reach 11th level ({@dice 2d8}), and 17th level ({@dice 3d8})."
+                "At 5th level, the ranged attack also deals an extra {@damage 1d8} damage to the target on a hit. This damage increases by {@dice 1d8} when you reach 11th level ({@dice 2d8}), and 17th level ({@dice 3d8})."
             ],
             "source": "GW",
             "fluff": {
@@ -11713,7 +11713,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/d/da/Mighty_Blow.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Mighty_Blow.jpg"
                         }
                     }
                 ]
@@ -11737,6 +11737,14 @@
                 {
                     "name": "Adrenaline",
                     "source": "GW"
+                },
+                {
+                    "name": "Shing Jea Island",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Istan",
+                    "source": "GWN"
                 }
             ],
             "components": {
@@ -14031,7 +14039,7 @@
                 "{@variantrule Elite|GW}",
                 "Fire a quick shot, which is more likely to hit.",
                 "Make a ranged weapon attack with advantage against the target. On a hit, the target suffers the weapon attack's normal effects.",
-                "At 5th level, the ranged attack also deals an extra {@damage 1d8} piercing damage to the target on a hit. This damage increases by {@dice 1d8} when you reach 11th level ({@dice 2d8}), and 17th level ({@dice 3d8})."
+                "At 5th level, the ranged attack also deals an extra {@damage 1d8} damage to the target on a hit. This damage increases by {@dice 1d8} when you reach 11th level ({@dice 2d8}), and 17th level ({@dice 3d8})."
             ],
             "source": "GW",
             "fluff": {
@@ -22773,7 +22781,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/4/4f/Mind_Burn.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Elite/Mind_Burn.jpg"
                         }
                     }
                 ]
@@ -22798,6 +22806,14 @@
                 {
                     "name": "Overcast",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Vabbi",
+                    "source": "GWN"
                 }
             ],
             "components": {
@@ -22981,7 +22997,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/b/be/Mind_Freeze.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Elite/Mind_Freeze.jpg"
                         }
                     }
                 ]
@@ -23022,6 +23038,18 @@
                 {
                     "name": "Overcast",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Realm of Torment",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Far Shiverpeaks",
+                    "source": "GWEotN"
                 }
             ],
             "classes": {
@@ -25154,9 +25182,9 @@
                 "{@variantrule Elite|GW}",
                 "Prepare a spike trap, which damages, cripples and knocks creatures {@condition prone} which trigger it.",
                 "Conjure a 15-foot radius stationary {@condition invisible} trap at your location for the duration and choose any number of creatures. The next time a non-chosen creature enters the spell's area, the trap triggers, applying the following effects for 2 rounds: ",
-                "Each non-chosen creature must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 2d8} piercing damage, becomes {@condition crippled|GW} for one minute and is knocked {@condition prone}. On a successful save, a target takes half as much damage, but suffers no other effect.",
+                "Each non-chosen creature must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 4d4} piercing damage, becomes {@condition crippled|GW} for one minute and is knocked {@condition prone}. On a successful save, a target takes half as much damage, but suffers no other effect.",
                 "At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends.",
-                "This trap is nearly {@condition invisible}, requiring a successful Intelligence (Investigation) check against your spell save DC to be discerned."
+                "This trap is nearly {@condition invisible}, requiring a successful Intelligence ({@skill Investigation}) check against your spell save DC to be discerned."
             ],
             "source": "GW",
             "fluff": {
@@ -25207,7 +25235,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 2d8} for each slot level above 1st."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 4d4} for each slot level above 1st."
                     ]
                 }
             ],
@@ -29881,9 +29909,9 @@
                 }
             ],
             "entries": [
-                "Prepare a barbed trap, which damages, cripples and bleeds creatures which trigger it.",
+                "Prepare a barbed trap, which damages, cripples, and bleeds creatures that trigger it.",
                 "Conjure a 15-foot radius stationary {@condition invisible} trap at your location for the duration and choose any number of creatures. The next time a non-chosen creature enters the spell's area, the trap triggers, applying the following effect for 1 round: ",
-                "Each non-chosen creature must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 4d8} piercing damage, starts {@condition bleeding|GW} for one minute, taking {@damage 4d4} damage and is {@condition crippled|GW} for one minute. On a successful save, a target takes half as much damage, but suffers no other effect.",
+                "Each non-chosen creature must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 8d4} piercing damage, starts {@condition bleeding|GW} for one minute, taking {@damage 3d6} damage and is {@condition crippled|GW} for one minute. On a successful save, a target takes half as much damage, but suffers no other effect.",
                 "At the end of each of its turns, the target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends.",
                 "This trap is nearly {@condition invisible}, requiring a successful Intelligence (Investigation) check against your spell save DC to be discerned."
             ],
@@ -29916,9 +29944,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d8} for each slot level above 3rd and the damage of the {@condition bleeding|GW} condition increases by {@dice 1d4} for each slot level above 3rd."
+                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 2d4} for each slot level above 3rd, and the damage of the {@condition bleeding|GW} condition increases by {@dice 1d6} for each slot level above 3rd."
                     ]
                 }
             ],
@@ -33996,7 +34024,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/9/92/Mind_Wrack.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Mind_Wrack.jpg"
                         }
                     }
                 ]
@@ -34017,6 +34045,14 @@
                 {
                     "name": "Hex",
                     "source": "GW"
+                },
+                {
+                    "name": "Shing Jea Island",
+                    "source": "GWF"
+                },
+                {
+                    "name": "The Desolation",
+                    "source": "GWN"
                 }
             ],
             "components": {
@@ -38792,7 +38828,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/7/73/Nature%27s_Renewal.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Nature%27s_Renewal.jpg"
                         }
                     }
                 ]
@@ -38829,6 +38865,14 @@
                 {
                     "name": "Summoning Ritual",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "The Desolation",
+                    "source": "GWN"
                 }
             ],
             "classes": {

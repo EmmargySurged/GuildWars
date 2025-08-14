@@ -5372,8 +5372,8 @@
             },
             "entries": [
                 "{@variantrule Hex|GW}",
-                "Conjure up an illusion which shows a creature images of remorse, forcing them to relive their most horrible moments, inflicting damage to them every turn, and extra damage if they attacked on their last turn.",
-                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save if the target attacked on its last turn, the target takes {@damage 2d10} psychic damage. Additionally, for the duration, at the start of each of the target's turns, the target takes {@damage 1d6} psychic damage. On a successful save, the target takes half as much damage, but suffers no other effect."
+                "Conjure up an illusion that shows a creature images of remorse, forcing them to relive their most horrible moments, inflicting damage on them every turn, and extra damage if they attacked on their last turn.",
+                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, if the target attacked on its last turn, the target takes {@damage 4d6} psychic damage. Additionally, for the duration, at the start of each of the target's turns, the target takes {@damage 2d6} psychic damage. On a successful save, the target takes half as much damage but suffers no other effect."
             ],
             "source": "GWF",
             "fluff": {
@@ -5415,9 +5415,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 3rd level or higher, the initial damage increases by {@dice 1d10} for each slot level above 2nd and the damage over time increases by {@dice 1d6} for each slot level above 2nd."
+                        "When you cast this spell using a spell slot of 3rd level or higher, the initial damage increases by {@dice 2d6} for each slot level above 2nd, and the damage over time increases by {@dice 1d6} for each slot level above 2nd."
                     ]
                 }
             ],
@@ -7287,7 +7287,7 @@
             "entries": [
                 "{@variantrule Signet|GW|Signet:} Short Rest",
                 "You activate your signet of disruption in response to a creature casting a spell or a hexed creature using an ability, sending out a psychic spike, potentially disrupting that creature. ",
-                "Choose one creature, which is casting a spell or, if the creature is under the effect of a detrimental {@status Concentration|XPHB} spell, using an ability, that you can see within range. The creature makes a Constitution saving throw. On a failed save, the spell/ability dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If that spell was cast with a spell slot, the slot isn't expended.",
+                "Choose one creature that is casting a spell or, if the creature is under the effect of a detrimental {@status Concentration|XPHB} spell, using an ability that you can see within range. The creature makes a Constitution saving throw. On a failed save, the spell/ability dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If that spell was cast with a spell slot, the slot isn't expended.",
                 "If you successfully interrupt a spell/ability this way, the target must make an Intelligence saving throw with disadvantage. On a failed save, the target takes {@damage 3d6} psychic damage. If you did not successfully interrupt a spell/ability this way, the creature makes the saving throw with advantage."
             ],
             "source": "GWF",
@@ -14425,7 +14425,7 @@
                 "{@variantrule Hex|GW}",
                 "Use the energy in a creature to conjure an ether nightmare, which tortures them with their own energy.",
                 "Choose one creature that you can see within range. The target must make a Charisma saving throw. On a failed save, the target's initiative gets reduced by {@dice 1d6}. On a successful save, the target's initiative gets reduced by half as much.",
-                "If this spell reduces the target's initiative, for the duration at the start of each of the target's turns, the target takes {@damage 1d4} psychic damage per initiative lost. "
+                "If this spell reduces the target's initiative, for the duration at the start of each of the target's turns, the target takes {@damage 1d6} psychic damage per initiative lost. "
             ],
             "source": "GWF",
             "damageInflict": [
@@ -22681,9 +22681,9 @@
             ],
             "entries": [
                 "{@variantrule Elite|GW}, {@variantrule Hex|GW}",
-                "Psychically torture a creature by replaying one of it's greatest insecurities.",
-                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save for the duration at the start of each of the target's turns, the target takes {@damage 2d12} psychic damage.",
-                "When this spell ends, and the target is under the effect of another detrimental spell, the target is immediately hexed with Recurring Insecurity again."
+                "Psychically torture a creature by replaying one of its greatest insecurities.",
+                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save for the duration at the start of each of the target's turns, the target takes {@damage 4d6} psychic damage.",
+                "When this spell ends and the target is under the effect of another detrimental spell, the target is immediately hexed with Recurring Insecurity again."
             ],
             "source": "GWF",
             "fluff": {
@@ -22710,7 +22710,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d12} for each slot level above 1st."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
                     ]
                 }
             ],
@@ -36564,7 +36564,7 @@
             "entries": [
                 "{@variantrule Hex|GW}",
                 "Force a creature to relive its most horrid nightmare.",
-                "Choose one creature that you can see within range. The target must make an Intelligence saving throw. On a failed save for the duration at the start of each of the target's turns, the target takes {@damage 3d12} psychic damage."
+                "Choose one creature that you can see within range. The target must make an Intelligence saving throw. On a failed save for the duration at the start of each of the target's turns, the target takes {@damage 6d6} psychic damage."
             ],
             "source": "GWF",
             "fluff": {
@@ -36590,7 +36590,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d12} for each slot level above 3rd."
+                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d6} for each slot level above 3rd."
                     ]
                 }
             ],
@@ -45009,6 +45009,442 @@
             ],
             "miscTags": [
                 "MAC"
+            ]
+        },
+        {
+            "name": "Jungle Strike",
+            "level": 2,
+            "school": "V",
+            "time": [
+                {
+                    "number": 0,
+                    "unit": "special",
+                    "condition": "which you take immediately before hitting a target with a Melee weapon with the light property"
+                }
+            ],
+            "range": {
+                "type": "special"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "{@variantrule Off-Hand Attack|GWF}, {@variantrule Weapon Attack Spell|GW}",
+                "Use your opponent's weak movement to strike all around them.",
+                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d8} damage, and if the target is {@condition crippled|GW}, all hostile creatures within a 10-foot Emanation around you take {@damage 3d8} damage."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Jungle Strike",
+                    "Off-Hand Attack. Must follow a lead attack. If it hits, this attack strikes for +10...22...25 damage. If it hits a foe that was Crippled, that foe and all adjacent foes take +1...25...31 damage. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Jungle_Strike.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST",
+                "MT",
+                "S"
+            ],
+            "components": {
+                "v": true
+            },
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Assassin",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Dagger Mastery",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Off-Hand Attack",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Weapon Attack Spell",
+                    "source": "GW"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Armorer",
+                            "shortName": "Armorer",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Battle smith",
+                            "shortName": "Battle Smith",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Collage of swords",
+                            "shortName": "Swords",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Virtuoso",
+                            "shortName": "Virtuoso",
+                            "source": "GW2EoD"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Psion",
+                            "source": "xua2025psion"
+                        },
+                        "subclass": {
+                            "name": "Metamorph",
+                            "shortName": "Metamorph",
+                            "source": "xua2025psion"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Bladesinging",
+                            "shortName": "Bladesinging",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "miscTags": [
+                "AAD"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the target also takes {@damage 1d8} damage for each slot level above 2nd on a hit."
+                    ]
+                }
+            ],
+            "conditionInflict": [
+                "crippled|gw"
+            ]
+        },
+        {
+            "name": "Mantis Touch",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "Strike at a creature's legs, crippling them.",
+                "Must follow a {@variantrule Lead Attack|GWF}.",
+                "You touch a creature. The target is {@condition crippled|GW} for the duration.",
+                "This is considered a {@variantrule Off-Hand Attack|GWF}."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Mantis Touch",
+                    "Spell. Must follow a lead attack. Target foe becomes Crippled for 5...17...20 seconds. This skill counts as an off-hand attack."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Mantis_Touch.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "components": {
+                "s": true
+            },
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Assassin",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Deadly Arts",
+                    "source": "GWF"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Collage of swords",
+                            "shortName": "Swords",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Virtuoso",
+                            "shortName": "Virtuoso",
+                            "source": "GW2EoD"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Bladesinging",
+                            "shortName": "Bladesinging",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d6} damage for each slot level above 1st."
+                    ]
+                }
+            ],
+            "conditionInflict": [
+                "crippled|gw"
             ]
         }
     ],

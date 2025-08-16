@@ -6789,8 +6789,8 @@
             "entries": [
                 "{@variantrule Weapon Attack Spell|GW}",
                 "Channel your fury into a strike, gaining adrenaline on a miss.",
-                "On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d8} damage.",
-                "On a miss, you gain {@dice 1d4} strikes of adrenaline."
+                "On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d6} damage.",
+                "On a miss, you gain {@dice 1d6} strikes of adrenaline."
             ],
             "source": "GWF",
             "fluff": {
@@ -6942,7 +6942,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d8} damage for each slot level above 1st on a hit."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d6} damage for each slot level above 1st on a hit."
                     ]
                 }
             ]
@@ -27649,7 +27649,7 @@
             "entries": [
                 "{@variantrule Elite|GW}, {@variantrule Weapon Attack Spell|GW}",
                 "Quickly perform multiple hits with your weapon, striking everything around you.",
-                "Target each creature, other than you, that you can see within range of your weapon. Make a melee weapon attack against each target. On a hit, a target suffers the weapon attack's normal effects and takes {@damage 2d8} damage."
+                "Target each creature, other than you, that you can see within range of your weapon. Make a melee weapon attack against each target. On a hit, a target suffers the weapon attack's normal effects and takes {@damage 3d6} damage."
             ],
             "source": "GWF",
             "components": {
@@ -27807,7 +27807,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, a target also takes {@damage 1d8} damage for each slot level above 1st on a hit."
+                        "When you cast this spell using a spell slot of 2nd level or higher, a target also takes {@damage 1d6} damage for each slot level above 1st on a hit."
                     ]
                 }
             ]
@@ -40012,8 +40012,8 @@
             ],
             "entries": [
                 "{@variantrule Adrenaline|GW|Adrenaline:} 5, {@variantrule Armor Penetration|GW}, {@variantrule Weapon Attack Spell|GW}",
-                "You crush past an enemies defenses.",
-                "On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d8} damage."
+                "You crush past an enemy's defenses.",
+                "On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d6} damage."
             ],
             "source": "GWF",
             "fluff": {
@@ -40186,7 +40186,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 3rd level or higher, the target also takes {@damage 1d8} damage for each slot level above 2nd on a hit."
+                        "When you cast this spell using a spell slot of 3rd level or higher, the target also takes {@damage 1d6} damage for each slot level above 2nd on a hit."
                     ]
                 }
             ],
@@ -45725,6 +45725,311 @@
             ],
             "miscTags": [
                 "SGT"
+            ]
+        },
+        {
+            "name": "Spinal Shivers/Shivers of Dread",
+            "level": 3,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@variantrule Hex|GW}",
+                "Make a creature extremely sensitive to the cold, interrupting them every time they take cold damage.",
+                "Choose one creature that you can see within range. For the duration, when the target takes cold damage, the target must make a Constitution saving throw. On a failed save, the target can't cast spells or use abilities until the end of their next turn."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Spinal Shivers",
+                    "Hex Spell. For 10...34...40 seconds, whenever target foe is struck for cold damage while using a skill, that foe is interrupted, and you lose 10...6...5 Energy or Spinal Shivers ends.",
+                    "Shivers of Dread",
+                    "Hex Spell. For 10...34...40 seconds, whenever target foe is struck for cold damage while using a skill, that foe is interrupted and you lose 10...6...5 Energy or Shivers of Dread ends."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/6/6f/Spinal_Shivers.jpg"
+                        }
+                    },
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Shivers_of_Dread.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Maguuma Jungle",
+                    "source": "GWP"
+                },
+                {
+                    "name": "Necromancer",
+                    "source": "GW"
+                },
+                {
+                    "name": "Curses",
+                    "source": "GW"
+                },
+                {
+                    "name": "Hex",
+                    "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "otherSources": [
+                {
+                    "source": "GWP"
+                }
+            ]
+        },
+        {
+            "name": "Bestial Pounce/Savage Pounce",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "{@variantrule Companion|GW}",
+                "Command your pet to attempt a Bestial Pounce, knocking down creatures who cast a spell on their last turn.",
+                "Choose one companion that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 2d6} damage and, if the target cast a spell on its last turn, the target must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}"
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Bestial Pounce",
+                    "Pet Attack. Your animal companion attempts a Bestial Pounce that deals +5...17...20 damage. If the attack strikes a foe who is casting a spell, that foe is knocked down.",
+                    "Savage Pounce",
+                    "Pet Attack. Your animal companion attempts a Savage Pounce that deals +5...17...20 damage. If the attack strikes a foe who is casting a spell, that foe is knocked down."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/6/6a/Bestial_Pounce.jpg"
+                        }
+                    },
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Savage_Pounce.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Northeastern Kryta",
+                    "source": "GWP"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "GW"
+                },
+                {
+                    "name": "Beast Mastery",
+                    "source": "GW"
+                },
+                {
+                    "name": "Companion",
+                    "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the number of attacks increases by 1 for each slot level above 1st. "
+                    ]
+                }
+            ],
+            "conditionInflict": [
+                "prone"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Psion",
+                        "source": "xua2025psion"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "savingThrow": [
+                "strength"
+            ],
+            "miscTags": [
+                "UBA"
+            ],
+            "otherSources": [
+                {
+                    "source": "GWP"
+                }
             ]
         }
     ],

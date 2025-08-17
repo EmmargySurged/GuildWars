@@ -21,8 +21,7 @@
         ],
         "status": "ready",
         "dateAdded": 1701938868,
-        "dateLastModified": 1701938868,
-        "edition": "one"
+        "dateLastModified": 1701938868
     },
     "adventure": [
         {
@@ -505,21 +504,20 @@
                             "id": "GW5a",
                             "entries": [
                                 "The following elemts are the same for all adventures across all Guild Wars campaigns:",
+                                {
+                                    "type": "list",
+                                    "style": "list-hang-notitle",
+                                    "items": [
                                         {
-                                            "type": "list",
-                                            "style": "list-hang-notitle",
-                                            "items": [
-                                                {
-                                                    "type": "item",
-                                                    "name": "Player Count",
-                                                    "entry": [
-                                                        "The adventures are designed for any number of players, encounters and treasure tables are structured in a way that they scale with the number of players. 'N' is the number of players in the party. Encounter and treasure tables are cummulative, meaning if the party has 'N' players, all the entries up to 'N' players are used.",
-                                                        "At the beginning of each adventure is an overview of the recommended skill proficiencies and spells the party should have access to. If the party does not have access to the recommended proficiencies and spells, consider adjusting the adventure to fit the party's capabilities."
-                                                    ]
-                                                    
-                                                }
+                                            "type": "item",
+                                            "name": "Player Count",
+                                            "entry": [
+                                                "The adventures are designed for any number of players, encounters and treasure tables are structured in a way that they scale with the number of players. 'N' is the number of players in the party. Encounter and treasure tables are cummulative, meaning if the party has 'N' players, all the entries up to 'N' players are used.",
+                                                "At the beginning of each adventure is an overview of the recommended skill proficiencies and spells the party should have access to. If the party does not have access to the recommended proficiencies and spells, consider adjusting the adventure to fit the party's capabilities."
                                             ]
                                         }
+                                    ]
+                                }
                             ]
                         },
                         {
@@ -749,14 +747,13 @@
             "name": "Tome of Capture",
             "source": "GW",
             "wondrous": true,
-            "rarity": "Very Rare",
+            "rarity": "very rare",
             "entries": [
-                "This special Tome was crafted by Magi Malaquire and entrusted to you. He wants you to 'Capture them all', whatever that means.",
-                "As a reaction, when a hostile boss enemy within 150 feet reaches 0 hit points, or as a magic action, you can cast the {@spell Signet of Capture|GW} spell using this tome.",
-                "When doing so, you can capture an unlimited number of spells in one casting of {@spell Signet of Capture|GW}, but instead of learning them, they are recorded in this tome. Each spell captured rewards XP individually and is equally distributed between all creatures holding the tome or a bonded {@item Signet Ring of Signet of Capture|GW}.",
+                "This special Tome was crafted by Magi Malaquire. On the first page it urges you to 'Capture them all', whatever that means.",
+                "As a reaction, when a hostile enemy within 150 feet reaches 0 hit points, or as a magic action, you can cast the {@spell Signet of Capture|GW} spell using this tome.",
+                "When doing so, you can capture an unlimited number of spells in one casting of {@spell Signet of Capture|GW}, but instead of learning them, they are recorded in this tome.",
                 "Certain powerful trainers can record spells in this book by spending 1 minute in study.",
-                "When recording a spell in the tome you must spend 25 gp per spell level, which can be drawn from any willing creature holding the tome or a bonded {@item Signet Ring of Signet of Capture|GW}.",
-                "Any creature can learn a spell recorded in this tome, if it is on the creatures spell list, by spending 1 minute in study with the tome per spell level. When doing so, the creature can replace a currently prepared spell with the spell learned from this tome.",
+                "Any creature can learn a spell recorded in this tome, if it is on the creatures spell list, by spending 10 minutes in study with the tome per spell level. When doing so, the creature can replace a currently prepared spell with the spell learned from this tome.",
                 "A spell can be learned from this tome an unlimited number of times by any creature holding the tome or a bonded {@item Signet Ring of Signet of Capture|GW}."
             ]
         },
@@ -764,13 +761,11 @@
             "name": "Signet Ring of Signet of Capture",
             "source": "GW",
             "type": "RG",
-            "rarity": "Rare",
+            "rarity": "rare",
             "entries": [
-                "This special Ring was crafted by Magi Malaquire and entrusted to you. He wants you to 'Capture them all', whatever that means.",
-                "As a reaction, when a hostile boss enemy within 150 feet reaches 0 hit points, or as a magic action, you can cast the {@spell Signet of Capture|GW} spell using this ring.",
-                "When doing so, you can capture an unlimited number of spells in one casting of {@spell Signet of Capture|GW}, but instead of learning them, they are recorded in the {@item Tome of Capture|GW} this ring is bonded to. Each spell captured rewards XP individually and is equally distributed between all creatures holding the tome or a bonded {@item Signet Ring of Signet of Capture|GW}.",
-                "When recording a spell in the tome you must spend 25 gp per spell level, which can be drawn from any willing creature holding the tome or a bonded {@item Signet Ring of Signet of Capture|GW}.",
-                "",
+                "This special Ring was crafted by Magi Malaquire.",
+                "As a reaction, when a hostile enemy within 150 feet reaches 0 hit points, or as a magic action, you can cast the {@spell Signet of Capture|GW} spell using this ring.",
+                "When doing so, you can capture an unlimited number of spells in one casting of {@spell Signet of Capture|GW}, but instead of learning them, they are recorded in the {@item Tome of Capture|GW} this ring is bonded to.",
                 "As a magic action you can bond this ring to a {@item Tome of Capture|GW}."
             ]
         },
@@ -3268,7 +3263,7 @@
             "entries": [
                 "{@variantrule Bond|GW}, {@variantrule Enchantment|GW}",
                 "Wreath yourself or an ally in retaliatory holy light, which punishes all those who harm you.",
-                "Choose one friendly creature that you can see within range. For the duration, when the target takes damage, target the creature that dealt the damage. The target must make a Wisdom saving throw. On a failed save, the target takes 50% of the damage they dealt as radiant damage (minimum 1, maximum 10). On a successful save, the target takes half as much damage."
+                "Choose one friendly creature that you can see within range. For the duration, when the target takes damage, target the creature that dealt the damage. The new target must make a Wisdom saving throw. On a failed save, the new target takes 50% of the damage they dealt as radiant damage (minimum 1, maximum 10). On a successful save, the new target takes half as much damage."
             ],
             "source": "GW",
             "components": {
@@ -3294,7 +3289,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/f/fe/Retribution.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Retribution.jpg"
                         }
                     }
                 ]
@@ -3328,6 +3323,14 @@
                 {
                     "name": "Enchantment",
                     "source": "GW"
+                },
+                {
+                    "name": "Shing Jea Island",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Istan",
+                    "source": "GWN"
                 }
             ],
             "classes": {
@@ -3827,7 +3830,8 @@
             "time": [
                 {
                     "number": 1,
-                    "unit": "bonus"
+                    "unit": "reaction",
+                    "condition": "which you take when you see a creature within range take damage"
                 }
             ],
             "range": {
@@ -3839,17 +3843,13 @@
             },
             "duration": [
                 {
-                    "type": "timed",
-                    "duration": {
-                        "type": "minute",
-                        "amount": 1
-                    }
+                    "type": "instant"
                 }
             ],
             "entries": [
                 "{@variantrule Enchantment|GW} ",
-                "Twist the fate around one friendly creature, healing them instead of harming them.",
-                "Choose one friendly creature that you can see within range. For the duration, the next time the target takes damage, you can roll {@dice 1d6} and subtract the number rolled from the damage and the target regains hit points equal to the number rolled."
+                "Twist the fate around one creature, healing them instead of harming them.",
+                "Roll {@dice 1d6} and subtract the number rolled from the damage, and the creature regains hit points equal to the number rolled."
             ],
             "source": "GW",
             "components": {
@@ -3875,7 +3875,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/6/64/Reversal_of_Fortune.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Reversal_of_Fortune.jpg"
                         }
                     }
                 ]
@@ -3903,6 +3903,14 @@
                 {
                     "name": "Enchantment",
                     "source": "GW"
+                },
+                {
+                    "name": "Shing Jea Island",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Istan",
+                    "source": "GWN"
                 }
             ],
             "classes": {
@@ -5836,7 +5844,7 @@
             "entries": [
                 "{@variantrule Weapon Attack Spell|GW}",
                 "You infuse your next projectile with deadly force.",
-                "On a hit, the target takes {@damage 2d10 + 10} force damage."
+                "On a hit, the target takes {@damage 2d8 + 10} force damage."
             ],
             "source": "GW",
             "fluff": {
@@ -6007,7 +6015,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 3rd level or higher, the target also takes {@damage 1d10 + 5} damage for each slot level above 2nd on a hit."
+                        "When you cast this spell using a spell slot of 3rd level or higher, the target also takes {@damage 1d8 + 5} damage for each slot level above 2nd on a hit."
                     ]
                 }
             ]
@@ -7122,7 +7130,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d6} damage for each slot level above 1st on a hit."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d8} damage for each slot level above 1st on a hit."
                     ]
                 }
             ]
@@ -14068,7 +14076,7 @@
             "entries": [
                 "{@variantrule Unblockable|GW}, {@variantrule Weapon Attack Spell|GW}",
                 "Fire an extremely fast shot, which is more likely to hit and ignores any temporary AC bonuses.",
-                "You advantage on the attack roll. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d6} damage."
+                "You have advantage on the attack roll. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d8} damage."
             ],
             "source": "GW",
             "fluff": {
@@ -14152,7 +14160,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d6} damage for each slot level above 1st on a hit."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d8} damage for each slot level above 1st on a hit."
                     ]
                 }
             ]
@@ -14622,7 +14630,7 @@
         },
         {
             "name": "Resurrect",
-            "level": 4,
+            "level": 3,
             "school": "N",
             "time": [
                 {
@@ -14662,7 +14670,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/c/c1/Resurrect.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Resurrect.jpg"
                         }
                     }
                 ]
@@ -14682,14 +14690,22 @@
                 {
                     "name": "No Attribute - Monk",
                     "source": "GW"
+                },
+                {
+                    "name": "Shing Jea Island",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Istan",
+                    "source": "GWN"
                 }
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th."
+                        "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd."
                     ]
                 }
             ],
@@ -15462,7 +15478,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/e/e0/Resurrection_Signet.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Resurrection_Signet.jpg"
                         }
                     }
                 ]
@@ -15486,21 +15502,123 @@
                 {
                     "name": "Signet",
                     "source": "GW"
+                },
+                {
+                    "name": "Shing Jea Island",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Istan",
+                    "source": "GWN"
                 }
             ],
             "components": {
                 "v": true,
                 "s": true,
                 "m": {
-                    "text": "gems worth 600 gp, which the spell consumes",
+                    "text": "gems worth 300 gp, which the spell consumes",
                     "consume": true,
-                    "cost": 6000000
+                    "cost": 3000000
                 }
             },
             "miscTags": [
                 "HL",
                 "SGT"
-            ]
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "xua2025eberronupdates"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Psion",
+                        "source": "xua2025psion"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            }
         },
         {
             "name": "Signet of Capture",
@@ -15526,9 +15644,8 @@
             ],
             "entries": [
                 "{@variantrule Signet|GW|Signet:} Replaced",
-                "Capture the knowledge of a powerful creature by activating your Signet of Capture.",
-                "Choose one hostile dead boss creature, which has not been dead for more than 1 day, or spell scroll that you can see within range. Choose one spell which the target had prepared or is inscribed on the scroll, that you could learn and is a Guild Wars spell, and replace this spell with the chosen spell permanently. If you targeted a spell scroll, it gets destroyed as if you had cast the spell from it.",
-                "You also gain XP equal to your level * 30 * the level of the spell captured (minimum 30)."
+                "Capture the knowledge of a creature by activating your Signet of Capture.",
+                "Choose one hostile dead creature, which has not been dead for more than 1 day, or spell scroll that you can see within range. Choose one spell which the target had prepared or is inscribed on the scroll, that you could learn and is a Guild Wars spell, and replace this spell with the chosen spell permanently. If you targeted a spell scroll, it gets destroyed as if you had cast the spell from it."
             ],
             "source": "GW",
             "fluff": {
@@ -15572,7 +15689,101 @@
             ],
             "miscTags": [
                 "SGT"
-            ]
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "xua2025eberronupdates"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Psion",
+                        "source": "xua2025psion"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            }
         },
         {
             "name": "Counter Blow",
@@ -28693,8 +28904,8 @@
             ],
             "entries": [
                 "{@variantrule Hex|GW}",
-                "Curse a creature with Rigor Mortis, stiffening their body, making them unable to benefit from any temporary AC bonuses.",
-                "Choose one creature that you can see within range. The Target must make a Constitution saving throw. On a failed save, for the duration, the target cannot benefit from any temporary bonuses to AC."
+                "Curse a creature with rigor mortis, stiffening their body, making them unable to benefit from any temporary AC bonuses.",
+                "Choose one creature that you can see within range. For the duration, the target cannot benefit from any temporary bonuses to AC."
             ],
             "source": "GW",
             "fluff": {
@@ -28707,7 +28918,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/9/90/Rigor_Mortis.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Rigor_Mortis.jpg"
                         }
                     }
                 ]
@@ -28728,6 +28939,14 @@
                 {
                     "name": "Hex",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "The Desolation",
+                    "source": "GWN"
                 }
             ],
             "components": {
@@ -28818,9 +29037,6 @@
             },
             "areaTags": [
                 "ST"
-            ],
-            "savingThrow": [
-                "constitution"
             ],
             "miscTags": [
                 "SGT",

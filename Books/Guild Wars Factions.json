@@ -25722,7 +25722,7 @@
             "entries": [
                 "{@variantrule Elite|GW}, {@variantrule Weapon Attack Spell|GW}",
                 "Invoke the vine wrath of Melandru with your next shot.",
-                "On a hit, the target suffers the weapon attack's normal effects, starts {@condition bleeding|GW} for the duration, taking {@damage 3d6} damage, and if the target willingly moved on its last turn or is {@condition prone}, the target takes an additional {@damage 2d6} damage and is also {@condition crippled|GW} for the duration.",
+                "On a hit, the target suffers the weapon attack's normal effects, starts {@condition bleeding|GW} for the duration, taking {@damage 3d6} damage, and if the target willingly moved on its last turn or is {@condition prone}, the target takes an additional {@damage 2d8} damage and is also {@condition crippled|GW} for the duration.",
                 "At the end of each of its turns, the target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends."
             ],
             "source": "GWF",
@@ -33937,8 +33937,8 @@
             "entries": [
                 "{@variantrule Weapon Attack Spell|GW}",
                 "Focus fully on this one shot, disregarding any other options.",
-                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d6} damage, and you cannot use other {@variantrule Weapon Attack Spell|GW|Weapon Attack Spells}  for 2 rounds. ",
-                "At 5th level, the ranged attack deals an extra {@damage 1d6} damage to the target on a hit ({@dice 2d6}). This damage increases by {@dice 1d6} when you reach 11th level ({@dice 3d6}) and 17th level ({@dice 4d6})."
+                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d8} damage, and you cannot use other {@variantrule Weapon Attack Spell|GW|Weapon Attack Spells} for 2 rounds. ",
+                "At 5th level, the ranged attack deals an extra {@damage 1d8} damage to the target on a hit ({@dice 2d8}). This damage increases by {@dice 1d8} when you reach 11th level ({@dice 3d8}) and 17th level ({@dice 4d8})."
             ],
             "source": "GWF",
             "fluff": {
@@ -35395,8 +35395,8 @@
             "entries": [
                 "{@variantrule Weapon Attack Spell|GW}",
                 "Start vivaciously focusing only on damaging creatures for a while.",
-                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d6} damage, and you cannot use {@variantrule Weapon Attack Spell|GWWeapon Attack Spells} for 2 rounds. ",
-                "At 5th level, the ranged attack deals an extra {@damage 1d6} damage to the target on a hit ({@dice 2d6}). This damage increases by {@dice 1d6} when you reach 11th level ({@dice 3d6}) and 17th level ({@dice 4d6})."
+                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d8} damage, and you cannot use {@variantrule Weapon Attack Spell|GWWeapon Attack Spells} for 2 rounds. ",
+                "At 5th level, the ranged attack deals an extra {@damage 1d8} damage to the target on a hit ({@dice 2d8}). This damage increases by {@dice 1d8} when you reach 11th level ({@dice 3d8}) and 17th level ({@dice 4d8})."
             ],
             "source": "GWF",
             "fluff": {
@@ -36856,7 +36856,7 @@
             "entries": [
                 "{@variantrule Weapon Attack Spell|GW}",
                 "Fire a volley of low-impact shots.",
-                "Make a ranged weapon attack with advantage against the target. On a hit, the target takes {@damage 2d4 + 5} piercing damage, and you can immediately make another attack if you also cast Needling Shot as part of that attack. If you do so, you can ignore the rule that you only cast one spell with a spell slot per turn.",
+                "Make a ranged weapon attack with advantage against the target. On a hit, the target takes {@damage 1d8 + 5} piercing damage, and you can immediately make another attack if you also cast Needling Shot as part of that attack. If you do so, you can ignore the rule that you only cast one spell with a spell slot per turn.",
                 "Hit or miss, you cannot use other {@variantrule Weapon Attack Spell|GW|Weapon Attack Spells} for 2 rounds. "
             ],
             "source": "GWF",
@@ -37017,7 +37017,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 2d4 + 5} piercing damage for each slot level above 1st on a hit."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d8 + 5} piercing damage for each slot level above 1st on a hit."
                     ]
                 }
             ],
@@ -46030,6 +46030,383 @@
                 {
                     "source": "GWP"
                 }
+            ]
+        },
+        {
+            "name": "Point Blank Shot/Zojun's Shot",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 0,
+                    "unit": "special",
+                    "condition": "which you take immediately before hitting a target with a Ranged weapon within an eigth of the range increments of the weapon"
+                }
+            ],
+            "range": {
+                "type": "special"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "{@variantrule Weapon Attack Spell|GW}",
+                "You shoot an enemy point-blank.",
+                "You have advantage on the attack roll if the target is within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d8} damage.",
+                "At 5th level, the ranged attack deals an extra {@damage 1d8} damage to the target on a hit ({@dice 2d8}). This damage increases by {@dice 1d8} when you reach 11th level ({@dice 3d8}) and 17th level ({@dice 4d8})."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Point Blank Shot",
+                    "Bow Attack. Shoot an arrow that has half the normal range, but strikes for +10...34...40 damage.",
+                    "Zojun's Shot",
+                    "Bow Attack. Shoot an arrow that has half the normal range, but strikes for +10...34...40 damage."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/3/35/Point_Blank_Shot.jpg"
+                        }
+                    },
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/e/ea/Zojun%27s_Shot.jpg"
+                        }
+                    }
+                ]
+            },
+            "components": {
+                "v": true
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "AAD"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Pre-Searing",
+                    "source": "GWP"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "GW"
+                },
+                {
+                    "name": "Expertise",
+                    "source": "GW"
+                },
+                {
+                    "name": "Weapon Attack Spell",
+                    "source": "GW"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "otherSources": [
+                {
+                    "source": "GWP"
+                }
+            ]
+        },
+        {
+            "name": "Lively Was Naomei",
+            "level": 8,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "entries": [
+                "{@variantrule Urn|GWF}",
+                "Create a platinum urn containing the ashes of Naomei, who was said to have restored people to life with ease.",
+                "You create an urn in your hands. 1 round after you drop this urn, choose any number of friendly creatures that have not been dead for more than 1 year that you can see within a 20-foot Emanation (this can include yourself if you dropped the urn because you fell {@condition unconscious}). A target returns to life with 25% of their maximum hit points. A target is {@condition incapacitated} until the end of their next turn.",
+                "This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Lively Was Naomei",
+                    "Item Spell. Hold Naomei's ashes for up to 45 seconds. When you drop her ashes, all party members in the area are resurrected with 15...63...75% Health and zero Energy."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Lively_Was_Naomei.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Ritualist",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Restoration Magic",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Urn",
+                    "source": "GWF"
+                }
+            ],
+            "components": {
+                "s": true,
+                "m": {
+                    "text": "diamond dust worth 1000+ GP, which the spell consumes",
+                    "consume": true,
+                    "cost": 100000
+                }
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 9th level or higher, the % increases by 25% for each slot level above 8th."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "HL"
+            ],
+            "areaTags": [
+                "MT"
+            ],
+            "conditionInflict": [
+                "incapacitated"
+            ]
+        },
+        {
+            "name": "Nightmare Weapon",
+            "level": 1,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "School of necromancy",
+                            "shortName": "Necromancy",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@variantrule Weapon Spell|GWF} ",
+                "Temporarily transform a weapon into a nightmare weapon, visibly making its appearance more sinister and reducing its damage dealt, but making it lifesteal.",
+                "Choose one friendly creature, which is wielding a weapon, that you can see within range. For the duration, the target's weapon attacks deal {@damage 1d8} less damage (minimum 0). Additionally, the target's weapon attacks deal {@damage 1d8} necrotic damage on a hit, and a target regains hit points equal to the amount of that necrotic damage dealt.",
+                "After this spell triggers {@dice 1d4 + 1} times, this spell ends."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Nightmare Weapon",
+                    "Weapon Spell. For 12 seconds, target ally has a Nightmare Weapon. Target ally's next 3 attacks are reduced by 10...42...50 damage and steal up to 10...42...50 Health."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Nightmare_Weapon.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Ritualist",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Channeling Magic",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Weapon Spell",
+                    "source": "GWF"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage decrease increases by {@dice 1d8} for each slot level above 1st, and the necrotic damage increases by {@dice 1d8} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
+            ],
+            "damageInflict": [
+                "necrotic"
             ]
         }
     ],

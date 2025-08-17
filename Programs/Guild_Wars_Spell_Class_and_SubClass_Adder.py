@@ -290,7 +290,7 @@ if __name__ == "__main__":
     # Unused, maybe make custom classes the players can then also check.
     proficiencies_list = ['Light Armor', 'Medium Armor', 'Heavy Armor', 'Simple Weapons', 'Martial Weapons']
     valid_backgrounds = [
-        "Strength", "Axe Mastery", "Hammer Mastery", "Swordsmanship", "Tactics",
+        "No Attribute", "Strength", "Axe Mastery", "Hammer Mastery", "Swordsmanship", "Tactics",
         "No Attribute - Warrior", "Expertise", "Beast Mastery", "Marksmanship", "Wilderness Survival",
         "No Attribute - Ranger", "Divine Favor", "Healing Prayers", "Smiting Prayers", "Protection Prayers",
         "No Attribute - Monk", "Soul Reaping", "Curses", "Blood Magic", "Death Magic", "No Attribute - Necromancer",

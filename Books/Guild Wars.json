@@ -17930,9 +17930,9 @@
                 }
             ],
             "entries": [
-                "{@variantrule Hex|GW}",
+                "{@variantrule Hex|GW}, {@variantrule Sacrifice|GW|Sacrifice:} 10%",
                 "Utter a corrupting curse, defiling a creature's flesh, making it so they heal for less.",
-                "Choose one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, for the duration, when the target regains hit points, they regain 33% less hit points."
+                "Choose one creature that you can see within range. For the duration, when the target regains hit points, they regain 33% fewer hit points."
             ],
             "source": "GW",
             "fluff": {
@@ -17974,6 +17974,10 @@
                 {
                     "name": "Vabbi",
                     "source": "GWN"
+                },
+                {
+                    "name": "Sacrifice",
+                    "source": "GW"
                 }
             ],
             "components": {
@@ -18062,9 +18066,6 @@
                     }
                 ]
             },
-            "savingThrow": [
-                "constitution"
-            ],
             "areaTags": [
                 "ST"
             ],
@@ -19603,7 +19604,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/d/dd/Rotting_Flesh.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Rotting_Flesh.jpg"
                         }
                     }
                 ]
@@ -19620,6 +19621,14 @@
                 {
                     "name": "Death Magic",
                     "source": "GW"
+                },
+                {
+                    "name": "Shing Jea Island",
+                    "source": "GWF"
+                },
+                {
+                    "name": "The Desolation",
+                    "source": "GWN"
                 }
             ],
             "components": {
@@ -31949,7 +31958,7 @@
                 }
             ],
             "entries": [
-                "You attempt to interrupt a creature in the process of using an ability or casting a spell, if you interrupt a spell this way, the target takes additional damage.",
+                "You attempt to interrupt a creature in the process of using an ability or casting a spell; if you interrupt a spell this way, the target takes additional damage.",
                 "Choose one creature, which is casting a spell or using an ability, that you can see within range of your weapon. Make a ranged weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw. On a failed save, the ability/spell fails and has no effect.",
                 "If a spell failed this way, the target takes an additional {@damage 3d8} damage."
             ],
@@ -31964,7 +31973,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/f/fd/Savage_Shot.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Savage_Shot.jpg"
                         }
                     }
                 ]
@@ -32000,6 +32009,14 @@
                 {
                     "name": "Marksmanship",
                     "source": "GW"
+                },
+                {
+                    "name": "Shing Jea Island",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Vabbi",
+                    "source": "GWN"
                 }
             ],
             "classes": {
@@ -32765,7 +32782,7 @@
             "entries": [
                 "{@variantrule Companion|GW}",
                 "Command your companion to attempt a Scavenger Strike.",
-                "Choose one companion, that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 2d6} damage, and if the target is suffering from a condition, your initiative gets increased by {@dice 2d4}."
+                "Choose one companion that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 2d6} damage, and if the target is suffering from a condition, your initiative gets increased by {@dice 2d4}."
             ],
             "source": "GW",
             "fluff": {
@@ -32778,7 +32795,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/8/85/Scavenger_Strike.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Scavenger_Strike.jpg"
                         }
                     }
                 ]
@@ -32819,6 +32836,14 @@
                 {
                     "name": "Companion",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Vabbi",
+                    "source": "GWN"
                 }
             ],
             "classes": {
@@ -33536,11 +33561,10 @@
                 }
             ],
             "entries": [
-                "{@variantrule Enchantment|GW}",
-                "Exploit a nearby corpse to create a two low-level Bone Horrors. ",
-                "Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, the target becomes two {@creature Bone Horror|GW|Bone Horrors}. When using the level which appears in the stat block, subtract 2.",
+                "Exploit a nearby corpse to create two low-level Bone Horrors. ",
+                "Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, and the target becomes two {@creature Bone Horror|GW|Bone Horrors}. When using the level that appears in the stat block, subtract 2.",
                 "The {@creature Bone Horror|GW|Bone Horrors} remain for the duration or until they reach zero hit points, at which point they will disintegrate into ash.",
-                "{@creature Bone Horror|GW|Bone Horrors} are friendly to you and your allies for the duration. If you fall {@condition unconscious}, the {@creature Bone Horror|GW|Bone Horrors} becomes hostile towards everything, instead of disintegrating into ash. The {@creature Bone Horror|GW|Bone Horrors} act on your initiative, but take their turn directly after yours. The {@creature Bone Horror|GW|Bone Horrors} are in the DMs control.",
+                "{@creature Bone Horror|GW|Bone Horrors} are friendly to you and your allies for the duration. If you fall {@condition unconscious}, the {@creature Bone Horror|GW|Bone Horrors} becomes hostile towards everything instead of disintegrating into ash. The {@creature Bone Horror|GW|Bone Horrors} act on your initiative but take their turn directly after yours. The {@creature Bone Horror|GW|Bone Horrors} are in the DM's control.",
                 "On each of your turns until the spell ends, you can use your action to animate another two {@creature Bone Horror|GW|Bone Horrors} this way."
             ],
             "source": "GW",
@@ -33588,10 +33612,6 @@
                 },
                 {
                     "name": "Death Magic",
-                    "source": "GW"
-                },
-                {
-                    "name": "Enchantment",
                     "source": "GW"
                 },
                 {
@@ -34854,7 +34874,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/7/7e/Savage_Slash.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Savage_Slash.jpg"
                         }
                     }
                 ]
@@ -34890,6 +34910,14 @@
                 {
                     "name": "Swordsmanship",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Kourna",
+                    "source": "GWN"
                 }
             ],
             "classes": {
@@ -35059,11 +35087,10 @@
                 }
             ],
             "entries": [
-                "{@variantrule Enchantment|GW}",
-                "Exploit a nearby corpse to create a Bone Fiend.",
-                "Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, the target becomes a {@creature Bone Fiend|GW}. ",
+                "Exploit a nearby corpse to create a {@creature Bone Fiend|GW}.",
+                "Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, and the target becomes a {@creature Bone Fiend|GW}. ",
                 "The {@creature Bone Fiend|GW} remains for the duration or until it reaches zero hit points, at which point it will disintegrate into ash.",
-                "The {@creature Bone Fiend|GW} is friendly to you and your allies for the duration. If you fall {@condition unconscious}, the {@creature Bone Fiend|GW} becomes hostile towards everything, instead of disintegrating into ash. The {@creature Bone Fiend|GW} acts on your initiative, but takes it turn directly after yours. The {@creature Bone Fiend|GW} is in the DMs control.",
+                "The {@creature Bone Fiend|GW} is friendly to you and your allies for the duration. If you fall {@condition unconscious}, the {@creature Bone Fiend|GW} becomes hostile towards everything instead of disintegrating into ash. The {@creature Bone Fiend|GW} acts on your initiative but takes its turn directly after yours. The {@creature Bone Fiend|GW} is in the DM's control.",
                 "On each of your turns until the spell ends, you can use your action to animate another Bone Fiend this way."
             ],
             "source": "GW",
@@ -35111,10 +35138,6 @@
                 },
                 {
                     "name": "Death Magic",
-                    "source": "GW"
-                },
-                {
-                    "name": "Enchantment",
                     "source": "GW"
                 },
                 {
@@ -39694,9 +39717,9 @@
             },
             "entries": [
                 "{@variantrule Hex|GW} ",
-                "Cause rust to appear on a group of creature's gear and signets, dealing damage and disrupting signets.",
-                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target takes {@damage 2d8 + 4} cold damage and signet spells take twice as long to cast for the duration. On a successful save, a target takes half as much damage, but suffers no other effect.",
-                "{@variantrule Overcast|GW|Overcast:}. Creatures who failed the saving throw cannot use their signets for the duration, instead of them taking twice as long to cast."
+                "Cause rust to appear on a group of creatures's gear and signets, dealing damage and disrupting signets.",
+                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target takes {@damage 2d8 + 4} cold damage, and {@variantrule signet|GW} spells take twice as long to cast for the duration. On a successful save, a target takes half as much damage but suffers no other effect.",
+                "{@variantrule Overcast|GW|Overcast:} Creatures who failed the saving throw cannot use their {@variantrule signet|GW|signets} for the duration, instead of them taking twice as long to cast."
             ],
             "source": "GW",
             "fluff": {
@@ -39709,7 +39732,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/3/33/Rust.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Rust.jpg"
                         }
                     }
                 ]
@@ -39734,6 +39757,14 @@
                 {
                     "name": "Overcast",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "The Desolation",
+                    "source": "GWN"
                 }
             ],
             "components": {

@@ -987,6 +987,177 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Bone_Fiend_Token.png"
 			}
+		},
+		{
+			"name": "Eve",
+			"source": "GW",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 110,
+				"formula": "20d8 + 20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 12,
+			"int": 17,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"int": "+7",
+				"wis": "+5"
+			},
+			"skill": {
+				"arcana": "+7",
+				"history": "+7"
+			},
+			"passive": 11,
+			"resist": [
+				"necrotic"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Eve casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 15}):"
+					],
+					"will": [
+						"{@spell dancing lights}",
+						"{@spell mage hand}",
+						"{@spell prestidigitation}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell bestow curse}",
+							"{@spell dimension door}",
+							"{@spell mage armor}",
+							"{@spell sending|XPHB}",
+							"{@spell web}"
+						],
+						"1e": [
+							"{@spell circle of death}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Eve makes three Arcane Burst attacks."
+					]
+				},
+				{
+					"name": "Arcane Burst",
+					"entries": [
+						"{@atk ms,rs} {@hit 7} to hit, reach 5 ft. or range 120 ft., one target. {@h}25 ({@damage 4d10 + 3}) necrotic damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Summon Undead (1/Day)",
+					"entries": [
+						"Eve magically summons five {@creature skeleton||skeletons} or {@creature zombie||zombies}. The summoned creatures appear in unoccupied spaces within 60 feet of Eve, whom they obey. They take their turns immediately after Eve. Each lasts for 1 hour, until it or Eve dies, or until Eve dismisses it as a bonus action."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Grim Harvest (1/Turn)",
+					"entries": [
+						"When Eve kills a creature with necrotic damage, she regains 9 ({@damage 2d8}) hit points. "
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"conditionInflictSpell": [
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Born in: Unknown",
+					"Nation: Ascalon",
+					"Profession: Necromancer",
+					"Age: 20",
+					"Eve hasn't a clue where she was born—she was found as a young child stealing food from a sleeping vagrant in the back alleys of Ascalon City. Fortunately for Eve, she was not found by a city guard but by a kindly matron, who brought her to the Holy Dwayna Academy for Wayward & Incorrigible Girls (Ascalon City branch). Wherever Eve had come from, she had already learned to read at an advanced level before she ended up at the school students called the \"Wayward Academy,\" and voraciously devoured every text in the library. It wasn't long before Eve's curiosity (and her ability to both manipulate and avoid Matron Irma) led her to a secret library in the bowels of the Academy. There, forbidden texts opened up an entirely new world to young Eve. By the time she was 15, she had raised her first bone minion.",
+					"Eve had never gotten along with the other girls—she much preferred the company of her tomes and scrolls. When, one day, a few of her fellow students pulled an especially vicious and humiliating prank on her, Eve literally pounced upon the leader of her tormentors, bit the girl’s ear off, and swallowed it whole. That was the end of Eve’s studies at the Holy Dwayna Academy for Wayward & Incorrigible Girls, and not even Matron Irma mourned her departure.",
+					"Eve met Mhenlo, Cynn, Devona, and Aidan during the Charr invasion. She was in the graveyard, experimenting with new methods of undead resurrection, when the Charr flooded into the cemetery on the heels of Mhenlo and the others. More out of curiosity than any noble intentions, Eve ordered the Charr to stop. When the beastly creatures turned on her instead, thinking her easy prey, she simply raised her hands and called forth a small army of the dead to meet them. The Charr never stood a chance. Eve was amused when Devona asked the Necromancer to join them, but has since become a good friend of Devona, Aidan, and Mhenlo. She is often in conflict with Cynn, but the two respect each other’s power enough to get along when the going gets rough. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Eve.jpg"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"RA",
+				"MA"
+			],
+			"languages": [
+				"Common",
+				"Ascalonian",
+				"Orrian",
+				"Krytan"
+			],
+			"languageTags": [
+				"C"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Eve_Token.png"
+			},
+			"isNpc": true,
+			"familiar": true,
+			"damageTags": [
+				"N"
+			],
+			"damageTagsSpell": [
+				"F",
+				"N",
+				"O"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
 		}
 	],
 	"feat": [

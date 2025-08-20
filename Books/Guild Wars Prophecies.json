@@ -315,12 +315,12 @@
                                                 {
                                                     "type": "item",
                                                     "name": "Place of Worship",
-                                                    "entry": "The Catacombs are a place of worship; followers of {@deity Grenth|GW} and his priests regularly brave the dangers below to visit his shrine. A second sect has recently begun using the Catacombs: devotees of {@deity Abaddon|GW} have claimed an ancient ritual chamber and perform forbidden rites to commune with the fallen god. The characters must navigate both holy sites to find the tunnel entrance."
+                                                    "entry": "The Catacombs are a place of worship; followers of {@deity Grenth|Human Gods|GW} and his priests regularly brave the dangers below to visit his shrine. A second sect has recently begun using the Catacombs: devotees of {@deity Abaddon|Human Gods|GW} have claimed an ancient ritual chamber and perform forbidden rites to commune with the fallen god. The characters must navigate both holy sites to find the tunnel entrance."
                                                 },
                                                 {
                                                     "type": "item",
                                                     "name": "Spurned Lover",
-                                                    "entry": "The tunnel breaches the deepest vault, the Screamheart Crypt, where a {@creature Banshee|XMM} has taken residence. Once a necromancer, she lost herself entirely to dark arts in a desperate bid to prove her former lover {@creature Eve|GW} wrong."
+                                                    "entry": "The tunnel breaches the deepest vault, the Screamheart Crypt, where a {@creature Screamheart|GWP} has taken residence. Once a necromancer, she lost herself entirely to dark arts in a desperate bid to prove her former lover {@creature Eve|GW} wrong."
                                                 }
                                             ]
                                         }
@@ -363,12 +363,16 @@
                                             "type": "list",
                                             "columns": 2,
                                             "items": [
-                                                "{@creature Animated Armor|XMM}",
-                                                "{@creature Banshee|XMM}",
+                                                "{@creature Bone Horror|GW}",
+                                                "{@creature Crypt Fiend|GWP}",
                                                 "{@creature Deadly Crypt Spider|GWP}",
                                                 "{@creature Raging Cadaver|GWP}",
                                                 "{@creature Restless Corpse|GWP}",
-                                                "{@creature Shatter Gargoyle|GWP}"
+                                                "{@creature Restless Armor|GWP}",
+                                                "{@creature Screamheart|GWP}",
+                                                "{@creature Shatter Gargoyle|GWP}",
+                                                "{@creature Skullreaver|GWP}",
+                                                "{@creature Tomb Nightmare|GWP}"
                                             ]
                                         },
                                         {
@@ -390,8 +394,20 @@
                                                 [
                                                     "Maria Iceheart",
                                                     "Spurned lover turned banshee",
-                                                    "{@creature Banshee|XMM}",
+                                                    "{@creature Screamheart|GWP}",
                                                     "{@area Screamheart Crypt|GWP3c6h|x}"
+                                                ],
+                                                [
+                                                    "Vatlaaw Doomtooth",
+                                                    "Mastermind of the tunnel",
+                                                    "{@creature Vatlaaw Doomtooth|GWP}",
+                                                    "Not in the Catacombs, but clues to his plan can be found in the Catacombs"
+                                                ],
+                                                [
+                                                    "Eve",
+                                                    "Ex-Girlfriend of Maria Iceheart",
+                                                    "{@creature Eve|GWP}",
+                                                    "Not in the Catacombs, but is the target of Maria's obsession"
                                                 ]
                                             ]
                                         }
@@ -409,6 +425,7 @@
                                             "columns": 2,
                                             "items": [
                                                 "{@skill Arcana}",
+                                                "{@skill Atheletics}",
                                                 "{@skill Investigation}",
                                                 "{@skill Perception}",
                                                 "{@skill Religion}"
@@ -419,7 +436,9 @@
                                             "type": "list",
                                             "columns": 2,
                                             "items": [
-                                                "{@spell detect magic|xphb}"
+                                                "{@spell detect magic|xphb}",
+                                                "{@spell feather fall|xphb}",
+                                                "{@spell knock|xphb}"
                                             ]
                                         }
                                     ]
@@ -447,6 +466,17 @@
                                             "entries": [
                                                 "{@creature Vatlaaw Doomtooth|GWP}, a Blood Legion centurion and strategist of the Searing, concluded that the Searing Cauldrons’ full devastation required one to be placed south of the Wall. His solution was a covert link from Piken Square—once a human settlement, now a {@race Charr|GW} outpost—into the Catacombs, then ferrying a Cauldron through the underways to the mountains overlooking Ascalon City.",
                                                 "To mask the work, he manipulated local grawl and bandits: the grawl were promised a powerful god, while human royalists received weapons to attempt an uprising against King Adelbern. Doomtooth has since left the Catacombs to prepare for the Searing, but following the tunnel all the way to Piken Square may reveal traces of his plan."
+                                            ]
+                                        },
+                                        {
+                                            "type": "entries",
+                                            "name": "Eve",
+                                            "id": "GWP3c4c",
+                                            "entries": [
+                                                "From The Guild Wars Factions Manuscripts:",
+                                                "{@i \"Eve hasn't a clue where she was born—she was found as a young child stealing food from a sleeping vagrant in the back alleys of Ascalon City. Fortunately for Eve, she was not found by a city guard but by a kindly matron, who brought her to the Holy Dwayna Academy for Wayward & Incorrigible Girls (Ascalon City branch). Wherever Eve had come from, she had already learned to read at an advanced level before she ended up at the school students called the \"Wayward Academy,\" and voraciously devoured every text in the library. It wasn't long before Eve's curiosity (and her ability to both manipulate and avoid Matron Irma) led her to a secret library in the bowels of the Academy. There, forbidden texts opened up an entirely new world to young Eve. By the time she was 15, she had raised her first bone minion.}",
+                                                "{@i \"Eve had never gotten along with the other girls—she much preferred the company of her tomes and scrolls. When, one day, a few of her fellow students pulled an especially vicious and humiliating prank on her, Eve literally pounced upon the leader of her tormentors, bit the girl’s ear off, and swallowed it whole. That was the end of Eve’s studies at the Holy Dwayna Academy for Wayward & Incorrigible Girls, and not even Matron Irma mourned her departure.}",
+                                                "{@i \"Eve met Mhenlo, Cynn, Devona, and Aidan during the Charr invasion. She was in the graveyard, experimenting with new methods of undead resurrection, when the Charr flooded into the cemetery on the heels of Mhenlo and the others. More out of curiosity than any noble intentions, Eve ordered the Charr to stop. When the beastly creatures turned on her instead, thinking her easy prey, she simply raised her hands and called forth a small army of the dead to meet them. The Charr never stood a chance. Eve was amused when Devona asked the Necromancer to join them, but has since become a good friend of Devona, Aidan, and Mhenlo. She is often in conflict with Cynn, but the two respect each other’s power enough to get along when the going gets rough.\"}"
                                             ]
                                         }
                                     ]
@@ -1073,8 +1103,16 @@
                                                         },
                                                         {
                                                             "type": "entries",
-                                                            "name": "Connections",
+                                                            "name": "Advancement",
                                                             "id": "GWP3c6e2",
+                                                            "entries": [
+                                                                "If the party is not level 3 or higher, they gain enough experience to reach level 3 after completing this area."
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "entries",
+                                                            "name": "Connections",
+                                                            "id": "GWP3c6e3",
                                                             "entries": [
                                                                 {
                                                                     "type": "list",
@@ -1381,8 +1419,16 @@
                                                         },
                                                         {
                                                             "type": "entries",
-                                                            "name": "Connections",
+                                                            "name": "Advancement",
                                                             "id": "GWP3c6g2",
+                                                            "entries": [
+                                                                "If the party is not level 3 or higher, they gain enough experience to reach level 3 after completing this area."
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "entries",
+                                                            "name": "Connections",
+                                                            "id": "GWP3c6g3",
                                                             "entries": [
                                                                 {
                                                                     "type": "list",
@@ -1509,8 +1555,16 @@
                                                         },
                                                         {
                                                             "type": "entries",
-                                                            "name": "Connections",
+                                                            "name": "Advancement",
                                                             "id": "GWP3c6h2",
+                                                            "entries": [
+                                                                "If the party is not level 4 or higher, they gain enough experience to reach level 4 after completing this area."
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "entries",
+                                                            "name": "Connections",
+                                                            "id": "GWP3c6h3",
                                                             "entries": [
                                                                 {
                                                                     "type": "list",
@@ -1731,10 +1785,800 @@
                         {
                             "type": "entries",
                             "name": "The Mausoleum",
-                            "page": 22,
+                            "page": 24,
                             "id": "GWP6c",
                             "entries": [
-                                "The Mausoleum"
+                                {
+                                    "type": "list",
+                                    "style": "list-hang-notitle",
+                                    "items": [
+                                        "{@i {@b An adventure for Level 8 characters.}}",
+                                        "{@i Designed to span two to four sessions, including overland travel and a multi-room dungeon.}"
+                                    ]
+                                },
+                                {
+                                    "type": "image",
+                                    "href": {
+                                        "type": "external",
+                                        "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/_Mausoleum__concept_art.jpg"
+                                    },
+                                    "credit": "Daniel Dociu",
+                                    "width": 602,
+                                    "height": 900
+                                },
+                                {
+                                    "type": "section",
+                                    "name": "Key Plot Points",
+                                    "page": 18,
+                                    "id": "GWPgc1",
+                                    "entries": [
+                                        "The following information is key to the adventure's story:",
+                                        {
+                                            "type": "list",
+                                            "style": "list-hang-notitle",
+                                            "items": [
+                                                {
+                                                    "type": "item",
+                                                    "name": "A Land infested by Undead",
+                                                    "entry": "Kryta always had its share of undead, but the recent rise in their numbers is alarming. The Shining Blade and White Mantle are both investigating the cause, both have come to the same conclusion: the Mausoleum of the Kryta Royal Family houses the solution to the undead problem. They believe that the Scepter of Orr, a powerful artifact, is the key to ending the undead threat. The Scepter is rumored to be hidden in the Mausoleum, guarded by powerful undead and other dangers."
+                                                },
+                                                {
+                                                    "type": "item",
+                                                    "name": "Strife for the Scepter",
+                                                    "entry": "Three factions are vying for the Scepter of Orr: the Shining Blade, the White Mantle, and Vizier Khilbron. The Shining Blade seeks to use the Scepter to end the undead threat, while the White Mantle wants to use it to gain power and control over Kryta. Vizier Khilbron, on the other hand, seeks to use the Scepter to open the Door of Komalie, and unleash the Titans."
+                                                },
+                                                {
+                                                    "type": "item",
+                                                    "name": "A Mad King’s Legacy",
+                                                    "entry": "The Mausoleum was built by the first Krytan Monarch, King Mazdak, and later expanded by his descendants. However, it was Mad King Thorn who added the most dangerous defenses to the Mausoleum, including traps, undead guardians, and other dangers. The party must navigate these defenses to reach the Scepter of Orr. One of these defenses captured a powerful demon and god to the White Mantle, the Mursaat Lazarus the Dire who now is in the possession of scepter but cannot leave."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "section",
+                                    "name": "Preparation",
+                                    "page": 18,
+                                    "id": "GWP6c2",
+                                    "entries": [
+                                        "Before running the adventure, prepare as follows:",
+                                        {
+                                            "type": "list",
+                                            "style": "list-hang-notitle",
+                                            "items": [
+                                                {
+                                                    "type": "item",
+                                                    "name": "Step 1",
+                                                    "entry": "Read the {@area Recommended Proficiencies and Spells|GWP6c3|x} section."
+                                                },
+                                                {
+                                                    "type": "item",
+                                                    "name": "Step 2",
+                                                    "entry": "Read {@area Adventure Background|GWP6c4|x}."
+                                                },
+                                                {
+                                                    "type": "item",
+                                                    "name": "Step 3",
+                                                    "entry": "Familiarize yourself with the Key NPCs table below; the characters will interact with these individuals throughout the adventure."
+                                                },
+                                                {
+                                                    "type": "item",
+                                                    "name": "Step 4",
+                                                    "entry": "Bookmark the following stat blocks:"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "list",
+                                            "columns": 2,
+                                            "items": [
+                                                "{@creature Animated Armor|XMM}"
+                                            ]
+                                        },
+                                        {
+                                            "type": "table",
+                                            "caption": "Key NPCs",
+                                            "colLabels": [
+                                                "Name",
+                                                "Role",
+                                                "Stat Block",
+                                                "Location"
+                                            ],
+                                            "colStyles": [
+                                                "col-3-5",
+                                                "col-3-5",
+                                                "col-2-5",
+                                                "col-2-5"
+                                            ],
+                                            "rows": [
+                                                [
+                                                    "Maria Iceheart",
+                                                    "Spurned lover turned banshee",
+                                                    "{@creature Banshee|XMM}",
+                                                    "{@area Screamheart Crypt|GWP3c6h|x}"
+                                                ]
+                                            ]
+                                        },
+                                        {
+                                            "type": "section",
+                                            "name": "Recommended Proficiencies and Spells",
+                                            "page": 18,
+                                            "id": "GWP6c3",
+                                            "entries": [
+                                                "You can run this adventure for any number of Level 8 characters. Ideally, the party should include proficiency in at least two of the following skills:",
+                                                {
+                                                    "type": "list",
+                                                    "columns": 2,
+                                                    "items": [
+                                                        "{@skill Arcana}",
+                                                        "{@skill Investigation}",
+                                                        "{@skill Perception}",
+                                                        "{@skill Religion}"
+                                                    ]
+                                                },
+                                                "Access to the following spells is also helpful:",
+                                                {
+                                                    "type": "list",
+                                                    "columns": 2,
+                                                    "items": [
+                                                        "{@spell detect magic|xphb}"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "section",
+                                            "name": "Adventure Background",
+                                            "page": 18,
+                                            "id": "GWP6c4",
+                                            "entries": [
+                                                {
+                                                    "type": "entries",
+                                                    "name": "The Scepter of Orr",
+                                                    "id": "GWP6c4a",
+                                                    "entries": [
+                                                        "The Scepter of Orr is a powerful artifact gifted to the humans of Orr by the humand gods. It is said to have the power to control beings from the mists, including the undead. The Scepter was lost when Orr sunk beneath the waves, but it is rumored to be hidden in the Mausoleum of the Krytan Royal Family. The Shining Blade and White Mantle are both seeking the Scepter, but for different reasons.",
+                                                        "The Shining Blade seeks to use the Scepter to end the undead threat, and potentially overthrow the White Mantle. Especially Livia is interested in the Scepter, as it is rumored to be able to control the undead. The White Mantle, on the other hand, seeks to use the Scepter to gain power and control over Kryta. Vizier Khilbron, a Lich, is also seeking the Scepter, but for his own purposes. He believes that the Scepter can be used to open the Door of Komalie, and unleash the Titans upon the world.",
+                                                        "The last faction seeking the Scepter is the Mursaat Lazarus the Dire, who is a powerful demon and god to the White Mantle. He is imprisoned in the Mausoleum, and cannot leave. He seeks the Scepter to prevent the White Mantle from using it against him, or other Mursaat. He also believes that the him having the sceptre could prevent the Flameseeker Prophecies from coming true, and the Mursaat being destroyed."
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "entries",
+                                                    "name": "The Mausoleum",
+                                                    "id": "GWP6c4b",
+                                                    "entries": [
+                                                        "The Mausoleum of the Krytan Royal Family is a vast, ancient crypt that houses the remains of the Krytan monarchs. It is said to be haunted by the spirits of the dead, and many adventurers have entered its depths in search of treasure and glory, only to never return. The Mausoleum is also rumored to contain powerful artifacts, including the Scepter of Orr, which is said to have the power to control the undead. It is guarded by a powerful undead dragon known as Rotscale, and other dangers.",
+                                                        "Rotscale was tasked by King Mazdak to guard the Mausoleum, and prevent anyone with ill intent from entering. She is a powerful dragon, but will allow passage to those who prove their intentions are pure, and that they seek to end the undead threat. She is also bound by a pact with the Shining Blade, and will not attack them unless provoked.",
+                                                        "The Mausoleum itself has been retrofitted with traps and defenses by Mad King Thorn, making it a dangerous place to explore. Two other parties have tried and failed to get to the Scepter of Orr: the White Mantle, and Vizier Khilbron."
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "section",
+                                    "name": "Travel to the Mausoleum from Lion's Arch",
+                                    "id": "GWP6c5",
+                                    "entries": [
+                                        "Reaching the Mausoleum can be done overland from Lion’s Arch or by sea to Sanctum Cay and then north. Typical paces and narrative notes are provided below. Adjust for mounts, magic, hazards, and player choices.",
+                                        {
+                                            "type": "entries",
+                                            "name": "Routes",
+                                            "entries": [
+                                                {
+                                                    "type": "entries",
+                                                    "name": "Lion’s Arch → Mausoleum (Overland)",
+                                                    "entries": [
+                                                        "{@b Distance.} 1,000 km; {@b Terrain.} swampy roads through rural Kryta to the Maguuma border; {@b Travel Pace.} normal 26 days; slow 35 days.",
+                                                        "The route passes sparse hamlets and caravans, with Lionguard patrols thinning far from Lion’s Arch. The land grows wilder toward the Maguuma border as jungle mixes with swamp and mesas rise from the marsh."
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "entries",
+                                                    "name": "Lion’s Arch → Sanctum Cay (Sea)",
+                                                    "entries": [
+                                                        "{@b Distance.} 590 km; {@b Terrain.} ocean; {@b Travel Pace.} normal 8 days.",
+                                                        "A coastal voyage with few other vessels sighted."
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "entries",
+                                                    "name": "Sanctum Cay → Mausoleum (Overland)",
+                                                    "entries": [
+                                                        "{@b Distance.} 650 km; {@b Terrain.} swampy roads skirting the bay northward; {@b Travel Pace.} normal 17 days; slow 22 days.",
+                                                        "Traffic includes farmers and guards bound for Fisherman’s Haven and Lion’s Arch; the land again grows wilder near the Maguuma border."
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "entries",
+                                            "name": "Travel Encounters",
+                                            "id": "GWP6c5a",
+                                            "entries": [
+                                                {
+                                                    "type": "entries",
+                                                    "name": "Ship: Dolphins’ Warning",
+                                                    "entries": [
+                                                        "A school of {@creature dolphin|XMM}, led by a {@creature dolphin delighter|XMM|dolphin delighter} named Roseskin, paces the ship. Conversing with her (via magic or creative means) earns a warning about harpies ahead. Skirting the threat adds a day to the voyage; facing it now grants a few characters temporary hit points, at the DM’s discretion. If the party leaves a particularly good impression, there’s a 50% chance a dolphin rescues anyone who falls overboard during this leg."
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "entries",
+                                                    "name": "Ship: Harpy Ambush",
+                                                    "entries": [
+                                                        "Eight {@creature harpy|XMM} attempt to wreck the ship—half remain on coastal rocks using Luring Song while the others tear rigging and pitch sailors overboard."
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "entries",
+                                                    "name": "First Night Out: The Restless",
+                                                    "entries": [
+                                                        "Camp is assailed by 5 {@creature zombie|XMM} and 1 {@creature beholder zombie|XMM}. The undead attempt to overwhelm sleepers before fleeing light or superior force."
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "entries",
+                                                    "name": "Merchant: Nicholas and Yakkington",
+                                                    "entries": [
+                                                        "On the road, the party meets Nicholas Sandford and his trusty yak, Professor Yakkington—offer his current wares at whatever discount they’ve earned so far."
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "entries",
+                                                    "name": "Seventh Night: Will-o’-Wisps’ Dance",
+                                                    "entries": [
+                                                        "A troupe of 10 {@creature will-o'-wisp|XMM} drifts overhead around midnight. If unprovoked or kept at 120 feet or more, they dance and disperse. If engaged, they focus the weakest target with Consume Life, then retreat toward their grove if endangered. Following unseen leads to a Spiritwood stand; harvesting yields up to 50 planks with a full day’s work (roughly 4 planks/hour) under daylight."
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "entries",
+                                                    "name": "Refugees from Lonely Creek",
+                                                    "entries": [
+                                                        "A caravan of Krytan refugees led by Marianne Strawsoul reports rising undead activity near Lonely Creek and a lack of aid. If asked about Ingrid Oakheart, Marianne recalls a medicine woman who left years ago, abandoning her hut."
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "entries",
+                                                    "name": "Twenty-First Night: The Ape Raid… and Worse",
+                                                    "entries": [
+                                                        "A band of 8 {@creature ape|XMM} led by 1 {@creature giant ape|XMM} raids for supplies. If all are asleep, a {@dc 15} Wisdom ({@skill Perception}) check notices the theft in time; otherwise the apes surprise the camp.",
+                                                        "At the end of round 2, three {@creature tyrannosaurus zombie|ToA} crash into the scene, chasing both apes and PCs. Run a wilderness chase (see {@book Dungeon Master’s Guide|XDMG|2|Beginning a Chase} and {@book Dungeon Master’s Guide|XDMG|2|Chase Complications})."
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "section",
+                                    "name": "The Hut in the Bog",
+                                    "id": "GWP6c6",
+                                    "entries": [
+                                        {
+                                            "type": "insetReadaloud",
+                                            "entries": [
+                                                "Fog clings to rotting posts and rust-eaten blades that jut from the peat. A faint, beckoning light dances deeper in the mire. Ahead squats a wide-roofed hut on stilts beside a crude pen—inside, two hulking, reeking beasts loom over a smaller shape."
+                                            ]
+                                        },
+                                        "Ivy might recognize the hut as distinctly Norn-built. The pen holds two {@creature catoblepas|MPMM} guarding what appears to be a calf—but in truth they’re warding a paralyzed prisoner of the hag inside: {@creature Livia|GWP} of the Shining Blade under a silent illusion. A character can discern the illusion with a {@dc 17} Intelligence ({@skill Investigation}) check. Removing a black thorn from Livia’s flesh with a {@dc 13} Wisdom ({@skill Medicine}) check ends the paralysis.",
+                                        "Inside lurks {@creature Arboria Woodcurse|GWP}, a wood hag, who offers safe passage for a body part. If refused, she uses Animate Hut (action), ejecting intruders and dropping concentration on {@spell silent image|xphb}. A {@creature corpse flower|MPMM} attacks from behind the hut once the fight begins.",
+                                        {
+                                            "type": "entries",
+                                            "name": "Treasure",
+                                            "entries": [
+                                                "Among crates and hooks the party finds:",
+                                                {
+                                                    "type": "table",
+                                                    "caption": "Hag’s Loot",
+                                                    "colLabels": [
+                                                        "Qty",
+                                                        "Item"
+                                                    ],
+                                                    "colStyles": [
+                                                        "col-1-5",
+                                                        "col-10-5"
+                                                    ],
+                                                    "rows": [
+                                                        [
+                                                            "1",
+                                                            "{@item Prosthetic Limb|XDMG} (unidentified)"
+                                                        ],
+                                                        [
+                                                            "1",
+                                                            "{@item Potion of Greater Healing|XDMG}"
+                                                        ],
+                                                        [
+                                                            "1",
+                                                            "{@item Rapier of Vengeance|XDMG} (unidentified)"
+                                                        ],
+                                                        [
+                                                            "1",
+                                                            "{@spell Dust Trap|GW|Scroll of Dust Trap} (scroll)"
+                                                        ],
+                                                        [
+                                                            "1",
+                                                            "{@spell Lava Arrows|GW|Scroll of Lava Arrows} (scroll)"
+                                                        ],
+                                                        [
+                                                            "1",
+                                                            "{@spell Berserker Stance|GW|Scroll of Berserker Stance} (scroll)"
+                                                        ],
+                                                        [
+                                                            "—",
+                                                            "65 pp, 422 gp, 210 sp"
+                                                        ]
+                                                    ]
+                                                },
+                                                "A trapped closet ({@spell glyph of warding|xphb} – contagion; {@dc 17} Wisdom [{@skill Perception}] to notice) contains heirlooms Ingrid left for Ivy:",
+                                                {
+                                                    "type": "table",
+                                                    "caption": "Ingrid’s Cache",
+                                                    "colLabels": [
+                                                        "Qty",
+                                                        "Item"
+                                                    ],
+                                                    "colStyles": [
+                                                        "col-1-5",
+                                                        "col-10-5"
+                                                    ],
+                                                    "rows": [
+                                                        [
+                                                            "1",
+                                                            "{@item Bramble Buckler|griffonssaddlebag2} (unidentified)"
+                                                        ],
+                                                        [
+                                                            "1",
+                                                            "{@item Wildskin Armor|griffonssaddlebag2} (unidentified)"
+                                                        ],
+                                                        [
+                                                            "1",
+                                                            "{@item Feywood Ivy|griffonssaddlebag2} (unidentified)"
+                                                        ],
+                                                        [
+                                                            "1",
+                                                            "{@spell Ferocious Strike|GW|Scroll of Ferocious Strike} (scroll)"
+                                                        ],
+                                                        [
+                                                            "—",
+                                                            "58 cp"
+                                                        ]
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        "Ingrid’s journal outlines research into druids, Maguuma, and a 10,000-year stellar cycle. She left for the druid village of Maguuma Stade. A final message to Ivy bequeaths the gear and urges her to seek Ingrid when ready."
+                                    ]
+                                },
+                                {
+                                    "type": "section",
+                                    "name": "Shining Blade Camp",
+                                    "id": "GWP6c7",
+                                    "entries": [
+                                        "Livia leads the party to a Shining Blade outpost in Dakutu Village to meet {@creature Evennia|GW} and {@creature Markis|GW}. If the characters reveal dealings with the White Mantle, the Blade warns caution: the ‘Unseen Gods,’ motives in Kryta, the Eye of Janthir, and the fate of the Chosen remain uncertain. The party may rest here and receive a guide to the Mausoleum entrance."
+                                    ]
+                                },
+                                {
+                                    "type": "section",
+                                    "name": "Exploring the Mausoleum",
+                                    "id": "GWP6c8",
+                                    "entries": [
+                                        {
+                                            "type": "entries",
+                                            "name": "MA1: Exterior",
+                                            "id": "GWP6c8a",
+                                            "entries": [
+                                                {
+                                                    "type": "insetReadaloud",
+                                                    "entries": [
+                                                        "A rough-hewn stone platform juts from jungle growth. Six vine-choked pillars frame a grand stair half-buried in debris. At its summit, before a spiked portal, a colossal bone dragon crouches—four smaller drakes flanking like sentries."
+                                                    ]
+                                                },
+                                                "{@b Rotscale’s Vigil.} {@creature Rotscale|GWP|Adult Bone Dragon} guards the gate with four {@creature Young Bone Dragon|GWP}. While within 1 mile of the lair (but not inside the dungeon), bone spikes make all non-ally travel difficult terrain, and local water is corrupted: a creature that drinks it must succeed on a {@dc 15} Constitution saving throw or fall {@condition unconscious} for 1 minute.",
+                                                {
+                                                    "type": "entries",
+                                                    "name": "Parley with the Guardian",
+                                                    "entries": [
+                                                        "Rotscale was tasked by King Mazdak to bar intruders. She allows passage only if convinced the party will end the undead threat by securing the {@item Scepter of Orr|GW}. Showing the proper key to the final vault (the Key of Madness) and a credible plan suffices. She doesn’t pursue fleeing foes. When the party returns carrying the Scepter, she overlooks other pilfered loot and, if they spoke with King Jadon within, gifts the recorded spells {@spell Grenth's Balance|GW} and {@spell Feast of Corruption|GW} into a party member’s {@item Tome of Capture|GW}."
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "entries",
+                                            "name": "MA2: Entombed Royalty",
+                                            "id": "GWP6c8b",
+                                            "entries": [
+                                                {
+                                                    "type": "insetReadaloud",
+                                                    "entries": [
+                                                        "Chill, dry air replaces jungle humidity. A 10-foot-wide passage stretches 150 feet, paneled in ornate stone. Every five feet a niche holds a sarcophagus with weathered copper nameplates long since corroded away."
+                                                    ]
+                                                },
+                                                "{@b Rite of Respect.} To pass unmolested, creatures must bow before each sarcophagus; ignore the rite and a {@creature mummy|XMM} emerges to attack.",
+                                                "{@b King Jadon’s Shade.} At the T-intersection midway lies the spirit of King Jadon. He relates how his death led to the Mausoleum’s defenses (by Mad King Thorn) trapping {@creature Lazarus the Dire|GWP} within, making entry impossible without the Key of Madness. King Jadon’s own coffin stands broken and empty.",
+                                                "{@b Door to A3.} Wooden door (AC 15, 18 hp) locked; {@dc 15} Dexterity ({@item Thieves' Tools|XPHB}) to pick. Trap: {@spell glyph of warding|xphb} (finger of death), {@dc 15} Wisdom ({@skill Perception}) to notice."
+                                            ]
+                                        },
+                                        {
+                                            "type": "entries",
+                                            "name": "MA3: Embalming Room",
+                                            "id": "GWP6c8c",
+                                            "entries": [
+                                                {
+                                                    "type": "insetReadaloud",
+                                                    "entries": [
+                                                        "A coppery tang of old blood hangs over two stone slabs beside ranks of canopic jars. Hooks and embalming tools line the walls. A leather-bound ledger rests on a writing desk."
+                                                    ]
+                                                },
+                                                "{@b Jars & Tools.} Ancient organs (one fresh set), and well-kept, high-quality implements of mummification.",
+                                                {
+                                                    "type": "entries",
+                                                    "name": "Royal Ledger",
+                                                    "entries": [
+                                                        "The ledger records mummifications across the ages (sample shown):",
+                                                        {
+                                                            "type": "table",
+                                                            "caption": "Select Royal Interments",
+                                                            "colLabels": [
+                                                                "Year (AE)",
+                                                                "Royal",
+                                                                "Practitioner"
+                                                            ],
+                                                            "colStyles": [
+                                                                "col-2",
+                                                                "col-6",
+                                                                "col-4"
+                                                            ],
+                                                            "rows": [
+                                                                [
+                                                                    "1",
+                                                                    "King Mazdak",
+                                                                    "High Priest Kanut"
+                                                                ],
+                                                                [
+                                                                    "56",
+                                                                    "Queen Safira",
+                                                                    "High Priestess Kuzu"
+                                                                ],
+                                                                [
+                                                                    "300",
+                                                                    "King Muslu",
+                                                                    "High Priest Cebrail"
+                                                                ],
+                                                                [
+                                                                    "402",
+                                                                    "King Percy",
+                                                                    "General Colin"
+                                                                ],
+                                                                [
+                                                                    "825",
+                                                                    "King Oswald Thorn",
+                                                                    "Prince Edrick Thorn"
+                                                                ],
+                                                                [
+                                                                    "966",
+                                                                    "Queen Annette",
+                                                                    "High Priestess Petra"
+                                                                ],
+                                                                [
+                                                                    "1070",
+                                                                    "King Jadon",
+                                                                    "Obryn"
+                                                                ],
+                                                                [
+                                                                    "1112",
+                                                                    "King Aidan",
+                                                                    "High Priestess Aileen"
+                                                                ]
+                                                            ]
+                                                        },
+                                                        "A {@dc 20} Intelligence ({@skill History}) check recalls Kryta’s Elonian occupation after 300 AE, explains gaps, and notes the incongruity of Jadon’s interment here.",
+                                                        "{@b Hidden Chest.} An invisible chest sits in the southwest corner (find with {@dc 20} Intelligence [{@skill Investigation}] while searching that corner). Opening requires {@dc 25} Dexterity ({@item Thieves' Tools|XPHB})."
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "entries",
+                                                    "name": "Treasure",
+                                                    "entries": [
+                                                        {
+                                                            "type": "table",
+                                                            "caption": "Embalming Room Hoard",
+                                                            "colLabels": [
+                                                                "Player Count",
+                                                                "Treasure",
+                                                                "Notes"
+                                                            ],
+                                                            "colStyles": [
+                                                                "col-2",
+                                                                "col-7",
+                                                                "col-3"
+                                                            ],
+                                                            "rows": [
+                                                                [
+                                                                    "—",
+                                                                    "12 pp; 726 gp",
+                                                                    "Coin in the chest"
+                                                                ],
+                                                                [
+                                                                    "1",
+                                                                    "{@item Blowgun of Warning|XDMG} (unidentified)",
+                                                                    "In the chest"
+                                                                ],
+                                                                [
+                                                                    "1",
+                                                                    "{@item Scorpio Plate Armor|griffonssaddlebag2} (unidentified)",
+                                                                    "In the chest"
+                                                                ],
+                                                                [
+                                                                    "1",
+                                                                    "{@item Potion of Superior Healing|XDMG}",
+                                                                    "In the chest"
+                                                                ],
+                                                                [
+                                                                    "1",
+                                                                    "Red 1-foot orb (see {@area A8: Ray Puzzle|GWP6c8h|x})",
+                                                                    "In the chest"
+                                                                ]
+                                                            ]
+                                                        },
+                                                        "A false bottom ({@dc 20} Wisdom [{@skill Perception}] or {@dc 17} Intelligence [{@skill Investigation}] while open) hides:",
+                                                        {
+                                                            "type": "table",
+                                                            "caption": "False Bottom",
+                                                            "colLabels": [
+                                                                "Qty",
+                                                                "Item"
+                                                            ],
+                                                            "colStyles": [
+                                                                "col-1-5",
+                                                                "col-10-5"
+                                                            ],
+                                                            "rows": [
+                                                                [
+                                                                    "1",
+                                                                    "{@spell Crystal Wave|GW|Scroll of Crystal Wave}"
+                                                                ],
+                                                                [
+                                                                    "1",
+                                                                    "{@spell Signet of Devotion|GW|Scroll of Signet of Devotion}"
+                                                                ],
+                                                                [
+                                                                    "1",
+                                                                    "{@item Diamond|XDMG} (worth 437 gp)"
+                                                                ],
+                                                                [
+                                                                    "1",
+                                                                    "{@item Dust of the Mummy|IMR} (unidentified)"
+                                                                ],
+                                                                [
+                                                                    "1",
+                                                                    "{@item Mummy Rot Antidote|IMR} (unidentified)"
+                                                                ]
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "entries",
+                                            "name": "MA4: The Acid Room",
+                                            "id": "GWP6c8d",
+                                            "entries": [
+                                                {
+                                                    "type": "insetReadaloud",
+                                                    "entries": [
+                                                        "Acid stings your nose. Two narrow channels run along the long walls, fed by southern ceiling grates and draining north through floor grates. An ornate double door faces the way you came."
+                                                    ]
+                                                },
+                                                "{@b Layout.} 30×45-foot room. Iron grates (AC 17, 52 hp) bolt into stone; acid flows continuously. A 5-foot stretch of the west wall is illusory, its threshold 1 foot above the acid (notice with {@dc 20} Intelligence [{@skill Investigation}] when examining that spot). The northern double door is a fake, discoverable with {@dc 20} Intelligence ({@skill Investigation}) or by any lockpicking attempt that beats {@dc 25} but finds no mechanism.",
+                                                "{@b Acid.} Contact deals {@damage 4d6} acid; fully submerging a nonmagical, non-stone, non-iron item dissolves it in 1 round.",
+                                                "{@b Symbols.} Two {@spell symbol|xphb} (Sleep) glyphs are inscribed mid-room (find {@dc 16} Wisdom [{@skill Perception}], save {@dc 16} Wisdom).",
+                                                "{@b Timer & Puddings.} Five rounds after the first creature enters, the entry door slams shut and locks (steel; AC 19, 72 hp, DC 25). Simultaneously, two {@creature black pudding|XMM} ooze out of the northern drains, clogging them. Starting on the next round, acid spreads 10 feet per round from each drain. Defeating the oozes doesn’t clear the blockage; a creature adjacent to a drain can use an action and either succeed on a {@dc 15} Dexterity ({@skill Sleight of Hand}) check or a {@dc 17} Strength ({@skill Athletics}) check to clear it, taking acid contact in the process.",
+                                                {
+                                                    "type": "entries",
+                                                    "name": "Pudding Loot",
+                                                    "entries": [
+                                                        "Each puddle contains half-digested gear:",
+                                                        {
+                                                            "type": "table",
+                                                            "caption": "Black Pudding Drops",
+                                                            "colLabels": [
+                                                                "Creature",
+                                                                "Treasure"
+                                                            ],
+                                                            "colStyles": [
+                                                                "col-4",
+                                                                "col-8"
+                                                            ],
+                                                            "rows": [
+                                                                [
+                                                                    "West Pudding",
+                                                                    "{@item Shield of Blinding|bookofebontides} (unidentified); Black 1-foot orb (see {@area A8: Ray Puzzle|GWP6c8h|x})"
+                                                                ],
+                                                                [
+                                                                    "East Pudding",
+                                                                    "1 {@item Amber Runestone|NRH-TLT} (unidentified)"
+                                                                ]
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "entries",
+                                            "name": "MA5: Storage Room",
+                                            "id": "GWP6c8e",
+                                            "entries": [
+                                                "Shelves of bandages, resins, and masonry tools surround a central workbench—everything needed for embalming and internment. A {@dc 18} Wisdom ({@skill Perception}) check notes recent use within the last two years. Many groups who escape A4 via teleport arrive here."
+                                            ]
+                                        },
+                                        {
+                                            "type": "entries",
+                                            "name": "MA6: Corridor of Golems",
+                                            "id": "GWP6c8f",
+                                            "entries": [
+                                                {
+                                                    "type": "insetReadaloud",
+                                                    "entries": [
+                                                        "A broad hall ends at a massive door without a keyhole. Torches along the walls glow in shifting hues opposite hulking statues, each set with a differently colored gem and a distinct expression."
+                                                    ]
+                                                },
+                                                "{@b Door.} Immune to damage unless dispelled ({@spell dispel magic|xphb} at {@dc 15}); then it becomes a normal steel door (AC 19, 72 hp, DC 25). Three gem-sockets form a triangle; placing gems totaling 3,500 gp or more opens the door.",
+                                                "{@b Puzzle.} Set each torch’s color to match the expression of the statue opposite it by dealing one of the listed damage types to the torch. Disturbing a torch, trying to move it, tampering with a gem, or setting the wrong color awakens the corresponding golem to attack. Setting the correct color causes the golem to place its gem in the door, then return to its post.",
+                                                {
+                                                    "type": "table",
+                                                    "caption": "Torch–Golem Matching",
+                                                    "colLabels": [
+                                                        "Torch Color",
+                                                        "Target Color",
+                                                        "Expression",
+                                                        "Damage Types",
+                                                        "Gem (Value)"
+                                                    ],
+                                                    "colStyles": [
+                                                        "col-2",
+                                                        "col-2",
+                                                        "col-3",
+                                                        "col-3",
+                                                        "col-2"
+                                                    ],
+                                                    "rows": [
+                                                        [
+                                                            "Red",
+                                                            "Blue",
+                                                            "Tired",
+                                                            "Cold, Lightning",
+                                                            "Sapphire (1,100 gp)"
+                                                        ],
+                                                        [
+                                                            "Green",
+                                                            "Red",
+                                                            "Angry",
+                                                            "Fire, Force",
+                                                            "Ruby (950 gp)"
+                                                        ],
+                                                        [
+                                                            "Blue",
+                                                            "Green",
+                                                            "Queasy",
+                                                            "Acid, Poison",
+                                                            "Emerald (1,500 gp)"
+                                                        ]
+                                                    ]
+                                                },
+                                                "{@b Secret.} Behind the second statue: secret door ({@dc 20} Wisdom [{@skill Perception}] or {@dc 15} Intelligence [{@skill Investigation}]; DCs –5 while its golem is away). Stone door (AC 17, 40 hp, DC 20) is locked."
+                                            ]
+                                        },
+                                        {
+                                            "type": "entries",
+                                            "name": "MA7: Royal Treasury",
+                                            "id": "GWP6c8g",
+                                            "entries": [
+                                                {
+                                                    "type": "insetReadaloud",
+                                                    "entries": [
+                                                        "A round chamber with a lavish rug. Three chests sit at the cardinal points, firelight dancing on polished hinges."
+                                                    ]
+                                                },
+                                                "Mad King Thorn stored his hoard here—and trapped it. Each chest is a {@creature mimic|XMM}, and the carpet is an {@creature animated rug of smothering|XMM}. Speaking “{@italic Mad King Thorn says freeze!}” (or similar) on entry pacifies them; otherwise, opening any chest triggers all to attack.",
+                                                "{@b Rug.} Worth 450 gp if intact.",
+                                                {
+                                                    "type": "table",
+                                                    "caption": "Treasury Contents (by Chest)",
+                                                    "colLabels": [
+                                                        "Chest",
+                                                        "Treasure"
+                                                    ],
+                                                    "colStyles": [
+                                                        "col-2",
+                                                        "col-10"
+                                                    ],
+                                                    "rows": [
+                                                        [
+                                                            "North",
+                                                            "367 gp; {@item Watch of Prospecting|whereevillives}; Orange 1-foot orb (see {@area A8: Ray Puzzle|GWP6c8h|x}); {@spell Martyr|GW|Scroll of Martyr}"
+                                                        ],
+                                                        [
+                                                            "West",
+                                                            "44 pp; {@item Deck of Wonder|BMT}"
+                                                        ],
+                                                        [
+                                                            "South",
+                                                            "2 × {@item Diamond|XDMG} (300 gp each)"
+                                                        ]
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "entries",
+                                            "name": "MA8: Ray Puzzle",
+                                            "id": "GWP6c8h",
+                                            "entries": [
+                                                {
+                                                    "type": "insetReadaloud",
+                                                    "entries": [
+                                                        "Beyond a heavy door lies a small chamber with a corridor opposite. A pedestal in the center bears a softly glowing green orb. Branching off the corridor are four pairs of side tunnels; at the ends, faint shimmers and grim visages await."
+                                                    ]
+                                                },
+                                                "{@b Anti-Magic.} Each orb is tied to an anti-magic field; destroying an orb expands the field 5 feet eastward along the corridor. If enough are destroyed, the field eventually blankets the center.",
+                                                {
+                                                    "type": "entries",
+                                                    "name": "Orbs & Counter-Beams",
+                                                    "entries": [
+                                                        {
+                                                            "type": "list",
+                                                            "style": "list-hang-notitle",
+                                                            "items": [
+                                                                "{@b Red.} Nearly indestructible—only the mightiest destruction magic can break it. Counter: Disintegration ray.",
+                                                                "{@b Black.} Teeming with life energy; only the foulest magic can snuff it. Counter: Death ray.",
+                                                                "{@b Orange.} Buzzing with motion; stasis spells doom it. Counter: Petrification ray.",
+                                                                "{@b Green.} A delicate purifying system destroyed by disruption. Counter: Enervation ray."
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                "{@b Faces & Rays.} Each eastern alcove bears a face that fires when a creature or the matching orb stands before it: Enervation (Con {@dc 16}; {@damage 3d8} poison and {@condition poisoned} [no healing] on fail), Petrification (Con {@dc 16}; {@condition restrained} on first failure, becomes {@condition petrified} on second), Death (Dex {@dc 16}; {@damage 10d10} necrotic; target dies if reduced to 0 hp), Disintegration (Dex {@dc 16}; {@damage 8d8} force; object/force creations disintegrate; a creature reduced to 0 hp turns to dust). A beam striking the anti-magic field or its corresponding orb dissipates and destroys that orb.",
+                                                "{@b Exit.} Steel door to A9 (AC 19, 72 hp, DC 25) is locked."
+                                            ]
+                                        },
+                                        {
+                                            "type": "entries",
+                                            "name": "MA9: Antechamber of the Vault",
+                                            "id": "GWP6c8i",
+                                            "entries": [
+                                                "Stairs descend to monumental doors with no keyhole. They open only to the Key of Madness and resist all other entry."
+                                            ]
+                                        },
+                                        {
+                                            "type": "entries",
+                                            "name": "MA10: Treasure Vault",
+                                            "id": "GWP6c8j",
+                                            "entries": [
+                                                {
+                                                    "type": "insetReadaloud",
+                                                    "entries": [
+                                                        "Laughter echoes as the doors grind open. A triangular chamber spreads before you, two acid streams sliding from the rear corners toward the far tip. Six pillars flank the flows. Hovering at the center, clawed and radiant with spectral pinions, stands a golden-armored figure gripping a baroque scepter—and looking exhausted."
+                                                    ]
+                                                },
+                                                "{@b Lazarus the Dire.} The Mursaat necromancer has waited centuries. On entry he seals the rear grates (as in A4: AC 15, 50 hp, or {@spell dispel magic|xphb}) and attacks, leveraging eye rays to inflict conditions before using {@spell virulence|GW}. He hovers over acid and uses telekinesis to hurl foes into the streams. If the party hides behind pillars, he blasts them with disintegration; a ruined pillar collapses the ceiling around it, creating difficult terrain and forcing creatures within 5 feet to make a Dexterity save {@dc 16} or take {@damage 4d6} bludgeoning and fall {@condition prone}.",
+                                                "{@b Resolution.} When defeated, the acid stops, dungeon traps deactivate, and Lazarus promises a deadlier rematch before disintegrating. King Jadon’s spirit appears, recounts his murder and the vault’s history, then departs. The {@item Scepter of Orr|GW} lies at the scene.",
+                                                {
+                                                    "type": "entries",
+                                                    "name": "Conclusion",
+                                                    "entries": [
+                                                        "Outside, a White Mantle detachment demands the Scepter. Handing it over ensures safe passage to Lion’s Arch; refusing without convincing argument provokes a fight."
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
                             ]
                         },
                         {

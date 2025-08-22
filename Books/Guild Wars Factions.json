@@ -37945,9 +37945,9 @@
                 }
             ],
             "entries": [
+                "{@variantrule Overcast|GW|Overcast:} 2",
                 "Send out streaks of cold energy.",
-                "Choose one creature that you can see within range. The target must make a Dexterity saving throw. On a failed save, the target takes {@damage 5d8} cold damage. On a successful save, the target takes half as much damage.",
-                "{@variantrule Overcast|GW|Overcast:} Each creature other than the target in a 15-foot Emanation around the target must make a Dexterity saving throw. On a failed save, a target takes {@damage 5d8} cold damage. On a successful save, a target takes half as much damage."
+                "Choose one creature that you can see within range. The target must make a Dexterity saving throw. On a failed save, the target takes {@damage 5d8} cold damage. On a successful save, the target takes half as much damage. If the target was under the effect of a harmful water-themed spell, each creature other than the target in a 15-foot Emanation around the target must make a Dexterity saving throw. On a failed save, a target takes {@damage 5d8} cold damage. On a successful save, a target takes half as much damage."
             ],
             "source": "GWF",
             "fluff": {
@@ -49259,6 +49259,482 @@
                 "SGT",
                 "TP"
             ]
+        },
+        {
+            "name": "Teinai's Crystals",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "Gather ice shards around a creature, which explode if they are primed.",
+                "Choose one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes {@damage 2d8} cold damage. On a successful save, the target takes half as much damage. If the target was under the effect of a harmful water-themed spell, each creature in a 15-foot Emanation around the target must make a Constitution saving throw. On a failed save, a target takes {@damage 2d8} cold damage and has {@condition cracked armor|GW} for the duration. On a successful save, a target takes half as much damage but suffers no other effect.",
+                "At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Teinai's Crystals",
+                    "Spell. Target foe takes 20...36...40 damage. If target foe has a Water Magic hex, this spell strikes target and nearby foes for an additional 20...36...40 damage, and nearby foes also suffer Cracked Armor for 5...13...15 seconds."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Teinai's_Crystals.jpg"
+                        }
+                    }
+                ]
+            },
+            "damageInflict": [
+                "cold"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "ST",
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "components": {
+                "v": true,
+                "m": "a preserved snowflake"
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage each increases by {@dice 1d8} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Elementalist",
+                    "source": "GW"
+                },
+                {
+                    "name": "Water Magic",
+                    "source": "GW"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The fathomless",
+                            "shortName": "Fathomless",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "conditionInflict": [
+                "cracked armor|gw"
+            ]
+        },
+        {
+            "name": "Overload",
+            "level": 1,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                },
+                {
+                    "number": 1,
+                    "unit": "reaction",
+                    "condition": "which you take when you see a creature within 60 feet of yourself casting a spell with Verbal, Somatic, or Material"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Psion",
+                        "source": "xua2025psion"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@variantrule Hex|GW}",
+                "Rapidly channel arcane energy into a creature, overloading their system, causing a violent backlash if used in the moment of casting another spell.",
+                "Choose one creature that you can see within range. For the duration at the start of each of the target's turns, the target takes {@damage 1d6} psychic damage.",
+                "If the creature is casting a spell, each creature in a 10-foot-radius sphere centered on it must make an Intelligence saving throw. On a failed save, a target takes {@damage 3d6} psychic damage. On a successful save, a target takes half as much damage."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Overload",
+                    "Hex Spell. For 5 seconds, target foe suffers -1...3...3 Health degeneration. If target foe is using a skill, then Overload deals 15...63...75 damage to that foe and all adjacent foes."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Overload.jpg"
+                        }
+                    }
+                ]
+            },
+            "damageInflict": [
+                "psychic"
+            ],
+            "savingThrow": [
+                "intelligence"
+            ],
+            "areaTags": [
+                "ST",
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Mesmer",
+                    "source": "GW"
+                },
+                {
+                    "name": "Domination Magic",
+                    "source": "GW"
+                },
+                {
+                    "name": "Hex",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage each increases by {@dice 1d6} for each slot level above 1st."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Signet of Rejuvenation",
+            "level": 2,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                },
+                {
+                    "number": 1,
+                    "unit": "reaction",
+                    "condition": "which you take when you see a friendly creature within 60 feet of yourself casting a spell with Verbal, Somatic, or Material or make an attack roll"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Alchemist",
+                            "shortName": "Alchemist",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Psion",
+                            "source": "xua2025psion"
+                        },
+                        "subclass": {
+                            "name": "Metamorph",
+                            "shortName": "Metamorph",
+                            "source": "xua2025psion"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@variantrule Signet|GW|Signet:} Short Rest",
+                "Activate your Signet of Rejuvenation, healing an ally; heal them for more if you heal them in a moment of action.",
+                "Choose one friendly creature that you can see within range. The target regains hit points equal to {@dice 1d6} + your spellcasting ability modifier.",
+                "If the creature is casting a spell or making an attack roll, the target regains additional hit points equal to {@dice 1d6} + your spellcasting ability modifier."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Signet of Rejuvenation",
+                    "Signet. Heal target ally for 15...63...75. If target ally is casting a spell or attacking, that ally is healed for an additional 15...63...75 Health."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Signet_of_Rejuvenation.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Monk",
+                    "source": "GW"
+                },
+                {
+                    "name": "Healing Prayers",
+                    "source": "GW"
+                },
+                {
+                    "name": "Signet",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "s": true
+            }
         }
     ],
     "table": [],

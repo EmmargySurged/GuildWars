@@ -407,7 +407,7 @@
                                                     "Eve",
                                                     "Ex-Girlfriend of Maria Iceheart",
                                                     "{@creature Eve|GWP}",
-                                                    "Not in the Catacombs, but is the target of Maria's obsession"
+                                                    "{@area Screamheart Crypt|GWP3c6h|x}"
                                                 ]
                                             ]
                                         }
@@ -1489,6 +1489,13 @@
                                                         },
                                                         {
                                                             "type": "entries",
+                                                            "name": "Stalking Shadows",
+                                                            "entries": [
+                                                                "At the start of the second round of combat, and at the start of every other round thereafter, the Screamheart uses its Stalking Shadows ability. This causes the shadows in the room to come alive, roll {@dice 1d4} to determine from which sarcophagus the shadows emerge. The {@creature creeping shadows|GWP} start moving towrds {@creature Eve|GWP} and reach her at the start of the next round. If the shadows reach her, they cause her to gain one failed death save. If she has three failed death saves, she dies. The shadows can be attacked, and if they are defeated, they do not reach her. To defeat a shadow, it must either be exposed to bright light, or it must take radiant damage."
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "entries",
                                                             "name": "Creatures",
                                                             "id": "GWP3c6h1a",
                                                             "entries": [
@@ -1509,12 +1516,17 @@
                                                                     "rows": [
                                                                         [
                                                                             "1",
-                                                                            "{@creature Screamheart|GWP}",
+                                                                            "1 {@creature Screamheart|GWP}",
                                                                             "Hovering in the middle of the room"
                                                                         ],
                                                                         [
+                                                                            "1",
+                                                                            "1 {@creature Creeping Shadow|GWP}",
+                                                                            "Emerging from one of the sarcophagi each round after the first"
+                                                                        ],
+                                                                        [
                                                                             "N",
-                                                                            "{@creature Raging Cadaver|GWP}",
+                                                                            "N {@creature Raging Cadaver|GWP}",
                                                                             "Clambering out of the glass pits"
                                                                         ]
                                                                     ]
@@ -1594,7 +1606,7 @@
                                     "page": 18,
                                     "id": "GWP3c7",
                                     "entries": [
-                                        "Having defeated the {@creature Screamheart|GWP} Eve wakes up and they are free to explore the crypt. She explains everything she knows about the Screamheart, and ask what the party is doing here. If the party explains that they are looking for a tunnel, she tells them that she has heard of a tunnel that was built by the royalists, but she does not know where it is. She then offers to contact Rurik from them and inform him about the tunnel.",
+                                        "Having defeated the {@creature Screamheart|GWP} Eve wakes up if she survived and they are free to explore the crypt. If she survived, she explains everything she knows about the Screamheart, and ask what the party is doing here. If the party explains that they are looking for a tunnel, she tells them that she has heard of a tunnel that was built by the royalists, but she does not know where it is. She then offers to contact Rurik from them and inform him about the tunnel.",
                                         "Investigating the crypt they find mining equipment and correspondence from a high ranking member of the royalists, detailing the construction of a tunnel connecting the crypt to Piken Square. The other person of the correspondence is a unkown person, only signing as 'V.D.'. They demand the tunnel to be large enough for a wagon to pass through, and that it must be finished quickly. The first correspondence is dated a few days after the initial attack on Ascalon. The last one is dated three days ago. ",
                                         "Followin the instructions of the correspondence, the party can find a secret door leading to the tunnel. The tunnel leads to the Piken Square. The tunnel is about 250 km long, which the correspondence states is 'a bit longer than expected, but it will be worth it'. Traveling through the tunnel by foot takes about 55 hours, or 7 days. The tunnel is well lit, and has a few side passages leading to small rooms with supplies and beds. The tunnel is abandoned. The chapter {@area Piken Sqaure|GWP3d|x} expands on the travel through the tunnel and what can be found there."
                                     ]
@@ -7833,7 +7845,7 @@
                 {
                     "name": "Multiattack",
                     "entries": [
-                        "The banshee makes two Corrupting Touch attacks and uses Horrify."
+                        "The banshee makes two Corrupting Touch attacks and uses Horrify or Spellcasting."
                     ]
                 },
                 {
@@ -7849,7 +7861,7 @@
                     ]
                 },
                 {
-                    "name": "Deathly Wail (1/Day)",
+                    "name": "Deathly Wail {@recharge}",
                     "entries": [
                         "The banshee releases a mournful wail if it isn't in sunlight. {@actSave con} {@dc 13}, each creature within 30 feet that can hear the wail and isn't a Construct or an Undead. {@actSaveFail} If the target has 25 {@variantrule Hit Points|XPHB} or fewer, it drops to 0 {@variantrule Hit Points|XPHB}. Otherwise, the target takes 10 ({@damage 3d6}) Psychic damage."
                     ]
@@ -7995,8 +8007,15 @@
                 "O",
                 "Y"
             ],
+            "damageTagsSpell": [
+                "Y"
+            ],
             "savingThrowForced": [
                 "constitution",
+                "wisdom"
+            ],
+            "savingThrowForcedSpell": [
+                "charisma",
                 "wisdom"
             ]
         },
@@ -8693,6 +8712,188 @@
             ],
             "savingThrowForced": [
                 "strength"
+            ]
+        },
+        {
+            "name": "Creeping Shadow",
+            "source": "GWP",
+            "size": [
+                "M"
+            ],
+            "type": "undead",
+            "alignment": [
+                "C",
+                "E"
+            ],
+            "ac": [
+                11
+            ],
+            "hp": {
+                "formula": "1d4",
+                "average": 2
+            },
+            "speed": {
+                "fly": 30
+            },
+            "str": 6,
+            "dex": 12,
+            "con": 10,
+            "int": 8,
+            "wis": 10,
+            "cha": 12,
+            "skill": {
+                "stealth": "+3"
+            },
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 10,
+            "immune": [
+                "acid",
+                "bludgeoning",
+                "cold",
+                "fire",
+                "force",
+                "lightning",
+                "necrotic",
+                "piercing",
+                "poison",
+                "psychic",
+                "slashing",
+                "thunder"
+            ],
+            "vulnerable": [
+                "radiant"
+            ],
+            "conditionImmune": [
+                "exhaustion",
+                "frightened",
+                "grappled",
+                "paralyzed",
+                "petrified",
+                "poisoned",
+                "prone",
+                "restrained",
+                "unconscious"
+            ],
+            "cr": "0",
+            "trait": [
+                {
+                    "name": "Amorphous",
+                    "entries": [
+                        "The shadow can move through a space as narrow as 1 inch without expending extra movement to do so."
+                    ]
+                },
+                {
+                    "name": "Bright Light Weakness",
+                    "entries": [
+                        "The Creeping Shadow takes 20 Radiant damage if it starts its turn in Bright Light or enters it on its turn."
+                    ]
+                }
+            ],
+            "environment": [
+                "planar, shadowfell",
+                "underdark",
+                "urban"
+            ],
+            "soundClip": {
+                "type": "external",
+                "url": "https://5e.tools/audio/bestiary/shadow.mp3"
+            },
+            "traitTags": [
+                "Amorphous"
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "token": {
+                "name": "Shadow",
+                "source": "XMM"
+            },
+            "fluff": {
+                "name": "Shadow",
+                "source": "XMM",
+                "entries": [
+                    {
+                        "type": "section",
+                        "name": "Shadow",
+                        "entries": [
+                            "{@i Disembodied, Life-Drinking Shade}",
+                            {
+                                "type": "list",
+                                "style": "list-hang-notitle",
+                                "items": [
+                                    {
+                                        "type": "item",
+                                        "name": "Habitat:",
+                                        "entry": "{@filter Planar (Shadowfell)|bestiary|environment=planar, shadowfell}, {@filter Underdark|bestiary|environment=underdark}, {@filter Urban|bestiary|environment=urban}"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "name": "Treasure:",
+                                        "entry": "None"
+                                    }
+                                ]
+                            },
+                            "Shadows are incorporeal Undead that feed on life. They resent the living for possessing the potential and vitality lost to them.",
+                            "Shadows lurk in dark, lonely places, typically sites that were meaningful to them in life or cursed places with ties to death, sinister magic, or the Shadowfell. Their victims rise as new shadows and prey on the living.",
+                            "Shadows might resemble the silhouettes of who they were in life or take on more menacing forms. Roll on or choose a result from the Shadow Shapes table to inspire a shadow's form and haunting.",
+                            {
+                                "type": "table",
+                                "caption": "Shadow Shapes",
+                                "colLabels": [
+                                    "1d6",
+                                    "The Shadow Appears As..."
+                                ],
+                                "colStyles": [
+                                    "col-2 text-center",
+                                    "col-10"
+                                ],
+                                "rows": [
+                                    [
+                                        "1",
+                                        "A distorted stalker that lurks in the woods."
+                                    ],
+                                    [
+                                        "2",
+                                        "A fiend that dwells near a wicked ritual site."
+                                    ],
+                                    [
+                                        "3",
+                                        "Grasping hands that haunt a miser's home."
+                                    ],
+                                    [
+                                        "4",
+                                        "A grim storybook character that follows those who speak its name."
+                                    ],
+                                    [
+                                        "5",
+                                        "Its target, acting in eerie pantomime."
+                                    ],
+                                    [
+                                        "6",
+                                        "An ominous priest that haunts a defiled site."
+                                    ]
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "internal",
+                            "path": "bestiary/XMM/Shadow.webp"
+                        },
+                        "credit": "Michael Broussard"
+                    }
+                ]
+            },
+            "damageTags": [
+                "R"
             ]
         }
     ],
@@ -42199,6 +42400,16 @@
                 },
                 "If the dragon dies or moves its lair elsewhere, these effects end immediately."
             ]
+        },
+        {
+            "name": "Screamheart",
+            "lairActions": [
+                "When fighting inside its lair, a Screamheart can invoke the ambient magic to take lair actions. At the start of the round after the first one, the Screamheart can take one lair action to cause the following effect:",
+                "Summon forth a {@creature Creeping Shadow|GWP} from a random sarcophagus within 120 feet of you."
+            ],
+            "regionalEffects": [],
+            "mythicEncounter": [],
+            "source": "GWP"
         }
     ],
     "race": [],

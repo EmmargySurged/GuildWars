@@ -49735,6 +49735,378 @@
             "components": {
                 "s": true
             }
+        },
+        {
+            "name": "Taste of Pain",
+            "level": 1,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "Draw life force from the suffering foe.",
+                "Choose one hostile creature that is bloodied. You regain hit points equal to {@dice 4d4} + your spellcasting ability modifier."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Taste of Pain",
+                    "Spell. If target foe is below 50% Health, you gain 30...126...150 Health."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Taste_of_Pain.jpg"
+                        }
+                    }
+                ]
+            },
+            "optionalfeatures": [
+                {
+                    "name": "Blessed Warrior",
+                    "source": "TCE",
+                    "featureType": [
+                        "FS:P"
+                    ]
+                },
+                {
+                    "name": "Druidic Warrior",
+                    "source": "TCE",
+                    "featureType": [
+                        "FS:R"
+                    ]
+                },
+                {
+                    "name": "Pact of the Tome",
+                    "source": "PHB",
+                    "featureType": [
+                        "PB"
+                    ]
+                }
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Necromancer",
+                    "source": "GW"
+                },
+                {
+                    "name": "Death Magic",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "s": true
+            },
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Reanimator",
+                            "shortName": "Reanimator",
+                            "source": "xua2025horrorsubclasses"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Druid",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Circle of spores",
+                            "shortName": "Spores",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@dice 2d4} for each slot level above 1st."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Seeking Arrows",
+            "level": 0,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@variantrule Preparation|GW}, {@variantrule Unblockable|GW}",
+                "Enhance your arrows to slip past most defenses. ",
+                "For the duration, your ranged weapon attacks have the {@variantrule Unblockable|GW} property."
+            ],
+            "source": "GWF",
+            "components": {
+                "s": true,
+                "m": "a magnetic piece of iron"
+            },
+            "fluff": {
+                "entries": [
+                    "Seeking Arrows",
+                    "Preparation. For 3...12...14 seconds, your arrows cannot be blocked. Seeking Arrows ends if you fail to hit."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Seeking_Arrows.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "GW"
+                },
+                {
+                    "name": "Marksmanship",
+                    "source": "GW"
+                },
+                {
+                    "name": "Preparation",
+                    "source": "GW"
+                },
+                {
+                    "name": "Unblockable",
+                    "source": "GW"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "xua2025eberronupdates"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Collage of swords",
+                            "shortName": "Swords",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Psion",
+                            "source": "xua2025psion"
+                        },
+                        "subclass": {
+                            "name": "Metamorph",
+                            "shortName": "Metamorph",
+                            "source": "xua2025psion"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            }
         }
     ],
     "table": [],

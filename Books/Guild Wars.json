@@ -987,6 +987,177 @@
                 "type": "external",
                 "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Bone_Fiend_Token.png"
             }
+        },
+        {
+            "name": "Eve",
+            "source": "GW",
+            "size": [
+                "M"
+            ],
+            "type": {
+                "type": "humanoid",
+                "tags": [
+                    "human"
+                ]
+            },
+            "alignment": [
+                "C",
+                "N"
+            ],
+            "ac": [
+                12,
+                {
+                    "ac": 15,
+                    "condition": "with {@spell mage armor}",
+                    "braces": true
+                }
+            ],
+            "hp": {
+                "average": 110,
+                "formula": "20d8 + 20"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 9,
+            "dex": 14,
+            "con": 12,
+            "int": 17,
+            "wis": 12,
+            "cha": 11,
+            "save": {
+                "int": "+7",
+                "wis": "+5"
+            },
+            "skill": {
+                "arcana": "+7",
+                "history": "+7"
+            },
+            "passive": 11,
+            "resist": [
+                "necrotic"
+            ],
+            "cr": "9",
+            "spellcasting": [
+                {
+                    "name": "Spellcasting",
+                    "headerEntries": [
+                        "Eve casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 15}):"
+                    ],
+                    "will": [
+                        "{@spell dancing lights}",
+                        "{@spell mage hand}",
+                        "{@spell prestidigitation}"
+                    ],
+                    "daily": {
+                        "2e": [
+                            "{@spell bestow curse}",
+                            "{@spell dimension door}",
+                            "{@spell mage armor}",
+                            "{@spell sending|XPHB}",
+                            "{@spell web}"
+                        ],
+                        "1e": [
+                            "{@spell circle of death}"
+                        ]
+                    },
+                    "ability": "int",
+                    "type": "spellcasting"
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "Eve makes three Arcane Burst attacks."
+                    ]
+                },
+                {
+                    "name": "Arcane Burst",
+                    "entries": [
+                        "{@atk ms,rs} {@hit 7} to hit, reach 5 ft. or range 120 ft., one target. {@h}25 ({@damage 4d10 + 3}) necrotic damage."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Summon Undead (1/Day)",
+                    "entries": [
+                        "Eve magically summons five {@creature skeleton||skeletons} or {@creature zombie||zombies}. The summoned creatures appear in unoccupied spaces within 60 feet of Eve, whom they obey. They take their turns immediately after Eve. Each lasts for 1 hour, until it or Eve dies, or until Eve dismisses it as a bonus action."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Grim Harvest (1/Turn)",
+                    "entries": [
+                        "When Eve kills a creature with necrotic damage, she regains 9 ({@damage 2d8}) hit points. "
+                    ]
+                }
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "spellcastingTags": [
+                "O"
+            ],
+            "conditionInflictSpell": [
+                "restrained"
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "fluff": {
+                "entries": [
+                    "Born in: Unknown",
+                    "Nation: Ascalon",
+                    "Profession: Necromancer",
+                    "Age: 20",
+                    "Eve hasn't a clue where she was born—she was found as a young child stealing food from a sleeping vagrant in the back alleys of Ascalon City. Fortunately for Eve, she was not found by a city guard but by a kindly matron, who brought her to the Holy Dwayna Academy for Wayward & Incorrigible Girls (Ascalon City branch). Wherever Eve had come from, she had already learned to read at an advanced level before she ended up at the school students called the \"Wayward Academy,\" and voraciously devoured every text in the library. It wasn't long before Eve's curiosity (and her ability to both manipulate and avoid Matron Irma) led her to a secret library in the bowels of the Academy. There, forbidden texts opened up an entirely new world to young Eve. By the time she was 15, she had raised her first bone minion.",
+                    "Eve had never gotten along with the other girls—she much preferred the company of her tomes and scrolls. When, one day, a few of her fellow students pulled an especially vicious and humiliating prank on her, Eve literally pounced upon the leader of her tormentors, bit the girl’s ear off, and swallowed it whole. That was the end of Eve’s studies at the Holy Dwayna Academy for Wayward & Incorrigible Girls, and not even Matron Irma mourned her departure.",
+                    "Eve met Mhenlo, Cynn, Devona, and Aidan during the Charr invasion. She was in the graveyard, experimenting with new methods of undead resurrection, when the Charr flooded into the cemetery on the heels of Mhenlo and the others. More out of curiosity than any noble intentions, Eve ordered the Charr to stop. When the beastly creatures turned on her instead, thinking her easy prey, she simply raised her hands and called forth a small army of the dead to meet them. The Charr never stood a chance. Eve was amused when Devona asked the Necromancer to join them, but has since become a good friend of Devona, Aidan, and Mhenlo. She is often in conflict with Cynn, but the two respect each other’s power enough to get along when the going gets rough. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Eve.jpg"
+                        }
+                    }
+                ]
+            },
+            "miscTags": [
+                "RA",
+                "MA"
+            ],
+            "languages": [
+                "Common",
+                "Ascalonian",
+                "Orrian",
+                "Krytan"
+            ],
+            "languageTags": [
+                "C"
+            ],
+            "tokenHref": {
+                "type": "external",
+                "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Eve_Token.png"
+            },
+            "isNpc": true,
+            "familiar": true,
+            "damageTags": [
+                "N"
+            ],
+            "damageTagsSpell": [
+                "F",
+                "N",
+                "O"
+            ],
+            "savingThrowForcedSpell": [
+                "constitution",
+                "dexterity",
+                "wisdom"
+            ]
         }
     ],
     "feat": [
@@ -3603,7 +3774,7 @@
                     "type": "timed",
                     "duration": {
                         "type": "round",
-                        "amount": 3
+                        "amount": 1
                     }
                 }
             ],
@@ -3638,7 +3809,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/4/42/Shielding_Hands.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Shielding_Hands.jpg"
                         }
                     }
                 ]
@@ -3666,6 +3837,14 @@
                 {
                     "name": "Enchantment",
                     "source": "GW"
+                },
+                {
+                    "name": "Shing Jea Island",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Kourna",
+                    "source": "GWN"
                 }
             ],
             "classes": {
@@ -5417,7 +5596,7 @@
             "entries": [
                 "{@variantrule Adrenaline|GW|Adrenaline:} 6, {@variantrule Weapon Attack Spell|GW}",
                 "You put your entire weight into an extremely heavy blow.",
-                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d6} damage, and must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}."
+                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d12} damage, and must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}."
             ],
             "source": "GW",
             "fluff": {
@@ -5587,7 +5766,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d6} damage for each slot level above 1st on a hit."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d12} damage for each slot level above 1st on a hit."
                     ]
                 }
             ]
@@ -5618,7 +5797,7 @@
             "entries": [
                 "{@variantrule Adrenaline|GW|Adrenaline:} 6, {@variantrule Weapon Attack Spell|GW}",
                 "You attempt to make your enemy bleed out.",
-                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d6} damage, and must make a Constitution saving throw. On a failed save, the target starts {@condition bleeding|GW} for the duration, taking {@damage 2d6} damage.",
+                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d6} damage, and the target starts {@condition bleeding|GW} for the duration, taking {@damage 2d6} damage.",
                 "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -5632,7 +5811,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/5/54/Sever_Artery.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Sever_Artery.jpg"
                         }
                     }
                 ]
@@ -5663,6 +5842,14 @@
                 {
                     "name": "Weapon Attack Spell",
                     "source": "GW"
+                },
+                {
+                    "name": "Shing Jea Islamd",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Istan",
+                    "source": "GWN"
                 }
             ],
             "classes": {
@@ -10944,7 +11131,7 @@
                 "You attempt to cripple a creature, slowing their movement.",
                 "On a hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw. On a failed save, the target becomes {@condition crippled|GW} for the duration.",
                 "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends.",
-                "At 5th level, the melee attack also deals an extra {@damage 1d8} damage to the target on a hit. This damage increases by {@dice 1d8} when you reach 11th level ({@dice 2d8}) and 17th level ({@dice 3d8})."
+                "At 5th level, the melee attack also deals an extra {@damage 1d6} damage to the target on a hit. This damage increases by {@dice 1d6} when you reach 11th level ({@dice 2d6}) and 17th level ({@dice 3d6})."
             ],
             "source": "GW",
             "fluff": {
@@ -12136,7 +12323,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/2/29/Soul_Feast.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Soul_Feast.jpg"
                         }
                     }
                 ]
@@ -12160,6 +12347,14 @@
                 {
                     "name": "Death Magic",
                     "source": "GW"
+                },
+                {
+                    "name": "Shing Jea Island",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Kourna",
+                    "source": "GWN"
                 }
             ],
             "components": {
@@ -13759,7 +13954,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/d/d2/Shatter_Hex.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Shatter_Hex.jpg"
                         }
                     }
                 ]
@@ -13792,6 +13987,14 @@
                 {
                     "name": "Domination Magic",
                     "source": "GW"
+                },
+                {
+                    "name": "Shing Jea Island",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Istan",
+                    "source": "GWN"
                 }
             ],
             "areaTags": [
@@ -13924,7 +14127,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/4/4c/Shatter_Enchantment.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Shatter_Enchantment.jpg"
                         }
                     }
                 ]
@@ -13957,6 +14160,14 @@
                 {
                     "name": "Domination Magic",
                     "source": "GW"
+                },
+                {
+                    "name": "Shing Jea Island",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Kourna",
+                    "source": "GWN"
                 }
             ],
             "classes": {
@@ -15658,7 +15869,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/8/8d/Signet_of_Capture.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Signet_of_Capture.jpg"
                         }
                     }
                 ]
@@ -15685,6 +15896,14 @@
                 {
                     "name": "Signet",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Kourna",
+                    "source": "GWN"
                 }
             ],
             "miscTags": [
@@ -15807,7 +16026,7 @@
             "entries": [
                 "{@variantrule Adrenaline|GW|Adrenaline:} 4, {@variantrule Weapon Attack Spell|GW}",
                 "Use the momentary opening of a creature that attacked to attempt to knock them {@condition prone}.",
-                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d4} damage and, if the target attacked on its last turn, must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}."
+                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d12} damage, and, if the target attacked on its last turn, must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}."
             ],
             "source": "GW",
             "fluff": {
@@ -15977,7 +16196,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d4} damage for each slot level above 1st on a hit."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d12} damage for each slot level above 1st on a hit."
                     ]
                 }
             ]
@@ -16008,7 +16227,7 @@
             "entries": [
                 "{@variantrule Adrenaline|GW|Adrenaline:} 4, {@variantrule Weapon Attack Spell|GW}",
                 "Attempt to stagger your opponent, weakening them on hit.",
-                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d4} damage, and must make a Strength saving throw. On a failed save, the target is {@condition weakness|GW|weakened} for the duration.",
+                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d12} damage, and must make a Strength saving throw. On a failed save, the target is {@condition weakness|GW|weakened} for the duration.",
                 "At the end of each of its turns, the target can make a Strength saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -16022,7 +16241,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/d/d3/Staggering_Blow.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Staggering_Blow.jpg"
                         }
                     }
                 ]
@@ -16047,6 +16266,14 @@
                 {
                     "name": "Weapon Attack Spell",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Vabbit",
+                    "source": "GWN"
                 }
             ],
             "components": {
@@ -16171,7 +16398,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d4} damage for each slot level above 1st on a hit."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d12} damage for each slot level above 1st on a hit."
                     ]
                 }
             ]
@@ -16346,7 +16573,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/c/c5/Sprint.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Sprint.jpg"
                         }
                     }
                 ]
@@ -16367,6 +16594,14 @@
                 {
                     "name": "Stance",
                     "source": "GW"
+                },
+                {
+                    "name": "Shing Jea Island",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Istan",
+                    "source": "GWN"
                 }
             ],
             "components": {
@@ -17930,9 +18165,9 @@
                 }
             ],
             "entries": [
-                "{@variantrule Hex|GW}",
+                "{@variantrule Hex|GW}, {@variantrule Sacrifice|GW|Sacrifice:} 10%",
                 "Utter a corrupting curse, defiling a creature's flesh, making it so they heal for less.",
-                "Choose one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, for the duration, when the target regains hit points, they regain 33% less hit points."
+                "Choose one creature that you can see within range. For the duration, when the target regains hit points, they regain 33% fewer hit points."
             ],
             "source": "GW",
             "fluff": {
@@ -17974,6 +18209,10 @@
                 {
                     "name": "Vabbi",
                     "source": "GWN"
+                },
+                {
+                    "name": "Sacrifice",
+                    "source": "GW"
                 }
             ],
             "components": {
@@ -18062,9 +18301,6 @@
                     }
                 ]
             },
-            "savingThrow": [
-                "constitution"
-            ],
             "areaTags": [
                 "ST"
             ],
@@ -18499,7 +18735,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/1/14/Seeking_Blade.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Seeking_Blade.jpg"
                         }
                     }
                 ]
@@ -18520,6 +18756,14 @@
                 {
                     "name": "Weapon Attack Spell",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "The Desolation",
+                    "source": "GWN"
                 }
             ],
             "conditionInflict": [
@@ -19603,7 +19847,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/d/dd/Rotting_Flesh.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Rotting_Flesh.jpg"
                         }
                     }
                 ]
@@ -19620,6 +19864,14 @@
                 {
                     "name": "Death Magic",
                     "source": "GW"
+                },
+                {
+                    "name": "Shing Jea Island",
+                    "source": "GWF"
+                },
+                {
+                    "name": "The Desolation",
+                    "source": "GWN"
                 }
             ],
             "components": {
@@ -22631,7 +22883,7 @@
             "entries": [
                 "{@variantrule Companion|GW}, {@variantrule Elite|GW}",
                 "Command your companion to attempt a Ferocious Strike.",
-                "Choose one companion, that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 4d6} damage you gain {@dice 1d4} strikes of adrenaline, and your initiative gets increased by {@dice 4d4}."
+                "Choose one companion that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 3d10} damage. You gain {@dice 1d4} strikes of adrenaline, and your initiative gets increased by {@dice 4d4}."
             ],
             "source": "GW",
             "fluff": {
@@ -23847,7 +24099,7 @@
             "entries": [
                 "{@variantrule Adrenaline|GW|Adrenaline:} 7, {@variantrule Elite|GW}, {@variantrule Weapon Attack Spell|GW}",
                 "Channel your adrenaline into a Devastating Bash, knocking your target {@condition prone} and inflicting {@condition weakness|GW}.",
-                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d10} damage and must make a Strength saving throw. On a failed save, the target is knocked {@condition prone} and suffers from {@condition weakness|GW} for the duration.",
+                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d12} damage, and must make a Strength saving throw. On a failed save, the target is knocked {@condition prone} and suffers from {@condition weakness|GW} for the duration.",
                 "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -24030,7 +24282,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d10} damage for each slot level above 1st on a hit."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d12} damage for each slot level above 1st on a hit."
                     ]
                 }
             ]
@@ -24256,7 +24508,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/e/eb/Shield_of_Regeneration.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Elite/Shield_of_Regeneration.jpg"
                         }
                     }
                 ]
@@ -24288,6 +24540,18 @@
                 {
                     "name": "Enchantment",
                     "source": "GW"
+                },
+                {
+                    "name": "Echovald Forest",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Vabbi",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Charr Homelands",
+                    "source": "GWEotN"
                 }
             ],
             "classes": {
@@ -24353,7 +24617,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/4/4e/Soul_Taker.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Elite/Soul_Taker.jpg"
                         }
                     }
                 ]
@@ -24938,7 +25202,7 @@
         },
         {
             "name": "Spell Breaker",
-            "level": 8,
+            "level": 7,
             "school": "A",
             "time": [
                 {
@@ -24978,7 +25242,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/0/08/Spell_Breaker.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Elite/Spell_Breaker.jpg"
                         }
                     }
                 ]
@@ -24992,7 +25256,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 9th level or higher, you can target one additional creature for each slot level above 8th."
+                        "When you cast this spell using a spell slot of 8th level or higher, you can target one additional creature for each slot level above 7th."
                     ]
                 }
             ],
@@ -25016,6 +25280,14 @@
                 {
                     "name": "Enchantment",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Kourna",
+                    "source": "GWN"
                 }
             ],
             "classes": {
@@ -25451,7 +25723,7 @@
         },
         {
             "name": "Seven Weapons Stance",
-            "level": 5,
+            "level": 4,
             "school": "E",
             "time": [
                 {
@@ -25469,15 +25741,15 @@
                 {
                     "type": "timed",
                     "duration": {
-                        "type": "round",
-                        "amount": 3
+                        "type": "minute",
+                        "amount": 1
                     }
                 }
             ],
             "entries": [
                 "{@variantrule Elite|GW}, {@variantrule Stance|GW}",
-                "Gain mastery over all weapons.",
-                "For the duration, the number you need to roll to score a critical hit is reduced by 5, and you can attack one additional time when you take the attack action on your turn."
+                "Gain mastery over your weapons.",
+                "For the duration, your proficiency bonus is doubled when making attack or damage rolls with weapons you are proficient with, and you can attack one additional time when you take the attack action on your turn."
             ],
             "source": "GW",
             "fluff": {
@@ -25490,7 +25762,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/d/d7/Seven_Weapons_Stance.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Elite/Seven_Weapons_Stance.jpg"
                         }
                     }
                 ]
@@ -25520,15 +25792,6 @@
             "components": {
                 "s": true
             },
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 6th level or higher, the duration increases by 1 round for each slot level above 5th."
-                    ]
-                }
-            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -25621,7 +25884,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/1/1a/Spike_Trap.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Elite/Spike_Trap.jpg"
                         }
                     }
                 ]
@@ -25652,6 +25915,14 @@
                 {
                     "name": "Elite",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "The Desolation",
+                    "source": "GWN"
                 }
             ],
             "entriesHigherLevel": [
@@ -26023,13 +26294,12 @@
         },
         {
             "name": "Shadow Theft",
-            "level": 5,
+            "level": 4,
             "school": "T",
             "time": [
                 {
                     "number": 0,
-                    "unit": "special",
-                    "condition": "which you take immediately before hitting a target with a Melee weapon with the light and thrown property"
+                    "unit": "bonus"
                 }
             ],
             "range": {
@@ -26045,9 +26315,10 @@
                 }
             ],
             "entries": [
-                "{@variantrule Elite|GW}, {@variantrule Enchantment|GW}, {@variantrule Hex|GW}, {@variantrule Lead Attack|GWF}, {@variantrule Weapon Attack Spell|GW}",
+                "{@variantrule Elite|GW}",
                 "Shadow step to a creature, draining their power and empowering your own.",
-                "On a hit, teleport within 5 feet of the target to an unoccupied space. The target must make a Wisdom saving throw. On a failed save for the duration, each of the target's ability scores are reduced by {@dice 1d4} each, and each of yours are increased correspondingly by the amount lost."
+                "Choose one hostile creature that you can see within range. Teleport within 5 feet of the target to an unoccupied space. For the duration, each of the target's ability scores are reduced by {@dice 1d4} each, and each of yours are increased correspondingly by the amount lost. This cannot reduce a creature's ability scores below 1.",
+                "This is considered a {@variantrule Lead Attack|GWF}."
             ],
             "source": "GW",
             "fluff": {
@@ -26060,7 +26331,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/9/91/Shadow_Theft.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Elite/Shadow_Theft.jpg"
                         }
                     }
                 ]
@@ -26084,14 +26355,6 @@
                 },
                 {
                     "name": "Elite",
-                    "source": "GW"
-                },
-                {
-                    "name": "Enchantment",
-                    "source": "GW"
-                },
-                {
-                    "name": "Hex",
                     "source": "GW"
                 },
                 {
@@ -26238,14 +26501,20 @@
                     }
                 ]
             },
-            "savingThrow": [
-                "wisdom"
-            ],
             "areaTags": [
                 "ST"
             ],
             "miscTags": [
                 "TP"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the change in ability scores increases by {@dice 1d4} for each slot level above 4th."
+                    ]
+                }
             ]
         },
         {
@@ -26274,7 +26543,7 @@
             "entries": [
                 "{@variantrule Elite|GW}, {@variantrule Signet|GW|Signet:} Short Rest",
                 "You attempt to interrupt a creature in the process of making an attack roll and smite all creatures around it.",
-                "Choose one attacking creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target is knocked {@condition prone}, the attack roll misses, and you target each hostile creature in a 10-foot-radius sphere centered on the target. A target takes {@damage 3d8} radiant damage."
+                "Choose one attacking creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target is knocked {@condition prone}, and the attack roll misses. Then you target each hostile creature in a 10-foot-radius sphere centered on the target. A target takes {@damage 3d8} radiant damage."
             ],
             "source": "GW",
             "components": {
@@ -26305,7 +26574,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/a/aa/Signet_of_Judgment.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Elite/Signet_of_Judgment.jpg"
                         }
                     }
                 ]
@@ -26330,6 +26599,14 @@
                 {
                     "name": "Signet",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "The Desolation",
+                    "source": "GWN"
                 }
             ],
             "conditionInflict": [
@@ -26790,8 +27067,8 @@
             ],
             "entries": [
                 "{@variantrule Adrenaline|GW|Adrenaline:} 10, {@variantrule Weapon Attack Spell|GW}",
-                "Deliver a final powerful thrust, loosing all adrenaline and finishing off low health creatures.",
-                "On a hit, the target suffers the weapon attack's normal effects and takes {@damage 4d8} damage. If the target was below 50% of their maximum hit points, the target takes an additional {@damage 6d8} damage.",
+                "Deliver a final powerful thrust, losing all adrenaline and finishing off low-health creatures.",
+                "On a hit, the target suffers the weapon attack's normal effects and takes {@damage 6d6} damage. If the target was below 50% of their maximum hit points, the target takes an additional {@damage 6d6} damage.",
                 "You lose all adrenaline."
             ],
             "source": "GW",
@@ -26989,7 +27266,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 4th level or higher, the target also takes {@damage 1d8} damage for each slot level above 3rd on a hit."
+                        "When you cast this spell using a spell slot of 4th level or higher, the target also takes {@damage 1d6} damage for each slot level above 3rd on a hit."
                     ]
                 }
             ]
@@ -28212,7 +28489,7 @@
             "entries": [
                 "{@variantrule Enchantment|GW}",
                 "Surround a creature with an ominous aura, which lashes out at creatures around it as they sacrifice health, fueled by your blood.",
-                "Choose one friendly creature that you can see within range. For the duration, when the target loses health as part of their own spell effect, except by taking damage, target each creature other than the target in a 10-foot-radius sphere centered on the target. Each new target takes {@damage 3d8} necrotic damage, and you lose health equal to {@dice 1d6}, which cannot trigger Dark Aura."
+                "Choose one friendly creature that you can see within range. For the duration, when the target loses health as part of their own spell effect, except by taking damage, target each hostile creature in a 10-foot Emanation. Each new target takes {@damage 3d8} necrotic damage, and you lose health equal to {@dice 1d6}, which cannot trigger Dark Aura."
             ],
             "source": "GW",
             "fluff": {
@@ -29525,7 +29802,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/b/b3/Signet_of_Devotion.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Signet_of_Devotion.jpg"
                         }
                     }
                 ]
@@ -29546,6 +29823,14 @@
                 {
                     "name": "Signet",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Kourna",
+                    "source": "GWN"
                 }
             ],
             "classes": {
@@ -31201,7 +31486,7 @@
             "entries": [
                 "{@variantrule Companion|GW}",
                 "Command your companion to maim a creature.",
-                "Choose one companion, that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 3d6} damage and, if the target willingly moved on its last turn, the target must make a Dexterity saving throw. On a failed save, the target is {@condition crippled|GW} for the duration.",
+                "Choose one companion that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 2d10} damage, and, if the target willingly moved on its last turn, the target must make a Dexterity saving throw. On a failed save, the target is {@condition crippled|GW} for the duration.",
                 "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -31735,7 +32020,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/7/7d/Signet_of_Humility.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Signet_of_Humility.jpg"
                         }
                     }
                 ]
@@ -31756,6 +32041,14 @@
                 {
                     "name": "Signet",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "The Desolation",
+                    "source": "GWN"
                 }
             ],
             "components": {
@@ -31949,7 +32242,7 @@
                 }
             ],
             "entries": [
-                "You attempt to interrupt a creature in the process of using an ability or casting a spell, if you interrupt a spell this way, the target takes additional damage.",
+                "You attempt to interrupt a creature in the process of using an ability or casting a spell; if you interrupt a spell this way, the target takes additional damage.",
                 "Choose one creature, which is casting a spell or using an ability, that you can see within range of your weapon. Make a ranged weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw. On a failed save, the ability/spell fails and has no effect.",
                 "If a spell failed this way, the target takes an additional {@damage 3d8} damage."
             ],
@@ -31964,7 +32257,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/f/fd/Savage_Shot.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Savage_Shot.jpg"
                         }
                     }
                 ]
@@ -32000,6 +32293,14 @@
                 {
                     "name": "Marksmanship",
                     "source": "GW"
+                },
+                {
+                    "name": "Shing Jea Island",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Vabbi",
+                    "source": "GWN"
                 }
             ],
             "classes": {
@@ -32142,7 +32443,7 @@
             "entries": [
                 "{@variantrule Adrenaline|GW|Adrenaline:} 5, {@variantrule Weapon Attack Spell|GW}",
                 "Put all your adrenaline into a powerful blow, which knocks down weakened foes.",
-                "On a hit, the target suffers the weapon attack's normal effects and, if the target is weakened, the target is knocked {@condition prone} and takes an additional {@damage 2d12} damage.",
+                "On a hit, the target suffers the weapon attack's normal effects, and if the target is weakened, the target is knocked {@condition prone} and takes an additional {@damage 2d12} damage.",
                 "You lose all adrenaline."
             ],
             "source": "GW",
@@ -32357,7 +32658,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/2/25/Spirit_Shackles.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Spirit_Shackles.jpg"
                         }
                     }
                 ]
@@ -32378,6 +32679,14 @@
                 {
                     "name": "Hex",
                     "source": "GW"
+                },
+                {
+                    "name": "Shing Jea Island",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Kourna",
+                    "source": "GWN"
                 }
             ],
             "components": {
@@ -32495,7 +32804,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/4/41/Smite_Hex.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Smite_Hex.jpg"
                         }
                     }
                 ]
@@ -32528,6 +32837,14 @@
                 {
                     "name": "Smiting Prayers",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "The Desolation",
+                    "source": "GWN"
                 }
             ],
             "classes": {
@@ -32765,7 +33082,7 @@
             "entries": [
                 "{@variantrule Companion|GW}",
                 "Command your companion to attempt a Scavenger Strike.",
-                "Choose one companion, that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 2d6} damage, and if the target is suffering from a condition, your initiative gets increased by {@dice 2d4}."
+                "Choose one companion that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 1d10} damage, and if the target is suffering from a condition, your initiative gets increased by {@dice 2d4}."
             ],
             "source": "GW",
             "fluff": {
@@ -32778,7 +33095,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/8/85/Scavenger_Strike.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Scavenger_Strike.jpg"
                         }
                     }
                 ]
@@ -32819,6 +33136,14 @@
                 {
                     "name": "Companion",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Vabbi",
+                    "source": "GWN"
                 }
             ],
             "classes": {
@@ -32885,7 +33210,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/3/3e/Stone_Daggers.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Stone_Daggers.jpg"
                         }
                     }
                 ]
@@ -32918,6 +33243,14 @@
                 {
                     "name": "Overcast",
                     "source": "GW"
+                },
+                {
+                    "name": "Shing Jea Island",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Istan",
+                    "source": "GWN"
                 }
             ],
             "conditionInflict": [
@@ -33536,11 +33869,10 @@
                 }
             ],
             "entries": [
-                "{@variantrule Enchantment|GW}",
-                "Exploit a nearby corpse to create a two low-level Bone Horrors. ",
-                "Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, the target becomes two {@creature Bone Horror|GW|Bone Horrors}. When using the level which appears in the stat block, subtract 2.",
+                "Exploit a nearby corpse to create two low-level Bone Horrors. ",
+                "Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, and the target becomes two {@creature Bone Horror|GW|Bone Horrors}. When using the level that appears in the stat block, subtract 2.",
                 "The {@creature Bone Horror|GW|Bone Horrors} remain for the duration or until they reach zero hit points, at which point they will disintegrate into ash.",
-                "{@creature Bone Horror|GW|Bone Horrors} are friendly to you and your allies for the duration. If you fall {@condition unconscious}, the {@creature Bone Horror|GW|Bone Horrors} becomes hostile towards everything, instead of disintegrating into ash. The {@creature Bone Horror|GW|Bone Horrors} act on your initiative, but take their turn directly after yours. The {@creature Bone Horror|GW|Bone Horrors} are in the DMs control.",
+                "{@creature Bone Horror|GW|Bone Horrors} are friendly to you and your allies for the duration. If you fall {@condition unconscious}, the {@creature Bone Horror|GW|Bone Horrors} becomes hostile towards everything instead of disintegrating into ash. The {@creature Bone Horror|GW|Bone Horrors} act on your initiative but take their turn directly after yours. The {@creature Bone Horror|GW|Bone Horrors} are in the DM's control.",
                 "On each of your turns until the spell ends, you can use your action to animate another two {@creature Bone Horror|GW|Bone Horrors} this way."
             ],
             "source": "GW",
@@ -33588,10 +33920,6 @@
                 },
                 {
                     "name": "Death Magic",
-                    "source": "GW"
-                },
-                {
-                    "name": "Enchantment",
                     "source": "GW"
                 },
                 {
@@ -34747,7 +35075,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/3/36/Scourge_Healing.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Scourge_Healing.jpg"
                         }
                     }
                 ]
@@ -34777,6 +35105,14 @@
                 {
                     "name": "Hex",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Realm of Torment",
+                    "source": "GWN"
                 }
             ],
             "classes": {
@@ -34854,7 +35190,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/7/7e/Savage_Slash.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Savage_Slash.jpg"
                         }
                     }
                 ]
@@ -34868,7 +35204,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 4th level or higher, the target also takes {@damage 1d8} damage for each slot level above 3rd on a hit."
+                        "When you cast this spell using a spell slot of 4th level or higher, the target also takes {@damage 1d6} damage for each slot level above 3rd on a hit."
                     ]
                 }
             ],
@@ -34890,6 +35226,14 @@
                 {
                     "name": "Swordsmanship",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Kourna",
+                    "source": "GWN"
                 }
             ],
             "classes": {
@@ -35059,11 +35403,10 @@
                 }
             ],
             "entries": [
-                "{@variantrule Enchantment|GW}",
-                "Exploit a nearby corpse to create a Bone Fiend.",
-                "Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, the target becomes a {@creature Bone Fiend|GW}. ",
+                "Exploit a nearby corpse to create a {@creature Bone Fiend|GW}.",
+                "Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, and the target becomes a {@creature Bone Fiend|GW}. ",
                 "The {@creature Bone Fiend|GW} remains for the duration or until it reaches zero hit points, at which point it will disintegrate into ash.",
-                "The {@creature Bone Fiend|GW} is friendly to you and your allies for the duration. If you fall {@condition unconscious}, the {@creature Bone Fiend|GW} becomes hostile towards everything, instead of disintegrating into ash. The {@creature Bone Fiend|GW} acts on your initiative, but takes it turn directly after yours. The {@creature Bone Fiend|GW} is in the DMs control.",
+                "The {@creature Bone Fiend|GW} is friendly to you and your allies for the duration. If you fall {@condition unconscious}, the {@creature Bone Fiend|GW} becomes hostile towards everything instead of disintegrating into ash. The {@creature Bone Fiend|GW} acts on your initiative but takes its turn directly after yours. The {@creature Bone Fiend|GW} is in the DM's control.",
                 "On each of your turns until the spell ends, you can use your action to animate another Bone Fiend this way."
             ],
             "source": "GW",
@@ -35111,10 +35454,6 @@
                 },
                 {
                     "name": "Death Magic",
-                    "source": "GW"
-                },
-                {
-                    "name": "Enchantment",
                     "source": "GW"
                 },
                 {
@@ -36033,7 +36372,7 @@
                     "type": "timed",
                     "duration": {
                         "type": "round",
-                        "amount": 1
+                        "amount": 2
                     }
                 }
             ],
@@ -36052,7 +36391,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/d/d5/%22Shields_Up%21%22.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/_Shields_Up!_.jpg"
                         }
                     }
                 ]
@@ -36072,6 +36411,14 @@
                 {
                     "name": "Tactics",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Realm of Torment",
+                    "source": "GWN"
                 }
             ],
             "components": {
@@ -36273,7 +36620,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/4/46/Signet_of_Agony.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Signet_of_Agony.jpg"
                         }
                     }
                 ]
@@ -36298,6 +36645,14 @@
                 {
                     "name": "Signet",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Realm of Torment",
+                    "source": "GWN"
                 }
             ],
             "components": {
@@ -37416,7 +37771,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/c/ca/Shield_Bash.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Shield_Bash.jpg"
                         }
                     }
                 ]
@@ -37433,6 +37788,14 @@
                 {
                     "name": "Strength",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Realm of Torment",
+                    "source": "GWN"
                 }
             ],
             "components": {
@@ -39694,9 +40057,9 @@
             },
             "entries": [
                 "{@variantrule Hex|GW} ",
-                "Cause rust to appear on a group of creature's gear and signets, dealing damage and disrupting signets.",
-                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target takes {@damage 2d8 + 4} cold damage and signet spells take twice as long to cast for the duration. On a successful save, a target takes half as much damage, but suffers no other effect.",
-                "{@variantrule Overcast|GW|Overcast:}. Creatures who failed the saving throw cannot use their signets for the duration, instead of them taking twice as long to cast."
+                "Cause rust to appear on a group of creatures's gear and signets, dealing damage and disrupting signets.",
+                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target takes {@damage 2d8 + 4} cold damage, and {@variantrule signet|GW} spells take twice as long to cast for the duration. On a successful save, a target takes half as much damage but suffers no other effect.",
+                "{@variantrule Overcast|GW|Overcast:} Creatures who failed the saving throw cannot use their {@variantrule signet|GW|signets} for the duration, instead of them taking twice as long to cast."
             ],
             "source": "GW",
             "fluff": {
@@ -39709,7 +40072,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/3/33/Rust.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Rust.jpg"
                         }
                     }
                 ]
@@ -39734,6 +40097,14 @@
                 {
                     "name": "Overcast",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "The Desolation",
+                    "source": "GWN"
                 }
             ],
             "components": {
@@ -39895,7 +40266,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/9/97/Soothing_Images.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/Soothing_Images.jpg"
                         }
                     }
                 ]
@@ -39916,6 +40287,14 @@
                 {
                     "name": "Hex",
                     "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "The Desolation",
+                    "source": "GWN"
                 }
             ],
             "components": {
@@ -44582,5 +44961,57 @@
         }
     ],
     "subclass": [],
-    "subclassFeature": []
+    "subclassFeature": [],
+    "deity": [
+        {
+            "name": "Abaddon",
+            "source": "GW",
+            "pantheon": "Human Gods",
+            "symbol": "A mask with six eyes, with tentacles extending from the back",
+            "alignment": [
+                "C",
+                "E"
+            ],
+            "title": "Fallen God of Secrets and Water",
+            "category": "Fallen Gods",
+            "domains": [
+                "Secrets",
+                "Water"
+            ],
+            "symbolImg": {
+                "type": "image",
+                "href": {
+                    "type": "external",
+                    "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Icons/Gods/_Abbaddon_Head_Shot__concept_art.jpg"
+                },
+                "style": "deity-symbol",
+                "title": "Abaddon Symbol",
+                "credit": "Daniel Dociu"
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "Scripture of Abaddon",
+                    "entries": [
+                        "And so it came to pass that Jadoth, being persecuted by the horrific Forgotten armies, and hounded from his home, did seek refuge among the cooling mists of the Crystal Sea. Untold weeks passed as Jadoth huddled in his sanctuary, with nothing to see save the endless ripples of the boundless ocean.",
+                        "On the 51st day of his exodus, a frightful sight manifested before Jadoth's eyes: the unmistakable shape of Forgotten warships upon the horizon's shimmering edge.",
+                        "And prayed Jadoth, \"Abaddon! Lord of the Everlasting Depths, Keeper of Secrets, open mine eyes and bestow upon me the knowledge of the Abyss that I might smite mine enemies and send them to the watery depths!\"",
+                        "An unsettling silence swept across the waves. The twilight sky shattered and stars streaked down upon the Forgotten armada. The seas boiled and ruptured, and gave birth to a maelstrom from which not even light could escape, and transforming the sky above into a midnight void.",
+                        "And thus was magic gifted to Jadoth, chosen of Abaddon, the first of the Margonites.",
+                        "The Day shall come when the Lord of Secrets Will be freed of his Tormented Prison. When the other gods will quail before his power And Night will fall on the living world."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "From the Wiki",
+                    "entries": [
+                        "Abaddon is the fallen God of Water and Secrets. The ending of Nightfall sets him up as the ultimate antagonist of the three Guild Wars campaigns, by revealing him as the secret corrupting influence behind Vizier Khilbron and Shiro Tagachi through his servants Terick and the Fortune Teller respectively. Like the other gods, Abaddon's origins are shrouded in mystery. The Apostate speaks of Abaddon gaining his power from an older, deposed god, however nothing more is known about this. Abaddon was once fanatically worshiped by the Margonites, a nation of sea-faring humans. The phrase \"act with magic, act within reason, act without mercy\" is attributed to Abaddon's teachings. ",
+                        "In 1 BE, he spread magic to the races of Tyria, and thus was indirectly responsible for the wars that came afterward. King Doric pleaded to the gods and they rendered magic into the five Bloodstones, diluting their gift. Abaddon was incensed and went to war with the others, and led this follower in assaulting the Gates of Heaven. He was eventually struck down at the Mouth of Torment, in a blow that turned the Crystal Sea into a desert. There, Abaddon was sealed within the Realm of Torment and the city of Morah was established to watch over the spot where he fell. Shortly after his defeat, the gods left the world in an act that came to be known as the Exodus.",
+                        "During his imprisonment, Abaddon sought a way to return to the world, sending out demonic servants to subvert the mortal realm. It was a servant of Abaddon who persuaded Shiro Tagachi to murder Emperor Angsiyan, causing the Jade Wind, and Abaddon sent titans, who acted as gods for the charr and gave them the capability to perform the ritual of the Searing. When the charr assaulted Orr, Razakel convinced Vizier Khilbron, who was also a follower of Abaddon, to read the Lost Scrolls and sink the land in the Cataclysm.",
+                        "In 1075 AE, worshipers of Abaddon, General Kahyet and Warmarshal Varesh Ossa attempted to enact Nightfall, thereby returning Abaddon to the mortal plane with the Great Margonite Temple as the center of his rule. Abaddon, with the help of Dhuum and Menzies, was almost successful, but was stopped by the Order of the Sunspears and the Order of Whispers, who entered the Realm of Torment to defeat him. In his final moments, Abaddon's power threatened to run out of control and destroy Tyria, but it was absorbed by Spearmarshal Kormir, who became the Goddess of Truth using a power that had been granted to her by the Five Gods."
+                    ]
+                }
+            ]
+        }
+    ]
 }

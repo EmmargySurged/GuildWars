@@ -1606,9 +1606,9 @@
                                     "page": 18,
                                     "id": "GWP3c7",
                                     "entries": [
-                                        "Having defeated the {@creature Screamheart|GWP} Eve wakes up if she survived and they are free to explore the crypt. If she survived, she explains everything she knows about the Screamheart, and ask what the party is doing here. If the party explains that they are looking for a tunnel, she tells them that she has heard of a tunnel that was built by the royalists, but she does not know where it is. She then offers to contact Rurik from them and inform him about the tunnel.",
-                                        "Investigating the crypt they find mining equipment and correspondence from a high ranking member of the royalists, detailing the construction of a tunnel connecting the crypt to Piken Square. The other person of the correspondence is a unkown person, only signing as 'V.D.'. They demand the tunnel to be large enough for a wagon to pass through, and that it must be finished quickly. The first correspondence is dated a few days after the initial attack on Ascalon. The last one is dated three days ago. ",
-                                        "Followin the instructions of the correspondence, the party can find a secret door leading to the tunnel. The tunnel leads to the Piken Square. The tunnel is about 250 km long, which the correspondence states is 'a bit longer than expected, but it will be worth it'. Traveling through the tunnel by foot takes about 55 hours, or 7 days. The tunnel is well lit, and has a few side passages leading to small rooms with supplies and beds. The tunnel is abandoned. The chapter {@area Piken Sqaure|GWP3d|x} expands on the travel through the tunnel and what can be found there."
+                                        "Having defeated the {@creature Screamheart|GWP} Eve wakes up if she survived and they are free to explore the crypt. If she survived, she explains everything she knows about the Screamheart, and asks what the party is doing here. If the party explains that they are looking for a tunnel, she tells them that she has heard of a tunnel that was built by the royalists, but she does not know where it is. She then offers to contact Rurik from them and inform him about the tunnel.",
+                                        "Investigating the crypt they find mining equipment and correspondence from a high ranking member of the royalists, detailing the construction of a tunnel connecting the crypt to Piken Square. The other person of the correspondence is a unkown person, only signing as 'V.D.'. They demand the tunnel to be large enough for a wagon to pass through, and that it must be finished quickly. Shortly after construction started, it became clear that the tunnel would not be finished in time, and the royalist demanded that the tunnel be made smaller. In response, 'V.D.' sent them an item that would help them finish the tunnel faster, a {@item Sphere of Annihilation|XDMG}. The royalist were horrified by the item, but 'V.D.' assured them that it was safe to use, as long as they followed the instructions laid out by the provider of the item, a person named 'Terick'. The first correspondence is dated a few days after the initial attack on Ascalon. The last one is dated 2 weeks ago. ",
+                                        "Followin the instructions of the correspondence, the party can find a secret door leading to the tunnel. The tunnel leads to the Piken Square. The tunnel is about 250 km long. The chapter {@area Piken Sqaure|GWP3d|x} expands on the travel through the tunnel and what can be found there."
                                     ]
                                 }
                             ]
@@ -1619,7 +1619,275 @@
                             "page": 19,
                             "id": "GWP3d",
                             "entries": [
-                                "Piken Square"
+								{
+                                    "type": "list",
+                                    "style": "list-hang-notitle",
+                                    "items": [
+                                        "{@i {@b An adventure for Level 4 characters.}}",
+                                        "{@i This adventure is designed to fill one or two sessions of play.}"
+                                    ]
+                                },
+                                {
+                                    "type": "image",
+                                    "href": {
+                                        "type": "external",
+                                        "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/_Great_Wall__concept_art_4.jpg"
+                                    },
+                                    "credit": "Daniel Dociu",
+                                    "width": 602,
+                                    "height": 900
+                                },
+                                {
+                                    "type": "section",
+                                    "name": "Key Plot Points",
+                                    "page": 18,
+                                    "id": "GWP3d1",
+                                    "entries": [
+                                        "The following information is key to the adventure's story:",
+                                        {
+                                            "type": "list",
+                                            "style": "list-hang-notitle",
+                                            "items": [
+                                                {
+                                                    "type": "item",
+                                                    "name": "A Tunnel carved by Magic",
+                                                    "entry": ""
+                                                },
+                                                {
+                                                    "type": "item",
+                                                    "name": "Camp long Abandoned",
+                                                    "entry": ""
+                                                },
+                                                {
+                                                    "type": "item",
+                                                    "name": "The Searing",
+                                                    "entry": ""
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "section",
+                                    "name": "Preparation",
+                                    "page": 18,
+                                    "id": "GWP3d2",
+                                    "entries": [
+                                        "Before running the adventure, prepare as follows:",
+                                        {
+                                            "type": "list",
+                                            "style": "list-hang-notitle",
+                                            "items": [
+                                                {
+                                                    "type": "item",
+                                                    "name": "Step 1",
+                                                    "entry": "Read the {@area Recommended Proficiencies and Spells|GWP3d3|x} section."
+                                                },
+                                                {
+                                                    "type": "item",
+                                                    "name": "Step 2",
+                                                    "entry": "Read {@area Adventure Background|GWP3d4|x}."
+                                                },
+                                                {
+                                                    "type": "item",
+                                                    "name": "Step 3",
+                                                    "entry": "Familiarize yourself with the Key NPCs table below; the characters will interact with these individuals throughout the adventure."
+                                                },
+                                                {
+                                                    "type": "item",
+                                                    "name": "Step 4",
+                                                    "entry": "Bookmark the following stat blocks:"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "list",
+                                            "columns": 2,
+                                            "items": [
+                                                "{@creature Bone Horror|GW}"
+                                            ]
+                                        },
+                                        {
+                                            "type": "table",
+                                            "caption": "Key NPCs",
+                                            "colLabels": [
+                                                "Name",
+                                                "Role",
+                                                "Stat Block",
+                                                "Location"
+                                            ],
+                                            "colStyles": [
+                                                "col-3-5",
+                                                "col-3-5",
+                                                "col-2-5",
+                                                "col-2-5"
+                                            ],
+                                            "rows": [
+                                                [
+                                                    "Vatlaaw Doomtooth",
+                                                    "Mastermind of the tunnel",
+                                                    "{@creature Vatlaaw Doomtooth|GWP}",
+                                                    "Not in the Catacombs, but clues to his plan can be found in the Catacombs"
+                                                ],
+                                                [
+                                                    "Aidan",
+                                                    "Ranger ally",
+                                                    "{@creature Aidan|GWP}",
+                                                    "{@area TBD|GWP3d_|x}"
+                                                ]
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "section",
+                                    "name": "Recommended Proficiencies and Spells",
+                                    "page": 18,
+                                    "id": "GWP3d3",
+                                    "entries": [
+                                        "You can run this adventure for any number of Level 4 characters. Ideally, the party should include proficiency in at least two of the following skills:",
+                                        {
+                                            "type": "list",
+                                            "columns": 2,
+                                            "items": [
+                                                "{@skill Arcana}"
+                                            ]
+                                        },
+                                        "Access to the following spells is also helpful:",
+                                        {
+                                            "type": "list",
+                                            "columns": 2,
+                                            "items": [
+                                                "{@spell detect magic|xphb}"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "section",
+                                    "name": "Adventure Background",
+                                    "page": 18,
+                                    "id": "GWP3d4",
+                                    "entries": [
+                                        "",
+                                        {
+                                            "type": "entries",
+                                            "name": "Vatlaaw Doomtooth",
+                                            "id": "GWP3d4a",
+                                            "entries": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "type": "entries",
+                                            "name": "Aidan",
+                                            "id": "GWP3d4b",
+                                            "entries": [
+                                                ""
+                                            ]
+                                        }
+                                    ]
+                                },
+								{
+                                    "type": "section",
+                                    "name": "Travel to Piken Square",
+                                    "id": "GWP3d5",
+                                    "entries": [
+                                        "Reaching Piken Square from the tunnel takes about 7 days on foot.",
+                                        {
+                                            "type": "entries",
+                                            "name": "Routes",
+                                            "entries": [
+                                                {
+                                                    "type": "entries",
+                                                    "name": "Screamheart Crypt → Piken Square (Tunnel)",
+                                                    "entries": [
+                                                        "{@b Distance.} 250 km; {@b Terrain.} magically carve tunnel with pockets of danger; {@b Travel Pace.} fast 5 days; normal 7 days; slow 11 days.",
+                                                        ""
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "entries",
+                                                    "name": "Barradin Estate → Piken Square (Overland)",
+                                                    "entries": [
+                                                        "{@b Distance.} 430 km; {@b Terrain.} roads south of the wall, wilderness once through the gate; {@b Travel Pace.} fast 8 days; normal 10 days; slow 16 days.",
+                                                        ""
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "entries",
+                                            "name": "Travel Encounters",
+                                            "id": "GWP3d5a",
+                                            "entries": [
+                                                {
+                                                    "type": "entries",
+                                                    "name": "Tunnel Encounters",
+                                                    "entries": [
+                                                        {
+                                                            "type": "entries",
+                                                            "name": "Resting Place",
+                                                            "entries": [
+                                                                "Around 250 meters into the tunnel, the party comes across a small alcove carved into the wall. Inside are the remains of a camp, long abandoned. A few rusted tools and a tattered journal remain. The journal belonged to a miner who worked on the tunnel, and it details the hardships they faced, including cave-ins and attacks by strange creatures. The last entry is dated two weeks ago, and it mentions that they were close to finishing the tunnel when they were forced to abandon it due to an attack by unknown assailants. Similar camps can be found every 3000 meters or so. After the change of style, the camps become cleanly carved and no longer have tools or journals."
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "entries",
+                                                            "name": "Change of Style",
+                                                            "entries": [
+                                                                "Around 500 meters into the tunnel, the rough-hewn walls and floor suddenly shift to a magically carved style. Any character who takes the {@action Study|XPHP} action to inspect the change and succeeds on a {@dc 15} Intelligence ({@skill Arcana|XPHB}) check learns that the change was made using a powerful magical artifact, likely a {@item Sphere of Annihilation|XDMG}. From this point on, the tunnel is smooth."
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "entries",
+                                                            "name": "Devourers in the Dark",
+                                                            "entries": [
+                                                                "Around 50 km into the tunnel, the party is ambushed by a group of N {@creature Lash Devourer|GWP} and N-2 {@creature Carrion Devourer|GWP}. The devourers have made their home in one of the pockets of the tunnel, and they attack anyone who enters their territory. They are feasting on the remains of the miners who were forced to abandon the tunnel. Any character who takes the {@action Study|XPHP} action to inspect a dead miner and succeeds on a {@dc 18} Wisdom ({@skill Medicine|XPHB}) check recognizes the bite marks and burns of a hydra attack."
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "entries",
+                                                            "name": "Rushing Rapids",
+                                                            "entries": [
+                                                                "Around 150 km into the tunnel, the party comes across a section of the tunnel that crosses a subterranean river. The river is fast-moving and treacherous, with strong currents and hidden rocks. The bridge that once crossed the river has been collapsed, and the party must find a way to cross. The river about 35 feet wide and 10 feet below the tunnel floor. The party can attempt to swim across, but they must make a {@dc 15} Strength ({@skill Athletics|XPHB}) check to avoid being swept away by the current. A creature that fails the check is swept 50 feet downstream and takes {@damage 2d6} bludgeoning damage from rocks and debris and can make another check at the end of each of its turns to try to reach the shore."
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "entries",
+                                                            "name": "Hydra Lair",
+                                                            "entries": [
+                                                                "Around 225 km into the tunnel, the party comes across a large chamber that serves as the lair of a {@creature Lost Hydra|GWP}. The hydra has made its home in the chamber, after being released by Vatlaaw Doomtooth to kill the miners and anyone else who tries to use the tunnel. The hydra is aggressive and territorial, and it attacks anyone who enters its lair. The chamber is about 60 feet in diameter, with a high ceiling and several stalactites hanging from above. The hydra is guarding a cluster of eggs, which it will defend fiercely. When they arrive, the hydra is likely to be resting, but it will attack if disturbed."
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "entries",
+                                                    "name": "Overland Encounters",
+                                                    "entries": [
+                                                        {
+                                                            "type": "entries",
+                                                            "name": "",
+                                                            "entries": [
+                                                                ""
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "section",
+                                    "name": "Piken Square",
+                                    "page": 18,
+                                    "id": "GWP3d6",
+                                    "entries": [
+                                        ""
+                                    ]
+                                }
                             ]
                         },
                         {

@@ -527,7 +527,7 @@
                                                             "name": "Avoidance",
                                                             "id": "GWP3c6a2b",
                                                             "entries": [
-                                                                "Extinguishing the torch or moving outside the armor’s direct line of sight prevents it from animating."
+                                                                "Extinguishing the torch prevents it from animating."
                                                             ]
                                                         },
                                                         {
@@ -1606,9 +1606,9 @@
                                     "page": 18,
                                     "id": "GWP3c7",
                                     "entries": [
-                                        "Having defeated the {@creature Screamheart|GWP} Eve wakes up if she survived and they are free to explore the crypt. If she survived, she explains everything she knows about the Screamheart, and ask what the party is doing here. If the party explains that they are looking for a tunnel, she tells them that she has heard of a tunnel that was built by the royalists, but she does not know where it is. She then offers to contact Rurik from them and inform him about the tunnel.",
-                                        "Investigating the crypt they find mining equipment and correspondence from a high ranking member of the royalists, detailing the construction of a tunnel connecting the crypt to Piken Square. The other person of the correspondence is a unkown person, only signing as 'V.D.'. They demand the tunnel to be large enough for a wagon to pass through, and that it must be finished quickly. The first correspondence is dated a few days after the initial attack on Ascalon. The last one is dated three days ago. ",
-                                        "Followin the instructions of the correspondence, the party can find a secret door leading to the tunnel. The tunnel leads to the Piken Square. The tunnel is about 250 km long, which the correspondence states is 'a bit longer than expected, but it will be worth it'. Traveling through the tunnel by foot takes about 55 hours, or 7 days. The tunnel is well lit, and has a few side passages leading to small rooms with supplies and beds. The tunnel is abandoned. The chapter {@area Piken Sqaure|GWP3d|x} expands on the travel through the tunnel and what can be found there."
+                                        "Having defeated the {@creature Screamheart|GWP} Eve wakes up if she survived and they are free to explore the crypt. If she survived, she explains everything she knows about the Screamheart, and asks what the party is doing here. If the party explains that they are looking for a tunnel, she tells them that she has heard of a tunnel that was built by the royalists, but she does not know where it is. She then offers to contact Rurik from them and inform him about the tunnel.",
+                                        "Investigating the crypt they find mining equipment and correspondence from a high ranking member of the royalists, detailing the construction of a tunnel connecting the crypt to Piken Square. The other person of the correspondence is a unkown person, only signing as 'V.D.'. They demand the tunnel to be large enough for a wagon to pass through, and that it must be finished quickly. Shortly after construction started, it became clear that the tunnel would not be finished in time, and the royalist demanded that the tunnel be made smaller. In response, 'V.D.' sent them an item that would help them finish the tunnel faster, a {@item Sphere of Annihilation|XDMG}. The royalist were horrified by the item, but 'V.D.' assured them that it was safe to use, as long as they followed the instructions laid out by the provider of the item, a person named 'Terick'. The first correspondence is dated a few days after the initial attack on Ascalon. The last one is dated 2 weeks ago. ",
+                                        "Followin the instructions of the correspondence, the party can find a secret door leading to the tunnel. The tunnel leads to the Piken Square. The tunnel is about 250 km long. The chapter {@area Piken Sqaure|GWP3d|x} expands on the travel through the tunnel and what can be found there."
                                     ]
                                 }
                             ]
@@ -1619,7 +1619,275 @@
                             "page": 19,
                             "id": "GWP3d",
                             "entries": [
-                                "Piken Square"
+                                {
+                                    "type": "list",
+                                    "style": "list-hang-notitle",
+                                    "items": [
+                                        "{@i {@b An adventure for Level 4 characters.}}",
+                                        "{@i This adventure is designed to fill one or two sessions of play.}"
+                                    ]
+                                },
+                                {
+                                    "type": "image",
+                                    "href": {
+                                        "type": "external",
+                                        "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/_Great_Wall__concept_art_4.jpg"
+                                    },
+                                    "credit": "Daniel Dociu",
+                                    "width": 602,
+                                    "height": 900
+                                },
+                                {
+                                    "type": "section",
+                                    "name": "Key Plot Points",
+                                    "page": 18,
+                                    "id": "GWP3d1",
+                                    "entries": [
+                                        "The following information is key to the adventure's story:",
+                                        {
+                                            "type": "list",
+                                            "style": "list-hang-notitle",
+                                            "items": [
+                                                {
+                                                    "type": "item",
+                                                    "name": "A Tunnel carved by Magic",
+                                                    "entry": ""
+                                                },
+                                                {
+                                                    "type": "item",
+                                                    "name": "Camp long Abandoned",
+                                                    "entry": ""
+                                                },
+                                                {
+                                                    "type": "item",
+                                                    "name": "The Searing",
+                                                    "entry": ""
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "section",
+                                    "name": "Preparation",
+                                    "page": 18,
+                                    "id": "GWP3d2",
+                                    "entries": [
+                                        "Before running the adventure, prepare as follows:",
+                                        {
+                                            "type": "list",
+                                            "style": "list-hang-notitle",
+                                            "items": [
+                                                {
+                                                    "type": "item",
+                                                    "name": "Step 1",
+                                                    "entry": "Read the {@area Recommended Proficiencies and Spells|GWP3d3|x} section."
+                                                },
+                                                {
+                                                    "type": "item",
+                                                    "name": "Step 2",
+                                                    "entry": "Read {@area Adventure Background|GWP3d4|x}."
+                                                },
+                                                {
+                                                    "type": "item",
+                                                    "name": "Step 3",
+                                                    "entry": "Familiarize yourself with the Key NPCs table below; the characters will interact with these individuals throughout the adventure."
+                                                },
+                                                {
+                                                    "type": "item",
+                                                    "name": "Step 4",
+                                                    "entry": "Bookmark the following stat blocks:"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "list",
+                                            "columns": 2,
+                                            "items": [
+                                                "{@creature Bone Horror|GW}"
+                                            ]
+                                        },
+                                        {
+                                            "type": "table",
+                                            "caption": "Key NPCs",
+                                            "colLabels": [
+                                                "Name",
+                                                "Role",
+                                                "Stat Block",
+                                                "Location"
+                                            ],
+                                            "colStyles": [
+                                                "col-3-5",
+                                                "col-3-5",
+                                                "col-2-5",
+                                                "col-2-5"
+                                            ],
+                                            "rows": [
+                                                [
+                                                    "Vatlaaw Doomtooth",
+                                                    "Mastermind of the tunnel",
+                                                    "{@creature Vatlaaw Doomtooth|GWP}",
+                                                    "Not in the Catacombs, but clues to his plan can be found in the Catacombs"
+                                                ],
+                                                [
+                                                    "Aidan",
+                                                    "Ranger ally",
+                                                    "{@creature Aidan|GWP}",
+                                                    "{@area TBD|GWP3d_|x}"
+                                                ]
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "section",
+                                    "name": "Recommended Proficiencies and Spells",
+                                    "page": 18,
+                                    "id": "GWP3d3",
+                                    "entries": [
+                                        "You can run this adventure for any number of Level 4 characters. Ideally, the party should include proficiency in at least two of the following skills:",
+                                        {
+                                            "type": "list",
+                                            "columns": 2,
+                                            "items": [
+                                                "{@skill Arcana}"
+                                            ]
+                                        },
+                                        "Access to the following spells is also helpful:",
+                                        {
+                                            "type": "list",
+                                            "columns": 2,
+                                            "items": [
+                                                "{@spell detect magic|xphb}"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "section",
+                                    "name": "Adventure Background",
+                                    "page": 18,
+                                    "id": "GWP3d4",
+                                    "entries": [
+                                        "",
+                                        {
+                                            "type": "entries",
+                                            "name": "Vatlaaw Doomtooth",
+                                            "id": "GWP3d4a",
+                                            "entries": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "type": "entries",
+                                            "name": "Aidan",
+                                            "id": "GWP3d4b",
+                                            "entries": [
+                                                ""
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "section",
+                                    "name": "Travel to Piken Square",
+                                    "id": "GWP3d5",
+                                    "entries": [
+                                        "Reaching Piken Square from the tunnel takes about 7 days on foot.",
+                                        {
+                                            "type": "entries",
+                                            "name": "Routes",
+                                            "entries": [
+                                                {
+                                                    "type": "entries",
+                                                    "name": "Screamheart Crypt → Piken Square (Tunnel)",
+                                                    "entries": [
+                                                        "{@b Distance.} 250 km; {@b Terrain.} magically carve tunnel with pockets of danger; {@b Travel Pace.} fast 5 days; normal 7 days; slow 11 days.",
+                                                        ""
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "entries",
+                                                    "name": "Barradin Estate → Piken Square (Overland)",
+                                                    "entries": [
+                                                        "{@b Distance.} 430 km; {@b Terrain.} roads south of the wall, wilderness once through the gate; {@b Travel Pace.} fast 8 days; normal 10 days; slow 16 days.",
+                                                        ""
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "entries",
+                                            "name": "Travel Encounters",
+                                            "id": "GWP3d5a",
+                                            "entries": [
+                                                {
+                                                    "type": "entries",
+                                                    "name": "Tunnel Encounters",
+                                                    "entries": [
+                                                        {
+                                                            "type": "entries",
+                                                            "name": "Resting Place",
+                                                            "entries": [
+                                                                "Around 250 meters into the tunnel, the party comes across a small alcove carved into the wall. Inside are the remains of a camp, long abandoned. A few rusted tools and a tattered journal remain. The journal belonged to a miner who worked on the tunnel, and it details the hardships they faced, including cave-ins and attacks by strange creatures. The last entry is dated two weeks ago, and it mentions that they were close to finishing the tunnel when they were forced to abandon it due to an attack by unknown assailants. Similar camps can be found every 3000 meters or so. After the change of style, the camps become cleanly carved and no longer have tools or journals."
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "entries",
+                                                            "name": "Change of Style",
+                                                            "entries": [
+                                                                "Around 500 meters into the tunnel, the rough-hewn walls and floor suddenly shift to a magically carved style. Any character who takes the {@action Study|XPHP} action to inspect the change and succeeds on a {@dc 15} Intelligence ({@skill Arcana|XPHB}) check learns that the change was made using a powerful magical artifact, likely a {@item Sphere of Annihilation|XDMG}. From this point on, the tunnel is smooth."
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "entries",
+                                                            "name": "Devourers in the Dark",
+                                                            "entries": [
+                                                                "Around 50 km into the tunnel, the party is ambushed by a group of N {@creature Lash Devourer|GWP} and N-2 {@creature Carrion Devourer|GWP}. The devourers have made their home in one of the pockets of the tunnel, and they attack anyone who enters their territory. They are feasting on the remains of the miners who were forced to abandon the tunnel. Any character who takes the {@action Study|XPHP} action to inspect a dead miner and succeeds on a {@dc 18} Wisdom ({@skill Medicine|XPHB}) check recognizes the bite marks and burns of a hydra attack."
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "entries",
+                                                            "name": "Rushing Rapids",
+                                                            "entries": [
+                                                                "Around 150 km into the tunnel, the party comes across a section of the tunnel that crosses a subterranean river. The river is fast-moving and treacherous, with strong currents and hidden rocks. The bridge that once crossed the river has been collapsed, and the party must find a way to cross. The river about 35 feet wide and 10 feet below the tunnel floor. The party can attempt to swim across, but they must make a {@dc 15} Strength ({@skill Athletics|XPHB}) check to avoid being swept away by the current. A creature that fails the check is swept 50 feet downstream and takes {@damage 2d6} bludgeoning damage from rocks and debris and can make another check at the end of each of its turns to try to reach the shore."
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "entries",
+                                                            "name": "Hydra Lair",
+                                                            "entries": [
+                                                                "Around 225 km into the tunnel, the party comes across a large chamber that serves as the lair of a {@creature Lost Hydra|GWP}. The hydra has made its home in the chamber, after being released by Vatlaaw Doomtooth to kill the miners and anyone else who tries to use the tunnel. The hydra is aggressive and territorial, and it attacks anyone who enters its lair. The chamber is about 60 feet in diameter, with a high ceiling and several stalactites hanging from above. The hydra is guarding a cluster of eggs, which it will defend fiercely. When they arrive, the hydra is likely to be resting, but it will attack if disturbed."
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "entries",
+                                                    "name": "Overland Encounters",
+                                                    "entries": [
+                                                        {
+                                                            "type": "entries",
+                                                            "name": "",
+                                                            "entries": [
+                                                                ""
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "section",
+                                    "name": "Piken Square",
+                                    "page": 18,
+                                    "id": "GWP3d6",
+                                    "entries": [
+                                        ""
+                                    ]
+                                }
                             ]
                         },
                         {
@@ -2033,14 +2301,14 @@
                                                             "type": "entries",
                                                             "name": "Harpy Ambush",
                                                             "entries": [
-                                                                "Eight {@creature harpy|XMM} attempt to wreck the ship—half remain on coastal rocks using Luring Song while the others tear rigging and pitch sailors overboard."
+                                                                "Eight {@creature coastal harpy|GWP} attempt to wreck the ship—half remain on coastal rocks using Luring Song while the others tear rigging and pitch sailors overboard."
                                                             ]
                                                         },
                                                         {
                                                             "type": "entries",
                                                             "name": "A Storm Aproaches",
                                                             "entries": [
-                                                                "A storm front approaches the ship. Sailing around it adds a day to the voyage.  Sailing into it requires a coordinated effort to not incur any damage to the ship or lose crew."
+                                                                "A storm front approaches the ship. Sailing around it adds a day to the voyage. Sailing into it requires a coordinated effort to not incur any damage to the ship or lose crew."
                                                             ]
                                                         }
                                                     ]
@@ -10196,6 +10464,666 @@
             "savingThrowForcedLegendary": [
                 "dexterity"
             ]
+        },
+        {
+            "name": "Coastal Harpy",
+            "source": "GWP",
+            "size": [
+                "M"
+            ],
+            "type": "monstrosity",
+            "alignment": [
+                "C",
+                "E"
+            ],
+            "ac": [
+                11
+            ],
+            "hp": {
+                "average": 38,
+                "formula": "7d8 + 7"
+            },
+            "speed": {
+                "walk": 20,
+                "fly": 40
+            },
+            "str": 12,
+            "dex": 13,
+            "con": 12,
+            "int": 7,
+            "wis": 10,
+            "cha": 14,
+            "passive": 10,
+            "languages": [
+                "Common"
+            ],
+            "cr": "1",
+            "action": [
+                {
+                    "name": "Claw",
+                    "entries": [
+                        "{@atkr m} {@hit 3}, reach 5 ft. {@h}6 ({@damage 2d4 + 1}) Slashing damage."
+                    ]
+                },
+                {
+                    "name": "Luring Song",
+                    "entries": [
+                        "The harpy sings a magical melody, which lasts until the harpy's {@status Concentration|XPHB} ends on it. {@actSave wis} {@dc 11}, each Humanoid and Giant in a 300-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the harpy when the song starts. {@actSaveFail} The target has the {@condition Charmed|XPHB} condition until the song ends and repeats the save at the end of each of its turns. While {@condition Charmed|XPHB}, the target has the {@condition Incapacitated|XPHB} condition and ignores the Luring Song of other harpies. If the target is more than 5 feet from the harpy, the target moves on its turn toward the harpy by the most direct route, trying to get within 5 feet of the harpy. It doesn't avoid {@action Opportunity Attack|XPHB|Opportunity Attacks}; however, before moving into damaging terrain (such as lava or a pit) and whenever it takes damage from a source other than the harpy, the target repeats the save. {@actSaveSuccess} The target is immune to this harpy's Luring Song for 24 hours."
+                    ]
+                }
+            ],
+            "environment": [
+                "coastal",
+                "forest",
+                "hill",
+                "mountain"
+            ],
+            "treasure": [
+                "any"
+            ],
+            "soundClip": {
+                "type": "external",
+                "url": "https://5e.tools/audio/bestiary/harpy.mp3"
+            },
+            "languageTags": [
+                "C"
+            ],
+            "miscTags": [
+                "MA"
+            ],
+            "conditionInflict": [
+                "charmed",
+                "incapacitated"
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "token": {
+                "name": "Harpy",
+                "source": "XMM"
+            },
+            "fluff": {
+                "name": "Harpy",
+                "source": "XMM",
+                "entries": [
+                    {
+                        "type": "section",
+                        "name": "Harpy",
+                        "entries": [
+                            "{@i Winged Voice of Doom}",
+                            {
+                                "type": "list",
+                                "style": "list-hang-notitle",
+                                "items": [
+                                    {
+                                        "type": "item",
+                                        "name": "Habitat:",
+                                        "entry": "{@filter Coastal|bestiary|environment=coastal}, {@filter Forest|bestiary|environment=forest}, {@filter Hill|bestiary|environment=hill}, {@filter Mountain|bestiary|environment=mountain}"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "name": "Treasure:",
+                                        "entry": "Any"
+                                    }
+                                ]
+                            },
+                            "Hate-filled creatures, harpies strive to cause pain and bring an end to love and life. These monsters combine humanlike features with the talons and wings of avian scavengers. Their notorious songs compel listeners to follow them, heedless of danger. Creatures captivated by a harpy's song frequently meet their deaths on harpies' vicious claws or amid natural perils.",
+                            "Harpies dwell in remote, dismal places tainted by tragedy and despair. Some tales claim harpies offended the gods and were transformed as a punishment; harpies might also be the descendants of such cursed souls.",
+                            "Every harpy sings a distinct song. While some songs are said to be heartbreaking in their beauty, others are wretched squawking and compel only the magically enthralled."
+                        ]
+                    }
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "internal",
+                            "path": "bestiary/XMM/Harpy.webp"
+                        },
+                        "credit": "Mark Zug"
+                    }
+                ]
+            },
+            "spellcasting": [
+                {
+                    "name": "Spellcasting",
+                    "headerEntries": [
+                        "The Coastal Harpy is a 2nd-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 12}, +4 to hit with spell attacks). The Coastal Harpy has the following Mesmer (GW) spells prepared:"
+                    ],
+                    "daily": {
+                        "1e": [
+                            "{@spell leech signet|GW}",
+                            "{@spell mantra of lightning|GW}",
+                            "{@spell wastrel's worry|GWP}"
+                        ]
+                    },
+                    "ability": "cha",
+                    "type": "spellcasting"
+                }
+            ],
+            "spellcastingTags": [
+                "O"
+            ],
+            "damageTags": [
+                "S"
+            ],
+            "damageTagsSpell": [
+                "Y"
+            ],
+            "savingThrowForced": [
+                "wisdom"
+            ],
+            "savingThrowForcedSpell": [
+                "wisdom"
+            ]
+        },
+        {
+            "name": "Lash Devourer",
+            "source": "GWP",
+            "size": [
+                "M"
+            ],
+            "type": "beast",
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                15
+            ],
+            "hp": {
+                "formula": "6d8 + 6",
+                "average": 33
+            },
+            "speed": {
+                "walk": 40
+            },
+            "str": 13,
+            "dex": 14,
+            "con": 13,
+            "int": 1,
+            "wis": 9,
+            "cha": 3,
+            "senses": [
+                "blindsight 60 ft."
+            ],
+            "passive": 9,
+            "cr": "1",
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The scorpion makes two Claw attacks and one Sting attack."
+                    ]
+                },
+                {
+                    "name": "Claw",
+                    "entries": [
+                        "{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 13}) from one of two claws."
+                    ]
+                },
+                {
+                    "name": "Sting",
+                    "entries": [
+                        "{@atk rw} {@hit 4} to hit, range 30/90 ft. {@h}6 ({@damage 1d8 + 2}) Piercing damage plus 5 ({@damage 1d10}) Poison damage."
+                    ]
+                }
+            ],
+            "environment": [
+                "desert"
+            ],
+            "soundClip": {
+                "type": "external",
+                "url": "https://5e.tools/audio/bestiary/giant-scorpion.mp3"
+            },
+            "senseTags": [
+                "B"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "miscTags": [
+                "MA",
+                "RW"
+            ],
+            "conditionInflict": [
+                "grappled"
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "token": {
+                "name": "Giant Scorpion",
+                "source": "XMM"
+            },
+            "fluff": {
+                "name": "Giant Scorpion",
+                "source": "XMM",
+                "entries": [
+                    {
+                        "type": "section",
+                        "name": "Animals",
+                        "entries": [
+                            "Use these stat blocks to represent the creatures they're named for or other similar creatures. For example, the {@creature Panther|XMM} stat block can also represent a mountain lion, while the {@creature Giant Goat|XMM} stat block might represent a buffalo. Any of these stat blocks might also serve as fantastical animals with distinctive names and cosmetic details unique to your D&D adventures."
+                        ]
+                    }
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "internal",
+                            "path": "bestiary/XMM/Giant Scorpion.webp"
+                        }
+                    },
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "internal",
+                            "path": "bestiary/XMM/Animals Hills and Mountains.webp"
+                        },
+                        "title": "A druid calls on animals of the hills and mountains to aid her cause"
+                    },
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "internal",
+                            "path": "bestiary/XMM/Animals Aquatic.webp"
+                        },
+                        "title": "Aquatic animals swim alongside a druid exploring the sea"
+                    },
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "internal",
+                            "path": "bestiary/XMM/Animals Rainforest.webp"
+                        },
+                        "title": "Inhabitants of the rain forest answer a druid's summons"
+                    }
+                ]
+            },
+            "spellcasting": [
+                {
+                    "name": "Spellcasting",
+                    "headerEntries": [
+                        "The Lash Devourer is a 2nd-level spellcaster. Its spellcasting ability is Dexterity (spell save {@dc 12}, +4 to hit with spell attacks). The Lash Devourer has the following Ranger (GW) spells prepared:"
+                    ],
+                    "daily": {
+                        "1e": [
+                            "{@spell power shot|GW}"
+                        ]
+                    },
+                    "will": [
+                        "{@spell point blank shot/zojun's shot|GWP}"
+                    ],
+                    "ability": "dex",
+                    "type": "spellcasting"
+                }
+            ],
+            "spellcastingTags": [
+                "CR"
+            ],
+            "damageTags": [
+                "B",
+                "I",
+                "P"
+            ],
+            "damageTagsSpell": [
+                "O"
+            ]
+        },
+        {
+            "name": "Carrion Devourer",
+            "source": "GWP",
+            "size": [
+                "M"
+            ],
+            "type": "beast",
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                15
+            ],
+            "hp": {
+                "average": 45,
+                "formula": "6d10 + 12"
+            },
+            "speed": {
+                "walk": 40
+            },
+            "str": 14,
+            "dex": 13,
+            "con": 15,
+            "int": 1,
+            "wis": 9,
+            "cha": 3,
+            "senses": [
+                "blindsight 60 ft."
+            ],
+            "passive": 9,
+            "cr": "2",
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The scorpion makes two Claw attacks and one Sting attack."
+                    ]
+                },
+                {
+                    "name": "Claw",
+                    "entries": [
+                        "{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 13}) from one of two claws."
+                    ]
+                },
+                {
+                    "name": "Sting",
+                    "entries": [
+                        "{@atkr m} {@hit 4}, reach 5 ft. {@h}6 ({@damage 1d8 + 2}) Piercing damage plus 11 ({@damage 2d10}) Poison damage."
+                    ]
+                }
+            ],
+            "environment": [
+                "desert"
+            ],
+            "soundClip": {
+                "type": "external",
+                "url": "https://5e.tools/audio/bestiary/giant-scorpion.mp3"
+            },
+            "senseTags": [
+                "B"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "miscTags": [
+                "MA"
+            ],
+            "conditionInflict": [
+                "grappled"
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "token": {
+                "name": "Giant Scorpion",
+                "source": "XMM"
+            },
+            "fluff": {
+                "name": "Giant Scorpion",
+                "source": "XMM",
+                "entries": [
+                    {
+                        "type": "section",
+                        "name": "Animals",
+                        "entries": [
+                            "Use these stat blocks to represent the creatures they're named for or other similar creatures. For example, the {@creature Panther|XMM} stat block can also represent a mountain lion, while the {@creature Giant Goat|XMM} stat block might represent a buffalo. Any of these stat blocks might also serve as fantastical animals with distinctive names and cosmetic details unique to your D&D adventures."
+                        ]
+                    }
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "internal",
+                            "path": "bestiary/XMM/Giant Scorpion.webp"
+                        }
+                    },
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "internal",
+                            "path": "bestiary/XMM/Animals Hills and Mountains.webp"
+                        },
+                        "title": "A druid calls on animals of the hills and mountains to aid her cause"
+                    },
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "internal",
+                            "path": "bestiary/XMM/Animals Aquatic.webp"
+                        },
+                        "title": "Aquatic animals swim alongside a druid exploring the sea"
+                    },
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "internal",
+                            "path": "bestiary/XMM/Animals Rainforest.webp"
+                        },
+                        "title": "Inhabitants of the rain forest answer a druid's summons"
+                    }
+                ]
+            },
+            "spellcasting": [
+                {
+                    "name": "Spellcasting",
+                    "headerEntries": [
+                        "The Carrion Devourer is a 3rd-level spellcaster. Its spellcasting ability is Strength (spell save {@dc 12}, +4 to hit with spell attacks). The Carrion Devourer has the following Warrior (GW) spells prepared:"
+                    ],
+                    "daily": {
+                        "1e": [
+                            "{@spell healing signet|GW}"
+                        ]
+                    },
+                    "will": [
+                        "{@spell executioner's strike|GW}"
+                    ],
+                    "ability": "str",
+                    "type": "spellcasting"
+                }
+            ],
+            "spellcastingTags": [
+                "O"
+            ],
+            "damageTags": [
+                "B",
+                "I",
+                "P"
+            ]
+        },
+        {
+            "name": "Lost Hydra",
+            "source": "GWP",
+            "size": [
+                "H"
+            ],
+            "type": "monstrosity",
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                14
+            ],
+            "hp": {
+                "formula": "14d6 + 70",
+                "average": 119
+            },
+            "speed": {
+                "walk": 40,
+                "swim": 40
+            },
+            "initiative": {
+                "proficiency": 1
+            },
+            "str": 18,
+            "dex": 10,
+            "con": 20,
+            "int": 2,
+            "wis": 14,
+            "cha": 7,
+            "skill": {
+                "perception": "+6"
+            },
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 16,
+            "conditionImmune": [
+                "blinded",
+                "charmed",
+                "deafened",
+                "frightened",
+                "stunned",
+                "unconscious"
+            ],
+            "cr": "6",
+            "trait": [
+                {
+                    "name": "Hold Breath",
+                    "entries": [
+                        "The hydra can hold its breath for 1 hour."
+                    ]
+                },
+                {
+                    "name": "Multiple Heads",
+                    "entries": [
+                        "The hydra has five heads. Whenever the hydra takes 25 damage or more on a single turn, one of its heads dies. The hydra dies if all its heads are dead. At the end of each of its turns when it has at least one living head, the hydra grows two heads for each of its heads that died since its last turn, unless it has taken Fire damage since its last turn. The hydra regains 20 {@variantrule Hit Points|XPHB} when it grows new heads."
+                    ]
+                },
+                {
+                    "name": "Reactive Heads",
+                    "entries": [
+                        "For each head the hydra has beyond one, it gets an extra {@variantrule Reaction|XPHB} that can be used only for {@action Opportunity Attack|XPHB|Opportunity Attacks}."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The hydra makes as many Bite attacks as it has heads, it can forgo three of these attacks to use spellcasting."
+                    ]
+                },
+                {
+                    "name": "Bite",
+                    "entries": [
+                        "{@atkr m} {@hit 7}, reach 10 ft. {@h}9 ({@damage 1d10 + 4}) Piercing damage."
+                    ]
+                }
+            ],
+            "environment": [
+                "coastal",
+                "swamp"
+            ],
+            "treasure": [
+                "any"
+            ],
+            "soundClip": {
+                "type": "external",
+                "url": "https://5e.tools/audio/bestiary/hydra.mp3"
+            },
+            "traitTags": [
+                "Hold Breath"
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "miscTags": [
+                "MA",
+                "RCH"
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "token": {
+                "name": "Hydra",
+                "source": "XMM"
+            },
+            "fluff": {
+                "name": "Hydra",
+                "source": "XMM",
+                "entries": [
+                    {
+                        "type": "section",
+                        "name": "Hydra",
+                        "entries": [
+                            "{@i Multiheaded Serpent of Legend}",
+                            {
+                                "type": "list",
+                                "style": "list-hang-notitle",
+                                "items": [
+                                    {
+                                        "type": "item",
+                                        "name": "Habitat:",
+                                        "entry": "{@filter Coastal|bestiary|environment=coastal}, {@filter Swamp|bestiary|environment=swamp}"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "name": "Treasure:",
+                                        "entry": "Any"
+                                    }
+                                ]
+                            },
+                            "Hydras are storied hero slayers with vicious, serpentine heads and infamous regenerative powers. Endlessly hungry, they devour any creatures they catch. Hydras that deplete an area of prey often go into a lengthy torpor until new prey arrives.",
+                            "Most hydras have five heads, but some mature or battle-tested hydras have more. Such elder hydras might become local legends, known for their battles with heroes or for the riches lost in their domains.",
+                            "While many hydras claim their own territories, wicked deities might use them to guard treasures or magical sites. Roll on or choose a result from the Hydra Lairs table to inspire why a hydra lurks where it does.",
+                            {
+                                "type": "table",
+                                "caption": "Hydra Lairs",
+                                "colLabels": [
+                                    "1d4",
+                                    "The Hydra Lurks Where It Does To..."
+                                ],
+                                "colStyles": [
+                                    "col-2 text-center",
+                                    "col-10"
+                                ],
+                                "rows": [
+                                    [
+                                        "1",
+                                        "Ensure none claim the weapon of a fallen hero."
+                                    ],
+                                    [
+                                        "2",
+                                        "Defend the home of a wise but sinister oracle."
+                                    ],
+                                    [
+                                        "3",
+                                        "Guard a magical herb that blooms once a year."
+                                    ],
+                                    [
+                                        "4",
+                                        "Protect a font of poison that pollutes a river."
+                                    ]
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "internal",
+                            "path": "bestiary/XMM/Hydra.webp"
+                        },
+                        "credit": "John Tedrick"
+                    }
+                ]
+            },
+            "spellcasting": [
+                {
+                    "name": "Spellcasting",
+                    "headerEntries": [
+                        "The Lost Hydra is a 9th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, +5 to hit with spell attacks). The Lost Hydra has the following Elementalist (GW) spells prepared:"
+                    ],
+                    "daily": {
+                        "1e": [
+                            "{@spell fireball (guild wars)|GW}",
+                            "{@spell immolate|GW}",
+                            "{@spell lava font|GWP}",
+                            "{@spell mind burn|GW}"
+                        ]
+                    },
+                    "ability": "wis",
+                    "type": "spellcasting"
+                }
+            ],
+            "spellcastingTags": [
+                "O"
+            ],
+            "damageTags": [
+                "P"
+            ]
         }
     ],
     "feat": [],
@@ -10878,11 +11806,11 @@
             ],
             "entries": [
                 "{@variantrule Enchantment|GW}",
-                "Exploit a nearby corpse to create a Bone Horror.",
+                "Exploit a nearby corpse to create a {@creature Bone Horror|GW}.",
                 "Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, and the target becomes a {@creature Bone Horror|GW}. ",
                 "The {@creature Bone Horror|GW} remains for the duration or until it reaches zero hit points, at which point it will disintegrate into ash.",
                 "The {@creature Bone Horror|GW} is friendly to you and your allies for the duration. If you fall {@condition unconscious}, the {@creature Bone Horror|GW} becomes hostile towards everything instead of disintegrating into ash. The {@creature Bone Horror|GW} acts on your initiative but takes its turn directly after yours. The {@creature Bone Horror|GW} is in the DM's control.",
-                "On each of your turns until the spell ends, you can use your action to animate another bone horror this way."
+                "On each of your turns until the spell ends, you can use your action to animate another {@creature Bone Horror|GW} this way."
             ],
             "source": "GWP",
             "components": {
@@ -10913,7 +11841,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/2/22/Animate_Bone_Horror.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Prophecies/Non-Elite/Animate_Bone_Horror.jpg"
                         }
                     }
                 ]
@@ -17161,7 +18089,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/c/c1/Backbreaker.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Prophecies/Elite/Backbreaker.jpg"
                         }
                     }
                 ]
@@ -20318,7 +21246,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/5/54/Balthazar%27s_Spirit.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Prophecies/Non-Elite/Balthazar%27s_Spirit.jpg"
                         }
                     }
                 ]
@@ -21803,7 +22731,7 @@
         },
         {
             "name": "Aura of the Lich",
-            "level": 6,
+            "level": 5,
             "school": "N",
             "time": [
                 {
@@ -21846,7 +22774,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/5/5e/Aura_of_the_Lich.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Prophecies/Elite/Aura_of_the_Lich.jpg"
                         }
                     }
                 ]
@@ -21880,9 +22808,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 7th or 8th level, the duration increases to 8 hours. When you use a spell slot of 9th level, the duration increases to 24 hours."
+                        "When you cast this spell using a spell slot of 6th or 7th level, the duration increases to 8 hours. When you use a spell slot of 8th level, the duration increases to 24 hours."
                     ]
                 }
             ],
@@ -22334,7 +23262,7 @@
         },
         {
             "name": "Amity",
-            "level": 3,
+            "level": 1,
             "school": "A",
             "time": [
                 {
@@ -22375,7 +23303,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/e/ee/Amity.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Prophecies/Elite/Amity.jpg"
                         }
                     }
                 ]
@@ -22408,9 +23336,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 4th level or higher, the radius of the spell increases by 5 feet for each slot level above 3rd."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the radius of the spell increases by 5 feet for each slot level above 2nd."
                     ]
                 }
             ],
@@ -22606,8 +23534,8 @@
                 {
                     "type": "timed",
                     "duration": {
-                        "type": "round",
-                        "amount": 2
+                        "type": "minute",
+                        "amount": 1
                     }
                 }
             ],
@@ -22627,7 +23555,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/f/f7/Aura_of_Faith.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Prophecies/Elite/Aura_of_Faith.jpg"
                         }
                     }
                 ]
@@ -30247,7 +31175,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/2/29/Armor_of_Frost.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Prophecies/Non-Elite/Armor_of_Frost.jpg"
                         }
                     }
                 ]
@@ -31173,7 +32101,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/a/ad/Armor_of_Mist.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Prophecies/Non-Elite/Armor_of_Mist.jpg"
                         }
                     }
                 ]
@@ -32388,7 +33316,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/5/56/Axe_Twist.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Prophecies/Non-Elite/Axe_Twist.jpg"
                         }
                     }
                 ]
@@ -32709,181 +33637,6 @@
                 "ST"
             ],
             "miscTags": [
-                "SGT"
-            ]
-        },
-        {
-            "name": "Taste of Death",
-            "level": 0,
-            "school": "N",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "bonus"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 300
-                }
-            },
-            "duration": [
-                {
-                    "type": "instant"
-                }
-            ],
-            "entries": [
-                "Suck out the life force of an undead minion you control to heal yourself.",
-                "Choose one friendly undead creature, which has been created by a spell or an ability, that you can see within range. The target loses health equal to {@dice 8d4} and you regain hit points equal to the amount of health lost.",
-                "This spell's health loss increases by {@dice 4d4} when you reach 5th level ({@dice 12d4}), 11th level ({@dice 16d4}), and 17th level ({@dice 20d4})."
-            ],
-            "source": "GWP",
-            "fluff": {
-                "entries": [
-                    "Taste of Death",
-                    "Spell. Steal up to 100...340...400 Health from target animated undead ally. "
-                ],
-                "images": [
-                    {
-                        "type": "image",
-                        "href": {
-                            "type": "external",
-                            "url": "https://wiki.guildwars.com/images/c/ca/Taste_of_Death.jpg"
-                        }
-                    }
-                ]
-            },
-            "optionalfeatures": [
-                {
-                    "name": "Blessed Warrior",
-                    "source": "TCE",
-                    "featureType": [
-                        "FS:P"
-                    ]
-                },
-                {
-                    "name": "Druidic Warrior",
-                    "source": "TCE",
-                    "featureType": [
-                        "FS:R"
-                    ]
-                },
-                {
-                    "name": "Pact of the Tome",
-                    "source": "PHB",
-                    "featureType": [
-                        "PB"
-                    ]
-                }
-            ],
-            "backgrounds": [
-                {
-                    "name": "Northeastern Kryta",
-                    "source": "GWP"
-                },
-                {
-                    "name": "Necromancer",
-                    "source": "GW"
-                },
-                {
-                    "name": "Death Magic",
-                    "source": "GW"
-                }
-            ],
-            "components": {
-                "s": true
-            },
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Cleric",
-                        "source": "XPHB"
-                    },
-                    {
-                        "name": "Warlock",
-                        "source": "XPHB"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "XPHB"
-                    }
-                ],
-                "fromSubclass": [
-                    {
-                        "class": {
-                            "name": "Artificer",
-                            "source": "xua2025eberronupdates"
-                        },
-                        "subclass": {
-                            "name": "Reanimator",
-                            "shortName": "Reanimator",
-                            "source": "xua2025horrorsubclasses"
-                        }
-                    },
-                    {
-                        "class": {
-                            "name": "Druid",
-                            "source": "XPHB"
-                        },
-                        "subclass": {
-                            "name": "Circle of spores",
-                            "shortName": "Spores",
-                            "source": "TCE"
-                        }
-                    },
-                    {
-                        "class": {
-                            "name": "Illrigger",
-                            "source": "IllriggerRevised"
-                        },
-                        "subclass": {
-                            "name": "Architect of ruin",
-                            "shortName": "Architect of Ruin",
-                            "source": "IllriggerRevised"
-                        }
-                    },
-                    {
-                        "class": {
-                            "name": "Fighter",
-                            "source": "XPHB"
-                        },
-                        "subclass": {
-                            "name": "Eldritch knight",
-                            "shortName": "Eldritch Knight",
-                            "source": "XPHB"
-                        }
-                    },
-                    {
-                        "class": {
-                            "name": "Gunslinger",
-                            "source": "ValdaGunslinger"
-                        },
-                        "subclass": {
-                            "name": "Spellslinger",
-                            "shortName": "Spellslinger",
-                            "source": "ValdaGunslinger"
-                        }
-                    },
-                    {
-                        "class": {
-                            "name": "Rogue",
-                            "source": "XPHB"
-                        },
-                        "subclass": {
-                            "name": "Arcane trickster",
-                            "shortName": "Arcane Trickster",
-                            "source": "XPHB"
-                        }
-                    }
-                ]
-            },
-            "areaTags": [
-                "ST"
-            ],
-            "miscTags": [
-                "HL",
                 "SGT"
             ]
         },
@@ -33881,7 +34634,7 @@
         },
         {
             "name": "Awaken the Blood",
-            "level": 3,
+            "level": 2,
             "school": "N",
             "time": [
                 {
@@ -33920,7 +34673,7 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/e/e4/Awaken_the_Blood.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Prophecies/Non-Elite/Awaken_the_Blood.jpg"
                         }
                     }
                 ]
@@ -33949,9 +34702,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 5th or 6th level, the duration increases to 8 hours. When you use a spell slot of 7th level or higher, the duration increases to 24 hours."
+                        "When you cast this spell using a spell slot of 4th or 5th level, the duration increases to 8 hours. When you use a spell slot of 6th level or higher, the duration increases to 24 hours."
                     ]
                 }
             ],
@@ -34208,14 +34961,14 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/a/a6/Arcane_Thievery.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Prophecies/Non-Elite/Arcane_Thievery.jpg"
                         }
                     },
                     {
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://wiki.guildwars.com/images/f/fb/Arcane_Larceny.jpg"
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Arcane_Larceny.jpg"
                         }
                     }
                 ]

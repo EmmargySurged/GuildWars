@@ -1656,9 +1656,180 @@
                 {
                     "name": "Life",
                     "entries": [
-                        "The Spirit of Life explodes when it dies. Each friendly creature in a 20-foot Emanation originating from the Spirit of Destruction regains Nd10 hit points. N is twice the number of rounds the Spirit of Life was alive for plus the level of the spell. "
+                        "The Spirit of Life explodes when it dies. Each friendly creature in a 20-foot Emanation originating from the Spirit of Life regains Nd10 hit points. N is twice the number of rounds the Spirit of Life was alive for plus the level of the spell. "
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Spirit of Restoration",
+            "size": [
+                "M"
+            ],
+            "type": "undead",
+            "source": "GWF",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "ac": 15,
+                    "condition": "+ Spell Level",
+                    "braces": true
+                }
+            ],
+            "hp": {
+                "special": "10 + Spell Level * 10"
+            },
+            "speed": {},
+            "str": 10,
+            "dex": 10,
+            "con": 10,
+            "int": 10,
+            "wis": 10,
+            "cha": 10,
+            "passive": 10,
+            "actionTags": [
+                "Multiattack"
+            ],
+            "immune": [
+                "poison"
+            ],
+            "conditionImmune": [
+                "blinded",
+                "charmed",
+                "deafened",
+                "exhaustion",
+                "frightened",
+                "grappled",
+                "incapacitated",
+                "paralyzed",
+                "petrified",
+                "poisoned",
+                "restrained",
+                "stunned",
+                "unconscious"
+            ],
+            "fluff": {
+                "entries": [
+                    "Destruction",
+                    "Binding Ritual. Create a level 1...11...14 Spirit that dies after 30 seconds. When this Spirit dies, all foes in the area take 5...21...25 damage for each second the Spirit was alive (maximum 150 damage). "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Defensive_binding_spirit.jpg"
+                        }
+                    }
+                ]
+            },
+            "senses": [
+                "blindsight 120 ft."
+            ],
+            "senseTags": [
+                "B"
+            ],
+            "tokenHref": {
+                "type": "external",
+                "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Defensive_binding_spirit_Token.png"
+            },
+            "trait": [
+                {
+                    "name": "Restoration",
+                    "entries": [
+                        "When the Spirit of Restoration dies, choose any number of friendly creatures that have not been dead for more than 1 hour within a 20-foot Emanation. A target returns to life with N% of their maximum hit points, where N is the level of spell * 10. A target is {@condition incapacitated} until the end of their next turn."
+                    ]
+                }
+            ],
+            "conditionInflict": [
+                "incapacitated"
+            ]
+        },
+        {
+            "name": "Spirit of Shelter",
+            "size": [
+                "M"
+            ],
+            "type": "undead",
+            "source": "GWF",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "ac": 10,
+                    "condition": "+ Spell Level",
+                    "braces": true
+                }
+            ],
+            "hp": {
+                "special": "10 + Spell Level * 10"
+            },
+            "speed": {},
+            "str": 10,
+            "dex": 10,
+            "con": 10,
+            "int": 10,
+            "wis": 10,
+            "cha": 10,
+            "passive": 10,
+            "actionTags": [
+                "Multiattack"
+            ],
+            "immune": [
+                "poison"
+            ],
+            "conditionImmune": [
+                "blinded",
+                "charmed",
+                "deafened",
+                "exhaustion",
+                "frightened",
+                "grappled",
+                "incapacitated",
+                "paralyzed",
+                "petrified",
+                "poisoned",
+                "restrained",
+                "stunned",
+                "unconscious"
+            ],
+            "fluff": {
+                "entries": [
+                    "Binding Ritual. Create a level 1...10...12 spirit. Whenever a non-spirit ally in its range takes damage or life steal, it is reduced by 15 and the spirit takes 15 damage. This spirit dies after 30...54...60 seconds."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Defensive_binding_spirit.jpg"
+                        }
+                    }
+                ]
+            },
+            "senses": [
+                "blindsight 120 ft."
+            ],
+            "senseTags": [
+                "B"
+            ],
+            "trait": [
+                {
+                    "name": "Shelter",
+                    "entries": [
+                        "Any friendly non-summoning ritual creature who takes more than 10% of its maximum hit points in damage has the damage reduced to 10% of its maximum hit points. This spirit then takes 10 force damage."
+                    ]
+                }
+            ],
+            "tokenHref": {
+                "type": "external",
+                "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Defensive_binding_spirit_Token.png"
+            },
+            "damageTags": [
+                "O"
             ]
         }
     ],
@@ -13252,7 +13423,7 @@
         },
         {
             "name": "Union",
-            "level": 4,
+            "level": 3,
             "school": "N",
             "time": [
                 {
@@ -15505,10 +15676,10 @@
             ],
             "entries": [
                 "{@variantrule Elite|GW}",
-                "Exploit a nearby corpse to create a Flesh Golem.",
-                "Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, the target becomes a {@creature Flesh Golem|GWF}. ",
-                "The {@creature Flesh Golem|GWF} remains for the duration, until it reaches zero hit points, you create a new one or you unprepare this spell, at which point it will leave behind an exploitable corpse.",
-                "The {@creature Flesh Golem|GWF} is friendly to you and your allies. The {@creature Flesh Golem|GWF} acts on your initiative, but takes it turn directly after yours. The {@creature Flesh Golem|GWF} is in the DMs control."
+                "Exploit a nearby corpse to create a {@creature Flesh Golem|GWF}.",
+                "Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, and the target becomes a {@creature Flesh Golem|GWF}. ",
+                "The {@creature Flesh Golem|GWF} remains for the duration until it reaches zero hit points, you create a new one, or you unprepare this spell, at which point it will leave behind an exploitable corpse.",
+                "The {@creature Flesh Golem|GWF} is friendly to you and your allies. The {@creature Flesh Golem|GWF} acts on your initiative but takes its turn directly after yours. The {@creature Flesh Golem|GWF} is in the DM's control."
             ],
             "source": "GWF",
             "components": {
@@ -17094,7 +17265,7 @@
                 "{@variantrule Elite|GW}",
                 "Create a cacophony of gibbering souls in an area, discharging their pent-up frustration.",
                 "Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save, a target takes {@damage 3d12} lightning damage. On a successful save, a target takes half as much damage.",
-                "If you are holding an object created by a spell or if there is at least one friendly {@variantrule summoning ritua|GW}within range, you regain the spell slot expended in the casting."
+                "If you are holding an object created by a spell or if there is at least one friendly {@variantrule summoning ritual|GW} within range, you regain the spell slot expended in the casting."
             ],
             "source": "GWF",
             "fluff": {
@@ -30102,11 +30273,11 @@
                 }
             ],
             "entries": [
-                "Exploit a nearby corpse to create a Vampiric Horror.",
+                "Exploit a nearby corpse to create a {@creature Vampiric Horror|GWF}.",
                 "Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, and the target becomes a {@creature Vampiric Horror|GWF}. ",
                 "The {@creature Vampiric Horror|GWF} remains for the duration or until it reaches zero hit points, at which point it will disintegrate into ash.",
                 "The {@creature Vampiric Horror|GWF} is friendly to you and your allies for the duration. If you fall {@condition unconscious}, the {@creature Vampiric Horror|GWF} becomes hostile towards everything instead of disintegrating into ash. The {@creature Vampiric Horror|GWF} acts on your initiative but takes its turn directly after yours. The {@creature Vampiric Horror|GWF} is in the DM's control.",
-                "On each of your turns until the spell ends, you can use your action to animate another bone horror this way."
+                "On each of your turns until the spell ends, you can use your action to animate another {@creature Vampiric Horror|GWF} this way."
             ],
             "source": "GWF",
             "components": {
@@ -34213,7 +34384,7 @@
         },
         {
             "name": "Displacement",
-            "level": 7,
+            "level": 4,
             "school": "N",
             "time": [
                 {
@@ -50107,6 +50278,879 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "Restoration",
+            "level": 5,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@variantrule Summoning Ritual|GW|Summoning Ritual:} {@creature Spirit of Restoration|GWF}",
+                "Bind a Spirit of Life to your will, which revives allies upon death.",
+                "Summon a {@creature Spirit of Restoration|GWF} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative but takes its turn directly after yours. The spirit is in the DM's control."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Restoration",
+                    "Binding Ritual. Create a level 1...11...14 spirit. When this spirit dies, all party members in the area are resurrected with 5...41...50% Health and zero Energy. This spirit dies after 30 seconds."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Restoration.jpg"
+                        }
+                    }
+                ]
+            },
+            "miscTags": [
+                "HL",
+                "SGT",
+                "SMN"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Ritualist",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Restoration Magic",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Summoning Ritual",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a poem written about Restoration in rare inks worth 600+ GP, which the spell consumes",
+                    "consume": true,
+                    "cost": 60000
+                }
+            },
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "areaTags": [
+                "MT",
+                "S"
+            ]
+        },
+        {
+            "name": "Shelter",
+            "level": 5,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@variantrule Summoning Ritual|GW|Summoning Ritual:} {@creature Spirit of Shelter|GWF}",
+                "Bind a Spirit of Displacement to your will, saving allies from powerful hits.",
+                "Summon a {@creature Spirit of Shelter|GWF} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative but takes its turn directly after yours. The spirit is in the DM's control."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Shelter",
+                    "Binding Ritual. Create a level 1...10...12 spirit. Non-spirit allies within its range cannot lose more than 10% maximum Health from a single attack. When this spirit prevents damage, it loses 75...51...45 Health. This spirit lasts 30...54...60 seconds."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/a/a4/Shelter.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "MT"
+            ],
+            "miscTags": [
+                "SMN"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Ritualist",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Communing",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Summoning Ritual",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a poem written about shelter"
+            },
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "School of necromancy",
+                            "shortName": "Necromancy",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Signet of Creation",
+            "level": 3,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "{@variantrule Signet|GW|Signet:} Long Rest",
+                "Activate your signet of creation, reclaiming energy spent in the casting of summoning spells.",
+                "If you have expended one or more spell slots in the casting of a spell that summons a creature, regain the spell slots expended in the casting of those spells if their associated creatures are within range."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Signet of Creation",
+                    "Signet. You gain 4 Energy for every summoned creature you control within earshot (maximum 3...10...12 Energy)."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Signet_of_Creation.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Ritualist",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Spawning Power",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Signet",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "s": true
+            },
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "School of necromancy",
+                            "shortName": "Necromancy",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ]
+        },
+        {
+            "name": "Siphon Speed",
+            "level": 1,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@variantrule Hex|GW}",
+                "Magically tap into the energy pathways of a creature, reducing a creature's speed and increasing yours.",
+                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, for the duration, the target's speed is reduced by 33%, and your speed is increased by 33%. Additionally, if the target willingly moved on its last turn, you regain the spell slot expended in the casting when you exit initiative or take a short rest."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Siphon Speed",
+                    "Hex Spell. For 5...13...15 seconds, target foe moves 33% slower and you move 33% faster. This spell has half the normal range. This spell recharges 50% faster if cast on a moving foe."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Siphon_Speed.jpg"
+                        }
+                    }
+                ]
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
+                    ]
+                }
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Assassin",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Deadly Arts",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Hex",
+                    "source": "GW"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Collage of swords",
+                            "shortName": "Swords",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Virtuoso",
+                            "shortName": "Virtuoso",
+                            "source": "GW2EoD"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Bladesinging",
+                            "shortName": "Bladesinging",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Signet of Malice",
+            "level": 0,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Collage of swords",
+                            "shortName": "Swords",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@variantrule Signet|GW|Signet:} Initiative",
+                "Activate your signet of malice, relishing in the suffering of others.",
+                "Choose one creature that you can see within range. You remove the latest N harmful conditions on yourself, where N is the number of harmful conditions on the target."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Signet of Malice",
+                    "Signet. For each condition suffered by target foe, you lose one condition."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Signet_of_Malice.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Assassin",
+                    "source": "GWF"
+                },
+                {
+                    "name": "No Attribute - Assassin",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Signet",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "s": true
+            }
+        },
+        {
+            "name": "Shameful Fear",
+            "level": 2,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Collage of swords",
+                            "shortName": "Swords",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Virtuoso",
+                            "shortName": "Virtuoso",
+                            "source": "GW2EoD"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Bladesinging",
+                            "shortName": "Bladesinging",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@variantrule Hex|GW}",
+                "Induce a fear of the comical in a creature.",
+                "Choose one hostile creature that you can see within range. For the duration, the target's speed is increased by 10%, and for every foot the target travels, they take {@damage 1d6} psychic damage."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Shameful Fear",
+                    "Hex Spell. For 10 seconds, target foe moves 10% faster than normal. For each second, if that foe is moving, that foe takes 5...17...20 damage."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Shameful_Fear.jpg"
+                        }
+                    }
+                ]
+            },
+            "miscTags": [
+                "SGT"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Assassin",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Deadly Arts",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Hex",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "savingThrow": [
+                "strength"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "areaTags": [
+                "ST"
+            ]
         }
     ],
     "table": [],

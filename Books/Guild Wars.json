@@ -2017,6 +2017,10 @@
             "time": [
                 {
                     "number": 1,
+                    "unit": "action"
+                },
+                {
+                    "number": 1,
                     "unit": "reaction",
                     "condition": "which you take when you see a creature within range make an attack roll"
                 }
@@ -2035,8 +2039,9 @@
             ],
             "entries": [
                 "{@variantrule Signet|GW|Signet:} Short Rest",
-                "You attempt to interrupt a creature in the process of making an attack roll.",
-                "Choose one attacking creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes {@damage 1d8} radiant damage, is knocked {@condition prone} and the attack roll misses. On a successful save, the target takes half as much damage, but suffers no other effect."
+                "Punish a creature for their violence.",
+                "Choose one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes {@damage 3d8} radiant damage. On a successful save, the target takes half as much damage.",
+                "If the creature is attacking and it failed its save, it's knocked {@condition prone}."
             ],
             "source": "GW",
             "components": {
@@ -2095,9 +2100,6 @@
                     "name": "Istan",
                     "source": "GWN"
                 }
-            ],
-            "conditionInflict": [
-                "prone"
             ],
             "classes": {
                 "fromClassList": [

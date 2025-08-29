@@ -257,7 +257,8 @@ if __name__ == "__main__":
             {"name": "Architect of Ruin", "shortName": "Architect of Ruin", "source": "IllriggerRevised"}
         ]},
         {"name": "Paladin", "source": "XPHB", "sub_classes": [
-            {"name": "Oath of Ancients", "shortName": "Ancients", "source": "XPHB"}
+            {"name": "Oath of Ancients", "shortName": "Ancients", "source": "XPHB"},
+            {"name": "Oath of the Noble Genies", "shortName": "Noble Genies", "source": "xua2025ForgottenRealmsSubclasses"}
         ]},
         {"name": "Psion", "source": "xua2025psion", "sub_classes": [
             {"name": "Metamorph", "shortName": "Metamorph", "source": "xua2025psion"},

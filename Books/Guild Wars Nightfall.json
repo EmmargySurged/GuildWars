@@ -1,2089 +1,2089 @@
 {
-	"_meta": {
-		"sources": [
-			{
-				"json": "GWN",
-				"abbreviation": "GWN",
-				"full": "Guild Wars Nightfall",
-				"url": "",
-				"authors": [
-					"EmmargySurged",
-					"CaptainDJUli",
-					"ArenaNet"
-				],
-				"convertedBy": [
-					"EmmargySurged [She/They]",
-					"CaptainDJUli [She/Her]"
-				],
-				"color": "e5ad2e"
-			}
-		],
-		"status": "ready",
-		"dateAdded": 1701938868,
-		"dateLastModified": 1701938868
-	},
-	"adventure": [],
-	"adventureData": [],
-	"item": [],
-	"monster": [],
-	"feat": [],
-	"spell": [
-		{
-			"name": "Overbearing Smash",
-			"level": 1,
-			"school": "V",
-			"time": [
-				{
-					"number": 0,
-					"unit": "special",
-					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
-				}
-			],
-			"range": {
-				"type": "special"
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 1
-					}
-				}
-			],
-			"entries": [
-				"{@variantrule Weapon Attack Spell|GW}",
-				"Exploit a creature's momentary vulnerability if they are prone to daze them.",
-				"On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d12} damage, and, if the target is knocked {@condition prone}, must make a Constitution saving throw. On a failed save, the target is {@condition dazed|GW} for the duration. On a successful save, the target is affected for 1 round only.",
-				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
-			],
-			"source": "GWN",
-			"fluff": {
-				"entries": [
-					"Overbearing Smash",
-					"Hammer Attack. If this attack hits, you deal +1...16...20 damage. If target foe is knocked down, that foe is Dazed for 1...7...8 second[s]. "
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/f/f8/Overbearing_Smash.jpg"
-						}
-					}
-				]
-			},
-			"components": {
-				"v": true
-			},
-			"miscTags": [
-				"AAD"
-			],
-			"backgrounds": [
-				{
-					"name": "Kourna",
-					"source": "GWN"
-				},
-				{
-					"name": "Warrior",
-					"source": "GW"
-				},
-				{
-					"name": "Hammer Mastery",
-					"source": "GW"
-				},
-				{
-					"name": "Weapon Attack Spell",
-					"source": "GW"
-				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Paladin",
-						"source": "XPHB"
-					},
-					{
-						"name": "Ranger",
-						"source": "XPHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Artificer",
-							"source": "xua2025eberronupdates"
-						},
-						"subclass": {
-							"name": "Armorer",
-							"shortName": "Armorer",
-							"source": "xua2025eberronupdates"
-						}
-					},
-					{
-						"class": {
-							"name": "Artificer",
-							"source": "xua2025eberronupdates"
-						},
-						"subclass": {
-							"name": "Battle smith",
-							"shortName": "Battle Smith",
-							"source": "xua2025eberronupdates"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "Inquisition domain",
-							"shortName": "Inquisition",
-							"source": "GrimHollowPlayerPack"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "War domain",
-							"shortName": "War",
-							"source": "XPHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Illrigger",
-							"source": "IllriggerRevised"
-						},
-						"subclass": {
-							"name": "Architect of ruin",
-							"shortName": "Architect of Ruin",
-							"source": "IllriggerRevised"
-						}
-					},
-					{
-						"class": {
-							"name": "Psion",
-							"source": "xua2025psion"
-						},
-						"subclass": {
-							"name": "Metamorph",
-							"shortName": "Metamorph",
-							"source": "xua2025psion"
-						}
-					},
-					{
-						"class": {
-							"name": "Warlock",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "The hexblade",
-							"shortName": "Hexblade",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "Eldritch knight",
-							"shortName": "Eldritch Knight",
-							"source": "XPHB"
-						}
-					}
-				]
-			},
-			"conditionInflict": [
-				"dazed|gw",
-				"prone"
-			],
-			"savingThrow": [
-				"constitution"
-			],
-			"areaTags": [
-				"ST"
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d12} damage for each slot level above 1st on a hit."
-					]
-				}
-			]
-		},
-		{
-			"name": "Magehunter's Smash",
-			"level": 1,
-			"school": "V",
-			"time": [
-				{
-					"number": 0,
-					"unit": "special",
-					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
-				}
-			],
-			"range": {
-				"type": "special"
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"{@variantrule Adrenaline|GW|Adrenaline:} 8, {@variantrule Elite|GW}, {@variantrule Unblockable|GW}, {@variantrule Weapon Attack Spell|GW}",
-				"Attempt to knock a creature {@condition prone}; creatures with a beneficial effect on them have a harder time resisting.",
-				"On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d12} damage, and must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}.",
-				"If the target is under the effect of a beneficial spell, the target has disadvantage on the saving throw, and this attack gains the {@variantrule Unblockable|GW} property."
-			],
-			"source": "GWN",
-			"fluff": {
-				"entries": [
-					"Magehunter's Smash",
-					"Elite Hammer Attack. If this attack hits, target foe is knocked down. If your target is under the effects of an enchantment, this attack cannot be blocked. "
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/1/11/Magehunter%27s_Smash.jpg"
-						}
-					}
-				]
-			},
-			"components": {
-				"v": true
-			},
-			"conditionInflict": [
-				"prone"
-			],
-			"backgrounds": [
-				{
-					"name": "Kourna",
-					"source": "GWN"
-				},
-				{
-					"name": "Warrior",
-					"source": "GW"
-				},
-				{
-					"name": "Hammer Mastery",
-					"source": "GW"
-				},
-				{
-					"name": "Elite",
-					"source": "GW"
-				},
-				{
-					"name": "Adrenaline",
-					"source": "GW"
-				},
-				{
-					"name": "Unblockable",
-					"source": "GW"
-				},
-				{
-					"name": "Weapon Attack Spell",
-					"source": "GW"
-				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Paladin",
-						"source": "XPHB"
-					},
-					{
-						"name": "Ranger",
-						"source": "XPHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Artificer",
-							"source": "xua2025eberronupdates"
-						},
-						"subclass": {
-							"name": "Armorer",
-							"shortName": "Armorer",
-							"source": "xua2025eberronupdates"
-						}
-					},
-					{
-						"class": {
-							"name": "Artificer",
-							"source": "xua2025eberronupdates"
-						},
-						"subclass": {
-							"name": "Battle smith",
-							"shortName": "Battle Smith",
-							"source": "xua2025eberronupdates"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "Inquisition domain",
-							"shortName": "Inquisition",
-							"source": "GrimHollowPlayerPack"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "War domain",
-							"shortName": "War",
-							"source": "XPHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Illrigger",
-							"source": "IllriggerRevised"
-						},
-						"subclass": {
-							"name": "Architect of ruin",
-							"shortName": "Architect of Ruin",
-							"source": "IllriggerRevised"
-						}
-					},
-					{
-						"class": {
-							"name": "Psion",
-							"source": "xua2025psion"
-						},
-						"subclass": {
-							"name": "Metamorph",
-							"shortName": "Metamorph",
-							"source": "xua2025psion"
-						}
-					},
-					{
-						"class": {
-							"name": "Warlock",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "The hexblade",
-							"shortName": "Hexblade",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "Eldritch knight",
-							"shortName": "Eldritch Knight",
-							"source": "XPHB"
-						}
-					}
-				]
-			},
-			"savingThrow": [
-				"strength"
-			],
-			"areaTags": [
-				"ST"
-			],
-			"miscTags": [
-				"AAD"
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d12} damage for each slot level above 1st on a hit."
-					]
-				}
-			]
-		},
-		{
-			"name": "Spear of Lightning",
-			"level": 1,
-			"school": "V",
-			"time": [
-				{
-					"number": 0,
-					"unit": "special",
-					"condition": "which you take immediately before hitting a target with a Melee weapon with the thrown property"
-				}
-			],
-			"range": {
-				"type": "special"
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"{@variantrule Armor Penetration|GW}, {@variantrule Weapon Attack Spell|GW}",
-				"Sheathe your weapon in lightning, penetrating your enemies defenses.",
-				"On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d12} lightning damage."
-			],
-			"source": "GWN",
-			"fluff": {
-				"entries": [
-					"Spear of Lightning",
-					"Spear Attack. If this attack hits, it deals +8...18...20 lightning damage. This attack has 25% armor penetration. "
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/3/37/Spear_of_Lightning.jpg"
-						}
-					}
-				]
-			},
-			"backgrounds": [
-				{
-					"name": "Istan",
-					"source": "GWN"
-				},
-				{
-					"name": "Paragon",
-					"source": "GWN"
-				},
-				{
-					"name": "Spear Mastery",
-					"source": "GWN"
-				},
-				{
-					"name": "Armor Penetration",
-					"source": "GW"
-				},
-				{
-					"name": "Weapon Attack Spell",
-					"source": "GW"
-				}
-			],
-			"components": {
-				"v": true
-			},
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Paladin",
-						"source": "XPHB"
-					},
-					{
-						"name": "Ranger",
-						"source": "XPHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Artificer",
-							"source": "xua2025eberronupdates"
-						},
-						"subclass": {
-							"name": "Armorer",
-							"shortName": "Armorer",
-							"source": "xua2025eberronupdates"
-						}
-					},
-					{
-						"class": {
-							"name": "Artificer",
-							"source": "xua2025eberronupdates"
-						},
-						"subclass": {
-							"name": "Battle smith",
-							"shortName": "Battle Smith",
-							"source": "xua2025eberronupdates"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "Inquisition domain",
-							"shortName": "Inquisition",
-							"source": "GrimHollowPlayerPack"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "War domain",
-							"shortName": "War",
-							"source": "XPHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Illrigger",
-							"source": "IllriggerRevised"
-						},
-						"subclass": {
-							"name": "Architect of ruin",
-							"shortName": "Architect of Ruin",
-							"source": "IllriggerRevised"
-						}
-					},
-					{
-						"class": {
-							"name": "Psion",
-							"source": "xua2025psion"
-						},
-						"subclass": {
-							"name": "Metamorph",
-							"shortName": "Metamorph",
-							"source": "xua2025psion"
-						}
-					},
-					{
-						"class": {
-							"name": "Warlock",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "The hexblade",
-							"shortName": "Hexblade",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "Eldritch knight",
-							"shortName": "Eldritch Knight",
-							"source": "XPHB"
-						}
-					}
-				]
-			},
-			"damageInflict": [
-				"lightning"
-			],
-			"areaTags": [
-				"ST"
-			],
-			"miscTags": [
-				"AAD"
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d8} damage for each slot level above 1st on a hit."
-					]
-				}
-			]
-		},
-		{
-			"name": "Slayer's Spear",
-			"level": 2,
-			"school": "V",
-			"time": [
-				{
-					"number": 0,
-					"unit": "special",
-					"condition": "which you take immediately before hitting a target with a Melee weapon with the thrown property"
-				}
-			],
-			"range": {
-				"type": "special"
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 1
-					}
-				}
-			],
-			"entries": [
-				"{@variantrule Weapon Attack Spell|GW}",
-				"Empower your spear to fell great enemies, inflicting a {@condition deep wound|GW} to a creature with more health than you.",
-				"On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d8} damage, and if you have fewer hit points than the target, must make a Constitution saving throw. On a failed save, the target gains a {@condition deep wound|GW} for the duration.",
-				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
-			],
-			"source": "GWN",
-			"fluff": {
-				"entries": [
-					"Slayer's Spear",
-					"Spear Attack. If this attack hits, you deal +5...21...25 damage. If that foe has more Health than you, that foe suffers from a Deep Wound for 5...17...20 seconds."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/a/a2/Slayer%27s_Spear.jpg"
-						}
-					}
-				]
-			},
-			"backgrounds": [
-				{
-					"name": "Kourna",
-					"source": "GWN"
-				},
-				{
-					"name": "Paragon",
-					"source": "GWN"
-				},
-				{
-					"name": "Spear Mastery",
-					"source": "GWN"
-				},
-				{
-					"name": "Weapon Attack Spell",
-					"source": "GW"
-				}
-			],
-			"conditionInflict": [
-				"deep wound|gw"
-			],
-			"components": {
-				"v": true
-			},
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Paladin",
-						"source": "XPHB"
-					},
-					{
-						"name": "Ranger",
-						"source": "XPHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Artificer",
-							"source": "xua2025eberronupdates"
-						},
-						"subclass": {
-							"name": "Armorer",
-							"shortName": "Armorer",
-							"source": "xua2025eberronupdates"
-						}
-					},
-					{
-						"class": {
-							"name": "Artificer",
-							"source": "xua2025eberronupdates"
-						},
-						"subclass": {
-							"name": "Battle smith",
-							"shortName": "Battle Smith",
-							"source": "xua2025eberronupdates"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "Inquisition domain",
-							"shortName": "Inquisition",
-							"source": "GrimHollowPlayerPack"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "War domain",
-							"shortName": "War",
-							"source": "XPHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Illrigger",
-							"source": "IllriggerRevised"
-						},
-						"subclass": {
-							"name": "Architect of ruin",
-							"shortName": "Architect of Ruin",
-							"source": "IllriggerRevised"
-						}
-					},
-					{
-						"class": {
-							"name": "Psion",
-							"source": "xua2025psion"
-						},
-						"subclass": {
-							"name": "Metamorph",
-							"shortName": "Metamorph",
-							"source": "xua2025psion"
-						}
-					},
-					{
-						"class": {
-							"name": "Warlock",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "The hexblade",
-							"shortName": "Hexblade",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "Eldritch knight",
-							"shortName": "Eldritch Knight",
-							"source": "XPHB"
-						}
-					}
-				]
-			},
-			"areaTags": [
-				"ST"
-			],
-			"miscTags": [
-				"AAD"
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
-					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the target also takes {@damage 1d8} damage for each slot level above 2nd on a hit."
-					]
-				}
-			]
-		},
-		{
-			"name": "Lion's Comfort",
-			"level": 2,
-			"school": "A",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "self"
-				}
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "round",
-						"amount": 2
-					}
-				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Paladin",
-						"source": "XPHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "Inquisition domain",
-							"shortName": "Inquisition",
-							"source": "GrimHollowPlayerPack"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "War domain",
-							"shortName": "War",
-							"source": "XPHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "Eldritch knight",
-							"shortName": "Eldritch Knight",
-							"source": "XPHB"
-						}
-					}
-				]
-			},
-			"entries": [
-				"{@variantrule Adrenaline|GW|Adrenaline:} 4",
-				"Take comfort in the healing embrace of the Elonian sun, just like a prairie lion.",
-				"You cannot use your signets, or {@spell Lion's Comfort|GW}, for the duration.",
-				"You regain hit points equal to {@dice 2d6} + spellcasting ability modifier, and you gain {@dice 1d4} strikes of Adrenaline."
-			],
-			"source": "GWN",
-			"fluff": {
-				"entries": [
-					"Lion's Comfort",
-					"Skill. All of your signets are disabled for 12 seconds. You are healed for 50...98...110 Health, and gain 0...2...3 strike[s] of adrenaline."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/f/fc/Lion%27s_Comfort.jpg"
-						}
-					}
-				]
-			},
-			"backgrounds": [
-				{
-					"name": "Istan",
-					"source": "GWN"
-				},
-				{
-					"name": "Warrior",
-					"source": "GW"
-				},
-				{
-					"name": "Strength",
-					"source": "GW"
-				},
-				{
-					"name": "Adrenaline",
-					"source": "GW"
-				}
-			],
-			"components": {
-				"s": true
-			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the healing increases by {@dice 1d6} for each slot level above 1st, the adrenaline gain increases by {@dice 1d4} for each slot level above 1st and the duration increases by 2 rounds for each slot level above 2nd."
-					]
-				}
-			],
-			"areaTags": [
-				"ST"
-			],
-			"miscTags": [
-				"HL"
-			]
-		},
-		{
-			"name": "Lead the Way!",
-			"level": 1,
-			"school": "E",
-			"time": [
-				{
-					"number": 1,
-					"unit": "bonus"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 150
-				}
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "round",
-						"amount": 1
-					}
-				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "XPHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "XPHB"
-					},
-					{
-						"name": "Paladin",
-						"source": "XPHB"
-					},
-					{
-						"name": "Psion",
-						"source": "xua2025psion"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "Eldritch knight",
-							"shortName": "Eldritch Knight",
-							"source": "XPHB"
-						}
-					}
-				]
-			},
-			"entries": [
-				"Shout \"Lead the way\", encouraging a party member to blaze the way forward.",
-				"Choose one friendly creature that can hear you within range. For the duration, the target's speed is increased by 25%.",
-				"The duration increases by 1 round for each ally within range."
-			],
-			"source": "GWN",
-			"fluff": {
-				"entries": [
-					"\"Lead the Way!\"",
-					"Shout. Target ally moves 25% faster for 1...4...5 seconds for each ally within earshot (maximum of 20 seconds)."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/8/8c/%22Lead_the_Way%21%22.jpg"
-						}
-					}
-				]
-			},
-			"backgrounds": [
-				{
-					"name": "Paragon",
-					"source": "GWN"
-				},
-				{
-					"name": "Leadership",
-					"source": "GWN"
-				},
-				{
-					"name": "Vabbi",
-					"source": "GWN"
-				}
-			],
-			"components": {
-				"v": true
-			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the duration for each ally increases by 1 round for each slot level above 1st."
-					]
-				}
-			],
-			"areaTags": [
-				"ST"
-			]
-		},
-		{
-			"name": "The Power Is Yours!",
-			"level": 2,
-			"school": "A",
-			"time": [
-				{
-					"number": 1,
-					"unit": "bonus"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 150
-				}
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "round",
-						"amount": 1
-					}
-				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "XPHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "XPHB"
-					},
-					{
-						"name": "Paladin",
-						"source": "XPHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "Eldritch knight",
-							"shortName": "Eldritch Knight",
-							"source": "XPHB"
-						}
-					}
-				]
-			},
-			"entries": [
-				"{@variantrule Adrenaline|GW|Adrenaline:} 4, {@variantrule Elite|GW}",
-				"Motivate your allies to act more quickly, increasing their initiative.",
-				"Choose any number of friendly creatures that can hear you within range. For the duration, at the start of each target's turns, a target's initiative gets increased by {@dice 1d4}."
-			],
-			"source": "GWN",
-			"fluff": {
-				"entries": [
-					"\"The Power Is Yours!\"",
-					"Elite Shout. For 3 seconds, all allies within earshot gain 0...1...1 Energy regeneration. "
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/0/05/%22The_Power_Is_Yours%21%22.jpg"
-						}
-					}
-				]
-			},
-			"backgrounds": [
-				{
-					"name": "Paragon",
-					"source": "GWN"
-				},
-				{
-					"name": "Motivation",
-					"source": "GWN"
-				},
-				{
-					"name": "The Desolation",
-					"source": "GWN"
-				},
-				{
-					"name": "Elite",
-					"source": "GW"
-				},
-				{
-					"name": "Adrenaline",
-					"source": "GW"
-				}
-			],
-			"components": {
-				"v": true
-			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the duration increases by 1 round for each slot level above 1st."
-					]
-				}
-			],
-			"areaTags": [
-				"MT"
-			]
-		},
-		{
-			"name": "Mystic Regeneration",
-			"level": 2,
-			"school": "E",
-			"time": [
-				{
-					"number": 1,
-					"unit": "bonus"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "self"
-				}
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 1
-					}
-				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Cleric",
-						"source": "XPHB"
-					},
-					{
-						"name": "Druid",
-						"source": "XPHB"
-					},
-					{
-						"name": "Paladin",
-						"source": "XPHB"
-					},
-					{
-						"name": "Ranger",
-						"source": "XPHB"
-					},
-					{
-						"name": "Witch",
-						"source": "WorldsBeyondNumberWitch"
-					}
-				],
-				"fromSubclass": []
-			},
-			"entries": [
-				"{@variantrule Enchantment|GW}",
-				"Create a magical connection to the rejuvenating properties of the earth to heal yourself for each spell on you every turn.",
-				"For the duration, at the start of each of your turns, you regain hit points equal to {@dice 1d4} per beneficial spell on you."
-			],
-			"source": "GWN",
-			"fluff": {
-				"entries": [
-					"Mystic Regeneration",
-					"Enchantment Spell. For 5...17...20 seconds, you have +1...3...4 Health regeneration for each enchantment (maximum of 8) on you."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/5/55/Mystic_Regeneration.jpg"
-						}
-					}
-				]
-			},
-			"backgrounds": [
-				{
-					"name": "The Desolation",
-					"source": "GWN"
-				},
-				{
-					"name": "Dervish",
-					"source": "GWN"
-				},
-				{
-					"name": "Earth Prayers",
-					"source": "GWN"
-				},
-				{
-					"name": "Enchantment",
-					"source": "GW"
-				}
-			],
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the final healing increases by {@dice 2d4} for each slot level above 1st."
-					]
-				}
-			],
-			"areaTags": [
-				"ST"
-			],
-			"miscTags": [
-				"HL"
-			]
-		},
-		{
-			"name": "Victorious Sweep",
-			"level": 1,
-			"school": "V",
-			"time": [
-				{
-					"number": 0,
-					"unit": "special",
-					"condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
-				}
-			],
-			"range": {
-				"type": "special"
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Paladin",
-						"source": "XPHB"
-					},
-					{
-						"name": "Ranger",
-						"source": "XPHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Artificer",
-							"source": "xua2025eberronupdates"
-						},
-						"subclass": {
-							"name": "Armorer",
-							"shortName": "Armorer",
-							"source": "xua2025eberronupdates"
-						}
-					},
-					{
-						"class": {
-							"name": "Artificer",
-							"source": "xua2025eberronupdates"
-						},
-						"subclass": {
-							"name": "Battle smith",
-							"shortName": "Battle Smith",
-							"source": "xua2025eberronupdates"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "Inquisition domain",
-							"shortName": "Inquisition",
-							"source": "GrimHollowPlayerPack"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "War domain",
-							"shortName": "War",
-							"source": "XPHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Illrigger",
-							"source": "IllriggerRevised"
-						},
-						"subclass": {
-							"name": "Architect of ruin",
-							"shortName": "Architect of Ruin",
-							"source": "IllriggerRevised"
-						}
-					},
-					{
-						"class": {
-							"name": "Psion",
-							"source": "xua2025psion"
-						},
-						"subclass": {
-							"name": "Metamorph",
-							"shortName": "Metamorph",
-							"source": "xua2025psion"
-						}
-					},
-					{
-						"class": {
-							"name": "Warlock",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "The hexblade",
-							"shortName": "Hexblade",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "Eldritch knight",
-							"shortName": "Eldritch Knight",
-							"source": "XPHB"
-						}
-					}
-				]
-			},
-			"entries": [
-				"{@variantrule Weapon Attack Spell|GW}",
-				"Gloat in your victory over a creature, gaining health if you have more health than them.",
-				"On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d10} damage, and if you have more hit points than the target, you regain hit points equal to {@dice 2d6}."
-			],
-			"source": "GWN",
-			"fluff": {
-				"entries": [
-					"Victorious Sweep",
-					"Melee Attack. If this attack hits, you deal +5...21...25 damage. If target foe has less Health than you, you gain 30...70...80 Health."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/0/07/Victorious_Sweep.jpg"
-						}
-					}
-				]
-			},
-			"backgrounds": [
-				{
-					"name": "The Desolation",
-					"source": "GWN"
-				},
-				{
-					"name": "Dervish",
-					"source": "GWN"
-				},
-				{
-					"name": "Scythe Mastery",
-					"source": "GWN"
-				},
-				{
-					"name": "Weapon Attack Spell",
-					"source": "GW"
-				}
-			],
-			"components": {
-				"v": true
-			},
-			"areaTags": [
-				"ST"
-			],
-			"miscTags": [
-				"HL",
-				"AAD"
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d10} damage for each slot level above 1st on a hit, and the healing increases by {@dice 1d6} for each slot level above 1st."
-					]
-				}
-			]
-		},
-		{
-			"name": "Disrupting Throw",
-			"level": 2,
-			"school": "A",
-			"time": [
-				{
-					"number": 1,
-					"unit": "reaction",
-					"condition": "which you take when you see a creature within range cast a spell or using an ability"
-				}
-			],
-			"range": {
-				"type": "special"
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"Quickly throw a spear, disrupting a creature suffering from at least one condition.",
-				"Choose one creature, which is casting a spell or using an ability, that you can see within range of your weapon. Make a melee or ranged weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and, if the target is suffering from a condition, must make a Constitution saving throw. On a failed save, the ability/spell fails and has no effect. "
-			],
-			"source": "GWN",
-			"fluff": {
-				"entries": [
-					"Disrupting Throw",
-					"Spear Attack. If this attack hits a foe suffering from a condition, that foe is interrupted. "
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/9/92/Disrupting_Throw.jpg"
-						}
-					}
-				]
-			},
-			"components": {
-				"s": true,
-				"m": "a melee weapon worth at least 1 sp with the thrown property"
-			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
-					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the target also takes {@damage 1d8} damage for each slot level above 2nd on a hit."
-					]
-				}
-			],
-			"backgrounds": [
-				{
-					"name": "Kourna",
-					"source": "GWN"
-				},
-				{
-					"name": "Paragon",
-					"source": "GWN"
-				},
-				{
-					"name": "Spear Mastery",
-					"source": "GWN"
-				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Paladin",
-						"source": "XPHB"
-					},
-					{
-						"name": "Ranger",
-						"source": "XPHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Artificer",
-							"source": "xua2025eberronupdates"
-						},
-						"subclass": {
-							"name": "Armorer",
-							"shortName": "Armorer",
-							"source": "xua2025eberronupdates"
-						}
-					},
-					{
-						"class": {
-							"name": "Artificer",
-							"source": "xua2025eberronupdates"
-						},
-						"subclass": {
-							"name": "Battle smith",
-							"shortName": "Battle Smith",
-							"source": "xua2025eberronupdates"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "Inquisition domain",
-							"shortName": "Inquisition",
-							"source": "GrimHollowPlayerPack"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "War domain",
-							"shortName": "War",
-							"source": "XPHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Illrigger",
-							"source": "IllriggerRevised"
-						},
-						"subclass": {
-							"name": "Architect of ruin",
-							"shortName": "Architect of Ruin",
-							"source": "IllriggerRevised"
-						}
-					},
-					{
-						"class": {
-							"name": "Psion",
-							"source": "xua2025psion"
-						},
-						"subclass": {
-							"name": "Metamorph",
-							"shortName": "Metamorph",
-							"source": "xua2025psion"
-						}
-					},
-					{
-						"class": {
-							"name": "Warlock",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "The hexblade",
-							"shortName": "Hexblade",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "Eldritch knight",
-							"shortName": "Eldritch Knight",
-							"source": "XPHB"
-						}
-					}
-				]
-			},
-			"savingThrow": [
-				"constitution"
-			],
-			"areaTags": [
-				"ST"
-			],
-			"miscTags": [
-				"SGT"
-			]
-		},
-		{
-			"name": "Fall Back!",
-			"level": 2,
-			"school": "E",
-			"time": [
-				{
-					"number": 1,
-					"unit": "bonus"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 150
-				}
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "round",
-						"amount": 1
-					}
-				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "XPHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "XPHB"
-					},
-					{
-						"name": "Paladin",
-						"source": "XPHB"
-					},
-					{
-						"name": "Psion",
-						"source": "xua2025psion"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Illrigger",
-							"source": "IllriggerRevised"
-						},
-						"subclass": {
-							"name": "Architect of ruin",
-							"shortName": "Architect of Ruin",
-							"source": "IllriggerRevised"
-						}
-					},
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "Eldritch knight",
-							"shortName": "Eldritch Knight",
-							"source": "XPHB"
-						}
-					}
-				]
-			},
-			"entries": [
-				"Command your allies to \"Fall Back!\" increasing their movement speed and healing them if they move.",
-				"Choose any number of friendly creatures that can hear you within range. For the duration, a target's speed is increased by 33% and if a target takes the dash action or moves at least 30 feet while affected by this spell, they regain Hit Points equal to {@dice 2d4}.",
-				"When a target makes an attack roll, this spell ends on that target."
-			],
-			"source": "GWN",
-			"fluff": {
-				"entries": [
-					"\"Fall Back!\"",
-					"Shout. For 4...9...10 seconds, all allies within earshot gain 5...13...15 Health per second while moving and move 33% faster. \"Fall Back!\" ends on an ally affected by this shout when that ally successfully hits with an attack."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/3/39/%22Fall_Back%21%22.jpg"
-						}
-					}
-				]
-			},
-			"backgrounds": [
-				{
-					"name": "Paragon",
-					"source": "GWN"
-				},
-				{
-					"name": "Command",
-					"source": "GWN"
-				},
-				{
-					"name": "Kourna",
-					"source": "GWN"
-				}
-			],
-			"components": {
-				"v": true
-			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the duration increases by 1 round for each slot level above 1st and the healing increases by {@dice 1d4} for each slot level above 2nd."
-					]
-				}
-			],
-			"areaTags": [
-				"MT"
-			],
-			"miscTags": [
-				"HL"
-			]
-		},
-		{
-			"name": "Heart of Fury",
-			"level": 4,
-			"school": "E",
-			"time": [
-				{
-					"number": 1,
-					"unit": "bonus"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "self"
-				}
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "round",
-						"amount": 1
-					}
-				}
-			],
-			"entries": [
-				"{@variantrule Adrenaline|GW|Adrenaline:} 4, {@variantrule Stance|GW}",
-				"Wreath your heart in divine fury, increasing your attack speed.",
-				"For the duration, you can attack one additional time when you take the attack action on your turn."
-			],
-			"source": "GWN",
-			"components": {
-				"s": true
-			},
-			"fluff": {
-				"entries": [
-					"Heart of Fury",
-					"Stance. For 2...8...10 seconds, you attack 25% faster."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/0/03/Heart_of_Fury.jpg"
-						}
-					}
-				]
-			},
-			"areaTags": [
-				"ST"
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 5th level or higher, the duration increases by 1 round for each slot level above 4th."
-					]
-				}
-			],
-			"miscTags": [
-				"UBA"
-			],
-			"backgrounds": [
-				{
-					"name": "Kourna",
-					"source": "GWN"
-				},
-				{
-					"name": "Dervish",
-					"source": "GWN"
-				},
-				{
-					"name": "Mysticism",
-					"source": "GWN"
-				},
-				{
-					"name": "Stance",
-					"source": "GW"
-				},
-				{
-					"name": "Adrenaline",
-					"source": "GW"
-				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Cleric",
-						"source": "XPHB"
-					},
-					{
-						"name": "Paladin",
-						"source": "XPHB"
-					},
-					{
-						"name": "Witch",
-						"source": "WorldsBeyondNumberWitch"
-					}
-				],
-				"fromSubclass": []
-			}
-		},
-		{
-			"name": "Guiding Hands",
-			"level": 1,
-			"school": "E",
-			"time": [
-				{
-					"number": 1,
-					"unit": "bonus"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "self"
-				}
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 1
-					}
-				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Cleric",
-						"source": "XPHB"
-					},
-					{
-						"name": "Druid",
-						"source": "XPHB"
-					},
-					{
-						"name": "Paladin",
-						"source": "XPHB"
-					},
-					{
-						"name": "Ranger",
-						"source": "XPHB"
-					},
-					{
-						"name": "Witch",
-						"source": "WorldsBeyondNumberWitch"
-					}
-				],
-				"fromSubclass": []
-			},
-			"entries": [
-				"{@variantrule Enchantment|GW}, {@variantrule Unblockable|GW}",
-				"Let the wind guide your hands to strike true.",
-				"End the {@condition Blinded|XPHB} condition on yourself.",
-				"For the duration, your next three attacks have the {@variantrule Unblockable|GW} property."
-			],
-			"source": "GWN",
-			"fluff": {
-				"entries": [
-					"Guiding Hands",
-					"Enchantment Spell. For 20 seconds, your next 0...2...3 attack[s] cannot be blocked. When activated, this skill removes the Blindness condition."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wiki.guildwars.com/images/3/38/Guiding_Hands.jpg"
-						}
-					}
-				]
-			},
-			"backgrounds": [
-				{
-					"name": "Istan",
-					"source": "GWN"
-				},
-				{
-					"name": "Dervish",
-					"source": "GWN"
-				},
-				{
-					"name": "Wind Prayers",
-					"source": "GWN"
-				},
-				{
-					"name": "Enchantment",
-					"source": "GW"
-				},
-				{
-					"name": "Unblockable",
-					"source": "GW"
-				}
-			],
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the number of attacks this spell effects increases by 1 for each slot level above 1st."
-					]
-				}
-			],
-			"areaTags": [
-				"ST"
-			]
-		}
-	],
-	"table": [],
-	"variantrule": [],
-	"background": [
-		{
-			"name": "Command",
-			"source": "GWN",
-			"entries": [
-				"No inherent effect. Many Paragon skills, especially those that protect your allies or increase your tactical position on the battlefield, become more effective with higher Command."
-			]
-		},
-		{
-			"name": "Dervish",
-			"source": "GWN",
-			"entries": [
-				"Serving the gods as holy warriors, dervishes stand confidently in the whirlwind of conflict. Martial techniques perfected in the deserts of Elona allow a Dervish’s scythe to lash out quickly at multiple opponents, surrounding the holy warrior with a swath of destruction. Initiates often learn spells of self-protection, prayers that rush a combatant into battle, and invocations that empower attacks with elemental fury. Masters of the profession can assume the form of a god, enacting divine will with holy blessings. Keenly aware of the conditions of a fight, a Dervish can reap great benefits by using multiple Enchantments. Wandering the savannahs and deserts of Elona, the faithful Dervish chants prayers to the earth and wind... and the fury of the sandstorm answers in response."
-			]
-		},
-		{
-			"name": "The Desolation",
-			"source": "GWN",
-			"entries": [
-				"The Desolation is situated on the northwestern portion of Elona, connected to the Crystal Desert. It is one of the most hostile regions on Tyria due to its sulfurous sands. It is riddled with poisonous sulfur deserts and is home to many undead creatures and the great Junundu wurms. The land was once under the rule of Palawa Joko but following his imprisonment the undead armies have gone through schisms and formed smaller groups. ",
-				"The Desolation was once the coast of the Crystal Sea, and described as being a 'valley of verdant growth.' It was here that Abaddon was cast down by the other gods and banished into the Realm of Torment. His fall shattered and poisoned the land, turning it into what it is now. As the place where he was cast down, the Desolation is the part of Tyria closest to the Realm of Torment and it has begun to leak through and twist the already damaged lands."
-			]
-		},
-		{
-			"name": "Earth Prayers",
-			"source": "GWN",
-			"entries": [
-				"No inherent effect. Many Dervish Spells, especially those dealing with defense or Earth damage, become more effective with higher Earth Prayers."
-			]
-		},
-		{
-			"name": "Istan",
-			"source": "GWN",
-			"entries": [
-				"The island province of Istan is known for its navy — a formidable fleet that patrols Elona's western coastline. Each day, ships from Tyria, Cantha, and other distant parts of the world arrive in the port city of Kamadan. From there, merchant ships travel to Istan's numerous islands and the Kournan mainland, braving waters troubled by corsair patrols, cyclones, and greater dangers. Valiant Istani watch the waters, confident that when hostile outsiders arrive in Elona, the province’s citizens, soldiers, and sailors will be ready for them.",
-				"Great Istani heroes have been forged by great adversity: war, famine, invasion, and stranger threats. Over six hundred years ago, the infamous Scarab Plague devastated this province. Victims died horribly, as insects erupted through boils on their skin. Many believed the outbreak of plague had supernatural origins, blaming the suffering of the innocent on unseen forces. In this troubled time, heroes tended to the sick, evacuated towns and villages, and searched for the source of corruption. Though the origin of the plague was never found, great tales are still told of heroes helping the beleaguered populace.",
-				"To this day, Istan rewards bravery and accomplishment. No word describes its government more than 'meritocracy': the best and brightest are rewarded with promotion, and years of service are recognized. Village elders watch over many towns and outposts, eventually rising to positions of respect and authority on the Council of Elders. The province has its fair share of miscreants and scoundrels, of course—criminals typically sink to the dregs of society—but each dawn in Istan, another hero’s journey begins."
-			]
-		},
-		{
-			"name": "Kourna",
-			"source": "GWN",
-			"entries": [
-				"The province of Kourna is eternally ready for war. Military historians analyze the great battles that have taken place here: the epic conflicts of Primeval Kings, the desperate efforts to unite the land in the Shattered Dynasty Era, and of course, Turai Ossa’s defeat of Palawa Joko near the Grand Cataract at Jahai. For centuries, Kourna has had a military government, and its leaders have been direct descendents of Warmarshal Turai Ossa. Inspired by his example, Kournans revere loyalty, patriotism, a strong sense of duty, and dedication to military service. Not every Kournan is a soldier, but farmers laboring in the fields and crafters slaving in workshops know the value of a safe and secure province. The strength of the state depends on loyalty to its leaders. Pacified Centaur laborers add to the province’s muscle. Typical Kournan dedication drives citizens to work hard for prosperity—in fact, the entire nation relies on the province’s agriculture and handiwork. Kournan adventurers go to war secure in the knowledge that their swords are well-tempered and their armor well-made, forged as surely as the soldiers who wield them."
-			]
-		},
-		{
-			"name": "Leadership",
-			"source": "GWN",
-			"entries": [
-				"You gain 2 Energy for each ally affected by one of your Shouts or Chants (maximum 1 Energy for every 2 ranks)."
-			]
-		},
-		{
-			"name": "Motivation",
-			"source": "GWN",
-			"entries": [
-				"No inherent effect. Many Paragon skills, especially those related to Energy management or that inspire your allies, become more effective with higher Motivation."
-			]
-		},
-		{
-			"name": "Mysticism",
-			"source": "GWN",
-			"entries": [
-				"Each rank in Mysticism reduces the cost of your Dervish enchantments by 4%. In PvE, you have +1 armor per rank of Mysticism while you are enchanted."
-			]
-		},
-		{
-			"name": "No Attribute - Paragon",
-			"source": "GWN",
-			"entries": [
-				"No Attribute skills are those which are not tied to a particular attribute. Effects of these unlinked skills are almost always constant; for example, Remove Hex always removes a single hex, whereas the Protection Prayers spell, Divert Hexes removes 1...3...3 hexes, depending on the caster's rank in that attribute. "
-			]
-		},
-		{
-			"name": "No Attribute - Dervish",
-			"source": "GWN",
-			"entries": [
-				"No Attribute skills are those which are not tied to a particular attribute. Effects of these unlinked skills are almost always constant; for example, Remove Hex always removes a single hex, whereas the Protection Prayers spell, Divert Hexes removes 1...3...3 hexes, depending on the caster's rank in that attribute. "
-			]
-		},
-		{
-			"name": "Paragon",
-			"source": "GWN",
-			"entries": [
-				"Paragons are the guardian angels of Elona, humanity’s champions against malefic threats. They rally the valiant with Shouts and Chants, aiding heroes, henchmen, and other adventurers through inspiration and motivation. A Paragon’s best weapons rely on an insightful mind, a courageous spirit, and a charismatic voice. Many Paragons also arm themselves with a spear and shield, striking from a distance as they shout their battle cries. Through insight, they help others resist Hexes and Conditions, echoing their commands across the field of battle (in fact, some “Echo” abilities renew themselves each time a Chant or Shout ends). When all hell breaks loose, a commanding Paragon shines as a beacon of light, driving back the forces of darkness."
-			]
-		},
-		{
-			"name": "Realm of Torment",
-			"source": "GWN",
-			"entries": [
-				"The Realm of Torment, also called the Nightmare Realm, lies in the Mists and is connected to the Underworld via the Bone Pits. It has become a place where individuals of twisted evil or corruption are banished to spend eternity in torment (hence the name). The various areas that make up the Realm of Torment are filled with aspects of the darker side of reality. The realm has been cut off from mortal access until Nightfall.",
-				"The Realm of Torment is where the fallen god Abaddon was imprisoned by the Five Gods of Tyria to avoid spreading his influence across the world. Imprisoned with him are his worshipers including the Margonites, former humans turned into demons by Abaddon, and demons of torment. As punishment for their evil deeds and corruption by Abaddon, the Lich Lord and Shiro Tagachi were also sent here.",
-				"Though originally meant as a prison for Abaddon and other corrupted souls, the Realm has become overrun by the god's influence. Though he remains trapped at its heart, his minions have overwhelmed the Forgotten wardens. As his madness and touch became more potent, souls of the innocent were also sent to this realm to prevent his power from spreading throughout the Mists. As Abaddon works towards Nightfall, the Realm of Torment and the world of the living draw ever closer until parts of the two begin to intermingle as the fabric of reality weakens."
-			]
-		},
-		{
-			"name": "Scythe Mastery",
-			"source": "GWN",
-			"entries": [
-				"Scythe Mastery increases the damage you do with scythes and your chance to inflict a critical hit when using a scythe. Many skills, especially scythe attack skills, become more effective with higher Scythe Mastery."
-			]
-		},
-		{
-			"name": "Spear Mastery",
-			"source": "GWN",
-			"entries": [
-				"Spear Mastery increases the damage you do with spears and your chance to inflict a critical hit when using a spear. Many skills, especially spear attack skills, become more effective with higher Spear Mastery."
-			]
-		},
-		{
-			"name": "Vabbi",
-			"source": "GWN",
-			"entries": [
-				"The northern province of Vabbi is known for its great wealth and refined culture. Merchant princes pride themselves on their large estates, prosperous businesses, and patronage of the arts. Its provincial government, the Grand Forum of Vabb, is a plutocracy: only the wealthiest princes in the land have the power to make laws. Their legislature is openly democratic, but secretly, a merchant with influence has more power than a councilor with one vote.",
-				"Vabbian princes rule the land. Most plutocrats sponsor great festivals and celebrations to display their importance and influence. Celebrations in Vabbian estates are wonders to behold: Dancers flourish in their elegant fashions, gourmands sample cuisine, revelers consume epic quantities of alcohol, and cultured citizens enjoy great works of drama and poetry. Heroes are welcomed at these festivals, where their heroism is celebrated in songs and stories.",
-				"The Vabbi are effusive in displays of self-importance, but also keenly aware of how much they depend on other Elonians. The guards of Vabbian estates watch the mountain range to the north, while citizens on the province's southern border depend on neighboring Kournans to keep them safe. Outside the walls of the grand estates, danger is everywhere. Raiders know secret passes through the mountains and mines, and monstrous creatures roam the landscape. Fortunately, every generation of Vabbi includes idealists who dream of adventurous journeys across Elona. New tales of adventure appear on the shelves of Vabbi's libraries each year, as actors portray new heroes on the stages of Vabbian theaters."
-			]
-		},
-		{
-			"name": "Wind Prayers",
-			"source": "GWN",
-			"entries": [
-				"No inherent effect. Many Dervish Spells, especially those dealing with movement or cold damage, become more effective with higher Wind Prayers."
-			]
-		}
-	],
-	"condition": [],
-	"legendaryGroup": [],
-	"race": [],
-	"raceFluff": [],
-	"language": [],
-	"subclass": [],
-	"subclassFeature": [],
-	"deity": []
+    "_meta": {
+        "sources": [
+            {
+                "json": "GWN",
+                "abbreviation": "GWN",
+                "full": "Guild Wars Nightfall",
+                "url": "",
+                "authors": [
+                    "EmmargySurged",
+                    "CaptainDJUli",
+                    "ArenaNet"
+                ],
+                "convertedBy": [
+                    "EmmargySurged [She/They]",
+                    "CaptainDJUli [She/Her]"
+                ],
+                "color": "e5ad2e"
+            }
+        ],
+        "status": "ready",
+        "dateAdded": 1701938868,
+        "dateLastModified": 1701938868
+    },
+    "adventure": [],
+    "adventureData": [],
+    "item": [],
+    "monster": [],
+    "feat": [],
+    "spell": [
+        {
+            "name": "Overbearing Smash",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 0,
+                    "unit": "special",
+                    "condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
+                }
+            ],
+            "range": {
+                "type": "special"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@variantrule Weapon Attack Spell|GW}",
+                "Exploit a creature's momentary vulnerability if they are prone to daze them.",
+                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d12} damage, and, if the target is knocked {@condition prone}, must make a Constitution saving throw. On a failed save, the target is {@condition dazed|GW} for the duration. On a successful save, the target is affected for 1 round only.",
+                "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Overbearing Smash",
+                    "Hammer Attack. If this attack hits, you deal +1...16...20 damage. If target foe is knocked down, that foe is Dazed for 1...7...8 second[s]. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/f/f8/Overbearing_Smash.jpg"
+                        }
+                    }
+                ]
+            },
+            "components": {
+                "v": true
+            },
+            "miscTags": [
+                "AAD"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kourna",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Warrior",
+                    "source": "GW"
+                },
+                {
+                    "name": "Hammer Mastery",
+                    "source": "GW"
+                },
+                {
+                    "name": "Weapon Attack Spell",
+                    "source": "GW"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Armorer",
+                            "shortName": "Armorer",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Battle smith",
+                            "shortName": "Battle Smith",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Psion",
+                            "source": "xua2025psion"
+                        },
+                        "subclass": {
+                            "name": "Metamorph",
+                            "shortName": "Metamorph",
+                            "source": "xua2025psion"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "conditionInflict": [
+                "dazed|gw",
+                "prone"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d12} damage for each slot level above 1st on a hit."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Magehunter's Smash",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 0,
+                    "unit": "special",
+                    "condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
+                }
+            ],
+            "range": {
+                "type": "special"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "{@variantrule Adrenaline|GW|Adrenaline:} 8, {@variantrule Elite|GW}, {@variantrule Unblockable|GW}, {@variantrule Weapon Attack Spell|GW}",
+                "Attempt to knock a creature {@condition prone}; creatures with a beneficial effect on them have a harder time resisting.",
+                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d12} damage, and must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}.",
+                "If the target is under the effect of a beneficial spell, the target has disadvantage on the saving throw, and this attack gains the {@variantrule Unblockable|GW} property."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Magehunter's Smash",
+                    "Elite Hammer Attack. If this attack hits, target foe is knocked down. If your target is under the effects of an enchantment, this attack cannot be blocked. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/1/11/Magehunter%27s_Smash.jpg"
+                        }
+                    }
+                ]
+            },
+            "components": {
+                "v": true
+            },
+            "conditionInflict": [
+                "prone"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kourna",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Warrior",
+                    "source": "GW"
+                },
+                {
+                    "name": "Hammer Mastery",
+                    "source": "GW"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GW"
+                },
+                {
+                    "name": "Adrenaline",
+                    "source": "GW"
+                },
+                {
+                    "name": "Unblockable",
+                    "source": "GW"
+                },
+                {
+                    "name": "Weapon Attack Spell",
+                    "source": "GW"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Armorer",
+                            "shortName": "Armorer",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Battle smith",
+                            "shortName": "Battle Smith",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Psion",
+                            "source": "xua2025psion"
+                        },
+                        "subclass": {
+                            "name": "Metamorph",
+                            "shortName": "Metamorph",
+                            "source": "xua2025psion"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "savingThrow": [
+                "strength"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "AAD"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d12} damage for each slot level above 1st on a hit."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Spear of Lightning",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 0,
+                    "unit": "special",
+                    "condition": "which you take immediately before hitting a target with a Melee weapon with the thrown property"
+                }
+            ],
+            "range": {
+                "type": "special"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "{@variantrule Armor Penetration|GW}, {@variantrule Weapon Attack Spell|GW}",
+                "Sheathe your weapon in lightning, penetrating your enemies defenses.",
+                "On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d12} lightning damage."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Spear of Lightning",
+                    "Spear Attack. If this attack hits, it deals +8...18...20 lightning damage. This attack has 25% armor penetration. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/3/37/Spear_of_Lightning.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Paragon",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Spear Mastery",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Armor Penetration",
+                    "source": "GW"
+                },
+                {
+                    "name": "Weapon Attack Spell",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Armorer",
+                            "shortName": "Armorer",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Battle smith",
+                            "shortName": "Battle Smith",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Psion",
+                            "source": "xua2025psion"
+                        },
+                        "subclass": {
+                            "name": "Metamorph",
+                            "shortName": "Metamorph",
+                            "source": "xua2025psion"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "damageInflict": [
+                "lightning"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "AAD"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d8} damage for each slot level above 1st on a hit."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Slayer's Spear",
+            "level": 2,
+            "school": "V",
+            "time": [
+                {
+                    "number": 0,
+                    "unit": "special",
+                    "condition": "which you take immediately before hitting a target with a Melee weapon with the thrown property"
+                }
+            ],
+            "range": {
+                "type": "special"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@variantrule Weapon Attack Spell|GW}",
+                "Empower your spear to fell great enemies, inflicting a {@condition deep wound|GW} to a creature with more health than you.",
+                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d8} damage, and if you have fewer hit points than the target, must make a Constitution saving throw. On a failed save, the target gains a {@condition deep wound|GW} for the duration.",
+                "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Slayer's Spear",
+                    "Spear Attack. If this attack hits, you deal +5...21...25 damage. If that foe has more Health than you, that foe suffers from a Deep Wound for 5...17...20 seconds."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/a/a2/Slayer%27s_Spear.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Kourna",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Paragon",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Spear Mastery",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Weapon Attack Spell",
+                    "source": "GW"
+                }
+            ],
+            "conditionInflict": [
+                "deep wound|gw"
+            ],
+            "components": {
+                "v": true
+            },
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Armorer",
+                            "shortName": "Armorer",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Battle smith",
+                            "shortName": "Battle Smith",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Psion",
+                            "source": "xua2025psion"
+                        },
+                        "subclass": {
+                            "name": "Metamorph",
+                            "shortName": "Metamorph",
+                            "source": "xua2025psion"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "AAD"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the target also takes {@damage 1d8} damage for each slot level above 2nd on a hit."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Lion's Comfort",
+            "level": 2,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 2
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@variantrule Adrenaline|GW|Adrenaline:} 4",
+                "Take comfort in the healing embrace of the Elonian sun, just like a prairie lion.",
+                "You cannot use your signets, or {@spell Lion's Comfort|GW}, for the duration.",
+                "You regain hit points equal to {@dice 2d6} + spellcasting ability modifier, and you gain {@dice 1d4} strikes of Adrenaline."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Lion's Comfort",
+                    "Skill. All of your signets are disabled for 12 seconds. You are healed for 50...98...110 Health, and gain 0...2...3 strike[s] of adrenaline."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/f/fc/Lion%27s_Comfort.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Warrior",
+                    "source": "GW"
+                },
+                {
+                    "name": "Strength",
+                    "source": "GW"
+                },
+                {
+                    "name": "Adrenaline",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the healing increases by {@dice 1d6} for each slot level above 1st, the adrenaline gain increases by {@dice 1d4} for each slot level above 1st and the duration increases by 2 rounds for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL"
+            ]
+        },
+        {
+            "name": "Lead the Way!",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Psion",
+                        "source": "xua2025psion"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "Shout \"Lead the way\", encouraging a party member to blaze the way forward.",
+                "Choose one friendly creature that can hear you within range. For the duration, the target's speed is increased by 25%.",
+                "The duration increases by 1 round for each ally within range."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "\"Lead the Way!\"",
+                    "Shout. Target ally moves 25% faster for 1...4...5 seconds for each ally within earshot (maximum of 20 seconds)."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/8/8c/%22Lead_the_Way%21%22.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Paragon",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Leadership",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Vabbi",
+                    "source": "GWN"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the duration for each ally increases by 1 round for each slot level above 1st."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "ST"
+            ]
+        },
+        {
+            "name": "The Power Is Yours!",
+            "level": 2,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@variantrule Adrenaline|GW|Adrenaline:} 4, {@variantrule Elite|GW}",
+                "Motivate your allies to act more quickly, increasing their initiative.",
+                "Choose any number of friendly creatures that can hear you within range. For the duration, at the start of each target's turns, a target's initiative gets increased by {@dice 1d4}."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "\"The Power Is Yours!\"",
+                    "Elite Shout. For 3 seconds, all allies within earshot gain 0...1...1 Energy regeneration. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/0/05/%22The_Power_Is_Yours%21%22.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Paragon",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Motivation",
+                    "source": "GWN"
+                },
+                {
+                    "name": "The Desolation",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Elite",
+                    "source": "GW"
+                },
+                {
+                    "name": "Adrenaline",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the duration increases by 1 round for each slot level above 1st."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "MT"
+            ]
+        },
+        {
+            "name": "Mystic Regeneration",
+            "level": 2,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "entries": [
+                "{@variantrule Enchantment|GW}",
+                "Create a magical connection to the rejuvenating properties of the earth to heal yourself for each spell on you every turn.",
+                "For the duration, at the start of each of your turns, you regain hit points equal to {@dice 1d4} per beneficial spell on you."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Mystic Regeneration",
+                    "Enchantment Spell. For 5...17...20 seconds, you have +1...3...4 Health regeneration for each enchantment (maximum of 8) on you."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/5/55/Mystic_Regeneration.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "The Desolation",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Dervish",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Earth Prayers",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Enchantment",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the final healing increases by {@dice 2d4} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL"
+            ]
+        },
+        {
+            "name": "Victorious Sweep",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 0,
+                    "unit": "special",
+                    "condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
+                }
+            ],
+            "range": {
+                "type": "special"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Armorer",
+                            "shortName": "Armorer",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Battle smith",
+                            "shortName": "Battle Smith",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Psion",
+                            "source": "xua2025psion"
+                        },
+                        "subclass": {
+                            "name": "Metamorph",
+                            "shortName": "Metamorph",
+                            "source": "xua2025psion"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@variantrule Weapon Attack Spell|GW}",
+                "Gloat in your victory over a creature, gaining health if you have more health than them.",
+                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d10} damage, and if you have more hit points than the target, you regain hit points equal to {@dice 2d6}."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Victorious Sweep",
+                    "Melee Attack. If this attack hits, you deal +5...21...25 damage. If target foe has less Health than you, you gain 30...70...80 Health."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/0/07/Victorious_Sweep.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "The Desolation",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Dervish",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Scythe Mastery",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Weapon Attack Spell",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL",
+                "AAD"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d10} damage for each slot level above 1st on a hit, and the healing increases by {@dice 1d6} for each slot level above 1st."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Disrupting Throw",
+            "level": 2,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "reaction",
+                    "condition": "which you take when you see a creature within range cast a spell or using an ability"
+                }
+            ],
+            "range": {
+                "type": "special"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "Quickly throw a spear, disrupting a creature suffering from at least one condition.",
+                "Choose one creature, which is casting a spell or using an ability, that you can see within range of your weapon. Make a melee or ranged weapon attack against the target. On a hit, the target suffers the weapon attack's normal effects and, if the target is suffering from a condition, must make a Constitution saving throw. On a failed save, the ability/spell fails and has no effect. "
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Disrupting Throw",
+                    "Spear Attack. If this attack hits a foe suffering from a condition, that foe is interrupted. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/9/92/Disrupting_Throw.jpg"
+                        }
+                    }
+                ]
+            },
+            "components": {
+                "s": true,
+                "m": "a melee weapon worth at least 1 sp with the thrown property"
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the target also takes {@damage 1d8} damage for each slot level above 2nd on a hit."
+                    ]
+                }
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kourna",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Paragon",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Spear Mastery",
+                    "source": "GWN"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Armorer",
+                            "shortName": "Armorer",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Battle smith",
+                            "shortName": "Battle Smith",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Psion",
+                            "source": "xua2025psion"
+                        },
+                        "subclass": {
+                            "name": "Metamorph",
+                            "shortName": "Metamorph",
+                            "source": "xua2025psion"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
+        },
+        {
+            "name": "Fall Back!",
+            "level": 2,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Psion",
+                        "source": "xua2025psion"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "Command your allies to \"Fall Back!\" increasing their movement speed and healing them if they move.",
+                "Choose any number of friendly creatures that can hear you within range. For the duration, a target's speed is increased by 33% and if a target takes the dash action or moves at least 30 feet while affected by this spell, they regain Hit Points equal to {@dice 2d4}.",
+                "When a target makes an attack roll, this spell ends on that target."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "\"Fall Back!\"",
+                    "Shout. For 4...9...10 seconds, all allies within earshot gain 5...13...15 Health per second while moving and move 33% faster. \"Fall Back!\" ends on an ally affected by this shout when that ally successfully hits with an attack."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/3/39/%22Fall_Back%21%22.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Paragon",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Command",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Kourna",
+                    "source": "GWN"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the duration increases by 1 round for each slot level above 1st and the healing increases by {@dice 1d4} for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "MT"
+            ],
+            "miscTags": [
+                "HL"
+            ]
+        },
+        {
+            "name": "Heart of Fury",
+            "level": 4,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@variantrule Adrenaline|GW|Adrenaline:} 4, {@variantrule Stance|GW}",
+                "Wreath your heart in divine fury, increasing your attack speed.",
+                "For the duration, you can attack one additional time when you take the attack action on your turn."
+            ],
+            "source": "GWN",
+            "components": {
+                "s": true
+            },
+            "fluff": {
+                "entries": [
+                    "Heart of Fury",
+                    "Stance. For 2...8...10 seconds, you attack 25% faster."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/0/03/Heart_of_Fury.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the duration increases by 1 round for each slot level above 4th."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "UBA"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kourna",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Dervish",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Mysticism",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Stance",
+                    "source": "GW"
+                },
+                {
+                    "name": "Adrenaline",
+                    "source": "GW"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": []
+            }
+        },
+        {
+            "name": "Guiding Hands",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "entries": [
+                "{@variantrule Enchantment|GW}, {@variantrule Unblockable|GW}",
+                "Let the wind guide your hands to strike true.",
+                "End the {@condition Blinded|XPHB} condition on yourself.",
+                "For the duration, your next three attacks have the {@variantrule Unblockable|GW} property."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Guiding Hands",
+                    "Enchantment Spell. For 20 seconds, your next 0...2...3 attack[s] cannot be blocked. When activated, this skill removes the Blindness condition."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/3/38/Guiding_Hands.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Dervish",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Wind Prayers",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Enchantment",
+                    "source": "GW"
+                },
+                {
+                    "name": "Unblockable",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the number of attacks this spell effects increases by 1 for each slot level above 1st."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "ST"
+            ]
+        }
+    ],
+    "table": [],
+    "variantrule": [],
+    "background": [
+        {
+            "name": "Command",
+            "source": "GWN",
+            "entries": [
+                "No inherent effect. Many Paragon skills, especially those that protect your allies or increase your tactical position on the battlefield, become more effective with higher Command."
+            ]
+        },
+        {
+            "name": "Dervish",
+            "source": "GWN",
+            "entries": [
+                "Serving the gods as holy warriors, dervishes stand confidently in the whirlwind of conflict. Martial techniques perfected in the deserts of Elona allow a Dervish’s scythe to lash out quickly at multiple opponents, surrounding the holy warrior with a swath of destruction. Initiates often learn spells of self-protection, prayers that rush a combatant into battle, and invocations that empower attacks with elemental fury. Masters of the profession can assume the form of a god, enacting divine will with holy blessings. Keenly aware of the conditions of a fight, a Dervish can reap great benefits by using multiple Enchantments. Wandering the savannahs and deserts of Elona, the faithful Dervish chants prayers to the earth and wind... and the fury of the sandstorm answers in response."
+            ]
+        },
+        {
+            "name": "The Desolation",
+            "source": "GWN",
+            "entries": [
+                "The Desolation is situated on the northwestern portion of Elona, connected to the Crystal Desert. It is one of the most hostile regions on Tyria due to its sulfurous sands. It is riddled with poisonous sulfur deserts and is home to many undead creatures and the great Junundu wurms. The land was once under the rule of Palawa Joko but following his imprisonment the undead armies have gone through schisms and formed smaller groups. ",
+                "The Desolation was once the coast of the Crystal Sea, and described as being a 'valley of verdant growth.' It was here that Abaddon was cast down by the other gods and banished into the Realm of Torment. His fall shattered and poisoned the land, turning it into what it is now. As the place where he was cast down, the Desolation is the part of Tyria closest to the Realm of Torment and it has begun to leak through and twist the already damaged lands."
+            ]
+        },
+        {
+            "name": "Earth Prayers",
+            "source": "GWN",
+            "entries": [
+                "No inherent effect. Many Dervish Spells, especially those dealing with defense or Earth damage, become more effective with higher Earth Prayers."
+            ]
+        },
+        {
+            "name": "Istan",
+            "source": "GWN",
+            "entries": [
+                "The island province of Istan is known for its navy — a formidable fleet that patrols Elona's western coastline. Each day, ships from Tyria, Cantha, and other distant parts of the world arrive in the port city of Kamadan. From there, merchant ships travel to Istan's numerous islands and the Kournan mainland, braving waters troubled by corsair patrols, cyclones, and greater dangers. Valiant Istani watch the waters, confident that when hostile outsiders arrive in Elona, the province’s citizens, soldiers, and sailors will be ready for them.",
+                "Great Istani heroes have been forged by great adversity: war, famine, invasion, and stranger threats. Over six hundred years ago, the infamous Scarab Plague devastated this province. Victims died horribly, as insects erupted through boils on their skin. Many believed the outbreak of plague had supernatural origins, blaming the suffering of the innocent on unseen forces. In this troubled time, heroes tended to the sick, evacuated towns and villages, and searched for the source of corruption. Though the origin of the plague was never found, great tales are still told of heroes helping the beleaguered populace.",
+                "To this day, Istan rewards bravery and accomplishment. No word describes its government more than 'meritocracy': the best and brightest are rewarded with promotion, and years of service are recognized. Village elders watch over many towns and outposts, eventually rising to positions of respect and authority on the Council of Elders. The province has its fair share of miscreants and scoundrels, of course—criminals typically sink to the dregs of society—but each dawn in Istan, another hero’s journey begins."
+            ]
+        },
+        {
+            "name": "Kourna",
+            "source": "GWN",
+            "entries": [
+                "The province of Kourna is eternally ready for war. Military historians analyze the great battles that have taken place here: the epic conflicts of Primeval Kings, the desperate efforts to unite the land in the Shattered Dynasty Era, and of course, Turai Ossa’s defeat of Palawa Joko near the Grand Cataract at Jahai. For centuries, Kourna has had a military government, and its leaders have been direct descendents of Warmarshal Turai Ossa. Inspired by his example, Kournans revere loyalty, patriotism, a strong sense of duty, and dedication to military service. Not every Kournan is a soldier, but farmers laboring in the fields and crafters slaving in workshops know the value of a safe and secure province. The strength of the state depends on loyalty to its leaders. Pacified Centaur laborers add to the province’s muscle. Typical Kournan dedication drives citizens to work hard for prosperity—in fact, the entire nation relies on the province’s agriculture and handiwork. Kournan adventurers go to war secure in the knowledge that their swords are well-tempered and their armor well-made, forged as surely as the soldiers who wield them."
+            ]
+        },
+        {
+            "name": "Leadership",
+            "source": "GWN",
+            "entries": [
+                "You gain 2 Energy for each ally affected by one of your Shouts or Chants (maximum 1 Energy for every 2 ranks)."
+            ]
+        },
+        {
+            "name": "Motivation",
+            "source": "GWN",
+            "entries": [
+                "No inherent effect. Many Paragon skills, especially those related to Energy management or that inspire your allies, become more effective with higher Motivation."
+            ]
+        },
+        {
+            "name": "Mysticism",
+            "source": "GWN",
+            "entries": [
+                "Each rank in Mysticism reduces the cost of your Dervish enchantments by 4%. In PvE, you have +1 armor per rank of Mysticism while you are enchanted."
+            ]
+        },
+        {
+            "name": "No Attribute - Paragon",
+            "source": "GWN",
+            "entries": [
+                "No Attribute skills are those which are not tied to a particular attribute. Effects of these unlinked skills are almost always constant; for example, Remove Hex always removes a single hex, whereas the Protection Prayers spell, Divert Hexes removes 1...3...3 hexes, depending on the caster's rank in that attribute. "
+            ]
+        },
+        {
+            "name": "No Attribute - Dervish",
+            "source": "GWN",
+            "entries": [
+                "No Attribute skills are those which are not tied to a particular attribute. Effects of these unlinked skills are almost always constant; for example, Remove Hex always removes a single hex, whereas the Protection Prayers spell, Divert Hexes removes 1...3...3 hexes, depending on the caster's rank in that attribute. "
+            ]
+        },
+        {
+            "name": "Paragon",
+            "source": "GWN",
+            "entries": [
+                "Paragons are the guardian angels of Elona, humanity’s champions against malefic threats. They rally the valiant with Shouts and Chants, aiding heroes, henchmen, and other adventurers through inspiration and motivation. A Paragon’s best weapons rely on an insightful mind, a courageous spirit, and a charismatic voice. Many Paragons also arm themselves with a spear and shield, striking from a distance as they shout their battle cries. Through insight, they help others resist Hexes and Conditions, echoing their commands across the field of battle (in fact, some “Echo” abilities renew themselves each time a Chant or Shout ends). When all hell breaks loose, a commanding Paragon shines as a beacon of light, driving back the forces of darkness."
+            ]
+        },
+        {
+            "name": "Realm of Torment",
+            "source": "GWN",
+            "entries": [
+                "The Realm of Torment, also called the Nightmare Realm, lies in the Mists and is connected to the Underworld via the Bone Pits. It has become a place where individuals of twisted evil or corruption are banished to spend eternity in torment (hence the name). The various areas that make up the Realm of Torment are filled with aspects of the darker side of reality. The realm has been cut off from mortal access until Nightfall.",
+                "The Realm of Torment is where the fallen god Abaddon was imprisoned by the Five Gods of Tyria to avoid spreading his influence across the world. Imprisoned with him are his worshipers including the Margonites, former humans turned into demons by Abaddon, and demons of torment. As punishment for their evil deeds and corruption by Abaddon, the Lich Lord and Shiro Tagachi were also sent here.",
+                "Though originally meant as a prison for Abaddon and other corrupted souls, the Realm has become overrun by the god's influence. Though he remains trapped at its heart, his minions have overwhelmed the Forgotten wardens. As his madness and touch became more potent, souls of the innocent were also sent to this realm to prevent his power from spreading throughout the Mists. As Abaddon works towards Nightfall, the Realm of Torment and the world of the living draw ever closer until parts of the two begin to intermingle as the fabric of reality weakens."
+            ]
+        },
+        {
+            "name": "Scythe Mastery",
+            "source": "GWN",
+            "entries": [
+                "Scythe Mastery increases the damage you do with scythes and your chance to inflict a critical hit when using a scythe. Many skills, especially scythe attack skills, become more effective with higher Scythe Mastery."
+            ]
+        },
+        {
+            "name": "Spear Mastery",
+            "source": "GWN",
+            "entries": [
+                "Spear Mastery increases the damage you do with spears and your chance to inflict a critical hit when using a spear. Many skills, especially spear attack skills, become more effective with higher Spear Mastery."
+            ]
+        },
+        {
+            "name": "Vabbi",
+            "source": "GWN",
+            "entries": [
+                "The northern province of Vabbi is known for its great wealth and refined culture. Merchant princes pride themselves on their large estates, prosperous businesses, and patronage of the arts. Its provincial government, the Grand Forum of Vabb, is a plutocracy: only the wealthiest princes in the land have the power to make laws. Their legislature is openly democratic, but secretly, a merchant with influence has more power than a councilor with one vote.",
+                "Vabbian princes rule the land. Most plutocrats sponsor great festivals and celebrations to display their importance and influence. Celebrations in Vabbian estates are wonders to behold: Dancers flourish in their elegant fashions, gourmands sample cuisine, revelers consume epic quantities of alcohol, and cultured citizens enjoy great works of drama and poetry. Heroes are welcomed at these festivals, where their heroism is celebrated in songs and stories.",
+                "The Vabbi are effusive in displays of self-importance, but also keenly aware of how much they depend on other Elonians. The guards of Vabbian estates watch the mountain range to the north, while citizens on the province's southern border depend on neighboring Kournans to keep them safe. Outside the walls of the grand estates, danger is everywhere. Raiders know secret passes through the mountains and mines, and monstrous creatures roam the landscape. Fortunately, every generation of Vabbi includes idealists who dream of adventurous journeys across Elona. New tales of adventure appear on the shelves of Vabbi's libraries each year, as actors portray new heroes on the stages of Vabbian theaters."
+            ]
+        },
+        {
+            "name": "Wind Prayers",
+            "source": "GWN",
+            "entries": [
+                "No inherent effect. Many Dervish Spells, especially those dealing with movement or cold damage, become more effective with higher Wind Prayers."
+            ]
+        }
+    ],
+    "condition": [],
+    "legendaryGroup": [],
+    "race": [],
+    "raceFluff": [],
+    "language": [],
+    "subclass": [],
+    "subclassFeature": [],
+    "deity": []
 }

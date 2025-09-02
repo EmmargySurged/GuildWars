@@ -41003,7 +41003,7 @@
             ],
             "entries": [
                 "Remove a positive spell on a creature, gain initiative, and replace this spell with the removed spell for the duration.",
-                "Choose one hostile creature that you can see within range. The target must make a Charisma saving throw. On a failed safe, the latest beneficial spell on the target ends. If a beneficial spell was ended this way, your initiative gets increased by {@dice 2d4} and replace this spell with the ended spell for the duration. On a successful save, the target is affected for 1 round only."
+                "Choose one hostile creature that you can see within range. The target must make a Charisma saving throw. On a failed safe, the latest beneficial spell on the target ends. If a beneficial spell was ended this way, your initiative gets increased by {@dice 2d4} and replace this spell with the ended spell for the duration."
             ],
             "source": "GWF",
             "fluff": {
@@ -41159,7 +41159,7 @@
             ],
             "entries": [
                 "Remove a negative spell on a creature, gain initiative, and replace this spell with the removed spell for the duration.",
-                "Choose one friendly creature that you can see within range. The latest harmful spell on the target ends. If a harmful spell was ended this way, your initiative gets increased by {@dice 2d4}, and you replace this spell with the ended spell for the duration. On a successful save, the target is affected for 1 round only."
+                "Choose one friendly creature that you can see within range. The latest harmful spell on the target ends. If a harmful spell was ended this way, your initiative gets increased by {@dice 2d4}, and you replace this spell with the ended spell for the duration."
             ],
             "source": "GWF",
             "fluff": {
@@ -53840,6 +53840,398 @@
             ],
             "savingThrow": [
                 "constitution"
+            ]
+        },
+        {
+            "name": "Vapor Blade",
+            "level": 2,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The fathomless",
+                            "shortName": "Fathomless",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@variantrule Overcast|GW|Overcast:} 2",
+                "Conjure a blade of vapor that strikes a creature before disappearing.",
+                "Choose one creature that you can see within range. Make a melee spell attack against the target. On a hit, the target takes {@damage 6d8} cold damage. If the target was under the effect of any beneficial {@status Concentration|XPHB} spells, it has resistance against the damage."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Vapor Blade",
+                    "Spell. Target foe is struck for 15...111...135 cold damage. Vapor Blade deals half damage if that foe has any enchantments on them."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Vapor_Blade.jpg"
+                        }
+                    }
+                ]
+            },
+            "damageInflict": [
+                "cold"
+            ],
+            "spellAttack": [
+                "M"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Elementalist",
+                    "source": "GW"
+                },
+                {
+                    "name": "Water Magic",
+                    "source": "GW"
+                },
+                {
+                    "name": "Overcast",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a sword hilt and a drop of water"
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 2d8} for each slot level above 2nd."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Signet of Disenchantment",
+            "level": 1,
+            "school": "I",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Psion",
+                        "source": "xua2025psion"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@variantrule Signet|GW|Signet:} Initiative",
+                "Activate your Signet of Disenchantment by draining your energy, disenchanting one creature.",
+                "Choose one creature that you can see within range. The latest beneficial spell on the target ends.",
+                "Your initiative gets reduced by 10."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Signet of Disenchantment",
+                    "Signet. Lose all Energy. Target foe loses one enchantment. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Signet_of_Disenchantment.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Mesmer",
+                    "source": "GW"
+                },
+                {
+                    "name": "No Attribute - Mesmer",
+                    "source": "GW"
+                },
+                {
+                    "name": "Signet",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "s": true
+            }
+        },
+        {
+            "name": "Spell Shield",
+            "level": 5,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@variantrule Enchantment|GW} ",
+                "Weave spell energy around you when you cast any spell, protecting you against weaker ones.",
+                "For the duration, when you cast a spell with a spell slot, you cannot be targeted by hostile spells with a lower level than the slot expended until the end of your next turn.",
+                "When this spell ends, you cannot cast spells for 1 round."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Spell Shield",
+                    "Enchantment Spell. For 5...17...20 seconds, while you are casting spells, foes cannot target you with spells. When Spell Shield ends, all your skills are disabled for 10...6...5 seconds."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Spell_Shield.jpg"
+                        }
+                    }
+                ]
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a chocker made of lead worth 250+ GP"
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th level or higher, the spell slot expended counts as 1 level higher for determining which spells can target you for each slot level above 5th."
+                    ]
+                }
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Monk",
+                    "source": "GW"
+                },
+                {
+                    "name": "Divine Favor",
+                    "source": "GW"
+                },
+                {
+                    "name": "Enchantment",
+                    "source": "GW"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "areaTags": [
+                "ST"
             ]
         }
     ],

@@ -54233,6 +54233,539 @@
             "areaTags": [
                 "ST"
             ]
+        },
+        {
+            "name": "Vile Miasma",
+            "level": 2,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Reanimator",
+                            "shortName": "Reanimator",
+                            "source": "xua2025horrorsubclasses"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Druid",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Circle of spores",
+                            "shortName": "Spores",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@variantrule Hex|GW}",
+                "Conjure a vile miasma around a creature.",
+                "Choose one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes {@damage 5d8} poison damage, and if it is suffering from a harmful condition for the duration at the start of each of the target's turns, the target takes {@damage 2d8} poison damage."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Vile Miasma",
+                    "Hex Spell. Target foe is struck for 10...54...65 cold damage. If suffering from a condition, that foe is hexed with Vile Miasma and suffers -1...4...5 Health degeneration for 10 seconds."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "Vile_Miasma.jpg"
+                        }
+                    }
+                ]
+            },
+            "damageInflict": [
+                "poison"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Necromancer",
+                    "source": "GW"
+                },
+                {
+                    "name": "Death Magic",
+                    "source": "GW"
+                },
+                {
+                    "name": "Hex",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage each increases by {@dice 1d8} for each slot level above 2nd."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tranquility",
+            "level": 2,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@variantrule Summoning Ritual|GW|Summoning Ritual:} {@creature Nature Ritual|GW}",
+                "Call forth a spirit of Tranquility, reducing the effectiveness of some spells.",
+                "Summon a {@creature Nature Ritual|GW} for the duration. While a creature is within 120 feet of the {@creature Nature Ritual|GW}, beneficial spells expire twice as fast on them."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Tranquility",
+                    "Nature Ritual. Create a level 1...8...10 spirit. Enchantments cast by non-spirit creatures within its range expire 20...44...50% faster. This spirit dies after 15...51...60 seconds."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Tranquility.jpg"
+                        }
+                    }
+                ]
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th or 5th level, the duration increases to 8 hours. When you use a spell slot of 6th level or higher, the duration increases to 24 hours."
+                    ]
+                }
+            ],
+            "meta": {
+                "ritual": true
+            },
+            "backgrounds": [
+                {
+                    "name": "Ranger",
+                    "source": "GW"
+                },
+                {
+                    "name": "Wilderness Survival",
+                    "source": "GW"
+                },
+                {
+                    "name": "Summoning Ritual",
+                    "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Alchemist",
+                            "shortName": "Alchemist",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "MT"
+            ],
+            "miscTags": [
+                "SMN"
+            ]
+        },
+        {
+            "name": "Sun and Moon Slash",
+            "level": 2,
+            "school": "V",
+            "time": [
+                {
+                    "number": 0,
+                    "unit": "special",
+                    "condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
+                }
+            ],
+            "range": {
+                "type": "special"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "{@variantrule Adrenaline|GW|Adrenaline:} 8, {@variantrule Weapon Attack Spell|GW}, {@variantrule Unblockable|GW}",
+                "Imbue yourself with the celestial power of the sun and moon, accelerating yourself.",
+                "Make two melee weapon attacks against the target."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Sun and Moon Slash",
+                    "Sword Attack. Attack target foe twice. These attacks cannot be blocked."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Sun_and_Moon_Slash.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Warrior",
+                    "source": "GW"
+                },
+                {
+                    "name": "Swordsmanship",
+                    "source": "GW"
+                },
+                {
+                    "name": "Weapon Attack Spell",
+                    "source": "GW"
+                },
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Adrenaline",
+                    "source": "GW"
+                },
+                {
+                    "name": "Unblockable",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Armorer",
+                            "shortName": "Armorer",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Battle smith",
+                            "shortName": "Battle Smith",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Collage of swords",
+                            "shortName": "Swords",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Psion",
+                            "source": "xua2025psion"
+                        },
+                        "subclass": {
+                            "name": "Metamorph",
+                            "shortName": "Metamorph",
+                            "source": "xua2025psion"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Bladesinging",
+                            "shortName": "Bladesinging",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the target also takes {@damage 1d6} damage for each slot level above 2nd on a hit."
+                    ]
+                }
+            ]
         }
     ],
     "table": [],

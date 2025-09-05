@@ -45152,7 +45152,7 @@
             "entries": [
                 "{@variantrule Hex|GW}",
                 "Instill a sense of urgency in a group of creatures by showing them a vision of their imminent demise, making them panic in the process.",
-                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make an Intelligence saving throw. On a failed save for the duration when a target makes an attack roll with a weapon, they must roll a {@dice d20}. On a 10 or lower, the attack misses. Additionally, they can attack one additional time when they take the attack action on their turn. On a successful save, a target is affected for 1 round only."
+                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make an Intelligence saving throw. On a failed save for the duration when a target makes an attack roll with a weapon, they must roll a {@dice d10} and subtract the number rolled from the attack roll. Additionally, they can attack one additional time when they take the attack action on their turn. On a successful save, a target is affected for 1 round only."
             ],
             "source": "GWF",
             "fluff": {
@@ -55107,6 +55107,637 @@
             "miscTags": [
                 "SGT",
                 "AAD"
+            ]
+        },
+        {
+            "name": "Wild Strike",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 0,
+                    "unit": "special",
+                    "condition": "which you take immediately before hitting a target with a Melee weapon with the light property"
+                }
+            ],
+            "range": {
+                "type": "special"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "{@variantrule Off-Hand Attack|GWF}, {@variantrule Unblockable|GW}, {@variantrule Weapon Attack Spell|GW}",
+                "Perform a ferocious strike that knocks your opponent off balance.",
+                "On a hit, the target suffers the weapon attack's normal effects and takes {@damage 2d4} damage, and any {@variantrule Stance|GW} on the target ends."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Wild Strike",
+                    "Off-Hand Attack. Must follow a lead attack. If it hits, this attack strikes for +10...30...35 damage and any stance being used by target foe ends. This attack cannot be blocked."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Wild_Strike.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "AAD"
+            ],
+            "components": {
+                "v": true
+            },
+            "backgrounds": [
+                {
+                    "name": "Shing Jea Island",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Assassin",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Dagger Mastery",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Off-Hand Attack",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Unblockable",
+                    "source": "GW"
+                },
+                {
+                    "name": "Weapon Attack Spell",
+                    "source": "GW"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Armorer",
+                            "shortName": "Armorer",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Battle smith",
+                            "shortName": "Battle Smith",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Collage of swords",
+                            "shortName": "Swords",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Virtuoso",
+                            "shortName": "Virtuoso",
+                            "source": "GW2EoD"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Psion",
+                            "source": "xua2025psion"
+                        },
+                        "subclass": {
+                            "name": "Metamorph",
+                            "shortName": "Metamorph",
+                            "source": "xua2025psion"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Bladesinging",
+                            "shortName": "Bladesinging",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d4} damage for each slot level above 1st on a hit."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Way of the Lotus",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Psion",
+                        "source": "xua2025psion"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Druid",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Circle of spores",
+                            "shortName": "Spores",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Ranger",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Hollow warden",
+                            "shortName": "Hollow Warden",
+                            "source": "xua2025horrorsubclasses"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "School of necromancy",
+                            "shortName": "Necromancy",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@variantrule Enchantment|GW}",
+                "Follow the way of the lotus, achieving tranquility through perfection.",
+                "For the duration, the next time you cast a {@variantrule Dual Attack|GWF} spell with a spell slot, you regain the spell slot expended in the casting, regain a level 1 spell slot, and your initiative is increased by {@dice 1d8}. "
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Way of the Lotus",
+                    "Enchantment Spell. For 20 seconds, the next time you hit with a dual attack skill, you gain 5...17...20 Energy."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Way_of_the_Lotus.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Assassin",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Shadow Arts",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Enchantment",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the amount of time this spell can trigger increases by 1 for each slot level above 1st."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Way of the Fox",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Psion",
+                        "source": "xua2025psion"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Druid",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Circle of spores",
+                            "shortName": "Spores",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Ranger",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Hollow warden",
+                            "shortName": "Hollow Warden",
+                            "source": "xua2025horrorsubclasses"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "School of necromancy",
+                            "shortName": "Necromancy",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@variantrule Enchantment|GW}, {@variantrule Unblockable|GW}",
+                "Follow the way of the fox, using your cunning to slip past your enemie's defnces.",
+                "For the duration, your next {@dice 1d4} attacks gain the {@variantrule Unblockable|GW} property."
+            ],
+            "source": "GWF",
+            "fluff": {
+                "entries": [
+                    "Way of the Fox",
+                    "Enchantment Spell. For 10...30...35 seconds, your next 1...5...6 attack[s] cannot be blocked."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Way_of_the_Fox.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Kaineng City",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Assassin",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Shadow Arts",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Enchantment",
+                    "source": "GW"
+                },
+                {
+                    "name": "Unblockable",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the amount of time this spell can trigger increases by {@dice 1d4} for each slot level above 1st."
+                    ]
+                }
             ]
         }
     ],

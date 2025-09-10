@@ -2499,6 +2499,395 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Aura of Thorns",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 0,
+                    "unit": "special"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "entries": [
+                "{@variantrule Flash Enchantment|GWN}",
+                "Conjure an aura of thorns around {@condition bleeding|GW} creatures close to you, and when the spell ends, detonate it to inflict cripple.",
+                "Target each hostile creature within a 10-foot Emanation. Each target must make a Constitution saving throw. On a failed save, a target starts {@condition bleeding|GW} for the duration, taking {@damage 3d6} damage. On a successful save, a target is affected for 1 round only.",
+                "When this spell ends, target each hostile creature within a 10-foot Emanation. Each target must make a Dexterity saving throw. On a failed save, a target is {@condition crippled|GW} for the duration. On a successful save, a target is affected for 1 round only.",
+                "At the end of each of its turns, the target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Aura of Thorns",
+                    "Flash Enchantment Spell. All nearby foes begin Bleeding for 5...13...15 seconds. For 30 seconds, this enchantment does nothing. When this enchantment ends, all nearby foes are Crippled for 3...7...8 seconds. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Aura_of_Thorns.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST",
+                "MT",
+                "S"
+            ],
+            "savingThrow": [
+                "dexterity",
+                "constitution"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Dervish",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Earth Prayers",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Flash Enchantment",
+                    "source": "GWN"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "conditionInflict": [
+                "crippled|gw"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "slashing"
+            ]
+        },
+        {
+            "name": "Chilling Victory",
+            "level": 2,
+            "school": "V",
+            "time": [
+                {
+                    "number": 0,
+                    "unit": "special",
+                    "condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
+                }
+            ],
+            "range": {
+                "type": "special"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "{@variantrule Adrenaline|GW|Adrenaline:} 6, {@variantrule Weapon Attack Spell|GW}",
+                "Use the proximity to death of a creature to create an icy explosion around them.",
+                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 2d10} damage, and if you have more hit points than the target, each hostile creature in a 10-foot-radius sphere centered on the target must make a Dexterity saving throw. On a failed save, a target takes {@damage 4d8} cold damage. On a successful save, a target takes half as much damage."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Chilling Victory",
+                    "Scythe Attack. If it hits, this attack strikes for +3...13...15 damage. For each foe hit who has less Health than you, that foe and all adjacent foes are struck for 10...26...30 cold damage."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Chilling_Victory.jpg"
+                        }
+                    }
+                ]
+            },
+            "components": {
+                "v": true
+            },
+            "areaTags": [
+                "ST",
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "AAD"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Dervish",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Scythe Mastery",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Weapon Attack Spell",
+                    "source": "GW"
+                },
+                {
+                    "name": "Adrenaline",
+                    "source": "GW"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Armorer",
+                            "shortName": "Armorer",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Battle smith",
+                            "shortName": "Battle Smith",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Psion",
+                            "source": "xua2025psion"
+                        },
+                        "subclass": {
+                            "name": "Metamorph",
+                            "shortName": "Metamorph",
+                            "source": "xua2025psion"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the target also takes {@damage 1d10} damage for each slot level above 2nd on a hit, and the cold damage increases by {@dice 1d8} for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "cold"
+            ]
+        },
+        {
+            "name": "There's Nothing to Fear!",
+            "level": 2,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "Support your allies through encouragement.",
+                "Choose any number of creatures that can hear you within range. For the duration, a target is immune to the {@condition frightened} condition, and when a target takes damage, you can roll {@dice 1d4} and subtract the number rolled from the damage. ",
+                "When this spell ends, a target regains hit points equal to {@dice 1d4} + your spellcasting ability."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "\"There's Nothing to Fear!\"",
+                    "Shout. For 4 seconds and 1 second for every 2 ranks in Leadership, all party members within earshot take 20...35% less damage. Affected party members are healed for 35...60 Health when this shout ends."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/_There's_Nothing_to_Fear!_.jpg"
+                        }
+                    }
+                ]
+            },
+            "miscTags": [
+                "MAC"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Paragon",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Sunspear Rank",
+                    "source": "GWN"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the duration increases by 1 round for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "MT"
+            ],
+            "conditionInflict": [
+                "frightened"
+            ]
         }
     ],
     "table": [],
@@ -2508,7 +2897,7 @@
             "source": "GWN",
             "entries": [
                 "Flash Enchantment spells can be used once per turn at any point in your turn (no action required).",
-                "Other wise they behave like normal {@variantrule Enchantment|GW} spells."
+                "Other wise they behave like normal {@variantrule Enchantment|GW} spells except that you cannot choose to end concentration on them."
             ]
         }
     ],
@@ -2628,6 +3017,13 @@
             "source": "GWN",
             "entries": [
                 "Spear Mastery increases the damage you do with spears and your chance to inflict a critical hit when using a spear. Many skills, especially spear attack skills, become more effective with higher Spear Mastery."
+            ]
+        },
+        {
+            "name": "Sunspear Rank",
+            "source": "GWN",
+            "entries": [
+                "Sunspear rank is gained per character by earning Sunspear promotion points. This title can be displayed in the \"Honor\" monument."
             ]
         },
         {

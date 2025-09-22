@@ -25,7 +25,148 @@
     "adventure": [],
     "adventureData": [],
     "item": [],
-    "monster": [],
+    "monster": [
+        {
+            "name": "Shambling Horror",
+            "size": [
+                "M"
+            ],
+            "type": "undead",
+            "source": "GWN",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "ac": 8,
+                    "condition": "+ Spell Level"
+                }
+            ],
+            "hp": {
+                "special": "6 + Spell Level * 6"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 16,
+            "dex": 8,
+            "con": 14,
+            "int": 4,
+            "wis": 6,
+            "cha": 4,
+            "passive": 8,
+            "conditionImmune": [
+                "poisoned"
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The shambling horror makes a number of Swipe attacks equal to half the level of the spell (rounded down) (minimum 1)."
+                    ]
+                },
+                {
+                    "name": "Swipe",
+                    "entries": [
+                        "Natural Weapon: your spell attack modifier to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 3} + Spell Level) bludgeoning damage."
+                    ]
+                }
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "fluff": {
+                "entries": [
+                    "A Shambling Horror is a minion created using {@spell Animate Shambling Horror|GWN}. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shambling_Horror.jpg"
+                        }
+                    }
+                ]
+            },
+            "tokenHref": {
+                "type": "external",
+                "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shambling_Horror_Token.png"
+            }
+        },
+        {
+            "name": "Jagged Horror",
+            "size": [
+                "M"
+            ],
+            "type": "undead",
+            "source": "GWN",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "ac": 7,
+                    "condition": "+ Spell Level"
+                }
+            ],
+            "hp": {
+                "special": "5 + Spell Level * 5"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 16,
+            "dex": 8,
+            "con": 14,
+            "int": 4,
+            "wis": 6,
+            "cha": 4,
+            "passive": 8,
+            "conditionImmune": [
+                "poisoned"
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The jagged horror makes a number of Spike attacks equal to half the level of the spell minus 1 (rounded down, subtraction first) (minimum 1)."
+                    ]
+                },
+                {
+                    "name": "Spike",
+                    "entries": [
+                        "Natural Weapon: your spell attack modifier to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 3} + Spell Level) piercing damage; the target must succeed on a Constitution saving throw against your spell save DC or start {@condition bleeding|GW} for 1 minute, taking damage equal to a number of {@dice d6} equal to the Spell Level minus 1. ",
+                        "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
+                    ]
+                }
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "fluff": {
+                "entries": [
+                    "A Jagged Horror is made upon death of a {@creature Shambling Horror|GWN}, any minion who dies under the effects of the enchantment {@spell Jagged Bones|GWN} or both."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Jagged_Horror.jpg"
+                        }
+                    }
+                ]
+            },
+            "conditionInflict": [
+                "bleeding|gw"
+            ],
+            "tokenHref": {
+                "type": "external",
+                "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Jagged_Horror_Token.png"
+            }
+        }
+    ],
     "feat": [],
     "spell": [
         {
@@ -3335,6 +3476,495 @@
                         "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Animate Shambling Horror",
+            "level": 3,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    }
+                }
+            ],
+            "entries": [
+                "Exploit a nearby corpse to create a {@creature Shambling Horror|GWN}, which turns into a {@creature Jagged Horror|GWN} when it dies.",
+                "Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target, and the target becomes a {@creature Shambling Horror|GWN}. ",
+                "The {@creature Shambling Horror|GWN} remains for the duration or until it reaches zero hit points, at which point it will turn into a {@creature Jagged Horror|GWN}. The {@creature Jagged Horror|GWN} remains for 1 minute or until it reaches zero hit points, at which point it will turn into ash.",
+                "The {@creature Shambling Horror|GWN} and {@creature Jagged Horror|GWN} are friendly to you and your allies for the duration. If you fall {@condition unconscious}, the {@creature Shambling Horror|GWN} and {@creature Jagged Horror|GWN} become hostile towards everything instead of disintegrating into ash. The {@creature Shambling Horror|GWN} and {@creature Jagged Horror|GWN} act on your initiative but take their turn directly after yours. The {@creature Shambling Horror|GWN} and {@creature Jagged Horror|GWN} are in the DM's control.",
+                "On each of your turns until the spell ends, you can use your action to animate another {@creature Shambling Horror|GWN} this way."
+            ],
+            "source": "GWN",
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a zombie leg"
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, use the higher level wherever the spell's level appears in the stat block. When you cast this spell using a spell slot of 4th or 5th level, the duration increases to 8 hours. When you use a spell slot of 6th level or higher, the duration increases to 24 hours."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "SGT",
+                "SMN"
+            ],
+            "fluff": {
+                "entries": [
+                    "Animate Shambling Horror",
+                    "Spell. Exploit nearest corpse to create a level 1...14...17 shambling horror. When the shambling horror dies, it is replaced by a level 0...12...15 jagged horror that causes Bleeding with each of its attacks."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Animate_Shambling_Horror.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Necromancer",
+                    "source": "GW"
+                },
+                {
+                    "name": "Death Magic",
+                    "source": "GW"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Reanimator",
+                            "shortName": "Reanimator",
+                            "source": "xua2025horrorsubclasses"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Druid",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Circle of spores",
+                            "shortName": "Spores",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "spellAttack": [
+                "M"
+            ],
+            "areaTags": [
+                "MT"
+            ],
+            "damageInflict": [
+                "piercing",
+                "slashing"
+            ],
+            "savingThrow": [
+                "constitution"
+            ]
+        },
+        {
+            "name": "Crossfire",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 0,
+                    "unit": "special",
+                    "condition": "which you take immediately before hitting a target with a Ranged weapon"
+                }
+            ],
+            "range": {
+                "type": "special"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "{@variantrule Weapon Attack Spell|GW}",
+                "Use the distraction of an ally to slip past an enemy's defenses.",
+                "On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d8} damage. If the target is within 15 feet of an ally of yours, the attack gains the {@variantrule Unblockable|GW} property."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Crossfire",
+                    "Bow Attack. If this attack hits target foe, it deals +5...17...20 damage. If that foe is near any of your allies, this attack cannot be blocked. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Crossfire.jpg"
+                        }
+                    }
+                ]
+            },
+            "components": {
+                "v": true
+            },
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "GW"
+                },
+                {
+                    "name": "Marksmanship",
+                    "source": "GW"
+                },
+                {
+                    "name": "Weapon Attack Spell",
+                    "source": "GW"
+                },
+                {
+                    "name": "Unblockable",
+                    "source": "GW"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "xua2025eberronupdates"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Collage of swords",
+                            "shortName": "Swords",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Psion",
+                            "source": "xua2025psion"
+                        },
+                        "subclass": {
+                            "name": "Metamorph",
+                            "shortName": "Metamorph",
+                            "source": "xua2025psion"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "ADV"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the target also takes {@damage 1d8} damage for each slot level above 1st on a hit."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Reversal of Damage",
+            "level": 1,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "reaction",
+                    "condition": "which you take when you see a creature within range take damage"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "Twist the fate around one creature, reflecting some of the impact back on an attacker.",
+                "Roll {@dice 1d6} and subtract the number rolled from the damage, and the creature that dealt the damage takes radiant damage equal to the number rolled."
+            ],
+            "source": "GWN",
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the number subtracted increases by {@dice 1d6} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "fluff": {
+                "entries": [
+                    "Reversal of Damage",
+                    "Enchantment Spell. For 8 seconds, the next time target ally would take damage, the foe dealing the damage takes that damage instead (maximum 5...61...75). "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Reversal_of_Damage.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Monk",
+                    "source": "GW"
+                },
+                {
+                    "name": "Smiting Prayers",
+                    "source": "GW"
+                },
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Druid",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Circle of stars",
+                            "shortName": "Stars",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    }
+                ]
+            },
+            "damageInflict": [
+                "radiant"
             ]
         }
     ],

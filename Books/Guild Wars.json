@@ -1227,7 +1227,7 @@
             "entries": [
                 "{@variantrule Adrenaline|GW|Adrenaline:} 6, {@variantrule Weapon Attack Spell|GW}",
                 "You wound your enemy grievously.",
-                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d6} damage, and, if the target is {@condition bleeding|GW}, the target gains a {@condition deep wound|GW} for the duration.",
+                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d6} damage, and, if the target is {@condition bleeding|GW}, the target gains a {@condition deep wound|GW} for the duration. On a successful save, the target is affected for 1 round only.",
                 "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -1794,6 +1794,17 @@
                     },
                     {
                         "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Fighter",
                             "source": "XPHB"
                         },
@@ -2017,6 +2028,10 @@
             "time": [
                 {
                     "number": 1,
+                    "unit": "action"
+                },
+                {
+                    "number": 1,
                     "unit": "reaction",
                     "condition": "which you take when you see a creature within range make an attack roll"
                 }
@@ -2035,8 +2050,9 @@
             ],
             "entries": [
                 "{@variantrule Signet|GW|Signet:} Short Rest",
-                "You attempt to interrupt a creature in the process of making an attack roll.",
-                "Choose one attacking creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes {@damage 1d8} radiant damage, is knocked {@condition prone} and the attack roll misses. On a successful save, the target takes half as much damage, but suffers no other effect."
+                "Punish a creature for their violence.",
+                "Choose one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes {@damage 3d8} radiant damage. On a successful save, the target takes half as much damage.",
+                "If the creature is attacking and it failed its save, it's knocked {@condition prone}."
             ],
             "source": "GW",
             "components": {
@@ -2095,9 +2111,6 @@
                     "name": "Istan",
                     "source": "GWN"
                 }
-            ],
-            "conditionInflict": [
-                "prone"
             ],
             "classes": {
                 "fromClassList": [
@@ -2293,7 +2306,7 @@
             "entries": [
                 "{@variantrule Enchantment|GW}",
                 "Enchant a friendly creature to explode on death, damaging and {@condition corruption|GW|corrupting} everything around it.",
-                "Choose one friendly creature that you can see within range. For the duration, if the creature drops to 0 hit points, this spell ends on the creature, and then target each hostile creature in a 10-foot-radius sphere centered on the creature. Each new target must make a Dexterity saving throw. On a failed save, a new target takes {@damage 2d8} necrotic damage and is {@condition corruption|GW|corrupted} for 1 minute, taking {@damage 1d8} damage. On a successful save, a new target takes half as much damage but suffers no other effect.",
+                "Choose one friendly creature that you can see within range. For the duration, if the creature drops to 0 hit points, this spell ends on the creature, and then target each hostile creature in a 10-foot-radius sphere centered on the creature. Each new target must make a Dexterity saving throw. On a failed save, a new target takes {@damage 2d8} necrotic damage and is {@condition corruption|GW|corrupted} for 1 minute, taking {@damage 1d8} damage. On a successful save, a new target takes half as much damage and is affected for 1 round only.",
                 "At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -2477,7 +2490,7 @@
             "entries": [
                 "You send out a swarm of undead locusts. ",
                 "Choose one creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 3d8} necrotic damage.",
-                "If you hit the target, the attack leaps from the target to a different creature of your choice within 30 feet of the target. Make a new attack roll with disadvantage against the new target, and make a new damage roll, which could cause the attack to leap again.",
+                "If you hit the target, the attack leaps from the target to a different creature of your choice within 30 feet of the target. Make a new attack roll against the new target, and make a new damage roll, which could cause the attack to leap again.",
                 "A creature can be targeted only once by each casting of this spell. "
             ],
             "source": "GW",
@@ -2659,7 +2672,7 @@
             "entries": [
                 "{@variantrule Hex|GW}",
                 "Increase the empathy of an enemy to an unnatural degree.",
-                "Choose one creature that you can see within range. The target must make a Charisma saving throw. On a failed save when the target makes an attack roll, the target takes {@damage 1d6} psychic damage, and when the target makes a damage roll, you can roll {@dice 1d6} and subtract the number rolled from the damage."
+                "Choose one creature that you can see within range. When the target makes an attack roll, it must make a Charisma saving throw. On a failed save, the target takes {@damage 1d6} psychic damage, and for the damage roll, you can roll {@dice 1d6} and subtract the number rolled from the damage."
             ],
             "source": "GW",
             "components": {
@@ -2984,6 +2997,17 @@
                             "name": "Architect of ruin",
                             "shortName": "Architect of Ruin",
                             "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
                         }
                     },
                     {
@@ -3379,6 +3403,17 @@
                             "name": "Architect of ruin",
                             "shortName": "Architect of Ruin",
                             "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
                         }
                     },
                     {
@@ -4034,7 +4069,6 @@
                 }
             ],
             "entries": [
-                "{@variantrule Enchantment|GW} ",
                 "Twist the fate around one creature, healing them instead of harming them.",
                 "Roll {@dice 1d6} and subtract the number rolled from the damage, and the creature regains hit points equal to the number rolled."
             ],
@@ -4085,10 +4119,6 @@
                 },
                 {
                     "name": "Protection Prayers",
-                    "source": "GW"
-                },
-                {
-                    "name": "Enchantment",
                     "source": "GW"
                 },
                 {
@@ -4432,7 +4462,7 @@
             "entries": [
                 "{@variantrule Hex|GW}",
                 "Curse a creature with faintheartedness making them slower and deteriorating them.",
-                "Choose one creature that you can see within range. The target must make a Constitution saving throw. On a failed save for the duration, regardless of the target's abilities or magic items, the target can't make more than one melee or ranged attack during its turn, and at the start of each of the target's turns, the target takes {@damage 1d8} necrotic damage."
+                "Choose one creature that you can see within range. The target must make a Constitution saving throw. On a failed save for the duration, regardless of the target's abilities or magic items, the target can't make more than one melee or ranged attack during its turn, and at the start of each of the target's turns, the target takes {@damage 1d8} necrotic damage. On a successful save, the target is affected for 1 round only."
             ],
             "source": "GW",
             "components": {
@@ -5813,7 +5843,7 @@
             "entries": [
                 "{@variantrule Adrenaline|GW|Adrenaline:} 6, {@variantrule Weapon Attack Spell|GW}",
                 "You attempt to make your enemy bleed out.",
-                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d6} damage, and the target starts {@condition bleeding|GW} for the duration, taking {@damage 2d6} damage.",
+                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d6} damage, and starts {@condition bleeding|GW} for the duration, taking {@damage 2d6} damage.",
                 "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -6388,14 +6418,14 @@
                 {
                     "type": "timed",
                     "duration": {
-                        "type": "round",
-                        "amount": 3
+                        "type": "minute",
+                        "amount": 1
                     }
                 }
             ],
             "entries": [
                 "Conjure an extremely bright flash of light right in front of a creature's eyes.",
-                "Choose one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target is {@condition blinded} for the duration.",
+                "Choose one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target is {@condition blinded} for the duration. On a successful save, the target is affected for 1 round only.",
                 "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -6490,6 +6520,17 @@
                 "fromSubclass": [
                     {
                         "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Fighter",
                             "source": "XPHB"
                         },
@@ -6553,7 +6594,7 @@
             "entries": [
                 "{@variantrule Hex|GW}",
                 "Conjure an illusory phantasm in a creature's mind, tormenting it.",
-                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save for the duration at the start of each of the target's turns, the target takes {@damage 3d6} psychic damage."
+                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save for the duration at the start of each of the target's turns, the target takes {@damage 3d6} psychic damage. On a successful save, the target is affected for 1 round only."
             ],
             "source": "GW",
             "fluff": {
@@ -6741,7 +6782,7 @@
             "entries": [
                 "{@variantrule Hex|GW}",
                 "Create the illusion of heavy weight.",
-                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, for the duration, the target's speed is halved."
+                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, for the duration, the target's speed is halved. On a successful save, the target is affected for 1 round only."
             ],
             "source": "GW",
             "fluff": {
@@ -7986,8 +8027,8 @@
             ],
             "entries": [
                 "{@variantrule Sacrifice|GW|Sacrifice:} 10%",
-                "Corrupt some of your own blood, to weaken an area.",
-                "Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target is {@condition weakness|GW|weakened} for the duration.",
+                "Corrupt some of your own blood to weaken an area.",
+                "Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target is {@condition weakness|GW|weakened} for the duration. On a successful save, a target is affected for 1 round only.",
                 "At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -8158,7 +8199,7 @@
             ],
             "entries": [
                 "Make your enemies conditions contagious.",
-                "Choose one creature that you can see within range. Target each creature other than the chosen target in a 10-foot-radius sphere centered on the target. Each new target must make a Constitution saving throw. On a failed save, a creature gains a copy of each harmful condition on the chosen target.",
+                "Choose one creature that you can see within range. Target each creature other than the chosen target in a 10-foot-radius sphere centered on the target. Each new target must make a Constitution saving throw. On a failed save, a creature gains a copy of each harmful condition on the chosen target. On a successful save, a target gains a copy with its duration reduced to 1 round.",
                 "At the end of each of its turns, a target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends."
             ],
             "source": "GW",
@@ -8303,7 +8344,7 @@
             "entries": [
                 "{@variantrule Armor Penetration|GW}",
                 "Fire a jolt of electricity, weakening on hit.",
-                "Choose one creature that you can see within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 3d12} lightning damage and must make a Constitution saving throw. On a failed save, the target is {@condition weakness|GW|weakened} for the duration.",
+                "Choose one creature that you can see within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 3d12} lightning damage and must make a Constitution saving throw. On a failed save, the target is {@condition weakness|GW|weakened} for the duration. On a successful save, the target is affected for 1 round only.",
                 "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -8403,6 +8444,17 @@
                 "fromSubclass": [
                     {
                         "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Fighter",
                             "source": "XPHB"
                         },
@@ -8471,7 +8523,7 @@
             ],
             "entries": [
                 "Ignite a creature with searing flames.",
-                "Choose one creature that you can see within range. The target must make a Dexterity saving throw. On a failed save, the target takes {@damage 6d6} fire damage and starts {@condition burning|GW} for the duration, taking {@damage 2d6} damage. On a successful save, the target takes half as much damage, but suffers no other effect.",
+                "Choose one creature that you can see within range. The target must make a Dexterity saving throw. On a failed save, the target takes {@damage 6d6} fire damage and starts {@condition burning|GW} for the duration, taking {@damage 2d6} damage. On a successful save, the target takes half as much damage and {@condition burning|GW|burns} for 1 round only.",
                 "At the end of each of its turns, the target can make a Dexterity saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -8616,6 +8668,17 @@
                     },
                     {
                         "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Fighter",
                             "source": "XPHB"
                         },
@@ -8676,7 +8739,7 @@
             "entries": [
                 "{@variantrule Weapon Attack Spell|GW}",
                 "Fire a well-aimed shot to make a creature bleed.",
-                "On a hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw. On a failed save, the target starts {@condition bleeding|GW} for the duration, taking {@damage 1d6} damage.",
+                "On a hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw. On a failed save, the target starts {@condition bleeding|GW} for the duration, taking {@damage 1d6} damage. On a successful save, the target is affected for 1 round only.",
                 "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends.",
                 "At 5th level, the ranged attack also deals an extra {@damage 1d8} damage to the target on a hit. This damage increases by {@dice 1d8} when you reach 11th level ({@dice 2d8}) and 17th level ({@dice 3d8})."
             ],
@@ -9145,6 +9208,17 @@
                 "fromSubclass": [
                     {
                         "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Psion",
                             "source": "xua2025psion"
                         },
@@ -9533,7 +9607,7 @@
             "entries": [
                 "{@variantrule Hex|GW}",
                 "You magically inscribe a mark of pain on a creature, which causes all creatures around to take damage when it takes physical damage.",
-                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save for the duration when the target takes bludgeoning, piercing, or slashing damage, target each hostile creature other than the target in a 10-foot-radius sphere centered on the target. A new target takes {@damage 3d8} necrotic damage."
+                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save for the duration when the target takes bludgeoning, piercing, or slashing damage, target each hostile creature other than the target in a 10-foot-radius sphere centered on the target. A new target takes {@damage 3d8} necrotic damage. On a successful save, the target is affected for 1 round only."
             ],
             "source": "GW",
             "fluff": {
@@ -9798,6 +9872,17 @@
                 "fromSubclass": [
                     {
                         "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Psion",
                             "source": "xua2025psion"
                         },
@@ -9869,7 +9954,7 @@
             "entries": [
                 "{@variantrule Adrenaline|GW|Adrenaline:} 5, {@variantrule Weapon Attack Spell|GW}",
                 "You attempt to sever off a body part.",
-                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d6} damage, and must make a Constitution saving throw. On a failed save, the target gains a {@condition deep wound|GW} for the duration.",
+                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d6} damage, and must make a Constitution saving throw. On a failed save, the target gains a {@condition deep wound|GW} for the duration. On a successful save, the target is affected for 1 round only.",
                 "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -10199,9 +10284,9 @@
             "entries": [
                 "{@variantrule Hex|GW|Hex:} You cannot choose to end {@status concentration} on this spell.",
                 "Magically implant a parasite into a creature, harming them until they die and gaining health on their death.",
-                "Choose one creature that you can see within range. The target must make a Constitution saving throw. On a failed save for the duration at the start of each of the target's turns, the target takes {@damage 1d8} necrotic damage.",
+                "Choose one creature that you can see within range. The target must make a Constitution saving throw. On a failed save for the duration at the start of each of the target's turns, the target takes {@damage 1d8} necrotic damage. On a successful save, the target is affected for 1 round only, and you do not heal at the end.",
                 "When this spell ends, you regain hit points equal to {@dice 1d4}.",
-                "This spell's healing and damage increase by {@dice 1d4} and {@dice 1d8} respectively when you reach 5th level ({@dice 2d4}/{@dice 2d8}), 11th level ({@dice 3d4}/{@dice 3d8}), and 17th level ({@dice 4d4}/{@dice 4d8})."
+                "This spell's healing and damage increase by {@dice 1d4} and {@dice 1d8}, respectively, when you reach 5th level ({@dice 2d4}/{@dice 2d8}), 11th level ({@dice 3d4}/{@dice 3d8}), and 17th level ({@dice 4d4}/{@dice 4d8})."
             ],
             "source": "GW",
             "fluff": {
@@ -10366,7 +10451,7 @@
             "entries": [
                 "{@variantrule Hex|GW}",
                 "Create a diversion to distract a creature, causing their next ability or spell to be temporarily forgotten.",
-                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, for the duration, the next spell or ability the target uses can't be used again for the duration."
+                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, for the duration, the next spell or ability the target uses can't be used again for the duration. On a successful save, the target is affected for 3 rounds only."
             ],
             "source": "GW",
             "fluff": {
@@ -10975,8 +11060,8 @@
             ],
             "entries": [
                 "Make the energy in a creature burn it up from the inside.",
-                "Choose one creature that you can see within range. The target must make a Charisma saving throw. On a failed save, the target's initiative gets reduced by {@dice 1d6}.",
-                "If this spell reduces the target's initiative, the target takes {@damage 1d6} psychic damage per initiative lost. On a successful save, the target takes half as much damage."
+                "Choose one creature that you can see within range. The target must make a Charisma saving throw. On a failed save, the target's initiative gets reduced by {@dice 1d6}. On a successful save, the target's initiative gets reduced by half as much.",
+                "If this spell reduces the target's initiative, the target takes {@damage 1d6} psychic damage per initiative lost. "
             ],
             "source": "GW",
             "damageInflict": [
@@ -11153,7 +11238,7 @@
             "entries": [
                 "{@variantrule Weapon Attack Spell|GW}",
                 "You attempt to cripple a creature, slowing their movement.",
-                "On a hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw. On a failed save, the target becomes {@condition crippled|GW} for the duration.",
+                "On a hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw. On a failed save, the target becomes {@condition crippled|GW} for the duration. On a successful save, the target is affected for 1 round only.",
                 "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends.",
                 "At 5th level, the melee attack also deals an extra {@damage 1d6} damage to the target on a hit. This damage increases by {@dice 1d6} when you reach 11th level ({@dice 2d6}) and 17th level ({@dice 3d6})."
             ],
@@ -11974,6 +12059,17 @@
                 "fromSubclass": [
                     {
                         "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Warlock",
                             "source": "XPHB"
                         },
@@ -12215,7 +12311,7 @@
         },
         {
             "name": "Purge Conditions",
-            "level": 2,
+            "level": 4,
             "school": "A",
             "time": [
                 {
@@ -12284,9 +12380,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
+                        "When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th."
                     ]
                 }
             ],
@@ -13395,6 +13491,17 @@
                     },
                     {
                         "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Fighter",
                             "source": "XPHB"
                         },
@@ -13553,6 +13660,17 @@
                     }
                 ],
                 "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
                     {
                         "class": {
                             "name": "Warlock",
@@ -13726,6 +13844,17 @@
                 "fromSubclass": [
                     {
                         "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Fighter",
                             "source": "XPHB"
                         },
@@ -13793,7 +13922,7 @@
             "entries": [
                 "{@variantrule Elite|GW}, {@variantrule Hex|GW}",
                 "Curse an area, damaging creatures every round and reducing their healing.",
-                "Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save for the duration, if a target regains hit points, you can roll {@dice 2d4} and subtract the number rolled from the healing, and at the start of each of a target's turns, a target takes {@damage 2d8} necrotic damage."
+                "Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save for the duration, if a target regains hit points, you can roll {@dice 2d4} and subtract the number rolled from the healing, and at the start of each of a target's turns, a target takes {@damage 2d8} necrotic damage. On a successful save, a target is affected for 1 round only."
             ],
             "source": "GW",
             "components": {
@@ -14534,7 +14663,7 @@
             ],
             "entries": [
                 "Weaken the armor of creatures in an area.",
-                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target has {@condition cracked armor|GW} for the duration.",
+                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target has {@condition cracked armor|GW} for the duration. On a successful save, the target is affected for 1 round only.",
                 "At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -14837,6 +14966,17 @@
                     },
                     {
                         "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Fighter",
                             "source": "XPHB"
                         },
@@ -14984,7 +15124,7 @@
         },
         {
             "name": "Crippling Anguish",
-            "level": 3,
+            "level": 2,
             "school": "E",
             "time": [
                 {
@@ -15011,7 +15151,7 @@
             "entries": [
                 "{@variantrule Elite|GW}, {@variantrule Hex|GW}",
                 "Psychically torture a creature, reducing their speed, limiting their attacks, and hurting them every turn. ",
-                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save for the duration, the target's speed is halved; regardless of the target's abilities or magic items, the target can't make more than one melee or ranged attack during its turn, and at the start of each of the target's turns, the target takes {@damage 3d6} psychic damage."
+                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save for the duration, the target's speed is halved; regardless of the target's abilities or magic items, the target can't make more than one melee or ranged attack during its turn, and at the start of each of the target's turns, the target takes {@damage 3d6} psychic damage. On a successful save, the target is affected for 1 round only."
             ],
             "source": "GW",
             "fluff": {
@@ -15077,7 +15217,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d6} for each slot level above 3rd."
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d6} for each slot level above 2nd."
                     ]
                 }
             ],
@@ -15298,6 +15438,17 @@
                 "fromSubclass": [
                     {
                         "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Fighter",
                             "source": "XPHB"
                         },
@@ -15471,6 +15622,17 @@
                 "fromSubclass": [
                     {
                         "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Fighter",
                             "source": "XPHB"
                         },
@@ -15536,8 +15698,8 @@
             ],
             "entries": [
                 "{@variantrule Armor Penetration|GW}, {@variantrule Elite|GW}, {@variantrule Hex|GW}",
-                "Start charging up a lightning sure above a creature, which comes crashing down at the beginning of that creature's turn.",
-                "Choose one creature that you can see within range. The target must make a Dexterity saving throw. On a failed save, when this spell ends because its duration ran out, the target takes {@damage 5d12} lightning damage, is knocked {@condition prone} and has {@condition cracked armor|GW} for 1 minute. On a successful save, the target is also hexed as above, takes half as much damage, but suffers no other effect.",
+                "Start charging up a lightning surge above a creature, which comes crashing down at the beginning of that creature's turn.",
+                "Choose one creature that you can see within range. The target must make a Dexterity saving throw. On a failed save, when this spell ends because its duration ran out, the target takes {@damage 5d12} lightning damage, is knocked {@condition prone}, and has {@condition cracked armor|GW} for 1 minute. On a successful save, the target is also hexed as above, takes half as much damage, and is affected by the condition for 1 round only.",
                 "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -15643,6 +15805,17 @@
                     }
                 ],
                 "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
                     {
                         "class": {
                             "name": "Fighter",
@@ -16259,7 +16432,7 @@
             "entries": [
                 "{@variantrule Adrenaline|GW|Adrenaline:} 4, {@variantrule Weapon Attack Spell|GW}",
                 "Attempt to stagger your opponent, weakening them on hit.",
-                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d12} damage, and must make a Strength saving throw. On a failed save, the target is {@condition weakness|GW|weakened} for the duration.",
+                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d12} damage, and must make a Strength saving throw. On a failed save, the target is {@condition weakness|GW|weakened} for the duration. On a successful save, the target is affected for 1 round only.",
                 "At the end of each of its turns, the target can make a Strength saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -17540,6 +17713,17 @@
                     },
                     {
                         "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Fighter",
                             "source": "XPHB"
                         },
@@ -17747,6 +17931,17 @@
                     },
                     {
                         "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Fighter",
                             "source": "XPHB"
                         },
@@ -17900,6 +18095,17 @@
                 "fromSubclass": [
                     {
                         "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Fighter",
                             "source": "XPHB"
                         },
@@ -18050,6 +18256,17 @@
                     }
                 ],
                 "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
                     {
                         "class": {
                             "name": "Warlock",
@@ -19275,6 +19492,17 @@
                 "fromSubclass": [
                     {
                         "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Psion",
                             "source": "xua2025psion"
                         },
@@ -19346,7 +19574,7 @@
             "entries": [
                 "{@variantrule Weapon Attack Spell|GW}",
                 "Attempt to cripple a creature by pinning down their foot to the floor.",
-                "On a hit, the target suffers the weapon attack's normal effects and must make a Dexterity saving throw. On a failed save, the target is {@condition crippled|GW} for the duration.",
+                "On a hit, the target suffers the weapon attack's normal effects and must make a Dexterity saving throw. On a failed save, the target is {@condition crippled|GW} for the duration. On a successful save, the target is affected for 1 round only.",
                 "At the end of each of its turns, the target can make a Dexterity saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -19555,7 +19783,7 @@
             "entries": [
                 "{@variantrule Hex|GW}",
                 "Make an area of creatures fragile, taking damage every time a condition is applied or ends on them.",
-                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save, for the duration, when a target gains or loses a harmful condition, a target takes {@damage 2d6} psychic damage."
+                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save, for the duration, when a target gains or loses a harmful condition, a target takes {@damage 2d6} psychic damage. On a successful save, a target is affected for 1 round only."
             ],
             "source": "GW",
             "fluff": {
@@ -19913,7 +20141,7 @@
             ],
             "entries": [
                 "Make a creature start to rot to {@condition disease|GW} them.",
-                "Choose one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target is {@condition disease|GW|diseased} for the duration, taking {@damage 2d8} damage.",
+                "Choose one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target is {@condition disease|GW|diseased} for the duration, taking {@damage 2d8} damage. On a successful save, the target is affected for 1 round only.",
                 "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -20274,7 +20502,7 @@
             "entries": [
                 "{@variantrule Hex|GW}",
                 "Conjure up a fog, which makes your opponents more likely to miss with their attacks.",
-                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save for the duration when a target makes an attack roll with a weapon, they must roll a {@dice d20}. On a 10 or lower, the attack misses."
+                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save for the duration when a target makes an attack roll with a weapon, they must roll a {@dice d8} and subtract the number rolled from the attack roll. On a successful save, the target is affected for 1 round only."
             ],
             "source": "GW",
             "fluff": {
@@ -20362,6 +20590,17 @@
                     }
                 ],
                 "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
                     {
                         "class": {
                             "name": "Warlock",
@@ -20529,6 +20768,17 @@
                     }
                 ],
                 "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
                     {
                         "class": {
                             "name": "Fighter",
@@ -21228,6 +21478,17 @@
                 "fromSubclass": [
                     {
                         "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Warlock",
                             "source": "XPHB"
                         },
@@ -21313,7 +21574,7 @@
                 "{@variantrule Weapon Attack Spell|GW}",
                 "Deliver a swift chop that is sure to hit.",
                 "On a hit, the target suffers the weapon attack's normal effects and takes {@damage 1d6} damage. ",
-                "On a miss, the target takes {@damage 1d6} damage and must make a Constitution saving throw. On a failed save, the target gains a {@condition deep wound|GW} for the duration. ",
+                "On a miss, the target takes {@damage 1d6} damage and must make a Constitution saving throw. On a failed save, the target gains a {@condition deep wound|GW} for the duration. On a successful save, the target is affected for 1 round only.",
                 "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -21514,7 +21775,7 @@
             "entries": [
                 "{@variantrule Hex|GW}",
                 "Utter a foul curse, causing suffering in an area.",
-                "Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save for the duration at the start of each of a target's turns, a target takes {@damage 1d8} necrotic damage."
+                "Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save for the duration at the start of each of a target's turns, a target takes {@damage 1d8} necrotic damage. On a successful save, a target is affected for 1 round only."
             ],
             "source": "GW",
             "fluff": {
@@ -21767,6 +22028,17 @@
                     }
                 ],
                 "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
                     {
                         "class": {
                             "name": "Psion",
@@ -22283,7 +22555,7 @@
         },
         {
             "name": "Energy Drain",
-            "level": 2,
+            "level": 1,
             "school": "T",
             "time": [
                 {
@@ -22364,9 +22636,9 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 3rd level or higher, the reduction of initiative increases by {@dice 1d8} for each slot level above 2nd."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the reduction of initiative increases by {@dice 1d8} for each slot level above 1st."
                     ]
                 }
             ],
@@ -22586,8 +22858,8 @@
             "entries": [
                 "{@variantrule Elite|GW}",
                 "Make the energy in a group of creatures burn them up from the inside.",
-                "Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Charisma saving throw. On a failed save, a target's initiative gets reduced by {@dice 2d6}.",
-                "If this spell reduces a target's initiative, a target takes {@damage 1d6} psychic damage per initiative lost. On a successful save, a target takes half as much damage."
+                "Choose a point that you can see within range. Each creature in a 15-foot-radius sphere centered on that point must make a Charisma saving throw. On a failed save, a target's initiative gets reduced by {@dice 2d6}. On a successful save, the target's initiative gets reduced by half as much.",
+                "If this spell reduces a target's initiative, a target takes {@damage 1d6} psychic damage per initiative lost."
             ],
             "source": "GW",
             "damageInflict": [
@@ -23531,7 +23803,7 @@
             "entries": [
                 "{@variantrule Elite|GW}, {@variantrule Overcast|GW|Overcast:} 2",
                 "Use the power of your mind to sear a group of enemies, inflicting more damage and {@condition burning|GW} if you have a higher initiative than them.",
-                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make an Intelligence saving throw. On a failed save, a target takes {@damage 2d6} fire damage, and if a target has a lower initiative than you, they take an additional {@damage 2d6} fire damage and start {@condition burning|GW} for the duration, taking {@damage 1d6} damage. On a successful save, a target takes half as much damage but suffers no other effect.",
+                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make an Intelligence saving throw. On a failed save, a target takes {@damage 2d6} fire damage, and if a target has a lower initiative than you, they take an additional {@damage 2d6} fire damage and start {@condition burning|GW} for the duration, taking {@damage 1d6} damage. On a successful save, a target takes half as much damage and {@condition burning|GW|burns} for 1 round only.",
                 "At the end of each of its turns, a target can make a Dexterity saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -23668,6 +23940,17 @@
                             "name": "Architect of ruin",
                             "shortName": "Architect of Ruin",
                             "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
                         }
                     },
                     {
@@ -23844,6 +24127,17 @@
                     }
                 ],
                 "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
                     {
                         "class": {
                             "name": "Warlock",
@@ -24219,7 +24513,7 @@
             "entries": [
                 "{@variantrule Adrenaline|GW|Adrenaline:} 7, {@variantrule Elite|GW}, {@variantrule Weapon Attack Spell|GW}",
                 "Channel your adrenaline into a Devastating Bash, knocking your target {@condition prone} and inflicting {@condition weakness|GW}.",
-                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d12} damage, and must make a Strength saving throw. On a failed save, the target is knocked {@condition prone} and suffers from {@condition weakness|GW} for the duration.",
+                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d12} damage, and must make a Strength saving throw. On a failed save, the target is knocked {@condition prone} and suffers from {@condition weakness|GW} for the duration. On a successful save, the target is affected for 1 round only and is not knocked {@condition prone}.",
                 "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -24802,6 +25096,17 @@
                 "fromSubclass": [
                     {
                         "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Reanimator",
+                            "shortName": "Reanimator",
+                            "source": "xua2025horrorsubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Illrigger",
                             "source": "IllriggerRevised"
                         },
@@ -25141,6 +25446,17 @@
                 "fromSubclass": [
                     {
                         "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Psion",
                             "source": "xua2025psion"
                         },
@@ -25459,7 +25775,7 @@
             "entries": [
                 "{@variantrule Elite|GW}, {@variantrule Enchantment|GW} ",
                 "Taint the flash of a friendly creature, making them immune to diseases and causing {@condition disease|GW} to any creature who attacks them in melee.",
-                "Choose one friendly creature that you can see within range. End the {@condition disease|GW|diseased} condition on the target. For the duration, the target is immune to the {@condition disease|GW|diseased} condition and when the target takes damage from a melee attack, target the creature that dealt the damage. The new target must make a Constitution saving throw. On a failed save, the target is {@condition disease|GW|diseased} for the duration, taking {@damage 2d8} damage.",
+                "Choose one friendly creature that you can see within range. End the {@condition disease|GW|diseased} condition on the target. For the duration, the target is immune to the {@condition disease|GW|diseased} condition, and when the target takes damage from a melee attack or deals damage to a creature with a melee attack, target the creature that dealt the damage or took the damage. The new target must make a Constitution saving throw. On a failed save, the target is {@condition disease|GW|diseased} for the duration, taking {@damage 2d8} damage. On a successful save, the target is affected for 1 round only.",
                 "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -26001,7 +26317,7 @@
                 "{@variantrule Elite|GW}",
                 "Prepare a spike trap, which damages, cripples and knocks creatures {@condition prone} which trigger it.",
                 "Conjure a 15-foot radius stationary {@condition invisible} trap at your location for the duration and choose any number of creatures. The next time a non-chosen creature enters the spell's area, the trap triggers, applying the following effects for 2 rounds: ",
-                "Each non-chosen creature must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 4d4} piercing damage, becomes {@condition crippled|GW} for one minute and is knocked {@condition prone}. On a successful save, a target takes half as much damage, but suffers no other effect.",
+                "Each non-chosen creature must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 4d4} piercing damage, becomes {@condition crippled|GW} for 1 minute and is knocked {@condition prone}. On a successful save, a target takes half as much damage, but suffers no other effect.",
                 "At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends.",
                 "This trap is nearly {@condition invisible}, requiring a successful Intelligence ({@skill Investigation}) check against your spell save DC to be discerned."
             ],
@@ -27673,7 +27989,7 @@
             "entries": [
                 "{@variantrule Preparation|GW}",
                 "Sheath your arrows in {@condition corruption|GW|corrupting} frog venom, making them inflict {@condition corruption|GW} on a hit.",
-                "For the duration, when you hit a target with a ranged weapon attack, they must make a Constitution saving throw. On a failed save, a target is {@condition corruption|GW|corrupted} for 1 minute, taking {@damage 2d8} damage.",
+                "For the duration, when you hit a target with a ranged weapon attack, they must make a Constitution saving throw. On a failed save, a target is {@condition corruption|GW|corrupted} for 1 minute, taking {@damage 2d8} damage. On a successful save, the target is affected for 1 round only.",
                 "At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -28911,6 +29227,17 @@
                 "fromSubclass": [
                     {
                         "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Warlock",
                             "source": "XPHB"
                         },
@@ -29492,7 +29819,7 @@
             "entries": [
                 "{@variantrule Armor Penetration|GW}",
                 "Conjure up lightning around your hands and release a shockwave of electricity upon touching a creature.",
-                "Choose one creature that you can see within range. Target each creature other than you in a 5-foot-radius centered on the target. Make a melee spell attack against each target. On a hit, a target takes {@damage 2d12} lightning damage and must make a Constitution saving throw. On a failed save, a target is {@condition blinded} and has {@condition cracked armor|GW} for the duration.",
+                "Choose one creature that you can see within range. Target each creature other than you in a 5-foot radius centered on the target. Make a melee spell attack against each target. On a hit, a target takes {@damage 2d12} lightning damage and must make a Constitution saving throw. On a failed save, a target is {@condition blinded} and has {@condition cracked armor|GW} for the duration. On a successful save, a target is affected for 1 round only.",
                 "At the end of each of its turns, a target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends."
             ],
             "source": "GW",
@@ -29580,6 +29907,17 @@
                     }
                 ],
                 "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
                     {
                         "class": {
                             "name": "Fighter",
@@ -29852,6 +30190,17 @@
                     }
                 ],
                 "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
                     {
                         "class": {
                             "name": "Psion",
@@ -30651,7 +31000,7 @@
             "entries": [
                 "{@variantrule Sacrifice|GW|Sacrifice:} 8%, {@variantrule Signet|GW|Signet:} Short Rest",
                 "Activate your barbed signet, making necrotic vines sprout in an area, lacerating creatures.",
-                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target begins {@condition bleeding|GW} for the duration, taking {@damage 3d6} damage.",
+                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target begins {@condition bleeding|GW} for the duration, taking {@damage 3d6} damage. On a successful save, the target is affected for 1 round only.",
                 "At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -30826,7 +31175,7 @@
             "entries": [
                 "Prepare a barbed trap, which damages, cripples, and bleeds creatures that trigger it.",
                 "Conjure a 15-foot radius stationary {@condition invisible} trap at your location for the duration and choose any number of creatures. The next time a non-chosen creature enters the spell's area, the trap triggers, applying the following effect for 1 round: ",
-                "Each non-chosen creature must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 8d4} piercing damage, starts {@condition bleeding|GW} for one minute, taking {@damage 3d6} damage and is {@condition crippled|GW} for one minute. On a successful save, a target takes half as much damage, but suffers no other effect.",
+                "Each non-chosen creature must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 8d4} piercing damage, starts {@condition bleeding|GW} for one minute, taking {@damage 3d6} damage, and is {@condition crippled|GW} for one minute. On a successful save, a target takes half as much damage and is affected by the conditions for 1 round only.",
                 "At the end of each of its turns, the target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends.",
                 "This trap is nearly {@condition invisible}, requiring a successful Intelligence ({@skill Investigation}) check against your spell save DC to be discerned."
             ],
@@ -31646,7 +31995,7 @@
             "entries": [
                 "{@variantrule Companion|GW}",
                 "Command your companion to maim a creature.",
-                "Choose one companion that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 2d10} damage, and, if the target willingly moved on its last turn, the target must make a Dexterity saving throw. On a failed save, the target is {@condition crippled|GW} for the duration.",
+                "Choose one companion that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 2d10} damage, and, if the target willingly moved on its last turn, the target must make a Dexterity saving throw. On a failed save, the target is {@condition crippled|GW} for the duration. On a successful save, the target is affected for 1 round only.",
                 "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GW",
@@ -32167,7 +32516,7 @@
             "entries": [
                 "{@variantrule Signet|GW|Signet:} Short Rest",
                 "Activate your Signet of Humility, humbling your target into not using their Elite skill.",
-                "Choose one hostile creature that you can see within range. The Target must make a Charisma saving throw. On a failed safe, the target cannot use Elite spells for the duration."
+                "Choose one hostile creature that you can see within range. The target cannot use Elite spells for the duration."
             ],
             "source": "GW",
             "fluff": {
@@ -32269,9 +32618,6 @@
                     }
                 ]
             },
-            "savingThrow": [
-                "charisma"
-            ],
             "areaTags": [
                 "ST"
             ],
@@ -33454,6 +33800,17 @@
                 "fromSubclass": [
                     {
                         "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Psion",
                             "source": "xua2025psion"
                         },
@@ -34399,7 +34756,7 @@
             "entries": [
                 "{@variantrule Hex|GW}",
                 "Rapidly freeze an area, slowing down all creatures inside it.",
-                "Choose a point that you can see within range. Each creature in a 20-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target takes {@damage 6d8} cold damage, and for the duration the target's speed is reduced by 66%. On a successful save, a target takes half as much damage but suffers no other effect."
+                "Choose a point that you can see within range. Each creature in a 20-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target takes {@damage 6d8} cold damage, and for the duration the target's speed is reduced by 66%. On a successful save, a target takes half as much damage and is affected for 1 round only."
             ],
             "source": "GW",
             "fluff": {
@@ -34492,6 +34849,17 @@
                     }
                 ],
                 "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
                     {
                         "class": {
                             "name": "Warlock",
@@ -34839,8 +35207,8 @@
             ],
             "entries": [
                 "You quickly fire an arrow in response to a creature casting a spell, interrupting the spell on a hit and {@condition dazed|GW|dazing} it.",
-                "Choose one creature, which is casting a spell, that you can see within range of your weapon. Make a ranged weapon attack against the target. On a hit, the target takes {@damage 2d8} damage, the spell fails and has no effect and the target is {@condition dazed|GW} for the duration.",
-                "At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
+                "Choose one creature, which is casting a spell, that you can see within range of your weapon. Make a ranged weapon attack against the target. On a hit, the target takes {@damage 2d8} damage, the spell fails and has no effect, and the target is {@condition dazed|GW} for the duration.",
+                "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
             ],
             "source": "GW",
             "fluff": {
@@ -35048,7 +35416,7 @@
             "entries": [
                 "{@variantrule Hex|GW}",
                 "Fray a creature's mind, sending psychic shockwaves through them every time you target them with one of your other spells.",
-                "Choose one creature that you can see within range with an initiative higher than 0. The target must make a Wisdom saving throw. On a failed save, for the duration, if the target is the target of a Mesmer-themed spell, which does not require {@status concentration}, the target's initiative gets reduced by {@dice 1d4}. If this spell reduces the target's initiative, the target takes {@damage 1d6} psychic damage per initiative lost. ",
+                "Choose one creature that you can see within range with an initiative higher than 0. The target must make a Wisdom saving throw. On a failed save, for the duration, if the target is the target of a Mesmer-themed spell, which does not require {@status concentration}, the target's initiative gets reduced by {@dice 1d4}. If this spell reduces the target's initiative, the target takes {@damage 1d6} psychic damage per initiative lost. On a successful save, the target is affected for 1 round only.",
                 "If the target's initiative is ever 0 or lower, this spell ends, and the target takes {@damage 4d6} psychic damage."
             ],
             "source": "GW",
@@ -35233,7 +35601,7 @@
             "entries": [
                 "{@variantrule Hex|GW}",
                 "Draw on your divine power to punish all those who heal a creature.",
-                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, for the duration, when the target regains hit points, target the healer. The new target takes {@damage 3d8} radiant damage."
+                "Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, for the duration, when the target regains hit points, target the healer. The new target takes {@damage 3d8} radiant damage. On a successful save, the target is affected for 1 round only."
             ],
             "source": "GW",
             "components": {
@@ -35902,7 +36270,7 @@
             "entries": [
                 "{@variantrule Hex|GW} ",
                 "Befuddle a group of creatures with an arcane conundrum, increasing the casting time of their spells.",
-                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save for the duration, a target can't cast spells as reactions, must cast spells which take a bonus action as an action, and any other spell takes twice as long to cast.",
+                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save for the duration, a target can't cast spells as reactions, must cast spells that take a bonus action as an action, and any other spell takes twice as long to cast. On a successful save, a target is affected for 1 round only.",
                 "When this spell ends on a target, your initiative gets increased by {@dice 2d4}."
             ],
             "source": "GW",
@@ -36477,6 +36845,17 @@
                 "fromSubclass": [
                     {
                         "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Psion",
                             "source": "xua2025psion"
                         },
@@ -36967,7 +37346,7 @@
             "entries": [
                 "Prepare a flame trap, which damages and burns creatures which trigger it.",
                 "Conjure a 15-foot radius stationary {@condition invisible} trap at your location for the duration and choose any number of creatures. The next time a non-chosen creature enters the spell's area, the trap triggers, applying the following effect for 3 rounds: ",
-                "Each non-chosen creature must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 2d6} fire damage and starts {@condition burning} for one minute, taking {@damage 1d6} damage. On a successful save, a target takes half as much damage, but suffers no other effect.",
+                "Each non-chosen creature must make a Dexterity saving throw when it enters the spell's area for the first time on a turn or starts its turn there. On a failed save, a target takes {@damage 2d6} fire damage and starts {@condition burning} for one minute, taking {@damage 1d6} damage. On a successful save, a target takes half as much damage and {@condition burning|GW|burns} for 1 round only.",
                 "At the end of each of its turns, a target can make a Dexterity saving throw. On a success, the condition ends.",
                 "This trap is nearly {@condition invisible}, requiring a successful Intelligence ({@skill Investigation}) check against your spell save DC to be discerned."
             ],
@@ -38101,7 +38480,7 @@
             "entries": [
                 "{@variantrule Hex|GW}",
                 "Induce a momentary clumsiness in a group of creatures, causing their next attack to miss and inflict damage on themselves.",
-                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save, for the duration, the next time a target makes a weapon attack roll, that attack roll misses and the target takes {@damage 4d6} psychic damage."
+                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save, for the duration, the next time a target makes a weapon attack roll, that attack roll misses and the target takes {@damage 4d6} psychic damage. On a successful save, the target only takes the damage when it attacks."
             ],
             "source": "GW",
             "fluff": {
@@ -39311,6 +39690,17 @@
                 "fromSubclass": [
                     {
                         "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Psion",
                             "source": "xua2025psion"
                         },
@@ -40219,6 +40609,17 @@
                 "fromSubclass": [
                     {
                         "class": {
+                            "name": "Paladin",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the noble genies",
+                            "shortName": "Noble Genies",
+                            "source": "xua2025ForgottenRealmsSubclasses"
+                        }
+                    },
+                    {
+                        "class": {
                             "name": "Warlock",
                             "source": "XPHB"
                         },
@@ -40266,7 +40667,7 @@
             "entries": [
                 "{@variantrule Hex|GW} ",
                 "Cause rust to appear on a group of creatures's gear and signets, dealing damage and disrupting signets.",
-                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target takes {@damage 2d8 + 4} cold damage, and {@variantrule signet|GW} spells take twice as long to cast for the duration. On a successful save, a target takes half as much damage but suffers no other effect.",
+                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a target takes {@damage 2d8 + 4} cold damage, and {@variantrule signet|GW} spells take twice as long to cast for the duration. On a successful save, a target takes half as much damage and is affected for 1 round only.",
                 "{@variantrule Overcast|GW|Overcast:} Creatures who failed the saving throw cannot use their {@variantrule signet|GW|signets} for the duration, instead of them taking twice as long to cast."
             ],
             "source": "GW",
@@ -40460,8 +40861,8 @@
             },
             "entries": [
                 "{@variantrule Hex|GW}",
-                "Project calming images into a group of creature's minds, quenching their battle fury, preventing them from gaining Adrenaline.",
-                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Charisma saving throw. On a failed save, for the duration, a target cannot gain Adrenaline."
+                "Project calming images into a group of creatures's minds, quenching their battle fury, preventing them from gaining Adrenaline.",
+                "Choose a point that you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Charisma saving throw. On a failed save, for the duration, a target cannot gain {@variantrule Adrenaline|GW}. On a successful save, the target is affected for 1 round only."
             ],
             "source": "GW",
             "fluff": {
@@ -41040,6 +41441,17 @@
                     }
                 ],
                 "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Reanimator",
+                            "shortName": "Reanimator",
+                            "source": "xua2025horrorsubclasses"
+                        }
+                    },
                     {
                         "class": {
                             "name": "Wizard",
@@ -42051,7 +42463,7 @@
             "source": "GW",
             "entries": [
                 "When preparing your spells, you can only prepare one elite spell.",
-                "When not playing in a campaign that uses the {@spell Signet of Capture|GW} spell for Elite spell acquisition, treat any Elite spell as one spell level higher for all purposes."
+                "When not playing in a campaign that uses the {@spell Signet of Capture|GW} spell for Elite spell acquisition, treat any Elite spell as one spell level higher for all purposes except level 9 spells."
             ]
         },
         {
@@ -42115,7 +42527,7 @@
                 "Each Signet is only usable once, until its recharge condition has been met.",
                 "While a Signet is recharging, it cannot be unprepared or exchanged with another spell in any way.",
                 "The following recharge conditions exist:",
-                " -Initiative: Exiting initiative.",
+                " -Initiative: Exiting initiative, or finishing a short or long rest.",
                 " -Short Rest: Finishing a short or long rest.",
                 " -Long Rest: Finishing a long rest.",
                 " -Level Up: Gaining a level.",

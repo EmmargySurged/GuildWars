@@ -2992,7 +2992,7 @@
                 ]
             },
             "miscTags": [
-                "MAC"
+                "HL"
             ],
             "backgrounds": [
                 {
@@ -3965,6 +3965,229 @@
             },
             "damageInflict": [
                 "radiant"
+            ]
+        },
+        {
+            "name": "They're on Fire!",
+            "level": 1,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "Lessen the impact of {@condition burning|GW} foes.",
+                "Choose any number of creatures that can hear you within range. For the duration, when a target takes damage from a creature that is {@condition burning|GW}, you can roll {@dice 2d4} and subtract the number rolled from the damage."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "\"They're on Fire!\"",
+                    "Shout. For 10 seconds, party members within earshot take 5...29...35% less damage from foes suffering from Burning."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Non-Elite/_They're_on_Fire!_.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Paragon",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Leadership",
+                    "source": "GWN"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the number subtracted increases by {@dice 1d4} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Psion",
+                        "source": "xua2025psion"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "MT"
+            ]
+        },
+        {
+            "name": "Anthem of Flame",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Psion",
+                        "source": "xua2025psion"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "Wreathe your allies weapons in flame with an anthem of flame.",
+                "Choose any number of creatures that can hear you within range. For the duration, the next time a target hits with a weapon attack, the target of the attack starts {@condition burning|GW} for 3 rounds, taking {@damage 1d6} damage. ",
+                "At the end of each of its turns, a target can make a Dexterity saving throw. On a success, the condition ends."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Anthem of Flame",
+                    "Chant. For 10 seconds, the next attack skill used by each party member within earshot also causes Burning for 1...3...3 second[s]. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Anthem_of_Flame.jpg"
+                        }
+                    }
+                ]
+            },
+            "damageInflict": [
+                "fire"
+            ],
+            "areaTags": [
+                "MT"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Paragon",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Leadership",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the duration of the {@condition burning|GW} condition increases by 1 round for each slot level above 1st."
+                    ]
+                }
             ]
         }
     ],

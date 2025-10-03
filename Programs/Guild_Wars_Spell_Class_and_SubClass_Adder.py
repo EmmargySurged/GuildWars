@@ -257,7 +257,8 @@ if __name__ == "__main__":
             {"name": "Architect of Ruin", "shortName": "Architect of Ruin", "source": "IllriggerRevised"}
         ]},
         {"name": "Paladin", "source": "XPHB", "sub_classes": [
-            {"name": "Oath of Ancients", "shortName": "Ancients", "source": "XPHB"}
+            {"name": "Oath of Ancients", "shortName": "Ancients", "source": "XPHB"},
+            {"name": "Oath of the Noble Genies", "shortName": "Noble Genies", "source": "xua2025ForgottenRealmsSubclasses"}
         ]},
         {"name": "Psion", "source": "xua2025psion", "sub_classes": [
             {"name": "Metamorph", "shortName": "Metamorph", "source": "xua2025psion"},
@@ -290,7 +291,7 @@ if __name__ == "__main__":
     # Unused, maybe make custom classes the players can then also check.
     proficiencies_list = ['Light Armor', 'Medium Armor', 'Heavy Armor', 'Simple Weapons', 'Martial Weapons']
     valid_backgrounds = [
-        "Strength", "Axe Mastery", "Hammer Mastery", "Swordsmanship", "Tactics",
+        "No Attribute", "Strength", "Axe Mastery", "Hammer Mastery", "Swordsmanship", "Tactics",
         "No Attribute - Warrior", "Expertise", "Beast Mastery", "Marksmanship", "Wilderness Survival",
         "No Attribute - Ranger", "Divine Favor", "Healing Prayers", "Smiting Prayers", "Protection Prayers",
         "No Attribute - Monk", "Soul Reaping", "Curses", "Blood Magic", "Death Magic", "No Attribute - Necromancer",

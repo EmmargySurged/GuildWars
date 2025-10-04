@@ -48,7 +48,7 @@
 			"speed": {
 				"walk": 30
 			},
-			"str": 16,
+			"str": 10,
 			"dex": 8,
 			"con": 14,
 			"int": 4,
@@ -68,7 +68,7 @@
 				{
 					"name": "Swipe",
 					"entries": [
-						"Natural Weapon: your spell attack modifier to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 3} + Spell Level) bludgeoning damage."
+						"Natural Weapon: your spell attack modifier to hit, reach 5 ft., one target. {@h} ({@damage 1d12} + Spell Level) bludgeoning damage."
 					]
 				}
 			],
@@ -136,7 +136,7 @@
 				{
 					"name": "Spike",
 					"entries": [
-						"Natural Weapon: your spell attack modifier to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 3} + Spell Level) piercing damage; the target must succeed on a Constitution saving throw against your spell save DC or start {@condition bleeding|GW} for 1 minute, taking damage equal to a number of {@dice d6} equal to the Spell Level minus 1. ",
+						"Natural Weapon: your spell attack modifier to hit, reach 5 ft., one target. {@h} ({@damage 1d4 + 3} + Spell Level) piercing damage; the target must succeed on a Constitution saving throw against your spell save DC or start {@condition bleeding|GW} for 1 minute, taking damage equal to a number of {@dice d6} equal to the Spell Level minus 1. ",
 						"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
 					]
 				}
@@ -164,6 +164,97 @@
 			"tokenHref": {
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Jagged_Horror_Token.png"
+			}
+		},
+		{
+			"name": "Spirit of Anguish",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "GWN",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 10,
+					"condition": "+ Spell Level",
+					"braces": true
+				}
+			],
+			"hp": {
+				"special": "5 + Spell Level * 5"
+			},
+			"speed": {},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"actionTags": [
+				"Multiattack"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"fluff": {
+				"entries": [
+					"Binding Ritual. Create a level 1...10...12 spirit. This spirit's attacks deal 5...25...30 damage. This spirit dies after 30...126...150 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Spirit of Anguish makes a number of Anguish attacks equal to half the level of the spell (rounded down, minimum 1)."
+					]
+				},
+				{
+					"name": "Anguish",
+					"entries": [
+						"{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h} ({@damage 2d6 + Spell Level}) psychic damage; if the target was suffering from a harmful {@status Concentration|XPHB} spell, the attack deals double damage."
+					]
+				}
+			],
+			"miscTags": [
+				"RA"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit_Token.png"
 			}
 		}
 	],
@@ -4188,6 +4279,208 @@
 						"When you cast this spell using a spell slot of 2nd level or higher, the duration of the {@condition burning|GW} condition increases by 1 round for each slot level above 1st."
 					]
 				}
+			]
+		},
+		{
+			"name": "Anguish",
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@variantrule Summoning Ritual|GW|Summoning Ritual:} {@creature Spirit of Anguish|GWN}",
+				"Bind a Spirit of Anguish to your will, dealing damage with its attacks that impact harder against already suffering creatures.",
+				"Summon a {@creature Spirit of Anguish|GWN} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative but takes its turn directly after yours. The spirit is in the DM's control."
+			],
+			"source": "GWN",
+			"fluff": {
+				"entries": [
+					"Anguish",
+					"Binding Ritual. Create a level 1...9...11 spirit. This spirit's attacks deal 5...17...20 damage and deal double damage to hexed foes. This spirit dies after 15...39...45 seconds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Anguish.jpg"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"SGT",
+				"SMN"
+			],
+			"backgrounds": [
+				{
+					"name": "Istan",
+					"source": "GWN"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GWF"
+				},
+				{
+					"name": "Communing",
+					"source": "GWF"
+				},
+				{
+					"name": "Summoning Ritual",
+					"source": "GW"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a poem written about anguish"
+			},
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WorldsBeyondNumberWitch"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "xua2025eberronupdates"
+						},
+						"subclass": {
+							"name": "Reanimator",
+							"shortName": "Reanimator",
+							"source": "xua2025horrorsubclasses"
+						}
+					},
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "School of necromancy",
+							"shortName": "Necromancy",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"damageInflict": [
+				"psychic"
+			]
+		},
+		{
+			"name": "Death Pact Signet",
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@variantrule Signet|GW|Signet:} Long Rest",
+				"Activate your Death Pact Signet, binding your life force to a dead creature to reanimate it.",
+				"Choose one friendly creature, which has not been dead for more than 1 minute, that you can see within range. The target returns to life with hit points equal to up to your current hit points. For the next hour, if the target dies, you also die."
+			],
+			"source": "GWN",
+			"fluff": {
+				"entries": [
+					"Death Pact Signet",
+					"Signet. Resurrect target party member with your current Health and 15...83...100% Energy. The next time that ally dies within 120 seconds, so do you."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Death_Pact_Signet.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Istan",
+					"source": "GWN"
+				},
+				{
+					"name": "Ritualist",
+					"source": "GWF"
+				},
+				{
+					"name": "Restoration Magic",
+					"source": "GWF"
+				},
+				{
+					"name": "Signet",
+					"source": "GW"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
 			]
 		}
 	],

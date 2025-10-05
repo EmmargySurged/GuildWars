@@ -2918,6 +2918,10 @@
                 {
                     "name": "Adrenaline",
                     "source": "GW"
+                },
+                {
+                    "name": "Istan",
+                    "source": "GWN"
                 }
             ],
             "classes": {
@@ -4495,6 +4499,444 @@
             "miscTags": [
                 "HL",
                 "SGT"
+            ]
+        },
+        {
+            "name": "Eternal Aura",
+            "level": 9,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "permanent"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "entries": [
+                "{@variantrule Enchantment|GW|Enchantment:} You cannot choose to end {@status Concentration|XPHB} on this spell.",
+                "Cover yourself in an aura of eternity.",
+                "For the duration, your hit point maximum and current hit points increase by 100.",
+                "When this spell ends, choose any number of friendly creatures that have not been dead for more than 1 year that you can see within a 20-foot Emanation (this can include yourself if your {@status Concentration|XPHB} broke because you died). A target returns to life with 25% of their maximum hit points. On a target's next turn, a target can use either an action or a bonus action, not both.",
+                "This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Eternal Aura",
+                    "Enchantment Spell. You have +100 max Health. When this enchantment ends, all party members in the area are resurrected with 40...50% Health and 20...30% Energy."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Eternal_Aura.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "MT"
+            ],
+            "miscTags": [
+                "HL"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Dervish",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Sunspear rank",
+                    "source": "GWN"
+                },
+                {
+                    "name": "No Attribute - Dervish",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Enchantment",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "gems worth 5000+ GP, which the spell consumes",
+                    "consume": true,
+                    "cost": 500000
+                }
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 10th level or higher, your hit points increase by an additional 25 for each slot level above 9th, and the % increases by 25% for each slot level above 9th."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Eremite's Attack",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 0,
+                    "unit": "special",
+                    "condition": "which you take immediately before hitting a target with a Melee weapon or an Unarmed Strike"
+                }
+            ],
+            "range": {
+                "type": "special"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "{@variantrule Weapon Attack Spell|GW}",
+                "Rip a spell from yourself to perform a devastating sweep.",
+                "On a hit, the target suffers the weapon attack's normal effects, takes {@damage 1d10} damage, and then, if possible, remove the latest beneficial {@status Concentration|XPHB} spell on yourself. If a spell was removed, target each hostile creature that you can see within range of your weapon. Make a melee weapon attack against each target. On a hit, a target suffers the weapon attack's normal effects and takes {@damage 1d10} damage."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Eremite's Attack",
+                    "Scythe Attack. If it hits, this attack deals +1...8...10 damage and removes a Dervish enchantment. If an enchantment is removed, you do an additional +1...8...10 damage and strike all adjacent foes."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Eremite's_Attack.jpg"
+                        }
+                    }
+                ]
+            },
+            "components": {
+                "v": true
+            },
+            "areaTags": [
+                "ST",
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "AAD"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Dervish",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Scythe Mastery",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Weapon Attack Spell",
+                    "source": "GW"
+                },
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Armorer",
+                            "shortName": "Armorer",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Battle smith",
+                            "shortName": "Battle Smith",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Psion",
+                            "source": "xua2025psion"
+                        },
+                        "subclass": {
+                            "name": "Metamorph",
+                            "shortName": "Metamorph",
+                            "source": "xua2025psion"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, a target also takes {@damage 1d10} damage for each slot level above 1st on a hit."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Enchanted Haste",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 0,
+                    "unit": "special"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@variantrule Flash Enchantment|GWN}",
+                "Quickly dash to a new location.",
+                "For the duration, your speed is increased by 25%.",
+                "When this spell ends prematurely, remove the latest harmful condition from yourself."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Enchanted Haste",
+                    "Flash Enchantment Spell. For 7 seconds, you move 25% faster. If this enchantment ends prematurely, you lose 1 condition."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Enchanted_Haste.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Dervish",
+                    "source": "GWF"
+                },
+                {
+                    "name": "No Attribute - Assassin",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Flash Enchantment",
+                    "source": "GWN"
+                }
+            ],
+            "components": {
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the % increases by 25% for each slot level above 1st."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Collage of swords",
+                            "shortName": "Swords",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "UBA"
             ]
         }
     ],

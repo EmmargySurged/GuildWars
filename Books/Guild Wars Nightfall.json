@@ -5699,6 +5699,230 @@
             "areaTags": [
                 "ST"
             ]
+        },
+        {
+            "name": "Grenth's Fingers",
+            "level": 2,
+            "school": "E",
+            "time": [
+                {
+                    "number": 0,
+                    "unit": "special"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "entries": [
+                "{@variantrule Flash Enchantment|GWN}",
+                "Enclose yourself in Grenth's icy embrace.",
+                "Target each hostile creature within a 10-foot Emanation. Each target must make a Constitution saving throw. On a failed save, a target takes {@damage 3d8} cold damage. On a successful save, a target takes half as much damage.",
+                "For the duration, your weapon attacks deal cold damage.",
+                "When this spell ends, target each hostile creature within a 10-foot Emanation. Each target must make a Constitution saving throw. On a failed save, each target gains a copy of the latest {@dice 1d2} harmful conditions on yourself. On a successful save, a target gains a copy with its duration reduced to 1 round. End all copied conditions on yourself.",
+                "At the end of each of its turns, the target can make a Constitution saving throw for each condition affecting it. On a success, that condition ends."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Grenth's Fingers",
+                    "Flash Enchantment Spell. All nearby foes are struck for 10...34...40 cold damage. For 30 seconds, your attacks deal cold damage. When this enchantment ends, you transfer  1...2...2 condition[s] to all nearby foes. [sic]"
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Grenth's_Fingers.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST",
+                "MT",
+                "S"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Dervish",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Wind Prayers",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Flash Enchantment",
+                    "source": "GWN"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, copy {@dice 1d2} additional conditions for each slot level above 2nd, and the damage increases by {@dice 1d8} for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "cold"
+            ]
+        },
+        {
+            "name": "Harrier's Haste",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 0,
+                    "unit": "special"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@variantrule Flash Enchantment|GWN}",
+                "Invoke the speed and tenacity of a hunting hound.",
+                "For the duration, your speed is increased by 25%, and when you deal damage to a target that willingly moved on its last turn, you deal an additional {@damage 1d4} damage."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Harrier's Haste",
+                    "Flash Enchantment Spell. For 2...7...8 seconds, you move 25% faster and deal +3...10...12 more damage against moving foes. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Harrier's_Haste.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Dervish",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Wind Prayers",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Flash Enchantment",
+                    "source": "GWN"
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the duration increases by 1 round for each slot level above 1st, and the damage increases by {@dice 1d4} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "AAD"
+            ],
+            "components": {
+                "v": true
+            }
         }
     ],
     "table": [],

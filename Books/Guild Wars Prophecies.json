@@ -12881,6 +12881,9 @@
                         "{@spell fortune's favor|EGW}*",
                         "{@spell gift of alacrity|EGW}*",
                         "{@spell mark of instability|GWF}",
+                        "{@spell Mirror Image|XPHB}",
+                        "{@spell Mirror Spell|GrimHollowPG24}",
+                        "{@spell Mirrored Stance|GWF}",
                         "{@spell misty step|XPHB}",
                         "{@spell ray of enfeeblement}"
                     ],
@@ -12889,6 +12892,7 @@
                             "{@spell augury of death|GWN}",
                             "{@spell dispel magic}",
                             "{@spell locate creature}",
+                            "{@spell Magic Mirror|GrimHollowPG24}",
                             "{@spell signet of humility|GW}",
                             "{@spell signet of midnight|GWP}"
                         ]
@@ -12910,7 +12914,7 @@
                 {
                     "name": "Multiattack",
                     "entries": [
-                        "Nyx Speculum can use her Reconfiguring Curse. She then makes one Bite attack and two Claw attacks. She can replace her Bite attack with a use of Spellcasting."
+                        "Nyx Speculum can use her Dark Mirror if available. She then makes one Bite attack and two Claw attacks. She can replace her Bite attack with a use of Spellcasting."
                     ]
                 },
                 {
@@ -12926,42 +12930,9 @@
                     ]
                 },
                 {
-                    "name": "Reconfiguring Curse",
+                    "name": "Dark Mirror",
                     "entries": [
-                        "Nyx Speculum curses one creature she can see within 60 feet of her, corrupting its form. The target must make a {@dc 15} Constitution saving throw. On a success, the target is immune to the hag's Reconfiguring Curse for the next 24 hours. On a failure, the target is cursed, suffering one of the following effects of the hag's choice:",
-                        {
-                            "type": "list",
-                            "items": [
-                                {
-                                    "type": "item",
-                                    "name": "Disfigured",
-                                    "entries": [
-                                        "The target's skin erupts with growths and lesions, and it has disadvantage on all Charisma checks made to influence Humanoids, except for {@skill Intimidation}."
-                                    ]
-                                },
-                                {
-                                    "type": "item",
-                                    "name": "Sickly",
-                                    "entries": [
-                                        "The target becomes frail and unhealthy, and it has disadvantage on Constitution saving throws. It regains only half its lost hp at the end of a long rest, and it halves the result of any Hit Dice rolled to restore hp during a short rest."
-                                    ]
-                                },
-                                {
-                                    "type": "item",
-                                    "name": "Twisted",
-                                    "entries": [
-                                        "The target's limbs and spine become bent and clumsy. It has disadvantage on all Dexterity checks and Dexterity saving throws, and its speed is reduced by 10 feet."
-                                    ]
-                                },
-                                {
-                                    "type": "item",
-                                    "name": "Withered",
-                                    "entries": [
-                                        "The target's muscles atrophy, and it has disadvantage on all Strength checks and Strength saving throws."
-                                    ]
-                                }
-                            ]
-                        }
+                        "Only one Dark Mirror can be active at a time. Choose one hostile creature that you can see within 60 feet. You conjure a dark mirror in front of them and force them to make a Charisma saving throw ({@dc 15}). On a successful save, a creature cannot be targeted by Dark Mirror again for the next 24 hours. On a failed save, a dark duplicate of that creature steps out of the mirror. The duplicate is under Nyx Speculum's control and shares her initiative but takes its turn directly after hers. It is an exact duplicate, except that it is made of tarnished mirror, is considered a construct, has vulnerability to bludgeoning and force damage, and only has 50% of the current hit points of the target. Creatures that fight their own duplicate have disadvantage on attack rolls against it and saving throws made to resist its effects."
                     ]
                 }
             ],
@@ -12984,8 +12955,7 @@
                 "O"
             ],
             "miscTags": [
-                "MW",
-                "CUR"
+                "MW"
             ],
             "conditionInflict": [
                 "incapacitated"
@@ -12998,12 +12968,569 @@
                 "S"
             ],
             "savingThrowForced": [
-                "charisma",
-                "constitution"
+                "charisma"
             ],
             "savingThrowForcedSpell": [
                 "constitution",
                 "wisdom"
+            ]
+        },
+        {
+            "name": "Aggressive Ooze",
+            "source": "GWP",
+            "size": [
+                "L"
+            ],
+            "type": "ooze",
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                7
+            ],
+            "hp": {
+                "average": 68,
+                "formula": "8d10 + 24"
+            },
+            "speed": {
+                "walk": 20,
+                "climb": 20
+            },
+            "str": 16,
+            "dex": 5,
+            "con": 16,
+            "int": 1,
+            "wis": 6,
+            "cha": 1,
+            "senses": [
+                "blindsight 60 ft."
+            ],
+            "passive": 8,
+            "immune": [
+                "acid",
+                "cold",
+                "lightning",
+                "slashing"
+            ],
+            "conditionImmune": [
+                "charmed",
+                "deafened",
+                "exhaustion",
+                "frightened",
+                "grappled",
+                "prone",
+                "restrained"
+            ],
+            "cr": "6",
+            "trait": [
+                {
+                    "name": "Amorphous",
+                    "entries": [
+                        "The Aggressive Ooze can move through a space as narrow as 1 inch without expending extra movement to do so."
+                    ]
+                },
+                {
+                    "name": "Corrosive Form",
+                    "entries": [
+                        "A creature that hits the Aggressive Ooze with a melee attack roll takes 4 ({@damage 1d8}) Acid damage. Nonmagical ammunition is destroyed immediately after hitting the Aggressive Ooze and dealing any damage. Any nonmagical weapon takes a cumulative -1 penalty to attack rolls immediately after dealing damage to the Aggressive Ooze and coming into contact with it. The weapon is destroyed if the penalty reaches -5. The penalty can be removed by casting the {@spell Mending|XPHB} spell on the weapon.",
+                        "In 1 minute, the Aggressive Ooze can eat through 2 feet of nonmagical wood or metal."
+                    ]
+                },
+                {
+                    "name": "Spider Climb",
+                    "entries": [
+                        "The Aggressive Ooze can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Dissolving Pseudopod",
+                    "entries": [
+                        "{@atkr m} {@hit 10}, reach 10 ft. {@h}17 ({@damage 4d6 + 3}) Acid damage. Nonmagical armor worn by the target takes a -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10. The penalty can be removed by casting the {@spell Mending|XPHB} spell on the armor."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Split",
+                    "entries": [
+                        "{@actTrigger} While the Aggressive Ooze is Large or Medium and has 10+ {@variantrule Hit Points|XPHB}, it becomes {@status Bloodied|XPHB} or is subjected to Lightning or Slashing damage. {@actResponse} The pudding splits into two new Aggressive Ooze. Each new Aggressive Ooze is one size smaller than the original Aggressive Ooze and acts on its {@variantrule Initiative|XPHB}. The original Aggressive Ooze's {@variantrule Hit Points|XPHB} are divided evenly between the new Aggressive Ooze (round down)."
+                    ]
+                }
+            ],
+            "environment": [
+                "underdark"
+            ],
+            "traitTags": [
+                "Amorphous",
+                "Spider Climb"
+            ],
+            "senseTags": [
+                "B"
+            ],
+            "miscTags": [
+                "MA",
+                "RCH"
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "token": {
+                "name": "Black Pudding",
+                "source": "XMM"
+            },
+            "fluff": {
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://5e.tools/img/bestiary/XMM/Black Pudding.webp"
+                        }
+                    }
+                ]
+            },
+            "spellcasting": [
+                {
+                    "name": "Spellcasting",
+                    "headerEntries": [
+                        "The Aggressive Ooze is a 4th-level spellcaster. Its spellcasting ability is Strength (spell save {@dc 13}, +5 to hit with spell attacks). The Aggressive Ooze has the following Warrior (GW) spells prepared:"
+                    ],
+                    "daily": {
+                        "1": [
+                            "{@spell Balanced Stance|GW}",
+                            "{@spell Bull's Strike|GW}",
+                            "{@spell Crushing Blow|GWP}"
+                        ]
+                    },
+                    "will": [
+                        "{@spell Backbreaker|GWP}",
+                        "{@spell Counter Blow|GW}",
+                        "{@spell Defensive Stance|GW}"
+                    ],
+                    "ability": "str",
+                    "type": "spellcasting"
+                }
+            ],
+            "spellcastingTags": [
+                "O"
+            ],
+            "damageTags": [
+                "A"
+            ]
+        },
+        {
+            "name": "Mad King's Chest",
+            "source": "GWP",
+            "size": [
+                "M"
+            ],
+            "type": "monstrosity",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                12
+            ],
+            "hp": {
+                "average": 58,
+                "formula": "9d8 + 18"
+            },
+            "speed": {
+                "walk": 20
+            },
+            "initiative": {
+                "proficiency": 1
+            },
+            "str": 17,
+            "dex": 12,
+            "con": 15,
+            "int": 5,
+            "wis": 13,
+            "cha": 8,
+            "skill": {
+                "stealth": "+5"
+            },
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 11,
+            "immune": [
+                "acid"
+            ],
+            "conditionImmune": [
+                "prone"
+            ],
+            "cr": "2",
+            "trait": [
+                {
+                    "name": "Adhesive (Object Form Only)",
+                    "entries": [
+                        "The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic has the {@condition Grappled|XPHB} condition (escape {@dc 13}). Ability checks made to escape this grapple have {@variantrule Disadvantage|XPHB}."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Bite",
+                    "entries": [
+                        "{@atkr m} {@hit 5} (with {@variantrule Advantage|XPHB} if the target is {@condition Grappled|XPHB} by the mimic), reach 5 ft. {@h}7 ({@damage 1d8 + 3}) Piercing damage—or 12 ({@damage 2d8 + 3}) Piercing damage if the target is {@condition Grappled|XPHB} by the mimic—plus 4 ({@damage 1d8}) Acid damage."
+                    ]
+                },
+                {
+                    "name": "Pseudopod",
+                    "entries": [
+                        "{@atkr m} {@hit 5}, reach 5 ft. {@h}7 ({@damage 1d8 + 3}) Bludgeoning damage plus 4 ({@damage 1d8}) Acid damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 13}). Ability checks made to escape this grapple have {@variantrule Disadvantage|XPHB}."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Shape-Shift",
+                    "entries": [
+                        "The mimic shape-shifts to resemble a Medium or Small object while retaining its game statistics, or it returns to its true blob form. Any equipment it is wearing or carrying isn't transformed."
+                    ]
+                }
+            ],
+            "environment": [
+                "underdark",
+                "urban"
+            ],
+            "treasure": [
+                "any"
+            ],
+            "soundClip": {
+                "type": "external",
+                "url": "https://5e.tools/audio/bestiary/mimic.mp3"
+            },
+            "senseTags": [
+                "D"
+            ],
+            "miscTags": [
+                "MA"
+            ],
+            "conditionInflict": [
+                "grappled"
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "token": {
+                "name": "Mimic",
+                "source": "XMM"
+            },
+            "fluff": {
+                "name": "Mimic",
+                "source": "XMM",
+                "entries": [
+                    {
+                        "type": "section",
+                        "name": "Mimic",
+                        "entries": [
+                            "{@i Shape-Shifter Disguised as an Unassuming Object}",
+                            {
+                                "type": "list",
+                                "style": "list-hang-notitle",
+                                "items": [
+                                    {
+                                        "type": "item",
+                                        "name": "Habitat:",
+                                        "entry": "{@filter Underdark|bestiary|environment=underdark}, {@filter Urban|bestiary|environment=urban}"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "name": "Treasure:",
+                                        "entry": "Any"
+                                    }
+                                ]
+                            },
+                            "In their natural forms, mimics are little more than roaming stomachs, their blobby bodies covered with alien eyes and teeth. They can alter their color, texture, and dimensions to duplicate inanimate objects of their approximate size. Mimics use their disguises as both camouflage and bait. Once victims draw close, mimics strike, lashing out with their sticky pseudopods and toothy mouths. After consuming victims, mimics usually relocate, change form, and await their next meal.",
+                            "Use the following list to inspire mimics' shapes:",
+                            {
+                                "type": "list",
+                                "style": "list-no-bullets",
+                                "columns": 3,
+                                "items": [
+                                    "Altar",
+                                    "Bell",
+                                    "Boulder",
+                                    "Cauldron",
+                                    "Chair",
+                                    "Chandelier",
+                                    "Chest",
+                                    "Cot",
+                                    "Door",
+                                    "Floor mat",
+                                    "Giant gemstone",
+                                    "Gravestone",
+                                    "Heap of leaves",
+                                    "Keg",
+                                    "Ladder",
+                                    "Lectern",
+                                    "Mannequin",
+                                    "Mirror",
+                                    "Obelisk",
+                                    "Oversize cake",
+                                    "Panel of levers",
+                                    "Pile of bones",
+                                    "Potted plant",
+                                    "Row of books",
+                                    "Sarcophagus",
+                                    "Sculpture",
+                                    "Ship's wheel",
+                                    "Sign",
+                                    "Stalagmite",
+                                    "Stump",
+                                    "Table",
+                                    "Tapestry",
+                                    "Taxidermy",
+                                    "Throne",
+                                    "Topiary",
+                                    "Weapon rack"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "internal",
+                            "path": "bestiary/XMM/Mimic.webp"
+                        },
+                        "credit": "Mark Zug"
+                    }
+                ]
+            },
+            "spellcasting": [
+                {
+                    "name": "Spellcasting",
+                    "headerEntries": [
+                        "The Mad King's Chest is a 5th-level spellcaster. Its spellcasting ability is Constitution (spell save {@dc 12}, +4 to hit with spell attacks). The Mad King's Chest has the following Elementalist (GW) spells prepared:"
+                    ],
+                    "daily": {
+                        "1": [
+                            "{@spell Mind Shock|GWP}"
+                        ]
+                    },
+                    "ability": "con",
+                    "type": "spellcasting"
+                }
+            ],
+            "spellcastingTags": [
+                "O"
+            ],
+            "damageTags": [
+                "A",
+                "B",
+                "P"
+            ]
+        },
+        {
+            "name": "Mad King's Rug of Smothering",
+            "source": "GWP",
+            "page": 17,
+            "size": [
+                "L"
+            ],
+            "type": "construct",
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                12
+            ],
+            "hp": {
+                "average": 27,
+                "formula": "5d10"
+            },
+            "speed": {
+                "walk": 10
+            },
+            "initiative": {
+                "proficiency": 1
+            },
+            "str": 17,
+            "dex": 14,
+            "con": 10,
+            "int": 1,
+            "wis": 3,
+            "cha": 1,
+            "senses": [
+                "blindsight 60 ft."
+            ],
+            "passive": 6,
+            "immune": [
+                "poison",
+                "psychic"
+            ],
+            "conditionImmune": [
+                "charmed",
+                "deafened",
+                "exhaustion",
+                "frightened",
+                "paralyzed",
+                "petrified",
+                "poisoned"
+            ],
+            "cr": "2",
+            "action": [
+                {
+                    "name": "Smother",
+                    "entries": [
+                        "{@atkr m} {@hit 5}, reach 5 ft. {@h}10 ({@damage 2d6 + 3}) Bludgeoning damage. If the target is a Medium or smaller creature, the rug can give it the {@condition Grappled|XPHB} condition (escape {@dc 13}) instead of dealing damage. Until the grapple ends, the target has the {@condition Blinded|XPHB} and {@condition Restrained|XPHB} conditions, is suffocating, and takes 10 ({@damage 2d6 + 3}) Bludgeoning damage at the start of each of its turns. The rug can smother only one creature at a time.",
+                        "While grappling the target, the rug can't take this action, the rug halves the damage it takes (round down), and the target takes the same amount of damage."
+                    ]
+                }
+            ],
+            "environment": [
+                "urban"
+            ],
+            "senseTags": [
+                "B"
+            ],
+            "miscTags": [
+                "MA"
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "token": {
+                "name": "Animated Rug of Smothering",
+                "source": "XMM"
+            },
+            "fluff": {
+                "name": "Animated Rug of Smothering",
+                "source": "XMM",
+                "entries": [
+                    {
+                        "type": "section",
+                        "entries": [
+                            "Animated rugs of smothering might attack any creature that steps on them, or they might be passed off as superficially similar magic items, such as Carpets of Flying, and attack those who speak a supposed command word. Deadly tapestries, furs, and similar items also use this stat block."
+                        ]
+                    },
+                    {
+                        "type": "section",
+                        "name": "Animated Objects",
+                        "entries": [
+                            "{@i Mundane Objects Come to Life}",
+                            {
+                                "type": "list",
+                                "style": "list-hang-notitle",
+                                "items": [
+                                    {
+                                        "type": "item",
+                                        "name": "Habitat:",
+                                        "entry": "{@filter Urban|bestiary|environment=urban}"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "name": "Treasure:",
+                                        "entry": "None"
+                                    }
+                                ]
+                            },
+                            "Magic can manipulate mundane items, compelling them to perform simple tasks. Such animate objects might be unassuming tools or decorations that can defend their creator. These objects follow simple instructions from whatever force or magic-user created them. If left unattended, they might defend an area for ages or repeat a task until they wear out.",
+                            "Roll on or choose a result from the Animated Object Catalysts table to inspire what sort of magic motivates an ambulatory item.",
+                            {
+                                "type": "insetReadaloud",
+                                "entries": [
+                                    {
+                                        "type": "quote",
+                                        "entries": [
+                                            "Lyin' next to the chest were the bones of Cap'n Scornblade himself, still clutchin' his rusty sword. Imagine my surprise when the blade flew from his bony grasp! Still got the scar."
+                                        ],
+                                        "by": "Levity Quickstitch, Rogue"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "table",
+                                "caption": "Animated Object Catalysts",
+                                "colLabels": [
+                                    "1d10",
+                                    "The Object Was Animated By..."
+                                ],
+                                "colStyles": [
+                                    "col-2 text-center",
+                                    "col-10"
+                                ],
+                                "rows": [
+                                    [
+                                        "1",
+                                        "A Celestial or Fiend using the object to protect or torment a mortal."
+                                    ],
+                                    [
+                                        "2",
+                                        "A combination of magic and technology, such as alchemy or alien science."
+                                    ],
+                                    [
+                                        "3",
+                                        "The essence of someone transformed by a supernatural trickster."
+                                    ],
+                                    [
+                                        "4",
+                                        "Fey as part of their games or wiles."
+                                    ],
+                                    [
+                                        "5",
+                                        "Happenstance, with the item gaining a semblance of life after a hundred years of use."
+                                    ],
+                                    [
+                                        "6",
+                                        "A magic-user in need of a guardian or servant."
+                                    ],
+                                    [
+                                        "7",
+                                        "The song of a magical instrument."
+                                    ],
+                                    [
+                                        "8",
+                                        "A spirit possessing the object."
+                                    ],
+                                    [
+                                        "9",
+                                        "Wild magic, a spell that went awry, or a chaotic Artifact."
+                                    ],
+                                    [
+                                        "10",
+                                        "The will of a powerful psychic being."
+                                    ]
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "internal",
+                            "path": "bestiary/XMM/Animated Objects.webp"
+                        },
+                        "credit": "Simon Dominic"
+                    }
+                ]
+            },
+            "spellcasting": [
+                {
+                    "name": "Spellcasting",
+                    "headerEntries": [
+                        "The Mad King's Rug of Smothering is a 5th-level spellcaster. Its spellcasting ability is Strength (spell save {@dc 13}, +5 to hit with spell attacks). The Mad King's Rug of Smothering has the following Mesmer (GW) spells prepared:"
+                    ],
+                    "daily": {
+                        "1": [
+                            "{@spell Power Block|GWP}"
+                        ]
+                    },
+                    "ability": "str",
+                    "type": "spellcasting"
+                }
+            ],
+            "spellcastingTags": [
+                "O"
+            ],
+            "damageTags": [
+                "B"
             ]
         }
     ],

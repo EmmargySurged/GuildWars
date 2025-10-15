@@ -315,7 +315,7 @@ if __name__ == "__main__":
             locations=locations_list,
             classes_list=classes_list,
             output_json_path=json_path,
-            verbose=True
+            verbose=False
         )
 sys.exit()
 

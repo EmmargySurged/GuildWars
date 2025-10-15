@@ -256,6 +256,181 @@
                 "type": "external",
                 "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit_Token.png"
             }
+        },
+        {
+            "name": "Spirit of Empowerment",
+            "size": [
+                "M"
+            ],
+            "type": "undead",
+            "source": "GWN",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "ac": 10,
+                    "condition": "+ Spell Level",
+                    "braces": true
+                }
+            ],
+            "hp": {
+                "special": "10 + Spell Level * 10"
+            },
+            "speed": {},
+            "str": 10,
+            "dex": 10,
+            "con": 10,
+            "int": 10,
+            "wis": 10,
+            "cha": 10,
+            "passive": 10,
+            "actionTags": [
+                "Multiattack"
+            ],
+            "immune": [
+                "poison"
+            ],
+            "conditionImmune": [
+                "blinded",
+                "charmed",
+                "deafened",
+                "exhaustion",
+                "frightened",
+                "grappled",
+                "incapacitated",
+                "paralyzed",
+                "petrified",
+                "poisoned",
+                "restrained",
+                "stunned",
+                "unconscious"
+            ],
+            "fluff": {
+                "entries": [
+                    "Empowerment",
+                    "Binding Ritual. Create a level 1...11...14 spirit. All allies within its range holding an item gain 15...39...45 maximum Health and 10 maximum Energy. This spirit dies after 15...51...60 seconds. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Defensive_binding_spirit.jpg"
+                        }
+                    }
+                ]
+            },
+            "senses": [
+                "blindsight 120 ft."
+            ],
+            "senseTags": [
+                "B"
+            ],
+            "trait": [
+                {
+                    "name": "Empowerment",
+                    "entries": [
+                        "Any friendly, non-summoning ritual creature that is holding an object created by a spell has their hit point maximum and current hit points increase by 10 × Spell Level and gains a temporary spell slot equal to half the level of the spell (minimum 1)."
+                    ]
+                }
+            ],
+            "tokenHref": {
+                "type": "external",
+                "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Defensive_binding_spirit_Token.png"
+            }
+        },
+        {
+            "name": "Spirit of Fury",
+            "size": [
+                "M"
+            ],
+            "type": "undead",
+            "source": "GWN",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "ac": 10,
+                    "condition": "+ Spell Level",
+                    "braces": true
+                }
+            ],
+            "hp": {
+                "special": "5 + Spell Level * 5"
+            },
+            "speed": {},
+            "str": 10,
+            "dex": 10,
+            "con": 10,
+            "int": 10,
+            "wis": 10,
+            "cha": 10,
+            "passive": 10,
+            "actionTags": [
+                "Multiattack"
+            ],
+            "immune": [
+                "poison"
+            ],
+            "conditionImmune": [
+                "blinded",
+                "charmed",
+                "deafened",
+                "exhaustion",
+                "frightened",
+                "grappled",
+                "incapacitated",
+                "paralyzed",
+                "petrified",
+                "poisoned",
+                "restrained",
+                "stunned",
+                "unconscious"
+            ],
+            "fluff": {
+                "entries": [
+                    "Gaze of Fury",
+                    "Binding Ritual. Destroy target spirit and create a level 1...11...14 Spirit of Fury. This spirit's attacks deal 5...17...20 damage. This spirit dies after 30...54...60 seconds."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit.jpg"
+                        }
+                    }
+                ]
+            },
+            "senses": [
+                "blindsight 120 ft."
+            ],
+            "senseTags": [
+                "B"
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The Spirit of Fury makes a number of Fury attacks equal to half the level of the spell (rounded down, minimum 1)."
+                    ]
+                },
+                {
+                    "name": "Fury",
+                    "entries": [
+                        "{@atk rs} your spell attack modifier to hit, range 90/120 ft., one target. {@h} ({@damage 3d6 + Spell Level}) fire damage."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "RA"
+            ],
+            "tokenHref": {
+                "type": "external",
+                "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit_Token.png"
+            }
         }
     ],
     "feat": [],
@@ -6469,6 +6644,258 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Empowerment",
+            "level": 1,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@variantrule Summoning Ritual|GW|Summoning Ritual:} {@creature Spirit of Empowerment|GWN}",
+                "Bind a Spirit of Empowerment to your will, empowering your allies.",
+                "Summon a {@creature Spirit of Empowerment|GWN} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative but takes its turn directly after yours. The spirit is in the DM's control."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Empowerment",
+                    "Binding Ritual. Create a level 1...11...14 spirit. All allies within its range holding an item gain 15...39...45 maximum Health and 10 maximum Energy. This spirit dies after 15...51...60 seconds."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Empowerment.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "MT"
+            ],
+            "miscTags": [
+                "SMN"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Ritualist",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Spawning Power",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Summoning Ritual",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a poem written about empowerment"
+            },
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Reanimator",
+                            "shortName": "Reanimator",
+                            "source": "xua2025horrorsubclasses"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "School of necromancy",
+                            "shortName": "Necromancy",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Gaze of Fury",
+            "level": 2,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "School of necromancy",
+                            "shortName": "Necromancy",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@variantrule Summoning Ritual|GW|Summoning Ritual:} {@creature Spirit of Fury|GWN}",
+                "Use the power of an existing spirit to call forth the spirit of fury.",
+                "Target one summoning ritual that you can see within range. The target dies. Summon a {@creature Spirit of Fury|GWN} for the duration at the location of the previous summoning ritual. The spirit is friendly to you and your allies. The spirit acts on your initiative but takes its turn directly after yours. The spirit is in the DM's control."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Gaze of Fury",
+                    "Binding Ritual. Destroy target spirit and create a level 1...11...14 Spirit of Fury. This spirit's attacks deal 5...17...20 damage. This spirit dies after 30...54...60 seconds."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Gaze_of_Fury.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SMN"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Ritualist",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Channeling Magic",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Summoning Ritual",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a poem written about fury"
+            }
         }
     ],
     "table": [],

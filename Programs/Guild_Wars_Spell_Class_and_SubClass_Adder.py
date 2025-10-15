@@ -1,5 +1,6 @@
 import pandas as pd
 import openpyxl
+import sys
 
 
 def preload_classes(file_path, sheet_name, classes_list):
@@ -215,7 +216,6 @@ def update_spells_with_classes(json_path, file_path, sheet_name, valid_backgroun
 
 
 
-# Example Usage
 if __name__ == "__main__":
     # File paths
     json_paths = [".\Books\Guild Wars.json",".\Books\Guild Wars Prophecies.json",".\Books\Guild Wars Factions.json",".\Books\Guild Wars Nightfall.json",".\Books\Guild Wars Eye of the North.json"]
@@ -317,4 +317,5 @@ if __name__ == "__main__":
             output_json_path=json_path,
             verbose=True
         )
+sys.exit()
 

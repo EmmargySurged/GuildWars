@@ -1325,13 +1325,13 @@
             ]
         },
         {
-            "name": "Lead the Way!",
+            "name": "\"Lead the Way!\"",
             "level": 1,
             "school": "E",
             "time": [
                 {
                     "number": 1,
-                    "unit": "bonus"
+                    "unit": "special"
                 }
             ],
             "range": {
@@ -1384,7 +1384,8 @@
                 ]
             },
             "entries": [
-                "Shout \"Lead the way\", encouraging a party member to blaze the way forward.",
+                "{@variantrule Chant|GW}",
+                "Shout “Lead the way,” encouraging a party member to blaze the way forward.",
                 "Choose one friendly creature that can hear you within range. For the duration, the target's speed is increased by 25%.",
                 "The duration increases by 1 round for each ally within range."
             ],
@@ -1416,6 +1417,10 @@
                 {
                     "name": "Vabbi",
                     "source": "GWN"
+                },
+                {
+                    "name": "Shout",
+                    "source": "GW"
                 }
             ],
             "components": {
@@ -1435,13 +1440,13 @@
             ]
         },
         {
-            "name": "The Power Is Yours!",
+            "name": "\"The Power Is Yours!\"",
             "level": 2,
             "school": "A",
             "time": [
                 {
-                    "number": 1,
-                    "unit": "bonus"
+                    "number": 0,
+                    "unit": "special"
                 }
             ],
             "range": {
@@ -1490,7 +1495,7 @@
                 ]
             },
             "entries": [
-                "{@variantrule Adrenaline|GW|Adrenaline:} 4, {@variantrule Elite|GW}",
+                "{@variantrule Adrenaline|GW|Adrenaline:} 4, {@variantrule Elite|GW}, {@variantrule Shout|GW}",
                 "Motivate your allies to act more quickly, increasing their initiative.",
                 "Choose any number of friendly creatures that can hear you within range. For the duration, at the start of each target's turns, a target's initiative gets increased by {@dice 1d4}."
             ],
@@ -1529,6 +1534,10 @@
                 },
                 {
                     "name": "Adrenaline",
+                    "source": "GW"
+                },
+                {
+                    "name": "Shout",
                     "source": "GW"
                 }
             ],
@@ -2016,13 +2025,13 @@
             ]
         },
         {
-            "name": "Fall Back!",
+            "name": "\"Fall Back!\"",
             "level": 2,
             "school": "E",
             "time": [
                 {
-                    "number": 1,
-                    "unit": "bonus"
+                    "number": 0,
+                    "unit": "special"
                 }
             ],
             "range": {
@@ -2086,8 +2095,9 @@
                 ]
             },
             "entries": [
-                "Command your allies to \"Fall Back!\" increasing their movement speed and healing them if they move.",
-                "Choose any number of friendly creatures that can hear you within range. For the duration, a target's speed is increased by 33% and if a target takes the dash action or moves at least 30 feet while affected by this spell, they regain Hit Points equal to {@dice 2d4}.",
+                "{@variantrule Shout|GW}",
+                "Command your allies to “Fall Back!” increasing their movement speed and healing them if they move.",
+                "Choose any number of friendly creatures that can hear you within range. For the duration, a target's speed is increased by 33%, and if a target takes the dash action or moves at least 30 feet while affected by this spell, they regain Hit Points equal to {@dice 2d4}.",
                 "When a target makes an attack roll, this spell ends on that target."
             ],
             "source": "GWN",
@@ -2118,6 +2128,10 @@
                 {
                     "name": "Kourna",
                     "source": "GWN"
+                },
+                {
+                    "name": "Shout",
+                    "source": "GW"
                 }
             ],
             "components": {
@@ -3215,13 +3229,13 @@
             ]
         },
         {
-            "name": "There's Nothing to Fear!",
+            "name": "\"There's Nothing to Fear!\"",
             "level": 2,
             "school": "A",
             "time": [
                 {
-                    "number": 1,
-                    "unit": "bonus"
+                    "number": 0,
+                    "unit": "special"
                 }
             ],
             "range": {
@@ -3241,6 +3255,7 @@
                 }
             ],
             "entries": [
+                "{@variantrule Shout|GW}",
                 "Support your allies through encouragement.",
                 "Choose any number of creatures that can hear you within range. For the duration, a target is immune to the {@condition frightened} condition, and when a target takes damage, you can roll {@dice 1d4} and subtract the number rolled from the damage. ",
                 "When this spell ends, a target regains hit points equal to {@dice 1d4} + your spellcasting ability."
@@ -3280,6 +3295,10 @@
                 {
                     "name": "No Attribute - Paragon",
                     "source": "GWN"
+                },
+                {
+                    "name": "Shout",
+                    "source": "GW"
                 }
             ],
             "components": {
@@ -4238,13 +4257,13 @@
             ]
         },
         {
-            "name": "They're on Fire!",
+            "name": "\"They're on Fire!\"",
             "level": 1,
             "school": "A",
             "time": [
                 {
-                    "number": 1,
-                    "unit": "bonus"
+                    "number": 0,
+                    "unit": "special"
                 }
             ],
             "range": {
@@ -4264,6 +4283,7 @@
                 }
             ],
             "entries": [
+                "{@variantrule Shout|GW}",
                 "Lessen the impact of {@condition burning|GW} foes.",
                 "Choose any number of creatures that can hear you within range. For the duration, when a target takes damage from a creature that is {@condition burning|GW}, you can roll {@dice 2d4} and subtract the number rolled from the damage."
             ],
@@ -4295,6 +4315,10 @@
                 {
                     "name": "Leadership",
                     "source": "GWN"
+                },
+                {
+                    "name": "Shout",
+                    "source": "GW"
                 }
             ],
             "components": {
@@ -4406,6 +4430,7 @@
                 ]
             },
             "entries": [
+                "{@variantrule Chant|GWN}",
                 "Wreathe your allies weapons in flame with an anthem of flame.",
                 "Choose any number of creatures that can hear you within range. For the duration, the next time a target hits with a weapon attack, the target of the attack starts {@condition burning|GW} for 3 rounds, taking {@damage 1d6} damage. ",
                 "At the end of each of its turns, a target can make a Dexterity saving throw. On a success, the condition ends."
@@ -4443,6 +4468,10 @@
                 },
                 {
                     "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Chant",
                     "source": "GWN"
                 }
             ],
@@ -5542,7 +5571,8 @@
                 ]
             },
             "entries": [
-                "Perform an aria of restoration, which mend allies wounds by using excess spell energy.",
+                "{@variantrule Chant|GWN}",
+                "Perform an aria of restoration, which mends allies wounds by using excess spell energy.",
                 "Choose any number of creatures that can hear you within range. For the duration, the next time a target casts a spell, they regain hit points equal to {@dice 1d8} + their spellcasting ability modifier."
             ],
             "source": "GWN",
@@ -5575,6 +5605,10 @@
                 },
                 {
                     "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Chant",
                     "source": "GWN"
                 }
             ],
@@ -5651,7 +5685,8 @@
                 ]
             },
             "entries": [
-                "Perform an aria of zeal, that uses arcane residue to motivate creatures to act.",
+                "{@variantrule Chant|GWN}",
+                "Perform an aria of zeal that uses arcane residue to motivate creatures to act.",
                 "Choose any number of creatures that can hear you within range. For the duration, the next time a target casts a spell, their initiative gets increased by {@dice 1d8}."
             ],
             "source": "GWN",
@@ -5684,6 +5719,10 @@
                 },
                 {
                     "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Chant",
                     "source": "GWN"
                 }
             ],
@@ -6481,7 +6520,7 @@
                 ]
             },
             "entries": [
-                "{@variantrule Adrenaline|GW|Adrenaline:} 8",
+                "{@variantrule Adrenaline|GW|Adrenaline:} 8, {@variantrule Chant|GWN}",
                 "Perform a hexbreaker aria.",
                 "Choose any number of creatures that can hear you within range. For the duration, the next time a target casts a spell, the latest harmful spell of level 2 or lower on the target ends."
             ],
@@ -6520,6 +6559,10 @@
                 {
                     "name": "Adrenaline",
                     "source": "GW"
+                },
+                {
+                    "name": "Chant",
+                    "source": "GWN"
                 }
             ],
             "components": {
@@ -6596,8 +6639,9 @@
                 ]
             },
             "entries": [
+                "{@variantrule Echo|GWN}",
                 "Give shouts and chants more staying power on a creature.",
-                "Choose one creature that can hear you within range. For the duration, the duration of shout- or chant-themed spells is increased by 50%. "
+                "Choose one creature that can hear you within range. For the duration, the duration of {@variantrule Shout|GW} and {@variantrule Chant|GWN} spells is increased by 50%. "
             ],
             "source": "GWN",
             "fluff": {
@@ -6629,6 +6673,10 @@
                 },
                 {
                     "name": "Leadership",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Echo",
                     "source": "GWN"
                 }
             ],
@@ -7487,6 +7535,379 @@
                 "HL",
                 "SGT"
             ]
+        },
+        {
+            "name": "Disrupting Accuracy",
+            "level": 2,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@variantrule Preparation|GW}",
+                "Enhance your accuracy supernaturally, disrupting creatures you critically hit. ",
+                "For the duration, when you score a critical hit with a ranged weapon attack against a target, you {@condition Incapacitated|XPHB|incapacitate} the target until the start of your next turn."
+            ],
+            "source": "GWN",
+            "components": {
+                "s": true,
+                "m": "a paper circle with a red dot in the middle"
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the number you need to roll to score a critical hit with a ranged weapon attack gets reduced by 1 for every two spell slot levels above 2nd."
+                    ]
+                }
+            ],
+            "fluff": {
+                "entries": [
+                    "Disrupting Accuracy",
+                    "Preparation. For 36 seconds, whenever your arrows critical, they also interrupt your target."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Disrupting_Accuracy.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "AAD"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "GW"
+                },
+                {
+                    "name": "Marksmanship",
+                    "source": "GW"
+                },
+                {
+                    "name": "Preparation",
+                    "source": "GW"
+                }
+            ],
+            "meta": {
+                "ritual": true
+            },
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "xua2025eberronupdates"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Collage of swords",
+                            "shortName": "Swords",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Psion",
+                            "source": "xua2025psion"
+                        },
+                        "subclass": {
+                            "name": "Metamorph",
+                            "shortName": "Metamorph",
+                            "source": "xua2025psion"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Sunspear Rebirth Signet",
+            "level": 4,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "{@variantrule Signet|GW|Signet:} Level Up",
+                "Channel the revitalizing power of the sunpears.",
+                "Choose one friendly creature, which has not been dead for more than 2 rounds, that you can see within range. The target returns to life with 100% of their maximum hit points and gets teleported within 5 feet of you. On the target's next turn, the target can use either an action or a bonus action, not both.",
+                "This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Sunspear Rebirth Signet",
+                    "Signet. Resurrect target dead party member at your location with full Health and 10% Energy for each Sunspear rank you have attained. This signet can only be used once per mission unless recharged by a morale boost."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Sunspear_Rebirth_Signet.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "backgrounds": [
+                {
+                    "name": "No Profession",
+                    "source": "GW"
+                },
+                {
+                    "name": "No Attribute",
+                    "source": "GW"
+                },
+                {
+                    "name": "Signet",
+                    "source": "GW"
+                },
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "gems worth 450 gp, which the spell consumes",
+                    "consume": true,
+                    "cost": 3000000
+                }
+            },
+            "miscTags": [
+                "HL",
+                "SGT"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "xua2025eberronupdates"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Psion",
+                        "source": "xua2025psion"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            }
         }
     ],
     "table": [],

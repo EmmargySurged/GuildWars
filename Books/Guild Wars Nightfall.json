@@ -7908,6 +7908,621 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "Deadly Haste",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Collage of swords",
+                            "shortName": "Swords",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Virtuoso",
+                            "shortName": "Virtuoso",
+                            "source": "GW2EoD"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Psion",
+                            "source": "xua2025psion"
+                        },
+                        "subclass": {
+                            "name": "Metamorph",
+                            "shortName": "Metamorph",
+                            "source": "xua2025psion"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Bladesinging",
+                            "shortName": "Bladesinging",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@variantrule Enchantment|GW}",
+                "Speed up your spells by slipping past your foes defences.",
+                "For the duration, you can cast spells with a range of 30 feet or lower that take an action to cast as a bonus action."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Deadly Haste",
+                    "Enchantment Spell. For 10...30...35 seconds, half-ranged spells cast 5...41...50% faster and recharge 5...41...50% faster."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Deadly_Haste.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Assassin",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Critical Strikes",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Enchantment",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd or 4th level, the duration increases to 1 hour. When you use a spell slot of 5th level or higher, the duration increases to 8 hours."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "ST"
+            ]
+        },
+        {
+            "name": "Deadly Paradox",
+            "level": 2,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Collage of swords",
+                            "shortName": "Swords",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Bard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Virtuoso",
+                            "shortName": "Virtuoso",
+                            "source": "GW2EoD"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Bladesinging",
+                            "shortName": "Bladesinging",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@variantrule Stance|GW}",
+                "Hamper your ability to attack, to focus on your assassin spells.",
+                "For the duration, casting assassin-themed spells with a spell slot does not prevent you from casting other assassin-themed spells with spell slots during the same turn, and you can cast assassin-themed spells that take an action to cast as a bonus action. Additionally, you cannot cast {@variantrule Weapon Attack Spell|GW|Weapon Attack Spells} for the duration."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Deadly Paradox",
+                    "Stance. All of your attack skills are disabled for 10 seconds. For 5...13...15 seconds, your Assassin skills activate and recharge 33% faster."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Deadly_Paradox.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Assassin",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Deadly Arts",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Stance",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th or 5th level, the duration increases to 1 hour. When you use a spell slot of 6th level or higher, the duration increases to 8 hours."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "ST"
+            ]
+        },
+        {
+            "name": "Death's Retreat",
+            "level": 1,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Psion",
+                        "source": "xua2025psion"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Druid",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Circle of spores",
+                            "shortName": "Spores",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Ranger",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Hollow warden",
+                            "shortName": "Hollow Warden",
+                            "source": "xua2025horrorsubclasses"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "School of necromancy",
+                            "shortName": "Necromancy",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "Quickly step into the shadow of the ethereal plane to teleport next to an ally and heal if you are weaker than them.",
+                "Choose one friendly creature that you can see within range. Teleport within 5 feet of the target to an unoccupied space. If the target has more hit points than you do, you regain hit points equal to {@dice 1d4} + your spellcasting ability modifier."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Death's Retreat",
+                    "Spell. Shadow Step to target ally. If you have less Health than that ally, you gain 40...112...130 Health. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Death's_Retreat.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Assassin",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Shadow Arts",
+                    "source": "GWF"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@dice 1d4} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL",
+                "SGT",
+                "TP"
+            ]
         }
     ],
     "table": [],

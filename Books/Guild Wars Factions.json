@@ -1919,13 +1919,13 @@
     "feat": [],
     "spell": [
         {
-            "name": "Save Yourselves!",
+            "name": "\"Save Yourselves!\"",
             "level": 4,
             "school": "A",
             "time": [
                 {
-                    "number": 1,
-                    "unit": "bonus"
+                    "number": 0,
+                    "unit": "special"
                 }
             ],
             "range": {
@@ -1945,7 +1945,7 @@
                 }
             ],
             "entries": [
-                "{@variantrule Adrenaline|GW|Adrenaline:} 8",
+                "{@variantrule Adrenaline|GW|Adrenaline:} 8, {@variantrule Shout|GW}",
                 "Heavily increase your group's resilience.",
                 "Choose any number of creatures that can hear you within range. For the duration, when a target takes damage, you can roll {@dice 4d4} and subtract the number rolled from the damage. "
             ],
@@ -1992,6 +1992,10 @@
                 {
                     "name": "The Jade Sea",
                     "source": "GWF"
+                },
+                {
+                    "name": "Shout",
+                    "source": "GW"
                 }
             ],
             "components": {
@@ -7963,8 +7967,8 @@
             "school": "E",
             "time": [
                 {
-                    "number": 1,
-                    "unit": "bonus"
+                    "number": 0,
+                    "unit": "special"
                 }
             ],
             "range": {
@@ -7984,9 +7988,9 @@
                 }
             ],
             "entries": [
-                "{@variantrule Companion|GW}",
+                "{@variantrule Companion|GW}, {@variantrule Shout|GW}",
                 "Form a bond with a companion, imbuing it with unnatural speed and siphoning health with its attacks.",
-                "Choose one companion, that can hear you within range. For the duration, the companion can attack one additional time when it takes the attack action on its turn and when the target hits with an attack, you regain hit points equal to {@dice 2d4}."
+                "Choose one companion that can hear you within range. For the duration, the companion can attack one additional time when it takes the attack action on its turn and when the target hits with an attack, you regain hit points equal to {@dice 2d4}."
             ],
             "source": "GWF",
             "components": {
@@ -8007,6 +8011,10 @@
                 },
                 {
                     "name": "Companion",
+                    "source": "GW"
+                },
+                {
+                    "name": "Shout",
                     "source": "GW"
                 }
             ],
@@ -16336,13 +16344,13 @@
             ]
         },
         {
-            "name": "Coward!",
+            "name": "\"Coward!\"",
             "level": 1,
             "school": "V",
             "time": [
                 {
-                    "number": 1,
-                    "unit": "bonus"
+                    "number": 0,
+                    "unit": "special"
                 }
             ],
             "range": {
@@ -16449,7 +16457,7 @@
                 ]
             },
             "entries": [
-                "{@variantrule Adrenaline|GW|Adrenaline:} 4, {@variantrule Elite|GW}",
+                "{@variantrule Adrenaline|GW|Adrenaline:} 4, {@variantrule Elite|GW}, {@variantrule Shout|GW}",
                 "Insult someone for not standing their ground so hard they are knocked {@condition prone}.",
                 "Choose one creature that can hear you within range. If the target willingly moved on its last turn, the target is knocked {@condition prone}."
             ],
@@ -16488,6 +16496,10 @@
                 },
                 {
                     "name": "Adrenaline",
+                    "source": "GW"
+                },
+                {
+                    "name": "Shout",
                     "source": "GW"
                 }
             ],
@@ -31154,13 +31166,13 @@
             ]
         },
         {
-            "name": "None Shall Pass!",
+            "name": "\"None Shall Pass!\"",
             "level": 2,
             "school": "V",
             "time": [
                 {
-                    "number": 1,
-                    "unit": "bonus"
+                    "number": 0,
+                    "unit": "special"
                 }
             ],
             "range": {
@@ -31315,6 +31327,7 @@
                 ]
             },
             "entries": [
+                "{@variantrule Shout|GW}",
                 "Bellow out a command, forcing creatures to submit to your will.",
                 "Target each hostile creature that willingly moved on its last turn that can hear you within range. Each target must make a Wisdom saving throw. On a failed save, a target is knocked {@condition prone}. On a successful save, a target's speed is reduced by 10 feet for 1 round.",
                 "Afterward, roll a {@dice d20}. On N or higher, you regain the spell slot expended in the casting of this spell, where N is 20 minus the number of targets who failed their Saving Throw."
@@ -31350,6 +31363,10 @@
                 },
                 {
                     "name": "Tactics",
+                    "source": "GW"
+                },
+                {
+                    "name": "Shout",
                     "source": "GW"
                 }
             ],
@@ -32005,13 +32022,13 @@
             ]
         },
         {
-            "name": "On Your Knees!",
+            "name": "\"On Your Knees!\"",
             "level": 1,
             "school": "V",
             "time": [
                 {
-                    "number": 1,
-                    "unit": "bonus"
+                    "number": 0,
+                    "unit": "special"
                 }
             ],
             "range": {
@@ -32118,7 +32135,7 @@
                 ]
             },
             "entries": [
-                "{@variantrule Adrenaline|GW|Adrenaline:} 6",
+                "{@variantrule Adrenaline|GW|Adrenaline:} 6, {@variantrule Shout|GW}",
                 "You lose all Adrenaline.",
                 "If there are any hostile {@condition prone} creatures within range, you can immediately cast any stance spell without using a spell slot, ignoring adrenaline cost, casting time and components, which you have prepared."
             ],
@@ -32156,6 +32173,10 @@
                 },
                 {
                     "name": "Adrenaline",
+                    "source": "GW"
+                },
+                {
+                    "name": "Shout",
                     "source": "GW"
                 }
             ],
@@ -33358,13 +33379,13 @@
             ]
         },
         {
-            "name": "Retreat!",
+            "name": "\"Retreat!\"",
             "level": 1,
             "school": "E",
             "time": [
                 {
-                    "number": 1,
-                    "unit": "bonus"
+                    "number": 0,
+                    "unit": "special"
                 }
             ],
             "range": {
@@ -33523,7 +33544,8 @@
                 ]
             },
             "entries": [
-                "Command your allies to \"Retreat!\" increasing their movement speed.",
+                "{@variantrule Shout|GW}",
+                "Command your allies to “Retreat!” increasing their movement speed.",
                 "If there is an {@condition unconscious} or dead ally within range, choose any number of friendly creatures that can hear you within range. For the duration, a target's speed is increased by 33%."
             ],
             "source": "GWF",
@@ -33554,6 +33576,10 @@
                 {
                     "name": "Kaineng City",
                     "source": "GWF"
+                },
+                {
+                    "name": "Shout",
+                    "source": "GW"
                 }
             ],
             "components": {
@@ -35040,13 +35066,13 @@
             }
         },
         {
-            "name": "You Will Die!",
+            "name": "\"You Will Die!\"",
             "level": 0,
             "school": "V",
             "time": [
                 {
-                    "number": 1,
-                    "unit": "bonus"
+                    "number": 0,
+                    "unit": "special"
                 }
             ],
             "range": {
@@ -35105,6 +35131,7 @@
                 ]
             },
             "entries": [
+                "{@variantrule Shout|GW}",
                 "Promise death to a creature, pumping yourself up for the next strike.",
                 "Choose one hostile creature that can hear you within range. If the target is bloodied, you gain {@dice 1d4} strikes of adrenaline.",
                 "This spell's adrenaline gain increases by {@dice 1d4} when you reach 5th level ({@dice 2d4}), 11th level ({@dice 3d4}), and 17th level ({@dice 4d4})."
@@ -35143,6 +35170,10 @@
                 },
                 {
                     "name": "Adrenaline",
+                    "source": "GW"
+                },
+                {
+                    "name": "Shout",
                     "source": "GW"
                 }
             ],

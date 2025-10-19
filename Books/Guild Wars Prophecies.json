@@ -16887,13 +16887,13 @@
             ]
         },
         {
-            "name": "Fear Me!",
+            "name": "\"Fear Me!\"",
             "level": 3,
             "school": "V",
             "time": [
                 {
-                    "number": 1,
-                    "unit": "bonus"
+                    "number": 0,
+                    "unit": "special"
                 }
             ],
             "range": {
@@ -16913,7 +16913,7 @@
                 }
             ],
             "entries": [
-                "{@variantrule Adrenaline|GW|Adrenaline:} 4",
+                "{@variantrule Adrenaline|GW|Adrenaline:} 4, {@variantrule Shout|GW}",
                 "Intimidate nearby creatures to give you an opportunity to slip past their defenses, reducing their initiative and increasing your chance to critically hit them.",
                 "Target each creature other than you that can hear you within range. Each target must make a Wisdom saving throw. On a failed save, a target's initiative gets reduced by {@dice 1d8}, and the number you need to roll to score a critical hit against a target gets reduced by {@dice 1d4} for the duration. On a successful save, the target is affected for 1 round only.",
                 "At the end of each of its turns, a target can make a Wisdom saving throw. On a success, the spell ends."
@@ -16967,6 +16967,10 @@
                 },
                 {
                     "name": "Adrenaline",
+                    "source": "GW"
+                },
+                {
+                    "name": "Shout",
                     "source": "GW"
                 }
             ],
@@ -24930,8 +24934,8 @@
             "school": "A",
             "time": [
                 {
-                    "number": 1,
-                    "unit": "bonus"
+                    "number": 0,
+                    "unit": "special"
                 }
             ],
             "range": {
@@ -24951,9 +24955,9 @@
                 }
             ],
             "entries": [
-                "{@variantrule Companion|GW}",
+                "{@variantrule Companion|GW}, {@variantrule Shout|GW}",
                 "Call out to your animal companions, protecting them with abjuration magic.",
-                "Choose any number of companions, that can hear you within range. When a companion takes damage, you can roll {@dice 1d12} and subtract the number rolled from the damage."
+                "Choose any number of companions that can hear you within range. When a companion takes damage, you can roll {@dice 1d12} and subtract the number rolled from the damage."
             ],
             "source": "GWP",
             "fluff": {
@@ -24986,6 +24990,10 @@
                 },
                 {
                     "name": "Companion",
+                    "source": "GW"
+                },
+                {
+                    "name": "Shout",
                     "source": "GW"
                 }
             ],
@@ -26803,7 +26811,7 @@
             ]
         },
         {
-            "name": "Victory Is Mine!",
+            "name": "\"Victory Is Mine!\"",
             "level": 1,
             "school": "V",
             "time": [
@@ -26825,7 +26833,7 @@
                 }
             ],
             "entries": [
-                "{@variantrule Elite|GW}",
+                "{@variantrule Elite|GW}, {@variantrule Shout|GW}",
                 "Gloat over the suffering of a creature afflicted by multiple conditions, gaining health and initiative in the process.",
                 "Choose one hostile creature that you can see within range. You regain hit points equal to {@dice 1d4} + your spellcasting ability modifier per condition on the target, and your initiative gets increased by {@dice 1d4} per condition on the target."
             ],
@@ -26860,6 +26868,10 @@
                 },
                 {
                     "name": "Elite",
+                    "source": "GW"
+                },
+                {
+                    "name": "Shout",
                     "source": "GW"
                 }
             ],
@@ -35858,9 +35870,9 @@
                 }
             ],
             "entries": [
-                "{@variantrule Companion|GW}, {@variantrule Unblockable|GW}",
+                "{@variantrule Companion|GW}, {@variantrule Shout|GW}, {@variantrule Unblockable|GW}",
                 "Invoke the famous ogre beast master Otyugh to protect and enhance your companions.",
-                "Choose any number of companions, that can hear you within range. When a target takes damage, you can roll {@dice 1d4} and subtract the number rolled from the damage. Additionally, each targets gains the {@variantrule Unblockable|GW} property on their attacks."
+                "Choose any number of companions that can hear you within range. When a target takes damage, you can roll {@dice 1d4} and subtract the number rolled from the damage. Additionally, each target gains the {@variantrule Unblockable|GW} property on their attacks."
             ],
             "source": "GWP",
             "fluff": {
@@ -35897,6 +35909,10 @@
                 },
                 {
                     "name": "Companion",
+                    "source": "GW"
+                },
+                {
+                    "name": "Shout",
                     "source": "GW"
                 }
             ],
@@ -37462,7 +37478,7 @@
             ]
         },
         {
-            "name": "I Will Survive!",
+            "name": "\"I Will Survive!\"",
             "level": 1,
             "school": "E",
             "time": [
@@ -37487,7 +37503,8 @@
                 }
             ],
             "entries": [
-                "Shout, “I Will Survive!”, granting yourself the strength you need to though out conditions affecting you.",
+                "{@variantrule Shout|GW}",
+                "Shout, “I Will Survive!”, granting yourself the strength you need to get through conditions affecting you.",
                 "For the duration, at the start of each of your turns, you regain hit points equal to {@dice 2d4} per condition affecting you. ",
                 "If you drop to 0 hit points, this spell ends."
             ],
@@ -37530,6 +37547,10 @@
                 },
                 {
                     "name": "Strength",
+                    "source": "GW"
+                },
+                {
+                    "name": "Shout",
                     "source": "GW"
                 }
             ],
@@ -40980,13 +41001,13 @@
             ]
         },
         {
-            "name": "To the Limit!",
+            "name": "\"To the Limit!\"",
             "level": 2,
             "school": "V",
             "time": [
                 {
-                    "number": 1,
-                    "unit": "bonus"
+                    "number": 0,
+                    "unit": "special"
                 }
             ],
             "range": {
@@ -41006,6 +41027,7 @@
                 }
             ],
             "entries": [
+                "{@variantrule Shout|GW}",
                 "Push yourself to your limit, overcoming your fatigue.",
                 "You gain {@dice 1d2} strikes of adrenaline for each hostile creature within range.",
                 "For the duration, your hit point maximum and current hit points increase by {@dice 2d10}."
@@ -41037,6 +41059,10 @@
                 },
                 {
                     "name": "Tactics",
+                    "source": "GW"
+                },
+                {
+                    "name": "Shout",
                     "source": "GW"
                 }
             ],
@@ -42187,7 +42213,7 @@
             ]
         },
         {
-            "name": "I Will Avenge You!",
+            "name": "\"I Will Avenge You!\"",
             "level": 2,
             "school": "V",
             "time": [
@@ -42213,8 +42239,9 @@
                 }
             ],
             "entries": [
+                "{@variantrule Shout|GW}",
                 "Shout “I Will Avenge You!” regaining health every turn and increasing your attack speed.",
-                "For the duration, you can attack one additional time when you take the attack action on your turn and at the start of each of your turns, you regain hit points equal to {@dice 2d4} hit points.",
+                "For the duration, you can attack one additional time when you take the attack action on your turn, and at the start of each of your turns, you regain hit points equal to {@dice 2d4} hit points.",
                 "The duration increases by 1 round for each {@condition unconscious} or dead ally within range."
             ],
             "source": "GWP",
@@ -42244,6 +42271,10 @@
                 },
                 {
                     "name": "Strength",
+                    "source": "GW"
+                },
+                {
+                    "name": "Shout",
                     "source": "GW"
                 }
             ],
@@ -46717,12 +46748,12 @@
         },
         {
             "name": "Symbiotic Bond",
-            "level": 3,
+            "level": 2,
             "school": "E",
             "time": [
                 {
-                    "number": 1,
-                    "unit": "bonus"
+                    "number": 0,
+                    "unit": "special"
                 }
             ],
             "range": {
@@ -46767,9 +46798,9 @@
                 "fromSubclass": []
             },
             "entries": [
-                "{@variantrule Companion|GW}",
-                "Form a symbiotic bond between yourself and an companion, giving them health regeneration, and absorbing damage for them.",
-                "Choose one companion, that can hear you within range. For the duration, the companion has resistance to all damage. Also, each time the companion takes damage, you lose health equal to the damage taken. Additionally, for the duration, at the start of each of the companion's turns, the companion regains hit points equal to {@dice 1d4}.",
+                "{@variantrule Companion|GW}, {@variantrule Shout|GW}",
+                "Form a symbiotic bond between yourself and a companion, giving them health regeneration and absorbing damage for them.",
+                "Choose one companion that can hear you within range. For the duration, the companion has resistance to all damage. Also, each time the companion takes damage, you lose health equal to the damage taken. Additionally, for the duration, at the start of each of the companion's turns, the companion regains hit points equal to {@dice 1d4}.",
                 "If the target drops to 0 hit points, this spell ends."
             ],
             "source": "GWP",
@@ -46804,6 +46835,10 @@
                 {
                     "name": "Companion",
                     "source": "GW"
+                },
+                {
+                    "name": "Shout",
+                    "source": "GW"
                 }
             ],
             "components": {
@@ -46812,10 +46847,10 @@
             "entriesHigherLevel": [
                 {
                     "type": "entries",
-                    "name": "At Higher Levels",
+                    "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "When you cast this spell using a spell slot of 4th level or higher, the healing increases by {@dice 1d4} for each slot level above 3rd.",
-                        "When you cast this spell using a spell slot of 5th or 6th level, the duration increases to 8 hours. When you use a spell slot of 7th level or higher, the duration increases to 24 hours."
+                        "When you cast this spell using a spell slot of 3rd level or higher, the healing increases by {@dice 1d4} for each slot level above 3rd.",
+                        "When you cast this spell using a spell slot of 4th or 5th level, the duration increases to 8 hours. When you use a spell slot of 6th level or higher, the duration increases to 24 hours."
                     ]
                 }
             ],

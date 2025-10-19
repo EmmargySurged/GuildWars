@@ -9265,13 +9265,13 @@
             }
         },
         {
-            "name": "For Great Justice!",
+            "name": "\"For Great Justice!\"",
             "level": 1,
             "school": "V",
             "time": [
                 {
-                    "number": 1,
-                    "unit": "bonus"
+                    "number": 0,
+                    "unit": "special"
                 }
             ],
             "range": {
@@ -9290,7 +9290,7 @@
                 }
             ],
             "entries": [
-                "{@variantrule Adrenaline|GW|Adrenaline}",
+                "{@variantrule Adrenaline|GW|Adrenaline}, {@variantrule Shout|GW}",
                 "Imbue yourself with a sense of justice, generating adrenaline at an increased rate.",
                 "For the duration, your adrenaline gain is doubled. "
             ],
@@ -9343,6 +9343,10 @@
                 {
                     "name": "Istan",
                     "source": "GWN"
+                },
+                {
+                    "name": "Shout",
+                    "source": "GW"
                 }
             ],
             "entriesHigherLevel": [
@@ -16860,13 +16864,13 @@
             ]
         },
         {
-            "name": "Watch Yourself!",
+            "name": "\"Watch Yourself!\"",
             "level": 2,
             "school": "A",
             "time": [
                 {
-                    "number": 1,
-                    "unit": "bonus"
+                    "number": 0,
+                    "unit": "special"
                 }
             ],
             "range": {
@@ -16881,14 +16885,14 @@
                     "type": "timed",
                     "duration": {
                         "type": "round",
-                        "amount": 1
+                        "amount": 3
                     }
                 }
             ],
             "entries": [
-                "{@variantrule Adrenaline|GW|Adrenaline:} 4",
+                "{@variantrule Adrenaline|GW|Adrenaline:} 4, {@variantrule Shout|GW}",
                 "Increase your group's resilience.",
-                "Choose any number of creatures that can hear you within range. For the duration, the next time a target takes damage, you can roll {@dice 1d4} and subtract the number rolled from the damage. "
+                "Choose any number of creatures that can hear you within range. For the duration, the next three times a target takes damage, you can roll {@dice 2d4} and subtract the number rolled from the damage. "
             ],
             "source": "GW",
             "fluff": {
@@ -16933,6 +16937,10 @@
                 {
                     "name": "Istan",
                     "source": "GWN"
+                },
+                {
+                    "name": "Shout",
+                    "source": "GW"
                 }
             ],
             "components": {
@@ -23016,13 +23024,13 @@
             ]
         },
         {
-            "name": "Charge!",
+            "name": "\"Charge!\"",
             "level": 2,
             "school": "E",
             "time": [
                 {
-                    "number": 1,
-                    "unit": "bonus"
+                    "number": 0,
+                    "unit": "special"
                 }
             ],
             "range": {
@@ -23042,8 +23050,8 @@
                 }
             ],
             "entries": [
-                "{@variantrule Elite|GW}",
-                "Shout \"Charge!\" to inspire your allies to move faster.",
+                "{@variantrule Elite|GW}, {@variantrule Shout|GW}",
+                "Inspire your allies to move faster.",
                 "Target each friendly creature that can hear you within range. End the {@condition crippled|GW} condition on a target and for the duration, a target's speed is increased by 33%."
             ],
             "source": "GW",
@@ -23090,6 +23098,10 @@
                 {
                     "name": "Vabbi",
                     "source": "GWN"
+                },
+                {
+                    "name": "Shout",
+                    "source": "GW"
                 }
             ],
             "components": {
@@ -36901,13 +36913,13 @@
             ]
         },
         {
-            "name": "Shields Up!",
+            "name": "\"Shields Up!\"",
             "level": 2,
             "school": "A",
             "time": [
                 {
-                    "number": 1,
-                    "unit": "bonus"
+                    "number": 0,
+                    "unit": "special"
                 }
             ],
             "range": {
@@ -36922,11 +36934,12 @@
                     "type": "timed",
                     "duration": {
                         "type": "round",
-                        "amount": 2
+                        "amount": 5
                     }
                 }
             ],
             "entries": [
+                "{@variantrule Shout|GW}",
                 "Warn your allies of incoming ranged attacks, increasing their defense against them.",
                 "Choose any number of creatures that can hear you within range. For the duration, whenever a target takes damage from a ranged weapon attack, you can roll {@dice 2d6} and subtract the number rolled from the damage. "
             ],
@@ -36969,6 +36982,10 @@
                 {
                     "name": "Realm of Torment",
                     "source": "GWN"
+                },
+                {
+                    "name": "Shout",
+                    "source": "GW"
                 }
             ],
             "components": {
@@ -41734,8 +41751,8 @@
             "school": "E",
             "time": [
                 {
-                    "number": 1,
-                    "unit": "bonus"
+                    "number": 0,
+                    "unit": "special"
                 }
             ],
             "range": {
@@ -41755,7 +41772,7 @@
                 }
             ],
             "entries": [
-                "{@variantrule Companion|GW}",
+                "{@variantrule Companion|GW}, {@variantrule Shout|GW}",
                 "Call to your pet to imbue it with haste.",
                 "Choose one companion that can hear you within range. For the duration, the companion can attack one additional time when it takes the attack action on its turn, and the companion's speed increases by 33%."
             ],
@@ -41787,6 +41804,10 @@
                 {
                     "name": "Vabbi",
                     "source": "GWN"
+                },
+                {
+                    "name": "Shout",
+                    "source": "GW"
                 }
             ],
             "fluff": {
@@ -42493,7 +42514,7 @@
             "source": "GW",
             "entries": [
                 "You can only have one Preparation active at a time.",
-                "If activate a new Preparation, the old one ends immediately."
+                "If you activate a new Preparation, the old one ends immediately."
             ]
         },
         {
@@ -42502,7 +42523,16 @@
             "entries": [
                 "You lose health equal to the percentage given after the tag of your maximum hit points.",
                 "This does not count as taking damage, nor can it be changed in any way, except by effects which specifically state that they influence how much you Sacrifice.",
-                "Sometime spells have an addendum after the tag, explaining certain changes to how the spell functions as a Sacrifice spell."
+                "Sometimes spells have an addendum after the tag, explaining certain changes to how the spell functions as a Sacrifice spell."
+            ]
+        },
+        {
+            "name": "Shout",
+            "source": "GW",
+            "entries": [
+                "Shout spells can be used once per turn at any point during your turn (no action required).",
+                "If the shout spell has its name in quotation marks the vocal component of that shout spell is its name.",
+                "The vocal compnent of shout spells must be loud enough so it can be heard from 300 feet away."
             ]
         },
         {
@@ -42633,6 +42663,13 @@
             "source": "GW",
             "entries": [
                 "See {@variantrule Sacrifice|GW}."
+            ]
+        },
+        {
+            "name": "Shout",
+            "source": "GW",
+            "entries": [
+                "See {@variantrule Shout|GW}."
             ]
         },
         {

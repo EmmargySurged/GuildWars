@@ -8523,6 +8523,311 @@
                 "SGT",
                 "TP"
             ]
+        },
+        {
+            "name": "Heart of Holy Flame",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 0,
+                    "unit": "special"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "entries": [
+                "{@variantrule Flash Enchantment|GWN}",
+                "Inflame your heart with the righteous flames of Balthazar.",
+                "Target each hostile creature within a 10-foot Emanation. Each target must make a Wisdom saving throw. On a failed save, a target takes {@damage 2d8} radiant damage. On a successful save, a target takes half as much damage.",
+                "For the duration, your weapon attacks deal radiant damage.",
+                "When this spell ends, target each hostile creature within a 10-foot Emanation. Each target must make a Dexterity saving throw. On a failed save, each target starts {@condition burning|GW} for 1 minute, taking {@damage 1d6} damage. On a successful save, a target only burns for 1 round. ",
+                "At the end of each of its turns, the target can make a Dexterity saving throw. On a success, the condition ends."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Heart of Holy Flame",
+                    "Flash Enchantment Spell. All nearby foes take 5...25...30 holy damage. For 30 seconds, your attacks deal holy damage. When this enchantment ends, all nearby foes are set on fire for 2...4...5 seconds."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Heart_of_Holy_Flame.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST",
+                "MT",
+                "S"
+            ],
+            "savingThrow": [
+                "dexterity",
+                "wisdom"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Dervish",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Mysticism",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Flash Enchantment",
+                    "source": "GWN"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d8} and {@dice 1d6}, respectively, for each slot level above 1st."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "fire",
+                "radiant"
+            ]
+        },
+        {
+            "name": "Imbue Health",
+            "level": 3,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "Share your vitality with a creature. ",
+                "Choose one friendly creature, other than yourself, that you can see within range. The target regains hit points equal to 50% of your current hit points."
+            ],
+            "source": "GWN",
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the % increases by 25% for each slot level above 3rd."
+                    ]
+                }
+            ],
+            "fluff": {
+                "entries": [
+                    "Imbue Health",
+                    "Spell. Target other ally is healed for 5...41...50% of your current Health (maximum 300 Health)."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Imbue_Health.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Dervish",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Mysticism",
+                    "source": "GWN"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": []
+            }
+        },
+        {
+            "name": "Intimidating Aura",
+            "level": 2,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "entries": [
+                "{@variantrule Enchantment|GW}",
+                "Radiate intimidating energy by increasing your physical toughness.",
+                "For the duration, your hit point maximum and current hit points increase by {@damage 3d10} + Constitution modifier, and when you take damage from a creature with fewer current hit points than you, you can roll {@dice 2d4} and subtract the number rolled from the damage."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Intimidating Aura",
+                    "Enchantment Spell. For 60 seconds, you have +40...88...100 max Health and take 1...8...10 less damage from foes with less Health than you."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Intimidating_Aura.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Dervish",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Mysticism",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Enchantment",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, your hit points increase by an additional {@dice 2d10} for each slot level above 2nd, and the number subtracted increases by {@dice 1d4} for each slot level above 2nd."
+                    ]
+                }
+            ]
         }
     ],
     "table": [],

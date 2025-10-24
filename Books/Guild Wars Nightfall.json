@@ -9134,6 +9134,248 @@
             "damageInflict": [
                 "psychic"
             ]
+        },
+        {
+            "name": "Shield of Absorption",
+            "level": 1,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "entries": [
+                "{@variantrule Enchantment|GW}",
+                "Conjure a shield of absorption that absorbs an ever-increasing amount of damage.",
+                "For the duration, when the target takes damage, you can roll {@dice 1d4} and subtract the number rolled from the damage. Additionally, for the duration, each time this spell triggers on a creature, increase the number of dice rolled by 1."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Shield of Absorption",
+                    "Enchantment Spell. For 3...6...7 seconds, damage received by target ally is reduced by 5 each time that ally is hit while under the effects of this enchantment."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Shield_of_Absorption.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Monk",
+                    "source": "GW"
+                },
+                {
+                    "name": "Protection Prayers",
+                    "source": "GW"
+                },
+                {
+                    "name": "Enchantment",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the duration increases by 1 round for each slot level above 1st."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Necrosis",
+            "level": 1,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "Cause rapid necrosis by using an existing malediction.",
+                "Choose one creature that you can see within range. If the target is suffering from a harmful condition or is under the effect of a harmful spell, the target takes {@damage 3d8} necrotic damage."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Necrosis",
+                    "Skill. If target foe is suffering from a condition or hex, that foe suffers 60...90 damage."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Elite/Necrosis.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Necromancer",
+                    "source": "GW"
+                },
+                {
+                    "name": "Sunspear Rank",
+                    "source": "GWN"
+                },
+                {
+                    "name": "No Attribute - Necromancer",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "damageInflict": [
+                "necrotic"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d8} for each slot level above 1st."
+                    ]
+                }
+            ]
         }
     ],
     "table": [],

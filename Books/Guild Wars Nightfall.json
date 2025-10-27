@@ -9376,6 +9376,419 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Leader's Comfort",
+            "level": 1,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Psion",
+                        "source": "xua2025psion"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "Take comfort in the presence of your allies.",
+                "You regain hit points equal to {@dice 2d4} + your spellcasting ability modifier. For each friendly creature within 150 feet of you, you regain an additional {@dice 2d4} hit points."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Leader's Comfort",
+                    "Skill. You gain 30...66...75 Health. For each ally within earshot, you also gain +10...18...20 Health (maximum 140 Health)."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Leader's_Comfort.jpg"
+                        }
+                    }
+                ]
+            },
+            "miscTags": [
+                "HL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Paragon",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Leadership",
+                    "source": "GWN"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the healing each increases by {@dice 1d4} for each slot level above 1st."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mending Refrain",
+            "level": 1,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 5
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@variantrule Echo|GWN}",
+                "Choose one creature that you can see within range. For the duration at the start of each of the target's turns, the target regains hit points equal to {@dice 1d4}.",
+                "When a {@variantrule Shout|GW} or {@variantrule Chant|GW} ends on the target, re-apply this spell to the target.",
+                "If the target drops to 0 hit points, this spell ends."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Mending Refrain",
+                    "Echo. For 15 seconds, target non-spirit ally has +2...3...3 Health regeneration. This echo is reapplied every time a chant or shout ends on that ally."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Mending_Refrain.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Paragon",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Motivation",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Echo",
+                    "source": "GWN"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@dice 1d4} for each slot level above 1st."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Merciless Spear",
+            "level": 2,
+            "school": "V",
+            "time": [
+                {
+                    "number": 0,
+                    "unit": "special",
+                    "condition": "which you take immediately before hitting a target with a Melee weapon with the thrown property"
+                }
+            ],
+            "range": {
+                "type": "special"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@variantrule Adrenaline|GW|Adrenaline:} 6, {@variantrule Weapon Attack Spell|GW}",
+                "Mercilessly punish an already weak target.",
+                "On a hit, the target suffers the weapon attack's normal effects, and if the target is below 50% of the maximum hit points, they gain a {@condition deep wound|GW} for the duration.",
+                "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Merciless Spear",
+                    "Spear Attack. If this attack hits a foe with less than 50% Health, that foe suffers from a Deep Wound for 5...17...20 seconds."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Merciless_Spear.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Paragon",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Spear Mastery",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Weapon Attack Spell",
+                    "source": "GW"
+                },
+                {
+                    "name": "Adrenaline",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Armorer",
+                            "shortName": "Armorer",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Battle smith",
+                            "shortName": "Battle Smith",
+                            "source": "xua2025eberronupdates"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "War domain",
+                            "shortName": "War",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Illrigger",
+                            "source": "IllriggerRevised"
+                        },
+                        "subclass": {
+                            "name": "Architect of ruin",
+                            "shortName": "Architect of Ruin",
+                            "source": "IllriggerRevised"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Psion",
+                            "source": "xua2025psion"
+                        },
+                        "subclass": {
+                            "name": "Metamorph",
+                            "shortName": "Metamorph",
+                            "source": "xua2025psion"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "The hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "AAD"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the target also takes {@damage 1d8} damage for each slot level above 2nd on a hit."
+                    ]
+                }
+            ],
+            "conditionInflict": [
+                "deep wound|gw"
+            ]
         }
     ],
     "table": [],

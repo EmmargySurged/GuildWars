@@ -431,6 +431,88 @@
                 "type": "external",
                 "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aggressive_binding_spirit_Token.png"
             }
+        },
+        {
+            "name": "Spirit of Recovery",
+            "size": [
+                "M"
+            ],
+            "type": "undead",
+            "source": "GWN",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "ac": 10,
+                    "condition": "+ Spell Level",
+                    "braces": true
+                }
+            ],
+            "hp": {
+                "special": "10 + Spell Level * 10"
+            },
+            "speed": {},
+            "str": 10,
+            "dex": 10,
+            "con": 10,
+            "int": 10,
+            "wis": 10,
+            "cha": 10,
+            "passive": 10,
+            "actionTags": [
+                "Multiattack"
+            ],
+            "immune": [
+                "poison"
+            ],
+            "conditionImmune": [
+                "blinded",
+                "charmed",
+                "deafened",
+                "exhaustion",
+                "frightened",
+                "grappled",
+                "incapacitated",
+                "paralyzed",
+                "petrified",
+                "poisoned",
+                "restrained",
+                "stunned",
+                "unconscious"
+            ],
+            "fluff": {
+                "entries": [
+                    "Binding Ritual. Create a level 1...11...14 spirit. Non-spirit allies within its range gain +1...3...3 Health regeneration. This spirit dies after 15...39...45 seconds. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Defensive_binding_spirit.jpg"
+                        }
+                    }
+                ]
+            },
+            "senses": [
+                "blindsight 120 ft."
+            ],
+            "senseTags": [
+                "B"
+            ],
+            "trait": [
+                {
+                    "name": "Recovery",
+                    "entries": [
+                        "Any friendly, non-summoning ritual creature has advantage on saving throws to avoid or end conditions on themselves. Additionally, harmful conditions expire 25% faster per Spell Level on those creatures."
+                    ]
+                }
+            ],
+            "tokenHref": {
+                "type": "external",
+                "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Defensive_binding_spirit_Token.png"
+            }
         }
     ],
     "feat": [],
@@ -10079,6 +10161,321 @@
             ],
             "conditionInflict": [
                 "incapacitated"
+            ]
+        },
+        {
+            "name": "Ghostmirror Light",
+            "level": 2,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "Bathe a creature in restorative light of life-giving spirits. ",
+                "Choose one creature that you can see within range. The target regains hit points equal to {@dice 3d6} + your spellcasting ability modifier. ",
+                "If there is at least one friendly summoning ritual within range, you regain hit points equal to {@dice 3d6} + your spellcasting ability modifier. "
+            ],
+            "source": "GWN",
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a milky mirror"
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "The healing each increases by {@dice 1d6} for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "ST",
+                "MT"
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
+            ],
+            "fluff": {
+                "entries": [
+                    "Ghostmirror Light",
+                    "Spell. Target other ally is healed for 15...75...90 Health. If you are within earshot of a spirit, you are also healed for 15...75...90 Health. "
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Ghostmirror_Light.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Ritualist",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Restoration Magic",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": []
+            },
+            "abilityCheck": [
+                "intelligence"
+            ]
+        },
+        {
+            "name": "Recovery",
+            "level": 2,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@variantrule Summoning Ritual|GW|Summoning Ritual:} {@creature Spirit of Recovery|GWN}",
+                "Bind a Spirit of Recovery to your will, healing your allies.",
+                "Summon a {@creature Spirit of Recovery|GWN} for the duration. The spirit is friendly to you and your allies. The spirit acts on your initiative but takes its turn directly after yours. The spirit is in the DM's control."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Recovery",
+                    "Binding Ritual. Create a level 1...11...14 spirit. Conditions on allies within range of this spirit expire 20...44...50% faster. This spirit dies after 30...54...60 seconds."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Recovery.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "MT"
+            ],
+            "miscTags": [
+                "SMN"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Ritualist",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Restoration Magic",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Summoning Ritual",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a poem written about Recovery"
+            },
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": []
+            }
+        },
+        {
+            "name": "Renewing Memories",
+            "level": 2,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Reanimator",
+                            "shortName": "Reanimator",
+                            "source": "xua2025horrorsubclasses"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "School of necromancy",
+                            "shortName": "Necromancy",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@variantrule Enchantment|GW}",
+                "Channel the memories of the dead to enhance your spellcasting.",
+                "For the duration, while holding an item created by a spell, when you cast a weapon-enhancing or item-creating spell of 1st level or higher, you can cast that spell by using a spell slot which is {@dice 1d4} levels higher than the one used in the casting."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Renewing Memories",
+                    "Enchantment Spell. For 5...17...20 seconds, while holding an item, any weapon and item Spells you cast cost 5...29...35% less Energy."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Renewing_Memories.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Ritualist",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Spawning Power",
+                    "source": "GWF"
+                },
+                {
+                    "name": "Enchantment",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a loop of pictures"
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "The level of the spell slot increases by 1 for each slot level above 2nd."
+                    ]
+                }
             ]
         }
     ],

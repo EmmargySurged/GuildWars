@@ -33,7 +33,17 @@
         "{@variantrule Boon|GW2}",
         "While you are under the effect of this {@variantrule Boon|GW2}, the next attack roll made against you automatically misses. The {@variantrule Boon|GW2} then ends.",
         "Stacks duration.",
-        "This {@variantrule Boon|GW2} corrupts into 1 stack of {@variantrule Burning|GW2} for 1 round, dealing damage equal to the PB of the creature who corrupted the Boon."
+        "This {@variantrule Boon|GW2} corrupts into 1 stack of {@variantrule Burning|GW2} for 1 round, dealing damage equal to twice the PB of the creature who corrupted the Boon."
+      ]
+    },
+    {
+      "name": "Alacrity",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Boon|GW2}",
+        "While you are under the effect of this {@variantrule Boon|GW2}, you have advantage on initiative rolls and your initiative count is increased by your PB at the start of the round.",
+        "Stacks duration.",
+        "This {@variantrule Boon|GW2} corrupts into 1 round of {@variantrule Chilled|GW2}."
       ]
     },
     {
@@ -43,7 +53,6 @@
         "{@variantrule Condition|GW2}",
         "A bleeding creature takes slashing damage at the start of each of its turns.",
         "The amount of slashing damage is determined by the effect that applied it.",
-        "The condition can be ended early by regaining hit points.",
         "Stacks intensity.",
         "This {@variantrule Condition|GW2} get converted into 2 rounds of {@variantrule Vigor|GW2}."
       ]
@@ -62,7 +71,8 @@
       "name": "Boon",
       "source": "GW2",
       "entries": [
-        "Boons are beneficial effects with a set duration applied by various features.",
+        "{@variantrule Effect|GW2}",
+        "Boons are beneficial {@variantrule Effect|GW2|effects} with a set duration applied by various features.",
         "They are the opposite of {@variantrule Condition|GW2|Conditions}",
         "Each Boon has an associated {@variantrule Condition|GW2}, which it can be corrupted into or converted from.",
         "If a creature already under the effect of a Boon receives the same Boon again, one of two outcomes occurs, depending on the Boon’s properties:",
@@ -77,21 +87,81 @@
         "{@variantrule Condition|GW2}",
         "A burning creature takes fire damage at the start of each of its turns.",
         "The amount of fire damage is determined by the effect that applied it.",
-        "The condition can be ended early by using an action to smother the flames.",
         "Stacks intensity.",
         "This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Aegis|GW2}."
+      ]
+    },
+    {
+      "name": "Chilled",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Condition|GW2}",
+        "While you are under the effect of this {@variantrule Condition|GW2}, your speed is reduced by 66% and you have disadvantage on initiative rolls and your initiative count is decreased by your PB at the start of the round.",
+        "Stacks duration.",
+        "This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Alacrity|GW2}."
+      ]
+    },
+    {
+      "name": "Crippled",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Condition|GW2}",
+        "While you are under the effect of this {@variantrule Condition|GW2}, your speed is reduced by 50%.",
+        "Stacks duration.",
+        "This {@variantrule Condition|GW2} get converted into 2 rounds of {@variantrule Swiftness|GW2}."
       ]
     },
     {
       "name": "Condition",
       "source": "GW2",
       "entries": [
-        "Conditions are detrimental effects with a set duration applied by various features.",
+        "{@variantrule Effect|GW2}",
+        "Conditions are detrimental {@variantrule Effect|GW2|effects} with a set duration applied by various features.",
         "They are the opposite of {@variantrule Boon|GW2|Boons}",
         "Each Condition has an associated {@variantrule Boon|GW2}, which it can be converted into or corrupted from.",
         "If a creature already under the effect of a Condition receives the same Condition again, one of two outcomes occurs, depending on the Condition’s properties:",
         "{@bold Stacks Duration:} The Condition’s duration is extended by the duration of the new instance.",
         "{@bold Stacks Intensity:} The Condition’s effects are applied again. Each instance functions independently, with its own duration. If one instance of the Condition becomes converted, all active instances become converted. Any {@variantrule Boon|GW2} imposed by the conversion is applied only once."
+      ]
+    },
+    {
+      "name": "Confusion",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Condition|GW2}",
+        "A confused creature takes psychic damage at the start of each of its turns and each time it takes an action.",
+        "The amount of psychic damage is determined by the effect that applied it.",
+        "Stacks intensity.",
+        "This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Resolution|GW2}."
+      ]
+    },
+    {
+      "name": "Distortion",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Effect|GW2}",
+        "While you are under the effect of this {@variantrule Effect|GW2}, you are immune to all damage and automatically succeed on all saving throws.",
+        "Stacks duration (max 1 round)."
+      ]
+    },
+    {
+      "name": "Effect",
+      "source": "GW2",
+      "entries": [
+        "Effects are beneficial or detrimental effects with a set duration applied by various features.",
+        "If a creature already under the effect of an Effect receives the same Effect again, one of two outcomes occurs, depending on the Effect’s properties:",
+        "{@bold Stacks Duration:} The Effect’s duration is extended by the duration of the new instance.",
+        "{@bold Stacks Intensity:} The Effect’s effects are applied again. Each instance functions independently, with its own duration. "
+      ]
+    },
+    {
+      "name": "Fear",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Condition|GW2}",
+        "While you are under the effect of this {@variantrule Condition|GW2}, you can’t willingly move closer to the source of the {@variantrule Condition|GW2} and must use the Dash action to move away from it on your turn, if possible.",
+        "Stacks duration.",
+        "This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Stability|GW2}."
       ]
     },
     {
@@ -102,6 +172,26 @@
         "While you are under the effect of this {@variantrule Boon|GW2}, the number you need to roll to score a critical hit is reduced by 5.",
         "Stacks duration.",
         "This {@variantrule Boon|GW2} corrupts into 1 round of {@variantrule Blindness|GW2}."
+      ]
+    },
+    {
+      "name": "Immobilized",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Condition|GW2}",
+        "While you are under the effect of this {@variantrule Condition|GW2}, your speed is 0.",
+        "Stacks duration.",
+        "This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Resistance|GW2}."
+      ]
+    },
+    {
+      "name": "Might",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Boon|GW2}",
+        "While you are under the effect of this {@variantrule Boon|GW2}, you add 1 to all damage rolls.",
+        "Stacks Intensity (Max 25).",
+        "This {@variantrule Boon|GW2} corrupts into 1 round of {@variantrule Weakness|GW2}."
       ]
     },
     {
@@ -121,7 +211,7 @@
       "source": "GW2",
       "entries": [
         "{@variantrule Boon|GW2}",
-        "While you are under the effect of this {@variantrule Boon|GW2}, you reduce all damage you take by an amount equal to your proficiency bonus (to a minimum of 1 damage).",
+        "While you are under the effect of this {@variantrule Boon|GW2}, you reduce all damage you take from non-{@variantrule Condition|GW2} sources by an amount equal to your proficiency bonus (to a minimum of 1 damage).",
         "Stacks duration.",
         "This {@variantrule Boon|GW2} corrupts into 3 stacks of {@variantrule Vulnerability|GW2} for 2 rounds."
       ]
@@ -137,16 +227,6 @@
       ]
     },
     {
-      "name": "Vigor",
-      "source": "GW2",
-      "entries": [
-        "{@variantrule Boon|GW2}",
-        "While you are under the effect of this {@variantrule Boon|GW2}, you gain a bonus to your AC and Dexterity saving throws equal to you PB.",
-        "Stacks duration.",
-        "This {@variantrule Boon|GW2} corrupts into 2 stacks of {@variantrule Bleeding|GW2} for 2 rounds, dealing damage equal to the half the PB of the creature who corrupted the Boon."
-      ]
-    },
-    {
       "name": "Regeneration",
       "source": "GW2",
       "entries": [
@@ -154,6 +234,109 @@
         "While you are under the effect of this {@variantrule Boon|GW2}, at the start of your turn, if you have at least 1 hit point, you regain hit points equal to your PB.",
         "Stacks duration.",
         "This {@variantrule Boon|GW2} corrupts into 1 stack of {@variantrule Poison|GW2} for 2 rounds, dealing damage equal to the half the PB of the creature who corrupted the Boon."
+      ]
+    },
+    {
+      "name": "Resistance",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Boon|GW2}",
+        "While you are under the effect of this {@variantrule Boon|GW2}, you are immune to {@variantrule Blinded|GW2}, {@variantrule Chilled|GW2}, {@variantrule Crippled|GW2}, {@variantrule Fear|GW2}, {@variantrule Immobilized|GW2}, {@variantrule Slow|GW2}, {@variantrule Taunt|GW2}, {@variantrule Weakness|GW2}, and {@variantrule Vulnerability|GW2}.",
+        "Stacks duration.",
+        "This {@variantrule Boon|GW2} corrupts into 1 round of {@variantrule Chilled|GW2}."
+        
+      ]
+    },
+    {
+      "name": "Resolution",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Boon|GW2}",
+        "While you are under the effect of this {@variantrule Boon|GW2}, you reduce all damage you take from {@variantrule Condition|GW2|conditions} by an amount equal to your proficiency bonus (to a minimum of 1 damage).",
+        "Stacks duration.",
+        "This {@variantrule Boon|GW2} corrupts into 3 stacks of {@variantrule Confusion|GW2} for 1 round, dealing damage equal to the half the PB of the creature who corrupted the Boon."
+      ]
+    },
+    {
+      "name": "Revealed",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Effect|GW2}",
+        "While you are under the effect of this {@variantrule Effect|GW2}, you cannot gain the {@variantrule Stealth|GW2} {@variantrule Effect|GW2} or the {@condition Invisible|XPHB} condition.",
+        "Stacks duration (max 5 rounds)."
+      ]
+    },
+    {
+      "name": "Stability",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Boon|GW2}",
+        "While you are under the effect of this {@variantrule Boon|GW2}, you are immune to {@variantrule Fear|GW2}, {@variantrule Taunt|GW2}, {@condition Prone|XPHB}, and getting moved against your will.",
+        "Each time you would be {@variantrule Fear|GW2|Feared}, {@variantrule Taunt|GW2|Taunted}, knocked {@condition Prone|XPHB}, or moved against your will you instead remove 1 stack of this {@variantrule Boon|GW2}.",
+        "Stacks intensity (Max 25).",
+        "This {@variantrule Boon|GW2} corrupts into 1 round of {@variantrule Fear|GW2}."
+      ]
+    },
+    {
+      "name": "Stealth",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Effect|GW2}",
+        "While you are under the effect of this {@variantrule Effect|GW2}, you gain the effects of the {@condition Invisible|XPHB} condition.",
+        "The effect ends if you deal damage or force a creature to make a saving throw.",
+        "Stacks duration (max 1 minute)."
+      ]
+    },
+    {
+      "name": "Superspeed",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Effect|GW2}",
+        "While you are under the effect of this {@variantrule Effect|GW2}, your speed is increased by 100%.",
+        "Stacks duration (max 3 rounds)."
+      ]
+    },
+    {
+      "name": "Swiftness",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Boon|GW2}",
+        "While you are under the effect of this {@variantrule Boon|GW2}, your speed is increased by 33%.",
+        "Stacks duration.",
+        "This {@variantrule Boon|GW2} corrupts into 2 rounds of {@variantrule Crippled|GW2}."
+      ]
+    },
+    {
+      "name": "Taunt",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Condition|GW2}",
+        "While you are under the effect of this {@variantrule Condition|GW2}, you must move closer to the source of the {@variantrule Condition|GW2} and must use the Dash action to move toward it on your turn, if possible.",
+        "If you are already within 5 feet of the source, you must use your action to make an unarmed strike against the source.",
+        "Stacks duration.",
+        "This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Stability|GW2}."
+      ]
+    },
+    {
+      "name": "Torment",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Condition|GW2}",
+        "A tormented creature takes necrotic damage at the start of each of its turns.",
+        "The amount of necrotic damage is determined by the effect that applied it.",
+        "The damage gets doubled if the creature did not move on its last turn.",
+        "Stacks intensity.",
+        "This {@variantrule Condition|GW2} get converted into 3 stacks of {@variantrule Might|GW2} for 2 rounds."
+      ]
+    },
+    {
+      "name": "Vigor",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Boon|GW2}",
+        "While you are under the effect of this {@variantrule Boon|GW2}, you gain a bonus to your AC and Dexterity saving throws equal to your PB.",
+        "Stacks duration.",
+        "This {@variantrule Boon|GW2} corrupts into 2 stacks of {@variantrule Bleeding|GW2} for 2 rounds, dealing damage equal to the PB of the creature who corrupted the Boon."
       ]
     },
     {
@@ -172,8 +355,19 @@
       "entries": [
         "{@variantrule Condition|GW2}",
         "While you are under the effect of this {@variantrule condition|GW2}, you take 1 additional damage whenever you take damage.",
-        "Stacks intensity.",
+        "Stacks intensity (Max 25).",
         "This {@variantrule Condition|GW2} converts into 1 round of {@variantrule Protection|GW2}."
+      ]
+    },
+    {
+      "name": "Weakness",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Condition|GW2}",
+        "While you are under the effect of this {@variantrule condition|GW2}, you have a 50% chance of dealing half damage when you roll damage.",
+        "While you are under the effect of this {@variantrule condition|GW2}, you gain a malus to your AC and Dexterity saving throws equal to the PB of the creature who inflicted this {@variantrule condition|GW2}.",
+        "Stacks duration.",
+        "This {@variantrule Condition|GW2} converts into 3 stack of {@variantrule Might|GW2} for 2 rounds."
       ]
     }
   ],

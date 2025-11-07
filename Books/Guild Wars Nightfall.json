@@ -10445,6 +10445,282 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Intensity",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 0,
+                    "unit": "special"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "Create a burst of intensity in a spell by channeling more power into it.",
+                "While casting a spell of level 2 or lower, that inflicts acid, cold, fire, force, lightning, or thunder damage, you can simultaneously cast this spell (even if you use a spell slot for each of them). When doing so, if that spell inflicted damage to at least one creature, choose one of the creatures it dealt damage to and target each hostile creature within a 20-foot Emanation. Each new target takes 50% of the damage the original target took."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Intensity",
+                    "Skill. For 10 seconds, the next time you deal elemental damage with a spell to a target, you deal 60...70% of that damage to all other foes in the area."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Intensity.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Elementalist",
+                    "source": "GW"
+                },
+                {
+                    "name": "No Attribute - Elementalist",
+                    "source": "GW"
+                },
+                {
+                    "name": "Sunspear Rank",
+                    "source": "GWN"
+                }
+            ],
+            "components": {
+                "v": true
+            },
+            "areaTags": [
+                "MT",
+                "S"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "The level of the spell you can intensify increases by 1 for each level above 1 and the % increases by 10% for each level above 1."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Signet of Clumsiness",
+            "level": 5,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "reaction",
+                    "condition": "which you take when you see a creature within range make an attack roll"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "Activate your signet of clumsiness, making a creature comically fail at attacking.",
+                "Choose one creature, which is making an attack roll, that you can see within range. Target each hostile creature in a 15-foot Emanation centered on the target. Each target must make a Charisma saving throw. On a failed save, if the creature is attacking, the attack misses, and the action, Bonus Action, or Reaction used to make it is wasted, and the creature takes {@damage 8d6} psychic damage. ",
+                "Otherwise, on a failed save, a target is {@condition incapacitated} until the end of their next turn and takes {@damage 8d6} psychic damage.",
+                "On a successful save, a target takes half as much damage but suffers no other effect."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Signet of Clumsiness",
+                    "Signet. If target foe is attacking, that foe and all adjacent foes are interrupted and take 15...51...60 damage. Any foes using attack skills are knocked down."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Signet_of_Clumsiness.jpg"
+                        }
+                    }
+                ]
+            },
+            "components": {
+                "s": true
+            },
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Mesmer",
+                    "source": "GW"
+                },
+                {
+                    "name": "Illusion Magic",
+                    "source": "GW"
+                },
+                {
+                    "name": "Signet",
+                    "source": "GW"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Psion",
+                        "source": "xua2025psion"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "WorldsBeyondNumberWitch"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Inquisition domain",
+                            "shortName": "Inquisition",
+                            "source": "GrimHollowPlayerPack"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Gunslinger",
+                            "source": "ValdaGunslinger"
+                        },
+                        "subclass": {
+                            "name": "Spellslinger",
+                            "shortName": "Spellslinger",
+                            "source": "ValdaGunslinger"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "XPHB"
+                        }
+                    }
+                ]
+            },
+            "damageInflict": [
+                "psychic"
+            ],
+            "savingThrow": [
+                "charisma"
+            ],
+            "areaTags": [
+                "MT",
+                "S"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "conditionInflict": [
+                "incapacitated"
+            ]
         }
     ],
     "table": [],

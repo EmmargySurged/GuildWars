@@ -10721,6 +10721,227 @@
             "conditionInflict": [
                 "incapacitated"
             ]
+        },
+        {
+            "name": "Supportive Spirit",
+            "level": 1,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Alchemist",
+                            "shortName": "Alchemist",
+                            "source": "xua2025eberronupdates"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@variantrule Enchantment|GW}",
+                "Conjure a healing spirit for an ally that heals them in a time of dire need.",
+                "Choose one friendly creature that you can see within range. For the duration, when the target takes damage while {@condition Incapacitated|XPHB}, {@condition Paralyzed|XPHB}, {@condition Petrified|XPHB}, {@condition Prone|XPHB} or {@condition Stunned|XPHB}, they regain hit points equal to {@dice 4d4} + your spellcasting ability modifier.",
+                "If the target drops to 0 hit points, this spell ends."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Supportive Spirit",
+                    "Enchantment Spell. For 5...19...23 seconds, whenever target ally takes damage while knocked down, that ally is healed for 5...29...35 Health."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Supportive_Spirit.jpg"
+                        }
+                    }
+                ]
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
+            ],
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Monk",
+                    "source": "GW"
+                },
+                {
+                    "name": "Healing Prayers",
+                    "source": "GW"
+                },
+                {
+                    "name": "Enchantment",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "The healing increases by {@dice 4d4} for each slot level above 1."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Signet of Lost Souls",
+            "level": 7,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "xua2025eberronupdates"
+                        },
+                        "subclass": {
+                            "name": "Reanimator",
+                            "shortName": "Reanimator",
+                            "source": "xua2025horrorsubclasses"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Druid",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Circle of spores",
+                            "shortName": "Spores",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Wizard",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "School of necromancy",
+                            "shortName": "Necromancy",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            },
+            "entries": [
+                "{@variantrule Signet|GW|Signet:} Long Rest",
+                "Siphon the escaping life force from a bloodied creature using your Signet of Lost Souls.",
+                "Choose one hostile, bloodied creature that you can see within range. You can choose expended spell slots to recover. The spell slots can have a combined level equal to the challenge rating of the creature, and none of the slots can be level 6 or higher."
+            ],
+            "source": "GWN",
+            "fluff": {
+                "entries": [
+                    "Signet of Lost Souls",
+                    "Signet. If target foe is below 50% Health, you gain 10...82...100 Health and 1...8...10 Energy."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Signet_of_Lost_Souls.jpg"
+                        }
+                    }
+                ]
+            },
+            "backgrounds": [
+                {
+                    "name": "Istan",
+                    "source": "GWN"
+                },
+                {
+                    "name": "Necromancer",
+                    "source": "GW"
+                },
+                {
+                    "name": "Soul Reaping",
+                    "source": "GW"
+                },
+                {
+                    "name": "Signet",
+                    "source": "GW"
+                }
+            ],
+            "components": {
+                "s": true
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
         }
     ],
     "table": [],

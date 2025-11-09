@@ -18,7 +18,22 @@
         "color": "cc2929"
       }
     ],
-    "status": "ready"
+    "status": "ready",
+    "optionalFeatureTypes": {
+      "WS": "Weapon Skill",
+      "PS": "Profession Skill",
+      "HS": "Healing Skill",
+      "US": "Utility Skill",
+      "ES": "Elite Skill",
+      "MIT": "Minor Trait",
+      "MJT": "Major Trait",
+      "APT": "Adept Trait",
+      "PRT": "Master Trait",
+      "GRT": "Grandmaster Trait"
+    },
+    "dateAdded": "1701938868",
+    "dateLastModified": "1701938868",
+    "edition": "one"
   },
   "adventure": [
     {
@@ -3744,10 +3759,610 @@
       ]
     }
   ],
+  "background": [],
+  "class": [
+    {
+      "name": "Necromancer",
+      "source": "GW2",
+      "page": 50,
+      "edition": "one",
+      "primaryAbility": [
+        {
+          "con": true,
+          "wis": true
+        }
+      ],
+      "hd": {
+        "number": 1,
+        "faces": 10
+      },
+      "proficiency": [
+        "con",
+        "wis"
+      ],
+      "featProgression": [
+        {
+          "name": "Epic Boon",
+          "category": [
+            "EB"
+          ],
+          "progression": {
+            "19": 1
+          }
+        }
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "light"
+        ],
+        "weapons": [
+          "Dagger",
+          "Focus",
+          "Greatsword",
+          "Handaxe",
+          "Pistol",
+          "Scepter",
+          "Shortsword",
+          "Spear",
+          "Staff",
+          "Torch",
+          "Trident",
+          "Warhorn"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "arcana",
+                "history",
+                "insight",
+                "intimidation",
+                "medicine",
+                "perception",
+                "religion"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "defaultData": [
+          {
+            "A": [
+              {
+                "item": "leather armor|xphb"
+              },
+              {
+                "item": "handaxe|xphb"
+              },
+              {
+                "item": "dagger|xphb"
+              },
+              {
+                "item": "scholar's pack|xphb"
+              },
+              {
+                "value": 6300
+              }
+            ],
+            "B": [
+              {
+                "item": "studded leather armor|xphb"
+              },
+              {
+                "item": "greatsword|xphb"
+              },
+              {
+                "item": "staff|xphb"
+              },
+              {
+                "item": "explorer's pack|xphb"
+              },
+              {
+                "value": 800
+              }
+            ],
+            "C": [
+              {
+                "value": 11000
+              }
+            ]
+          }
+        ],
+        "entries": [
+          "{@i Choose A, B, or C:} (A) {@item Leather Armor|XPHB}, {@item Handaxe|XPHB}, {@item Dagger|XPHB}, {@item Scholar's Pack|XPHB}, and 63 GP; (B) {@item Studded Leather Armor|XPHB}, {@item Greatsword|XPHB}, {@item Staff|XPHB}, {@item Explorer's Pack|XPHB}, and 8 GP; or (C) 110 GP"
+        ]
+      },
+      "multiclassing": {
+        "proficienciesGained": {
+          "weapons": [
+            "Dagger",
+            "Focus",
+            "Handaxe",
+            "Scepter",
+            "Staff",
+            "Trident",
+            "Warhorn"
+          ],
+          "armor": [
+            "light"
+          ]
+        }
+      },
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "TBD"
+          ],
+          "rows": [
+            [
+              "2"
+            ],
+            [
+              "2"
+            ],
+            [
+              "2"
+            ],
+            [
+              "2"
+            ],
+            [
+              "3"
+            ],
+            [
+              "3"
+            ],
+            [
+              "3"
+            ],
+            [
+              "3"
+            ],
+            [
+              "4"
+            ],
+            [
+              "4"
+            ],
+            [
+              "4"
+            ],
+            [
+              "4"
+            ],
+            [
+              "5"
+            ],
+            [
+              "5"
+            ],
+            [
+              "5"
+            ],
+            [
+              "5"
+            ],
+            [
+              "6"
+            ],
+            [
+              "6"
+            ],
+            [
+              "6"
+            ],
+            [
+              "6"
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "Weapon Skills|Necromancer|GW2|1",
+        "Death Shroud|Necromancer|GW2|2",
+        "Minor Adept|Necromancer|GW2|3",
+        "Healing Skills|Necromancer|GW2|3",
+        {
+          "classFeature": "Necromancer Subclass|Necromancer|GW2|3",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Necromancer|GW2|4",
+        "Major Adept|Necromancer|GW2|5",
+        "Utility Skills|Necromancer|GW2|5",
+        {
+          "classFeature": "Subclass Feature|Necromancer|GW2|6",
+          "gainSubclassFeature": true
+        },
+        "Minor Master|Necromancer|GW2|7",
+        "Ability Score Improvement|Necromancer|GW2|8",
+        "Major Master|Necromancer|GW2|9",
+        {
+          "classFeature": "Subclass Feature|Necromancer|GW2|10",
+          "gainSubclassFeature": true
+        },
+        "Minor Grandmaster|Necromancer|GW2|11",
+        "Ability Score Improvement|Necromancer|GW2|12",
+        "Major Grandmaster|Necromancer|GW2|13",
+        {
+          "classFeature": "Subclass Feature|Necromancer|GW2|14",
+          "gainSubclassFeature": true
+        },
+        "Elite Skills|Necromancer|GW2|15",
+        "Ability Score Improvement|Necromancer|GW2|16",
+        {
+          "classFeature": "Subclass Feature|Necromancer|GW2|17",
+          "gainSubclassFeature": true
+        },
+        "Epic Boon|Necromancer|GW2|19",
+        {
+          "classFeature": "Subclass Feature|Necromancer|GW2|20",
+          "gainSubclassFeature": true
+        }
+      ],
+      "subclassTitle": "Subclass Feature",
+      "hasFluff": true,
+      "hasFluffImages": true
+    }
+  ],
+  "classFeature": [
+    {
+      "name": "Weapon Skills",
+      "source": "GW2",
+      "page": 51,
+      "className": "Necromancer",
+      "classSource": "GW2",
+      "level": 1,
+      "entries": [
+        "Your Necromancer training has given you access to unqiue ways to channel necromantic energy through your weapons. Depending on the weapon you wield, your Necromancer level and in which hand you wield it, you gain access to different weapon skills as shown in the Weapon Skills table.",
+        {
+          "type": "table",
+          "caption": "Necromancer Weapon Skills",
+          "colLabels": [
+            "Weapon",
+            "Position",
+            "Level 1",
+            "Level 2",
+            "Level 3",
+            "Level 4",
+            "Level 5"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-2 text-center",
+            "col-2",
+            "col-2",
+            "col-2",
+            "col-2",
+            "col-2"
+          ],
+          "rows": [
+            [
+              "Dagger",
+              "Main Hand",
+              "Necrotic Slash",
+              "Life Siphon",
+              "Dark Pact",
+              "",
+              ""
+            ],
+            [
+              "Dagger",
+              "Off Hand",
+              "",
+              "",
+              "",
+              "Deathly Swarm",
+              "Enfeebling Blood"
+            ],
+            [
+              "Scepter",
+              "Main Hand",
+              "Blood Curse",
+              "Grasping Dead",
+              "Feast of Corruption",
+              "",
+              ""
+            ],
+            [
+              "Focus",
+              "Off Hand",
+              "",
+              "",
+              "",
+              "Soul Grasp",
+              "Spinal Shivers"
+            ],
+            [
+              "Staff",
+              "Two Handed",
+              "Necrotic Grasp",
+              "Mark of Blood",
+              "Chillblains",
+              "Putrid Mark",
+              "Reaper's Mark"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Death Shroud",
+      "source": "GW2",
+      "page": 52,
+      "className": "Necromancer",
+      "classSource": "GW2",
+      "level": 2,
+      "entries": [
+        "At 2nd level, you can enter Death Shroud, a state that empowers your abilities and alters your appearance. While in Death Shroud, you gain the following benefits:",
+        "- You gain temporary hit points equal to your Necromancer level + your Constitution modifier at the start of each of your turns.",
+        "- Your weapon skills are enhanced, dealing additional necrotic damage equal to your proficiency bonus.",
+        "- You have resistance to necrotic damage.",
+        "You can enter Death Shroud as a bonus action on your turn. It lasts for 1 minute or until you end it as a bonus action. Once you use this feature, you must finish a long rest before you can use it again."
+      ]
+    },
+    {
+      "name": "Minor Adept",
+      "source": "GW2",
+      "page": 53,
+      "className": "Necromancer",
+      "classSource": "GW2",
+      "level": 3,
+      "entries": [
+        "At 3rd level, you learn two minor adept skills of your choice from the Necromancer skill list. You can use each of these skills once per short or long rest."
+      ]
+    },
+    {
+      "name": "Healing Skills",
+      "source": "GW2",
+      "page": 54,
+      "className": "Necromancer",
+      "classSource": "GW2",
+      "level": 3,
+      "entries": [
+        "At 3rd level, you gain access to healing skills that allow you to restore your own health using necromantic energy. You learn two healing skills of your choice from the Necromancer skill list. You can use each of these skills once per short or long rest."
+      ]
+    },
+    {
+      "name": "Necromancer Subclass",
+      "source": "GW2",
+      "page": 54,
+      "className": "Necromancer",
+      "classSource": "GW2",
+      "level": 3,
+      "entries": [
+        "At 3rd level, you choose a Necromancer subclass that reflects your approach to necromantic magic. Your choice grants you features at 3rd level and again at 6th, 10th, 14th, 17th, and 20th levels."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "GW2",
+      "page": 49,
+      "className": "Necromancer",
+      "classSource": "GW2",
+      "level": 4,
+      "entries": [
+        "You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify. You gain this feature again at Necromancer levels 8, 12, and 16."
+      ]
+    },
+    {
+      "name": "Major Adept",
+      "source": "GW2",
+      "page": 55,
+      "className": "Necromancer",
+      "classSource": "GW2",
+      "level": 5,
+      "entries": [
+        "At 5th level, you learn two major adept skills of your choice from the Necromancer skill list. You can use each of these skills once per short or long rest."
+      ]
+    },
+    {
+      "name": "Utility Skills",
+      "source": "GW2",
+      "page": 56,
+      "className": "Necromancer",
+      "classSource": "GW2",
+      "level": 5,
+      "entries": [
+        "At 5th level, you gain access to utility skills that provide various benefits in and out of combat. You learn two utility skills of your choice from the Necromancer skill list. You can use each of these skills once per short or long rest."
+      ]
+    },
+    {
+      "name": "Subclass Feature",
+      "source": "GW2",
+      "page": 57,
+      "className": "Necromancer",
+      "classSource": "GW2",
+      "level": 6,
+      "entries": [
+        "At 6th level, you gain a feature granted by your Necromancer subclass."
+      ]
+    },
+    {
+      "name": "Minor Master",
+      "source": "GW2",
+      "page": 58,
+      "className": "Necromancer",
+      "classSource": "GW2",
+      "level": 7,
+      "entries": [
+        "At 7th level, you learn two minor master skills of your choice from the Necromancer skill list. You can use each of these skills once per short or long rest."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "GW2",
+      "page": 58,
+      "className": "Necromancer",
+      "classSource": "GW2",
+      "level": 8,
+      "entries": [
+        "You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify. You gain this feature again at Necromancer levels 12, and 16."
+      ]
+    },
+    {
+      "name": "Major Master",
+      "source": "GW2",
+      "page": 59,
+      "className": "Necromancer",
+      "classSource": "GW2",
+      "level": 9,
+      "entries": [
+        "At 9th level, you learn two major master skills of your choice from the Necromancer skill list. You can use each of these skills once per short or long rest."
+      ]
+    },
+    {
+      "name": "Subclass Feature",
+      "source": "GW2",
+      "page": 60,
+      "className": "Necromancer",
+      "classSource": "GW2",
+      "level": 10,
+      "entries": [
+        "At 10th level, you gain a feature granted by your Necromancer subclass."
+      ]
+    },
+    {
+      "name": "Minor Grandmaster",
+      "source": "GW2",
+      "page": 61,
+      "className": "Necromancer",
+      "classSource": "GW2",
+      "level": 11,
+      "entries": [
+        "At 11th level, you learn two minor grandmaster skills of your choice from the Necromancer skill list. You can use each of these skills once per short or long rest."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "GW2",
+      "page": 61,
+      "className": "Necromancer",
+      "classSource": "GW2",
+      "level": 12,
+      "entries": [
+        "You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify. You gain this feature again at Necromancer level 16."
+      ]
+    },
+    {
+      "name": "Major Grandmaster",
+      "source": "GW2",
+      "page": 62,
+      "className": "Necromancer",
+      "classSource": "GW2",
+      "level": 13,
+      "entries": [
+        "At 13th level, you learn two major grandmaster skills of your choice from the Necromancer skill list. You can use each of these skills once per short or long rest."
+      ]
+    },
+    {
+      "name": "Subclass Feature",
+      "source": "GW2",
+      "page": 63,
+      "className": "Necromancer",
+      "classSource": "GW2",
+      "level": 14,
+      "entries": [
+        "At 14th level, you gain a feature granted by your Necromancer subclass."
+      ]
+    },
+    {
+      "name": "Elite Skills",
+      "source": "GW2",
+      "page": 64,
+      "className": "Necromancer",
+      "classSource": "GW2",
+      "level": 15,
+      "entries": [
+        "At 15th level, you gain access to elite skills that represent the pinnacle of necromantic power. You learn two elite skills of your choice from the Necromancer skill list. You can use each of these skills once per long rest."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "GW2",
+      "page": 64,
+      "className": "Necromancer",
+      "classSource": "GW2",
+      "level": 16,
+      "entries": [
+        "You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+      ]
+    },
+    {
+      "name": "Subclass Feature",
+      "source": "GW2",
+      "page": 65,
+      "className": "Necromancer",
+      "classSource": "GW2",
+      "level": 17,
+      "entries": [
+        "At 17th level, you gain a feature granted by your Necromancer subclass."
+      ]
+    },
+    {
+      "name": "Epic Boon",
+      "source": "GW2",
+      "page": 66,
+      "className": "Necromancer",
+      "classSource": "GW2",
+      "level": 19,
+      "entries": [
+        "You gain an {@filter Epic Boon feat|feats|category=EB} or another feat of your choice for which you qualify."
+      ]
+    },
+    {
+      "name": "Subclass Feature",
+      "source": "GW2",
+      "page": 67,
+      "className": "Necromancer",
+      "classSource": "GW2",
+      "level": 20,
+      "entries": [
+        "At 20th level, you gain a feature granted by your Necromancer subclass."
+      ]
+    }
+  ],
+  "classFluff": [
+    {
+      "name": "Necromancer",
+      "source": "GW2",
+      "entries": [
+        {
+          "type": "section",
+          "name": "Necromancer",
+          "source": "GW2",
+          "entries": [
+            "Practitioners of the dark arts, necromancers summon minions, wield the power of ritual, and heal themselves with blood magic. Necromancers feed on life force, which they can leverage offensively or use to delay their own demise."
+          ]
+        }
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Necromancer_03_concept_art.jpg"
+          },
+          "credit": "ArenaNet",
+          "width": 1160,
+          "height": 1078
+        }
+      ]
+    }
+  ],
+  "condition": [],
   "item": [],
-  "monster": [],
   "feat": [],
+  "language": [],
+  "legendaryGroup": [],
+  "monster": [],
+  "race": [],
+  "raceFluff": [],
   "spell": [],
+  "subclass": [],
+  "subclassFeature": [],
   "table": [],
   "variantrule": [
     {
@@ -4093,13 +4708,5 @@
         "This {@variantrule Condition|GW2} converts into 3 stack of {@variantrule Might|GW2} for 2 rounds."
       ]
     }
-  ],
-  "background": [],
-  "condition": [],
-  "legendaryGroup": [],
-  "race": [],
-  "raceFluff": [],
-  "language": [],
-  "subclass": [],
-  "subclassFeature": []
+  ]
 }

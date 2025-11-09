@@ -258,7 +258,7 @@ if __name__ == "__main__":
         ]},
         {"name": "Paladin", "source": "XPHB", "sub_classes": [
             {"name": "Oath of Ancients", "shortName": "Ancients", "source": "XPHB"},
-            {"name": "Oath of the Noble Genies", "shortName": "Noble Genies", "source": "xua2025ForgottenRealmsSubclasses"}
+            {"name": "Oath of the Noble Genies", "shortName": "Noble Genies", "source": "FRHoF"}
         ]},
         {"name": "Psion", "source": "xua2025psion", "sub_classes": [
             {"name": "Metamorph", "shortName": "Metamorph", "source": "xua2025psion"},
@@ -274,7 +274,8 @@ if __name__ == "__main__":
             {"name": "Arcane Trickster", "shortName": "Arcane Trickster", "source": "XPHB"}
         ]},
         {"name": "Sorcerer", "source": "XPHB", "sub_classes": [
-            {"name": "Divine Soul", "shortName": "Divine Soul", "source": "XGE"}
+            {"name": "Divine Soul", "shortName": "Divine Soul", "source": "XGE"},
+            {"name": "Wild Magic", "shortName": "Wild Magic", "source": "XPHB"}
         ]},
         {"name": "Warlock", "source": "XPHB", "sub_classes": [
             {"name": "The Fathomless", "shortName": "Fathomless", "source": "TCE"},
@@ -284,8 +285,9 @@ if __name__ == "__main__":
             {"name": "Coven of the Claw", "shortName": "Claw", "source": "WorldsBeyondNumberWitch"}
         ]},
         {"name": "Wizard", "source": "XPHB", "sub_classes": [
-            {"name": "Bladesinging", "shortName": "Bladesinging", "source": "TCE"},
-            {"name": "School of Necromancy", "shortName": "Necromancy", "source": "PHB"}
+            {"name": "Bladesinger", "shortName": "Bladesinger", "source": "FRHoF"},
+            {"name": "School of Necromancy", "shortName": "Necromancy", "source": "PHB"},
+            {"name": "Wizard of the Citadel", "shortName": "Citadel", "source": "WizardCitadelWBN"}
         ]}
     ]
     # Unused, maybe make custom classes the players can then also check.

@@ -3963,7 +3963,7 @@
       "classFeatures": [
         "Weapon Skills|Necromancer|GW2|1",
         "Death Shroud|Necromancer|GW2|2",
-        "Minor Adept|Necromancer|GW2|3",
+        "Necromancer Adept|Necromancer|GW2|3",
         "Healing Skills|Necromancer|GW2|3",
         {
           "classFeature": "Necromancer Subclass|Necromancer|GW2|3",
@@ -4017,7 +4017,7 @@
       "level": 1,
       "entries": [
         "Your Necromancer training has given you access to unqiue ways to channel necromantic energy through your weapons. Depending on the weapon you wield, your Necromancer level and in which hand you wield it, you gain access to different weapon skills as shown in the Weapon Skills table. Whenever you attack with one of the weapons, you can use your Wisdom modifier for the attack and damage rolls instead of using Strength or Dexterity.",
-        "Using the skills ascociated with your weapon requires great focus, you can only gain access to the skills for one weapon at a time. You can change which weapon you are using to channel your necromantic energy to during a short or long rest. When you reach certain levels in this class, you can channel your necromantic energy through additional weapons. At level 4 you can channel through a second weapon, if that weapon is wielded in your off hand. At level 10, you can channel through a third and fourth weapon, two of which must be wielded in your off hand. ",
+        "Using the skills ascociated with your weapon requires great focus, you can only gain access to the skills for one weapon at a time. You can change which weapon you are using to channel your necromantic energy to during a short or long rest. When you reach certain levels in this class, you can channel your necromantic energy through additional weapons. At level 4 you can channel through a second weapon, if that weapon is wielded in your off hand. At level 10, you can channel your energy either through 2 two-handed weapons or 1 two-handed and 1 main-hand weapon and 1 off-hand weapon or 2 main-hand weapons and 2 off-hand weapons.",
         {
           "type": "table",
           "caption": "Necromancer Weapon Skills",
@@ -4304,7 +4304,34 @@
       "classSource": "GW2",
       "level": 3,
       "entries": [
-        "At 3rd level, you gain access to healing skills that allow you to restore your own health using necromantic energy. You learn two healing skills of your choice from the Necromancer skill list. You can use each of these skills once per short or long rest."
+        "You have learned to harness necromantic energy to heal wounds and mend injuries. You learn one healing skill based on the trait line you chose at level 3 as shown in the Healing Skills table below.",
+        "Later you gain access to additional healing skills as you gain levels in this class. You can only prepare and use one healing skill at a time. You can change which healing skill you have prepared during a short or long rest.",
+        {
+          "type": "table",
+          "caption": "Necromancer Healing Skills",
+          "colLabels": [
+            "Trait Line",
+            "Healing Skill"
+          ],
+          "rows": [
+            [
+              "{@b Blood Magic}",
+              "{@optfeature Well of Blood|GW2}"
+            ],
+            [
+              "{@b Curses}",
+              "{@optfeature Consume Conditions|GW2}"
+            ],
+            [
+              "{@b Death Magic}",
+              "{@optfeature Summon Blood Fiend|GW2} -> {@optfeature Taste of Death|GW2}"
+            ],
+            [
+              "{@b Spite}",
+              "{@optfeature Signet of Vampirism|GW2}"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -4337,7 +4364,7 @@
       "classSource": "GW2",
       "level": 5,
       "entries": [
-        "At 5th level, you learn two major adept skills of your choice from the Necromancer skill list. You can use each of these skills once per short or long rest."
+        "You have advanced your necromantic training further, gaining access to major adept skills that enhance your necromantic abilities. You learn one of three major adept traits of your choice from the Necromancer trait list based on the trait line you chose at level 3."
       ]
     },
     {
@@ -4348,7 +4375,38 @@
       "classSource": "GW2",
       "level": 5,
       "entries": [
-        "At 5th level, you gain access to utility skills that provide various benefits in and out of combat. You learn two utility skills of your choice from the Necromancer skill list. You can use each of these skills once per short or long rest."
+        "Having mastered the basics of necromantic magic, you gain access to utility skills that provide various benefits. You learn one utility skill of your choice based on the trait line you chose at level 3 as shown in the Utility Skills table below.",
+        "Later you gain access to additional utility skills as you gain levels in this class. You can only prepare and use three utility skills at a time. You can change which utility skills you have prepared during a short or long rest.",
+        {
+          "type": "table",
+          "caption": "Necromancer Utility Skills",
+          "colLabels": [
+            "Trait Line",
+            "Utility Skills"
+          ],
+          "rows": [
+            [
+              "{@b Blood Magic}",
+              "{@optfeature Well of Corruption|GW2} or {@optfeature Well of Darkness|GW2} or {@optfeature Well of Power|GW2} or {@optfeature Well of Suffering|GW2}"
+            ],
+            [
+              "{@b Curses}",
+              "{@optfeature Blood Is Power|GW2} or {@optfeature Corrosive Poison Cloud|GW2} or {@optfeature Corrupt Boon|GW2} or {@optfeature Epidemic|GW2}"
+            ],
+            [
+              "{@b Death Magic}",
+              "{@optfeature Summon Bone Fiend|GW2} -> {@optfeature Rigor Mortis|GW2} or {@optfeature Summon Bone Minions|GW2} -> {@optfeature Putrid Explosion|GW2} or {@optfeature Summon Flesh Wurm|GW2} -> {@optfeature Necrotic Traversal|GW2} or {@optfeature Summon Shadow Fiend|GW2} -> {@optfeature Haunt|GW2}"
+            ],
+            [
+              "{@b Soul Reaping}",
+              "{@optfeature Spectral Armor|GW2} or {@optfeature Spectral Grasp|GW2} or {@optfeature Spectral Walk|GW2} -> {@optfeature Spectral Walk|GW2} or {@optfeature Spectral Ring|GW2}"
+            ],
+            [
+              "{@b Spite}",
+              "{@optfeature Plague Signet|GW2} or {@optfeature Signet of Spite|GW2} or {@optfeature Signet of Undeath|GW2} or {@optfeature Signet of the Locust|GW2}"
+            ]
+          ]
+        }
       ]
     },
     {

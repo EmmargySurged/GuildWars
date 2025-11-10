@@ -4334,7 +4334,7 @@
             ],
             [
               "{@b Soul Reaping}",
-              "{@optfeature Spectral Armor|GW2} or {@optfeature Spectral Grasp|GW2} or {@optfeature Spectral Walk|GW2} -> {@optfeature Spectral Walk|GW2} or {@optfeature Spectral Ring|GW2}"
+              "{@optfeature Spectral Armor|GW2} or {@optfeature Spectral Grasp|GW2} or {@optfeature Spectral Walk|GW2} -> {@optfeature Spectral Recall|GW2} or {@optfeature Spectral Ring|GW2}"
             ],
             [
               "{@b Spite}",
@@ -4508,7 +4508,7 @@
       "level": 18,
       "entries": [
         "You have mastered the use of elite skills that provide powerful effects. You learn one elite skill of your choice based on the trait line you chose at level 2 and 9 as shown in the Elite Skills table below.",
-        "You can only prepare and use one elite skill at a time. You can change which elite skill you have prepared during a short or long rest.",
+        "You can only prepare and use one elite skill at a time. You can change which elite skill you have learned during a short or long rest.",
         {
           "type": "table",
           "caption": "Necromancer Elite Skills",
@@ -4751,6 +4751,89 @@
         "Stacks duration.",
         "A creature with a {@variantrule Defiance Bar|GW2} takes 15 defiance bar damage at the start of its turn instead of being affected.",
         "This {@variantrule Condition|GW2} get converted into 2 rounds of {@variantrule Swiftness|GW2}."
+      ]
+    },
+    {
+      "name": "Combos",
+      "source": "GW2",
+      "entries": [
+        "Some skills create combo fields or finishers. A combo field is an area created by a skill that lasts for a certain duration. A combo finisher is a skill that can be used within a combo field to create a powerful effect. If multiple combo fields overlap, only the most recently created field is active. See the table below for the different types of combo fields and finishers (you refers to the creature who used a combo finisher).",
+        {
+          "type": "table",
+          "caption": "Combo Fields and Finishers",
+          "colLabels": [
+            "{@b Combo Field}",
+            "{@b Blast Finisher}",
+            "{@b Leap Finisher}",
+            "{@b Projectile Finisher}",
+            "{@b Whirl Finisher}"
+          ],
+          "rows": [
+            [
+              "{@b Dark Field}",
+              "Each friendly creature within 35 feet of the blast's point of origin gains 1 round of {@variantrule Dark Aura|GW2}.",
+              "You gain 1 round of {@variantrule Dark Aura|GW2}.",
+              "You {@variantrule Life Steal|GW2|steal life} equal to your proficiency bonus from each target hit by the projectile finisher.",
+              "You fire up to three life-stealing projectiles at different random hostile targets within 90 feet, each {@variantrule Life Steal|GW2|stealing life} equal to half your proficiency bonus."
+            ],
+            [
+              "{@b Ethereal Field}",
+              "Each friendly creature within 35 feet of the blast's point of origin gains 1 round of {@variantrule Chaos Aura|GW2}.",
+              "You gain 1 round of {@variantrule Chaos Aura|GW2}.",
+              "You inflict 1 round of {@variantrule Confusion|GW2}, dealing your proficiency bonus damage, on any targets hit by the projectile finisher.",
+              "You fire up to three chaotic projectiles at different random hostile targets within 90 feet, each inflicting 1 round of {@variantrule Confusion|GW2}, dealing half your proficiency bonus damage."
+            ],
+            [
+              "{@b Fire Field}",
+              "Each friendly creature within 35 feet of the blast's point of origin gains 3 stacks of {@variantrule Might|GW2} for 6 rounds.",
+              "You gain 1 round of {@variantrule Fire Aura|GW2}.",
+              "You inflict 1 round of {@variantrule Burning|GW2}, dealing double your proficiency bonus damage, on any targets hit by the projectile finisher.",
+              "You fire up to three burning projectiles at different random hostile targets within 90 feet, each inflicting 1 round of {@variantrule Burning|GW2}, dealing your proficiency bonus damage."
+            ],
+            [
+              "{@b Ice Field}",
+              "Each friendly creature within 35 feet of the blast's point of origin gains 1 round of {@variantrule Frost Aura|GW2}.",
+              "You gain 1 round of {@variantrule Frost Aura|GW2}.",
+              "You inflict 1 round of {@variantrule Chilled|GW2}, on any targets hit by the projectile finisher.",
+              "You fire up to three chilling projectiles at different random hostile targets within 90 feet, each inflicting 1 round of {@variantrule Chilled|GW2}."
+            ],
+            [
+              "{@b Light Field}",
+              "Each friendly creature within 35 feet of the blast's point of origin looses the latest {@variantrule condition|GW2}.",
+              "You gain 1 round of {@variantrule Light Aura|GW2}.",
+              "You remove the latest {@variantrule condition|GW2} from the closest friendly target to any target hit by the projectile finisher.",
+              "You fire up to three cleansing projectiles at different random friendly targets within 90 feet, each removing the latest {@variantrule condition|GW2}."
+            ],
+            [
+              "{@b Lightning Field}",
+              "Each friendly creature within 35 feet of the blast's point of origin gains 2 rounds of {@variantrule Swiftness|GW2}.",
+              "Any targets hit by the leap finisher are {@variantrule Dazed|GW2} for 1 round.",
+              "You inflict 2 stacks of {@variantrule Vulnerability|GW2} for 1 round on any targets hit by the projectile finisher.",
+              "You fire up to three brutal projectiles at different random hostile targets within 90 feet, each inflicting 2 stacks of {@variantrule Vulnerability|GW2} for 1 round."
+            ],
+            [
+              "{@b Poison Field}",
+              "Each hostile creature within 35 feet of the blast's point of origin gains 1 round of {@variantrule Weakness|GW2}.",
+              "Any targets hit by the leap finisher gain 1 round of {@variantrule Weakness|GW2}.",
+              "You inflict 1 round of {@variantrule Poisoned|GW2}, dealing half your proficiency bonus damage, on any targets hit by the projectile finisher.",
+              "You fire up to three poisonous projectiles at different random hostile targets within 90 feet, each inflicting 1 round of {@variantrule Poisoned|GW2}, dealing half your proficiency bonus damage."
+            ],
+            [
+              "{@b Smoke Field}",
+              "Each friendly creature within 35 feet of the blast's point of origin gains 1 round of {@variantrule Stealth|GW2}.",
+              "You gain 1 round of {@variantrule Stealth|GW2}.",
+              "You inflict 1 round of {@variantrule Blindness|GW2} on any targets hit by the projectile finisher.",
+              "You fire up to three blinding projectiles at different random hostile targets within 90 feet, each inflicting 1 round of {@variantrule Blindness|GW2}."
+            ],
+            [
+              "{@b Water Field}",
+              "Each friendly creature within 35 feet of the blast's point of origin regains hit points equal to twice your proficiency bonus.",
+              "You regain hit points equal to twice your proficiency bonus.",
+              "You grant 1 round of {@variantrule Regeneration|GW2}, healing twice your proficiency bonus, to the closest friendly target from any targets hit by the projectile finisher.",
+              "You fire up to three healing projectiles at different random friendly targets within 90 feet, each granting 1 round of {@variantrule Regeneration|GW2}, healing your proficiency bonus."
+            ]
+          ]
+        }
       ]
     },
     {

@@ -4016,7 +4016,8 @@
       "classSource": "GW2",
       "level": 1,
       "entries": [
-        "Your Necromancer training has given you access to unqiue ways to channel necromantic energy through your weapons. Depending on the weapon you wield, your Necromancer level and in which hand you wield it, you gain access to different weapon skills as shown in the Weapon Skills table.",
+        "Your Necromancer training has given you access to unqiue ways to channel necromantic energy through your weapons. Depending on the weapon you wield, your Necromancer level and in which hand you wield it, you gain access to different weapon skills as shown in the Weapon Skills table. Whenever you attack with one of the weapons, you can use your Wisdom modifier for the attack and damage rolls instead of using Strength or Dexterity.",
+        "Using the skills ascociated with your weapon requires great focus, you can only gain access to the skills for one weapon at a time. You can change which weapon you are using to channel your necromantic energy to during a short or long rest. When you reach certain levels in this class, you can channel your necromantic energy through additional weapons. At level 4 you can channel through a second weapon, if that weapon is wielded in your off hand. At level 10, you can channel through a third and fourth weapon, two of which must be wielded in your off hand. ",
         {
           "type": "table",
           "caption": "Necromancer Weapon Skills",
@@ -4040,49 +4041,139 @@
           ],
           "rows": [
             [
-              "Dagger",
+              "{@item Dagger|XPHB}",
               "Main Hand",
-              "Necrotic Slash",
-              "Life Siphon",
-              "Dark Pact",
+              "{@optfeature Necrotic Slash|GW2} -> {@optfeature Necrotic Stab|GW2} -> {@optfeature Necrotic Bite|GW2}",
+              "{@optfeature Life Siphon|GW2}",
+              "{@optfeature Dark Pact|GW2}",
               "",
               ""
             ],
             [
-              "Dagger",
+              "{@item Dagger|XPHB}",
               "Off Hand",
               "",
               "",
               "",
-              "Deathly Swarm",
-              "Enfeebling Blood"
+              "{@optfeature Deathly Swarm|GW2}",
+              "{@optfeature Enfeebling Blood|GW2}"
             ],
             [
-              "Scepter",
-              "Main Hand",
-              "Blood Curse",
-              "Grasping Dead",
-              "Feast of Corruption",
-              "",
-              ""
-            ],
-            [
-              "Focus",
+              "{@item Focus|GW2}",
               "Off Hand",
               "",
               "",
               "",
-              "Soul Grasp",
-              "Spinal Shivers"
+              "{@optfeature Soul Grasp|GW2}",
+              "{@optfeature Spinal Shivers|GW2}"
             ],
             [
-              "Staff",
+              "{@item Greatsword|XPHB}",
               "Two Handed",
-              "Necrotic Grasp",
-              "Mark of Blood",
-              "Chillblains",
-              "Putrid Mark",
-              "Reaper's Mark"
+              "{@optfeature Dusk Strike|GW2} -> {@optfeature Fading Twilight|GW2} -> {@optfeature Chilling Scythe|GW2}",
+              "{@optfeature Gravedigger|GW2}",
+              "{@optfeature Death Spiral|GW2}",
+              "{@optfeature Nightfall|GW2}",
+              "{@optfeature Grasping Darkness|GW2}"
+            ],
+            [
+              "{@item Handaxe|XPHB}",
+              "Main Hand",
+              "{@optfeature Rending Claws|GW2}",
+              "{@optfeature Ghastly Claws|GW2}",
+              "{@optfeature Unholy Feast|GW2} -> {@optfeature Unholy Burst|GW2}",
+              "",
+              ""
+            ],
+            [
+              "{@item Pistol|XPHB}",
+              "Main Hand",
+              "{@optfeature Vicious Shot|GW2}",
+              "{@optfeature Weeping Shots|GW2}",
+              "{@optfeature Vile Blast|GW2}",
+              "",
+              ""
+            ],
+            [
+              "{@item Scepter|GW2}",
+              "Main Hand",
+              "{@optfeature Blood Curse|GW2} -> {@optfeature Rending Curse|GW2} -> {@optfeature Putrid Curse|GW2}",
+              "{@optfeature Grasping Dead|GW2}",
+              "{@optfeature Feast of Corruption|GW2}",
+              "",
+              ""
+            ],
+            [
+              "{@item Shortsword|XPHB}",
+              "Main Hand",
+              "{@optfeature Enervation Blade|GW2} -> {@optfeature Enervation Echo|GW2} -> {@optfeature Deathly Enervation|GW2}",
+              "{@optfeature Ravenous Wave|GW2} -> {@optfeature Satiate|GW2}",
+              "{@optfeature Path of Gluttony|GW2} -> {@optfeature Gorge|GW2}",
+              "",
+              ""
+            ],
+            [
+              "{@item Shortsword|XPHB}",
+              "Off Hand",
+              "",
+              "",
+              "",
+              "{@optfeature Hungering Maelstrom|GW2} -> {@optfeature Gormandize|GW2}",
+              "{@optfeature Devouring Visage|GW2} -> {@optfeature Consume|GW2}"
+            ],
+            [
+              "{@item Spear|XPHB}",
+              "Two Handed",
+              "{@optfeature Dark Slash|GW2} -> {@optfeature Deadly Slice|GW2} -> {@optfeature Sinister Stab|GW2}",
+              "{@optfeature Perforate|GW2}",
+              "{@optfeature Addle|GW2}",
+              "{@optfeature Isolate|GW2} -> {@optfeature Distress|GW2}",
+              "{@optfeature Extirpate|GW2}"
+            ],
+            [
+              "{@item Spear|XPHB}",
+              "Two Handed Aquatic",
+              "{@optfeature Cruel Strike|GW2} -> {@optfeature Wicked Strike|GW2} -> {@optfeature Reaper's Scythe|GW2}",
+              "{@optfeature Wicked Spiral|GW2}",
+              "{@optfeature Deadly Feast|GW2}",
+              "{@optfeature Deadly Catch|GW2}",
+              "{@optfeature Dark Spear|GW2}"
+            ],
+            [
+              "{@item Staff|XPHB}",
+              "Two Handed",
+              "{@optfeature Necrotic Grasp|GW2}",
+              "{@optfeature Mark of Blood|GW2}",
+              "{@optfeature Chillblains|GW2}",
+              "{@optfeature Putrid Mark|GW2}",
+              "{@optfeature Reaper's Mark|GW2}"
+            ],
+            [
+              "{@item Torch|XPHB}",
+              "Off Hand",
+              "",
+              "",
+              "",
+              "{@optfeature Harrowing Wave|GW2}",
+              "{@optfeature Oppressive Collapse|GW2}"
+            ],
+            [
+              "{@item Trident|XPHB}",
+              "Two Handed Aquatic",
+              "{@optfeature Crimson Tide|GW2}",
+              "{@optfeature Feast|GW2}",
+              "{@optfeature Foul Current|GW2}",
+              "{@optfeature Sinking Tomb|GW2}",
+              "{@optfeature Frozen Abyss|GW2}"
+            ],
+            [
+              "{@item Warhorn|GW2}",
+              "Off Hand",
+              "",
+              "",
+              "",
+              "{@optfeature Wail of Doom|GW2}",
+              "{@optfeature Locust Swarm|GW2}"
             ]
           ]
         }
@@ -4096,11 +4187,59 @@
       "classSource": "GW2",
       "level": 2,
       "entries": [
-        "At 2nd level, you can enter Death Shroud, a state that empowers your abilities and alters your appearance. While in Death Shroud, you gain the following benefits:",
-        "- You gain temporary hit points equal to your Necromancer level + your Constitution modifier at the start of each of your turns.",
-        "- Your weapon skills are enhanced, dealing additional necrotic damage equal to your proficiency bonus.",
-        "- You have resistance to necrotic damage.",
-        "You can enter Death Shroud as a bonus action on your turn. It lasts for 1 minute or until you end it as a bonus action. Once you use this feature, you must finish a long rest before you can use it again."
+        "You have learned to tap into the power of death itself. During your turn, you can enter or exit Death Shroud (no {@variantrule Action|XPHB} required) if you have at least 10% life force. Once you exit Death Shroud, you cannot enter it again until start of your turn in two rounds.",
+        "{@b Life Force.} Your life force is a pool of energy that fuels your necromantic abilities. Your maximum life force is equal to 69% of your maximum hit points.",
+        "{@b Gaining Life Force.} When you finish a short rest, you regain life force up to 50% of your maximum life force. When you finish a long rest, you regain life force up to 100% of your maximum life force. While not in Death Shroud, whenever a creature within 120 feet of you dies, you regain life force equal to 10% of your maximum life force.",
+        "While in Death Shroud, you gain the following effects:",
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            "{@b Hit Points.} When you take damage, you lose life force instead of hit points. If you have no life force remaining, you leave Death Shroud and any remaining damage is dealt to your hit points as normal.",
+            "{@b Damage Resistance.} You gain resistance to all damage.",
+            "{@b Life Force Drain.} At the start of each of your turns, you lose life force equal to 15% of your maximum life force (minimum 1).",
+            "{@b Hit Point Regeneration.} You cannot regain hit points except through life steal.",
+            "{@b Profession Skills.} You gain access to a special set of profession skills (see below) at certain levels. You cannot cast spells, use weapon-, healing-, utility- or elite-skills."
+          ]
+        },
+        {
+          "type": "table",
+          "caption": "Death Shroud Skills",
+          "colLabels": [
+            "Terrain",
+            "Level 2",
+            "Level 4",
+            "Level 6",
+            "Level 8",
+            "Level 10"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-2",
+            "col-2",
+            "col-2",
+            "col-2",
+            "col-2"
+          ],
+          "rows": [
+            [
+              "Terrestrial",
+              "{@optfeature Life Blast|GW2}",
+              "{@optfeature Dark Path|GW2} -> {@optfeature Dark Pursuit|GW2}",
+              "{@optfeature Doom|GW2}",
+              "{@optfeature Life Transfer|GW2}",
+              "{@optfeature Tainted Shackles|GW2}"
+            ],
+            [
+              "Aquatic",
+              "{@optfeature Plague Blast|GW2}",
+              "{@optfeature Dark Water|GW2}",
+              "{@optfeature Wave of Fear|GW2}",
+              "{@optfeature Gathering Plague|GW2}",
+              "{@optfeature Tainted Shackles|GW2}"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -4358,6 +4497,74 @@
   "language": [],
   "legendaryGroup": [],
   "monster": [],
+  "optionalfeature": [
+    {
+      "name": "Necrotic Slash",
+      "source": "GW2",
+      "page": 66,
+      "featureType": [
+        "WS"
+      ],
+      "prerequisite": [
+        {
+          "other": "Level 1+ Necromancer & Main Hand Dagger."
+        }
+      ],
+      "entries": [
+        "{@b Casting Time:} 1 {@variantrule Action|XPHB}",
+        "{@b Range:} Melee Weapon Attack",
+        "{@b Target:} Two creatures within reach",
+        "{@b Cooldown:} None",
+        "{@b Duration:} Instantaneous",
+        "{@b Properties:} Chain",
+        "{@b Effect:} Make a melee weapon attack against up to two creatures within reach. On a hit, a target takes necrotic damage equal to {@table Proficiency Bonus|XPHB|PB}d4 + the ability modifier used for the attack roll. You can then immmediately use {@optfeature Necrotic Stab|GW2} as a special action."
+      ]
+    },
+    {
+      "name": "Necrotic Stab",
+      "source": "GW2",
+      "page": 66,
+      "featureType": [
+        "WS"
+      ],
+      "prerequisite": [
+        {
+          "other": "Level 1+ Necromancer & Main Hand Dagger & {@optfeature Necrotic Slash|GW2} used this turn."
+        }
+      ],
+      "entries": [
+        "{@b Casting Time:} Special Action",
+        "{@b Range:} Melee Weapon Attack",
+        "{@b Target:} Two creatures within reach",
+        "{@b Cooldown:} None",
+        "{@b Duration:} Instantaneous",
+        "{@b Properties:} Chain",
+        "{@b Effect:} Make a melee weapon attack against up to two creatures within reach. On a hit, a target takes necrotic damage equal to {@table Proficiency Bonus|XPHB|PB}d4 + the ability modifier used for the attack roll and you gain 4% life force for each target hit. You can then immmediately use {@optfeature Necrotic Bite|GW2} as a {@variantrule Bonus Action|XPHB}."
+      ]
+    },
+    {
+      "name": "Necrotic Bite",
+      "source": "GW2",
+      "page": 66,
+      "featureType": [
+        "WS"
+      ],
+      "prerequisite": [
+        {
+          "other": "Level 1+ Necromancer & Main Hand Dagger & {@optfeature Necrotic Stab|GW2} used this turn."
+        }
+      ],
+      "entries": [
+        "{@b Casting Time:} {@variantrule Bonus Action|XPHB}",
+        "{@b Range:} Melee Weapon Attack",
+        "{@b Target:} Two creatures within reach",
+        "{@b Cooldown:} None",
+        "{@b Duration:} Instantaneous",
+        "{@b Properties:} Chain",
+        "{@b Effect:} Make a melee weapon attack against up to two creatures within reach. On a hit, a target takes necrotic damage equal to {@table Proficiency Bonus|XPHB|PB}d6 + the ability modifier used for the attack roll and you gain 6% life force for each target hit."
+      ]
+    }
+  ],
   "race": [],
   "raceFluff": [],
   "spell": [],

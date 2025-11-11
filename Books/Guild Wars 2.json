@@ -3951,8 +3951,9 @@
       "classSource": "GW2",
       "level": 1,
       "entries": [
-        "Your Necromancer training has given you access to unqiue ways to channel necromantic energy through your weapons. Depending on the weapon you wield, your Necromancer level and in which hand you wield it, you gain access to different weapon skills as shown in the Weapon Skills table. Whenever you attack with one of the weapons, you can use your Wisdom modifier for the attack and damage rolls instead of using Strength or Dexterity.",
-        "Using the skills ascociated with your weapon requires great focus, you can only gain access to the skills for one weapon at a time. You can change which weapon you are using to channel your necromantic energy to during a short or long rest. When you reach certain levels in this class, you can channel your necromantic energy through additional weapons. At level 4 you can channel through a second weapon, if that weapon is wielded in your off hand.",
+        "Your Necromancer training has given you access to unqiue ways to channel necromantic energy through your weapons. Depending on the weapon you wield, your Necromancer level, if you have proficiency with that weapon, and in which hand you wield it, you gain access to different {@variantrule weapon skill|GW2|weapon skills} as shown in the Weapon Skills table.", 
+        "Whenever you attack with one of the weapons as part of a {@variantrule weapon skill|GW2}, you can use your Wisdom modifier for the attack and damage rolls instead of using Strength or Dexterity. If a {@variantrule weapon skill|GW2} requires a saving throw, the DC equals to 8 plus your Wisdom modifier and proficiency bonus plus any attack bonuses the weapon has.",
+        "Using the {@variantrule skill|GW2|skills} ascociated with your weapon requires great focus, you can only gain access to the {@variantrule skill|GW2|skills} for one weapon at a time. You can change which weapon you are using to channel your necromantic energy to during a short or long rest. When you reach certain levels in this class, you can channel your necromantic energy through additional weapons. At level 4 you can channel through a second weapon, if that weapon is wielded in your off hand.",
         {
           "type": "table",
           "caption": "Necromancer Weapon Skills",
@@ -4124,8 +4125,8 @@
             "{@b Hit Points.} When you take damage, you lose life force instead of hit points. If you have no life force remaining, you leave Death Shroud and any remaining damage is dealt to your hit points as normal.",
             "{@b Damage Resistance.} You gain resistance to all damage.",
             "{@b Life Force Drain.} At the start of each of your turns, you lose life force equal to 15% of your maximum life force (minimum 1).",
-            "{@b Hit Point Regeneration.} You cannot regain hit points except through life steal.",
-            "{@b Profession Skills.} You gain access to a special set of profession skills (see below) at certain levels. You cannot cast spells, use weapon-, healing-, utility- or elite-skills."
+            "{@b Hit Point Regeneration.} You cannot regain hit points except through {@variantrule Life Steal|GW2}.",
+            "{@b Profession Skills.} You gain access to a special set of {@variantrule profession skill|GW2|profession skills} (see below) at certain levels. You cannot cast spells, use {@variantrule weapon skill|GW2|weapon-}, {@variantrule healing skill|GW2|healing-}, {@variantrule utility skill|GW2|utility-} or {@variantrule elite skill|GW2|elite-}{@variantrule skill|GW2|skills}, make weapon attacks or make unarmed attacks."
           ]
         },
         {
@@ -4861,6 +4862,22 @@
       ]
     },
     {
+      "name": "Control Effect",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Effect|GW2}",
+        "Control Effects are a special type of {@variantrule Effect|GW2|effects} that override any previous Control Effect when applied."
+      ]
+    },
+    {
+      "name": "Daze",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Control Effect|GW2}",
+        "While you are under the effect of this {@variantrule Control Effect|GW2}, you can only take the {@action Dodge|XPHB}, {@action Dash|XPHB} or {@action Disengage|XPHB} action on your turn."
+      ]
+    },
+    {
       "name": "Distortion",
       "source": "GW2",
       "entries": [
@@ -4874,9 +4891,18 @@
       "source": "GW2",
       "entries": [
         "Effects are beneficial or detrimental effects with a set duration applied by various features.",
-        "If a creature already under the effect of an Effect receives the same Effect again, one of two outcomes occurs, depending on the Effect’s properties:",
+        "If a creature already under the effect of an Effect receives the same Effect again, one of three outcomes occurs, depending on the Effect’s properties:",
         "{@bold Stacks Duration:} The Effect’s duration is extended by the duration of the new instance.",
-        "{@bold Stacks Intensity:} The Effect’s effects are applied again. Each instance functions independently, with its own duration. "
+        "{@bold Stacks Intensity:} The Effect’s effects are applied again. Each instance functions independently, with its own duration. ",
+        "{@bold Control Effect:} Only the most recent {@variantrule Control Effect|GW2} applies."
+      ]
+    },
+    {
+      "name": "Elite Skill",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Skill|GW2}",
+        "An elite skill is a special type of {@variantrule Skill|GW2} that provides powerful effects."
       ]
     },
     {
@@ -4901,6 +4927,14 @@
       ]
     },
     {
+      "name": "Healing Skill",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Skill|GW2}",
+        "A healing skill is a special type of {@variantrule Skill|GW2} that restores hit points to a target."
+      ]
+    },
+    {
       "name": "Immobilized",
       "source": "GW2",
       "entries": [
@@ -4909,6 +4943,14 @@
         "Stacks duration.",
         "A creature with a {@variantrule Defiance Bar|GW2} takes 50 defiance bar damage at the start of its turn instead of being affected.",
         "This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Resistance|GW2}."
+      ]
+    },
+    {
+      "name": "Life Steal",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Property|GW2}",
+        "When you deal {@variantrule Life Steal|GW2} damage to a target, you regain hit points equal to the amount of {@variantrule Life Steal|GW2} damage dealt."
       ]
     },
     {
@@ -4932,6 +4974,21 @@
         "While you are under this {@variantrule Condition|GW2}, you regain only two-thirds of the hit points you would normally heal.",
         "Stacks intensity.",
         "This {@variantrule Condition|GW2} get converted into 2 rounds of {@variantrule Regeneration|GW2}."
+      ]
+    },
+    {
+      "name": "Profession Skill",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Skill|GW2}",
+        "A profession skill is a special type of {@variantrule Skill|GW2} that is specific to a certain profession or class."
+      ]
+    },
+    {
+      "name": "Property",
+      "source": "GW2",
+      "entries": [
+        "Properties are special attributes that modify how a skill functions."
       ]
     },
     {
@@ -4992,6 +5049,51 @@
         "{@variantrule Effect|GW2}",
         "While you are under the effect of this {@variantrule Effect|GW2}, you cannot gain the {@variantrule Stealth|GW2} {@variantrule Effect|GW2} or the {@condition Invisible|XPHB} condition.",
         "Stacks duration (max 5 rounds)."
+      ]
+    },
+    {
+      "name": "Skill",
+      "source": "GW2",
+      "entries": [
+        "Skills are special abilities that a creature can use to perform various actions in combat or other situations.",
+        "The following types of skills exist:",
+        "{@b {@variantrule Weapon Skill|GW2}:} A skill that requires a specific weapon to use.",
+        "{@b {@variantrule Healing Skill|GW2}:} A skill that restores hit points to a target.",
+        "{@b {@variantrule Utility Skill|GW2}:} A skill that provides various effects or benefits.",
+        "{@b {@variantrule Elite Skill|GW2}:} A powerful skill that often has a long cooldown and significant effects.",
+        "{@b {@variantrule Profession Skill|GW2}:} A skill that is specific to a certain profession or class.",
+        "{@b {@variantrule Special Skill|GW2}:} A skill that does not fit into the other categories and has unique properties.",
+        "Most skills have the following components:",
+        "{@b Name:} The name of the skill.",
+        "{@b Requirements:} Any prerequisites or conditions that must be met to use the skill.",
+        "{@b Casting Time:} The amount of time it takes to use the skill.",
+        "{@b Range:} The distance at which the skill can be used.",
+        "{@b Target:} The creature(s) or area affected by the skill.",
+        "{@b Cooldown:} The amount of time that must pass before the skill can be used again.",
+        "{@b Duration:} The length of time the skill's effects last.",
+        "{@b Properties:} Any special attributes or characteristics of the skill.",
+        "{@b Description:} A description of how the skill is used and how it looks.",
+        "{@b Effect:} A description of what the skill does.",
+        "{@b Scaling:} How the skill's effects improve as the user gains levels or other enhancements."
+      ]
+    },
+    {
+      "name": "Slow",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Condition|GW2}",
+        "While you are under the effect of this {@variantrule condition|GW2}, on your turn, you can take either an action or a bonus action, but not both. If you take the Attack action, you can make only one attack regardless of the number of attacks you can normally make.",
+        "Stacks Duration.",
+        "A creature with a {@variantrule Defiance Bar|GW2} takes 50 defiance bar damage at the start of its turn instead of being affected.",
+        "This {@variantrule Condition|GW2} converts into 1 round of {@variantrule Quickness|GW2}."
+      ]
+    },
+    {
+      "name": "Special Skill",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Skill|GW2}",
+        "A special skill is a unique type of {@variantrule Skill|GW2} that does not fit into the other categories and has its own distinct properties."
       ]
     },
     {
@@ -5059,6 +5161,14 @@
       ]
     },
     {
+      "name": "Utility Skill",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Skill|GW2}",
+        "A utility skill is a special type of {@variantrule Skill|GW2} that provides various effects or benefits."
+      ]
+    },
+    {
       "name": "Vigor",
       "source": "GW2",
       "entries": [
@@ -5066,17 +5176,6 @@
         "While you are under the effect of this {@variantrule Boon|GW2}, you gain a bonus to your AC and Dexterity saving throws equal to your PB.",
         "Stacks duration.",
         "This {@variantrule Boon|GW2} corrupts into 2 stacks of {@variantrule Bleeding|GW2} for 2 rounds, dealing damage equal to the PB of the creature who corrupted the Boon."
-      ]
-    },
-    {
-      "name": "Slow",
-      "source": "GW2",
-      "entries": [
-        "{@variantrule Condition|GW2}",
-        "While you are under the effect of this {@variantrule condition|GW2}, on your turn, you can take either an action or a bonus action, but not both. If you take the Attack action, you can make only one attack regardless of the number of attacks you can normally make.",
-        "Stacks Duration.",
-        "A creature with a {@variantrule Defiance Bar|GW2} takes 50 defiance bar damage at the start of its turn instead of being affected.",
-        "This {@variantrule Condition|GW2} converts into 1 round of {@variantrule Quickness|GW2}."
       ]
     },
     {
@@ -5099,6 +5198,14 @@
         "Stacks duration.",
         "A creature with a {@variantrule Defiance Bar|GW2} takes 20 defiance bar damage at the start of its turn instead of being affected.",
         "This {@variantrule Condition|GW2} converts into 3 stack of {@variantrule Might|GW2} for 2 rounds."
+      ]
+    },
+    {
+      "name": "Weapon Skill",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Skill|GW2}",
+        "A weapon skill is a special type of {@variantrule Skill|GW2} that requires a specific weapon to use."
       ]
     }
   ]

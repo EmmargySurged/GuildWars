@@ -4687,6 +4687,23 @@
       ]
     },
     {
+      "name": "Aura",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Effect|GW2}",
+        "Auras are {@variantrule Effect|GW2|effects} that sourround a single creature and trigger when that creature is damaged.",
+        "If an aura of the same type is applied to a creature that already has one, the new aura replaces the old one if it has a higher intensity or longer duration; otherwise, the new aura has no effect.",
+        "The following auras exist:",
+        "{@variantrule Chaos Aura|GW2}",
+        "{@variantrule Dark Aura|GW2}",
+        "{@variantrule Fire Aura|GW2}",
+        "{@variantrule Frost Aura|GW2}",
+        "{@variantrule Light Aura|GW2}",
+        "{@variantrule Magnetic Aura|GW2}",
+        "{@variantrule Shocking Aura|GW2}"
+      ]
+    },
+    {
       "name": "Bleeding",
       "source": "GW2",
       "entries": [
@@ -4730,6 +4747,48 @@
         "The amount of fire damage is determined by the effect that applied it.",
         "Stacks intensity.",
         "This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Aegis|GW2}."
+      ]
+    },
+    {
+      "name": "Chaos Aura",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Aura|GW2}",
+        "When you take damage, one of the following random effects occurs:",
+        {
+          "type": "table",
+          "caption": "Chaos Aura Effects",
+          "colLabels": [
+            "{@b d6}",
+            "{@b Effect}"
+          ],
+          "rows": [
+            [
+              "1",
+              "You gain 1 round of {@variantrule Protection|GW2}."
+            ],
+            [
+              "2",
+              "You gain 1 round of {@variantrule Regeneration|GW2}, healing equal to your proficiency bonus."
+            ],
+            [
+              "3",
+              "You gain 1 round of {@variantrule Swiftness|GW2}."
+            ],
+            [
+              "4",
+              "The source of that damage is inflicted with 1 round of {@variantrule Weakness|GW2}."
+            ],
+            [
+              "5",
+              "The source of that damage is inflicted with 1 stack of {@variantrule Confusion|GW2} for 1 round, taking damage equal to your proficiency bonus."
+            ],
+            [
+              "6",
+              "The source of that damage is inflicted with 1 round of {@variantrule Crippled|GW2}."
+            ]
+          ]
+        }
       ]
     },
     {
@@ -4870,11 +4929,20 @@
       ]
     },
     {
+      "name": "Dark Aura",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Aura|GW2}",
+        "While you are under the effect of this {@variantrule Aura|GW2}, you reduce all damage you take from {@variantrule Condition|GW2|conditions} by an amount equal to half your proficiency bonus (to a minimum of 1 damage). Additionally, when you take damage, the source of that damage is inflicted with 2 stacks of {@variantrule Torment|GW2} for 1 round, taking damage equal to your proficiency bonus."
+      ]
+    },
+    {
       "name": "Daze",
       "source": "GW2",
       "entries": [
         "{@variantrule Control Effect|GW2}",
-        "While you are under the effect of this {@variantrule Control Effect|GW2}, you can only take the {@action Dodge|XPHB}, {@action Dash|XPHB} or {@action Disengage|XPHB} action on your turn."
+        "While you are under the effect of this {@variantrule Control Effect|GW2}, you can only take the {@action Dodge|XPHB}, {@action Dash|XPHB} or {@action Disengage|XPHB} action on your turn.",
+        "A creature with a {@variantrule Defiance Bar|GW2} takes 100 defiance bar damage per round of {@variantrule Daze|GW2} instead of being affected."
       ]
     },
     {
@@ -4909,11 +4977,27 @@
       "name": "Fear",
       "source": "GW2",
       "entries": [
-        "{@variantrule Condition|GW2}",
+        "{@variantrule Condition|GW2}|{@variantrule Control Effect|GW2}",
         "While you are under the effect of this {@variantrule Condition|GW2}, you can’t willingly move closer to the source of the {@variantrule Condition|GW2} and must use the Dash action to move away from it on your turn, if possible.",
         "Stacks duration.",
         "A creature with a {@variantrule Defiance Bar|GW2} takes 100 defiance bar damage at the start of its turn instead of being affected.",
         "This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Stability|GW2}."
+      ]
+    },
+    {
+      "name": "Fire Aura",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Aura|GW2}",
+        "While you are under the effect of this {@variantrule Aura|GW2}, when you take damage you gain 2 rounds of {@variantrule Might|GW2} and the source of that damage is inflicted with 1 round of {@variantrule Burning|GW2}, taking damage equal to twice your proficiency bonus."
+      ]
+    },
+    {
+      "name": "Frost Aura",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Aura|GW2}",
+        "While you are under the effect of this {@variantrule Aura|GW2}, you reduce all damage you take from non-{@variantrule Condition|GW2} sources by an amount equal to half your proficiency bonus (to a minimum of 1 damage) and the source of that damage is inflicted with 1 round of {@variantrule Chilled|GW2}."
       ]
     },
     {
@@ -4951,6 +5035,22 @@
       "entries": [
         "{@variantrule Property|GW2}",
         "When you deal {@variantrule Life Steal|GW2} damage to a target, you regain hit points equal to the amount of {@variantrule Life Steal|GW2} damage dealt."
+      ]
+    },
+    {
+      "name": "Light Aura",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Aura|GW2}",
+        "While you are under the effect of this {@variantrule Aura|GW2}, you reduce all damage you take from {@variantrule Condition|GW2|conditions} by an amount equal to half your proficiency bonus (to a minimum of 1 damage) and when you take damage you gain 1 round of {@variantrule Resolution|GW2}."
+      ]
+    },
+    {
+      "name": "Magnetic Aura",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Aura|GW2}",
+        "While you are under the effect of this {@variantrule Aura|GW2}, when a ranged attack would hit you, it instead gets reflected back to the attacker. If the attack would hit the attacker, it deals damage as normal; otherwise, it misses."
       ]
     },
     {
@@ -5052,6 +5152,14 @@
       ]
     },
     {
+      "name": "Shocking Aura",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Aura|GW2}",
+        "While you are under the effect of this {@variantrule Aura|GW2}, when you take damage the source of that damage is {@variantrule Stun|GW2|Stunned} for 1 round if they are within 25 feet of you."
+      ]
+    },
+    {
       "name": "Skill",
       "source": "GW2",
       "entries": [
@@ -5118,6 +5226,23 @@
       ]
     },
     {
+      "name": "Stun",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Control Effect|GW2}",
+        "While you are under the effect of this {@variantrule Control Effect|GW2}, you cannot take {@variantrule action|XPHB|actions}, {@variantrule bonus action|XPHB|bonus actions}, {@variantrule reaction|XPHB|reactions} or move. Additionally, you automatically fail strength and dexterity saving throws.",
+        "A creature with a {@variantrule Defiance Bar|GW2} takes 100 defiance bar damage per round of {@variantrule Stun|GW2} instead of being affected."
+      ]
+    },
+    {
+      "name": "Stun Break",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Property|GW2}",
+        "{@variantrule Skill|GW2|Skills} with this {@variantrule Property|GW2} can be used to end any {@variantrule Control Effect|GW2} affecting you, even if the {@variantrule Control Effect|GW2} would normally prevent you from taking actions."
+      ]
+    },
+    {
       "name": "Superspeed",
       "source": "GW2",
       "entries": [
@@ -5140,7 +5265,7 @@
       "name": "Taunt",
       "source": "GW2",
       "entries": [
-        "{@variantrule Condition|GW2}",
+        "{@variantrule Condition|GW2}|{@variantrule Control Effect|GW2}",
         "While you are under the effect of this {@variantrule Condition|GW2}, you must move closer to the source of the {@variantrule Condition|GW2} and must use the Dash action to move toward it on your turn, if possible.",
         "If you are already within 5 feet of the source, you must use your action to make an unarmed strike against the source.",
         "Stacks duration.",

@@ -4592,7 +4592,7 @@
       "classSource": "GW2",
       "level": 1,
       "entries": [
-        "You have learned to attune yourself to different elemental forces, allowing you to channel their power. Once, during your turn, you can swap you current attunement to a different element (no {@variantrule action|XPHB} required). Each attunement has a cooldown time of 10 seconds, during which you cannot switch to that attunement again.",
+        "You have learned to attune yourself to different elemental forces, allowing you to channel their power. Once, during your turn, you can swap you current attunement to a different element (no {@variantrule action|XPHB} required). Each attunement has a reacharge of {@chance 55|10+}, during which you cannot switch to that attunement again.",
         "Choose one of the following attunements: {@b Fire}, {@b Water}, {@b Air}, or {@b Earth} to attune to now, you can choose additional attunements as you gain levels in this class, for a total of 2 at level 5, 3 at level 10 and 4 at level 15.", 
         "Each attunement grants you access to different {@variantrule weapon skill|GW2|weapon skills} as shown in the Weapon Skills table above."
       ]
@@ -5152,7 +5152,7 @@
       "classSource": "GW2",
       "level": 1,
       "entries": [
-        "You have learned to tap into the power of death itself. During your turn, you can enter or exit Death Shroud (no {@variantrule Action|XPHB} required) if you have at least 10% life force. Once you exit Death Shroud, you cannot enter it again until the cooldown time of 10 seconds has elapsed.",
+        "You have learned to tap into the power of death itself. During your turn, you can enter or exit Death Shroud (no {@variantrule Action|XPHB} required) if you have at least 10% life force. Once you exit Death Shroud, you cannot enter it again until the recharged ({@chance 55|10+}).",
         "{@b Life Force.} Your life force is a pool of energy that fuels your necromantic abilities. Your maximum life force is equal to 69% of your maximum hit points.",
         "{@b Gaining Life Force.} When you finish a short rest, you regain life force up to 50% of your maximum life force. When you finish a long rest, you regain life force up to 100% of your maximum life force. While not in Death Shroud, whenever a creature within 120 feet of you dies, you regain life force equal to 10% of your maximum life force.",
         "While in Death Shroud, you gain the following effects:",
@@ -5670,12 +5670,14 @@
       ],
       "entries": [
         "{@b Casting Time:} 1 {@variantrule Action|XPHB}",
-        "{@b Range:} Melee Weapon Attack",
-        "{@b Target:} Two creatures within reach",
         "{@b Cooldown:} None",
+        "{@b Range:} 13 feet",
+        "{@b Target:} Two creatures within reach",
         "{@b Duration:} Instantaneous",
-        "{@b Properties:} Chain",
-        "{@b Effect:} Make a melee weapon attack against up to two creatures within reach. On a hit, a target takes necrotic damage equal to {@table Proficiency Bonus|XPHB|PB}d4 + the ability modifier used for the attack roll. You can then immmediately use {@optfeature Necrotic Stab|GW2} as a special action."
+        "{@b Properties:} {@variantrule Chain|GW2|Chain:} {@optfeature Necrotic Slash|GW2} -> {@optfeature Necrotic Stab|GW2} -> {@optfeature Necrotic Bite|GW2}",
+        "{@b Description:} Slash your foe twice. ",
+        "{@b Effect:} Make two melee weapon attack against up to two creatures within reach each. On a hit, a target takes {@damage 1d4} necrotic damage.",
+        "{@b Scaling:} The damage increases by 1d4 when you reach levels 5 ({@damage 2d4}), 11 ({@damage 3d4}), and 17 ({@damage 4d4})."
       ]
     },
     {
@@ -5691,13 +5693,16 @@
         }
       ],
       "entries": [
-        "{@b Casting Time:} Special Action",
-        "{@b Range:} Melee Weapon Attack",
+        "{@variantrule Weapon Skill|GW2}",
+        "{@b Casting Time:} 1 {@variantrule Bonus Action|XPHB}",
+        "{@b Recharge:} None",
+        "{@b Range:} 13 feet",
         "{@b Target:} Two creatures within reach",
-        "{@b Cooldown:} None",
         "{@b Duration:} Instantaneous",
-        "{@b Properties:} Chain",
-        "{@b Effect:} Make a melee weapon attack against up to two creatures within reach. On a hit, a target takes necrotic damage equal to {@table Proficiency Bonus|XPHB|PB}d4 + the ability modifier used for the attack roll and you gain 4% life force for each target hit. You can then immmediately use {@optfeature Necrotic Bite|GW2} as a {@variantrule Bonus Action|XPHB}."
+        "{@b Properties:} {@variantrule Chain|GW2|Chain:} {@optfeature Necrotic Slash|GW2} -> {@optfeature Necrotic Stab|GW2} -> {@optfeature Necrotic Bite|GW2}",
+        "{@b Description:} Strike your foe again.",
+        "{@b Effect:} Make a melee weapon attack against up to two creatures within reach. On a hit, a target takes {@damage 1d4} necrotic damage. You gain 4% life force for each target hit.",
+        "{@b Scaling:} The damage increases by 1d4 when you reach levels 5 ({@damage 2d4}), 11 ({@damage 3d4}), and 17 ({@damage 4d4})."
       ]
     },
     {
@@ -5713,13 +5718,16 @@
         }
       ],
       "entries": [
-        "{@b Casting Time:} {@variantrule Bonus Action|XPHB}",
-        "{@b Range:} Melee Weapon Attack",
+        "{@variantrule Weapon Skill|GW2}",
+        "{@b Casting Time:} Special Action",
+        "{@b Recharge:} None",
+        "{@b Range:} 13 feet",
         "{@b Target:} Two creatures within reach",
-        "{@b Cooldown Time:} None",
         "{@b Duration:} Instantaneous",
-        "{@b Properties:} Chain",
-        "{@b Effect:} Make a melee weapon attack against up to two creatures within reach. On a hit, a target takes necrotic damage equal to {@table Proficiency Bonus|XPHB|PB}d6 + the ability modifier used for the attack roll and you gain 6% life force for each target hit."
+        "{@b Properties:} {@variantrule Chain|GW2|Chain:} {@optfeature Necrotic Slash|GW2} -> {@optfeature Necrotic Stab|GW2} -> {@optfeature Necrotic Bite|GW2}",
+        "{@b Description:} Strike your foe and gain life force.",
+        "{@b Effect:} Make a melee weapon attack against up to two creatures within reach. On a hit, a target takes {@damage 1d6} necrotic damage. You gain 6% life force for each target hit.",
+        "{@b Scaling:} The damage increases by 1d6 when you reach levels 5 ({@damage 2d6}), 11 ({@damage 3d6}), and 17 ({@damage 4d6})."
       ]
     },
     {
@@ -5735,15 +5743,16 @@
         }
       ],
       "entries": [
+        "{@variantrule Weapon Skill|GW2}",
         "{@b Casting Time:} 1 {@variantrule Bonus Action|XPHB}",
-        "{@b Cooldown:} 6 seconds",
+        "{@b Recharge:} {@chance 55|10+}",
         "{@b Range:} 120 feet",
         "{@b Target:} 18-foot-radius sphere",
         "{@b Duration:} 4 seconds",
         "{@b Properties:} {@variantrule Combo Field|GW2} (Fire)",
         "{@b Description:} Make lava erupt from the target area.",
-        "{@b Effect:} Choose a point that you can see within range. For the duration, you create a 18-foot-radius Sphere centered on that point. Each creature in that Sphere must make a Dexterity saving throw. On a failed save, a target takes 2d6 fire damage and starts {@variantrule Burning|GW2} for 1 round taking 1d6 damage. On a successful save, a target takes half as much damage but suffers no other effects. A creature also makes this save if it enters the Cylinder or ends its turn there",
-        "{@b Scaling:} The damage increases each by 1d6 when you reach levels 5 (3d6 & 2d6), 11 (4d6 & 3d6), and 17 (5d6 & 4d6)."
+        "{@b Effect:} Choose a point that you can see within range. For the duration, you create a 18-foot-radius Sphere centered on that point. Each creature in that Sphere must make a Dexterity saving throw. On a failed save, a target takes {@damage 2d6} fire damage and starts {@variantrule Burning|GW2} for 1 round taking {@damage 1d6} damage. On a successful save, a target takes half as much damage but suffers no other effects. A creature also makes this save if it enters the Cylinder or ends its turn there",
+        "{@b Scaling:} The damage increases each by 1d6 when you reach levels 5 ({@damage 3d6} & {@damage 2d6}), 11 ({@damage 4d6} & {@damage 3d6}), and 17 ({@damage 5d6} & {@damage 4d6})."
 
       ]
     }
@@ -5836,6 +5845,14 @@
         "The amount of fire damage is determined by the effect that applied it.",
         "Stacks intensity.",
         "This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Aegis|GW2}."
+      ]
+    },
+    {
+      "name": "Chain",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Property|GW2}",
+        "When you use a skill with this {@variantrule Property|GW2}, you gain access to the next skill in the chain if you deal damage with it."
       ]
     },
     {
@@ -6279,11 +6296,11 @@
         "Most skills have the following components:",
         "{@b Name:} The name of the skill.",
         "{@b Requirements:} Any prerequisites or conditions that must be met to use the skill.",
+        "{@b Type:} The category of the skill (e.g., weapon skill, healing skill, etc.).",
         "{@b Casting Time:} The amount of time it takes to use the skill.",
-        "{@b Cooldown:} The amount of time that must pass before the skill can be used again.",
+        "{@b Recharge:} The number you need to roll on a d20 to use the skill again. Roll 1d20 for each skill that is on recharge at the start of your turn.",
         "{@b Range:} The distance at which the skill can be used.",
         "{@b Target:} The creature(s) or area affected by the skill.",
-        "{@b Cooldown:} The amount of time that must pass before the skill can be used again.",
         "{@b Duration:} The length of time the skill's effects last.",
         "{@b Properties:} Any special attributes or characteristics of the skill.",
         "{@b Description:} A description of how the skill is used and how it looks.",

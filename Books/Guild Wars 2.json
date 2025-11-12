@@ -5152,7 +5152,7 @@
       "classSource": "GW2",
       "level": 1,
       "entries": [
-        "You have learned to tap into the power of death itself. During your turn, you can enter or exit Death Shroud (no {@variantrule Action|XPHB} required) if you have at least 10% life force. Once you exit Death Shroud, you cannot enter it again until start of your turn in two rounds.",
+        "You have learned to tap into the power of death itself. During your turn, you can enter or exit Death Shroud (no {@variantrule Action|XPHB} required) if you have at least 10% life force. Once you exit Death Shroud, you cannot enter it again until the cooldown time of 10 seconds has elapsed.",
         "{@b Life Force.} Your life force is a pool of energy that fuels your necromantic abilities. Your maximum life force is equal to 69% of your maximum hit points.",
         "{@b Gaining Life Force.} When you finish a short rest, you regain life force up to 50% of your maximum life force. When you finish a long rest, you regain life force up to 100% of your maximum life force. While not in Death Shroud, whenever a creature within 120 feet of you dies, you regain life force equal to 10% of your maximum life force.",
         "While in Death Shroud, you gain the following effects:",
@@ -5716,10 +5716,35 @@
         "{@b Casting Time:} {@variantrule Bonus Action|XPHB}",
         "{@b Range:} Melee Weapon Attack",
         "{@b Target:} Two creatures within reach",
-        "{@b Cooldown:} None",
+        "{@b Cooldown Time:} None",
         "{@b Duration:} Instantaneous",
         "{@b Properties:} Chain",
         "{@b Effect:} Make a melee weapon attack against up to two creatures within reach. On a hit, a target takes necrotic damage equal to {@table Proficiency Bonus|XPHB|PB}d6 + the ability modifier used for the attack roll and you gain 6% life force for each target hit."
+      ]
+    },
+    {
+      "name": "Lava Font",
+      "source": "GW2",
+      "page": 42,
+      "featureType": [
+        "WS"
+      ],
+      "prerequisite": [
+        {
+          "other": "Level 3+ Elementalist, Two Handed Staff & attuned to Fire."
+        }
+      ],
+      "entries": [
+        "{@b Casting Time:} 1 {@variantrule Bonus Action|XPHB}",
+        "{@b Cooldown:} 6 seconds",
+        "{@b Range:} 120 feet",
+        "{@b Target:} 18-foot-radius sphere",
+        "{@b Duration:} 4 seconds",
+        "{@b Properties:} {@variantrule Combo Field|GW2} (Fire)",
+        "{@b Description:} Make lava erupt from the target area.",
+        "{@b Effect:} Choose a point that you can see within range. For the duration, you create a 18-foot-radius Sphere centered on that point. Each creature in that Sphere must make a Dexterity saving throw. On a failed save, a target takes 2d6 fire damage and starts {@variantrule Burning|GW2} for 1 round taking 1d6 damage. On a successful save, a target takes half as much damage but suffers no other effects. A creature also makes this save if it enters the Cylinder or ends its turn there",
+        "{@b Scaling:} The damage increases each by 1d6 when you reach levels 5 (3d6 & 2d6), 11 (4d6 & 3d6), and 17 (5d6 & 4d6)."
+
       ]
     }
   ],
@@ -6255,7 +6280,7 @@
         "{@b Name:} The name of the skill.",
         "{@b Requirements:} Any prerequisites or conditions that must be met to use the skill.",
         "{@b Casting Time:} The amount of time it takes to use the skill.",
-        "{@b Cool Down Time:} The amount of time that must pass before the skill can be used again.",
+        "{@b Cooldown:} The amount of time that must pass before the skill can be used again.",
         "{@b Range:} The distance at which the skill can be used.",
         "{@b Target:} The creature(s) or area affected by the skill.",
         "{@b Cooldown:} The amount of time that must pass before the skill can be used again.",

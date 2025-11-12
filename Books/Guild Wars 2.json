@@ -4592,8 +4592,8 @@
       "classSource": "GW2",
       "level": 1,
       "entries": [
-        "You have learned to attune yourself to different elemental forces, allowing you to channel their power. Once, during your turn, you can swap you current attunement to a different element (no {@variantrule action|XPHB} required).",
-        "Choose one of the following attunements: {@b Fire}, {@b Water}, {@b Air}, or {@b Earth} to gain access to now, you can choose additional attunements as you gain levels in this class, for a total of 2 at level 5, 3 at level 10 and 4 at level 15.", 
+        "You have learned to attune yourself to different elemental forces, allowing you to channel their power. Once, during your turn, you can swap you current attunement to a different element (no {@variantrule action|XPHB} required). Each attunement has a cooldown time of 10 seconds, during which you cannot switch to that attunement again.",
+        "Choose one of the following attunements: {@b Fire}, {@b Water}, {@b Air}, or {@b Earth} to attune to now, you can choose additional attunements as you gain levels in this class, for a total of 2 at level 5, 3 at level 10 and 4 at level 15.", 
         "Each attunement grants you access to different {@variantrule weapon skill|GW2|weapon skills} as shown in the Weapon Skills table above."
       ]
     },
@@ -4759,23 +4759,23 @@
           "rows": [
             [
               "{@b Air}",
-              "{@optfeature Well of Corruption|GW2} or {@optfeature Well of Darkness|GW2} or {@optfeature Well of Power|GW2} or {@optfeature Well of Suffering|GW2}"
+              "{@optfeature Glyph of Elemental Power|GW2} or {@optfeature Glyph of Lesser Elementals|GW2} or {@optfeature Glyph of Renewal|GW2} or {@optfeature Glyph of Storms|GW2}"
             ],
             [
               "{@b Arcane}",
-              "{@optfeature Blood Is Power|GW2} or {@optfeature Corrosive Poison Cloud|GW2} or {@optfeature Corrupt Boon|GW2} or {@optfeature Epidemic|GW2}"
+              "{@optfeature Arcane Blast|GW2} or {@optfeature Arcane Echo|GW2} or {@optfeature Arcane Shield|GW2} or {@optfeature Arcane Wave|GW2}"
             ],
             [
               "{@b Earth}",
-              "{@optfeature Summon Bone Fiend|GW2} -> {@optfeature Rigor Mortis|GW2} or {@optfeature Summon Bone Minions|GW2} -> {@optfeature Putrid Explosion|GW2} or {@optfeature Summon Flesh Wurm|GW2} -> {@optfeature Necrotic Traversal|GW2} or {@optfeature Summon Shadow Fiend|GW2} -> {@optfeature Haunt|GW2}"
+              "{@optfeature Signet of Air|GW2} or {@optfeature Signet of Earth|GW2} or {@optfeature Signet of Fire|GW2} or {@optfeature Signet of Water|GW2}"
             ],
             [
               "{@b Fire}",
-              "{@optfeature Spectral Armor|GW2} or {@optfeature Spectral Grasp|GW2} or {@optfeature Spectral Walk|GW2} -> {@optfeature Spectral Recall|GW2} or {@optfeature Spectral Ring|GW2}"
+              "{@optfeature Conjure Earth Shield|GW2} or {@optfeature Conjure Flame Axe|GW2} or {@optfeature Conjure Frost Bow|GW2} or {@optfeature Conjure Lightning Hammer|GW2}"
             ],
             [
               "{@b Water}",
-              "{@optfeature Plague Signet|GW2} or {@optfeature Signet of Spite|GW2} or {@optfeature Signet of Undeath|GW2} or {@optfeature Signet of the Locust|GW2}"
+              "{@optfeature Armor of Earth|GW2} or {@optfeature Cleansing Fire|GW2} or {@optfeature Lightning Flash|GW2} or {@optfeature Mist Form|GW2}"
             ]
           ]
         }
@@ -4944,16 +4944,16 @@
           ],
           "rows": [
             [
-              "{@b Curses}",
-              "{@optfeature Plaguelands|GW2}"
+              "{@b Air}",
+              "{@optfeature Glyph of Elementals|GW2}"
             ],
             [
-              "{@b Death Magic}",
-              "{@optfeature Summon Flesh Golem|GW2} -> {@optfeature Charge|GW2}"
+              "{@b Fire}",
+              "{@optfeature Conjure Fiery Greatsword|GW2}"
             ],
             [
-              "{@b Soul Reaping}",
-              "{@optfeature Lich Form|GW2}"
+              "{@b Water}",
+              "{@optfeature Tornado|GW2} or {@optfeature Whirlpool|GW2}"
             ]
           ]
         }
@@ -5961,6 +5961,22 @@
       ]
     },
     {
+      "name": "Combo Field",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Property|GW2}",
+        "A combo field is an area created by a skill that lasts for a certain duration. If a {@variantrule Combo Finisher|GW2} is used within the area of a combo field, it triggers a powerful {@variantrule Combos|GW2| combo effect} based on the type of combo field and finisher."
+      ]
+    },
+    {
+      "name": "Combo Finisher",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Property|GW2}",
+        "A combo finisher is a special property of {@variantrule skill|GW2|skills} that allows them to trigger a powerful effect when used in {@variantrule combos|GW2|combination} with a {@variantrule Combo Field|GW2|field}."
+      ]
+    },
+    {
       "name": "Condition",
       "source": "GW2",
       "entries": [
@@ -6239,6 +6255,7 @@
         "{@b Name:} The name of the skill.",
         "{@b Requirements:} Any prerequisites or conditions that must be met to use the skill.",
         "{@b Casting Time:} The amount of time it takes to use the skill.",
+        "{@b Cool Down Time:} The amount of time that must pass before the skill can be used again.",
         "{@b Range:} The distance at which the skill can be used.",
         "{@b Target:} The creature(s) or area affected by the skill.",
         "{@b Cooldown:} The amount of time that must pass before the skill can be used again.",

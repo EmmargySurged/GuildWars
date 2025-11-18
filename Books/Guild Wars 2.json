@@ -4194,7 +4194,7 @@
             ],
             [
               "6",
-              "1",
+              "2",
               "7",
               "0"
             ],
@@ -4232,55 +4232,55 @@
               "18",
               "3",
               "14",
-              "1"
+              "2"
             ],
             [
               "20",
               "3",
               "15",
-              "1"
+              "2"
             ],
             [
               "22",
               "3",
               "16",
-              "1"
+              "2"
             ],
             [
               "24",
               "3",
               "17",
-              "2"
+              "3"
             ],
             [
               "26",
               "3",
               "18",
-              "2"
+              "3"
             ],
             [
               "28",
               "4",
               "19",
-              "2"
+              "3"
             ],
             [
               "30",
               "4",
               "20",
-              "3"
+              "4"
             ],
             [
               "32",
               "4",
               "21",
-              "3"
+              "4"
             ],
             [
               "34",
               "4",
               "22",
-              "3"
+              "4"
             ],
             [
               "36",
@@ -4302,39 +4302,21 @@
         "Healing Skills|Engineer|GW2|1",
         "Tool Belt|Engineer|GW2|1",
         "Traits|Engineer|GW2|2",
+        "Utility Skills|Engineer|GW2|3",
         {
           "classFeature": "Engineer Subclass|Engineer|GW2|3",
           "gainSubclassFeature": true
         },
         "Ability Score Improvement|Engineer|GW2|4",
-        "Utility Skills|Engineer|GW2|5",
-        {
-          "classFeature": "Subclass Feature|Engineer|GW2|6",
-          "gainSubclassFeature": true
-        },
         "Ability Score Improvement|Engineer|GW2|8",
-        "Utility Skills|Engineer|GW2|9",
+        "Elite Skills|Engineer|GW2|10",
         {
           "classFeature": "Subclass Feature|Engineer|GW2|10",
           "gainSubclassFeature": true
         },
         "Ability Score Improvement|Engineer|GW2|12",
-        {
-          "classFeature": "Subclass Feature|Engineer|GW2|13",
-          "gainSubclassFeature": true
-        },
-        "Utility Skills|Engineer|GW2|15",
         "Ability Score Improvement|Engineer|GW2|16",
-        {
-          "classFeature": "Subclass Feature|Engineer|GW2|17",
-          "gainSubclassFeature": true
-        },
-        "Elite Skills|Engineer|GW2|18",
-        "Epic Boon|Engineer|GW2|19",
-        {
-          "classFeature": "Subclass Feature|Engineer|GW2|20",
-          "gainSubclassFeature": true
-        }
+        "Epic Boon|Engineer|GW2|19"
       ],
       "subclassTitle": "Subclass Feature",
       "hasFluff": true,
@@ -5420,7 +5402,7 @@
       "entries": [
         "Your Engineering skill has granted you access to {@variantrule traits|GW2|traits} that enhance your abilities. Choose two trait lines from the Engineer Traits table below. You learn the minor adept trait from each chosen trait line.",
         "The number of traits you know increases as you gain Engineer levels, as shown in the Traits column of the Engineer Features table. Whenever that number increases, choose additional {@variantrule traits|GW2|traits} from the Engineer Traits table until the number of traits on your list matches the number on the table. You can only learn traits from the trait lines you have chosen and must follow the prerequisites for each trait.",
-        "If the table presents multiple options for a given level, you can choose any number of them. If you have learned multiple traits in a choice, you can only prepare one of them at a time. You can change which traits you have prepared during a short or long rest.",
+        "If the table presents multiple options for each Major trait, you can choose any number of them. If you have learned multiple traits in a choice, you can only prepare one of them at a time. You can change which traits you have prepared during a short or long rest.",
         "{@table Engineer Traits|GW2}"
       ]
     },
@@ -5452,10 +5434,10 @@
       "page": 56,
       "className": "Engineer",
       "classSource": "GW2",
-      "level": 5,
+      "level": 3,
       "entries": [
-        "Having mastered the basics of elemental magic, you gain access to utility skills that provide various benefits. You learn one utility skill of your choice based on the trait line you chose at level 2 as shown in the Utility Skills table below.",
-        "Later you gain access to additional utility skills as you gain levels in this class. You can only prepare and use three utility skills at a time. You can change which utility skills you have learned during a short or long rest.",
+        "Your engineering prowess has led to you inventing new ways to succeed. To start, you learn four utility skills of your choice from the Utility Skills table below. The number of utility skills you know increases as you gain Engineer levels, as shown in the Utility Skills Known column of the Engineer Features table. Whenever that number increases, choose additional {@variantrule Utility Skill|GW2|Utility Skills} from the Engineer Utility Skills table until the number of skills on your list matches the number on the table.",
+        "You can only prepare and use one utility skill at a time. You can change which utility skill you have prepared during a short or long rest.",
         {
           "type": "table",
           "caption": "Engineer Utility Skills",
@@ -5465,24 +5447,20 @@
           ],
           "rows": [
             [
-              "{@b Air}",
-              "{@optfeature Glyph of Elemental Power|GW2} or {@optfeature Glyph of Lesser Elementals|GW2} or {@optfeature Glyph of Renewal|GW2} or {@optfeature Glyph of Storms|GW2}"
+              "{@b Alchemy}",
+              "{@optfeature Elixir B|GW2} or {@optfeature Elixir C|GW2} or {@optfeature Elixir R|GW2} or {@optfeature Elixir S|GW2} or {@optfeature Elixir U|GW2}"
             ],
             [
-              "{@b Arcane}",
-              "{@optfeature Arcane Blast|GW2} or {@optfeature Arcane Echo|GW2} or {@optfeature Arcane Shield|GW2} or {@optfeature Arcane Wave|GW2}"
+              "{@b Inventions}",
+              "{@optfeature Flame Turret|GW2} or {@optfeature Net Turret|GW2} or {@optfeature Rifle Turret|GW2} or {@optfeature Rocket Turret|GW2} or {@optfeature Thumper Turret|GW2}"
             ],
             [
-              "{@b Earth}",
-              "{@optfeature Signet of Air|GW2} or {@optfeature Signet of Earth|GW2} or {@optfeature Signet of Fire|GW2} or {@optfeature Signet of Water|GW2}"
+              "{@b Tools}",
+              "{@optfeature Personal Battering Ram|GW2} or {@optfeature Rocket Boots|GW2} or {@optfeature Slick Shoes|GW2} or {@optfeature Throw Mine|GW2} or {@optfeature Utility Goggles|GW2}"
             ],
             [
-              "{@b Fire}",
-              "{@optfeature Conjure Earth Shield|GW2} or {@optfeature Conjure Flame Axe|GW2} or {@optfeature Conjure Frost Bow|GW2} or {@optfeature Conjure Lightning Hammer|GW2}"
-            ],
-            [
-              "{@b Water}",
-              "{@optfeature Armor of Earth|GW2} or {@optfeature Cleansing Fire|GW2} or {@optfeature Lightning Flash|GW2} or {@optfeature Mist Form|GW2}"
+              "{@b NA}",
+              "{@optfeature Bomb Kit|GW2} or {@optfeature Elixir Gun|GW2} or {@optfeature Flamethrower|GW2} or {@optfeature Grenade Kit|GW2} or {@optfeature Tool Kit|GW2}"
             ]
           ]
         }
@@ -5511,14 +5489,37 @@
       ]
     },
     {
-      "name": "Utility Skills",
+      "name": "Elite Skills",
       "source": "GW2",
-      "page": 58,
+      "page": 64,
       "className": "Engineer",
       "classSource": "GW2",
-      "level": 9,
+      "level": 10,
       "entries": [
-        "You gain access to one additional utility skill based on the trait lines you chose at level 2 and 9 as shown in the Engineer Utility Skills table above."
+        "You have mastered the use of elite skills that provide powerful effects. To start, you learn one elite skill of your choice from the Elite Skills table below. The number of elite skills you know increases as you gain Engineer levels, as shown in the Elite Skills Known column of the Engineer Features table. Whenever that number increases, choose additional {@variantrule Elite Skill|GW2|Elite Skills} from the Engineer Elite Skills table until the number of skills on your list matches the number on the table.",
+        "You can only prepare and use one elite skill at a time. You can change which elite skill you have prepared during a short or long rest.",
+        {
+          "type": "table",
+          "caption": "Engineer Elite Skills",
+          "colLabels": [
+            "Trait Line",
+            "Elite Skill"
+          ],
+          "rows": [
+            [
+              "{@b Alchemy}",
+              "{@optfeature Elixir X|GW2}"
+            ],
+            [
+              "{@b Inventions}",
+              "{@optfeature Supply Crate|GW2}"
+            ],
+            [
+              "{@b NA}",
+              "{@optfeature Elite Mortar Kit|GW2}"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -5555,17 +5556,6 @@
       ]
     },
     {
-      "name": "Utility Skills",
-      "source": "GW2",
-      "page": 61,
-      "className": "Engineer",
-      "classSource": "GW2",
-      "level": 15,
-      "entries": [
-        "You gain access to one additional utility skill based on the trait lines you chose at level 2 and 9 as shown in the Engineer Utility Skills table above."
-      ]
-    },
-    {
       "name": "Ability Score Improvement",
       "source": "GW2",
       "page": 64,
@@ -5585,40 +5575,6 @@
       "level": 17,
       "entries": [
         "At 17th level, you gain a feature granted by your Engineer subclass."
-      ]
-    },
-    {
-      "name": "Elite Skills",
-      "source": "GW2",
-      "page": 64,
-      "className": "Engineer",
-      "classSource": "GW2",
-      "level": 18,
-      "entries": [
-        "You have mastered the use of elite skills that provide powerful effects. You learn one elite skill of your choice based on the trait line you chose at level 2 and 9 as shown in the Elite Skills table below.",
-        "You can only prepare and use one elite skill at a time. You can change which elite skill you have learned during a short or long rest.",
-        {
-          "type": "table",
-          "caption": "Engineer Elite Skills",
-          "colLabels": [
-            "Trait Line",
-            "Elite Skill"
-          ],
-          "rows": [
-            [
-              "{@b Air}",
-              "{@optfeature Glyph of Elementals|GW2}"
-            ],
-            [
-              "{@b Fire}",
-              "{@optfeature Conjure Fiery Greatsword|GW2}"
-            ],
-            [
-              "{@b Water}",
-              "{@optfeature Tornado|GW2} or {@optfeature Whirlpool|GW2}"
-            ]
-          ]
-        }
       ]
     },
     {

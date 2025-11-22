@@ -244,6 +244,212 @@
   ],
   "item": [],
   "monster": [],
+  "optionalfeature": [
+    {
+      "name": "Experimental Union",
+      "source": "GW2VoE",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "Access to the Amalgam Elite Specialization."
+        }
+      ],
+      "entries": [
+        "Through asuran ingenuity, you are host to a mercurial mold. You are able to command it using selectable morph skills that replace your toolbelt skills or even fully merge with it to evolve into a superior being. Morph skills selected will alter the composition of the mercurial mold, changing the bonuses it grants you when you evolve. Gain access to stance utility skills."
+      ]
+    },
+    {
+      "name": "Stainless Steel",
+      "source": "GW2VoE",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Experimental Union|GW2VoE}"
+        }
+      ],
+      "entries": [
+        "Convert conditions to boons when you use a stance skill or evolve."
+      ]
+    },
+    {
+      "name": "Innervating Alloy",
+      "source": "GW2VoE",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Experimental Union|GW2VoE}"
+        }
+      ],
+      "entries": [
+        "Heal every second while you have barrier. Heal when you evolve."
+      ]
+    },
+    {
+      "name": "Hardened Chrome",
+      "source": "GW2VoE",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Experimental Union|GW2VoE}"
+        }
+      ],
+      "entries": [
+        "Morph skills and evolving grant protection to yourself."
+      ]
+    },
+    {
+      "name": "Hybrid Vigor",
+      "source": "GW2VoE",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Stainless Steel|GW2VoE} or {@optfeature Innervating Alloy|GW2VoE} or {@optfeature Hardened Chrome|GW2VoE}"
+        }
+      ],
+      "entries": [
+        "Gain vitality. Gain barrier when you use a morph skill."
+      ]
+    },
+    {
+      "name": "Carbolic Composition",
+      "source": "GW2VoE",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Hybrid Vigor|GW2VoE}"
+        }
+      ],
+      "entries": [
+        "Amalgam skills inflict poison on hit. Poison you inflict lasts longer."
+      ]
+    },
+    {
+      "name": "Mercurial Tendencies",
+      "source": "GW2VoE",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Hybrid Vigor|GW2VoE}"
+        }
+      ],
+      "entries": [
+        "Disabling an enemy reduces the cooldown of Evolve."
+      ]
+    },
+    {
+      "name": "Silver Lining",
+      "source": "GW2VoE",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Hybrid Vigor|GW2VoE}"
+        }
+      ],
+      "entries": [
+        "Evolve no longer inherits bonuses from strains. Morph skills grant their strain bonuses."
+      ]
+    },
+    {
+      "name": "Willing Host",
+      "source": "GW2VoE",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Carbolic Composition|GW2VoE} or {@optfeature Mercurial Tendencies|GW2VoE} or {@optfeature Silver Lining|GW2VoE}"
+        }
+      ],
+      "entries": [
+        "Using a morph skill increases your damage for a duration."
+      ]
+    },
+    {
+      "name": "Symbiotic Synergy",
+      "source": "GW2VoE",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Willing Host|GW2VoE}"
+        }
+      ],
+      "entries": [
+        "Evolve recharges morph skills. Morph skills deal increased strike damage."
+      ]
+    },
+    {
+      "name": "New Genes",
+      "source": "GW2VoE",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Willing Host|GW2VoE}"
+        }
+      ],
+      "entries": [
+        "Evolve grants boons to allies. Grant an additional boon based on which morph skill was used."
+      ]
+    },
+    {
+      "name": "Double Helix",
+      "source": "GW2VoE",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Willing Host|GW2VoE}"
+        }
+      ],
+      "entries": [
+        "Evolve has two charges and grants an increased attribute bonus."
+      ]
+    }
+  ],
   "feat": [],
   "spell": [],
   "language": [],
@@ -301,149 +507,149 @@
   "race": [],
   "raceFluff": [],
   "subclassFeature": [
-        {
-            "name": "Minor Adept",
-            "source": "GW2VoE",
-            "className": "Elementalist",
-            "classSource": "GW2",
-            "subclassShortName": "Evoker",
-            "subclassSource": "GW2VoE",
-            "level": 3,
-            "entries": [
-                "Your elemental magic has taken the form of four spirits of the wild. You gain the {@optfeature Evocation|GW2VoE} minor adept trait."
-            ]
-        },
-        {
-            "name": "Healing Skill",
-            "source": "GW2VoE",
-            "className": "Elementalist",
-            "classSource": "GW2",
-            "subclassShortName": "Evoker",
-            "subclassSource": "GW2VoE",
-            "level": 3,
-            "entries": [
-                "Take comfort in you spirit familiar. You gain access to the {@optfeature Rejuvenate|GW2VoE} healing skill and now have the option to learn it when you choose your healing skill."
-            ]
-        },
-        {
-            "name": "Major Adept",
-            "source": "GW2VoE",
-            "className": "Elementalist",
-            "classSource": "GW2",
-            "subclassShortName": "Evoker",
-            "subclassSource": "GW2VoE",
-            "level": 6,
-            "entries": [
-                "Your bond to your animal spirit has grown. You gain the choice of one of the following major adept traits: {@optfeature Fiery Might|GW2VoE}, {@optfeature Altruistic Aspect|GW2VoE}, or {@optfeature Spirit's Succor|GW2VoE}. You can change which trait you have learned during a short or long rest."
-            ]
-        },
-        {
-            "name": "Utility Skill",
-            "source": "GW2VoE",
-            "className": "Elementalist",
-            "classSource": "GW2",
-            "subclassShortName": "Evoker",
-            "subclassSource": "GW2VoE",
-            "level": 6,
-            "entries": [
-                "Channeling the fury of your fox spirit, you gain access to the {@optfeature Fox's Fury|GW2VoE} utility skill and now have the option to learn it when you choose your utility skill."
-            ]
-        },
-        {
-            "name": "Minor Master",
-            "source": "GW2VoE",
-            "className": "Elementalist",
-            "classSource": "GW2",
-            "subclassShortName": "Evoker",
-            "subclassSource": "GW2VoE",
-            "level": 10,
-            "entries": [
-                "Your familiar has given you a boost to one of your {@variantrule Boon|GW2|boons}. You gain the {@optfeature Enhanced Potency|GW2VoE} minor master trait."
-            ]
-        },
-        {
-            "name": "Utility Skill",
-            "source": "GW2VoE",
-            "className": "Elementalist",
-            "classSource": "GW2",
-            "subclassShortName": "Evoker",
-            "subclassSource": "GW2VoE",
-            "level": 10,
-            "entries": [
-                "Your otter familiar has given you access to the ability to heal and support your allies. You gain access to the {@optfeature Otter's Compassion|GW2VoE} utility skill and now have the option to learn it when you choose your utility skill."
-            ]
-        },
-        {
-            "name": "Major Master",
-            "source": "GW2VoE",
-            "className": "Elementalist",
-            "classSource": "GW2",
-            "subclassShortName": "Evoker",
-            "subclassSource": "GW2VoE",
-            "level": 13,
-            "entries": [
-                "You have mastered your bond with your familiar. You gain the choice of one of the following major master traits: {@optfeature Familiar's Focus|GW2VoE}, {@optfeature Familiar's Blessing|GW2VoE}, or {@optfeature Elemental Dynamo|GW2VoE}. You can change which trait you have learned during a short or long rest."
-            ]
-        },
-        {
-            "name": "Utility Skill",
-            "source": "GW2VoE",
-            "className": "Elementalist",
-            "classSource": "GW2",
-            "subclassShortName": "Evoker",
-            "subclassSource": "GW2VoE",
-            "level": 13,
-            "entries": [
-                "Quickly dashing across the battlefield, your lightning hare spirit grants you the ability to move with incredible speed. You gain access to the {@optfeature Hare's Agility|GW2VoE} utility skill and now have the option to learn it when you choose your utility skill."
-            ]
-        },
-        {
-            "name": "Minor Grandmaster",
-            "source": "GW2VoE",
-            "className": "Elementalist",
-            "classSource": "GW2",
-            "subclassShortName": "Evoker",
-            "subclassSource": "GW2VoE",
-            "level": 17,
-            "entries": [
-                "Channeling the power of your familiar gives a small boost. You gain the {@optfeature Familiar's Prowess|GW2VoE} minor grandmaster trait."
-            ]
-        },
-        {
-            "name": "Utility Skill",
-            "source": "GW2VoE",
-            "className": "Elementalist",
-            "classSource": "GW2",
-            "subclassShortName": "Evoker",
-            "subclassSource": "GW2VoE",
-            "level": 17,
-            "entries": [
-                "Your toad familiar has granted you resilience and protection. You gain access to the {@optfeature Toad's Fortitude|GW2VoE} utility skill and now have the option to learn it when you choose your utility skill."
-            ]
-        },
-        {
-            "name": "Major Grandmaster",
-            "source": "GW2VoE",
-            "className": "Elementalist",
-            "classSource": "GW2",
-            "subclassShortName": "Evoker",
-            "subclassSource": "GW2VoE",
-            "level": 20,
-            "entries": [
-                "You perfectly embody the spirits of the wild in your elemental Magic. You gain the choice of one of the following major grandmaster traits: {@optfeature Galvanic Enchantment|GW2HoT}, {@optfeature Elemental Balance|GW2HoT}, or {@optfeature Specialized Elements|GW2HoT}. You can change which trait you have learned during a short or long rest."
-            ]
-        },
-        {
-            "name": "Elite Skill",
-            "source": "GW2VoE",
-            "className": "Elementalist",
-            "classSource": "GW2",
-            "subclassShortName": "Evoker",
-            "subclassSource": "GW2VoE",
-            "level": 20,
-            "entries": [
-                "Summon all your elemental familiars at once, unleashing their combined power. You gain access to the {@optfeature Elemental Procession|GW2VoE} elite skill and now have the option to learn it when you choose your elite skill."
-            ]
-        }
-    ]
+    {
+      "name": "Minor Adept",
+      "source": "GW2VoE",
+      "className": "Elementalist",
+      "classSource": "GW2",
+      "subclassShortName": "Evoker",
+      "subclassSource": "GW2VoE",
+      "level": 3,
+      "entries": [
+        "Your elemental magic has taken the form of four spirits of the wild. You gain the {@optfeature Evocation|GW2VoE} minor adept trait."
+      ]
+    },
+    {
+      "name": "Healing Skill",
+      "source": "GW2VoE",
+      "className": "Elementalist",
+      "classSource": "GW2",
+      "subclassShortName": "Evoker",
+      "subclassSource": "GW2VoE",
+      "level": 3,
+      "entries": [
+        "Take comfort in you spirit familiar. You gain access to the {@optfeature Rejuvenate|GW2VoE} healing skill and now have the option to learn it when you choose your healing skill."
+      ]
+    },
+    {
+      "name": "Major Adept",
+      "source": "GW2VoE",
+      "className": "Elementalist",
+      "classSource": "GW2",
+      "subclassShortName": "Evoker",
+      "subclassSource": "GW2VoE",
+      "level": 6,
+      "entries": [
+        "Your bond to your animal spirit has grown. You gain the choice of one of the following major adept traits: {@optfeature Fiery Might|GW2VoE}, {@optfeature Altruistic Aspect|GW2VoE}, or {@optfeature Spirit's Succor|GW2VoE}. You can change which trait you have learned during a short or long rest."
+      ]
+    },
+    {
+      "name": "Utility Skill",
+      "source": "GW2VoE",
+      "className": "Elementalist",
+      "classSource": "GW2",
+      "subclassShortName": "Evoker",
+      "subclassSource": "GW2VoE",
+      "level": 6,
+      "entries": [
+        "Channeling the fury of your fox spirit, you gain access to the {@optfeature Fox's Fury|GW2VoE} utility skill and now have the option to learn it when you choose your utility skill."
+      ]
+    },
+    {
+      "name": "Minor Master",
+      "source": "GW2VoE",
+      "className": "Elementalist",
+      "classSource": "GW2",
+      "subclassShortName": "Evoker",
+      "subclassSource": "GW2VoE",
+      "level": 10,
+      "entries": [
+        "Your familiar has given you a boost to one of your {@variantrule Boon|GW2|boons}. You gain the {@optfeature Enhanced Potency|GW2VoE} minor master trait."
+      ]
+    },
+    {
+      "name": "Utility Skill",
+      "source": "GW2VoE",
+      "className": "Elementalist",
+      "classSource": "GW2",
+      "subclassShortName": "Evoker",
+      "subclassSource": "GW2VoE",
+      "level": 10,
+      "entries": [
+        "Your otter familiar has given you access to the ability to heal and support your allies. You gain access to the {@optfeature Otter's Compassion|GW2VoE} utility skill and now have the option to learn it when you choose your utility skill."
+      ]
+    },
+    {
+      "name": "Major Master",
+      "source": "GW2VoE",
+      "className": "Elementalist",
+      "classSource": "GW2",
+      "subclassShortName": "Evoker",
+      "subclassSource": "GW2VoE",
+      "level": 13,
+      "entries": [
+        "You have mastered your bond with your familiar. You gain the choice of one of the following major master traits: {@optfeature Familiar's Focus|GW2VoE}, {@optfeature Familiar's Blessing|GW2VoE}, or {@optfeature Elemental Dynamo|GW2VoE}. You can change which trait you have learned during a short or long rest."
+      ]
+    },
+    {
+      "name": "Utility Skill",
+      "source": "GW2VoE",
+      "className": "Elementalist",
+      "classSource": "GW2",
+      "subclassShortName": "Evoker",
+      "subclassSource": "GW2VoE",
+      "level": 13,
+      "entries": [
+        "Quickly dashing across the battlefield, your lightning hare spirit grants you the ability to move with incredible speed. You gain access to the {@optfeature Hare's Agility|GW2VoE} utility skill and now have the option to learn it when you choose your utility skill."
+      ]
+    },
+    {
+      "name": "Minor Grandmaster",
+      "source": "GW2VoE",
+      "className": "Elementalist",
+      "classSource": "GW2",
+      "subclassShortName": "Evoker",
+      "subclassSource": "GW2VoE",
+      "level": 17,
+      "entries": [
+        "Channeling the power of your familiar gives a small boost. You gain the {@optfeature Familiar's Prowess|GW2VoE} minor grandmaster trait."
+      ]
+    },
+    {
+      "name": "Utility Skill",
+      "source": "GW2VoE",
+      "className": "Elementalist",
+      "classSource": "GW2",
+      "subclassShortName": "Evoker",
+      "subclassSource": "GW2VoE",
+      "level": 17,
+      "entries": [
+        "Your toad familiar has granted you resilience and protection. You gain access to the {@optfeature Toad's Fortitude|GW2VoE} utility skill and now have the option to learn it when you choose your utility skill."
+      ]
+    },
+    {
+      "name": "Major Grandmaster",
+      "source": "GW2VoE",
+      "className": "Elementalist",
+      "classSource": "GW2",
+      "subclassShortName": "Evoker",
+      "subclassSource": "GW2VoE",
+      "level": 20,
+      "entries": [
+        "You perfectly embody the spirits of the wild in your elemental Magic. You gain the choice of one of the following major grandmaster traits: {@optfeature Galvanic Enchantment|GW2HoT}, {@optfeature Elemental Balance|GW2HoT}, or {@optfeature Specialized Elements|GW2HoT}. You can change which trait you have learned during a short or long rest."
+      ]
+    },
+    {
+      "name": "Elite Skill",
+      "source": "GW2VoE",
+      "className": "Elementalist",
+      "classSource": "GW2",
+      "subclassShortName": "Evoker",
+      "subclassSource": "GW2VoE",
+      "level": 20,
+      "entries": [
+        "Summon all your elemental familiars at once, unleashing their combined power. You gain access to the {@optfeature Elemental Procession|GW2VoE} elite skill and now have the option to learn it when you choose your elite skill."
+      ]
+    }
+  ]
 }

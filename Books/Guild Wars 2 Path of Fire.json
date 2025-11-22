@@ -317,6 +317,212 @@
   ],
   "item": [],
   "monster": [],
+  "optionalfeature": [
+    {
+      "name": "Photon Projector",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "Access to the Holosmith Elite Specialization."
+        }
+      ],
+      "entries": [
+        "Photon Forge replaces your tool belt skill 5. Gain access to Exceed skills."
+      ]
+    },
+    {
+      "name": "Light Density Amplifier",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Photon Projector|GW2PoF}"
+        }
+      ],
+      "entries": [
+        "Deactivate Photon Forge reduces incoming damage but has increased passive heat generation."
+      ]
+    },
+    {
+      "name": "Prismatic Converter",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Photon Projector|GW2PoF}"
+        }
+      ],
+      "entries": [
+        "Deactivate Photon Forge converts conditions into boons based on your heat level."
+      ]
+    },
+    {
+      "name": "Solar Focusing Lens",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Photon Projector|GW2PoF}"
+        }
+      ],
+      "entries": [
+        "Your first few attacks after entering or exiting Photon Forge inflict burning and deal increased strike damage. This bonus is also granted if you overheat."
+      ]
+    },
+    {
+      "name": "Heat Therapy",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Light Density Amplifier|GW2PoF} or {@optfeature Prismatic Converter|GW2PoF} or {@optfeature Solar Focusing Lens|GW2PoF}"
+        }
+      ],
+      "entries": [
+        "Gain health per unit of heat lost. This trait does not function while cooling due to an overheat unless Photonic Blasting Module is equipped."
+      ]
+    },
+    {
+      "name": "Crystal Configuration: Storm",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Heat Therapy|GW2PoF}"
+        }
+      ],
+      "entries": [
+        "Photon Forge skill 1 now fires explosive projectiles, but generates extra heat."
+      ]
+    },
+    {
+      "name": "Crystal Configuration: Eclipse",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Heat Therapy|GW2PoF}"
+        }
+      ],
+      "entries": [
+        "Corona Burst grants a barrier for each target struck."
+      ]
+    },
+    {
+      "name": "Crystal Configuration: Zephyr",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Heat Therapy|GW2PoF}"
+        }
+      ],
+      "entries": [
+        "Holo Leap removes movement-impairing conditions, grants superspeed instead of swiftness, and inflicts cripple."
+      ]
+    },
+    {
+      "name": "Laser's Edge",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Crystal Configuration: Storm|GW2PoF} or {@optfeature Crystal Configuration: Eclipse|GW2PoF} or {@optfeature Crystal Configuration: Zephyr|GW2PoF}"
+        }
+      ],
+      "entries": [
+        "While Photon Forge is active, your outgoing strike damage is increased based on your current heat."
+      ]
+    },
+    {
+      "name": "Thermal Release Valve",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Laser's Edge|GW2PoF}"
+        }
+      ],
+      "entries": [
+        "Dodge rolling vents heat as an attack against nearby foes and grants vigor. (Attack will not occur without heat.)"
+      ]
+    },
+    {
+      "name": "Enhanced Capacity Storage Unit",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Laser's Edge|GW2PoF}"
+        }
+      ],
+      "entries": [
+        "Increases maximum heat capacity. While above 100% heat, periodically gain might. Some skills and traits gain additional heat tiers."
+      ]
+    },
+    {
+      "name": "Photonic Blasting Module",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Laser's Edge|GW2PoF}"
+        }
+      ],
+      "entries": [
+        "Overheat now blasts damage to nearby foes and no longer deals its initial damage to you. The tool belt recharge penalty for Overheat is reduced. Heat can only be lost after overheating. Damage over time from Overheat is still applied."
+      ]
+    }
+  ],
   "feat": [],
   "spell": [],
   "table": [],

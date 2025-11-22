@@ -27,9 +27,9 @@
       "ES": "Elite Skill",
       "MIT": "Minor Trait",
       "MJT": "Major Trait",
-      "APT": "Adept Trait",
-      "PRT": "Master Trait",
-      "GRT": "Grandmaster Trait"
+      "ADT": "Adept Trait",
+      "MAT": "Master Trait",
+      "GMT": "Grandmaster Trait"
     },
     "dateAdded": "1701938868",
     "dateLastModified": "1701938868",
@@ -4181,111 +4181,111 @@
               "0"
             ],
             [
-              "2",
+              "0",
               "1",
               "0",
               "0"
             ],
             [
+              "1",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "2",
+              "1",
+              "5",
+              "0"
+            ],
+            [
               "3",
-              "2",
-              "0",
-              "0"
-            ],
-            [
-              "4",
-              "2",
-              "0",
-              "0"
-            ],
-            [
-              "4",
-              "2",
-              "5",
-              "0"
-            ],
-            [
-              "5",
               "2",
               "6",
               "0"
             ],
             [
-              "6",
-              "3",
+              "4",
+              "2",
+              "7",
+              "0"
+            ],
+            [
+              "5",
+              "2",
               "8",
               "0"
             ],
             [
-              "7",
-              "3",
+              "6",
+              "2",
               "10",
               "0"
             ],
             [
               "7",
-              "3",
-              "12",
+              "2",
+              "11",
               "0"
             ],
             [
               "8",
               "3",
-              "13",
+              "12",
               "0"
             ],
             [
               "9",
               "3",
-              "14",
+              "13",
               "0"
             ],
             [
               "10",
+              "3",
+              "15",
+              "0"
+            ],
+            [
+              "11",
               "3",
               "16",
               "0"
             ],
             [
-              "10",
+              "12",
               "3",
+              "17",
+              "0"
+            ],
+            [
+              "13",
+              "4",
               "18",
               "0"
             ],
             [
-              "11",
+              "14",
               "4",
               "19",
               "0"
             ],
             [
-              "12",
+              "15",
               "4",
               "20",
               "1"
             ],
             [
-              "13",
+              "16",
               "4",
               "21",
-              "1"
-            ],
-            [
-              "14",
-              "4",
-              "22",
               "2"
             ],
             [
-              "15",
+              "17",
               "4",
-              "23",
-              "3"
-            ],
-            [
-              "16",
-              "4",
-              "23",
+              "22",
               "3"
             ],
             [
@@ -4298,27 +4298,49 @@
         }
       ],
       "classFeatures": [
-        "Weapon Skills|Engineer|GW2|1",
-        "Healing Skills|Engineer|GW2|1",
-        "Tool Belt|Engineer|GW2|1",
-        "Traits|Engineer|GW2|2",
         {
-          "classFeature": "Engineer Subclass|Engineer|GW2|3",
+          "classFeature": "Subclass Choice|Engineer|GW2|1",
+          "gainSubclassFeature": true
+        },
+        "Restorative Ingenuity|Engineer|GW2|1",
+        "Mechanized Mayhem|Engineer|GW2|1",
+        "Omni-Tool|Engineer|GW2|2",
+        "Engineering Prowess|Engineer|GW2|3",
+        {
+          "classFeature": "Specialization|Engineer|GW2|3",
           "gainSubclassFeature": true
         },
         "Ability Score Improvement|Engineer|GW2|4",
-        "Utility Skills|Engineer|GW2|5",
+        "A Skill for every Job|Engineer|GW2|4",
+        {
+          "classFeature": "Subclass Feature|Engineer|GW2|5",
+          "gainSubclassFeature": true
+        },
+        "Engineering Expertise|Engineer|GW2|6",
+        "Quick-Fix Omni-Tool|Engineer|GW2|7",
         "Ability Score Improvement|Engineer|GW2|8",
-        "More Utility Skills|Engineer|GW2|9",
+        "Always Prepared|Engineer|GW2|9",
         {
           "classFeature": "Subclass Feature|Engineer|GW2|10",
           "gainSubclassFeature": true
         },
+        "Mechanized Multiplicity|Engineer|GW2|11",
+        "Eternally Prepared|Engineer|GW2|12",
         "Ability Score Improvement|Engineer|GW2|12",
-        "More Utility Skills|Engineer|GW2|13",
-        "Elite Skills|Engineer|GW2|15",
+        "Engineering Perfection|Engineer|GW2|13",
+        "Omega-Tool|Engineer|GW2|14",
+        {
+          "classFeature": "Subclass Feature|Engineer|GW2|15",
+          "gainSubclassFeature": true
+        },
         "Ability Score Improvement|Engineer|GW2|16",
-        "Epic Boon|Engineer|GW2|19"
+        "Perfected Utility|Engineer|GW2|17",
+        "Advanced Engineering|Engineer|GW2|18",
+        "Epic Boon|Engineer|GW2|19",
+        {
+          "classFeature": "Subclass Feature|Engineer|GW2|20",
+          "gainSubclassFeature": true
+        }
       ],
       "subclassTitle": "Subclass Feature",
       "hasFluff": true,
@@ -5331,92 +5353,77 @@
       ]
     },
     {
-      "name": "Weapon Skills",
+      "name": "Subclass Choice",
+      "source": "GW2",
+      "page": 54,
+      "className": "Engineer",
+      "classSource": "GW2",
+      "level": 1,
+      "entries": [
+        "You gain a subclass of your choice. Your choice grants you features at levels 1, 3, 5, 10, 15, and 20."
+      ]
+    },
+    {
+      "name": "Restorative Ingenuity",
+      "source": "GW2",
+      "page": 54,
+      "className": "Engineer",
+      "classSource": "GW2",
+      "level": 1,
+      "entries": [
+        "You have learned unique ways to heal wounds and mend injuries. To start, you learn one {@variantrule Healing Skill|GW2|Healing Skill} of your choice, for which you qualify, from the {@table Engineer Healing Skills|GW2} table. The number of {@variantrule Healing Skill|GW2|Healing Skills} you know increases as you gain Engineer levels, as shown in the Healing Skills Known column of the Engineer Features table. Whenever that number increases, choose additional {@variantrule Healing Skill|GW2|Healing Skills}, for which you qualify, from the {@table Engineer Healing Skills|GW2} table until the number of {@variantrule Healing Skill|GW2|Healing Skill} on your list matches the number on the table.",
+        "You can only prepare and use one {@variantrule Healing Skill|GW2|Healing Skill} at a time, choosing from your learned {@variantrule Healing Skill|GW2|Healing Skills}. You can change which healing skill you have prepared during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}."
+      ]
+    },
+    {
+      "name": "Mechanized Mayhem",
       "source": "GW2",
       "page": 51,
       "className": "Engineer",
       "classSource": "GW2",
       "level": 1,
       "entries": [
-        "Your Engineer training has given you access to unique ways to enhance your weapons. Depending on the weapon you wield, your Engineer level, if you have proficiency with that weapon, and in which hand you wield it, you gain access to different {@variantrule weapon skill|GW2|weapon skills} as shown in the Weapon Skills table.",
+        "Your Engineer training has given you access to unique ways to enhance your weapons. Depending on the weapon you wield, your Engineer level, if you have proficiency with that weapon, in which hand you wield it, and if qualify for it, you gain access to different {@variantrule weapon skill|GW2|weapon skills} as shown in the {@table Engineer Weapon Skills|GW2} table.",
         "Whenever you attack with one of the weapons as part of a {@variantrule weapon skill|GW2}, you can use your Intelligence modifier for the attack and damage rolls instead of using Strength or Dexterity. If a {@variantrule weapon skill|GW2} requires a saving throw, the DC equals to 8 plus your Intelligence modifier and proficiency bonus plus any attack bonuses the weapon has.",
-        "Using the {@variantrule skill|GW2|skills} ascociated with your weapon requires great focus, you can only gain access to the {@variantrule skill|GW2|skills} for one weapon at a time.",
-        "When you reach certain levels in this class, you can enhance additional weapons. At level 5 you can enhance a second weapon, if that weapon is wielded in your off hand. You can change which weapon you are using to channel your elemental energy to during a short or long rest.",
-        "{@table Engineer Weapon Skills|GW2}"
+        "Using the {@variantrule skill|GW2|skills} ascociated with your weapon requires great focus, you can only gain access to the {@variantrule skill|GW2|skills} for one weapon at a time. You can change which weapon you are using during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}.",
+        "When you reach certain levels in this class, you can enhance additional weapons. At level 5 you can enhance a second weapon, if that weapon is wielded in your off hand."
       ]
     },
     {
-      "name": "Healing Skills",
-      "source": "GW2",
-      "page": 54,
-      "className": "Engineer",
-      "classSource": "GW2",
-      "level": 1,
-      "entries": [
-        "You have learned unique ways to heal wounds and mend injuries. To start, you learn one healing skill of your choice from the Healing Skills table below. The number of healing skills you know increases as you gain Engineer levels, as shown in the Healing Skills Known column of the Engineer Features table. Whenever that number increases, choose additional {@variantrule Healing Skill|GW2|Healing Skills} from the Engineer Healing Skills table until the number of skills on your list matches the number on the table.",
-        "You can only prepare and use one healing skill at a time. You can change which healing skill you have prepared during a short or long rest.",
-        {
-          "type": "table",
-          "caption": "Engineer Healing Skills",
-          "colLabels": [
-            "Trait Line",
-            "Healing Skill"
-          ],
-          "rows": [
-            [
-              "{@b Alchemy}",
-              "{@optfeature Elixir H|GW2}"
-            ],
-            [
-              "{@b Inventions}",
-              "{@optfeature Healing Turret|GW2}"
-            ],
-            [
-              "{@b Tools}",
-              "{@optfeature A.E.D.|GW2}"
-            ],
-            [
-              "{@b NA}",
-              "{@optfeature Med Kit|GW2}"
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Tool Belt",
+      "name": "Omni-Tool",
       "source": "GW2",
       "page": 52,
       "className": "Engineer",
       "classSource": "GW2",
-      "level": 1,
+      "level": 2,
       "entries": [
-        "You have a knack for getting the most out of your skills. Depedning on which {@variantrule Healing Skill|GW2|Healing-}, {@variantrule Utility Skill|GW2|Utility-} and {@variantrule Elite Skill|GW2|Elite-} skills you have prepared you gain access to special {@variantrule Profession Skill|GW2|Tool Belt Skills} as shown on the respective {@variantrule Skill|GW2|skills}."
+        "You have a versatile Omni-Tool that can adapt to a variety of situations. This tool takes the form of a wrench, screwdriver, or other basic tool. As a {@action Magic|XPHB} action, you can touch the tool and transform it into one of the following: {@item Carpenter's Tools|XPHB}, {@item Jeweler's Tools|XPHB}, {@item Mason's Tools|XPHB}, {@item Smith's Tools|XPHB}, {@item Thieves' Tools|XPHB}, {@item Tinker's Tools|XPHB} or {@item Woodcarver's Tools|XPHB}. Whatever form the tool takes, you have proficiency with it when you use it.",
+        "You can only have one Omni-Tool at a time. If you try to create a new one while you still have your current one, the current one is destroyed.",
+        "If you loose or destroy your Omni-Tool, you can create a new one during a {@variantrule long rest|XPHB}."
       ]
     },
     {
-      "name": "Traits",
+      "name": "Engineering Prowess",
       "source": "GW2",
       "page": 53,
       "className": "Engineer",
       "classSource": "GW2",
-      "level": 2,
+      "level": 3,
       "entries": [
-        "Your Engineering skill has granted you access to {@variantrule traits|GW2|traits} that enhance your abilities. Choose two trait lines from the Engineer Traits table below. You learn the minor adept trait from each chosen trait line.",
-        "The number of traits you know increases as you gain Engineer levels, as shown in the Traits column of the Engineer Features table. Whenever that number increases, choose additional {@variantrule traits|GW2|traits} from the Engineer Traits table until the number of traits on your list matches the number on the table. You can only learn traits from the trait lines you have chosen and must follow the prerequisites for each trait.",
-        "If the table presents multiple options for each Major trait, you can choose any number of them. If you have learned multiple traits in a choice, you can only prepare one of them at a time. You can change which traits you have prepared during a short or long rest.",
-        "{@table Engineer Traits|GW2}"
+        "Your Engineering prowess has granted you access to {@variantrule traits|GW2|traits} that enhance your abilities. To start, you gain access to the Specialization of your subclass and learn its Minor Adept {@variantrule traits|GW2|trait}.",
+        "The number of {@variantrule traits|GW2|traits} you know increases as you gain Engineer levels, as shown in the Traits column of the Engineer Features table. Whenever that number increases, choose additional {@variantrule traits|GW2|traits} from the {@table Engineer Traits|GW2} table until the number of {@variantrule traits|GW2|traits} on your list matches the number on the table. You can only learn {@variantrule traits|GW2|traits} from the Specializations you have access to and must follow the prerequisites for each {@variantrule traits|GW2|trait}.",
+        "Each Major {@variantrule traits|GW2|trait} has three options to choose from. When you learn a Major {@variantrule traits|GW2|trait}, you learn all three options, but you can only prepare one option at a time. You can change which option you have prepared during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}."
       ]
     },
     {
-      "name": "Engineer Subclass",
+      "name": "Specialization",
       "source": "GW2",
-      "page": 54,
+      "page": 53,
       "className": "Engineer",
       "classSource": "GW2",
       "level": 3,
       "entries": [
-        "At 3rd level, you choose an Engineer subclass that reflects your approach to elemental magic. Your choice grants you features at 3rd level and again at 6th, 10th, 13th, 17th, and 20th levels."
+        "You gain a feature granted by your Engineer subclass."
       ]
     },
     {
@@ -5431,51 +5438,15 @@
       ]
     },
     {
-      "name": "Utility Skills",
+      "name": "A Skill for every Job",
       "source": "GW2",
       "page": 56,
       "className": "Engineer",
       "classSource": "GW2",
-      "level": 5,
+      "level": 4,
       "entries": [
-        "Your engineering prowess has led to you inventing new ways to succeed. To start, you learn five utility skills of your choice from the Utility Skills table below. The number of utility skills you know increases as you gain Engineer levels, as shown in the Utility Skills Known column of the Engineer Features table. Whenever that number increases, choose additional {@variantrule Utility Skill|GW2|Utility Skills} from the Engineer Utility Skills table until the number of skills on your list matches the number on the table.",
-        "You can only prepare and use one utility skill at a time. You can change which utility skill you have prepared during a short or long rest.",
-        {
-          "type": "table",
-          "caption": "Engineer Utility Skills",
-          "colLabels": [
-            "Trait Line",
-            "Requirement",
-            "Utility Skills"
-          ],
-          "rows": [
-            [
-              "{@b Elixirs}",
-              "",
-              "{@optfeature Elixir B|GW2} or {@optfeature Elixir C|GW2} or {@optfeature Elixir R|GW2} or {@optfeature Elixir S|GW2} or {@optfeature Elixir U|GW2}"
-            ],
-            [
-              "{@b Turrets}",
-              "",
-              "{@optfeature Flame Turret|GW2} or {@optfeature Net Turret|GW2} or {@optfeature Rifle Turret|GW2} or {@optfeature Rocket Turret|GW2} or {@optfeature Thumper Turret|GW2}"
-            ],
-            [
-              "{@b Gadgets}",
-              "",
-              "{@optfeature Personal Battering Ram|GW2} or {@optfeature Rocket Boots|GW2} or {@optfeature Slick Shoes|GW2} or {@optfeature Throw Mine|GW2} or {@optfeature Utility Goggles|GW2}"
-            ],
-            [
-              "{@b Kits}",
-              "",
-              "{@optfeature Bomb Kit|GW2} or {@optfeature Elixir Gun|GW2} or {@optfeature Flamethrower|GW2} or {@optfeature Grenade Kit|GW2} or {@optfeature Tool Kit|GW2}"
-            ],
-            [
-              "{@b Wells}",
-              "{@subclassFeature Minor Adept|Engineer|GW2|Scrapper|GW2HoT|3||Scrapper}",
-              "{@optfeature Blast Gyro|GW2HoT} or {@optfeature Bulwark Gyro|GW2HoT} or {@optfeature Purge Gyro|GW2HoT} or {@optfeature Shredder Gyro|GW2HoT}"
-            ]
-          ]
-        }
+        "Your engineering prowess has led to you inventing new ways to succeed. To start, you learn five {@variantrule Utility Skill|GW2|Utility Skills} of your choice, for which you qualify, from the {@table Engineer Utility Skills|GW2} table. The number of {@variantrule Utility Skill|GW2|Utility Skills} you know increases as you gain Engineer levels, as shown in the Utility Skills Known column of the Engineer Features table. Whenever that number increases, choose additional {@variantrule Utility Skill|GW2|Utility Skills}, for which you qualify, from the {@table Engineer Utility Skills|GW2} until the number of {@variantrule Utility Skill|GW2|Utility Skills} on your list matches the number on the table.",
+        "You can only prepare and use one {@variantrule Utility Skill|GW2|Utility Skill} at a time. You can change which {@variantrule Utility Skill|GW2|Utility Skill} you have prepared during a short or long rest."
       ]
     },
     {
@@ -5484,9 +5455,31 @@
       "page": 57,
       "className": "Engineer",
       "classSource": "GW2",
+      "level": 5,
+      "entries": [
+        "You gain a feature granted by your Engineer subclass."
+      ]
+    },
+    {
+      "name": "Engineering Expertise",
+      "source": "GW2",
+      "page": 57,
+      "className": "Engineer",
+      "classSource": "GW2",
       "level": 6,
       "entries": [
-        "At 6th level, you gain a feature granted by your Engineer subclass."
+        "Your expertise in engineering has granted you access to a second Specialization. Choose a Specialization of your choice for which you qualify from the {@table Engineer Traits|GW2} table. When learning new {@variantrule traits|GW2|traits}, you can choose {@variantrule traits|GW2|traits} from either of your Specializations."
+      ]
+    },
+    {
+      "name": "Quick-Fix Omni-Tool",
+      "source": "GW2",
+      "page": 56,
+      "className": "Engineer",
+      "classSource": "GW2",
+      "level": 7,
+      "entries": [
+        "Your Omni-Tool has been modified for rapid repairs. While holding your Omni-Tool, you can use your {@variantrule bonus action|XPHB} to cast the {@spell Mending|XPHB} spell."
       ]
     },
     {
@@ -5501,48 +5494,47 @@
       ]
     },
     {
-      "name": "Elite Skills",
+      "name": "Always Prepared",
       "source": "GW2",
-      "page": 64,
+      "page": 57,
       "className": "Engineer",
       "classSource": "GW2",
-      "level": 10,
+      "level": 9,
       "entries": [
-        "You have mastered the use of elite skills that provide powerful effects. To start, you learn one elite skill of your choice from the Elite Skills table below. The number of elite skills you know increases as you gain Engineer levels, as shown in the Elite Skills Known column of the Engineer Features table. Whenever that number increases, choose additional {@variantrule Elite Skill|GW2|Elite Skills} from the Engineer Elite Skills table until the number of skills on your list matches the number on the table.",
-        "You can only prepare and use one elite skill at a time. You can change which elite skill you have prepared during a short or long rest.",
-        {
-          "type": "table",
-          "caption": "Engineer Elite Skills",
-          "colLabels": [
-            "Trait Line",
-            "Elite Skill"
-          ],
-          "rows": [
-            [
-              "{@b Alchemy}",
-              "{@optfeature Elixir X|GW2}"
-            ],
-            [
-              "{@b Inventions}",
-              "{@optfeature Supply Crate|GW2}"
-            ],
-            [
-              "{@b NA}",
-              "{@optfeature Elite Mortar Kit|GW2}"
-            ]
-          ]
-        }
+        "Your extensive training has made you exceptionally prepared for any situation. You can now prepare and use two {@variantrule Utility Skill|GW2|Utility Skills} at a time."
       ]
     },
     {
       "name": "Subclass Feature",
       "source": "GW2",
-      "page": 60,
+      "page": 57,
       "className": "Engineer",
       "classSource": "GW2",
       "level": 10,
       "entries": [
-        "At 10th level, you gain a feature granted by your Engineer subclass."
+        "You gain a feature granted by your Engineer subclass."
+      ]
+    },
+    {
+      "name": "Mechanized Multiplicity",
+      "source": "GW2",
+      "page": 57,
+      "className": "Engineer",
+      "classSource": "GW2",
+      "level": 11,
+      "entries": [
+        "You have learned to channel your engineering prowess through more weapons. You can designate a second set of weapons you can enhance, the second set either consists of one weapon wielded in your main hand and one in your off hand, or one two-handed weapon. Once during your turn, you can swap between them (no {@variantrule action|XPHB} required). Once you swamp weapons, you cannot switch again until recharged ({@chance 55|10+})."
+      ]
+    },
+    {
+      "name": "Eternally Prepared",
+      "source": "GW2",
+      "page": 57,
+      "className": "Engineer",
+      "classSource": "GW2",
+      "level": 12,
+      "entries": [
+        "You can now prepare and use three {@variantrule Utility Skill|GW2|Utility Skills} at a time."
       ]
     },
     {
@@ -5557,14 +5549,36 @@
       ]
     },
     {
-      "name": "Subclass Feature",
+      "name": "Engineering Perfection",
       "source": "GW2",
-      "page": 63,
+      "page": 57,
       "className": "Engineer",
       "classSource": "GW2",
       "level": 13,
       "entries": [
-        "At 13th level, you gain a feature granted by your Engineer subclass."
+        "You perfected your engineering. Choose a Specialization of your choice for which you qualify from the {@table Engineer Traits|GW2} table, that you do not already have access to. When learning new {@variantrule traits|GW2|traits}, you can choose {@variantrule traits|GW2|traits} from any of your Specializations."
+      ]
+    },
+    {
+      "name": "Omega-Tool",
+      "source": "GW2",
+      "page": 57,
+      "className": "Engineer",
+      "classSource": "GW2",
+      "level": 14,
+      "entries": [
+        "Your Omni-Tool has evolved into an Omega-Tool, capable of transforming into any tool you might need. As a {@action Magic|XPHB} action, you can touch the tool and transform it into any set of {@item Artisan's Tools|XPHB} or {@item Thieves' Tools|XPHB}. Whatever form the tool takes, you have expertise with it when you use it."
+      ]
+    },
+    {
+      "name": "Subclass Feature",
+      "source": "GW2",
+      "page": 57,
+      "className": "Engineer",
+      "classSource": "GW2",
+      "level": 15,
+      "entries": [
+        "You gain a feature granted by your Engineer subclass."
       ]
     },
     {
@@ -5579,14 +5593,26 @@
       ]
     },
     {
-      "name": "Subclass Feature",
+      "name": "Perfected Utility",
       "source": "GW2",
-      "page": 65,
+      "page": 64,
       "className": "Engineer",
       "classSource": "GW2",
       "level": 17,
       "entries": [
-        "At 17th level, you gain a feature granted by your Engineer subclass."
+        "You have mastered the use of {@variantrule elite skill|GW2|Elite Skills} that provide powerful effects. To start, you learn one {@variantrule elite skill|GW2|Elite Skill} of your choice, for which you qualify, from the {@table Engineer Elite Skills|GW2} table. The number of {@variantrule elite skill|GW2|Elite Skills} you know increases as you gain Engineer levels, as shown in the Elite Skills Known column of the Engineer Features table. Whenever that number increases, choose additional {@variantrule Elite Skill|GW2|Elite Skills}, for which you qualify, from the Engineer {@table Engineer Elite Skills|GW2} table until the number of {@variantrule Elite Skill|GW2|Elite Skills} on your list matches the number on the table.",
+        "You can only prepare and use one {@variantrule Elite Skill|GW2|Elite Skill} at a time. You can change which {@variantrule Elite Skill|GW2|Elite Skill} you have prepared during a short or long rest."
+      ]
+    },
+    {
+      "name": "Advanced Engineering",
+      "source": "GW2",
+      "page": 57,
+      "className": "Engineer",
+      "classSource": "GW2",
+      "level": 18,
+      "entries": [
+        "Your advanced engineering allows you to reshape the world around you. While holding your Omega-Tool, you can use a {@action Magic|XPHB} action to cast the {@spell Fabricate|XPHB} spell."
       ]
     },
     {
@@ -5603,12 +5629,12 @@
     {
       "name": "Subclass Feature",
       "source": "GW2",
-      "page": 67,
+      "page": 57,
       "className": "Engineer",
       "classSource": "GW2",
       "level": 20,
       "entries": [
-        "At 20th level, you gain a feature granted by your Engineer subclass."
+        "You gain a feature granted by your Engineer subclass."
       ]
     },
     {
@@ -6503,6 +6529,30 @@
   "monster": [],
   "optionalfeature": [
     {
+      "name": "Lava Font",
+      "source": "GW2",
+      "page": 42,
+      "featureType": [
+        "WS"
+      ],
+      "prerequisite": [
+        {
+          "other": "Level 3+ Elementalist, Two Handed Staff & Attuned to Fire."
+        }
+      ],
+      "entries": [
+        "{@b Casting Time:} 1 {@variantrule Bonus Action|XPHB}",
+        "{@b Recharge:} {@chance 55|10+}",
+        "{@b Range:} 120 feet",
+        "{@b Target:} 18-foot-radius sphere",
+        "{@b Duration:} 1 round",
+        "{@b Properties:} {@variantrule Combo Field|GW2} (Fire)",
+        "{@b Description:} Make lava erupt from the target area.",
+        "{@b Effect:} Choose a point that you can see within range. For the duration, you create a 18-foot-radius Sphere centered on that point. Each creature in that Sphere must make a Dexterity saving throw. On a failed save, a target takes {@damage 2d6} fire damage and starts {@variantrule Burning|GW2} for 1 round taking {@damage 1d6} damage. On a successful save, a target takes half as much damage but suffers no other effects. A creature also makes this save if it enters the Sphere or ends its turn there",
+        "{@b Scaling:} The damage increases each by 1d6 when you reach levels 5 ({@damage 3d6} & {@damage 2d6}), 11 ({@damage 4d6} & {@damage 3d6}), and 17 ({@damage 5d6} & {@damage 4d6})."
+      ]
+    },
+    {
       "name": "Necrotic Slash",
       "source": "GW2",
       "page": 66,
@@ -6575,27 +6625,1039 @@
       ]
     },
     {
-      "name": "Lava Font",
+      "name": "Trait Template",
       "source": "GW2",
-      "page": 42,
+      "page": "",
       "featureType": [
-        "WS"
+        "Trait"
       ],
       "prerequisite": [
         {
-          "other": "Level 3+ Elementalist, Two Handed Staff & Attuned to Fire."
+          "other": "Template"
         }
       ],
       "entries": [
-        "{@b Casting Time:} 1 {@variantrule Bonus Action|XPHB}",
-        "{@b Recharge:} {@chance 55|10+}",
-        "{@b Range:} 120 feet",
-        "{@b Target:} 18-foot-radius sphere",
-        "{@b Duration:} 1 round",
-        "{@b Properties:} {@variantrule Combo Field|GW2} (Fire)",
-        "{@b Description:} Make lava erupt from the target area.",
-        "{@b Effect:} Choose a point that you can see within range. For the duration, you create a 18-foot-radius Sphere centered on that point. Each creature in that Sphere must make a Dexterity saving throw. On a failed save, a target takes {@damage 2d6} fire damage and starts {@variantrule Burning|GW2} for 1 round taking {@damage 1d6} damage. On a successful save, a target takes half as much damage but suffers no other effects. A creature also makes this save if it enters the Sphere or ends its turn there",
-        "{@b Scaling:} The damage increases each by 1d6 when you reach levels 5 ({@damage 3d6} & {@damage 2d6}), 11 ({@damage 4d6} & {@damage 3d6}), and 17 ({@damage 5d6} & {@damage 4d6})."
+        ""
+      ]
+    },
+    {
+      "name": "Explosive Entrance",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "Access to the Explosives Specialization."
+        }
+      ],
+      "entries": [
+        "Your first attack when entering combat explodes, dealing damage to nearby foes. This ability refreshes after a dodge roll."
+      ]
+    },
+    {
+      "name": "Grenadier",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Explosive Entrance|GW2}"
+        }
+      ],
+      "entries": [
+        "Increase the blast radius of grenades. Using a healing skill casts Lesser Grenade Barrage."
+      ]
+    },
+    {
+      "name": "Short Fuse",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Explosive Entrance|GW2}"
+        }
+      ],
+      "entries": [
+        "Gain fury when you hit a foe with an Explosion."
+      ]
+    },
+    {
+      "name": "Glass Cannon",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Explosive Entrance|GW2}"
+        }
+      ],
+      "entries": [
+        "Strike damage dealt increases when above health threshold."
+      ]
+    },
+    {
+      "name": "Steel-Packed Powder",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Grenadier|GW2} or {@optfeature Short Fuse|GW2} or {@optfeature Glass Cannon|GW2}"
+        }
+      ],
+      "entries": [
+        "Explosions cause vulnerability."
+      ]
+    },
+    {
+      "name": "Aim-Assisted Rocket",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Steel-Packed Powder|GW2}"
+        }
+      ],
+      "entries": [
+        "Missile hits launch a rocket at your target. After enough rockets have been fired, an orbital strike is called instead. This trait has an internal cooldown."
+      ]
+    },
+    {
+      "name": "Explosive Temper",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Steel-Packed Powder|GW2}"
+        }
+      ],
+      "entries": [
+        "Explosions grant stacking ferocity when they hit."
+      ]
+    },
+    {
+      "name": "Blast Shield",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Steel-Packed Powder|GW2}"
+        }
+      ],
+      "entries": [
+        "Explosive Entrance grants barrier. Gain vitality based on a percentage of your power."
+      ]
+    },
+    {
+      "name": "Shaped Charge",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Aim-Assisted Rocket|GW2} or {@optfeature Explosive Temper|GW2} or {@optfeature Blast Shield|GW2}"
+        }
+      ],
+      "entries": [
+        "Deal increased strike damage for each stack of vulnerability on your target."
+      ]
+    },
+    {
+      "name": "Grand Entrance",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Shaped Charge|GW2}"
+        }
+      ],
+      "entries": [
+        "Explosive Entrance grants you resistance and increased critical-strike chance for a brief duration."
+      ]
+    },
+    {
+      "name": "Shrapnel",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Shaped Charge|GW2}"
+        }
+      ],
+      "entries": [
+        "Explosions have a chance to cripple and cause bleeding on hit."
+      ]
+    },
+    {
+      "name": "Big Boomer",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Shaped Charge|GW2}"
+        }
+      ],
+      "entries": [
+        "Deal increased strike damage to foes with a lower health percentage than you. Hitting with an Explosion heals you over a few seconds."
+      ]
+    },
+    {
+      "name": "Sharpshooter",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "Access to the Firearms Specialization."
+        }
+      ],
+      "entries": [
+        "Critical hits have a chance to cause bleeding."
+      ]
+    },
+    {
+      "name": "Chemical Rounds",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Sharpshooter|GW2}"
+        }
+      ],
+      "entries": [
+        "Gain condition damage. Your pistol skills gain increased condition duration."
+      ]
+    },
+    {
+      "name": "Sanguine Array",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Sharpshooter|GW2}"
+        }
+      ],
+      "entries": [
+        "Gain might when you inflict bleeding on a foe."
+      ]
+    },
+    {
+      "name": "High Caliber",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Sharpshooter|GW2}"
+        }
+      ],
+      "entries": [
+        "You have an increased critical hit chance against foes within the range threshold."
+      ]
+    },
+    {
+      "name": "Hematic Focus",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Chemical Rounds|GW2} or {@optfeature Sanguine Array|GW2} or {@optfeature High Caliber|GW2}"
+        }
+      ],
+      "entries": [
+        "Gain fury when you inflict bleeding on an enemy. Fury gives an increased critical-strike chance."
+      ]
+    },
+    {
+      "name": "Juggernaut",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Hematic Focus|GW2}"
+        }
+      ],
+      "entries": [
+        "Gain might while wielding a flamethrower. Might applied to you gains increased duration. Napalm grants you stability and a fire aura."
+      ]
+    },
+    {
+      "name": "Thermal Vision",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Hematic Focus|GW2}"
+        }
+      ],
+      "entries": [
+        "Gain expertise. Increase your outgoing condition damage when you inflict burning."
+      ]
+    },
+    {
+      "name": "No Scope",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Hematic Focus|GW2}"
+        }
+      ],
+      "entries": [
+        "Critical hits on foes within the range threshold have a chance to grant fury. Fury grants you ferocity."
+      ]
+    },
+    {
+      "name": "Serrated Steel",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Juggernaut|GW2} or {@optfeature Thermal Vision|GW2} or {@optfeature No Scope|GW2}"
+        }
+      ],
+      "entries": [
+        "Bleeding you inflict gains increased duration."
+      ]
+    },
+    {
+      "name": "Equal and Opposite Reaction",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Serrated Steel|GW2}"
+        }
+      ],
+      "entries": [
+        "Gain quickness and stability when you disable an enemy."
+      ]
+    },
+    {
+      "name": "Modified Ammunition",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Serrated Steel|GW2}"
+        }
+      ],
+      "entries": [
+        "Deal increased strike damage for each condition on a foe."
+      ]
+    },
+    {
+      "name": "Incendiary Powder",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Serrated Steel|GW2}"
+        }
+      ],
+      "entries": [
+        "Burning you inflict lasts longer, and your critical hits inflict burning."
+      ]
+    },
+    {
+      "name": "Cleansing Synergy",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "Access to the Inventions Specialization."
+        }
+      ],
+      "entries": [
+        "Using a heal skill triggers a cleansing pulse around you."
+      ]
+    },
+    {
+      "name": "Over Shield",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Cleansing Synergy|GW2}"
+        }
+      ],
+      "entries": [
+        "Shield skills grant protection to nearby allies. Protection on you gains increased damage reduction."
+      ]
+    },
+    {
+      "name": "Automated Medical Response",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Cleansing Synergy|GW2}"
+        }
+      ],
+      "entries": [
+        "Grant regeneration to nearby allies when you use a healing skill's associated tool belt skill."
+      ]
+    },
+    {
+      "name": "Autodefense Bomb Dispenser",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Cleansing Synergy|GW2}"
+        }
+      ],
+      "entries": [
+        "Drop a smoke bomb when you are disabled. Disables include stun, daze, knockdown, pull, knockback, sink, float, launch, taunt, and fear."
+      ]
+    },
+    {
+      "name": "Reconstruction Enclosure",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Over Shield|GW2} or {@optfeature Automated Medical Response|GW2} or {@optfeature Autodefense Bomb Dispenser|GW2}"
+        }
+      ],
+      "entries": [
+        "Grant protection to nearby allies when you use a heal skill."
+      ]
+    },
+    {
+      "name": "Experimental Turrets",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Reconstruction Enclosure|GW2}"
+        }
+      ],
+      "entries": [
+        "Turrets create a reflective barrier when built and grant boons to allies around them on a regular interval."
+      ]
+    },
+    {
+      "name": "Soothing Detonation",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Reconstruction Enclosure|GW2}"
+        }
+      ],
+      "entries": [
+        "Heal nearby allies when using a tool belt skill."
+      ]
+    },
+    {
+      "name": "Mecha Legs",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Reconstruction Enclosure|GW2}"
+        }
+      ],
+      "entries": [
+        "Gain resistance when you dodge."
+      ]
+    },
+    {
+      "name": "Energy Amplifier",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Experimental Turrets|GW2} or {@optfeature Soothing Detonation|GW2} or {@optfeature Mecha Legs|GW2}"
+        }
+      ],
+      "entries": [
+        "Your power and healing power are increased while you have regeneration."
+      ]
+    },
+    {
+      "name": "Anticorrosion Plating",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Energy Amplifier|GW2}"
+        }
+      ],
+      "entries": [
+        "When you grant protection to an ally, cleanse conditions from them."
+      ]
+    },
+    {
+      "name": "Bunker Down",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Energy Amplifier|GW2}"
+        }
+      ],
+      "entries": [
+        "Create a proximity mine at your target's location and a med kit at your location when you disable an enemy."
+      ]
+    },
+    {
+      "name": "Medical Dispersion Field",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Energy Amplifier|GW2}"
+        }
+      ],
+      "entries": [
+        "While in combat, a percentage of healing you apply to yourself is stored by your Medical Dispersion Field. Each interval, stored healing is spent to heal nearby allies."
+      ]
+    },
+    {
+      "name": "Hidden Flask",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "Access to the Alchemy Specialization."
+        }
+      ],
+      "entries": [
+        "Drink a Lesser Elixir B when struck while below the health threshold."
+      ]
+    },
+    {
+      "name": "Invigorating Speed",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Hidden Flask|GW2}"
+        }
+      ],
+      "entries": [
+        "When you gain swiftness or superspeed, you also gain vigor."
+      ]
+    },
+    {
+      "name": "Protection Injection",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Hidden Flask|GW2}"
+        }
+      ],
+      "entries": [
+        "Gain protection when you are disabled. Disables include stun, daze, knockdown, pull, knockback, sink, float, launch, taunt, and fear."
+      ]
+    },
+    {
+      "name": "Health Insurance",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Hidden Flask|GW2}"
+        }
+      ],
+      "entries": [
+        "Increase your incoming healing effectiveness. Gain increased healing to others while using a med kit."
+      ]
+    },
+    {
+      "name": "Transmute",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Invigorating Speed|GW2} or {@optfeature Protection Injection|GW2} or {@optfeature Health Insurance|GW2}"
+        }
+      ],
+      "entries": [
+        "Drink a Lesser Elixir C when you use a healing skill."
+      ]
+    },
+    {
+      "name": "Comeback Cure",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Transmute|GW2}"
+        }
+      ],
+      "entries": [
+        "Grant regeneration when you remove a condition from an ally."
+      ]
+    },
+    {
+      "name": "Boiling Point",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Transmute|GW2}"
+        }
+      ],
+      "entries": [
+        "Gain fury when you gain might at or above the threshold."
+      ]
+    },
+    {
+      "name": "Backpack Regenerator",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Transmute|GW2}"
+        }
+      ],
+      "entries": [
+        "Recover health every second when using an Engineering Kit."
+      ]
+    },
+    {
+      "name": "Compounding Chemicals",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Comeback Cure|GW2} or {@optfeature Boiling Point|GW2} or {@optfeature Backpack Regenerator|GW2}"
+        }
+      ],
+      "entries": [
+        "Heal yourself when you grant yourself a boon. Remove a condition from yourself when you use an elixir skill. Gain increased concentration."
+      ]
+    },
+    {
+      "name": "HGH",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Compounding Chemicals|GW2}"
+        }
+      ],
+      "entries": [
+        "Elixirs gain increased durations, and grant might."
+      ]
+    },
+    {
+      "name": "Purity of Purpose",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Compounding Chemicals|GW2}"
+        }
+      ],
+      "entries": [
+        "When you would cleanse a condition from an ally, convert it into a boon instead. This can affect multiple targets simultaneously."
+      ]
+    },
+    {
+      "name": "Chain Reactivity",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Compounding Chemicals|GW2}"
+        }
+      ],
+      "entries": [
+        "Gain barrier when you successfully finish a combo field with a leap or a blast. Every third successful finish grants a larger barrier and might."
+      ]
+    },
+    {
+      "name": "Optimized Activation",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "Access to the Tools Specialization."
+        }
+      ],
+      "entries": [
+        "Using tool belt skills grants vigor."
+      ]
+    },
+    {
+      "name": "Static Discharge",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Optimized Activation|GW2}"
+        }
+      ],
+      "entries": [
+        "Discharge a bolt of lightning whenever you use a tool belt skill."
+      ]
+    },
+    {
+      "name": "Reactive Lenses",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Optimized Activation|GW2}"
+        }
+      ],
+      "entries": [
+        "Activate Lesser Utility Goggles when using a healing skill."
+      ]
+    },
+    {
+      "name": "Power Wrench",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Optimized Activation|GW2}"
+        }
+      ],
+      "entries": [
+        "Reduce the recharge of your elite skill when you dodge."
+      ]
+    },
+    {
+      "name": "Mechanized Deployment",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Static Discharge|GW2} or {@optfeature Reactive Lenses|GW2} or {@optfeature Power Wrench|GW2}"
+        }
+      ],
+      "entries": [
+        "Your tool belt skills gain reduced recharge. Tool belt skills remove conditions. Engage Photon Forge cannot activate this trait."
+      ]
+    },
+    {
+      "name": "Streamlined Kits",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Mechanized Deployment|GW2}"
+        }
+      ],
+      "entries": [
+        "Equipping an Engineering Kit creates an attack or spell and grants you swiftness."
+      ]
+    },
+    {
+      "name": "Lock On",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Mechanized Deployment|GW2}"
+        }
+      ],
+      "entries": [
+        "Striking a stealthed foe triggers Invisible Analysis. Disabling a foe triggers Controlled Analysis. Disables include stun, daze, knockdown, pull, knockback, sink, float, launch, taunt, and fear."
+      ]
+    },
+    {
+      "name": "Takedown Round",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Mechanized Deployment|GW2}"
+        }
+      ],
+      "entries": [
+        "Deal increased strike damage while your endurance is not full."
+      ]
+    },
+    {
+      "name": "Excessive Energy",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Streamlined Kits|GW2} or {@optfeature Lock On|GW2} or {@optfeature Takedown Round|GW2}"
+        }
+      ],
+      "entries": [
+        "Strike damage dealt is increased while you have vigor."
+      ]
+    },
+    {
+      "name": "Kinetic Battery",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Excessive Energy|GW2}"
+        }
+      ],
+      "entries": [
+        "Gain Kinetic Charges when you use a tool belt skill. At maximum, charges gain a burst of speed."
+      ]
+    },
+    {
+      "name": "Adrenal Implant",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Excessive Energy|GW2}"
+        }
+      ],
+      "entries": [
+        "Endurance regeneration is increased."
+      ]
+    },
+    {
+      "name": "Gadgeteer",
+      "source": "GW2",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Excessive Energy|GW2}"
+        }
+      ],
+      "entries": [
+        "Gadget skills are more powerful."
       ]
     }
   ],
@@ -7172,6 +8234,200 @@
       ]
     },
     {
+      "name": "Tool Belt Skills",
+      "source": "GW2",
+      "type": "table",
+      "colLabels": [
+        "Base Skill",
+        "Type",
+        "Tool Belt Skill"
+      ],
+      "rows": [
+        [
+          "{@optfeature A.E.D.|GW2}",
+          "{@variantrule Healing Skill|GW2}",
+          "{@optfeature Static Shock|GW2}"
+        ],
+        [
+          "{@optfeature Elixir H|GW2}",
+          "{@variantrule Healing Skill|GW2}",
+          "{@optfeature Toss Elixir H|GW2}"
+        ],
+        [
+          "{@optfeature Healing Turret|GW2}",
+          "{@variantrule Healing Skill|GW2}",
+          "{@optfeature Regenerating Mist|GW2}"
+        ],
+        [
+          "{@optfeature Med Kit|GW2}",
+          "{@variantrule Healing Skill|GW2}",
+          "{@optfeature Bandage Self|GW2}"
+        ],
+        [
+          "{@optfeature Bomb Kit|GW2}",
+          "{@variantrule Utility Skill|GW2}",
+          "{@optfeature Smoke Bomb|GW2}"
+        ],
+        [
+          "{@optfeature Grenade Kit|GW2}",
+          "{@variantrule Utility Skill|GW2}",
+          "{@optfeature Grenade Barrage|GW2}"
+        ],
+        [
+          "{@optfeature Elixir Gun|GW2}",
+          "{@variantrule Utility Skill|GW2}",
+          "{@optfeature Healing Mist|GW2}"
+        ],
+        [
+          "{@optfeature Flamethrower|GW2}",
+          "{@variantrule Utility Skill|GW2}",
+          "{@optfeature Smoke Vent|GW2}"
+        ],
+        [
+          "{@optfeature Tool Kit|GW2}",
+          "{@variantrule Utility Skill|GW2}",
+          "{@optfeature Throw Wrench|GW2}"
+        ],
+        [
+          "{@optfeature Elixir B|GW2}",
+          "{@variantrule Utility Skill|GW2}",
+          "{@optfeature Toss Elixir B|GW2}"
+        ],
+        [
+          "{@optfeature Elixir C|GW2}",
+          "{@variantrule Utility Skill|GW2}",
+          "{@optfeature Toss Elixir C|GW2}"
+        ],
+        [
+          "{@optfeature Elixir R|GW2}",
+          "{@variantrule Utility Skill|GW2}",
+          "{@optfeature Toss Elixir R|GW2}"
+        ],
+        [
+          "{@optfeature Elixir S|GW2}",
+          "{@variantrule Utility Skill|GW2}",
+          "{@optfeature Toss Elixir S|GW2}"
+        ],
+        [
+          "{@optfeature Elixir U|GW2}",
+          "{@variantrule Utility Skill|GW2}",
+          "{@optfeature Toss Elixir U|GW2}"
+        ],
+        [
+          "{@optfeature Personal Battering Ram|GW2}",
+          "{@variantrule Utility Skill|GW2}",
+          "{@optfeature Launch Personal Battering Ram|GW2}"
+        ],
+        [
+          "{@optfeature Rocket Boots|GW2}",
+          "{@variantrule Utility Skill|GW2}",
+          "{@optfeature Rocket Kick|GW2}"
+        ],
+        [
+          "{@optfeature Slick Shoes|GW2}",
+          "{@variantrule Utility Skill|GW2}",
+          "{@optfeature Superspeed|GW2}"
+        ],
+        [
+          "{@optfeature Throw Mine|GW2}",
+          "{@variantrule Utility Skill|GW2}",
+          "{@optfeature Mine Field|GW2}"
+        ],
+        [
+          "{@optfeature Flame Turret|GW2}",
+          "{@variantrule Utility Skill|GW2}",
+          "{@optfeature Throw Napalm|GW2}"
+        ],
+        [
+          "{@optfeature Net Turret|GW2}",
+          "{@variantrule Utility Skill|GW2}",
+          "{@optfeature Net Attack|GW2}"
+        ],
+        [
+          "{@optfeature Rifle Turret|GW2}",
+          "{@variantrule Utility Skill|GW2}",
+          "{@optfeature Surprise Shot|GW2}"
+        ],
+        [
+          "{@optfeature Rocket Turret|GW2}",
+          "{@variantrule Utility Skill|GW2}",
+          "{@optfeature Rocket|GW2}"
+        ],
+        [
+          "{@optfeature Thumper Turret|GW2}",
+          "{@variantrule Utility Skill|GW2}",
+          "{@optfeature Rumble|GW2}"
+        ],
+        [
+          "{@optfeature Elite Mortar Kit|GW2}",
+          "{@variantrule Elite Skill|GW2}",
+          "{@optfeature Orbital Strike|GW2}"
+        ],
+        [
+          "{@optfeature Elixir X|GW2}",
+          "{@variantrule Elite Skill|GW2}",
+          "{@optfeature Toss Elixir X|GW2}"
+        ],
+        [
+          "{@optfeature Supply Crate|GW2}",
+          "{@variantrule Elite Skill|GW2}",
+          "{@optfeature Med Pack Drop|GW2}"
+        ]
+      ]
+    },
+    {
+      "name": "Engineer Healing Skills",
+      "source": "GW2",
+      "type": "table",
+      "colLabels": [
+        "Trait Line",
+        "Requirement",
+        "Healing Skill"
+      ],
+      "rows": [
+        [
+          "{@b Alchemy}",
+          "",
+          "{@optfeature Elixir H|GW2}"
+        ],
+        [
+          "{@b Inventions}",
+          "",
+          "{@optfeature Healing Turret|GW2}"
+        ],
+        [
+          "{@b Tools}",
+          "",
+          "{@optfeature A.E.D.|GW2}"
+        ],
+        [
+          "{@b NA}",
+          "",
+          "{@optfeature Med Kit|GW2}"
+        ],
+        [
+          "{@b Scrapper}",
+          "{@subclassFeature Scrapper|Engineer|GW2|Scrapper|GW2HoT|3||Scrapper}",
+          "{@optfeature Medic Gyro|GW2HoT}"
+        ],
+        [
+          "{@b Holosmith}",
+          "{@subclassFeature Holosmith|Engineer|GW2|Holosmith|GW2PoF|3||Holosmith}",
+          "{@optfeature Coolant Blast|GW2PoF}"
+        ],
+        [
+          "{@b Mechanist}",
+          "{@subclassFeature Mechanist|Engineer|GW2|Mechanist|GW2EoD|3||Mechanist}",
+          "{@optfeature Rectifier Signet|GW2EoD}"
+        ],
+        [
+          "{@b Amalgam}",
+          "{@subclassFeature Amalgam|Engineer|GW2|Amalgam|GW2VoE|3||Amalgam}",
+          "{@optfeature Mitotic State|GW2VoE}"
+        ]
+      ]
+    },
+    {
       "name": "Engineer Weapon Skills",
       "source": "GW2",
       "type": "table",
@@ -7180,41 +8436,21 @@
         "Position",
         "Requirement",
         "Level 1",
-        "Level 2",
         "Level 3",
         "Level 5",
-        "Level 7"
+        "Level 7",
+        "Level 9"
       ],
       "rows": [
         [
-          "{@item Hammer|XPHB}",
+          "{@item Rifle|XPHB}",
           "Two Handed",
-          "{@subclassFeature Minor Adept|Engineer|GW2|Scrapper|GW2HoT|3||Scrapper} or {@feat Weaponmaster Training|GW2SotO}",
-          "{@optfeature Positive Strike|GW2} -> {@optfeature Negative Bash|GW2} -> {@optfeature Equalizing Blow|GW2}",
-          "{@optfeature Electro-whirl|GW2}",
-          "{@optfeature Rocket Charge|GW2}",
-          "{@optfeature Shock Shield|GW2}",
-          "{@optfeature Thunderclap|GW2}"
-        ],
-        [
-          "{@item Harpoon Gun|GW2}",
-          "Two Handed (Aquatic)",
           "",
-          "{@optfeature Homing Torpedo|GW2}",
-          "{@optfeature Scatter Mines|GW2}",
-          "{@optfeature Capture Line|GW2}",
-          "{@optfeature Timed Charge|GW2}",
-          "{@optfeature Net Wall|GW2}"
-        ],
-        [
-          "{@item Mace|XPHB}",
-          "Main Hand",
-          "{@subclassFeature Minor Adept|Engineer|GW2|Mechanist|GW2PoF|3||Mechanist} or {@feat Weaponmaster Training|GW2SotO}",
-          "{@optfeature Mace Strike|GW2} -> {@optfeature Mace Smash|GW2} -> {@optfeature Mace Blast|GW2}",
-          "{@optfeature Energizing Slam|GW2}",
-          "{@optfeature Rocket Fist Prototype|GW2}",
-          "",
-          ""
+          "{@optfeature Rifle Burst|GW2} -> {@optfeature Rifle Burst Grenade|GW2} ",
+          "{@optfeature Blunderbuss|GW2}",
+          "{@optfeature Net Shot|GW2}",
+          "{@optfeature Overcharged Shot|GW2}",
+          "{@optfeature Jump Shot|GW2}"
         ],
         [
           "{@item Pistol|GW2}",
@@ -7237,16 +8473,6 @@
           "{@optfeature Glue Shot|GW2}"
         ],
         [
-          "{@item Rifle|XPHB}",
-          "Two Handed",
-          "",
-          "{@optfeature Rifle Burst|GW2} -> {@optfeature Rifle Burst Grenade|GW2} ",
-          "{@optfeature Blunderbuss|GW2}",
-          "{@optfeature Net Shot|GW2}",
-          "{@optfeature Overcharged Shot|GW2}",
-          "{@optfeature Jump Shot|GW2}"
-        ],
-        [
           "{@item Shield|GW2}",
           "Off Hand",
           "",
@@ -7257,34 +8483,64 @@
           "{@optfeature Static Shield|GW2} -> {@optfeature Throw Shield|GW2}"
         ],
         [
-          "{@item Shortbow|GW2}",
+          "{@item Harpoon Gun|GW2}",
+          "Two Handed (Aquatic)",
+          "",
+          "{@optfeature Homing Torpedo|GW2}",
+          "{@optfeature Scatter Mines|GW2}",
+          "{@optfeature Capture Line|GW2}",
+          "{@optfeature Timed Charge|GW2}",
+          "{@optfeature Net Wall|GW2}"
+        ],
+        [
+          "{@item Hammer|XPHB}",
           "Two Handed",
-          "{@feat Expanded Weapon Proficiency|GW2SotO}",
-          "{@optfeature Arc Detonator|GW2}",
-          "{@optfeature Essence of Animated Sand|GW2}",
-          "{@optfeature Essence of Living Shadows|GW2}",
-          "{@optfeature Essence of Liquid Wrath|GW2}",
-          "{@optfeature Essence of Borrowed Time|GW2}"
+          "{@subclassFeature Minor Adept|Engineer|GW2|Scrapper|GW2HoT|3||Scrapper} or {@feat Weaponmaster Training|GW2SotO}",
+          "{@optfeature Positive Strike|GW2HoT} -> {@optfeature Negative Bash|GW2HoT} -> {@optfeature Equalizing Blow|GW2HoT}",
+          "{@optfeature Electro-whirl|GW2HoT}",
+          "{@optfeature Rocket Charge|GW2HoT}",
+          "{@optfeature Shock Shield|GW2HoT}",
+          "{@optfeature Thunderclap|GW2HoT}"
         ],
         [
           "{@item Shortsword|GW2}",
           "Main Hand",
-          "{@subclassFeature Minor Adept|Engineer|GW2|Holosmith|GW2HoT|3||Holosmith} or {@feat Weaponmaster Training|GW2SotO}",
-          "{@optfeature Sun Edge|GW2} -> {@optfeature Sun Ripper|GW2} -> {@optfeature Gleam Saber|GW2}",
-          "{@optfeature Refraction Cutter|GW2}",
-          "{@optfeature Radiant Arc|GW2}",
+          "{@subclassFeature Minor Adept|Engineer|GW2|Holosmith|GW2PoF|3||Holosmith} or {@feat Weaponmaster Training|GW2SotO}",
+          "{@optfeature Sun Edge|GW2PoF} -> {@optfeature Sun Ripper|GW2PoF} -> {@optfeature Gleam Saber|GW2PoF}",
+          "{@optfeature Refraction Cutter|GW2PoF}",
+          "{@optfeature Radiant Arc|GW2PoF}",
           "",
           ""
+        ],
+        [
+          "{@item Mace|XPHB}",
+          "Main Hand",
+          "{@subclassFeature Minor Adept|Engineer|GW2|Mechanist|GW2PoF|3||Mechanist} or {@feat Weaponmaster Training|GW2SotO}",
+          "{@optfeature Mace Strike|GW2EoD} -> {@optfeature Mace Smash|GW2EoD} -> {@optfeature Mace Blast|GW2EoD}",
+          "{@optfeature Energizing Slam|GW2EoD}",
+          "{@optfeature Rocket Fist Prototype|GW2EoD}",
+          "",
+          ""
+        ],
+        [
+          "{@item Shortbow|GW2}",
+          "Two Handed",
+          "{@feat Expanded Weapon Proficiency|GW2SotO}",
+          "{@optfeature Arc Detonator|GW2SotO}",
+          "{@optfeature Essence of Animated Sand|GW2SotO}",
+          "{@optfeature Essence of Living Shadows|GW2SotO}",
+          "{@optfeature Essence of Liquid Wrath|GW2SotO}",
+          "{@optfeature Essence of Borrowed Time|GW2SotO}"
         ],
         [
           "{@item Spear|XPHB}",
           "Two Handed (Terrestrial)",
           "{@feat Lowland Spear Training|GW2JW}",
-          "{@optfeature Puncturing Jab|GW2} -> {@optfeature Rending Strike|GW2} -> {@optfeature Amplifying Slice|GW2}",
-          "{@optfeature Conduit Surge|GW2}",
-          "{@optfeature Lightning Rod|GW2} -> {@optfeature Electric Artillery|GW2}",
-          "{@optfeature Roiling Skies|GW2}",
-          "{@optfeature Devastator|GW2} -> {@optfeature Focused Devastation|GW2}"
+          "{@optfeature Puncturing Jab|GW2JW} -> {@optfeature Rending Strike|GW2JW} -> {@optfeature Amplifying Slice|GW2JW}",
+          "{@optfeature Conduit Surge|GW2JW}",
+          "{@optfeature Lightning Rod|GW2JW} -> {@optfeature Electric Artillery|GW2JW}",
+          "{@optfeature Roiling Skies|GW2JW}",
+          "{@optfeature Devastator|GW2JW} -> {@optfeature Focused Devastation|GW2JW}"
         ]
       ]
     },
@@ -7293,7 +8549,8 @@
       "name": "Engineer Traits",
       "source": "GW2",
       "colLabels": [
-        "Trait Line",
+        "Specialization",
+        "Requirement",
         "Minor Adept Trait",
         "Major Adept Trait",
         "Minor Master Trait",
@@ -7304,6 +8561,7 @@
       "rows": [
         [
           "{@b Alchemy}",
+          "",
           "{@optfeature Hidden Flask|GW2}",
           "{@optfeature Invigorating Speed|GW2} or {@optfeature Protection Injection|GW2} or {@optfeature Health Insurance|GW2}",
           "{@optfeature Transmute|GW2}",
@@ -7313,6 +8571,7 @@
         ],
         [
           "{@b Explosives}",
+          "",
           "{@optfeature Explosive Entrance|GW2}",
           "{@optfeature Grenadier|GW2} or {@optfeature Short Fuse|GW2} or {@optfeature Glass Cannon|GW2}",
           "{@optfeature Steel-Packed Powder|GW2}",
@@ -7322,6 +8581,7 @@
         ],
         [
           "{@b Firearms}",
+          "",
           "{@optfeature Sharpshooter|GW2}",
           "{@optfeature Chemical Rounds|GW2} or {@optfeature Sanguine Array|GW2} or {@optfeature High Caliber|GW2}",
           "{@optfeature Hematic Focus|GW2}",
@@ -7331,6 +8591,7 @@
         ],
         [
           "{@b Inventions}",
+          "",
           "{@optfeature Cleansing Synergy|GW2}",
           "{@optfeature Over Shield|GW2} or {@optfeature Automated Medical Response|GW2} or {@optfeature Autodefense Bomb Dispenser|GW2}",
           "{@optfeature Reconstruction Enclosure|GW2}",
@@ -7340,12 +8601,152 @@
         ],
         [
           "{@b Tools}",
+          "",
           "{@optfeature Optimized Activation|GW2}",
           "{@optfeature Static Discharge|GW2} or {@optfeature Reactive Lenses|GW2} or {@optfeature Power Wrench|GW2}",
           "{@optfeature Mechanized Deployment|GW2}",
           "{@optfeature Streamlined Kits|GW2} or {@optfeature Lock On|GW2} or {@optfeature Takedown Round|GW2}",
           "{@optfeature Excessive Energy |GW2}",
           "{@optfeature Kinetic Battery|GW2} or {@optfeature Adrenal Implant|GW2} or {@optfeature Gadgeteer|GW2}"
+        ],
+        [
+          "{@b Scrapper}",
+          "{@subclassFeature Scrapper|Engineer|GW2|Scrapper|GW2HoT|3||Scrapper}",
+          "{@optfeature Function Gyro|GW2HoT}",
+          "{@optfeature Gyroscopic Acceleration|GW2HoT} or {@optfeature System Shocker|GW2HoT} or {@optfeature Mass Momentum|GW2HoT}",
+          "{@optfeature Speed of Synergy|GW2HoT}",
+          "{@optfeature Rapid Regeneration|GW2HoT} or {@optfeature Expert Examination|GW2HoT} or {@optfeature Object in Motion|GW2HoT}",
+          "{@optfeature Impact Savant|GW2HoT}",
+          "{@optfeature Ex Machina|GW2HoT} or {@optfeature Kinetic Accelerators|GW2HoT} or {@optfeature Applied Force|GW2HoT}"
+        ],
+        [
+          "{@b Holosmith}",
+          "{@subclassFeature Holosmith|Engineer|GW2|Holosmith|GW2PoF|3||Holosmith}",
+          "{@optfeature Photon Projector|GW2PoF}",
+          "{@optfeature Light Density Amplifier|GW2PoF} or {@optfeature Prismatic Converter|GW2PoF} or {@optfeature Solar Focusing Lens|GW2PoF}",
+          "{@optfeature Heat Therapy|GW2PoF}",
+          "{@optfeature Crystal Configuration: Storm|GW2PoF} or {@optfeature Crystal Configuration: Eclipse|GW2PoF} or {@optfeature Crystal Configuration: Zephyr|GW2PoF}",
+          "{@optfeature Laser's Edge|GW2PoF}",
+          "{@optfeature Thermal Release Valve|GW2PoF} or {@optfeature Enhanced Capacity Storage Unit|GW2PoF} or {@optfeature Photonic Blasting Module|GW2PoF}"
+        ],
+        [
+          "{@b Mechanist}",
+          "{@subclassFeature Mechanist|Engineer|GW2|Mechanist|GW2EoD|3||Mechanist}",
+          "{@optfeature Mechanical Genius|GW2EoD}",
+          "{@optfeature Mech Arms: Single-Edge Cutters|GW2EoD} or {@optfeature Mech Arms: High-Impact Drivers|GW2EoD} or {@optfeature Mech Arms: Jade Cannons|GW2EoD}",
+          "{@optfeature Mech Fighter|GW2EoD}",
+          "{@optfeature Mech Frame: Conductive Alloys|GW2EoD} or {@optfeature Mech Frame: Channeling Conduits|GW2EoD} or {@optfeature Mech Frame: Variable Mass Distributor|GW2EoD}",
+          "{@optfeature Exigency Protocols|GW2EoD}",
+          "{@optfeature Mech Core: Jade Dynamo|GW2EoD} or {@optfeature Mech Core: Barrier Engine|GW2EoD} or {@optfeature Mech Core: J-Drive|GW2EoD}"
+        ],
+        [
+          "{@b Amalgam}",
+          "{@subclassFeature Amalgam|Engineer|GW2|Amalgam|GW2VoE|3||Amalgam}",
+          "{@optfeature Experimental Union|GW2VoE}",
+          "{@optfeature Stainless Steel|GW2VoE} or {@optfeature Innervating Alloy|GW2VoE} or {@optfeature Hardened Chrome|GW2VoE}",
+          "{@optfeature Hybrid Vigor|GW2VoE}",
+          "{@optfeature Carbolic Composition|GW2VoE} or {@optfeature Mercurial Tendencies|GW2VoE} or {@optfeature Silver Lining|GW2VoE}",
+          "{@optfeature Willing Host|GW2VoE}",
+          "{@optfeature Symbiotic Synergy|GW2VoE} or {@optfeature New Genes|GW2VoE} or {@optfeature Double Helix|GW2VoE}"
+        ]
+      ]
+    },
+    {
+      "type": "table",
+      "name": "Engineer Utility Skills",
+      "source": "GW2",
+      "colLabels": [
+        "Trait Line",
+        "Requirement",
+        "Utility Skills"
+      ],
+      "rows": [
+        [
+          "{@b Elixirs}",
+          "",
+          "{@optfeature Elixir B|GW2} or {@optfeature Elixir C|GW2} or {@optfeature Elixir R|GW2} or {@optfeature Elixir S|GW2} or {@optfeature Elixir U|GW2}"
+        ],
+        [
+          "{@b Turrets}",
+          "",
+          "{@optfeature Flame Turret|GW2} or {@optfeature Net Turret|GW2} or {@optfeature Rifle Turret|GW2} or {@optfeature Rocket Turret|GW2} or {@optfeature Thumper Turret|GW2}"
+        ],
+        [
+          "{@b Gadgets}",
+          "",
+          "{@optfeature Personal Battering Ram|GW2} or {@optfeature Rocket Boots|GW2} or {@optfeature Slick Shoes|GW2} or {@optfeature Throw Mine|GW2} or {@optfeature Utility Goggles|GW2}"
+        ],
+        [
+          "{@b Kits}",
+          "",
+          "{@optfeature Bomb Kit|GW2} or {@optfeature Elixir Gun|GW2} or {@optfeature Flamethrower|GW2} or {@optfeature Grenade Kit|GW2} or {@optfeature Tool Kit|GW2}"
+        ],
+        [
+          "{@b Wells}",
+          "{@subclassFeature Scrapper|Engineer|GW2|Scrapper|GW2HoT|3||Scrapper}",
+          "{@optfeature Blast Gyro|GW2HoT} or {@optfeature Bulwark Gyro|GW2HoT} or {@optfeature Purge Gyro|GW2HoT} or {@optfeature Shredder Gyro|GW2HoT}"
+        ],
+        [
+          "{@b Exceed}",
+          "{@subclassFeature Holosmith|Engineer|GW2|Holosmith|GW2PoF|3||Holosmith}",
+          "{@optfeature Spectrum Shield|GW2PoF} or {@optfeature Hard Light Arena|GW2PoF} or {@optfeature Laser Disk|GW2PoF} or {@optfeature Photon Wall|GW2PoF}"
+        ],
+        [
+          "{@b Signet}",
+          "{@subclassFeature Mechanist|Engineer|GW2|Mechanist|GW2EoD|3||Mechanist}",
+          "{@optfeature Barrier Signet|GW2EoD} or {@optfeature Force Signet|GW2EoD} or {@optfeature Shift Signet|GW2EoD} or {@optfeature Superconducting Signet|GW2EoD}"
+        ],
+        [
+          "{@b Stances}",
+          "{@subclassFeature Amalgam|Engineer|GW2|Amalgam|GW2VoE|3||Amalgam}",
+          "{@optfeature Solid State|GW2VoE} or {@optfeature Liquid State|GW2VoE} or {@optfeature Gaseous State|GW2VoE} or {@optfeature Plasmatic State|GW2VoE}"
+        ]
+      ]
+    },
+    {
+      "type": "table",
+      "name": "Engineer Elite Skills",
+      "source": "GW2",
+      "colLabels": [
+        "Trait Line",
+        "Requirement",
+        "Elite Skill"
+      ],
+      "rows": [
+        [
+          "{@b Alchemy}",
+          "",
+          "{@optfeature Elixir X|GW2}"
+        ],
+        [
+          "{@b Inventions}",
+          "",
+          "{@optfeature Supply Crate|GW2}"
+        ],
+        [
+          "{@b NA}",
+          "",
+          "{@optfeature Elite Mortar Kit|GW2}"
+        ],
+        [
+          "{@b Scrapper}",
+          "{@subclassFeature Scrapper|Engineer|GW2|Scrapper|GW2HoT|3||Scrapper}",
+          "{@optfeature Sneak Gyro|GW2HoT}"
+        ],
+        [
+          "{@b Holosmith}",
+          "{@subclassFeature Holosmith|Engineer|GW2|Holosmith|GW2PoF|3||Holosmith}",
+          "{@optfeature Prime Light Beam|GW2PoF}"
+        ],
+        [
+          "{@b Mechanist}",
+          "{@subclassFeature Mechanist|Engineer|GW2|Mechanist|GW2EoD|3||Mechanist}",
+          "{@optfeature Overclock Signet|GW2EoD}"
+        ],
+        [
+          "{@b Amalgam}",
+          "{@subclassFeature Amalgam|Engineer|GW2|Amalgam|GW2VoE|3||Amalgam}",
+          "{@optfeature Flux State|GW2VoE}"
         ]
       ]
     },

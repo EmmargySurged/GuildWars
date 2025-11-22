@@ -517,6 +517,212 @@
 	],
 	"item": [],
 	"monster": [],
+	"optionalfeature": [
+		{
+			"name": "Mechanical Genius",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MIT",
+				"ADT"
+			],
+			"prerequisite": [
+				{
+					"other": "Access to the Mechanist Elite Specialization."
+				}
+			],
+			"entries": [
+				"Through your mechanical genius, you have utilized Canthan jade technology to build a customized battle mech that will fight at your side. Your mech inherits a percentage of all of your combat attributes except precision, which is added to its own. Your tool belt skills are replaced with Mech Commands, customized by your trait choices. Mech commands take longer to recharge when using them far away from your mech. Gain access to signet utility skills."
+			]
+		},
+		{
+			"name": "Mech Arms: Single-Edge Cutters",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"ADT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Mechanical Genius|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Unlocks the Mech Command skill Rolling Smash. Your mech's attacks apply bleeding. This attack's effect may only affect a certain target once per interval."
+			]
+		},
+		{
+			"name": "Mech Arms: High-Impact Drivers",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"ADT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Mechanical Genius|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Unlocks the Mech Command skill Explosive Knuckle. Your mech's attacks now generate might for allies within a radius. This effect may only occur once per interval. The mech does not count against the target count for this trait."
+			]
+		},
+		{
+			"name": "Mech Arms: Jade Cannons",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"ADT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Mechanical Genius|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Melee attacks become ranged, have an increased chance to critically hit, and apply vulnerability. Unlocks the Mech Command skill Spark Revolver."
+			]
+		},
+		{
+			"name": "Mech Fighter",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MIT",
+				"MAT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Mech Arms: Single-Edge Cutters|GW2EoD} or {@optfeature Mech Arms: High-Impact Drivers|GW2EoD} or {@optfeature Mech Arms: Jade Cannons|GW2EoD}"
+				}
+			],
+			"entries": [
+				"New combat subroutines enable your mech to use Rocket Punch when you activate Skill 3 on your equipped weapon. Your mech gains a greater percentage of your own toughness and vitality stats."
+			]
+		},
+		{
+			"name": "Mech Frame: Conductive Alloys",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MJT",
+				"MAT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Mech Fighter|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Unlocks the Mech Command skill Discharge Array. Your mech gains a greater percentage of your own condition damage and expertise stats."
+			]
+		},
+		{
+			"name": "Mech Frame: Channeling Conduits",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MJT",
+				"MAT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Mech Fighter|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Unlocks the Mech Command skill Crisis Zone. When you or your mech apply barrier, also grant a boon to the affected target. Your mech gains a greater percentage of your concentration and healing power stats."
+			]
+		},
+		{
+			"name": "Mech Frame: Variable Mass Distributor",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MJT",
+				"MAT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Mech Fighter|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Unlocks the Mech Command skill Core Reactor Shot. Your mech gains a greater percentage of your own precision stats."
+			]
+		},
+		{
+			"name": "Exigency Protocols",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MIT",
+				"GMT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Mech Frame: Conductive Alloys|GW2EoD} or {@optfeature Mech Frame: Channeling Conduits|GW2EoD} or {@optfeature Mech Frame: Variable Mass Distributor|GW2EoD}"
+				}
+			],
+			"entries": [
+				"When your mech is struck while under half health, it activates Exigency Protocols, gaining damage reduction and regeneration for a short duration. Regeneration boons you apply are stronger."
+			]
+		},
+		{
+			"name": "Mech Core: Jade Dynamo",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"GMT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Exigency Protocols|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Unlocks the Mech Command skill Jade Mortar. Mech Command skills grant you quickness when used and have a reduced cooldown."
+			]
+		},
+		{
+			"name": "Mech Core: Barrier Engine",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"GMT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Exigency Protocols|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Unlocks the Mech Command skill Barrier Burst. While in combat, your mech will automatically grant a small barrier each interval to nearby allies. The mech does not count against the target count for this trait."
+			]
+		},
+		{
+			"name": "Mech Core: J-Drive",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"GMT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Exigency Protocols|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Gain access to the Mech Command skill Sky Circus. While dismissed or away for repairs, your mech supports you with an occasional aerial bombardment. Signet skills gain improved passive effects and continue to grant their passive bonuses while recharging."
+			]
+		}
+	],
 	"feat": [],
 	"spell": [
 		{
@@ -918,6 +1124,28 @@
 	"language": [],
 	"subclass": [
 		{
+			"name": "Mechanist",
+			"shortName": "Mechanist",
+			"source": "GW2EoD",
+			"className": "Engineer",
+			"classSource": "GW2",
+			"edition": "one",
+			"subclassFeatures": [
+				"Mechanist|Engineer|GW2|Mechanist|GW2EoD|1",
+				"Elite Specialization|Engineer|GW2|Mechanist|GW2EoD|3",
+				"Advanced Robotics|Engineer|GW2|Mechanist|GW2EoD|5",
+				"RPF1|Engineer|GW2|Mechanist|GW2EoD|5",
+				"High-Level Robotics|Engineer|GW2|Mechanist|GW2EoD|10",
+				"RPF2|Engineer|GW2|Mechanist|GW2EoD|10",
+				"Masterful Robotics|Engineer|GW2|Mechanist|GW2EoD|15",
+				"RPF3|Engineer|GW2|Mechanist|GW2EoD|15",
+				"Legendary Robotics|Engineer|GW2|Mechanist|GW2EoD|20",
+				"RPF4|Engineer|GW2|Mechanist|GW2EoD|20"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"name": "Virtuoso",
 			"source": "GW2EoD",
 			"className": "Bard",
@@ -1005,6 +1233,127 @@
 		}
 	],
 	"subclassFeature": [
+		{
+			"name": "Mechanist",
+			"source": "GW2EoD",
+			"className": "Engineer",
+			"classSource": "GW2",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "GW2EoD",
+			"level": 1,
+			"entries": [
+				"You have adopted the Mechanist Elite Specialization. You gain proficiency with {@item Mace|XPHB|Maces} and can use their {@variantrule Weapon Skill|GW2|Weapon Skills}.",
+				"Furthermore, you now qualify to learn Mechanist specific {@variantrule Healing Skill|GW2|Healing Skills}, {@variantrule Utility Skill|GW2|Utility Skills}, and {@variantrule Elite Skill|GW2|Elite Skills} when you choose your skills."
+			]
+		},
+		{
+			"name": "Elite Specialization",
+			"source": "GW2EoD",
+			"className": "Engineer",
+			"classSource": "GW2",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "GW2EoD",
+			"level": 3,
+			"entries": [
+				"You gain access to the {@table Engineer Traits|GW2|Mechanist} Specialization and learn its Minor Adept {@variantrule traits|GW2|trait} {@optfeature Mechanical Genius|GW2EoD}."
+			]
+		},
+		{
+			"name": "Advanced Robotics",
+			"source": "GW2EoD",
+			"className": "Engineer",
+			"classSource": "GW2",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "GW2EoD",
+			"level": 5,
+			"entries": [
+				"Mech Improvement 1"
+			]
+		},
+		{
+			"name": "RPF1",
+			"source": "GW2EoD",
+			"className": "Engineer",
+			"classSource": "GW2",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "GW2EoD",
+			"level": 5,
+			"entries": [
+				"RPF1"
+			]
+		},
+		{
+			"name": "High-Level Robotics",
+			"source": "GW2EoD",
+			"className": "Engineer",
+			"classSource": "GW2",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "GW2EoD",
+			"level": 10,
+			"entries": [
+				"Mech Improvement 2"
+			]
+		},
+		{
+			"name": "RPF2",
+			"source": "GW2EoD",
+			"className": "Engineer",
+			"classSource": "GW2",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "GW2EoD",
+			"level": 10,
+			"entries": [
+				"RPF2"
+			]
+		},
+		{
+			"name": "Masterful Robotics",
+			"source": "GW2EoD",
+			"className": "Engineer",
+			"classSource": "GW2",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "GW2EoD",
+			"level": 15,
+			"entries": [
+				"Mech Improvement 3"
+			]
+		},
+		{
+			"name": "RPF3",
+			"source": "GW2EoD",
+			"className": "Engineer",
+			"classSource": "GW2",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "GW2EoD",
+			"level": 15,
+			"entries": [
+				"RPF3"
+			]
+		},
+		{
+			"name": "Legendary Robotics",
+			"source": "GW2EoD",
+			"className": "Engineer",
+			"classSource": "GW2",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "GW2EoD",
+			"level": 20,
+			"entries": [
+				"Mech Improvement 4"
+			]
+		},
+		{
+			"name": "RPF4",
+			"source": "GW2EoD",
+			"className": "Engineer",
+			"classSource": "GW2",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "GW2EoD",
+			"level": 20,
+			"entries": [
+				"RPF4"
+			]
+		},
 		{
 			"name": "Psychic Blades",
 			"source": "GW2EoD",

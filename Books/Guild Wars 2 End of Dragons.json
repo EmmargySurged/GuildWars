@@ -516,7 +516,86 @@
 		}
 	],
 	"item": [],
-	"monster": [],
+	"monster": [
+		{
+			"name": "Jade Mech CJ-1",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"source": "GW2EoD",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "10 plus your Intelligence modifier"
+				}
+			],
+			"hp": {
+				"special": "6 plus six times your Engineer level (the mech has a number of Hit Dice [d10s] equal to your Engineer level)"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 10,
+			"wis": 8,
+			"cha": 6,
+			"passive": 9,
+			"languages": [
+				"Understands the languages you know"
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Mechanical Bond",
+					"entries": [
+						"Add your Proficiency Bonus to any ability check or saving throw the mech makes."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Hard Strike",
+					"entries": [
+						"{@atk m} {@hitYourSpellAttack Bonus equal your Intelligence modifier plus your Proficiency Bonus}, reach 5 ft. {@h} {@damage 1d6 + 3} plus your Intelligence modifier bludgeoning damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MA"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Mechanist_concept_art_3.png"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Jade Mech CJ-1_Token.png"
+			}
+		}
+	],
 	"optionalfeature": [
 		{
 			"name": "Mechanical Genius",
@@ -1243,7 +1322,12 @@
 			"level": 1,
 			"entries": [
 				"You have adopted the Mechanist Elite Specialization. You gain proficiency with {@item Mace|XPHB|Maces} and can use their {@variantrule Weapon Skill|GW2|Weapon Skills}.",
-				"Furthermore, you now qualify to learn Mechanist specific {@variantrule Healing Skill|GW2|Healing Skills}, {@variantrule Utility Skill|GW2|Utility Skills}, and {@variantrule Elite Skill|GW2|Elite Skills} when you choose your skills."
+				"You now qualify to learn Mechanist specific {@variantrule Healing Skill|GW2|Healing Skills}, {@variantrule Utility Skill|GW2|Utility Skills}, and {@variantrule Elite Skill|GW2|Elite Skills} when you choose your skills.",
+				"Through your mechanical genius, you have utilized Canthan jade technology to build a customized battle mech that will fight at your side. The mech uses the {@creature Jade Mech CJ-1|GW2EoD} stat block. You determine how the mech looks, but it is typically humanoid in shape and stands about 7 feet tall.",
+				"The mech is Friendly to you and your allies and obeys your commands. It deanimates if you die.",
+				"{@b The Mech in Combat.} In Combat, the mech acts during your turn. It can move and use its {@variantrule Reaction|XPHB} on its own, but the only action it takes is the {@action Dodge|XPHB} action unless you take a {@variantrule Bonus Action|XPHB} to command it to take an action in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the mech to take the Hard Strike action. If you have the {@condition Incapacitated} condition, the mech acts on its own and isn't limited to the {@action Dodge|XPHB} action.",
+				"{@b Restoring or Replacing the Mech.} If the mech has died within the last hour, you can take a {@action Magic|XPHB} action to touch it and expend a {@variantrule Hit Point Dice|XPHB}. The mech returns to life after 1 minute with all its Hit Points restored.",
+				"When you finish a {@variantrule Long Rest|XPHB}, you can construct a new mech if your previous one has been destroyed."
 			]
 		},
 		{
@@ -1267,7 +1351,7 @@
 			"subclassSource": "GW2EoD",
 			"level": 5,
 			"entries": [
-				"Mech Improvement 1"
+				"Through tinkering and upgrades, you have improved your mech's capabilities. Your can now add your {@table Proficiency Bonus|XPHB} to the mech's {@variantrule Armor Class|XPHB}."
 			]
 		},
 		{
@@ -1291,7 +1375,7 @@
 			"subclassSource": "GW2EoD",
 			"level": 10,
 			"entries": [
-				"Mech Improvement 2"
+				"You developed jade-powered jets to enhance your mech's mobility. Your mech's speed increases by 30 feet, and it gains a flying speed (hover) equal to its walking speed."
 			]
 		},
 		{
@@ -1315,7 +1399,7 @@
 			"subclassSource": "GW2EoD",
 			"level": 15,
 			"entries": [
-				"Mech Improvement 3"
+				"You have developed a link between yourself and your mech, allowing it to benefit from your own prowess. Add your ability modifier to the mech's ability modifiers (minimum of +1)."
 			]
 		},
 		{
@@ -1339,7 +1423,11 @@
 			"subclassSource": "GW2EoD",
 			"level": 20,
 			"entries": [
-				"Mech Improvement 4"
+				"You have achieved the pinnacle of mech engineering. Your mech gains sentience and can act independently of you. It gains the following benefits:",
+				"{@b Improved Cognition.} The mech can now speak, read, write, and understand all languages.",
+				"{@b Independent Actions.} In combat, the mech can now act independently of you, taking its own turn in the initiative order. It can move and take actions as normal without requiring your command.",
+				"{@b Magically Enhanced Systems.} The mech can now attune to up to two magic items.",
+				"{@b Mechanical Resilience.} The mech has advantage on all saving throws."
 			]
 		},
 		{

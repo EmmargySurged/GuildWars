@@ -342,6 +342,714 @@
     "monster": [],
     "optionalfeature": [
         {
+            "name": "Primal Rage",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MIT",
+                "ADT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Access to the Berserker Elite Specialization."
+                }
+            ],
+            "entries": [
+                "Gain access to berserk mode and primal bursts."
+            ]
+        },
+        {
+            "name": "Smash Brawler",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "ADT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Primal Rage|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "When you hit with a Primal Burst skill, extend the duration of your berserk. Critical-hit chance is increased while berserk."
+            ]
+        },
+        {
+            "name": "Last Blaze",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "ADT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Primal Rage|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "When you use a rage skill, inflict burning on nearby enemies. Rage skills extend berserk longer."
+            ]
+        },
+        {
+            "name": "Savage Instinct",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "ADT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Primal Rage|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Activating berserk mode breaks stuns and reduces incoming damage."
+            ]
+        },
+        {
+            "name": "Burst of Aggression",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MIT",
+                "MAT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Smash Brawler|GW2HoT} or {@optfeature Last Blaze|GW2HoT} or {@optfeature Savage Instinct|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Gain a burst of speed when entering berserk mode."
+            ]
+        },
+        {
+            "name": "Blood Reaction",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MJT",
+                "MAT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Burst of Aggression|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "A percentage of precision is given as a bonus to ferocity and a percentage of power is given as a bonus to condition damage. These bonuses are doubled in berserk mode."
+            ]
+        },
+        {
+            "name": "Heat the Soul",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MJT",
+                "MAT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Burst of Aggression|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Grant boons to nearby allies when you use a Burst skill."
+            ]
+        },
+        {
+            "name": "Dead or Alive",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MJT",
+                "MAT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Burst of Aggression|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Heal yourself and gain Blood Reckoning when entering berserk mode."
+            ]
+        },
+        {
+            "name": "Fatal Frenzy",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MIT",
+                "GMT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Blood Reaction|GW2HoT} or {@optfeature Heat the Soul|GW2HoT} or {@optfeature Dead or Alive|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Berserk mode increases power and condition damage."
+            ]
+        },
+        {
+            "name": "Bloody Roar",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "GMT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Fatal Frenzy|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Deal increased strike damage while in berserk mode. Gain resistance when entering berserk mode. Increase the duration of burning you apply. Gain fire aura when you critically hit an enemy. Berserker skills detonate fire aura, damaging and burning nearby foes."
+            ]
+        },
+        {
+            "name": "King of Fires",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "GMT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Fatal Frenzy|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Increase the duration of burning you apply. Gain fire aura when you critically hit an enemy. Berserker skills detonate fire aura, damaging and burning nearby foes."
+            ]
+        },
+        {
+            "name": "Berserk",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Berserker Elite Specialization (F2 Skill)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ",
+                "{@b Recharge:} 8",
+                "{@b Range:} ",
+                "{@b Target:} Self",
+                "{@b Duration:} ",
+                "{@b Properties:} Rage, Grants Adrenaline, Attack Speed, Primal Bursts",
+                "{@b Description:} Rage. Gain adrenaline, an attack-speed boost, and access to primal burst skills.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Arc Divider",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Greatsword (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¾",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Explosive, Damage",
+                "{@b Description:} Primal Burst. Spin to create a violent shock wave that damages nearby foes.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Rupturing Smash",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Hammer (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¾",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Ground",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Knockdown, Immobilize, Inflicts Daze",
+                "{@b Description:} Primal Burst. Jump to the targeted location and slam your hammer down, creating a deadly chain of earthen shock waves that immobilize and daze foes.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Scorched Earth",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Longbow (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ½",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Ground/Line",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Inflicts Burning",
+                "{@b Description:} Primal Burst. Fire a burning shot into the ground that creates a trail of flaming destruction.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Gun Flame",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Rifle (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¼",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Foe/Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Explosive, Interrupt",
+                "{@b Description:} Primal Burst. Fire a fast, flaming shot that explodes on impact near your foe, interrupting foes in the area.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Rampart Splitter",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Staff (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ½",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Line",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Knockdown, Immobilize, Heal, Grants Regeneration",
+                "{@b Description:} Primal Burst. Slam your staff on the ground, sending a shock wave forward that damages and immobilizes enemies while inspiring nearby allies, healing and granting regeneration to them.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Wild Throw",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Spear (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} 1¼",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Foe",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Inflicts Vulnerability",
+                "{@b Description:} Primal Burst. Throw several piercing spears that inflict vulnerability in quick succession.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Decapitate",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Axe (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¾",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Foe",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Recharge Boost",
+                "{@b Description:} Primal Burst. Gather your strength into a powerful attack. If it hits, gain might and recharge this skill.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Slicing Maelstrom",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Dagger (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ½",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Remove Boon, Grants Adrenaline",
+                "{@b Description:} Primal Burst. Slice nearby enemies, removing boons and gaining adrenaline per boon removed. Deal more damage if your target has no boons.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Skull Grinder",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Mace (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ½",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Foe",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Inflicts Daze, Inflicts Conditions",
+                "{@b Description:} Primal Burst. Unleash a powerful skull strike that dazes your target and inflicts multiple conditions.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Flaming Flurry",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Sword (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} 2",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Cone/Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Block Missiles, Projectiles",
+                "{@b Description:} Primal Burst. Lash out with a flurry of strikes that block missiles and shoot fireballs at foes in front of you.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Burning Shackles",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Harpoon Gun (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} 1¼",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Foe",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Immobilize, Inflicts Burn",
+                "{@b Description:} Primal Burst. Fire a fast, forceful shot that immobilizes and burns foes.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Wild Whirl",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Spear (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¾",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Inflicts Burning, Pull",
+                "{@b Description:} Primal Burst. Strike all foes around you, burning and pulling them in.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Blood Reckoning",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "HS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Berserker Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¼",
+                "{@b Recharge:} 20",
+                "{@b Range:} ",
+                "{@b Target:} Self",
+                "{@b Duration:} ",
+                "{@b Properties:} Rage, Heal, Grants Adrenaline, Primal Burst Recharge, Extends Berserk",
+                "{@b Description:} Rage. Heal yourself, gain adrenaline, and recharge all primal burst skills. Heal for a percentage of your outgoing damage. This skill extends the duration of berserk mode.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Outrage",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "US"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Berserker Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ",
+                "{@b Recharge:} 10",
+                "{@b Range:} ",
+                "{@b Target:} Self/Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Rage, Break Stun, Extends Berserk",
+                "{@b Description:} Rage. Break out of stun and extend the duration of berserk mode. The extension of berserk mode increases if an enemy is nearby.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Shattering Blow",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "US"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Berserker Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ½",
+                "{@b Recharge:} 15",
+                "{@b Range:} ",
+                "{@b Target:} Cone/Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Rage, Block, Inflicts Bleeding, Extends Berserk",
+                "{@b Description:} Rage. Summon a rock that blocks attacks, then shatter it to send out rock fragments that inflict bleeding on all foes in front of you. Extends the duration of berserk mode if it hits.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Sundering Leap",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "US"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Berserker Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¾",
+                "{@b Recharge:} 15",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Rage, Leap, Damage, Inflicts Conditions, Extends Berserk",
+                "{@b Description:} Rage. Leap to a location, dealing damage and inflicting conditions on all foes in the area. Extends the duration of berserk mode if it hits.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Wild Blow",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "US"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Berserker Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¾",
+                "{@b Recharge:} 20",
+                "{@b Range:} ",
+                "{@b Target:} Foe",
+                "{@b Duration:} ",
+                "{@b Properties:} Rage, Knockdown, Grants Fury, Extends Berserk",
+                "{@b Description:} Rage. Lash out with a critical attack that knocks down your foes. Gain fury and extend the duration of berserk mode if this attack hits.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Head Butt",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "ES"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Berserker Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¾",
+                "{@b Recharge:} 20",
+                "{@b Range:} ",
+                "{@b Target:} Foe",
+                "{@b Duration:} ",
+                "{@b Properties:} Rage, Stun, Grants Adrenaline, Extends Berserk",
+                "{@b Description:} Rage. Stun your target and stun yourself. Gain adrenaline and extend berserk duration if you hit.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Eternal Champion",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "GMT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Fatal Frenzy|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Gain stability and endurance when entering berserk mode. Traits that trigger when entering berserk mode also trigger when exiting berserk mode. You can now exit berserk mode early."
+            ]
+        },
+        {
+            "name": "Blaze Breaker",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "WS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Torch"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ½",
+                "{@b Recharge:} 12",
+                "{@b Range:} ",
+                "{@b Target:} Ground/Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Shock Wave, Inflicts Conditions",
+                "{@b Description:} Smash your torch into the ground, creating a deadly shock wave that conditions foes.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Flames of War",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "WS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Torch"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ½",
+                "{@b Recharge:} 20",
+                "{@b Range:} ",
+                "{@b Target:} Self/Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Cures Conditions, Fire Field, Inflicts Burn, Explosive, Damage",
+                "{@b Description:} Cleanse conditions and become a mobile fire field that burns nearby foes. When the field expires, it explodes, damaging foes and burning them again.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
             "name": "Heat Sync",
             "source": "GW2HoT",
             "page": "",

@@ -319,6 +319,570 @@
   "monster": [],
   "optionalfeature": [
     {
+      "name": "Spellbreaker's Conviction",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "Access to the Spellbreaker Elite Specialization."
+        }
+      ],
+      "entries": [
+        "Maximum adrenaline is capped at 2 bars, and only level 1 bursts are available. Gain access to the Full Counter skill and Meditation skills."
+      ]
+    },
+    {
+      "name": "Pure Strike",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Spellbreaker's Conviction|GW2PoF}"
+        }
+      ],
+      "entries": [
+        "Deal increased critical-hit damage. This bonus is doubled against boonless foes."
+      ]
+    },
+    {
+      "name": "Guard Counter",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Spellbreaker's Conviction|GW2PoF}"
+        }
+      ],
+      "entries": [
+        "Gain protection after a successful Full Counter."
+      ]
+    },
+    {
+      "name": "No Escape",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "ADT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Spellbreaker's Conviction|GW2PoF}"
+        }
+      ],
+      "entries": [
+        "Dazes and stuns inflict immobilize."
+      ]
+    },
+    {
+      "name": "Dispelling Force",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Pure Strike|GW2PoF} or {@optfeature Guard Counter|GW2PoF} or {@optfeature No Escape|GW2PoF}"
+        }
+      ],
+      "entries": [
+        "Dazes, stuns, pulls, knockdowns, knockbacks, and launches remove boons."
+      ]
+    },
+    {
+      "name": "Loss Aversion",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Dispelling Force|GW2PoF}"
+        }
+      ],
+      "entries": [
+        "Removing boons from a foe deals damage and gives you adrenaline."
+      ]
+    },
+    {
+      "name": "Slow Counter",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Dispelling Force|GW2PoF}"
+        }
+      ],
+      "entries": [
+        "Full Counter applies cripple and slow. Gain boons for each dagger you equip."
+      ]
+    },
+    {
+      "name": "Sun and Moon Style",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MJT",
+        "MAT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Dispelling Force|GW2PoF}"
+        }
+      ],
+      "entries": [
+        "Main hand—Strike damage is increased versus foes with no boons. Off Hand—Heal for a percent of your outgoing strike damage."
+      ]
+    },
+    {
+      "name": "Attacker's Insight",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MIT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Loss Aversion|GW2PoF} or {@optfeature Slow Counter|GW2PoF} or {@optfeature Sun and Moon Style|GW2PoF}"
+        }
+      ],
+      "entries": [
+        "Gain insight when disabling foes or removing boons. Full Counter refreshes all burst skills on hit. Disables include stun, daze, knockback, pull, knockdown, sink, float, launch, taunt, and fear."
+      ]
+    },
+    {
+      "name": "Enchantment Collapse",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Attacker's Insight|GW2PoF}"
+        }
+      ],
+      "entries": [
+        "Removing a boon from a foe causes all nearby foes to lose additional boons."
+      ]
+    },
+    {
+      "name": "Revenge Counter",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Attacker's Insight|GW2PoF}"
+        }
+      ],
+      "entries": [
+        "Full Counter deals additional damage and grants resistance. Copy conditions on yourself to targets you hit with Full Counter."
+      ]
+    },
+    {
+      "name": "Magebane Tether",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "MAT",
+        "GMT"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Attacker's Insight|GW2PoF}"
+        }
+      ],
+      "entries": [
+        "Hitting with a burst skill casts Magebane Tether on your target if they are within range."
+      ]
+    },
+    {
+      "name": "Full Counter",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "PS"
+      ],
+      "prerequisite": [
+        {
+          "other": "Requires Spellbreaker Elite Specialization (F2 Skill)"
+        }
+      ],
+      "entries": [
+        "{@b Casting Time:} 1½",
+        "{@b Recharge:} 8",
+        "{@b Range:} ",
+        "{@b Target:} Self/Area",
+        "{@b Duration:} ",
+        "{@b Properties:} Burst, Absorb Attack, Counterattack, Interrupt",
+        "{@b Description:} Burst. Absorb the next attack against you and counterattack all foes around you. Foes struck by the counter attack are interrupted.",
+        "{@b Effect:} ",
+        "{@b Scaling:} "
+      ]
+    },
+    {
+      "name": "Natural Healing",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "HS"
+      ],
+      "prerequisite": [
+        {
+          "other": "Requires Spellbreaker Elite Specialization"
+        }
+      ],
+      "entries": [
+        "{@b Casting Time:} 1",
+        "{@b Recharge:} 25",
+        "{@b Range:} ",
+        "{@b Target:} Self",
+        "{@b Duration:} ",
+        "{@b Properties:} Meditation, Lose Boons, Lose Conditions, Heal",
+        "{@b Description:} Meditation. Lose boons and conditions, then heal yourself.",
+        "{@b Effect:} ",
+        "{@b Scaling:} "
+      ]
+    },
+    {
+      "name": "Sight beyond Sight",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "US"
+      ],
+      "prerequisite": [
+        {
+          "other": "Requires Spellbreaker Elite Specialization"
+        }
+      ],
+      "entries": [
+        "{@b Casting Time:} 1",
+        "{@b Recharge:} 25",
+        "{@b Range:} ",
+        "{@b Target:} Self",
+        "{@b Duration:} ",
+        "{@b Properties:} Meditation, Reveals Stealth, Critical Hit, Removes Blindness, Removes Conditions",
+        "{@b Description:} Meditation. Reveal nearby foes and make your next attack a critical hit. Remove blindness and nondamaging conditions.",
+        "{@b Effect:} ",
+        "{@b Scaling:} "
+      ]
+    },
+    {
+      "name": "Featherfoot Grace",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "US"
+      ],
+      "prerequisite": [
+        {
+          "other": "Requires Spellbreaker Elite Specialization"
+        }
+      ],
+      "entries": [
+        "{@b Casting Time:} ",
+        "{@b Recharge:} 20",
+        "{@b Range:} ",
+        "{@b Target:} Self",
+        "{@b Duration:} ",
+        "{@b Properties:} Meditation, Grants Superspeed, Grants Resistance",
+        "{@b Description:} Meditation. Gain a burst of superspeed and resistance.",
+        "{@b Effect:} ",
+        "{@b Scaling:} "
+      ]
+    },
+    {
+      "name": "Imminent Threat",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "US"
+      ],
+      "prerequisite": [
+        {
+          "other": "Requires Spellbreaker Elite Specialization"
+        }
+      ],
+      "entries": [
+        "{@b Casting Time:} ¼",
+        "{@b Recharge:} 30",
+        "{@b Range:} ",
+        "{@b Target:} Foe/Area",
+        "{@b Duration:} ",
+        "{@b Properties:} Meditation, Taunt, Grants Adrenaline, Grants Barrier",
+        "{@b Description:} Meditation. Taunt nearby foes, gaining adrenaline and barrier for each affected foe.",
+        "{@b Effect:} ",
+        "{@b Scaling:} "
+      ]
+    },
+    {
+      "name": "Break Enchantments",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "US"
+      ],
+      "prerequisite": [
+        {
+          "other": "Requires Spellbreaker Elite Specialization"
+        }
+      ],
+      "entries": [
+        "{@b Casting Time:} ¼",
+        "{@b Recharge:} 15",
+        "{@b Range:} ",
+        "{@b Target:} Area",
+        "{@b Duration:} ",
+        "{@b Properties:} Meditation, Damage, Remove Boon, Damage Scaling",
+        "{@b Description:} Meditation. Strike foes around you and remove their boons. Deal more damage to foes that lose a boon.",
+        "{@b Effect:} ",
+        "{@b Scaling:} "
+      ]
+    },
+    {
+      "name": "Winds of Disenchantment",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "ES"
+      ],
+      "prerequisite": [
+        {
+          "other": "Requires Spellbreaker Elite Specialization"
+        }
+      ],
+      "entries": [
+        "{@b Casting Time:} 1½",
+        "{@b Recharge:} 90",
+        "{@b Range:} ",
+        "{@b Target:} Ground/Area",
+        "{@b Duration:} ",
+        "{@b Properties:} Meditation, Reduced Boon Duration, Remove Boon, Projectile Block",
+        "{@b Description:} Meditation. Create an area of calm in which foes have reduced incoming boon duration and lose boons every interval. Enemy missiles entering this area are blocked.",
+        "{@b Effect:} ",
+        "{@b Scaling:} "
+      ]
+    },
+    {
+      "name": "Breaching Strike",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "PS"
+      ],
+      "prerequisite": [
+        {
+          "other": "Requires Dagger (F1 Skill)"
+        }
+      ],
+      "entries": [
+        "{@b Casting Time:} ¾",
+        "{@b Recharge:} 8",
+        "{@b Range:} ",
+        "{@b Target:} Foe",
+        "{@b Duration:} ",
+        "{@b Properties:} Burst, Remove Boon, Increased Damage (No Boons)",
+        "{@b Description:} Burst. Strike your target and remove boons. Deal more damage if your target has no boons. Effect increases with adrenaline level.",
+        "{@b Effect:} ",
+        "{@b Scaling:} "
+      ]
+    },
+    {
+      "name": "Precise Cut",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "WS"
+      ],
+      "prerequisite": [
+        {
+          "other": "Requires Dagger"
+        }
+      ],
+      "entries": [
+        "{@b Casting Time:} ¼",
+        "{@b Recharge:} ",
+        "{@b Range:} ",
+        "{@b Target:} Foe",
+        "{@b Duration:} ",
+        "{@b Properties:} Chain, Critical Damage",
+        "{@b Description:} Chain. Strike your foe. This attack deals increased critical damage.",
+        "{@b Effect:} ",
+        "{@b Scaling:} "
+      ]
+    },
+    {
+      "name": "Focused Slash",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "WS"
+      ],
+      "prerequisite": [
+        {
+          "other": "Requires Dagger. Must follow Precise Cut."
+        }
+      ],
+      "entries": [
+        "{@b Casting Time:} ¼",
+        "{@b Recharge:} ",
+        "{@b Range:} ",
+        "{@b Target:} Foe",
+        "{@b Duration:} ",
+        "{@b Properties:} Chain, Critical Hit Damage",
+        "{@b Description:} Chain. Strike your foe. This attack has increased critical-hit damage.",
+        "{@b Effect:} ",
+        "{@b Scaling:} "
+      ]
+    },
+    {
+      "name": "Keen Strike",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "WS"
+      ],
+      "prerequisite": [
+        {
+          "other": "Requires Dagger. Must follow Focused Slash."
+        }
+      ],
+      "entries": [
+        "{@b Casting Time:} ¼",
+        "{@b Recharge:} ",
+        "{@b Range:} ",
+        "{@b Target:} Foe",
+        "{@b Duration:} ",
+        "{@b Properties:} Chain, Grants Might (on critical hit)",
+        "{@b Description:} Chain. Strike your foe and gain might. Gain additional might on critical hit.",
+        "{@b Effect:} ",
+        "{@b Scaling:} "
+      ]
+    },
+    {
+      "name": "Aura Slicer",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "WS"
+      ],
+      "prerequisite": [
+        {
+          "other": "Requires Dagger"
+        }
+      ],
+      "entries": [
+        "{@b Casting Time:} ¾",
+        "{@b Recharge:} 6",
+        "{@b Range:} ",
+        "{@b Target:} Foe",
+        "{@b Duration:} ",
+        "{@b Properties:} Leap, Inflicts Slow",
+        "{@b Description:} Leap and strike your foe, inflicting slow.",
+        "{@b Effect:} ",
+        "{@b Scaling:} "
+      ]
+    },
+    {
+      "name": "Disrupting Stab",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "WS"
+      ],
+      "prerequisite": [
+        {
+          "other": "Requires Dagger"
+        }
+      ],
+      "entries": [
+        "{@b Casting Time:} ",
+        "{@b Recharge:} 12",
+        "{@b Range:} ",
+        "{@b Target:} Foe",
+        "{@b Duration:} ",
+        "{@b Properties:} Daze, Extended Daze (on skill use)",
+        "{@b Description:} Dazes your target. If your target is using a skill, the daze duration is extended.",
+        "{@b Effect:} ",
+        "{@b Scaling:} "
+      ]
+    },
+    {
+      "name": "Wastrel's Ruin",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "WS"
+      ],
+      "prerequisite": [
+        {
+          "other": "Requires Dagger"
+        }
+      ],
+      "entries": [
+        "{@b Casting Time:} ½",
+        "{@b Recharge:} 12",
+        "{@b Range:} ",
+        "{@b Target:} Foe",
+        "{@b Duration:} ",
+        "{@b Properties:} Remove Boon, Increased Damage (Not using skills)",
+        "{@b Description:} Strike your target and remove boons. Damage and boon removal are increased against foes not using skills.",
+        "{@b Effect:} ",
+        "{@b Scaling:} "
+      ]
+    },
+    {
+      "name": "Bladestorm",
+      "source": "GW2PoF",
+      "page": "",
+      "featureType": [
+        "WS"
+      ],
+      "prerequisite": [
+        {
+          "other": "Requires Dagger"
+        }
+      ],
+      "entries": [
+        "{@b Casting Time:} 1½",
+        "{@b Recharge:} 20",
+        "{@b Range:} ",
+        "{@b Target:} Foe/Area",
+        "{@b Duration:} ",
+        "{@b Properties:} Damage, Reflects Projectiles, Grants Barrier",
+        "{@b Description:} Unleash a flurry of attacks that damages foes and reflects projectiles coming from the front. Gain barrier when striking a foe.",
+        "{@b Effect:} ",
+        "{@b Scaling:} "
+      ]
+    },
+    {
       "name": "Fire Strike",
       "source": "GW2PoF",
       "page": "",

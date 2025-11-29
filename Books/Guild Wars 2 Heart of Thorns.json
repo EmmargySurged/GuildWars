@@ -340,6 +340,1988 @@
     ],
     "item": [],
     "monster": [],
+    "optionalfeature": [
+        {
+            "name": "Primal Rage",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MIT",
+                "ADT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Access to the Berserker Elite Specialization."
+                }
+            ],
+            "entries": [
+                "Gain access to berserk mode and primal bursts."
+            ]
+        },
+        {
+            "name": "Smash Brawler",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "ADT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Primal Rage|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "When you hit with a Primal Burst skill, extend the duration of your berserk. Critical-hit chance is increased while berserk."
+            ]
+        },
+        {
+            "name": "Last Blaze",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "ADT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Primal Rage|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "When you use a rage skill, inflict burning on nearby enemies. Rage skills extend berserk longer."
+            ]
+        },
+        {
+            "name": "Savage Instinct",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "ADT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Primal Rage|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Activating berserk mode breaks stuns and reduces incoming damage."
+            ]
+        },
+        {
+            "name": "Burst of Aggression",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MIT",
+                "MAT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Smash Brawler|GW2HoT} or {@optfeature Last Blaze|GW2HoT} or {@optfeature Savage Instinct|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Gain a burst of speed when entering berserk mode."
+            ]
+        },
+        {
+            "name": "Blood Reaction",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MJT",
+                "MAT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Burst of Aggression|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "A percentage of precision is given as a bonus to ferocity and a percentage of power is given as a bonus to condition damage. These bonuses are doubled in berserk mode."
+            ]
+        },
+        {
+            "name": "Heat the Soul",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MJT",
+                "MAT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Burst of Aggression|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Grant boons to nearby allies when you use a Burst skill."
+            ]
+        },
+        {
+            "name": "Dead or Alive",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MJT",
+                "MAT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Burst of Aggression|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Heal yourself and gain Blood Reckoning when entering berserk mode."
+            ]
+        },
+        {
+            "name": "Fatal Frenzy",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MIT",
+                "GMT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Blood Reaction|GW2HoT} or {@optfeature Heat the Soul|GW2HoT} or {@optfeature Dead or Alive|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Berserk mode increases power and condition damage."
+            ]
+        },
+        {
+            "name": "Bloody Roar",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "GMT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Fatal Frenzy|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Deal increased strike damage while in berserk mode. Gain resistance when entering berserk mode. Increase the duration of burning you apply. Gain fire aura when you critically hit an enemy. Berserker skills detonate fire aura, damaging and burning nearby foes."
+            ]
+        },
+        {
+            "name": "King of Fires",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "GMT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Fatal Frenzy|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Increase the duration of burning you apply. Gain fire aura when you critically hit an enemy. Berserker skills detonate fire aura, damaging and burning nearby foes."
+            ]
+        },
+        {
+            "name": "Berserk",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Berserker Elite Specialization (F2 Skill)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ",
+                "{@b Recharge:} 8",
+                "{@b Range:} ",
+                "{@b Target:} Self",
+                "{@b Duration:} ",
+                "{@b Properties:} Rage, Grants Adrenaline, Attack Speed, Primal Bursts",
+                "{@b Description:} Rage. Gain adrenaline, an attack-speed boost, and access to primal burst skills.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Arc Divider",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Greatsword (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¾",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Explosive, Damage",
+                "{@b Description:} Primal Burst. Spin to create a violent shock wave that damages nearby foes.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Rupturing Smash",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Hammer (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¾",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Ground",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Knockdown, Immobilize, Inflicts Daze",
+                "{@b Description:} Primal Burst. Jump to the targeted location and slam your hammer down, creating a deadly chain of earthen shock waves that immobilize and daze foes.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Scorched Earth",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Longbow (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ½",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Ground/Line",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Inflicts Burning",
+                "{@b Description:} Primal Burst. Fire a burning shot into the ground that creates a trail of flaming destruction.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Gun Flame",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Rifle (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¼",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Foe/Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Explosive, Interrupt",
+                "{@b Description:} Primal Burst. Fire a fast, flaming shot that explodes on impact near your foe, interrupting foes in the area.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Rampart Splitter",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Staff (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ½",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Line",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Knockdown, Immobilize, Heal, Grants Regeneration",
+                "{@b Description:} Primal Burst. Slam your staff on the ground, sending a shock wave forward that damages and immobilizes enemies while inspiring nearby allies, healing and granting regeneration to them.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Wild Throw",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Spear (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} 1¼",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Foe",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Inflicts Vulnerability",
+                "{@b Description:} Primal Burst. Throw several piercing spears that inflict vulnerability in quick succession.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Decapitate",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Axe (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¾",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Foe",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Recharge Boost",
+                "{@b Description:} Primal Burst. Gather your strength into a powerful attack. If it hits, gain might and recharge this skill.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Slicing Maelstrom",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Dagger (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ½",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Remove Boon, Grants Adrenaline",
+                "{@b Description:} Primal Burst. Slice nearby enemies, removing boons and gaining adrenaline per boon removed. Deal more damage if your target has no boons.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Skull Grinder",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Mace (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ½",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Foe",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Inflicts Daze, Inflicts Conditions",
+                "{@b Description:} Primal Burst. Unleash a powerful skull strike that dazes your target and inflicts multiple conditions.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Flaming Flurry",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Sword (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} 2",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Cone/Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Block Missiles, Projectiles",
+                "{@b Description:} Primal Burst. Lash out with a flurry of strikes that block missiles and shoot fireballs at foes in front of you.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Burning Shackles",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Harpoon Gun (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} 1¼",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Foe",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Immobilize, Inflicts Burn",
+                "{@b Description:} Primal Burst. Fire a fast, forceful shot that immobilizes and burns foes.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Wild Whirl",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Spear (Primal Burst)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¾",
+                "{@b Recharge:} 5",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Primal Burst, Inflicts Burning, Pull",
+                "{@b Description:} Primal Burst. Strike all foes around you, burning and pulling them in.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Blood Reckoning",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "HS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Berserker Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¼",
+                "{@b Recharge:} 20",
+                "{@b Range:} ",
+                "{@b Target:} Self",
+                "{@b Duration:} ",
+                "{@b Properties:} Rage, Heal, Grants Adrenaline, Primal Burst Recharge, Extends Berserk",
+                "{@b Description:} Rage. Heal yourself, gain adrenaline, and recharge all primal burst skills. Heal for a percentage of your outgoing damage. This skill extends the duration of berserk mode.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Outrage",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "US"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Berserker Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ",
+                "{@b Recharge:} 10",
+                "{@b Range:} ",
+                "{@b Target:} Self/Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Rage, Break Stun, Extends Berserk",
+                "{@b Description:} Rage. Break out of stun and extend the duration of berserk mode. The extension of berserk mode increases if an enemy is nearby.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Shattering Blow",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "US"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Berserker Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ½",
+                "{@b Recharge:} 15",
+                "{@b Range:} ",
+                "{@b Target:} Cone/Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Rage, Block, Inflicts Bleeding, Extends Berserk",
+                "{@b Description:} Rage. Summon a rock that blocks attacks, then shatter it to send out rock fragments that inflict bleeding on all foes in front of you. Extends the duration of berserk mode if it hits.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Sundering Leap",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "US"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Berserker Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¾",
+                "{@b Recharge:} 15",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Rage, Leap, Damage, Inflicts Conditions, Extends Berserk",
+                "{@b Description:} Rage. Leap to a location, dealing damage and inflicting conditions on all foes in the area. Extends the duration of berserk mode if it hits.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Wild Blow",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "US"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Berserker Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¾",
+                "{@b Recharge:} 20",
+                "{@b Range:} ",
+                "{@b Target:} Foe",
+                "{@b Duration:} ",
+                "{@b Properties:} Rage, Knockdown, Grants Fury, Extends Berserk",
+                "{@b Description:} Rage. Lash out with a critical attack that knocks down your foes. Gain fury and extend the duration of berserk mode if this attack hits.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Head Butt",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "ES"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Berserker Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¾",
+                "{@b Recharge:} 20",
+                "{@b Range:} ",
+                "{@b Target:} Foe",
+                "{@b Duration:} ",
+                "{@b Properties:} Rage, Stun, Grants Adrenaline, Extends Berserk",
+                "{@b Description:} Rage. Stun your target and stun yourself. Gain adrenaline and extend berserk duration if you hit.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Eternal Champion",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "GMT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Fatal Frenzy|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Gain stability and endurance when entering berserk mode. Traits that trigger when entering berserk mode also trigger when exiting berserk mode. You can now exit berserk mode early."
+            ]
+        },
+        {
+            "name": "Blaze Breaker",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "WS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Torch"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ½",
+                "{@b Recharge:} 12",
+                "{@b Range:} ",
+                "{@b Target:} Ground/Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Shock Wave, Inflicts Conditions",
+                "{@b Description:} Smash your torch into the ground, creating a deadly shock wave that conditions foes.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Flames of War",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "WS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Torch"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ½",
+                "{@b Recharge:} 20",
+                "{@b Range:} ",
+                "{@b Target:} Self/Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Cures Conditions, Fire Field, Inflicts Burn, Explosive, Damage",
+                "{@b Description:} Cleanse conditions and become a mobile fire field that burns nearby foes. When the field expires, it explodes, damaging foes and burning them again.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Heat Sync",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "WS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Warhorn (Fire Attunement)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¾",
+                "{@b Recharge:} 30",
+                "{@b Range:} ",
+                "{@b Target:} Self/Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Fire, Grants Might, Grants Fury, Spreads Boons",
+                "{@b Description:} Give might and fury to yourself, then spread boons you have to allies.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Wildfire",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "WS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Warhorn (Fire Attunement)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¼",
+                "{@b Recharge:} 30",
+                "{@b Range:} ",
+                "{@b Target:} Line",
+                "{@b Duration:} ",
+                "{@b Properties:} Fire, Inflicts Burn",
+                "{@b Description:} Release a fiery torrent that burns enemies.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Tidal Surge",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "WS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Warhorn (Water Attunement)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} 1",
+                "{@b Recharge:} 30",
+                "{@b Range:} ",
+                "{@b Target:} Line/Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Water, Regenerates, Heal, Knockback",
+                "{@b Description:} Send out a tidal wave that regenerates and heals allies, then knocks enemies back.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Water Globe",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "WS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Warhorn (Water Attunement)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ½",
+                "{@b Recharge:} 30",
+                "{@b Range:} ",
+                "{@b Target:} Line",
+                "{@b Duration:} ",
+                "{@b Properties:} Water, Heal",
+                "{@b Description:} Blast out a watery orb that heals allies as it travels.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Cyclone",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "WS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Warhorn (Air Attunement)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} 1",
+                "{@b Recharge:} 25",
+                "{@b Range:} ",
+                "{@b Target:} Ground",
+                "{@b Duration:} ",
+                "{@b Properties:} Air, Pull, Grants Swiftness",
+                "{@b Description:} Blast out a cyclone that pulls enemies toward its location and grants swiftness to allies it affects.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Lightning Orb",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "WS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Warhorn (Air Attunement)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ½",
+                "{@b Recharge:} 25",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Air, Electricity, Projectile",
+                "{@b Description:} Launch an orb of lightning that fires projectiles at nearby foes.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Sand Squall",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "WS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Warhorn (Earth Attunement)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¾",
+                "{@b Recharge:} 30",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Earth, Grants Protection, Extends Boon Duration, Magnetic Aura",
+                "{@b Description:} Apply protection to you and your allies, then increase the duration of all boons currently existing on you and your allies. Gain magnetic aura.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Dust Storm",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "WS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Warhorn (Earth Attunement)"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¾",
+                "{@b Recharge:} 30",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Earth, Grants Boons, Inflicts Conditions",
+                "{@b Description:} Grant boons to nearby allies and summon a dust storm that inflicts conditions.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Positive Strike",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "WS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Hammer"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ½",
+                "{@b Recharge:} ",
+                "{@b Range:} ",
+                "{@b Target:} ",
+                "{@b Duration:} ",
+                "{@b Properties:} Chain",
+                "{@b Description:} Smack your hammer into your foe while empowering yourself.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Negative Bash",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "WS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Hammer. Must follow Positive Strike."
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ½",
+                "{@b Recharge:} ",
+                "{@b Range:} ",
+                "{@b Target:} ",
+                "{@b Duration:} ",
+                "{@b Properties:} Chain",
+                "{@b Description:} Slam your hammer into your foe to leave them vulnerable.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Equalizing Blow",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "WS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Hammer. Must follow Negative Bash."
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ½",
+                "{@b Recharge:} ",
+                "{@b Range:} ",
+                "{@b Target:} ",
+                "{@b Duration:} ",
+                "{@b Properties:} Chain",
+                "{@b Description:} Bring down your hammer on your foe.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Electro-whirl",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "WS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Hammer"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} 1",
+                "{@b Recharge:} 6",
+                "{@b Range:} ",
+                "{@b Target:} ",
+                "{@b Duration:} ",
+                "{@b Properties:} Reflects Projectiles",
+                "{@b Description:} Spin around, reflecting missiles and hitting enemies.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Rocket Charge",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "WS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Hammer"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} 1¾",
+                "{@b Recharge:} 12",
+                "{@b Range:} ",
+                "{@b Target:} ",
+                "{@b Duration:} ",
+                "{@b Properties:} ",
+                "{@b Description:} Dash forward with a rocket-charged hammer to damage enemies.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Shock Shield",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "WS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Hammer"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} 1¾",
+                "{@b Recharge:} 18",
+                "{@b Range:} ",
+                "{@b Target:} ",
+                "{@b Duration:} ",
+                "{@b Properties:} Blocks Attacks, Grants Barrier",
+                "{@b Description:} Block attacks while striking foes in front of you, gaining barrier with each enemy you hit.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Thunderclap",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "WS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Hammer"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¾",
+                "{@b Recharge:} 20",
+                "{@b Range:} ",
+                "{@b Target:} ",
+                "{@b Duration:} ",
+                "{@b Properties:} Stun",
+                "{@b Description:} Ionize an area, bringing down the power of lightning to stun foes and damage them over its duration.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "\"Wash the Pain Away!\"",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "HS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Tempest Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} 1½",
+                "{@b Recharge:} 20",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Shout, Heal, Cures Conditions",
+                "{@b Description:} Shouts. Mists billow from you, healing allies in range and cleansing conditions.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "\"Feel the Burn!\"",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "US"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Tempest Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ",
+                "{@b Recharge:} 25",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Shout, Damage, Grants Fire Aura",
+                "{@b Description:} Shout. Heat waves blast out from the player, causing damage and granting fire aura to allies.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "\"Eye of the Storm!\"",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "US"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Tempest Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ",
+                "{@b Recharge:} 30",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Shout, Grants Superspeed, Breaks Stun",
+                "{@b Description:} Shout. Imbue your voice with the element of air, massively increasing speed and breaking stun for nearby allies.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "\"Aftershock!\"",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "US"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Tempest Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¼",
+                "{@b Recharge:} 30",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Shout, Inflicts Cripple, Immobilize, Grants Magnetic Aura",
+                "{@b Description:} Shout. Call upon the earth to cripple and immobilize foes in the area around you. Allies in the initial blast gain a magnetic aura.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "\"Flash-Freeze!\"",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "US"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Tempest Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¼",
+                "{@b Recharge:} 25",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Shout, Inflicts Chill, Grants Frost Aura",
+                "{@b Description:} Shout. Unleash a torrent of ice on enemy locations, chilling those who cannot escape. Grant frost aura to allies in range.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "\"Rebound!\"",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "ES"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Tempest Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¼",
+                "{@b Recharge:} 75",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Shout, Grants Aura, Heal",
+                "{@b Description:} Shout and infuse your allies with arcane energy. Allies who would take lethal damage while this is active ignore the deathblow and are healed instead. If the effect expires naturally, grant an aura based on your current attunement.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Medic Gyro",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "HS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Scrapper Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ½",
+                "{@b Recharge:} 20",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Well, Heal",
+                "{@b Description:} Deploy a medic gyro to heal yourself and nearby allies.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Reconstruction Field",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Tool Belt Skill for Medic Gyro"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ½",
+                "{@b Recharge:} 25",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Well, Grants Protection",
+                "{@b Description:} Establish a defensive field, granting protection to allies in its area.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Blast Gyro",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "US"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Scrapper Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¼",
+                "{@b Recharge:} 15",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Well, Explosive",
+                "{@b Description:} Unleash a blast gyro to begin a countdown to a tremendous blast.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Bypass Coating",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Tool Belt Skill for Blast Gyro"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ",
+                "{@b Recharge:} 20",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Grants Superspeed",
+                "{@b Description:} Splash a hypercoating on nearby allies, granting superspeed.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Bulwark Gyro",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "US"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Scrapper Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¼",
+                "{@b Recharge:} 20",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Well, Grants Barrier",
+                "{@b Description:} Deploy a bulwark gyro to grant barrier to allies in the area.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Defense Field",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Tool Belt Skill for Bulwark Gyro"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ",
+                "{@b Recharge:} 25",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Grants Stability",
+                "{@b Description:} Project a defensive dome around yourself and grant stability to nearby allies.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Purge Gyro",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "US"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Scrapper Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¼",
+                "{@b Recharge:} 20",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Well, Removes Conditions",
+                "{@b Description:} Deploy a purge gyro to remove conditions from you and your nearby allies.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Chemical Field",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Tool Belt Skill for Purge Gyro"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¼",
+                "{@b Recharge:} 20",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Inflicts Poison",
+                "{@b Description:} Generate a poison cloud.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Shredder Gyro",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "US"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Scrapper Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ½",
+                "{@b Recharge:} 20",
+                "{@b Range:} ",
+                "{@b Target:} Foe/Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Well, Whirl Finisher",
+                "{@b Description:} Deploy a shredder gyro to attack foes near you and repeatedly use whirl finishers.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Spare Capacitor",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Tool Belt Skill for Shredder Gyro"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ½",
+                "{@b Recharge:} 24",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Daze",
+                "{@b Description:} Set down a lightning capacitor to daze and damage foes near it.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Sneak Gyro",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "ES"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Requires Scrapper Elite Specialization"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} ¼",
+                "{@b Recharge:} 45",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Well, Grants Stealth",
+                "{@b Description:} Deploy a sneak gyro to provide stealth to nearby allies.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Overload Fire",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Fire Attunement"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} 4",
+                "{@b Recharge:} 20",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Overload, Grants Might, Inflicts Burn",
+                "{@b Description:} Overload. Unleash your flames, granting might to allies and burning enemies. Finishing the cast creates a tornado that continues to grant might and burn foes. Using this skill causes the attunement to have a longer recharge.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Overload Water",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Water Attunement"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} 4",
+                "{@b Recharge:} 20",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Overload, Heal, Cures Conditions, Grants Regeneration",
+                "{@b Description:} Overload. Create a surge of accumulated water magic, healing and cleansing allies. When the cast ends, heal the area and apply regeneration. Using this skill causes the attunement to have a longer recharge.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Overload Air",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Air Attunement"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} 4",
+                "{@b Recharge:} 20",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Overload, Grants Electricity Aura, Inflicts Stun",
+                "{@b Description:} Overload. Use your air magic to summon a nimbus that repeatedly strikes nearby enemies. When this ability is complete, imbue your allies with electricity and create a lingering static region that strikes enemies at the same interval. Using this skill causes the attunement to have a longer recharge.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Overload Earth",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "PS"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Earth Attunement"
+                }
+            ],
+            "entries": [
+                "{@b Casting Time:} 4",
+                "{@b Recharge:} 20",
+                "{@b Range:} ",
+                "{@b Target:} Area",
+                "{@b Duration:} ",
+                "{@b Properties:} Overload, Grants Protection, Inflicts Cripple",
+                "{@b Description:} Overload. Ride your stored earth magic around, granting protection to other allies you move over and crippling enemies, then deliver a final immobilizing blast of power to the area, leaving behind a dust cyclone that delivers the same effects as the overload. Using this skill causes the attunement to have a longer recharge.",
+                "{@b Effect:} ",
+                "{@b Scaling:} "
+            ]
+        },
+        {
+            "name": "Singularity",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MIT",
+                "ADT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Access to the Tempest Elite Specialization."
+                }
+            ],
+            "entries": [
+                "Attain elemental singularity by remaining in an attunement for a period of time. Upon attaining singularity, you may overload the attunement to your vicinity. Gain access to Shouts."
+            ]
+        },
+        {
+            "name": "Gale Song",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "ADT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Singularity|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Grant protection to nearby allies when you use a healing skill."
+            ]
+        },
+        {
+            "name": "Latent Stamina",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "ADT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Singularity|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Grant vigor to nearby allies when attuning to water. Restore endurance to allies you grant vigor."
+            ]
+        },
+        {
+            "name": "Unstable Conduit",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "ADT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Singularity|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Overloads grant an aura based on your attunement."
+            ]
+        },
+        {
+            "name": "Gathered Focus",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MIT",
+                "MAT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Gale Song|GW2HoT} or {@optfeature Latent Stamina|GW2HoT} or {@optfeature Unstable Conduit|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Your concentration is increased."
+            ]
+        },
+        {
+            "name": "Tempestuous Aria",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MJT",
+                "MAT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Gathered Focus|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Using a shout grants allies might. Granting an aura to an ally increases your outgoing damage for a period of time."
+            ]
+        },
+        {
+            "name": "Harmonious Conduit",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MJT",
+                "MAT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Gathered Focus|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Gain stability and swiftness when starting an overload."
+            ]
+        },
+        {
+            "name": "Invigorating Torrents",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MJT",
+                "MAT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Gathered Focus|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Auras you grant also grant regeneration and vigor."
+            ]
+        },
+        {
+            "name": "Hardy Conduit",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MIT",
+                "GMT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Tempestuous Aria|GW2HoT} or {@optfeature Harmonious Conduit|GW2HoT} or {@optfeature Invigorating Torrents|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Overloads grant protection to nearby allies. Protection gains increased damage reduction."
+            ]
+        },
+        {
+            "name": "Transcendent Tempest",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "GMT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Hardy Conduit|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Time to attain singularity is reduced. Upon successfully completing an overload, gain increased damage."
+            ]
+        },
+        {
+            "name": "Lucid Singularity",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "GMT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Hardy Conduit|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Apply boons to nearby allies while channeling and when successfully completing a channel."
+            ]
+        },
+        {
+            "name": "Elemental Bastion",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "GMT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Hardy Conduit|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Heal allies you grant an aura to. Grant frost aura to nearby allies when struck while below the health threshold."
+            ]
+        },
+        {
+            "name": "Function Gyro",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MIT",
+                "ADT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Access to the Scrapper Elite Specialization."
+                }
+            ],
+            "entries": [
+                "You gain access to the function gyro, which replaces your tool belt skill 5. Gain access to Gyro skills."
+            ]
+        },
+        {
+            "name": "Gyroscopic Acceleration",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "ADT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Function Gyro|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Well abilities have an increased area of effect and grant superspeed to nearby allies on their first pulse. Your function gyro also grants superspeed to allies when cast."
+            ]
+        },
+        {
+            "name": "System Shocker",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "ADT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Function Gyro|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Disabling a foe grants barrier to nearby allies. Your function gyro dazes foes when cast. Disables include stun, daze, knockback, pull, knockdown, sink, float, launch, taunt, and fear."
+            ]
+        },
+        {
+            "name": "Mass Momentum",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "ADT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Function Gyro|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Gain might while you have stability. Your Function Gyro applies stability to allies when cast."
+            ]
+        },
+        {
+            "name": "Speed of Synergy",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MIT",
+                "MAT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Gyroscopic Acceleration|GW2HoT} or {@optfeature System Shocker|GW2HoT} or {@optfeature Mass Momentum|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Using a heal skill grants superspeed in a radius around you. Using a healing skill's associated tool-belt skill grants you personal superspeed."
+            ]
+        },
+        {
+            "name": "Rapid Regeneration",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MJT",
+                "MAT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Speed of Synergy|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Regenerate health while affected by swiftness or superspeed."
+            ]
+        },
+        {
+            "name": "Expert Examination",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MJT",
+                "MAT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Speed of Synergy|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Your function gyro grants protection to allies when cast. Using a healing skill's associated toolbelt grants protection to nearby allies."
+            ]
+        },
+        {
+            "name": "Object in Motion",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MJT",
+                "MAT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Speed of Synergy|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Deal increased strike damage while you have stability, swiftness, or superspeed. This damage increase compounds for each boon you have."
+            ]
+        },
+        {
+            "name": "Impact Savant",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MIT",
+                "GMT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Rapid Regeneration|GW2HoT} or {@optfeature Expert Examination|GW2HoT} or {@optfeature Object in Motion|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "A percentage of the strike damage you deal is converted into barrier."
+            ]
+        },
+        {
+            "name": "Ex Machina",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "GMT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Impact Savant|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Function gyro has additional charges, no longer has a recharge penalty, and grants barrier to nearby allies."
+            ]
+        },
+        {
+            "name": "Kinetic Accelerators",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "GMT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Impact Savant|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Grant boons to nearby allies when you successfully combo a field with a blast, leap, or whirl finisher. Your function gyro is now a blast finisher. Whirl finishers can only trigger this trait once per interval."
+            ]
+        },
+        {
+            "name": "Applied Force",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "MAT",
+                "GMT"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Impact Savant|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "Gain stability when you gain might at or above the threshold. Might grants bonus power."
+            ]
+        }
+    ],
     "feat": [],
     "spell": [],
     "table": [],
@@ -349,32 +2331,7 @@
     "race": [],
     "raceFluff": [],
     "language": [],
-    "subclass": [
-        {
-            "name": "Reaper",
-            "shortName": "Reaper",
-            "source": "GW2HoT",
-            "className": "Necromancer",
-            "classSource": "GW2",
-            "edition": "one",
-            "subclassFeatures": [
-                "Minor Adept|Necromancer|GW2|Reaper|GW2HoT|3",
-                "Healing Skill|Necromancer|GW2|Reaper|GW2HoT|3",
-                "Major Adept|Necromancer|GW2|Reaper|GW2HoT|6",
-                "Utility Skill|Necromancer|GW2|Reaper|GW2HoT|6",
-                "Minor Master|Necromancer|GW2|Reaper|GW2HoT|10",
-                "Utility Skill|Necromancer|GW2|Reaper|GW2HoT|10",
-                "Major Master|Necromancer|GW2|Reaper|GW2HoT|13",
-                "Utility Skill|Necromancer|GW2|Reaper|GW2HoT|13",
-                "Minor Grandmaster|Necromancer|GW2|Reaper|GW2HoT|17",
-                "Utility Skill|Necromancer|GW2|Reaper|GW2HoT|17",
-                "Major Grandmaster|Necromancer|GW2|Reaper|GW2HoT|20",
-                "Elite Skill|Necromancer|GW2|Reaper|GW2HoT|20"
-            ],
-            "hasFluff": true,
-            "hasFluffImages": true
-        }
-    ],
+    "subclass": [],
     "subclassFluff": [
         {
             "name": "Reaper",
@@ -396,150 +2353,5 @@
             ]
         }
     ],
-    "subclassFeature": [
-        {
-            "name": "Minor Adept",
-            "source": "GW2HoT",
-            "className": "Necromancer",
-            "classSource": "GW2",
-            "subclassShortName": "Reaper",
-            "subclassSource": "GW2HoT",
-            "level": 3,
-            "entries": [
-                "You have become the bringer of death on the battlefield. You gain the {@optfeature Shroud Knight|GW2HoT} minor adept trait."
-            ]
-        },
-        {
-            "name": "Healing Skill",
-            "source": "GW2HoT",
-            "className": "Necromancer",
-            "classSource": "GW2",
-            "subclassShortName": "Reaper",
-            "subclassSource": "GW2HoT",
-            "level": 3,
-            "entries": [
-                "Taking command of the battlefield you have gained the ability to imbue your voice with necromantic power. You gain access to the {@optfeature \"Your Soul Is Mine!\"|GW2HoT} healing skill and now have the option to learn it when you choose your healing skill."
-            ]
-        },
-        {
-            "name": "Major Adept",
-            "source": "GW2HoT",
-            "className": "Necromancer",
-            "classSource": "GW2",
-            "subclassShortName": "Reaper",
-            "subclassSource": "GW2HoT",
-            "level": 6,
-            "entries": [
-                "You have become adapt at spreading fear among your enemies. You gain the choice of one of the following major adept traits: {@optfeature Augury of Death|GW2HoT}, {@optfeature Chilling Nova|GW2HoT}, or {@optfeature Relentless Pursuit|GW2HoT}. You can change which trait you have learned during a short or long rest."
-            ]
-        },
-        {
-            "name": "Utility Skill",
-            "source": "GW2HoT",
-            "className": "Necromancer",
-            "classSource": "GW2",
-            "subclassShortName": "Reaper",
-            "subclassSource": "GW2HoT",
-            "level": 6,
-            "entries": [
-                "You have learned to intimidate your enemies. You gain access to the {@optfeature \"You Are All Weaklings!\"|GW2HoT} utility skill and now have the option to learn it when you choose your utility skill."
-            ]
-        },
-        {
-            "name": "Minor Master",
-            "source": "GW2HoT",
-            "className": "Necromancer",
-            "classSource": "GW2",
-            "subclassShortName": "Reaper",
-            "subclassSource": "GW2HoT",
-            "level": 10,
-            "entries": [
-                "You have honed your mastery of death. You gain the {@optfeature Shivers of Dread|GW2HoT} minor master trait."
-            ]
-        },
-        {
-            "name": "Utility Skill",
-            "source": "GW2HoT",
-            "className": "Necromancer",
-            "classSource": "GW2",
-            "subclassShortName": "Reaper",
-            "subclassSource": "GW2HoT",
-            "level": 10,
-            "entries": [
-                "You have learned to transfer suffering to your enemies. You gain access to the {@optfeature \"Suffer!\"|GW2HoT} utility skill and now have the option to learn it when you choose your utility skill."
-            ]
-        },
-        {
-            "name": "Major Master",
-            "source": "GW2HoT",
-            "className": "Necromancer",
-            "classSource": "GW2",
-            "subclassShortName": "Reaper",
-            "subclassSource": "GW2HoT",
-            "level": 13,
-            "entries": [
-                "You have become a master of spreading fear and death. You gain the choice of one of the following major master traits: {@optfeature Soul Eater|GW2HoT}, {@optfeature Chilling Victory|GW2HoT}, or {@optfeature Decimate Defenses|GW2HoT}. You can change which trait you have learned during a short or long rest."
-            ]
-        },
-        {
-            "name": "Utility Skill",
-            "source": "GW2HoT",
-            "className": "Necromancer",
-            "classSource": "GW2",
-            "subclassShortName": "Reaper",
-            "subclassSource": "GW2HoT",
-            "level": 13,
-            "entries": [
-                "You have learned to cleave past your enemies defenses. You gain access to the {@optfeature \"Nothing Can Save You!\"|GW2HoT} utility skill and now have the option to learn it when you choose your utility skill."
-            ]
-        },
-        {
-            "name": "Minor Grandmaster",
-            "source": "GW2HoT",
-            "className": "Necromancer",
-            "classSource": "GW2",
-            "subclassShortName": "Reaper",
-            "subclassSource": "GW2HoT",
-            "level": 17,
-            "entries": [
-                "You have perfected your control over death. You gain the {@optfeature Cold Shoulder|GW2HoT} minor grandmaster trait."
-            ]
-        },
-        {
-            "name": "Utility Skill",
-            "source": "GW2HoT",
-            "className": "Necromancer",
-            "classSource": "GW2",
-            "subclassShortName": "Reaper",
-            "subclassSource": "GW2HoT",
-            "level": 17,
-            "entries": [
-                "You have learned to summon reinforcements from the ground. You gain access to the {@optfeature \"Rise!\"|GW2HoT} utility skill and now have the option to learn it when you choose your utility skill."
-            ]
-        },
-        {
-            "name": "Major Grandmaster",
-            "source": "GW2HoT",
-            "className": "Necromancer",
-            "classSource": "GW2",
-            "subclassShortName": "Reaper",
-            "subclassSource": "GW2HoT",
-            "level": 20,
-            "entries": [
-                "You have become a true harbinger of death. You gain the choice of one of the following major grandmaster traits: {@optfeature Blighter's Boon|GW2HoT}, {@optfeature Deathly Chill|GW2HoT}, or {@optfeature Reaper's Onslaught|GW2HoT}. You can change which trait you have learned during a short or long rest."
-            ]
-        },
-        {
-            "name": "Elite Skill",
-            "source": "GW2HoT",
-            "className": "Necromancer",
-            "classSource": "GW2",
-            "subclassShortName": "Reaper",
-            "subclassSource": "GW2HoT",
-            "level": 20,
-            "entries": [
-                "You have learned to freeze your enemies in place. You gain access to the {@optfeature \"Chilled to the Bone!\"|GW2HoT} elite skill and now have the option to learn it when you choose your elite skill."
-            ]
-        }
-    ]
+    "subclassFeature": []
 }

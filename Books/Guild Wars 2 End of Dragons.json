@@ -516,7 +516,2570 @@
 		}
 	],
 	"item": [],
-	"monster": [],
+	"monster": [
+		{
+			"name": "Jade Mech CJ-1",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"source": "GW2EoD",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "10 plus your Intelligence modifier"
+				}
+			],
+			"hp": {
+				"special": "6 plus six times your Engineer level (the mech has a number of Hit Dice [d10s] equal to your Engineer level)"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 10,
+			"wis": 8,
+			"cha": 6,
+			"passive": 9,
+			"languages": [
+				"Understands the languages you know"
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Mechanical Bond",
+					"entries": [
+						"Add your Proficiency Bonus to any ability check or saving throw the mech makes."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Hard Strike",
+					"entries": [
+						"{@atk m} {@hitYourSpellAttack Bonus equal your Intelligence modifier plus your Proficiency Bonus}, reach 5 ft. {@h} {@damage 1d6 + 3} plus your Intelligence modifier bludgeoning damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MA"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Mechanist_concept_art_3.png"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Jade Mech CJ-1_Token.png"
+			}
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Singeing Strike",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Fire Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ½",
+				"{@b Recharge:} ",
+				"{@b Range:} ",
+				"{@b Target:} Foe",
+				"{@b Duration:} ",
+				"{@b Properties:} Fire",
+				"{@b Description:} Singe your foes by unleashing a burst of flame from your hammer.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Surging Flames",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Fire Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ½",
+				"{@b Recharge:} 8",
+				"{@b Range:} ",
+				"{@b Target:} Foe/Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Fire",
+				"{@b Description:} Sweep your hammer forward to send flames rushing at your enemies.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Flame Wheel",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Fire Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} 1",
+				"{@b Recharge:} 18",
+				"{@b Range:} ",
+				"{@b Target:} Foe/Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Projectile, Circular",
+				"{@b Description:} Summon a projectile of fire that circles around you, damaging foes. While this projectile is active, it grants you increased outgoing damage. Summoning a circular projectile refreshes the duration of all other circular projectiles.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Grand Finale",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Flip-over Skill for Flame Wheel"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ¼",
+				"{@b Recharge:} 15",
+				"{@b Range:} ",
+				"{@b Target:} Foe/Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Redirect, Circular",
+				"{@b Description:} Redirect any active circular projectiles towards your target.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Triple Sear",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Fire Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ¾",
+				"{@b Recharge:} 20",
+				"{@b Range:} ",
+				"{@b Target:} Line",
+				"{@b Duration:} ",
+				"{@b Properties:} Fire",
+				"{@b Description:} Sear a path to burn your enemies.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Molten End",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Fire Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} 1",
+				"{@b Recharge:} 25",
+				"{@b Range:} ",
+				"{@b Target:} Ground/Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Fire, Explosive, Inflicts Burn, Grants Boons",
+				"{@b Description:} Slam your hammer into the ground, damaging nearby enemies. If this strikes a burning enemy, gain offensive boons.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Stream Strike",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Water Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ½",
+				"{@b Recharge:} ",
+				"{@b Range:} ",
+				"{@b Target:} Foe",
+				"{@b Duration:} ",
+				"{@b Properties:} Chain, Water",
+				"{@b Description:} Strike your foe with a watery blow.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Water Rush",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Water Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ½",
+				"{@b Recharge:} ",
+				"{@b Range:} ",
+				"{@b Target:} Foe",
+				"{@b Duration:} ",
+				"{@b Properties:} Chain, Water",
+				"{@b Description:} Slam your foe with a rush of water.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Crack the Ground",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Water Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ½",
+				"{@b Recharge:} 6",
+				"{@b Range:} ",
+				"{@b Target:} Ground",
+				"{@b Duration:} ",
+				"{@b Properties:} Inflicts Chill, Water",
+				"{@b Description:} Crack the ground to chill your foes.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Rain of Blows",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Water Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ½",
+				"{@b Recharge:} 12",
+				"{@b Range:} ",
+				"{@b Target:} Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Inflicts Chill, Water",
+				"{@b Description:} Strike your foes repeatedly. Enemies hit by all strikes become chilled.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Icy Coil",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Water Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} 1",
+				"{@b Recharge:} 18",
+				"{@b Range:} ",
+				"{@b Target:} Foe/Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Projectile, Circular, Reduced Damage from Conditions",
+				"{@b Description:} Summon a projectile of ice that circles around you, damaging foes. While this projectile is active, you take reduced damage from conditions. Summoning a circular projectile refreshes the duration of all other circular projectiles.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Grand Finale",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Flip-over Skill for Ice Coil"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ¼",
+				"{@b Recharge:} 15",
+				"{@b Range:} ",
+				"{@b Target:} Foe/Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Redirect, Circular",
+				"{@b Description:} Redirect any active circular projectiles towards your target.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Crashing Font",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Water Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ¼",
+				"{@b Recharge:} 20",
+				"{@b Range:} ",
+				"{@b Target:} Foe/Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Leap, Heal, Water",
+				"{@b Description:} Leap at your target and strike nearby foes. Heal for each target struck. Heal for a lesser amount for each target struck beyond the first.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Cleansing Typhoon",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Water Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ½",
+				"{@b Recharge:} 20",
+				"{@b Range:} ",
+				"{@b Target:} Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Cures Conditions, Water",
+				"{@b Description:} Strike nearby foes, cleansing a condition for each target struck.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Wind Slam",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Air Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ¾",
+				"{@b Recharge:} ",
+				"{@b Range:} ",
+				"{@b Target:} Foe",
+				"{@b Duration:} ",
+				"{@b Properties:} Air",
+				"{@b Description:} Slam your foe with a gust of wind.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Hurricane of Pain",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Air Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} 1",
+				"{@b Recharge:} 10",
+				"{@b Range:} ",
+				"{@b Target:} Ground",
+				"{@b Duration:} ",
+				"{@b Properties:} Air, Damage",
+				"{@b Description:} Manifest a powerful cyclone at the target location, periodically damaging enemies.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Crescent Wind",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Air Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} 1",
+				"{@b Recharge:} 18",
+				"{@b Range:} ",
+				"{@b Target:} Foe/Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Projectile, Circular, Critical Strike",
+				"{@b Description:} Summon a projectile of air that circles around you, damaging foes. While this projectile is active, your chance to critically strike is increased. Summoning a circular projectile refreshes the duration of all other circular projectiles.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Grand Finale",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Flip-over Skill for Crescent Wind"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ¼",
+				"{@b Recharge:} 15",
+				"{@b Range:} ",
+				"{@b Target:} Foe/Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Redirect, Circular",
+				"{@b Description:} Redirect any active circular projectiles towards your target.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Wind Storm",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Air Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ¼",
+				"{@b Recharge:} 20",
+				"{@b Range:} ",
+				"{@b Target:} Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Knockback, Grants Superspeed, Air",
+				"{@b Description:} Release a burst of air to knock down your enemies and gain superspeed.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Shock Blast",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Air Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ¼",
+				"{@b Recharge:} 25",
+				"{@b Range:} ",
+				"{@b Target:} Foe/Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Explosive, Stun",
+				"{@b Description:} Fire a blast of lightning that explodes when it reaches its destination, stunning nearby foes.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Stonestrike",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Earth Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ½",
+				"{@b Recharge:} ",
+				"{@b Range:} ",
+				"{@b Target:} Foe",
+				"{@b Duration:} ",
+				"{@b Properties:} Earth",
+				"{@b Description:} Arc your hammer, creating a ring of jagged rock to damage your enemies.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Whirling Stones",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Earth Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} 2",
+				"{@b Recharge:} 8",
+				"{@b Range:} ",
+				"{@b Target:} Foe",
+				"{@b Duration:} ",
+				"{@b Properties:} Earth",
+				"{@b Description:} Encase your hammer with earthen spikes to deliver a powerful blow.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Rocky Loop",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Earth Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} 1",
+				"{@b Recharge:} 18",
+				"{@b Range:} ",
+				"{@b Target:} Foe/Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Projectile, Circular, Reduced Damage from Strikes",
+				"{@b Description:} Summon a projectile of earth that circles around you, damaging foes. While this projectile is active, you take reduced damage from strikes. Summoning a circular projectile refreshes the duration of all other circular projectiles.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Grand Finale",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Flip-over Skill for Rocky Loop"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ¼",
+				"{@b Recharge:} 15",
+				"{@b Range:} ",
+				"{@b Target:} Foe/Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Redirect, Circular",
+				"{@b Description:} Redirect any active circular projectiles towards your target.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Immutable Stone",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Earth Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} 1",
+				"{@b Recharge:} 20",
+				"{@b Range:} ",
+				"{@b Target:} Self",
+				"{@b Duration:} ",
+				"{@b Properties:} Block, Grants Barrier, Grants Aura, Earth",
+				"{@b Description:} Block the next attack. If you blocked an attack, gain barrier and an aura based on your current attunement.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Ground Pound",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Earth Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ½",
+				"{@b Recharge:} 20",
+				"{@b Range:} ",
+				"{@b Target:} Ground/Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Inflicts Bleeding, Immobilize, Earth",
+				"{@b Description:} Smash your hammer into the ground to bleed and immobilize your enemies.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Dual Orbits: Fire and Water",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Fire + Water Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ",
+				"{@b Recharge:} 18",
+				"{@b Range:} ",
+				"{@b Target:} Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Dual Attack, Fire, Water, Circular, Increased Damage, Reduced Condition Damage",
+				"{@b Description:} Dual Attack. Summon projectiles of fire and ice that circle around you, striking enemies they pass through. While the fire projectile is active, it grants you increased outgoing damage. While the ice projectile is active, you take reduced damage from conditions. Summoning a circular projectile refreshes the duration of all other circular projectiles.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Dual Orbits: Fire and Air",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Fire + Air Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ",
+				"{@b Recharge:} 18",
+				"{@b Range:} ",
+				"{@b Target:} Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Dual Attack, Fire, Air, Circular, Increased Damage, Critical Strike Chance",
+				"{@b Description:} Dual Attack. Summon projectiles of fire and that circle around you, striking enemies they pass through. While the fire projectile is active, it grants you increased outgoing damage. While the air projectile is active, your chance to critically strike is increased. Summoning a circular projectile refreshes the duration of all other circular projectiles.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Dual Orbits: Fire and Earth",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Fire + Earth Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ",
+				"{@b Recharge:} 18",
+				"{@b Range:} ",
+				"{@b Target:} Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Dual Attack, Fire, Earth, Circular, Increased Damage, Reduced Strike Damage",
+				"{@b Description:} Dual Attack. Summon projectiles of fire and earth that circle around you, striking enemies they pass through. While the fire projectile is active, it grants you increased outgoing damage. While the earth projectile is active, you take reduced damage from strikes. Summoning a circular projectile refreshes the duration of all other circular projectiles.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Dual Orbits: Water and Air",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Air + Water Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ",
+				"{@b Recharge:} 18",
+				"{@b Range:} ",
+				"{@b Target:} Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Dual Attack, Water, Air, Circular, Reduced Condition Damage, Critical Strike Chance",
+				"{@b Description:} Dual Attack. Summon projectiles of ice and air that circle around you, striking enemies they pass through. While the ice projectile is active, you take reduced damage from conditions. While the air projectile is active, your chance to critically strike is increased. Summoning a circular projectile refreshes the duration of all other circular projectiles.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Dual Orbits: Water and Earth",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Water + Earth Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ",
+				"{@b Recharge:} 18",
+				"{@b Range:} ",
+				"{@b Target:} Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Dual Attack, Water, Earth, Circular, Reduced Condition Damage, Reduced Strike Damage",
+				"{@b Description:} Dual Attack. Summon projectiles of fire and ice that circle around you, striking enemies they pass through. While the ice projectile is active, you take reduced damage from conditions. While the earth projectile is active, you take reduced damage from strikes. Summoning a circular projectile refreshes the duration of all other circular projectiles.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Dual Orbits: Air and Earth",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Hammer (Air + Earth Attunement)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ",
+				"{@b Recharge:} 18",
+				"{@b Range:} ",
+				"{@b Target:} Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Dual Attack, Air, Earth, Circular, Critical Strike Chance, Reduced Strike Damage",
+				"{@b Description:} Dual Attack. Summon projectiles of air and earth that circle around you, striking enemies they pass through. While the air projectile is active, your chance to critically strike is increased. While the earth projectile is active, you take reduced damage from strikes. Summoning a circular projectile refreshes the duration of all other circular projectiles.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Deploy Jade Sphere (Fire)",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"PS"
+			],
+			"prerequisite": [
+				{
+					"other": "Fire Attunement"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ",
+				"{@b Recharge:} 15",
+				"{@b Range:} ",
+				"{@b Target:} Ground",
+				"{@b Duration:} ",
+				"{@b Properties:} Combo Field, Grants Boons",
+				"{@b Description:} Summon your Jade Sphere, creating a combo field and granting boons to allies in its radius based on your current attunement.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Deploy Jade Sphere (Water)",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"PS"
+			],
+			"prerequisite": [
+				{
+					"other": "Water Attunement"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ",
+				"{@b Recharge:} 15",
+				"{@b Range:} ",
+				"{@b Target:} Ground",
+				"{@b Duration:} ",
+				"{@b Properties:} Combo Field, Grants Boons",
+				"{@b Description:} Summon your Jade Sphere, creating a combo field and granting boons to allies in its radius based on your current attunement.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Deploy Jade Sphere (Air)",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"PS"
+			],
+			"prerequisite": [
+				{
+					"other": "Air Attunement"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ",
+				"{@b Recharge:} 15",
+				"{@b Range:} ",
+				"{@b Target:} Ground",
+				"{@b Duration:} ",
+				"{@b Properties:} Combo Field, Grants Boons",
+				"{@b Description:} Summon your Jade Sphere, creating a combo field and granting boons to allies in its radius based on your current attunement.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Deploy Jade Sphere (Earth)",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"PS"
+			],
+			"prerequisite": [
+				{
+					"other": "Earth Attunement"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ",
+				"{@b Recharge:} 15",
+				"{@b Range:} ",
+				"{@b Target:} Ground",
+				"{@b Duration:} ",
+				"{@b Properties:} Combo Field, Grants Boons",
+				"{@b Description:} Summon your Jade Sphere, creating a combo field and granting boons to allies in its radius based on your current attunement.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Soothing Water",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"HS"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Catalyst Elite Specialization"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ¼",
+				"{@b Recharge:} 25",
+				"{@b Range:} ",
+				"{@b Target:} Self",
+				"{@b Duration:} ",
+				"{@b Properties:} Augment, Regenerate, Cures Conditions, Recharge Reduction",
+				"{@b Description:} Augment. Regenerate health and cleanse conditions over time. If this is cast in range of your Water Sphere, the recharge time is reduced.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Relentless Fire",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"US"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Catalyst Elite Specialization"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ¼",
+				"{@b Recharge:} 20",
+				"{@b Range:} ",
+				"{@b Target:} Self",
+				"{@b Duration:} ",
+				"{@b Properties:} Augment, Damage, Unblockable, Increased Duration",
+				"{@b Description:} Augment. Your attacks and conditions deal increased damage, and your attacks are unblockable. If this is cast within range of your Fire Sphere, the duration is increased.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Shattering Ice",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"US"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Catalyst Elite Specialization"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ¼",
+				"{@b Recharge:} 20",
+				"{@b Range:} ",
+				"{@b Target:} Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Augment, Inflicts Chill, Increased Duration",
+				"{@b Description:} Augment. Your successful attacks will trigger an additional strike on nearby enemies that applies chill. If this is cast within range of your Water Sphere, the duration is increased. This effect can occur once per interval.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Invigorating Air",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"US"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Catalyst Elite Specialization"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ",
+				"{@b Recharge:} 20",
+				"{@b Range:} ",
+				"{@b Target:} Self",
+				"{@b Duration:} ",
+				"{@b Properties:} Augment, Grants Regeneration, Grants Superspeed, Recharge Reduction",
+				"{@b Description:} Augment. Gain increased endurance regeneration and superspeed. If this is cast within range of your Air Sphere, the recharge time is reduced.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Fortified Earth",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"US"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Catalyst Elite Specialization"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} 3",
+				"{@b Recharge:} 20",
+				"{@b Range:} ",
+				"{@b Target:} Self",
+				"{@b Duration:} ",
+				"{@b Properties:} Augment, Block, Grants Barrier, Recharge Reduction",
+				"{@b Description:} Augment. Block attacks. Gain barrier if the channel completes successfully. If this is cast within range of your Earth Sphere, the recharge time is reduced.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Elemental Celerity",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"ES"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Catalyst Elite Specialization"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ¼",
+				"{@b Recharge:} 90",
+				"{@b Range:} ",
+				"{@b Target:} Self",
+				"{@b Duration:} ",
+				"{@b Properties:} Augment, Recharge Reduction, Grants Boon",
+				"{@b Description:} Augment. Reduce the recharge of weapon skills of your current attunement. If this is activated in range of your sphere, gain a boon based on its element.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Depth of Elements",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MIT",
+				"ADT"
+			],
+			"prerequisite": [
+				{
+					"other": "Access to the Catalyst Elite Specialization."
+				}
+			],
+			"entries": [
+				"Build up elemental energy when you strike foes. Energy is to imbue the Jade Sphere with different elements, creating combo fields and granting boons to allies in the area. Gain access to Augments."
+			]
+		},
+		{
+			"name": "Hardened Auras",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"ADT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Depth of Elements|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Damage reduction is increased when you grant yourself an aura. When this triggers, the duration of all stacks are refreshed."
+			]
+		},
+		{
+			"name": "Vicious Empowerment",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"ADT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Depth of Elements|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Gain Elemental Empowerment and might when you disable or immobilize a foe."
+			]
+		},
+		{
+			"name": "Energized Elements",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"ADT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Depth of Elements|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Gain energy and boons when you switch attunements. Energy can only be gained while in combat."
+			]
+		},
+		{
+			"name": "Elemental Empowerment",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MIT",
+				"MAT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Hardened Auras|GW2EoD} or {@optfeature Vicious Empowerment|GW2EoD} or {@optfeature Energized Elements|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Gain Elemental Empowerment while in combat."
+			]
+		},
+		{
+			"name": "Empowering Auras",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MJT",
+				"MAT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Elemental Empowerment|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Gain increased outgoing damage when you grant yourself an aura. When this triggers, the duration of all stacks are refreshed."
+			]
+		},
+		{
+			"name": "Evasive Empowerment",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MJT",
+				"MAT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Elemental Empowerment|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Gain Elemental Empowerment and vigor when evading an attack."
+			]
+		},
+		{
+			"name": "Spectacular Sphere",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MJT",
+				"MAT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Elemental Empowerment|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Your Jade Sphere is larger and grants quickness and an additional boon based on your current attunement to nearby allies when activated."
+			]
+		},
+		{
+			"name": "Elemental Epitome",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MIT",
+				"GMT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Empowering Auras|GW2EoD} or {@optfeature Evasive Empowerment|GW2EoD} or {@optfeature Spectacular Sphere|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Gain an aura based on your current attunement when you combo. Gain Elemental Empowerment when you grant yourself an aura. Auras can be gained this way once per attunement per interval."
+			]
+		},
+		{
+			"name": "Staunch Auras",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"GMT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Elemental Epitome|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Gain stability when you grant yourself an aura."
+			]
+		},
+		{
+			"name": "Empowered Empowerment",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"GMT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Elemental Epitome|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Elemental Empowerment is more effective. While at maximum stacks of Elemental Empowerment, its effectiveness is increased further."
+			]
+		},
+		{
+			"name": "Sphere Specialist",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"GMT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Elemental Epitome|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Boons applied by your Jade Sphere have increased duration. You can now gain energy while jade spheres are active."
+			]
+		},
+		{
+			"name": "Mace Strike",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Mace"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ½",
+				"{@b Recharge:} ",
+				"{@b Range:} ",
+				"{@b Target:} ",
+				"{@b Duration:} ",
+				"{@b Properties:} ",
+				"{@b Description:} Strike your target.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Mace Smash",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Mace. Must follow Mace Strike."
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ½",
+				"{@b Recharge:} ",
+				"{@b Range:} ",
+				"{@b Target:} ",
+				"{@b Duration:} ",
+				"{@b Properties:} Inflicts Confusion",
+				"{@b Description:} Smash your target with a heavy blow from your mace, inflicting confusion.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Mace Blast",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Mace. Must follow Mace Smash."
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ¾",
+				"{@b Recharge:} ",
+				"{@b Range:} ",
+				"{@b Target:} ",
+				"{@b Duration:} ",
+				"{@b Properties:} Inflicts Confusion",
+				"{@b Description:} Smash your target with a final heavy strike, inflicting additional confusion.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Energizing Slam",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Mace"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ¾",
+				"{@b Recharge:} 6",
+				"{@b Range:} ",
+				"{@b Target:} ",
+				"{@b Duration:} ",
+				"{@b Properties:} Leap, Grants Barrier, Grants Boons, Inflicts Conditions",
+				"{@b Description:} Leap forward and smash the ground, inflicting conditions on foes while granting barrier and boons to allies.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Rocket Fist Prototype",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Mace"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ½",
+				"{@b Recharge:} 12",
+				"{@b Range:} ",
+				"{@b Target:} ",
+				"{@b Duration:} ",
+				"{@b Properties:} Stun",
+				"{@b Description:} Launch a fist that explodes on the first target hit, damaging and stunning nearby enemies.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Rectifier Signet",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"HS"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Mechanist Elite Specialization"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ",
+				"{@b Recharge:} 30",
+				"{@b Range:} ",
+				"{@b Target:} Self/Mech",
+				"{@b Duration:} ",
+				"{@b Properties:} Signet, Heal",
+				"{@b Description:} {@b Signet Passive:} Heal yourself and your mech every second.",
+				"{@b Effect:} {@b Signet Active:} Heal yourself and your mech.",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Barrier Signet",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"US"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Mechanist Elite Specialization"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ½",
+				"{@b Recharge:} 30",
+				"{@b Range:} ",
+				"{@b Target:} Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Signet, Grants Barrier",
+				"{@b Description:} {@b Signet Passive:} Incoming strike and condition damage is reduced.",
+				"{@b Effect:} {@b Signet Active:} Create a projectile-blocking dome around yourself. You and allies inside the dome gain barrier every second. If your mech is active, the dome is centered on it and is larger. The mech does not count against the target count for this skill.",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Force Signet",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"US"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Mechanist Elite Specialization"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ¼",
+				"{@b Recharge:} 30",
+				"{@b Range:} ",
+				"{@b Target:} Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Signet, Knockback",
+				"{@b Description:} {@b Signet Passive:} Increases strike damage dealt.",
+				"{@b Effect:} {@b Signet Active:} Knock foes away from yourself and away from your mech.",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Shift Signet",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"US"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Mechanist Elite Specialization"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ",
+				"{@b Recharge:} 25",
+				"{@b Range:} ",
+				"{@b Target:} Foe",
+				"{@b Duration:} ",
+				"{@b Properties:} Signet, Grants Boons, Removes Conditions, Shadowstep",
+				"{@b Description:} {@b Signet Passive:} Increases movement speed. Boons you gain are copied to your mech.",
+				"{@b Effect:} {@b Signet Active:} You and your mech Shadowstep to the target location. Removes conditions on you and your mech.",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Superconducting Signet",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"US"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Mechanist Elite Specialization"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ¼",
+				"{@b Recharge:} 30",
+				"{@b Range:} ",
+				"{@b Target:} Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Signet, Inflicts Conditions",
+				"{@b Description:} {@b Signet Passive:} Increases condition damage dealt.",
+				"{@b Effect:} {@b Signet Active:} Creates a damaging field around you that applies conditions to nearby foes. If your mech is active, the field instead radiates from and follows the mech.",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Overclock Signet",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"ES"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Mechanist Elite Specialization"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ",
+				"{@b Recharge:} 90",
+				"{@b Range:} ",
+				"{@b Target:} Mech/Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Signet, Jade Buster Cannon",
+				"{@b Description:} {@b Signet Passive:} Reduces recharge of other signets.",
+				"{@b Effect:} {@b Signet Active:} Order your mech to fire its ultimate weapon, the jade buster cannon. If your mech is not present, instead your mech is summoned, even if Crash Down is on cooldown.",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Recall Mech",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"PS"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Mechanical Genius|GW2EoD}"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} 1 {@variantrule Action|XPHB}",
+				"{@b Recharge:} {@chance 55|10+}",
+				"{@b Range:} 300 feet",
+				"{@b Target:} 1 Jade Mech CJ-1 you own",
+				"{@b Duration:} Instantaneous",
+				"{@b Description:} Recall your mech for repairs. The cooldown of {@optfeature Crash Down|GW2EoD} is determined by the amount of damage your mech has taken.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Crash Down",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"PS"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Mechanical Genius|GW2EoD}"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} 1 {@variantrule Action|XPHB}",
+				"{@b Recharge:} {@chance 55|10+} - {@chance 15|18+}",
+				"{@b Range:} 60 feet",
+				"{@b Target:} 18-foot-radius sphere",
+				"{@b Duration:} Instantaneous",
+				"{@b Description:} Summon your jade mech at the target area. Foes in the area are damaged. The recharge time of this skill is based on how damaged your mech is.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Mechanical Genius",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MIT",
+				"ADT"
+			],
+			"prerequisite": [
+				{
+					"other": "Access to the Mechanist Elite Specialization."
+				}
+			],
+			"entries": [
+				"You can now use the {@optfeature Recall Mech|GW2EoD} and {@optfeature Crash Down|GW2EoD} {@variantrule Profession Skill|GW2|Profession Skills}."
+			]
+		},
+		{
+			"name": "Mech Arms: Single-Edge Cutters",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"ADT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Mechanical Genius|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Unlocks the Mech Command skill Rolling Smash. Your mech's attacks apply bleeding. This attack's effect may only affect a certain target once per interval."
+			]
+		},
+		{
+			"name": "Mech Arms: High-Impact Drivers",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"ADT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Mechanical Genius|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Unlocks the Mech Command skill Explosive Knuckle. Your mech's attacks now generate might for allies within a radius. This effect may only occur once per interval. The mech does not count against the target count for this trait."
+			]
+		},
+		{
+			"name": "Mech Arms: Jade Cannons",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"ADT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Mechanical Genius|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Melee attacks become ranged, have an increased chance to critically hit, and apply vulnerability. Unlocks the Mech Command skill Spark Revolver."
+			]
+		},
+		{
+			"name": "Mech Fighter",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MIT",
+				"MAT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Mech Arms: Single-Edge Cutters|GW2EoD} or {@optfeature Mech Arms: High-Impact Drivers|GW2EoD} or {@optfeature Mech Arms: Jade Cannons|GW2EoD}"
+				}
+			],
+			"entries": [
+				"New combat subroutines enable your mech to use Rocket Punch when you activate Skill 3 on your equipped weapon. Your mech gains a greater percentage of your own toughness and vitality stats."
+			]
+		},
+		{
+			"name": "Mech Frame: Conductive Alloys",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MJT",
+				"MAT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Mech Fighter|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Unlocks the Mech Command skill Discharge Array. Your mech gains a greater percentage of your own condition damage and expertise stats."
+			]
+		},
+		{
+			"name": "Mech Frame: Channeling Conduits",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MJT",
+				"MAT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Mech Fighter|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Unlocks the Mech Command skill Crisis Zone. When you or your mech apply barrier, also grant a boon to the affected target. Your mech gains a greater percentage of your concentration and healing power stats."
+			]
+		},
+		{
+			"name": "Mech Frame: Variable Mass Distributor",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MJT",
+				"MAT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Mech Fighter|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Unlocks the Mech Command skill Core Reactor Shot. Your mech gains a greater percentage of your own precision stats."
+			]
+		},
+		{
+			"name": "Exigency Protocols",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MIT",
+				"GMT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Mech Frame: Conductive Alloys|GW2EoD} or {@optfeature Mech Frame: Channeling Conduits|GW2EoD} or {@optfeature Mech Frame: Variable Mass Distributor|GW2EoD}"
+				}
+			],
+			"entries": [
+				"When your mech is struck while under half health, it activates Exigency Protocols, gaining damage reduction and regeneration for a short duration. Regeneration boons you apply are stronger."
+			]
+		},
+		{
+			"name": "Mech Core: Jade Dynamo",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"GMT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Exigency Protocols|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Unlocks the Mech Command skill Jade Mortar. Mech Command skills grant you quickness when used and have a reduced cooldown."
+			]
+		},
+		{
+			"name": "Mech Core: Barrier Engine",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"GMT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Exigency Protocols|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Unlocks the Mech Command skill Barrier Burst. While in combat, your mech will automatically grant a small barrier each interval to nearby allies. The mech does not count against the target count for this trait."
+			]
+		},
+		{
+			"name": "Mech Core: J-Drive",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"GMT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Exigency Protocols|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Gain access to the Mech Command skill Sky Circus. While dismissed or away for repairs, your mech supports you with an occasional aerial bombardment. Signet skills gain improved passive effects and continue to grant their passive bonuses while recharging."
+			]
+		},
+		{
+			"name": "Gunstinger",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Pistol"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ½",
+				"{@b Recharge:} 15",
+				"{@b Range:} ",
+				"{@b Target:} Foe",
+				"{@b Duration:} ",
+				"{@b Properties:} Movement, Reload, Ammunition Recovery",
+				"{@b Description:} Quickly step forward to strike your foe while reloading your gun. Restores ammo to skill 5.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Dragon's Roar",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Pistol"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ½",
+				"{@b Recharge:} 1",
+				"{@b Range:} ",
+				"{@b Target:} Cone",
+				"{@b Duration:} ",
+				"{@b Properties:} Damage, Ammo Consumption, Knockback",
+				"{@b Description:} Fire all the barrels in your hand cannon to deal damage to foes in front of you. This skill consumes all your ammo when fired and pushes you back slightly based on the amount of ammo expended.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Unsheathe Gunsaber",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"PS"
+			],
+			"prerequisite": [
+				{
+					"other": "F1 Skill (Unsheathe)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ",
+				"{@b Recharge:} 10",
+				"{@b Range:} ",
+				"{@b Target:} Self",
+				"{@b Duration:} ",
+				"{@b Properties:} Transformation, Weapon Swap",
+				"{@b Description:} Unsheathe your gunsaber to gain new skills. Changes to your weapon recharge affect this skill.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Sheathe Gunsaber",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"PS"
+			],
+			"prerequisite": [
+				{
+					"other": "F1 Skill (Sheathe)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ",
+				"{@b Recharge:} 10",
+				"{@b Range:} ",
+				"{@b Target:} Self",
+				"{@b Duration:} ",
+				"{@b Properties:} Transformation, Weapon Swap",
+				"{@b Description:} Put your gunsaber away and return to your normal weapon set. Changes to your weapon recharge affect this skill.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Dragon Trigger",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"PS"
+			],
+			"prerequisite": [
+				{
+					"other": "F2 Skill (Dragon Slash Prep)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ¼",
+				"{@b Recharge:} 8",
+				"{@b Range:} ",
+				"{@b Target:} Self",
+				"{@b Duration:} ",
+				"{@b Properties:} Flow Drain, Charge, Channel",
+				"{@b Description:} Prepare to use Dragon Slash. While channeling, you drain flow. Each interval increases the charge level of Dragon Slash. This skill is cancelled if you move.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Swift Cut",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Gunsaber"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ½",
+				"{@b Recharge:} ",
+				"{@b Range:} ",
+				"{@b Target:} Foe",
+				"{@b Duration:} ",
+				"{@b Properties:} Chain, Fire",
+				"{@b Description:} Chain. Slash your foe, then fire off a ranged shot. Foes hit by the initial attack take less damage from the follow-up shot.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Steel Divide",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Gunsaber. Must follow Swift Cut."
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ½",
+				"{@b Recharge:} ",
+				"{@b Range:} ",
+				"{@b Target:} Foe",
+				"{@b Duration:} ",
+				"{@b Properties:} Chain, Fire",
+				"{@b Description:} Chain. Swing your gunsaber and fire a second shot. Foes hit by the initial attack take less damage from the follow-up shot.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Explosive Thrust",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Gunsaber. Must follow Steel Divide."
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ¾",
+				"{@b Recharge:} ",
+				"{@b Range:} ",
+				"{@b Target:} Foe",
+				"{@b Duration:} ",
+				"{@b Properties:} Chain, Fire, Explosive",
+				"{@b Description:} Chain. Hit your foe with a final, brutal stab, and fire a shot that causes a secondary explosion. Foes hit by the initial attack take less damage from the follow-up shot.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Blooming Fire",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Gunsaber"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ½",
+				"{@b Recharge:} 2",
+				"{@b Range:} ",
+				"{@b Target:} Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Slash, Fire, Explosive",
+				"{@b Description:} Slash with your blade and fire a grenade shell that shatters on impact, releasing a series of explosions.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Artillery Slash",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Gunsaber"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ¼",
+				"{@b Recharge:} 4",
+				"{@b Range:} ",
+				"{@b Target:} Foe/Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Ammo Consumption, Explosive",
+				"{@b Description:} Consume all charges to launch a single shell from your sword that explodes on the first enemy hit. Deals bonus damage and applies different effects based on the amount of charges consumed.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Cyclone Trigger",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Gunsaber"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ¼",
+				"{@b Recharge:} 15",
+				"{@b Range:} ",
+				"{@b Target:} Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Spin, Block Projectiles, Fire",
+				"{@b Description:} Spin and block enemy projectiles. Strikes all foes in melee range, and then fires shots at foes out of melee range.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Break Step",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"WS"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Gunsaber"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ½",
+				"{@b Recharge:} 1",
+				"{@b Range:} ",
+				"{@b Target:} Foe",
+				"{@b Duration:} ",
+				"{@b Properties:} Lunge, Explosive, Damage",
+				"{@b Description:} Lunge forward with explosive force, damaging enemies at your starting position.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Dragon Slash—Force",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"PS"
+			],
+			"prerequisite": [
+				{
+					"other": "Dragon Trigger (Charge 1)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} 1¼",
+				"{@b Recharge:} ",
+				"{@b Range:} ",
+				"{@b Target:} Cone",
+				"{@b Duration:} ",
+				"{@b Properties:} Burst, Damage",
+				"{@b Description:} Burst. Slash foes in front of you, ending Dragon Trigger. This attack consumes all charges to deal more damage.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Dragon Slash—Boost",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"PS"
+			],
+			"prerequisite": [
+				{
+					"other": "Dragon Trigger (Charge 2)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ½",
+				"{@b Recharge:} ",
+				"{@b Range:} ",
+				"{@b Target:} Line",
+				"{@b Duration:} ",
+				"{@b Properties:} Burst, Dash, Damage",
+				"{@b Description:} Burst. Dash forward while slashing all foes in a line, ending Dragon Trigger. This attack consumes all charges to deal more damage.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Dragon Slash—Reach",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"PS"
+			],
+			"prerequisite": [
+				{
+					"other": "Dragon Trigger (Charge 3)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} 1¼",
+				"{@b Recharge:} ",
+				"{@b Range:} ",
+				"{@b Target:} Line",
+				"{@b Duration:} ",
+				"{@b Properties:} Burst, Damage",
+				"{@b Description:} Burst. Slash to create a blade of air that strikes foes in a line in front of you, ending Dragon Trigger. This attack consumes all charges to deal more damage.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Triggerguard",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"PS"
+			],
+			"prerequisite": [
+				{
+					"other": "Dragon Trigger"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ",
+				"{@b Recharge:} ",
+				"{@b Range:} ",
+				"{@b Target:} Self",
+				"{@b Duration:} ",
+				"{@b Properties:} Aegis",
+				"{@b Description:} Gain aegis. Using this skill will not end Dragon Trigger.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Flicker Step",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"PS"
+			],
+			"prerequisite": [
+				{
+					"other": "Dragon Trigger"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ½",
+				"{@b Recharge:} ",
+				"{@b Range:} ",
+				"{@b Target:} Ground",
+				"{@b Duration:} ",
+				"{@b Properties:} Blink",
+				"{@b Description:} Blink to a location. Using this skill will not end Dragon Trigger.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Combat Stimulant",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"HS"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Bladesworn Elite Specialization"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ¾",
+				"{@b Recharge:} 1",
+				"{@b Range:} ",
+				"{@b Target:} Self",
+				"{@b Duration:} ",
+				"{@b Properties:} Armament, Heal, Grants Boons, Stlm State",
+				"{@b Description:} Armament. Heal yourself and enter Stlm State. When Stlm State expires, you are healed again. Using this skill while in Stlm State grants boons.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Flow Stabilizer",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"US"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Bladesworn Elite Specialization"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} 1",
+				"{@b Recharge:} 1",
+				"{@b Range:} ",
+				"{@b Target:} Self",
+				"{@b Duration:} ",
+				"{@b Properties:} Armament, Flow Rate, Grants Fury, Grants Flow",
+				"{@b Description:} Armament. Increase flow rate and gain fury. If you already have fury, gain additional flow.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Overcharged Cartridges",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"US"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Bladesworn Elite Specialization"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ½",
+				"{@b Recharge:} 1",
+				"{@b Range:} ",
+				"{@b Target:} Self",
+				"{@b Duration:} ",
+				"{@b Properties:} Armament, Explosion Damage, Supercharge",
+				"{@b Description:} Armament. Your next few explosion attacks deal more damage. Using this skill while you already have stacks of Overcharged Cartridges causes you to supercharge your remaining cartridges.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Electric Fence",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"US"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Bladesworn Elite Specialization"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ¼",
+				"{@b Recharge:} 1",
+				"{@b Range:} ",
+				"{@b Target:} Ground",
+				"{@b Duration:} ",
+				"{@b Properties:} Armament, Block Projectiles, Inflicts Cripple, Immobilize",
+				"{@b Description:} Armament. Throw a device that leaves behind a wall of energy, blocking projectiles and crippling foes that pass through it. Foes that are already crippled become immobilized.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Dragonspike Mine",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"US"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Bladesworn Elite Specialization"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ",
+				"{@b Recharge:} 20",
+				"{@b Range:} ",
+				"{@b Target:} Self/Area",
+				"{@b Duration:} ",
+				"{@b Properties:} Armament, Evade, Explosion, Inflicts Cripple, Recharge Dragon Trigger",
+				"{@b Description:} Armament. Evade backward while triggering an explosion that cripples foes. This skill recharges Dragon Trigger.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Tactical Reload",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"ES"
+			],
+			"prerequisite": [
+				{
+					"other": "Requires Bladesworn Elite Specialization"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} ½",
+				"{@b Recharge:} 30",
+				"{@b Range:} ",
+				"{@b Target:} Self",
+				"{@b Duration:} ",
+				"{@b Properties:} Armament, Reload, Dragon Trigger Charge",
+				"{@b Description:} Armament. Reload ammo on all of your bladesworn skills. Your next Dragon Trigger generates more charges per interval.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Gun X Sword",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MIT",
+				"ADT"
+			],
+			"prerequisite": [
+				{
+					"other": "Access to the Bladesworn Elite Specialization."
+				}
+			],
+			"entries": [
+				"Gain access to the Gunsaber as an alternate weapon set, but lose the ability to swap to other weapon sets during combat. Adrenaline is replaced with flow. Will not activate out of combat unless an enemy is within range."
+			]
+		},
+		{
+			"name": "River's Flow",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"ADT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Gun X Sword|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Incoming healing increased. Healing yourself increases flow rate. Regeneration effects do not trigger flow rate increase."
+			]
+		},
+		{
+			"name": "Swift as the Wind",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"ADT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Gun X Sword|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Movement skills grant swiftness and increase flow rate."
+			]
+		},
+		{
+			"name": "Unseen Sword",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"ADT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Gun X Sword|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Swapping weapons strikes all nearby foes."
+			]
+		},
+		{
+			"name": "Dragonscale Defense",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MIT",
+				"MAT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature River's Flow|GW2EoD} or {@optfeature Swift as the Wind|GW2EoD} or {@optfeature Unseen Sword|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Gain boons when entering Dragon Trigger."
+			]
+		},
+		{
+			"name": "Unshakable Mountain",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MJT",
+				"MAT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Dragonscale Defense|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Gain barrier when you convert flow into charges while below the charge threshold."
+			]
+		},
+		{
+			"name": "Fierce as Fire",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MJT",
+				"MAT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Dragonscale Defense|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Gain increased strike damage for each round of ammunition spent. Using the first round of ammo on an ammunition skill reduces the recharge of all warrior skills. Does not affect the recharge of Unsheathe Gunsaber, Sheathe Gunsaber, and Dragon Trigger."
+			]
+		},
+		{
+			"name": "Lush Forest",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MJT",
+				"MAT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Dragonscale Defense|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Using the first round of ammo on an ammunition skill reduces the recharge of all warrior skills. Does not affect the recharge of Unsheathe Gunsaber, Sheathe Gunsaber, and Dragon Trigger."
+			]
+		},
+		{
+			"name": "Guns and Glory",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MIT",
+				"GMT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Unshakable Mountain|GW2EoD} or {@optfeature Fierce as Fire|GW2EoD} or {@optfeature Lush Forest|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Gain ferocity for a short duration when you hit with an explosion. The effect stacks duration."
+			]
+		},
+		{
+			"name": "Immortal Dragon",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"GMT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Guns and Glory|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Dragon Slash heals you for a percentage of the damage dealt. Gain protection whenever you convert flow into charges."
+			]
+		},
+		{
+			"name": "Unyielding Dragon",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"GMT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Guns and Glory|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Dragon Slash becomes unblockable and ignores blindness. Gain might whenever you convert flow into charges."
+			]
+		},
+		{
+			"name": "Daring Dragon",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"MAT",
+				"GMT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Guns and Glory|GW2EoD}"
+				}
+			],
+			"entries": [
+				"Dragon Slash has a lower maximum charge level and consumes more flow per charge, but its damage per charge is increased. Grant boons to nearby allies when you use Dragon Slash."
+			]
+		}
+	],
 	"feat": [],
 	"spell": [
 		{
@@ -918,6 +3481,27 @@
 	"language": [],
 	"subclass": [
 		{
+			"name": "Mechanist",
+			"shortName": "Mechanist",
+			"source": "GW2EoD",
+			"className": "Engineer",
+			"classSource": "GW2",
+			"edition": "one",
+			"subclassFeatures": [
+				"Mechanist|Engineer|GW2|Mechanist|GW2EoD|1",
+				"Elite Specialization|Engineer|GW2|Mechanist|GW2EoD|3",
+				"Advanced Robotics|Engineer|GW2|Mechanist|GW2EoD|5",
+				"Neural Link|Engineer|GW2|Mechanist|GW2EoD|5",
+				"High-Level Robotics|Engineer|GW2|Mechanist|GW2EoD|10",
+				"Infra Red Optics|Engineer|GW2|Mechanist|GW2EoD|10",
+				"Masterful Robotics|Engineer|GW2|Mechanist|GW2EoD|15",
+				"Improved Sensors|Engineer|GW2|Mechanist|GW2EoD|15",
+				"Legendary Robotics|Engineer|GW2|Mechanist|GW2EoD|20"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"name": "Virtuoso",
 			"source": "GW2EoD",
 			"className": "Bard",
@@ -1005,6 +3589,124 @@
 		}
 	],
 	"subclassFeature": [
+		{
+			"name": "Mechanist",
+			"source": "GW2EoD",
+			"className": "Engineer",
+			"classSource": "GW2",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "GW2EoD",
+			"level": 1,
+			"entries": [
+				"You have adopted the Mechanist Elite Specialization. You gain proficiency with {@item Mace|XPHB|Maces} and can use their {@variantrule Weapon Skill|GW2|Weapon Skills}.",
+				"You now qualify to learn Mechanist specific {@variantrule Healing Skill|GW2|Healing Skills}, {@variantrule Utility Skill|GW2|Utility Skills}, and {@variantrule Elite Skill|GW2|Elite Skills} when you choose your skills.",
+				"Through your mechanical genius, you have utilized Canthan jade technology to build a customized battle mech that will fight at your side. The mech uses the {@creature Jade Mech CJ-1|GW2EoD} stat block. You determine how the mech looks, but it is typically humanoid in shape and stands about 7 feet tall.",
+				"The mech is Friendly to you and your allies and obeys your commands. It deanimates if you die.",
+				"{@b The Mech in Combat.} In Combat, the mech acts during your turn. It can move and use its {@variantrule Reaction|XPHB} on its own, but the only action it takes is the {@action Dodge|XPHB} action unless you take a {@variantrule Bonus Action|XPHB} to command it to take an action in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the mech to take the Hard Strike action. If you have the {@condition Incapacitated} condition, the mech acts on its own and isn't limited to the {@action Dodge|XPHB} action.",
+				"{@b Restoring or Replacing the Mech.} If the mech has died within the last hour, you can take a {@action Magic|XPHB} action to touch it and expend a {@variantrule Hit Point Dice|XPHB}. The mech returns to life after 1 minute with all its Hit Points restored.",
+				"When you finish a {@variantrule Long Rest|XPHB}, you can construct a new mech if your previous one has been destroyed."
+			]
+		},
+		{
+			"name": "Elite Specialization",
+			"source": "GW2EoD",
+			"className": "Engineer",
+			"classSource": "GW2",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "GW2EoD",
+			"level": 3,
+			"entries": [
+				"You gain access to the {@table Engineer Traits|GW2|Mechanist} Specialization and learn its Minor Adept {@variantrule traits|GW2|trait} {@optfeature Mechanical Genius|GW2EoD}."
+			]
+		},
+		{
+			"name": "Advanced Robotics",
+			"source": "GW2EoD",
+			"className": "Engineer",
+			"classSource": "GW2",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "GW2EoD",
+			"level": 5,
+			"entries": [
+				"Through tinkering and upgrades, you have improved your mech's capabilities. Your can now add your {@table Proficiency Bonus|XPHB} to the mech's {@variantrule Armor Class|XPHB}."
+			]
+		},
+		{
+			"name": "Neural Link",
+			"source": "GW2EoD",
+			"className": "Engineer",
+			"classSource": "GW2",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "GW2EoD",
+			"level": 5,
+			"entries": [
+				"You developed a neural interface to better control your mech. You can now communicate telepathically with your mech within a range of 1 mile. Additionally, you can use your action to see and hear through your mech's sensors until the start of your next turn. While doing so, you are {@condition Blinded} and {@condition Deafened} with regard to your own senses."
+			]
+		},
+		{
+			"name": "High-Level Robotics",
+			"source": "GW2EoD",
+			"className": "Engineer",
+			"classSource": "GW2",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "GW2EoD",
+			"level": 10,
+			"entries": [
+				"You developed jade-powered jets to enhance your mech's mobility. Your mech's speed increases by 30 feet, and it gains a flying speed (hover) equal to its walking speed."
+			]
+		},
+		{
+			"name": "Infra Red Optics",
+			"source": "GW2EoD",
+			"className": "Engineer",
+			"classSource": "GW2",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "GW2EoD",
+			"level": 10,
+			"entries": [
+				"Developoment of advanced optics allows your mech to see in the darkest conditions. Your mech gains darkvision with a range of 60 feet."
+			]
+		},
+		{
+			"name": "Masterful Robotics",
+			"source": "GW2EoD",
+			"className": "Engineer",
+			"classSource": "GW2",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "GW2EoD",
+			"level": 15,
+			"entries": [
+				"You have developed a link between yourself and your mech, allowing it to benefit from your own prowess. Add your ability modifier to the mech's ability modifiers (minimum of +1)."
+			]
+		},
+		{
+			"name": "Improved Sensors",
+			"source": "GW2EoD",
+			"className": "Engineer",
+			"classSource": "GW2",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "GW2EoD",
+			"level": 15,
+			"entries": [
+				"You drastically improve your mech's sensory systems. Your mech gains advantage on Wisdom (Perception) checks that rely on sight or hearing. Additionally, your mech gains truesight out to a range of 30 feet."
+			]
+		},
+		{
+			"name": "Legendary Robotics",
+			"source": "GW2EoD",
+			"className": "Engineer",
+			"classSource": "GW2",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "GW2EoD",
+			"level": 20,
+			"entries": [
+				"You have achieved the pinnacle of mech engineering. Your mech gains sentience and can act independently of you. It gains the following benefits:",
+				"{@b Improved Cognition.} The mech can now speak, read, write, and understand all languages.",
+				"{@b Independent Actions.} In combat, the mech can now act independently of you, taking its own turn in the initiative order. It can move and take actions as normal without requiring your command.",
+				"{@b Magically Enhanced Systems.} The mech can now attune to up to two magic items.",
+				"{@b Mechanical Resilience.} The mech has advantage on all saving throws."
+			]
+		},
 		{
 			"name": "Psychic Blades",
 			"source": "GW2EoD",

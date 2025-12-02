@@ -13011,16 +13011,16 @@
 			"str": 9,
 			"dex": 14,
 			"con": 11,
-			"int": 17,
+			"int": 18,
 			"wis": 12,
 			"cha": 11,
 			"save": {
-				"int": "+6",
+				"int": "+7",
 				"wis": "+4"
 			},
 			"skill": {
-				"arcana": "+6",
-				"history": "+6",
+				"arcana": "+7",
+				"history": "+7",
 				"perception": "+4"
 			},
 			"passive": 14,
@@ -13032,7 +13032,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The White Mantle Savant casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 14}, +6 to hit with spell attacks.)"
+						"The White Mantle Savant casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 15}, +7 to hit with spell attacks.)"
 					],
 					"displayAs": "action",
 					"will": [
@@ -13040,11 +13040,9 @@
 					],
 					"daily": {
 						"2e": [
-							"{@spell Fireball (Guild Wars)|GW}",
-							"{@spell Ward Against Elements|GWP}"
+							"{@spell Fireball (Guild Wars)|GW}"
 						],
 						"1e": [
-							"{@spell Glyph of Elemental Power|GW}",
 							"{@spell Searing Heat|GWP}"
 						]
 					},
@@ -13052,17 +13050,17 @@
 					"type": "spellcasting"
 				},
 				{
-					"name": "Misty Step (3/Day)",
+					"name": "Glyph of Elemental Power (2/Day)",
 					"headerEntries": [
-						"The mage casts {@spell Misty Step|XPHB}, using the same spellcasting ability as Spellcasting."
+						"The White Mantle Savant casts {@spell Glyph of Elemental Power|GW}, using the same spellcasting ability as Spellcasting."
 					],
 					"displayAs": "bonus",
 					"hidden": [
 						"daily"
 					],
 					"daily": {
-						"3": [
-							"{@spell Misty Step|XPHB}"
+						"2": [
+							"{@spell Glyph of Elemental Power|GW}"
 						]
 					},
 					"type": "spellcasting"
@@ -13070,7 +13068,7 @@
 				{
 					"name": "Protective Magic (2/Day)",
 					"headerEntries": [
-						"The mage casts {@spell Power Leak|GWP} or {@spell Shield|XPHB} in response to the spell's trigger, using the same spellcasting ability as Spellcasting."
+						"The White Mantle Savant casts {@spell Ward Against Elements|GWP} in response to being targeted with a spell that deals acid, cold, fire, force, lightning, or thunder damage."
 					],
 					"displayAs": "reaction",
 					"hidden": [
@@ -13078,8 +13076,7 @@
 					],
 					"daily": {
 						"2": [
-							"{@spell Power Leak|GWP}",
-							"{@spell Shield|XPHB}"
+							"{@spell Ward Against Elements|GWP}"
 						]
 					},
 					"type": "spellcasting"
@@ -13089,18 +13086,15 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The mage makes three Arcane Burst attacks."
+						"The mage makes three Elemental Burst attacks or casts {@spell Flare|GW} three times."
 					]
 				},
 				{
-					"name": "Arcane Burst",
+					"name": "Elemental Burst",
 					"entries": [
-						"{@atkr m,r} {@hit 6}, reach 5 ft. or range 120 ft. {@h}16 ({@damage 3d8 + 3}) Force damage."
+						"{@atkr m,r} {@hit 6}, reach 5 ft. or range 120 ft. {@h}16 ({@damage 3d8 + 3}) Fire, Lightning, Thunder, or Cold damage."
 					]
 				}
-			],
-			"environment": [
-				"any"
 			],
 			"treasure": [
 				"arcana",
@@ -13143,23 +13137,11 @@
 			"tokenHref": {
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_elementalist_Token.png"
-			},
-			"damageTags": [
-				"O"
-			],
-			"damageTagsSpell": [
-				"F"
-			],
-			"savingThrowForcedSpell": [
-				"charisma",
-				"constitution",
-				"dexterity"
-			]
+			}
 		},
 		{
 			"name": "White Mantle Abbot",
 			"source": "GWP",
-			"page": 248,
 			"size": [
 				"M"
 			],
@@ -13226,7 +13208,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The priest makes two attacks, using Mace or Radiant Flame in any combination."
+						"The White Mantle Abbot makes two attacks, using Mace or Radiant Flame in any combination."
 					]
 				},
 				{
@@ -14014,6 +13996,326 @@
 				"charisma",
 				"dexterity",
 				"wisdom"
+			]
+		},
+		{
+			"name": "White Mantle Ritualist",
+			"source": "GWP",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 63,
+				"formula": "14d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 10,
+			"con": 11,
+			"int": 16,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"int": "+5",
+				"wis": "+3"
+			},
+			"skill": {
+				"arcana": "+5",
+				"history": "+5",
+				"perception": "+3"
+			},
+			"passive": 13,
+			"languages": [
+				"Common",
+				"Krytan",
+				"Abyssal",
+				"Orrian"
+			],
+			"cr": "3",
+			"gear": [
+				"wand|xphb"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The White Mantle Ritualist casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 13}):"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Vampiric Gaze|GW}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell Well of the Profane|GW}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Order of Pain (3/Day)",
+					"headerEntries": [
+						"The White Mantle Ritualist casts {@spell Order of Pain|GW}, using the same spellcasting ability as Spellcasting."
+					],
+					"displayAs": "bonus",
+					"hidden": [
+						"daily"
+					],
+					"daily": {
+						"3": [
+							"{@spell Order of Pain|GW}"
+						]
+					},
+					"type": "spellcasting"
+				},
+				{
+					"name": "Subversive Magic (1/Day)",
+					"headerEntries": [
+						"The White Mantle Ritualist casts {@spell Mark of Subversion|GWP} in response to a creature casting a spell on an ally of theirs."
+					],
+					"displayAs": "reaction",
+					"hidden": [
+						"daily"
+					],
+					"daily": {
+						"1": [
+							"{@spell Mark of Subversion|GWP}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The White Mantle Ritualist makes two Necrotic Burst attacks or casts {@spell Vampiric Gaze|GW} twice. It can replace one of either with the casting of {@spell Well of the Profane|GW}."
+					]
+				},
+				{
+					"name": "Necrotic Burst",
+					"entries": [
+						"{@atkr m,r} {@hit 5}, reach 5 ft. or range 120 ft. {@h}11 ({@damage 2d8 + 3}) Necrotic damage."
+					]
+				}
+			],
+			"treasure": [
+				"arcana",
+				"individual"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"AB"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RA",
+				"MA"
+			],
+			"conditionInflictSpell": [
+				"invisible"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_necromancer.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_necromancer_Token.png"
+			},
+			"damageTags": [
+				"N"
+			],
+			"damageTagsSpell": [
+				"N"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "White Mantle Sycophant",
+			"source": "GWP",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 85,
+				"formula": "19d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 11,
+			"int": 11,
+			"wis": 12,
+			"cha": 18,
+			"save": {
+				"wis": "+4",
+				"cha": "+7"
+			},
+			"skill": {
+				"deception": "+7",
+				"religion": "+3",
+				"intimidation": "+10"
+			},
+			"passive": 11,
+			"languages": [
+				"Common",
+				"Krytan"
+			],
+			"cr": "7",
+			"gear": [
+				"wand|xphb"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The White Mantle Sycophant casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 15}):"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Empathy|GW}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell Energy Surge|GW}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Shatter Enchantment (3/Day)",
+					"headerEntries": [
+						"The White Mantle Sycophant casts {@spell Shatter Enchantment|GW}, using the same spellcasting ability as Spellcasting."
+					],
+					"displayAs": "bonus",
+					"hidden": [
+						"daily"
+					],
+					"daily": {
+						"3": [
+							"{@spell Misty Step|XPHB}"
+						]
+					},
+					"type": "spellcasting"
+				},
+				{
+					"name": "Manipulation Magic (2/Day)",
+					"headerEntries": [
+						"The White Mantle Sycophant casts {@spell Guilt|GWP} or {@spell Shame|GWP} in response to a creature casting a spell."
+					],
+					"displayAs": "reaction",
+					"hidden": [
+						"daily"
+					],
+					"daily": {
+						"3": [
+							"{@spell Guilt|GWP}",
+							"{@spell Shame|GWP}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The White Mantle Sycophant makes three Chaotic Burst attacks or casts {@spell Empathy|GW} thrice in any combination. It can replace one of either with the casting of {@spell Energy Surge|GW}."
+					]
+				},
+				{
+					"name": "Chaotic Burst",
+					"entries": [
+						"{@atkr m,r} {@hit 7}, reach 5 ft. or range 120 ft. {@h}16 ({@damage 4d6 + 4}) Psychic damage."
+					]
+				}
+			],
+			"treasure": [
+				"arcana",
+				"individual"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RA",
+				"MA"
+			],
+			"conditionInflictSpell": [
+				"invisible"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_mesmer.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_mesmer_Token.png"
+			},
+			"damageTags": [
+				"Y"
 			]
 		}
 	],

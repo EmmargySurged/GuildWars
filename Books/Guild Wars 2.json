@@ -12098,6 +12098,7 @@
         "{@b Range:} 120 feet",
         "{@b Target:} 10-foot-radius sphere",
         "{@b Duration:} Instantaneous",
+        "{@b Properties:} Water Attunement",
         "{@b Description:} Spray a jet of water at your foe that splashes to heal nearby allies.",
         "{@b Effect:} Choose a point you can see within range. Hurl a blast of water at that point. Each hostile creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes {@damage 1d6} cold damage on a failed save, or half as much damage on a successful one. In addition, each friendly creature in the area regains hit points equal to {@dice 1d6} + your class ability modifier.",
         "{@b Scaling:} The damage and healing increases by {@dice 1d6} when you reach levels 5 ({@dice 2d6}), 11 ({@dice 3d6}), and 17 ({@dice 4d6})."
@@ -12553,6 +12554,7 @@
         "{@b Range:} 90 feet",
         "{@b Target:} 1 creature",
         "{@b Duration:} Instantaneous",
+        "{@b Properties:} Water Attunement",
         "{@b Description:} Fire three ice shards at your foe.",
         "{@b Effect:} Choose a creature you can see within range. Hurl three ice shards at the target. Make three ranged spell attacks against the target. On a hit, the target takes {@damage 1d4} cold damage.",
         "{@b Scaling:} The damage die increases by one stage when you reach level 5 ({@dice d6}), 11 ({@dice d8}), and 17 ({@dice d10})."
@@ -12912,6 +12914,7 @@
         "{@b Range:} 60 feet",
         "{@b Target:} 60-foot-line",
         "{@b Duration:} Instantaneous",
+        "{@b Properties:} Water Attunement",
         "{@b Description:} Cast a vapor blade that inflicts vulnerability and returns to you.",
         "{@b Effect:} Choose a point within range. Send a blade of scalding steam along the ground in a straight line to that point, which then returns to you along the same path. Make two ranged attacks against each creature on the line. On a hit, a creature takes {@damage 1d6} cold damage and is inflicted with 1 stack of {@variantrule Vulnerability|GW2} for 1 round.",
         "{@b Scaling:} The damage increases by {@damage 1d6} when you reach levels 5 ({@damage 2d6}), 11 ({@damage 3d6}), and 17 ({@damage 4d6})."
@@ -13655,6 +13658,7 @@
         "{@b Range:} 120 feet",
         "{@b Target:} 1 creature",
         "{@b Duration:} Instantaneous",
+        "{@b Properties:} Water Attunement",
         "{@b Description:} Launch a slow-moving homing missile.",
         "{@b Effect:} Choose a creature you can see within range. Launch a slow-moving homing missile at the target. Make a ranged spell attack with advantage against the target. On a hit, the target takes {@damage 1d10} cold damage.",
         "{@b Scaling:} The damage increases by {@damage 1d10} when you reach levels 5 ({@damage 2d10}), 11 ({@damage 3d10}), and 17 ({@damage 4d10})."
@@ -17305,19 +17309,19 @@
       ],
       "prerequisite": [
         {
-          "other": ""
+          "other": "Elementalist"
         }
       ],
       "entries": [
-        "{@b Casting Time:} ¾",
-        "{@b Recharge:} 20",
-        "{@b Range:} ",
-        "{@b Target:} Area",
-        "{@b Duration:} ",
-        "{@b Properties:} Arcane, Heal, Combo Finisher, Critical Damage",
-        "{@b Description:} Arcane. Blast the area, hitting foes with critical damage and healing yourself. Healing effectiveness is increased per target hit. If this skill finishes a combo, you heal an additional amount.",
-        "{@b Effect:} ",
-        "{@b Scaling:} "
+        "{@b Casting Time:} Action",
+        "{@b Recharge:} {@chance 35|14+}",
+        "{@b Range:} Self",
+        "{@b Target:} 20-foot-emination",
+        "{@b Duration:} Instantaneous",
+        "{@b Properties:} {@variantrule Combo Finisher|GW2|Combo Finisher Blast}, Arcane",
+        "{@b Description:} Blast the area, hitting foes with critical damage and healing yourself. Healing effectiveness is increased per target hit. If this skill finishes a combo, you heal an additional amount.",
+        "{@b Effect:} Choose up to 5 targets in the area. Each target must make a Dexterity saving throw. On a failed save, a target automatically {@variantrule Critical Failure|GW2|Critically Fails}, taking {@damage 1d6} force damage. On a successful save, the target takes half as much damage. You regain hit points equal to {@dice 2d8} + your class ability modifier, plus an additional {@dice 1d8} hit points for each target hit. If this skill finishes a {@variantrule Combo|GW2|Combo}, you regain an additional {@dice 1d8} hit points.",
+        "{@b Scaling:} The initial healing increases by {@dice 1d8} when you reach levels 5 ({@dice 2d8}), 11 ({@dice 3d8}), and 17th level ({@dice 4d8})."
       ]
     },
     {
@@ -17329,7 +17333,7 @@
       ],
       "prerequisite": [
         {
-          "other": ""
+          "other": "Elementalist"
         }
       ],
       "entries": [

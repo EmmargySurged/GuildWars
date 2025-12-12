@@ -781,18 +781,18 @@
       ],
       "prerequisite": [
         {
-          "other": "Requires Elementalist"
+          "other": "Evoker Elementalist"
         }
       ],
       "entries": [
-        "{@b Casting Time:} ¾",
-        "{@b Recharge:} 18",
-        "{@b Range:} ",
+        "{@b Casting Time:} Action",
+        "{@b Recharge:} {@chance 35|14+}",
+        "{@b Range:} Self",
         "{@b Target:} Self",
-        "{@b Duration:} ",
-        "{@b Properties:} Meditation, Heal, Familiar Charge",
-        "{@b Description:} Meditation. Heal yourself and charge your familiar skill.",
-        "{@b Effect:} ",
+        "{@b Duration:} Instantaneous",
+        "{@b Properties:} Meditation",
+        "{@b Description:} Heal yourself and charge your familiar skill.",
+        "{@b Effect:} You regain hit points equal to 3d8 + your spellcasting ability modifier and fully charge your familiar skill.",
         "{@b Scaling:} "
       ]
     },
@@ -926,11 +926,13 @@
       ],
       "prerequisite": [
         {
-          "other": "Access to the Evoker Specialization."
+          "other": "Evoker Elementalist"
         }
       ],
       "entries": [
-        "Select an element to specialize in, greatly reducing its recharge time and gaining a familiar of that element. The familiar's basic skill charges as you use weapon skills, charging more rapidly when you use a weapon skill of its element. Using the familiar's basic skill three times will enable its empowered skill. Gain access to meditation skills."
+        "You gain access to the {@variantrule Profession Skill|GW2} in the {@table Evoker Familiars|GW2VoE} table corresponding to your chosen familiar spirit. To use this {@variantrule Skill|GW2}, you must collect six charges by using {@variantrule Weapon Skill|GW2|Weapon Skills} and expend them.", 
+        "Using a {@variantrule Weapon Skill|GW2|} associated with your chosen familiar's element grants you two charges, while using any other {@variantrule Weapon Skill|GW2} grants you one charge. You can store a maximum of six charges.",
+        "After every three times you use your {@variantrule Profession Skill|GW2}, you can use the {@variantrule Profession Skill|GW2|Greater Profession Skill} associated with your chosen familiar's element as shown in the {@table Evoker Familiars|GW2VoE} table instead of the {@variantrule Profession Skill|GW2}."
       ]
     },
     {
@@ -1975,7 +1977,7 @@
           "{@creature Fox Spirit|GW2VoE}",
           "{@creature Fire Elemental|XMM}",
           "Fire",
-          "Once per turn, when you inflict {@variantrule Burning|GW2} on a creature, you gain 1 round of {@variantrule Might|GW2}.",
+          "Once per {@variantrule Skill|GW2}, when you inflict {@variantrule Burning|GW2} on a creature, you gain 1 round of {@variantrule Might|GW2}.",
           "{@optfeature Ignite|GW2VoE}",
           "{@optfeature Conflagration|GW2VoE}"
         ],

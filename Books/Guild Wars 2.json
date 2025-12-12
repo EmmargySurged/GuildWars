@@ -17321,7 +17321,7 @@
         "{@b Properties:} {@variantrule Combo Finisher|GW2|Combo Finisher Blast}, Arcane",
         "{@b Description:} Blast the area, hitting foes with critical damage and healing yourself. Healing effectiveness is increased per target hit. If this skill finishes a combo, you heal an additional amount.",
         "{@b Effect:} Choose up to 5 targets in the area. Each target must make a Dexterity saving throw. On a failed save, a target automatically {@variantrule Critical Failure|GW2|Critically Fails}, taking {@damage 1d6} force damage. On a successful save, the target takes half as much damage. You regain hit points equal to {@dice 2d8} + your class ability modifier, plus an additional {@dice 1d8} hit points for each target hit. If this skill finishes a {@variantrule Combo|GW2|Combo}, you regain an additional {@dice 1d8} hit points.",
-        "{@b Scaling:} The initial healing increases by {@dice 1d8} when you reach levels 5 ({@dice 2d8}), 11 ({@dice 3d8}), and 17th level ({@dice 4d8})."
+        "{@b Scaling:} The initial healing increases by {@dice 1d8} when you reach levels 5 ({@dice 3d8}), 11 ({@dice 4d8}), and 17th level ({@dice 5d8})."
       ]
     },
     {
@@ -17337,15 +17337,15 @@
         }
       ],
       "entries": [
-        "{@b Casting Time:} 2½",
-        "{@b Recharge:} 15",
-        "{@b Range:} ",
+        "{@b Casting Time:} {@variantrule Channel|GW2|Channel:} 21",
+        "{@b Recharge:} {@chance 45|12+}",
+        "{@b Range:} Self",
         "{@b Target:} Self",
-        "{@b Duration:} ",
-        "{@b Properties:} Cantrip, Cures Conditions, Heal",
-        "{@b Description:} Cantrip. Cure a condition and heal yourself with every pulse.",
-        "{@b Effect:} ",
-        "{@b Scaling:} "
+        "{@b Duration:} Instantaneous",
+        "{@b Properties:} Cantrip",
+        "{@b Description:} Cure a condition and heal yourself with every pulse.",
+        "{@b Effect:} You regain {@dice 1d4} hit points and can end one condition affecting you, then for the duration of the {@variantrule Channel|GW2}, you regain {@dice 1d4} hit points and can end one condition affecting you every 3 {@variantrule Initiative|XPHB}.",
+        "{@b Scaling:} The healing increases by {@dice 1d4} when you reach levels 5 ({@dice 2d4}), 11 ({@dice 3d4}), and 17th level ({@dice 4d4})."
       ]
     },
     {
@@ -17357,19 +17357,19 @@
       ],
       "prerequisite": [
         {
-          "other": ""
+          "other": "Elementalist"
         }
       ],
       "entries": [
-        "{@b Casting Time:} 1",
-        "{@b Recharge:} 20",
-        "{@b Range:} ",
+        "{@b Casting Time:} Action",
+        "{@b Recharge:} {@chance 35|14+}",
+        "{@b Range:} Self",
         "{@b Target:} Self",
-        "{@b Duration:} ",
-        "{@b Properties:} Glyph, Heal, Grants Boon (Attunement Dependent)",
-        "{@b Description:} Glyph. Heal yourself and gain a boon based on your attunement.",
-        "{@b Effect:} ",
-        "{@b Scaling:} "
+        "{@b Duration:} Instantaneous",
+        "{@b Properties:} Glyph",
+        "{@b Description:} Heal yourself and gain a boon based on your attunement.",
+        "{@b Effect:} You regain hit points equal to {@dice 4d8} + your class ability modifier. Depending on your current attunement, you gain one of the following boons: {@b Fire:} 3 stacks of {@variantrule Might|GW2|Might} for 3 rounds; {@b Water:} 2 rounds of {@variantrule Regeneration|GW2|Regeneration}, healing for {@dice 1d8}; {@b Air:} 2 rounds of {@variantrule Swiftness|GW2|Swiftness}; {@b Earth:} 1 rounds of {@variantrule Protection|GW2|Protection}.",
+        "{@b Scaling:} The healing increases by {@dice 1d8} when you reach levels 5 ({@dice 5d8}), 11 ({@dice 6d8}), and 17th level ({@dice 7d8})."
       ]
     },
     {
@@ -17381,19 +17381,21 @@
       ],
       "prerequisite": [
         {
-          "other": ""
+          "other": "Elementalist"
         }
       ],
       "entries": [
-        "{@b Casting Time:} 1",
-        "{@b Recharge:} 20",
-        "{@b Range:} ",
+        "{@b Casting Time:} Action",
+        "{@b Recharge:} {@chance 35|14+}",
+        "{@b Range:} Self",
         "{@b Target:} Self",
-        "{@b Duration:} ",
-        "{@b Properties:} Signet, Heal",
-        "{@b Description:} {@b Signet Passive:} Grants health every time you cast a spell.",
-        "{@b Effect:} {@b Signet Active:} Heal yourself.",
-        "{@b Scaling:} "
+        "{@b Duration:} Instantaneous",
+        "{@b Properties:} {@variantrule Signet|GW2|}",
+        "{@b Description:} Grants health every time you cast a spell.",
+        "{@b Signet Passive:} You regain {@dice 1d4} hit points when you finish casting a {@variantrule Skill|GW2|Skill}.",
+        "{@b Passive Scaling:} The healing increases by {@dice 1d4} when you reach levels 5 ({@dice 2d4}), 11 ({@dice 3d4}), and 17th level ({@dice 4d4}).",
+        "{@b Signet Active:} You regain {@dice 3d8} + your class ability modifier hit points.",
+        "{@b Active Scaling:} The healing increases by {@dice 1d8} when you reach levels 5 ({@dice 4d8}), 11 ({@dice 5d8}), and 17th level ({@dice 6d8})."
       ]
     },
     {
@@ -23336,6 +23338,17 @@
       ]
     },
     {
+      "name": "Channel",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Property|GW2}",
+        "When you use a {@variantrule Skill|GW2|Skill} with this {@variantrule Property|GW2}, you must use your {@variantrule Action|XPHB} to channel it every round until the channel is completed.",
+        "The channel duration is specified in the skill’s description and is measured in {@variantrule Initiative|XPHB}. If you reach the end of the round and have not yet completed the channel, continue counting {@variantrule Initiative|XPHB} in the round until you hit 0 and then start at the top of the next round.",
+        "If you take damage while channeling, you must succeed on a {@status Concentration|XPHB} {@variantrule Saving Throw|XPHB} to maintain the channel. On a failed save, the channel ends immediately.",
+        "You can end the channel at any time (no {@variantrule Action|XPHB} required)."
+      ]
+    },
+    {
       "name": "Chaos Aura",
       "source": "GW2",
       "entries": [
@@ -23866,6 +23879,14 @@
         "Stacks Duration.",
         "A creature with a {@variantrule Defiance Bar|GW2} takes 50 defiance bar damage at the start of its turn instead of being affected.",
         "This {@variantrule Condition|GW2} converts into 1 round of {@variantrule Quickness|GW2}."
+      ]
+    },
+    {
+      "name": "Signet",
+      "source": "GW2",
+      "entries": [
+        "{@variantrule Property|GW2}",
+        "Signets have passive and active effects. The passive effect is active as long as the signet is not on recharge."
       ]
     },
     {

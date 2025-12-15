@@ -1938,19 +1938,21 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Mechanist Elite Specialization"
+					"other": "Mechanist Engineer"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ",
-				"{@b Recharge:} 30",
-				"{@b Range:} ",
+				"{@b Casting Time:} Action",
+				"{@b Recharge:} {@chance 15|18+}",
+				"{@b Range:} Self",
 				"{@b Target:} Self/Mech",
-				"{@b Duration:} ",
-				"{@b Properties:} Signet, Heal",
-				"{@b Description:} {@b Signet Passive:} Heal yourself and your mech every second.",
-				"{@b Effect:} {@b Signet Active:} Heal yourself and your mech.",
-				"{@b Scaling:} "
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Signet|GW2}",
+				"{@b Description:} Heal yourself and your mech every second.",
+				"{@b Signet Passive:} At the start of each of your turns, you and your {@creature Jade Mech CJ-1|GW2EoD} regain hit points equal to {@dice 1d4}.",
+				"{@b Passive Scaling:} The healing increases by {@dice 1d4} when you reach levels 5 ({@dice 2d4}), 11 ({@dice 3d4}), and 17th level ({@dice 4d4}).",
+				"{@b Signet Active:} You and your {@creature Jade Mech CJ-1|GW2EoD} regain hit points equal to {@dice 3d8} + your class ability modifier.",
+				"{@b Active Scaling:} The healing increases by {@dice 1d8} when you reach levels 5 ({@dice 4d8}), 11 ({@dice 5d8}), and 17th level ({@dice 6d8})."
 			]
 		},
 		{

@@ -10742,19 +10742,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Sword (F1 Skill)"
+					"other": "Warrior wielding a Shortsword"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ½",
-				"{@b Recharge:} 8",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Burst, Immobilize, Inflicts Bleeding",
-				"{@b Description:} Burst. Immobilize your foes with a flurry of bleeding strikes. Effect increases with adrenaline level.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} {@variantrule Channel|Gw2}: 20",
+				"{@b Recharge:} {@chance 55|10+}",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 3 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} Burst",
+				"{@b Description:} Immobilize your foes with a flurry of bleeding strikes. Effect increases with adrenaline level.",
+				"{@b Effect:} At the beginning of the {@variantrule Channel|Gw2} and then every 4 (3 for 20+ Adrenaline and 2 for 30 Adrenaline) {@variantrule Initiative|XPHB} thereafter, make a melee weapon attack against up to 3 creatures within range. On a hit, a target takes {@damage 1d4} slashing damage and is inflicted with 1 stack of {@variantrule Bleeding|Gw2} for 1 round, taking {@damage 1d8} damage. The first attack also inflicts {@variantrule Immobilized|Gw2} for 1 round on a hit.",
+				"{@b Scaling:} The damage each increases by {@damage 1d4} and {@damage 1d8} respectively when you reach levels 5 ({@damage 2d4} & {@damage 2d8}), 11 ({@damage 3d4} & {@damage 3d8}), and 17 ({@damage 4d4} & {@damage 4d8})."
 			]
 		},
 		{
@@ -10766,19 +10766,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Sword"
+					"other": "Warrior wielding a Shortsword"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ½",
-				"{@b Recharge:} ",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Chain, Inflicts Bleeding",
-				"{@b Description:} Chain. Bleed your foe with a slash.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} Action",
+				"{@b Recharge:} None",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 3 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Chain|Gw2}: {@optfeature Sever Artery|Gw2} -> {@optfeature Gash|Gw2} -> {@optfeature Hamstring|Gw2}",
+				"{@b Description:} Bleed your foe with a slash.",
+				"{@b Effect:} Choose up to 3 creatures within range. Make a melee weapon attack against each target. On a hit, a target takes {@damage 1d8} slashing damage and is inflicted with 1 stack of {@variantrule Bleeding|Gw2} for 1 round, taking {@damage 1d8} damage.",
+				"{@b Scaling:} The damage each increases by {@damage 1d8} when you reach levels 5 ({@damage 2d8}), 11 ({@damage 3d8}), and 17 ({@damage 4d8})."
 			]
 		},
 		{
@@ -10790,19 +10790,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Sword. Must follow Sever Artery."
+					"other": "Warrior wielding a Shortsword"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ¼",
-				"{@b Recharge:} ",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Chain, Inflicts Bleeding",
-				"{@b Description:} Chain. Bleed your foe with a gash.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} Bonus Action",
+				"{@b Recharge:} None",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 3 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Chain|Gw2}: {@optfeature Sever Artery|Gw2} -> {@optfeature Gash|Gw2} -> {@optfeature Hamstring|Gw2}",
+				"{@b Description:} Bleed your foe with a gash.",
+				"{@b Effect:} Choose up to 3 creatures within range. Make a melee weapon attack against each target. On a hit, a target takes {@damage 1d8} slashing damage and is inflicted with 1 stack of {@variantrule Bleeding|Gw2} for 1 round, taking {@damage 1d8} damage.",
+				"{@b Scaling:} The damage each increases by {@damage 1d8} when you reach levels 5 ({@damage 2d8}), 11 ({@damage 3d8}), and 17 ({@damage 4d8})."
 			]
 		},
 		{
@@ -10814,19 +10814,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Sword. Must follow Gash."
+					"other": "Warrior wielding a Shortsword"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ¼",
-				"{@b Recharge:} ",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Chain, Inflicts Cripple",
+				"{@b Casting Time:} Special",
+				"{@b Recharge:} None",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 3 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Chain|Gw2}: {@optfeature Sever Artery|Gw2} -> {@optfeature Gash|Gw2} -> {@optfeature Hamstring|Gw2}",
 				"{@b Description:} Cripple your foe with a precise slash.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Choose up to 3 creatures within range. Make a melee weapon attack against each target. On a hit, a target takes {@damage 1d12} slashing damage and is inflicted with 1 stack of {@variantrule Bleeding|Gw2} for 1 round, taking {@damage 1d8} damage and 1 round of {@variantrule Crippled|GW2}.",
+				"{@b Scaling:} The damage each increases by {@damage 1d12} and {@damage 1d8} respectively when you reach levels 5 ({@damage 2d12} & {@damage 2d8}), 11 ({@damage 3d12} & {@damage 3d8}), and 17 ({@damage 4d12} & {@damage 4d8})."
 			]
 		},
 		{
@@ -10982,19 +10982,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Axe (F1 Skill)"
+					"other": "Warrior wielding an Handaxe"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ",
-				"{@b Recharge:} 8",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Burst, Leap, Damage",
-				"{@b Description:} Burst. Leap at your foe with a devastating attack. Effect increases with adrenaline level.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} Action",
+				"{@b Recharge:} {@chance 55|10+}",
+				"{@b Range:} 45 feet",
+				"{@b Target:} 1 creature",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} Burst, {@variantrule Combo Finisher|GW2}: Leap",
+				"{@b Description:} Leap at your foe with a devastating attack. Effect increases with adrenaline level.",
+				"{@b Effect:} Choose one creature you can see within range. You leap within 5 feet of the target and make a melee weapon attack against it. The attack has an increased {@variantrule Critical Hit|XPHB} range of 10. On a hit, the target takes {@damage 2d10} slashing damage and you gain 5 stacks of {@variantrule Might|GW2} for 1 round. The damage increases by {@damage 1d6} per 10 Adrenaline spent beyond the initial 10. ",
+				"{@b Scaling:} The damage each increases by {@damage 2d10} and {@damage 1d6} respectively when you reach levels 5 ({@damage 4d10} & {@damage 2d6}), 11 ({@damage 6d10} & {@damage 3d6}), and 17 ({@damage 8d10} & {@damage 4d6})."
 			]
 		},
 		{
@@ -11006,19 +11006,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Axe"
+					"other": "Warrior wielding an Handaxe"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ¼",
-				"{@b Recharge:} ",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Chain",
-				"{@b Description:} Chain. Chop your foe.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} Bonus Action",
+				"{@b Recharge:} None",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 3 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Chop|GW2} -> {@optfeature Double Chop|GW2} -> {@optfeature Triple Chop|GW2}",
+				"{@b Description:} Chop your foe.",
+				"{@b Effect:} Choose up to 3 creatures within range. Make a melee weapon attack against each target. On a hit, the target takes {@damage 1d6} slashing damage. ",
+				"{@b Scaling:} The damage increases by {@damage 1d6} when you reach levels 5 ({@damage 2d6}), 11 ({@damage 3d6}), and 17 ({@damage 4d6})."
 			]
 		},
 		{
@@ -11030,19 +11030,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Axe. Must follow Chop."
+					"other": "Warrior wielding an Handaxe"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ¼",
-				"{@b Recharge:} ",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Chain",
-				"{@b Description:} Chain. Chop your foe twice.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} Special",
+				"{@b Recharge:} None",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 3 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Chop|GW2} -> {@optfeature Double Chop|GW2} -> {@optfeature Triple Chop|GW2}",
+				"{@b Description:} Chop your foe twice.",
+				"{@b Effect:} Choose up to 3 creatures within range. Make two melee weapon attacks against each target. On a hit, the target takes {@damage 1d6} slashing damage.",
+				"{@b Scaling:} The damage increases by {@damage 1d6} when you reach levels 5 ({@damage 2d6}), 11 ({@damage 3d6}), and 17 ({@damage 4d6})."
 			]
 		},
 		{
@@ -11054,19 +11054,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Axe. Must follow Double Chop."
+					"other": "Warrior wielding an Handaxe"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} 1½",
-				"{@b Recharge:} ",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Chain",
+				"{@b Casting Time:} Action",
+				"{@b Recharge:} None",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 3 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Chop|GW2} -> {@optfeature Double Chop|GW2} -> {@optfeature Triple Chop|GW2}",
 				"{@b Description:} Deliver three final chops to your foe.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Choose up to 3 creatures within range. Make three melee weapon attacks against each target. On a hit, the target takes {@damage 1d6} slashing damage. The last attack deals an additional {@damage 1d10} slashing damage.",
+				"{@b Scaling:} The damage each increases by {@damage 1d6} and {@damage 1d10} respectively when you reach levels 5 ({@damage 2d6} & {@damage 2d10}), 11 ({@damage 3d6} & {@damage 3d10}), and 17 ({@damage 4d6} & {@damage 4d10})."
 			]
 		},
 		{
@@ -11174,19 +11174,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Mace (F1 Skill)"
+					"other": "Warrior wielding a Mace"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ½",
-				"{@b Recharge:} 8",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Burst, Stun",
-				"{@b Description:} Burst. Stun your foe with a skull crack. Effect increases with adrenaline level.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} Action or Bonus Action",
+				"{@b Recharge:} {@chance 55|10+}",
+				"{@b Range:} 5 feet",
+				"{@b Target:} 1 creature",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} Burst",
+				"{@b Description:} Stun your foe with a skull crack. Effect increases with adrenaline level.",
+				"{@b Effect:} Choose one creature you can see within range. Make a melee weapon attack against it. On a hit, the target takes {@damage 2d8} bludgeoning damage and is {@variantrule Stunned|XPHB} for a number of rounds equal to a tenth of the Adrenaline spent. A {@variantrule Stunned|XPHB} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"{@b Scaling:} The damage increases by {@damage 2d8} when you reach levels 5 ({@damage 4d8}), 11 ({@damage 6d8}), and 17 ({@damage 8d8})."
 			]
 		},
 		{
@@ -11198,19 +11198,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Mace"
+					"other": "Warrior wielding a Mace"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ½",
-				"{@b Recharge:} ",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Chain",
-				"{@b Description:} Chain. Smash your foe.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} Action",
+				"{@b Recharge:} None",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 3 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Mace Smash|GW2} -> {@optfeature Mace Bash|GW2} -> {@optfeature Pulverize|GW2}",
+				"{@b Description:} Smash your foe.",
+				"{@b Effect:} Choose up to 3 creatures within range. Make a melee weapon attack against each target. On a hit, the target takes {@damage 1d8} bludgeoning damage. ",
+				"{@b Scaling:} The damage increases by {@damage 1d8} when you reach levels 5 ({@damage 2d8}), 11 ({@damage 3d8}), and 17 ({@damage 4d8})."
 			]
 		},
 		{
@@ -11222,19 +11222,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Mace. Must follow Mace Smash."
+					"other": "Warrior wielding a Mace"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ½",
-				"{@b Recharge:} ",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Chain",
-				"{@b Description:} Chain. Bash your foe.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} Bonus Action",
+				"{@b Recharge:} None",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 3 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Mace Smash|GW2} -> {@optfeature Mace Bash|GW2} -> {@optfeature Pulverize|GW2}",
+				"{@b Description:} Bash your foe.",
+				"{@b Effect:} Choose up to 3 creatures within range. Make a melee weapon attack against each target. On a hit, the target takes {@damage 1d8} bludgeoning damage.",
+				"{@b Scaling:} The damage increases by {@damage 1d8} when you reach levels 5 ({@damage 2d8}), 11 ({@damage 3d8}), and 17 ({@damage 4d8})."
 			]
 		},
 		{
@@ -11246,19 +11246,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Mace. Must follow Mace Bash."
+					"other": "Warrior wielding a Mace"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ¾",
-				"{@b Recharge:} ",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Chain, Inflicts Weaken",
+				"{@b Casting Time:} Special",
+				"{@b Recharge:} None",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 3 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Mace Smash|GW2} -> {@optfeature Mace Bash|GW2} -> {@optfeature Pulverize|GW2}",
 				"{@b Description:} Thrash your foe, leaving them weakened.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Choose up to 3 creatures within range. Make a melee weapon attack against each target. On a hit, the target takes {@damage 2d8} bludgeoning damage and is inflicted with {@variantrule Weakness|GW2} for 1 round.",
+				"{@b Scaling:} The damage increases by {@damage 2d8} when you reach levels 5 ({@damage 4d8}), 11 ({@damage 6d8}), and 17 ({@damage 8d8})."
 			]
 		},
 		{
@@ -11390,19 +11390,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Longbow (F1 Skill)"
+					"other": "Warrior wielding a Longbow"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ¾",
-				"{@b Recharge:} 8",
-				"{@b Range:} ",
-				"{@b Target:} Area",
-				"{@b Duration:} ",
-				"{@b Properties:} Burst, Inflicts Burn",
-				"{@b Description:} Burst. Ignite target area, burning nearby foes. Effect increases with adrenaline level.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} Action",
+				"{@b Recharge:} {@chance 55|10+}",
+				"{@b Range:} 120 feet",
+				"{@b Target:} 20-foot radius sphere",
+				"{@b Duration:} 1 round per 10 Adrenaline spent",
+				"{@b Properties:} Burst, {@variantrule Combo Field|GW2}: Fire",
+				"{@b Description:} Ignite target area, burning nearby foes. Effect increases with adrenaline level.",
+				"{@b Effect:} Choose a point within range. For the duration, you create a 20-foot-radius Sphere centered on that point, that is a {@variantrule Combo Field|GW2} Fire. Each hostile creature in that Sphere must make a Dexterity saving throw. On a failed save, a target takes {@damage 1d6} fire damage and is inflicted with 1 stack of {@variantrule Burning|GW2} for 1 round, taking {@damage 1d12} damage. On a successful save, a target takes half as much damage only. A hostile creature also makes this save if it enters the Sphere or ends its turn there, or if the Sphere moves into its space. A hostile creature makes this save only once per turn.",
+				"{@b Scaling:} The damage each increases by {@damage 1d6} and {@damage 1d12} respectively when you reach levels 5 ({@damage 2d6} & {@damage 2d12}), 11 ({@damage 3d6} & {@damage 3d12}), and 17 ({@damage 4d6} & {@damage 4d12})."
 			]
 		},
 		{
@@ -11414,19 +11414,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Longbow"
+					"other": "Warrior wielding a Longbow"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ¼",
-				"{@b Recharge:} ",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Dual",
+				"{@b Casting Time:} Action",
+				"{@b Recharge:} None",
+				"{@b Range:} 120 feet",
+				"{@b Target:} 1 creature",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Combo Finisher|GW2}: Projectile ({@chance 20})",
 				"{@b Description:} Shoot a pair of arrows at your foe.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Choose one creature you can see within range. Make two ranged weapon attacks against the target. On a hit, the target takes {@damage 1d6} piercing damage.",
+				"{@b Scaling:} The damage increases by {@damage 1d6} when you reach levels 5 ({@damage 2d6}), 11 ({@damage 3d6}), and 17 ({@damage 4d6})."
 			]
 		},
 		{
@@ -11534,19 +11534,20 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Rifle (F1 Skill)"
+					"other": "Warrior wielding a Rifle"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} 1¼",
-				"{@b Recharge:} 8",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Burst, Power, Damage Threshold",
-				"{@b Description:} Burst. Fire a powerful shot. Damage increases with adrenaline level. Deal increased damage to enemies that are affected by crowd control or below the health threshold.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} {@variantrule Channel|Gw2}: 12",
+				"{@b Recharge:} {@chance 55|10+}",
+				"{@b Range:} 150 feet",
+				"{@b Target:} 1 creature",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} Burst, {@variantrule Combo Finisher|GW2}: Projectile, {@variantrule Piercing|GW2}",
+				"{@b Description:} Fire a powerful shot. Damage increases with adrenaline level. Deal increased damage to enemies that are affected by crowd control or below the health threshold.",
+				"{@b Effect:} Choose one creature you can see within range. When the {@variantrule Channel|Gw2} ends, make a ranged weapon attack against the target. On a hit, the target takes {@damage 1d10 + 1d12} piercing damage. The damage increases by {@damage 1d6} per 10 Adrenaline spent beyond the initial 10. If the target is {@condition Bloodied|XPHB} or under a {@variantrule Control Effect|GW2}, the target takes an additional 20% damage.",
+				"You cannot move while channeling this skill.",
+				"{@b Scaling:} The damage each increases by {@damage 1d10 + 1d12} and {@damage 1d6} respectively when you reach levels 5 ({@damage 2d10 + 2d12} & {@damage 2d6}), 11 ({@damage 3d10 + 3d12} & {@damage 3d6}), and 17 ({@damage 4d10 + 4d12} & {@damage 4d6})."
 			]
 		},
 		{
@@ -11558,19 +11559,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Rifle"
+					"other": "Warrior wielding a Rifle"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ¾",
-				"{@b Recharge:} ",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Grants Might, Vulnerability",
+				"{@b Casting Time:} Action",
+				"{@b Recharge:} None",
+				"{@b Range:} 120 feet",
+				"{@b Target:} 1 creature",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Combo Finisher|GW2}: Projectile ({@chance 20}), {@variantrule Piercing|GW2}",
 				"{@b Description:} Fire a shot at your target. Gain might if you strike a vulnerable target.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Choose one creature you can see within range. Make a ranged weapon attack against the target. On a hit, the target takes {@damage 1d10} piercing damage. If the target is under the effect of {@variantrule Vulnerability|GW2}, you and up to 4 other allies within 20 feet of you gain 1 stack of {@variantrule Might|GW2} for 1 round.",
+				"{@b Scaling:} The damage increases by {@damage 1d10} when you reach levels 5 ({@damage 2d10}), 11 ({@damage 3d10}), and 17 ({@damage 4d10})."
 			]
 		},
 		{
@@ -11678,19 +11679,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Hammer (F1 Skill)"
+					"other": "Warrior wielding a Hammer"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ¾",
-				"{@b Recharge:} 8",
-				"{@b Range:} ",
-				"{@b Target:} Ground",
-				"{@b Duration:} ",
-				"{@b Properties:} Burst, Leap, Stun",
-				"{@b Description:} Burst. Jump to the targeted location and slam your hammer down, damaging and stunning foes.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} Action",
+				"{@b Recharge:} {@chance 55|10+}",
+				"{@b Range:} 60 feet",
+				"{@b Target:} 10-foot radius sphere",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} Burst, {@variantrule Combo Finisher|GW2}: Blast",
+				"{@b Description:} Jump to the targeted location and slam your hammer down, damaging and stunning foes.",
+				"{@b Effect:} Choose a point you can see within range. Leap to that point and cause a Blast {@variantrule Combo Finisher}. Each hostile creature in the area must make a Constitution saving throw. On a failed save, a creature takes {@damage 2d10} bludgeoning damage and is {@variantrule Stunned|GW2} for a number of rounds equal to a tenth of the Adrenaline spent. On a successful save, a creature takes half damage and isn't stunned. A {@variantrule Stunned|GW2} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"{@b Scaling:} The damage increases by {@damage 2d10} when you reach levels 5 ({@damage 4d10}), 11 ({@damage 6d10}), and 17 ({@damage 8d10})."
 			]
 		},
 		{
@@ -11702,19 +11703,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Hammer"
+					"other": "Warrior wielding a Hammer"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ½",
-				"{@b Recharge:} ",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Chain",
-				"{@b Description:} Chain. Bash your foe.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} Action",
+				"{@b Recharge:} None",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 3 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Hammer Swing|GW2} -> {@optfeature Hammer Bash|GW2} -> {@optfeature Hammer Smash|GW2}",
+				"{@b Description:} Bash your foe.",
+				"{@b Effect:} Choose up to 3 creatures within range. Make a melee weapon attack against each target. On a hit, a target takes {@damage 1d10} bludgeoning damage.",
+				"{@b Scaling:} The damage increases by {@damage 1d10} when you reach levels 5 ({@damage 2d10}), 11 ({@damage 3d10}), and 17 ({@damage 4d10})."
 			]
 		},
 		{
@@ -11726,19 +11727,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Hammer. Must follow Hammer Swing."
+					"other": "Warrior wielding a Hammer"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ½",
-				"{@b Recharge:} ",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Chain",
-				"{@b Description:} Chain. Bash your foe again.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} Bonus Action",
+				"{@b Recharge:} None",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 3 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Hammer Swing|GW2} -> {@optfeature Hammer Bash|GW2} -> {@optfeature Hammer Smash|GW2}",
+				"{@b Description:} Bash your foe again.",
+				"{@b Effect:} Choose up to 3 creatures within range. Make a melee weapon attack against each target. On a hit, a target takes {@damage 1d10} bludgeoning damage.",
+				"{@b Scaling:} The damage increases by {@damage 1d10} when you reach levels 5 ({@damage 2d10}), 11 ({@damage 3d10}), and 17 ({@damage 4d10})."
 			]
 		},
 		{
@@ -11750,19 +11751,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Hammer. Must follow Hammer Bash."
+					"other": "Warrior wielding a Hammer"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ½",
-				"{@b Recharge:} ",
-				"{@b Range:} ",
-				"{@b Target:} Area",
-				"{@b Duration:} ",
-				"{@b Properties:} Chain, Explosive",
+				"{@b Casting Time:} Special",
+				"{@b Recharge:} None",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 3 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Hammer Swing|GW2} -> {@optfeature Hammer Bash|GW2} -> {@optfeature Hammer Smash|GW2}",
 				"{@b Description:} Smash the ground and damage nearby foes.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Choose up to 3 creatures within range. Make a melee weapon attack against each target. On a hit, a target takes {@damage 1d12} bludgeoning damage.",
+				"{@b Scaling:} The damage increases by {@damage 1d12} when you reach levels 5 ({@damage 2d12}), 11 ({@damage 3d12}), and 17 ({@damage 4d12})."
 			]
 		},
 		{
@@ -11870,19 +11871,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Greatsword (F1 Skill)"
+					"other": "Warrior wielding a Greatsword"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ½",
-				"{@b Recharge:} 8",
-				"{@b Range:} ",
-				"{@b Target:} Area",
-				"{@b Duration:} ",
-				"{@b Properties:} Burst, Grants Fury",
-				"{@b Description:} Burst. Deliver a circular attack to foes around you, and gain fury. Deal more damage to foes with low health.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} Action or Bonus Action",
+				"{@b Recharge:} {@chance 55|10+}",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 5 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} Burst",
+				"{@b Description:} Deliver a circular attack to foes around you, and gain fury. Deal more damage to foes with low health.",
+				"{@b Effect:} Choose up to 5 creatures within range. Make a melee weapon attack against each target. On a hit, a target takes {@damage 2d10} slashing damage plus {@damage 1d10} slashing damage if it is {@condition Bloodied|XPHB}. You gain 1 round of {@variantrule Fury|GW2} for every 10 strikes of Adrenaline you spent.",
+				"{@b Scaling:} The damage each increases by {@damage 1d10} when you reach levels 5 ({@damage 3d10} & {@damage 2d10}), 11 ({@damage 4d10} & {@damage 3d10}), and 17 ({@damage 5d10} & {@damage 4d10})."
 			]
 		},
 		{
@@ -11894,19 +11895,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Greatsword"
+					"other": "Warrior wielding a Greatsword"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ½",
-				"{@b Recharge:} ",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Chain",
-				"{@b Description:} Chain. Slash your foe.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} Action",
+				"{@b Recharge:} None",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 3 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Greatsword Swing|GW2} -> {@optfeature Greatsword Slice|GW2} -> {@optfeature Brutal Strike|GW2}",
+				"{@b Description:} Slash your foe.",
+				"{@b Effect:} Choose up to 3 creatures within range. Make a melee weapon attack against each target. On a hit, a target takes {@damage 1d8} slashing damage and is inflicted with 1 stack of {@variantrule Vulnerability|GW2} for 1 round.",
+				"{@b Scaling:} The damage increases by {@damage 1d8} when you reach levels 5 ({@damage 2d8}), 11 ({@damage 3d8}), and 17 ({@damage 4d8})."
 			]
 		},
 		{
@@ -11918,19 +11919,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Greatsword. Must follow Greatsword Swing."
+					"other": "Warrior wielding a Greatsword"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ½",
-				"{@b Recharge:} ",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Chain",
-				"{@b Description:} Chain. Slice your foe.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} Bonus Action",
+				"{@b Recharge:} None",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 3 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Greatsword Swing|GW2} -> {@optfeature Greatsword Slice|GW2} -> {@optfeature Brutal Strike|GW2}",
+				"{@b Description:} Slice your foe.",
+				"{@b Effect:} Choose up to 3 creatures within range. Make a melee weapon attack against each target. On a hit, a target takes {@damage 1d10} slashing damage and is inflicted with 1 stack of {@variantrule Vulnerability|GW2} for 1 round.",
+				"{@b Scaling:} The damage increases by {@damage 1d10} when you reach levels 5 ({@damage 2d10}), 11 ({@damage 3d10}), and 17 ({@damage 4d10})."
 			]
 		},
 		{
@@ -11942,19 +11943,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Greatsword. Must follow Greatsword Slice."
+					"other": "Warrior wielding a Greatsword"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ½",
-				"{@b Recharge:} ",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Chain, Brutal Strike",
+				"{@b Casting Time:} Special",
+				"{@b Recharge:} None",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 3 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Greatsword Swing|GW2} -> {@optfeature Greatsword Slice|GW2} -> {@optfeature Brutal Strike|GW2}",
 				"{@b Description:} Hit your foe with a final brutal strike.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Choose up to 3 creatures within range. Make a melee weapon attack against each target. On a hit, a target takes {@damage 2d8} slashing damage.",
+				"{@b Scaling:} The damage increases by {@damage 2d8} when you reach levels 5 ({@damage 4d8}), 11 ({@damage 6d8}), and 17 ({@damage 8d8})."
 			]
 		},
 		{

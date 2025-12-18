@@ -10214,19 +10214,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Warrior"
+					"other": "Warrior"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} 1",
-				"{@b Recharge:} 12",
-				"{@b Range:} ",
+				"{@b Casting Time:} Action",
+				"{@b Recharge:} {@chance 45|12+}",
+				"{@b Range:} Self",
 				"{@b Target:} Self",
-				"{@b Duration:} ",
-				"{@b Properties:} Physical, Cures Conditions, Heal",
-				"{@b Description:} Physical. Remove conditions and heal yourself.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} Physical",
+				"{@b Description:} Remove conditions and heal yourself.",
+				"{@b Effect:} You regain hit points equal to {@dice 8d8} + your Class abiltity modifier. You also end the remove the latest five conditions affecting you.",
+				"{@b Scaling:} The healing increases by {@dice 2d8} when you reach levels 5 ({@dice 10d8}), 11 ({@dice 12d8}), and 17 ({@dice 14d8})."
 			]
 		},
 		{
@@ -10310,19 +10310,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Harpoon Gun (F1 Skill)"
+					"other": "Warrior wielding a Harpoon Gun underwater"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} 1¼",
-				"{@b Recharge:} 8",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Burst, Damage, Adrenaline Scaling",
-				"{@b Description:} Burst. Fire a forceful shot. Damage increases with adrenaline level.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} {@variantrule Channel|Gw2}: 18",
+				"{@b Recharge:} {@chance 55|10+}",
+				"{@b Range:} 120 feet",
+				"{@b Target:} 1 creature",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} Burst, {@variantrule Combo Finisher|GW2}: Projectile, {@variantrule Piercing|GW2}",
+				"{@b Description:} Fire a forceful shot. Damage increases with adrenaline level.",
+				"{@b Effect:} Choose one creature you can see within range. When the Channel ends, make a ranged weapon attack against the target. On a hit, the target takes {@damage 1d10 + 1d12} piercing damage. The damage increases by {@damage 1d6} per 10 Adrenaline spent beyond the initial 10.",
+				"{@b Scaling:} The damage each increases by {@damage 1d10 + 1d12} and {@damage 1d6} respectively when you reach levels 5 ({@damage 2d10 + 2d12} & {@damage 2d6}), 11 ({@damage 3d10 + 3d12} & {@damage 3d6}), and 17 ({@damage 4d10 + 4d12} & {@damage 4d6})."
 			]
 		},
 		{
@@ -10334,19 +10334,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Harpoon Gun"
+					"other": "Warrior wielding a Harpoon Gun underwater"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ¼",
-				"{@b Recharge:} ",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Long Range Damage",
+				"{@b Casting Time:} Bonus Action",
+				"{@b Recharge:} None",
+				"{@b Range:} 120 feet",
+				"{@b Target:} 1 creature",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Combo Finisher|GW2}: Projectile",
 				"{@b Description:} Shoot your foe from long range. The farther the shot goes, the more damage it does.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Choose one creature you can see within range. Make a ranged weapon attack against the target. On a hit, the target takes {@damage 1d6} piercing damage plus an additional {@damage 1d4} damage for every 50 feet between you and the target.",
+				"{@b Scaling:} The damage each increases by {@damage 1d6} and {@damage 1d4} respectively when you reach levels 5 ({@damage 2d6} & {@damage 2d4}), 11 ({@damage 3d6} & {@damage 3d4}), and 17 ({@damage 4d6} & {@damage 4d4})."
 			]
 		},
 		{
@@ -10454,23 +10454,23 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Spear (F1 Skill)"
+					"other": "Warrior wielding a Spear underwater"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ¾",
-				"{@b Recharge:} 8",
-				"{@b Range:} ",
-				"{@b Target:} Area",
-				"{@b Duration:} ",
-				"{@b Properties:} Burst, Damage, Adrenaline Scaling",
-				"{@b Description:} Burst. Strike all foes around you. Effect increases with adrenaline level.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} Action",
+				"{@b Recharge:} {@chance 55|10+}",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 5 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} Burst",
+				"{@b Description:} Strike all foes around you. Effect increases with adrenaline level.",
+				"{@b Effect:} Choose up to 5 creatures within 5 feet of you. Make a melee weapon attack against each target. On a hit, the target takes {@damage 2d10} piercing damage is {@variantrule Stunned|XPHB} for a number of rounds equal to a tenth of the Adrenaline spent. A {@variantrule Stunned|XPHB} creature can make a Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"{@b Scaling:} The damage increases by {@damage 2d10} when you reach levels 5 ({@damage 4d10}), 11 ({@damage 6d10}), and 17 ({@damage 8d10})."
 			]
 		},
 		{
-			"name": "Stab",
+			"name": "Stab (Warrior Spear Underwater)",
 			"source": "GW2",
 			"page": "",
 			"featureType": [
@@ -10478,23 +10478,23 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Spear (Aquatic)"
+					"other": "Warrior wielding a Spear underwater"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ½",
-				"{@b Recharge:} ",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Chain",
-				"{@b Description:} Chain. Stab your foe.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} Action",
+				"{@b Recharge:} None",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 3 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Stab|GW2} -> {@optfeature Jab|GW2} -> {@optfeature Impale|GW2}",
+				"{@b Description:} Stab your foe.",
+				"{@b Effect:} Choose up to 3 creatures within range. Make a melee weapon attack against each target. On a hit, the target takes {@damage 1d8} piercing damage.",
+				"{@b Scaling:} The damage increases by {@damage 1d8} when you reach levels 5 ({@damage 2d8}), 11 ({@damage 3d8}), and 17 ({@damage 4d8})."
 			]
 		},
 		{
-			"name": "Jab",
+			"name": "Jab (Warrior Spear Underwater)",
 			"source": "GW2",
 			"page": "",
 			"featureType": [
@@ -10502,23 +10502,23 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Spear (Aquatic). Must follow Stab."
+					"other": "Warrior wielding a Spear underwater"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ½",
-				"{@b Recharge:} ",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Chain",
-				"{@b Description:} Chain. Jab your foe.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} Bonus Action",
+				"{@b Recharge:} None",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 3 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Stab|GW2} -> {@optfeature Jab|GW2} -> {@optfeature Impale|GW2}",
+				"{@b Description:} Jab your foe.",
+				"{@b Effect:} Choose up to 3 creatures within range. Make a melee weapon attack against each target. On a hit, the target takes {@damage 1d8} piercing damage.",
+				"{@b Scaling:} The damage increases by {@damage 1d8} when you reach levels 5 ({@damage 2d8}), 11 ({@damage 3d8}), and 17 ({@damage 4d8})."
 			]
 		},
 		{
-			"name": "Impale",
+			"name": "Impale (Warrior Spear Underwater)",
 			"source": "GW2",
 			"page": "",
 			"featureType": [
@@ -10526,19 +10526,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Spear (Aquatic). Must follow Jab."
+					"other": "Warrior wielding a Spear underwater"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ¾",
-				"{@b Recharge:} ",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Chain, Impale, Inflicts Cripple",
+				"{@b Casting Time:} Special",
+				"{@b Recharge:} None",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 3 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Stab|GW2} -> {@optfeature Jab|GW2} -> {@optfeature Impale|GW2}",
 				"{@b Description:} Impale your foe and cripple them.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Choose up to 3 creatures within range. Make a melee weapon attack against each target. On a hit, the target takes {@damage 1d10} piercing damage and is {@variantrule Crippled|GW2} for 1 round.",
+				"{@b Scaling:} The damage increases by {@damage 1d10} when you reach levels 5 ({@damage 2d10}), 11 ({@damage 3d10}), and 17 ({@damage 4d10})."
 			]
 		},
 		{
@@ -11185,7 +11185,7 @@
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} Burst",
 				"{@b Description:} Stun your foe with a skull crack. Effect increases with adrenaline level.",
-				"{@b Effect:} Choose one creature you can see within range. Make a melee weapon attack against it. On a hit, the target takes {@damage 2d8} bludgeoning damage and is {@variantrule Stunned|XPHB} for a number of rounds equal to a tenth of the Adrenaline spent. A {@variantrule Stunned|XPHB} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"{@b Effect:} Choose one creature you can see within range. Make a melee weapon attack against it. On a hit, the target takes {@damage 2d8} bludgeoning damage and is {@variantrule Stunned|XPHB} for a number of rounds equal to a tenth of the Adrenaline spent. A {@variantrule Stunned|XPHB} creature can make a Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.",
 				"{@b Scaling:} The damage increases by {@damage 2d8} when you reach levels 5 ({@damage 4d8}), 11 ({@damage 6d8}), and 17 ({@damage 8d8})."
 			]
 		},
@@ -17101,8 +17101,8 @@
 				"{@b Target:} 45-foot-long 5-foot-wide line",
 				"{@b Duration:} Instantaneous",
 				"{@b Description:} Restore health to allies with several pulses of healing energy. Heals more for each boon on the ally.",
-				"{@b Effect:} Project a 45-foot-long 5-foot-wide line of healing energy. Each creature of your choice in the line regains hit points equal to {@damage 1d4} + an additional {@damage 1d4} for each unique {@variantrule Boon|GW2} they have. Repeat this effect every 6 {@variantrule Initiative|XPHB}.",
-				"{@b Scaling:} Th initial healing increases by {@damage 1d4} when you reach levels 5 ({@damage 2d4}), 11 ({@damage 3d4}), and 17 ({@damage 4d4})."
+				"{@b Effect:} Project a 45-foot-long 5-foot-wide line of healing energy. Each creature of your choice in the line regains hit points equal to 1 + an additional 1 for each unique {@variantrule Boon|GW2} they have. Repeat this effect every 6 {@variantrule Initiative|XPHB}.",
+				"{@b Scaling:} Th initial healing increases by 1 when you reach levels 5 (2), 11 (3), and 17 (4)."
 			]
 		},
 		{
@@ -17413,8 +17413,8 @@
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} {@variantrule Combo Finisher|GW2|Combo Finisher Blast}, Arcane",
 				"{@b Description:} Blast the area, hitting foes with critical damage and healing yourself. Healing effectiveness is increased per target hit. If this skill finishes a combo, you heal an additional amount.",
-				"{@b Effect:} Choose up to 5 targets in the area. Each target must make a Dexterity saving throw. On a failed save, a target automatically {@variantrule Critical Failure|GW2|Critically Fails}, taking {@damage 1d6} force damage. On a successful save, the target takes half as much damage. You regain hit points equal to {@dice 2d8} + your class ability modifier, plus an additional {@dice 1d8} hit points for each target hit. If this skill finishes a {@variantrule Combo|GW2|Combo}, you regain an additional {@dice 1d8} hit points.",
-				"{@b Scaling:} The initial healing increases by {@dice 1d8} when you reach levels 5 ({@dice 3d8}), 11 ({@dice 4d8}), and 17th level ({@dice 5d8})."
+				"{@b Effect:} Choose up to 5 targets in the area. Each target must make a Dexterity saving throw. On a failed save, a target automatically {@variantrule Critical Failure|GW2|Critically Fails}, taking {@damage 1d6} force damage. On a successful save, the target takes half as much damage. You regain hit points equal to {@dice 6d8} + your class ability modifier, plus an additional {@dice 1d8} hit points for each target hit. If this skill finishes a {@variantrule Combo|GW2|Combo}, you regain an additional {@dice 2d6} hit points.",
+				"{@b Scaling:} The initial healing increases by {@dice 2d8} when you reach levels 5 ({@dice 8d8}), 11 ({@dice 10d8}), and 17th level ({@dice 12d8})."
 			]
 		},
 		{
@@ -17430,15 +17430,15 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} {@variantrule Channel|GW2|Channel:} 21",
+				"{@b Casting Time:} {@variantrule Channel|GW2}: 21",
 				"{@b Recharge:} {@chance 45|12+}",
 				"{@b Range:} Self",
 				"{@b Target:} Self",
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} Cantrip",
 				"{@b Description:} Cure a condition and heal yourself with every pulse.",
-				"{@b Effect:} You regain {@dice 1d4} hit points and can end one condition affecting you, then for the duration of the {@variantrule Channel|GW2}, you regain {@dice 1d4} hit points and can end one condition affecting you every 3 {@variantrule Initiative|XPHB}.",
-				"{@b Scaling:} The healing increases by {@dice 1d4} when you reach levels 5 ({@dice 2d4}), 11 ({@dice 3d4}), and 17th level ({@dice 4d4})."
+				"{@b Effect:} At the beginning of the {@variantrule Channel|GW2} and then every 3 {@variantrule Initiative|XPHB} thereafter, you regain {@dice 1d10} hit points and remove the latest {@variantrule Condition|GW2} affecting you.",
+				"{@b Scaling:} The healing increases by {@dice 1d10} when you reach levels 5 ({@dice 2d10}), 11 ({@dice 3d10}), and 17th level ({@dice 4d10})."
 			]
 		},
 		{
@@ -17461,8 +17461,8 @@
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} Glyph",
 				"{@b Description:} Heal yourself and gain a boon based on your attunement.",
-				"{@b Effect:} You regain hit points equal to {@dice 4d8} + your class ability modifier. Depending on your current attunement, you gain one of the following boons: {@b Fire:} 3 stacks of {@variantrule Might|GW2|Might} for 3 rounds; {@b Water:} 2 rounds of {@variantrule Regeneration|GW2|Regeneration}, healing for {@dice 1d8}; {@b Air:} 2 rounds of {@variantrule Swiftness|GW2|Swiftness}; {@b Earth:} 1 rounds of {@variantrule Protection|GW2|Protection}.",
-				"{@b Scaling:} The healing increases by {@dice 1d8} when you reach levels 5 ({@dice 5d8}), 11 ({@dice 6d8}), and 17th level ({@dice 7d8})."
+				"{@b Effect:} You regain hit points equal to {@dice 8d8} + your class ability modifier. Depending on your current attunement, you gain one of the following boons: {@b Fire:} 3 stacks of {@variantrule Might|GW2|Might} for 3 rounds; {@b Water:} 2 rounds of {@variantrule Regeneration|GW2|Regeneration}, healing for {@dice 1d8}; {@b Air:} 2 rounds of {@variantrule Swiftness|GW2|Swiftness}; {@b Earth:} 1 rounds of {@variantrule Protection|GW2|Protection}.",
+				"{@b Scaling:} The healing increases by {@dice 2d8} when you reach levels 5 ({@dice 10d8}), 11 ({@dice 12d8}), and 17th level ({@dice 14d8})."
 			]
 		},
 		{
@@ -17487,7 +17487,7 @@
 				"{@b Description:} Grants health every time you cast a spell.",
 				"{@b Signet Passive:} You regain {@dice 1d4} hit points when you finish casting a {@variantrule Skill|GW2|Skill}.",
 				"{@b Passive Scaling:} The healing increases by {@dice 1d4} when you reach levels 5 ({@dice 2d4}), 11 ({@dice 3d4}), and 17th level ({@dice 4d4}).",
-				"{@b Signet Active:} You regain {@dice 3d8} + your class ability modifier hit points.",
+				"{@b Signet Active:} You regain {@dice 4d8} + your class ability modifier hit points.",
 				"{@b Active Scaling:} The healing increases by {@dice 1d8} when you reach levels 5 ({@dice 4d8}), 11 ({@dice 5d8}), and 17th level ({@dice 6d8})."
 			]
 		},
@@ -17511,8 +17511,8 @@
 				"{@b Duration:} 1 round",
 				"{@b Properties:} Gadget",
 				"{@b Description:} Activate your A.E.D., enabling the system to heal you after a brief period of time. If you take lethal damage while A.E.D. is active, it ends and heals you for a large amount and removes conditions.",
-				"{@b Effect:} For the duration, if you are reduced to 0 hit points, the A.E.D. immediately ends and you regain {@dice 6d8} + your class ability modifier hit points and end all damaging {@variantrule Condition|GW2|Conditions} affecting you. If the A.E.D. ends without being triggered, you regain {@dice 2d8} + your class ability modifier hit points.",
-				"{@b Scaling:} The healing each increases by {@dice 1d8} when you reach levels 5 ({@dice 7d8} & {@dice 3d8}), 11 ({@dice 8d8} & {@dice 4d8}), and 17th level ({@dice 9d8} & {@dice 5d8})."
+				"{@b Effect:} For the duration, if you are reduced to 0 hit points, the A.E.D. immediately ends and you regain {@dice 15d8} + your class ability modifier hit points and end all damaging {@variantrule Condition|GW2|Conditions} affecting you. If the A.E.D. ends without being triggered, you regain {@dice 7d6} + your class ability modifier hit points.",
+				"{@b Scaling:} The healing each increases by {@dice 2d8} and {@dice 2d6} respectivly when you reach levels 5 ({@dice 17d8} & {@dice 9d6}), 11 ({@dice 19d8} & {@dice 11d6}), and 17th level ({@dice 21d8} & {@dice 13d6})."
 			]
 		},
 		{
@@ -17559,8 +17559,8 @@
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} Elixir",
 				"{@b Description:} Drink Elixir H to heal yourself and gain protection, regeneration, and swiftness.",
-				"{@b Effect:} You regain {@dice 4d8} + your class ability modifier hit points and gain {@variantrule Protection|GW2|Protection}, {@variantrule Regeneration|GW2|Regeneration}, healing for {@dice 1d8}, and {@variantrule Swiftness|GW2|Swiftness} for 1 round.",
-				"{@b Scaling:} The healing each increases by {@dice 1d8} when you reach levels 5 ({@dice 5d8} & {@dice 2d8}), 11 ({@dice 6d8} & {@dice 3d8}), and 17th level ({@dice 7d8} & {@dice 4d8})."
+				"{@b Effect:} You regain {@dice 7d8} + your class ability modifier hit points and gain {@variantrule Protection|GW2|Protection}, {@variantrule Regeneration|GW2|Regeneration}, healing for {@dice 1d4}, and {@variantrule Swiftness|GW2|Swiftness} for 1 round.",
+				"{@b Scaling:} The healing each increases by {@dice 2d8} when you reach levels 5 ({@dice 9d8} & {@dice 2d4}), 11 ({@dice 11d8} & {@dice 3d4}), and 17th level ({@dice 13d8} & {@dice 4d4})."
 			]
 		},
 		{
@@ -17630,8 +17630,8 @@
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} {@variantrule Combo Field|GW2|Combo Field:} Water,  Overcharge",
 				"{@b Description:} Release a burst of cleansing energy to remove conditions from nearby allies.",
-				"{@b Effect:} Each creature of your choice in the area regains {@dice 2d8} + your class ability modifier hit points and can end up to two conditions affecting them. The area becomes a {@variantrule Combo Field|GW2|Combo Field:} Water until the start of your next turn.",
-				"{@b Scaling:} The healing increases by {@dice 1d8} when you reach levels 5 ({@dice 3d8}), 11 ({@dice 4d8}), and 17th level ({@dice 5d8})."
+				"{@b Effect:} Each creature of your choice in the area regains {@dice 3d8} + your class ability modifier hit points and can end up to two conditions affecting them. The area becomes a {@variantrule Combo Field|GW2|Combo Field:} Water until the start of your next turn.",
+				"{@b Scaling:} The healing increases by {@dice 2d8} when you reach levels 5 ({@dice 5d8}), 11 ({@dice 7d8}), and 17th level ({@dice 9d8})."
 			]
 		},
 		{
@@ -23138,7 +23138,7 @@
 					"{@item Spear|XPHB}",
 					"Two Handed Aquatic",
 					"",
-					"{@optfeature Stab|GW2}",
+					"{@optfeature Stab (Warrior Spear Underwater)|GW2}",
 					"{@optfeature Mariner's Frenzy|GW2}",
 					"{@optfeature Barbed Pull|GW2}",
 					"{@optfeature Parry|GW2}",

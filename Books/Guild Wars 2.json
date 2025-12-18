@@ -6413,6 +6413,68 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Healing Seed",
+			"size": [
+				"S"
+			],
+			"type": "plant",
+			"source": "GW2",
+			"alignment": null,
+			"ac": [
+				{
+					"special": "8 + your Proficiency Bonus"
+				}
+			],
+			"hp": {
+				"special": "3 * your Level"
+			},
+			"speed": {},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Healing_Seed.png"
+						}
+					}
+				]
+			},
+			"vulnerable": [
+				"fire",
+				"poison"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Healing_Seed_Token.png"
+			}
 		}
 	],
 	"object": [
@@ -7197,19 +7259,18 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Human Racial Skill"
+					"other": "{@optfeature Human Conviction|GW2}"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} 1",
-				"{@b Recharge:} 30",
-				"{@b Range:} ",
+				"{@b Casting Time:} Action",
+				"{@b Recharge:} {@chance 15|18+}",
+				"{@b Range:} Self",
 				"{@b Target:} Self",
-				"{@b Duration:} ",
-				"{@b Properties:} Heal",
+				"{@b Duration:} Instantaneous",
 				"{@b Description:} Beseech Dwayna to restore your health.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} You regain hit points equal to {@dice 8d8} + your Class modifier.",
+				"{@b Scaling:} The healing increases by {@dice 2d8} when you reach levels 5 ({@dice 10d8}), 11 ({@dice 12d8}), and 17 ({@dice 14d8})."
 			]
 		},
 		{
@@ -8258,19 +8319,18 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Sylvari Racial Skill"
+					"other": "{@optfeature Sylvari Plant Magic|GW2}"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} 1",
-				"{@b Recharge:} 45",
-				"{@b Range:} ",
-				"{@b Target:} Ground",
-				"{@b Duration:} ",
-				"{@b Properties:} Seed, Grants Regeneration",
+				"{@b Casting Time:} Action",
+				"{@b Recharge:} {@chance 10|19+}",
+				"{@b Range:} 20 feet",
+				"{@b Target:} Point",
+				"{@b Duration:} 5 rounds",
 				"{@b Description:} Create a healing seed at targeted location which periodically gives nearby allies regeneration.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} You regain hit points equal to {@dice 8d8} + your Class modifier. Choose a point within range. A {@creature Healing Seed|GW2} appears at that point for the duration. At the start of each of your turns, each ally within 5 feet of the seed gains 1 round of {@variantrule Regeneration|GW2}, healing for {@dice 1d4}.",
+				"{@b Scaling:} The healing increases by {@dice 2d8} when you reach levels 5 ({@dice 10d8}), 11 ({@dice 12d8}), and 17 ({@dice 14d8})."
 			]
 		},
 		{

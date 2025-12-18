@@ -10238,19 +10238,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Warrior"
+					"other": "Warrior"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} 1",
-				"{@b Recharge:} 24",
-				"{@b Range:} ",
-				"{@b Target:} Self/Area",
-				"{@b Duration:} ",
-				"{@b Properties:} Shout, Heal, Adrenaline Gain, Grants Endurance",
-				"{@b Description:} Shout. Heal yourself and regain all adrenaline. Nearby allies gain endurance.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} Action",
+				"{@b Recharge:} {@chance 25|16+}",
+				"{@b Range:} Self",
+				"{@b Target:} 40-foot emanation",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} Shout",
+				"{@b Description:} Heal yourself and regain all adrenaline. Nearby allies gain endurance.",
+				"{@b Effect:} You regain hit points equal to {@dice 15d6} + your Class ability modifier and regain all your adrenaline. Each ally in the emanation regains 100 {@variantrule Endurance|GW2}.",
+				"{@b Scaling:} The healing increases by {@dice 3d6} when you reach levels 5 ({@dice 18d6}), 11 ({@dice 21d6}), and 17 ({@dice 24d6})."
 			]
 		},
 		{
@@ -10262,19 +10262,21 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Warrior"
+					"other": "Warrior"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} 1¼",
-				"{@b Recharge:} 20",
-				"{@b Range:} ",
+				"{@b Casting Time:} {@variantrule Channel|Gw2}: 12",
+				"{@b Recharge:} {@chance 35|14+}",
+				"{@b Range:} Self",
 				"{@b Target:} Self",
-				"{@b Duration:} ",
-				"{@b Properties:} Signet, Heal, Grants Resistance",
-				"{@b Description:} {@b Signet Passive:} Regenerate health.",
-				"{@b Effect:} {@b Signet Active:} Heal yourself, and grant yourself resistance.",
-				"{@b Scaling:} "
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} Signet",
+				"{@b Description:} Regenerate health.",
+				"{@b Signet Passive:} At the start of each of your turns, you regain hit points equal to {@dice 1d4}.",
+				"{@b Passive Scaling:} The healing increases by {@dice 1d4} when you reach levels 5 ({@dice 2d4}), 11 ({@dice 3d4}), and 17 ({@dice 4d4}).",
+				"{@b Signet Active:} When the {@variantrule Channel|Gw2} ends, you regain hit points equal to {@dice 2d10} + your Class ability modifier and gain 1 round of {@variantrule Resistance|GW2}.",
+				"{@b Active Scaling:} The healing increases by {@dice 1d10} when you reach levels 5 ({@dice 3d10}), 11 ({@dice 4d10}), and 17 ({@dice 5d10})."
 			]
 		},
 		{
@@ -10286,19 +10288,19 @@
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Warrior"
+					"other": "Warrior"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ¾",
-				"{@b Recharge:} 30",
-				"{@b Range:} ",
+				"{@b Casting Time:} Action",
+				"{@b Recharge:} {@chance 15|18+}",
+				"{@b Range:} Self",
 				"{@b Target:} Self",
-				"{@b Duration:} ",
-				"{@b Properties:} Stance, Heal, Absorb Strikes",
-				"{@b Description:} Stance. Heal yourself. Absorb all incoming strikes for a period of time.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Duration:} 1 round",
+				"{@b Properties:} Stance",
+				"{@b Description:} Heal yourself. Absorb all incoming strikes for a period of time.",
+				"{@b Effect:} You regain hit points equal to {@dice 3d6} + your Class ability modifier. For the duration, when you would take damage, you instead regain hit points equal to the damage you would have taken.",
+				"{@b Scaling:} The healing increases by {@dice 1d6} when you reach levels 5 ({@dice 4d6}), 11 ({@dice 5d6}), and 17 ({@dice 6d6})."
 			]
 		},
 		{
@@ -11401,7 +11403,7 @@
 				"{@b Duration:} 1 round per 10 Adrenaline spent",
 				"{@b Properties:} Burst, {@variantrule Combo Field|GW2}: Fire",
 				"{@b Description:} Ignite target area, burning nearby foes. Effect increases with adrenaline level.",
-				"{@b Effect:} Choose a point within range. For the duration, you create a 20-foot-radius Sphere centered on that point, that is a {@variantrule Combo Field|GW2} Fire. Each hostile creature in that Sphere must make a Dexterity saving throw. On a failed save, a target takes {@damage 1d6} fire damage and is inflicted with 1 stack of {@variantrule Burning|GW2} for 1 round, taking {@damage 1d12} damage. On a successful save, a target takes half as much damage only. A hostile creature also makes this save if it enters the Sphere or ends its turn there, or if the Sphere moves into its space. A hostile creature makes this save only once per turn.",
+				"{@b Effect:} Choose a point within range. For the duration, you create a 20-foot-radius Sphere centered on that point, that is a {@variantrule Combo Field|GW2} Fire. Each hostile creature in that Sphere must make a Dexterity saving throw. On a failed save, a target takes {@damage 1d6} fire damage and is inflicted with 1 stack of {@variantrule Burning|GW2} for 1 round, taking {@damage 1d12} damage. On a successful save, a target takes half as much damage only. A hostile creature also makes this save if it enters the Sphere or ends its turn there. A hostile creature makes this save only once per turn.",
 				"{@b Scaling:} The damage each increases by {@damage 1d6} and {@damage 1d12} respectively when you reach levels 5 ({@damage 2d6} & {@damage 2d12}), 11 ({@damage 3d6} & {@damage 3d12}), and 17 ({@damage 4d6} & {@damage 4d12})."
 			]
 		},
@@ -23742,6 +23744,15 @@
 			]
 		},
 		{
+			"name": "Endurance",
+			"source": "GW2",
+			"entries": [
+				"While you have Endurance, you spend 50 Endurance to take the {@action Dodge|XPHB} Action as a {@variantrule Bonus Action|XPHB} on your turn or as a {@variantrule Reaction|XPHB} when an attack is made against you or your are about to make a Dexterity {@variantrule Saving Throw|XPHB}.",
+				"You can have a maximum Endurance of 100.",
+				"You regain 30 Endurance at the start of your turn."
+			]
+		},
+		{
 			"name": "Fear",
 			"source": "GW2",
 			"entries": [
@@ -24137,7 +24148,7 @@
 			"source": "GW2",
 			"entries": [
 				"{@variantrule Boon|GW2}",
-				"While you are under the effect of this {@variantrule Boon|GW2}, can take the {@action Dodge|XPHB} action as a bonus action.",
+				"While you are under the effect of this {@variantrule Boon|GW2}, you regain 50% more {@variantrule Endurance|GW2} at the start of your turn.",
 				"Stacks duration.",
 				"This {@variantrule Boon|GW2} corrupts into 2 stacks of {@variantrule Bleeding|GW2} for 2 rounds, dealing damage equal to the PB of the creature who corrupted the Boon."
 			]
@@ -24158,7 +24169,7 @@
 			"entries": [
 				"{@variantrule Condition|GW2}",
 				"While you are under the effect of this {@variantrule condition|GW2}, you have a 50% chance of dealing half damage when you roll damage.",
-				"While you are under the effect of this {@variantrule condition|GW2}, you gain a malus to your AC and Dexterity saving throws equal to the PB of the creature who inflicted this {@variantrule condition|GW2}.",
+				"While you are under the effect of this {@variantrule condition|GW2}, you regain 50% less {@variantrule Endurance|GW2} at the start of your turn..",
 				"Stacks duration.",
 				"A creature with a {@variantrule Defiance Bar|GW2} takes 20 defiance bar damage at the start of its turn instead of being affected.",
 				"This {@variantrule Condition|GW2} converts into 3 stack of {@variantrule Might|GW2} for 2 rounds."

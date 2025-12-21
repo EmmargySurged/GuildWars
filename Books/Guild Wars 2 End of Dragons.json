@@ -598,6 +598,267 @@
 	],
 	"optionalfeature": [
 		{
+			"name": "Shadow Bolt",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"THI",
+				"SPEC",
+				"SCE",
+				"WS",
+				"CHAI",
+				"ACT"
+			],
+			"prerequisite": [
+				{
+					"other": "Thief wielding a Scepter"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} Action",
+				"{@b Recharge:} None",
+				"{@b Range:} 900",
+				"{@b Target:} Foe",
+				"{@b Duration:} ",
+				"{@b Properties:} Chain, Projectile",
+				"{@b Description:} Chain. Fire a projectile that hinders foes and helps allies.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Double Bolt",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"THI",
+				"SPEC",
+				"SCE",
+				"WS",
+				"CHAI",
+				"ACT"
+			],
+			"prerequisite": [
+				{
+					"other": "Thief wielding a Scepter. Must follow Shadow Bolt."
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} Action",
+				"{@b Recharge:} None",
+				"{@b Range:} 900",
+				"{@b Target:} Foe",
+				"{@b Duration:} ",
+				"{@b Properties:} Chain, Projectile",
+				"{@b Description:} Chain. Fire two projectiles that hinder foes and help allies.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Triple Bolt",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"THI",
+				"SPEC",
+				"SCE",
+				"WS",
+				"CHAN"
+			],
+			"prerequisite": [
+				{
+					"other": "Thief wielding a Scepter. Must follow Double Bolt."
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} {@variantrule Channel|Gw2}: 15",
+				"{@b Recharge:} None",
+				"{@b Range:} 900",
+				"{@b Target:} Foe",
+				"{@b Duration:} ",
+				"{@b Properties:} Projectile",
+				"{@b Description:} Fire three missiles that hinder foes and help allies.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Shadowsquall",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"THI",
+				"SPEC",
+				"SCE",
+				"WS",
+				"STE",
+				"CHAN"
+			],
+			"prerequisite": [
+				{
+					"other": "Thief wielding a Scepter"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} {@variantrule Channel|Gw2}: 25",
+				"{@b Recharge:} None",
+				"{@b Range:} 900",
+				"{@b Target:} Foe",
+				"{@b Duration:} ",
+				"{@b Properties:} Stealth Attack, Barrage",
+				"{@b Description:} Stealth Attack. Unleash a barrage from the shadows towards your target.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Shadow Sap",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"THI",
+				"SPEC",
+				"SCE",
+				"WS",
+				"ACT"
+			],
+			"prerequisite": [
+				{
+					"other": "Thief wielding a Scepter"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} Action",
+				"{@b Recharge:} {@chance 75|5+}",
+				"{@b Range:} 900",
+				"{@b Target:} Foe/Ally",
+				"{@b Duration:} ",
+				"{@b Properties:} Bolt",
+				"{@b Description:} Hurl a bolt of unfurling shadows to bolster allies.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Triple Threat",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"THI",
+				"SPEC",
+				"SCE",
+				"WS",
+				"CHAN"
+			],
+			"prerequisite": [
+				{
+					"other": "Thief wielding a Scepter (without offhand)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} {@variantrule Channel|Gw2}: 15",
+				"{@b Recharge:} {@chance 75|5+}",
+				"{@b Range:} 900",
+				"{@b Target:} Foe",
+				"{@b Duration:} ",
+				"{@b Properties:} Projectile",
+				"{@b Description:} Fire three missiles that hinder foes and help allies.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Twilight Combo",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"THI",
+				"SPEC",
+				"SCE",
+				"WS",
+				"DUA",
+				"BACT",
+				"ACT"
+			],
+			"prerequisite": [
+				{
+					"other": "Thief wielding a Scepter (with offhand Dagger)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} Bonus Action or Action",
+				"{@b Recharge:} {@chance 75|5+}",
+				"{@b Range:} 900",
+				"{@b Target:} Foe",
+				"{@b Duration:} ",
+				"{@b Properties:} Dual Wield, Projectile",
+				"{@b Description:} Dual Wield. Fire a slow-moving projectile, then fire a quick shot that accelerates the first.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Measured Shot",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"THI",
+				"SPEC",
+				"SCE",
+				"WS",
+				"DUA",
+				"SEQ",
+				"BACT",
+				"ACT"
+			],
+			"prerequisite": [
+				{
+					"other": "Thief wielding a Scepter (with offhand Pistol)"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} Bonus Action or Action",
+				"{@b Recharge:} {@chance 75|5+}",
+				"{@b Range:} 900",
+				"{@b Target:} Foe",
+				"{@b Duration:} ",
+				"{@b Properties:} Dual Wield, Shadowstep, Sequence",
+				"{@b Description:} Dual Wield. Shadowstep and fire a shot that hinders foes and helps allies.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
+			"name": "Endless Night",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"THI",
+				"SPEC",
+				"SCE",
+				"WS",
+				"DUA",
+				"CHAN"
+			],
+			"prerequisite": [
+				{
+					"other": "Thief wielding a Scepter (with offhand Pistol). Must follow Measured Shot."
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} {@variantrule Channel|Gw2}: 22",
+				"{@b Recharge:} None",
+				"{@b Range:} 900",
+				"{@b Target:} Foe",
+				"{@b Duration:} ",
+				"{@b Properties:} Dual Wield, Beam",
+				"{@b Description:} Dual Wield. Fire a beam that hinders foes and helps allies.",
+				"{@b Effect:} ",
+				"{@b Scaling:} "
+			]
+		},
+		{
 			"name": "Singeing Strike",
 			"source": "GW2EoD",
 			"page": "",

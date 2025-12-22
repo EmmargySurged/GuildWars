@@ -9247,13 +9247,13 @@
 			"entries": [
 				"{@b Casting Time:} Action",
 				"{@b Recharge:} {@chance 25|16+}",
-				"{@b Range:} ",
+				"{@b Range:} Self",
 				"{@b Target:} Self",
-				"{@b Duration:} ",
-				"{@b Properties:} Deception, Stealth, Regeneration",
-				"{@b Description:} Deception. Vanish in stealth and cure conditions. Then gain regeneration and heal yourself.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} Deception",
+				"{@b Description:} Vanish in stealth and cure conditions. Then gain regeneration and heal yourself.",
+				"{@b Effect:} Cure {@variantrule Burning|Gw2}, {@variantrule Bleeding|Gw2}, {@variantrule Poison|Gw2}, and {@variantrule Confusion|Gw2} on yourself, then you regain hit points equal to {@dice 4d6} + your Class modifier, gain 1 round of {@variantrule Stealth|Gw2}, and gain 1 round of {@variantrule Regeneration|Gw2}, healing for {@dice 1d6}.",
+				"{@b Scaling:} The healing each increases by {@dice 2d6} and {@dice 1d6} respectively at levels 5 ({@dice 6d6} & {@dice 2d6}), 11 ({@dice 8d6} & {@dice 3d6}), and 17 ({@dice 10d6} & {@dice 4d6})."
 			]
 		},
 		{
@@ -9274,13 +9274,14 @@
 			"entries": [
 				"{@b Casting Time:} Bonus Action",
 				"{@b Recharge:} {@chance 45|12+}",
-				"{@b Range:} ",
+				"{@b Range:} Self",
 				"{@b Target:} Self",
-				"{@b Duration:} ",
-				"{@b Properties:} Signet, Passive Heal",
-				"{@b Description:} Signet Passive: Heals when you attack. Signet Active: Gain health.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} Signet",
+				"{@b Signet Passive:} You regain hit points equal to {@dice 1d4} when you deal damage with an attack or {@variantrule Skill|GW2}, or apply a condition to a creature. If you deal damage and apply a condition to the same creature, you only regain hit points once.",
+				"{@b Passive Scaling:} The healing increases by {@dice 1d4} at levels 5 ({@dice 2d4}), 11 ({@dice 3d4}), and 17 ({@dice 4d4}).",
+				"{@b Signet Active:} You regain hit points equal to {@dice 1d8} + your Class modifier.",
+				"{@b Active Scaling:} The healing increases by {@dice 1d8} at levels 5 ({@dice 2d8}), 11 ({@dice 3d8}), and 17 ({@dice 4d8})."
 			]
 		},
 		{
@@ -9300,15 +9301,15 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Reaction/Bonus Action",
+				"{@b Casting Time:} Bonus Action or Reaction",
 				"{@b Recharge:} {@chance 35|14+}",
-				"{@b Range:} ",
+				"{@b Range:} Self",
 				"{@b Target:} Self",
-				"{@b Duration:} ",
-				"{@b Properties:} Trick, Evade, Roll",
-				"{@b Description:} Trick. Cure conditions, then roll backward while healing and evading attacks.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} Trick",
+				"{@b Description:} Cure conditions, then roll backward while healing and evading attacks.",
+				"{@b Effect:} You gain the effects of the {@action Dodge|PHB} action until the start of your next turn and cure {@variantrule Chilled|GW2}, {@variantrule Crippled|GW2}, {@variantrule Immobilized|GW2}, and {@variantrule Torment|GW2} on yourself. Additionally, you can move up to 50 feet in a straight line. You regain hit points equal to {@dice 3d8} + your Class modifier.",
+				"{@b Scaling:} The healing increases by {@dice 1d8} at levels 5 ({@dice 4d8}), 11 ({@dice 5d8}), and 17 ({@dice 6d8})."
 			]
 		},
 		{
@@ -9329,13 +9330,13 @@
 			"entries": [
 				"{@b Casting Time:} Action",
 				"{@b Recharge:} {@chance 25|16+}",
-				"{@b Range:} ",
-				"{@b Target:} Self",
-				"{@b Duration:} ",
+				"{@b Range:} Self",
+				"{@b Target:} 10-foot emanation",
+				"{@b Duration:} 5 rounds",
 				"{@b Properties:} Venom",
-				"{@b Description:} Venom. Heal yourself. Your next few attacks heal you.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Description:} Heal yourself. Your next few attacks heal you.",
+				"{@b Effect:} You regain hit points equal to {@dice 1d6} + your Class modifier. Apply 5 stacks of Skelk Venom to yourself and up to 4 other allies within range for the duration. A creature with Skelk Venom heals for {@dice 1d6} + your Class modifier whenever they deal damage to a creature.",
+				"{@b Scaling:} The initial healing increases by {@dice 1d6} at levels 5 ({@dice 2d6}), 11 ({@dice 3d6}), and 17 ({@dice 4d6}). The Skelk Venom healing increases by {@dice 1d6} at level 11 ({@dice 2d6})."
 			]
 		},
 		{

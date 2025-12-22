@@ -789,8 +789,10 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "WS",
-        "Healing"
+        "HS",
+        "THI",
+        "ANT",
+        "DOU"
       ],
       "prerequisite": [
         {
@@ -798,15 +800,16 @@
         }
       ],
       "entries": [
-        "{@b Casting Time:} ¾",
-        "{@b Recharge:} 10",
-        "{@b Range:} ",
+        "{@b Casting Time:} Action",
+        "{@b Recharge:} {@chance 55|10+}",
+        "{@b Range:} Self",
         "{@b Target:} Self",
-        "{@b Duration:} ",
+        "{@b Duration:} Instantaneous",
         "{@b Properties:} Double Edge",
         "{@b Description:} Drink an antivenom potion to heal yourself and remove conditions. You may activate the skill while it is recharging, with a chance for the skill to backfire.",
-        "{@b Effect:} The chance of the skill backfiring lowers as the skill recharges, and the skill cannot backfire when the skill is completely recharged.",
-        "{@b Scaling:} "
+        "{@b Effect:} You remove the latest {@variantrule Condition|GW2} on yourself, then you regain hit points equal to {@dice 1d10} + your Class modifier.", 
+        "You can attempt to use this {@variantrule Skill|GW2} while it is recharging. When you do so, roll for the recharge as normal; if the roll fails, the {@variantrule Skill|GW2} backfires ({@optfeature Antivenom Draught: Backfired|GW2VoE}) and you cannot use it again until you succeed on a recharge roll with {@variantrule Disadvantage|XPHB}. If the roll succeeds, you can use the {@variantrule Skill|GW2} as normal.",
+        "{@b Scaling:} The healing increases by {@dice 1d10} at level 11 ({@dice 2d10})."
       ]
     },
     {
@@ -814,7 +817,10 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "WS"
+        "HS",
+        "THI",
+        "ANT",
+        "BAC"
       ],
       "prerequisite": [
         {
@@ -822,15 +828,15 @@
         }
       ],
       "entries": [
-        "{@b Casting Time:} ¾",
-        "{@b Recharge:} 10",
-        "{@b Range:} ",
-        "{@b Target:} ",
-        "{@b Duration:} ",
-        "{@b Properties:} ",
+        "{@b Casting Time:} Action",
+        "{@b Recharge:} None",
+        "{@b Range:} Self",
+        "{@b Target:} Self",
+        "{@b Duration:} Instantaneous",
+        "{@b Properties:} Backfire",
         "{@b Description:} This skill has backfired and cannot be used again until fully recharged.",
-        "{@b Effect:} ",
-        "{@b Scaling:} "
+        "{@b Effect:} You remove the latest three {@variantrule Condition|GW2|Conditions} on yourself, then you regain hit points equal to {@dice 4d4} + your Class modifier.",
+        "{@b Scaling:} The healing increases by {@dice 3d4} at levels 5 ({@dice 7d4}), 11 ({@dice 10d4}), and 17 ({@dice 13d4})."
       ]
     },
     {
@@ -1059,23 +1065,26 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "WS"
+        "PS",
+        "THI",
+        "ANT",
+        "STEA"
       ],
       "prerequisite": [
         {
-          "other": "Thief"
+          "other": "Antiquary"
         }
       ],
       "entries": [
-        "{@b Casting Time:} ",
-        "{@b Recharge:} 25",
-        "{@b Range:} ",
-        "{@b Target:} ",
-        "{@b Duration:} ",
-        "{@b Properties:} F1",
+        "{@b Casting Time:} Action",
+        "{@b Recharge:} {@chance 25|16+}",
+        "{@b Range:} 30 feet",
+        "{@b Target:} 1 hostile creature",
+        "{@b Duration:} Instantaneous",
+        "{@b Properties:} Steal",
         "{@b Description:} Summon a skritt to pilfer artifacts.",
-        "{@b Effect:} ",
-        "{@b Scaling:} "
+        "{@b Effect:} Choose one hostile creature within range that you can see. You pilfer an artifact from the target. Roll a {@dice d8} to determine which artifact you gain: {@table Skritt Swipe Artifacts|GW2VoE}. While you have an artifact from Skritt Swipe, you can use the corresponding artifact skill. When you gain a new artifact, it replaces your existing artifact.",
+        "{@b Scaling:} The range increases by 30 feet at levels 5 (60 feet), 10 (90 feet), 15 (120 feet), and 20 (150 feet). The action required to use this skill is reduced to a bonus action at level 5 and to a special action at level 15. The number of targets increases by 1 when you reach levels 15 (2 targets) and 20 (3 targets)."
       ]
     },
     {
@@ -1083,23 +1092,28 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "WS"
+        "PS",
+        "THI",
+        "ANT",
+        "OFFA",
+        "CHAN"
       ],
       "prerequisite": [
         {
-          "other": "Skritt Swipe"
+          "other": "Antiquary"
         }
       ],
       "entries": [
-        "{@b Casting Time:} 2",
-        "{@b Recharge:} ",
-        "{@b Range:} ",
-        "{@b Target:} ",
-        "{@b Duration:} ",
+        "{@b Casting Time:} {@variantrule Channel|GW2}: 20",
+        "{@b Recharge:} None",
+        "{@b Range:} Self",
+        "{@b Target:} 5-foot emanation",
+        "{@b Duration:} Instantaneous",
         "{@b Properties:} Offensive Artifact",
-        "{@b Description:} Rock out with your guitar, damaging and applying conditions to opponents around you, then slam the ground, damaging and stunning opponents in the area.",
-        "{@b Effect:} For a short time after using this skill, your first weapon skill is replaced with your stealth attack, even when not stealthed.",
-        "{@b Scaling:} "
+        "{@b Description:} Rock out with your guitar, damaging and applying conditions to opponents around you, then slam the ground, damaging and stunning opponents in the area. For a short time after using this skill, your first weapon skill is replaced with your stealth attack, even when not stealthed.",
+        "{@b Effect:} At the beginning of the {@variantrule Channel|GW2} and the every 6 {@variantrule Initiative|XPHB} thereafter, each hostile creature within 5 feet of you must make a Constitution {@variantrule Saving Throw|XPHB}. On a failed save, a target takes {@damage 2d6} thunder damage and is inflicted with 1 stack of {@variantrule Confusion|GW2} for 2 rounds, taking {@damage 1d6} damage. On a successful save, a target takes half as much damage only. Creatures that fail against the last {@variantrule Saving Throw|XPHB} are also {@variantrule Stunned|XPHB} for 1 round and take an additional {@damage 3d6} thunder damage.",
+        "For 2 rounds after using this {@variantrule Skill|GW2}, your first three weapon skills are replaced with their stealth attack versions, even when you are not stealthed.",
+        "{@b Scaling:} The damage each increase by {@damage 1d6} at levels 5 ({@damage 3d6} & {@damage 3d6} & {@damage 4d6}), 11 ({@damage 4d6} & {@damage 4d6} & {@damage 5d6}), and 17 ({@damage 5d6} & {@damage 5d6} & {@damage 6d6})."
       ]
     },
     {
@@ -1107,23 +1121,28 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "WS"
+        "PS",
+        "THI",
+        "ANT",
+        "OFFA",
+        "ACT"
       ],
       "prerequisite": [
         {
-          "other": "Skritt Swipe"
+          "other": "Antiquary"
         }
       ],
       "entries": [
-        "{@b Casting Time:} 1",
-        "{@b Recharge:} ",
-        "{@b Range:} ",
-        "{@b Target:} Targeted location",
-        "{@b Duration:} ",
+        "{@b Casting Time:} Action",
+        "{@b Recharge:} None",
+        "{@b Range:} 60 feet",
+        "{@b Target:} Point",
+        "{@b Duration:} Instantaneous",
         "{@b Properties:} Offensive Artifact",
-        "{@b Description:} Dash to the targeted location while dropping bombs along your path that detonate after a short period of time, dealing damage and burning enemies. More bombs are dropped the farther you travel.",
-        "{@b Effect:} For a short time after using this skill, you continue to drop additional bombs at your location.",
-        "{@b Scaling:} "
+        "{@b Description:} Dash to the targeted location while dropping bombs along your path that detonate after a short period of time, dealing damage and burning enemies. More bombs are dropped the farther you travel. For a short time after using this skill, you continue to drop additional bombs at your location.",
+        "{@b Effect:} Choose a point within range. You dash to that point hovering on a forged surfboard in a straight line. Each hostile creature within 5 feet of your path must make a Dexterity {@variantrule Saving Throw|XPHB}. On a failed save, a target takes {@damage 3d8} force damage and is inflicted with 1 stack of {@variantrule Burning|GW2} for 1 round, taking {@damage 1d12} damage. On a successful save, a target takes half as much damage only.",
+        "For 2 rounds after using this {@variantrule Skill|GW2}, at the start of each of your turns, each hostile creature within 5 feet of you must make a Dexterity {@variantrule Saving Throw|XPHB}. On a failed save, a target takes {@damage 3d8} force damage and is inflicted with 1 stack of {@variantrule Burning|GW2} for 1 round, taking {@damage 1d12} damage. On a successful save, a target takes half as much damage only.",
+        "{@b Scaling:} The damage each increase by {@damage 1d8} and {@damage 1d12} respectively at levels 5 ({@damage 4d8} & {@damage 2d12}), 11 ({@damage 5d8} & {@damage 3d12}), and 17 ({@damage 6d8} & {@damage 4d12})."
       ]
     },
     {
@@ -1131,7 +1150,12 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "WS"
+        "PS",
+        "THI",
+        "ANT",
+        "OFFA",
+        "ACT",
+        "BACT"
       ],
       "prerequisite": [
         {
@@ -1139,15 +1163,16 @@
         }
       ],
       "entries": [
-        "{@b Casting Time:} ½",
-        "{@b Recharge:} ",
-        "{@b Range:} ",
-        "{@b Target:} Targeted location",
-        "{@b Duration:} ",
+        "{@b Casting Time:} Action or Bonus Action",
+        "{@b Recharge:} None",
+        "{@b Range:} 60 feet",
+        "{@b Target:} Point",
+        "{@b Duration:} 2 rounds",
         "{@b Properties:} Offensive Artifact",
-        "{@b Description:} Summon a Kryptis turret at your targeted location and [sic] fires at the closest foe in range.",
-        "{@b Effect:} For a short time after using this skill, you deal increased damage to enemies that were struck by the turret.",
-        "{@b Scaling:} "
+        "{@b Description:} Summon a Kryptis turret at your targeted location and [sic] fires at the closest foe in range. For a short time after using this skill, you deal increased damage to enemies that were struck by the turret.",
+        "{@b Effect:} Choose a point within range. You summon a Kryptis turret at that point. At the start of each of your turns, the turret targets random hostile creatures within 20 feet of it and makes 4 ranged attacks against the targets. On a hit, a target takes {@damage 1d4} necrotic damage and is inflicted with 1 stack of {@variantrule Torment|GW2} for 1 round, taking {@damage 1d8} damage.",
+        "For 2 rounds after using this {@variantrule Skill|GW2}, you deal an additional 15% damage to enemies that were struck by the turret.",
+        "{@b Scaling:} The damage each increase by {@damage 1d4} and {@damage 1d8} respectively at levels 5 ({@damage 2d4} & {@damage 2d8}), 11 ({@damage 3d4} & {@damage 3d8}), and 17 ({@damage 4d4} & {@damage 4d8})."
       ]
     },
     {
@@ -1155,23 +1180,28 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "WS"
+        "PS",
+        "THI",
+        "ANT",
+        "OFFA",
+        "ACT"
       ],
       "prerequisite": [
         {
-          "other": "Skritt Swipe"
+          "other": "Antiquary"
         }
       ],
       "entries": [
-        "{@b Casting Time:} ¾",
-        "{@b Recharge:} ",
-        "{@b Range:} ",
-        "{@b Target:} ",
-        "{@b Duration:} ",
-        "{@b Properties:} Offensive Artifact",
-        "{@b Description:} Shoot an orb that explodes upon impact with the ground, creating a corrupted area that deals damage and applies conditions to enemies.",
-        "{@b Effect:} For a short time after using this skill, your strikes additionally inflict burning on enemies.",
-        "{@b Scaling:} "
+        "{@b Casting Time:} Action",
+        "{@b Recharge:} None",
+        "{@b Range:} 90 feet",
+        "{@b Target:} 10-foot radius sphere",
+        "{@b Duration:} 1 round",
+        "{@b Properties:} {@variantrule Combo Field|GW2}: Fire, Offensive Artifact",
+        "{@b Description:} Shoot an orb that explodes upon impact with the ground, creating a corrupted area that deals damage and applies conditions to enemies. For a short time after using this skill, your strikes additionally inflict burning on enemies.",
+        "{@b Effect:} Choose a point within range. For the duration, you create a 10-foot-radius Sphere centered on that point, that is a {@variantrule Combo Field|GW2}: Fire. Each hostile creature in that Sphere must make a Dexterity saving throw. On a failed save, a target takes {@damage 1d6} fire damage and is inflicted with 1 stack of {@variantrule Burning|GW2} for 1 round, taking {@damage 1d12} damage. On a successful save, a target takes half as much damage only. A hostile creature also makes this save if it enters the Sphere or ends its turn there. A hostile creature makes this save only once per turn.",
+        "For 2 rounds after using this {@variantrule Skill|GW2}, the next five times you deal damage to a creature you also inflict 1 stack of {@variantrule Burning|GW2} for 1 round, dealing {@damage 1d12} damage.",
+        "{@b Scaling:} The damage each increase by {@damage 1d6} and {@damage 1d12} respectively at levels 5 ({@damage 2d6} & {@damage 2d12}), 11 ({@damage 3d6} & {@damage 3d12}), and 17 ({@damage 4d6} & {@damage 4d12})."
       ]
     },
     {
@@ -1179,23 +1209,30 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "WS"
+        "PS",
+        "THI",
+        "ANT",
+        "CIL",
+        "DEFA",
+        "BACT",
+        "ACT"
       ],
       "prerequisite": [
         {
-          "other": "Skritt Swipe"
+          "other": "Antiquary"
         }
       ],
       "entries": [
-        "{@b Casting Time:} ",
-        "{@b Recharge:} ",
-        "{@b Range:} ",
-        "{@b Target:} Targeted area",
-        "{@b Duration:} ",
-        "{@b Properties:} Defensive Artifact",
-        "{@b Description:} Leap to the targeted area and slam down with an enchanted exalted [sic] hammer, damaging enemies and healing allies in an area.",
-        "{@b Effect:} For a short time after using this skill, activating any weapon skill that costs initiative creates an additional healing burst at your location.",
-        "{@b Scaling:} "
+        "{@b Casting Time:} Action or Bonus Action",
+        "{@b Recharge:} None",
+        "{@b Range:} 60 feet",
+        "{@b Target:} 5-foot radius sphere",
+        "{@b Duration:} Instantaneous",
+        "{@b Properties:} {@variantrule Combo Finisher|GW2}: Leap, Defensive Artifact",
+        "{@b Description:} Leap to the targeted area and slam down with an enchanted exalted hammer, damaging enemies and healing allies in an area. For a short time after using this skill, activating any weapon skill that costs initiative creates an additional healing burst at your location.",
+        "{@b Effect:}  Choose a point within range. You leap to that point. Each hostile creature in a 5-foot radius centered on that point must make a Constitution {@variantrule Saving Throw|XPHB}. On a failed save, a target takes {@damage 1d4} radiant damage. On a successful save, a target takes half as much damage. Each creature of your choice in that area regains hit points equal to {@dice 1d8} + your Class modifier.",
+        "For 2 rounds after using this {@variantrule Skill|GW2}, activating any {@variantrule Weapon Skill|GW2} that costs initiative causes each creature of your choice within 5 feet of you to regain hit points equal to {@dice 1d4}.", 
+        "{@b Scaling:} The damage and healing each increase by {@damage 1d4}, {@dice 1d8} and {@dice 1d4} respectively at levels 5 ({@damage 2d4} & {@dice 2d8} & {@dice 2d4}), 11 ({@damage 3d4} & {@dice 3d8} & {@dice 3d4}), and 17 ({@damage 4d4} & {@dice 4d8} & {@dice 4d4})."
       ]
     },
     {
@@ -1203,23 +1240,30 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "WS"
+        "PS",
+        "THI",
+        "ANT",
+        "CFLI",
+        "DEFA",
+        "BACT",
+        "ACT"
       ],
       "prerequisite": [
         {
-          "other": "Skritt Swipe"
+          "other": "Antiquary"
         }
       ],
       "entries": [
-        "{@b Casting Time:} ",
-        "{@b Recharge:} ",
-        "{@b Range:} ",
-        "{@b Target:} Your position",
-        "{@b Duration:} ",
-        "{@b Properties:} Defensive Artifact",
-        "{@b Description:} Place an electrified shield at your position that blocks projectiles and deals damage to enemies within it.",
-        "{@b Effect:} For a short time after using this skill, your weapon skills that cost initiative refund all initiative.",
-        "{@b Scaling:} "
+        "{@b Casting Time:} Action or Bonus Action",
+        "{@b Recharge:} None",
+        "{@b Range:} Self",
+        "{@b Target:} 5-foot emanation",
+        "{@b Duration:} 1 round",
+        "{@b Properties:} {@variantrule Combo Field|GW2}: Light, Defensive Artifact",
+        "{@b Description:} Place an electrified shield at your position that blocks projectiles and deals damage to enemies within it. For a short time after using this skill, your weapon skills that cost initiative refund all initiative.",
+        "{@b Effect:} Place a stationary shield that lasts for the duration at your current location. Any hostile ranged attacks that enter or exit the field automatically miss. Each hostile creature in that Shield must make a Constitution {@variantrule Saving Throw|XPHB}. On a failed save, a target takes {@damage 1d4} lightning damage. On a successful save, a target takes half as much damage. A hostile creature also makes this save if it enters the Shield or ends its turn there. A hostile creature makes this save only once per turn.",
+        "For 2 rounds after using this skill, your weapon skills that cost initiative refund all initiative.",
+        "{@b Scaling:} The damage increases by {@damage 1d4} at levels 5 ({@damage 2d4}), 11 ({@damage 3d4}), and 17 ({@damage 4d4})."
       ]
     },
     {
@@ -1227,23 +1271,29 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "WS"
+        "PS",
+        "THI",
+        "ANT",
+        "DEFA",
+        "BACT",
+        "ACT"
       ],
       "prerequisite": [
         {
-          "other": "Skritt Swipe"
+          "other": "Antiquary"
         }
       ],
       "entries": [
-        "{@b Casting Time:} ½",
-        "{@b Recharge:} ",
-        "{@b Range:} ",
-        "{@b Target:} ",
-        "{@b Duration:} ",
+        "{@b Casting Time:} Action or Bonus Action",
+        "{@b Recharge:} None",
+        "{@b Range:} 30 feet",
+        "{@b Target:} 10-foot radius sphere",
+        "{@b Duration:} 1 round",
         "{@b Properties:} Defensive Artifact",
-        "{@b Description:} Summon a holo-dancer decoy that taunts enemies. It self-destructs if it is not destroyed, dealing damage to enemies in a large area.",
-        "{@b Effect:} For a short time after using this skill, the next utility skill you use has reduced cooldown.",
-        "{@b Scaling:} "
+        "{@b Description:} Summon a holo-dancer decoy that taunts enemies. It self-destructs if it is not destroyed, dealing damage to enemies in a large area. For a short time after using this skill, the next utility skill you use has reduced cooldown.",
+        "{@b Effect:} Choose a point that you can see within range. A holo-dancer decoy appears at that point. The decoy has AC 12 and hit points equal to 5 times your Class level. When the decoy appears, each hostile creature in a 10-foot radius centered on that point must make a Wisdom {@variantrule Saving Throw|XPHB}. On a failed save, a target is {@variantrule Taunted|GW2} by the decoy until the end of its next turn. The decoy lasts until it is destroyed or the duration ends. When the duration ends, the decoy self-destructs, and each hostile creature in a 15-foot radius sphere centered on the decoy's location must make a Dexterity {@variantrule Saving Throw|XPHB}. On a failed save, a target takes {@damage 1d6} force damage. On a successful save, a target takes half as much damage.",
+        "For 2 rounds after using this skill, the next {@variantrule Utility Skill|GW2} you use has its cooldown reduced by 10.",
+        "{@b Scaling:} The damage increases by {@damage 1d6} at levels 5 ({@damage 2d6}), 11 ({@damage 3d6}), and 17 ({@damage 4d6})."
       ]
     },
     {
@@ -1251,7 +1301,13 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "WS"
+        "PS",
+        "THI",
+        "ANT",
+        "DEFA",
+        "BACT",
+        "ACT",
+        "STU"
       ],
       "prerequisite": [
         {
@@ -1259,15 +1315,16 @@
         }
       ],
       "entries": [
-        "{@b Casting Time:} 1",
-        "{@b Recharge:} 1",
-        "{@b Range:} ",
-        "{@b Target:} Your target",
-        "{@b Duration:} ",
-        "{@b Properties:} Defensive Artifact",
-        "{@b Description:} Break stuns and dash toward your target, damaging and burning enemies around you when you reach your destination. You evade attacks as long as you are still traveling.",
-        "{@b Effect:} For a short time after using this skill, you may use this skill again if it struck an enemy. Using the skill in this way does not count as using an artifact.",
-        "{@b Scaling:} "
+        "{@b Casting Time:} Action",
+        "{@b Recharge:} None",
+        "{@b Range:} 90 feet",
+        "{@b Target:} 1 creature",
+        "{@b Duration:} Instantaneous",
+        "{@b Properties:} Defensive Artifact, {@variantrule Stun Break|GW2}",
+        "{@b Description:} Break stuns and dash toward your target, damaging and burning enemies around you when you reach your destination. You evade attacks as long as you are still traveling. For a short time after using this skill, you may use this skill again if it struck an enemy. Using the skill in this way does not count as using an artifact.",
+        "{@b Effect:} Choose one creature you can see within range. You turn into a mote of light and fly to that creature's location in a straight line, turning back into yourself when you arrive. During the travel attack rolls against you have disadvantage and you have advantage on dexterity {@variantrule Saving Throws|XPHB}. After turning back, each hostile creature in a 5-foot emanation must make a Dexterity {@variantrule Saving Throw|XPHB}. On a failed save, a target takes {@damage 1d6} fire damage and is inflicted with 2 stacks of {@variantrule Burning|GW2} for 1 round, taking {@damage 1d12}. On a successful save, a target takes half as much damage only.",
+        "For 2 rounds after using this {@variantrule Utility Skill|GW2}, if you damaged at least one creature with it, you can use it again. Using the {@variantrule Utility Skill|GW2} in this way does not count as using an artifact.",
+        "{@b Scaling:} The damage each increase by {@damage 1d6} and {@damage 1d12} respectively at levels 5 ({@damage 2d6} & {@damage 2d12}), 11 ({@damage 3d6} & {@damage 3d12}), and 17 ({@damage 4d6} & {@damage 4d12})."
       ]
     },
     {
@@ -2656,6 +2713,58 @@
     }
   ],
   "table": [
+    {
+      "name": "Skritt Swipe Artifacts",
+      "source": "GW2VoE",
+      "page": "",
+      "colLabels": [
+        "{@dice d8}",
+        "Type",
+        "Artifact"
+      ],
+      "rows": [
+        [
+          1,
+          "Defensive Artifact",
+          "{@optfeature Chak Shield|GW2VoE}"
+        ],
+        [
+          2,
+          "Defensive Artifact",
+          "{@optfeature Exalted Hammer|GW2VoE}"
+        ],
+        [
+          3,
+          "Defensive Artifact",
+          "{@optfeature Holo-Dancer Decoy|GW2VoE}"
+        ],
+        [
+          4,
+          "Defensive Artifact",
+          "{@optfeature  Zephyrite Sun Crystal|GW2VoE}"
+        ],
+        [
+          5,
+          "Offensive Artifact",
+          "{@optfeature Forged Surfer Dash|GW2VoE}"
+        ],
+        [
+          6,
+          "Offensive Artifact",
+          "{@optfeature Metal Legion Guitar|GW2VoE}"
+        ],
+        [
+          7,
+          "Offensive Artifact",
+          "{@optfeature Mistburn Mortar|GW2VoE}"
+        ],
+        [
+          8,
+          "Offensive Artifact",
+          "{@optfeature Summon Kryptis Turret|GW2VoE}"
+        ]
+      ]
+    },
     {
       "name": "Evoker Familiars",
       "source": "GW2VoE",

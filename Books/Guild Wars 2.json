@@ -8231,8 +8231,8 @@
 				"DAG",
 				"WS",
 				"CHAI",
-				"REAC",
-				"BACT"
+				"ACT",
+				"SEQ"
 			],
 			"prerequisite": [
 				{
@@ -8240,15 +8240,15 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Reaction/Bonus Action",
+				"{@b Casting Time:} Action",
 				"{@b Recharge:} None",
-				"{@b Range:} 130",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Chain",
-				"{@b Description:} Chain. Strike your foe twice.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 2 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Double Strike|GW2} -> {@optfeature Wild Strike|GW2} -> {@optfeature Lotus Strike|GW2}, {@variantrule Sequence|GW2}: {@optfeature Backstab|GW2} while {@condition Invisible|XPHB}",
+				"{@b Description:} Strike your foe twice.",
+				"{@b Effect:} Choose up to 2 creatures within 5 feet of you. Make two melee weapon attacks against each target. On a hit, a target takes {@damage 1d4} slashing.",
+				"{@b Scaling:} The damage increases by {@damage 1d4} at levels 5 ({@damage 2d4}), 11 ({@damage 3d4}), and 17 ({@damage 4d4})."
 			]
 		},
 		{
@@ -8260,24 +8260,24 @@
 				"DAG",
 				"WS",
 				"CHAI",
-				"REAC",
-				"BACT"
+				"ACT",
+				"SEQ"
 			],
 			"prerequisite": [
 				{
-					"other": "Thief wielding a Dagger. Must follow Double Strike."
+					"other": "Thief wielding a Dagger"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Reaction/Bonus Action",
+				"{@b Casting Time:} Bonus Action",
 				"{@b Recharge:} None",
-				"{@b Range:} 130",
-				"{@b Target:} Foe",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 2 creatures",
 				"{@b Duration:} ",
-				"{@b Properties:} Chain, Bleeding",
-				"{@b Description:} Chain. Strike your foe again, bleeding them. Gain endurance with a successful strike.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Double Strike|GW2} -> {@optfeature Wild Strike|GW2} -> {@optfeature Lotus Strike|GW2}, {@variantrule Sequence|GW2}: {@optfeature Backstab|GW2} while {@condition Invisible|XPHB}",
+				"{@b Description:} Strike your foe again, bleeding them. Gain endurance with a successful strike.",
+				"{@b Effect:} Choose up to 2 creatures within 5 feet of you. Make a melee weapon attack against each target. On a hit, a target takes {@damage 1d8} slashing damage, is inflicted with 2 stacks of {@variantrule Bleeding|GW2} for 1 round, taking {@damage 1d8} damage and you gain 10 endurance.",
+				"{@b Scaling:} The damage each increases by {@damage 1d8} at levels 5 ({@damage 2d8} & {@damage 2d8}), 11 ({@damage 3d8} & {@damage 3d8}), and 17 ({@damage 4d8} & {@damage 4d8})."
 			]
 		},
 		{
@@ -8288,23 +8288,25 @@
 				"THI",
 				"DAG",
 				"WS",
-				"BACT"
+				"CHAI",
+				"ACT",
+				"SEQ"
 			],
 			"prerequisite": [
 				{
-					"other": "Thief wielding a Dagger. Must follow Wild Strike."
+					"other": "Thief wielding a Dagger"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Bonus Action",
+				"{@b Casting Time:} Special",
 				"{@b Recharge:} None",
-				"{@b Range:} 130",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Poison",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 2 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Double Strike|GW2} -> {@optfeature Wild Strike|GW2} -> {@optfeature Lotus Strike|GW2}, {@variantrule Sequence|GW2}: {@optfeature Backstab|GW2} while {@condition Invisible|XPHB}",
 				"{@b Description:} Strike your foe and inflict Poison.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Choose up to 2 creatures within 5 feet of you. Make a melee weapon attack against each target. On a hit, a target takes {@damage 2d6} piercing damage, is inflicted with 2 stacks of {@variantrule Poison|GW2} for 1 round, taking {@damage 1d10} damage.",
+				"{@b Scaling:} The damage each increases by {@damage 1d6} and {@damage 1d10} respectively at levels 5 ({@damage 3d6} & {@damage 2d10}), 11 ({@damage 4d6} & {@damage 3d10}), and 17 ({@damage 5d6} & {@damage 4d10})."
 			]
 		},
 		{
@@ -8326,13 +8328,13 @@
 			"entries": [
 				"{@b Casting Time:} Bonus Action",
 				"{@b Recharge:} None",
-				"{@b Range:} 130",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
+				"{@b Range:} 5 feet",
+				"{@b Target:} 1 creature",
+				"{@b Duration:} Instantaneous",
 				"{@b Properties:} Stealth Attack",
-				"{@b Description:} Stealth Attack. Attack your foe from the shadows, striking for double damage if you hit from behind or they are defiant.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Description:} Attack your foe from the shadows, striking for double damage if you hit from behind or they are defiant.",
+				"{@b Effect:} Choose one creature within 5 feet of you. Make a melee weapon attack against the target. On a hit, the target takes {@damage 2d8} piercing damage. If at least one other ally of yours is within 5 feet of the target, the attack deals {@damage 5d6} piercing damage instead.",
+				"{@b Scaling:} The damage each increases by {@damage 2d8} and {@damage 5d6} respectively at levels 5 ({@damage 4d8} & {@damage 10d6}), 11 ({@damage 6d8} & {@damage 15d6}), and 17 ({@damage 8d8} & {@damage 20d6})."
 			]
 		},
 		{
@@ -8343,7 +8345,8 @@
 				"THI",
 				"DAG",
 				"WS",
-				"ACT"
+				"ACT",
+				"CIL"
 			],
 			"prerequisite": [
 				{
@@ -8352,14 +8355,14 @@
 			],
 			"entries": [
 				"{@b Casting Time:} Action",
-				"{@b Recharge:} None",
-				"{@b Range:} 450",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Leap",
+				"{@b Cost:} 3 {@variantrule Initiative Points|GW2}",
+				"{@b Range:} 45 feet",
+				"{@b Target:} 1 creature",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Combo Finisher|GW2}: Leap",
 				"{@b Description:} Leap and strike your foe. The less health your target has, the more damage you cause.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Choose one creature that you can see within range. Leap to the target and make a melee weapon attack against it. On a hit, the target takes {@damage 1d0} piercing damage plus an additional {@damage 1d8} damage if it is {@condition Bloodied|XPHB}, or an additional {@damage 2d8} damage if it is below 25% of its hit point maximum.",
+				"{@b Scaling:} The damage each increases by {@damage 1d10}, {@damage 1d8}, and {@damage 2d8} respectively at levels 5 ({@damage 2d10} & {@damage 2d8}, & {@damage 4d8}), 11 ({@damage 3d10} & {@damage 3d8} & {@damage 6d8}), and 17 ({@damage 4d10} & {@damage 4d8} & {@damage 8d8})."
 			]
 		},
 		{
@@ -8512,7 +8515,9 @@
 				"PIS",
 				"WS",
 				"BACT",
-				"ACT"
+				"ACT",
+				"SEQ",
+				"CIP"
 			],
 			"prerequisite": [
 				{
@@ -8520,15 +8525,15 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Bonus Action or Action",
+				"{@b Casting Time:} Action or Bonus Action",
 				"{@b Recharge:} None",
-				"{@b Range:} 900",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Bleeding",
+				"{@b Range:} 90 feet",
+				"{@b Target:} 1 creature",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Combo Finisher|GW2}: Projectile ({@chance 20}), {@variantrule Sequence|GW2}: {@optfeature Sneak Attack|GW2} while {@condition Invisible|XPHB}",
 				"{@b Description:} Bleed your foe with a shot to the vitals.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Choose one creature you can see within range. Make a ranged weapon attack against the target. On a hit, the target takes {@damage 1d6} piercing damage and is inflicted with 1 stack of {@variantrule Bleeding|GW2} for 1 round, taking {@damage 1d8} damage.",
+				"{@b Scaling:} The damage each increases by {@damage 1d6} and {@damage 1d8} respectively at levels 5 ({@damage 2d6} & {@damage 2d8}), 11 ({@damage 3d6} & {@damage 3d8}), and 17 ({@damage 4d6} & {@damage 4d8})."
 			]
 		},
 		{
@@ -8540,7 +8545,9 @@
 				"PIS",
 				"WS",
 				"STE",
-				"ACT"
+				"ACT",
+				"SEQ",
+				"CIP"
 			],
 			"prerequisite": [
 				{
@@ -8550,13 +8557,13 @@
 			"entries": [
 				"{@b Casting Time:} Action",
 				"{@b Recharge:} None",
-				"{@b Range:} 900",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Stealth Attack, Bleeding",
-				"{@b Description:} Stealth Attack. Sneak attack with rapid fire from your pistol and make your foe bleed.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Range:} 90 feet",
+				"{@b Target:} 1 creature",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Combo Finisher|GW2}: Projectile, Stealth Attack",
+				"{@b Description:} Sneak attack with rapid fire from your pistol and make your foe bleed.",
+				"{@b Effect:} Choose one creature you can see within range. Make five ranged weapon attacks against the target. On a hit, the target takes {@damage 1d4} piercing damage and is inflicted with 1 stack of {@variantrule Bleeding|GW2} for 1 round, taking {@damage 1d8} damage.",
+				"{@b Scaling:} The damage each increases by {@damage 1d4} and {@damage 1d8} respectively at levels 5 ({@damage 2d4} & {@damage 2d8}), 11 ({@damage 3d4} & {@damage 3d8}), and 17 ({@damage 4d4} & {@damage 4d8})."
 			]
 		},
 		{
@@ -8568,7 +8575,8 @@
 				"PIS",
 				"WS",
 				"BACT",
-				"ACT"
+				"ACT",
+				"CIP"
 			],
 			"prerequisite": [
 				{
@@ -8576,15 +8584,15 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Bonus Action or Action",
-				"{@b Recharge:} {@chance 75|5+}",
-				"{@b Range:} 900",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Immobilize",
+				"{@b Casting Time:} Action or Bonus Action",
+				"{@b Cost:} 4 {@variantrule Initiative Points|Gw2}",
+				"{@b Range:} 90 feet",
+				"{@b Target:} 1 creature",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Combo Finisher|GW2}: Projectile",
 				"{@b Description:} Fire a set of immobilizing bolas at your foe.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Choose one creature you can see within range. Make a ranged weapon attack against the target. On a hit, the target takes {@damage 1d4} bludgeoning damage and is inficted with 5 stacks of {@variantrule Vulnerability|GW2} for 1 round and 1 round of {@variantrule Immobilized|GW2}.",
+				"{@b Scaling:} The damage increases by {@damage 1d4} at levels 5 ({@damage 2d4}), 11 ({@damage 3d4}), and 17 ({@damage 4d4})."
 			]
 		},
 		{
@@ -9279,7 +9287,7 @@
 				"{@b Range:} Self",
 				"{@b Target:} Self",
 				"{@b Duration:} Instantaneous",
-				"{@b Properties:} Signet",
+				"{@b Properties:} {@variantrule Signet|GW2}",
 				"{@b Signet Passive:} You regain hit points equal to {@dice 1d4} when you deal damage with an attack or {@variantrule Skill|GW2}, or apply a condition to a creature. If you deal damage and apply a condition to the same creature, you only regain hit points once.",
 				"{@b Passive Scaling:} The healing increases by {@dice 1d4} at levels 5 ({@dice 2d4}), 11 ({@dice 3d4}), and 17 ({@dice 4d4}).",
 				"{@b Signet Active:} You regain hit points equal to {@dice 1d8} + your Class modifier.",
@@ -28118,6 +28126,17 @@
 			]
 		},
 		{
+			"name": "Initiative Points",
+			"source": "GW2",
+			"entries": [
+				"Initiative Points are a unique resource for the {@class Thief|GW2} profession.",
+				"You have a maximum of 12 Initiative Points.",
+				"You regain 6 Initiative Points at the start of your turn.",
+				"You can spend Initiative Points to use certain {@variantrule Skill|GW2|skills} that require them."
+			]
+
+		},
+		{
 			"name": "Knockback",
 			"source": "GW2",
 			"entries": [
@@ -28281,6 +28300,14 @@
 				"{@variantrule Effect|GW2}",
 				"While you are under the effect of this {@variantrule Effect|GW2}, you cannot gain the {@variantrule Stealth|GW2} {@variantrule Effect|GW2} or the {@condition Invisible|XPHB} condition.",
 				"Stacks duration (max 5 rounds)."
+			]
+		},
+		{
+			"name": "Sequence",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Property|GW2}",
+				"A {@variantrule Skill|GW2} with this {@variantrule Property|GW2} gets replaced with a different {@variantrule Skill|GW2} when the conditions for the sequence are met."
 			]
 		},
 		{

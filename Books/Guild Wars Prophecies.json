@@ -15433,10 +15433,12 @@
 				"D"
 			],
 			"languages": [
-				"Abyssal"
+				"Abyssal",
+				"telepathy 60 ft."
 			],
 			"languageTags": [
-				"AB"
+				"AB",
+				"TP"
 			],
 			"save": {
 				"int": "+8",
@@ -15679,6 +15681,1200 @@
 			},
 			"environment": [
 				"jungle"
+			]
+		},
+		{
+			"name": "Evennia",
+			"source": "GWP",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"average": 240,
+				"formula": "32d8 + 96"
+			},
+			"speed": {
+				"walk": 35
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 17,
+			"int": 14,
+			"wis": 21,
+			"cha": 14,
+			"save": {
+				"str": "+7",
+				"con": "+7",
+				"int": "+6",
+				"wis": "+9"
+			},
+			"skill": {
+				"insight": "+9",
+				"medicine": "+9",
+				"perception": "+9",
+				"religion": "+10"
+			},
+			"passive": 19,
+			"languages": [
+				"Common",
+				"Krytan",
+				"Orrian"
+			],
+			"cr": "12",
+			"gear": [
+				"chain mail|xphb",
+				"holy symbol|xphb"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Evennia casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 17}, +9 to hit with spell attacks.)"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Light|XPHB}",
+						"{@spell Mend Ailment|GW}",
+						"{@spell Orison of Healing|GW} (Level 3 Version)",
+						"{@spell Remove Hex|GW} (Level 3 Version)",
+						"{@spell Thaumaturgy|XPHB}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell Balthazar's Aura|GW}",
+							"{@spell Dispel Magic|XPHB}",
+							"{@spell Greater Restoration|XPHB}",
+							"{@spell Heal Other/Jamei's Gaze|GWP} (Level 3 Version)",
+							"{@spell Raise Dead|XPHB}",
+							"{@spell Rebirth|GW}",
+							"{@spell Zone of Truth|XPHB}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Evennia casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 17}, +9 to hit with spell attacks.)"
+					],
+					"displayAs": "bonus",
+					"will": [
+						"{@spell Word of Healing|GW} (Level 2)"
+					],
+					"daily": {
+						"2": [
+							"{@spell Divine Intervention|GW}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Evennia makes three Radiant Burst attacks, she can forgo one of these attacks to cast a spell."
+					]
+				},
+				{
+					"name": "Radiant Burst",
+					"entries": [
+						"{@atkr m,r} {@hit 9}, reach 5 ft. or range 60 ft. {@h}27 ({@damage 4d10 + 5}) Radiant damage."
+					]
+				},
+				{
+					"name": "Holy Word {@recharge 4}",
+					"entries": [
+						"{@actSave wis} {@dc 17}, each enemy in a 20-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from Evennia. {@actSaveFail} 21 ({@damage 6d6}) Radiant damage, and the target has the {@condition Stunned|XPHB} condition until the end of Evennia's next turn. {@actSaveSuccess} Half damage only."
+					]
+				}
+			],
+			"treasure": [
+				"individual",
+				"relics"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RA",
+				"MA"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Evennia is the former leader of the Shining Blade, a group which opposes the White Mantle. After the events of Guild Wars Prophecies, she steps down to serve Princess Salma and promotes Bartholos to the leadership of the Shining Blade.",
+					"During the War in Kryta, she travels to Ascalon to seek the aid of King Adelbern against the White Mantle, in exchange for Krytan aid against the Charr. After struggling for a while to obtain said help, she is reported missing, her last known location being Old Ascalon. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Evennia.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Evennia_Token.png"
+			},
+			"damageTags": [
+				"R"
+			],
+			"damageTagsSpell": [
+				"R"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Aidan",
+			"source": "GWP",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"average": 169,
+				"formula": "26d8 + 52"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 10,
+			"dex": 20,
+			"con": 14,
+			"int": 14,
+			"wis": 18,
+			"cha": 15,
+			"save": {
+				"dex": "+9",
+				"con": "+6"
+			},
+			"skill": {
+				"perception": "+12",
+				"stealth": "+13",
+				"acrobatics": "+13"
+			},
+			"passive": 22,
+			"languages": [
+				"Common",
+				"Thieves' cant",
+				"Krytan",
+				"Ascalonian"
+			],
+			"cr": "11",
+			"gear": [
+				{
+					"item": "pistol|xphb",
+					"quantity": 2
+				},
+				"scimitar|xphb",
+				"studded leather armor|xphb"
+			],
+			"trait": [
+				{
+					"name": "Evasion",
+					"entries": [
+						"If Aidan is subjected to an effect that allows him to make a Dexterity saving throw to take only half damage, Aidan instead takes no damage if he succeeds on the save and only half damage if he fails. He can't use this trait if he has the {@condition Incapacitated|XPHB} condition."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Aidan makes three attacks, using Scimitar or Longbow in any combination, he can forgo one of these attacks to cast a spell."
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atkr m} {@hit 9}, reach 5 ft. {@h}12 ({@damage 2d6 + 5}) Slashing damage plus 14 ({@damage 4d6}) Poison damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atkr r} {@hit 9}, range 600 ft. {@h}10 ({@damage 1d10 + 5}) Piercing damage plus 14 ({@damage 4d6}) Poison damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Deadly Aim",
+					"entries": [
+						"Aidan gives himself {@variantrule Advantage|XPHB} on the next attack roll he makes during the current turn. If that attack hits, the target takes an extra 28 ({@damage 8d6}) Poison damage."
+					]
+				}
+			],
+			"treasure": [
+				"any"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"TC"
+			],
+			"miscTags": [
+				"MA",
+				"MLW",
+				"RA",
+				"RNG"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"attachedItems": [
+				"longbow|phb",
+				"scimitar|phb"
+			],
+			"fluff": {
+				"entries": [
+					"Born in: Kree Foothills",
+					"Nation: Ascalon",
+					"Profession: Ranger",
+					"Age: 32",
+					"The son of a huntsman, Aidan grew up with a quiver of arrows on his back. His mother died giving birth to him while his family was on a wagon train from Kryta to Ascalon. As soon as the boy was old enough to hold a bow in one hand, Aidan’s father packed up just the good steel heads of their tools and the two men headed off into the wild. They found a spot in the middle of a forest clearing, refitted their tools with hand-carved handles, and built their own home from scratch.",
+					"Aidan is a survivor. Nothing is out of the question if it means he and his companions will live for another day. He thinks fast and acts even faster. His inner calm—a sort of simple confidence—has a way of infecting everyone around him. Being the oldest member of the party, he has the wisdom of years his younger counterparts lack, though he never feels the need to lord it over them. He does feel a certain amount of responsibility to keep the group informed and out of trouble if at all possible. From time to time, he takes on the role of group patriarch, but only if there is a meltdown and he sees the need for his cooler head to prevail. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aidan.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Aidan_Token.png"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Aidan casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 16}, +8 to hit with spell attacks.)"
+					],
+					"daily": {
+						"3e": [
+							"{@spell Determined Shot|GW}",
+							"{@spell Dual Shot|GW}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Aidan casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 16}, +8 to hit with spell attacks.)"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Incendiary Arrows|GWP}",
+						"{@spell Read the Wind|GW} (Level 3 Version)",
+						"{@spell Troll Unguent|GW}"
+					],
+					"daily": {
+						"1": [
+							"{@spell Resurrection Signet|GW}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Aidan casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 16}, +8 to hit with spell attacks.)"
+					],
+					"displayAs": "reaction",
+					"daily": {
+						"3e": [
+							"{@spell Distracting Shot|GW}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Aidan casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 16}, +8 to hit with spell attacks.)"
+					],
+					"displayAs": "bonus",
+					"daily": {
+						"1": [
+							"{@spell Dryder's Defenses|GWP}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"I",
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Markis",
+			"source": "GWP",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"{@item studded leather armor|XPHB|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "26d8 + 130",
+				"average": 247
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 11,
+			"dex": 22,
+			"con": 20,
+			"int": 11,
+			"wis": 16,
+			"cha": 10,
+			"skill": {
+				"acrobatics": "+10",
+				"perception": "+9",
+				"stealth": "+10"
+			},
+			"passive": 19,
+			"languages": [
+				"Common",
+				"Krytan"
+			],
+			"cr": "12",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Markis makes three Shortsword or Longbow attacks."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}16 ({@damage 3d6 + 6}) piercing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 150/600 ft., one target. {@h}28 ({@damage 5d8 + 6}) piercing damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Archer's Eye (3/Day)",
+					"entries": [
+						"Immediately after making an attack roll or a damage roll with a ranged weapon, Markis can roll a {@dice d12} and add the number rolled to the total."
+					]
+				}
+			],
+			"attachedItems": [
+				"longbow|phb",
+				"shortsword|phb"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Markis.jpg"
+						}
+					}
+				]
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Markis casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 16}, +6 to hit with spell attacks.)"
+					],
+					"will": [
+						"{@spell Pin Down|GW}"
+					],
+					"ability": "wis",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Markis casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 16}, +6 to hit with spell attacks.)"
+					],
+					"displayAs": "bonus",
+					"daily": {
+						"2": [
+							"{@spell Dryder's Defenses|GWP}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Markis casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 16}, +6 to hit with spell attacks.)"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Barrage|GW}"
+					],
+					"daily": {
+						"1": [
+							"{@spell Troll Unguent|GW} (Level 4 Version)"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Markis casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 16}, +6 to hit with spell attacks.)"
+					],
+					"displayAs": "reaction",
+					"daily": {
+						"3": [
+							"{@spell Concussion Shot|GW}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Markis attacks using one of their attacks."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Markis moves up to their speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Spellcasting (Costs 2 Actions)",
+					"entries": [
+						"Markis uses Spellcasting."
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Markis fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Markis_Token.png"
+			},
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Shining Blade Ranger",
+			"source": "GWP",
+			"size": [
+				"S",
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"G"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 66,
+				"formula": "12d8 + 12"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 12,
+			"int": 14,
+			"wis": 15,
+			"cha": 11,
+			"save": {
+				"dex": "+5",
+				"int": "+4"
+			},
+			"skill": {
+				"perception": "+6",
+				"stealth": "+7",
+				"survival": "+6"
+			},
+			"passive": 16,
+			"languages": [
+				"Common plus one other language"
+			],
+			"cr": "3",
+			"gear": [
+				"longbow|xphb",
+				"shortsword|xphb",
+				"studded leather armor|xphb"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Shining Blade Ranger makes two attacks, using Shortsword or Longbow in any combination."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atkr m} {@hit 5}, reach 5 ft. {@h}6 ({@damage 1d6 + 3}) Piercing damage, plus 10 ({@damage 3d6}) Piercing damage if the attack was made with {@variantrule Advantage|XPHB}."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atkr r} {@hit 5}, range 150/600 ft. {@h}7 ({@damage 1d8 + 3}) Piercing damage, plus 10 ({@damage 3d6}) Piercing damage if the attack was made with {@variantrule Advantage|XPHB}."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Aim",
+					"entries": [
+						"The Shining Blade Ranger has {@variantrule Advantage|XPHB} on the next attack roll it makes during the current turn."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Uncanny Dodge",
+					"entries": [
+						"{@actTrigger} The Shining Blade Ranger is hit by an attack roll. {@actResponse} The Shining Blade Ranger halves the damage (round down) it takes from that attack."
+					]
+				}
+			],
+			"treasure": [
+				"implements",
+				"individual"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"miscTags": [
+				"MA",
+				"MLW",
+				"RA",
+				"RNG"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"attachedItems": [
+				"longbow|phb",
+				"shortsword|phb"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shining_Blade_ranger.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shining_Blade_ranger_Token.png"
+			},
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Shining Blade Warrior",
+			"source": "GWP",
+			"size": [
+				"S",
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"G"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"average": 112,
+				"formula": "15d8 + 45"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 16,
+			"int": 10,
+			"wis": 12,
+			"cha": 15,
+			"save": {
+				"str": "+7",
+				"dex": "+5",
+				"con": "+6",
+				"wis": "+4"
+			},
+			"skill": {
+				"athletics": "+10",
+				"performance": "+5"
+			},
+			"passive": 11,
+			"languages": [
+				"Common"
+			],
+			"cr": "5",
+			"gear": [
+				"shield|xphb",
+				{
+					"item": "spear|xphb",
+					"quantity": 3
+				},
+				"studded leather armor|xphb"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Shining Blade Warrior makes three Spear attacks. It can replace one attack with a use of Shield Bash."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atkr m,r} {@hit 7}, reach 5 ft. or range 20/60 ft. {@h}11 ({@damage 2d6 + 4}) Piercing damage."
+					]
+				},
+				{
+					"name": "Shield Bash",
+					"entries": [
+						"{@actSave str} {@dc 15}, one creature within 5 feet that the Shining Blade Warrior can see. {@actSaveFail} 9 ({@damage 2d4 + 4}) Bludgeoning damage. If the target is a Medium or smaller creature, it has the {@condition Prone|XPHB} condition."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"{@actTrigger} The Shining Blade Warrior is hit by a melee attack roll while holding a weapon. {@actResponse} The Shining Blade Warrior adds 3 to its AC against that attack, possibly causing it to miss."
+					]
+				}
+			],
+			"treasure": [
+				"armaments",
+				"individual"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/gladiator.mp3"
+			},
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"C"
+			],
+			"miscTags": [
+				"RA",
+				"MA",
+				"MLW",
+				"THW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"attachedItems": [
+				"spear|phb"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shining_Blade_warrior.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shining_Blade_warrior_Token.png"
+			},
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Shining Blade Elementalist",
+			"source": "GWP",
+			"size": [
+				"S",
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"wizard"
+				]
+			},
+			"alignment": [
+				"G"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 81,
+				"formula": "18d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 11,
+			"int": 17,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"int": "+6",
+				"wis": "+4"
+			},
+			"skill": {
+				"arcana": "+6",
+				"history": "+6",
+				"perception": "+4"
+			},
+			"passive": 14,
+			"languages": [
+				"Common and any three languages"
+			],
+			"cr": "6",
+			"gear": [
+				"wand|xphb"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Shining Blade Elementalist casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 14}):"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Detect Magic|XPHB}",
+						"{@spell Light|XPHB}",
+						"{@spell Lightning Strike|GW}",
+						"{@spell Mage Armor|XPHB} (included in AC)",
+						"{@spell Mage Hand|XPHB}",
+						"{@spell Prestidigitation|XPHB}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell Ice Spikes|GW} (Level 4 Version)",
+							"{@spell Invisibility|XPHB}"
+						],
+						"1e": [
+							"{@spell Fly|XPHB}",
+							"{@spell Rodgort's Invocation|GWP}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Misty Step (3/Day)",
+					"headerEntries": [
+						"The Shining Blade Elementalist casts {@spell Misty Step|XPHB}, using the same spellcasting ability as Spellcasting."
+					],
+					"displayAs": "bonus",
+					"hidden": [
+						"daily"
+					],
+					"daily": {
+						"3": [
+							"{@spell Misty Step|XPHB}"
+						]
+					},
+					"type": "spellcasting"
+				},
+				{
+					"name": "Protective Magic (3/Day)",
+					"headerEntries": [
+						"The Shining Blade Elementalist casts {@spell Counterspell|XPHB} or {@spell Shield|XPHB} in response to the spell's trigger, using the same spellcasting ability as Spellcasting."
+					],
+					"displayAs": "reaction",
+					"hidden": [
+						"daily"
+					],
+					"daily": {
+						"3": [
+							"{@spell Counterspell|XPHB}",
+							"{@spell Shield|XPHB}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Shining Blade Elementalist makes three Arcane Burst attacks."
+					]
+				},
+				{
+					"name": "Arcane Burst",
+					"entries": [
+						"{@atkr m,r} {@hit 6}, reach 5 ft. or range 120 ft. {@h}16 ({@damage 3d8 + 3}) Force damage."
+					]
+				}
+			],
+			"treasure": [
+				"arcana",
+				"individual"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RA",
+				"MA"
+			],
+			"conditionInflictSpell": [
+				"invisible"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shining_Blade_caster.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shining_Blade_caster_Token.png"
+			},
+			"damageTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"C",
+				"F",
+				"L"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity"
+			]
+		},
+		{
+			"name": "Shining Blade Monk",
+			"source": "GWP",
+			"size": [
+				"S",
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"cleric"
+				]
+			},
+			"alignment": [
+				"G"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 38,
+				"formula": "7d8 + 7"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 12,
+			"int": 13,
+			"wis": 16,
+			"cha": 13,
+			"skill": {
+				"medicine": "+7",
+				"perception": "+5",
+				"religion": "+5"
+			},
+			"passive": 15,
+			"languages": [
+				"Common plus one other language"
+			],
+			"cr": "2",
+			"gear": [
+				"chain shirt|xphb",
+				"holy symbol|xphb",
+				"mace|xphb"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Shining Blade Monk casts one of the following spells, using Wisdom as the spellcasting ability:"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Light|XPHB}",
+						"{@spell Thaumaturgy|XPHB}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell Heal Area/Karei's Healing Circle|GWP}",
+							"{@spell Heal Other/Jamei's Gaze|GWP}",
+							"{@spell Spirit Guardians|XPHB}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Divine Aid (3/Day)",
+					"headerEntries": [
+						"The Shining Blade Monk casts {@spell Bless|XPHB}, {@spell Dispel Magic|XPHB}, {@spell Healing Word|XPHB}, or {@spell Lesser Restoration|XPHB}, using the same spellcasting ability as Spellcasting."
+					],
+					"displayAs": "bonus",
+					"hidden": [
+						"daily"
+					],
+					"daily": {
+						"3": [
+							"{@spell Bless|XPHB}",
+							"{@spell Dispel Magic|XPHB}",
+							"{@spell Healing Word|XPHB}",
+							"{@spell Lesser Restoration|XPHB}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Shining Blade Monk makes two attacks, using Mace or Radiant Flame in any combination."
+					]
+				},
+				{
+					"name": "Mace",
+					"entries": [
+						"{@atkr m} {@hit 5}, reach 5 ft. {@h}6 ({@damage 1d6 + 3}) Bludgeoning damage plus 5 ({@damage 2d4}) Radiant damage."
+					]
+				},
+				{
+					"name": "Radiant Flame",
+					"entries": [
+						"{@atkr r} {@hit 5}, range 60 ft. {@h}11 ({@damage 2d10}) Radiant damage."
+					]
+				}
+			],
+			"treasure": [
+				"individual",
+				"relics"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA",
+				"MLW",
+				"RA"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"attachedItems": [
+				"mace|phb"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Saidra.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Saidra_Token.png"
+			},
+			"damageTags": [
+				"B",
+				"R"
+			],
+			"damageTagsSpell": [
+				"N",
+				"R"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			]
 		}
 	],

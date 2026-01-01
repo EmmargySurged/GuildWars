@@ -6671,6 +6671,163 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Healing_Seed_Token.png"
 			}
+		},
+		{
+			"name": "Issormir",
+			"source": "GW2",
+			"size": [
+				"H"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d12 + 30",
+				"average": 95
+			},
+			"speed": {
+				"walk": 50,
+				"burrow": 30
+			},
+			"str": 16,
+			"dex": 4,
+			"con": 16,
+			"int": 4,
+			"wis": 12,
+			"cha": 4,
+			"save": {
+				"con": "+5",
+				"wis": "+3"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"tremorsense 60 ft."
+			],
+			"passive": 11,
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"Issormir deals double damage to objects and structures."
+					]
+				},
+				{
+					"name": "Earth Tremors",
+					"entries": [
+						"Issormir creates earth tremors as it moves overland or underground. Any creature that comes within 30 feet of the moving Issormir for the first time on a turn must succeed on a {@dc 13} Dexterity saving throw or take 2 ({@damage 1d4}) bludgeoning damage and fall {@condition prone}. Any structure or object anchored to the ground that comes within 30 feet of the moving Issormir for the first time on a turn takes 3 ({@damage 1d6}) force damage."
+					]
+				},
+				{
+					"name": "Tunneler",
+					"entries": [
+						"Issormir can burrow through solid rock at half its burrow speed and leaves a 10-foot-diameter tunnel in its wake."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Issormir makes two {@i Bite} attacks. It can replace any number of these attacks with a uses of {@i Sweep},  {@i Spit} or {@i Icy Breath} if available."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 10 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage. If the target is a Medium or smaller creature, it must succeed on a {@dc 13} Dexterity saving throw or be swallowed by Issormir. A swallowed creature is {@condition blinded} and {@condition restrained}, has {@quickref Cover||3||total cover} against attacks and other effects outside Issormir, and takes 2 ({@damage 1d4}) cold damage at the start of each of Issormir's turns. If Issormir takes 10 damage or more on a single turn from a creature inside it, Issormir must succeed on a {@dc 18} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of Issormir. If Issormir dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 20 feet of movement, exiting {@condition prone}."
+					]
+				},
+				{
+					"name": "Sweep {@recharge}",
+					"entries": [
+						"Each creature within 20 feet of Issormir must succeed on a {@dc 13} Dexterity Saving Throw or take {@damage 2d6} bludgeoning damage and be {@variantrule Launch|GW2|Launched} 15 feet and fall {@condition prone}."
+					]
+				},
+				{
+					"name": "Spit {@recharge}",
+					"entries": [
+						"Issormir hurls an icy rock from its gut to a point it can see within 60 feet of it. Each creature within 20 feet of that point must succeed on a {@dc 13} Dexterity Saving Throw or take {@dice 1d6} bludgeoning and {@damage 1d6} cold damage and be knocked {@condition prone}. On a successful save, a creature takes half damage only."
+					]
+				},
+				{
+					"name": "Icy Breath {@recharge}",
+					"entries": [
+						"{@actSave con} {@dc 13}, each creature in a 30-foot Cone. {@actSaveFail} 9 ({@damage 2d8}) Cold damage. {@actSaveSuccess} Half damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Siege Monster",
+				"Tunneler"
+			],
+			"senseTags": [
+				"B",
+				"T"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack",
+				"Swallow"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"blinded",
+				"prone",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"mountain"
+			],
+			"fluff": {
+				"entries": [
+					"Issormir is a great ice wurm[1] which was captured by Knut Whitebear from Lostvyrm Cave.[2] It is used as the main hunt for The Great Hunt in 1325 AE. It appears only after becoming enraged at the deaths of its hatchlings. After its death, Issormir's Body remains, frozen, as norn nearby figure out how to clean up the corpse.",
+					"After defeating Issormir, norn characters are referred to as the \"Slayer of Issormir.\" ",
+					"    ^ The Great Hunt Rite of Passage",
+					"    ^ Lodge Keeper Kevach"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Issormir.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Issormir_Token.png"
+			},
+			"resist": [
+				"cold"
+			],
+			"damageTags": [
+				"B",
+				"C",
+				"O",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			]
 		}
 	],
 	"object": [
@@ -28134,7 +28291,6 @@
 				"You regain 6 Initiative Points at the start of your turn.",
 				"You can spend Initiative Points to use certain {@variantrule Skill|GW2|skills} that require them."
 			]
-
 		},
 		{
 			"name": "Knockback",

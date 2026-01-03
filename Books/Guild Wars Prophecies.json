@@ -16876,6 +16876,542 @@
 			"savingThrowForcedSpell": [
 				"wisdom"
 			]
+		},
+		{
+			"name": "Confessor Hablion",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "GWP",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|xphb}",
+						"{@item animated shield|xdmg}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "35d8 + 140",
+				"average": 297
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 25,
+			"dex": 14,
+			"con": 18,
+			"int": 14,
+			"wis": 12,
+			"cha": 18,
+			"passive": 21,
+			"cr": "14",
+			"shortName": "Hablion",
+			"languages": [
+				"Common",
+				"Krytan",
+				"Ascalonian"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Hablion is wearing and attuned to the following magic items:",
+						"- {@item Belt of Fire Giant Strength}",
+						"- {@item Animated Shield}",
+						"- {@item Executioner's Handaxe|XDMG}",
+						"- {@item Enspelled (Level 5) Handaxe|XDMG} ({@spell Banishing Smite|XPHB})",
+						"- {@item Titanstrength Longbow|GW}"
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Hablion fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Hablion has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"save": {
+				"str": "+12",
+				"con": "+9",
+				"cha": "+9"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"athletics": "+17",
+				"arcana": "+7",
+				"deception": "+14",
+				"history": "+7",
+				"insight": "+11",
+				"intimidation": "+14",
+				"investigation": "+7",
+				"perception": "+11",
+				"persuasion": "+9",
+				"religion": "+12"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Confessor Hablion casts one of the following spells, requiring no Material components and using Strength as the spellcasting ability (spell save {@dc 20}, +12 to hit with spell attacks.)"
+					],
+					"will": [
+						"{@spell Cyclone Axe|GW}",
+						"{@spell Dismember|GW}",
+						"{@spell Healing Signet|GW}",
+						"{@spell Wild Blow|GW}"
+					],
+					"ability": "str",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Confessor Hablion casts one of the following spells, requiring no Material components and using Strength as the spellcasting ability (spell save {@dc 17}, +9 to hit with spell attacks.)"
+					],
+					"displayAs": "bonus",
+					"daily": {
+						"3": [
+							"{@spell Hundred Blades|GW}"
+						],
+						"6": [
+							"{@spell Banishing Smite|XPHB}"
+						]
+					},
+					"ability": "str",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Confessor Hablion makes four Executioner's Handaxe or Titanstrength Longbow attacks in any combination, he then can make a single attack with his Enspelled (Level 5) Handaxe if he didn't cast {@spell Banishing Smite|XPHB} or {@spell Hundred Blades|GW} this turn and his {@item Animated Shield} is active."
+					]
+				},
+				{
+					"name": "Executioner's Handaxe",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d6 + 8}) slashing damage, plus 7 ({@damage 2d6}) slashing damage against humanoids. Hablion gain {@variantrule Temporary Hit Points|XPHB} equal to the extra damage dealt."
+					]
+				},
+				{
+					"name": "Titanstrength Longbow",
+					"entries": [
+						"{@atk rw} {@hit 12} to hit, range 150/600 ft., one target. {@h}11 ({@damage 1d8 + 7}) piercing damage."
+					]
+				},
+				{
+					"name": "Enspelled (Level 5) Handaxe",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d6 + 7}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"attachedItems": [
+				"enspelled (level 5) handaxe|xdmg",
+				"executioner's handaxe|xdmg"
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"{@i Trigger}: Hablion is hit by a melee attack roll while holding a weapon. {@actResponse} Hablion adds 5 to his AC against that attack, possibly causing it to miss."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Confessor Hablion attacks twice using one of his attacks."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Confessor Hablion moves up to his speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Elite Spell",
+					"entries": [
+						"Confessor Hablion casts {@spell Hundred Blades|GW} using the same spellcasting ability as Spellcasting."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Justiciar Hablion was one of the few people who survived the Rise of the White Mantle, and thus one of the few people who could accurately describe the events of that night. He was one of Saul D'Alessio's closest allies up until his disappearance. He would later become a very high-ranking member of the White Mantle.",
+					"He first met the Ascalonian refugees at the Gates of Kryta, where they helped him clear the swamp of undead in exchange for asylum in Kryta. He would later encounter them again, giving them the Eye of Janthir to help them select the Chosen - they thought that they would be escorting them to the Temple of the Unseen, but in fact they were to be executed atop the Bloodstone. The Ascalonians learned of this and confronted Hablion, eventually slaying him atop the Bloodstone. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_Warrior_m.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_Warrior_m_Token.png"
+			},
+			"group": [
+				"White Mantle"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"O"
+			]
+		},
+		{
+			"name": "Silvery",
+			"source": "GWP",
+			"size": [
+				"S",
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"average": 110,
+				"formula": "17d8 + 34"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 14,
+			"int": 13,
+			"wis": 14,
+			"cha": 19,
+			"save": {
+				"dex": "+7",
+				"cha": "+7"
+			},
+			"skill": {
+				"acrobatics": "+10",
+				"athletics": "+4",
+				"perception": "+5",
+				"performance": "+10",
+				"stealth": "+7"
+			},
+			"passive": 15,
+			"languages": [
+				"Common",
+				"Canthan",
+				"Kurzick"
+			],
+			"cr": "6",
+			"gear": [
+				"rapier|xphb"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Silvery casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 15}):"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Minor Illusion|XPHB}",
+						"{@spell Prestidigitation|XPHB}"
+					],
+					"daily": {
+						"1": [
+							"{@spell Tasha's Hideous Laughter|XPHB} (level 3 version)"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Silvery makes three Rapier attacks."
+					]
+				},
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atkr m} {@hit 7}, reach 5 ft. {@h}8 ({@damage 1d8 + 4}) Piercing damage plus 7 ({@damage 2d6}) Psychic damage."
+					]
+				},
+				{
+					"name": "Beguiling Song",
+					"entries": [
+						"{@actSave wis} {@dc 15}, each creature in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point within 120 feet. {@actSaveFail} 20 ({@damage 3d10 + 4}) Psychic damage, and the target has the {@condition Charmed|XPHB} condition until the end of Silvery's next turn. {@actSaveSuccess} Half damage only."
+					]
+				}
+			],
+			"treasure": [
+				"implements",
+				"individual"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA",
+				"MLW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"conditionInflictSpell": [
+				"incapacitated",
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"attachedItems": [
+				"rapier|phb"
+			],
+			"isNpc": true,
+			"group": [
+				"Kurzick"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Kurzick_noble_f_gray.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Kurzick_noble_f_gray_Token.png"
+			},
+			"damageTags": [
+				"P",
+				"Y"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Mira",
+			"source": "GWP",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"charr"
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 40,
+				"formula": "9d8"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 20
+			},
+			"str": 10,
+			"dex": 17,
+			"con": 11,
+			"int": 13,
+			"wis": 14,
+			"cha": 15,
+			"skill": {
+				"athletics": "+2",
+				"perception": "+4",
+				"stealth": "+5",
+				"survival": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"languages": [
+				"Common plus any one language"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Feline Agility",
+					"entries": [
+						"When Mira moves on her turn in combat, she can double her speed until the end of the turn. Once she uses this ability, Mira can't use it again until she moves 0 feet on one of her turns."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Mira makes two attacks with her claws, her shortsword, or her shortbow."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 80/320 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"shortbow|phb",
+				"shortsword|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"hasFluff": true,
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Mira is a level 2 spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 12}, +4 to hit with spell attacks). Mira has the following Ranger (GW) spells prepared:"
+					],
+					"daily": {
+						"1e": [
+							"{@spell ignite arrows|GWP}",
+							"{@spell troll unguent|GW}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CR"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Stalker.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Stalker_Token.png"
+			},
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"F"
+			]
 		}
 	],
 	"feat": [],

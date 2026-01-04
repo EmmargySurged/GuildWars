@@ -17606,6 +17606,241 @@
 			"damageTags": [
 				"N"
 			]
+		},
+		{
+			"name": "Livia",
+			"source": "GWP",
+			"page": 199,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"average": 170,
+				"formula": "31d8 + 31"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 12,
+			"int": 20,
+			"wis": 15,
+			"cha": 16,
+			"save": {
+				"int": "+9",
+				"wis": "+6"
+			},
+			"skill": {
+				"arcana": "+13",
+				"history": "+9",
+				"perception": "+6"
+			},
+			"passive": 16,
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				{
+					"conditionImmune": [
+						"charmed"
+					],
+					"note": "(with Mind Blank)",
+					"cond": true
+				}
+			],
+			"languages": [
+				"Common",
+				"Orrian",
+				"Krytan",
+				"Abyssal",
+				"Canthan",
+				"Elonian"
+			],
+			"cr": "12",
+			"gear": [
+				"wand|xphb"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Livia casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 17}):"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Detect Magic|XPHB}",
+						"{@spell Detect Thoughts|XPHB}",
+						"{@spell Disguise Self|XPHB}",
+						"{@spell Invisibility|XPHB}",
+						"{@spell Light|XPHB}",
+						"{@spell Mage Armor|XPHB} (included in AC)",
+						"{@spell Mage Hand|XPHB}",
+						"{@spell Prestidigitation|XPHB}",
+						"{@spell Sending|XPHB}",
+						"{@spell Vampiric Swarm|GWF}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell Fly|XPHB}",
+							"{@spell Ghastly Charge|CrookedMoon24} (level 7 version)",
+							"{@spell Polymorph|XPHB}"
+						],
+						"1e": [
+							"{@spell Circle of Death|XPHB} (level 9 version)",
+							"{@spell Daylight|XPHB}",
+							"{@spell Deep Freeze|GW}",
+							"{@spell Disintegrate|XPHB}",
+							"{@spell Dispel Magic|XPHB}",
+							"{@spell Gust of Wind|XPHB}",
+							"{@spell Mind Blank|XPHB} (cast before combat)",
+							"{@spell Passwall|XPHB}",
+							"{@spell Rodgort's Invocation|GWP}",
+							"{@spell Teleport|XPHB}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Livia casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 17}):"
+					],
+					"displayAs": "bonus",
+					"will": [
+						"{@spell Blood Is Power|GW}"
+					],
+					"daily": {
+						"3": [
+							"{@spell Misty Step|XPHB}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Livia casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 17}):"
+					],
+					"displayAs": "reaction",
+					"daily": {
+						"3e": [
+							"{@spell Counterspell|XPHB}",
+							"{@spell Shield|XPHB}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Livia casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 17}):"
+					],
+					"daily": {
+						"2": [
+							"{@spell Scrying|XPHB}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Livia has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Livia makes four Necrotic Burst attacks."
+					]
+				},
+				{
+					"name": "Arcane Burst",
+					"entries": [
+						"{@atkr m,r} {@hit 9}, reach 5 ft. or range 150 ft. {@h}27 ({@damage 4d10 + 5}) Necrotic damage."
+					]
+				}
+			],
+			"treasure": [
+				"arcana",
+				"individual"
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"AB"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RA",
+				"MA"
+			],
+			"conditionInflictSpell": [
+				"invisible"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Livia.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Livia_Token.png"
+			},
+			"damageTags": [
+				"N"
+			],
+			"damageTagsSpell": [
+				"C",
+				"F",
+				"N",
+				"O"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			]
 		}
 	],
 	"feat": [],

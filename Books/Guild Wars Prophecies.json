@@ -17412,6 +17412,197 @@
 			"damageTagsSpell": [
 				"F"
 			]
+		},
+		{
+			"name": "White Mantle Ritualist Necromancer Boss",
+			"source": "GWP",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"formula": "30d8 + 60",
+				"average": 195
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 18,
+			"con": 14,
+			"int": 20,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"int": "+8",
+				"wis": "+4"
+			},
+			"skill": {
+				"arcana": "+8",
+				"history": "+8",
+				"perception": "+4"
+			},
+			"passive": 14,
+			"languages": [
+				"Common",
+				"Krytan",
+				"Abyssal",
+				"Orrian"
+			],
+			"cr": "8",
+			"gear": [
+				"wand|xphb"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The White Mantle Ritualist casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 16}):"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Vampiric Gaze|GW} (Level 2 Version)"
+					],
+					"daily": {
+						"2e": [
+							"{@spell Lingering Curse|GW} (Level 4 Version",
+							"{@spell Well of the Profane|GW} (Level 5 Version)"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Order of Pain (3/Day)",
+					"headerEntries": [
+						"The White Mantle Ritualist casts {@spell Order of Pain|GW}, using the same spellcasting ability as Spellcasting."
+					],
+					"displayAs": "bonus",
+					"hidden": [
+						"daily"
+					],
+					"daily": {
+						"3": [
+							"{@spell Order of Pain|GW} (Level 3 Version)"
+						]
+					},
+					"type": "spellcasting"
+				},
+				{
+					"name": "Subversive Magic (1/Day)",
+					"headerEntries": [
+						"The White Mantle Ritualist casts {@spell Mark of Subversion|GWP} in response to a creature casting a spell on an ally of theirs."
+					],
+					"displayAs": "reaction",
+					"hidden": [
+						"daily"
+					],
+					"daily": {
+						"3": [
+							"{@spell Mark of Subversion|GWP}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The White Mantle Ritualist makes three Necrotic Burst attacks or casts {@spell Vampiric Gaze|GW} thrice. It can replace one of either with the casting of {@spell Well of the Profane|GW}."
+					]
+				},
+				{
+					"name": "Necrotic Burst",
+					"entries": [
+						"{@atkr m,r} {@hit 8}, reach 5 ft. or range 120 ft. {@h}22 ({@damage 4d8 + 4}) Necrotic damage."
+					]
+				}
+			],
+			"treasure": [
+				"arcana",
+				"individual"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"AB"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RA",
+				"MA"
+			],
+			"conditionInflictSpell": [
+				"invisible"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_necromancer.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_necromancer_Token.png"
+			},
+			"trait": [
+				{
+					"name": "Legendary Resistance (2/Day)",
+					"entries": [
+						"If the white mantle ritualist necromancer boss fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"legendaryActions": 2,
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"The White Mantle Ritualist Necromancer Boss attacks using one of their attacks."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"The White Mantle Ritualist Necromancer Boss moves up to their speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Spellcasting (Costs 2 Actions)",
+					"entries": [
+						"The White Mantle Ritualist Necromancer Boss uses Spellcasting."
+					]
+				}
+			],
+			"damageTags": [
+				"N"
+			]
 		}
 	],
 	"feat": [],

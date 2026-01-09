@@ -6455,6 +6455,19 @@
 	"condition": [],
 	"item": [
 		{
+			"name": "Aquabreather",
+			"source": "GW2",
+			"page": "",
+			"type": "G",
+			"rarity": "common",
+			"wondrous": true,
+			"value": 10000,
+			"weight": 2,
+			"entries": [
+				"While wearing an Aquabreather, you can breathe underwater indefinitely and can speak underwater as if you were on land."
+			]
+		}
+		,{
 			"name": "Rifle",
 			"source": "GW2",
 			"page": "",
@@ -6870,12 +6883,6 @@
 			],
 			"trait": [
 				{
-					"name": "Training",
-					"entries": [
-						"The commoner has proficiency in one skill of the DM's choice and has {@variantrule Advantage|XPHB} whenever it makes an ability check using that skill."
-					]
-				},
-				{
 					"name": "Relentless Endurance",
 					"entries": [
 						"When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. You regain the use of this feature when you finish a Long Rest."
@@ -6903,8 +6910,7 @@
 				"C"
 			],
 			"miscTags": [
-				"MA",
-				"MLW"
+				"MA"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
@@ -6979,14 +6985,6 @@
 			"cr": "0",
 			"gear": [
 				"club|xphb"
-			],
-			"trait": [
-				{
-					"name": "Training",
-					"entries": [
-						"The commoner has proficiency in one skill of the DM's choice and has {@variantrule Advantage|XPHB} whenever it makes an ability check using that skill."
-					]
-				}
 			],
 			"action": [
 				{
@@ -7082,12 +7080,6 @@
 				"club|xphb"
 			],
 			"trait": [
-				{
-					"name": "Training",
-					"entries": [
-						"The commoner has proficiency in one skill of the DM's choice and has {@variantrule Advantage|XPHB} whenever it makes an ability check using that skill."
-					]
-				},
 				{
 					"name": "Relentless Endurance",
 					"entries": [
@@ -8279,6 +8271,141 @@
 			},
 			"damageTags": [
 				"S"
+			]
+		},
+		{
+			"name": "Dredge Commoner",
+			"source": "GW2",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dredge"
+				]
+			},
+			"alignment": [
+				"L"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"formula": "1d8 + 1",
+				"average": 5
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 15
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 12,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"languages": [
+				"Common",
+				"Dredge"
+			],
+			"cr": "0",
+			"gear": [
+				"club|xphb"
+			],
+			"action": [
+				{
+					"name": "Club",
+					"entries": [
+						"{@atkr m} {@hit 2}, reach 5 ft. {@h}2 ({@damage 1d4}) Bludgeoning damage."
+					]
+				},
+				{
+					"name": "Dirt Dive",
+					"entries": [
+						"The dredge commoner dives into the earth directly below them and can move up to their burrow speed. Moving in this manner does not provoke attacks of opportunity."
+					]
+				}
+			],
+			"treasure": [
+				"individual"
+			],
+			"languageTags": [
+				"C"
+			],
+			"miscTags": [
+				"MA",
+				"MLW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"attachedItems": [
+				"club|phb"
+			],
+			"senses": [
+				"blindsight 30 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"skill": {
+				"sleight of hand": "+2",
+				"athletics": "+2"
+			},
+			"traitTags": [
+				"Keen Senses",
+				"Sunlight Sensitivity",
+				"Tunneler"
+			],
+			"conditionImmune": [
+				"blinded"
+			],
+			"trait": [
+				{
+					"name": "Keen Hearing",
+					"entries": [
+						"The dredge commoner has advantage on Wisdom ({@skill Perception}) checks that rely on hearing."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the dredge commoner has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Burrow",
+					"entries": [
+						"The dredge commoner cannot burrow into solid rock, but they can move through softer material like soil or loose rubble, leaving a usable tunnel 5 feet in diameter."
+					]
+				}
+			],
+			"environment": [
+				"mountain"
+			],
+			"fluff": {
+				"entries": [
+					"The dredge are a mole-like race. They were enslaved by the Stone Summit dwarves in the past and were ready to fight alongside any who would help free them from their masters' whips. After the Transformation of the Dwarves, the dredge gained their freedom once and for all, and established themselves as the heirs to the dwarven kingdom in the Shiverpeak Mountains, where they battle the displaced norn for control of dwarven territory. They have made their capital in Sorrow's Embrace, formerly the main mine of the Stone Summit."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Dredge_Ratnik.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Dredge_Ratnik_Token.png"
+			},
+			"damageTags": [
+				"B"
 			]
 		}
 	],

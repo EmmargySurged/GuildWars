@@ -6466,8 +6466,8 @@
 			"entries": [
 				"While wearing an Aquabreather, you can breathe underwater indefinitely and can speak underwater as if you were on land."
 			]
-		}
-		,{
+		},
+		{
 			"name": "Rifle",
 			"source": "GW2",
 			"page": "",
@@ -8406,6 +8406,225 @@
 			},
 			"damageTags": [
 				"B"
+			]
+		},
+		{
+			"name": "Sporeling",
+			"source": "GW2",
+			"size": [
+				"S"
+			],
+			"type": "plant",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 31,
+				"formula": "7d6 + 7"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 8,
+			"dex": 10,
+			"con": 12,
+			"int": 8,
+			"wis": 11,
+			"cha": 5,
+			"senses": [
+				"Darkvision 120 ft."
+			],
+			"passive": 10,
+			"cr": "1/4",
+			"treasure": [
+				"any"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"vulnerable": [
+				"fire"
+			],
+			"resist": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Death Burst",
+					"entries": [
+						"When the sporeling dies, it explodes in a burst of poisonous spores. Each creature within 5 feet of it must then succeed on a {@dc 13} Constitution saving throw, taking 9 ({@damage 2d8}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"traitTags": [
+				"Death Burst"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"fluff": {
+				"entries": [
+					"Sporelings are small fungi, usually summoned by stronger fungi. They will explode immediately upon getting close to a player."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Sporeling.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Sporeling_Token.png"
+			},
+			"environment": [
+				"forest",
+				"underdark",
+				"jungle"
+			],
+			"group": [
+				"Mushroom"
+			],
+			"action": [
+				{
+					"name": "Explode",
+					"entries": [
+						"The sporeling dies."
+					]
+				}
+			],
+			"damageTags": [
+				"I"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Corrupted Spider",
+			"source": "GW2",
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "13d8 + 13",
+				"average": 71
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 13,
+			"int": 3,
+			"wis": 12,
+			"cha": 4,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+7"
+			},
+			"senses": [
+				"Blindsight 10 ft.",
+				"Darkvision 60 ft."
+			],
+			"passive": 13,
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atkr m} {@hit 3}, reach 5 ft. {@h}8 ({@damage 2d4 + 3}) Piercing damage plus 5 ({@damage 2d4}) Poison damage."
+					]
+				},
+				{
+					"name": "Venom Spray {@recharge 5}",
+					"entries": [
+						"{@actSave con} {@dc 13}, each creature in a 15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@i Failure:} 8 ({@damage 2d6}) Poison damage and is {@variantrule Poison|GW2|Poisoned} for 1 round, taking {@damage 1d10} damage. {@i Success:} Half Damage only."
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Corrupted Spiders are Hirsute Ice Spiders that were corrupted by the Elder Dragon Jormag."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Corrupted_Spider.jpg"
+						}
+					}
+				]
+			},
+			"vulnerable": [
+				"fire"
+			],
+			"immune": [
+				"cold"
+			],
+			"resist": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"environment": [
+				"arctic",
+				"mountain"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Corrupted_Spider_Token.png"
+			},
+			"group": [
+				"Icebrood"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution"
 			]
 		}
 	],

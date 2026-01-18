@@ -585,8 +585,10 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "Minor",
-        "Adept"
+        "MIT",
+        "ADT",
+        "THI",
+        "ANT"
       ],
       "prerequisite": [
         {
@@ -594,7 +596,7 @@
         }
       ],
       "entries": [
-        "Steal is replaced with Skritt Swipe, allowing you to pilfer from enemies. Successfully pilfering grants one offensive and one defensive artifact. Only one artifact may be used each time you pilfer, and pilfering overrides any artifacts you already have."
+        "Your {@optfeature Skritt Swipe|GW2VoE} skill now always grants you two artifacts instead of one. Instead of rolling a {@dice d8} to determine which artifact you gain, roll two {@dice d4}s, the first determining the defensive artifact you gain, and the second determining the offensive artifact you gain. You can only use one artifact, the other is lost."
       ]
     },
     {
@@ -602,16 +604,44 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "Major",
-        "Adept"
+        "MJT",
+        "ADT",
+        "THI",
+        "ANT"
       ],
       "prerequisite": [
         {
-          "other": "Major Adept"
+          "other": "{@optfeature Trinket Collector|GW2VoE}"
         }
       ],
       "entries": [
-        "Gain access to Reshuffle. Remove conditions from yourself whenever you reshuffle your artifacts or use an artifact skill."
+        "You can now use the {@optfeature Reshuffle|GW2VoE} skill. When you use {@optfeature Reshuffle|GW2VoE} or an artifact skill, you end the latest {@variantrule Condition|GW2} on yourself."
+      ]
+    },
+    {
+      "name": "Reshuffle",
+      "source": "GW2VoE",
+      "page": "",
+      "featureType": [
+        "PS",
+        "THI",
+        "ANT",
+        "SPEC"
+      ],
+      "prerequisite": [
+        {
+          "other": "{@optfeature Card Swap|GW2VoE}"
+        }
+      ],
+      "entries": [
+        "{@b Casting Time:} Special",
+        "{@b Recharge:} {@chance 75|5+}",
+        "{@b Cost:} 2 {@variantrule Initiative Points|GW2}",
+        "{@b Range:} Self",
+        "{@b Target:} Self",
+        "{@b Duration:} Instantaneous",
+        "{@b Description:} Redraw any artifacts you currently have in your skill slots.",
+        "{@b Effect:} Lose any artifacts you currently have. Draw a new artifact for each one you lost, rolling a {@dice d4} in the same category (offensive or defensive) as the lost artifact to determine which one you gain. Reroll if would gain the same artifact you lost."
       ]
     },
     {
@@ -619,16 +649,18 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "Major",
-        "Adept"
+        "MJT",
+        "ADT",
+        "THI",
+        "ANT"
       ],
       "prerequisite": [
         {
-          "other": "Major Adept"
+          "other": "{@optfeature Trinket Collector|GW2VoE}"
         }
       ],
       "entries": [
-        "Reduce the recharge of Skritt Swipe whenever you use an artifact."
+        "Whenever you use an artifact skill, if your {@optfeature Skritt Swipe|GW2VoE} skill is recharging, roll for its recharge."
       ]
     },
     {
@@ -636,16 +668,18 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "Major",
-        "Adept"
+        "MJT",
+        "ADT",
+        "THI",
+        "ANT"
       ],
       "prerequisite": [
         {
-          "other": "Major Adept"
+          "other": "{@optfeature Trinket Collector|GW2VoE}"
         }
       ],
       "entries": [
-        "Gain an additional artifact slot. Whenever you pilfer, you gain an additional, random artifact. You can use one additional artifact when you pilfer with Skritt Swipe."
+        "When you use {@optfeature Skritt Swipe|GW2VoE}, you gain an additional artifact. Roll a {@dice d8} to determine which artifact you gain. You can now use two artifacts, before the last one is lost."
       ]
     },
     {
@@ -653,16 +687,18 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "Minor",
-        "Master"
+        "MIT",
+        "MAT",
+        "THI",
+        "ANT"
       ],
       "prerequisite": [
         {
-          "other": "Minor Master"
+          "other": "{@optfeature Card Swap|GW2VoE} or {@optfeature Repeat Ransacker|GW2VoE} or {@optfeature Prolific Plunderer|GW2VoE}"
         }
       ],
       "entries": [
-        "Grant yourself barrier when you use a healing or elite skill. The cooldowns for this trait are separate for healing and elite skills."
+        "When you use a {@variantrule Healing Skill|GW2} or an {@variantrule Elite Skill|GW2}, you gain {@variantrule Barrier|GW2} equal to your Thief level. Once this trait triggers for a skill type, it cannot trigger again for that type until recharged ({@chance 35|14+})."
       ]
     },
     {
@@ -670,16 +706,18 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "Major",
-        "Master"
+        "MJT",
+        "MAT",
+        "THI",
+        "ANT"
       ],
       "prerequisite": [
         {
-          "other": "Major Master"
+          "other": "{@optfeature Magpie's Defense|GW2VoE}"
         }
       ],
       "entries": [
-        "Gain Scoundrel's Luck whenever you use an artifact. Scoundrel's Luck allows you to use Double Edge skills on cooldown without backfiring."
+        "After using an artifact skill, the next time you use a Double Edge skill while it is recharging, you automatically succeed on the recharge roll."
       ]
     },
     {
@@ -687,16 +725,59 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "Major",
-        "Master"
+        "MJT",
+        "MAT",
+        "THI",
+        "ANT"
       ],
       "prerequisite": [
         {
-          "other": "Major Master"
+          "other": "{@optfeature Magpie's Defense|GW2VoE}"
         }
       ],
       "entries": [
-        "Your artifacts have increased effectiveness. Beneficial artifact effects last longer and have increased charges."
+        "Your artifacts skills have increased effectiveness:",
+        {
+          "type": "table",
+          "colLabels": [
+            "Artifact",
+            "Effectiveness Increase"
+          ],
+          "rows": [
+            [
+              "{@optfeature Chak Shield|GW2VoE}",
+              "The damage and barrier both increase by {@damage 1d4}, the duration increases by 1 round, and duration of the unique effect increases by 1 round."
+            ],
+            [
+              "{@optfeature Exalted Hammer|GW2VoE}",
+              "The damage increases by {@damage 1d4}, the healing increases by {@dice 1d8}, the {@variantrule Protection|GW2} duration increases by 1 round, and duration of the unique effect increases by 1 round."
+            ],
+            [
+              "{@optfeature Holo-Dancer Decoy|GW2VoE}",
+              "The damage increases by {@damage 1d6}, the {@variantrule Mighty|GW2} and {@variantrule Fury|GW2} duration both increase by 1 round each, the radius increase by 5 feet, and duration of the unique effect increases by 1 round."
+            ],
+            [
+              "{@optfeature Zephyrite Sun Crystal|GW2VoE}",
+              "The damage increases by {@damage 1d4}, the {@variantrule Burning|GW2} duration increases by 1 round, you remove an additional {@variantrule Condition|GW2} when you arrive, and duration of the unique effect increases by 1 round."
+            ],
+            [
+              "{@optfeature Forged Surfer Dash|GW2VoE}",
+              "The damage increases by {@damage 1d8}, the {@variantrule Burning|GW2} duration increases by 1 round, and duration of the unique effect increases by 1 round."
+            ],
+            [
+              "{@optfeature Metal Legion Guitar|GW2VoE}",
+              "The damage each increases by {@damage 1d6}, the {@variantrule Stunned|GW2} and {@variantrule Confusion|GW2} duration both increase by 1 round each, and duration of the unique effect increases by 1 round."
+            ],
+            [
+              "{@optfeature Mistburn Mortar|GW2VoE}",
+              "The damage increases by {@damage 1d6}, the {@variantrule Burning|GW2} duration increases by 1 round, and duration of the unique effect increases by 1 round."
+            ],
+            [
+              "{@optfeature Summon Kryptis Turret|GW2VoE}",
+              "The damage increases by {@damage 1d4}, the {@variantrule Torment|GW2} duration increases by 1 round, and duration of the unique effect increases by 1 round."
+            ]
+          ]
+        }
       ]
     },
     {
@@ -704,16 +785,18 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "Major",
-        "Master"
+        "MJT",
+        "MAT",
+        "THI",
+        "ANT"
       ],
       "prerequisite": [
         {
-          "other": "Major Master"
+          "other": "{@optfeature Magpie's Defense|GW2VoE}"
         }
       ],
       "entries": [
-        "Gain increased damage for a period of time after using an artifact."
+        "For 2 rounds after you use an artifact skill, you deal an additional 15% damage. If would gains this effect again while it is active, the duration increases to a maximum of 4 rounds."
       ]
     },
     {
@@ -721,16 +804,18 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "Minor",
-        "Grandmaster"
+        "MIT",
+        "GMT",
+        "THI",
+        "ANT"
       ],
       "prerequisite": [
         {
-          "other": "Minor Grandmaster"
+          "other": "{@optfeature Scoundrel's Luck|GW2VoE} or {@optfeature Meticulous Custodian|GW2VoE} or {@optfeature Exhilarating Ephemera|GW2VoE}"
         }
       ],
       "entries": [
-        "Gain initiative whenever you use an artifact skill."
+        "When you use an artifact skill, you regain 2 {@variantrule Initiative Points|GW2} and gain {@variantrule Barrier|GW2} equal to your {@table Proficiency Bonus|XPHB}. While you have barrier, you take 10% reduced damage from all sources."
       ]
     },
     {
@@ -738,16 +823,18 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "Major",
-        "Grandmaster"
+        "MAT",
+        "GMT",
+        "THI",
+        "ANT"
       ],
       "prerequisite": [
         {
-          "other": "Major Grandmaster"
+          "other": "{@optfeature Enterprising Aristocrat|GW2VoE}"
         }
       ],
       "entries": [
-        "You pilfer after using a certain amount of initiative. This trait will override any existing artifacts when triggered."
+        "Every 15 {@variantrule Initiative Points|GW2} you spend, you automatically gain new artifacts as if you had used {@optfeature Skritt Swipe|GW2VoE}."
       ]
     },
     {
@@ -755,16 +842,20 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "Major",
-        "Grandmaster"
+        "MAT",
+        "GMT",
+        "THI",
+        "ANT"
       ],
       "prerequisite": [
         {
-          "other": "Major Grandmaster"
+          "other": "{@optfeature Enterprising Aristocrat|GW2VoE}"
         }
       ],
       "entries": [
-        "Artifacts grant barrier and boons to allies when used. Offensive and defensive artifacts grant different boons."
+        "When you use a defensive artifact skill, you grant each creature of your choice within 20 feet of you {@variantrule Alacity|GW2} and {@variantrule Protection|GW2} for 1 round.",
+        "When you use an offensive artifact skill, you grant each creature of your choice within 20 feet of you {@variantrule Alacity|GW2} for 1 round and 10 stacks of {@variantrule Might|GW2} for 2 rounds.",
+        "When you gain {@variantrule Barrier|GW2} from {@optfeature Magpie's Defense|GW2VoE} or {@optfeature Enterprising Aristocrat|GW2VoE}, you also grant each creature of your choice within 20 feet of the same amount of {@variantrule Barrier|GW2}."
       ]
     },
     {
@@ -772,16 +863,19 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "Major",
-        "Grandmaster"
+        "MAT",
+        "GMT",
+        "THI",
+        "ANT"
       ],
       "prerequisite": [
         {
-          "other": "Major Grandmaster"
+          "other": "{@optfeature Enterprising Aristocrat|GW2VoE}"
         }
       ],
       "entries": [
-        "Gain Combat High when you use Skritt Swipe, increasing your outgoing strike and condition damage. Lose stacks of Combat High every interval."
+        "Gain 10 stacks of Combat High when you use {@optfeature Skritt Swipe|GW2VoE}. You loose three stacks of Combat High at the start of each of your turns.",
+        "Each stack of Combat High grants you a 2% bonus to all damage you deal."
       ]
     },
     {
@@ -807,7 +901,7 @@
         "{@b Duration:} Instantaneous",
         "{@b Properties:} Double Edge",
         "{@b Description:} Drink an antivenom potion to heal yourself and remove conditions. You may activate the skill while it is recharging, with a chance for the skill to backfire.",
-        "{@b Effect:} You remove the latest {@variantrule Condition|GW2} on yourself, then you regain hit points equal to {@dice 1d10} + your Class modifier.", 
+        "{@b Effect:} You remove the latest {@variantrule Condition|GW2} on yourself, then you regain hit points equal to {@dice 1d10} + your Class modifier.",
         "You can attempt to use this {@variantrule Skill|GW2} while it is recharging. When you do so, roll for the recharge as normal; if the roll fails, the {@variantrule Skill|GW2} backfires ({@optfeature Antivenom Draught: Backfired|GW2VoE}) and you cannot use it again until you succeed on a recharge roll with {@variantrule Disadvantage|XPHB}. If the roll succeeds, you can use the {@variantrule Skill|GW2} as normal.",
         "{@b Scaling:} The healing increases by {@dice 1d10} at level 11 ({@dice 2d10})."
       ]
@@ -1171,7 +1265,7 @@
         "{@b Properties:} Offensive Artifact",
         "{@b Description:} Summon a Kryptis turret at your targeted location and fires at the closest foe in range. For a short time after using this skill, you deal increased damage to enemies that were struck by the turret.",
         "{@b Effect:} Choose a point within range. You summon a Kryptis turret at that point. At the start of each of your turns, the turret targets random hostile creatures within 20 feet of it and makes 4 ranged attacks against the targets. On a hit, a target takes {@damage 1d4} necrotic damage and is inflicted with 1 stack of {@variantrule Torment|GW2} for 1 round, taking {@damage 1d8} damage.",
-        "For 2 rounds after using this {@variantrule Skill|GW2}, you deal an additional 15% damage to enemies that were struck by the turret.",
+        "For 1 round after using this {@variantrule Skill|GW2}, you deal an additional 15% damage to enemies that were struck by the turret.",
         "{@b Scaling:} The damage each increase by {@damage 1d4} and {@damage 1d8} respectively at levels 5 ({@damage 2d4} & {@damage 2d8}), 11 ({@damage 3d4} & {@damage 3d8}), and 17 ({@damage 4d4} & {@damage 4d8})."
       ]
     },
@@ -1230,8 +1324,8 @@
         "{@b Duration:} Instantaneous",
         "{@b Properties:} {@variantrule Combo Finisher|GW2}: Leap, Defensive Artifact",
         "{@b Description:} Leap to the targeted area and slam down with an enchanted exalted hammer, damaging enemies and healing allies in an area. For a short time after using this skill, activating any weapon skill that costs initiative creates an additional healing burst at your location.",
-        "{@b Effect:}  Choose a point within range. You leap to that point. Each hostile creature in a 5-foot radius centered on that point must make a Constitution {@variantrule Saving Throw|XPHB}. On a failed save, a target takes {@damage 1d4} radiant damage. On a successful save, a target takes half as much damage. Each creature of your choice in that area regains hit points equal to {@dice 1d8} + your Class modifier.",
-        "For 2 rounds after using this {@variantrule Skill|GW2}, activating any {@variantrule Weapon Skill|GW2} that costs initiative causes each creature of your choice within 5 feet of you to regain hit points equal to {@dice 1d4}.", 
+        "{@b Effect:}  Choose a point within range. You leap to that point. Each hostile creature in a 5-foot radius centered on that point must make a Constitution {@variantrule Saving Throw|XPHB}. On a failed save, a target takes {@damage 1d4} radiant damage. On a successful save, a target takes half as much damage. Each creature of your choice in that area regains hit points equal to {@dice 1d8} + your Class modifier and gains 1 round of {@variantrule Protection|GW2}.",
+        "For 2 rounds after using this {@variantrule Skill|GW2}, activating any {@variantrule Weapon Skill|GW2} that costs initiative causes each creature of your choice within 5 feet of you to regain hit points equal to {@dice 1d4}.",
         "{@b Scaling:} The damage and healing each increase by {@damage 1d4}, {@dice 1d8} and {@dice 1d4} respectively at levels 5 ({@damage 2d4} & {@dice 2d8} & {@dice 2d4}), 11 ({@damage 3d4} & {@dice 3d8} & {@dice 3d4}), and 17 ({@damage 4d4} & {@dice 4d8} & {@dice 4d4})."
       ]
     },
@@ -1262,8 +1356,9 @@
         "{@b Properties:} {@variantrule Combo Field|GW2}: Light, Defensive Artifact",
         "{@b Description:} Place an electrified shield at your position that blocks projectiles and deals damage to enemies within it. For a short time after using this skill, your weapon skills that cost initiative refund all initiative.",
         "{@b Effect:} Place a stationary shield that lasts for the duration at your current location. Any hostile ranged attacks that enter or exit the field automatically miss. Each hostile creature in that Shield must make a Constitution {@variantrule Saving Throw|XPHB}. On a failed save, a target takes {@damage 1d4} lightning damage. On a successful save, a target takes half as much damage. A hostile creature also makes this save if it enters the Shield or ends its turn there. A hostile creature makes this save only once per turn.",
+        "Creatures you choose within the Shield gain {@variantrule Barrier|GW2} equal to {@dice 1d4} + your Class modifier. A creature also gains this {@variantrule Barrier|GW2} if it enters the Shield or ends its turn there. A creature can gain this {@variantrule Barrier|GW2} only once per turn.",
         "For 2 rounds after using this skill, your weapon skills that cost initiative refund all initiative.",
-        "{@b Scaling:} The damage increases by {@damage 1d4} at levels 5 ({@damage 2d4}), 11 ({@damage 3d4}), and 17 ({@damage 4d4})."
+        "{@b Scaling:} The damage and barrier both increase by {@dice 1d4} at levels 5 ({@dice 2d4}), 11 ({@dice 3d4}), and 17 ({@dice 4d4})."
       ]
     },
     {
@@ -1291,7 +1386,8 @@
         "{@b Duration:} 1 round",
         "{@b Properties:} Defensive Artifact",
         "{@b Description:} Summon a holo-dancer decoy that taunts enemies. It self-destructs if it is not destroyed, dealing damage to enemies in a large area. For a short time after using this skill, the next utility skill you use has reduced cooldown.",
-        "{@b Effect:} Choose a point that you can see within range. A holo-dancer decoy appears at that point. The decoy has AC 12 and hit points equal to 5 times your Class level. When the decoy appears, each hostile creature in a 10-foot radius centered on that point must make a Wisdom {@variantrule Saving Throw|XPHB}. On a failed save, a target is {@variantrule Taunted|GW2} by the decoy until the end of its next turn. The decoy lasts until it is destroyed or the duration ends. When the duration ends, the decoy self-destructs, and each hostile creature in a 15-foot radius sphere centered on the decoy's location must make a Dexterity {@variantrule Saving Throw|XPHB}. On a failed save, a target takes {@damage 1d6} force damage. On a successful save, a target takes half as much damage.",
+        "{@b Effect:} Choose a point that you can see within range. A holo-dancer decoy appears at that point. The decoy has AC 12 and hit points equal to 5 times your Class level. When the decoy appears, each hostile creature in a 10-foot radius centered on that point must make a Wisdom {@variantrule Saving Throw|XPHB}. On a failed save, a target is {@variantrule Taunted|GW2} by the decoy until the end of its next turn. Additonally, each creature of your choice whitin range of the decoy gains 2 stacks of {@variantrule Might|GW2} when deployed.",
+        "The decoy lasts until it is destroyed or the duration ends. When the duration ends, the decoy self-destructs, and each hostile creature in a 15-foot radius sphere centered on the decoy's location must make a Dexterity {@variantrule Saving Throw|XPHB}. On a failed save, a target takes {@damage 1d6} force damage. On a successful save, a target takes half as much damage. Each creature of your choice within range of the explosion gains 3 stacks of {@variantrule Might|GW2} for 1 round and 1 round of {@variantrule Fury|GW2}.",
         "For 2 rounds after using this skill, the next {@variantrule Utility Skill|GW2} you use has its cooldown reduced by 10.",
         "{@b Scaling:} The damage increases by {@damage 1d6} at levels 5 ({@damage 2d6}), 11 ({@damage 3d6}), and 17 ({@damage 4d6})."
       ]
@@ -1322,8 +1418,8 @@
         "{@b Duration:} Instantaneous",
         "{@b Properties:} Defensive Artifact, {@variantrule Stun Break|GW2}",
         "{@b Description:} Break stuns and dash toward your target, damaging and burning enemies around you when you reach your destination. You evade attacks as long as you are still traveling. For a short time after using this skill, you may use this skill again if it struck an enemy. Using the skill in this way does not count as using an artifact.",
-        "{@b Effect:} Choose one creature you can see within range. You turn into a mote of light and fly to that creature's location in a straight line, turning back into yourself when you arrive. During the travel attack rolls against you have disadvantage and you have advantage on dexterity {@variantrule Saving Throws|XPHB}. After turning back, each hostile creature in a 5-foot emanation must make a Dexterity {@variantrule Saving Throw|XPHB}. On a failed save, a target takes {@damage 1d6} fire damage and is inflicted with 2 stacks of {@variantrule Burning|GW2} for 1 round, taking {@damage 1d12}. On a successful save, a target takes half as much damage only.",
-        "For 2 rounds after using this {@variantrule Utility Skill|GW2}, if you damaged at least one creature with it, you can use it again. Using the {@variantrule Utility Skill|GW2} in this way does not count as using an artifact.",
+        "{@b Effect:} Choose one creature you can see within range. You turn into a mote of light and fly to that creature's location in a straight line, turning back into yourself when you arrive. During the travel attack rolls against you have disadvantage and you have advantage on dexterity {@variantrule Saving Throws|XPHB}. After turning back, each hostile creature in a 5-foot emanation must make a Dexterity {@variantrule Saving Throw|XPHB}. On a failed save, a target takes {@damage 1d6} fire damage and is inflicted with 2 stacks of {@variantrule Burning|GW2} for 1 round, taking {@damage 1d12}. On a successful save, a target takes half as much damage only. You end the latest 3 {@variantrule Condition|GW2|Conditions} on creatures of your choice within 5 feet of you when you arrive at your destination.",
+        "For 2 rounds after using this {@variantrule Utility Skill|GW2}, the next two times you use a skill that costs {@variantrule Initiative Points|GW2}, you remove the latest 2 {@variantrule Condition|GW2|Conditions} on yourself.",
         "{@b Scaling:} The damage each increase by {@damage 1d6} and {@damage 1d12} respectively at levels 5 ({@damage 2d6} & {@damage 2d12}), 11 ({@damage 3d6} & {@damage 3d12}), and 17 ({@damage 4d6} & {@damage 4d12})."
       ]
     },

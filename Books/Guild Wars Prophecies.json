@@ -13792,230 +13792,6 @@
 			]
 		},
 		{
-			"name": "Livia",
-			"source": "GWP",
-			"page": 199,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"human"
-				]
-			},
-			"alignment": [
-				"N"
-			],
-			"ac": [
-				17
-			],
-			"hp": {
-				"average": 170,
-				"formula": "31d8 + 31"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"initiative": {
-				"proficiency": 1
-			},
-			"str": 10,
-			"dex": 14,
-			"con": 12,
-			"int": 20,
-			"wis": 15,
-			"cha": 16,
-			"save": {
-				"int": "+9",
-				"wis": "+6"
-			},
-			"skill": {
-				"arcana": "+13",
-				"history": "+9",
-				"perception": "+6"
-			},
-			"passive": 16,
-			"immune": [
-				"psychic"
-			],
-			"conditionImmune": [
-				{
-					"conditionImmune": [
-						"charmed"
-					],
-					"note": "(with Mind Blank)",
-					"cond": true
-				}
-			],
-			"languages": [
-				"Common",
-				"Orrian",
-				"Krytan",
-				"Abyssal",
-				"Canthan",
-				"Elonian"
-			],
-			"cr": "12",
-			"gear": [
-				"wand|xphb"
-			],
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Livia casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 17}):"
-					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Detect Magic|XPHB}",
-						"{@spell Detect Thoughts|XPHB}",
-						"{@spell Disguise Self|XPHB}",
-						"{@spell Invisibility|XPHB}",
-						"{@spell Light|XPHB}",
-						"{@spell Mage Armor|XPHB} (included in AC)",
-						"{@spell Mage Hand|XPHB}",
-						"{@spell Prestidigitation|XPHB}",
-						"{@spell Sending|XPHB}",
-						"{@spell Vampiric Swarm|GWF}"
-					],
-					"daily": {
-						"2e": [
-							"{@spell Fly|XPHB}",
-							"{@spell Ghastly Charge|CrookedMoon24} (level 7 version)",
-							"{@spell Polymorph|XPHB}"
-						],
-						"1e": [
-							"{@spell Circle of Death|XPHB} (level 9 version)",
-							"{@spell Mind Blank|XPHB} (cast before combat)",
-							"{@spell Teleport|XPHB}"
-						]
-					},
-					"ability": "int",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Livia casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 17}):"
-					],
-					"displayAs": "bonus",
-					"daily": {
-						"3": [
-							"{@spell Misty Step|XPHB}"
-						]
-					},
-					"will": [
-						"{@spell Blood Is Power|GW}"
-					],
-					"ability": "int",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Livia casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 17}):"
-					],
-					"displayAs": "reaction",
-					"daily": {
-						"3e": [
-							"{@spell Counterspell|XPHB}",
-							"{@spell Shield|XPHB}"
-						]
-					},
-					"ability": "int",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Livia casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 17}):"
-					],
-					"daily": {
-						"2": [
-							"{@spell Scrying|XPHB}"
-						]
-					},
-					"ability": "int",
-					"type": "spellcasting"
-				}
-			],
-			"trait": [
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Livia has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Livia makes four Necrotic Burst attacks."
-					]
-				},
-				{
-					"name": "Arcane Burst",
-					"entries": [
-						"{@atkr m,r} {@hit 9}, reach 5 ft. or range 150 ft. {@h}27 ({@damage 4d10 + 5}) Necrotic damage."
-					]
-				}
-			],
-			"treasure": [
-				"arcana",
-				"individual"
-			],
-			"traitTags": [
-				"Magic Resistance"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"AB"
-			],
-			"spellcastingTags": [
-				"O"
-			],
-			"miscTags": [
-				"RA",
-				"MA"
-			],
-			"conditionInflictSpell": [
-				"invisible"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Livia.jpg"
-						}
-					}
-				]
-			},
-			"tokenHref": {
-				"type": "external",
-				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Livia_Token.png"
-			},
-			"damageTags": [
-				"N"
-			],
-			"damageTagsSpell": [
-				"N",
-				"O"
-			],
-			"savingThrowForcedSpell": [
-				"constitution",
-				"wisdom"
-			]
-		},
-		{
 			"name": "Salma",
 			"source": "GWP",
 			"size": [
@@ -17890,7 +17666,6 @@
 		{
 			"name": "Livia",
 			"source": "GWP",
-			"page": 199,
 			"size": [
 				"M"
 			],
@@ -17923,15 +17698,15 @@
 			"wis": 15,
 			"cha": 16,
 			"save": {
-				"int": "+9",
-				"wis": "+6"
+				"int": "+10",
+				"wis": "+7"
 			},
 			"skill": {
-				"arcana": "+13",
-				"history": "+9",
-				"perception": "+6"
+				"arcana": "+15",
+				"history": "+10",
+				"perception": "+7"
 			},
-			"passive": 16,
+			"passive": 17,
 			"immune": [
 				"psychic"
 			],
@@ -17952,7 +17727,7 @@
 				"Canthan",
 				"Elonian"
 			],
-			"cr": "12",
+			"cr": "14",
 			"gear": [
 				"wand|xphb"
 			],
@@ -17960,84 +17735,89 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Livia casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 17}):"
+						"Livia is a 17th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 18}, +10 to hit with spell attacks). Livia has the following Wizard spells prepared:"
 					],
 					"displayAs": "action",
-					"will": [
-						"{@spell Detect Magic|XPHB}",
-						"{@spell Detect Thoughts|XPHB}",
-						"{@spell Disguise Self|XPHB}",
-						"{@spell Invisibility|XPHB}",
-						"{@spell Light|XPHB}",
-						"{@spell Mage Armor|XPHB} (included in AC)",
-						"{@spell Mage Hand|XPHB}",
-						"{@spell Prestidigitation|XPHB}",
-						"{@spell Sending|XPHB}",
-						"{@spell Vampiric Swarm|GWF}"
-					],
-					"daily": {
-						"2e": [
-							"{@spell Fly|XPHB}",
-							"{@spell Ghastly Charge|CrookedMoon24} (level 7 version)",
-							"{@spell Polymorph|XPHB}"
-						],
-						"1e": [
-							"{@spell Circle of Death|XPHB} (level 9 version)",
-							"{@spell Daylight|XPHB}",
-							"{@spell Deep Freeze|GW}",
-							"{@spell Disintegrate|XPHB}",
-							"{@spell Dispel Magic|XPHB}",
-							"{@spell Gust of Wind|XPHB}",
-							"{@spell Mind Blank|XPHB} (cast before combat)",
-							"{@spell Passwall|XPHB}",
-							"{@spell Rodgort's Invocation|GWP}",
-							"{@spell Teleport|XPHB}"
-						]
-					},
-					"ability": "int",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Livia casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 17}):"
-					],
-					"displayAs": "bonus",
-					"will": [
-						"{@spell Blood Is Power|GW}"
-					],
-					"daily": {
-						"3": [
-							"{@spell Misty Step|XPHB}"
-						]
-					},
-					"ability": "int",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Livia casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 17}):"
-					],
-					"displayAs": "reaction",
-					"daily": {
-						"3e": [
-							"{@spell Counterspell|XPHB}",
-							"{@spell Shield|XPHB}"
-						]
-					},
-					"ability": "int",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Livia casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 17}):"
-					],
-					"daily": {
-						"2": [
-							"{@spell Scrying|XPHB}"
-						]
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell Dark Pact|GW}",
+								"{@spell Light|XPHB}",
+								"{@spell Mage Hand|XPHB}",
+								"{@spell Prestidigitation|XPHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell Detect Magic|XPHB}",
+								"{@spell Disguise Self|XPHB}",
+								"{@spell Mage Armor|XPHB}",
+								"{@spell Shield|XPHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Blood Is Power|GW}",
+								"{@spell Detect Thoughts|XPHB}",
+								"{@spell Gust of Wind|XPHB}",
+								"{@spell Invisibility|XPHB}",
+								"{@spell Misty Step|XPHB}",
+								"{@spell Vampiric Swarm|GWF}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Counterspell|XPHB}",
+								"{@spell Daylight|XPHB}",
+								"{@spell Dispel Magic|XPHB}",
+								"{@spell Fly|XPHB}",
+								"{@spell Sending|XPHB}"
+							],
+							"slots": 0
+						},
+						"4": {
+							"spells": [
+								"{@spell Deep Freeze|GW}",
+								"{@spell Polymorph|XPHB}"
+							],
+							"slots": 0
+						},
+						"5": {
+							"spells": [
+								"{@spell Passwall|XPHB}",
+								"{@spell Scrying|XPHB}"
+							],
+							"slots": 0
+						},
+						"6": {
+							"spells": [
+								"{@spell Circle of Death|XPHB}",
+								"{@spell Disintegrate|XPHB}",
+								"{@spell Ghastly Charge|CrookedMoon24}",
+								"{@spell Rodgort's Invocation|GWP}"
+							],
+							"slots": 0
+						},
+						"7": {
+							"spells": [
+								"{@spell Teleport|XPHB}"
+							],
+							"slots": 0
+						},
+						"8": {
+							"spells": [
+								"{@spell Mind Blank|XPHB}"
+							],
+							"slots": 0
+						},
+						"9": {
+							"spells": [
+								"{@spell Wail of Doom|GWF}"
+							],
+							"slots": 0
+						}
 					},
 					"ability": "int",
 					"type": "spellcasting"
@@ -18059,7 +17839,7 @@
 					]
 				},
 				{
-					"name": "Arcane Burst",
+					"name": "Necrotic Burst",
 					"entries": [
 						"{@atkr m,r} {@hit 9}, reach 5 ft. or range 150 ft. {@h}27 ({@damage 4d10 + 5}) Necrotic damage."
 					]
@@ -18080,7 +17860,7 @@
 				"AB"
 			],
 			"spellcastingTags": [
-				"O"
+				"CW"
 			],
 			"miscTags": [
 				"RA",
@@ -18110,8 +17890,6 @@
 				"N"
 			],
 			"damageTagsSpell": [
-				"C",
-				"F",
 				"N",
 				"O"
 			],

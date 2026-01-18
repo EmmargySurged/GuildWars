@@ -886,11 +886,12 @@
         "HS",
         "THI",
         "ANT",
-        "DOU"
+        "DOU",
+        "ACT"
       ],
       "prerequisite": [
         {
-          "other": "Thief"
+          "other": "Antiquary"
         }
       ],
       "entries": [
@@ -914,11 +915,12 @@
         "HS",
         "THI",
         "ANT",
-        "BAC"
+        "BAC",
+        "ACT"
       ],
       "prerequisite": [
         {
-          "other": "Antivenom Draught"
+          "other": "{@optfeature Antivenom Draught|GW2VoE}"
         }
       ],
       "entries": [
@@ -938,48 +940,58 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "WS",
-        "Utility"
+        "US",
+        "THI",
+        "ANT",
+        "DOU",
+        "ACT",
+        "BACT"
       ],
       "prerequisite": [
         {
-          "other": "Thief"
+          "other": "Antiquary"
         }
       ],
       "entries": [
-        "{@b Casting Time:} ½",
-        "{@b Recharge:} 15",
-        "{@b Range:} ",
-        "{@b Target:} Targeted area",
-        "{@b Duration:} ",
+        "{@b Casting Time:} Action or Bonus Action",
+        "{@b Recharge:} {@chance 45|12+}",
+        "{@b Range:} 90 feet",
+        "{@b Target:} 5-foot-radius sphere",
+        "{@b Duration:} Instantaneous",
         "{@b Properties:} Double Edge",
         "{@b Description:} Summon a skritt to fire a dwarven cannon at the targeted area, damaging and inflicting conditions on foes. You may activate the skill while it is recharging, with a chance for the skill to backfire.",
-        "{@b Effect:} The chance of the skill backfiring lowers as the skill recharges, and the skill cannot backfire when the skill is completely recharged.",
-        "{@b Scaling:} "
+        "{@b Effect:} Choose a point you can see within range. You fire an explosive cannonball at that point. Each hostile creature in a 5-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a creature takes {@damage 1d10} force damage and is inflicted with 3 stacks of {@variantrule Burning|GW2} for 1 round, taking {@damage 1d12} damage. On a successful save, a creature takes half damage only.",
+        "You can attempt to use this {@variantrule Skill|GW2} while it is recharging. When you do so, roll for the recharge as normal; if the roll fails, the {@variantrule Skill|GW2} backfires ({@optfeature Stone Summit Cannon: Backfired|GW2VoE}) and you cannot use it again until you succeed on a recharge roll with {@variantrule Disadvantage|XPHB}. If the roll succeeds, you can use the {@variantrule Skill|GW2} as normal.",
+        "{@b Scaling:} The damage increases by {@damage 1d10} and the number of {@variantrule Burning|GW2} stacks increases by 1 at levels 5 ({@damage 2d10} and 4 stacks), 11 ({@damage 3d10} and 5 stacks), and 17 ({@damage 4d10} and 6 stacks)."
       ]
     },
     {
-      "name": "Stone Summit Cannon (Backfire)",
+      "name": "Stone Summit Cannon: Backfired",
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "WS"
+        "US",
+        "THI",
+        "ANT",
+        "BAC",
+        "ACT",
+        "BACT"
       ],
       "prerequisite": [
         {
-          "other": "Stone Summit Cannon"
+          "other": "{@optfeature Stone Summit Cannon|GW2VoE}"
         }
       ],
       "entries": [
-        "{@b Casting Time:} ½",
-        "{@b Recharge:} 15",
-        "{@b Range:} ",
-        "{@b Target:} ",
-        "{@b Duration:} ",
-        "{@b Properties:} ",
-        "{@b Description:} This skill has backfired and cannot be used again until fully recharged.",
-        "{@b Effect:} ",
-        "{@b Scaling:} "
+        "{@b Casting Time:} Action or Bonus Action",
+        "{@b Recharge:} None",
+        "{@b Range:} Self",
+        "{@b Target:} 10-foot-radius sphere",
+        "{@b Duration:} Instantaneous",
+        "{@b Properties:} Backfire",
+        "{@b Description:}  After a short period of time, the cannon misfires, damaging and inflicting conditions on you and nearby enemies within range of the summoned skritt.",
+        "{@b Effect:} At the start of the next round of combat, each hostile creature within 10 feet of the location where the Skill backfired must make a Dexterity saving throw. On a failed save, a creature takes {@damage 1d8} force damage and is inflicted with 3 stacks of {@variantrule Burning|GW2} for 1 round, taking {@damage 1d12} damage. On a successful save, a creature takes half damage only. If your are within range, you take {@damage 5d6} force damage.",
+        "{@b Scaling:} The damage increases by {@damage 1d8} and the number of {@variantrule Burning|GW2} stacks increases by 1 at levels 5 ({@damage 2d8} and 4 stacks), 11 ({@damage 3d8} and 5 stacks), and 17 ({@damage 4d8} and 6 stacks)."
       ]
     },
     {

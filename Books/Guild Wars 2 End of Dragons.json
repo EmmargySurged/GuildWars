@@ -2924,7 +2924,10 @@
 			"source": "GW2EoD",
 			"page": "",
 			"featureType": [
-				"PS"
+				"PS",
+				"ENG",
+				"MEC",
+				"ACT"
 			],
 			"prerequisite": [
 				{
@@ -2938,8 +2941,8 @@
 				"{@b Target:} 1 Jade Mech CJ-1 you own",
 				"{@b Duration:} Instantaneous",
 				"{@b Description:} Recall your mech for repairs. The cooldown of {@optfeature Crash Down|GW2EoD} is determined by the amount of damage your mech has taken.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Your Jade Mech CJ-1 is sequestered into a harmless demiplane until you use {@optfeature Crash Down|GW2EoD}, which is now recharging. While sequestered, it regains hit points equal to {@dice 2d8} + your class ability modifier at the start of each of your turns. The mech cannot act or be targeted while sequestered. The recharge time of {@optfeature Crash Down|GW2EoD} is reduced by 1 (minimum 5+) per 5% of hit points your mech has when recalled.",
+				"{@b Scaling:} The healing increases by {@dice 2d8} when you reach levels 5 ({@dice 4d8}), 11 ({@dice 6d8}), and 17th level ({@dice 8d8})."
 			]
 		},
 		{
@@ -2947,7 +2950,10 @@
 			"source": "GW2EoD",
 			"page": "",
 			"featureType": [
-				"PS"
+				"PS",
+				"ENG",
+				"MEC",
+				"ACT"
 			],
 			"prerequisite": [
 				{
@@ -2956,13 +2962,13 @@
 			],
 			"entries": [
 				"{@b Casting Time:} 1 {@variantrule Action|XPHB}",
-				"{@b Recharge:} {@chance 55|10+} - {@chance 15|18+}",
+				"{@b Recharge:} {@chance 75|5+} - {@chance 10|19+}",
 				"{@b Range:} 60 feet",
-				"{@b Target:} 18-foot-radius sphere",
+				"{@b Target:} 5-foot-radius sphere",
 				"{@b Duration:} Instantaneous",
 				"{@b Description:} Summon your jade mech at the target area. Foes in the area are damaged. The recharge time of this skill is based on how damaged your mech is.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Choose a point within range. Your Jade Mech CJ-1 appears at that point in a burst of energy. Each creature in a 5-foot-radius sphere centered on that point must make a Strength saving throw. On a failed save, a target takes {@damage 1d6} force damage and is {@variantrule Launched|GW2} 20 feet. On a successful save, the target takes half as much damage only.",
+				"{@b Scaling:} The damage increases by {@damage 1d6} when you reach levels 5 ({@damage 2d6}), 11 ({@damage 3d6}), and 17th level ({@damage 4d6})."
 			]
 		},
 		{
@@ -2971,7 +2977,9 @@
 			"page": "",
 			"featureType": [
 				"MIT",
-				"ADT"
+				"ADT",
+				"ENG",
+				"MEC"
 			],
 			"prerequisite": [
 				{

@@ -2996,7 +2996,9 @@
 			"page": "",
 			"featureType": [
 				"MAT",
-				"ADT"
+				"ADT",
+				"ENG",
+				"MEC"
 			],
 			"prerequisite": [
 				{
@@ -3004,7 +3006,39 @@
 				}
 			],
 			"entries": [
-				"Unlocks the Mech Command skill Rolling Smash. Your mech's attacks apply bleeding. This attack's effect may only affect a certain target once per interval."
+				"You gain access to the Mech Command skill {@optfeature Rolling Smash|GW2EoD}.",
+				"Once per target per turn, if your Mech inficts damage to a target, it also inflicts 1 stack of {@variantrule Bleeding|GW2} for 1 round, dealing {@damage 1d8} damage.",
+				"Additionally, your Mech gains access to the following actions, which he performs wehen commanded to take the {@b Hard Strike} action:",
+				"Bonus Action, if {@b Hard Strike} hit: {@b Heavy Smash.} Melee Attack: Bonus equal your Intelligence modifier plus your Proficiency Bonus, reach 5 ft. Hit: 1d8 + 3 plus your Intelligence modifier bludgeoning damage.",
+				"Special, if {@b Heavy Smash} hit: {@b Twin Strike.} Two Melee Attacks: Bonus equal your Intelligence modifier plus your Proficiency Bonus, reach 5 ft. Hit: 1d6 + 2 plus your Intelligence modifier bludgeoning damage."
+			]
+		},
+		{
+			"name": "Rolling Smash",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"PS",
+				"ENG",
+				"MEC",
+				"MECC",
+				"BACT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Mech Arms: Single-Edge Cutters|GW2EoD}"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} {@variantrule Bonus Action|XPHB}",
+				"{@b Recharge:} {@chance 35|14+}",
+				"{@b Range:} 60 feet",
+				"{@b Target:} 5-foot-radius sphere",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} Mech Command",
+				"{@b Description:} Command your Mech to slam at the target with both cutters, inflicting severe bleeding to enemies in the area. ",
+				"{@b Effect:} Choose a point within range of your mech. The mech moves to that point and slams the ground with both cutters. Each creature in a 5-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 7d4} slashing damage and is inflicted with 4 stacks of {@variantrule Bleeding|GW2} for 1 round, taking {@damage 1d8} damage. On a successful save, a target takes half as much damage only.",
+				"{@b Scaling:} The damage increases by {@damage 2d4} and the number of {@variantrule Bleeding|GW2} stacks increases by 1 at levels 5 ({@damage 9d4} and 5 stacks), 11 ({@damage 11d4} and 6 stacks), and 17 ({@damage 13d4} and 7 stacks)."
 			]
 		},
 		{
@@ -3013,7 +3047,9 @@
 			"page": "",
 			"featureType": [
 				"MAT",
-				"ADT"
+				"ADT",
+				"ENG",
+				"MEC"
 			],
 			"prerequisite": [
 				{
@@ -3021,7 +3057,40 @@
 				}
 			],
 			"entries": [
-				"Unlocks the Mech Command skill Explosive Knuckle. Your mech's attacks now generate might for allies within a radius. This effect may only occur once per interval. The mech does not count against the target count for this trait."
+				"You gain access to the Mech Command skill {@optfeature Explosive Knuckle|GW2EoD}.",
+				"Once per turn, if your Mech inficts damage to a target, it also grants up to 5 creatures of your choice within 60 feet of it 1 stack of {@variantrule Might|GW2} for 2 rounds.",
+				"Additionally, your Mech gains access to the following actions, which he performs wehen commanded to take the {@b Hard Strike} action:",
+				"Bonus Action, if {@b Hard Strike} hit: {@b Heavy Smash.} Melee Attack: Bonus equal your Intelligence modifier plus your Proficiency Bonus, reach 5 ft. Hit: 1d8 + 3 plus your Intelligence modifier bludgeoning damage.",
+				"Special, if {@b Heavy Smash} hit: {@b Twin Strike.} Two Melee Attacks: Bonus equal your Intelligence modifier plus your Proficiency Bonus, reach 5 ft. Hit: 1d6 + 2 plus your Intelligence modifier bludgeoning damage."
+			]
+		},
+		{
+			"name": "Explosive Knuckle",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"PS",
+				"ENG",
+				"MEC",
+				"MECC",
+				"BACT",
+				"EXP"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Mech Arms: High-Impact Drivers|GW2EoD}"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} {@variantrule Bonus Action|XPHB}",
+				"{@b Recharge:} {@chance 45|12+}",
+				"{@b Range:} 60 feet",
+				"{@b Target:} 10-foot-radius sphere",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} Explosion, Mech Command",
+				"{@b Description:} Order your mech to dash at a target, punching with an explosive strike that weakens enemies near the point of impact.",
+				"{@b Effect:} Choose a point within range of your mech. The mech moves to that point and delivers an explosive punch. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes {@damage 5d6} force damage and is inflicted with 1 round of {@variantrule Weakness|GW2} for 1 round. On a successful save, a target takes half as much damage only.",
+				"{@b Scaling:} The damage increases by {@damage 2d6} at levels 5 ({@damage 9d6}), 11 ({@damage 11d6}), and 17 ({@damage 13d6})."
 			]
 		},
 		{

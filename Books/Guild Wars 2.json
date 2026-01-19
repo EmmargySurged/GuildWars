@@ -8634,904 +8634,6 @@
 			]
 		}
 	],
-	"variantrule": [
-		{
-			"name": "Aegis",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Boon|GW2}",
-				"While you are under the effect of this {@variantrule Boon|GW2}, the next attack roll made against you automatically misses. The {@variantrule Boon|GW2} then ends.",
-				"Stacks duration.",
-				"This {@variantrule Boon|GW2} corrupts into 1 stack of {@variantrule Burning|GW2} for 1 round, dealing damage equal to twice the PB of the creature who corrupted the Boon."
-			]
-		},
-		{
-			"name": "Alacrity",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Boon|GW2}",
-				"While you are under the effect of this {@variantrule Boon|GW2}, you have {@variantrule Advantage|XPHB} on Recharge rolls.",
-				"Stacks duration.",
-				"This {@variantrule Boon|GW2} corrupts into 1 round of {@variantrule Chilled|GW2}."
-			]
-		},
-		{
-			"name": "Attribute",
-			"source": "GW2",
-			"entries": [
-				"Attributes are small increases to the effectiveness of your character.",
-				"They are usally granted by items, but can also be granted by other features.",
-				{
-					"type": "table",
-					"colLabels": [
-						"Attribute",
-						"Effect"
-					],
-					"rows": [
-						[
-							"Power",
-							"For each point of Power, increase your outgoing Strike Damage by 1."
-						],
-						[
-							"Precision",
-							"For each point of Precision, increase your {@variantrule Critical Range|GW2} by 1."
-						],
-						[
-							"Ferocity",
-							"For each point of Ferocity, add {@damage 1d4} to your {@variantrule Damage Roll|XPHB|Damage Rolls} on a {@variantrule Critical Hit|XPHB} or {@variantrule Critical Failure|GW2}."
-						],
-						[
-							"Condition Damage",
-							"For each point of Condition Damage, increase your outgoing Condition Damage by 1."
-						],
-						[
-							"Expertise",
-							"For each point of Expertise, increase the duration of your Conditions by 1 round."
-						],
-						[
-							"Toughness",
-							"For each point of Toughness, reduce your incoming Strike Damage by 1 to a minimum of 1."
-						],
-						[
-							"Vitality",
-							"For each point of Vitality, increase your Hit Point Maximum by 5."
-						],
-						[
-							"Healing Power",
-							"For each point of Healing Power, increase your outgoing Healing by 1."
-						],
-						[
-							"Concentration",
-							"For each point of Concentration, increase the duration of your Boons by 1 round."
-						]
-					]
-				}
-			]
-		},
-		{
-			"name": "Aura",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Effect|GW2}",
-				"Auras are {@variantrule Effect|GW2|effects} that sourround a single creature and trigger when that creature is damaged.",
-				"If an aura of the same type is applied to a creature that already has one, the new aura replaces the old one if it has a higher intensity or longer duration; otherwise, the new aura has no effect.",
-				"The following auras exist:",
-				"{@variantrule Chaos Aura|GW2}",
-				"{@variantrule Dark Aura|GW2}",
-				"{@variantrule Fire Aura|GW2}",
-				"{@variantrule Frost Aura|GW2}",
-				"{@variantrule Light Aura|GW2}",
-				"{@variantrule Magnetic Aura|GW2}",
-				"{@variantrule Shocking Aura|GW2}"
-			]
-		},
-		{
-			"name": "Barrier",
-			"source": "GW2",
-			"entries": [
-				"While you have a {@variantrule Barrier|GW2}, and you take damage, the barrier absorbs as much of that damage as it can. Any damage that exceeds the barrier’s remaining hit points is taken by you as normal.",
-				"Barrier lasts until it is depleted, you roll initiative or exit combat, or 10 minutes have passed.",
-				"You can have a maximum Barrier equal to 50% of your maximum hit points at any time.",
-				"When you gain Barrier, it stacks with any existing Barrier you have, up to your maximum."
-			]
-		},
-		{
-			"name": "Bleeding",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Condition|GW2}",
-				"A bleeding creature takes slashing damage at the start of each of its turns.",
-				"The amount of slashing damage is determined by the effect that applied it.",
-				"Stacks intensity.",
-				"This {@variantrule Condition|GW2} get converted into 2 rounds of {@variantrule Vigor|GW2}."
-			]
-		},
-		{
-			"name": "Blindness",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Condition|GW2}",
-				"While you are under the effect of this {@variantrule Condition|GW2}, the next attack roll you make automatically misses. The {@variantrule Condition|GW2} then ends.",
-				"Stacks duration.",
-				"A creature with a {@variantrule Defiance Bar|GW2} takes 20 defiance bar damage at the start of its turn instead of being affected.",
-				"This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Fury|GW2}."
-			]
-		},
-		{
-			"name": "Boon",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Effect|GW2}",
-				"Boons are beneficial {@variantrule Effect|GW2|effects} with a set duration applied by various features.",
-				"They are the opposite of {@variantrule Condition|GW2|Conditions}",
-				"Each Boon has an associated {@variantrule Condition|GW2}, which it can be corrupted into or converted from.",
-				"If a creature already under the effect of a Boon receives the same Boon again, one of two outcomes occurs, depending on the Boon’s properties:",
-				"{@bold Stacks Duration:} The Boon’s duration is extended by the duration of the new instance.",
-				"{@bold Stacks Intensity:} The Boon’s effects are applied again. Each instance functions independently, with its own duration. If one instance of the Boon becomes corrupted, all active instances become corrupted. Any {@variantrule condition|GW2} imposed by the corruption is applied only once."
-			]
-		},
-		{
-			"name": "Burning",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Condition|GW2}",
-				"A burning creature takes fire damage at the start of each of its turns.",
-				"The amount of fire damage is determined by the effect that applied it.",
-				"Stacks intensity.",
-				"This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Aegis|GW2}."
-			]
-		},
-		{
-			"name": "Chain",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Property|GW2}",
-				"When you use a skill with this {@variantrule Property|GW2}, you gain access to the next skill in the chain if you deal damage with it."
-			]
-		},
-		{
-			"name": "Channel",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Property|GW2}",
-				"When you use a {@variantrule Skill|GW2|Skill} with this {@variantrule Property|GW2}, you must use your {@variantrule Action|XPHB} to channel it every round until the channel is completed.",
-				"The channel duration is specified in the skill’s description and is measured in {@variantrule Initiative|XPHB}. If you reach the end of the round and have not yet completed the channel, continue counting {@variantrule Initiative|XPHB} in the round until you hit 0 and then start at the top of the next round.",
-				"If you take damage while channeling, you must succeed on a {@status Concentration|XPHB} {@variantrule Saving Throw|XPHB} to maintain the channel. On a failed save, the channel ends immediately.",
-				"You can end the channel at any time (no {@variantrule Action|XPHB} required)."
-			]
-		},
-		{
-			"name": "Chaos Aura",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Aura|GW2}",
-				"When you take damage, one of the following random effects occurs:",
-				{
-					"type": "table",
-					"caption": "Chaos Aura Effects",
-					"colLabels": [
-						"{@b d6}",
-						"{@b Effect}"
-					],
-					"rows": [
-						[
-							"1",
-							"You gain 1 round of {@variantrule Protection|GW2}."
-						],
-						[
-							"2",
-							"You gain 1 round of {@variantrule Regeneration|GW2}, healing equal to your proficiency bonus."
-						],
-						[
-							"3",
-							"You gain 1 round of {@variantrule Swiftness|GW2}."
-						],
-						[
-							"4",
-							"The source of that damage is inflicted with 1 round of {@variantrule Weakness|GW2}."
-						],
-						[
-							"5",
-							"The source of that damage is inflicted with 1 stack of {@variantrule Confusion|GW2} for 1 round, taking damage equal to your proficiency bonus."
-						],
-						[
-							"6",
-							"The source of that damage is inflicted with 1 round of {@variantrule Crippled|GW2}."
-						]
-					]
-				}
-			]
-		},
-		{
-			"name": "Chilled",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Condition|GW2}",
-				"While you are under the effect of this {@variantrule Condition|GW2}, your speed is reduced by 66% and you have {@variantrule Disadvantage|XPHB} on Recharge rolls.",
-				"Stacks duration.",
-				"A creature with a {@variantrule Defiance Bar|GW2} takes 33 defiance bar damage at the start of its turn instead of being affected.",
-				"This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Alacrity|GW2}."
-			]
-		},
-		{
-			"name": "Crippled",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Condition|GW2}",
-				"While you are under the effect of this {@variantrule Condition|GW2}, your speed is reduced by 50%.",
-				"Stacks duration.",
-				"A creature with a {@variantrule Defiance Bar|GW2} takes 15 defiance bar damage at the start of its turn instead of being affected.",
-				"This {@variantrule Condition|GW2} get converted into 2 rounds of {@variantrule Swiftness|GW2}."
-			]
-		},
-		{
-			"name": "Combos",
-			"source": "GW2",
-			"entries": [
-				"Some skills create combo fields or finishers. A combo field is an area created by a skill that lasts for a certain duration. A combo finisher is a skill that can be used within a combo field to create a powerful effect. If multiple combo fields overlap, only the most recently created field is active. See the table below for the different types of combo fields and finishers (you refers to the creature who used a combo finisher).",
-				{
-					"type": "table",
-					"caption": "Combo Fields and Finishers",
-					"colLabels": [
-						"{@b Combo Field}",
-						"{@b Blast Finisher}",
-						"{@b Leap Finisher}",
-						"{@b Projectile Finisher}",
-						"{@b Whirl Finisher}"
-					],
-					"rows": [
-						[
-							"{@b Dark Field}",
-							"Each friendly creature within 35 feet of the blast's point of origin gains 1 round of {@variantrule Dark Aura|GW2}.",
-							"You gain 1 round of {@variantrule Dark Aura|GW2}.",
-							"You {@variantrule Life Steal|GW2|steal life} equal to your proficiency bonus from each target hit by the projectile finisher.",
-							"You fire up to three life-stealing projectiles at different random hostile targets within 90 feet, each {@variantrule Life Steal|GW2|stealing life} equal to half your proficiency bonus."
-						],
-						[
-							"{@b Ethereal Field}",
-							"Each friendly creature within 35 feet of the blast's point of origin gains 1 round of {@variantrule Chaos Aura|GW2}.",
-							"You gain 1 round of {@variantrule Chaos Aura|GW2}.",
-							"You inflict 1 round of {@variantrule Confusion|GW2}, dealing your proficiency bonus damage, on any targets hit by the projectile finisher.",
-							"You fire up to three chaotic projectiles at different random hostile targets within 90 feet, each inflicting 1 round of {@variantrule Confusion|GW2}, dealing half your proficiency bonus damage."
-						],
-						[
-							"{@b Fire Field}",
-							"Each friendly creature within 35 feet of the blast's point of origin gains 3 stacks of {@variantrule Might|GW2} for 6 rounds.",
-							"You gain 1 round of {@variantrule Fire Aura|GW2}.",
-							"You inflict 1 round of {@variantrule Burning|GW2}, dealing double your proficiency bonus damage, on any targets hit by the projectile finisher.",
-							"You fire up to three burning projectiles at different random hostile targets within 90 feet, each inflicting 1 round of {@variantrule Burning|GW2}, dealing your proficiency bonus damage."
-						],
-						[
-							"{@b Ice Field}",
-							"Each friendly creature within 35 feet of the blast's point of origin gains 1 round of {@variantrule Frost Aura|GW2}.",
-							"You gain 1 round of {@variantrule Frost Aura|GW2}.",
-							"You inflict 1 round of {@variantrule Chilled|GW2}, on any targets hit by the projectile finisher.",
-							"You fire up to three chilling projectiles at different random hostile targets within 90 feet, each inflicting 1 round of {@variantrule Chilled|GW2}."
-						],
-						[
-							"{@b Light Field}",
-							"Each friendly creature within 35 feet of the blast's point of origin looses the latest {@variantrule condition|GW2}.",
-							"You gain 1 round of {@variantrule Light Aura|GW2}.",
-							"You remove the latest {@variantrule condition|GW2} from the closest friendly target to any target hit by the projectile finisher.",
-							"You fire up to three cleansing projectiles at different random friendly targets within 90 feet, each removing the latest {@variantrule condition|GW2}."
-						],
-						[
-							"{@b Lightning Field}",
-							"Each friendly creature within 35 feet of the blast's point of origin gains 2 rounds of {@variantrule Swiftness|GW2}.",
-							"Any targets hit by the leap finisher are {@variantrule Dazed|GW2} for 1 round.",
-							"You inflict 2 stacks of {@variantrule Vulnerability|GW2} for 1 round on any targets hit by the projectile finisher.",
-							"You fire up to three brutal projectiles at different random hostile targets within 90 feet, each inflicting 2 stacks of {@variantrule Vulnerability|GW2} for 1 round."
-						],
-						[
-							"{@b Poison Field}",
-							"Each hostile creature within 35 feet of the blast's point of origin gains 1 round of {@variantrule Weakness|GW2}.",
-							"Any targets hit by the leap finisher gain 1 round of {@variantrule Weakness|GW2}.",
-							"You inflict 1 round of {@variantrule Poisoned|GW2}, dealing half your proficiency bonus damage, on any targets hit by the projectile finisher.",
-							"You fire up to three poisonous projectiles at different random hostile targets within 90 feet, each inflicting 1 round of {@variantrule Poisoned|GW2}, dealing half your proficiency bonus damage."
-						],
-						[
-							"{@b Smoke Field}",
-							"Each friendly creature within 35 feet of the blast's point of origin gains 1 round of {@variantrule Stealth|GW2}.",
-							"You gain 1 round of {@variantrule Stealth|GW2}.",
-							"You inflict 1 round of {@variantrule Blindness|GW2} on any targets hit by the projectile finisher.",
-							"You fire up to three blinding projectiles at different random hostile targets within 90 feet, each inflicting 1 round of {@variantrule Blindness|GW2}."
-						],
-						[
-							"{@b Water Field}",
-							"Each friendly creature within 35 feet of the blast's point of origin regains hit points equal to twice your proficiency bonus.",
-							"You regain hit points equal to twice your proficiency bonus.",
-							"You grant 1 round of {@variantrule Regeneration|GW2}, healing twice your proficiency bonus, to the closest friendly target from any targets hit by the projectile finisher.",
-							"You fire up to three healing projectiles at different random friendly targets within 90 feet, each granting 1 round of {@variantrule Regeneration|GW2}, healing your proficiency bonus."
-						]
-					]
-				}
-			]
-		},
-		{
-			"name": "Combo Field",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Property|GW2}",
-				"A combo field is an area created by a skill that lasts for a certain duration. If a {@variantrule Combo Finisher|GW2} is used within the area of a combo field, it triggers a powerful {@variantrule Combos|GW2| combo effect} based on the type of combo field and finisher."
-			]
-		},
-		{
-			"name": "Combo Finisher",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Property|GW2}",
-				"A combo finisher is a special property of {@variantrule skill|GW2|skills} that allows them to trigger a powerful effect when used in {@variantrule combos|GW2|combination} with a {@variantrule Combo Field|GW2|field}."
-			]
-		},
-		{
-			"name": "Condition",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Effect|GW2}",
-				"Conditions are detrimental {@variantrule Effect|GW2|effects} with a set duration applied by various features.",
-				"They are the opposite of {@variantrule Boon|GW2|Boons}",
-				"Each Condition has an associated {@variantrule Boon|GW2}, which it can be converted into or corrupted from.",
-				"If a creature already under the effect of a Condition receives the same Condition again, one of two outcomes occurs, depending on the Condition’s properties:",
-				"{@bold Stacks Duration:} The Condition’s duration is extended by the duration of the new instance.",
-				"{@bold Stacks Intensity:} The Condition’s effects are applied again. Each instance functions independently, with its own duration. If one instance of the Condition becomes converted, all active instances become converted. Any {@variantrule Boon|GW2} imposed by the conversion is applied only once."
-			]
-		},
-		{
-			"name": "Confusion",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Condition|GW2}",
-				"A confused creature takes psychic damage at the start of each of its turns and each time it takes an {@variantrule Action|XPHB}, {@variantrule Bonus Action|XPHB}, {@variantrule Reaction|XPHB} or {@variantrule Legendary Action|XPHB}.",
-				"The amount of psychic damage is determined by the effect that applied it.",
-				"Stacks intensity.",
-				"This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Resolution|GW2}."
-			]
-		},
-		{
-			"name": "Control Effect",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Effect|GW2}",
-				"Control Effects are a special type of {@variantrule Effect|GW2|effects} that override any previous Control Effect when applied."
-			]
-		},
-		{
-			"name": "Critical Failure",
-			"source": "GW2",
-			"entries": [
-				"A Critical Failure occurs when you roll a 1 on a {@variantrule Saving Throw|XPHB}.",
-				"When you Critically Fail a {@variantrule Saving Throw|XPHB}, you automatically fail the {@variantrule Saving Throw|XPHB} and, if the effect deals damage, you take maximum damage from the effect."
-			]
-		},
-		{
-			"name": "Critical Range",
-			"source": "GW2",
-			"entries": [
-				"The Critical Range refers to both the number needed to score a {@variantrule Critical Hit|XPHB} and the threshold at which point a {@variantrule Saving Throw|XPHB} is considered a {@variantrule Critical Failure|GW2}."
-			]
-		},
-		{
-			"name": "Dark Aura",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Aura|GW2}",
-				"While you are under the effect of this {@variantrule Aura|GW2}, you reduce all damage you take from {@variantrule Condition|GW2|conditions} by an amount equal to half your proficiency bonus (to a minimum of 1 damage). Additionally, when you take damage, the source of that damage is inflicted with 2 stacks of {@variantrule Torment|GW2} for 1 round, taking damage equal to your proficiency bonus."
-			]
-		},
-		{
-			"name": "Daze",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Control Effect|GW2}",
-				"While you are under the effect of this {@variantrule Control Effect|GW2}, you can only take the {@action Dodge|XPHB}, {@action Dash|XPHB} or {@action Disengage|XPHB} action on your turn.",
-				"A creature with a {@variantrule Defiance Bar|GW2} takes 100 defiance bar damage per round of {@variantrule Daze|GW2} instead of being affected."
-			]
-		},
-		{
-			"name": "Defiance Bar",
-			"source": "GW2",
-			"entries": [
-				"A defiance bar is a special resource used to resist certain {@variantrule Control Effect|GW2|Control Effects}.",
-				"A creature with a {@variantrule Defiance Bar|GW2} starts with a specific defiance bar value as defined in their Defiance Bar trait.",
-				"When a creature with a {@variantrule Defiance Bar|GW2} would be affected by a {@variantrule Control Effect|GW2} or other effect that would hinder it besided dealing damage, it takes defiance bar damage instead of being affected. The amount of defiance bar damage taken is defined for any {@variantrule Control Effect|GW2}, spells or other magical effect deal 100 defiance bar damage per spell level (minimum 100).",
-				"If the creature’s defiance bar is reduced to 0, a negative effect as defined in the Defiance Bar trait is applied.",
-				"A creature’s defiance bar recovers some of its lost value at the start of the creature's turn as defined in their Defiance Bar trait.",
-				"Sometimes a creature can have a locked Defiance Bar, during that time it does not take any Defiance Bar damage."
-			]
-		},
-		{
-			"name": "Disable",
-			"source": "GW2",
-			"entries": [
-				"To disable a creature is to inflict it with one of the following {@variantrule Control Effect|GW2|Control Effects}: {@variantrule Daze|GW2}, {@variantrule Stun|GW2}, {@variantrule Knockdown|GW2}, {@variantrule Pull|GW2}, {@variantrule Knockback|GW2}, {@variantrule Launch|GW2}, {@variantrule Float|GW2}, {@variantrule Sink|GW2}, {@variantrule Fear|GW2} or {@variantrule Taunt|GW2}."
-			]
-		},
-		{
-			"name": "Distortion",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Effect|GW2}",
-				"While you are under the effect of this {@variantrule Effect|GW2}, you are immune to all damage and automatically succeed on all saving throws.",
-				"Stacks duration (max 1 round)."
-			]
-		},
-		{
-			"name": "Effect",
-			"source": "GW2",
-			"entries": [
-				"Effects are beneficial or detrimental effects with a set duration applied by various features.",
-				"If a creature already under the effect of an Effect receives the same Effect again, one of three outcomes occurs, depending on the Effect’s properties:",
-				"{@bold Stacks Duration:} The Effect’s duration is extended by the duration of the new instance.",
-				"{@bold Stacks Intensity:} The Effect’s effects are applied again. Each instance functions independently, with its own duration. ",
-				"{@bold Control Effect:} Only the most recent {@variantrule Control Effect|GW2} applies."
-			]
-		},
-		{
-			"name": "Elite Skill",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Skill|GW2}",
-				"An elite skill is a special type of {@variantrule Skill|GW2} that provides powerful effects."
-			]
-		},
-		{
-			"name": "Endurance",
-			"source": "GW2",
-			"entries": [
-				"While you have Endurance, you spend 50 Endurance to take the {@action Dodge|XPHB} Action as a {@variantrule Bonus Action|XPHB} on your turn or as a {@variantrule Reaction|XPHB} when an attack is made against you or your are about to make a Dexterity {@variantrule Saving Throw|XPHB}.",
-				"You can have a maximum Endurance of 100.",
-				"You regain 20 Endurance at the start of your turn."
-			]
-		},
-		{
-			"name": "Fear",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Condition|GW2}|{@variantrule Control Effect|GW2}",
-				"While you are under the effect of this {@variantrule Condition|GW2}, you can’t willingly move closer to the source of the {@variantrule Condition|GW2} and must use the Dash action to move away from it on your turn, if possible.",
-				"Stacks duration.",
-				"A creature with a {@variantrule Defiance Bar|GW2} takes 100 defiance bar damage at the start of its turn instead of being affected.",
-				"This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Stability|GW2}."
-			]
-		},
-		{
-			"name": "Fire Aura",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Aura|GW2}",
-				"While you are under the effect of this {@variantrule Aura|GW2}, when you take damage you gain 2 rounds of {@variantrule Might|GW2} and the source of that damage is inflicted with 1 round of {@variantrule Burning|GW2}, taking damage equal to twice your proficiency bonus."
-			]
-		},
-		{
-			"name": "Float",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Control Effect|GW2}",
-				"While you are under the effect of this {@variantrule Control Effect|GW2}, you are lifted 10 feet upwards at the start of your turn and can’t take actions, bonus actions, reactions or move.",
-				"A creature with a {@variantrule Defiance Bar|GW2} takes defiance bar damage per round of {@variantrule Float|GW2} instead of being affected."
-			]
-		},
-		{
-			"name": "Frost Aura",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Aura|GW2}",
-				"While you are under the effect of this {@variantrule Aura|GW2}, you reduce all damage you take from non-{@variantrule Condition|GW2} sources by an amount equal to half your proficiency bonus (to a minimum of 1 damage) and the source of that damage is inflicted with 1 round of {@variantrule Chilled|GW2}."
-			]
-		},
-		{
-			"name": "Fury",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Boon|GW2}",
-				"While you are under the effect of this {@variantrule Boon|GW2}, increase your {@variantrule Critical Range|GW2} by 5.",
-				"Stacks duration.",
-				"This {@variantrule Boon|GW2} corrupts into 1 round of {@variantrule Blindness|GW2}."
-			]
-		},
-		{
-			"name": "Healing Skill",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Skill|GW2}",
-				"A healing skill is a special type of {@variantrule Skill|GW2} that restores hit points to a target."
-			]
-		},
-		{
-			"name": "Immobilized",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Condition|GW2}",
-				"While you are under the effect of this {@variantrule Condition|GW2}, your speed is 0, you cannot take the Dodge action and you automatically fail dexterity saving throws.",
-				"Stacks duration.",
-				"A creature with a {@variantrule Defiance Bar|GW2} takes 50 defiance bar damage at the start of its turn instead of being affected.",
-				"This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Resistance|GW2}."
-			]
-		},
-		{
-			"name": "Initiative Points",
-			"source": "GW2",
-			"entries": [
-				"Initiative Points are a unique resource for the {@class Thief|GW2} profession.",
-				"You have a maximum of 12 Initiative Points.",
-				"You regain 6 Initiative Points at the start of your turn.",
-				"You can spend Initiative Points to use certain {@variantrule Skill|GW2|skills} that require them."
-			]
-		},
-		{
-			"name": "Knockback",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Control Effect|GW2}",
-				"When this {@variantrule Control Effect|GW2} is applied, you are moved away from the source of the effect by a distance determined by the effect that applied it.",
-				"A creature with a {@variantrule Defiance Bar|GW2} takes defiance bar damage instead of being affected."
-			]
-		},
-		{
-			"name": "Knockdown",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Control Effect|GW2}",
-				"While you are under the effect of this {@variantrule Control Effect|GW2}, you are {@condition prone|XPHB} and can’t take actions, bonus actions, reactions or move.",
-				"A creature with a {@variantrule Defiance Bar|GW2} takes 100 defiance bar damage per round of {@variantrule Knockdown|GW2} instead of being affected."
-			]
-		},
-		{
-			"name": "Launch",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Control Effect|GW2}",
-				"When this {@variantrule Control Effect|GW2} is applied, you are moved away in an arcfrom the source of the effect by a distance determined by the effect that applied it.",
-				"A creature with a {@variantrule Defiance Bar|GW2} takes defiance bar damage instead of being affected."
-			]
-		},
-		{
-			"name": "Life Steal",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Property|GW2}",
-				"When you deal {@variantrule Life Steal|GW2} damage to a target, you regain hit points equal to the amount of {@variantrule Life Steal|GW2} damage dealt."
-			]
-		},
-		{
-			"name": "Light Aura",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Aura|GW2}",
-				"While you are under the effect of this {@variantrule Aura|GW2}, you reduce all damage you take from {@variantrule Condition|GW2|conditions} by an amount equal to half your proficiency bonus (to a minimum of 1 damage) and when you take damage you gain 1 round of {@variantrule Resolution|GW2}."
-			]
-		},
-		{
-			"name": "Magnetic Aura",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Aura|GW2}",
-				"While you are under the effect of this {@variantrule Aura|GW2}, when a ranged attack would hit you, it instead gets reflected back to the attacker. If the attack would hit the attacker, it deals damage as normal; otherwise, it misses."
-			]
-		},
-		{
-			"name": "Might",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Boon|GW2}",
-				"While you are under the effect of this {@variantrule Boon|GW2}, you deal 1% more damage (minimum 1).",
-				"Stacks Intensity (Max 25).",
-				"This {@variantrule Boon|GW2} corrupts into 1 round of {@variantrule Weakness|GW2}."
-			]
-		},
-		{
-			"name": "Piercing",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Property|GW2}",
-				"When you use a skill with this {@variantrule Property|GW2}, the attack roll ignore cover provided by other creatures and deals damage to each hostile creature in the line of the attack."
-			]
-		},
-		{
-			"name": "Poison",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Condition|GW2}",
-				"A poisoned creature takes poison damage at the start of each of its turns.",
-				"The amount of poison damage is determined by the effect that applied it.",
-				"While you are under this {@variantrule Condition|GW2}, you regain only two-thirds of the hit points you would normally heal.",
-				"Stacks intensity.",
-				"This {@variantrule Condition|GW2} get converted into 2 rounds of {@variantrule Regeneration|GW2}."
-			]
-		},
-		{
-			"name": "Profession Skill",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Skill|GW2}",
-				"A profession skill is a special type of {@variantrule Skill|GW2} that is specific to a certain profession or class."
-			]
-		},
-		{
-			"name": "Property",
-			"source": "GW2",
-			"entries": [
-				"Properties are special attributes that modify how a skill functions."
-			]
-		},
-		{
-			"name": "Protection",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Boon|GW2}",
-				"While you are under the effect of this {@variantrule Boon|GW2}, you reduce all damage you take from non-{@variantrule Condition|GW2} sources by an amount equal to your proficiency bonus (to a minimum of 1 damage).",
-				"Stacks duration.",
-				"This {@variantrule Boon|GW2} corrupts into 3 stacks of {@variantrule Vulnerability|GW2} for 2 rounds."
-			]
-		},
-		{
-			"name": "Pull",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Control Effect|GW2}",
-				"When this {@variantrule Control Effect|GW2} is applied, you are moved closer to the source of the effect by a distance determined by the effect that applied it.",
-				"A creature with a {@variantrule Defiance Bar|GW2} takes 150 defiance bar damage instead of being affected."
-			]
-		},
-		{
-			"name": "Quickness",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Boon|GW2}",
-				"While you are under the effect of this {@variantrule Boon|GW2}, you gain one additional action on your turn. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Utilize action.",
-				"Stacks duration.",
-				"This {@variantrule Boon|GW2} corrupts into 1 round of {@variantrule Slow|GW2}."
-			]
-		},
-		{
-			"name": "Regeneration",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Boon|GW2}",
-				"While you are under the effect of this {@variantrule Boon|GW2}, at the start of your turn, if you have at least 1 hit point, you regain hit points.",
-				"The amount of healing is determined by the effect that applied it.",
-				"Stacks intensity.",
-				"This {@variantrule Boon|GW2} corrupts into 1 stack of {@variantrule Poison|GW2} for 2 rounds, dealing damage equal to the half the PB of the creature who corrupted the Boon."
-			]
-		},
-		{
-			"name": "Resistance",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Boon|GW2}",
-				"While you are under the effect of this {@variantrule Boon|GW2}, you are immune to {@variantrule Blinded|GW2}, {@variantrule Chilled|GW2}, {@variantrule Crippled|GW2}, {@variantrule Fear|GW2}, {@variantrule Immobilized|GW2}, {@variantrule Slow|GW2}, {@variantrule Taunt|GW2}, {@variantrule Weakness|GW2}, and {@variantrule Vulnerability|GW2}.",
-				"Stacks duration.",
-				"This {@variantrule Boon|GW2} corrupts into 1 round of {@variantrule Chilled|GW2}."
-			]
-		},
-		{
-			"name": "Resolution",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Boon|GW2}",
-				"While you are under the effect of this {@variantrule Boon|GW2}, you reduce all damage you take from {@variantrule Condition|GW2|conditions} by an amount equal to your proficiency bonus (to a minimum of 1 damage).",
-				"Stacks duration.",
-				"This {@variantrule Boon|GW2} corrupts into 3 stacks of {@variantrule Confusion|GW2} for 1 round, dealing damage equal to the half the PB of the creature who corrupted the Boon."
-			]
-		},
-		{
-			"name": "Revealed",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Effect|GW2}",
-				"While you are under the effect of this {@variantrule Effect|GW2}, you cannot gain the {@variantrule Stealth|GW2} {@variantrule Effect|GW2} or the {@condition Invisible|XPHB} condition.",
-				"Stacks duration (max 5 rounds)."
-			]
-		},
-		{
-			"name": "Sequence",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Property|GW2}",
-				"A {@variantrule Skill|GW2} with this {@variantrule Property|GW2} gets replaced with a different {@variantrule Skill|GW2} when the conditions for the sequence are met."
-			]
-		},
-		{
-			"name": "Shocking Aura",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Aura|GW2}",
-				"While you are under the effect of this {@variantrule Aura|GW2}, when you take damage the source of that damage is {@variantrule Stun|GW2|Stunned} for 1 round if they are within 25 feet of you."
-			]
-		},
-		{
-			"name": "Sink",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Control Effect|GW2}",
-				"While you are under the effect of this {@variantrule Control Effect|GW2}, you are pushed 10 feet downwards at the start of your turn and can’t take actions, bonus actions, reactions or move.",
-				"A creature with a {@variantrule Defiance Bar|GW2} takes defiance bar damage per round of {@variantrule Sink|GW2} instead of being affected."
-			]
-		},
-		{
-			"name": "Skill",
-			"source": "GW2",
-			"entries": [
-				"Skills are special abilities that a creature can use to perform various actions in combat or other situations.",
-				"The following types of skills exist:",
-				"{@b {@variantrule Weapon Skill|GW2}:} A skill that requires a specific weapon to use.",
-				"{@b {@variantrule Healing Skill|GW2}:} A skill that restores hit points to a target.",
-				"{@b {@variantrule Utility Skill|GW2}:} A skill that provides various effects or benefits.",
-				"{@b {@variantrule Elite Skill|GW2}:} A powerful skill that often has a long cooldown and significant effects.",
-				"{@b {@variantrule Profession Skill|GW2}:} A skill that is specific to a certain profession or class.",
-				"{@b {@variantrule Special Skill|GW2}:} A skill that does not fit into the other categories and has unique properties.",
-				"Most skills have the following components:",
-				"{@b Name:} The name of the skill.",
-				"{@b Requirements:} Any prerequisites or conditions that must be met to use the skill.",
-				"{@b Type:} The category of the skill (e.g., weapon skill, healing skill, etc.).",
-				"{@b Casting Time:} The amount of time it takes to use the skill.",
-				"{@b Recharge:} The number you need to roll on a d20 to use the skill again. Roll 1d20 for each skill that is on recharge at the start of your turn.",
-				"{@b Range:} The distance at which the skill can be used.",
-				"{@b Target:} The creature(s) or area affected by the skill.",
-				"{@b Duration:} The length of time the skill's effects last.",
-				"{@b Properties:} Any special attributes or characteristics of the skill.",
-				"{@b Description:} A description of how the skill is used and how it looks.",
-				"{@b Effect:} A description of what the skill does.",
-				"{@b Scaling:} How the skill's effects improve as the user gains levels or other enhancements."
-			]
-		},
-		{
-			"name": "Slow",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Condition|GW2}",
-				"While you are under the effect of this {@variantrule condition|GW2}, on your turn, you can take either an action or a bonus action, but not both. If you take the Attack action, you can make only one attack regardless of the number of attacks you can normally make.",
-				"Stacks Duration.",
-				"A creature with a {@variantrule Defiance Bar|GW2} takes 50 defiance bar damage at the start of its turn instead of being affected.",
-				"This {@variantrule Condition|GW2} converts into 1 round of {@variantrule Quickness|GW2}."
-			]
-		},
-		{
-			"name": "Signet",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Property|GW2}",
-				"Signets have passive and active effects. The passive effect is active as long as the signet is not on recharge."
-			]
-		},
-		{
-			"name": "Special Skill",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Skill|GW2}",
-				"A special skill is a unique type of {@variantrule Skill|GW2} that does not fit into the other categories and has its own distinct properties."
-			]
-		},
-		{
-			"name": "Stability",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Boon|GW2}",
-				"While you are under the effect of this {@variantrule Boon|GW2}, you are immune to {@variantrule Fear|GW2}, {@variantrule Taunt|GW2}, {@condition Prone|XPHB}, and getting moved against your will.",
-				"Each time you would be {@variantrule Fear|GW2|Feared}, {@variantrule Taunt|GW2|Taunted}, knocked {@condition Prone|XPHB}, or moved against your will you instead remove 1 stack of this {@variantrule Boon|GW2}.",
-				"Stacks intensity (Max 25).",
-				"This {@variantrule Boon|GW2} corrupts into 1 round of {@variantrule Fear|GW2}."
-			]
-		},
-		{
-			"name": "Stealth",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Effect|GW2}",
-				"While you are under the effect of this {@variantrule Effect|GW2}, you gain the effects of the {@condition Invisible|XPHB} condition.",
-				"The effect ends if you deal damage or force a creature to make a saving throw.",
-				"Stacks duration (max 1 minute)."
-			]
-		},
-		{
-			"name": "Stun",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Control Effect|GW2}",
-				"While you are under the effect of this {@variantrule Control Effect|GW2}, you cannot take {@variantrule action|XPHB|actions}, {@variantrule bonus action|XPHB|bonus actions}, {@variantrule reaction|XPHB|reactions} or move. Additionally, you automatically fail strength and dexterity saving throws.",
-				"A creature with a {@variantrule Defiance Bar|GW2} takes 100 defiance bar damage per round of {@variantrule Stun|GW2} instead of being affected."
-			]
-		},
-		{
-			"name": "Stun Break",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Property|GW2}",
-				"{@variantrule Skill|GW2|Skills} with this {@variantrule Property|GW2} can be used to end any {@variantrule Control Effect|GW2} affecting you, even if the {@variantrule Control Effect|GW2} would normally prevent you from taking actions."
-			]
-		},
-		{
-			"name": "Superspeed",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Effect|GW2}",
-				"While you are under the effect of this {@variantrule Effect|GW2}, your speed is increased by 100%.",
-				"Stacks duration (max 3 rounds)."
-			]
-		},
-		{
-			"name": "Swiftness",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Boon|GW2}",
-				"While you are under the effect of this {@variantrule Boon|GW2}, your speed is increased by 33%.",
-				"Stacks duration.",
-				"This {@variantrule Boon|GW2} corrupts into 2 rounds of {@variantrule Crippled|GW2}."
-			]
-		},
-		{
-			"name": "Taunt",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Condition|GW2}|{@variantrule Control Effect|GW2}",
-				"While you are under the effect of this {@variantrule Condition|GW2}, you must move closer to the source of the {@variantrule Condition|GW2} and must use the Dash action to move toward it on your turn, if possible.",
-				"If you are already within 5 feet of the source, you must use your action to make an unarmed strike against the source.",
-				"Stacks duration.",
-				"A creature with a {@variantrule Defiance Bar|GW2} takes 100 defiance bar damage at the start of its turn instead of being affected.",
-				"This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Stability|GW2}."
-			]
-		},
-		{
-			"name": "Torment",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Condition|GW2}",
-				"A tormented creature takes necrotic damage at the start of each of its turns.",
-				"The amount of necrotic damage is determined by the effect that applied it.",
-				"The damage gets doubled if the creature did not move on its last turn.",
-				"Stacks intensity.",
-				"This {@variantrule Condition|GW2} get converted into 3 stacks of {@variantrule Might|GW2} for 2 rounds."
-			]
-		},
-		{
-			"name": "Utility Skill",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Skill|GW2}",
-				"A utility skill is a special type of {@variantrule Skill|GW2} that provides various effects or benefits."
-			]
-		},
-		{
-			"name": "Vigor",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Boon|GW2}",
-				"While you are under the effect of this {@variantrule Boon|GW2}, you regain 50% more {@variantrule Endurance|GW2} at the start of your turn.",
-				"Stacks duration.",
-				"This {@variantrule Boon|GW2} corrupts into 2 stacks of {@variantrule Bleeding|GW2} for 2 rounds, dealing damage equal to the PB of the creature who corrupted the Boon."
-			]
-		},
-		{
-			"name": "Vulnerability",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Condition|GW2}",
-				"While you are under the effect of this {@variantrule condition|GW2}, you take 1% more damage whenever you take damage (minimum 1).",
-				"Stacks intensity (Max 25).",
-				"This {@variantrule Condition|GW2} converts into 1 round of {@variantrule Protection|GW2}."
-			]
-		},
-		{
-			"name": "Weakness",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Condition|GW2}",
-				"While you are under the effect of this {@variantrule condition|GW2}, you have a 50% chance of dealing half damage when you roll damage.",
-				"While you are under the effect of this {@variantrule condition|GW2}, you regain 50% less {@variantrule Endurance|GW2} at the start of your turn..",
-				"Stacks duration.",
-				"A creature with a {@variantrule Defiance Bar|GW2} takes 20 defiance bar damage at the start of its turn instead of being affected.",
-				"This {@variantrule Condition|GW2} converts into 3 stack of {@variantrule Might|GW2} for 2 rounds."
-			]
-		},
-		{
-			"name": "Weapon Skill",
-			"source": "GW2",
-			"entries": [
-				"{@variantrule Skill|GW2}",
-				"A weapon skill is a special type of {@variantrule Skill|GW2} that requires a specific weapon to use."
-			]
-		}
-	],
 	"background": [],
 	"condition": [],
 	"legendaryGroup": [],
@@ -33923,6 +33025,916 @@
 			],
 			"entries": [
 				"Gadget skills are more powerful."
+			]
+		}
+	],
+	"variantrule": [
+		{
+			"name": "Aegis",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Boon|GW2}",
+				"While you are under the effect of this {@variantrule Boon|GW2}, the next attack roll made against you automatically misses. The {@variantrule Boon|GW2} then ends.",
+				"Stacks duration.",
+				"This {@variantrule Boon|GW2} corrupts into 1 stack of {@variantrule Burning|GW2} for 1 round, dealing damage equal to twice the PB of the creature who corrupted the Boon."
+			]
+		},
+		{
+			"name": "Alacrity",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Boon|GW2}",
+				"While you are under the effect of this {@variantrule Boon|GW2}, you have {@variantrule Advantage|XPHB} on Recharge rolls.",
+				"Stacks duration.",
+				"This {@variantrule Boon|GW2} corrupts into 1 round of {@variantrule Chilled|GW2}."
+			]
+		},
+		{
+			"name": "Attribute",
+			"source": "GW2",
+			"entries": [
+				"Attributes are small increases to the effectiveness of your character.",
+				"They are usally granted by items, but can also be granted by other features.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Attribute",
+						"Effect"
+					],
+					"rows": [
+						[
+							"Power",
+							"For each point of Power, increase your outgoing Strike Damage by 1."
+						],
+						[
+							"Precision",
+							"For each point of Precision, increase your {@variantrule Critical Range|GW2} by 1."
+						],
+						[
+							"Ferocity",
+							"For each point of Ferocity, add {@damage 1d4} to your {@variantrule Damage Roll|XPHB|Damage Rolls} on a {@variantrule Critical Hit|XPHB} or {@variantrule Critical Failure|GW2}."
+						],
+						[
+							"Condition Damage",
+							"For each point of Condition Damage, increase your outgoing Condition Damage by 1."
+						],
+						[
+							"Expertise",
+							"For each point of Expertise, increase the duration of your Conditions by 1 round."
+						],
+						[
+							"Toughness",
+							"For each point of Toughness, reduce your incoming Strike Damage by 1 to a minimum of 1."
+						],
+						[
+							"Vitality",
+							"For each point of Vitality, increase your Hit Point Maximum by 5."
+						],
+						[
+							"Healing Power",
+							"For each point of Healing Power, increase your outgoing Healing by 1."
+						],
+						[
+							"Concentration",
+							"For each point of Concentration, increase the duration of your Boons by 1 round."
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Effect|GW2}",
+				"Auras are {@variantrule Effect|GW2|effects} that sourround a single creature and trigger when that creature is damaged.",
+				"If an aura of the same type is applied to a creature that already has one, the new aura replaces the old one if it has a higher intensity or longer duration; otherwise, the new aura has no effect.",
+				"The following auras exist:",
+				"{@variantrule Chaos Aura|GW2}",
+				"{@variantrule Dark Aura|GW2}",
+				"{@variantrule Fire Aura|GW2}",
+				"{@variantrule Frost Aura|GW2}",
+				"{@variantrule Light Aura|GW2}",
+				"{@variantrule Magnetic Aura|GW2}",
+				"{@variantrule Shocking Aura|GW2}"
+			]
+		},
+		{
+			"name": "Barrier",
+			"source": "GW2",
+			"entries": [
+				"While you have a {@variantrule Barrier|GW2}, and you take damage, the barrier absorbs as much of that damage as it can. Any damage that exceeds the barrier’s remaining hit points is taken by you as normal.",
+				"Barrier lasts until it is depleted, you roll initiative or exit combat, or 10 minutes have passed.",
+				"You can have a maximum Barrier equal to 50% of your maximum hit points at any time.",
+				"When you gain Barrier, it stacks with any existing Barrier you have, up to your maximum."
+			]
+		},
+		{
+			"name": "Bleeding",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Condition|GW2}",
+				"A bleeding creature takes slashing damage at the start of each of its turns.",
+				"The amount of slashing damage is determined by the effect that applied it.",
+				"Creatures without bodily fluids (such as constructs and skeletons) are immune to {@variantrule Bleeding|GW2}.",
+				"Stacks intensity.",
+				"This {@variantrule Condition|GW2} get converted into 2 rounds of {@variantrule Vigor|GW2}."
+			]
+		},
+		{
+			"name": "Blindness",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Condition|GW2}",
+				"While you are under the effect of this {@variantrule Condition|GW2}, the next attack roll you make automatically misses. The {@variantrule Condition|GW2} then ends.",
+				"Creatures immune to the {@condition Blinded|XPHB} {@variantrule Condition|XPHB} are also immune to {@variantrule Blindness|GW2}.",
+				"Stacks duration.",
+				"A creature with a {@variantrule Defiance Bar|GW2} takes 20 defiance bar damage at the start of its turn instead of being affected.",
+				"This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Fury|GW2}."
+			]
+		},
+		{
+			"name": "Boon",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Effect|GW2}",
+				"Boons are beneficial {@variantrule Effect|GW2|effects} with a set duration applied by various features.",
+				"They are the opposite of {@variantrule Condition|GW2|Conditions}",
+				"Each Boon has an associated {@variantrule Condition|GW2}, which it can be corrupted into or converted from.",
+				"If a creature already under the effect of a Boon receives the same Boon again, one of two outcomes occurs, depending on the Boon’s properties:",
+				"{@bold Stacks Duration:} The Boon’s duration is extended by the duration of the new instance.",
+				"{@bold Stacks Intensity:} The Boon’s effects are applied again. Each instance functions independently, with its own duration. If one instance of the Boon becomes corrupted, all active instances become corrupted. Any {@variantrule condition|GW2} imposed by the corruption is applied only once."
+			]
+		},
+		{
+			"name": "Burning",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Condition|GW2}",
+				"A burning creature takes fire damage at the start of each of its turns.",
+				"The amount of fire damage is determined by the effect that applied it.",
+				"Stacks intensity.",
+				"This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Aegis|GW2}."
+			]
+		},
+		{
+			"name": "Chain",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Property|GW2}",
+				"When you use a skill with this {@variantrule Property|GW2}, you gain access to the next skill in the chain if you deal damage with it."
+			]
+		},
+		{
+			"name": "Channel",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Property|GW2}",
+				"When you use a {@variantrule Skill|GW2|Skill} with this {@variantrule Property|GW2}, you must use your {@variantrule Action|XPHB} to channel it every round until the channel is completed.",
+				"The channel duration is specified in the skill’s description and is measured in {@variantrule Initiative|XPHB}. If you reach the end of the round and have not yet completed the channel, continue counting {@variantrule Initiative|XPHB} in the round until you hit 0 and then start at the top of the next round.",
+				"If you take damage while channeling, you must succeed on a {@status Concentration|XPHB} {@variantrule Saving Throw|XPHB} to maintain the channel. On a failed save, the channel ends immediately.",
+				"You can end the channel at any time (no {@variantrule Action|XPHB} required)."
+			]
+		},
+		{
+			"name": "Chaos Aura",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Aura|GW2}",
+				"When you take damage, one of the following random effects occurs:",
+				{
+					"type": "table",
+					"caption": "Chaos Aura Effects",
+					"colLabels": [
+						"{@b d6}",
+						"{@b Effect}"
+					],
+					"rows": [
+						[
+							"1",
+							"You gain 1 round of {@variantrule Protection|GW2}."
+						],
+						[
+							"2",
+							"You gain 1 round of {@variantrule Regeneration|GW2}, healing equal to your proficiency bonus."
+						],
+						[
+							"3",
+							"You gain 1 round of {@variantrule Swiftness|GW2}."
+						],
+						[
+							"4",
+							"The source of that damage is inflicted with 1 round of {@variantrule Weakness|GW2}."
+						],
+						[
+							"5",
+							"The source of that damage is inflicted with 1 stack of {@variantrule Confusion|GW2} for 1 round, taking damage equal to your proficiency bonus."
+						],
+						[
+							"6",
+							"The source of that damage is inflicted with 1 round of {@variantrule Crippled|GW2}."
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Chilled",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Condition|GW2}",
+				"While you are under the effect of this {@variantrule Condition|GW2}, your speed is reduced by 66% and you have {@variantrule Disadvantage|XPHB} on Recharge rolls.",
+				"Creatures immune to cold damage are also immune to {@variantrule Chilled|GW2}.",
+				"Stacks duration.",
+				"A creature with a {@variantrule Defiance Bar|GW2} takes 33 defiance bar damage at the start of its turn instead of being affected.",
+				"This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Alacrity|GW2}."
+			]
+		},
+		{
+			"name": "Crippled",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Condition|GW2}",
+				"While you are under the effect of this {@variantrule Condition|GW2}, your speed is reduced by 50%.",
+				"Creatures who do not use physical body parts are immune to {@variantrule Crippled|GW2}.",
+				"Stacks duration.",
+				"A creature with a {@variantrule Defiance Bar|GW2} takes 15 defiance bar damage at the start of its turn instead of being affected.",
+				"This {@variantrule Condition|GW2} get converted into 2 rounds of {@variantrule Swiftness|GW2}."
+			]
+		},
+		{
+			"name": "Combos",
+			"source": "GW2",
+			"entries": [
+				"Some skills create combo fields or finishers. A combo field is an area created by a skill that lasts for a certain duration. A combo finisher is a skill that can be used within a combo field to create a powerful effect. If multiple combo fields overlap, only the most recently created field is active. See the table below for the different types of combo fields and finishers (you refers to the creature who used a combo finisher).",
+				{
+					"type": "table",
+					"caption": "Combo Fields and Finishers",
+					"colLabels": [
+						"{@b Combo Field}",
+						"{@b Blast Finisher}",
+						"{@b Leap Finisher}",
+						"{@b Projectile Finisher}",
+						"{@b Whirl Finisher}"
+					],
+					"rows": [
+						[
+							"{@b Dark Field}",
+							"Each friendly creature within 35 feet of the blast's point of origin gains 1 round of {@variantrule Dark Aura|GW2}.",
+							"You gain 1 round of {@variantrule Dark Aura|GW2}.",
+							"You {@variantrule Life Steal|GW2|steal life} equal to your proficiency bonus from each target hit by the projectile finisher.",
+							"You fire up to three life-stealing projectiles at different random hostile targets within 90 feet, each {@variantrule Life Steal|GW2|stealing life} equal to half your proficiency bonus."
+						],
+						[
+							"{@b Ethereal Field}",
+							"Each friendly creature within 35 feet of the blast's point of origin gains 1 round of {@variantrule Chaos Aura|GW2}.",
+							"You gain 1 round of {@variantrule Chaos Aura|GW2}.",
+							"You inflict 1 round of {@variantrule Confusion|GW2}, dealing your proficiency bonus damage, on any targets hit by the projectile finisher.",
+							"You fire up to three chaotic projectiles at different random hostile targets within 90 feet, each inflicting 1 round of {@variantrule Confusion|GW2}, dealing half your proficiency bonus damage."
+						],
+						[
+							"{@b Fire Field}",
+							"Each friendly creature within 35 feet of the blast's point of origin gains 3 stacks of {@variantrule Might|GW2} for 6 rounds.",
+							"You gain 1 round of {@variantrule Fire Aura|GW2}.",
+							"You inflict 1 round of {@variantrule Burning|GW2}, dealing double your proficiency bonus damage, on any targets hit by the projectile finisher.",
+							"You fire up to three burning projectiles at different random hostile targets within 90 feet, each inflicting 1 round of {@variantrule Burning|GW2}, dealing your proficiency bonus damage."
+						],
+						[
+							"{@b Ice Field}",
+							"Each friendly creature within 35 feet of the blast's point of origin gains 1 round of {@variantrule Frost Aura|GW2}.",
+							"You gain 1 round of {@variantrule Frost Aura|GW2}.",
+							"You inflict 1 round of {@variantrule Chilled|GW2}, on any targets hit by the projectile finisher.",
+							"You fire up to three chilling projectiles at different random hostile targets within 90 feet, each inflicting 1 round of {@variantrule Chilled|GW2}."
+						],
+						[
+							"{@b Light Field}",
+							"Each friendly creature within 35 feet of the blast's point of origin looses the latest {@variantrule condition|GW2}.",
+							"You gain 1 round of {@variantrule Light Aura|GW2}.",
+							"You remove the latest {@variantrule condition|GW2} from the closest friendly target to any target hit by the projectile finisher.",
+							"You fire up to three cleansing projectiles at different random friendly targets within 90 feet, each removing the latest {@variantrule condition|GW2}."
+						],
+						[
+							"{@b Lightning Field}",
+							"Each friendly creature within 35 feet of the blast's point of origin gains 2 rounds of {@variantrule Swiftness|GW2}.",
+							"Any targets hit by the leap finisher are {@variantrule Dazed|GW2} for 1 round.",
+							"You inflict 2 stacks of {@variantrule Vulnerability|GW2} for 1 round on any targets hit by the projectile finisher.",
+							"You fire up to three brutal projectiles at different random hostile targets within 90 feet, each inflicting 2 stacks of {@variantrule Vulnerability|GW2} for 1 round."
+						],
+						[
+							"{@b Poison Field}",
+							"Each hostile creature within 35 feet of the blast's point of origin gains 1 round of {@variantrule Weakness|GW2}.",
+							"Any targets hit by the leap finisher gain 1 round of {@variantrule Weakness|GW2}.",
+							"You inflict 1 round of {@variantrule Poisoned|GW2}, dealing half your proficiency bonus damage, on any targets hit by the projectile finisher.",
+							"You fire up to three poisonous projectiles at different random hostile targets within 90 feet, each inflicting 1 round of {@variantrule Poisoned|GW2}, dealing half your proficiency bonus damage."
+						],
+						[
+							"{@b Smoke Field}",
+							"Each friendly creature within 35 feet of the blast's point of origin gains 1 round of {@variantrule Stealth|GW2}.",
+							"You gain 1 round of {@variantrule Stealth|GW2}.",
+							"You inflict 1 round of {@variantrule Blindness|GW2} on any targets hit by the projectile finisher.",
+							"You fire up to three blinding projectiles at different random hostile targets within 90 feet, each inflicting 1 round of {@variantrule Blindness|GW2}."
+						],
+						[
+							"{@b Water Field}",
+							"Each friendly creature within 35 feet of the blast's point of origin regains hit points equal to twice your proficiency bonus.",
+							"You regain hit points equal to twice your proficiency bonus.",
+							"You grant 1 round of {@variantrule Regeneration|GW2}, healing twice your proficiency bonus, to the closest friendly target from any targets hit by the projectile finisher.",
+							"You fire up to three healing projectiles at different random friendly targets within 90 feet, each granting 1 round of {@variantrule Regeneration|GW2}, healing your proficiency bonus."
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Combo Field",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Property|GW2}",
+				"A combo field is an area created by a skill that lasts for a certain duration. If a {@variantrule Combo Finisher|GW2} is used within the area of a combo field, it triggers a powerful {@variantrule Combos|GW2| combo effect} based on the type of combo field and finisher."
+			]
+		},
+		{
+			"name": "Combo Finisher",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Property|GW2}",
+				"A combo finisher is a special property of {@variantrule skill|GW2|skills} that allows them to trigger a powerful effect when used in {@variantrule combos|GW2|combination} with a {@variantrule Combo Field|GW2|field}."
+			]
+		},
+		{
+			"name": "Condition",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Effect|GW2}",
+				"Conditions are detrimental {@variantrule Effect|GW2|effects} with a set duration applied by various features.",
+				"They are the opposite of {@variantrule Boon|GW2|Boons}",
+				"Each Condition has an associated {@variantrule Boon|GW2}, which it can be converted into or corrupted from.",
+				"If a creature already under the effect of a Condition receives the same Condition again, one of two outcomes occurs, depending on the Condition’s properties:",
+				"{@bold Stacks Duration:} The Condition’s duration is extended by the duration of the new instance.",
+				"{@bold Stacks Intensity:} The Condition’s effects are applied again. Each instance functions independently, with its own duration. If one instance of the Condition becomes converted, all active instances become converted. Any {@variantrule Boon|GW2} imposed by the conversion is applied only once."
+			]
+		},
+		{
+			"name": "Confusion",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Condition|GW2}",
+				"A confused creature takes psychic damage at the start of each of its turns and each time it takes an {@variantrule Action|XPHB}, {@variantrule Bonus Action|XPHB}, {@variantrule Reaction|XPHB} or {@variantrule Legendary Action|XPHB}.",
+				"The amount of psychic damage is determined by the effect that applied it.",
+				"Creatures immune to the {@condition Charmed|XPHB} {@variantrule Condition|XPHB} are also immune to {@variantrule Confusion|GW2}.",
+				"Stacks intensity.",
+				"This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Resolution|GW2}."
+			]
+		},
+		{
+			"name": "Control Effect",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Effect|GW2}",
+				"Control Effects are a special type of {@variantrule Effect|GW2|effects} that override any previous Control Effect when applied."
+			]
+		},
+		{
+			"name": "Critical Failure",
+			"source": "GW2",
+			"entries": [
+				"A Critical Failure occurs when you roll a 1 on a {@variantrule Saving Throw|XPHB}.",
+				"When you Critically Fail a {@variantrule Saving Throw|XPHB}, you automatically fail the {@variantrule Saving Throw|XPHB} and, if the effect deals damage, you take maximum damage from the effect."
+			]
+		},
+		{
+			"name": "Critical Range",
+			"source": "GW2",
+			"entries": [
+				"The Critical Range refers to both the number needed to score a {@variantrule Critical Hit|XPHB} and the threshold at which point a {@variantrule Saving Throw|XPHB} is considered a {@variantrule Critical Failure|GW2}."
+			]
+		},
+		{
+			"name": "Dark Aura",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Aura|GW2}",
+				"While you are under the effect of this {@variantrule Aura|GW2}, you reduce all damage you take from {@variantrule Condition|GW2|conditions} by an amount equal to half your proficiency bonus (to a minimum of 1 damage). Additionally, when you take damage, the source of that damage is inflicted with 2 stacks of {@variantrule Torment|GW2} for 1 round, taking damage equal to your proficiency bonus."
+			]
+		},
+		{
+			"name": "Daze",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Control Effect|GW2}",
+				"While you are under the effect of this {@variantrule Control Effect|GW2}, you can only take the {@action Dodge|XPHB}, {@action Dash|XPHB} or {@action Disengage|XPHB} action on your turn.",
+				"Creatures immune to the {@condition Stunned|XPHB} {@variantrule Condition|XPHB} are also immune to {@variantrule Daze|GW2}.",
+				"A creature with a {@variantrule Defiance Bar|GW2} takes 100 defiance bar damage per round of {@variantrule Daze|GW2} instead of being affected."
+			]
+		},
+		{
+			"name": "Defiance Bar",
+			"source": "GW2",
+			"entries": [
+				"A defiance bar is a special resource used to resist certain {@variantrule Control Effect|GW2|Control Effects}.",
+				"A creature with a {@variantrule Defiance Bar|GW2} starts with a specific defiance bar value as defined in their Defiance Bar trait.",
+				"When a creature with a {@variantrule Defiance Bar|GW2} would be affected by a {@variantrule Control Effect|GW2} or other effect that would hinder it besided dealing damage, it takes defiance bar damage instead of being affected. The amount of defiance bar damage taken is defined for any {@variantrule Control Effect|GW2}, spells or other magical effect deal 100 defiance bar damage per spell level (minimum 100).",
+				"If the creature’s defiance bar is reduced to 0, a negative effect as defined in the Defiance Bar trait is applied.",
+				"A creature’s defiance bar recovers some of its lost value at the start of the creature's turn as defined in their Defiance Bar trait.",
+				"Sometimes a creature can have a locked Defiance Bar, during that time it does not take any Defiance Bar damage."
+			]
+		},
+		{
+			"name": "Disable",
+			"source": "GW2",
+			"entries": [
+				"To disable a creature is to inflict it with one of the following {@variantrule Control Effect|GW2|Control Effects}: {@variantrule Daze|GW2}, {@variantrule Stun|GW2}, {@variantrule Knockdown|GW2}, {@variantrule Pull|GW2}, {@variantrule Knockback|GW2}, {@variantrule Launch|GW2}, {@variantrule Float|GW2}, {@variantrule Sink|GW2}, {@variantrule Fear|GW2} or {@variantrule Taunt|GW2}."
+			]
+		},
+		{
+			"name": "Distortion",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Effect|GW2}",
+				"While you are under the effect of this {@variantrule Effect|GW2}, you are immune to all damage and automatically succeed on all saving throws.",
+				"Stacks duration (max 1 round)."
+			]
+		},
+		{
+			"name": "Effect",
+			"source": "GW2",
+			"entries": [
+				"Effects are beneficial or detrimental effects with a set duration applied by various features.",
+				"If a creature already under the effect of an Effect receives the same Effect again, one of three outcomes occurs, depending on the Effect’s properties:",
+				"{@bold Stacks Duration:} The Effect’s duration is extended by the duration of the new instance.",
+				"{@bold Stacks Intensity:} The Effect’s effects are applied again. Each instance functions independently, with its own duration. ",
+				"{@bold Control Effect:} Only the most recent {@variantrule Control Effect|GW2} applies."
+			]
+		},
+		{
+			"name": "Elite Skill",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Skill|GW2}",
+				"An elite skill is a special type of {@variantrule Skill|GW2} that provides powerful effects."
+			]
+		},
+		{
+			"name": "Endurance",
+			"source": "GW2",
+			"entries": [
+				"While you have Endurance, you spend 50 Endurance to take the {@action Dodge|XPHB} Action as a {@variantrule Bonus Action|XPHB} on your turn or as a {@variantrule Reaction|XPHB} when an attack is made against you or your are about to make a Dexterity {@variantrule Saving Throw|XPHB}.",
+				"You can have a maximum Endurance of 100.",
+				"You regain 20 Endurance at the start of your turn."
+			]
+		},
+		{
+			"name": "Fear",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Condition|GW2}|{@variantrule Control Effect|GW2}",
+				"While you are under the effect of this {@variantrule Condition|GW2}, you can’t willingly move closer to the source of the {@variantrule Condition|GW2} and must use the Dash action to move away from it on your turn, if possible.",
+				"Creatures immune to the {@condition Frightened|XPHB} {@variantrule Condition|XPHB} are also immune to {@variantrule Fear|GW2}.",
+				"Stacks duration.",
+				"A creature with a {@variantrule Defiance Bar|GW2} takes 100 defiance bar damage at the start of its turn instead of being affected.",
+				"This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Stability|GW2}."
+			]
+		},
+		{
+			"name": "Fire Aura",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Aura|GW2}",
+				"While you are under the effect of this {@variantrule Aura|GW2}, when you take damage you gain 2 rounds of {@variantrule Might|GW2} and the source of that damage is inflicted with 1 round of {@variantrule Burning|GW2}, taking damage equal to twice your proficiency bonus."
+			]
+		},
+		{
+			"name": "Float",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Control Effect|GW2}",
+				"While you are under the effect of this {@variantrule Control Effect|GW2}, you are lifted 10 feet upwards at the start of your turn and can’t take actions, bonus actions, reactions or move.",
+				"A creature with a {@variantrule Defiance Bar|GW2} takes defiance bar damage per round of {@variantrule Float|GW2} instead of being affected."
+			]
+		},
+		{
+			"name": "Frost Aura",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Aura|GW2}",
+				"While you are under the effect of this {@variantrule Aura|GW2}, you reduce all damage you take from non-{@variantrule Condition|GW2} sources by an amount equal to half your proficiency bonus (to a minimum of 1 damage) and the source of that damage is inflicted with 1 round of {@variantrule Chilled|GW2}."
+			]
+		},
+		{
+			"name": "Fury",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Boon|GW2}",
+				"While you are under the effect of this {@variantrule Boon|GW2}, increase your {@variantrule Critical Range|GW2} by 5.",
+				"Stacks duration.",
+				"This {@variantrule Boon|GW2} corrupts into 1 round of {@variantrule Blindness|GW2}."
+			]
+		},
+		{
+			"name": "Healing Skill",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Skill|GW2}",
+				"A healing skill is a special type of {@variantrule Skill|GW2} that restores hit points to a target."
+			]
+		},
+		{
+			"name": "Immobilized",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Condition|GW2}",
+				"While you are under the effect of this {@variantrule Condition|GW2}, your speed is 0, you cannot take the Dodge action and you automatically fail dexterity saving throws.",
+				"Creatures immune to the {@condition Restrained|XPHB} {@variantrule Condition|XPHB} are also immune to {@variantrule Immobilized|GW2}.",
+				"Stacks duration.",
+				"A creature with a {@variantrule Defiance Bar|GW2} takes 50 defiance bar damage at the start of its turn instead of being affected.",
+				"This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Resistance|GW2}."
+			]
+		},
+		{
+			"name": "Initiative Points",
+			"source": "GW2",
+			"entries": [
+				"Initiative Points are a unique resource for the {@class Thief|GW2} profession.",
+				"You have a maximum of 12 Initiative Points.",
+				"You regain 6 Initiative Points at the start of your turn.",
+				"You can spend Initiative Points to use certain {@variantrule Skill|GW2|skills} that require them."
+			]
+		},
+		{
+			"name": "Knockback",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Control Effect|GW2}",
+				"When this {@variantrule Control Effect|GW2} is applied, you are moved away from the source of the effect by a distance determined by the effect that applied it.",
+				"A creature with a {@variantrule Defiance Bar|GW2} takes defiance bar damage instead of being affected."
+			]
+		},
+		{
+			"name": "Knockdown",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Control Effect|GW2}",
+				"While you are under the effect of this {@variantrule Control Effect|GW2}, you are {@condition prone|XPHB} and can’t take actions, bonus actions, reactions or move.",
+				"Creatures immune to the {@condition Prone|XPHB} {@variantrule Condition|XPHB} are also immune to {@variantrule Knockdown|GW2}.",
+				"A creature with a {@variantrule Defiance Bar|GW2} takes 100 defiance bar damage per round of {@variantrule Knockdown|GW2} instead of being affected."
+			]
+		},
+		{
+			"name": "Launch",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Control Effect|GW2}",
+				"When this {@variantrule Control Effect|GW2} is applied, you are moved away in an arcfrom the source of the effect by a distance determined by the effect that applied it.",
+				"A creature with a {@variantrule Defiance Bar|GW2} takes defiance bar damage instead of being affected."
+			]
+		},
+		{
+			"name": "Life Steal",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Property|GW2}",
+				"When you deal {@variantrule Life Steal|GW2} damage to a target, you regain hit points equal to the amount of {@variantrule Life Steal|GW2} damage dealt."
+			]
+		},
+		{
+			"name": "Light Aura",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Aura|GW2}",
+				"While you are under the effect of this {@variantrule Aura|GW2}, you reduce all damage you take from {@variantrule Condition|GW2|conditions} by an amount equal to half your proficiency bonus (to a minimum of 1 damage) and when you take damage you gain 1 round of {@variantrule Resolution|GW2}."
+			]
+		},
+		{
+			"name": "Magnetic Aura",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Aura|GW2}",
+				"While you are under the effect of this {@variantrule Aura|GW2}, when a ranged attack would hit you, it instead gets reflected back to the attacker. If the attack would hit the attacker, it deals damage as normal; otherwise, it misses."
+			]
+		},
+		{
+			"name": "Might",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Boon|GW2}",
+				"While you are under the effect of this {@variantrule Boon|GW2}, you deal 1% more damage (minimum 1).",
+				"Stacks Intensity (Max 25).",
+				"This {@variantrule Boon|GW2} corrupts into 1 round of {@variantrule Weakness|GW2}."
+			]
+		},
+		{
+			"name": "Piercing",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Property|GW2}",
+				"When you use a skill with this {@variantrule Property|GW2}, the attack roll ignore cover provided by other creatures and deals damage to each hostile creature in the line of the attack."
+			]
+		},
+		{
+			"name": "Poison",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Condition|GW2}",
+				"A poisoned creature takes poison damage at the start of each of its turns.",
+				"The amount of poison damage is determined by the effect that applied it.",
+				"While you are under this {@variantrule Condition|GW2}, you regain only two-thirds of the hit points you would normally heal.",
+				"Creatures immune to the {@condition Poisoned|XPHB} {@variantrule Condition|XPHB} are also immune to {@variantrule Poison|GW2}.",
+				"Stacks intensity.",
+				"This {@variantrule Condition|GW2} get converted into 2 rounds of {@variantrule Regeneration|GW2}."
+			]
+		},
+		{
+			"name": "Profession Skill",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Skill|GW2}",
+				"A profession skill is a special type of {@variantrule Skill|GW2} that is specific to a certain profession or class."
+			]
+		},
+		{
+			"name": "Property",
+			"source": "GW2",
+			"entries": [
+				"Properties are special attributes that modify how a skill functions."
+			]
+		},
+		{
+			"name": "Protection",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Boon|GW2}",
+				"While you are under the effect of this {@variantrule Boon|GW2}, you reduce all damage you take from non-{@variantrule Condition|GW2} sources by an amount equal to your proficiency bonus (to a minimum of 1 damage).",
+				"Stacks duration.",
+				"This {@variantrule Boon|GW2} corrupts into 3 stacks of {@variantrule Vulnerability|GW2} for 2 rounds."
+			]
+		},
+		{
+			"name": "Pull",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Control Effect|GW2}",
+				"When this {@variantrule Control Effect|GW2} is applied, you are moved closer to the source of the effect by a distance determined by the effect that applied it.",
+				"A creature with a {@variantrule Defiance Bar|GW2} takes 150 defiance bar damage instead of being affected."
+			]
+		},
+		{
+			"name": "Quickness",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Boon|GW2}",
+				"While you are under the effect of this {@variantrule Boon|GW2}, you gain one additional action on your turn. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Utilize action.",
+				"Stacks duration.",
+				"This {@variantrule Boon|GW2} corrupts into 1 round of {@variantrule Slow|GW2}."
+			]
+		},
+		{
+			"name": "Regeneration",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Boon|GW2}",
+				"While you are under the effect of this {@variantrule Boon|GW2}, at the start of your turn, if you have at least 1 hit point, you regain hit points.",
+				"The amount of healing is determined by the effect that applied it.",
+				"Stacks intensity.",
+				"This {@variantrule Boon|GW2} corrupts into 1 stack of {@variantrule Poison|GW2} for 2 rounds, dealing damage equal to the half the PB of the creature who corrupted the Boon."
+			]
+		},
+		{
+			"name": "Resistance",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Boon|GW2}",
+				"While you are under the effect of this {@variantrule Boon|GW2}, you are immune to {@variantrule Blinded|GW2}, {@variantrule Chilled|GW2}, {@variantrule Crippled|GW2}, {@variantrule Fear|GW2}, {@variantrule Immobilized|GW2}, {@variantrule Slow|GW2}, {@variantrule Taunt|GW2}, {@variantrule Weakness|GW2}, and {@variantrule Vulnerability|GW2}.",
+				"Stacks duration.",
+				"This {@variantrule Boon|GW2} corrupts into 1 round of {@variantrule Chilled|GW2}."
+			]
+		},
+		{
+			"name": "Resolution",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Boon|GW2}",
+				"While you are under the effect of this {@variantrule Boon|GW2}, you reduce all damage you take from {@variantrule Condition|GW2|conditions} by an amount equal to your proficiency bonus (to a minimum of 1 damage).",
+				"Stacks duration.",
+				"This {@variantrule Boon|GW2} corrupts into 3 stacks of {@variantrule Confusion|GW2} for 1 round, dealing damage equal to the half the PB of the creature who corrupted the Boon."
+			]
+		},
+		{
+			"name": "Revealed",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Effect|GW2}",
+				"While you are under the effect of this {@variantrule Effect|GW2}, you cannot gain the {@variantrule Stealth|GW2} {@variantrule Effect|GW2} or the {@condition Invisible|XPHB} condition.",
+				"Stacks duration (max 5 rounds)."
+			]
+		},
+		{
+			"name": "Sequence",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Property|GW2}",
+				"A {@variantrule Skill|GW2} with this {@variantrule Property|GW2} gets replaced with a different {@variantrule Skill|GW2} when the conditions for the sequence are met."
+			]
+		},
+		{
+			"name": "Shocking Aura",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Aura|GW2}",
+				"While you are under the effect of this {@variantrule Aura|GW2}, when you take damage the source of that damage is {@variantrule Stun|GW2|Stunned} for 1 round if they are within 25 feet of you."
+			]
+		},
+		{
+			"name": "Sink",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Control Effect|GW2}",
+				"While you are under the effect of this {@variantrule Control Effect|GW2}, you are pushed 10 feet downwards at the start of your turn and can’t take actions, bonus actions, reactions or move.",
+				"A creature with a {@variantrule Defiance Bar|GW2} takes defiance bar damage per round of {@variantrule Sink|GW2} instead of being affected."
+			]
+		},
+		{
+			"name": "Skill",
+			"source": "GW2",
+			"entries": [
+				"Skills are special abilities that a creature can use to perform various actions in combat or other situations.",
+				"The following types of skills exist:",
+				"{@b {@variantrule Weapon Skill|GW2}:} A skill that requires a specific weapon to use.",
+				"{@b {@variantrule Healing Skill|GW2}:} A skill that restores hit points to a target.",
+				"{@b {@variantrule Utility Skill|GW2}:} A skill that provides various effects or benefits.",
+				"{@b {@variantrule Elite Skill|GW2}:} A powerful skill that often has a long cooldown and significant effects.",
+				"{@b {@variantrule Profession Skill|GW2}:} A skill that is specific to a certain profession or class.",
+				"{@b {@variantrule Special Skill|GW2}:} A skill that does not fit into the other categories and has unique properties.",
+				"Most skills have the following components:",
+				"{@b Name:} The name of the skill.",
+				"{@b Requirements:} Any prerequisites or conditions that must be met to use the skill.",
+				"{@b Type:} The category of the skill (e.g., weapon skill, healing skill, etc.).",
+				"{@b Casting Time:} The amount of time it takes to use the skill.",
+				"{@b Recharge:} The number you need to roll on a d20 to use the skill again. Roll 1d20 for each skill that is on recharge at the start of your turn.",
+				"{@b Range:} The distance at which the skill can be used.",
+				"{@b Target:} The creature(s) or area affected by the skill.",
+				"{@b Duration:} The length of time the skill's effects last.",
+				"{@b Properties:} Any special attributes or characteristics of the skill.",
+				"{@b Description:} A description of how the skill is used and how it looks.",
+				"{@b Effect:} A description of what the skill does.",
+				"{@b Scaling:} How the skill's effects improve as the user gains levels or other enhancements."
+			]
+		},
+		{
+			"name": "Slow",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Condition|GW2}",
+				"While you are under the effect of this {@variantrule condition|GW2}, on your turn, you can take either an action or a bonus action, but not both. If you take the Attack action, you can make only one attack regardless of the number of attacks you can normally make.",
+				"Stacks Duration.",
+				"A creature with a {@variantrule Defiance Bar|GW2} takes 50 defiance bar damage at the start of its turn instead of being affected.",
+				"This {@variantrule Condition|GW2} converts into 1 round of {@variantrule Quickness|GW2}."
+			]
+		},
+		{
+			"name": "Signet",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Property|GW2}",
+				"Signets have passive and active effects. The passive effect is active as long as the signet is not on recharge."
+			]
+		},
+		{
+			"name": "Special Skill",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Skill|GW2}",
+				"A special skill is a unique type of {@variantrule Skill|GW2} that does not fit into the other categories and has its own distinct properties."
+			]
+		},
+		{
+			"name": "Stability",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Boon|GW2}",
+				"While you are under the effect of this {@variantrule Boon|GW2}, you are immune to {@variantrule Fear|GW2}, {@variantrule Taunt|GW2}, {@condition Prone|XPHB}, and getting moved against your will.",
+				"Each time you would be {@variantrule Fear|GW2|Feared}, {@variantrule Taunt|GW2|Taunted}, knocked {@condition Prone|XPHB}, or moved against your will you instead remove 1 stack of this {@variantrule Boon|GW2}.",
+				"Stacks intensity (Max 25).",
+				"This {@variantrule Boon|GW2} corrupts into 1 round of {@variantrule Fear|GW2}."
+			]
+		},
+		{
+			"name": "Stealth",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Effect|GW2}",
+				"While you are under the effect of this {@variantrule Effect|GW2}, you gain the effects of the {@condition Invisible|XPHB} condition.",
+				"The effect ends if you deal damage or force a creature to make a saving throw.",
+				"Stacks duration (max 1 minute)."
+			]
+		},
+		{
+			"name": "Stun",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Control Effect|GW2}",
+				"While you are under the effect of this {@variantrule Control Effect|GW2}, you cannot take {@variantrule action|XPHB|actions}, {@variantrule bonus action|XPHB|bonus actions}, {@variantrule reaction|XPHB|reactions} or move. Additionally, you automatically fail strength and dexterity saving throws.",
+				"Creatures immune to the {@condition Stunned|XPHB} {@variantrule Condition|XPHB} are also immune to {@variantrule Stun|GW2}.",
+				"A creature with a {@variantrule Defiance Bar|GW2} takes 100 defiance bar damage per round of {@variantrule Stun|GW2} instead of being affected."
+			]
+		},
+		{
+			"name": "Stun Break",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Property|GW2}",
+				"{@variantrule Skill|GW2|Skills} with this {@variantrule Property|GW2} can be used to end any {@variantrule Control Effect|GW2} affecting you, even if the {@variantrule Control Effect|GW2} would normally prevent you from taking actions."
+			]
+		},
+		{
+			"name": "Superspeed",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Effect|GW2}",
+				"While you are under the effect of this {@variantrule Effect|GW2}, your speed is increased by 100%.",
+				"Stacks duration (max 3 rounds)."
+			]
+		},
+		{
+			"name": "Swiftness",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Boon|GW2}",
+				"While you are under the effect of this {@variantrule Boon|GW2}, your speed is increased by 33%.",
+				"Stacks duration.",
+				"This {@variantrule Boon|GW2} corrupts into 2 rounds of {@variantrule Crippled|GW2}."
+			]
+		},
+		{
+			"name": "Taunt",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Condition|GW2}|{@variantrule Control Effect|GW2}",
+				"While you are under the effect of this {@variantrule Condition|GW2}, you must move closer to the source of the {@variantrule Condition|GW2} and must use the Dash action to move toward it on your turn, if possible.",
+				"If you are already within 5 feet of the source, you must use your action to make an unarmed strike against the source.",
+				"Creatures immune to the {@condition Charmed|XPHB} {@variantrule Condition|XPHB} are also immune to {@variantrule Taunt|GW2}.",
+				"Stacks duration.",
+				"A creature with a {@variantrule Defiance Bar|GW2} takes 100 defiance bar damage at the start of its turn instead of being affected.",
+				"This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Stability|GW2}."
+			]
+		},
+		{
+			"name": "Torment",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Condition|GW2}",
+				"A tormented creature takes necrotic damage at the start of each of its turns.",
+				"The amount of necrotic damage is determined by the effect that applied it.",
+				"The damage gets doubled if the creature did not move on its last turn.",
+				"Stacks intensity.",
+				"This {@variantrule Condition|GW2} get converted into 3 stacks of {@variantrule Might|GW2} for 2 rounds."
+			]
+		},
+		{
+			"name": "Utility Skill",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Skill|GW2}",
+				"A utility skill is a special type of {@variantrule Skill|GW2} that provides various effects or benefits."
+			]
+		},
+		{
+			"name": "Vigor",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Boon|GW2}",
+				"While you are under the effect of this {@variantrule Boon|GW2}, you regain 50% more {@variantrule Endurance|GW2} at the start of your turn.",
+				"Stacks duration.",
+				"This {@variantrule Boon|GW2} corrupts into 2 stacks of {@variantrule Bleeding|GW2} for 2 rounds, dealing damage equal to the PB of the creature who corrupted the Boon."
+			]
+		},
+		{
+			"name": "Vulnerability",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Condition|GW2}",
+				"While you are under the effect of this {@variantrule condition|GW2}, you take 1% more damage whenever you take damage (minimum 1).",
+				"Stacks intensity (Max 25).",
+				"This {@variantrule Condition|GW2} converts into 1 round of {@variantrule Protection|GW2}."
+			]
+		},
+		{
+			"name": "Weakness",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Condition|GW2}",
+				"While you are under the effect of this {@variantrule condition|GW2}, you have a 50% chance of dealing half damage when you roll damage.",
+				"While you are under the effect of this {@variantrule condition|GW2}, you regain 50% less {@variantrule Endurance|GW2} at the start of your turn..",
+				"Stacks duration.",
+				"A creature with a {@variantrule Defiance Bar|GW2} takes 20 defiance bar damage at the start of its turn instead of being affected.",
+				"This {@variantrule Condition|GW2} converts into 3 stack of {@variantrule Might|GW2} for 2 rounds."
+			]
+		},
+		{
+			"name": "Weapon Skill",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Skill|GW2}",
+				"A weapon skill is a special type of {@variantrule Skill|GW2} that requires a specific weapon to use."
 			]
 		}
 	]

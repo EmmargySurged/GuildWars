@@ -3010,7 +3010,7 @@
 				"Once per target per turn, if your Mech inficts damage to a target, it also inflicts 1 stack of {@variantrule Bleeding|GW2} for 1 round, dealing {@damage 1d8} damage.",
 				"Additionally, your Mech gains access to the following actions, which he performs wehen commanded to take the {@b Hard Strike} action:",
 				"Bonus Action, if {@b Hard Strike} hit: {@b Heavy Smash.} Melee Attack: Bonus equal your Intelligence modifier plus your Proficiency Bonus, reach 5 ft. Hit: 1d8 + 3 plus your Intelligence modifier bludgeoning damage.",
-				"Special, if {@b Heavy Smash} hit: {@b Twin Strike.} Two Melee Attacks: Bonus equal your Intelligence modifier plus your Proficiency Bonus, reach 5 ft. Hit: 1d6 + 2 plus your Intelligence modifier bludgeoning damage."
+				"Special, if {@b Heavy Smash} hit: {@b Twin Strike.} Two Melee Attacks: Bonus equal your Intelligence modifier plus your Proficiency Bonus, reach 5 ft. Hit: 1d6 + 3 plus your Intelligence modifier bludgeoning damage."
 			]
 		},
 		{
@@ -3061,7 +3061,7 @@
 				"Once per turn, if your Mech inficts damage to a target, it also grants up to 5 creatures of your choice within 60 feet of it 1 stack of {@variantrule Might|GW2} for 2 rounds.",
 				"Additionally, your Mech gains access to the following actions, which he performs wehen commanded to take the {@b Hard Strike} action:",
 				"Bonus Action, if {@b Hard Strike} hit: {@b Heavy Smash.} Melee Attack: Bonus equal your Intelligence modifier plus your Proficiency Bonus, reach 5 ft. Hit: 1d8 + 3 plus your Intelligence modifier bludgeoning damage.",
-				"Special, if {@b Heavy Smash} hit: {@b Twin Strike.} Two Melee Attacks: Bonus equal your Intelligence modifier plus your Proficiency Bonus, reach 5 ft. Hit: 1d6 + 2 plus your Intelligence modifier bludgeoning damage."
+				"Special, if {@b Heavy Smash} hit: {@b Twin Strike.} Two Melee Attacks: Bonus equal your Intelligence modifier plus your Proficiency Bonus, reach 5 ft. Hit: 1d6 + 3 plus your Intelligence modifier bludgeoning damage."
 			]
 		},
 		{
@@ -3099,7 +3099,9 @@
 			"page": "",
 			"featureType": [
 				"MAT",
-				"ADT"
+				"ADT",
+				"ENG",
+				"MEC"
 			],
 			"prerequisite": [
 				{
@@ -3107,7 +3109,39 @@
 				}
 			],
 			"entries": [
-				"Melee attacks become ranged, have an increased chance to critically hit, and apply vulnerability. Unlocks the Mech Command skill Spark Revolver."
+				"You gain access to the Mech Command skill {@optfeature Spark Revolver|GW2EoD}.",
+				"Once per target per turn, if your Mech inficts damage to a target, it also inflicts 1 stack of {@variantrule Vulnerability|GW2} for 1 round.",
+				"Your Mech's {@variantrule Critical Range|GW2} is increased by 4",
+				"Additionally, the {@b Hard Strike} action is replaced with the following action:",
+				"Action: {@b Jade Energy Shot.} Two Ranged Attacks: Bonus equal your Intelligence modifier plus your Proficiency Bonus, range 90/320 ft. Hit: 1d6 + 3 plus your Intelligence modifier force damage."
+			]
+		},
+		{
+			"name": "Spark Revolver",
+			"source": "GW2EoD",
+			"page": "",
+			"featureType": [
+				"PS",
+				"ENG",
+				"MEC",
+				"MECC",
+				"BACT"
+			],
+			"prerequisite": [
+				{
+					"other": "{@optfeature Mech Arms: High-Impact Drivers|GW2EoD}"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} {@variantrule Bonus Action|XPHB}",
+				"{@b Recharge:} {@chance 35|14+}",
+				"{@b Range:} Self",
+				"{@b Target:} 120-foot-long 5-foot-wide line",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} Mech Command",
+				"{@b Description:} Order your mech to fire a rapid volley of jade energy bolts from both arms, piercing through all enemies.",
+				"{@b Effect:} Each creature in a 120-foot-long, 5-foot-wide line originating from your mech must make a Dexterity saving throw. On a failed save, a target takes {@damage 6d6} force damage. On a successful save, a target takes half as much damage only.",
+				"{@b Scaling:} The damage increases by {@damage 2d6} at levels 5 ({@damage 8d6}), 11 ({@damage 10d6}), and 17 ({@damage 12d6})."
 			]
 		},
 		{

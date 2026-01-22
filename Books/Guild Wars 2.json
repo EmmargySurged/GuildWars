@@ -117,6 +117,7 @@
 			"CIP": "Combo Finisher Projectile",
 			"CIW": "Combo Finisher Whirl",
 			"PI": "Piercing",
+			"UNB": "Unblockable",
 			"CHAI": "Chain",
 			"CHAN": "Channel",
 			"CHARG": "Charge",
@@ -6043,6 +6044,133 @@
 			],
 			"savingThrowForced": [
 				"constitution"
+			]
+		},
+		{
+			"name": "Earth Elemental (Type 2)",
+			"source": "GW2",
+			"size": [
+				"M"
+			],
+			"type": "elemental",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 68,
+				"formula": "8d10 + 24"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 14,
+			"dex": 4,
+			"con": 16,
+			"int": 5,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"Darkvision 60 ft.",
+				"Tremorsense 60 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"thunder"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"unconscious"
+			],
+			"languages": [
+				"Primordial (Terran)"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The elemental deals double damage to objects and structures."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d4 + 2}) Bludgeoning damage."
+					]
+				},
+				{
+					"name": "Rock Launch",
+					"entries": [
+						"{@atkr r} {@hit 4}, range 60 ft. {@h}5 ({@damage 1d4 + 2}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition."
+					]
+				}
+			],
+			"environment": [
+				"mountain",
+				"planar, earth",
+				"underdark"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/earth-elemental.mp3"
+			},
+			"traitTags": [
+				"Siege Monster"
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"P",
+				"T"
+			],
+			"miscTags": [
+				"MA",
+				"RA"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Earth Elementals are a type of elemental found throughout Tyria. They can also be summoned by elementalists with Glyph of Elementals. While first forming, they appear as shifting clumps of the rock that will later make up the grown earth elemental's body."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Earth_Elemental.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Earth_Elemental_Token.png"
+			},
+			"group": [
+				"Elemental"
+			],
+			"damageTags": [
+				"B"
 			]
 		}
 	],
@@ -15958,16 +16086,18 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"Minor",
-				"Adept"
+				"MIT",
+				"ADT",
+				"THI"
 			],
 			"prerequisite": [
 				{
-					"other": "Minor Adept"
+					"other": "Thief"
 				}
 			],
 			"entries": [
-				"Stealing inflicts poison. While in the downed state, your attacks apply poison."
+				"{@optfeature Steal|GW2}, {@optfeature Deadeye's Mark|GW2PoF}, {@optfeature Siphon|GW2EoD}, and {@optfeature Skritt Swipe|GW2VoE} now inflict 2 stacks of {@variantrule Poison|GW2} for 2 rounds, dealing {@damage 1d10} on hit.",
+				"While you have 10% or less of your maximum health, when you deal damage to a creature, also inflict 1 stack of {@variantrule Poison|GW2} for 1 round, dealing {@damage 1d10} damage."
 			]
 		},
 		{
@@ -15975,16 +16105,17 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"Major",
-				"Adept"
+				"MJT",
+				"ADT",
+				"THI"
 			],
 			"prerequisite": [
 				{
-					"other": "Major Adept"
+					"other": "{@optfeature Serpent's Touch|GW2}"
 				}
 			],
 			"entries": [
-				"Gain bonus power, which is increased when wielding a dagger."
+				"You gain 1 {@variantrule Attribute|GW2|Power}, and 1 additional {@variantrule Attribute|GW2|Power} when wielding a dagger."
 			]
 		},
 		{
@@ -15992,16 +16123,17 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"Major",
-				"Adept"
+				"MJT",
+				"ADT",
+				"THI"
 			],
 			"prerequisite": [
 				{
-					"other": "Major Adept"
+					"other": "{@optfeature Serpent's Touch|GW2}"
 				}
 			],
 			"entries": [
-				"Deal damage and gain life when stealing. This attack cannot critically hit enemies."
+				"{@optfeature Steal|GW2}, {@optfeature Deadeye's Mark|GW2PoF}, {@optfeature Siphon|GW2EoD}, and {@optfeature Skritt Swipe|GW2VoE} now deal {@damage 2d6} necrotic damage on hit. You regain hit points equal to the necrotic damage dealt."
 			]
 		},
 		{
@@ -16009,16 +16141,18 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"Major",
-				"Adept"
+				"MJT",
+				"ADT",
+				"THI"
 			],
 			"prerequisite": [
 				{
-					"other": "Major Adept"
+					"other": "{@optfeature Serpent's Touch|GW2}"
 				}
 			],
 			"entries": [
-				"Inflict poison when striking a foe with a dual wield attack. Gain increased condition damage. Applies poison once per attack use."
+				"When you deal damage with a Dual Wield {@variantrule Skill|GW2}, you also inflict 1 stack of {@variantrule Poison|GW2} for 1 round, dealing {@damage 1d10}. You only inflict this poison once per creature per {@variantrule Skill|GW2} use.",
+				"You gain 2 {@variantrule Attribute|GW2|Condition Damage}."
 			]
 		},
 		{
@@ -16026,16 +16160,17 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"Minor",
-				"Master"
+				"MIT",
+				"MAT",
+				"THI"
 			],
 			"prerequisite": [
 				{
-					"other": "Minor Master"
+					"other": "{@optfeature Dagger Training|GW2} or {@optfeature Mug|GW2} or {@optfeature Deadly Ambition|GW2}"
 				}
 			],
 			"entries": [
-				"Weaken targets when you poison them."
+				"When you inflict {@variantrule Poison|GW2} to a creature, you also inflict 1 round of {@variantrule Weakness|GW2}. This trait must recharge ({@chance 55|10+}) after affecting a creature."
 			]
 		},
 		{
@@ -16043,16 +16178,18 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"Major",
-				"Master"
+				"MJT",
+				"MAT",
+				"THI"
 			],
 			"prerequisite": [
 				{
-					"other": "Major Master"
+					"other": "{@optfeature Lotus Poison|GW2}"
 				}
 			],
 			"entries": [
-				"Apply vulnerability when you steal. Gain might when you hit with a stealth attack."
+				"{@optfeature Steal|GW2}, {@optfeature Deadeye's Mark|GW2PoF}, {@optfeature Siphon|GW2EoD}, and {@optfeature Skritt Swipe|GW2VoE} now inflict 10 stacks of {@variantrule Vulnerability|GW2} for 2 rounds on hit.",
+				"When you deal damage with a Stealth Attack you gain 5 stacks of {@variantrule Might|GW2} for 2 rounds."
 			]
 		},
 		{
@@ -16060,16 +16197,18 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"Major",
-				"Master"
+				"MJT",
+				"MAT",
+				"THI"
 			],
 			"prerequisite": [
 				{
-					"other": "Major Master"
+					"other": "{@optfeature Lotus Poison|GW2}"
 				}
 			],
 			"entries": [
-				"Immobilizing a foe poisons them. Striking a foe below the health threshold immobilizes them."
+				"When you inflict {@variantrule Immobilize|GW2} on a creature, you also inflict 1 stack of {@variantrule Poison|GW2} for 1 round, dealing {@damage 1d10} damage.",
+				"When you deal damage to a {@condition Bloodied|XPHB} creature, you inflict 1 round of {@variantrule Immobilize|GW2}. This trait must recharge ({@chance 35|14+}) after affecting a creature."
 			]
 		},
 		{
@@ -16077,16 +16216,17 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"Major",
-				"Master"
+				"MJT",
+				"MAT",
+				"THI"
 			],
 			"prerequisite": [
 				{
-					"other": "Major Master"
+					"other": "{@optfeature Lotus Poison|GW2}"
 				}
 			],
 			"entries": [
-				"Gain power, then gain extra power while you are revealed."
+				"Youn gain 1 {@variantrule Attribute|GW2|Power}, and 2 additional {@variantrule Attribute|GW2|Power} while {@variantrule Revealed|GW2}."
 			]
 		},
 		{
@@ -16094,16 +16234,17 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"Minor",
-				"Grandmaster"
+				"MIT",
+				"GMT",
+				"THI"
 			],
 			"prerequisite": [
 				{
-					"other": "Minor Grandmaster"
+					"other": "{@optfeature Even the Odds|GW2} or {@optfeature Panic Strike|GW2} or {@optfeature Revealed Training|GW2}"
 				}
 			],
 			"entries": [
-				"Deal increased strike damage to your target for each unique condition on them."
+				"When you deal damage to a creature affected by one or more {@variantrule Condition|GW2|Conditions}, you deal 2% more damage per unique {@variantrule Condition|GW2} affecting a target."
 			]
 		},
 		{
@@ -16111,16 +16252,18 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"Major",
-				"Grandmaster"
+				"MJT",
+				"GMT",
+				"THI"
 			],
 			"prerequisite": [
 				{
-					"other": "Major Grandmaster"
+					"other": "{@optfeature Exposed Weakness|GW2}"
 				}
 			],
 			"entries": [
-				"Poison you inflict has increased damage and duration. Other Deadly Arts traits apply additional stacks of poison."
+				"{@variantrule Poison|GW2} you inflict deals and additional {@damage 1d4} damage and lasts an additional round.",
+				"When you inflict {@variantrule Poison|GW2} to a creature with a Deadly Arts {@variantrule Trait|GW2}, you inflict 1 additional stack of {@variantrule Poison|GW2}."
 			]
 		},
 		{
@@ -16128,16 +16271,19 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"Major",
-				"Grandmaster"
+				"MJT",
+				"GMT",
+				"THI"
 			],
 			"prerequisite": [
 				{
-					"other": "Major Grandmaster"
+					"other": "{@optfeature Exposed Weakness|GW2}"
 				}
 			],
 			"entries": [
-				"Use stolen skills twice. Reduce the cooldown of all equipped utility skills when you steal. Cooldown effect will only trigger if all utility slots are filled and if at least one of your active utility skills is on cooldown. Does not affect inactive sequence skills."
+				"Stolen Skills can now be used twice.",
+				"When using {@optfeature Skritt Swipe|GW2VoE}, you can use all Artifact Skills.",
+				"When you use {@optfeature Steal|GW2}, {@optfeature Deadeye's Mark|GW2PoF}, {@optfeature Siphon|GW2EoD}, or {@optfeature Skritt Swipe|GW2VoE} you can attempt a recharge roll for all your recharging {@variantrule Utility Skill|GW2|Utility Skills}."
 			]
 		},
 		{
@@ -16145,16 +16291,17 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"Major",
-				"Grandmaster"
+				"MJT",
+				"GMT",
+				"THI"
 			],
 			"prerequisite": [
 				{
-					"other": "Major Grandmaster"
+					"other": "{@optfeature Exposed Weakness|GW2}"
 				}
 			],
 			"entries": [
-				"Deal increased strike damage when your target is below the health threshold."
+				"When you deal damage to a {@condition Bloodied|XPHB} creature, you deal an additional 20% damage."
 			]
 		},
 		{
@@ -16825,15 +16972,14 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Bonus Action or Action",
-				"{@b Recharge:} {@chance 75|5+}",
-				"{@b Range:} 130",
-				"{@b Target:} Area",
-				"{@b Duration:} ",
-				"{@b Properties:} Bleeding",
+				"{@b Casting Time:} Action or Bonus Action",
+				"{@b Cost:} 4 {@variantrule Initiative Points|GW2}",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 3 creatures",
+				"{@b Duration:} Instantaneous",
 				"{@b Description:} Spin in place, hitting nearby foes. Each hit causes bleeding.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Choose up to 3 creatures within range. Make two melee weapon attacks against each target. On a hit, a target takes {@damage 1d4} slashing damage and is inflicted with 1 stacks of {@variantrule Bleeding|GW2} for 2 rounds, taking {@damage 1d8} damage.",
+				"{@b Scaling:} The damage increases by {@damage 1d4} and {@damage 1d8} respectively at levels 5 ({@damage 2d4} & {@damage 2d8}), 11 ({@damage 3d4} & {@damage 3d8}), and 17 ({@damage 4d4} & {@damage 4d8})."
 			]
 		},
 		{
@@ -16845,8 +16991,9 @@
 				"DAG",
 				"WS",
 				"DUA",
-				"REAC",
-				"BACT"
+				"BACT",
+				"CIP",
+				"UNB"
 			],
 			"prerequisite": [
 				{
@@ -16854,15 +17001,15 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Reaction/Bonus Action",
-				"{@b Recharge:} {@chance 75|5+}",
-				"{@b Range:} 900",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Dual Wield, Unblockable, Blind, Shadowstep",
-				"{@b Description:} Dual Wield. Fire an unblockable shot at your foe, which blinds them, and then shadowstep to them for a dagger strike.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} Bonus Action",
+				"{@b Cost:} 4 {@variantrule Initiative Points|GW2}",
+				"{@b Range:} 90 feet",
+				"{@b Target:} 1 creature",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Combo Finisher|GW2}: Projectile, Dual Wield, {@variantrule Unblockable|GW2}",
+				"{@b Description:} Fire an unblockable shot at your foe, which blinds them, and then shadowstep to them for a dagger strike.",
+				"{@b Effect:} Choose one creature you can see within range. Make a ranged weapon attack against the target. On a hit, the target is {@condition Blinded|XPHB} for 1 round. Then, teleport to an unoccupied space within 5 feet of the target and make a melee weapon attack against it. On a hit, the target takes {@damage 3d6} piercing damage.",
+				"{@b Scaling:} The damage increases by {@damage 1d6} at levels 5 ({@damage 4d6}), 11 ({@damage 5d6}), and 17 ({@damage 6d6})."
 			]
 		},
 		{
@@ -16875,7 +17022,8 @@
 				"WS",
 				"DUA",
 				"BACT",
-				"ACT"
+				"ACT",
+				"CIW"
 			],
 			"prerequisite": [
 				{
@@ -16883,15 +17031,15 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Bonus Action or Action",
-				"{@b Recharge:} {@chance 75|5+}",
-				"{@b Range:} 130",
-				"{@b Target:} Area",
-				"{@b Duration:} ",
-				"{@b Properties:} Dual Wield, Evasive, Bleeding",
-				"{@b Description:} Dual Wield. Do an evasive attack over your target, striking nearby foes three times. Each hit causes bleeding.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} Action or Bonus Action",
+				"{@b Cost:} 4 {@variantrule Initiative Points|GW2}",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 5 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Combo Finisher|GW2}: Whirl, Dual Wield, Evasive, Bleeding",
+				"{@b Description:} Do an evasive attack over your target, striking nearby foes three times. Each hit causes bleeding.",
+				"{@b Effect:} You gain the benefits of the {@action Dodge|XPHB} action until the start of your next turn. Choose up to 5 creatures within range. Make three melee weapon attacks against each target. On a hit, a target takes {@damage 1d4} slashing damage and is inflicted with 2 stacks of {@variantrule Bleeding|GW2} for 1 round, taking {@damage 1d8} damage.",
+				"{@b Scaling:} The damage each increases by {@damage 1d4} and {@damage 1d8} respectively at levels 5 ({@damage 2d4} & {@damage 2d8}), 11 ({@damage 3d4} & {@damage 3d8}), and 17 ({@damage 4d4} & {@damage 4d8})."
 			]
 		},
 		{
@@ -16902,7 +17050,8 @@
 				"THI",
 				"DAG",
 				"WS",
-				"BACT"
+				"BACT",
+				"CIP"
 			],
 			"prerequisite": [
 				{
@@ -16911,14 +17060,15 @@
 			],
 			"entries": [
 				"{@b Casting Time:} Bonus Action",
-				"{@b Recharge:} None",
-				"{@b Range:} 900",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Cripple",
+				"{@b Cost:} 3 {@variantrule Initiative Points|GW2}",
+				"{@b Range:} 90 feet",
+				"{@b Target:} 1 creature",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Combo Finisher|GW2}: Projectile",
 				"{@b Description:} Throw a dagger that cripples nearby foes and returns to you.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Choose one creature you can see within range. Make a ranged weapon attack against the target. On a hit, the target takes {@damage 1d10} piercing damage and is inflicted with 1 round of {@condition Crippled|GW2} and 1 stack of {@variantrule Torment|GW2} for 1 round, taking {@damage 1d8} damage.",
+				"If you hit the target, the attack leaps from the target to a different creature of your choice within 30 feet of the target. Make a new attack roll against the new target, and make a new damage roll, which could cause the attack to leap again. The attack can leap up to 3 times total.",
+				"{@b Scaling:} The damage each increases by {@damage 1d10} and {@damage 1d8} respectively at levels 5 ({@damage 2d10} & {@damage 2d8}), 11 ({@damage 3d10} & {@damage 3d8}), and 17 ({@damage 4d10} & {@damage 4d8})."
 			]
 		},
 		{
@@ -16938,15 +17088,14 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Bonus Action or Action",
-				"{@b Recharge:} {@chance 75|5+}",
-				"{@b Range:} 130",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Stealth, Vulnerable",
+				"{@b Casting Time:} Action or Bonus Action",
+				"{@b Cost:} 5 {@variantrule Initiative Points|GW2}",
+				"{@b Range:} 5 feet",
+				"{@b Target:} 1 creature",
+				"{@b Duration:} Instantaneous",
 				"{@b Description:} Stab your foe and vanish in stealth, leaving them vulnerable.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Choose one creature within range. Make a melee weapon attack against the target. On a hit, the target takes {@damage 2d8} piercing damage and is inflicted with 5 stacks of {@variantrule Vulnerability|GW2} for 1 round and you gain 1 round {@variantrule Stealth|GW2}",
+				"{@b Scaling:} The damage increases by {@damage 2d8} at levels 5 ({@damage 4d8}), 11 ({@damage 6d8}), and 17 ({@damage 8d8})."
 			]
 		},
 		{
@@ -17028,7 +17177,7 @@
 			],
 			"entries": [
 				"{@b Casting Time:} Action or Bonus Action",
-				"{@b Cost:} 4 {@variantrule Initiative Points|Gw2}",
+				"{@b Cost:} 4 {@variantrule Initiative Points|GW2}",
 				"{@b Range:} 90 feet",
 				"{@b Target:} 1 creature",
 				"{@b Duration:} Instantaneous",
@@ -17046,7 +17195,8 @@
 				"THI",
 				"PIS",
 				"WS",
-				"CHAN"
+				"CHAN",
+				"CIP"
 			],
 			"prerequisite": [
 				{
@@ -17054,15 +17204,15 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} {@variantrule Channel|Gw2}: 12",
-				"{@b Recharge:} None",
-				"{@b Range:} 900",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Rapid Fire",
+				"{@b Casting Time:} {@variantrule Channel|GW2}: 12",
+				"{@b Cost:} 3 {@variantrule Initiative Points|GW2}",
+				"{@b Range:} 90 feet",
+				"{@b Target:} 1 creature",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Combo Finisher|GW2}: Projectile ({@chance 20})",
 				"{@b Description:} Blast your foe with rapid fire from your pistol.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Choose one creature you can see within range. At the beginning of the {@variantrule Channel|GW2} and then every 3 {@variantrule Initiative|XPHB} thereafter make a ranged weapon attack against the target. On a hit, the target takes {@damage 1d4} piercing damage and is inflicted with 1 stack of {@variantrule Bleeding|GW2} for 1 round, taking {@damage 1d8} damage.",
+				"{@b Scaling:} The damage each increases by {@damage 1d4} and {@damage 1d8} respectively at levels 5 ({@damage 2d4} & {@damage 2d8}), 11 ({@damage 3d4} & {@damage 3d8}), and 17 ({@damage 4d4} & {@damage 4d8})."
 			]
 		},
 		{
@@ -17074,8 +17224,8 @@
 				"PIS",
 				"WS",
 				"DUA",
-				"REAC",
-				"BACT"
+				"BACT",
+				"CIP"
 			],
 			"prerequisite": [
 				{
@@ -17083,43 +17233,15 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Reaction/Bonus Action",
-				"{@b Recharge:} {@chance 75|5+}",
-				"{@b Range:} 130",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Dual Wield, Shadowstep",
-				"{@b Description:} Dual Wield. Stab your foe, then shadowstep away and shoot them. Unlock Repeater at reduced initiative cost for a short time.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
-			]
-		},
-		{
-			"name": "Repeater (Dual)",
-			"source": "GW2",
-			"page": "",
-			"featureType": [
-				"THI",
-				"PIS",
-				"WS",
-				"DUA",
-				"CHAN"
-			],
-			"prerequisite": [
-				{
-					"other": "Thief wielding a Pistol (with offhand Dagger). Must follow Shadow Strike."
-				}
-			],
-			"entries": [
-				"{@b Casting Time:} {@variantrule Channel|Gw2}: 12",
-				"{@b Recharge:} None",
-				"{@b Range:} 900",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Dual Wield",
-				"{@b Description:} Dual Wield. Blast your foe with rapid fire from your pistol.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} Bonus Action",
+				"{@b Cost:} 4 {@variantrule Initiative Points|GW2}",
+				"{@b Range:} 5 feet/130 feet",
+				"{@b Target:} 1 creature",
+				"{@b Duration:} 2 rounds",
+				"{@b Properties:} {@variantrule Combo Finisher|GW2}: Projectile, Dual Wield, {@variantrule Sequence|GW2}: {@optfeature Repeater|GW2} after using {@optfeature Shadow Strike|GW2}",
+				"{@b Description:} Stab your foe, then shadowstep away and shoot them. Unlock Repeater at reduced initiative cost for a short time.",
+				"{@b Effect:} Choose one creature within 5 feet of you. Make a melee weapon attack against the target. On a hit, the target takes {@damage 1d4} piercing damage and is inficted with 2 stacks of {@variantrule Torment|GW2} for 1 round, taking {@damage 1d8} damage. Hit or miss, you then teleport 60 feet away from the target and make a ranged weapon attack against them. On a hit, the target takes {@damage 2d6} piercing damage and is inflicted with 2 stacks of {@variantrule Torment|GW2} for 1 round, taking {@damage 1d8} damage. For the duration, you can use {@optfeature Repeater|GW2} with its {@variantrule Initiative Points|GW2} cost reduced to 2.",
+				"{@b Scaling:} The damage each increases by {@damage 1d4} and {@damage 1d6} respectively and the number of {@variantrule Torment|GW2} stacks increases by 1 each at levels 5 ({@damage 2d4} & {@damage 3d6} & 3 stacks), 11 ({@damage 3d4} & {@damage 4d6} & 4 stacks), and 17 ({@damage 4d4} & {@damage 5d6} & 5 stacks})."
 			]
 		},
 		{
@@ -17131,7 +17253,8 @@
 				"PIS",
 				"WS",
 				"DUA",
-				"CHAN"
+				"CHAN",
+				"CIP"
 			],
 			"prerequisite": [
 				{
@@ -17140,14 +17263,14 @@
 			],
 			"entries": [
 				"{@b Casting Time:} {@variantrule Channel|Gw2}: 15",
-				"{@b Recharge:} None",
-				"{@b Range:} 900",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Dual Wield, Initiative",
-				"{@b Description:} Dual Wield. Blast your foe repeatedly with both pistols. Gain initiative if all attacks hit.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Cost:} 3 {@variantrule Initiative Points|GW2}",
+				"{@b Range:} 90 feet",
+				"{@b Target:} 1 creature",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} Dual Wield, {@variantrule Combo Finisher|GW2}: Projectile ({@chance 20})",
+				"{@b Description:} Blast your foe repeatedly with both pistols. Gain initiative if all attacks hit.",
+				"{@b Effect:} Choose one creature you can see within range. At the beginning of the {@variantrule Channel|GW2} and then every 2 {@variantrule Initiative|XPHB} thereafter make a ranged weapon attack against the target. On a hit, the target takes {@damage 1d4} piercing damage and you gain 1 stack of {@variantrule Might|GW2} for 2 rounds. If all attacks hit, you gain 2 {@variantrule Initiative Points|GW2} after the {@variantrule Channel|GW2} ends.",
+				"{@b Scaling:} The damage increases by {@damage 1d4} at levels 5 ({@damage 2d4}), 11 ({@damage 3d4}), and 17 ({@damage 4d4})."
 			]
 		},
 		{
@@ -17158,8 +17281,8 @@
 				"THI",
 				"PIS",
 				"WS",
-				"REAC",
-				"BACT"
+				"BACT",
+				"CIP"
 			],
 			"prerequisite": [
 				{
@@ -17167,15 +17290,15 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Reaction/Bonus Action",
-				"{@b Recharge:} {@chance 75|5+}",
-				"{@b Range:} 900",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Daze",
+				"{@b Casting Time:} Bonus Action",
+				"{@b Cost:} 4 {@variantrule Initiative Points|GW2}",
+				"{@b Range:} 90 feet",
+				"{@b Target:} 1 creature",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Combo Finisher|GW2}: Projectile",
 				"{@b Description:} Daze your foe with a head shot.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Choose one creature you can see within range. Make a ranged weapon attack against the target. On a hit, the target takes {@damage 1d10} piercing damage and is {@condition Dazed|XPHB} for 1 round.",
+				"{@b Scaling:} The damage increases by {@damage 1d10} at levels 5 ({@damage 2d10}), 11 ({@damage 3d10}), and 17 ({@damage 4d10})."
 			]
 		},
 		{
@@ -17187,7 +17310,9 @@
 				"PIS",
 				"WS",
 				"BACT",
-				"ACT"
+				"ACT",
+				"CIP",
+				"CFD"
 			],
 			"prerequisite": [
 				{
@@ -17195,15 +17320,16 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Bonus Action or Action",
-				"{@b Recharge:} {@chance 55|10+}",
-				"{@b Range:} 900",
-				"{@b Target:} Area",
-				"{@b Duration:} ",
-				"{@b Properties:} Blind, Smoke",
+				"{@b Casting Time:} Action or Bonus Action",
+				"{@b Cost:} 6 {@variantrule Initiative Points|GW2}",
+				"{@b Range:} 90 feet",
+				"{@b Target:} 1 creature/5-foot Emanation",
+				"{@b Duration:} 1 round",
+				"{@b Properties:} {@variantrule Combo Field|GW2}: Smoke, {@variantrule Combo Finisher|GW2}: Projectile",
 				"{@b Description:} Fire a black-powder shot, blinding your target and nearby foes with smoke.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} For the duration, you create a 5-foot Emanation. Each hostile creature in that Emanation must make a Constitution saving throw. On a failed save, a creature is inflicted with 1 round of {@variantrule Blindness|GW2}. A hostile creature also makes this save if it enters the Emanation or ends its turn there. A hostile creature makes this save only once per turn.",
+				"Then make a ranged weapon attack against the target. On a hit, the target takes {@damage 1d4} piercing damage.",
+				"{@b Scaling:} The damage increases by {@damage 1d4} at levels 5 ({@damage 2d4}), 11 ({@damage 3d4}), and 17 ({@damage 4d4})."
 			]
 		},
 		{
@@ -33191,6 +33317,7 @@
 			"entries": [
 				"{@variantrule Property|GW2}",
 				"When you use a {@variantrule Skill|GW2|Skill} with this {@variantrule Property|GW2}, you must use your {@variantrule Action|XPHB} to channel it every round until the channel is completed.",
+				"While channeling, you cannot take {@variantrule Bonus Action|XPHB|Bonus Actions} or {@variantrule Reaction|XPHB|Reactions}.",
 				"The channel duration is specified in the skill’s description and is measured in {@variantrule Initiative|XPHB}. If you reach the end of the round and have not yet completed the channel, continue counting {@variantrule Initiative|XPHB} in the round until you hit 0 and then start at the top of the next round.",
 				"If you take damage while channeling, you must succeed on a {@status Concentration|XPHB} {@variantrule Saving Throw|XPHB} to maintain the channel. On a failed save, the channel ends immediately.",
 				"You can end the channel at any time (no {@variantrule Action|XPHB} required)."
@@ -33823,7 +33950,7 @@
 			"entries": [
 				"{@variantrule Effect|GW2}",
 				"While you are under the effect of this {@variantrule Effect|GW2}, you gain the effects of the {@condition Invisible|XPHB} condition.",
-				"The effect ends if you deal damage or force a creature to make a saving throw.",
+				"The effect ends if you deal damage or force a creature to make a saving throw. If it ends this way, you gain 1 round of {@variantrule Revealed|GW2}.",
 				"Stacks duration (max 1 minute)."
 			]
 		},
@@ -33887,6 +34014,14 @@
 				"The damage gets doubled if the creature did not move on its last turn.",
 				"Stacks intensity.",
 				"This {@variantrule Condition|GW2} get converted into 3 stacks of {@variantrule Might|GW2} for 2 rounds."
+			]
+		},
+		{
+			"name": "Unblockable",
+			"source": "GW2",
+			"entries": [
+				"{@variantrule Property|GW2}",
+				"When you use a skill with this {@variantrule Property|GW2}, the attack roll ignores any temporary AC bonuses."
 			]
 		},
 		{

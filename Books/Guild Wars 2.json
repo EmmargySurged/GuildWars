@@ -23737,23 +23737,27 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"WS",
+				"WAR",
+				"LONG",
+				"PI",
+				"BACT"
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Longbow"
+					"other": "Warrior wielding a Longbow"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ¼",
-				"{@b Recharge:} 5",
-				"{@b Range:} ",
-				"{@b Target:} Cone",
-				"{@b Duration:} ",
-				"{@b Properties:} Inflicts Burning",
+				"{@b Casting Time:} Bonus Action",
+				"{@b Recharge:} {@chance 75|5+}",
+				"{@b Range:} 120 feet",
+				"{@b Target:} Up to 5 creatures per arrow",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Piercing|GW2}",
 				"{@b Description:} Fire a spread of three flaming arrows, burning foes.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Fire three arrows in a 120-foot cone. Make a ranged weapon attack against three different targets within the cone. On a hit, a target takes {@damage 1d4} fire damage and is inflicted with 1 stack of {@variantrule Burning|GW2} for 1 round, taking {@damage 1d12} damage.",
+				"{@b Scaling:} The damage each increases by {@damage 1d4} and {@damage 1d12} respectively when you reach levels 5 ({@damage 2d4} & {@damage 2d12}), 11 ({@damage 3d4} & {@damage 3d12}), and 17 ({@damage 4d4} & {@damage 4d12})."
 			]
 		},
 		{
@@ -24311,23 +24315,26 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"WS",
+				"WAR",
+				"GRE",
+				"CHAN"
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Greatsword"
+					"other": "Warrior wielding a Greatsword"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} 3½",
-				"{@b Recharge:} 8",
-				"{@b Range:} ",
-				"{@b Target:} Foe/Area",
-				"{@b Duration:} ",
-				"{@b Properties:} Channel, Multi-strike",
+				"{@b Casting Time:} {@variantrule Channel|Gw2}: 35",
+				"{@b Recharge:} {@chance 55|10+}",
+				"{@b Range:} 5 feet",
+				"{@b Target:} Up to 3 creatures",
+				"{@b Duration:} Instantaneous",
 				"{@b Description:} Repeatedly strike multiple foes. The last strike does extra damage.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} At the beginning of the {@variantrule Channel|Gw2} and then every 5 {@variantrule Initiative|XPHB} therafter, choose up to 3 creatures within range that are within 5 feet of each other. Make a melee weapon attack against each target. On a hit, a target takes {@damage 1d8} slashing damage. The last attack deals an additional {@damage 2d8} slashing damage on a hit.",
+				"You cannot move while channeling this skill.",
+				"{@b Scaling:} The damage each increases by {@damage 1d8} and {@damage 2d8} respectively when you reach levels 5 ({@damage 2d8} & {@damage 4d8}), 11 ({@damage 3d8} & {@damage 6d8}), and 17 ({@damage 4d8} & {@damage 8d8})."
 			]
 		},
 		{
@@ -24555,23 +24562,28 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"WS",
+				"ELE",
+				"ACT",
+				"STA",
+				"WATT",
+				"CIB"
 			],
 			"prerequisite": [
 				{
-					"other": "Staff (Water Attunement)"
+					"other": "Elementalist in Water Attunement wielding a Staff"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ¾",
-				"{@b Recharge:} 6",
-				"{@b Range:} ",
-				"{@b Target:} Ground",
-				"{@b Duration:} ",
-				"{@b Properties:} Inflicts Vulnerability",
+				"{@b Casting Time:} Action",
+				"{@b Recharge:} {@chance 55|10+}",
+				"{@b Range:} 120 feet",
+				"{@b Target:} 15-foot-radius sphere",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Combo Finisher|GW2}: Blast, Water Attunement",
 				"{@b Description:} Drop a giant ice spike on foes to make them vulnerable.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Choose a point you can see within range. Each hostile creature in a 15-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a creature takes {@damage 2d8} cold damage and is inflicted with 5 stacks of {@variantrule Vulnerability|GW2} for 2 round. On a successful save, a creature takes half damage only.",
+				"{@b Scaling:} The damage increases by {@damage 2d8} when you reach levels 5 ({@damage 4d8}), 11 ({@damage 6d8}), and 17 ({@damage 8d8})."
 			]
 		},
 		{
@@ -26127,23 +26139,28 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"WS",
+				"ELE",
+				"ACT",
+				"WATT",
+				"TRID",
+				"BACT"
 			],
 			"prerequisite": [
 				{
-					"other": "Trident (Water Attunement)"
+					"other": "Elementalist in Water Attunement wielding a Trident underwater"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ½",
-				"{@b Recharge:} 8",
-				"{@b Range:} ",
-				"{@b Target:} Foe/Area",
-				"{@b Duration:} ",
-				"{@b Properties:} Explosive, Water",
+				"{@b Casting Time:} Action or Bonus Action",
+				"{@b Recharge:} {@chance 55|10+}",
+				"{@b Range:} 120 feet",
+				"{@b Target:} 1 creature/10-foot-radius sphere",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} Water Attunement",
 				"{@b Description:} Shoot a slow-moving orb that detonates upon impact.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Choose a creature you can see within range. Make a ranged spell attack with disadvantage against the target. On a hit, the target takes {@damage 1d10} cold damage. Hit or miss, the orb detonates, and each hostile creature within 10 feet of the target must make a Constitution saving throw. On a failed save, a creature takes {@damage 2d10} cold damage.",
+				"{@b Scaling:} The damage each increases by {@damage 1d10} when you reach levels 5 ({@damage 2d10} & {@damage 3d10}), 11 ({@damage 3d10} & {@damage 4d10}), and 17 ({@damage 4d10} & {@damage 5d10})."
 			]
 		},
 		{

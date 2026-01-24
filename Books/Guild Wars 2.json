@@ -17908,7 +17908,7 @@
 				"US",
 				"DEC",
 				"BACT",
-				"ACT"
+				"CFD"
 			],
 			"prerequisite": [
 				{
@@ -17916,15 +17916,16 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Bonus Action or Action",
+				"{@b Casting Time:} Bonus Action",
 				"{@b Recharge:} {@chance 15|18+}",
-				"{@b Range:} ",
-				"{@b Target:} Area",
-				"{@b Duration:} ",
-				"{@b Properties:} Deception, Heal, Stealth",
-				"{@b Description:} Deception. Create a pulsing refuge at the target area that heals allies and cloaks them in stealth.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Range:} 60 feet",
+				"{@b Target:} 10-foot-radius sphere",
+				"{@b Duration:} 1 round",
+				"{@b Properties:} {@variantrule Combo Field|GW2}: Dark, Deception",
+				"{@b Description:} Create a pulsing refuge at the target area that heals allies and cloaks them in stealth.",
+				"{@b Effect:} Choose a point you can see within range. You create a 10-foot-radius sphere centered on that point that lasts for the duration. Each creature of your choice in that sphere gains 1 round of {@variantrule Stealth|GW2} and regains hit points equal to {@dice 2d4} + your Class modifier. A creature also gains these benefits if it enters the sphere or ends its turn there. A creature gains these benefits only once per turn.",
+				"Creatures of your choice that start their turn in the sphere automatically succeed on their {@variantrule Death Saving Throw|GW2} if they are at 0 hit points.",
+				"{@b Scaling:} The healing increases by {@dice 2d4} at levels 5 ({@dice 4d4}), 11 ({@dice 6d4}), and 17 ({@dice 8d4})."
 			]
 		},
 		{
@@ -17936,7 +17937,8 @@
 				"US",
 				"DEC",
 				"BACT",
-				"SEQ"
+				"SEQ",
+				"STU"
 			],
 			"prerequisite": [
 				{
@@ -17946,13 +17948,13 @@
 			"entries": [
 				"{@b Casting Time:} Bonus Action",
 				"{@b Recharge:} {@chance 15|18+}",
-				"{@b Range:} ",
-				"{@b Target:} Area",
-				"{@b Duration:} ",
-				"{@b Properties:} Deception, Shadowstep, Sequence",
-				"{@b Description:} Deception. Shadowstep to target area. Becomes Shadow Return, which returns you to your starting area and cures three conditions.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Range:} 60 feet",
+				"{@b Target:} Point",
+				"{@b Duration:} 3 rounds",
+				"{@b Properties:} Deception, {@variantrule Sequence|GW2}: {@optfeature Shadow Return|GW2} after using {@optfeature Shadowstep|GW2}, {@variantrule Stun Break|GW2}",
+				"{@b Description:} Shadowstep to target area. Becomes Shadow Return, which returns you to your starting area and cures three conditions.",
+				"{@b Effect:} Choose an unoccupied space you can see within range and teleport there. For the duration you can use {@optfeature Shadow Return|GW2}.",
+				"{@b Scaling:} The range increases by 30 feet at levels 5 (90 feet), 11 (120 feet), and 17 (150 feet)."
 			]
 		},
 		{
@@ -17964,23 +17966,24 @@
 				"US",
 				"DEC",
 				"BACT",
-				"SEQ"
+				"SEQ",
+				"STU"
 			],
 			"prerequisite": [
 				{
-					"other": "Thief. Must follow Shadowstep."
+					"other": "Thief. Must follow {@optfeature Shadowstep|GW2}."
 				}
 			],
 			"entries": [
 				"{@b Casting Time:} Bonus Action",
 				"{@b Recharge:} None",
-				"{@b Range:} ",
+				"{@b Range:} 60 feet",
 				"{@b Target:} Self",
-				"{@b Duration:} ",
-				"{@b Properties:} Deception, Shadowstep, Cure Conditions, Sequence",
-				"{@b Description:} Deception. Return to your starting location, and cure three conditions.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} Deception, Sequence, {@variantrule Stun Break|GW2}",
+				"{@b Description:} Return to your starting location, and cure three conditions.",
+				"{@b Effect:} Return to the space you occupied when you used {@optfeature Shadowstep|GW2}, ending the latest three {@variantrule Condition|GW2|Conditions} affecting you. If you are out of range, or if that space is occupied, you teleport to the nearest unoccupied space to that location.",
+				"{@b Scaling:} The range increases by 30 feet at levels 5 (90 feet), 11 (120 feet), and 17 (150 feet)."
 			]
 		},
 		{
@@ -18132,7 +18135,8 @@
 				"US",
 				"PRE",
 				"BACT",
-				"ACT"
+				"ACT",
+				"SEQ"
 			],
 			"prerequisite": [
 				{
@@ -18140,15 +18144,15 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Bonus Action or Action",
+				"{@b Casting Time:} Action or Bonus Action",
 				"{@b Recharge:} {@chance 5|20}",
-				"{@b Range:} ",
+				"{@b Range:} 200 feet",
 				"{@b Target:} Self",
-				"{@b Duration:} ",
-				"{@b Properties:} Preparation, Sequence",
-				"{@b Description:} Preparation. Mark your current area with shadow magic, which can be detonated.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Duration:} 1 minute",
+				"{@b Properties:} Preparation, {@variantrule Sequence|GW2}: {@optfeature Shadow Portal|GW2} after using {@optfeature Prepare Shadow Portal|GW2}",
+				"{@b Description:} Mark your current area with shadow magic, which can be detonated.",
+				"{@b Effect:} Place a marker at your current location that lasts for the duration. 1 round after you placed it, you can use {@optfeature Shadow Portal|GW2} while the marker is active.",
+				"{@b Scaling:} The range increases by 150 feet at levels 5 (350 feet), 11 (500 feet), and 17 (650 feet)."
 			]
 		},
 		{
@@ -18160,23 +18164,25 @@
 				"US",
 				"PRE",
 				"BACT",
-				"SEQ"
+				"SEQ",
+				"UNB"
 			],
 			"prerequisite": [
 				{
-					"other": "Thief. Must follow Prepare Shadow Portal."
+					"other": "Thief. Must follow {@optfeature Prepare Shadow Portal|GW2}."
 				}
 			],
 			"entries": [
 				"{@b Casting Time:} Bonus Action",
 				"{@b Recharge:} None",
-				"{@b Range:} ",
-				"{@b Target:} Area",
-				"{@b Duration:} ",
-				"{@b Properties:} Preparation, Portal, Sequence",
+				"{@b Range:} 200 feet",
+				"{@b Target:} Self",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} Preparation, Sequence, {@variantrule Unblockable|GW2}",
 				"{@b Description:} Unleash shadow magic at your prepared location, creating a one-way portal for you and your allies. Allies traveling through the portal gain stealth. Weakens foes around the portal's exit.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Detonate the shadow magic infused at the marker's location within range. You create a one-way portal from your current location to the marker's location. The portal remains open for 1 round or until it has been used 10 times. It can be used by creatures of your choice. Creatures that travel through the portal gain {@variantrule Stealth|GW2} for 1 round.",
+				"Each time a creature travels through the portal each hostile creature within 10 feet of the exit portal must succeed on a Constitution saving throw or be infected with {@variantrule Weakness|GW2} for 1 round.",
+				"{@b Scaling:} The range increases by 150 feet at levels 5 (350 feet), 11 (500 feet), and 17 (650 feet)."
 			]
 		},
 		{

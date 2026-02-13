@@ -6193,6 +6193,184 @@
 			"damageTags": [
 				"F"
 			]
+		},
+		{
+			"name": "Knut Whitebear",
+			"source": "GW2",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"norn"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"{@item +3 plate armor|xdmg}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "42d8 + 336",
+				"average": 525
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 26,
+			"dex": 16,
+			"con": 26,
+			"int": 14,
+			"wis": 18,
+			"cha": 20,
+			"passive": 26,
+			"languages": [
+				"Common",
+				"Giant",
+				"Charr"
+			],
+			"cr": "20",
+			"gear": [
+				"club|xphb"
+			],
+			"trait": [
+				{
+					"name": "Relentless Endurance",
+					"entries": [
+						"When Knut Whitebear is reduced to 0 Hit Points but not killed outright, he drops to 100 Hit Point instead. He regains the use of this feature when he finishes a Long Rest."
+					]
+				},
+				{
+					"name": "Inured to the Elements",
+					"entries": [
+						"Knut Whitebear has {@variantrule Advantage|XPHB} on Constitution saving throws made to resist the effects of extreme cold or extreme heat."
+					]
+				},
+				{
+					"name": "{@variantrule Defiance Bar|GW2}",
+					"entries": [
+						"Starting Value: 2000",
+						"Recovery: 200",
+						"Break Effect: {@condition Paralyzed} and {@variantrule Defiance Bar|GW2} locked until the end of his next turn; then he regains 1000."
+					]
+				},
+				{
+					"name": "Go for the Weak Spot!",
+					"entries": [
+						"When Knut Whitebear hits a creature with an attack, any attack against the same creature during that turn has {@variantrule Advantage|XPHB} and deals an additional {@damage 1d8} damage. This effect can stack."
+					]
+				}
+			],
+			"treasure": [
+				"individual"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Knut Whitebear is an elder of the norn, husband of Gaerta Whitebear, and father of Skarti Knutsson and Sigfast. The Great Lodge is his steading, and as the Master of the Lodge he is a defender of Hoelbrak, the settlement that has been erected around the lodge. The Great Lodge was founded by Knut's grandfather Asgeir Dragonrender, the hero who had severed the Elder Dragon Jormag's fang and led the norn south during the norn exodus. Some might call Knut a leader of the norn, although in truth the concept of 'leadership' in norn society is poorly defined."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Knut_Whitebear.jpg"
+						},
+						"title": "Knut Whitebear",
+						"credit": "ArenaNet",
+						"altText": "Knut Whitebear"
+					}
+				]
+			},
+			"skill": {
+				"athletics": "+20",
+				"intimidation": "+17",
+				"acrobatics": "+9",
+				"animal handling": "+10",
+				"insight": "+10",
+				"perception": "+16",
+				"persuasion": "+11",
+				"stealth": "+9",
+				"survival": "+16"
+			},
+			"save": {
+				"str": "+14",
+				"con": "+14",
+				"wis": "+10"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Knut Whitebear makes four Claymore or Hunting Bow attacks in any combination."
+					]
+				},
+				{
+					"name": "+3 Claymore",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 5 ft., one target. {@h}15 ({@damage 4d6 + 11}) slashing damage."
+					]
+				},
+				{
+					"name": "+3 Hunting Bow",
+					"entries": [
+						"{@atk rw} {@hit 9} to hit, range 150/600 ft., one target. {@h}10 ({@damage 2d8 + 6}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"bonus": [
+				{
+					"name": "Charge",
+					"entries": [
+						"Knut Whitebear moves up to his movement with provoking {@action Opportunity Attack|XPHB|Oppertunity Attacks}."
+					]
+				},
+				{
+					"name": "Capture",
+					"entries": [
+						"{@actSave Dexterity} {@dc 22}, one creature Knut Whitebear can see within 60 feet. {@i Failure} 16 ({@damage 4d6}) Bludgeoning Damage, and the creature is {@condition Restrained|XPHB}. A {@condition Restrained|XPHB} can use an {@variantrule Action|XPHB} to re-attempt the safe, ending the condition on a success."
+					]
+				}
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"resist": [
+				"cold",
+				"fire"
+			],
+			"group": [
+				"Norn"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Knut_Whitebear_Token.png"
+			},
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			]
 		}
 	],
 	"feat": [],

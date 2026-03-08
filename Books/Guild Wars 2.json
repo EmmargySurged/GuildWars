@@ -232,7 +232,9 @@
 			"CHARR": "Charr",
 			"HUM": "Human",
 			"NOR": "Norn",
-			"SYL": "Sylvari"
+			"SYL": "Sylvari",
+			"DR:TB": "Dragon; Transformation Boon",
+			"DR:TF": "Dragon; Transformation Flaw"
 		}
 	},
 	"adventure": [
@@ -15464,6 +15466,425 @@
 		}
 	],
 	"optionalfeature": [
+		{
+			"name": "Draconic Form",
+			"source": "GW2",
+			"page": "",
+			"featureType": [
+				"DR:TB"
+			],
+			"prerequisite": [
+				{
+					"other": "Stage 1 of the {@charoption Dragon Touched|GW2|Dragon Touched Transformation}"
+				}
+			],
+			"entries": [
+				"Your creature type becomes Dragon in addition to any other creature types you have.",
+				"Choose on of the following Dragon Types: Black, Blue, Brass, Bronze, Copper, Gold, Green, Red, Silver, or White. Each Dragon Type grants you a specific benfist as shown in the table below.",
+				"Also, gain {@sense Darkvision} with a range of 60 feet. If you already have {@sense Darkvision}, its range increases by 60 feet.",
+				"Furthermore, when you use your {@variantrule Unarmed Strike|XPHB} and deal damage, you can choose to strike with your claws. You deal Slashing damage equal to {@damage 1d4} plus your Strength modifier instead of the normal damage of an {@variantrule Unarmed Strike|XPHB}.",
+				"Lastly, you can use a {@action Magic|XPHB} Action to produce an exhalation of magical energy in either a 15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone} or a 30-foot {@variantrule Line [Area of Effect]|XPHB|Line} that is 5 feet wide (depending on your Dragon Type choice). Each creature in that area must make a Dexterity or Constitution saving throw (depending on your Dragon Type choice) (DC 8 plus your Constitution modifier and {@variantrule Proficiency|XPHB|Proficiency Bonus}). On a failed save, a creature takes damage determined by your Dragon Type choice. On a successful save, a creature takes half as much damage. You can use this Breath Weapon a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a Long Rest.",
+				{
+					"type": "table",
+					"caption": "Dragon Type Benefits",
+					"colLabels": [
+						"Dragon Type",
+						"Breath Weapon Shape",
+						"Breath Weapon Save",
+						"Breath Weapon Damage"
+					],
+					"rows": [
+						[
+							"Black",
+							"30-foot {@variantrule Line [Area of Effect]|XPHB|Line} (5 feet wide)",
+							"Dexterity",
+							"{@damage 3d8} Acid"
+						],
+						[
+							"Blue",
+							"30-foot {@variantrule Line [Area of Effect]|XPHB|Line} (5 feet wide)",
+							"Dexterity",
+							"{@damage 4d6} Lightning"
+						],
+						[
+							"Brass",
+							"30-foot {@variantrule Line [Area of Effect]|XPHB|Line} (5 feet wide)",
+							"Dexterity",
+							"{@damage 4d6} Fire"
+						],
+						[
+							"Bronze",
+							"30-foot {@variantrule Line [Area of Effect]|XPHB|Line} (5 feet wide)",
+							"Dexterity",
+							"{@damage 2d10} Lightning"
+						],
+						[
+							"Copper",
+							"30-foot {@variantrule Line [Area of Effect]|XPHB|Line} (5 feet wide)",
+							"Dexterity",
+							"{@damage 3d8} Acid"
+						],
+						[
+							"Gold",
+							"15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}",
+							"Dexterity",
+							"{@damage 2d10} Fire"
+						],
+						[
+							"Green",
+							"15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}",
+							"Constitution",
+							"{@damage 4d6} Poison"
+						],
+						[
+							"Red",
+							"15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}",
+							"Dexterity",
+							"{@damage 4d6} Fire"
+						],
+						[
+							"Silver",
+							"15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}",
+							"Constitution",
+							"{@damage 3d8} Cold"
+						],
+						[
+							"White",
+							"15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}",
+							"Constitution",
+							"{@damage 3d8} Cold"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Draconic Flight",
+			"source": "GW2",
+			"page": "",
+			"featureType": [
+				"DR:TB"
+			],
+			"prerequisite": [
+				{
+					"other": "Stage 2 of the {@charoption Dragon Touched|GW2|Dragon Touched Transformation}"
+				}
+			],
+			"entries": [
+				"You grow a pair of wings and gain the ability to fly. You gain a {@variantrule Fly Speed|XPHB} equal to your {@variantrule Speed|XPHB}."
+			]
+		},
+		{
+			"name": "Draconic Sight",
+			"source": "GW2",
+			"page": "",
+			"featureType": [
+				"DR:TB"
+			],
+			"prerequisite": [
+				{
+					"other": "Stage 3 of the {@charoption Dragon Touched|GW2|Dragon Touched Transformation}"
+				}
+			],
+			"entries": [
+				"Your eyes become dragon-like, granting you enhanced vision. You gain {@sense Blindsight} with a range of 60 feet. If you already have {@sense Blindsight}, its range increases by 60 feet."
+			]
+		},
+		{
+			"name": "Draconic Speed",
+			"source": "GW2",
+			"page": "",
+			"featureType": [
+				"DR:TB"
+			],
+			"prerequisite": [
+				{
+					"other": "Stage 4 of the {@charoption Dragon Touched|GW2|Dragon Touched Transformation}"
+				}
+			],
+			"entries": [
+				"Your wings grow stronger. Your {@variantrule Fly Speed|XPHB} equals twice your {@variantrule Speed|XPHB}."
+			]
+		},
+		{
+			"name": "Draconic Magic: Stage 1",
+			"source": "GW2",
+			"page": "",
+			"featureType": [
+				"DR:TB"
+			],
+			"prerequisite": [
+				{
+					"other": "Stage 1 of the {@charoption Dragon Touched|GW2|Dragon Touched Transformation}"
+				}
+			],
+			"entries": [
+				"You have manifested a fraction of the magical power of dragons. You have one extra spell slot to cast the spells granted by your Dragon Touched transformation. The spell slot's level is equal to the highest Dragon Magic Boon stage you have achieved plus the number of Dragon Magic Boons you have taken. You gain an additional spell slot at this level if you have taken at least three Dragon Magic Boons. You regain any expended slots gained by this feature when you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}.",
+				"You learn one cantrip based on your Dragon Type choice as shown in the table below. Choose a level 1 spell from the options below based on your Dragon Type choice as shown in the table below. You always have that spell prepared. Whenever you gain a new level, you can replace the spell you chose for this boon with another spell from the same list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this boon's spells (choose when you select this boon).",
+				{
+					"type": "table",
+					"caption": "Dragon Type Spell Options",
+					"colLabels": [
+						"Dragon Type",
+						"Cantrip",
+						"Level 1 Spell Choices"
+					],
+					"rows": [
+						[
+							"Black",
+							"{@spell Acid Burn|guidedrakkenheim}",
+							"{@spell Acrid Orb|guidedrakkenheim} or {@spell Captivate Undead|crookedmoon24} or {@spell Cause Fear|XGE} or {@spell Chromatic Orb|XPHB} (acid damage only) or {@spell Detect Magic|XPHB} or {@spell Tasha's Caustic Brew|TCE}"
+						],
+						[
+							"Blue",
+							"{@spell Mage Hand|XPHB}",
+							"{@spell Cause Fear|XGE} or {@spell Chromatic Orb|XPHB} (lightning damage only) or {@spell Detect Magic|XPHB} or {@spell Thunderwave|XPHB} or {@spell Witch Bolt|XPHB}"
+						],
+						[
+							"Brass",
+							"{@spell Minor Illusion|XPHB}",
+							"{@spell Bane|XPHB} or {@spell Burning Hands|XPHB} or {@spell Chromatic Orb|XPHB} (fire damage only) or {@spell Detect Magic|XPHB} or {@spell Hellish Rebuke|XPHB} or {@spell Searing Smite|XPHB} or {@spell Speak with Animals|XPHB}"
+						],
+						[
+							"Bronze",
+							"{@spell Thaumaturgy|XPHB}",
+							"{@spell Bane|XPHB} or {@spell Chromatic Orb|XPHB} (lightning damage only) or {@spell Detect Magic|XPHB} or {@spell Guiding Bolt|XPHB} or {@spell Witch Bolt|XPHB} or {@spell Speak with Animals|XPHB}"
+						],
+						[
+							"Copper",
+							"{@spell Minor Illusion|XPHB}",
+							"{@spell Acrid Orb|guidedrakkenheim} or {@spell Bane|XPHB} or {@spell Chromatic Orb|XPHB} (acid damage only) or {@spell Detect Magic|XPHB} or {@spell Silent Image|XPHB} or {@spell Tasha's Caustic Brew|TCE}"
+						],
+						[
+							"Gold",
+							"{@spell Produce Flame|XPHB}",
+							"{@spell Bane|XPHB} or {@spell Burning Hands|XPHB} or {@spell Chromatic Orb|XPHB} (fire damage only) or {@spell Detect Magic|XPHB} or {@spell Guiding Bolt|XPHB} or {@spell Hellish Rebuke|XPHB} or {@spell Searing Smite|XPHB}"
+						],
+						[
+							"Green",
+							"{@spell Poison Spray|XPHB}",
+							"{@spell Cause Fear|XGE} or {@spell Charm Person|XPHB} or {@spell Chromatic Orb|XPHB} (poison damage only) or {@spell Detect Magic|XPHB} or {@spell Envenom|guidedrakkenheim} or {@spell Ray of Sickness|XPHB} or {@spell Toxic Shield|guidedrakkenheim}"
+						],
+						[
+							"Red",
+							"{@spell Fire Bolt|XPHB}",
+							"{@spell Cause Fear|XGE} or {@spell Burning Hands|XPHB} or {@spell Chromatic Orb|XPHB} (fire damage only) or {@spell Command|XPHB} or {@spell Detect Magic|XPHB} or {@spell Hellish Rebuke|XPHB} or {@spell Searing Smite|XPHB}"
+						],
+						[
+							"Silver",
+							"{@spell Ray of Frost|XPHB}",
+							"{@spell Armor of Agathys|XPHB} or {@spell Bane|XPHB} or {@spell Chromatic Orb|XPHB} (cold damage only) or {@spell Detect Magic|XPHB} or {@spell Frost Fingers|idrotf} or {@spell Ice Knife|XPHB} or {@spell Tasha's Hideous Laughter|XPHB}"
+						],
+						[
+							"White",
+							"{@spell Frostbite|XGE}",
+							"{@spell Armor of Agathys|XPHB} or {@spell Cause Fear|XGE} or {@spell Chromatic Orb|XPHB} (cold damage only) or {@spell Detect Magic|XPHB} or {@spell Frost Fingers|idrotf} or {@spell Ice Knife|XPHB}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Draconic Magic: Stage 2",
+			"source": "GW2",
+			"page": "",
+			"featureType": [
+				"DR:TB"
+			],
+			"prerequisite": [
+				{
+					"other": "Stage 2 of the {@charoption Dragon Touched|GW2|Dragon Touched Transformation}"
+				}
+			],
+			"entries": [
+				"You have manifested a greater part of the magical power of dragons. If you have not taken {@optfeature Draconic Magic: Stage 1|GW2} Boon, you have one extra spell slot to cast the spells granted by your Dragon Touched transformation. The spell slot's level is equal to the highest Dragon Magic Boon stage you have achieved plus the number of Dragon Magic Boons you have taken. You gain an additional spell slot at this level if you have taken at least three Dragon Magic Boons. You regain any expended slots gained by this feature when you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}.",
+				"Choose a level 2 spell from the options below based on your Dragon Type choice as shown in the table below. You always have that spell prepared. Whenever you gain a new level, you can replace the spell you chose for this boon with another spell from the same list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this boon's spells (choose when you select this boon).",
+				{
+					"type": "table",
+					"caption": "Dragon Type Spell Options",
+					"colLabels": [
+						"Dragon Type",
+						"Level 2 Spell Choices"
+					],
+					"rows": [
+						[
+							"Black",
+							"{@spell Caustic Grip|guidedrakkenheim} or {@spell Chorus of the Lost|crookedmoon24} or {@spell Detect Thoughts|XPHB} or {@spell Dragon's Breath|XPHB} (acid damage only) or {@spell Melf's Acid Arrow|XPHB}"
+						],
+						[
+							"Blue",
+							"{@spell Chorus of the Lost|crookedmoon24} or {@spell Detect Thoughts|XPHB} or {@spell Dragon's Breath|XPHB} (lightning damage only) or {@spell Invisibility|XPHB} or {@spell Rageful Nimbus|obojimatallgrass} or {@spell Shatter|XPHB}"
+						],
+						[
+							"Brass",
+							"{@spell Aganazzar's Scorcher|XGE} or {@spell Calm Emotions|XPHB} or {@spell Detect Thoughts|XPHB} or {@spell Dragon's Breath|XPHB} (fire damage only) or {@spell Ember Belly|obojimatallgrass} or {@spell Flame Blade|XPHB} or {@spell Flaming Sphere|XPHB} or {@spell Heat Metal|XPHB} or {@spell Scorching Ray|XPHB}"
+						],
+						[
+							"Bronze",
+							"{@spell Calm Emotions|XPHB} or {@spell Detect Thoughts|XPHB} or {@spell Dragon's Breath|XPHB} (lightning damage only) or {@spell Rageful Nimbus|obojimatallgrass} or {@spell Shatter|XPHB}"
+						],
+						[
+							"Copper",
+							"{@spell Caustic Grip|guidedrakkenheim} or {@spell Calm Emotions|XPHB} or {@spell Detect Thoughts|XPHB} or {@spell Dragon's Breath|XPHB} (acid damage only) or {@spell Melf's Acid Arrow|XPHB} or {@spell Mind Spike|XPHB}"
+						],
+						[
+							"Gold",
+							"{@spell Aganazzar's Scorcher|XGE} or {@spell Calm Emotions|XPHB} or {@spell Detect Thoughts|XPHB} or {@spell Dragon's Breath|XPHB} (fire damage only) or {@spell Ember Belly|obojimatallgrass} or {@spell Flame Blade|XPHB} or {@spell Flaming Sphere|XPHB} or {@spell Heat Metal|XPHB} or {@spell Scorching Ray|XPHB} or {@spell Zone of Truth|XPHB}"
+						],
+						[
+							"Green",
+							"{@spell Biohazard|guidedrakkenheim} or {@spell Chorus of the Lost|crookedmoon24} or {@spell Detect Thoughts|XPHB} or {@spell Dragon's Breath|XPHB} (poison damage only) or {@spell Mind Spike|XPHB}"
+						],
+						[
+							"Red",
+							"{@spell Aganazzar's Scorcher|XGE} or {@spell Chorus of the Lost|crookedmoon24} or {@spell Detect Thoughts|XPHB} or {@spell Dragon's Breath|XPHB} (fire damage only) or {@spell Ember Belly|obojimatallgrass} or {@spell Flame Blade|XPHB} or {@spell Flaming Sphere|XPHB} or {@spell Heat Metal|XPHB} or {@spell Scorching Ray|XPHB}"
+						],
+						[
+							"Silver",
+							"{@spell Calm Emotions|XPHB} or {@spell Detect Thoughts|XPHB} or {@spell Dragon's Breath|XPHB} (cold damage only) or {@spell Rime's Binding Ice|FTD} or {@spell Snilloc's Snowball Swarm|XGE} or {@spell Zone of Truth|XPHB}"
+						],
+						[
+							"White",
+							"{@spell Chorus of the Lost|crookedmoon24} or {@spell Detect Thoughts|XPHB} or {@spell Dragon's Breath|XPHB} (cold damage only) or {@spell Rime's Binding Ice|FTD} or {@spell Snilloc's Snowball Swarm|XGE}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Draconic Magic: Stage 3",
+			"source": "GW2",
+			"page": "",
+			"featureType": [
+				"DR:TB"
+			],
+			"prerequisite": [
+				{
+					"other": "Stage 3 of the {@charoption Dragon Touched|GW2|Dragon Touched Transformation}"
+				}
+			],
+			"entries": [
+				"You have manifested a large part of the magical power of dragons. If you have not taken {@optfeature Draconic Magic: Stage 1|GW2} or {@optfeature Draconic Magic: Stage 2|GW2} Boon, you have one extra spell slot to cast the spells granted by your Dragon Touched transformation. The spell slot's level is equal to the highest Dragon Magic Boon stage you have achieved plus the number of Dragon Magic Boons you have taken. You gain an additional spell slot at this level if you have taken at least three Dragon Magic Boons. You regain any expended slots gained by this feature when you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}.",
+				"Choose a level 3 spell from the options below based on your Dragon Type choice as shown in the table below. You always have that spell prepared. Whenever you gain a new level, you can replace the spell you chose for this boon with another spell from the same list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this boon's spells (choose when you select this boon).",
+				{
+					"type": "table",
+					"caption": "Dragon Type Spell Options",
+					"colLabels": [
+						"Dragon Type",
+						"Level 3 Spell Choices"
+					],
+					"rows": [
+						[
+							"Black",
+							"{@spell Corrosive Blast|guidedrakkenheim} or {@spell Elemental Weapon|XPHB} (acid damage only) or {@spell Fear|XPHB} or {@spell Fetid Blade|guidedrakkenheim} or {@spell Hunger of Hadar|XPHB} or {@spell Speak with Dead|XPHB} or {@spell Tongues|XPHB}"
+						],
+						[
+							"Blue",
+							"{@spell Call Lightning|XPHB} or {@spell Elemental Weapon|XPHB} (lightning damage only) or {@spell Fear|XPHB} or {@spell Lightning Arrow|XPHB} or {@spell Lightning Arrow|XPHB} or {@spell Sending|XPHB} or {@spell Tongues|XPHB}"
+						],
+						[
+							"Brass",
+							"{@spell Ashardalon's Stride|FTD} or {@spell Dispel Magic|XPHB} or {@spell Elemental Weapon|XPHB} (fire damage only) or {@spell Fireball|XPHB} or {@spell Flame Arrows|XGE} or {@spell Melf's Minute Meteors|XGE} or {@spell Tongues|XPHB}"
+						],
+						[
+							"Bronze",
+							"{@spell Call Lightning|XPHB} or {@spell Dispel Magic|XPHB} or {@spell Elemental Weapon|XPHB} (lightning damage only) or {@spell Lightning Arrow|XPHB} or {@spell Lightning Arrow|XPHB} or {@spell Tongues|XPHB} or {@spell Water Breathing|XPHB}"
+						],
+						[
+							"Copper",
+							"{@spell Corrosive Blast|guidedrakkenheim} or {@spell Dispel Magic|XPHB} or {@spell Elemental Weapon|XPHB} (acid damage only) or {@spell Fetid Blade|guidedrakkenheim} or {@spell Hunger of Hadar|XPHB} or {@spell Major Image|XPHB} or {@spell Tongues|XPHB}"
+						],
+						[
+							"Gold",
+							"{@spell Ashardalon's Stride|FTD} or {@spell Dispel Magic|XPHB} or {@spell Elemental Weapon|XPHB} (fire damage only) or {@spell Fireball|XPHB} or {@spell Flame Arrows|XGE} or {@spell Melf's Minute Meteors|XGE} or {@spell Tongues|XPHB}"
+						],
+						[
+							"Green",
+							"{@spell Elemental Weapon|XPHB} (poison damage only) or {@spell Fear|XPHB} or {@spell Fetid Blade|guidedrakkenheim} or {@spell Tongues|XPHB} or {@spell Tranquilizing Toxin|guidedrakkenheim}"
+						],
+						[
+							"Red",
+							"{@spell Ashardalon's Stride|FTD} or {@spell Elemental Weapon|XPHB} (fire damage only) or {@spell Fear|XPHB} or {@spell Fireball|XPHB} or {@spell Flame Arrows|XGE} or {@spell Melf's Minute Meteors|XGE} or {@spell Tongues|XPHB}"
+						],
+						[
+							"Silver",
+							"{@spell Bitter Wind|bookofebontides} or {@spell Dispel Magic|XPHB} or {@spell Elemental Weapon|XPHB} (cold damage only) or {@spell Hunger of Hadar|XPHB} or {@spell Tongues|XPHB}"
+						],
+						[
+							"White",
+							"{@spell Bitter Wind|bookofebontides} or {@spell Elemental Weapon|XPHB} (cold damage only) or {@spell Fear|XPHB} or {@spell Hunger of Hadar|XPHB} or {@spell Tongues|XPHB}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Draconic Magic: Stage 4",
+			"source": "GW2",
+			"page": "",
+			"featureType": [
+				"DR:TB"
+			],
+			"prerequisite": [
+				{
+					"other": "Stage 4 of the {@charoption Dragon Touched|GW2|Dragon Touched Transformation}"
+				}
+			],
+			"entries": [
+				"You have manifested a significant part of the magical power of dragons. If you have not taken {@optfeature Draconic Magic: Stage 1|GW2}, {@optfeature Draconic Magic: Stage 2|GW2}, or {@optfeature Draconic Magic: Stage 3|GW2} Boon, you have one extra spell slot to cast the spells granted by your Dragon Touched transformation. The spell slot's level is equal to the highest Dragon Magic Boon stage you have achieved plus the number of Dragon Magic Boons you have taken. You gain an additional spell slot at this level if you have taken at least three Dragon Magic Boons. You regain any expended slots gained by this feature when you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}.",
+				"Choose a level 4 spell from the options below based on your Dragon Type choice as shown in the table below. You always have that spell prepared. Whenever you gain a new level, you can replace the spell you chose for this boon with another spell from the same list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this boon's spells (choose when you select this boon).",
+				{
+					"type": "table",
+					"caption": "Dragon Type Spell Options",
+					"colLabels": [
+						"Dragon Type",
+						"Level 4 Spell Choices"
+					],
+					"rows": [
+						[
+							"Black",
+							"{@spell Arcane Eye|XPHB} or {@spell Conjure Minor Elementals|XPHB} (acid damage only) or {@spell Corpse Explosion|guidedrakkenheim} or {@spell Elemental Bane|XGE} (acid damage only) or {@spell Intrusive Despair|crookedmoon24} or {@spell Vitriolic Sphere|XPHB}"
+						],
+						[
+							"Blue",
+							"{@spell Arcane Eye|XPHB} or {@spell Conjure Minor Elementals|XPHB} (lightning damage only) or {@spell Elemental Bane|XGE} (lightning damage only) or {@spell Intrusive Despair|crookedmoon24} or {@spell Ride the Lightning|grimhollowpg24} or {@spell Storm Door|bookofebontides} or {@spell Storm Sphere|XGE}"
+						],
+						[
+							"Brass",
+							"{@spell Arcane Eye|XPHB} or {@spell Conjure Minor Elementals|XPHB} (fire damage only) or {@spell Elemental Bane|XGE} (fire damage only) or {@spell Fire Shield|XPHB} (warm shield only) or {@spell Polymorph|XPHB} or {@spell Searing Sun|bookofebontides} or {@spell Wall of Fire|XPHB}"
+						],
+						[
+							"Bronze",
+							"{@spell Arcane Eye|XPHB} or {@spell Conjure Minor Elementals|XPHB} (lightning damage only) or {@spell Elemental Bane|XGE} (lightning damage only) or {@spell Polymorph|XPHB} or {@spell Ride the Lightning|grimhollowpg24} or {@spell Storm Door|bookofebontides} or {@spell Storm Sphere|XGE}"
+						],
+						[
+							"Copper",
+							"{@spell Arcane Eye|XPHB} or {@spell Conjure Minor Elementals|XPHB} (acid damage only) or {@spell Corpse Explosion|guidedrakkenheim} or {@spell Elemental Bane|XGE} (acid damage only) or {@spell Polymorph|XPHB} or {@spell Vitriolic Sphere|XPHB}"
+						],
+						[
+							"Gold",
+							"{@spell Arcane Eye|XPHB} or {@spell Conjure Minor Elementals|XPHB} (fire damage only) or {@spell Elemental Bane|XGE} (fire damage only) or {@spell Fire Shield|XPHB} (warm shield only) or {@spell Polymorph|XPHB} or {@spell Searing Sun|bookofebontides} or {@spell Wall of Fire|XPHB}"
+						],
+						[
+							"Green",
+							"{@spell Arcane Eye|XPHB} or {@spell Conjure Minor Elementals|XPHB} (poison damage only) or {@spell Corrupting Spores|guidedrakkenheim} or {@spell Elemental Bane|XGE} (poison damage only) or {@spell Intrusive Despair|crookedmoon24} or {@spell Poison Wave|guidedrakkenheim}"
+						],
+						[
+							"Red",
+							"{@spell Arcane Eye|XPHB} or {@spell Conjure Minor Elementals|XPHB} (fire damage only) or {@spell Elemental Bane|XGE} (fire damage only) or {@spell Fire Shield|XPHB} (warm shield only) or {@spell Intrusive Despair|crookedmoon24} or {@spell Searing Sun|bookofebontides} or {@spell Wall of Fire|XPHB}"
+						],
+						[
+							"Silver",
+							"{@spell Arcane Eye|XPHB} or {@spell Conjure Minor Elementals|XPHB} (cold damage only) or {@spell Elemental Bane|XGE} (cold damage only) or {@spell Fire Shield|XPHB} (cold shield only) or {@spell Ice Storm|XPHB} or {@spell Polymorph|XPHB}"
+						],
+						[
+							"White",
+							"{@spell Arcane Eye|XPHB} or {@spell Conjure Minor Elementals|XPHB} (cold damage only) or {@spell Elemental Bane|XGE} (cold damage only) or {@spell Fire Shield|XPHB} (cold shield only) or {@spell Ice Storm|XPHB} or {@spell Intrusive Despair|crookedmoon24}"
+						]
+					]
+				}
+			]
+		},
 		{
 			"name": "Keen Observer",
 			"source": "GW2",
@@ -33373,6 +33794,129 @@
 			],
 			"entries": [
 				"Gadget skills are more powerful."
+			]
+		}
+	],
+	"charoption": [
+		{
+			"name": "Dragon Touched",
+			"source": "GW2",
+			"page": "",
+			"optionType": [
+				"Transformation"
+			],
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "inset",
+							"entries": [
+								"{@i The heavy thrumming of air, displaced by the rythimic beating of building-sized wings, the inhalation of a monsterous lung, and the smell of burnt ozone are the last sensations anyone feels as they stare down the maw of an Ancient Blue Dragon.}",
+								"{@i Children laugh. Wyrmlings gurgle in happinies. An Ancient Copper Dragon's lair is a place of safety for all the lost and parentless young of the world.}"
+							]
+						},
+						"Dragon Touched are individuals who have been marked by the influence of dragons. Able to gain many of the benefits of dragon magic, they can breath elemental energy, attack with claws and tails, and even sprout wings to fly. The Draconic influence is a powerful one, and many Dragon Touched are revered as heroes, while others are feared as monsters.",
+						{
+							"type": "entries",
+							"name": "Becoming a Dragon Touched",
+							"entries": [
+								"Every Dragon Touched has a dragon ancestor, and the influence of that ancestor is what grants them their powers. Some are born with this influence, while others gain it through a traumatic event or a pact with a dragon. The exact nature of the influence can vary greatly, and can manifest in different ways depending on the individual.",
+								"Once you've established your origin, consider your character's motivations regarding their Transformation. As their power grows and manifests, they may feel they have lost what makes them fundamentally themselves. Perhaps they decide to take revenge on the entity responsible for their Transformation, or perhaps they perceive their mutation as a gift.",
+								{
+									"type": "inset",
+									"name": "Reversing Dragon Touched Traits",
+									"entries": [
+										"Once the character reaches Stage 1 of the Dragon Touched Transformation, the Boons and Flaws they've received cannot be removed by normal or even typical magical means. Some magic might slow or halt the mutations that the character endures, but magic on the level of the {@spell Wish|XPHB} spell is needed to completely remove the Transformation and its Boons and Flaws."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Dragon Touched Stages",
+							"entries": [
+								"At each stage of this Transformation, follow the instructions provided for that stage.",
+								{
+									"type": "entries",
+									"name": "Achieving a New Stage",
+									"entries": [
+										"To move from one stage to the next higher one in this Transformation, an event or some other notable occurrence tied to the story of the character should take place. The following events are suggestions for ones that might trigger a move to the next stage of the Transformation:",
+										{
+											"type": "list",
+											"items": [
+												"Become exposed to draconic magic or energy",
+												"Rest in a dragon's lair or near a dragon's corpse",
+												"Ask a dragon to guide you to your next stage of the Transformation and complete a task for them",
+												"Consume the heart of a dragon or a draconic creature"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Dragon Touched Stage 1",
+									"entries": [
+										"When you initially undergo the Dragon Touched Transformation, you gain the Draconic Form Boon and other Stage 1 Boon of your choice. You also gain the Stage 1 Flaw.",
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@optfeature Draconic Form|GW2}",
+												"{@optfeature Draconic Magic: Stage 1|GW2}"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Dragon Touched Stage 2",
+									"entries": [
+										"When you reach Stage 2 of the Dragon Touched Transformation, you gain the Draconic Flight Boon and other Stage 2 Boon of your choice. You also gain the Stage 2 Flaw.",
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@optfeature Draconic Flight|GW2}",
+												"{@optfeature Draconic Magic: Stage 2|GW2}"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Dragon Touched Stage 3",
+									"entries": [
+										"When you reach Stage 3 of the Dragon Touched Transformation, you gain the Draconic Sight Boon and other Stage 3 Boon of your choice. You also gain the Stage 3 Flaw.",
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@optfeature Draconic Sight|GW2}",
+												"{@optfeature Draconic Magic: Stage 3|GW2}"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Dragon Touched Stage 4",
+									"entries": [
+										"When you reach Stage 4 of the Dragon Touched Transformation, you gain the Draconic Speed Boon and other Stage 4 Boon of your choice. You also gain the Stage 4 Flaw.",
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@optfeature Draconic Speed|GW2}",
+												"{@optfeature Draconic Magic: Stage 4|GW2}"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
 			]
 		}
 	],

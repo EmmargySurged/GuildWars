@@ -234,7 +234,8 @@
 			"NOR": "Norn",
 			"SYL": "Sylvari",
 			"DR:TB": "Dragon; Transformation Boon",
-			"DR:TF": "Dragon; Transformation Flaw"
+			"DR:TF": "Dragon; Transformation Flaw",
+			"V:TB": "Vampire; Transformation Boon"
 		}
 	},
 	"adventure": [
@@ -15466,6 +15467,105 @@
 		}
 	],
 	"optionalfeature": [
+		{
+			"name": "Von Carstein Bloodline",
+			"source": "GW2",
+			"page": "",
+			"featureType": [
+				"V:TB"
+			],
+			"prerequisite": [
+				{
+					"other": "Stage 1 of the {@charoption Vampire|GW2|Vampire Transformation}"
+				}
+			],
+			"entries": [
+				"Your vampirism follows the Von Carstein bloodline, a line of vampires that focuses on Sangromancy. You gain the following features:",
+				{
+					"type": "list",
+					"items": [
+						"Your Intelligence, Wisdom or Charisma score increases by 2. Your score cannot exceed 20 with this feature.",
+						"When you use your {@optfeature Fanged Bite|GrimHollowPG24}, you can use you spellcasting ability modifier for the attack and damage rolls, and the bite has a range of 30 feet.",
+						"You can expend a Hit Point Dice or a Sangromancy Dice to cast a Cantrip with a casting time of an Action, to cast it as a Bonus Action.",
+						"You have proficiency with the Arcana skill. If you are already proficient in Arcana, you gain Expertise in Arcana instead.",
+						"Choose 2 Sangromancy spell of level 2 or lower. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is your Intelligence, Wisdom, or Charisma modifier."
+					]
+				}
+			]
+		},
+		{
+			"name": "Greater Von Carstein Bloodline",
+			"source": "GW2",
+			"page": "",
+			"featureType": [
+				"V:TB"
+			],
+			"prerequisite": [
+				{
+					"other": "Stage 2 of the {@charoption Vampire|GW2|Vampire Transformation}"
+				}
+			],
+			"entries": [
+				"Your vampirism follows the Von Carstein bloodline, a line of vampires that focuses on Sangromancy. You gain the following features:",
+				{
+					"type": "list",
+					"items": [
+						"When you miss with a Spell Attack Roll or fail a Saving Throw against a Spell or Magical effect, you can expend and roll one Hit Point Dice or Sangromancy Dice, to add the result to the roll, potentially turning the failure into a sucess. If you still fail the roll, you regain the expended dice. If you succeed on the roll, you take Necrotic damage equal to the result of the expended dice. This damage cannot be reduced or prevented in any way.",
+						"Choose 2 Sangromancy spell of level 4 or lower. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is your Intelligence, Wisdom, or Charisma modifier."
+					]
+				}
+			]
+		},
+		{
+			"name": "Superior Von Carstein Bloodline",
+			"source": "GW2",
+			"page": "",
+			"featureType": [
+				"V:TB"
+			],
+			"prerequisite": [
+				{
+					"other": "Stage 3 of the {@charoption Vampire|GW2|Vampire Transformation}"
+				}
+			],
+			"entries": [
+				"Your vampirism follows the Von Carstein bloodline, a line of vampires that focuses on Sangromancy. You gain the following features:",
+				{
+					"type": "list",
+					"items": [
+						"You learn a number of Metamagic options of your choice from the sorcerer class equal to your Transformation Stage. You can use only one Metamagic option on a spell when you cast it, unless the option says otherwise. Whenever you gain a new level, you can replace one of these Metamagic options with another one from the sorcerer class.",
+						"To use a Metamagic option, you must expend Hit Point Dice or a Sangromancy Dice equal to the number of Sorcery Points usually required.",
+						"Choose 2 Sangromancy spell of level 6 or lower. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is your Intelligence, Wisdom, or Charisma modifier."
+					]
+				}
+			]
+		},
+		{
+			"name": "True Von Carstein Bloodline",
+			"source": "GW2",
+			"page": "",
+			"featureType": [
+				"V:TB"
+			],
+			"prerequisite": [
+				{
+					"other": "Stage 4 of the {@charoption Vampire|GW2|Vampire Transformation}"
+				}
+			],
+			"entries": [
+				"Your vampirism follows the Von Carstein bloodline, a line of vampires that focuses on Sangromancy. You gain the following features:",
+				{
+					"type": "list",
+					"items": [
+						"Your Intelligence, Wisdom or Charisma score increases by 2. Your score cannot exceed 20 with this feature.",
+						"The range of your {@optfeature Fanged Bite|GrimHollowPG24} increases to 300 feet and you can use it as a Bonus Action and the Necrotic damage increases to 2d8.",
+						"When a creature suceeds on a Saving Throw against a Spell cast by you, you can expend a Hit Point Dice or a Sangromancy Dice to add the result to Save DC, potentiall turning a success into a failure. You take Necrotic damage equal to twice the result of the expended dice. This damage cannot be reduced or prevented in any way.",
+						"Increse the size of all your Hit Point Dice by one step, to a maximum of d12.",
+						"Choose 2 Sangromancy spell of level 8 or lower. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is your Intelligence, Wisdom, or Charisma modifier."
+					]
+				}
+			]
+		},
 		{
 			"name": "Draconic Form",
 			"source": "GW2",
@@ -33918,6 +34018,168 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Vampire",
+			"source": "GW2",
+			"page": "",
+			"optionType": [
+				"Transformation"
+			],
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "inset",
+							"entries": [
+								"{@i A twisted figure lurks in the shadows of a castle wall as the roaring infantry charges through a breach. In a flash of black mist, the figure appears in front of the soldiers, one by one, striking them down with inhuman speed.}",
+								"{@i Candlelight flickers as a hooded advisor leans over an ornate throne, whispering machinations into her lord's ensnared mind. The chamber erupts into commotion as the lord announces further powers be granted to the resident merchants' guild.}",
+								"{@i A terrified villager flees through the forest, hoping to outrun his pursuer. His eyes burn with tears, sweat, and blood. He stops, listening for the sounds of footsteps behind. His sigh of relief is stopped before it escapes his throat, as fangs sink deep into his neck.}"
+							]
+						},
+						"Vampires are creatures of accursed blood and tragic existence. Exquisite food, a warm summer breeze, and growing old surrounded by loved ones: these are luxuries a Vampire will never experience. Unable to enjoy many of life's pleasures as they once knew them, Vampires often become bitter creatures, filled with hate for everything they once loved.",
+						{
+							"type": "entries",
+							"name": "Becoming a Vampire",
+							"entries": [
+								"Vampires are spawned into the world when a mortal contracts the Sanguine Curse, dies, and is reborn undead. There are a variety of ways to contract the curse. A Vampire may have offered their blood to a loyal servant, powerful ally, or loved one they wished to elevate. More commonly, a Vampire may bite a victim, who survives the attack long enough to contract the Sanguine Curse before perishing and being reborn.",
+								"Other methods of becoming a Vampire include ancient and dark magic, as well as powerful but cursed magical artifacts. Vampirism may be passed along when an ancient Vampire allows a beloved plaything to drink blood from the Undead creature's cursed veins. Regardless of how you become a Vampire, you should discuss with your GM what type of Vampire you might become and how it can be implemented in the campaign.",
+								{
+									"type": "inset",
+									"name": "Curing Vampirism",
+									"entries": [
+										"Once the character reaches Stage 1 of the Vampire Transformation, no typical magic like {@spell Remove Curse|XPHB} can remove the affliction. Magic on the level of the {@spell Wish|XPHB} spell is needed to completely remove the Transformation and its Boons and Flaws."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Vampire Stages",
+							"entries": [
+								"At each stage of this Transformation, follow the instructions provided for that stage.",
+								{
+									"type": "entries",
+									"name": "Achieving a New Stage",
+									"entries": [
+										"To move from one stage to the next higher one in this Transformation, an event or other notable occurrence tied to the story of the character should take place. The following events are suggestions:",
+										{
+											"type": "list",
+											"items": [
+												"Severing a tie to your mortal life, such as discarding a sentimental trinket or abandoning a loved one",
+												"Making a further bargain with the Vampire who gifted you with the Sanguine Curse",
+												"Drinking the blood of another, more ancient, Vampire",
+												"Failing two {@variantrule Death Saving Throw|XPHB|Death Saving Throws}",
+												"Performing a blood ritual using Sangromancy"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Vampire Stage 1",
+									"entries": [
+										"When you initially contract vampirism, you gain the Fanged Bite Boon and one other Stage 1 Boon. You also gain the Stage 1 Flaw.",
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@optfeature Fanged Bite|GrimHollowPG24}",
+												"{@optfeature Soman Bloodline|GrimHollowPG24}",
+												"{@optfeature Strigoi Bloodline|GrimHollowPG24}",
+												"{@optfeature Fzeg Bloodline|GrimHollowPG24}",
+												"{@optfeature Von Carstein Bloodline|GW2}",
+												"{@optfeature The Sanguine Curse|GrimHollowPG24}"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Vampire Stage 2",
+									"entries": [
+										"When you reach Stage 2 of vampirism, you select two Stage 2 Boons and gain the Stage 2 Flaw.",
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@optfeature Eyes of the Night|GrimHollowPG24}",
+												"{@optfeature Grave-Touched Soul|GrimHollowPG24}",
+												"{@optfeature Inhuman Reflexes|GrimHollowPG24}",
+												"{@optfeature Undead Resilience|GrimHollowPG24}",
+												"{@optfeature Greater Von Carstein Bloodline|GW2}",
+												"{@optfeature Greater Sanguine Curse|GrimHollowPG24}"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Vampire Stage 3",
+									"entries": [
+										"When you reach Stage 3 of vampirism, you select two Stage 3 Boons and gain the Stage 3 Flaw.",
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@optfeature Beguiler's Charm|GrimHollowPG24}",
+												"{@optfeature Improved Fanged Bite|GrimHollowPG24}",
+												"{@optfeature Mist Form|GrimHollowPG24}",
+												"{@optfeature Sangromancy Specialist|GrimHollowPG24}",
+												"{@optfeature Superior Von Carstein Bloodline|GW2}",
+												"{@optfeature Supreme Sanguine Curse|GrimHollowPG24}"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Vampire Stage 4",
+									"entries": [
+										"When you reach Stage 4 of vampirism, you gain the Regeneration Boon and one other Stage 4 Boon of your choice. You also gain the Stage 4 Flaw.",
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@optfeature Final Soman Bloodline|GrimHollowPG24}",
+												"{@optfeature Final Strigoi Bloodline|GrimHollowPG24}",
+												"{@optfeature Final Fzeg Bloodline|GrimHollowPG24}",
+												"{@optfeature True Von Carstein Bloodline|GW2}",
+												"{@optfeature Regeneration|GrimHollowPG24}",
+												"{@optfeature Ultimate Sanguine Curse|GrimHollowPG24}"
+											]
+										}
+									]
+								},
+								{
+									"type": "inset",
+									"name": "Feeding",
+									"entries": [
+										"As a Vampire transforms further and further from its mortal form, its metabolic requirements change. The first change is a need for mortal blood. This need is approximately 1 pint of blood from a Humanoid, Beast, or other creature with mortal blood.",
+										"As an action, you can bite a living creature within 5 feet that is {@condition Charmed} by you, or that has the {@condition Incapacitated}, {@condition Paralyzed}, {@condition Restrained}, or {@condition Unconscious} condition. You drain the target of one pint of blood (or similar life-giving substance), leaving a visible bite mark on that creature. The bitten creature gains one {@condition Exhaustion|XPHB} level.",
+										"A Vampire that does not feed within the required time enters a rabid feeding frenzy under the GM's control until they drain a creature completely (killing them), at which point the Vampire falls unconscious for 4 hours."
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/GrimHollowPG24/Transformation/Vampire.webp"
+						},
+						"credit": "Guilherme Castro",
+						"width": 850,
+						"height": 1345
+					}
+				]
+			}
 		}
 	],
 	"variantrule": [

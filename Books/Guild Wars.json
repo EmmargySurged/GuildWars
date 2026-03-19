@@ -1943,8 +1943,8 @@
 				"nameSuffix": " of Restoration (Legendary)",
 				"entries": [
 					"This ammunition can magically end a creature's ailments.",
-				"On a hit, the target takes no damage but all of the following {@variantrule Condition|XPHB|Conditions} are ended: {@condition Blinded|XPHB}, {@condition Charmed|XPHB}, {@condition Deafened|XPHB}, {@condition Exhaustion|XPHB} (all levels), {@condition Frightened|XPHB}, {@condition Grappled|XPHB}, {@condition Incapacitated|XPHB}, {@condition Paralyzed|XPHB}, {@condition Petrified|XPHB}, {@condition Poisoned|XPHB}, {@condition Prone|XPHB}, {@condition Restrained|XPHB} or {@condition Stunned|XPHB}.",
-				"This ammunition is typically found or sold in quantities of two or four pieces. Two pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+					"On a hit, the target takes no damage but all of the following {@variantrule Condition|XPHB|Conditions} are ended: {@condition Blinded|XPHB}, {@condition Charmed|XPHB}, {@condition Deafened|XPHB}, {@condition Exhaustion|XPHB} (all levels), {@condition Frightened|XPHB}, {@condition Grappled|XPHB}, {@condition Incapacitated|XPHB}, {@condition Paralyzed|XPHB}, {@condition Petrified|XPHB}, {@condition Poisoned|XPHB}, {@condition Prone|XPHB}, {@condition Restrained|XPHB} or {@condition Stunned|XPHB}.",
+					"This ammunition is typically found or sold in quantities of two or four pieces. Two pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
 				],
 				"valueExpression": "[[baseItem.value]] + 5000000"
 			}
@@ -39138,6 +39138,109 @@
 			"source": "GW",
 			"entries": [
 				"When preparing your spells, you can only prepare one elite spell."
+			]
+		},
+		{
+			"name": "Foraging",
+			"source": "GW",
+			"entries": [
+				"Characters wanting to craft items while away from settlement can use Foraging to acquire the materials they need.",
+				"First, determine if the item is a magic item or a nonmagical item. To forage for a magic item, you must complete all the steps for a nonmagical item and find a magical catalyst.",
+				"The DM determines the Difficulty Class (DC) for finding raw materials based on the environment and the item's rarity. The DM identifies the most difficult component to find; this component sets the DC, while all other materials are assumed to be found during the search.",
+				"A character spends at least 1 hour searching and makes a Wisdom (Survival) check against the DC. For each additional hour spent searching, the character makes another check. On a success, the character finds a portion of the materials measured in GP, as shown in the Foraging DCs table.",
+				{
+					"type": "table",
+					"caption": "Foraging DCs",
+					"colLabels": [
+						"Difficulty",
+						"DC",
+						"Found Materials (on a Success)",
+						"Example"
+					],
+					"rows": [
+						[
+							"Trivial",
+							"5",
+							"(Result - 4) × 2 GP",
+							"Finding wood for a Bow in a forest"
+						],
+						[
+							"Easy",
+							"10",
+							"(Result - 9) × 2 GP",
+							"Finding wood for a Bow in a grassland"
+						],
+						[
+							"Medium",
+							"15",
+							"(Result - 14) × 2 GP",
+							"Finding wood for a Bow in a mountainous area"
+						],
+						[
+							"Hard",
+							"20",
+							"(Result - 19) × 2 GP",
+							"Finding suitable wood replacements for a Bow in the underdark"
+						],
+						[
+							"Very Hard",
+							"25",
+							"(Result - 24) × 2 GP",
+							"Finding wood for a Bow in the middle of a desert"
+						],
+						[
+							"Nearly Impossible",
+							"30",
+							"(Result - 29) × 2 GP",
+							"Finding driftwood for a Bow in the middle of the ocean"
+						]
+					]
+				},
+				"To craft a magic item, a character must obtain a magical catalyst. A catalyst is found by overcoming one or more specific creatures. The catalyst might be a specific item the creature carries, a part of the creature’s body, or an object the creature guards. The Challenge Rating of the creature is determined by the item’s rarity.",
+				"Finding the creature is a slow process that can take several days. To track a creature, a character spends at least 1 hour searching and makes a Wisdom (Survival) check. The rarity of the item determines the DC and the number of successful checks required. If a check succeeds, the character makes progress toward finding the creature.",
+				{
+					"type": "table",
+					"caption": "Magical Catalyst DCs",
+					"colLabels": [
+						"Rarity",
+						"Tracking DC",
+						"Successful Checks Needed",
+						"Challenge Rating Range"
+					],
+					"rows": [
+						[
+							"Common",
+							"5",
+							"5",
+							"1 - 3"
+						],
+						[
+							"Uncommon",
+							"10",
+							"10",
+							"4 - 8"
+						],
+						[
+							"Rare",
+							"15",
+							"50",
+							"9 - 12"
+						],
+						[
+							"Very Rare",
+							"20",
+							"125",
+							"13 - 18"
+						],
+						[
+							"Legendary",
+							"25",
+							"250",
+							"19+"
+						]
+					]
+				},
+				"Once the magical catalyst is found and the creature is overcome, the player can start the crafting process as described in the Dungeon Master’s Guide."
 			]
 		},
 		{

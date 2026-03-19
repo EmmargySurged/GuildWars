@@ -749,6 +749,18 @@
 	],
 	"item": [
 		{
+			"name": "Quiver of Elona",
+			"source": "GW",
+			"rarity": "uncommon",
+			"wondrous": true,
+			"weight": 2,
+			"entries": [
+				"This quiver is made from the finest materials and is enchanted to hold many different types of ammunition. It is said to have been crafted by the greatest archers of Elona, and is a prized possession among those who rely on ranged combat.",
+				"Each of the quiver's ten compartments connects to an extradimensional space that allows the quiver to hold numerous items while never weighing more than 2 pounds. Each compartment can hold up to 100 pieces of {@table ammunition|XPHB}.",
+				"You can draw any item the quiver contains as if doing so from a regular quiver or scabbard."
+			]
+		},
+		{
 			"name": "Titanstrength Longbow",
 			"type": "R",
 			"source": "GW",
@@ -884,6 +896,1707 @@
 			"tier": "minor",
 			"value": 200000,
 			"weight": 0.5
+		}
+	],
+	"magicvariant": [
+		{
+			"name": "Elemental Ammunition (Common)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"Elemental Ammunition comes in six varieties: Acid, Cold, Fire, Lightning, Poison, and Thunder. Each piece of ammunition is imbued with the power of one of the six elements.",
+				"Your damage rolls made with this magic ammunition deal the damage type of the element it is imbued with instead of its normal damage type and an additional {@damage 1d6} damage of that type. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+			],
+			"inherits": {
+				"rarity": "common",
+				"source": "GW",
+				"namePrefix": "Elemental ",
+				"nameSuffix": " (Common)",
+				"bonusWeapon": "1d6",
+				"entries": [
+					"Elemental Ammunition comes in six varieties: Acid, Cold, Fire, Lightning, Poison, and Thunder. Each piece of ammunition is imbued with the power of one of the six elements.",
+					"Your damage rolls made with this magic ammunition deal the damage type of the element it is imbued with instead of its normal damage type and an additional {@damage 1d6} damage of that type. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 1000"
+			}
+		},
+		{
+			"name": "Elemental Ammunition (Uncommon)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"Elemental Ammunition comes in six varieties: Acid, Cold, Fire, Lightning, Poison, and Thunder. Each piece of ammunition is imbued with the power of one of the six elements.",
+				"Your damage rolls made with this magic ammunition deal the damage type of the element it is imbued with instead of its normal damage type and an additional {@damage 2d6} damage of that type. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+			],
+			"inherits": {
+				"rarity": "uncommon",
+				"source": "GW",
+				"namePrefix": "Elemental ",
+				"nameSuffix": " (Uncommon)",
+				"bonusWeapon": "2d6",
+				"entries": [
+					"Elemental Ammunition comes in six varieties: Acid, Cold, Fire, Lightning, Poison, and Thunder. Each piece of ammunition is imbued with the power of one of the six elements.",
+					"Your damage rolls made with this magic ammunition deal the damage type of the element it is imbued with instead of its normal damage type and an additional {@damage 2d6} damage of that type. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 4000"
+			}
+		},
+		{
+			"name": "Elemental Ammunition (Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"Elemental Ammunition comes in six varieties: Acid, Cold, Fire, Lightning, Poison, and Thunder. Each piece of ammunition is imbued with the power of one of the six elements.",
+				"Your damage rolls made with this magic ammunition deal the damage type of the element it is imbued with instead of its normal damage type and an additional {@damage 4d6} damage of that type. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+			],
+			"inherits": {
+				"rarity": "rare",
+				"source": "GW",
+				"namePrefix": "Elemental ",
+				"nameSuffix": " (Rare)",
+				"bonusWeapon": "4d6",
+				"entries": [
+					"Elemental Ammunition comes in six varieties: Acid, Cold, Fire, Lightning, Poison, and Thunder. Each piece of ammunition is imbued with the power of one of the six elements.",
+					"Your damage rolls made with this magic ammunition deal the damage type of the element it is imbued with instead of its normal damage type and an additional {@damage 4d6} damage of that type. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 40000"
+			}
+		},
+		{
+			"name": "Elemental Ammunition (Very Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"Elemental Ammunition comes in six varieties: Acid, Cold, Fire, Lightning, Poison, and Thunder. Each piece of ammunition is imbued with the power of one of the six elements.",
+				"Your damage rolls made with this magic ammunition deal the damage type of the element it is imbued with instead of its normal damage type and an additional {@damage 8d6} damage of that type. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+			],
+			"inherits": {
+				"rarity": "very rare",
+				"source": "GW",
+				"namePrefix": "Elemental ",
+				"nameSuffix": " (Very Rare)",
+				"bonusWeapon": "8d6",
+				"entries": [
+					"Elemental Ammunition comes in six varieties: Acid, Cold, Fire, Lightning, Poison, and Thunder. Each piece of ammunition is imbued with the power of one of the six elements.",
+					"Your damage rolls made with this magic ammunition deal the damage type of the element it is imbued with instead of its normal damage type and an additional {@damage 8d6} damage of that type. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 400000"
+			}
+		},
+		{
+			"name": "Elemental Ammunition (Legendary)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"Elemental Ammunition comes in six varieties: Acid, Cold, Fire, Lightning, Poison, and Thunder. Each piece of ammunition is imbued with the power of one of the six elements.",
+				"Your damage rolls made with this magic ammunition deal the damage type of the element it is imbued with instead of its normal damage type and an additional {@damage 16d6} damage of that type. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+			],
+			"inherits": {
+				"rarity": "legendary",
+				"source": "GW",
+				"namePrefix": "Elemental ",
+				"nameSuffix": " (Legendary)",
+				"bonusWeapon": "16d6",
+				"entries": [
+					"Elemental Ammunition comes in six varieties: Acid, Cold, Fire, Lightning, Poison, and Thunder. Each piece of ammunition is imbued with the power of one of the six elements.",
+					"Your damage rolls made with this magic ammunition deal the damage type of the element it is imbued with instead of its normal damage type and an additional {@damage 16d6} damage of that type. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 2000000"
+			}
+		},
+		{
+			"name": "Ammunition of Transposition (Common)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition is not meant to be used for attacking, but rather for teleporting. It deals no damage on impact.",
+				"Instead of attacking normally with this ammunition, you can choose to teleport to where the ammunition lands, as long as it lands in an unoccupied space within 15 feet of you. Once it lands, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+			],
+			"inherits": {
+				"rarity": "common",
+				"source": "GW",
+				"nameSuffix": " of Transposition (Common)",
+				"entries": [
+					"This ammunition is not meant to be used for attacking, but rather for teleporting. It deals no damage on impact.",
+					"Instead of attacking normally with this ammunition, you can choose to teleport to where the ammunition lands, as long as it lands in an unoccupied space within 15 feet of you. Once it lands, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 1000"
+			}
+		},
+		{
+			"name": "Ammunition of Transposition (Uncommon)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition is not meant to be used for attacking, but rather for teleporting. It deals no damage on impact.",
+				"Instead of attacking normally with this ammunition, you can choose to teleport to where the ammunition lands, as long as it lands in an unoccupied space within 30 feet of you. Once it lands, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+			],
+			"inherits": {
+				"rarity": "uncommon",
+				"source": "GW",
+				"nameSuffix": " of Transposition (Uncommon)",
+				"entries": [
+					"This ammunition is not meant to be used for attacking, but rather for teleporting. It deals no damage on impact.",
+					"Instead of attacking normally with this ammunition, you can choose to teleport to where the ammunition lands, as long as it lands in an unoccupied space within 30 feet of you. Once it lands, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 4000"
+			}
+		},
+		{
+			"name": "Ammunition of Transposition (Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition is not meant to be used for attacking, but rather for teleporting. It deals no damage on impact.",
+				"Instead of attacking normally with this ammunition, you can choose to teleport to where the ammunition lands, as long as it lands in an unoccupied space within 90 feet of you. Once it lands, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+			],
+			"inherits": {
+				"rarity": "rare",
+				"source": "GW",
+				"nameSuffix": " of Transposition (Rare)",
+				"entries": [
+					"This ammunition is not meant to be used for attacking, but rather for teleporting. It deals no damage on impact.",
+					"Instead of attacking normally with this ammunition, you can choose to teleport to where the ammunition lands, as long as it lands in an unoccupied space within 90 feet of you. Once it lands, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 40000"
+			}
+		},
+		{
+			"name": "Ammunition of Transposition (Very Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition is not meant to be used for attacking, but rather for teleporting. It deals no damage on impact.",
+				"Instead of attacking normally with this ammunition, you can choose to teleport to where the ammunition lands, as long as it lands in an unoccupied space within 180 feet of you. Once it lands, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+			],
+			"inherits": {
+				"rarity": "very rare",
+				"source": "GW",
+				"nameSuffix": " of Transposition (Very Rare)",
+				"entries": [
+					"This ammunition is not meant to be used for attacking, but rather for teleporting. It deals no damage on impact.",
+					"Instead of attacking normally with this ammunition, you can choose to teleport to where the ammunition lands, as long as it lands in an unoccupied space within 180 feet of you. Once it lands, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 400000"
+			}
+		},
+		{
+			"name": "Ammunition of Transposition (Legendary)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition is not meant to be used for attacking, but rather for teleporting. It deals no damage on impact.",
+				"Instead of attacking normally with this ammunition, you can choose to teleport to where the ammunition lands, as long as it lands in an unoccupied space within your weapon's range. Once it lands, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+			],
+			"inherits": {
+				"rarity": "legendary",
+				"source": "GW",
+				"nameSuffix": " of Transposition (Legendary)",
+				"entries": [
+					"This ammunition is not meant to be used for attacking, but rather for teleporting. It deals no damage on impact.",
+					"Instead of attacking normally with this ammunition, you can choose to teleport to where the ammunition lands, as long as it lands in an unoccupied space within your weapon's range. Once it lands, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 2000000"
+			}
+		},
+		{
+			"name": "Ammunition of Dislocation (Common)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition can magically dislocate a creature from its current location and teleport it somewhere else.",
+				"On a hit, the target takes no damage but must succeed on a DC 12 Charisma {@variantrule Saving Throw|XPHB} or be teleported to an unoccupied space of the attacker's choice within 15 feet of the target. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+			],
+			"inherits": {
+				"rarity": "common",
+				"source": "GW",
+				"nameSuffix": " of Dislocation (Common)",
+				"entries": [
+					"This ammunition can magically dislocate a creature from its current location and teleport it somewhere else.",
+					"On a hit, the target takes no damage but must succeed on a DC 12 Charisma {@variantrule Saving Throw|XPHB} or be teleported to an unoccupied space of the attacker's choice within 15 feet of the target. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 1000"
+			}
+		},
+		{
+			"name": "Ammunition of Dislocation (Uncommon)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition can magically dislocate a creature from its current location and teleport it somewhere else.",
+				"On a hit, the target takes no damage but must succeed on a DC 14 Charisma {@variantrule Saving Throw|XPHB} or be teleported to an unoccupied space of the attacker's choice within 30 feet of the target. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+			],
+			"inherits": {
+				"rarity": "uncommon",
+				"source": "GW",
+				"nameSuffix": " of Dislocation (Uncommon)",
+				"entries": [
+					"This ammunition can magically dislocate a creature from its current location and teleport it somewhere else.",
+					"On a hit, the target takes no damage but must succeed on a DC 14 Charisma {@variantrule Saving Throw|XPHB} or be teleported to an unoccupied space of the attacker's choice within 30 feet of the target. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 4000"
+			}
+		},
+		{
+			"name": "Ammunition of Dislocation (Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition can magically dislocate a creature from its current location and teleport it somewhere else.",
+				"On a hit, the target takes no damage but must succeed on a DC 16 Charisma {@variantrule Saving Throw|XPHB} or be teleported to an unoccupied space of the attacker's choice within 60 feet of the target. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+			],
+			"inherits": {
+				"rarity": "rare",
+				"source": "GW",
+				"nameSuffix": " of Dislocation (Rare)",
+				"entries": [
+					"This ammunition can magically dislocate a creature from its current location and teleport it somewhere else.",
+					"On a hit, the target takes no damage but must succeed on a DC 16 Charisma {@variantrule Saving Throw|XPHB} or be teleported to an unoccupied space of the attacker's choice within 60 feet of the target. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 40000"
+			}
+		},
+		{
+			"name": "Ammunition of Dislocation (Very Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition can magically dislocate a creature from its current location and teleport it somewhere else.",
+				"On a hit, the target takes no damage but must succeed on a DC 18 Charisma {@variantrule Saving Throw|XPHB} or be teleported to an unoccupied space of the attacker's choice within 120 feet of the target. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+			],
+			"inherits": {
+				"rarity": "very rare",
+				"source": "GW",
+				"nameSuffix": " of Dislocation (VeryRare)",
+				"entries": [
+					"This ammunition can magically dislocate a creature from its current location and teleport it somewhere else.",
+					"On a hit, the target takes no damage but must succeed on a DC 18 Charisma {@variantrule Saving Throw|XPHB} or be teleported to an unoccupied space of the attacker's choice within 120 feet of the target. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 400000"
+			}
+		},
+		{
+			"name": "Ammunition of Dislocation (Legendary)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition can magically dislocate a creature from its current location and teleport it somewhere else.",
+				"On a hit, the target takes no damage but must succeed on a DC 20 Charisma {@variantrule Saving Throw|XPHB} or be teleported to an unoccupied space of the attacker's choice within 300 feet of the target. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+			],
+			"inherits": {
+				"rarity": "legendary",
+				"source": "GW",
+				"nameSuffix": " of Dislocation (Legendary)",
+				"entries": [
+					"This ammunition can magically dislocate a creature from its current location and teleport it somewhere else.",
+					"On a hit, the target takes no damage but must succeed on a DC 20 Charisma {@variantrule Saving Throw|XPHB} or be teleported to an unoccupied space of the attacker's choice within 300 feet of the target. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 2000000"
+			}
+		},
+		{
+			"name": "Ammunition of Many Targets (Common)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This magical ammunition can hit multiple targets.",
+				"On a hit, the target suffers the weapon attack's normal effects, and a creature of your choice within 15 feet of the target must make a DC 12 Dexterity {@variantrule Saving Throw|XPHB} or also take the damage the target took from the attack. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of two or four pieces. Two pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+			],
+			"inherits": {
+				"rarity": "common",
+				"source": "GW",
+				"nameSuffix": " of Many Targets (Common)",
+				"entries": [
+					"This ammunition can hit multiple targets.",
+					"On a hit, the target suffers the weapon attack's normal effects, and a creature of your choice within 15 feet of the target must make a DC 12 Dexterity {@variantrule Saving Throw|XPHB} or also take the damage the target took from the attack. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of two or four pieces. Two pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 2500"
+			}
+		},
+		{
+			"name": "Ammunition of Many Targets (Uncommon)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This magical ammunition can hit multiple targets.",
+				"On a hit, the target suffers the weapon attack's normal effects, and up to two creatures of your choice within 20 feet of the target must make a DC 14 Dexterity {@variantrule Saving Throw|XPHB} or also take the damage the target took from the attack. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of two or four pieces. Two pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+			],
+			"inherits": {
+				"rarity": "uncommon",
+				"source": "GW",
+				"nameSuffix": " of Many Targets (Uncommon)",
+				"entries": [
+					"This ammunition can hit multiple targets.",
+					"On a hit, the target suffers the weapon attack's normal effects, and up to two creatures of your choice within 20 feet of the target must make a DC 14 Dexterity {@variantrule Saving Throw|XPHB} or also take the damage the target took from the attack. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of two or four pieces. Two pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 10000"
+			}
+		},
+		{
+			"name": "Ammunition of Many Targets (Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This magical ammunition can hit multiple targets.",
+				"On a hit, the target suffers the weapon attack's normal effects, and up to three creatures of your choice within 25 feet of the target must make a DC 16 Dexterity {@variantrule Saving Throw|XPHB} or also take the damage the target took from the attack. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of two or four pieces. Two pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+			],
+			"inherits": {
+				"rarity": "rare",
+				"source": "GW",
+				"nameSuffix": " of Many Targets (Rare)",
+				"entries": [
+					"This ammunition can hit multiple targets.",
+					"On a hit, the target suffers the weapon attack's normal effects, and up to three creatures of your choice within 25 feet of the target must make a DC 16 Dexterity {@variantrule Saving Throw|XPHB} or also take the damage the target took from the attack. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of two or four pieces. Two pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 100000"
+			}
+		},
+		{
+			"name": "Ammunition of Many Targets (Very Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This magical ammunition can hit multiple targets.",
+				"On a hit, the target suffers the weapon attack's normal effects, and up to four creatures of your choice within 30 feet of the target must make a DC 18 Dexterity {@variantrule Saving Throw|XPHB} or also take the damage the target took from the attack. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of two or four pieces. Two pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+			],
+			"inherits": {
+				"rarity": "very rare",
+				"source": "GW",
+				"nameSuffix": " of Many Targets (Very Rare)",
+				"entries": [
+					"This ammunition can hit multiple targets.",
+					"On a hit, the target suffers the weapon attack's normal effects, and up to four creatures of your choice within 30 feet of the target must make a DC 18 Dexterity {@variantrule Saving Throw|XPHB} or also take the damage the target took from the attack. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of two or four pieces. Two pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 1000000"
+			}
+		},
+		{
+			"name": "Ammunition of Many Targets (Legendary)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This magical ammunition can hit multiple targets.",
+				"On a hit, the target suffers the weapon attack's normal effects, and any number of creatures of your choice within 60 feet of the target must make a DC 20 Dexterity {@variantrule Saving Throw|XPHB} or also take the damage the target took from the attack. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of two or four pieces. Two pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+			],
+			"inherits": {
+				"rarity": "legendary",
+				"source": "GW",
+				"nameSuffix": " of Many Targets (Legendary)",
+				"entries": [
+					"This ammunition can hit multiple targets.",
+					"On a hit, the target suffers the weapon attack's normal effects, and any number of creatures of your choice within 60 feet of the target must make a DC 20 Dexterity {@variantrule Saving Throw|XPHB} or also take the damage the target took from the attack. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of two or four pieces. Two pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 5000000"
+			}
+		},
+		{
+			"name": "Ammunition of Obscuration (Common)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This magical ammunition obscures a target area.",
+				"Instead of attacking normally with this ammunition, you can choose to create a cloud of magical smoke where the ammunition lands. The ammunition replicates the effects of a level 1 {@spell Fog Cloud|XPHB} spell (no {@variantrule Concentration|XPHB} required). Once it lands, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of ten or twenty pieces. Ten pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+			],
+			"inherits": {
+				"rarity": "common",
+				"source": "GW",
+				"nameSuffix": " of Obscuration (Common)",
+				"entries": [
+					"This magical ammunition obscures a target area.",
+					"Instead of attacking normally with this ammunition, you can choose to create a cloud of magical smoke where the ammunition lands. The ammunition replicates the effects of a level 1 {@spell Fog Cloud|XPHB} spell (no {@variantrule Concentration|XPHB} required). Once it lands, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of ten or twenty pieces. Ten pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 500"
+			}
+		},
+		{
+			"name": "Ammunition of Obscuration (Uncommon)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This magical ammunition obscures a target area.",
+				"Instead of attacking normally with this ammunition, you can choose to create a cloud of magical smoke where the ammunition lands. The ammunition replicates the effects of a level 2 {@spell Fog Cloud|XPHB} spell (no {@variantrule Concentration|XPHB} required). Once it lands, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of ten or twenty pieces. Ten pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+			],
+			"inherits": {
+				"rarity": "uncommon",
+				"source": "GW",
+				"nameSuffix": " of Obscuration (Uncommon)",
+				"entries": [
+					"This magical ammunition obscures a target area.",
+					"Instead of attacking normally with this ammunition, you can choose to create a cloud of magical smoke where the ammunition lands. The ammunition replicates the effects of a level 2 {@spell Fog Cloud|XPHB} spell (no {@variantrule Concentration|XPHB} required). Once it lands, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of ten or twenty pieces. Ten pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 2000"
+			}
+		},
+		{
+			"name": "Ammunition of Obscuration (Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This magical ammunition obscures a target area.",
+				"Instead of attacking normally with this ammunition, you can choose to create a cloud of magical smoke where the ammunition lands. The ammunition replicates the effects of a level 3 {@spell Fog Cloud|XPHB} spell (no {@variantrule Concentration|XPHB} required). Once it lands, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of ten or twenty pieces. Ten pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+			],
+			"inherits": {
+				"rarity": "rare",
+				"source": "GW",
+				"nameSuffix": " of Obscuration (Rare)",
+				"entries": [
+					"This magical ammunition obscures a target area.",
+					"Instead of attacking normally with this ammunition, you can choose to create a cloud of magical smoke where the ammunition lands. The ammunition replicates the effects of a level 3 {@spell Fog Cloud|XPHB} spell (no {@variantrule Concentration|XPHB} required). Once it lands, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of ten or twenty pieces. Ten pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 20000"
+			}
+		},
+		{
+			"name": "Ammunition of Obscuration (Very Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This magical ammunition obscures a target area.",
+				"Instead of attacking normally with this ammunition, you can choose to create a cloud of magical smoke where the ammunition lands. The ammunition replicates the effects of a level 5 {@spell Fog Cloud|XPHB} spell (no {@variantrule Concentration|XPHB} required). Once it lands, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of ten or twenty pieces. Ten pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+			],
+			"inherits": {
+				"rarity": "very rare",
+				"source": "GW",
+				"nameSuffix": " of Obscuration (Very Rare)",
+				"entries": [
+					"This magical ammunition obscures a target area.",
+					"Instead of attacking normally with this ammunition, you can choose to create a cloud of magical smoke where the ammunition lands. The ammunition replicates the effects of a level 5 {@spell Fog Cloud|XPHB} spell (no {@variantrule Concentration|XPHB} required). Once it lands, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of ten or twenty pieces. Ten pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 200000"
+			}
+		},
+		{
+			"name": "Ammunition of Obscuration (Legendary)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This magical ammunition obscures a target area.",
+				"Instead of attacking normally with this ammunition, you can choose to create a cloud of magical smoke where the ammunition lands. The ammunition replicates the effects of a level 9 {@spell Fog Cloud|XPHB} spell (no {@variantrule Concentration|XPHB} required). Once it lands, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of ten or twenty pieces. Ten pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+			],
+			"inherits": {
+				"rarity": "legendary",
+				"source": "GW",
+				"nameSuffix": " of Obscuration (Legendary)",
+				"entries": [
+					"This magical ammunition obscures a target area.",
+					"Instead of attacking normally with this ammunition, you can choose to create a cloud of magical smoke where the ammunition lands. The ammunition replicates the effects of a level 9 {@spell Fog Cloud|XPHB} spell (no {@variantrule Concentration|XPHB} required). Once it lands, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of ten or twenty pieces. Ten pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 1000000"
+			}
+		},
+		{
+			"name": "Ammunition of Darkness (Common)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This magical ammunition creates a cloud of darkness.",
+				"Instead of attacking normally with this ammunition, you can choose to create a cloud of magical darkness where the ammunition lands. For 1 minute after it lands, the arrow emits a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} of magical {@variantrule Darkness|XPHB} as per the {@spell Darkness|XPHB} spell (no {@variantrule Concentration|XPHB} required). Once it lands, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+			],
+			"inherits": {
+				"rarity": "common",
+				"source": "GW",
+				"nameSuffix": " of Darkness (Common)",
+				"entries": [
+					"This magical ammunition creates a cloud of darkness.",
+					"Instead of attacking normally with this ammunition, you can choose to create a cloud of magical darkness where the ammunition lands. For 1 minute after it lands, the arrow emits a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} of magical {@variantrule Darkness|XPHB} as per the {@spell Darkness|XPHB} spell (no {@variantrule Concentration|XPHB} required). Once it lands, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 1000"
+			}
+		},
+		{
+			"name": "Ammunition of Darkness (Uncommon)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This magical ammunition creates a cloud of darkness.",
+				"Instead of attacking normally with this ammunition, you can choose to create a cloud of magical darkness where the ammunition lands. For 10 minutes after it lands, the arrow emits a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} of magical {@variantrule Darkness|XPHB} as per the {@spell Darkness|XPHB} spell (no {@variantrule Concentration|XPHB} required). Once it lands, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+			],
+			"inherits": {
+				"rarity": "uncommon",
+				"source": "GW",
+				"nameSuffix": " of Darkness (Uncommon)",
+				"entries": [
+					"This magical ammunition creates a cloud of darkness.",
+					"Instead of attacking normally with this ammunition, you can choose to create a cloud of magical darkness where the ammunition lands. For 10 minutes after it lands, the arrow emits a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} of magical {@variantrule Darkness|XPHB} as per the {@spell Darkness|XPHB} spell (no {@variantrule Concentration|XPHB} required). Once it lands, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 4000"
+			}
+		},
+		{
+			"name": "Ammunition of Darkness (Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This magical ammunition creates a cloud of darkness.",
+				"Instead of attacking normally with this ammunition, you can choose to create a cloud of magical darkness where the ammunition lands. For 1 hour after it lands, the arrow emits a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} of magical {@variantrule Darkness|XPHB} as per the {@spell Darkness|XPHB} spell (no {@variantrule Concentration|XPHB} required). Once it lands, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+			],
+			"inherits": {
+				"rarity": "rare",
+				"source": "GW",
+				"nameSuffix": " of Darkness (Rare)",
+				"entries": [
+					"This magical ammunition creates a cloud of darkness.",
+					"Instead of attacking normally with this ammunition, you can choose to create a cloud of magical darkness where the ammunition lands. For 1 hour after it lands, the arrow emits a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} of magical {@variantrule Darkness|XPHB} as per the {@spell Darkness|XPHB} spell (no {@variantrule Concentration|XPHB} required). Once it lands, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 40000"
+			}
+		},
+		{
+			"name": "Ammunition of Darkness (Very Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This magical ammunition creates a cloud of darkness.",
+				"Instead of attacking normally with this ammunition, you can choose to create a cloud of magical darkness where the ammunition lands. For 8 hours after it lands, the arrow emits a 20-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} of magical {@variantrule Darkness|XPHB} as per the {@spell Darkness|XPHB} spell (no {@variantrule Concentration|XPHB} required). Once it lands, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+			],
+			"inherits": {
+				"rarity": "very rare",
+				"source": "GW",
+				"nameSuffix": " of Darkness (Very Rare)",
+				"entries": [
+					"This magical ammunition creates a cloud of darkness.",
+					"Instead of attacking normally with this ammunition, you can choose to create a cloud of magical darkness where the ammunition lands. For 8 hours after it lands, the arrow emits a 20-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} of magical {@variantrule Darkness|XPHB} as per the {@spell Darkness|XPHB} spell (no {@variantrule Concentration|XPHB} required). Once it lands, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 400000"
+			}
+		},
+		{
+			"name": "Ammunition of Darkness (Legendary)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This magical ammunition creates a cloud of darkness.",
+				"Instead of attacking normally with this ammunition, you can choose to create a cloud of magical darkness where the ammunition lands. For 24 hours after it lands, the arrow emits a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} of magical {@variantrule Darkness|XPHB} as per the {@spell Darkness|XPHB} spell (no {@variantrule Concentration|XPHB} required). Once it lands, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+			],
+			"inherits": {
+				"rarity": "legendary",
+				"source": "GW",
+				"nameSuffix": " of Darkness (Legendary)",
+				"entries": [
+					"This magical ammunition creates a cloud of darkness.",
+					"Instead of attacking normally with this ammunition, you can choose to create a cloud of magical darkness where the ammunition lands. For 24 hours after it lands, the arrow emits a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} of magical {@variantrule Darkness|XPHB} as per the {@spell Darkness|XPHB} spell (no {@variantrule Concentration|XPHB} required). Once it lands, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 2000000"
+			}
+		},
+		{
+			"name": "Ammunition of Healing (Common)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition can magically heal a creature.",
+				"On a hit, the target takes no damage but regains {@dice 1d4 + 1} hit points. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of one or two pieces. One piece of this ammunition is equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+			],
+			"inherits": {
+				"rarity": "common",
+				"source": "GW",
+				"nameSuffix": " of Healing (Common)",
+				"entries": [
+					"This ammunition can magically heal a creature.",
+					"On a hit, the target takes no damage but regains {@dice 1d4 + 1} hit points. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of one or two pieces. One piece of this ammunition is equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 5000"
+			}
+		},
+		{
+			"name": "Ammunition of Healing (Uncommon)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition can magically heal a creature.",
+				"On a hit, the target takes no damage but regains {@dice 2d4 + 2} hit points. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of one or two pieces. One piece of this ammunition is equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+			],
+			"inherits": {
+				"rarity": "uncommon",
+				"source": "GW",
+				"nameSuffix": " of Healing (Uncommon)",
+				"entries": [
+					"This ammunition can magically heal a creature.",
+					"On a hit, the target takes no damage but regains {@dice 2d4 + 2} hit points. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of one or two pieces. One piece of this ammunition is equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 20000"
+			}
+		},
+		{
+			"name": "Ammunition of Healing (Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition can magically heal a creature.",
+				"On a hit, the target takes no damage but regains {@dice 4d4 + 4} hit points. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of one or two pieces. One piece of this ammunition is equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+			],
+			"inherits": {
+				"rarity": "rare",
+				"source": "GW",
+				"nameSuffix": " of Healing (Rare)",
+				"entries": [
+					"This ammunition can magically heal a creature.",
+					"On a hit, the target takes no damage but regains {@dice 4d4 + 4} hit points. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of one or two pieces. One piece of this ammunition is equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 200000"
+			}
+		},
+		{
+			"name": "Ammunition of Healing (Very Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition can magically heal a creature.",
+				"On a hit, the target takes no damage but regains {@dice 5d4 + 10} hit points. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of one or two pieces. One piece of this ammunition is equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+			],
+			"inherits": {
+				"rarity": "very rare",
+				"source": "GW",
+				"nameSuffix": " of Healing (Very Rare)",
+				"entries": [
+					"This ammunition can magically heal a creature.",
+					"On a hit, the target takes no damage but regains {@dice 5d4 + 10} hit points. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of one or two pieces. One piece of this ammunition is equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 2000000"
+			}
+		},
+		{
+			"name": "Ammunition of Healing (Legendary)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition can magically heal a creature.",
+				"On a hit, the target takes no damage but regains {@dice 10d4 + 20} hit points. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of one or two pieces. One piece of this ammunition is equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+			],
+			"inherits": {
+				"rarity": "legendary",
+				"source": "GW",
+				"nameSuffix": " of Healing (Legendary)",
+				"entries": [
+					"This ammunition can magically heal a creature.",
+					"On a hit, the target takes no damage but regains {@dice 10d4 + 20} hit points. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of one or two pieces. One piece of this ammunition is equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 10000000"
+			}
+		},
+		{
+			"name": "Ammunition of Restoration (Common)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition can magically end a creature's ailments.",
+				"On a hit, the target takes no damage but the lastest of the following {@variantrule Condition|XPHB|Conditions} is ended: {@condition Blinded|XPHB}, {@condition Deafened|XPHB} or {@condition Poisoned|XPHB}.",
+				"This ammunition is typically found or sold in quantities of two or four pieces. Two pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+			],
+			"inherits": {
+				"rarity": "common",
+				"source": "GW",
+				"nameSuffix": " of Restoration (Common)",
+				"entries": [
+					"This ammunition can magically end a creature's ailments.",
+					"On a hit, the target takes no damage but the lastest of the following {@variantrule Condition|XPHB|Conditions} is ended: {@condition Blinded|XPHB}, {@condition Deafened|XPHB} or {@condition Poisoned|XPHB}.",
+					"This ammunition is typically found or sold in quantities of two or four pieces. Two pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 2500"
+			}
+		},
+		{
+			"name": "Ammunition of Restoration (Uncommon)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition can magically end a creature's ailments.",
+				"On a hit, the target takes no damage but the lastest two of the following {@variantrule Condition|XPHB|Conditions} are ended: {@condition Blinded|XPHB}, {@condition Deafened|XPHB}, {@condition Paralyzed|XPHB} or {@condition Poisoned|XPHB}.",
+				"This ammunition is typically found or sold in quantities of two or four pieces. Two pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+			],
+			"inherits": {
+				"rarity": "uncommon",
+				"source": "GW",
+				"nameSuffix": " of Restoration (Uncommon)",
+				"entries": [
+					"This ammunition can magically end a creature's ailments.",
+					"On a hit, the target takes no damage but the lastest two of the following {@variantrule Condition|XPHB|Conditions} are ended: {@condition Blinded|XPHB}, {@condition Deafened|XPHB}, {@condition Paralyzed|XPHB} or {@condition Poisoned|XPHB}.",
+					"This ammunition is typically found or sold in quantities of two or four pieces. Two pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 10000"
+			}
+		},
+		{
+			"name": "Ammunition of Restoration (Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition can magically end a creature's ailments.",
+				"On a hit, the target takes no damage but the lastest three of the following {@variantrule Condition|XPHB|Conditions} are ended: {@condition Blinded|XPHB}, {@condition Charmed|XPHB}, {@condition Deafened|XPHB}, {@condition Frightened|XPHB}, {@condition Paralyzed|XPHB} or {@condition Poisoned|XPHB}.",
+				"This ammunition is typically found or sold in quantities of two or four pieces. Two pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+			],
+			"inherits": {
+				"rarity": "rare",
+				"source": "GW",
+				"nameSuffix": " of Restoration (Rare)",
+				"entries": [
+					"This ammunition can magically end a creature's ailments.",
+					"On a hit, the target takes no damage but the lastest three of the following {@variantrule Condition|XPHB|Conditions} are ended: {@condition Blinded|XPHB}, {@condition Charmed|XPHB}, {@condition Deafened|XPHB}, {@condition Frightened|XPHB}, {@condition Paralyzed|XPHB} or {@condition Poisoned|XPHB}.",
+					"This ammunition is typically found or sold in quantities of two or four pieces. Two pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 100000"
+			}
+		},
+		{
+			"name": "Ammunition of Restoration (Very Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition can magically end a creature's ailments.",
+				"On a hit, the target takes no damage but the lastest four of the following {@variantrule Condition|XPHB|Conditions} are ended: {@condition Blinded|XPHB}, {@condition Charmed|XPHB}, {@condition Deafened|XPHB}, {@condition Frightened|XPHB}, {@condition Paralyzed|XPHB}, {@condition Petrified|XPHB}, {@condition Poisoned|XPHB} or {@condition Stunned|XPHB}.",
+				"This ammunition is typically found or sold in quantities of two or four pieces. Two pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+			],
+			"inherits": {
+				"rarity": "very rare",
+				"source": "GW",
+				"nameSuffix": " of Restoration (Very Rare)",
+				"entries": [
+					"This ammunition can magically end a creature's ailments.",
+					"On a hit, the target takes no damage but the lastest four of the following {@variantrule Condition|XPHB|Conditions} are ended: {@condition Blinded|XPHB}, {@condition Charmed|XPHB}, {@condition Deafened|XPHB}, {@condition Frightened|XPHB}, {@condition Paralyzed|XPHB}, {@condition Petrified|XPHB}, {@condition Poisoned|XPHB} or {@condition Stunned|XPHB}.",
+					"This ammunition is typically found or sold in quantities of two or four pieces. Two pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 1000000"
+			}
+		},
+		{
+			"name": "Ammunition of Restoration (Legendary)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition can magically end a creature's ailments.",
+				"On a hit, the target takes no damage but all of the following {@variantrule Condition|XPHB|Conditions} are ended: {@condition Blinded|XPHB}, {@condition Charmed|XPHB}, {@condition Deafened|XPHB}, {@condition Exhaustion|XPHB} (all levels), {@condition Frightened|XPHB}, {@condition Grappled|XPHB}, {@condition Incapacitated|XPHB}, {@condition Paralyzed|XPHB}, {@condition Petrified|XPHB}, {@condition Poisoned|XPHB}, {@condition Prone|XPHB}, {@condition Restrained|XPHB} or {@condition Stunned|XPHB}.",
+				"This ammunition is typically found or sold in quantities of two or four pieces. Two pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+			],
+			"inherits": {
+				"rarity": "legendary",
+				"source": "GW",
+				"nameSuffix": " of Restoration (Legendary)",
+				"entries": [
+					"This ammunition can magically end a creature's ailments.",
+				"On a hit, the target takes no damage but all of the following {@variantrule Condition|XPHB|Conditions} are ended: {@condition Blinded|XPHB}, {@condition Charmed|XPHB}, {@condition Deafened|XPHB}, {@condition Exhaustion|XPHB} (all levels), {@condition Frightened|XPHB}, {@condition Grappled|XPHB}, {@condition Incapacitated|XPHB}, {@condition Paralyzed|XPHB}, {@condition Petrified|XPHB}, {@condition Poisoned|XPHB}, {@condition Prone|XPHB}, {@condition Restrained|XPHB} or {@condition Stunned|XPHB}.",
+				"This ammunition is typically found or sold in quantities of two or four pieces. Two pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 5000000"
+			}
+		},
+		{
+			"name": "Empowered Ammunition (Common)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"Empowered Ammunition comes in three varieties: Necrotic, Psychic, and Radiant. Each piece of ammunition is imbued with the power of one of three powers.",
+				"Your damage rolls made with this magic ammunition deal the damage type of the power it is imbued with instead of its normal damage type and an additional {@damage 1d4} damage of that type. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+			],
+			"inherits": {
+				"rarity": "common",
+				"source": "GW",
+				"namePrefix": "Empowered ",
+				"nameSuffix": " (Common)",
+				"bonusWeapon": "1d4",
+				"entries": [
+					"Empowered Ammunition comes in three varieties: Necrotic, Psychic, and Radiant. Each piece of ammunition is imbued with the power of one of three powers.",
+					"Your damage rolls made with this magic ammunition deal the damage type of the power it is imbued with instead of its normal damage type and an additional {@damage 1d4} damage of that type. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 1000"
+			}
+		},
+		{
+			"name": "Empowered Ammunition (Uncommon)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"Empowered Ammunition comes in three varieties: Necrotic, Psychic, and Radiant. Each piece of ammunition is imbued with the power of one of three powers.",
+				"Your damage rolls made with this magic ammunition deal the damage type of the power it is imbued with instead of its normal damage type and an additional {@damage 2d4} damage of that type. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+			],
+			"inherits": {
+				"rarity": "uncommon",
+				"source": "GW",
+				"namePrefix": "Empowered ",
+				"nameSuffix": " (Uncommon)",
+				"bonusWeapon": "2d4",
+				"entries": [
+					"Empowered Ammunition comes in three varieties: Necrotic, Psychic, and Radiant. Each piece of ammunition is imbued with the power of one of three powers.",
+					"Your damage rolls made with this magic ammunition deal the damage type of the power it is imbued with instead of its normal damage type and an additional {@damage 2d4} damage of that type. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 4000"
+			}
+		},
+		{
+			"name": "Empowered Ammunition (Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"Empowered Ammunition comes in three varieties: Necrotic, Psychic, and Radiant. Each piece of ammunition is imbued with the power of one of three powers.",
+				"Your damage rolls made with this magic ammunition deal the damage type of the power it is imbued with instead of its normal damage type and an additional {@damage 4d4} damage of that type. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+			],
+			"inherits": {
+				"rarity": "rare",
+				"source": "GW",
+				"namePrefix": "Empowered ",
+				"nameSuffix": " (Rare)",
+				"bonusWeapon": "4d4",
+				"entries": [
+					"Empowered Ammunition comes in three varieties: Necrotic, Psychic, and Radiant. Each piece of ammunition is imbued with the power of one of three powers.",
+					"Your damage rolls made with this magic ammunition deal the damage type of the power it is imbued with instead of its normal damage type and an additional {@damage 4d4} damage of that type. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 40000"
+			}
+		},
+		{
+			"name": "Empowered Ammunition (Very Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"Empowered Ammunition comes in three varieties: Necrotic, Psychic, and Radiant. Each piece of ammunition is imbued with the power of one of three powers.",
+				"Your damage rolls made with this magic ammunition deal the damage type of the power it is imbued with instead of its normal damage type and an additional {@damage 8d4} damage of that type. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+			],
+			"inherits": {
+				"rarity": "very rare",
+				"source": "GW",
+				"namePrefix": "Empowered ",
+				"nameSuffix": " (Very Rare)",
+				"bonusWeapon": "8d4",
+				"entries": [
+					"Empowered Ammunition comes in three varieties: Necrotic, Psychic, and Radiant. Each piece of ammunition is imbued with the power of one of three powers.",
+					"Your damage rolls made with this magic ammunition deal the damage type of the power it is imbued with instead of its normal damage type and an additional {@damage 8d4} damage of that type. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 400000"
+			}
+		},
+		{
+			"name": "Empowered Ammunition (Legendary)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"Empowered Ammunition comes in three varieties: Necrotic, Psychic, and Radiant. Each piece of ammunition is imbued with the power of one of three powers.",
+				"Your damage rolls made with this magic ammunition deal the damage type of the power it is imbued with instead of its normal damage type and an additional {@damage 16d4} damage of that type. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+			],
+			"inherits": {
+				"rarity": "legendary",
+				"source": "GW",
+				"namePrefix": "Empowered ",
+				"nameSuffix": " (Legendary)",
+				"bonusWeapon": "16d4",
+				"entries": [
+					"Empowered Ammunition comes in three varieties: Necrotic, Psychic, and Radiant. Each piece of ammunition is imbued with the power of one of three powers.",
+					"Your damage rolls made with this magic ammunition deal the damage type of the power it is imbued with instead of its normal damage type and an additional {@damage 16d4} damage of that type. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 2000000"
+			}
+		},
+		{
+			"name": "Forcefull Ammunition (Common)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"Forcefull Ammunition deals force damage.",
+				"Your damage rolls made with this magic ammunition deal force damage instead of its normal damage type. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+			],
+			"inherits": {
+				"rarity": "common",
+				"source": "GW",
+				"namePrefix": "Forcefull ",
+				"nameSuffix": " (Common)",
+				"entries": [
+					"Forcefull Ammunition deals force damage.",
+					"Your damage rolls made with this magic ammunition deal force damage instead of its normal damage type. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 1000"
+			}
+		},
+		{
+			"name": "Forcefull Ammunition (Uncommon)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"Forcefull Ammunition deals force damage.",
+				"Your damage rolls made with this magic ammunition deal force damage instead of its normal damage type and an additional {@damage 1d8} force damage. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+			],
+			"inherits": {
+				"rarity": "uncommon",
+				"source": "GW",
+				"namePrefix": "Forcefull ",
+				"nameSuffix": " (Uncommon)",
+				"bonusWeapon": "1d8",
+				"entries": [
+					"Forcefull Ammunition deals force damage.",
+					"Your damage rolls made with this magic ammunition deal force damage instead of its normal damage type and an additional {@damage 1d8} force damage. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 4000"
+			}
+		},
+		{
+			"name": "Forcefull Ammunition (Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"Forcefull Ammunition deals force damage.",
+				"Your damage rolls made with this magic ammunition deal force damage instead of its normal damage type and an additional {@damage 2d8} force damage. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+			],
+			"inherits": {
+				"rarity": "rare",
+				"source": "GW",
+				"namePrefix": "Forcefull ",
+				"nameSuffix": " (Rare)",
+				"bonusWeapon": "2d8",
+				"entries": [
+					"Forcefull Ammunition deals force damage.",
+					"Your damage rolls made with this magic ammunition deal force damage instead of its normal damage type and an additional {@damage 2d8} force damage. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 40000"
+			}
+		},
+		{
+			"name": "Forcefull Ammunition (Very Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"Forcefull Ammunition deals force damage.",
+				"Your damage rolls made with this magic ammunition deal force damage instead of its normal damage type and an additional {@damage 4d8} force damage. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+			],
+			"inherits": {
+				"rarity": "very rare",
+				"source": "GW",
+				"namePrefix": "Forcefull ",
+				"nameSuffix": " (Very Rare)",
+				"bonusWeapon": "4d8",
+				"entries": [
+					"Forcefull Ammunition deals force damage.",
+					"Your damage rolls made with this magic ammunition deal force damage instead of its normal damage type and an additional {@damage 4d8} force damage. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 400000"
+			}
+		},
+		{
+			"name": "Forcefull Ammunition (Legendary)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"Forcefull Ammunition deals force damage.",
+				"Your damage rolls made with this magic ammunition deal force damage instead of its normal damage type and an additional {@damage 6d8} force damage. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+			],
+			"inherits": {
+				"rarity": "legendary",
+				"source": "GW",
+				"namePrefix": "Forcefull ",
+				"nameSuffix": " (Legendary)",
+				"bonusWeapon": "6d8",
+				"entries": [
+					"Forcefull Ammunition deals force damage.",
+					"Your damage rolls made with this magic ammunition deal force damage instead of its normal damage type and an additional {@damage 6d8} force damage. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 2000000"
+			}
+		},
+		{
+			"name": "Precise Ammunition (Common)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"Precise Ammunition is better at inflicting a {@variantrule Critical Hit|XPHB}.",
+				"The number you need to roll to score a {@variantrule Critical Hit|XPHB} with this ammunition is reduced by 1. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+			],
+			"inherits": {
+				"rarity": "common",
+				"source": "GW",
+				"namePrefix": "Precise ",
+				"nameSuffix": " (Common)",
+				"entries": [
+					"Precise Ammunition is better at inflicting a {@variantrule Critical Hit|XPHB}.",
+					"The number you need to roll to score a {@variantrule Critical Hit|XPHB} with this ammunition is reduced by 1. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 1000"
+			}
+		},
+		{
+			"name": "Precise Ammunition (Uncommon)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"Precise Ammunition is better at inflicting a {@variantrule Critical Hit|XPHB}.",
+				"The number you need to roll to score a {@variantrule Critical Hit|XPHB} with this ammunition is reduced by 2. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+			],
+			"inherits": {
+				"rarity": "uncommon",
+				"source": "GW",
+				"namePrefix": "Precise ",
+				"nameSuffix": " (Uncommon)",
+				"entries": [
+					"Precise Ammunition is better at inflicting a {@variantrule Critical Hit|XPHB}.",
+					"The number you need to roll to score a {@variantrule Critical Hit|XPHB} with this ammunition is reduced by 2. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 4000"
+			}
+		},
+		{
+			"name": "Precise Ammunition (Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"Precise Ammunition is better at inflicting a {@variantrule Critical Hit|XPHB}.",
+				"The number you need to roll to score a {@variantrule Critical Hit|XPHB} with this ammunition is reduced by 3. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+			],
+			"inherits": {
+				"rarity": "rare",
+				"source": "GW",
+				"namePrefix": "Precise ",
+				"nameSuffix": " (Rare)",
+				"entries": [
+					"Precise Ammunition is better at inflicting a {@variantrule Critical Hit|XPHB}.",
+					"The number you need to roll to score a {@variantrule Critical Hit|XPHB} with this ammunition is reduced by 3. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 40000"
+			}
+		},
+		{
+			"name": "Precise Ammunition (Very Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"Precise Ammunition is better at inflicting a {@variantrule Critical Hit|XPHB}.",
+				"The number you need to roll to score a {@variantrule Critical Hit|XPHB} with this ammunition is reduced by 4. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+			],
+			"inherits": {
+				"rarity": "very rare",
+				"source": "GW",
+				"namePrefix": "Precise ",
+				"nameSuffix": " (Very Rare)",
+				"entries": [
+					"Precise Ammunition is better at inflicting a {@variantrule Critical Hit|XPHB}.",
+					"The number you need to roll to score a {@variantrule Critical Hit|XPHB} with this ammunition is reduced by 4. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 400000"
+			}
+		},
+		{
+			"name": "Precise Ammunition (Legendary)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"Precise Ammunition is better at inflicting a {@variantrule Critical Hit|XPHB}.",
+				"The number you need to roll to score a {@variantrule Critical Hit|XPHB} with this ammunition is reduced by 5. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+			],
+			"inherits": {
+				"rarity": "legendary",
+				"source": "GW",
+				"namePrefix": "Precise ",
+				"nameSuffix": " (Legendary)",
+				"entries": [
+					"Precise Ammunition is better at inflicting a {@variantrule Critical Hit|XPHB}.",
+					"The number you need to roll to score a {@variantrule Critical Hit|XPHB} with this ammunition is reduced by 5. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 2000000"
+			}
+		},
+		{
+			"name": "Walloping Ammunition (Uncommon)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"A creature hit by this ammunition must succeed on a DC 14 Strength {@variantrule Saving Throw|XPHB} or be pushed back 5 feet away from you and have the {@condition Prone|XPHB} condition. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+			],
+			"inherits": {
+				"rarity": "uncommon",
+				"source": "GW",
+				"namePrefix": "Walloping ",
+				"nameSuffix": " (Uncommon)",
+				"entries": [
+					"A creature hit by this ammunition must succeed on a DC 14 Strength {@variantrule Saving Throw|XPHB} or be pushed back 5 feet away from you and have the {@condition Prone|XPHB} condition. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 4000"
+			}
+		},
+		{
+			"name": "Walloping Ammunition (Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"A creature hit by this ammunition must succeed on a DC 16 Strength {@variantrule Saving Throw|XPHB} or be pushed back 10 feet away from you and have the {@condition Prone|XPHB} and {@condition Incapacitated|XPHB} conditions for 1 round. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+			],
+			"inherits": {
+				"rarity": "rare",
+				"source": "GW",
+				"namePrefix": "Walloping ",
+				"nameSuffix": " (Rare)",
+				"entries": [
+					"A creature hit by this ammunition must succeed on a DC 16 Strength {@variantrule Saving Throw|XPHB} or be pushed back 10 feet away from you and have the {@condition Prone|XPHB} and {@condition Incapacitated|XPHB} conditions for 1 round. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 40000"
+			}
+		},
+		{
+			"name": "Walloping Ammunition (Very Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"A creature hit by this ammunition must succeed on a DC 18 Strength {@variantrule Saving Throw|XPHB} or be pushed back 15 feet away from you and have the {@condition Prone|XPHB} and {@condition Stunned|XPHB} conditions for 1 round. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+			],
+			"inherits": {
+				"rarity": "very rare",
+				"source": "GW",
+				"namePrefix": "Walloping ",
+				"nameSuffix": " (Very Rare)",
+				"entries": [
+					"A creature hit by this ammunition must succeed on a DC 18 Strength {@variantrule Saving Throw|XPHB} or be pushed back 15 feet away from you and have the {@condition Prone|XPHB} and {@condition Stunned|XPHB} conditions for 1 round. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 400000"
+			}
+		},
+		{
+			"name": "Walloping Ammunition (Legendary)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"A creature hit by this ammunition must succeed on a DC 20 Strength {@variantrule Saving Throw|XPHB} or be pushed back 30 feet away from you and have the {@condition Prone|XPHB} and {@condition Paralyzed|XPHB} conditions for 1 round. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+			],
+			"inherits": {
+				"rarity": "legendary",
+				"source": "GW",
+				"namePrefix": "Walloping ",
+				"nameSuffix": " (Legendary)",
+				"entries": [
+					"A creature hit by this ammunition must succeed on a DC 20 Strength {@variantrule Saving Throw|XPHB} or be pushed back 30 feet away from you and have the {@condition Prone|XPHB} and {@condition Paralyzed|XPHB} conditions for 1 round. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 2000000"
+			}
+		},
+		{
+			"name": "Explosive Ammunition (Common)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition explodes on impact.",
+				"On a hit, the target takes no damage but each target within 5 feet of it must succeed on a DC 12 Dexterity {@variantrule Saving Throw|XPHB} or take {@damage 2d6} force damage. A creature that succeeds on the saving throw takes half damage. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+			],
+			"inherits": {
+				"rarity": "common",
+				"source": "GW",
+				"namePrefix": "Explosive ",
+				"nameSuffix": " (Common)",
+				"entries": [
+					"This ammunition explodes on impact.",
+					"On a hit, the target takes no damage but each target within 5 feet of it must succeed on a DC 12 Dexterity {@variantrule Saving Throw|XPHB} or take {@damage 2d6} force damage. A creature that succeeds on the saving throw takes half damage. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|50 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 1000"
+			}
+		},
+		{
+			"name": "Explosive Ammunition (Uncommon)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition explodes on impact.",
+				"On a hit, the target takes no damage but each target within 10 feet of it must succeed on a DC 14 Dexterity {@variantrule Saving Throw|XPHB} or take {@damage 4d6} force damage. A creature that succeeds on the saving throw takes half damage. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+			],
+			"inherits": {
+				"rarity": "uncommon",
+				"source": "GW",
+				"namePrefix": "Explosive ",
+				"nameSuffix": " (Uncommon)",
+				"entries": [
+					"This ammunition explodes on impact.",
+					"On a hit, the target takes no damage but each target within 10 feet of it must succeed on a DC 14 Dexterity {@variantrule Saving Throw|XPHB} or take {@damage 4d6} force damage. A creature that succeeds on the saving throw takes half damage. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 4000"
+			}
+		},
+		{
+			"name": "Explosive Ammunition (Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition explodes on impact.",
+				"On a hit, the target takes no damage but each target within 15 feet of it must succeed on a DC 16 Dexterity {@variantrule Saving Throw|XPHB} or take {@damage 6d6} force damage. A creature that succeeds on the saving throw takes half damage. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+			],
+			"inherits": {
+				"rarity": "rare",
+				"source": "GW",
+				"namePrefix": "Explosive ",
+				"nameSuffix": " (Rare)",
+				"entries": [
+					"This ammunition explodes on impact.",
+					"On a hit, the target takes no damage but each target within 15 feet of it must succeed on a DC 16 Dexterity {@variantrule Saving Throw|XPHB} or take {@damage 6d6} force damage. A creature that succeeds on the saving throw takes half damage. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 40000"
+			}
+		},
+		{
+			"name": "Explosive Ammunition (Very Rare)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition explodes on impact.",
+				"On a hit, the target takes no damage but each target within 30 feet of it must succeed on a DC 18 Dexterity {@variantrule Saving Throw|XPHB} or take {@damage 8d6} force damage. A creature that succeeds on the saving throw takes half damage. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+			],
+			"inherits": {
+				"rarity": "very rare",
+				"source": "GW",
+				"namePrefix": "Explosive ",
+				"nameSuffix": " (Very Rare)",
+				"entries": [
+					"This ammunition explodes on impact.",
+					"On a hit, the target takes no damage but each target within 30 feet of it must succeed on a DC 18 Dexterity {@variantrule Saving Throw|XPHB} or take {@damage 8d6} force damage. A creature that succeeds on the saving throw takes half damage. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 400000"
+			}
+		},
+		{
+			"name": "Explosive Ammunition (Legendary)",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "A|XPHB"
+				}
+			],
+			"ammo": true,
+			"entries": [
+				"This ammunition explodes on impact.",
+				"On a hit, the target takes no damage but each target within 60 feet of it must succeed on a DC 20 Dexterity {@variantrule Saving Throw|XPHB} or take {@damage 16d6} force damage. A creature that succeeds on the saving throw takes half damage. Once it hits a target, the ammunition is no longer magical.",
+				"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+			],
+			"inherits": {
+				"rarity": "legendary",
+				"source": "GW",
+				"namePrefix": "Explosive ",
+				"nameSuffix": " (Legendary)",
+				"entries": [
+					"This ammunition explodes on impact.",
+					"On a hit, the target takes no damage but each target within 60 feet of it must succeed on a DC 20 Dexterity {@variantrule Saving Throw|XPHB} or take {@damage 16d6} force damage. A creature that succeeds on the saving throw takes half damage. Once it hits a target, the ammunition is no longer magical.",
+					"This ammunition is typically found or sold in quantities of five or ten pieces. Five pieces of this ammunition are equivalent in value to a potion of the same rarity ({@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|100000 GP})."
+				],
+				"valueExpression": "[[baseItem.value]] + 2000000"
+			}
 		}
 	],
 	"monster": [
@@ -1523,7 +3236,7 @@
 			]
 		},
 		{
-			"name": "Lunar Blessin",
+			"name": "Lunar Blessing",
 			"source": "GW",
 			"prerequisite": [
 				{

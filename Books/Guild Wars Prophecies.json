@@ -4198,7 +4198,7 @@
 											"type": "image",
 											"href": {
 												"type": "external",
-												"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/Assets/Creatures/Red_Devourer.jpg"
+												"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Red_devourer.jpg"
 											},
 											"credit": "ArenaNet",
 											"width": 1755,
@@ -8634,133 +8634,6 @@
 			]
 		},
 		{
-			"name": "Diseased Devourer",
-			"source": "GWP",
-			"size": [
-				"T"
-			],
-			"type": "beast",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				11
-			],
-			"hp": {
-				"average": 1,
-				"formula": "1d4 - 1"
-			},
-			"speed": {
-				"walk": 10
-			},
-			"str": 2,
-			"dex": 11,
-			"con": 8,
-			"int": 1,
-			"wis": 8,
-			"cha": 2,
-			"senses": [
-				"blindsight 10 ft."
-			],
-			"passive": 9,
-			"cr": "0",
-			"action": [
-				{
-					"name": "Sting",
-					"entries": [
-						"{@atkr m} {@hit 2}, reach 5 ft. {@h}1 Piercing damage plus 3 ({@damage 1d6}) Poison damage."
-					]
-				}
-			],
-			"environment": [
-				"desert"
-			],
-			"familiar": true,
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/scorpion.mp3"
-			},
-			"senseTags": [
-				"B"
-			],
-			"miscTags": [
-				"MA",
-				"AOE"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"token": {
-				"name": "Scorpion",
-				"source": "XMM"
-			},
-			"fluff": {
-				"name": "Scorpion",
-				"source": "XMM",
-				"entries": [
-					{
-						"type": "section",
-						"name": "Animals",
-						"entries": [
-							"Use these stat blocks to represent the creatures they're named for or other similar creatures. For example, the {@creature Panther|XMM} stat block can also represent a mountain lion, while the {@creature Giant Goat|XMM} stat block might represent a buffalo. Any of these stat blocks might also serve as fantastical animals with distinctive names and cosmetic details unique to your D&D adventures."
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/XMM/Scorpion.webp"
-						},
-						"credit": "Michele Giorgi"
-					},
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/XMM/Animals Hills and Mountains.webp"
-						},
-						"title": "A druid calls on animals of the hills and mountains to aid her cause"
-					},
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/XMM/Animals Aquatic.webp"
-						},
-						"title": "Aquatic animals swim alongside a druid exploring the sea"
-					},
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/XMM/Animals Rainforest.webp"
-						},
-						"title": "Inhabitants of the rain forest answer a druid's summons"
-					}
-				]
-			},
-			"trait": [
-				{
-					"name": "Death Burst (Diseased Devourer)",
-					"entries": [
-						"When the diseased devourer dies, it explodes in a cloud of {@condition disease|GW}. Each creature within 5 feet of it must then succeed on a {@dc 10} Constitution saving throw, taking 4 ({@damage 1d8}) necrotic damage on a failed save and getting {@condition disease|GW|diseased} for 1 minute, taking {@damage 1d4} damage, or half as much damage on a successful one."
-					]
-				}
-			],
-			"traitTags": [
-				"Death Burst"
-			],
-			"damageTags": [
-				"I",
-				"N",
-				"P"
-			],
-			"savingThrowForced": [
-				"constitution"
-			]
-		},
-		{
 			"name": "Screamheart",
 			"source": "GWP",
 			"size": [
@@ -11306,308 +11179,6 @@
 			]
 		},
 		{
-			"name": "Lash Devourer",
-			"source": "GWP",
-			"size": [
-				"M"
-			],
-			"type": "beast",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				15
-			],
-			"hp": {
-				"formula": "6d8 + 6",
-				"average": 33
-			},
-			"speed": {
-				"walk": 40
-			},
-			"str": 13,
-			"dex": 14,
-			"con": 13,
-			"int": 1,
-			"wis": 9,
-			"cha": 3,
-			"senses": [
-				"blindsight 60 ft."
-			],
-			"passive": 9,
-			"cr": "1",
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The scorpion makes two Claw attacks and one Sting attack."
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 13}) from one of two claws."
-					]
-				},
-				{
-					"name": "Sting",
-					"entries": [
-						"{@atk rw} {@hit 4} to hit, range 30/90 ft. {@h}6 ({@damage 1d8 + 2}) Piercing damage plus 5 ({@damage 1d10}) Poison damage."
-					]
-				}
-			],
-			"environment": [
-				"desert"
-			],
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/giant-scorpion.mp3"
-			},
-			"senseTags": [
-				"B"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"miscTags": [
-				"MA",
-				"RW"
-			],
-			"conditionInflict": [
-				"grappled"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"token": {
-				"name": "Giant Scorpion",
-				"source": "XMM"
-			},
-			"fluff": {
-				"name": "Giant Scorpion",
-				"source": "XMM",
-				"entries": [
-					{
-						"type": "section",
-						"name": "Animals",
-						"entries": [
-							"Use these stat blocks to represent the creatures they're named for or other similar creatures. For example, the {@creature Panther|XMM} stat block can also represent a mountain lion, while the {@creature Giant Goat|XMM} stat block might represent a buffalo. Any of these stat blocks might also serve as fantastical animals with distinctive names and cosmetic details unique to your D&D adventures."
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/XMM/Giant Scorpion.webp"
-						}
-					},
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/XMM/Animals Hills and Mountains.webp"
-						},
-						"title": "A druid calls on animals of the hills and mountains to aid her cause"
-					},
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/XMM/Animals Aquatic.webp"
-						},
-						"title": "Aquatic animals swim alongside a druid exploring the sea"
-					},
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/XMM/Animals Rainforest.webp"
-						},
-						"title": "Inhabitants of the rain forest answer a druid's summons"
-					}
-				]
-			},
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"The Lash Devourer is a level 2 spellcaster. Its spellcasting ability is Dexterity (spell save {@dc 12}, +4 to hit with spell attacks). The Lash Devourer has the following Ranger (GW) spells prepared:"
-					],
-					"daily": {
-						"1e": [
-							"{@spell power shot|GW}"
-						]
-					},
-					"will": [
-						"{@spell point blank shot/zojun's shot|GWP}"
-					],
-					"ability": "dex",
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"CR"
-			],
-			"damageTags": [
-				"B",
-				"I",
-				"P"
-			],
-			"damageTagsSpell": [
-				"O"
-			]
-		},
-		{
-			"name": "Carrion Devourer",
-			"source": "GWP",
-			"size": [
-				"M"
-			],
-			"type": "beast",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				15
-			],
-			"hp": {
-				"average": 45,
-				"formula": "6d10 + 12"
-			},
-			"speed": {
-				"walk": 40
-			},
-			"str": 14,
-			"dex": 13,
-			"con": 15,
-			"int": 1,
-			"wis": 9,
-			"cha": 3,
-			"senses": [
-				"blindsight 60 ft."
-			],
-			"passive": 9,
-			"cr": "2",
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The scorpion makes two Claw attacks and one Sting attack."
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 13}) from one of two claws."
-					]
-				},
-				{
-					"name": "Sting",
-					"entries": [
-						"{@atkr m} {@hit 4}, reach 5 ft. {@h}6 ({@damage 1d8 + 2}) Piercing damage plus 11 ({@damage 2d10}) Poison damage."
-					]
-				}
-			],
-			"environment": [
-				"desert"
-			],
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/giant-scorpion.mp3"
-			},
-			"senseTags": [
-				"B"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"miscTags": [
-				"MA"
-			],
-			"conditionInflict": [
-				"grappled"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"token": {
-				"name": "Giant Scorpion",
-				"source": "XMM"
-			},
-			"fluff": {
-				"name": "Giant Scorpion",
-				"source": "XMM",
-				"entries": [
-					{
-						"type": "section",
-						"name": "Animals",
-						"entries": [
-							"Use these stat blocks to represent the creatures they're named for or other similar creatures. For example, the {@creature Panther|XMM} stat block can also represent a mountain lion, while the {@creature Giant Goat|XMM} stat block might represent a buffalo. Any of these stat blocks might also serve as fantastical animals with distinctive names and cosmetic details unique to your D&D adventures."
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/XMM/Giant Scorpion.webp"
-						}
-					},
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/XMM/Animals Hills and Mountains.webp"
-						},
-						"title": "A druid calls on animals of the hills and mountains to aid her cause"
-					},
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/XMM/Animals Aquatic.webp"
-						},
-						"title": "Aquatic animals swim alongside a druid exploring the sea"
-					},
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/XMM/Animals Rainforest.webp"
-						},
-						"title": "Inhabitants of the rain forest answer a druid's summons"
-					}
-				]
-			},
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"The Carrion Devourer is a level 3 spellcaster. Its spellcasting ability is Strength (spell save {@dc 12}, +4 to hit with spell attacks). The Carrion Devourer has the following Warrior (GW) spells prepared:"
-					],
-					"daily": {
-						"1e": [
-							"{@spell healing signet|GW}"
-						]
-					},
-					"will": [
-						"{@spell executioner's strike|GW}"
-					],
-					"ability": "str",
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"O"
-			],
-			"damageTags": [
-				"B",
-				"I",
-				"P"
-			]
-		},
-		{
 			"name": "Lost Hydra",
 			"source": "GWP",
 			"size": [
@@ -11812,133 +11383,6 @@
 			],
 			"damageTags": [
 				"P"
-			]
-		},
-		{
-			"name": "Rust Devourer",
-			"source": "GWP",
-			"size": [
-				"M"
-			],
-			"type": "beast",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				14
-			],
-			"hp": {
-				"average": 33,
-				"formula": "6d8 + 6"
-			},
-			"speed": {
-				"walk": 40
-			},
-			"str": 13,
-			"dex": 12,
-			"con": 13,
-			"int": 2,
-			"wis": 13,
-			"cha": 6,
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 11,
-			"cr": "1/2",
-			"trait": [
-				{
-					"name": "Iron Scent",
-					"entries": [
-						"The rust monster can pinpoint the location of ferrous metal within 30 feet of itself."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The rust monster makes one Bite attack and uses Antennae twice."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atkr m} {@hit 3}, reach 5 ft. {@h}5 ({@damage 1d8 + 1}) Piercing damage."
-					]
-				},
-				{
-					"name": "Antennae",
-					"entries": [
-						"The rust monster targets one nonmagical metal object—armor or a weapon—worn or carried by a creature within 5 feet of itself. {@actSave dex} {@dc 11}, the creature with the object. {@actSaveFail} The object takes a -1 penalty to the AC it offers (armor) or to its attack rolls (weapon). Armor is destroyed if the penalty reduces its AC to 10, and a weapon is destroyed if its penalty reaches -5. The penalty can be removed by casting the {@spell Mending|XPHB} spell on the armor or weapon."
-					]
-				},
-				{
-					"name": "Destroy Metal",
-					"entries": [
-						"The rust monster touches a nonmagical metal object within 5 feet of itself that isn't being worn or carried. The touch destroys a 1-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} of the object."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Reflexive Antennae",
-					"entries": [
-						"{@actTrigger} An attack roll hits the rust monster. {@actResponse} The rust monster uses Antennae."
-					]
-				}
-			],
-			"environment": [
-				"underdark"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"miscTags": [
-				"MA"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"token": {
-				"name": "Rust Monster",
-				"source": "XMM"
-			},
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://5e.tools/img/bestiary/XMM/Rust Monster.webp"
-						}
-					}
-				]
-			},
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"The Rust Devourer is a level 1 spellcaster. Its spellcasting ability is Dexterity (spell save {@dc 11}, +3 to hit with spell attacks). The Rust Devourer has the following Warrior (GW) spells prepared:"
-					],
-					"daily": {
-						"1": [
-							"{@spell cyclone axe|GW}"
-						]
-					},
-					"ability": "dex",
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"O"
-			],
-			"damageTags": [
-				"P"
-			],
-			"savingThrowForced": [
-				"dexterity"
 			]
 		},
 		{
@@ -19295,6 +18739,138 @@
 				"constitution",
 				"dexterity"
 			]
+		},
+		{
+			"name": "Carrion Devourer",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"source": "GWP",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "8d8 + 8",
+				"average": 44
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 20
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 12,
+			"int": 2,
+			"wis": 8,
+			"cha": 4,
+			"passive": 9,
+			"cr": "1/4",
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 30 ft."
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"skill": {
+				"athletics": "+5"
+			},
+			"vulnerable": [
+				"cold"
+			],
+			"resist": [
+				"poison"
+			],
+			"traitTags": [
+				"Ambusher",
+				"Pack Tactics",
+				"Tunneler"
+			],
+			"shortName": "Devourer",
+			"trait": [
+				{
+					"name": "Ambusher",
+					"entries": [
+						"The devourer has advantage on attack rolls against any creature it has {@status surprised}."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The devourer has advantage on an attack roll against a creature if at least one of the devourer's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Tunneler",
+					"entries": [
+						"The devourer can burrow through solid rock at half its burrow speed and leaves a 5-foot-diameter tunnel in its wake."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 13}) from one of two claws."
+					]
+				},
+				{
+					"name": "Stinger",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage in melee, or 5 ({@damage 1d4 + 3}) piercing damage at range, plus 3 ({@damage 1d6}) poison damage, and the target has the {@condition Poisoned|XPHB} condition until the start of the devourer's next turn."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"poisoned"
+			],
+			"environment": [
+				"desert",
+				"forest",
+				"grassland",
+				"underdark",
+				"urban"
+			],
+			"group": [
+				"Devourer"
+			],
+			"treasure": [
+				"individual"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Red_devourer.jpg"
+						},
+						"title": "Carrion Devourer",
+						"credit": "ArenaNet",
+						"altText": "Carrion Devourer"
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Red_devourer_Token.png"
+			},
+			"damageTags": [
+				"B",
+				"I",
+				"P"
+			],
+			"hasFluff": true
 		}
 	],
 	"monsterFluff": [
@@ -19343,6 +18919,27 @@
 					"height": 900
 				}
 			]
+		},
+		{
+			"name": "Carrion Devourer",
+			"source": "GWP",
+			"_copy": {
+				"name": "Devourer",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Carrion Devourer are the most aggressive and common type of Devourer. They rush their prey and attack with their claws, while using their stingers to poison and weaken their victims."
+								]
+							}
+						]
+					}
+				}
+			}
 		}
 	],
 	"feat": [],

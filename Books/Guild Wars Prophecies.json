@@ -718,7 +718,7 @@
 													"id": "GWP4c1a",
 													"entries": [
 														"Hablion approaches the players with a worried expression. \"Alas, despite the current peace between Kryta and Ascalon, your King Adelbern still chooses to view all Krytans with distrust. He respects the old laws too much to do anything untoward, but I must take care not to give him any excuse to expel me from the kingdom. Therein lies my trouble.",
-    													"Unable to enter the city, my companions have been forced to travel south to Regent Valley to re-supply and have been victimized repeatedly by a bandit named Torin. We would hunt down Torin ourselves, but shedding the blood of an Ascalon, even a criminal like Torin, might be a mistake. Will you attend to this bandit threat for me?\""
+														"Unable to enter the city, my companions have been forced to travel south to Regent Valley to re-supply and have been victimized repeatedly by a bandit named Torin. We would hunt down Torin ourselves, but shedding the blood of an Ascalon, even a criminal like Torin, might be a mistake. Will you attend to this bandit threat for me?\""
 													]
 												},
 												"Finding {@creature Bandit Deceiver|XMM|Torin} is no easy taks. He is an accomplished bandit who has used the Searing to his advantage. He pillages the meager supplies of anyone who comes close enough to his hideout. The Ascalonian military it too short staffed to effectivly deal with him.",
@@ -4113,16 +4113,101 @@
 					"id": "GWP14",
 					"entries": [
 						{
-							"type": "image",
-							"href": {
-								"type": "external",
-								"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Devourer_concept_art.jpg"
-							},
-							"credit": "Daniel Dociu",
-							"width": 687,
-							"height": 900
+							"type": "section",
+							"name": "Monsters A to Z",
+							"page": "",
+							"entries": [
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@creature Carrion Devourer|GWP}",
+										"{@creature Whiptail Devourer|GWP}",
+										"{@creature Plague Devourer|GWP}",
+										"{@creature Thorn Devourer|GWP}",
+										"{@creature Fevered Devourer|GWP}",
+										"{@creature Rockshot Devourer|GWP}"
+									]
+								}
+							]
 						},
-						"List of all Monsters and their stat blocks."
+						{
+							"type": "section",
+							"name": "Monsters (D)",
+							"page": "",
+							"entries": [
+								{
+									"type": "section",
+									"name": "Devourer",
+									"page": "",
+									"entries": [
+										{
+											"type": "statblock",
+											"name": "Devourer",
+											"prop": "monsterFluff",
+											"source": "GWP",
+											"data": {
+												"renderCompact": {
+													"isSkipRootName": true
+												}
+											}
+										},
+										{
+											"type": "statblock",
+											"name": "Carrion Devourer",
+											"tag": "creature",
+											"source": "GWP",
+											"style": "narrow"
+										},
+										{
+											"type": "statblock",
+											"name": "Whiptail Devourer",
+											"tag": "creature",
+											"source": "GWP",
+											"style": "narrow"
+										},
+										{
+											"type": "statblock",
+											"name": "Plague Devourer",
+											"tag": "creature",
+											"source": "GWP",
+											"style": "narrow"
+										},
+										{
+											"type": "statblock",
+											"name": "Thorn Devourer",
+											"tag": "creature",
+											"source": "GWP",
+											"style": "narrow"
+										},
+										{
+											"type": "statblock",
+											"name": "Fevered Devourer",
+											"tag": "creature",
+											"source": "GWP",
+											"style": "narrow"
+										},
+										{
+											"type": "statblock",
+											"name": "Rockshot Devourer",
+											"tag": "creature",
+											"source": "GWP",
+											"style": "narrow"
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/Assets/Creatures/Red_Devourer.jpg"
+											},
+											"credit": "ArenaNet",
+											"width": 1755,
+											"height": 1759
+										}
+									]
+								}
+							]
+						}
 					]
 				},
 				{
@@ -19209,6 +19294,54 @@
 			"savingThrowForcedSpell": [
 				"constitution",
 				"dexterity"
+			]
+		}
+	],
+	"monsterFluff": [
+		{
+			"name": "Devourer",
+			"source": "GWP",
+			"entries": [
+				{
+					"type": "section",
+					"name": "Devourer",
+					"entries": [
+						"{@i Insectoid subterranean Ambushers}",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Habitat:",
+									"entry": "{@filter Deserts|beastiary|environment=desert}, {@filter Forests|beastiary|environment=forest}, {@filter Grasslands|beastiary|environment=grassland}, {@filter Underdark|beastiary|environment=underdark}, {@filter Urban|beastiary|environment=urban}"
+								},
+								{
+									"type": "item",
+									"name": "Treasure:",
+									"entry": "Individual"
+								}
+							]
+						},
+						"Devourers are large, insect-like creatures that make their homes in underground tunnels and caves. They are widespread across the world of Guild Wars, and are known for their voracious appetites and aggressive behavior. Devourers are typically about the size of a horse, with a hard exoskeleton and multiple legs. They have large jaws filled with razor-sharp teeth, which they use to tear apart their prey. Their two claws are also formidable weapons, capable of grapping and crushing their victims. Most fearsome of all is the Devourer's two poisonous stingers, which can inject a powerful toxin. Devourers are often found in groups, and can be a significant threat to travelers and adventurers who venture into their territory.",
+						"They use swarm tactics to overwhelm their prey, injecting their victims with a potent toxin and debilitating them before finishing them off with their jaws and claws. Carrion Devourers are usally the ones engaging their prey directly, while Whiptail and Plague Devourers hang back and attack from a distance with their stingers. Devourers are also known to be attracted to sources of light and sound, making them a common hazard in caves and tunnels where adventurers may be exploring. All Devourers have the following traits in common:",
+						"{@bold Ambusher.} The devourer has advantage on attack rolls against any creature it has {@condition surprised|XPHB}.",
+						"{@bold Pack Tactics.} The devourer has advantage on an attack roll against a creature if at least one of the devourer's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated|XPHB}.",
+						"{@bold Tunneler.} The devourer can burrow through solid rock at half its burrow speed and leaves a 5-foot-diameter tunnel in its wake."
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Devourer_concept_art.jpg"
+					},
+					"credit": "Daniel Dociu",
+					"width": 687,
+					"height": 900
+				}
 			]
 		}
 	],

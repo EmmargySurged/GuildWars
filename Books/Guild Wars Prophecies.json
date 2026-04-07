@@ -18858,6 +18858,660 @@
 			},
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Whiptail Devourer",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"source": "GWP",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "14d8 + 14",
+				"average": 77
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 12,
+			"int": 2,
+			"wis": 12,
+			"cha": 4,
+			"passive": 15,
+			"cr": "1",
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 30 ft."
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"vulnerable": [
+				"cold"
+			],
+			"resist": [
+				"poison"
+			],
+			"traitTags": [
+				"Ambusher",
+				"Pack Tactics",
+				"Tunneler"
+			],
+			"shortName": "Devourer",
+			"trait": [
+				{
+					"name": "Ambusher",
+					"entries": [
+						"The devourer has advantage on attack rolls against any creature it has {@status surprised}."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The devourer has advantage on an attack roll against a creature if at least one of the devourer's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Tunneler",
+					"entries": [
+						"The devourer can burrow through solid rock at half its burrow speed and leaves a 5-foot-diameter tunnel in its wake."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The devourer makes either one Whiptail attack or two Stinger attacks."
+					]
+				},
+				{
+					"name": "Whiptail",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 10 ft., one target. {@h}6 ({@damage 1d10 + 1}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Stinger",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 60/120 ft., one target. {@h}6 ({@damage 2d4 + 1}) piercing damage in melee, or 8 ({@damage 2d4 + 3}) piercing damage at range, plus 5 ({@damage 1d8}) poison damage, and the target has the {@condition Poisoned|XPHB} condition until the start of the devourer's next turn."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"environment": [
+				"desert",
+				"forest",
+				"grassland",
+				"underdark",
+				"urban"
+			],
+			"group": [
+				"Devourer"
+			],
+			"treasure": [
+				"individual"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"skill": {
+				"perception": "+5"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Yellow_Devourer_Token.png"
+			},
+			"damageTags": [
+				"B",
+				"I",
+				"P"
+			]
+		},
+		{
+			"name": "Plague Devourer",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"source": "GWP",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "16d8 + 32",
+				"average": 104
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 20
+			},
+			"str": 12,
+			"dex": 12,
+			"con": 14,
+			"int": 2,
+			"wis": 16,
+			"cha": 4,
+			"passive": 13,
+			"cr": "3",
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 30 ft."
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"vulnerable": [
+				"cold"
+			],
+			"resist": [
+				"poison"
+			],
+			"traitTags": [
+				"Ambusher",
+				"Pack Tactics",
+				"Tunneler"
+			],
+			"shortName": "Devourer",
+			"trait": [
+				{
+					"name": "Ambusher",
+					"entries": [
+						"The devourer has advantage on attack rolls against any creature it has {@status surprised}."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The devourer has advantage on an attack roll against a creature if at least one of the devourer's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Tunneler",
+					"entries": [
+						"The devourer can burrow through solid rock at half its burrow speed and leaves a 5-foot-diameter tunnel in its wake."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The devourer makes one Stinger attack and casts Virulence."
+					]
+				},
+				{
+					"name": "Stinger",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 30/60 ft., one target. {@h}8 ({@damage 3d4 + 1}) piercing damage in melee, or 11 ({@damage 4d4 + 1}) piercing damage at range, plus 9 ({@damage 2d8}) poison damage, and the target has the {@condition Poisoned|XPHB} condition until the start of the devourer's next turn."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"environment": [
+				"desert",
+				"forest",
+				"grassland",
+				"underdark",
+				"urban"
+			],
+			"group": [
+				"Devourer"
+			],
+			"treasure": [
+				"individual"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"actionTags": [
+				"Multiattack"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Plague Devourer casts the following spell, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 13})."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Virulence|GWP}"
+					],
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Ridged_Devourer_Token.png"
+			},
+			"damageTags": [
+				"I",
+				"P"
+			]
+		},
+		{
+			"name": "Thorn Devourer",
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"source": "GWP",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "18d8 + 54",
+				"average": 135
+			},
+			"speed": {
+				"walk": 50,
+				"burrow": 40
+			},
+			"str": 16,
+			"dex": 20,
+			"con": 16,
+			"int": 2,
+			"wis": 12,
+			"cha": 4,
+			"passive": 17,
+			"cr": "5",
+			"senses": [
+				"darkvision 120 ft.",
+				"tremorsense 60 ft."
+			],
+			"senseTags": [
+				"SD",
+				"T"
+			],
+			"traitTags": [
+				"Ambusher",
+				"Pack Tactics",
+				"Tunneler"
+			],
+			"shortName": "Devourer",
+			"trait": [
+				{
+					"name": "Ambusher",
+					"entries": [
+						"The devourer has advantage on attack rolls against any creature it has {@status surprised}."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The devourer has advantage on an attack roll against a creature if at least one of the devourer's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Tunneler",
+					"entries": [
+						"The devourer can burrow through solid rock at half its burrow speed and leaves a 5-foot-diameter tunnel in its wake."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The devourer makes three Stinger attacks."
+					]
+				},
+				{
+					"name": "Stinger",
+					"entries": [
+						"{@atk mw,rw} {@hit 8} to hit, reach 5 ft. or range 90/150 ft., one target. {@h}18 ({@damage 6d4 + 3}) piercing damage in melee, or 22 ({@damage 7d4 + 5}) piercing damage at range, plus 13 ({@damage 3d8}) poison damage, and the target has the {@condition Poisoned|XPHB} condition until the start of the devourer's next turn."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"environment": [
+				"desert",
+				"forest",
+				"grassland",
+				"underdark",
+				"urban"
+			],
+			"group": [
+				"Devourer"
+			],
+			"treasure": [
+				"individual"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"skill": {
+				"perception": "+7"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Yellow_Devourer_Token.png"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			]
+		},
+		{
+			"name": "Fevered Devourer",
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"source": "GWP",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "21d10 + 63",
+				"average": 178
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 20
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 16,
+			"int": 2,
+			"wis": 20,
+			"cha": 4,
+			"passive": 15,
+			"cr": "7",
+			"senses": [
+				"darkvision 120 ft.",
+				"tremorsense 60 ft."
+			],
+			"senseTags": [
+				"SD",
+				"T"
+			],
+			"traitTags": [
+				"Ambusher",
+				"Pack Tactics",
+				"Tunneler"
+			],
+			"shortName": "Devourer",
+			"trait": [
+				{
+					"name": "Ambusher",
+					"entries": [
+						"The devourer has advantage on attack rolls against any creature it has {@status surprised}."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The devourer has advantage on an attack roll against a creature if at least one of the devourer's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Tunneler",
+					"entries": [
+						"The devourer can burrow through solid rock at half its burrow speed and leaves a 5-foot-diameter tunnel in its wake."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The devourer makes one Stinger attack, casts either Enfeebling Blood or Weaken Armor, and casts Virulence."
+					]
+				},
+				{
+					"name": "Stinger",
+					"entries": [
+						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 60/90 ft., one target. {@h}13 ({@damage 5d4 + 1}) piercing damage in melee, or 20 ({@damage 7d4 + 3}) piercing damage at range, plus 18 ({@damage 4d8}) poison damage, and the target has the {@condition Poisoned|XPHB} condition until the start of the devourer's next turn."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"environment": [
+				"desert",
+				"forest",
+				"grassland",
+				"underdark",
+				"urban"
+			],
+			"group": [
+				"Devourer"
+			],
+			"treasure": [
+				"individual"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"actionTags": [
+				"Multiattack"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Plague Devourer casts the following spell, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 15})."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Enfeebling Blood|GW}",
+						"{@spell Virulence|GWP}",
+						"{@spell Weaken Armor|GW}"
+					],
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Ridged_Devourer_Token.png"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			]
+		},
+		{
+			"name": "Rockshot Devourer",
+			"size": [
+				"H"
+			],
+			"type": "beast",
+			"source": "GWP",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"formula": "22d10 + 88",
+				"average": 209
+			},
+			"speed": {
+				"walk": 60,
+				"burrow": 50
+			},
+			"str": 22,
+			"dex": 16,
+			"con": 18,
+			"int": 2,
+			"wis": 12,
+			"cha": 4,
+			"passive": 11,
+			"cr": "9",
+			"senses": [
+				"darkvision 240 ft.",
+				"tremorsense 120 ft."
+			],
+			"senseTags": [
+				"SD",
+				"T"
+			],
+			"traitTags": [
+				"Ambusher",
+				"Pack Tactics",
+				"Tunneler"
+			],
+			"shortName": "Devourer",
+			"trait": [
+				{
+					"name": "Ambusher",
+					"entries": [
+						"The devourer has advantage on attack rolls against any creature it has {@status surprised}."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The devourer has advantage on an attack roll against a creature if at least one of the devourer's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Tunneler",
+					"entries": [
+						"The devourer can burrow through solid rock at half its burrow speed and leaves a 10-foot-diameter tunnel in its wake."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The devourer makes two Stinger attacks and uses Rockshot if available."
+					]
+				},
+				{
+					"name": "Stinger",
+					"entries": [
+						"{@atk mw,rw} {@hit 10} to hit, reach 5 ft. or range 150/600 ft., one target. {@h}18 ({@damage 5d4 + 6}) piercing damage in melee, or 23 ({@damage 7d4 + 6}) piercing damage at range, plus 13 ({@damage 3d8}) poison damage, and the target has the {@condition Poisoned|XPHB} condition until the start of the devourer's next turn."
+					]
+				},
+				{
+					"name": "Rockshot {@recharge 4}",
+					"entries": [
+						"{@actSave dex} {@dc 16}, each creature in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point the devourer can see within 150 feet. {@i Failure:} 28 ({@damage 8d6}) Bludgeoning damage. {@i Success}: Half damage."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"environment": [
+				"desert",
+				"forest",
+				"grassland",
+				"underdark",
+				"urban"
+			],
+			"group": [
+				"Devourer"
+			],
+			"treasure": [
+				"individual"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"actionTags": [
+				"Multiattack"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Yellow_Devourer_Token.png"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"skill": {
+				"athletics": "+14"
+			},
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"P"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
 		}
 	],
 	"monsterFluff": [
@@ -18973,6 +19627,150 @@
 								"credit": "ArenaNet",
 								"width": 1755,
 								"height": 1759
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Plague Devourer",
+			"source": "GWP",
+			"_copy": {
+				"name": "Devourer",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Plague Devourer are a more dangerous and elusive variant of the Devourer. They amplify the poison inflicted by their stingers."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Ridged_Devourer.jpg"
+								},
+								"credit": "ArenaNet",
+								"width": 965,
+								"height": 744
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Thorn Devourer",
+			"source": "GWP",
+			"_copy": {
+				"name": "Devourer",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Thorn Devourer are the larger variants of Whiptail Devourers. They are hulking and more powerful than their smaller counterparts, firing volleys of poison stingers."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Yellow_devourer.jpg"
+								},
+								"credit": "ArenaNet",
+								"width": 1755,
+								"height": 1759
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Fevered Devourer",
+			"source": "GWP",
+			"_copy": {
+				"name": "Devourer",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Fevered Devourer are the most dangerous regular Devourer adventurers are likely to encounter. They spread disease and corruption wherever they go."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Ridged_Devourer.jpg"
+								},
+								"credit": "ArenaNet",
+								"width": 965,
+								"height": 744
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Rockshot Devourer",
+			"source": "GWP",
+			"_copy": {
+				"name": "Devourer",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Rockshot Devourer are the largest and most formidable variants of the Devourer, they are extremly rare and dangerous. They are known for their devastating attacks and ability to launch rocks at their prey."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Ridged_Devourer.jpg"
+								},
+								"credit": "ArenaNet",
+								"width": 965,
+								"height": 744
 							}
 						]
 					}

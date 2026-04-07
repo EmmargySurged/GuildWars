@@ -19402,9 +19402,9 @@
 			"dex": 16,
 			"con": 18,
 			"int": 2,
-			"wis": 12,
+			"wis": 18,
 			"cha": 4,
-			"passive": 11,
+			"passive": 14,
 			"cr": "9",
 			"senses": [
 				"darkvision 240 ft.",
@@ -19504,12 +19504,41 @@
 				"piercing",
 				"slashing"
 			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Rockshot Devourer casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 16})."
+					],
+					"daily": {
+						"1e": [
+							"{@spell Dust Trap|GWP} (level 3 Version)",
+							"{@spell Flame Trap|GW} (level 3 Version)",
+							"{@spell Spike Trap|GW} (level 3 Version)"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
 			"damageTags": [
 				"B",
 				"I",
 				"P"
 			],
+			"damageTagsSpell": [
+				"B",
+				"F",
+				"P"
+			],
 			"savingThrowForced": [
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
 				"dexterity"
 			]
 		}
@@ -19578,21 +19607,6 @@
 								]
 							}
 						]
-					},
-					"images": {
-						"mode": "prependArr",
-						"items": [
-							{
-								"type": "image",
-								"href": {
-									"type": "external",
-									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Red_devourer.jpg"
-								},
-								"credit": "ArenaNet",
-								"width": 1755,
-								"height": 1759
-							}
-						]
 					}
 				}
 			}
@@ -19622,7 +19636,7 @@
 								"type": "image",
 								"href": {
 									"type": "external",
-									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Yellow_devourer.jpg"
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Yellow_Devourer.jpg"
 								},
 								"credit": "ArenaNet",
 								"width": 1755,
@@ -19694,7 +19708,7 @@
 								"type": "image",
 								"href": {
 									"type": "external",
-									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Yellow_devourer.jpg"
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Yellow_Devourer.jpg"
 								},
 								"credit": "ArenaNet",
 								"width": 1755,

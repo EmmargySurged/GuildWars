@@ -10760,6 +10760,152 @@
 				"P",
 				"S"
 			]
+		},
+		{
+			"name": "White Mantle Scout",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item hide armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 36",
+				"average": 117
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 14,
+			"int": 12,
+			"wis": 16,
+			"cha": 12,
+			"passive": 17,
+			"cr": "4",
+			"shortName": "White Mantle",
+			"languages": [
+				"Common",
+				"Krytan"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Devotion",
+					"entries": [
+						"The white mantle has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Formation",
+					"entries": [
+						"The white mantle gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throws|XPHB|Saving Throw} for each ally of the white mantle that is within 5 feet of it. This bonus is not added to the white mantle's AC or saving throws if the white mantle is {@condition incapacitated|XPHB}."
+					]
+				},
+				{
+					"name": "Halt",
+					"entries": [
+						"When the white mantle hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
+					]
+				}
+			],
+			"gear": [
+				"Hide Armor|XPHB",
+				{
+					"item": "Shortsword|XPHB",
+					"quantity": 2,
+					"displayName": ""
+				},
+				"Longbow|XPHB",
+				{
+					"item": "Arrow|XPHB",
+					"quantity": 40,
+					"displayName": ""
+				},
+				{
+					"item": "Quiver|XPHB",
+					"quantity": 2,
+					"displayName": ""
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The white mantle makes two attacks, using Shortsword or Longbow in any combination."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 150/600 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"bonus": [
+				{
+					"name": "Stealth",
+					"entries": [
+						"The white mantle takes the {@action Hide} action."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"White Mantle"
+			],
+			"skill": {
+				"perception": "+7",
+				"survival": "+5",
+				"stealth": "+6"
+			},
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_ranger_Token.png"
+			},
+			"damageTags": [
+				"P",
+				"S"
+			]
 		}
 	],
 	"monsterFluff": [
@@ -11092,6 +11238,42 @@
 								"href": {
 									"type": "external",
 									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_Warrior_m.jpg"
+								},
+								"credit": "ArenaNet",
+								"width": 1075,
+								"height": 2167
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "White Mantle Scout",
+			"source": "GWP",
+			"_copy": {
+				"name": "White Mantle",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									""
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_ranger.jpg"
 								},
 								"credit": "ArenaNet",
 								"width": 1075,

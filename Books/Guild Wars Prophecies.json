@@ -4126,7 +4126,23 @@
 										"{@creature Plague Devourer|GWP}",
 										"{@creature Thorn Devourer|GWP}",
 										"{@creature Fevered Devourer|GWP}",
-										"{@creature Rockshot Devourer|GWP}"
+										"{@creature Rockshot Devourer|GWP}",
+										"{@creature White Mantle Knight|GWP}",
+										"{@creature White Mantle Scout|GWP}",
+										"{@creature White Mantle Priest|GWP}",
+										"{@creature White Mantle Ritualist|GWP}",
+										"{@creature White Mantle Sycophant|GWP}",
+										"{@creature White Mantle Savant|GWP}",
+										"{@creature White Mantle Zealot|GWP}",
+										"{@creature White Mantle Seeker|GWP}",
+										"{@creature White Mantle Abbot|GWP}",
+										"{@creature White Mantle Fanatic|GWP}",
+										"{@creature White Mantle Parasite|GWP}",
+										"{@creature White Mantle Adherent|GWP}",
+										"{@creature Galrath|GWP}",
+										"{@creature Justiciar Hablion|GWP}",
+										"{@creature Markis|GWP}",
+										"{@creature Confessor Dorian|GWP}"
 									]
 								}
 							]
@@ -7222,212 +7238,6 @@
 			]
 		},
 		{
-			"name": "Markis",
-			"source": "GWP",
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"human"
-				]
-			},
-			"alignment": [
-				"L",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 19,
-					"from": [
-						"{@item studded leather armor|XPHB|studded leather}"
-					]
-				}
-			],
-			"hp": {
-				"formula": "26d8 + 130",
-				"average": 247
-			},
-			"speed": {
-				"walk": 40
-			},
-			"str": 11,
-			"dex": 22,
-			"con": 20,
-			"int": 11,
-			"wis": 16,
-			"cha": 10,
-			"skill": {
-				"acrobatics": "+10",
-				"perception": "+9",
-				"stealth": "+10"
-			},
-			"passive": 19,
-			"languages": [
-				"Common",
-				"Krytan"
-			],
-			"cr": "12",
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Markis makes three Shortsword or Longbow attacks."
-					]
-				},
-				{
-					"name": "Shortsword",
-					"entries": [
-						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}16 ({@damage 3d6 + 6}) piercing damage."
-					]
-				},
-				{
-					"name": "Longbow",
-					"entries": [
-						"{@atk rw} {@hit 10} to hit, range 150/600 ft., one target. {@h}28 ({@damage 5d8 + 6}) piercing damage."
-					]
-				}
-			],
-			"bonus": [
-				{
-					"name": "Archer's Eye (3/Day)",
-					"entries": [
-						"Immediately after making an attack roll or a damage roll with a ranged weapon, Markis can roll a {@dice d12} and add the number rolled to the total."
-					]
-				}
-			],
-			"attachedItems": [
-				"longbow|phb",
-				"shortsword|phb"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C"
-			],
-			"miscTags": [
-				"MW",
-				"MLW",
-				"RW",
-				"RNG"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Markis.jpg"
-						}
-					}
-				]
-			},
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Markis casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 16}, +6 to hit with spell attacks.)"
-					],
-					"will": [
-						"{@spell Pin Down|GW}"
-					],
-					"ability": "wis",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Markis casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 16}, +6 to hit with spell attacks.)"
-					],
-					"displayAs": "bonus",
-					"daily": {
-						"2": [
-							"{@spell Dryder's Defenses|GWP}"
-						]
-					},
-					"ability": "wis",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Markis casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 16}, +6 to hit with spell attacks.)"
-					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Barrage|GW}"
-					],
-					"daily": {
-						"1": [
-							"{@spell Troll Unguent|GW} (Level 4 Version)"
-						]
-					},
-					"ability": "wis",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Markis casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 16}, +6 to hit with spell attacks.)"
-					],
-					"displayAs": "reaction",
-					"daily": {
-						"3": [
-							"{@spell Concussion Shot|GW}"
-						]
-					},
-					"ability": "wis",
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"O"
-			],
-			"legendaryActions": 3,
-			"legendary": [
-				{
-					"name": "Attack",
-					"entries": [
-						"Markis attacks using one of their attacks."
-					]
-				},
-				{
-					"name": "Move",
-					"entries": [
-						"Markis moves up to their speed without provoking opportunity attacks."
-					]
-				},
-				{
-					"name": "Spellcasting (Costs 2 Actions)",
-					"entries": [
-						"Markis uses Spellcasting."
-					]
-				}
-			],
-			"trait": [
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"If Markis fails a saving throw, it can choose to succeed instead."
-					]
-				}
-			],
-			"traitTags": [
-				"Legendary Resistances"
-			],
-			"tokenHref": {
-				"type": "external",
-				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Markis_Token.png"
-			},
-			"damageTags": [
-				"P"
-			]
-		},
-		{
 			"name": "Shining Blade Ranger",
 			"source": "GWP",
 			"size": [
@@ -8049,8 +7859,8 @@
 				}
 			],
 			"hp": {
-				"formula": "35d8 + 140",
-				"average": 297
+				"formula": "45d8 + 180",
+				"average": 382
 			},
 			"speed": {
 				"walk": 50
@@ -8062,40 +7872,46 @@
 			"wis": 12,
 			"cha": 18,
 			"passive": 21,
-			"cr": "14",
+			"cr": "20",
 			"shortName": "Hablion",
 			"languages": [
 				"Common",
 				"Krytan",
-				"Ascalonian"
+				"Ascalonian",
+				"Mursaat"
 			],
 			"languageTags": [
 				"C"
 			],
 			"trait": [
 				{
-					"name": "Special Equipment",
-					"entries": [
-						"Hablion is wearing and attuned to the following magic items:",
-						"- {@item Belt of Fire Giant Strength}",
-						"- {@item Animated Shield}",
-						"- {@item Executioner's Handaxe|XDMG}",
-						"- {@item Enspelled (Level 5) Handaxe|XDMG} ({@spell Banishing Smite|XPHB})",
-						"- {@item Titanstrength Longbow|GW}"
-					]
-				},
-				{
-					"name": "{@variantrule Defiance Bar|GW2}",
-					"entries": [
-						"Starting Value: 1000",
-						"Recovery: 100",
-						"Break Effect: {@condition Paralyzed|XPHB} and {@variantrule Defiance Bar|GW2} locked until the end of his next turn, then regains 500."
-					]
-				},
-				{
 					"name": "Magic Resistance",
 					"entries": [
 						"Hablion has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the hablion fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Devotion",
+					"entries": [
+						"Justiciar Hablion has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Formation",
+					"entries": [
+						"Justiciar Hablion gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of Justiciar Hablion that is within 5 feet of him. This bonus is not added to Justiciar Hablion's AC or saving throws if Justiciar Hablion is {@condition incapacitated|XPHB}."
+					]
+				},
+				{
+					"name": "Halt",
+					"entries": [
+						"When Justiciar Hablion hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
 					]
 				}
 			],
@@ -8105,7 +7921,7 @@
 				"cha": "+9"
 			},
 			"skill": {
-				"acrobatics": "+7",
+				"acrobatics": "+8",
 				"athletics": "+17",
 				"arcana": "+7",
 				"deception": "+14",
@@ -8125,7 +7941,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Justiciar Hablion casts one of the following spells, requiring no Material components and using Strength as the spellcasting ability (spell save {@dc 20}, +12 to hit with spell attacks.)"
+						"Justiciar Hablion casts one of the following spells, requiring no Material components and using Strength as the spellcasting ability (spell save {@dc 20})"
 					],
 					"will": [
 						"{@spell Cyclone Axe|GW}",
@@ -8139,7 +7955,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Justiciar Hablion casts one of the following spells, requiring no Material components and using Strength as the spellcasting ability (spell save {@dc 17}, +9 to hit with spell attacks.)"
+						"Justiciar Hablion casts one of the following spells, requiring no Material components and using Strength as the spellcasting ability (spell save {@dc 17})"
 					],
 					"displayAs": "bonus",
 					"daily": {
@@ -8161,7 +7977,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Justiciar Hablion makes four Executioner's Handaxe or Titanstrength Longbow attacks in any combination, he then can make a single attack with his Enspelled (Level 5) Handaxe if he didn't cast {@spell Banishing Smite|XPHB} or {@spell Hundred Blades|GW} this turn and his {@item Animated Shield} is active."
+						"Justiciar Hablion makes four Executioner's Handaxe or Titanstring Longbow attacks in any combination; he then can make a single attack with his Enspelled (Level 5) Handaxe if he didn't cast {@spell Banishing Smite|XPHB} or {@spell Hundred Blades|GW} this turn and his {@item Animated Shield} is active."
 					]
 				},
 				{
@@ -8192,10 +8008,6 @@
 				"MLW",
 				"RW",
 				"RNG"
-			],
-			"attachedItems": [
-				"enspelled (level 5) handaxe|xdmg",
-				"executioner's handaxe|xdmg"
 			],
 			"reaction": [
 				{
@@ -8246,6 +8058,13 @@
 			},
 			"group": [
 				"White Mantle"
+			],
+			"gear": [
+				"Belt of Fire Giant Strength|XDMG",
+				"Animated Shield|XDMG",
+				"Executioner's Handaxe|XDMG",
+				"Enspelled (Level 5) Handaxe|XDMG",
+				"Titanstring Longbow|GW"
 			],
 			"damageTags": [
 				"P",
@@ -10686,7 +10505,7 @@
 				{
 					"name": "Formation",
 					"entries": [
-						"The white mantle gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throws|XPHB|Saving Throw} for each ally of the white mantle that is within 5 feet of it. This bonus is not added to the white mantle's AC or saving throws if the white mantle is {@condition incapacitated|XPHB}."
+						"The white mantle gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of the white mantle that is within 5 feet of it. This bonus is not added to the white mantle's AC or saving throws if the white mantle is {@condition incapacitated|XPHB}."
 					]
 				},
 				{
@@ -10812,7 +10631,7 @@
 				{
 					"name": "Formation",
 					"entries": [
-						"The white mantle gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throws|XPHB|Saving Throw} for each ally of the white mantle that is within 5 feet of it. This bonus is not added to the white mantle's AC or saving throws if the white mantle is {@condition incapacitated|XPHB}."
+						"The white mantle gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of the white mantle that is within 5 feet of it. This bonus is not added to the white mantle's AC or saving throws if the white mantle is {@condition incapacitated|XPHB}."
 					]
 				},
 				{
@@ -10906,6 +10725,1998 @@
 				"P",
 				"S"
 			]
+		},
+		{
+			"name": "White Mantle Priest",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item breastplate|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 54",
+				"average": 135
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 12,
+			"dex": 12,
+			"con": 16,
+			"int": 12,
+			"wis": 12,
+			"cha": 18,
+			"passive": 11,
+			"cr": "5",
+			"shortName": "White Mantle",
+			"languages": [
+				"Common",
+				"Krytan"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Devotion",
+					"entries": [
+						"The white mantle has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Formation",
+					"entries": [
+						"The white mantle gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of the white mantle that is within 5 feet of it. This bonus is not added to the white mantle's AC or saving throws if the white mantle is {@condition incapacitated|XPHB}."
+					]
+				},
+				{
+					"name": "Halt",
+					"entries": [
+						"When the white mantle hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
+					]
+				}
+			],
+			"gear": [
+				"Breastplate|XPHB",
+				"Mace|XPHB",
+				"Amulet|XPHB"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The white mantle makes one Holy Mace or Radiant Burst attack and casts Judge's Insight or Convert Hexes."
+					]
+				},
+				{
+					"name": "Holy Mace",
+					"entries": [
+						"{@atk ms} {@hit 7} to hit, reach 5 ft., one target. {@h} 7 ({@damage 1d6 + 4}) bludgeoning damage, plus 8 ({@damage 2d8}) radiant damage."
+					]
+				},
+				{
+					"name": "Radiant Burst",
+					"entries": [
+						"{@atk rs} {@hit 7} to hit, range 120 ft., one target. {@h}15 ({@damage 4d6}) radiant damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"White Mantle"
+			],
+			"skill": {
+				"deception": "+10",
+				"persuasion": "+10",
+				"insight": "+4"
+			},
+			"miscTags": [
+				"MA",
+				"MLW",
+				"RA"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The white mantle casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Judge's Insight|GW}"
+					],
+					"daily": {
+						"3": [
+							"{@spell Convert Hexes|GW}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Intervene",
+					"headerEntries": [
+						"The white mantle casts Shielding Hands or Divine Intervention."
+					],
+					"displayAs": "bonus",
+					"will": [
+						"{@spell Shielding Hands|GW}"
+					],
+					"daily": {
+						"2": [
+							"{@spell Divine Intervention|GW}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_monk_Token.png"
+			},
+			"damageTags": [
+				"B",
+				"R"
+			]
+		},
+		{
+			"name": "White Mantle Ritualist",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@spell mage armor|XPHB}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 60",
+				"average": 150
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 16,
+			"int": 18,
+			"wis": 12,
+			"cha": 10,
+			"passive": 11,
+			"cr": "6",
+			"shortName": "White Mantle",
+			"languages": [
+				"Common",
+				"Krytan"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Devotion",
+					"entries": [
+						"The white mantle has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Formation",
+					"entries": [
+						"The white mantle gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of the white mantle that is within 5 feet of it. This bonus is not added to the white mantle's AC or saving throws if the white mantle is {@condition incapacitated|XPHB}."
+					]
+				},
+				{
+					"name": "Halt",
+					"entries": [
+						"When the white mantle hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
+					]
+				}
+			],
+			"gear": [
+				{
+					"item": "Dagger|XPHB",
+					"quantity": 10,
+					"displayName": ""
+				},
+				"Rod|XPHB"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The white mantle casts Vampiric Gaze once or makes one Ritual Dagger attack and casts Order of Pain or Mark of Subversion."
+					]
+				},
+				{
+					"name": "Ritual Dagger",
+					"entries": [
+						"{@atk ms,rs} {@hit 7} to hit, reach 5 ft. or range 60 ft., one target. {@h}6 ({@damage 1d4 + 4}) slashing damage in melee, or 6 ({@damage 1d4 + 4}) slashing damage at range, plus 27 ({@damage 6d8}) necrotic damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"White Mantle"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The white mantle casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 15}, +7 to hit with spell attacks)."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Order of Pain|GW}",
+						"{@spell Vampiric Gaze|GW} (level 4 Version)"
+					],
+					"daily": {
+						"3": [
+							"{@spell Mark of Subversion|GWP}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RA",
+				"MA",
+				"THW"
+			],
+			"bonus": [
+				{
+					"name": "Profane Ritual",
+					"entries": [
+						"The white mantle restores one use of an ability of a friendly creature it can see within 30 feet of it."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_necromancer_Token.png"
+			},
+			"damageTags": [
+				"N",
+				"S"
+			]
+		},
+		{
+			"name": "White Mantle Sycophant",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "22d8 + 66",
+				"average": 165
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 16,
+			"int": 10,
+			"wis": 18,
+			"cha": 12,
+			"passive": 14,
+			"cr": "7",
+			"shortName": "White Mantle",
+			"languages": [
+				"Common",
+				"Krytan"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Devotion",
+					"entries": [
+						"The white mantle has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Formation",
+					"entries": [
+						"The white mantle gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of the white mantle that is within 5 feet of it. This bonus is not added to the white mantle's AC or saving throws if the white mantle is {@condition incapacitated|XPHB}."
+					]
+				},
+				{
+					"name": "Halt",
+					"entries": [
+						"When the white mantle hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
+					]
+				}
+			],
+			"gear": [
+				"Studded Leather Armor|XPHB",
+				"Crystal|XPHB"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The white mantle casts Empathy twice or makes two Chaos Jolt attacks and casts Guilt, Shame, or Shatter Enchantment."
+					]
+				},
+				{
+					"name": "Chaos Jolt",
+					"entries": [
+						"{@atk ms,rs} {@hit 7} to hit, reach 5 ft. or range 90 ft., one target. {@h}18 ({@damage 2d12 + 4}) psychic damage in melee, or 18 ({@damage 2d12 + 4}) psychic damage at range, plus 7 ({@damage 2d6}) acid, cold, fire, lightning, or thunder damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"White Mantle"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The white mantle casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 15}, +7 to hit with spell attacks)."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Empathy|GW} (level 3 Version)",
+						"{@spell Guilt|GWP}",
+						"{@spell Shame|GWP}"
+					],
+					"daily": {
+						"3": [
+							"{@spell Shatter Enchantment|GW}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RA",
+				"MA"
+			],
+			"bonus": [
+				{
+					"name": "Sycophantic Devotion",
+					"entries": [
+						"The white mantle gives the {@action Help|XPHB} action to a creature within 60 feet of it."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_mesmer_Token.png"
+			},
+			"damageTags": [
+				"Y"
+			]
+		},
+		{
+			"name": "White Mantle Savant",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@spell mage armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "24d8 + 72",
+				"average": 180
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 16,
+			"int": 20,
+			"wis": 14,
+			"cha": 12,
+			"passive": 12,
+			"cr": "8",
+			"shortName": "White Mantle",
+			"languages": [
+				"Common",
+				"Krytan"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Devotion",
+					"entries": [
+						"The white mantle has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Formation",
+					"entries": [
+						"The white mantle gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of the white mantle that is within 5 feet of it. This bonus is not added to the white mantle's AC or saving throws if the white mantle is {@condition incapacitated|XPHB}."
+					]
+				},
+				{
+					"name": "Halt",
+					"entries": [
+						"When the white mantle hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
+					]
+				}
+			],
+			"gear": [
+				"Wand|XPHB"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The white mantle casts either Fireball (Guild Wars) or Glyph of Elemental Power, makes one Fire Blast attack, and casts Searing Heat or Ward Against Elements."
+					]
+				},
+				{
+					"name": "Fire Blast",
+					"entries": [
+						"{@atk ms,rs} {@hit 8} to hit, reach 5 ft. or range 120 ft., one target. {@h}20 ({@damage 6d6 + 5}) fire damage in melee, or 20 ({@damage 6d6 + 4}) fire damage at range."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"White Mantle"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The white mantle casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 16}, +8 to hit with spell attacks)."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Fireball (Guild Wars)|GW}",
+						"{@spell Glyph of Elemental Power|GW}"
+					],
+					"daily": {
+						"2": [
+							"{@spell Searing Heat|GWP}",
+							"{@spell Ward Against Elements|GWP}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RA",
+				"MA"
+			],
+			"bonus": [
+				{
+					"name": "Arcane Evasion",
+					"entries": [
+						"The white mantle takes the {@action Dodge} action."
+					]
+				}
+			],
+			"skill": {
+				"arcana": "+11"
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_elementalist_Token.png"
+			},
+			"damageTags": [
+				"F"
+			]
+		},
+		{
+			"name": "White Mantle Zealot",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item chain mail|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "24d8 + 96",
+				"average": 204
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 18,
+			"int": 12,
+			"wis": 10,
+			"cha": 12,
+			"passive": 18,
+			"cr": "9",
+			"shortName": "White Mantle",
+			"languages": [
+				"Common",
+				"Krytan",
+				"Mursaat"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"athletics": "+13",
+				"perception": "+8"
+			},
+			"trait": [
+				{
+					"name": "Devotion",
+					"entries": [
+						"The white mantle has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Formation",
+					"entries": [
+						"The white mantle gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of the white mantle that is within 5 feet of it. This bonus is not added to the white mantle's AC or saving throws if the white mantle is {@condition incapacitated|XPHB}."
+					]
+				},
+				{
+					"name": "Halt",
+					"entries": [
+						"When the white mantle hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
+					]
+				}
+			],
+			"gear": [
+				"Chain Mail|XPHB",
+				"Greatsword|XPHB",
+				"Heavy Crossbow|XPHB",
+				{
+					"item": "+1 Bolt|XDMG",
+					"quantity": 20,
+					"displayName": ""
+				},
+				"Crossbow Bolt Case|XPHB"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The white mantle makes three attacks, using Greatsword or Heavy Crossbow in any combination."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}20 ({@damage 5d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 100/400 ft., one target. {@h}12 ({@damage 2d10 + 3}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"bonus": [
+				{
+					"name": "Rush",
+					"entries": [
+						"The white mantle takes the {@action Dash} action."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"White Mantle"
+			],
+			"spellcasting": [
+				{
+					"name": "Charge",
+					"headerEntries": [
+						"The white mantle casts one of the following spells, requiring no Material components and using Constitution as the spellcasting ability (spell save {@dc 15})."
+					],
+					"displayAs": "bonus",
+					"will": [
+						"{@spell Bull's Charge|GWP}"
+					],
+					"ability": "con",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_warrior_f_Token.png"
+			},
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "White Mantle Seeker",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item studded leather armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "28d8 + 84",
+				"average": 210
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 16,
+			"int": 12,
+			"wis": 18,
+			"cha": 12,
+			"passive": 22,
+			"cr": "10",
+			"shortName": "White Mantle",
+			"languages": [
+				"Common",
+				"Krytan",
+				"Mursaat"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Devotion",
+					"entries": [
+						"The white mantle has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Formation",
+					"entries": [
+						"The white mantle gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of the white mantle that is within 5 feet of it. This bonus is not added to the white mantle's AC or saving throws if the white mantle is {@condition incapacitated|XPHB}."
+					]
+				},
+				{
+					"name": "Halt",
+					"entries": [
+						"When the white mantle hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
+					]
+				}
+			],
+			"gear": [
+				"Studded Leather Armor|XPHB",
+				"Rapier|XPHB",
+				"Longbow|XPHB",
+				{
+					"item": "+1 Arrow|XDMG",
+					"quantity": 40,
+					"displayName": ""
+				},
+				{
+					"item": "Quiver|XPHB",
+					"quantity": 2,
+					"displayName": ""
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The white mantle makes three attacks, using Rapier or Longbow in any combination. It can forgo one of these attacks to cast Incendiary Arrows."
+					]
+				},
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 150/600 ft., one target. {@h}22 ({@damage 4d8 + 6}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"bonus": [
+				{
+					"name": "Skirmish",
+					"entries": [
+						"The white mantle takes the {@action Disengage} and either the {@action Dash} or {@action Hide} actions."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"White Mantle"
+			],
+			"skill": {
+				"perception": "+12",
+				"survival": "+8",
+				"stealth": "+13"
+			},
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_ranger_Token.png"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The white mantle casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 16})."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Incendiary Arrows|GWP}"
+					],
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "White Mantle Abbot",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item splint armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "27d8 + 108",
+				"average": 229
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 18,
+			"int": 12,
+			"wis": 12,
+			"cha": 20,
+			"passive": 11,
+			"cr": "11",
+			"shortName": "White Mantle",
+			"languages": [
+				"Common",
+				"Krytan",
+				"Mursaat"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Devotion",
+					"entries": [
+						"The white mantle has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Formation",
+					"entries": [
+						"The white mantle gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of the white mantle that is within 5 feet of it. This bonus is not added to the white mantle's AC or saving throws if the white mantle is {@condition incapacitated|XPHB}."
+					]
+				},
+				{
+					"name": "Halt",
+					"entries": [
+						"When the white mantle hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
+					]
+				}
+			],
+			"gear": [
+				"Splint Armor|XPHB",
+				"+1 Mace|XDMG",
+				"Amulet|XPHB"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The white mantle makes two Holy Mace or Radiant Burst attacks and casts Heal Area/Karei's Healing Circle, Judge's Insight, or Convert Hexes."
+					]
+				},
+				{
+					"name": "Holy Mace",
+					"entries": [
+						"{@atk ms} {@hit 10} to hit, reach 5 ft., one target. {@h} 13 ({@damage 2d6 + 6}) bludgeoning damage, plus 20 ({@damage 5d8}) radiant damage."
+					]
+				},
+				{
+					"name": "Radiant Burst",
+					"entries": [
+						"{@atk rs} {@hit 9} to hit, range 120 ft., one target. {@h}24 ({@damage 8d6}) radiant damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"White Mantle"
+			],
+			"skill": {
+				"deception": "+13",
+				"persuasion": "+13",
+				"insight": "+5"
+			},
+			"miscTags": [
+				"MA",
+				"MLW",
+				"RA"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The white mantle casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Heal Area/Karei's Healing Circle|GWP}",
+						"{@spell Judge's Insight|GW} (level 3 Version)"
+					],
+					"daily": {
+						"3": [
+							"{@spell Convert Hexes|GW}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Intervene",
+					"headerEntries": [
+						"The white mantle casts Shielding Hands or Divine Intervention."
+					],
+					"displayAs": "bonus",
+					"will": [
+						"{@spell Shielding Hands|GW} (level 3 Version)"
+					],
+					"daily": {
+						"2e": [
+							"{@spell Divine Intervention|GW}",
+							"{@spell Shield of Regeneration|GW}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_monk_Token.png"
+			},
+			"damageTags": [
+				"B",
+				"R"
+			]
+		},
+		{
+			"name": "White Mantle Fanatic",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@spell mage armor|XPHB}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "33d8 + 99",
+				"average": 247
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 16,
+			"int": 20,
+			"wis": 12,
+			"cha": 10,
+			"passive": 11,
+			"cr": "12",
+			"shortName": "White Mantle",
+			"languages": [
+				"Common",
+				"Krytan",
+				"Mursaat"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Devotion",
+					"entries": [
+						"The white mantle has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Formation",
+					"entries": [
+						"The white mantle gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of the white mantle that is within 5 feet of it. This bonus is not added to the white mantle's AC or saving throws if the white mantle is {@condition incapacitated|XPHB}."
+					]
+				},
+				{
+					"name": "Halt",
+					"entries": [
+						"When the white mantle hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
+					]
+				}
+			],
+			"gear": [
+				{
+					"item": "+1 Dagger|XDMG",
+					"quantity": 10,
+					"displayName": ""
+				},
+				"Rod|XPHB"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The white mantle casts Vampiric Gaze twice or makes two Ritual Dagger attacks and casts Order of the Vampire or Mark of Subversion."
+					]
+				},
+				{
+					"name": "Ritual Dagger",
+					"entries": [
+						"{@atk ms,rs} {@hit 10} to hit, reach 5 ft. or range 60 ft., one target. {@h}10 ({@damage 2d4 + 6}) slashing damage in melee, or 10 ({@damage 2d4 + 6}) slashing damage at range, plus 27 ({@damage 6d8}) necrotic damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"White Mantle"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The white mantle casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 17}, +9 to hit with spell attacks)."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Order of the Vampire|GWP} (level 3 Version)",
+						"{@spell Vampiric Gaze|GW} (level 6 Version)"
+					],
+					"daily": {
+						"3": [
+							"{@spell Mark of Subversion|GWP}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RA",
+				"MA",
+				"THW"
+			],
+			"bonus": [
+				{
+					"name": "Profane Ritual",
+					"entries": [
+						"The white mantle restores all uses of an ability of a friendly creature it can see within 60 feet of it."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_necromancer_Token.png"
+			},
+			"damageTags": [
+				"N",
+				"S"
+			]
+		},
+		{
+			"name": "White Mantle Parasite",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item +1 half plate armor|xdmg}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "28d8 + 140",
+				"average": 266
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 20,
+			"int": 10,
+			"wis": 20,
+			"cha": 12,
+			"passive": 15,
+			"cr": "13",
+			"shortName": "White Mantle",
+			"languages": [
+				"Common",
+				"Krytan",
+				"Mursaat"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Devotion",
+					"entries": [
+						"The white mantle has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Formation",
+					"entries": [
+						"The white mantle gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of the white mantle that is within 5 feet of it. This bonus is not added to the white mantle's AC or saving throws if the white mantle is {@condition incapacitated|XPHB}."
+					]
+				},
+				{
+					"name": "Halt",
+					"entries": [
+						"When the white mantle hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
+					]
+				}
+			],
+			"gear": [
+				"+1 half plate armor|Xdmg",
+				"Crystal|XPHB"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The white mantle casts Empathy twice or makes two Chaos Jolt attacks and casts Energy Surge, Guilt, Shame, or Shatter Enchantment."
+					]
+				},
+				{
+					"name": "Chaos Jolt",
+					"entries": [
+						"{@atk ms,rs} {@hit 10} to hit, reach 5 ft. or range 90 ft., one target. {@h}25 ({@damage 3d12 + 6}) psychic damage in melee, or 25 ({@damage 3d12 + 6}) psychic damage at range, plus 7 ({@damage 2d6}) acid, cold, fire, lightning, or thunder damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"White Mantle"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The white mantle casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 18}, +10 to hit with spell attacks)."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Empathy|GW} (level 5 Version)",
+						"{@spell Energy Surge|GW}",
+						"{@spell Guilt|GWP}",
+						"{@spell Shame|GWP}"
+					],
+					"daily": {
+						"3": [
+							"{@spell Shatter Enchantment|GW}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RA",
+				"MA"
+			],
+			"bonus": [
+				{
+					"name": "Parasitic Support",
+					"entries": [
+						"The white mantle gives the {@action Help|XPHB} action to up to two creatures within 90 feet of it."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_mesmer_Token.png"
+			},
+			"damageTags": [
+				"Y"
+			]
+		},
+		{
+			"name": "White Mantle Adherent",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@spell mage armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "28d8 + 140",
+				"average": 266
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 20,
+			"int": 20,
+			"wis": 14,
+			"cha": 12,
+			"passive": 12,
+			"cr": "14",
+			"shortName": "White Mantle",
+			"languages": [
+				"Common",
+				"Krytan",
+				"Mursaat"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Devotion",
+					"entries": [
+						"The white mantle has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Formation",
+					"entries": [
+						"The white mantle gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of the white mantle that is within 5 feet of it. This bonus is not added to the white mantle's AC or saving throws if the white mantle is {@condition incapacitated|XPHB}."
+					]
+				},
+				{
+					"name": "Halt",
+					"entries": [
+						"When the white mantle hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
+					]
+				}
+			],
+			"gear": [
+				"+1 Wand of the War Mage|XDMG"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The white mantle casts either Fireball (Guild Wars) or Glyph of Renewal, makes one Fire Blast attack, and casts Searing Heat or Ward Against Elements."
+					]
+				},
+				{
+					"name": "Fire Blast",
+					"entries": [
+						"{@atk ms,rs} {@hit 11} to hit, reach 5 ft. or range 120 ft., one target. {@h}42 ({@damage 10d6 + 5}) fire damage in melee, or 41 ({@damage 10d6 + 5}) fire damage at range."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"White Mantle"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The white mantle casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 18}, +8 to hit with spell attacks)."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Fireball (Guild Wars)|GW} (level 4 Version)",
+						"{@spell Glyph of Renewal|GWP}"
+					],
+					"daily": {
+						"3": [
+							"{@spell Searing Heat|GWP} (level 6 Version)",
+							"{@spell Ward Against Elements|GWP} (level 3 Version)"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RA",
+				"MA"
+			],
+			"bonus": [
+				{
+					"name": "Arcane Evasion",
+					"entries": [
+						"The white mantle takes the {@action Dodge} and {@action Disengage} actions."
+					]
+				}
+			],
+			"skill": {
+				"arcana": "+15"
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_elementalist_Token.png"
+			},
+			"damageTags": [
+				"F"
+			]
+		},
+		{
+			"name": "Galrath",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "31d8 + 155",
+				"average": 294
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 20,
+			"int": 16,
+			"wis": 10,
+			"cha": 12,
+			"passive": 20,
+			"cr": "15",
+			"shortName": "Galrath",
+			"languages": [
+				"Common",
+				"Krytan",
+				"Mursaat"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"athletics": "+15",
+				"perception": "+10",
+				"history": "+13"
+			},
+			"trait": [
+				{
+					"name": "Devotion",
+					"entries": [
+						"Galrath has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Formation",
+					"entries": [
+						"Galrath gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of Galrath that is within 5 feet of him. This bonus is not added to Galrath's AC or saving throws if Galrath is {@condition incapacitated|XPHB}."
+					]
+				},
+				{
+					"name": "Halt",
+					"entries": [
+						"When Galrath hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
+					]
+				}
+			],
+			"gear": [
+				"Plate Armor|XPHB",
+				"Greatsword|XPHB",
+				"Heavy Crossbow|XPHB",
+				{
+					"item": "+2 Bolt|XDMG",
+					"quantity": 20,
+					"displayName": ""
+				},
+				"Crossbow Bolt Case|XPHB"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Galrath makes four attacks, using Greatsword or Heavy Crossbow in any combination."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}29 ({@damage 7d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 9} to hit, range 100/400 ft., one target. {@h}19 ({@damage 3d10 + 4}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"bonus": [
+				{
+					"name": "Rush",
+					"entries": [
+						"The white mantle takes the {@action Dash} action."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"White Mantle"
+			],
+			"spellcasting": [
+				{
+					"name": "Blade Maelstrom",
+					"headerEntries": [
+						"Galrath casts one of the following spells, requiring no Material components and using Constitution as the spellcasting ability."
+					],
+					"displayAs": "bonus",
+					"will": [
+						"{@spell Hundred Blades|GW}"
+					],
+					"ability": "con",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Justiciar_Hablion_Token.png"
+			},
+			"isNpc": true,
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Markis",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item studded leather armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "42d8 + 294",
+				"average": 483
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 18,
+			"dex": 26,
+			"con": 24,
+			"int": 14,
+			"wis": 20,
+			"cha": 14,
+			"passive": 29,
+			"cr": "22",
+			"shortName": "White Mantle",
+			"languages": [
+				"Common",
+				"Krytan",
+				"Mursaat",
+				"Ascalonian"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Formation",
+					"entries": [
+						"Markis gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throws|XPHB|Saving Throw} for each ally of Markis that is within 5 feet of him. This bonus is not added to the Markis's AC or saving throws if Markis is {@condition incapacitated|XPHB}."
+					]
+				},
+				{
+					"name": "Halt",
+					"entries": [
+						"When the white mantle hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
+					]
+				},
+				{
+					"name": "Legendary Resistance (4/Day)",
+					"entries": [
+						"If the white mantle fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"gear": [
+				"Studded Leather Armor|XPHB",
+				"+3 Rapier|XDMG",
+				"+3 Longbow|XDMG",
+				{
+					"item": "+3 Arrow|XDMG",
+					"quantity": 100,
+					"displayName": ""
+				},
+				"Quiver of Elona|GW"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Markis makes four Rapier attacks or one Longbow attack using Oath Shot."
+					]
+				},
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 18} to hit, reach 5 ft., one target. {@h}25 ({@damage 4d8 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 21} to hit, range 150/600 ft., one target. {@h}36 ({@damage 5d8 + 14}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"bonus": [
+				{
+					"name": "Skirmish",
+					"entries": [
+						"Markis takes the {@action Disengage} and {@action Dash} and {@action Hide} actions."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"White Mantle"
+			],
+			"skill": {
+				"perception": "+19",
+				"survival": "+12",
+				"stealth": "+22",
+				"acrobatics": "+22",
+				"animal handling": "+12",
+				"athletics": "+11",
+				"deception": "+16",
+				"insight": "+19",
+				"intimidation": "+9",
+				"investigation": "+9",
+				"medicine": "+12",
+				"nature": "+16",
+				"sleight of hand": "+15"
+			},
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Markis casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Oath Shot|GWP}"
+					],
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Markis_Token.png"
+			},
+			"isNpc": true,
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Confessor Dorian",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"{@item +3 plate armor|xdmg}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "47d8 + 376",
+				"average": 587
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 26,
+			"int": 18,
+			"wis": 18,
+			"cha": 30,
+			"passive": 30,
+			"cr": "25",
+			"shortName": "Confessor Dorian",
+			"languages": [
+				"Ascalonian",
+				"Charr",
+				"Common",
+				"Krytan",
+				"Mursaat",
+				"Orrian"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Formation",
+					"entries": [
+						"Confessor Dorian gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throws|XPHB|Saving Throw} for each ally of Confessor Dorian that is within 5 feet of him. This bonus is not added to Confessor Dorian's AC or saving throws if Confessor Dorian is {@condition incapacitated|XPHB}."
+					]
+				},
+				{
+					"name": "Halt",
+					"entries": [
+						"When Confessor Dorian hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
+					]
+				},
+				{
+					"name": "Legendary Resistance (5/Day)",
+					"entries": [
+						"If Confessor Dorian fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Confessor Dorian has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"gear": [
+				"+3 Plate Armor|XDMG",
+				"+3 Mace|XDMG"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"White Mantle"
+			],
+			"skill": {
+				"deception": "+26",
+				"persuasion": "+26",
+				"insight": "+20",
+				"arcana": "+12",
+				"intimidation": "+26",
+				"perception": "+20",
+				"religion": "+20"
+			},
+			"save": {
+				"cha": "+18",
+				"con": "+16",
+				"int": "+12",
+				"wis": "+12"
+			},
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"immune": [
+				"necrotic",
+				"radiant"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Confessor Dorian casts either Unyielding Aura or Smite, makes either a Holy Smite or Holy Flare attack, casts either Heal Other/Jamei's Gaze, Remove Hex, or Purge Conditions, and uses Divine Judgement if available."
+					]
+				},
+				{
+					"name": "Holy Smite",
+					"entries": [
+						"{@atk mw} {@hit 21} to hit, reach 5 ft., one target. {@h}31 ({@damage 4d8 + 13}) bludgeoning damage, plus 27 ({@damage 6d8}) radiant damage."
+					]
+				},
+				{
+					"name": "Holy Smite",
+					"entries": [
+						"{@atk rs} {@hit 18} to hit, range 300 ft., one target. {@h}45 ({@damage 10d8}) radiant damage."
+					]
+				},
+				{
+					"name": "Divine Judgement {@recharge 4}",
+					"entries": [
+						"{@actSave con} {@dc 26}, each hostile creature in a 60-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point Confessor Dorian can see within 1 mile. {@i Failure} 90 ({@damage 20d8}) radiant damage. {@i Success}: Half damage."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Confessor Dorian casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 26})."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Heal Other/Jamei's Gaze|GWP} (level 6 Version)",
+						"{@spell Purge Conditions|GW} (level 6 Version)",
+						"{@spell Remove Hex|GW} (level 6 Version)",
+						"{@spell Smite|GWP} (level 6 Version)",
+						"{@spell Unyielding Aura|GWP}"
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Smite the Unworthy",
+					"headerEntries": [
+						"Confessor Dorian casts Smite, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 26})."
+					],
+					"displayAs": "reaction",
+					"will": [
+						"{@spell Smite|GWP} (level 9 Version)"
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RA",
+				"AOE"
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"isNpc": true,
+			"legendaryActions": 5,
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"Confessor Dorian moves up to his speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"Confessor Dorian attacks using one of his attacks."
+					]
+				},
+				{
+					"name": "Elite Spell",
+					"entries": [
+						"Confessor Dorian casts {@spell Unyielding Aura|GWP} using the same spellcasting ability as Spellcasting."
+					]
+				},
+				{
+					"name": "Spellcasting (Costs 2 Actions)",
+					"entries": [
+						"Confessor Dorian uses Spellcasting."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Confessor_Dorian_Token.png"
+			},
+			"damageTags": [
+				"B",
+				"R"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
 		}
 	],
 	"monsterFluff": [
@@ -10949,9 +12760,7 @@
 						"type": "external",
 						"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Red_devourer.jpg"
 					},
-					"credit": "ArenaNet",
-					"width": 1755,
-					"height": 1759
+					"credit": "ArenaNet"
 				}
 			]
 		},
@@ -11003,9 +12812,7 @@
 									"type": "external",
 									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Yellow_Devourer.jpg"
 								},
-								"credit": "ArenaNet",
-								"width": 1755,
-								"height": 1759
+								"credit": "ArenaNet"
 							}
 						]
 					}
@@ -11039,9 +12846,7 @@
 									"type": "external",
 									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Ridged_Devourer.jpg"
 								},
-								"credit": "ArenaNet",
-								"width": 965,
-								"height": 744
+								"credit": "ArenaNet"
 							}
 						]
 					}
@@ -11075,9 +12880,7 @@
 									"type": "external",
 									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Yellow_Devourer.jpg"
 								},
-								"credit": "ArenaNet",
-								"width": 1755,
-								"height": 1759
+								"credit": "ArenaNet"
 							}
 						]
 					}
@@ -11111,9 +12914,7 @@
 									"type": "external",
 									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Ridged_Devourer.jpg"
 								},
-								"credit": "ArenaNet",
-								"width": 965,
-								"height": 744
+								"credit": "ArenaNet"
 							}
 						]
 					}
@@ -11147,9 +12948,7 @@
 									"type": "external",
 									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Ridged_Devourer.jpg"
 								},
-								"credit": "ArenaNet",
-								"width": 965,
-								"height": 744
+								"credit": "ArenaNet"
 							}
 						]
 					}
@@ -11196,9 +12995,7 @@
 						"type": "external",
 						"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/The_Rise_of_the_White_Mantle_concept_art.jpg"
 					},
-					"credit": "Kekai Kotaki",
-					"width": 1920,
-					"height": 1200
+					"credit": "Kekai Kotaki"
 				},
 				{
 					"type": "image",
@@ -11206,9 +13003,7 @@
 						"type": "external",
 						"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/White_Mantle_banner.jpg"
 					},
-					"credit": "Kekai Kotaki",
-					"width": 1920,
-					"height": 1200
+					"credit": "Kekai Kotaki"
 				}
 			]
 		},
@@ -11239,9 +13034,7 @@
 									"type": "external",
 									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_Warrior_m.jpg"
 								},
-								"credit": "ArenaNet",
-								"width": 1075,
-								"height": 2167
+								"credit": "ArenaNet"
 							}
 						]
 					}
@@ -11275,9 +13068,483 @@
 									"type": "external",
 									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_ranger.jpg"
 								},
-								"credit": "ArenaNet",
-								"width": 1075,
-								"height": 2167
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "White Mantle Priest",
+			"source": "GWP",
+			"_copy": {
+				"name": "White Mantle",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									""
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_monk.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "White Mantle Ritualist",
+			"source": "GWP",
+			"_copy": {
+				"name": "White Mantle",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									""
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_necromancer.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "White Mantle Sycophant",
+			"source": "GWP",
+			"_copy": {
+				"name": "White Mantle",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									""
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_mesmer.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "White Mantle Savant",
+			"source": "GWP",
+			"_copy": {
+				"name": "White Mantle",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									""
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_elementalist.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "White Mantle Zealot",
+			"source": "GWP",
+			"_copy": {
+				"name": "White Mantle",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									""
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_warrior_f.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "White Mantle Seeker",
+			"source": "GWP",
+			"_copy": {
+				"name": "White Mantle",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									""
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_ranger.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "White Mantle Abbot",
+			"source": "GWP",
+			"_copy": {
+				"name": "White Mantle",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									""
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_monk.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "White Mantle Fanatic",
+			"source": "GWP",
+			"_copy": {
+				"name": "White Mantle",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									""
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_necromancer.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "White Mantle Parasite",
+			"source": "GWP",
+			"_copy": {
+				"name": "White Mantle",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									""
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_mesmer.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "White Mantle Adherent",
+			"source": "GWP",
+			"_copy": {
+				"name": "White Mantle",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									""
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_elementalist.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Galrath",
+			"source": "GWP",
+			"_copy": {
+				"name": "White Mantle",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									""
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Justiciar_Hablion.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Justiciar Hablion",
+			"source": "GWP",
+			"_copy": {
+				"name": "White Mantle",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									""
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Justiciar_Hablion.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Markis",
+			"source": "GWP",
+			"_copy": {
+				"name": "White Mantle",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									""
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Markis.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Confessor Dorian",
+			"source": "GWP",
+			"_copy": {
+				"name": "White Mantle",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									""
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Confessor_Dorian.jpg"
+								},
+								"credit": "ArenaNet"
 							}
 						]
 					}

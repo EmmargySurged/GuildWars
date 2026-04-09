@@ -7871,7 +7871,7 @@
 			"int": 14,
 			"wis": 12,
 			"cha": 18,
-			"passive": 21,
+			"passive": 23,
 			"cr": "20",
 			"shortName": "Hablion",
 			"languages": [
@@ -7893,7 +7893,7 @@
 				{
 					"name": "Legendary Resistance (3/Day)",
 					"entries": [
-						"If the hablion fails a saving throw, it can choose to succeed instead."
+						"If Justiciar Hablion fails a saving throw, he can choose to succeed instead."
 					]
 				},
 				{
@@ -7916,22 +7916,22 @@
 				}
 			],
 			"save": {
-				"str": "+12",
-				"con": "+9",
-				"cha": "+9"
+				"str": "+13",
+				"con": "+10",
+				"cha": "+10"
 			},
 			"skill": {
 				"acrobatics": "+8",
-				"athletics": "+17",
-				"arcana": "+7",
-				"deception": "+14",
-				"history": "+7",
-				"insight": "+11",
-				"intimidation": "+14",
-				"investigation": "+7",
-				"perception": "+11",
-				"persuasion": "+9",
-				"religion": "+12"
+				"athletics": "+19",
+				"arcana": "+8",
+				"deception": "+16",
+				"history": "+8",
+				"insight": "+13",
+				"intimidation": "+16",
+				"investigation": "+8",
+				"perception": "+13",
+				"persuasion": "+10",
+				"religion": "+14"
 			},
 			"traitTags": [
 				"Legendary Resistances",
@@ -7943,6 +7943,7 @@
 					"headerEntries": [
 						"Justiciar Hablion casts one of the following spells, requiring no Material components and using Strength as the spellcasting ability (spell save {@dc 20})"
 					],
+					"displayAs": "action",
 					"will": [
 						"{@spell Cyclone Axe|GW}",
 						"{@spell Dismember|GW}",
@@ -7983,7 +7984,7 @@
 				{
 					"name": "Executioner's Handaxe",
 					"entries": [
-						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d6 + 8}) slashing damage, plus 7 ({@damage 2d6}) slashing damage against humanoids. Hablion gain {@variantrule Temporary Hit Points|XPHB} equal to the extra damage dealt."
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d6 + 8}) slashing damage, plus 7 ({@damage 2d6}) slashing damage against humanoids. Hablion gains {@variantrule Temporary Hit Points|XPHB} equal to the extra damage dealt."
 					]
 				},
 				{
@@ -11432,6 +11433,10 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_warrior_f_Token.png"
 			},
+			"save": {
+				"str": "+9",
+				"con": "+8"
+			},
 			"damageTags": [
 				"P",
 				"S"
@@ -11592,6 +11597,10 @@
 			"spellcastingTags": [
 				"O"
 			],
+			"save": {
+				"dex": "+9",
+				"wis": "+8"
+			},
 			"damageTags": [
 				"P",
 				"S"
@@ -11749,6 +11758,10 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_monk_Token.png"
 			},
+			"save": {
+				"cha": "+9",
+				"con": "+8"
+			},
 			"damageTags": [
 				"B",
 				"R"
@@ -11889,6 +11902,10 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_necromancer_Token.png"
 			},
+			"save": {
+				"int": "+9",
+				"con": "+7"
+			},
 			"damageTags": [
 				"N",
 				"S"
@@ -12026,6 +12043,10 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_mesmer_Token.png"
 			},
+			"save": {
+				"wis": "+10",
+				"con": "+10"
+			},
 			"damageTags": [
 				"Y"
 			]
@@ -12162,6 +12183,10 @@
 			"tokenHref": {
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_elementalist_Token.png"
+			},
+			"save": {
+				"int": "+10",
+				"con": "+10"
 			},
 			"damageTags": [
 				"F"
@@ -12312,6 +12337,10 @@
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Justiciar_Hablion_Token.png"
 			},
 			"isNpc": true,
+			"save": {
+				"str": "+10",
+				"con": "+10"
+			},
 			"damageTags": [
 				"P",
 				"S"
@@ -12370,13 +12399,13 @@
 				{
 					"name": "Halt",
 					"entries": [
-						"When the white mantle hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
+						"When Markis hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
 					]
 				},
 				{
 					"name": "Legendary Resistance (4/Day)",
 					"entries": [
-						"If the white mantle fails a saving throw, it can choose to succeed instead."
+						"If Markis fails a saving throw, he can choose to succeed instead."
 					]
 				}
 			],
@@ -12416,9 +12445,9 @@
 			],
 			"bonus": [
 				{
-					"name": "Skirmish",
+					"name": "Range",
 					"entries": [
-						"Markis takes the {@action Disengage} and {@action Dash} and {@action Hide} actions."
+						"Markis takes the {@action Disengage}, {@action Dash}, and {@action Hide} actions."
 					]
 				}
 			],
@@ -12529,7 +12558,6 @@
 			"cha": 30,
 			"passive": 30,
 			"cr": "25",
-			"shortName": "Confessor Dorian",
 			"languages": [
 				"Ascalonian",
 				"Charr",
@@ -12710,6 +12738,10 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Confessor_Dorian_Token.png"
 			},
+			"shortName": true,
+			"legendaryHeader": [
+				"Legendary Action Uses: 5. Immediately after another creature's turn, Confessor Dorian can expend a use to take one of the following actions. Confessor Dorian regains all expended uses at the start of each of his turns."
+			],
 			"damageTags": [
 				"B",
 				"R"

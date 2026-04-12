@@ -10944,13 +10944,19 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The white mantle casts Vampiric Gaze once or makes one Ritual Dagger attack and casts Order of Pain or Mark of Subversion."
+						"The white mantle uses one of Ritual Dagger, Ritual Dagger Throw, or Vampiric Gaze and casts Order of Pain or Mark of Subversion."
 					]
 				},
 				{
 					"name": "Ritual Dagger",
 					"entries": [
-						"{@atk ms,rs} {@hit 7} to hit, reach 5 ft. or range 60 ft., one target. {@h}6 ({@damage 1d4 + 4}) slashing damage in melee, or 6 ({@damage 1d4 + 4}) slashing damage at range, plus 27 ({@damage 6d8}) necrotic damage."
+						"{@atk ms} {@hit 7} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) piercing damage, plus 27 ({@damage 6d8}) necrotic damage."
+					]
+				},
+				{
+					"name": "Ritual Dagger Throw",
+					"entries": [
+						"{@atk rs} {@hit 7} to hit, reach 20/60 ft., one target. {@h}2 ({@damage 1d4}) piercing damage, plus 27 ({@damage 6d8}) necrotic damage."
 					]
 				}
 			],
@@ -10988,11 +10994,6 @@
 			"spellcastingTags": [
 				"O"
 			],
-			"miscTags": [
-				"RA",
-				"MA",
-				"THW"
-			],
 			"bonus": [
 				{
 					"name": "Profane Ritual",
@@ -11005,9 +11006,21 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_necromancer_Token.png"
 			},
+			"miscTags": [
+				"MA",
+				"MLW",
+				"RA",
+				"THW"
+			],
 			"damageTags": [
 				"N",
-				"S"
+				"P"
+			],
+			"damageTagsSpell": [
+				"N"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			]
 		},
 		{
@@ -11079,13 +11092,19 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The white mantle casts Empathy twice or makes two Chaos Jolt attacks and casts Guilt, Shame, or Shatter Enchantment."
+						"The white mantle uses two of Chaos Jolt, Chaos Bolt, Empathy, or Guilt or Shame, and then casts either Energy Burn or Shatter Enchantment."
 					]
 				},
 				{
 					"name": "Chaos Jolt",
 					"entries": [
-						"{@atk ms,rs} {@hit 7} to hit, reach 5 ft. or range 90 ft., one target. {@h}18 ({@damage 2d12 + 4}) psychic damage in melee, or 18 ({@damage 2d12 + 4}) psychic damage at range, plus 7 ({@damage 2d6}) acid, cold, fire, lightning, or thunder damage."
+						"{@atk ms} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d12}) psychic damage, plus 7 ({@damage 2d6}) acid, cold, fire, lightning, or thunder damage."
+					]
+				},
+				{
+					"name": "Chaos Bolt",
+					"entries": [
+						"{@atk rs} {@hit 7} to hit, reach 60 ft., one target. {@h}13 ({@damage 2d12}) psychic damage, plus 7 ({@damage 2d6}) acid, cold, fire, lightning, or thunder damage."
 					]
 				}
 			],
@@ -11109,6 +11128,7 @@
 					"displayAs": "action",
 					"will": [
 						"{@spell Empathy|GW} (level 3 Version)",
+						"{@spell Energy Burn|GW}",
 						"{@spell Guilt|GWP}",
 						"{@spell Shame|GWP}"
 					],
@@ -11124,10 +11144,6 @@
 			"spellcastingTags": [
 				"O"
 			],
-			"miscTags": [
-				"RA",
-				"MA"
-			],
 			"bonus": [
 				{
 					"name": "Sycophantic Devotion",
@@ -11140,6 +11156,11 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_mesmer_Token.png"
 			},
+			"miscTags": [
+				"MA",
+				"RA",
+				"RCH"
+			],
 			"damageTags": [
 				"Y"
 			]
@@ -11212,13 +11233,19 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The white mantle casts either Fireball (Guild Wars) or Glyph of Elemental Power, makes one Fire Blast attack, and casts Searing Heat or Ward Against Elements."
+						"The white mantle casts either Fireball (Guild Wars) or Glyph of Elemental Power, makes one Fire Grab or Fire Blast attack, and casts Searing Heat or Ward Against Elements."
+					]
+				},
+				{
+					"name": "Fire Grab",
+					"entries": [
+						"{@atk ms} {@hit 8} to hit, reach 5 ft., one target. {@h}21 ({@damage 6d6}) fire damage."
 					]
 				},
 				{
 					"name": "Fire Blast",
 					"entries": [
-						"{@atk ms,rs} {@hit 8} to hit, reach 5 ft. or range 120 ft., one target. {@h}20 ({@damage 6d6 + 5}) fire damage in melee, or 20 ({@damage 6d6 + 5}) fire damage at range."
+						"{@atk rs} {@hit 8} to hit, reach 90 ft., one target. {@h}21 ({@damage 6d6}) fire damage."
 					]
 				}
 			],
@@ -11257,10 +11284,6 @@
 			"spellcastingTags": [
 				"O"
 			],
-			"miscTags": [
-				"RA",
-				"MA"
-			],
 			"bonus": [
 				{
 					"name": "Arcane Evasion",
@@ -11276,8 +11299,20 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_elementalist_Token.png"
 			},
+			"miscTags": [
+				"MA",
+				"RA",
+				"RCH"
+			],
 			"damageTags": [
 				"F"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity"
 			]
 		},
 		{
@@ -11835,13 +11870,19 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The white mantle casts Vampiric Gaze twice or makes two Ritual Dagger attacks and casts Order of the Vampire or Mark of Subversion."
+						"The white mantle uses two of Ritual Dagger, Ritual Dagger Throw, or Vampiric Gaze and casts Order of the Vampire or Mark of Subversion."
 					]
 				},
 				{
 					"name": "Ritual Dagger",
 					"entries": [
-						"{@atk ms,rs} {@hit 10} to hit, reach 5 ft. or range 60 ft., one target. {@h}10 ({@damage 2d4 + 6}) slashing damage in melee, or 10 ({@damage 2d4 + 6}) slashing damage at range, plus 27 ({@damage 6d8}) necrotic damage."
+						"{@atk ms} {@hit 9} to hit, reach 5 ft., one target. {@h}5 ({@damage 2d4}) piercing damage, plus 27 ({@damage 6d8}) necrotic damage."
+					]
+				},
+				{
+					"name": "Ritual Dagger Throw",
+					"entries": [
+						"{@atk rs} {@hit 9} to hit, range 20/60 ft., one target. {@h}5 ({@damage 2d4}) piercing damage, plus 27 ({@damage 6d8}) necrotic damage."
 					]
 				}
 			],
@@ -11880,8 +11921,9 @@
 				"O"
 			],
 			"miscTags": [
-				"RA",
 				"MA",
+				"MLW",
+				"RA",
 				"THW"
 			],
 			"bonus": [
@@ -11902,7 +11944,7 @@
 			},
 			"damageTags": [
 				"N",
-				"S"
+				"P"
 			]
 		},
 		{
@@ -11976,13 +12018,19 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The white mantle casts Empathy twice or makes two Chaos Jolt attacks and casts Energy Surge, Guilt, Shame, or Shatter Enchantment."
+						"The white mantle uses two of Chaos Jolt, Chaos Bolt, Empathy (Level 5), or Guilt or Shame, and then casts either Energy Surge or Shatter Enchantment."
 					]
 				},
 				{
 					"name": "Chaos Jolt",
 					"entries": [
-						"{@atk ms,rs} {@hit 10} to hit, reach 5 ft. or range 90 ft., one target. {@h}25 ({@damage 3d12 + 6}) psychic damage in melee, or 25 ({@damage 3d12 + 6}) psychic damage at range, plus 7 ({@damage 2d6}) acid, cold, fire, lightning, or thunder damage."
+						"{@atk ms} {@hit 10} to hit, reach 5 ft., one target. {@h}19 ({@damage 3d12}) psychic damage, plus 7 ({@damage 2d6}) acid, cold, fire, lightning, or thunder damage."
+					]
+				},
+				{
+					"name": "Chaos Bolt",
+					"entries": [
+						"{@atk rs} {@hit 10} to hit, range 90 ft., one target. {@h}19 ({@damage 3d12}) psychic damage, plus 7 ({@damage 2d6}) acid, cold, fire, lightning, or thunder damage."
 					]
 				}
 			],
@@ -12023,8 +12071,8 @@
 				"O"
 			],
 			"miscTags": [
-				"RA",
-				"MA"
+				"MA",
+				"RA"
 			],
 			"bonus": [
 				{
@@ -12116,13 +12164,19 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The white mantle casts either Fireball (Guild Wars) or Glyph of Renewal, makes one Fire Blast attack, and casts Searing Heat or Ward Against Elements."
+						"The white mantle casts either Fireball (Guild Wars) or Glyph of Renewal, makes one Fire Grab or Fire Blast attack, and casts Searing Heat or Ward Against Elements, or uses a {@action Magic|XPHB} to move Searing Heat."
+					]
+				},
+				{
+					"name": "Fire Grab",
+					"entries": [
+						"{@atk ms} {@hit 11} to hit, reach 5 ft., one target. {@h}35({@damage 10d6}) fire damage."
 					]
 				},
 				{
 					"name": "Fire Blast",
 					"entries": [
-						"{@atk ms,rs} {@hit 11} to hit, reach 5 ft. or range 120 ft., one target. {@h}42 ({@damage 10d6 + 5}) fire damage in melee, or 41 ({@damage 10d6 + 5}) fire damage at range."
+						"{@atk rs} {@hit 10} to hit, range 120 ft., one target. {@h}35 ({@damage 10d6}) fire damage."
 					]
 				}
 			],
@@ -12161,10 +12215,6 @@
 			"spellcastingTags": [
 				"O"
 			],
-			"miscTags": [
-				"RA",
-				"MA"
-			],
 			"bonus": [
 				{
 					"name": "Arcane Evasion",
@@ -12184,6 +12234,10 @@
 				"int": "+10",
 				"con": "+10"
 			},
+			"miscTags": [
+				"MA",
+				"RA"
+			],
 			"damageTags": [
 				"F"
 			]

@@ -279,7 +279,8 @@ if __name__ == "__main__":
         ]},
         {"name": "Warlock", "source": "XPHB", "sub_classes": [
             {"name": "The Fathomless", "shortName": "Fathomless", "source": "TCE"},
-            {"name": "The Hexblade", "shortName": "Hexblade", "source": "XGE"}
+            {"name": "The Hexblade", "shortName": "Hexblade", "source": "XGE"},
+            {"name": "Cosmic Patron", "shortName": "Cosmic", "source": "guidedrakkenheim"},
         ]},
         {"name": "Witch", "source": "WorldsBeyondNumberWitch", "sub_classes": [
             {"name": "Coven of the Claw", "shortName": "Claw", "source": "WorldsBeyondNumberWitch"}
@@ -287,7 +288,8 @@ if __name__ == "__main__":
         {"name": "Wizard", "source": "XPHB", "sub_classes": [
             {"name": "Bladesinger", "shortName": "Bladesinger", "source": "FRHoF"},
             {"name": "School of Necromancy", "shortName": "Necromancy", "source": "PHB"},
-            {"name": "Wizard of the Citadel", "shortName": "Citadel", "source": "WizardCitadelWBN"}
+            {"name": "Wizard of the Citadel", "shortName": "Citadel", "source": "WizardCitadelWBN"},
+            {"name": "Occultist", "shortName": "Occultist", "source": "crookedmoon24"}
         ]}
     ]
     # Unused, maybe make custom classes the players can then also check.

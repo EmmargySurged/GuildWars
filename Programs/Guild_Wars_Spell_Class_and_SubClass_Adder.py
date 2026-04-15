@@ -225,22 +225,41 @@ if __name__ == "__main__":
 
     # Define your lists as provided
     classes_list = [
-        {"name": "Artificer", "source": "xua2025eberronupdates", "sub_classes": [
-            {"name": "Alchemist", "shortName": "Alchemist", "source": "xua2025eberronupdates"},
-            {"name": "Armorer", "shortName": "Armorer", "source": "xua2025eberronupdates"},
-            {"name": "Artillerist", "shortName": "Artillerist", "source": "xua2025eberronupdates"},
-            {"name": "Battle Smith", "shortName": "Battle Smith", "source": "xua2025eberronupdates"},
-            {"name": "Cartographer", "shortName": "Cartographer", "source": "xua2025eberronupdates"},
-            {"name": "Reanimator", "shortName": "Reanimator", "source": "xua2025horrorsubclasses"}
+        {
+            "name": "Apothecary", "source": "guidedrakkenheim", "sub_classes": [
+            {"name": "Alienist", "shortName": "Alienist", "source": "guidedrakkenheim"},
+            {"name": "Chemist", "shortName": "Chemist", "source": "guidedrakkenheim"},
+            {"name": "Exorcist", "shortName": "Exorcist", "source": "guidedrakkenheim"},
+            {"name": "Mutagenist", "shortName": "Mutagenist", "source": "guidedrakkenheim"},
+            {"name": "Pathogenist", "shortName": "Pathogenist", "source": "guidedrakkenheim"},
+            {"name": "Reanimator", "shortName": "Reanimator", "source": "guidedrakkenheim"}
+        ]},
+        {"name": "Artificer", "source": "efa", "sub_classes": [
+            {"name": "Alchemist", "shortName": "Alchemist", "source": "efa"},
+            {"name": "Armorer", "shortName": "Armorer", "source": "efa"},
+            {"name": "Artillerist", "shortName": "Artillerist", "source": "efa"},
+            {"name": "Battle Smith", "shortName": "Battle Smith", "source": "efa"},
+            {"name": "Cartographer", "shortName": "Cartographer", "source": "efa"},
+            {"name": "Forge Adept", "shortName": "Forge Adept", "source": "exploringeberron24"},
+            {"name": "Maverick", "shortName": "Maverick", "source": "exploringeberron24"} 
+        ]},
+        {
+            "name": "Barbarian", "source": "XPHB", "sub_classes": [
+            {"name": "Ragetotem Spiritualist", "shortName": "Ragetotem Spiritualist", "source": "ragetotemspiritualist"}
         ]},
         {"name": "Bard", "source": "XPHB", "sub_classes": [
+            {"name": "Collage of Dance", "shortName": "Dance", "source": "XPHB"},
+            {"name": "Collage of Glamour", "shortName": "Glamour", "source": "XPHB"},
             {"name": "Collage of Lore", "shortName": "Lore", "source": "XPHB"},
             {"name": "Collage of Swords", "shortName": "Swords", "source": "XGE"},
+            {"name": "Collage of Valor", "shortName": "Valor", "source": "XPHB"},
             {"name": "Virtuoso", "shortName": "Virtuoso", "source": "GW2EoD"}
         ]},
         {"name": "Cleric", "source": "XPHB", "sub_classes": [
             {"name": "Inquisition Domain", "shortName": "Inquisition", "source": "GrimHollowPlayerPack"},
+            {"name": "Life Domain", "shortName": "Life", "source": "XPHB"},
             {"name": "Light Domain", "shortName": "Light", "source": "XPHB"},
+            {"name": "Trickery Domain", "shortName": "Trickery", "source": "XPHB"},
             {"name": "War Domain", "shortName": "War", "source": "XPHB"}
         ]},
         {"name": "Druid", "source": "XPHB", "sub_classes": [

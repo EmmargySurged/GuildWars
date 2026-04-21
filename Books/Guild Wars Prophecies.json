@@ -4125,6 +4125,8 @@
 										"{@creature Confessor Dorian|GWP}",
 										"{@creature Fevered Devourer|GWP}",
 										"{@creature Galrath|GWP}",
+										"{@creature Jade Armor|GWP}",
+										"{@creature Jade Bow|GWP}",
 										"{@creature Justiciar Hablion|GWP}",
 										"{@creature Markis|GWP}",
 										"{@creature Mursaat Elementalist|GWP}",
@@ -4219,6 +4221,53 @@
 											"href": {
 												"type": "external",
 												"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Red_devourer.jpg"
+											},
+											"credit": "ArenaNet"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Monsters (J)",
+							"page": "",
+							"entries": [
+								{
+									"type": "section",
+									"name": "Jade Construct",
+									"page": "",
+									"entries": [
+										{
+											"type": "statblock",
+											"name": "Jade Construct",
+											"prop": "monsterFluff",
+											"source": "GWP",
+											"data": {
+												"renderCompact": {
+													"isSkipRootName": true
+												}
+											}
+										},
+										{
+											"type": "statblock",
+											"name": "Jade Armor",
+											"tag": "creature",
+											"source": "GWP",
+											"style": "narrow"
+										},
+										{
+											"type": "statblock",
+											"name": "Jade Bow",
+											"tag": "creature",
+											"source": "GWP",
+											"style": "narrow"
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/_Jade_Construct__render_02.jpg"
 											},
 											"credit": "ArenaNet"
 										}
@@ -12499,6 +12548,386 @@
 			"savingThrowForced": [
 				"intelligence"
 			]
+		},
+		{
+			"name": "Jade Armor",
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"source": "GWP",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"formula": "20d10 + 100",
+				"average": 210
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 20,
+			"int": 4,
+			"wis": 14,
+			"cha": 6,
+			"passive": 20,
+			"cr": "10",
+			"senses": [
+				"truesight 60 ft.",
+				"blindsight 120 ft."
+			],
+			"senseTags": [
+				"U",
+				"B"
+			],
+			"languages": [
+				"Understands Mursaat but can't speak"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"save": {
+				"str": "+9",
+				"con": "+9"
+			},
+			"skill": {
+				"athletics": "+13",
+				"perception": "+10"
+			},
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"immune": [
+				"lightning",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The jade construct can't shape-shift."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The jade construct has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"traitTags": [
+				"Immutable Form",
+				"Magic Resistance"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The jade construct casts one of the following spells, requiring no Material components and using Constitution as the spellcasting ability (spell save {@dc 17})."
+					],
+					"displayAs": "action",
+					"daily": {
+						"2": [
+							"{@spell Wild Blow|GW}"
+						]
+					},
+					"will": [
+						"{@spell Crushing Blow|GWP}",
+						"{@spell Devastating Hammer|GW}"
+					],
+					"ability": "con",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Protector",
+					"headerEntries": [
+						"The jade construct casts Protector's Strike, requiring no Material components and using Constitution as the spellcasting ability."
+					],
+					"displayAs": "reaction",
+					"daily": {
+						"2": [
+							"{@spell Protector's Strike|GWP} (level 3 Version)"
+						]
+					},
+					"ability": "con",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The jade construct makes three attacks, using Hammer Swing, Rock Toss, or {@variantrule Unarmed Strike|XPHB}—Shove in any combination. If it does not have any {@variantrule Adrenaline|GW}, it uses Wild Blow; otherwise, it builds enough Adrenaline to use Devastating Hammer and Crushing Blow in the same turn. If available, it inflicts Spectral Agony on the first target it hits with an attack."
+					]
+				},
+				{
+					"name": "Hammer Swing",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}18 ({@damage 2d12 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Rock Toss",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, range 20/60 ft., one target. {@h}8 ({@damage 1d12 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Spectral Agony {@recharge}",
+					"entries": [
+						"{@actSave int} {@dc 17}, one creature the jade construct hit with an attack. {@i Failure:} 27 ({@damage 5d10}) Psychic damage, and the target has the {@condition Prone|XPHB} condition. {@i Success:} Half damage only."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"gear": [
+				"maul|XPHB"
+			],
+			"environment": [
+				"any"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Jade_armor_Token.png"
+			},
+			"group": [
+				"Mursaat",
+				"Jade Construct"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"damageTags": [
+				"B",
+				"Y"
+			],
+			"savingThrowForced": [
+				"intelligence"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"strength"
+			]
+		},
+		{
+			"name": "Jade Bow",
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"source": "GWP",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"formula": "20d10 + 100",
+				"average": 210
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 20,
+			"int": 4,
+			"wis": 14,
+			"cha": 6,
+			"passive": 20,
+			"cr": "10",
+			"senses": [
+				"truesight 60 ft.",
+				"blindsight 120 ft."
+			],
+			"senseTags": [
+				"U",
+				"B"
+			],
+			"languages": [
+				"Understands Mursaat but can't speak"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"save": {
+				"con": "+9",
+				"dex": "+9"
+			},
+			"skill": {
+				"perception": "+10",
+				"acrobatics": "+13"
+			},
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"immune": [
+				"lightning",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The jade construct can't shape-shift."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The jade construct has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"traitTags": [
+				"Immutable Form",
+				"Magic Resistance"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The jade construct casts one of the following spells, requiring no Material components and using Constitution as the spellcasting ability (spell save {@dc 17})."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Penetrating Attack/Sundering Attack|GWP}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell Determined Shot|GW}",
+							"{@spell Oath Shot|GWP}"
+						]
+					},
+					"ability": "con",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Whirling Defender",
+					"headerEntries": [
+						"The jade construct casts Whirling Defense, requiring no Material components and using Constitution as the spellcasting ability."
+					],
+					"displayAs": "reaction",
+					"daily": {
+						"1": [
+							"{@spell Whirling Defense|GW} (level 5 Version)"
+						]
+					},
+					"ability": "con",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The jade construct makes two attacks, using Wild Swing and Longbow Shot in any combination. If available, it uses Determined or Oath Shot on each Longbow Shot; otherwise, it uses Penetrating Attack/Sundering Attack once per turn. If available, it inflicts Spectral Agony on the first target it hits with an attack."
+					]
+				},
+				{
+					"name": "Wild Swing",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Longbow Shot",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 150/600 ft., one target. {@h}14 ({@damage 2d8 + 6}) piercing damage."
+					]
+				},
+				{
+					"name": "Spectral Agony {@recharge}",
+					"entries": [
+						"{@actSave int} {@dc 17}, one creature the jade construct hit with an attack. {@i Failure:} 27 ({@damage 5d10}) Psychic damage, and the target has the {@condition Prone|XPHB} condition. {@i Success:} Half damage only."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW",
+				"RNG"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"gear": [
+				"Repeating Longbow|EFA"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Jade_armor_Token.png"
+			},
+			"group": [
+				"Jade Construct",
+				"Mursaat"
+			],
+			"environment": [
+				"any"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"damageTags": [
+				"P",
+				"S",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"S"
+			],
+			"savingThrowForced": [
+				"intelligence"
+			]
 		}
 	],
 	"monsterFluff": [
@@ -12731,6 +13160,99 @@
 									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Ridged_Devourer.jpg"
 								},
 								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Jade Construct",
+			"source": "GWP",
+			"entries": [
+				{
+					"type": "section",
+					"name": "Jade Construct",
+					"entries": [
+						"{@i Servants of the Mursaat}",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Habitat:",
+									"entry": "{@filter Any|bestiary|environment=any}"
+								},
+								{
+									"type": "item",
+									"name": "Treasure:",
+									"entry": "{@table Random Magic Items - Armaments|XDMG|Armaments}, Individual"
+								}
+							]
+						},
+						"Jade Constructs are powerful magical constructs created by the Mursaat to serve as their guardians and soldiers. They are made of enchanted jade and are imbued with powerful magic that allows them to perform a variety of functions, from combat to construction. Jade Constructs are typically large and vaguely humanoid in shape, with a sleek and polished appearance. They are often used by the Mursaat to guard important locations or to serve as shock troops in battle. They are also known for their durability and resilience, making them formidable opponents in combat. All Jade Constructs have the following traits in common:",
+						"{@bold Immutable Form.} The jade construct can't shape-shift.",
+						"{@bold Magic Resistance.} The jade construct has advantage on saving throws against spells and other magical effects.",
+						"{@bold Spectral Agony.} {@actSave int} {@dc 17}, one creature the jade construct hit with an attack. {@i Failure:} 27 ({@damage 5d10}) Psychic damage, and the target has the {@condition Prone|XPHB} condition. {@i Success:} Half damage only."
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/_Jade_Construct__render_02.jpg"
+					},
+					"credit": "ArenaNet"
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Jade_armor.jpg"
+					},
+					"credit": "ArenaNet"
+				}
+			]
+		},
+		{
+			"name": "Jade Armor",
+			"source": "GWP",
+			"_copy": {
+				"name": "Jade Construct",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Jade Armors are the frontline soldiers of the Mursaat. They are heavily armored and excel at close combat, using their powerful strikes and durability to overwhelm their enemies."
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Jade Bow",
+			"source": "GWP",
+			"_copy": {
+				"name": "Jade Construct",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Jade Bows are the ranged troops of the Mursaat. They fire magically enchatned arrows at a rapid pace, using their agility and precision to strike from a distance and support their allies in combat."
+								]
 							}
 						]
 					}

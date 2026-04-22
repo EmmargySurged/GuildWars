@@ -4122,6 +4122,18 @@
 									"columns": 3,
 									"items": [
 										"{@creature Carrion Devourer|GWP}",
+										"{@creature Charr Axe Fiend|GWP}",
+										"{@creature Charr Ash Walker|GWP}",
+										"{@creature Charr Stalker|GWP}",
+										"{@creature Charr Mind Spark|GWP}",
+										"{@creature Charr Martyr|GWP}",
+										"{@creature Charr Fire Caller|GWP}",
+										"{@creature Charr Blade Storm|GWP}",
+										"{@creature Charr Ashen Claw|GWP}",
+										"{@creature Charr Hunter|GWP}",
+										"{@creature Charr Chaot|GWP}",
+										"{@creature Charr Shaman|GWP}",
+										"{@creature Charr Flame Wielder|GWP}",
 										"{@creature Confessor Dorian|GWP}",
 										"{@creature Fevered Devourer|GWP}",
 										"{@creature Galrath|GWP}",
@@ -4149,6 +4161,123 @@
 										"{@creature White Mantle Seeker|GWP}",
 										"{@creature White Mantle Sycophant|GWP}",
 										"{@creature White Mantle Zealot|GWP}"
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Monsters (C)",
+							"page": "",
+							"entries": [
+								{
+									"type": "section",
+									"name": "Charr",
+									"page": "",
+									"entries": [
+										{
+											"type": "statblock",
+											"name": "Charr",
+											"prop": "monsterFluff",
+											"source": "GWP",
+											"data": {
+												"renderCompact": {
+													"isSkipRootName": true
+												}
+											}
+										},
+										{
+											"type": "statblock",
+											"name": "Charr Axe Fiend",
+											"tag": "creature",
+											"source": "GWP",
+											"style": "narrow"
+										},
+										{
+											"type": "statblock",
+											"name": "Charr Ash Walker",
+											"tag": "creature",
+											"source": "GWP",
+											"style": "narrow"
+										},
+										{
+											"type": "statblock",
+											"name": "Charr Stalker",
+											"tag": "creature",
+											"source": "GWP",
+											"style": "narrow"
+										},
+										{
+											"type": "statblock",
+											"name": "Charr Mind Spark",
+											"tag": "creature",
+											"source": "GWP",
+											"style": "narrow"
+										},
+										{
+											"type": "statblock",
+											"name": "Charr Martyr",
+											"tag": "creature",
+											"source": "GWP",
+											"style": "narrow"
+										},
+										{
+											"type": "statblock",
+											"name": "Charr Fire Caller",
+											"tag": "creature",
+											"source": "GWP",
+											"style": "narrow"
+										},
+										{
+											"type": "statblock",
+											"name": "Charr Blade Storm",
+											"tag": "creature",
+											"source": "GWP",
+											"style": "narrow"
+										},
+										{
+											"type": "statblock",
+											"name": "Charr Ashen Claw",
+											"tag": "creature",
+											"source": "GWP",
+											"style": "narrow"
+										},
+										{
+											"type": "statblock",
+											"name": "Charr Hunter",
+											"tag": "creature",
+											"source": "GWP",
+											"style": "narrow"
+										},
+										{
+											"type": "statblock",
+											"name": "Charr Chaot",
+											"tag": "creature",
+											"source": "GWP",
+											"style": "narrow"
+										},
+										{
+											"type": "statblock",
+											"name": "Charr Shaman",
+											"tag": "creature",
+											"source": "GWP",
+											"style": "narrow"
+										},
+										{
+											"type": "statblock",
+											"name": "Charr Flame Wielder",
+											"tag": "creature",
+											"source": "GWP",
+											"style": "narrow"
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/_Charr_Group__concept_art_1.jpg.jpg"
+											},
+											"credit": "Kekai Kotaki"
+										}
 									]
 								}
 							]
@@ -12931,6 +13060,458 @@
 		}
 	],
 	"monsterFluff": [
+		{
+			"name": "Charr",
+			"source": "GWP",
+			"entries": [
+				{
+					"type": "section",
+					"name": "Charr",
+					"entries": [
+						"{@i Feline Warmongers}",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Habitat:",
+									"entry": "{@filter Any|bestiary|environment=any}"
+								},
+								{
+									"type": "item",
+									"name": "Treasure:",
+									"entry": "{@table Random Magic Items - Armaments|XDMG|Armaments}, Individual"
+								}
+							]
+						},
+						"The Charr were once the dominat species in Ascalon, but infighting and the invasion of humans from the south drove the Charr far to the north of Ascalon. Now many years later the Charr have united under the banner of the Flame Legion, using the power of some new gods they push from the north into what is now human territory. Their advance has been stopped by the Great Northen Wall, but it is only a matter of time before they find a way to breach it.",
+						"The Charr are trained from birth to be soldiers, they form cohesive units called warbands, which they consider to be their family. A well structured warband is a terrible force on the battlefield. All Charr have the following traits in common:",
+						"{@bold Feline Agility.} When the charr moves on its turn in combat, it can double its speed until the end of the turn. Once it uses this ability, the charr can't use it again until it moves 0 feet on one of its turns.",
+						"{@bold Inspire.} The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one.",
+						"{@bold Pack Tactics.} The charr has advantage on an attack roll against a creature if at least one of the charr's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated|XPHB}."
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/_Charr_Group__concept_art_1.jpg"
+					},
+					"credit": "Kekai Kotaki"
+				}
+			]
+		},
+		{
+			"name": "Charr Axe Fiend",
+			"source": "GWP",
+			"_copy": {
+				"name": "Charr",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Charr Axe Fiends throw themselves into battle with reckless abandon, wielding their axes with deadly precision. They are known for their aggressive fighting style and their willingness to charge headfirst into combat, often using their Feline Agility to close the distance quickly and strike with devastating force."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Axe_Fiend.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Charr Ash Walker",
+			"source": "GWP",
+			"_copy": {
+				"name": "Charr",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Charr Ash Walker prefer to stay in the backlines, siphoning of health from their enemies and disrupting their healing."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Ashen_Claw.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Charr Stalker",
+			"source": "GWP",
+			"_copy": {
+				"name": "Charr",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Charr Stalkers are masters of stealth and ambush, using their environment to their advantage and striking from unexpected angles. They devaste tightly packed groups with their explosive arrows."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Stalker.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Charr Mind Spark",
+			"source": "GWP",
+			"_copy": {
+				"name": "Charr",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Charr Mind Sparks are adept at disrupting enemy spellcasting and supporting their allies by reducing the enemy's initiative."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Chaot.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Charr Martyr",
+			"source": "GWP",
+			"_copy": {
+				"name": "Charr",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Charr Martyrs are the backbone of every warband, using their divine powers to heal allies and disrupt enemy actions."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Shaman.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Charr Fire Caller",
+			"source": "GWP",
+			"_copy": {
+				"name": "Charr",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Charr Fire Callers are masters of flame and heat, using their elemental powers to devastating effect on the battlefield."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Flame_Wielder.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Charr Blade Storm",
+			"source": "GWP",
+			"_copy": {
+				"name": "Charr",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Charr Blade Storms use their mastery with bladed weapons to become whirlwinds of death on the battlefield, cutting down their enemies with a flurry of strikes."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Axe_Fiend.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Charr Ashen Claw",
+			"source": "GWP",
+			"_copy": {
+				"name": "Charr",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Charr Ashen Claws use their necromantic magic to drain the life from their enemies and setup their allies for powerful bursts of damage."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Ashen_Claw.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Charr Hunter",
+			"source": "GWP",
+			"_copy": {
+				"name": "Charr",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Charr Hunters are experts in ranged combat, using their bows to disrupt enemy actions while devastating tightly packed groups with their explosive arrows."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Stalker.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Charr Chaot",
+			"source": "GWP",
+			"_copy": {
+				"name": "Charr",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Charr Chaots use their disruptive magic to neutralize enemy spellcasters."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Chaot.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Charr Shanan",
+			"source": "GWP",
+			"_copy": {
+				"name": "Charr",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Charr Shamans use their divine mandate to heal allies and devestate their enemies with powerful bursts of damage."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Shaman.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Charr Flame Wielder",
+			"source": "GWP",
+			"_copy": {
+				"name": "Charr",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Summoning meteoric fire from the sky, Charr Flame Wielders are masters of area control and burst damage, using their elemental powers to devastate groups of enemies and create zones of danger on the battlefield."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Flame_Wielder.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
 		{
 			"name": "Devourer",
 			"source": "GWP",

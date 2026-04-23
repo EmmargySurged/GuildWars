@@ -4274,7 +4274,7 @@
 											"type": "image",
 											"href": {
 												"type": "external",
-												"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/_Charr_Group__concept_art_1.jpg.jpg"
+												"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/_Charr_Group__concept_art_1.jpg"
 											},
 											"credit": "Kekai Kotaki"
 										}
@@ -5932,7 +5932,7 @@
 				"walk": 35
 			},
 			"initiative": {
-				"proficiency": 1
+				"proficiency": 2
 			},
 			"str": 16,
 			"dex": 12,
@@ -6111,7 +6111,7 @@
 				"walk": 40
 			},
 			"initiative": {
-				"proficiency": 1
+				"proficiency": 2
 			},
 			"str": 10,
 			"dex": 20,
@@ -6584,6 +6584,9 @@
 			"speed": {
 				"walk": 30
 			},
+			"initiative": {
+				"proficiency": 1
+			},
 			"str": 9,
 			"dex": 14,
 			"con": 11,
@@ -6760,6 +6763,9 @@
 			"speed": {
 				"walk": 30
 			},
+			"initiative": {
+				"proficiency": 1
+			},
 			"str": 16,
 			"dex": 10,
 			"con": 12,
@@ -6891,232 +6897,6 @@
 			],
 			"savingThrowForcedSpell": [
 				"wisdom"
-			]
-		},
-		{
-			"name": "Justiciar Hablion",
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid"
-			},
-			"source": "GWP",
-			"alignment": [
-				"L",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 20,
-					"from": [
-						"{@item plate armor|xphb}",
-						"{@item animated shield|xdmg}"
-					]
-				}
-			],
-			"hp": {
-				"formula": "45d8 + 180",
-				"average": 382
-			},
-			"speed": {
-				"walk": 50
-			},
-			"str": 25,
-			"dex": 14,
-			"con": 18,
-			"int": 14,
-			"wis": 12,
-			"cha": 18,
-			"passive": 23,
-			"cr": "20",
-			"shortName": "Hablion",
-			"languages": [
-				"Common",
-				"Krytan",
-				"Ascalonian",
-				"Mursaat"
-			],
-			"languageTags": [
-				"C"
-			],
-			"trait": [
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Hablion has advantage on saving throws against spells and other magical effects."
-					]
-				},
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"If Justiciar Hablion fails a saving throw, he can choose to succeed instead."
-					]
-				},
-				{
-					"name": "Devotion",
-					"entries": [
-						"Justiciar Hablion has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
-					]
-				},
-				{
-					"name": "Formation",
-					"entries": [
-						"Justiciar Hablion gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of Justiciar Hablion that is within 5 feet of him. This bonus is not added to Justiciar Hablion's AC or saving throws if Justiciar Hablion is {@condition incapacitated|XPHB}."
-					]
-				},
-				{
-					"name": "Halt",
-					"entries": [
-						"When Justiciar Hablion hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
-					]
-				}
-			],
-			"save": {
-				"str": "+13",
-				"con": "+10",
-				"cha": "+10"
-			},
-			"skill": {
-				"acrobatics": "+8",
-				"athletics": "+19",
-				"arcana": "+8",
-				"deception": "+16",
-				"history": "+8",
-				"insight": "+13",
-				"intimidation": "+16",
-				"investigation": "+8",
-				"perception": "+13",
-				"persuasion": "+10",
-				"religion": "+14"
-			},
-			"traitTags": [
-				"Legendary Resistances",
-				"Magic Resistance"
-			],
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Justiciar Hablion casts one of the following spells, requiring no Material components and using Strength as the spellcasting ability (spell save {@dc 20})"
-					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Cyclone Axe|GW}",
-						"{@spell Dismember|GW}",
-						"{@spell Healing Signet|GW}",
-						"{@spell Wild Blow|GW}"
-					],
-					"ability": "str",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Justiciar Hablion casts one of the following spells, requiring no Material components and using Strength as the spellcasting ability (spell save {@dc 17})"
-					],
-					"displayAs": "bonus",
-					"daily": {
-						"3": [
-							"{@spell Hundred Blades|GW}"
-						],
-						"6": [
-							"{@spell Banishing Smite|XPHB}"
-						]
-					},
-					"ability": "str",
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"O"
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Justiciar Hablion makes four Executioner's Handaxe or Titanstring Longbow attacks in any combination; he then can make a single attack with his Enspelled (Level 5) Handaxe if he didn't cast {@spell Banishing Smite|XPHB} or {@spell Hundred Blades|GW} this turn and his {@item Animated Shield} is active."
-					]
-				},
-				{
-					"name": "Executioner's Handaxe",
-					"entries": [
-						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d6 + 8}) slashing damage, plus 7 ({@damage 2d6}) slashing damage against humanoids. Hablion gains {@variantrule Temporary Hit Points|XPHB} equal to the extra damage dealt."
-					]
-				},
-				{
-					"name": "Titanstrength Longbow",
-					"entries": [
-						"{@atk rw} {@hit 12} to hit, range 150/600 ft., one target. {@h}11 ({@damage 1d8 + 7}) piercing damage."
-					]
-				},
-				{
-					"name": "Enspelled (Level 5) Handaxe",
-					"entries": [
-						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d6 + 7}) slashing damage."
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack",
-				"Parry"
-			],
-			"miscTags": [
-				"MW",
-				"MLW",
-				"RW",
-				"RNG"
-			],
-			"reaction": [
-				{
-					"name": "Parry",
-					"entries": [
-						"{@i Trigger}: Hablion is hit by a melee attack roll while holding a weapon. {@actResponse} Hablion adds 5 to his AC against that attack, possibly causing it to miss."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Attack",
-					"entries": [
-						"Justiciar Hablion attacks twice using one of his attacks."
-					]
-				},
-				{
-					"name": "Move",
-					"entries": [
-						"Justiciar Hablion moves up to his speed without provoking opportunity attacks."
-					]
-				},
-				{
-					"name": "Elite Spell",
-					"entries": [
-						"Justiciar Hablion casts {@spell Hundred Blades|GW} using the same spellcasting ability as Spellcasting."
-					]
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"tokenHref": {
-				"type": "external",
-				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_Warrior_m_Token.png"
-			},
-			"group": [
-				"White Mantle"
-			],
-			"gear": [
-				"Belt of Fire Giant Strength|XDMG",
-				"Animated Shield|XDMG",
-				"Executioner's Handaxe|XDMG",
-				"Enspelled (Level 5) Handaxe|XDMG",
-				"Titanstring Longbow|GW"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"damageTagsSpell": [
-				"O"
 			]
 		},
 		{
@@ -7451,7 +7231,7 @@
 				"walk": 30
 			},
 			"initiative": {
-				"proficiency": 1
+				"proficiency": 2
 			},
 			"str": 10,
 			"dex": 14,
@@ -8695,7 +8475,12 @@
 			"size": [
 				"M"
 			],
-			"type": "beast",
+			"type": {
+				"type": "beast",
+				"tags": [
+					"insect"
+				]
+			},
 			"source": "GWP",
 			"alignment": [
 				"U"
@@ -8820,7 +8605,12 @@
 			"size": [
 				"M"
 			],
-			"type": "beast",
+			"type": {
+				"type": "beast",
+				"tags": [
+					"insect"
+				]
+			},
 			"source": "GWP",
 			"alignment": [
 				"U"
@@ -8948,7 +8738,12 @@
 			"size": [
 				"M"
 			],
-			"type": "beast",
+			"type": {
+				"type": "beast",
+				"tags": [
+					"insect"
+				]
+			},
 			"source": "GWP",
 			"alignment": [
 				"U"
@@ -9088,7 +8883,12 @@
 			"size": [
 				"L"
 			],
-			"type": "beast",
+			"type": {
+				"type": "beast",
+				"tags": [
+					"insect"
+				]
+			},
 			"source": "GWP",
 			"alignment": [
 				"U"
@@ -9103,6 +8903,9 @@
 			"speed": {
 				"walk": 50,
 				"burrow": 40
+			},
+			"initiative": {
+				"proficiency": 1
 			},
 			"str": 16,
 			"dex": 20,
@@ -9218,7 +9021,12 @@
 			"size": [
 				"L"
 			],
-			"type": "beast",
+			"type": {
+				"type": "beast",
+				"tags": [
+					"insect"
+				]
+			},
 			"source": "GWP",
 			"alignment": [
 				"U"
@@ -9233,6 +9041,9 @@
 			"speed": {
 				"walk": 40,
 				"burrow": 20
+			},
+			"initiative": {
+				"proficiency": 1
 			},
 			"str": 12,
 			"dex": 16,
@@ -9364,7 +9175,12 @@
 			"size": [
 				"H"
 			],
-			"type": "beast",
+			"type": {
+				"type": "beast",
+				"tags": [
+					"insect"
+				]
+			},
 			"source": "GWP",
 			"alignment": [
 				"U"
@@ -9379,6 +9195,9 @@
 			"speed": {
 				"walk": 60,
 				"burrow": 50
+			},
+			"initiative": {
+				"proficiency": 1
 			},
 			"str": 22,
 			"dex": 16,
@@ -9530,7 +9349,12 @@
 			"size": [
 				"M"
 			],
-			"type": "humanoid",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
 			"source": "GWP",
 			"alignment": [
 				"E"
@@ -9660,7 +9484,12 @@
 			"size": [
 				"M"
 			],
-			"type": "humanoid",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
 			"source": "GWP",
 			"alignment": [
 				"E"
@@ -9806,7 +9635,12 @@
 			"size": [
 				"M"
 			],
-			"type": "humanoid",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
 			"source": "GWP",
 			"alignment": [
 				"E"
@@ -9954,9 +9788,6 @@
 			"damageTags": [
 				"B",
 				"R"
-			],
-			"damageTagsSpell": [
-				"R"
 			]
 		},
 		{
@@ -9964,7 +9795,12 @@
 			"size": [
 				"M"
 			],
-			"type": "humanoid",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
 			"source": "GWP",
 			"alignment": [
 				"E"
@@ -10103,12 +9939,6 @@
 			"damageTags": [
 				"N",
 				"P"
-			],
-			"damageTagsSpell": [
-				"N"
-			],
-			"savingThrowForcedSpell": [
-				"wisdom"
 			]
 		},
 		{
@@ -10116,7 +9946,12 @@
 			"size": [
 				"M"
 			],
-			"type": "humanoid",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
 			"source": "GWP",
 			"alignment": [
 				"E"
@@ -10258,7 +10093,12 @@
 			"size": [
 				"M"
 			],
-			"type": "humanoid",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
 			"source": "GWP",
 			"alignment": [
 				"E"
@@ -10401,7 +10241,12 @@
 			"size": [
 				"M"
 			],
-			"type": "humanoid",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
 			"source": "GWP",
 			"alignment": [
 				"E"
@@ -10421,7 +10266,9 @@
 			"speed": {
 				"walk": 45
 			},
-			"initiative": 6,
+			"initiative": {
+				"proficiency": 1
+			},
 			"str": 20,
 			"dex": 14,
 			"con": 18,
@@ -10554,7 +10401,12 @@
 			"size": [
 				"M"
 			],
-			"type": "humanoid",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
 			"source": "GWP",
 			"alignment": [
 				"E"
@@ -10574,7 +10426,9 @@
 			"speed": {
 				"walk": 45
 			},
-			"initiative": 9,
+			"initiative": {
+				"proficiency": 1
+			},
 			"str": 14,
 			"dex": 20,
 			"con": 16,
@@ -10719,7 +10573,12 @@
 			"size": [
 				"M"
 			],
-			"type": "humanoid",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
 			"source": "GWP",
 			"alignment": [
 				"E"
@@ -10739,7 +10598,9 @@
 			"speed": {
 				"walk": 45
 			},
-			"initiative": 6,
+			"initiative": {
+				"proficiency": 1
+			},
 			"str": 12,
 			"dex": 14,
 			"con": 18,
@@ -10882,7 +10743,12 @@
 			"size": [
 				"M"
 			],
-			"type": "humanoid",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
 			"source": "GWP",
 			"alignment": [
 				"E"
@@ -10902,7 +10768,9 @@
 			"speed": {
 				"walk": 45
 			},
-			"initiative": 8,
+			"initiative": {
+				"proficiency": 1
+			},
 			"str": 12,
 			"dex": 18,
 			"con": 16,
@@ -11034,7 +10902,12 @@
 			"size": [
 				"M"
 			],
-			"type": "humanoid",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
 			"source": "GWP",
 			"alignment": [
 				"E"
@@ -11054,7 +10927,9 @@
 			"speed": {
 				"walk": 45
 			},
-			"initiative": 8,
+			"initiative": {
+				"proficiency": 1
+			},
 			"str": 10,
 			"dex": 16,
 			"con": 20,
@@ -11181,7 +11056,12 @@
 			"size": [
 				"M"
 			],
-			"type": "humanoid",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
 			"source": "GWP",
 			"alignment": [
 				"E"
@@ -11201,7 +11081,9 @@
 			"speed": {
 				"walk": 45
 			},
-			"initiative": 10,
+			"initiative": {
+				"proficiency": 1
+			},
 			"str": 14,
 			"dex": 20,
 			"con": 20,
@@ -11329,7 +11211,12 @@
 			"size": [
 				"M"
 			],
-			"type": "humanoid",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
 			"source": "GWP",
 			"alignment": [
 				"E"
@@ -11349,7 +11236,9 @@
 			"speed": {
 				"walk": 50
 			},
-			"initiative": 12,
+			"initiative": {
+				"proficiency": 2
+			},
 			"str": 20,
 			"dex": 14,
 			"con": 20,
@@ -11480,11 +11369,248 @@
 			]
 		},
 		{
+			"name": "Justiciar Hablion",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "GWP",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|xphb}",
+						"{@item animated shield|xdmg}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "45d8 + 180",
+				"average": 382
+			},
+			"speed": {
+				"walk": 50
+			},
+			"initiative": {
+				"proficiency": 2
+			},
+			"str": 25,
+			"dex": 14,
+			"con": 18,
+			"int": 14,
+			"wis": 12,
+			"cha": 18,
+			"passive": 23,
+			"cr": "20",
+			"shortName": "Hablion",
+			"languages": [
+				"Common",
+				"Krytan",
+				"Ascalonian",
+				"Mursaat"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Hablion has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Justiciar Hablion fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Devotion",
+					"entries": [
+						"Justiciar Hablion has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Formation",
+					"entries": [
+						"Justiciar Hablion gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of Justiciar Hablion that is within 5 feet of him. This bonus is not added to Justiciar Hablion's AC or saving throws if Justiciar Hablion is {@condition incapacitated|XPHB}."
+					]
+				},
+				{
+					"name": "Halt",
+					"entries": [
+						"When Justiciar Hablion hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
+					]
+				}
+			],
+			"save": {
+				"str": "+13",
+				"con": "+10",
+				"cha": "+10"
+			},
+			"skill": {
+				"acrobatics": "+8",
+				"athletics": "+19",
+				"arcana": "+8",
+				"deception": "+16",
+				"history": "+8",
+				"insight": "+13",
+				"intimidation": "+16",
+				"investigation": "+8",
+				"perception": "+13",
+				"persuasion": "+10",
+				"religion": "+14"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Justiciar Hablion casts one of the following spells, requiring no Material components and using Strength as the spellcasting ability (spell save {@dc 20})"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Cyclone Axe|GW}",
+						"{@spell Dismember|GW}",
+						"{@spell Healing Signet|GW}",
+						"{@spell Wild Blow|GW}"
+					],
+					"ability": "str",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Justiciar Hablion casts one of the following spells, requiring no Material components and using Strength as the spellcasting ability (spell save {@dc 17})"
+					],
+					"displayAs": "bonus",
+					"daily": {
+						"3": [
+							"{@spell Hundred Blades|GW}"
+						],
+						"6": [
+							"{@spell Banishing Smite|XPHB}"
+						]
+					},
+					"ability": "str",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Justiciar Hablion makes four Executioner's Handaxe or Titanstring Longbow attacks in any combination; he then can make a single attack with his Enspelled (Level 5) Handaxe if he didn't cast {@spell Banishing Smite|XPHB} or {@spell Hundred Blades|GW} this turn and his {@item Animated Shield} is active."
+					]
+				},
+				{
+					"name": "Executioner's Handaxe",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d6 + 8}) slashing damage, plus 7 ({@damage 2d6}) slashing damage against humanoids. Hablion gains {@variantrule Temporary Hit Points|XPHB} equal to the extra damage dealt."
+					]
+				},
+				{
+					"name": "Titanstrength Longbow",
+					"entries": [
+						"{@atk rw} {@hit 12} to hit, range 150/600 ft., one target. {@h}11 ({@damage 1d8 + 7}) piercing damage."
+					]
+				},
+				{
+					"name": "Enspelled (Level 5) Handaxe",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d6 + 7}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"{@i Trigger}: Hablion is hit by a melee attack roll while holding a weapon. {@actResponse} Hablion adds 5 to his AC against that attack, possibly causing it to miss."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Justiciar Hablion attacks twice using one of his attacks."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Justiciar Hablion moves up to his speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Elite Spell",
+					"entries": [
+						"Justiciar Hablion casts {@spell Hundred Blades|GW} using the same spellcasting ability as Spellcasting."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_Warrior_m_Token.png"
+			},
+			"group": [
+				"White Mantle"
+			],
+			"gear": [
+				"Belt of Fire Giant Strength|XDMG",
+				"Animated Shield|XDMG",
+				"Executioner's Handaxe|XDMG",
+				"Enspelled (Level 5) Handaxe|XDMG",
+				"Titanstring Longbow|GW"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"O"
+			]
+		},
+		{
 			"name": "Markis",
 			"size": [
 				"M"
 			],
-			"type": "humanoid",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
 			"source": "GWP",
 			"alignment": [
 				"E"
@@ -11502,9 +11628,12 @@
 				"average": 483
 			},
 			"speed": {
-				"walk": 60
+				"walk": 60,
+				"climb": 60
 			},
-			"initiative": 22,
+			"initiative": {
+				"proficiency": 2
+			},
 			"str": 18,
 			"dex": 26,
 			"con": 24,
@@ -11664,7 +11793,12 @@
 			"size": [
 				"M"
 			],
-			"type": "humanoid",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
 			"source": "GWP",
 			"alignment": [
 				"E"
@@ -11677,7 +11811,9 @@
 					]
 				}
 			],
-			"initiative": 19,
+			"initiative": {
+				"proficiency": 2
+			},
 			"hp": {
 				"formula": "47d8 + 376",
 				"average": 587
@@ -11882,8 +12018,7 @@
 				"R"
 			],
 			"savingThrowForced": [
-				"constitution",
-				"dexterity"
+				"constitution"
 			]
 		},
 		{
@@ -11922,7 +12057,7 @@
 				"canHover": true
 			},
 			"initiative": {
-				"proficiency": 1
+				"proficiency": 2
 			},
 			"str": 12,
 			"dex": 14,
@@ -12119,7 +12254,7 @@
 				"canHover": true
 			},
 			"initiative": {
-				"proficiency": 1
+				"proficiency": 2
 			},
 			"str": 12,
 			"dex": 14,
@@ -12316,7 +12451,7 @@
 				"canHover": true
 			},
 			"initiative": {
-				"proficiency": 1
+				"proficiency": 2
 			},
 			"str": 12,
 			"dex": 14,
@@ -12506,7 +12641,7 @@
 				"canHover": true
 			},
 			"initiative": {
-				"proficiency": 1
+				"proficiency": 2
 			},
 			"str": 12,
 			"dex": 14,
@@ -12683,7 +12818,12 @@
 			"size": [
 				"L"
 			],
-			"type": "construct",
+			"type": {
+				"type": "construct",
+				"tags": [
+					"jade"
+				]
+			},
 			"source": "GWP",
 			"alignment": [
 				"U"
@@ -12697,6 +12837,9 @@
 			},
 			"speed": {
 				"walk": 50
+			},
+			"initiative": {
+				"proficiency": 1
 			},
 			"str": 20,
 			"dex": 14,
@@ -12861,10 +13004,6 @@
 			],
 			"savingThrowForced": [
 				"intelligence"
-			],
-			"savingThrowForcedSpell": [
-				"constitution",
-				"strength"
 			]
 		},
 		{
@@ -12872,7 +13011,12 @@
 			"size": [
 				"L"
 			],
-			"type": "construct",
+			"type": {
+				"type": "construct",
+				"tags": [
+					"jade"
+				]
+			},
 			"source": "GWP",
 			"alignment": [
 				"U"
@@ -12886,6 +13030,9 @@
 			},
 			"speed": {
 				"walk": 50
+			},
+			"initiative": {
+				"proficiency": 1
 			},
 			"str": 14,
 			"dex": 20,
@@ -13051,11 +13198,1980 @@
 				"S",
 				"Y"
 			],
-			"damageTagsSpell": [
-				"S"
-			],
 			"savingThrowForced": [
 				"intelligence"
+			]
+		},
+		{
+			"name": "Charr Axe Fiend",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"charr"
+				]
+			},
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item studded leather armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 8",
+				"average": 26
+			},
+			"speed": {
+				"walk": 35,
+				"climb": 35
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 12,
+			"cr": "1/8",
+			"shortName": "charr",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Charr",
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"athletics": "+5",
+				"stealth": "+3",
+				"perception": "+2"
+			},
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The charr has advantage on an attack roll against a creature if at least one of the charr's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Feline Agility",
+					"entries": [
+						"When the charr moves on its turn in combat, it can double its speed until the end of the turn. Once it uses this ability, the charr can't use it again until it moves 0 feet on one of its turns."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"bonus": [
+				{
+					"name": "Inspire",
+					"entries": [
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The charr casts one of the following spells, using Strength as the spellcasting ability (spell save {@dc 13})."
+					],
+					"footerEntries": [
+						"The charr uses Cyclone Axe only when it can hit more than one target and uses Eviscerate once it has gained enough {@variantrule Adrenaline|GW}."
+					],
+					"displayAs": "action",
+					"daily": {
+						"1e": [
+							"{@spell Cyclone Axe|GW}",
+							"{@spell Eviscerate|GWP}"
+						]
+					},
+					"ability": "str",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Frenzy",
+					"headerEntries": [
+						"The charr casts Frenzy, using Strength as the spellcasting ability."
+					],
+					"displayAs": "bonus",
+					"will": [
+						"{@spell Frenzy|GW}"
+					],
+					"ability": "str",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Slice",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Throw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, range 20/60 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"gear": [
+				"Studded Leather Armor|xphb",
+				{
+					"item": "Handaxe|XPHB",
+					"quantity": 5,
+					"displayName": ""
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Axe_Fiend_Token.png"
+			},
+			"environment": [
+				"any"
+			],
+			"group": [
+				"Charr"
+			],
+			"damageTags": [
+				"S"
+			]
+		},
+		{
+			"name": "Charr Ash Walker",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"charr"
+				]
+			},
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item studded leather armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 18",
+				"average": 45
+			},
+			"speed": {
+				"walk": 35,
+				"climb": 35
+			},
+			"str": 12,
+			"dex": 12,
+			"con": 16,
+			"int": 16,
+			"wis": 10,
+			"cha": 10,
+			"passive": 12,
+			"cr": "1/4",
+			"shortName": "charr",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Charr",
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"stealth": "+3",
+				"perception": "+2"
+			},
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The charr has advantage on an attack roll against a creature if at least one of the charr's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Feline Agility",
+					"entries": [
+						"When the charr moves on its turn in combat, it can double its speed until the end of the turn. Once it uses this ability, the charr can't use it again until it moves 0 feet on one of its turns."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"bonus": [
+				{
+					"name": "Inspire",
+					"entries": [
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The charr casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 13})."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Faintheartedness|GW}",
+						"{@spell Life Siphon|GW}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell Lingering Curse|GW}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Ash Touch",
+					"entries": [
+						"{@atk ms} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) necrotic damage."
+					]
+				},
+				{
+					"name": "Ash Blast",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 60 ft., one target. {@h}4 ({@damage 1d8}) necrotic damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MA",
+				"RA"
+			],
+			"gear": [
+				"Studded Leather Armor|xphb",
+				"Rod|XPHB"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"Charr"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Ashen_Claw_Token.png"
+			},
+			"damageTags": [
+				"N"
+			]
+		},
+		{
+			"name": "Charr Stalker",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"charr"
+				]
+			},
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item studded leather armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 18",
+				"average": 58
+			},
+			"speed": {
+				"walk": 35,
+				"climb": 35
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 14,
+			"cr": "1/2",
+			"shortName": "charr",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Charr",
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"stealth": "+5",
+				"perception": "+4"
+			},
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The charr has advantage on an attack roll against a creature if at least one of the charr's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Feline Agility",
+					"entries": [
+						"When the charr moves on its turn in combat, it can double its speed until the end of the turn. Once it uses this ability, the charr can't use it again until it moves 0 feet on one of its turns."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"bonus": [
+				{
+					"name": "Inspire",
+					"entries": [
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The charr casts one of the following spells, requiring no Material components and using Dexterity as the spellcasting ability."
+					],
+					"footerEntries": [
+						"The charr casts Ignite Arrows during its first turn, then uses Dual Shot and Penetrating Attack/Sundering Attack."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Ignite Arrows|GWP}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell Dual Shot|GW}",
+							"{@spell Penetrating Attack/Sundering Attack|GWP}"
+						]
+					},
+					"ability": "dex",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 150/600 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"gear": [
+				"Studded Leather Armor|xphb",
+				"Scimitar|XPHB",
+				"Longbow|XPHB",
+				"Quiver|XPHB",
+				{
+					"item": "Arrow|XPHB",
+					"quantity": 20,
+					"displayName": ""
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"Charr"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Stalker_Token.png"
+			},
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Charr Mind Spark",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"charr"
+				]
+			},
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item studded leather armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d8 + 22",
+				"average": 71
+			},
+			"speed": {
+				"walk": 35,
+				"climb": 35
+			},
+			"str": 12,
+			"dex": 12,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 16,
+			"passive": 12,
+			"cr": "1",
+			"shortName": "charr",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Charr",
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"stealth": "+3",
+				"perception": "+2",
+				"intimidation": "+5"
+			},
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The charr has advantage on an attack roll against a creature if at least one of the charr's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Feline Agility",
+					"entries": [
+						"When the charr moves on its turn in combat, it can double its speed until the end of the turn. Once it uses this ability, the charr can't use it again until it moves 0 feet on one of its turns."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"bonus": [
+				{
+					"name": "Inspire",
+					"entries": [
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The charr casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 13})."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Shatter Hex|GW}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell Energy Burn|GW}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The charr casts Power Block, using Charisma as the spellcasting ability (spell save {@dc 13})."
+					],
+					"displayAs": "reaction",
+					"daily": {
+						"1": [
+							"{@spell Power Block|GWP}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Mind Touch",
+					"entries": [
+						"{@atk ms} {@hit 5} to hit, reach 10 ft., one target. {@h}10 ({@damage 2d6 + 3}) psychic damage."
+					]
+				},
+				{
+					"name": "Mind Spark",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 90 ft., one target. {@h}7 ({@damage 2d6}) psychic damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MA",
+				"RCH",
+				"RA"
+			],
+			"gear": [
+				"Studded Leather Armor|xphb",
+				"Wand|XPHB"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"Charr"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Chaot_Token.png"
+			},
+			"damageTags": [
+				"Y"
+			]
+		},
+		{
+			"name": "Charr Martyr",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"charr"
+				]
+			},
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item studded leather armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 28",
+				"average": 91
+			},
+			"speed": {
+				"walk": 35,
+				"climb": 35
+			},
+			"str": 12,
+			"dex": 12,
+			"con": 14,
+			"int": 10,
+			"wis": 16,
+			"cha": 10,
+			"passive": 15,
+			"cr": "2",
+			"shortName": "charr",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Charr",
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"stealth": "+3",
+				"perception": "+5",
+				"religion": "+4"
+			},
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The charr has advantage on an attack roll against a creature if at least one of the charr's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Feline Agility",
+					"entries": [
+						"When the charr moves on its turn in combat, it can double its speed until the end of the turn. Once it uses this ability, the charr can't use it again until it moves 0 feet on one of its turns."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"bonus": [
+				{
+					"name": "Inspire",
+					"entries": [
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The charr casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 13})."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Orison of Healing|GW} (level 2 Version)"
+					],
+					"daily": {
+						"1e": [
+							"{@spell Infuse Health|GW}",
+							"{@spell Shield of Judgment|GWP}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The charr casts Bane Signet, using Wisdom as the spellcasting ability (spell save {@dc 13})."
+					],
+					"displayAs": "reaction",
+					"daily": {
+						"1": [
+							"{@spell Bane Signet|GW}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Radiant Slice",
+					"entries": [
+						"{@atk ms} {@hit 5} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) radiant damage."
+					]
+				},
+				{
+					"name": "Radiant Missile",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 90 ft., one target. {@h}9 ({@damage 2d8}) radiant damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MA",
+				"RA"
+			],
+			"gear": [
+				"Studded Leather Armor|xphb",
+				"Reliquary|XPHB"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"Charr"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Shaman_Token.png"
+			},
+			"damageTags": [
+				"R"
+			]
+		},
+		{
+			"name": "Charr Fire Caller",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"charr"
+				]
+			},
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item studded leather armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 32",
+				"average": 104
+			},
+			"speed": {
+				"walk": 35,
+				"climb": 35
+			},
+			"str": 12,
+			"dex": 12,
+			"con": 14,
+			"int": 16,
+			"wis": 10,
+			"cha": 10,
+			"passive": 12,
+			"cr": "3",
+			"shortName": "charr",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Charr",
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"stealth": "+3",
+				"perception": "+2",
+				"arcana": "+7"
+			},
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The charr has advantage on an attack roll against a creature if at least one of the charr's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Feline Agility",
+					"entries": [
+						"When the charr moves on its turn in combat, it can double its speed until the end of the turn. Once it uses this ability, the charr can't use it again until it moves 0 feet on one of its turns."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"bonus": [
+				{
+					"name": "Inspire",
+					"entries": [
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The charr casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 13})."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Flare|GW}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell Conjure Flame|GW}",
+							"{@spell Lava Font|GWP}",
+							"{@spell Meteor Shower|GWP}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The charr makes either one Molten Cudgel or Molten Fling attack and then casts either Flare, Conjure Flame, Lava Font, or Meteor Shower or uses a {@action Magic|XPHB} to move Lava Font or Meteor Shower."
+					]
+				},
+				{
+					"name": "Molten Cudgel",
+					"entries": [
+						"{@atk ms} {@hit 5} to hit, reach 5 ft., one target. {@h}13 ({@damage 3d6 + 3}) fire damage."
+					]
+				},
+				{
+					"name": "Molten Fling",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 90 ft., one target. {@h}10 ({@damage 3d6}) fire damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MA",
+				"RA"
+			],
+			"gear": [
+				"Studded Leather Armor|xphb",
+				"Staff|XPHB"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"Charr"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Flame_Wielder_Token.png"
+			},
+			"damageTags": [
+				"F"
+			]
+		},
+		{
+			"name": "Charr Blade Storm",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"charr"
+				]
+			},
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item chain shirt|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 54",
+				"average": 135
+			},
+			"speed": {
+				"walk": 45,
+				"climb": 45
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 16,
+			"int": 12,
+			"wis": 12,
+			"cha": 12,
+			"passive": 15,
+			"cr": "4",
+			"shortName": "charr",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Charr",
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"stealth": "+5",
+				"perception": "+5",
+				"athletics": "+8"
+			},
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The charr has advantage on an attack roll against a creature if at least one of the charr's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Feline Agility",
+					"entries": [
+						"When the charr moves on its turn in combat, it can double its speed until the end of the turn. Once it uses this ability, the charr can't use it again until it moves 0 feet on one of its turns."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"bonus": [
+				{
+					"name": "Inspire",
+					"entries": [
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The charr casts Wild Blow, using Strength as the spellcasting ability (spell save {@dc 14})."
+					],
+					"displayAs": "action",
+					"daily": {
+						"2e": [
+							"{@spell Wild Blow|GW}"
+						]
+					},
+					"ability": "str",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The charr casts either Frenzy of Hundred Blades, using Strength as the spellcasting ability (spell save {@dc 14})."
+					],
+					"displayAs": "bonus",
+					"will": [
+						"{@spell Frenzy|GW} (level 2 Version)"
+					],
+					"daily": {
+						"1": [
+							"{@spell Hundred Blades|GW}"
+						]
+					},
+					"ability": "str",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The charr makes three attacks, using Blade or Shortbow in any combination. If it attacks with Blade, they cast Hundred Blades as a {@action Bonus Action|XPHB} first and then use Wild Blow until it's no longer available."
+					]
+				},
+				{
+					"name": "Blade",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 3} to hit, 80/320 ft. range, one target. {@h}4 ({@damage 1d6 + 1}) piercing damage."
+					]
+				}
+			],
+			"gear": [
+				"Chain Shirt|xphb",
+				"Greatsword|XPHB",
+				"Shortbow|XPHB",
+				{
+					"item": "Arrow|XPHB",
+					"quantity": 20,
+					"displayName": ""
+				},
+				"Quiver|XPHB"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Axe_Fiend_Token.png"
+			},
+			"environment": [
+				"any"
+			],
+			"group": [
+				"Charr"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"save": {
+				"str": "+6",
+				"con": "+5"
+			},
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForcedSpell": [
+				"strength"
+			]
+		},
+		{
+			"name": "Charr Ashen Claw",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"charr"
+				]
+			},
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item breastplate|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 54",
+				"average": 135
+			},
+			"speed": {
+				"walk": 45,
+				"climb": 45
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 12,
+			"dex": 12,
+			"con": 16,
+			"int": 18,
+			"wis": 12,
+			"cha": 12,
+			"passive": 17,
+			"cr": "5",
+			"shortName": "charr",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Charr",
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"stealth": "+7",
+				"perception": "+7"
+			},
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The charr has advantage on an attack roll against a creature if at least one of the charr's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Feline Agility",
+					"entries": [
+						"When the charr moves on its turn in combat, it can double its speed until the end of the turn. Once it uses this ability, the charr can't use it again until it moves 0 feet on one of its turns."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"bonus": [
+				{
+					"name": "Inspire",
+					"entries": [
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The charr casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 15})."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Faintheartedness|GW} (level 2 Version)",
+						"{@spell Life Siphon|GW} (level 2 Version)",
+						"{@spell Mark of Pain|GW}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell Lingering Curse|GW} (level 3 Version)"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The charr makes either one Ash Touch or Ash Blast attack and then casts either Faintheartedness, Life Siphon, Mark of Pain, or Lingering Curse."
+					]
+				},
+				{
+					"name": "Ash Touch",
+					"entries": [
+						"{@atk ms} {@hit 7} to hit, reach 5 ft., one target. {@h}22 ({@damage 4d8 + 4}) necrotic damage."
+					]
+				},
+				{
+					"name": "Ash Blast",
+					"entries": [
+						"{@atk rs} {@hit 7} to hit, range 90 ft., one target. {@h}18 ({@damage 4d8}) necrotic damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MA",
+				"RA"
+			],
+			"gear": [
+				"Breastplate|xphb",
+				"Rod|XPHB"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Axe_Fiend_Token.png"
+			},
+			"environment": [
+				"any"
+			],
+			"group": [
+				"Charr"
+			],
+			"save": {
+				"int": "+7",
+				"con": "+6"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N"
+			]
+		},
+		{
+			"name": "Charr Hunter",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"charr"
+				]
+			},
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain shirt|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 60",
+				"average": 150
+			},
+			"speed": {
+				"walk": 45,
+				"climb": 45
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 16,
+			"int": 12,
+			"wis": 12,
+			"cha": 12,
+			"passive": 17,
+			"cr": "6",
+			"shortName": "charr",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Charr",
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"stealth": "+10",
+				"perception": "+7",
+				"survival": "+7",
+				"acrobatics": "+10"
+			},
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The charr has advantage on an attack roll against a creature if at least one of the charr's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Feline Agility",
+					"entries": [
+						"When the charr moves on its turn in combat, it can double its speed until the end of the turn. Once it uses this ability, the charr can't use it again until it moves 0 feet on one of its turns."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"bonus": [
+				{
+					"name": "Inspire",
+					"entries": [
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The charr casts one of the following spells, requiring no Material components and using Dexterity as the spellcasting ability."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Ignite Arrows|GWP} (level 3 Version)"
+					],
+					"daily": {
+						"2e": [
+							"{@spell Penetrating Attack/Sundering Attack|GWP}"
+						]
+					},
+					"ability": "dex",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The charr casts one of the following spells, requiring no Material components and using Dexterity as the spellcasting ability (spell save {@dc 15})."
+					],
+					"displayAs": "reaction",
+					"daily": {
+						"2": [
+							"{@spell Distracting Shot|GW}"
+						]
+					},
+					"ability": "dex",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The charr casts Ignite Arrows if the spell is not active; it then makes    two attacks, using Scimitar or Longbow in any combination. "
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 150/600 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"gear": [
+				"Chain Shirt|xphb",
+				{
+					"item": "Scimitar|XPHB",
+					"quantity": 2,
+					"displayName": ""
+				},
+				"Longbow|XPHB",
+				{
+					"item": "Quiver|XPHB",
+					"quantity": 2,
+					"displayName": ""
+				},
+				{
+					"item": "Arrow|XPHB",
+					"quantity": 40,
+					"displayName": ""
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"Charr"
+			],
+			"save": {
+				"dex": "+7",
+				"wis": "+4"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Stalker_Token.png"
+			},
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Charr Chaot",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"charr"
+				]
+			},
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item breastplate|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "22d8 + 66",
+				"average": 165
+			},
+			"speed": {
+				"walk": 45,
+				"climb": 45
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 12,
+			"dex": 12,
+			"con": 16,
+			"int": 12,
+			"wis": 12,
+			"cha": 18,
+			"passive": 17,
+			"cr": "7",
+			"shortName": "charr",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Charr",
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"stealth": "+7",
+				"perception": "+7",
+				"intimidation": "+10"
+			},
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The charr has advantage on an attack roll against a creature if at least one of the charr's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Feline Agility",
+					"entries": [
+						"When the charr moves on its turn in combat, it can double its speed until the end of the turn. Once it uses this ability, the charr can't use it again until it moves 0 feet on one of its turns."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"bonus": [
+				{
+					"name": "Inspire",
+					"entries": [
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The charr casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 15})."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Shatter Enchantment|GW}",
+						"{@spell Shatter Hex|GW} (level 3 Version)"
+					],
+					"daily": {
+						"3e": [
+							"{@spell Energy Burn|GW} (level 3 Version)"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The charr casts Power Block, using Charisma as the spellcasting ability (spell save {@dc 15})."
+					],
+					"displayAs": "reaction",
+					"daily": {
+						"2": [
+							"{@spell Power Block|GWP}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The charr makes one Mind Touch or Mind Spark attack and then casts either Shatter Enchantment, Shatter Hex, or Energy Burn."
+					]
+				},
+				{
+					"name": "Mind Touch",
+					"entries": [
+						"{@atk ms} {@hit 7} to hit, reach 10 ft., one target. {@h}18 ({@damage 4d6 + 4}) psychic damage."
+					]
+				},
+				{
+					"name": "Mind Spark",
+					"entries": [
+						"{@atk rs} {@hit 7} to hit, range 120 ft., one target. {@h}14 ({@damage 4d6}) psychic damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MA",
+				"RCH",
+				"RA"
+			],
+			"gear": [
+				"Breastplate|xphb",
+				"Wand|XPHB"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"Charr"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Chaot_Token.png"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"save": {
+				"cha": "+7",
+				"wis": "+4"
+			},
+			"damageTags": [
+				"Y"
+			]
+		},
+		{
+			"name": "Charr Shaman",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"charr"
+				]
+			},
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "22d8 + 88",
+				"average": 187
+			},
+			"speed": {
+				"walk": 45,
+				"climb": 45
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 18,
+			"int": 12,
+			"wis": 20,
+			"cha": 12,
+			"passive": 21,
+			"cr": "8",
+			"shortName": "charr",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Charr",
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"stealth": "+8",
+				"perception": "+11",
+				"religion": "+7"
+			},
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The charr has advantage on an attack roll against a creature if at least one of the charr's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Feline Agility",
+					"entries": [
+						"When the charr moves on its turn in combat, it can double its speed until the end of the turn. Once it uses this ability, the charr can't use it again until it moves 0 feet on one of its turns."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"bonus": [
+				{
+					"name": "Inspire",
+					"entries": [
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The charr casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 16})."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Banish|GW} (level 3 Version)",
+						"{@spell Orison of Healing|GW} (level 4 Version)"
+					],
+					"daily": {
+						"2e": [
+							"{@spell Infuse Health|GW} (level 6 Version)",
+							"{@spell Shield of Judgment|GWP} (level 4 Verion)"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The charr casts Bane Signet, using Wisdom as the spellcasting ability (spell save {@dc 16})."
+					],
+					"displayAs": "reaction",
+					"daily": {
+						"2": [
+							"{@spell Bane Signet|GW}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The charr makes one Radiant Slice or Radiant Missile attack and then casts either Banish, Orison of Healing, Infuse Health, or Shield of Judgment."
+					]
+				},
+				{
+					"name": "Radiant Slice",
+					"entries": [
+						"{@atk ms} {@hit 9} to hit, reach 5 ft., one target. {@h}35 ({@damage 7d8 + 4}) radiant damage."
+					]
+				},
+				{
+					"name": "Radiant Missile",
+					"entries": [
+						"{@atk rs} {@hit 9} to hit, range 90 ft., one target. {@h}27 ({@damage 6d8}) radiant damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MA",
+				"RA"
+			],
+			"gear": [
+				"Breastplate|xphb",
+				"Reliquary|XPHB"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"Charr"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Shaman_Token.png"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"R"
+			]
+		},
+		{
+			"name": "Charr Flame Wielder",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"charr"
+				]
+			},
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "24d8 + 96",
+				"average": 204
+			},
+			"speed": {
+				"walk": 45,
+				"climb": 45
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 18,
+			"int": 18,
+			"wis": 12,
+			"cha": 12,
+			"passive": 19,
+			"cr": "9",
+			"shortName": "charr",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Charr",
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"stealth": "+10",
+				"perception": "+9",
+				"arcana": "+12"
+			},
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The charr has advantage on an attack roll against a creature if at least one of the charr's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Feline Agility",
+					"entries": [
+						"When the charr moves on its turn in combat, it can double its speed until the end of the turn. Once it uses this ability, the charr can't use it again until it moves 0 feet on one of its turns."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"bonus": [
+				{
+					"name": "Inspire",
+					"entries": [
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The charr casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 16})."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Flare|GW} (level 3 Version)"
+					],
+					"daily": {
+						"1e": [
+							"{@spell Conjure Flame|GW}",
+							"{@spell Lava Font|GWP} (level 3 Version)",
+							"{@spell Meteor Shower|GWP}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The charr makes either one Molten Cudgel or Molten Fling attack, then casts Flare, and then casts either Conjure Flame, Lava Font, or Meteor Shower, or uses a {@action Magic|XPHB} to move Lava Font or Meteor Shower."
+					]
+				},
+				{
+					"name": "Molten Cudgel",
+					"entries": [
+						"{@atk ms} {@hit 8} to hit, reach 5 ft., one target. {@h}18 ({@damage 4d6 + 4}) fire damage."
+					]
+				},
+				{
+					"name": "Molten Fling",
+					"entries": [
+						"{@atk rs} {@hit 8} to hit, range 120 ft., one target. {@h}14 ({@damage 4d6}) fire damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MA",
+				"RA"
+			],
+			"gear": [
+				"Breastplate|xphb",
+				"Staff|XPHB"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"Charr"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Flame_Wielder_Token.png"
+			},
+			"save": {
+				"int": "+8",
+				"con": "+8"
+			},
+			"damageTags": [
+				"F"
 			]
 		}
 	],
@@ -21504,6 +23620,15 @@
 			],
 			"areaTags": [
 				"ST"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The duration increases by 1 round for each slot level above 3."
+					]
+				}
 			]
 		},
 		{
@@ -31286,7 +33411,7 @@
 			"entries": [
 				"{@variantrule Elite|GW}, {@variantrule Hex|GW}",
 				"Create a tether of life essence between you and a group of creatures, siphoning away their vitality.",
-				"Choose a point that you can see within range. Target each creature in a 10-foot-radius sphere centered on that point. For the duration at the start of each of a target's turns, a target must make a Constitution saving throw. On a failed save, a target takes {@damage 2d8} necrotic damage, and you regain hit points equal to the amount of necrotic damage dealt. On a successful save, a target takes half as much damage."
+				"Choose a point that you can see within range. Target each creature in a 10-foot-radius sphere centered on that point. For the duration at the start of each of a target's turns, a target must make a Constitution saving throw. On a failed save, a target takes {@damage 2d8} necrotic damage, and you regain hit points equal to the amount of necrotic damage dealt. On a successful save, a target takes half as much damage, and you regain hit points equal to the amount of necrotic damage dealt."
 			],
 			"source": "GWP",
 			"components": {

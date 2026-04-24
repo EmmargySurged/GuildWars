@@ -1065,7 +1065,7 @@
 												"As you take your first steps below the stonewood tree, you are greeted by a strange sight. Sitting atop a large stone pedestal is an silver maned Centaur, who is orating to a group of many different species. You see Humans, Charr, Norn, Centaurs, and even a few Asura and Trolls staring up at the Centaur with rapt attention. \"And so as I have said before, but it always bears repeating: You cannot expect the world to give you peace. You must find it... within yourself.\" The Centaur's voice is calm and soothing, and his words seem to resonate with everyone in the crowd. After a few moments of silence, the Centaur looks down at you and says, \"Ah, visitors. Welcome to Ventari's Refuge. I am {@creature Ventari|GWP}, and this is my home. What brings you here?\""
 											]
 										},
-										"With the lecture condluded the listeners dispers, some leaving the Refuge, others tending to the chores required to keep the place functioning. {@creature Ventari|GWP} waits patiently for the characters to approach him and explain their situation. He is a wise and compassionate individual, and he is sympathetic to the plight of the Shining Blade. However, he is a staunch pacifist, and he is insistent that the Shining Blade cannot stay at the Refuge if they continue to engage in violent activities. He eventually agrees to let the Shining Blade stay at the Refuge for a short period of time, on the condition that the characters seek out {@creature Dark Oak|GWP}, a powerful Archdruid who lives deep within the jungle, and ask them to perform a ritual that will give the Shining Blade a permanent safe haven within the Jungle." 
+										"With the lecture condluded the listeners dispers, some leaving the Refuge, others tending to the chores required to keep the place functioning. {@creature Ventari|GWP} waits patiently for the characters to approach him and explain their situation. He is a wise and compassionate individual, and he is sympathetic to the plight of the Shining Blade. However, he is a staunch pacifist, and he is insistent that the Shining Blade cannot stay at the Refuge if they continue to engage in violent activities. He eventually agrees to let the Shining Blade stay at the Refuge for a short period of time, on the condition that the characters seek out {@creature Dark Oak|GWP}, a powerful Archdruid who lives deep within the jungle, and ask them to perform a ritual that will give the Shining Blade a permanent safe haven within the Jungle."
 									]
 								},
 								{
@@ -15299,6 +15299,276 @@
 			},
 			"damageTags": [
 				"F"
+			]
+		},
+		{
+			"name": "Dark Oak",
+			"source": "GWP",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "plant",
+				"tags": [
+					"oak"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				20
+			],
+			"hp": {
+				"formula": "30d12 + 210",
+				"average": 405
+			},
+			"speed": {},
+			"str": 28,
+			"dex": 4,
+			"con": 24,
+			"int": 16,
+			"wis": 28,
+			"cha": 16,
+			"save": {
+				"int": "+9",
+				"wis": "+15",
+				"con": "+13",
+				"str": "+15",
+				"cha": "+9"
+			},
+			"passive": 31,
+			"cr": "20",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Dark Oak casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 25}):"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Comfort Animal|GW} (level 4 Version)",
+						"{@spell Frozen Soil|GWP}",
+						"{@spell Otyugh's Cry|GWP} (level 4 Version)",
+						"{@spell Troll Unguent|GW} (level 4 Version)"
+					],
+					"daily": {
+						"2e": [
+							"{@spell Eruption|GWP} (level 5 Version)",
+							"{@spell Ward Against Elements|GWP} (level 5 Version)",
+							"{@spell Ward Against Melee|GW} (level 5 Version)"
+						],
+						"1e": [
+							"{@spell Earthquake/Dragon's Stomp|GWP} (level 8 Version)",
+							"{@spell Edge of Extinction|GWP} (level 7 Version)",
+							"{@spell Mending (Guild Wars)|GW} (level 6 Version)",
+							"{@spell Rodgort's Invocation|GWP} (level 9 Version)"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Dark Oak casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 25}):"
+					],
+					"displayAs": "bonus",
+					"will": [
+						"{@spell Call of Haste|GW}",
+						"{@spell Call of Protection|GWP} (level 3 Version)",
+						"{@spell Ferocious Strike|GW} (level 3 Version)"
+					],
+					"ability": "wis",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Dark Oak casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 25}):"
+					],
+					"displayAs": "reaction",
+					"will": [
+						"{@spell Disrupting Lunge|GW}"
+					],
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Dark Oak casts two spells and makes either a Druid's Wrath or a Nature's Fury attack."
+					]
+				},
+				{
+					"name": "Druid's Wrath",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 15 ft., one target. {@h}61 ({@damage 8d12 + 9}) bludgeoning damage, plus 3 ({@damage 1d6}) acid, cold, fire, lightning, poison, and thunder damage."
+					]
+				},
+				{
+					"name": "Nature's Wrath",
+					"entries": [
+						"{@atk rw} {@hit 15} to hit, range 300/1200 ft., one target. {@h}45 ({@damage 8d8 + 9}) force damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Summon Ally {@recharge}",
+					"entries": [
+						"Dark Oak magically summons forth a companion. One Beast or Monstrosity with a {@variantrule Challenge Rating|XPHB} equal to or less than one other creature within 1 mile of Dark Oak appears in an unoccupied space within 150 feet of Dark Oak. The creature is an ally to Dark Oak and their allies. In combat, it shares Dark Oak's {@variantrule Initiative|XPHB} count, but it takes its turn immediately after Dark Oak. It obeys Dark Oak's verbal commands (no action required by Dark Oak). If Dark Oak doesn't issue any, it takes the dodge action and uses its movement to avoid danger."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Shapechanger"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"senses": [
+				"truesight 300 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"languages": [
+				"All",
+				"telepathy 1 mile"
+			],
+			"skill": {
+				"animal handling": "+21",
+				"arcana": "+15",
+				"athletics": "+21",
+				"history": "+15",
+				"insight": "+21",
+				"intimidation": "+15",
+				"medicine": "+21",
+				"nature": "+15",
+				"perception": "+21",
+				"persuasion": "+15",
+				"religion": "+15",
+				"survival": "+21"
+			},
+			"resist": [
+				"acid",
+				"bludgeoning",
+				"cold",
+				"fire",
+				"lightning",
+				"piercing",
+				"psychic",
+				"thunder"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (5/Day)",
+					"entries": [
+						"If Dark Oak fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"isNamedCreature": true,
+			"legendaryActions": 3,
+			"legendaryActionsLair": 3,
+			"languageTags": [
+				"TP"
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Dark Oak attacks using one of their attacks."
+					]
+				},
+				{
+					"name": "Cast a Spell (Costs 2 Action)",
+					"entries": [
+						"Dark Oak uses Spellcasting."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"Legendary Action Uses: 3. Immediately after another creature's turn, Dark Oak can expend a use to take one of the following actions. Dark Oak regains all expended uses at the start of each of their turns."
+			],
+			"environment": [
+				"jungle"
+			],
+			"group": [
+				"Druids of Maguuma"
+			],
+			"isNpc": true,
+			"legendaryGroup": {
+				"name": "Dark Oak",
+				"source": "GWP"
+			},
+			"fluff": {
+				"entries": [
+					"Dark Oak is a titel given to the current mortal soul who merged with the spirit of the ancient oak tree at the center of the grove. The current Dark Oak is a powerful and enigmatic figure, who is deeply connected to the natural world and the magic of the jungle. They are currently occupied with helping the Forgotten establish Tarir in preperation for Glint's Legacy."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Dark Oak.png"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Dark_Oak_Token.png"
+			},
+			"damageTags": [
+				"B",
+				"O"
+			],
+			"damageTagsSpell": [
+				"F",
+				"O"
+			],
+			"damageTagsLegendary": [
+				"B"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength"
+			],
+			"savingThrowForcedLegendary": [
+				"strength"
 			]
 		}
 	],
@@ -57863,6 +58133,16 @@
 			"regionalEffects": [],
 			"mythicEncounter": [],
 			"source": "GWP"
+		},
+		{
+			"name": "Dark Oak",
+			"mythicEncounter": [],
+			"source": "GWP",
+			"lairActions": [
+				"When fighting inside their lair, Dark Oak can take lair action. On initiative count 20 (losing initiative ties), Dark Oak can take one lair action to cause one of the following effects; Dark Oak can't use the same lair action two rounds in a row:",
+				"{@b Root Smash.} Dark Oak chooses one creature it can see and makes one attack against them (+15 to hit). On a hit, the target takes {@damage 3d12} bludgeoning damage.",
+				"{@b Root Grab.} Dark Oak chooses one creature it can see and forces them to make a {@actSave str} {@dc 25}. On a failed save, the creature is {@condition Restrained|XPHB} for 1 minute. On a successful save, the target is {@condition Restrained|XPHB} for 1 round only."
+			]
 		}
 	],
 	"race": [],

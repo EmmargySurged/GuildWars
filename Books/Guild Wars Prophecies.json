@@ -15573,6 +15573,169 @@
 			"savingThrowForcedLegendary": [
 				"strength"
 			]
+		},
+		{
+			"name": "Ventari",
+			"source": "GWP",
+			"size": [
+				"L"
+			],
+			"type": "fey",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item +2 studded leather armor|xdmg}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d10 + 180",
+				"average": 345
+			},
+			"speed": {
+				"walk": 50
+			},
+			"initiative": {
+				"proficiency": 2
+			},
+			"str": 26,
+			"dex": 18,
+			"con": 22,
+			"int": 16,
+			"wis": 20,
+			"cha": 18,
+			"skill": {
+				"athletics": "+13",
+				"perception": "+15",
+				"animal handling": "+15",
+				"arcana": "+8",
+				"history": "+13",
+				"insight": "+15",
+				"intimidation": "+9",
+				"medicine": "+15",
+				"nature": "+13",
+				"performance": "+9",
+				"persuasion": "+14",
+				"religion": "+8",
+				"survival": "+15"
+			},
+			"passive": 25,
+			"languages": [
+				"Asura",
+				"Charr",
+				"Common",
+				"Elvish",
+				"Krytan",
+				"Norn",
+				"Sylvan"
+			],
+			"cr": "15",
+			"gear": [
+				"+2 Studded Leather Armor|xdmg",
+				"Staff|xphb"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Ventari makes four attacks, using Blood Strike or Blood Wisp in any combination."
+					]
+				},
+				{
+					"name": "Blood Strike",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}26 ({@damage 4d8 + 8}) bludgeoning damage, plus 9 ({@damage 2d8}) necrotic damage. Ventari takes 5 damage."
+					]
+				},
+				{
+					"name": "Blood Wisp",
+					"entries": [
+						"{@atk rs} {@hit 10} to hit, range 150 ft., one target. {@h}33 ({@damage 6d10}) force damage, plus 9 ({@damage 2d8}) necrotic damage. Ventari takes 10 damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Bloody Charge {@recharge 5}",
+					"entries": [
+						"Ventari moves up to his {@variantrule Speed|XPHB} without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks} and can move through the spaces of Medium or smaller creatures. Each creature whose space Ventari enters is targeted once by the following effect. {@actSave str} {@dc 21}. {@actSaveFail} 29 ({@damage 6d6 + 8}) bludgeoning damage, plus 9 ({@damage 2d8}) necrotic damage, and the target gains 1 {@condition Exhaustion|XPHB} level. Ventari takes 20 damage."
+					]
+				}
+			],
+			"environment": [
+				"any"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"S"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"group": [
+				"Centaur"
+			],
+			"fluff": {
+				"entries": [
+					"Ventari is an elder of the Maguuma centaurs found in the Maguuma Jungle and the Tarnished Coast.",
+					"In his youth he was a proud warrior who fought against humans, however over time he grew to abhor the violence that engulfed the two species. He eventually set up a camp beneath the largest Stonewood tree in the arid tops of the Maguuma Jungle. However, in 1072 AE, violence once more engulfed his home in the form of the Krytan civil war. To escape the conflict, Ventari fled south, to the Tarnished Coast, where he befriended a human named Ronan, with whom he planted the Pale Tree and founded a sanctuary of peace for all races seeking it. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Ventari.jpg"
+						}
+					}
+				]
+			},
+			"save": {
+				"int": "+8",
+				"wis": "+10",
+				"cha": "+9"
+			},
+			"savingThrowForcedSpell": [
+				"constitution"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RA"
+			],
+			"isNpc": true,
+			"shortName": "Ventari",
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Ventari fails a saving throw, he can choose to succeed instead."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Ventari_Token.png"
+			},
+			"damageTags": [
+				"B",
+				"N",
+				"O"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
 		}
 	],
 	"monsterFluff": [

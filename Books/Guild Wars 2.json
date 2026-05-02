@@ -6545,12 +6545,17 @@
 				[
 					"Bolt I",
 					"{@item Perfected Sword|GW2}, {@item Zap|GW2}, or {@item Bolt|GW2}",
-					"As a {@action Magic|XPHB} action, you point your sword at a location you can see within 60 feet. A lightning bolt crashes down in that area. Each creature in a 5-foot radius sphere centered on that point must make a {@dc 15} Dexterity saving throw. On a failed save, a creature takes 10 ({@damage 3d6}) lightning damage and is {@condition Blinded|XPHB} and {@variantrule Deafened|GW2} for 1 minute. On a successful save, a creature takes half as much damage and is {@condition Blinded|XPHB} and {@variantrule Deafened|GW2} for 1 round only. A creature can repeat the saving throw at the end of each of its turns, ending the conditions on a success. You can use this boon a number of times equal to your {@table Proficiency Bonus|XPHB} and regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+					"As a {@action Magic|XPHB} action, you point your sword at a location you can see within 60 feet. A lightning bolt crashes down in that area. Each creature in a 5-foot radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on that point must make a {@dc 15} Dexterity saving throw. On a failed save, a creature takes 10 ({@damage 3d6}) lightning damage and is {@condition Blinded|XPHB} and {@variantrule Deafened|GW2} for 1 minute. On a successful save, a creature takes half as much damage and is {@condition Blinded|XPHB} and {@variantrule Deafened|GW2} for 1 round only. A creature can repeat the saving throw at the end of each of its turns, ending the conditions on a success. You can use this boon a number of times equal to your {@table Proficiency Bonus|XPHB} and regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
 				],
 				[
 					"Conversion",
 					"",
 					"Choose one {@variantrule Damage Types|XPHB|Damage Type}. When you deal damage you can choose to deal that damage as the chosen type instead. If you have any features or spells that require you to deal a specific damage type, they now work with the chosen type as well."
+				],
+				[
+					"Exordium I",
+					"{@item Visiospei|GW2HoT}, {@item Exitare|GW2HoT}, or {@item Exordium|GW2HoT}",
+					"As a {@action Magic|XPHB} action, you can temporarily transform your weapon into lance of force, that bursts away from you in a 120-foot-long, 5-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. Each creature in the line must make a {@dc 15} Strength saving throw. On a failed save, a creature takes 22 ({@damage 4d10}) force damage and has the {@condition Prone|XPHB} condition. On a successful save, a creature takes half as much damage only. The weapon returns to your hand in its normal form immediately after. You can use this boon a number of times equal to your {@table Proficiency Bonus|XPHB} and regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
 				],
 				[
 					"\"Find the Weak Spot!\" I",
@@ -6588,6 +6593,11 @@
 					"Commanding Inspiration I",
 					"{@classFeature Bardic Inspiration|Bard|XPHB|1} class feature.",
 					"When you give an ally a {@classFeature Bardic Inspiration|Bard|XPHB|1}, they can use their {@variantrule Reaction|XPHB} to immediately expend that use of their {@classFeature Bardic Inspiration|Bard|XPHB|1} to make one weapon attack or cast one cantrip with a casting time of one {@variantrule Action|XPHB}, adding one roll of your Bardic Inspiration die to the attack roll or saving throw DC."
+				],
+				[
+					"Exordium II",
+					"Exordium I",
+					"Instead of a lance the weapon can now also temporarily transform into a huge scythe that creates a 60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone} of force. The DC increases to 17, the damage increases to 33 ({@damage 6d10}), and you regain one expended use when you finish a {@variantrule Short Rest|XPHB}."
 				],
 				[
 					"Fiery Wind I",
@@ -6632,6 +6642,11 @@
 					"When you score a {@variantrule Critical Hit|XPHB} against a target, you can cause an explosion of energy. Each creature of your choice within 10 feet the target takes force damage equal to the damage dealt by the attack."
 				],
 				[
+					"Exordium II",
+					"Exordium I",
+					"Instead of a lance or scythe, the weapon can now also temporarily transform into a massive hammer that creates a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} of force. The DC increases to 20, the damage increases to 55 ({@damage 10d10}), and you regain all expended uses when you finish a {@variantrule Short Rest|XPHB}."
+				],
+				[
 					"Fiery Wind II",
 					"Fiery Wind I",
 					"The range increases to 30 feet, the damage increases to six times the result on the {@dice d10} plus your Strength Modifier plus your level, and you can now regain one use of your {@classFeature Second Wind|Fighter|XPHB|1} four times per {@variantrule Long Rest|XPHB}."
@@ -6672,6 +6687,11 @@
 					"Advantage I",
 					"",
 					"Choose one {@variantrule Ability Score and Modifier|XPHB|Ability Score}. You have {@variantrule Advantage|XPHB} on {@variantrule Ability Check|XPHB|Ability Checks} that use the chosen ability score, as long as you are not {@variantrule Proficiency|XPHB|Proficient} in the check."
+				],
+				[
+					"Bolt I",
+					"{@item Perfected Sword|GW2}, {@item Zap|GW2}, or {@item Bolt|GW2}",
+					"You gain {@variantrule Resistance|XPHB} to lightning damage and lightning damage you deal ignores {@variantrule Resistance|XPHB|Resistances}."
 				],
 				[
 					"Buffer I",
@@ -6821,6 +6841,11 @@
 					"Choose one more {@variantrule Ability Score and Modifier|XPHB|Ability Score} to gain {@variantrule Advantage|XPHB} on."
 				],
 				[
+					"Bolt II",
+					"Bolt I",
+					"Lightning damage you deal treats {@variantrule Immunity|XPHB|Immunities} as {@variantrule Resistance|XPHB|Resistances}. You gain a {@variantrule Fly Speed|XPHB} of 30 feet and can {@variantrule Hover|XPHB}. If you already have a Fly Speed, it increases by 30 feet instead and you can {@variantrule Hover|XPHB}."
+				],
+				[
 					"Buffer II",
 					"Buffer I",
 					"The {@variantrule Temporary Hit Points|XPHB} increase to 20."
@@ -6968,6 +6993,11 @@
 					"Choose one more {@variantrule Ability Score and Modifier|XPHB|Ability Score} to gain {@variantrule Advantage|XPHB} on."
 				],
 				[
+					"Bolt III",
+					"Bolt II",
+					"You gain {@variantrule Immunity|XPHB} to lightning damage, and lightning damage you deal ignores {@variantrule Immunity|XPHB|Immunities}. Your {@variantrule Fly Speed|XPHB} increases by an additional 30 feet."
+				],
+				[
 					"Buffer III",
 					"Buffer II",
 					"The {@variantrule Temporary Hit Points|XPHB} increase to 40."
@@ -7113,6 +7143,11 @@
 					"Advantage IV",
 					"Advantage III",
 					"Choose one more {@variantrule Ability Score and Modifier|XPHB|Ability Score} to gain {@variantrule Advantage|XPHB} on."
+				],
+				[
+					"Bolt IV",
+					"Bolt III",
+					"When you deal lightning damage to a creature, as long as the creature does not have {@variantrule Resistance|XPHB} or {@variantrule Immunity|XPHB} to lightning type it is considered to be {@variantrule Vulnerability|XPHB|Vulnerable} to lightning damage. Your {@variantrule Fly Speed|XPHB} increases by an additional 60 feet."
 				],
 				[
 					"Buffer IV",

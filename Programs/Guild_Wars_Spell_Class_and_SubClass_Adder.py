@@ -1,5 +1,6 @@
 import pandas as pd
 import openpyxl
+import sys
 
 
 def preload_classes(file_path, sheet_name, classes_list):
@@ -215,7 +216,6 @@ def update_spells_with_classes(json_path, file_path, sheet_name, valid_backgroun
 
 
 
-# Example Usage
 if __name__ == "__main__":
     # File paths
     json_paths = [".\Books\Guild Wars.json",".\Books\Guild Wars Prophecies.json",".\Books\Guild Wars Factions.json",".\Books\Guild Wars Nightfall.json",".\Books\Guild Wars Eye of the North.json"]
@@ -225,27 +225,59 @@ if __name__ == "__main__":
 
     # Define your lists as provided
     classes_list = [
-        {"name": "Artificer", "source": "xua2025eberronupdates", "sub_classes": [
-            {"name": "Alchemist", "shortName": "Alchemist", "source": "xua2025eberronupdates"},
-            {"name": "Armorer", "shortName": "Armorer", "source": "xua2025eberronupdates"},
-            {"name": "Artillerist", "shortName": "Artillerist", "source": "xua2025eberronupdates"},
-            {"name": "Battle Smith", "shortName": "Battle Smith", "source": "xua2025eberronupdates"},
-            {"name": "Cartographer", "shortName": "Cartographer", "source": "xua2025eberronupdates"},
-            {"name": "Reanimator", "shortName": "Reanimator", "source": "xua2025horrorsubclasses"}
+        {
+            "name": "Apothecary", "source": "guidedrakkenheim", "sub_classes": [
+            {"name": "Alienist", "shortName": "Alienist", "source": "guidedrakkenheim"},
+            {"name": "Chemist", "shortName": "Chemist", "source": "guidedrakkenheim"},
+            {"name": "Exorcist", "shortName": "Exorcist", "source": "guidedrakkenheim"},
+            {"name": "Mutagenist", "shortName": "Mutagenist", "source": "guidedrakkenheim"},
+            {"name": "Pathogenist", "shortName": "Pathogenist", "source": "guidedrakkenheim"},
+            {"name": "Reanimator", "shortName": "Reanimator", "source": "guidedrakkenheim"}
+        ]},
+        {"name": "Artificer", "source": "efa", "sub_classes": [
+            {"name": "Alchemist", "shortName": "Alchemist", "source": "efa"},
+            {"name": "Armorer", "shortName": "Armorer", "source": "efa"},
+            {"name": "Artillerist", "shortName": "Artillerist", "source": "efa"},
+            {"name": "Battle Smith", "shortName": "Battle Smith", "source": "efa"},
+            {"name": "Cartographer", "shortName": "Cartographer", "source": "efa"},
+            {"name": "Forge Adept", "shortName": "Forge Adept", "source": "exploringeberron24"},
+            {"name": "Maverick", "shortName": "Maverick", "source": "exploringeberron24"} 
+        ]},
+        {
+            "name": "Barbarian", "source": "XPHB", "sub_classes": [
+            {"name": "Ragetotem Spiritualist", "shortName": "Ragetotem Spiritualist", "source": "ragetotemspiritualist"}
         ]},
         {"name": "Bard", "source": "XPHB", "sub_classes": [
+            {"name": "Collage of Dance", "shortName": "Dance", "source": "XPHB"},
+            {"name": "Collage of Glamour", "shortName": "Glamour", "source": "XPHB"},
             {"name": "Collage of Lore", "shortName": "Lore", "source": "XPHB"},
             {"name": "Collage of Swords", "shortName": "Swords", "source": "XGE"},
+            {"name": "Collage of the Moon", "shortName": "Moon", "source": "FRHoF"},
+            {"name": "Collage of Valor", "shortName": "Valor", "source": "XPHB"},
+            {"name": "Collage of Whispers", "shortName": "Whispers", "source": "XGE"},
             {"name": "Virtuoso", "shortName": "Virtuoso", "source": "GW2EoD"}
         ]},
         {"name": "Cleric", "source": "XPHB", "sub_classes": [
+            {"name": "Death Domain", "shortName": "Death", "source": "DMG"},
+            {"name": "Forge Domain", "shortName": "Forge", "source": "XGE"},
+            {"name": "Grave Domain", "shortName": "Grave", "source": "XGE"},
             {"name": "Inquisition Domain", "shortName": "Inquisition", "source": "GrimHollowPlayerPack"},
+            {"name": "Knowledge Domain", "shortName": "Knowledge", "source": "FRHoF"},
+            {"name": "Life Domain", "shortName": "Life", "source": "XPHB"},
             {"name": "Light Domain", "shortName": "Light", "source": "XPHB"},
+            {"name": "Nature Domain", "shortName": "Nature", "source": "PHB"},
+            {"name": "Tempest Domain", "shortName": "Tempest", "source": "PHB"},
+            {"name": "Trickery Domain", "shortName": "Trickery", "source": "XPHB"},
             {"name": "War Domain", "shortName": "War", "source": "XPHB"}
         ]},
         {"name": "Druid", "source": "XPHB", "sub_classes": [
+            {"name": "Circle of Dreams", "shortName": "Dreams", "source": "XGE"},
+            {"name": "Circle of Land", "shortName": "Land", "source": "XPHB"},
+            {"name": "Circle of Moon", "shortName": "Moon", "source": "XPHB"},
+            {"name": "Circle of Sea", "shortName": "Sea", "source": "XPHB"},
             {"name": "Circle of Spores", "shortName": "Spores", "source": "TCE"},
-            {"name": "Circle of Stars", "shortName": "Stars", "source": "XPHB"}
+            {"name": "Circle of Stars", "shortName": "Stars", "source": "XPHB"},
+            {"name": "Circle of the Shepherd", "shortName": "Shepherd", "source": "XGE"}
         ]},
         {"name": "Fighter", "source": "XPHB", "sub_classes": [
             {"name": "Eldritch Knight", "shortName": "Eldritch Knight", "source": "XPHB"}
@@ -257,7 +289,14 @@ if __name__ == "__main__":
             {"name": "Architect of Ruin", "shortName": "Architect of Ruin", "source": "IllriggerRevised"}
         ]},
         {"name": "Paladin", "source": "XPHB", "sub_classes": [
-            {"name": "Oath of Ancients", "shortName": "Ancients", "source": "XPHB"}
+            {"name": "Oath of Conquest", "shortName": "Conquest", "source": "XGE"},
+            {"name": "Oath of Devotion", "shortName": "Devotion", "source": "XPHB"},
+            {"name": "Oath of Glory", "shortName": "Glory", "source": "XPHB"},
+            {"name": "Oath of Redemption", "shortName": "Redemption", "source": "XGE"},
+            {"name": "Oath of Vengeance", "shortName": "Vengeance", "source": "XPHB"},
+            {"name": "Oath of the Ancients", "shortName": "Ancients", "source": "XPHB"},
+            {"name": "Oath of the Noble Genies", "shortName": "Noble Genies", "source": "FRHoF"},
+            {"name": "Oathbreaker", "shortName": "Oathbreaker", "source": "DMG"}
         ]},
         {"name": "Psion", "source": "xua2025psion", "sub_classes": [
             {"name": "Metamorph", "shortName": "Metamorph", "source": "xua2025psion"},
@@ -267,24 +306,52 @@ if __name__ == "__main__":
         ]},
         {"name": "Ranger", "source": "XPHB", "sub_classes": [
             {"name": "Beast Master", "shortName": "Beast Master", "source": "XPHB"},
-            {"name": "Hollow Warden", "shortName": "Hollow Warden", "source": "xua2025horrorsubclasses"}
+            {"name": "Fey Wanderer", "shortName": "Fey Wanderer", "source": "XPHB"},
+            {"name": "Gloom Stalker", "shortName": "Gloom Stalker", "source": "XPHB"},
+            {"name": "Hollow Warden", "shortName": "Hollow Warden", "source": "xua2025horrorsubclasses"},
+            {"name": "Horizon Walker", "shortName": "Horizon Walker", "source": "XGE"},
+            {"name": "Hunter", "shortName": "Hunter", "source": "XPHB"},
+            {"name": "Monster Slayer", "shortName": "Monster Slayer", "source": "XGE"},
+            {"name": "Winter Walker", "shortName": "Winter Walker", "source": "FRHoF"}
         ]},
         {"name": "Rogue", "source": "XPHB", "sub_classes": [
             {"name": "Arcane Trickster", "shortName": "Arcane Trickster", "source": "XPHB"}
         ]},
         {"name": "Sorcerer", "source": "XPHB", "sub_classes": [
-            {"name": "Divine Soul", "shortName": "Divine Soul", "source": "XGE"}
+            {"name": "Aberrant Sorcery", "shortName": "Aberrant", "source": "XPHB"},
+            {"name": "Clockwork Sorcery", "shortName": "Clockwork", "source": "XPHB"},
+            {"name": "Divine Soul", "shortName": "Divine Soul", "source": "XGE"},
+            {"name": "Draconic Sorcery", "shortName": "Draconic", "source": "XPHB"},
+            {"name": "Shadow Magic", "shortName": "Shadow Magic", "source": "XGE"},
+            {"name": "Spellfire Sorcery", "shortName": "Spellfire", "source": "FRHoF"},
+            {"name": "Storm Sorcery", "shortName": "Storm", "source": "XGE"},
+            {"name": "Wild Magic", "shortName": "Wild Magic", "source": "XPHB"}
         ]},
         {"name": "Warlock", "source": "XPHB", "sub_classes": [
+            {"name": "Archfey Patron", "shortName": "Archfey", "source": "XPHB"},
+            {"name": "Celestial Patron", "shortName": "Celestial", "source": "XPHB"},
+            {"name": "Fiend Patron", "shortName": "Fiend", "source": "XPHB"},
+            {"name": "Great Old One Patron", "shortName": "Great Old One", "source": "XPHB"},
             {"name": "The Fathomless", "shortName": "Fathomless", "source": "TCE"},
-            {"name": "The Hexblade", "shortName": "Hexblade", "source": "XGE"}
+            {"name": "The Hexblade", "shortName": "Hexblade", "source": "XGE"},
+            {"name": "Cosmic Patron", "shortName": "Cosmic", "source": "guidedrakkenheim"},
         ]},
         {"name": "Witch", "source": "WorldsBeyondNumberWitch", "sub_classes": [
             {"name": "Coven of the Claw", "shortName": "Claw", "source": "WorldsBeyondNumberWitch"}
         ]},
         {"name": "Wizard", "source": "XPHB", "sub_classes": [
-            {"name": "Bladesinging", "shortName": "Bladesinging", "source": "TCE"},
-            {"name": "School of Necromancy", "shortName": "Necromancy", "source": "PHB"}
+            {"name": "Abjurer", "shortName": "Abjurer", "source": "XPHB"},
+            {"name": "Bladesinger", "shortName": "Bladesinger", "source": "FRHoF"},
+            {"name": "Diviner", "shortName": "Diviner", "source": "XPHB"},
+            {"name": "Evoker", "shortName": "Evoker", "source": "XPHB"},
+            {"name": "Illusionist", "shortName": "Illusionist", "source": "XPHB"},
+            {"name": "Occultist", "shortName": "Occultist", "source": "crookedmoon24"},
+            {"name": "School of Conjuration", "shortName": "Conjuration", "source": "PHB"},
+            {"name": "School of Enchantment", "shortName": "Enchantment", "source": "PHB"},
+            {"name": "School of Necromancy", "shortName": "Necromancy", "source": "PHB"},
+            {"name": "School of Transmutation", "shortName": "Transmutation", "source": "PHB"},
+            {"name": "Wizard of the Citadel", "shortName": "Citadel", "source": "WizardCitadelWBN"},
+            {"name": "War", "shortName": "War", "source": "XGE"}
         ]}
     ]
     # Unused, maybe make custom classes the players can then also check.
@@ -314,6 +381,7 @@ if __name__ == "__main__":
             locations=locations_list,
             classes_list=classes_list,
             output_json_path=json_path,
-            verbose=True
+            verbose=False
         )
+sys.exit()
 

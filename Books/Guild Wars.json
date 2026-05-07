@@ -1059,7 +1059,7 @@
                                             "name": "Forge Crafting",
                                             "entries": [
                                                 "A large part of using the Forge is channeling ones own spirit and dedication into the armaments crafted for them. While the Eternal Forgemaster and Eternal Weaponmaster do the actual forging, the character guides the process and is instrumental in the success of the forging process.",
-                                                "For characters trying to upgrade one of their Guild Wars 2 Legendary precursor items consult the table below for the DCs. If they fail a check they loose the materials invested up to that point and can re-attempt the upgrade, as long as they have the required materials. Appropriate checks for the characters any any tool associated with the item they are trying to upgrade, their spellcasting ability or one ability score associated with how they use the item.",
+                                                "For characters trying to upgrade one of their Guild Wars 2 Legendary precursor items consult the table below for the DCs. If they fail a check they loose the materials invested up to that point and can re-attempt the upgrade, as long as they have the required materials. Appropriate checks for the characters are any tool associated with the item they are trying to upgrade, their spellcasting ability or one ability score associated with how they use the item.",
                                                 {
                                                     "type": "statblock",
                                                     "tag": "table",
@@ -53355,7 +53355,7 @@
             "name": "Great Battle Field Terrain Encounters",
             "source": "GW",
             "colLabels": [
-                "{@dice d20}",
+                "{@dice d6}",
                 "Name",
                 "Description"
             ],
@@ -53367,17 +53367,37 @@
             "rows": [
                 [
                     "1",
-                    "Name",
-                    "Velit reiciendis alias fugit eveniet odio quos error. Perferendis ut ab voluptatibus corporis. Illum est facilis omnis quisquam pariatur ullam. Magnam ea non perferendis."
+                    "Pourus Ground",
+                    "The characters approach a section of the battlefield that has not been compacted yet. If the lead character has a lower {@variantrule Passive Perception|XPHB} than 10 + PB + {@dice 1d10} they do not notice the section. Each creature with 30 feet of the lead character must succeed on a DC 8 + PB + {@dice 1d8} dexterity saving throw or take PBd10 bludgeoning damage, fall ten feet (taking an additional {@damage 1d6} bludgeoning damage), and become {@condition Restrained|XPHB} until they succeed on a DC 8 + PB + {@dice 1d6} strength saving throw to free themselves from the debris. Any creatures rolled in the Creature Encounter are unaffected by the ground and engange the characters directly after."
+                ],
+                [
+                    "2",
+                    "Grasping Hands",
+                    "The characters cross a section of half animated undead trying to grab them from below. If the lead character has a lower {@variantrule Passive Perception|XPHB} than 10 + PB + {@dice 1d8} they do not notice the section. Each creature crossing the section must succeed on a DC 8 + PB + {@dice 1d6} strength saving throw or be {@condition Grappled|XPHB} (escape DC 8 + PB + {@dice 1d6}) and take PBd6 bludgeoning damage at the start of each of their turns until they escape. Any creatures rolled in the Creature Encounter are unaffected by the hands and engange the characters directly after."
+                ],
+                [
+                    "3",
+                    "Noxious Fumes",
+                    "A cloud of nearly invisible noxious fumes drifts in the characters direction. If the lead character has a lower {@variantrule Passive Perception|XPHB} than 10 + PB + {@dice 1d12} they do not notice the cloud. The cloud is a 30-feet {@variantrule Sphere [Area of Effect]|XPHB|Sphere} that moves 30 feet in a random direction at the beginning of each round, determined by rolling a {@dice d8}. Any creature that makes contact with the sphere must make a DC 8 + PB + {@dice 1d4} constitution saving throw or take PBd4 poison damage and become {@condition Poisoned|XPHB} until the end of their next turn. A creature makes this save only once per round. Any creatures rolled in the Creature Encounter are unaffected by the fumes and engange the characters directly after."
+                ],
+                [
+                    "4",
+                    "Unexploded Ordnance",
+                    "The characters step into an area of roughly 1000 square feet of unexploded smokepowder bombs. If the lead character has a lower {@variantrule Passive Perception|XPHB} than 10 + PB + {@dice 2d4} they do not notice the bombs. Each creature moving in the area must roll a {@dice 1d20} at the end of their turn if they moved. If the roll a 1 they set off a bomb. Any area of effects that deal fire or force damage also require a {@dice 1d20} roll to see if they set of an explosive. For every 5-foot cube the area of effect covered the number they need to roll below to set off a bomb on the d20 increases by 1. If a bomb was set off, it explodes on a random spot the character stood during their turn in case of moevement, or a random spot in the area of effect. A bomb deals PBd6 fire damage to every creature within 10 feet of it and can set off other bombs as per the area effect rule."
+                ],
+                [
+                    "5-6",
+                    "Nothing",
+                    "nothing"
                 ]
-            ]
+            ] 
         },
         {
             "type": "table",
             "name": "Great Battle Field Creature Encounters",
             "source": "GW",
             "colLabels": [
-                "{@dice d20}",
+                "{@dice d10}",
                 "Name",
                 "Description"
             ],
@@ -53389,8 +53409,33 @@
             "rows": [
                 [
                     "1",
-                    "Name",
-                    "Velit reiciendis alias fugit eveniet odio quos error. Perferendis ut ab voluptatibus corporis. Illum est facilis omnis quisquam pariatur ullam. Magnam ea non perferendis."
+                    "Hard Shadow Army Encounter",
+                    "A {@table Determine Your XP Budget; XP Budget per Character|XDMG|Hard Difficulty Encounter} using the Shadow army."
+                ],
+                [
+                    "2",
+                    "Medium Shadow Army Encounter",
+                    "A {@table Determine Your XP Budget; XP Budget per Character|XDMG|Medium Difficulty Encounter} using the Shadow army."
+                ],
+                [
+                    "3",
+                    "Medium Undead Encounter",
+                    "A {@table Determine Your XP Budget; XP Budget per Character|XDMG|Medium Difficulty Encounter} using undead creatures."
+                ],
+                [
+                    "4-5",
+                    "Easy Shadow Army Encounter",
+                    "A {@table Determine Your XP Budget; XP Budget per Character|XDMG|Easy Difficulty Encounter} using the Shadow army."
+                ],
+                [
+                    "6-7",
+                    "Easy Undead Encounter",
+                    "A {@table Determine Your XP Budget; XP Budget per Character|XDMG|Easy Difficulty Encounter} using undead creatures."
+                ],
+                [
+                    "8-10",
+                    "Nothing",
+                    "Re-Roll if you got Nothing on the Terrain Encounter Table"
                 ]
             ]
         },

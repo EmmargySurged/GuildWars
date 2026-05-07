@@ -4550,7 +4550,7 @@
 							"page": "",
 							"entries": [
 								"This appendix contains a list of random encounters that can occur while traveling in the world of Guild Wars. These encounters can be used to add variety and excitement to your game, and can be tailored to fit the specific needs of your campaign.",
-								"The encounters are divided by region, and each region has two different tables: one for terrain encounters and one for creature encounters. To use the tables, roll a d20 to determine if an encounter occurs, and then roll on the appropriate table to determine the specific encounter.",
+								"The encounters are divided by region, and each region has two different tables: one for terrain encounters and one for creature encounters. To use the tables, roll a dice depending on the region to determine after how long an encouter occurs, then roll on the terrain and creature encounter tables to create the encounter.",
 								"Each encounter includes a brief description, the creatures involved, and any relevant statistics or mechanics. The encounters can be adjusted in difficulty based on the level of the player characters, and can be modified to fit the specific needs of your campaign."
 							]
 						},
@@ -4560,9 +4560,19 @@
 							"name": "Pre-Searing Ascalon",
 							"page": "",
 							"entries": [
-								"{@table Pre-Searing Encounter Table|GWP}",
-								"{@table Pre-Searing Terrain Encounter Table|GWP}",
-								"{@table Pre-Searing Creature Encounter Table|GWP}"
+								"Duration between Encounters: {@dice 3d6} hours.",
+								{
+									"type": "statblock",
+									"tag": "table",
+									"name": "Pre-Searing Terrain Encounters",
+									"source": "GWP"
+								},
+								{
+									"type": "statblock",
+									"tag": "table",
+									"name": "Pre-Searing Creature Encounters",
+									"source": "GWP"
+								}
 							]
 						},
 						{
@@ -58679,7 +58689,52 @@
 			]
 		}
 	],
-	"table": [],
+	"table": [
+		{
+			"type": "table",
+			"name": "Pre-Searing Terrain Encounters",
+			"source": "GWP",
+			"colLabels": [
+				"{@dice d20}",
+				"Name",
+				"Description"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"col-2",
+				"col-9"
+			],
+			"rows": [
+				[
+					"1",
+					"Name",
+					"Velit reiciendis alias fugit eveniet odio quos error. Perferendis ut ab voluptatibus corporis. Illum est facilis omnis quisquam pariatur ullam. Magnam ea non perferendis."
+				]
+			]
+		},
+		{
+			"type": "table",
+			"name": "Pre-Searing Creature Encounters",
+			"source": "GWP",
+			"colLabels": [
+				"{@dice d20}",
+				"Name",
+				"Description"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"col-2",
+				"col-9"
+			],
+			"rows": [
+				[
+					"1",
+					"Name",
+					"Velit reiciendis alias fugit eveniet odio quos error. Perferendis ut ab voluptatibus corporis. Illum est facilis omnis quisquam pariatur ullam. Magnam ea non perferendis."
+				]
+			]
+		}
+	],
 	"variantrule": [],
 	"background": [
 		{

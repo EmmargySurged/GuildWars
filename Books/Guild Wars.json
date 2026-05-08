@@ -1182,6 +1182,27 @@
                             "entries": [
                                 {
                                     "type": "section",
+                                    "name": "Arial",
+                                    "page": "",
+                                    "id": "GW15b0",
+                                    "entries": [
+                                        "Duration between Encounters: {@dice 2d4} hours.",
+                                        {
+                                            "type": "statblock",
+                                            "tag": "table",
+                                            "name": "Arial Terrain Encounters",
+                                            "source": "GW"
+                                        },
+                                        {
+                                            "type": "statblock",
+                                            "tag": "table",
+                                            "name": "Arial Creature Encounters",
+                                            "source": "GW"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "section",
                                     "name": "Burning Forest",
                                     "page": "",
                                     "id": "GW15b1",
@@ -53220,6 +53241,60 @@
     "table": [
         {
             "type": "table",
+            "name": "Arial Terrain Encounters",
+            "source": "GW",
+            "colLabels": [
+                "{@dice d4}",
+                "Name",
+                "Description"
+            ],
+            "colStyles": [
+                "col-1 text-center",
+                "col-2",
+                "col-9"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Meteor Shower",
+                    "A nearby volcano has eruted and sent rocks falling from the sky. Each flying creature must make a DC 8 + PB + {@dice 1d6} dexterity saving throw or take PBd6 fire damage, PBd6 bludgeoning damage and has the {@condition Prone|XPHB} condition. Flying creatures that succeed on the save take half damage and do not fall prone. Any creatures rolled in the Creature Encounter are unaffected by the meteor shower and engange the characters directly after."
+                ],
+                [
+                    "2",
+                    "Noxious Fumes",
+                    "A cloud of nearly invisible noxious fumes drifts in the characters direction. If the lead character has a lower {@variantrule Passive Perception|XPHB} than 10 + PB + {@dice 1d12} they do not notice the cloud. The cloud is a 30-feet {@variantrule Sphere [Area of Effect]|XPHB|Sphere} that moves 30 feet in a random direction at the beginning of each round, determined by rolling a {@dice d8}. Any creature that makes contact with the sphere must make a DC 8 + PB + {@dice 1d4} constitution saving throw or take PBd4 poison damage and become {@condition Poisoned|XPHB} until the end of their next turn. A creature makes this save only once per round. Any creatures rolled in the Creature Encounter are unaffected by the fumes and engange the characters directly after."
+                ],
+                [
+                    "3-4",
+                    "Nothing",
+                    "Nothing"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "name": "Arial Creature Encounters",
+            "source": "GW",
+            "colLabels": [
+                "{@dice d20}",
+                "Name",
+                "Description"
+            ],
+            "colStyles": [
+                "col-1 text-center",
+                "col-2",
+                "col-9"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Name",
+                    "Velit reiciendis alias fugit eveniet odio quos error. Perferendis ut ab voluptatibus corporis. Illum est facilis omnis quisquam pariatur ullam. Magnam ea non perferendis."
+                ]
+            ]
+        },
+        {
+            "type": "table",
             "name": "Burning Forest Terrain Encounters",
             "source": "GW",
             "colLabels": [
@@ -53390,14 +53465,14 @@
                     "Nothing",
                     "nothing"
                 ]
-            ] 
+            ]
         },
         {
             "type": "table",
             "name": "Great Battle Field Creature Encounters",
             "source": "GW",
             "colLabels": [
-                "{@dice d10}",
+                "{@dice d12}",
                 "Name",
                 "Description"
             ],
@@ -53436,6 +53511,16 @@
                     "8-10",
                     "Nothing",
                     "Re-Roll if you got Nothing on the Terrain Encounter Table"
+                ],
+                [
+                    "11",
+                    "Eternals in Need",
+                    "A group of Eternals has been trapped in a large hole dug by the Shadow army and can't get out. The sides of the hole are coated in a slippery substance making it impossible to climb. The hole is 60 feet deep and has a radius of 10 feet. Freeing the eternals rewards the characters with {@variantrule Experience Points|XPHB} equal to a {@table Determine Your XP Budget; XP Budget per Character|XDMG|Medium Difficulty Encounter} and the eternals give them the benefit of the {@spell Bless|XPHB} spell for 8 hours."
+                ],
+                [
+                    "12",
+                    "Shipment of Armaments",
+                    "A group of Eternals is delivering armaments to the fron line. If the characters explain that they are helping Balthazar they can each have one piece of +1 armor or a +2 weapon of their choice for half the usual price."
                 ]
             ]
         },

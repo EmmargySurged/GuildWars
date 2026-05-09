@@ -5674,6 +5674,220 @@
 			"savingThrowForcedSpell": [
 				"dexterity"
 			]
+		},
+		{
+			"name": "Avatar of Balthazar",
+			"size": [
+				"L"
+			],
+			"type": "celestial",
+			"source": "GW",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "26d8 + 182",
+				"average": 299
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 26,
+			"dex": 18,
+			"con": 24,
+			"int": 14,
+			"wis": 14,
+			"cha": 18,
+			"passive": 22,
+			"cr": "15",
+			"shortName": "avatar",
+			"languages": [
+				"All"
+			],
+			"skill": {
+				"athletics": "+18",
+				"perception": "+12",
+				"acrobatics": "+14",
+				"intimidation": "+14"
+			},
+			"trait": [
+				{
+					"name": "Divine Protection",
+					"entries": [
+						"The avatar is immune to disease and cannot bet cursed."
+					]
+				},
+				{
+					"name": "Exalted Restoration",
+					"entries": [
+						"If the avatar dies outside its Gods plane, its body disappears, and it gains a new body instantly, reviving with all its Hit Points somewhere on that plane."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The avatar has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Legendary Resistance (2/Day)",
+					"entries": [
+						"If the avatar fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"gear": [
+				"Plate Armor|XPHB",
+				"Greatsword|XPHB"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"Avatar of the Gods"
+			],
+			"senses": [
+				"darkvision 240 ft.",
+				"truesight 60 ft."
+			],
+			"senseTags": [
+				"SD",
+				"U"
+			],
+			"save": {
+				"str": "+13",
+				"dex": "+9",
+				"con": "+12"
+			},
+			"immune": [
+				"fire"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"resist": [
+				"necrotic",
+				"radiant"
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The avatar uses either Spellcasting, Summon Flames, Summon Inferno or summon Hounds, uses either Grasp or Huntsman's Leap and makes two Balthazar's Blade attacks."
+					]
+				},
+				{
+					"name": "Balthazar's Blade",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d6 + 8}) slashing damage, plus 7 ({@damage 2d6}) fire damage."
+					]
+				},
+				{
+					"name": "Grasp",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 60 ft., one target. {@h}11 ({@damage 1d6 + 8}) slashing damage, plus 3 ({@damage 1d6}) fire damage and the avatar pulls the target up to 60 feet straight towards itself."
+					]
+				},
+				{
+					"name": "Huntsman's Leap",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 60 ft., one target. {@h}11 ({@damage 1d6 + 8}) slashing damage, plus 3 ({@damage 1d6}) fire damage and the avatar leaps within 10 feet of the target."
+					]
+				},
+				{
+					"name": "Summon Flames",
+					"entries": [
+						"{@actSave dex} {@dc 21}, each creature in a 5-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on four points the avatar can see within 120 feet. {@i Failure:} 16 ({@damage 4d6}) Fire damage. {@i Success:} Half damage."
+					]
+				},
+				{
+					"name": "Summon Inferno (1/Day)",
+					"entries": [
+						"{@actSave dex} {@dc 21}, each creature in a 60-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. {@i Failure:} 70 ({@damage 20d6}) Fire damage. {@i Success:} Half damage.",
+						"{@i Can only be used while the avatar is below 50% of its maximum {@variantrule Hit Points|XPHB}. Resolves at the start of the avatar's next turn, during which it can't use any other actions and the area of effect is clearly visible.}"
+					]
+				},
+				{
+					"name": "Summon Hounds (1/Day)",
+					"entries": [
+						"The avatar magically summons up to two {@creature Hell Hound|XMM|Hell Hounds} to two points it can see within 60 feet of itself. The hounds take their turn immediately after the avatar on the same {@variantrule Initiative} count, and they obey the avatar. The hounds stay for 1 hour or until the die, the avatar dies, or they are more than 300 feet from the avatar."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The avatar casts Fireball, requiring no Material components and using Strength as the spellcasting ability (spell save {@dc 21}."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Fireball (Guild Wars)|GW} (level 4 Version)"
+					],
+					"ability": "str",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Avatar_of_Balthazar_Token.png"
+			},
+			"isNpc": true,
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"The avatar uses Balthazar's Blade, Grasp or Huntsman's Leap."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"The avatar moves up to its speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Cast (Costs 2 Actions)",
+					"entries": [
+						"The avatar uses Spellcasting or Summon Flames."
+					]
+				}
+			],
+			"legendaryActions": 2,
+			"damageTags": [
+				"F",
+				"S"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
 		}
 	],
 	"monsterFluff": [

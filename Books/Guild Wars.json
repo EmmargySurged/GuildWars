@@ -1420,7 +1420,13 @@
 									"type": "list",
 									"columns": 3,
 									"items": [
-										"{@creature Avatar of Balthazar|GW}"
+										"{@creature Avatar of Balthazar|GW}",
+										"{@creature Shadow Beast|GW}",
+										"{@creature Shadow Elemental|GW}",
+										"{@creature Shadow Mesmer|GW}",
+										"{@creature Shadow Monk|GW}",
+										"{@creature Shadow Ranger|GW}",
+										"{@creature Shadow Warrior|GW}"
 									]
 								}
 							]
@@ -1488,6 +1494,83 @@
 											"href": {
 												"type": "external",
 												"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Gods_of_Tyria_Avatars.png"
+											},
+											"credit": "ArenaNet"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Monsters S",
+							"page": "",
+							"id": "GW16s",
+							"entries": [
+								{
+									"type": "section",
+									"name": "Shadow Army",
+									"page": "",
+									"id": "GW16shadowarmy",
+									"entries": [
+										{
+											"type": "statblock",
+											"name": "Shadow Army",
+											"prop": "monsterFluff",
+											"source": "GW",
+											"data": {
+												"renderCompact": {
+													"isSkipRootName": true
+												}
+											}
+										},
+										{
+											"type": "statblock",
+											"name": "Shadow Warrior",
+											"tag": "creature",
+											"source": "GW",
+											"style": "narrow"
+										},
+										{
+											"type": "statblock",
+											"name": "Shadow Ranger",
+											"tag": "creature",
+											"source": "GW",
+											"style": "narrow"
+										},
+										{
+											"type": "statblock",
+											"name": "Shadow Monk",
+											"tag": "creature",
+											"source": "GW",
+											"style": "narrow"
+										},
+										{
+											"type": "statblock",
+											"name": "Shadow Beast",
+											"tag": "creature",
+											"source": "GW",
+											"style": "narrow"
+										},
+										{
+											"type": "statblock",
+											"name": "Shadow Mesmer",
+											"tag": "creature",
+											"source": "GW",
+											"style": "narrow"
+										},
+										{
+											"type": "statblock",
+											"name": "Shadow Elemental",
+											"tag": "creature",
+											"source": "GW",
+											"style": "narrow"
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Shadow_Warrio_GW2.png"
 											},
 											"credit": "ArenaNet"
 										}
@@ -5544,198 +5627,6 @@
 					"entries": [
 						"The avatar has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
 					]
-				}
-			],
-			"gear": [
-				"Plate Armor|XPHB",
-				"Greatsword|XPHB"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"environment": [
-				"any"
-			],
-			"group": [
-				"Avatar of the Gods"
-			],
-			"senses": [
-				"darkvision 240 ft.",
-				"truesight 60 ft."
-			],
-			"senseTags": [
-				"SD",
-				"U"
-			],
-			"save": {
-				"str": "+13",
-				"dex": "+9",
-				"con": "+12"
-			},
-			"immune": [
-				"fire"
-			],
-			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"frightened"
-			],
-			"resist": [
-				"necrotic",
-				"radiant"
-			],
-			"traitTags": [
-				"Magic Resistance"
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The avatar uses either Spellcasting, Summon Flames, Summon Inferno or summon Hounds, uses either Grasp or Huntsman's Leap and makes two Balthazar's Blade attacks."
-					]
-				},
-				{
-					"name": "Balthazar's Blade",
-					"entries": [
-						"{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d6 + 8}) slashing damage, plus 7 ({@damage 2d6}) fire damage."
-					]
-				},
-				{
-					"name": "Grasp",
-					"entries": [
-						"{@atk mw} {@hit 13} to hit, reach 60 ft., one target. {@h}11 ({@damage 1d6 + 8}) slashing damage, plus 3 ({@damage 1d6}) fire damage and the avatar pulls the target up to 60 feet straight towards itself."
-					]
-				},
-				{
-					"name": "Huntsman's Leap",
-					"entries": [
-						"{@atk mw} {@hit 13} to hit, reach 60 ft., one target. {@h}11 ({@damage 1d6 + 8}) slashing damage, plus 3 ({@damage 1d6}) fire damage and the avatar leaps within 10 feet of the target."
-					]
-				},
-				{
-					"name": "Summon Flames",
-					"entries": [
-						"{@actSave dex} {@dc 21}, each creature in a 5-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on four points the avatar can see within 120 feet. {@i Failure:} 16 ({@damage 4d6}) Fire damage. {@i Success:} Half damage."
-					]
-				},
-				{
-					"name": "Summon Inferno (1/Day)",
-					"entries": [
-						"{@actSave dex} {@dc 21}, each creature in a 60-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. {@i Failure:} 70 ({@damage 20d6}) Fire damage. {@i Success:} Half damage.",
-						"{@i Can only be used while the avatar is below 50% of its maximum {@variantrule Hit Points|XPHB}. Resolves at the start of the avatar's next turn, during which it can't use any other actions and the area of effect is clearly visible.}"
-					]
-				},
-				{
-					"name": "Summon Hounds (1/Day)",
-					"entries": [
-						"The avatar magically summons up to two {@creature Hell Hound|XMM|Hell Hounds} to two points it can see within 60 feet of itself. The hounds take their turn immediately after the avatar on the same {@variantrule Initiative} count, and they obey the avatar. The hounds stay for 1 hour or until the die, the avatar dies, or it is more than 300 feet from the avatar."
-					]
-				}
-			],
-			"miscTags": [
-				"MW",
-				"RCH",
-				"AOE"
-			],
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"The avatar casts Fireball, requiring no Material components and using Strength as the spellcasting ability (spell save {@dc 21}."
-					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Fireball (Guild Wars)|GW} (level 4 Version)"
-					],
-					"ability": "str",
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"O"
-			],
-			"tokenHref": {
-				"type": "external",
-				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Avatar_of_Balthazar_Token.png"
-			},
-			"isNpc": true,
-			"damageTags": [
-				"F",
-				"S"
-			],
-			"damageTagsSpell": [
-				"F"
-			],
-			"savingThrowForced": [
-				"dexterity"
-			],
-			"savingThrowForcedSpell": [
-				"dexterity"
-			]
-		},
-		{
-			"name": "Avatar of Balthazar",
-			"size": [
-				"L"
-			],
-			"type": "celestial",
-			"source": "GW",
-			"alignment": [
-				"N"
-			],
-			"ac": [
-				{
-					"ac": 18,
-					"from": [
-						"{@item plate armor|xphb}"
-					]
-				}
-			],
-			"hp": {
-				"formula": "26d8 + 182",
-				"average": 299
-			},
-			"speed": {
-				"walk": 60
-			},
-			"str": 26,
-			"dex": 18,
-			"con": 24,
-			"int": 14,
-			"wis": 14,
-			"cha": 18,
-			"passive": 22,
-			"cr": "15",
-			"shortName": "avatar",
-			"languages": [
-				"All"
-			],
-			"skill": {
-				"athletics": "+18",
-				"perception": "+12",
-				"acrobatics": "+14",
-				"intimidation": "+14"
-			},
-			"trait": [
-				{
-					"name": "Divine Protection",
-					"entries": [
-						"The avatar is immune to disease and cannot bet cursed."
-					]
-				},
-				{
-					"name": "Exalted Restoration",
-					"entries": [
-						"If the avatar dies outside its Gods plane, its body disappears, and it gains a new body instantly, reviving with all its Hit Points somewhere on that plane."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"The avatar has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
-					]
 				},
 				{
 					"name": "Legendary Resistance (2/Day)",
@@ -5888,6 +5779,811 @@
 			"savingThrowForced": [
 				"dexterity"
 			]
+		},
+		{
+			"name": "Shadow Elemental",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"source": "GW",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item chain shirt|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 54",
+				"average": 135
+			},
+			"speed": {
+				"walk": 30
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 16,
+			"int": 18,
+			"wis": 12,
+			"cha": 12,
+			"passive": 11,
+			"cr": "5",
+			"shortName": "shadow",
+			"languages": [
+				"All"
+			],
+			"trait": [
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"The shadow can see normally in {@variantrule Dim Light|XPHB} and {@variantrule Darkness|XPHB}—both magical and nonmagical—within 120 feet of itself."
+					]
+				},
+				{
+					"name": "Living Shadow",
+					"entries": [
+						"While in {@variantrule Dim Light|XPHB} or {@variantrule Darkness|XPHB}, the shadow has {@variantrule Resistance|XPHB} to damage that isn't Force, Psychic, or Radiant."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the shadow has Disadvantage on ability checks and attack rolls."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"group": [
+				"Shadow Army"
+			],
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"resist": [
+				{
+					"resist": [],
+					"preNote": "See Living Shadow"
+				}
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Sunlight Sensitivity"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shadow_Elemental_Token.png"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The shadow uses either Fire Grab or Fire Fling and casts Fire Storm, Fireball or Incendiary Bonds, or uses a {@action Magic|XPHB} action to move the Fire Storm."
+					]
+				},
+				{
+					"name": "Fire Grab",
+					"entries": [
+						"{@atk ms} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) fire damage."
+					]
+				},
+				{
+					"name": "Fire Fling",
+					"entries": [
+						"{@atk rs} {@hit 7} to hit, range 90 ft., one target. {@h}11 ({@damage 2d6 + 4}) fire damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MA",
+				"RA"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The shadow casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 15})."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Fire Storm (Guild Wars)|GW} (level 3 Version)",
+						"{@spell Fireball (Guild Wars)|GW} (level 3 Version)",
+						"{@spell Incendiary Bonds|GWP}"
+					],
+					"ability": "int",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The shadow casts Aura of Restoration, requiring no Material components and using Intelligence as the spellcasting ability."
+					],
+					"displayAs": "bonus",
+					"rest": {
+						"1": [
+							"{@spell Aura of Restoration|GW} (level 3 Version)"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"F"
+			]
+		},
+		{
+			"name": "Shadow Mesmer",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"source": "GW",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain shirt|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 72",
+				"average": 153
+			},
+			"speed": {
+				"walk": 30
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 18,
+			"int": 12,
+			"wis": 12,
+			"cha": 18,
+			"passive": 11,
+			"cr": "6",
+			"shortName": "shadow",
+			"languages": [
+				"All"
+			],
+			"trait": [
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"The shadow can see normally in {@variantrule Dim Light|XPHB} and {@variantrule Darkness|XPHB}—both magical and nonmagical—within 120 feet of itself."
+					]
+				},
+				{
+					"name": "Living Shadow",
+					"entries": [
+						"While in {@variantrule Dim Light|XPHB} or {@variantrule Darkness|XPHB}, the shadow has {@variantrule Resistance|XPHB} to damage that isn't Force, Psychic, or Radiant."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the shadow has Disadvantage on ability checks and attack rolls."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"group": [
+				"Shadow Army"
+			],
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"resist": [
+				{
+					"resist": [],
+					"preNote": "See Living Shadow"
+				}
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Sunlight Sensitivity"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The shadow uses either Mind Stab or Mind Blade, casts Channeling or Illusion of Hast and casts Empathy or Shatter."
+					]
+				},
+				{
+					"name": "Mind Stab",
+					"entries": [
+						"{@atk ms} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 3d6 + 4}) psychic damage."
+					]
+				},
+				{
+					"name": "Mind Blade",
+					"entries": [
+						"{@atk rs} {@hit 7} to hit, range 90 ft., one target. {@h}14 ({@damage 3d6 + 4}) psychic damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MA",
+				"RA"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The shadow casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 15}, +7 to hit with spell attacks)."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Channeling|GWP} (level 3 Version)",
+						"{@spell Empathy|GW} (level 3 Version)",
+						"{@spell Illusion of Haste|GW}",
+						"{@spell Shatter Enchantment|GW} (level 3 Version)"
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shadow_Mesmer_Token.png"
+			},
+			"damageTags": [
+				"Y"
+			]
+		},
+		{
+			"name": "Shadow Monk",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"source": "GW",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain shirt|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 80",
+				"average": 170
+			},
+			"speed": {
+				"walk": 30
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 18,
+			"int": 12,
+			"wis": 18,
+			"cha": 12,
+			"passive": 14,
+			"cr": "7",
+			"shortName": "shadow",
+			"languages": [
+				"All"
+			],
+			"trait": [
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"The shadow can see normally in {@variantrule Dim Light|XPHB} and {@variantrule Darkness|XPHB}—both magical and nonmagical—within 120 feet of itself."
+					]
+				},
+				{
+					"name": "Living Shadow",
+					"entries": [
+						"While in {@variantrule Dim Light|XPHB} or {@variantrule Darkness|XPHB}, the shadow has {@variantrule Resistance|XPHB} to damage that isn't Force, Psychic, or Radiant."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the shadow has Disadvantage on ability checks and attack rolls."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"group": [
+				"Shadow Army"
+			],
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"resist": [
+				{
+					"resist": [],
+					"preNote": "See Living Shadow"
+				}
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Sunlight Sensitivity"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The shadow uses either Unholy Strike or Unholy Arrow, casts Heal Area, Healing Breeze or Orison of Healing."
+					]
+				},
+				{
+					"name": "Unholy Strike",
+					"entries": [
+						"{@atk ms} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d6 + 4}) necrotic damage."
+					]
+				},
+				{
+					"name": "Unholy Arrow",
+					"entries": [
+						"{@atk rs} {@hit 7} to hit, range 90 ft., one target. {@h}14 ({@damage 4d6 + 4}) necrotic damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MA",
+				"RA"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The shadow casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Heal Area/Karei's Healing Circle|GWP} (level 3 Version)",
+						"{@spell Healing Breeze|GW} (level 3 Version)",
+						"{@spell Orison of Healing|GW} (level 3 Version)",
+						"{@spell Restore Life|GWP}"
+					],
+					"ability": "wis",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The shadow casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 15)."
+					],
+					"displayAs": "bonus",
+					"rest": {
+						"1": [
+							"{@spell Zealot's Fire|GW} (level 3 Version)"
+						]
+					},
+					"will": [
+						"{@spell Word of Healing|GW} (level 3 Version)"
+					],
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shadow_Monk_Token.png"
+			},
+			"damageTags": [
+				"N"
+			]
+		},
+		{
+			"name": "Shadow Ranger",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"source": "GW",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "22d8 + 88",
+				"average": 187
+			},
+			"speed": {
+				"walk": 30
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 18,
+			"int": 12,
+			"wis": 12,
+			"cha": 12,
+			"passive": 11,
+			"cr": "8",
+			"shortName": "shadow",
+			"languages": [
+				"All"
+			],
+			"trait": [
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"The shadow can see normally in {@variantrule Dim Light|XPHB} and {@variantrule Darkness|XPHB}—both magical and nonmagical—within 120 feet of itself."
+					]
+				},
+				{
+					"name": "Living Shadow",
+					"entries": [
+						"While in {@variantrule Dim Light|XPHB} or {@variantrule Darkness|XPHB}, the shadow has {@variantrule Resistance|XPHB} to damage that isn't Force, Psychic, or Radiant."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the shadow has Disadvantage on ability checks and attack rolls."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"group": [
+				"Shadow Army"
+			],
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"resist": [
+				{
+					"resist": [],
+					"preNote": "See Living Shadow"
+				}
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Sunlight Sensitivity"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The shadow uses either Shadow Sword or Shadow Bow, casts Troll Unguent or Power Shot, and casts either Barrage or Dual Shot."
+					]
+				},
+				{
+					"name": "Shadow Sword",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}19 ({@damage 4d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Shadow Bow",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 150/600 ft., one target. {@h}19 ({@damage 4d6 + 5}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The shadow casts one of the following spells, requiring no Material components and using Dexterity as the spellcasting ability."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Barrage|GW}",
+						"{@spell Dual Shot|GW}",
+						"{@spell Power Shot|GW} (level 3 Version)",
+						"{@spell Troll Unguent|GW} (level 3 Version)"
+					],
+					"ability": "dex",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shadow_Ranger_Token.png"
+			},
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Shadow Warrior",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"source": "GW",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "23d8 + 92",
+				"average": 195
+			},
+			"speed": {
+				"walk": 30
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 18,
+			"int": 12,
+			"wis": 12,
+			"cha": 12,
+			"passive": 11,
+			"cr": "9",
+			"shortName": "shadow",
+			"languages": [
+				"All"
+			],
+			"trait": [
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"The shadow can see normally in {@variantrule Dim Light|XPHB} and {@variantrule Darkness|XPHB}—both magical and nonmagical—within 120 feet of itself."
+					]
+				},
+				{
+					"name": "Living Shadow",
+					"entries": [
+						"While in {@variantrule Dim Light|XPHB} or {@variantrule Darkness|XPHB}, the shadow has {@variantrule Resistance|XPHB} to damage that isn't Force, Psychic, or Radiant."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the shadow has Disadvantage on ability checks and attack rolls."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"group": [
+				"Shadow Army"
+			],
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"resist": [
+				{
+					"resist": [],
+					"preNote": "See Living Shadow"
+				}
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Sunlight Sensitivity"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The shadow uses either Shadow Sword or Shadow Bow, casts Final Thrust or Griffons Sweep, and casts Healing Signet."
+					]
+				},
+				{
+					"name": "Shadow Sword",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}20 ({@damage 4d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Shadow Bow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 150/600 ft., one target. {@h}17 ({@damage 4d6 + 2}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The shadow casts one of the following spells, requiring no Material components and using Strength as the spellcasting ability (spell save {@dc 17})."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Final Thrust|GW}",
+						"{@spell Griffon's Sweep/Leviathan's Sweep|GWP}"
+					],
+					"rest": {
+						"1": [
+							"{@spell Healing Signet|GW}"
+						]
+					},
+					"ability": "str",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The shadow casts one of the following spells, requiring no Material components and using Strength as the spellcasting ability (spell save {@dc 17})."
+					],
+					"displayAs": "bonus",
+					"will": [
+						"{@spell Hundred Blades|GW} (level 3 Version)"
+					],
+					"rest": {
+						"1": [
+							"{@spell \"I Will Avenge You!\"|GWP} (level 4 Version)"
+						]
+					},
+					"ability": "str",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shadow_Warrior_Token.png"
+			},
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForcedSpell": [
+				"strength"
+			]
 		}
 	],
 	"monsterFluff": [
@@ -5961,6 +6657,249 @@
 								"href": {
 									"type": "external",
 									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Avatar_of_Balthazar.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Shadow Army",
+			"source": "GW",
+			"entries": [
+				{
+					"type": "section",
+					"name": "Shadow Army",
+					"entries": [
+						"{@i Vile Servants of Menzies}",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Treasure:",
+									"entry": "{@table Random Magic Items - Relics|XDMG|Relics}, Individual"
+								}
+							]
+						},
+						"The Shadow Army are the forces used by Menzies, the evil half brother of Balthazar. They are primarily used in the conflict in the Fissure of Woe, where they enable Menzies conquest of his brother's realm.",
+						"The Shadow Army is supernaturally connected to each other, enabling powerful formations and battle tactics. All shadows have the following traits in common:",
+						"{@bold Devil's Sight.} The shadow can see normally in {@variantrule Dim Light|XPHB} and {@variantrule Darkness|XPHB}—both magical and nonmagical—within 120 feet of itself.",
+						"{@bold Living Shadow.} While in {@variantrule Dim Light|XPHB} or {@variantrule Darkness|XPHB}, the shadow has {@variantrule Resistance|XPHB} to damage that isn't Force, Psychic, or Radiant.",
+						"{@bold Sunlight Sensitivity.} While in sunlight, the shadow has Disadvantage on ability checks and attack rolls."
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Shadow_Warrior_GW2.jpg"
+					},
+					"credit": "ArenaNet"
+				}
+			]
+		},
+		{
+			"name": "Shadow Warrior",
+			"source": "GW",
+			"_copy": {
+				"name": "Shadow Army",
+				"source": "GW",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Shadow Warriors run into the fray, using their mastery with their shortsword and shield to slice through their enemies."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shadow_Warrior.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Shadow Ranger",
+			"source": "GW",
+			"_copy": {
+				"name": "Shadow Army",
+				"source": "GW",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Shadow Rangers use their ability to create shadow to duplicates of their projectiles to pepper their enemies with barrages of arrows."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shadow_Ranger.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Shadow Monk",
+			"source": "GW",
+			"_copy": {
+				"name": "Shadow Army",
+				"source": "GW",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Shadow Monks use their shadow weaving ability to restore and mend their allies."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shadow_Monk.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Shadow Beast",
+			"source": "GW",
+			"_copy": {
+				"name": "Shadow Army",
+				"source": "GW",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Shadow Beasts wait patiently in the shadows to confound and punish their opponents, waiting for the perfect moment to strike."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shadow_Beast.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Shadow Mesmer",
+			"source": "GW",
+			"_copy": {
+				"name": "Shadow Army",
+				"source": "GW",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Shadow Mesmers manipulate the feelings of their opponents to dull their blades and shatter their boons."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shadow_Mesmer.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Shadow Elemental",
+			"source": "GW",
+			"_copy": {
+				"name": "Shadow Army",
+				"source": "GW",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Masters of destructive fire magics, Shadow Elementals use their shadow weaving abilities to conjure powerful elemental blasts."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shadow_Elemental.jpg"
 								},
 								"credit": "ArenaNet"
 							}

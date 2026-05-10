@@ -1570,7 +1570,7 @@
 											"type": "image",
 											"href": {
 												"type": "external",
-												"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Shadow_Warrio_GW2.png"
+												"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shadow_Warrior_GW2.png"
 											},
 											"credit": "ArenaNet"
 										}
@@ -6045,7 +6045,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The shadow uses either Mind Stab or Mind Blade, casts Channeling or Illusion of Hast and casts Empathy or Shatter."
+						"The shadow uses either Mind Stab or Mind Blade, casts Channeling or Illusion of Haste and casts Empathy or Shatter Enchantment."
 					]
 				},
 				{
@@ -6195,17 +6195,17 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The shadow uses either Unholy Strike or Unholy Arrow, casts Heal Area, Healing Breeze or Orison of Healing."
+						"The shadow uses either Abhorrent Strike or Abhorrent Arrow, casts Heal Area, Healing Breeze or Orison of Healing."
 					]
 				},
 				{
-					"name": "Unholy Strike",
+					"name": "Abhorrent Strike",
 					"entries": [
 						"{@atk ms} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d6 + 4}) necrotic damage."
 					]
 				},
 				{
-					"name": "Unholy Arrow",
+					"name": "Abhorrent Arrow",
 					"entries": [
 						"{@atk rs} {@hit 7} to hit, range 90 ft., one target. {@h}14 ({@damage 4d6 + 4}) necrotic damage."
 					]
@@ -6237,14 +6237,14 @@
 						"The shadow casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 15)."
 					],
 					"displayAs": "bonus",
+					"will": [
+						"{@spell Word of Healing|GW} (level 3 Version)"
+					],
 					"rest": {
 						"1": [
 							"{@spell Zealot's Fire|GW} (level 3 Version)"
 						]
 					},
-					"will": [
-						"{@spell Word of Healing|GW} (level 3 Version)"
-					],
 					"ability": "wis",
 					"type": "spellcasting"
 				}
@@ -6258,6 +6258,12 @@
 			},
 			"damageTags": [
 				"N"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			]
 		},
 		{
@@ -6362,7 +6368,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The shadow uses either Shadow Sword or Shadow Bow, casts Troll Unguent or Power Shot, and casts either Barrage or Dual Shot."
+						"The shadow uses either Shadow Sword or Shadow Bow, casts Troll Unguent or Power Shot, and casts either Barrage or makes one Shadow Bow attack casting Dual Shot."
 					]
 				},
 				{
@@ -6429,9 +6435,10 @@
 			],
 			"ac": [
 				{
-					"ac": 16,
+					"ac": 18,
 					"from": [
-						"{@item breastplate|xphb}"
+						"{@item breastplate|xphb}",
+						"{@item shield|xphb}"
 					]
 				}
 			],
@@ -6513,7 +6520,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The shadow uses either Shadow Sword or Shadow Bow, casts Final Thrust or Griffons Sweep, and casts Healing Signet."
+						"The shadow uses either Shadow Sword or Shadow Bow, makes one Shadow Sword attack casting Final Thrust or Griffons Sweep, and casts Healing Signet."
 					]
 				},
 				{
@@ -6580,9 +6587,339 @@
 			"damageTags": [
 				"P",
 				"S"
+			]
+		},
+		{
+			"name": "Shadow Beast",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"source": "GW",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "25d8 + 100",
+				"average": 212
+			},
+			"speed": {
+				"walk": 30
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 18,
+			"int": 20,
+			"wis": 12,
+			"cha": 12,
+			"passive": 11,
+			"cr": "10",
+			"shortName": "shadow",
+			"languages": [
+				"All"
+			],
+			"trait": [
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"The shadow can see normally in {@variantrule Dim Light|XPHB} and {@variantrule Darkness|XPHB}—both magical and nonmagical—within 120 feet of itself."
+					]
+				},
+				{
+					"name": "Living Shadow",
+					"entries": [
+						"While in {@variantrule Dim Light|XPHB} or {@variantrule Darkness|XPHB}, the shadow has {@variantrule Resistance|XPHB} to damage that isn't Force, Psychic, or Radiant."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the shadow has Disadvantage on ability checks and attack rolls."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"group": [
+				"Shadow Army"
+			],
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"resist": [
+				{
+					"resist": [],
+					"preNote": "See Living Shadow"
+				}
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Sunlight Sensitivity"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The shadow uses either Disintegrating Touch or Disintegrating Blast, casts Consume Corpse or Dark Pact, and casts Mark of Pain or Spiteful Spirit."
+					]
+				},
+				{
+					"name": "Disintegrating Touch",
+					"entries": [
+						"{@atk ms} {@hit 9} to hit, reach 5 ft., one target. {@h}19 ({@damage 4d6 + 5}) force damage. If this damage reduces it to 0 {@variantrule Hit Points|XPHB}, it and everything nonmagical it is wearing and carrying are disintegrated into gray dust. The target can be revived only by a {@spell True Resurrection} or a {@spell Wish} spell."
+					]
+				},
+				{
+					"name": "Disintegrating Blast",
+					"entries": [
+						"{@atk rs} {@hit 9} to hit, range 150 ft., one target. {@h}19 ({@damage 4d6 + 5}) force damage. If this damage reduces it to 0 {@variantrule Hit Points|XPHB}, it and everything nonmagical it is wearing and carrying are disintegrated into gray dust. The target can be revived only by a {@spell True Resurrection} or a {@spell Wish} spell."
+					]
+				}
+			],
+			"miscTags": [
+				"MA",
+				"RA"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The shadow casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 17}, +9 to hit with spell attacks)."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Consume Corpse|GWP}",
+						"{@spell Dark Pact|GW}",
+						"{@spell Mark of Pain|GW}",
+						"{@spell Spiteful Spirit|GWP}"
+					],
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shadow_Beast_Token.png"
+			},
+			"damageTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"N"
 			],
 			"savingThrowForcedSpell": [
-				"strength"
+				"wisdom"
+			]
+		},
+		{
+			"name": "Abyssal",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"source": "GW",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "26d8 + 156",
+				"average": 273
+			},
+			"speed": {
+				"walk": 45,
+				"climb": 45
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 24,
+			"dex": 12,
+			"con": 22,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"cr": "11",
+			"shortName": "shadow",
+			"languages": [
+				"All"
+			],
+			"trait": [
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"The shadow can see normally in {@variantrule Dim Light|XPHB} and {@variantrule Darkness|XPHB}—both magical and nonmagical—within 120 feet of itself."
+					]
+				},
+				{
+					"name": "Living Shadow",
+					"entries": [
+						"While in {@variantrule Dim Light|XPHB} or {@variantrule Darkness|XPHB}, the shadow has {@variantrule Resistance|XPHB} to damage that isn't Force, Psychic, or Radiant."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the shadow has Disadvantage on ability checks and attack rolls."
+					]
+				},
+				{
+					"name": "Topple on Critial",
+					"entries": [
+						"If the shadow inflicts a {@variantrule Critical Hit|XPHB} against a creature, that creature gains the {@condition Prone} condition."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"group": [
+				"Shadow Army"
+			],
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"resist": [
+				{
+					"resist": [],
+					"preNote": "See Living Shadow"
+				}
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Sunlight Sensitivity"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The shadow makes two Shadow Bash or Shadow Throw attacks in any combination, and makes one Shadow Bash attack casting Crushing Blow or Earth Shaker."
+					]
+				},
+				{
+					"name": "Shadow Bash",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}20 ({@damage 3d12 + 7}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Shadow Throw",
+					"entries": [
+						"{@atk rw} {@hit 11} to hit, range 60/120 ft., one target. {@h}17 ({@damage 2d12 + 7}) bludgeoning damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The shadow casts one of the following spells, requiring no Material components and using Strength as the spellcasting ability (spell save {@dc 19})."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Crushing Blow|GWP}",
+						"{@spell Earth Shaker|GWP}"
+					],
+					"ability": "str",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The shadow casts one of the following spells, using Strength as the spellcasting ability."
+					],
+					"displayAs": "bonus",
+					"rest": {
+						"1": [
+							"{@spell Berserker Stance|GW}"
+						]
+					},
+					"ability": "str",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"save": {
+				"str": "+11",
+				"con": "+10"
+			},
+			"skill": {
+				"athletics": "+15"
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Abyssal_Token.png"
+			},
+			"damageTags": [
+				"B"
 			]
 		}
 	],
@@ -6698,7 +7035,7 @@
 					"type": "image",
 					"href": {
 						"type": "external",
-						"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Shadow_Warrior_GW2.jpg"
+						"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shadow_Warrior_GW2.jpg"
 					},
 					"credit": "ArenaNet"
 				}
@@ -6751,7 +7088,7 @@
 							{
 								"type": "section",
 								"entries": [
-									"Shadow Rangers use their ability to create shadow to duplicates of their projectiles to pepper their enemies with barrages of arrows."
+									"Shadow Rangers use their ability to create shadow duplicates of their projectiles to pepper their enemies with barrages of arrows."
 								]
 							}
 						]
@@ -6900,6 +7237,40 @@
 								"href": {
 									"type": "external",
 									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shadow_Elemental.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Abyssal",
+			"source": "GW",
+			"_copy": {
+				"name": "Shadow Army",
+				"source": "GW",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Abyssals are the most formidable solider of the Shadow Army, tearing through the enemy ranks using their large fists and earthshaking magic."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Abyssal.jpg"
 								},
 								"credit": "ArenaNet"
 							}

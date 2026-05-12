@@ -4771,10 +4771,13 @@
 										"{@creature Jade Bow|GWP}",
 										"{@creature Justiciar Hablion|GWP}",
 										"{@creature Markis|GWP}",
+										"{@creature Mercia the Smug|GWP}",
 										"{@creature Mursaat Elementalist|GWP}",
 										"{@creature Mursaat Mesmer|GWP}",
 										"{@creature Mursaat Monk|GWP}",
 										"{@creature Mursaat Necromancer|GWP}",
+										"{@creature Lazarus the Dire|GWP}",
+										"{@creature Optimus Caliph|GWP}",
 										"{@creature Plague Devourer|GWP}",
 										"{@creature Rockshot Devourer|GWP}",
 										"{@creature Thorn Devourer|GWP}",
@@ -6027,305 +6030,6 @@
 		}
 	],
 	"monster": [
-		{
-			"name": "Lazarus the Dire",
-			"source": "GWP",
-			"size": [
-				"M"
-			],
-			"type": "fiend",
-			"alignment": [
-				"L",
-				"E"
-			],
-			"ac": [
-				18
-			],
-			"hp": {
-				"average": 190,
-				"formula": "20d10 + 80"
-			},
-			"speed": {
-				"walk": 30,
-				"fly": {
-					"number": 60,
-					"condition": "(hover)"
-				},
-				"canHover": true
-			},
-			"initiative": {
-				"proficiency": 2
-			},
-			"str": 16,
-			"dex": 14,
-			"con": 18,
-			"int": 18,
-			"wis": 16,
-			"cha": 18,
-			"save": {
-				"con": "+9",
-				"wis": "+8"
-			},
-			"skill": {
-				"perception": "+13",
-				"arcana": "+14",
-				"deception": "+14"
-			},
-			"senses": [
-				"truesight 120 ft."
-			],
-			"passive": 23,
-			"conditionImmune": [
-				"charmed",
-				"frightened",
-				"prone"
-			],
-			"cr": {
-				"cr": "13",
-				"xpLair": 11500
-			},
-			"trait": [
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"If Lazarus the Dire fails a saving throw, he can choose to succeed instead."
-					]
-				},
-				{
-					"name": "Special Equipment",
-					"entries": [
-						"Lazarus the Dire is wielding the {@item Scepter of Orr|GWP}. He is not attuned to it."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Lazarus the Dire uses Mursaat Magic or Slash three times."
-					]
-				},
-				{
-					"name": "Slash",
-					"entries": [
-						"{@atkr m} {@hit 8}, reach 5 ft. {@h}13 ({@damage 3d6 + 3}) Slashing damage."
-					]
-				},
-				{
-					"name": "Mursaat Magic",
-					"entries": [
-						"Lazarus the Dire randomly shoots one of the following magical rays at a target it can see within 120 feet of itself (roll {@dice 1d10}; reroll if Lazarus the Dire has already used that ray during this turn):",
-						{
-							"type": "list",
-							"style": "list-hang-notitle",
-							"items": [
-								{
-									"type": "item",
-									"name": "1: Charm Ray",
-									"entries": [
-										"{@actSave wis} {@dc 17}. {@actSaveFail} 13 ({@damage 3d8}) Psychic damage, and the target has the {@condition Charmed|XPHB} condition for 1 hour or until it takes damage. {@actSaveSuccess} Half damage only."
-									]
-								},
-								{
-									"type": "item",
-									"name": "2: Paralyzing Ray",
-									"entries": [
-										"{@actSave con} {@dc 17}. {@actSaveFail} The target has the {@condition Paralyzed|XPHB} condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
-									]
-								},
-								{
-									"type": "item",
-									"name": "3: Fear Ray",
-									"entries": [
-										"{@actSave wis} {@dc 17}. {@actSaveFail} 14 ({@damage 4d6}) Psychic damage, and the target has the {@condition Frightened|XPHB} condition until the end of its next turn. {@actSaveSuccess} Half damage only."
-									]
-								},
-								{
-									"type": "item",
-									"name": "4: Slowing Ray",
-									"entries": [
-										"{@actSave con} {@dc 17}. {@actSaveFail} 18 ({@damage 4d8}) Necrotic damage. Until the end of the target's next turn, the target's {@variantrule Speed|XPHB} is halved; the target can't take Reactions; and it can take either an action or a {@variantrule Bonus Action|XPHB} on its turn, not both. {@actSaveSuccess} Half damage only."
-									]
-								},
-								{
-									"type": "item",
-									"name": "5: Enervation Ray",
-									"entries": [
-										"{@actSave con} {@dc 17}. {@actSaveFail} 13 ({@damage 3d8}) Poison damage, and the target has the {@condition Poisoned|XPHB} condition until the end of its next turn. While {@condition Poisoned|XPHB}, the target can't regain {@variantrule Hit Points|XPHB}. {@actSaveSuccess} Half damage only."
-									]
-								},
-								{
-									"type": "item",
-									"name": "6: Telekinetic Ray",
-									"entries": [
-										"{@actSave str} {@dc 17} (the target succeeds automatically if it is Gargantuan). {@actSaveFail} Lazarus the Dire moves the target up to 30 feet in any direction. The target has the {@condition Restrained|XPHB} condition until the start of Lazarus the Dire's next turn or until Lazarus the Dire has the {@condition Incapacitated|XPHB} condition. Lazarus the Dire can also exert fine control on objects with this ray, such as manipulating a tool or opening a door or container."
-									]
-								},
-								{
-									"type": "item",
-									"name": "7: Sleep Ray",
-									"entries": [
-										"{@actSave wis} {@dc 17} (the target succeeds automatically if it is a Construct or an Undead). {@actSaveFail} The target has the {@condition Unconscious|XPHB} condition for 1 minute. The condition ends if the target takes damage or a creature within 5 feet of it takes an action to wake it."
-									]
-								},
-								{
-									"type": "item",
-									"name": "8: Petrification Ray",
-									"entries": [
-										"{@actSave con} {@dc 17}. {@actSaveFail 1} The target has the {@condition Restrained|XPHB} condition and repeats the save at the end of its next turn if it is still {@condition Restrained|XPHB}, ending the effect on itself on a success. {@actSaveFail 2} The target has the {@condition Petrified|XPHB} condition instead of the {@condition Restrained|XPHB} condition."
-									]
-								},
-								{
-									"type": "item",
-									"name": "9: Disintegration Ray",
-									"entries": [
-										"{@actSave dex} {@dc 17}. {@actSaveFail} 36 ({@damage 8d8}) Force damage. If the target is a nonmagical object or a creation of magical force, a 10-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} of it disintegrates into dust. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} If the target is a creature and this damage reduces it to 0 {@variantrule Hit Points|XPHB}, it disintegrates into dust."
-									]
-								},
-								{
-									"type": "item",
-									"name": "10: Death Ray",
-									"entries": [
-										"{@actSave dex} {@dc 17}. {@actSaveFail} 55 ({@damage 10d10}) Necrotic damage. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} The target dies if the ray reduces it to 0 {@variantrule Hit Points|XPHB}."
-									]
-								}
-							]
-						}
-					]
-				}
-			],
-			"bonus": [
-				{
-					"name": "Spectral Agony {@recharge 4}",
-					"entries": [
-						"{@actSave int} {@dc 17}, one creature within 120-feet range. {@actSaveFail} 41 ({@damage 8d8 + 5}) Psychic damage, and is under the following effects for 1 rounds:",
-						"- Speed reduced by 90%.",
-						"- Can either take an action or bonus action, not both.",
-						"- Can't take reactions.",
-						"- Can only make one attack per turn.",
-						"- Takes {@damage 8d8} psychic damage at the start of their turn.",
-						"{@actSaveSuccess} Half damage only.",
-						"Creatures not infused have disadvantage on the Saving Throw. Infused creatures have advantage."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Spellwork",
-					"entries": [
-						"Lazarus the Dire uses Spellcasting."
-					]
-				},
-				{
-					"name": "Pounce",
-					"entries": [
-						"Lazarus the Dire moves up to his speed without provoking opportunity attacks and makes up to two Slash attacks."
-					]
-				},
-				{
-					"name": "Infinite Agonoy",
-					"entries": [
-						"Lazarus the Dire uses Mursaat Magic or Spectral Agony, if available."
-					]
-				},
-				{
-					"name": "Disintegration Ray",
-					"entries": [
-						"Target a nonmagical object or a creation of magical force, a 10-foot Cube of it disintegrates into dust."
-					]
-				}
-			],
-			"treasure": [
-				"arcana"
-			],
-			"traitTags": [
-				"Legendary Resistances"
-			],
-			"senseTags": [
-				"U"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"miscTags": [
-				"MA"
-			],
-			"conditionInflict": [
-				"charmed",
-				"frightened",
-				"incapacitated",
-				"paralyzed",
-				"petrified",
-				"poisoned",
-				"restrained",
-				"unconscious"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Mursaat_caster_Necromancer_Boss.jpg"
-						}
-					}
-				]
-			},
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Lazarus the Dire casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 17}, +9 to hit with spell attacks.)"
-					],
-					"will": [
-						"{@spell dispel magic|XPHB} (level 5)",
-						"{@spell misty step|XPHB}",
-						"{@spell plane shift|XPHB}",
-						"{@spell power block|GWP}",
-						"{@spell shield|XPHB}",
-						"{@spell virulence|GWP} (level 5)"
-					],
-					"ability": "cha",
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"O"
-			],
-			"languages": [
-				"Mursaat",
-				"Common",
-				"Krytan",
-				"telepathy 120 ft."
-			],
-			"languageTags": [
-				"C",
-				"TP"
-			],
-			"savingThrowForcedLegendary": [
-				"wisdom"
-			],
-			"tokenHref": {
-				"type": "external",
-				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Mursaat_caster_Necromancer_Boss_Token.png"
-			},
-			"damageTags": [
-				"I",
-				"N",
-				"O",
-				"S",
-				"Y"
-			],
-			"savingThrowForced": [
-				"constitution",
-				"dexterity",
-				"intelligence",
-				"strength",
-				"wisdom"
-			]
-		},
 		{
 			"name": "Salma",
 			"source": "GWP",
@@ -16307,6 +16011,707 @@
 			"savingThrowForced": [
 				"strength"
 			]
+		},
+		{
+			"name": "Lazarus the Dire",
+			"source": "GWP",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"{@item +3 breastplate|xdmg}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "42d8 + 210",
+				"average": 399
+			},
+			"speed": {
+				"walk": 60,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"initiative": {
+				"proficiency": 2
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 20,
+			"int": 20,
+			"wis": 16,
+			"cha": 16,
+			"save": {
+				"int": "+11",
+				"cha": "+9",
+				"con": "+11"
+			},
+			"senses": [
+				"truesight 240 ft."
+			],
+			"passive": 25,
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"prone"
+			],
+			"languages": [
+				"Mursaat",
+				"Common",
+				"Krytan",
+				"telepathy 240 ft."
+			],
+			"cr": "20",
+			"gear": [
+				"+3 breastplate|xdmg",
+				"wand|xphb"
+			],
+			"treasure": [
+				"arcana"
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"TP"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Mursaat_caster_Token.png"
+			},
+			"skill": {
+				"arcana": "+17",
+				"insight": "+15",
+				"deception": "+15",
+				"perception": "+15"
+			},
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The mursaat has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the mursaat fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mursaat casts either Life Siphon or Life Transfer, makes either a Necrotic Claw or Necrotic Burst attack, casts either Insidious Parasite or Mark of Subversion, and uses either Out of Phase or Spectral Agony if available."
+					]
+				},
+				{
+					"name": "Necrotic Claw",
+					"entries": [
+						"{@atk ms} {@hit 11} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) slashing damage, plus 27 ({@damage 6d8}) necrotic damage."
+					]
+				},
+				{
+					"name": "Necrotic Burst",
+					"entries": [
+						"{@atk rs} {@hit 11} to hit, reach 90 ft., one target. {@h} 36 ({@damage 8d8}) necrotic damage."
+					]
+				},
+				{
+					"name": "Out of Phase",
+					"entries": [
+						"The mursaat casts {@spell Greater Invisibility|XPHB} on itself, requiring no spell components and using Intelligence as the spellcasting ability."
+					]
+				},
+				{
+					"name": "Spectral Agony {@recharge 5}",
+					"entries": [
+						"{@actSave int} {@dc 19}, one creature the mursaat can see within 120 feet. {@i Failure:} 55 ({@damage 10d10}) Psychic damage, and the target has the {@condition Incapacitated|XPHB} condition until the start of the mursaat's next turn. {@i Success:} Half damage only."
+					]
+				}
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The mursaat casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 19})."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Insidious Parasite|GWP} (level 4 Version)",
+						"{@spell Life Siphon|GW} (level 4 Version)"
+					],
+					"daily": {
+						"3e": [
+							"{@spell Life Transfer|GWP} (level 6 Version)",
+							"{@spell Mark of Subversion|GWP} (level 6 Version)"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Profane Restoration",
+					"headerEntries": [
+						"The mursaat casts Blood Renewal, requiring no Material components and using Intelligence as the spellcasting ability."
+					],
+					"displayAs": "bonus",
+					"will": [
+						"{@spell Blood Reneawl|GWP} (level 9 Version)"
+					],
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA",
+				"RA",
+				"RCH"
+			],
+			"group": [
+				"Mursaat"
+			],
+			"environment": [
+				"any"
+			],
+			"shortName": "mursaat",
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"The mursaat attacks using one of its attacks."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"The mursaat moves up to its speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Spellcasting (Costs 2 Actions)",
+					"entries": [
+						"The mursaat uses Spellcasting."
+					]
+				}
+			],
+			"isNpc": true,
+			"damageTags": [
+				"N",
+				"S",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"N"
+			],
+			"savingThrowForced": [
+				"intelligence"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Mercia the Smug",
+			"source": "GWP",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"{@item +3 breastplate|xdmg}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "47d8 + 188",
+				"average": 399
+			},
+			"speed": {
+				"walk": 60,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"initiative": {
+				"proficiency": 2
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 18,
+			"int": 20,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"con": "+10",
+				"int": "+11",
+				"cha": "+10"
+			},
+			"senses": [
+				"truesight 240 ft."
+			],
+			"passive": 25,
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"prone"
+			],
+			"languages": [
+				"Mursaat",
+				"Common",
+				"Krytan",
+				"telepathy 240 ft."
+			],
+			"cr": "20",
+			"gear": [
+				"+3 breastplate|xdmg",
+				"staff|xphb"
+			],
+			"treasure": [
+				"arcana"
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"TP"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Mursaat_caster_Token.png"
+			},
+			"skill": {
+				"deception": "+16",
+				"insight": "+15",
+				"perception": "+15",
+				"arcana": "+17"
+			},
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The mursaat has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the mursaat fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mursaat casts Ether Feast, casts either Energy Surge (level 3 Version) or Energy Surge (level 6 Version), makes either an Ethereal Claw or Ethereal Burst attack, and uses either Out of Phase or Spectral Agony if available."
+					]
+				},
+				{
+					"name": "Ethereal Claw",
+					"entries": [
+						"{@atk ms} {@hit 11} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) slashing damage, plus 21 ({@damage 6d6}) psychic damage."
+					]
+				},
+				{
+					"name": "Ethereal Burst",
+					"entries": [
+						"{@atk rs} {@hit 11} to hit, reach 120 ft., one target. {@h}28 ({@damage 8d6}) psychic damage."
+					]
+				},
+				{
+					"name": "Out of Phase",
+					"entries": [
+						"The mursaat casts {@spell Greater Invisibility|XPHB} on itself, requiring no spell components and using Intelligence as the spellcasting ability."
+					]
+				},
+				{
+					"name": "Spectral Agony {@recharge 5}",
+					"entries": [
+						"{@actSave int} {@dc 20}, one creature the mursaat can see within 120 feet. {@i Failure:} 55 ({@damage 10d10}) Psychic damage, and the target has the {@condition Incapacitated|XPHB} condition until the start of the mursaat's next turn. {@i Success:} Half damage only."
+					]
+				}
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The mursaat casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 19})."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Energy Surge|GW} (level 3 Version)",
+						"{@spell Ether Feast|GW} (level 5 Version)"
+					],
+					"daily": {
+						"3": [
+							"{@spell Energy Surge|GW} (level 6 Version)"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Distort Reality",
+					"headerEntries": [
+						"The mursaat casts either Mantra of Flame or Physical Resistance, using Intelligence as the spellcasting ability."
+					],
+					"displayAs": "bonus",
+					"will": [
+						"{@spell Mantra of Flame|GW} (level 4 Version)",
+						"{@spell Physical Resistance|GWP} (level 9 Version)"
+					],
+					"ability": "int",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Arcane Disruption",
+					"headerEntries": [
+						"The mursaat casts Power Leak, using Intelligence as the spellcasting ability (spell save {@dc 19})."
+					],
+					"displayAs": "reaction",
+					"will": [
+						"{@spell Power Leak|GWP} (level 8 Version)"
+					],
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA",
+				"RA",
+				"RCH"
+			],
+			"group": [
+				"Mursaat"
+			],
+			"environment": [
+				"any"
+			],
+			"shortName": "mursaat",
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"The mursaat attacks using one of its attacks."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"The mursaat moves up to its speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Spellcasting (Costs 2 Actions)",
+					"entries": [
+						"The mursaat uses Spellcasting."
+					]
+				}
+			],
+			"isNpc": true,
+			"damageTags": [
+				"S",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"savingThrowForced": [
+				"intelligence"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution"
+			]
+		},
+		{
+			"name": "Optimus Caliph",
+			"source": "GWP",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"{@item +3 breastplate|xdmg}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "60d8 + 336",
+				"average": 606
+			},
+			"speed": {
+				"walk": 60,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"initiative": {
+				"proficiency": 2
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 22,
+			"int": 26,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"con": "+14",
+				"int": "+16",
+				"cha": "+12"
+			},
+			"senses": [
+				"truesight 240 ft."
+			],
+			"passive": 29,
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"prone"
+			],
+			"languages": [
+				"Mursaat",
+				"Common",
+				"Krytan",
+				"telepathy 240 ft."
+			],
+			"cr": "25",
+			"gear": [
+				"+3 breastplate|xdmg",
+				"staff|xphb"
+			],
+			"treasure": [
+				"arcana"
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"TP"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Mursaat_caster_Token.png"
+			},
+			"skill": {
+				"arcana": "+24",
+				"deception": "+20",
+				"insight": "+19",
+				"perception": "+19"
+			},
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The mursaat has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Legendary Resistance (5/Day)",
+					"entries": [
+						"If the mursaat fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mursaat casts Glyph of {@status Concentration|XPHB}, casts either Enervating Charge or Lightning Orb, casts either Chain Lightning (Guild Wars) or Thunderclap (Guild Wars), makes either a Shocking Claw or Thunder Burst attack, and uses either Out of Phase or Spectral Agony if available."
+					]
+				},
+				{
+					"name": "Shocking Claw",
+					"entries": [
+						"{@atk ms} {@hit 16} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d6 + 8}) slashing damage, plus 39 ({@damage 6d12}) lightning damage."
+					]
+				},
+				{
+					"name": "Thunder Burst",
+					"entries": [
+						"{@atk rs} {@hit 16} to hit, reach 120 ft., one target. {@h}45 ({@damage 10d8}) thunder damage."
+					]
+				},
+				{
+					"name": "Out of Phase",
+					"entries": [
+						"The mursaat casts {@spell Greater Invisibility|XPHB} on itself, requiring no spell components and using Intelligence as the spellcasting ability."
+					]
+				},
+				{
+					"name": "Spectral Agony {@recharge 5}",
+					"entries": [
+						"{@actSave int} {@dc 24}, one creature the mursaat can see within 120 feet. {@i Failure:} 110 ({@damage 20d10}) Psychic damage, and the target has the {@condition Incapacitated|XPHB} condition until the start of the mursaat's next turn. {@i Success:} Half damage only."
+					]
+				}
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The mursaat casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 24}, +16 to hit with spell attacks)."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Chain Lightning (Guild Wars)|GWP} (level 6 Version)",
+						"{@spell Enervating Charge|GW} (level 6 Version)",
+						"{@spell Glyph of Concentration|GWP}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell Lightning Orb|GW} (level 6 Version)",
+							"{@spell Thunderclap (Guild Wars)|GWP} (level 6 Version)"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA",
+				"RA",
+				"RCH"
+			],
+			"group": [
+				"Mursaat"
+			],
+			"environment": [
+				"any"
+			],
+			"shortName": "mursaat",
+			"legendaryActions": 5,
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"The mursaat attacks using one of its attacks."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"The mursaat moves up to its speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Spellcasting (Costs 2 Actions)",
+					"entries": [
+						"The mursaat uses Spellcasting."
+					]
+				}
+			],
+			"isNpc": true,
+			"damageTags": [
+				"L",
+				"S",
+				"T",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"L",
+				"T"
+			],
+			"savingThrowForced": [
+				"intelligence"
+			],
+			"savingThrowForcedSpell": [
+				"constitution"
+			]
 		}
 	],
 	"monsterFluff": [
@@ -17219,6 +17624,69 @@
 								"type": "section",
 								"entries": [
 									"Mursaat Mesmer use their magic to distort reality around them making them harder to kill, while using their foes energy against them."
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Mercia the Smug",
+			"source": "GWP",
+			"_copy": {
+				"name": "Mursaat",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Mercia was one of the three Mursaat who helped defeat the charr invasion of Kryta. They also kidnapped and indoctrinated Soul D'Alession. "
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Lazarus the Dire",
+			"source": "GWP",
+			"_copy": {
+				"name": "Mursaat",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Lazarus was one of the three Mursaat who helped defeat the charr invasion of Kryta. He also kidnapped and indoctrinated Soul D'Alession. "
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Optimus Caliph",
+			"source": "GWP",
+			"_copy": {
+				"name": "Mursaat",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Optimus Caliph was one of the three Mursaat who helped defeat the charr invasion of Kryta. He also kidnapped and indoctrinated Soul D'Alession. He is one of the leader of the Mursaat."
 								]
 							}
 						]

@@ -739,7 +739,7 @@
 										},
 										{
 											"type": "statblock",
-											"name": "Soul D'Alessio",
+											"name": "Saul D'Alessio",
 											"tag": "creature",
 											"source": "GWBMP",
 											"style": "narrow"
@@ -806,7 +806,7 @@
 				"average": 65
 			},
 			"speed": {
-				"walk": 30
+				"walk": 35
 			},
 			"str": 12,
 			"dex": 12,
@@ -879,14 +879,8 @@
 					],
 					"displayAs": "action",
 					"will": [
-						"{@spell Light|XPHB}",
-						"{@spell Sacred Flame|XPHB}"
+						"{@spell Thaumaturgy|XPHB}"
 					],
-					"restLong": {
-						"1": [
-							"{@spell Unyielding Aura|GWP}"
-						]
-					},
 					"rest": {
 						"2e": [
 							"{@spell Heal Area/Karei's Healing Circle|GWP|Heal Area}",
@@ -895,6 +889,12 @@
 							"{@spell Purge Conditions|GW}",
 							"{@spell Remove Hex|GW}",
 							"{@spell Smite|GWP}"
+						]
+					},
+					"restLong": {
+						"1": [
+							"{@spell Darkness|XPHB}",
+							"{@spell Unyielding Aura|GWP}"
 						]
 					},
 					"ability": "cha",
@@ -944,19 +944,765 @@
 				"cha": "+7",
 				"con": "+5"
 			},
+			"gear": [
+				"Breastplate|XPHB",
+				"Shield|XPHB",
+				"Mace|XPHB",
+				"Priest's Pack|XPHB"
+			],
 			"damageTags": [
 				"B",
 				"R"
 			],
-			"damageTagsSpell": [
-				"R"
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Hablion",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "GWBMP",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|xphb}",
+						"{@item animated shield|xdmg}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 30",
+				"average": 75
+			},
+			"speed": {
+				"walk": 35
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 21,
+			"dex": 14,
+			"con": 16,
+			"int": 12,
+			"wis": 12,
+			"cha": 14,
+			"passive": 14,
+			"cr": "5",
+			"shortName": "Hablion",
+			"languages": [
+				"Common",
+				"Krytan"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Devotion",
+					"entries": [
+						"Hablion has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Formation",
+					"entries": [
+						"Hablion gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of Hablion that is within 5 feet of him. This bonus is not added to Hablion's AC or saving throws if Hablion is {@condition incapacitated|XPHB}."
+					]
+				},
+				{
+					"name": "Halt",
+					"entries": [
+						"When Hablion hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Hablion casts one of the following spells, requiring no Material components and using Strength as the spellcasting ability (spell save {@dc 16})"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell \"For Great Justice!\"|GW}",
+						"{@spell Dismember|GW}"
+					],
+					"rest": {
+						"1": [
+							"{@spell Cyclone Axe|GW}",
+							"{@spell Healing Signet|GW}",
+							"{@spell Pass Without Trace|XPHB}",
+							"{@spell Wild Blow|GW}"
+						]
+					},
+					"ability": "str",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Justiciar Hablion casts one of the following spells, requiring no Material components and using Strength as the spellcasting ability."
+					],
+					"displayAs": "bonus",
+					"rest": {
+						"1": [
+							"{@spell Hundred Blades|GW}"
+						]
+					},
+					"ability": "str",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Justiciar Hablion makes two +1 Handaxe or Titanstring Longbow attacks in any combination."
+					]
+				},
+				{
+					"name": "+1 Handaxe",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Titanstring Longbow",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 150/600 ft., one target. {@h}6 ({@damage 1d8 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Flurry {@recharge}",
+					"entries": [
+						"Hablion makes four +1 Handaxe attacks."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"{@i Trigger}: Hablion is hit by a melee attack roll while holding a weapon. {@actResponse} Hablion adds 3 to his AC against that attack, possibly causing it to miss."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_Warrior_m_Token.png"
+			},
+			"group": [
+				"White Mantle"
+			],
+			"gear": [
+				"Belt of Hill Giant Strength|XDMG",
+				"Animated Shield|XDMG",
+				"Titanstring Longbow|GW",
+				"+1 Handaxe|XDMG",
+				{
+					"item": "Arrow",
+					"quantity": 20,
+					"displayName": ""
+				},
+				"Quiver",
+				"Explorer's Pack|XPHB"
+			],
+			"save": {
+				"str": "+8",
+				"con": "+6"
+			},
+			"skill": {
+				"perception": "+4",
+				"athletics": "+11",
+				"acrobatics": "+5",
+				"survival": "+4"
+			},
+			"bonus": [
+				{
+					"name": "Animate Shield",
+					"entries": [
+						"Hablion animates his {@item Animated Shield|XDMG}."
+					]
+				},
+				{
+					"name": "Handaxe",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) slashing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Rebekah",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "GWBMP",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@spell mage armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 14,
+			"int": 18,
+			"wis": 14,
+			"cha": 12,
+			"passive": 12,
+			"cr": "5",
+			"shortName": "White Mantle",
+			"languages": [
+				"Common",
+				"Krytan"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Devotion",
+					"entries": [
+						"Rebekah has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Formation",
+					"entries": [
+						"Rebekah gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of Rebekah's that is within 5 feet of her. This bonus is not added to Rebekah's AC or saving throws if Rebekah is {@condition incapacitated|XPHB}."
+					]
+				},
+				{
+					"name": "Halt",
+					"entries": [
+						"When Rebekah hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
+					]
+				}
+			],
+			"gear": [
+				"Wand|XPHB",
+				"Scholar's Pack|XPHB"
+			],
+			"action": [
+				{
+					"name": "Fire Grab",
+					"entries": [
+						"{@atk ms} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 3d6}) fire damage."
+					]
+				},
+				{
+					"name": "Fire Blast",
+					"entries": [
+						"{@atk rs} {@hit 7} to hit, reach 90 ft., one target. {@h}7 ({@damage 2d6}) fire damage."
+					]
+				},
+				{
+					"name": "Fire Breath {@recharge 5}",
+					"entries": [
+						"{@actSave dex} {@dc 15}, each hostile creature in 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@i Failure:} 26 ({@damage 8d6}) Fire Damage. {@i Success:} Half Damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"White Mantle"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Rebekah casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 15})."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Darkvision|XPHB}",
+						"{@spell Glyph of Elemental Power|GW}",
+						"{@spell Mage Armor|XPHB}",
+						"{@spell Prestidigitation|XPHB}"
+					],
+					"rest": {
+						"2e": [
+							"{@spell Fireball (Guild Wars)|GW}",
+							"{@spell Ward Against Elements|GWP}"
+						]
+					},
+					"restLong": {
+						"2": [
+							"{@spell Searing Heat|GWP}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Rebekah casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 15})."
+					],
+					"displayAs": "reaction",
+					"rest": {
+						"1e": [
+							"{@spell Shield|XPHB}",
+							"{@spell Silvery Barbs|SCC}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"skill": {
+				"arcana": "+10",
+				"history": "+7",
+				"investigation": "+7",
+				"nature": "+7",
+				"religion": "+7"
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_elementalist_Token.png"
+			},
+			"miscTags": [
+				"MA",
+				"RA",
+				"RCH"
+			],
+			"save": {
+				"int": "+7",
+				"wis": "+5"
+			},
+			"damageTags": [
+				"F"
 			],
 			"savingThrowForced": [
-				"constitution"
-			],
-			"savingThrowForcedSpell": [
 				"dexterity"
 			]
+		},
+		{
+			"name": "Saul D'Alessio",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "GWBMP",
+			"alignment": [
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 30",
+				"average": 75
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 16,
+			"int": 12,
+			"wis": 18,
+			"cha": 12,
+			"passive": 20,
+			"cr": "5",
+			"shortName": "White Mantle",
+			"languages": [
+				"Common",
+				"Krytan"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Devotion",
+					"entries": [
+						"Saul D'Alessio has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Formation",
+					"entries": [
+						"Saul D'Alessio gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of Saul D'Alessio that is within 5 feet of him. This bonus is not added to Saul D'Alessio's AC or saving throws if Saul D'Alessio is {@condition incapacitated|XPHB}."
+					]
+				},
+				{
+					"name": "Halt",
+					"entries": [
+						"When Saul D'Alessio hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
+					]
+				}
+			],
+			"gear": [
+				"Studded Leather Armor|XPHB",
+				"Crystal|XPHB",
+				"Diplomat's Pack|XPHB"
+			],
+			"action": [
+				{
+					"name": "Chaos Jolt",
+					"entries": [
+						"{@atk ms} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d12}) psychic damage, plus 3 ({@damage 1d6}) acid, cold, fire, lightning, or thunder damage."
+					]
+				},
+				{
+					"name": "Chaos Bolt",
+					"entries": [
+						"{@atk rs} {@hit 7} to hit, reach 60 ft., one target. {@h}6 ({@damage 1d12}) psychic damage, plus 3 ({@damage 1d6}) acid, cold, fire, lightning, or thunder damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"White Mantle"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Saul D'Alessio casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 15}, +7 to hit with spell attacks)."
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Guidance|XPHB}"
+					],
+					"rest": {
+						"2e": [
+							"{@spell Empathy|GW}",
+							"{@spell Energy Burn|GW}",
+							"{@spell Shatter Enchantment|GW}"
+						]
+					},
+					"restLong": {
+						"1e": [
+							"{@spell Dimension Door|XPHB}",
+							"{@spell Energy Surge|GW}",
+							"{@spell Guilt|GWP}",
+							"{@spell Shame|GWP}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Saul D'Alessio casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 15})."
+					],
+					"displayAs": "reaction",
+					"rest": {
+						"2": [
+							"{@spell Silvery Barbs|SCC}"
+						]
+					},
+					"restLong": {
+						"1": [
+							"{@spell Power Spike|GW}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Saul_D'Alessio_Token.png"
+			},
+			"miscTags": [
+				"MA",
+				"RA",
+				"RCH"
+			],
+			"skill": {
+				"animal handling": "+7",
+				"insight": "+7",
+				"medicine": "+7",
+				"perception": "+10",
+				"survival": "+10"
+			},
+			"bonus": [
+				{
+					"name": "Mind Link {@recharge}",
+					"entries": [
+						"Saul D'Alessio gives himself and allies of his choice within 60 feet of him {@variantrule Advantage|XPHB} on {@variantrule D20 Test|XPHB} for 1 round."
+					]
+				}
+			],
+			"damageTags": [
+				"Y"
+			],
+			"damageTagsSpell": [
+				"O"
+			]
+		}
+	],
+	"monsterFluff": [
+		{
+			"name": "Early White Mantle",
+			"source": "GWBMP",
+			"entries": [
+				{
+					"type": "section",
+					"name": "Early White Mantle",
+					"entries": [
+						"{@i Naive Faithful.}",
+						{
+							"type": "list",
+							"style": "list-hang-notitle"
+						},
+						"The early White Mantle had pure intentions. They were desperate people using any means necessary to save their homeland. The Mursaat used this naivety to manipulate them into doing their bidding, after abducting Saul D'Alessio the other leaders fell in line and even embraced the dark path the Mursaat set for them.",
+						"All of the early White Mantle have the following traits in commmon:",
+						"{@bold Devotion.} The white mantle has advantage on saving throws against being {@condition charmed|XPHB} or {@condition frightened|XPHB}.",
+						"{@bold Halt.} When the white mantle hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn.",
+						"{@bold Formation.} The white mantle gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throws|XPHB|Saving Throw} for each ally of the white mantle that is within 5 feet of it. This bonus is not added to the white mantle's AC or saving throws if the white mantle is {@condition incapacitated|XPHB}."
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/The_Rise_of_the_White_Mantle_concept_art.jpg"
+					},
+					"credit": "Kekai Kotaki"
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/White_Mantle_banner.jpg"
+					},
+					"credit": "Kekai Kotaki"
+				}
+			]
+		},
+		{
+			"name": "Dorian",
+			"source": "GWBMP",
+			"_copy": {
+				"name": "Early White Mantle",
+				"source": "GWBMP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Dorian was always the most charismatic of the early White Mantle, he shared most of the leadership duties with Saul D'Alessio. After Saul's abduction, Dorian took control of the White Mantle, embracing the Mursaat's teachings."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Confessor_Dorian.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Hablion",
+			"source": "GWBMP",
+			"_copy": {
+				"name": "Early White Mantle",
+				"source": "GWBMP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Always the soldier, Hablion was always following the orders of the White Mantle's leader eagerly. After Saul's abduction, Hablion followed Dorian's lead and embraced the Mursaat's teachings without question."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Justiciar_Hablion.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Rebekah",
+			"source": "GWBMP",
+			"_copy": {
+				"name": "Early White Mantle",
+				"source": "GWBMP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"A staunch believer in Saul D'Alessio's vision, Rebekah was one of the first to follow Saul's lead. After Saul's abduction, Rebekah had issues following Dorian's lead, disappearing in the library, desprately trying to find a way to save Saul."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_elementalist.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Saul D'Alessio",
+			"source": "GWBMP",
+			"_copy": {
+				"name": "Early White Mantle",
+				"source": "GWBMP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"Saul D'Alessio was a fallen man. A gambler and a drunk, Saul reached the lowest point in his life when he lost a bet he could not repay. At the time, the local betting house was run by the Lucky Horseshoe, a gambling guild whose influence spanned almost the entire length of the continent. To avoid defaulting on his payment, Saul took to robbing merchants traveling on the road from Beetletun to Shaemoor. Though he successfully paid his debt to the Lucky Horseshoe, he was eventually fingered by one of his victims and tried as a thief. His punishment was exile from the Kingdom of Kryta. The local authorities blindfolded him and rode him out three full weeks before leaving him to fend for himself.",
+									"Alone, broke, and lost, Saul wandered through a dense forest for several days, surviving on only roots and berries. On the fourth day, delirious with hunger, Saul emerged from the trees to see what he thought was a hallucination—a city of massive towers reaching into the heavens. The architecture was astounding, and the creatures who lived here were unlike any he had ever seen. Walking down into their city, Saul got a closer look at the denizens of this place. They were tall and thin with strange wing-like appendages that waved about in the slightest breeze. When they walked, their feet seemed not to touch the ground, and when they spoke, it was the most melodious sound he had ever heard. Surely these creatures were the stuff of divinity. Hungry and exhausted, his clothes ragged and dirty, Saul dropped to his knees and touched his forehead to the ground. He had found his gods, and they in turn had found their most devoted disciple.",
+									"Saul D’Alessio returned to Kryta a changed man. His rags had been replaced with a sleeveless, pure-white robe embroidered with golden thread. His once sunken, sickly features were again full and healthy. He no longer craved the bottle, no longer wished to strike it rich gambling. His life had purpose. He had returned to spread the word, to deliver his finding to the humans of Kryta.",
+									"During this time, the Krytan Empire was in the midst of two wars—one against the guilds of the other human nations, and another against the beastlike Charr. Food was becoming scarce as the invaders burned the crops and salted the fields. It was then that Saul came to the people, offering help from his powerful, enigmatic gods.",
+									"Saul’s new faith was so powerful that soon he had a small following. As a group, they traveled the land, recruiting more and more, offering salvation from trying times. Though no one ever saw the winged gods or their cities of massive towers, they took Saul at his word that they did truly exist. Saul was a shepherd, and his sheep followed his every step. Those who showed real conviction were given white robes, each embroidered with golden thread.",
+									"This was the beginning of the White Mantle.",
+									"Beaten, outnumbered, leaderless, and facing almost certain death, the people of Kryta looked to Saul to lead them out of their darkest hour. Saul D’Alessio was transformed from a messenger into the general of a great army. With their new faith and their new leader, Kryta and the White Mantle managed to push out the Charr, forcing them back over the mountains."
+								]
+							}
+						]
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Saul_D'Alessio.jpg"
+								},
+								"credit": "ArenaNet"
+							}
+						]
+					}
+				}
+			}
 		}
 	],
 	"feat": [],

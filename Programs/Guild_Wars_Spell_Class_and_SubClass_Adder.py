@@ -1,6 +1,290 @@
 import pandas as pd
 import openpyxl
+import json
 import sys
+import argparse
+import os
+import re
+import csv
+
+
+DEFAULT_TABLE_CRITERIA = ["name", "background", "class", "subclass"]
+DEFAULT_TABLE_FORMATS = ["json"]
+DEFAULT_JSON_PATHS = [
+    "./Books/Guild Wars.json",
+    "./Books/Guild Wars Prophecies.json",
+    "./Books/Guild Wars Factions.json",
+    "./Books/Guild Wars Nightfall.json",
+    "./Books/Guild Wars Eye of the North.json",
+]
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Update Guild Wars spells with classes/subclasses and optionally export spell tables."
+    )
+    parser.add_argument(
+        "--generate-tables",
+        action="store_true",
+        help="Generate per-book spell tables after updating class/subclass data.",
+    )
+    parser.add_argument(
+        "--table-criteria",
+        nargs="+",
+        choices=DEFAULT_TABLE_CRITERIA,
+        default=DEFAULT_TABLE_CRITERIA,
+        help="Table criteria to generate.",
+    )
+    parser.add_argument(
+        "--table-formats",
+        nargs="+",
+        choices=["json", "csv", "xlsx"],
+        default=DEFAULT_TABLE_FORMATS,
+        help="Output formats for generated tables.",
+    )
+    parser.add_argument(
+        "--tables-output-dir",
+        default=".\\Books\\Tables",
+        help="Directory where per-book table output files are written.",
+    )
+    parser.add_argument(
+        "--verbose",
+        action="store_true",
+        help="Enable verbose logging.",
+    )
+    parser.add_argument(
+        "--json-paths",
+        nargs="+",
+        default=None,
+        help="Optional list of book JSON files to process. Defaults to built-in Guild Wars paths.",
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Process files without writing updated spell JSON inputs.",
+    )
+    return parser.parse_args()
+
+
+def sanitize_filename(name):
+    return re.sub(r'[<>:"/\\|?*]', "_", name)
+
+
+def get_background_names(spell):
+    backgrounds = spell.get("backgrounds", [])
+    names = set()
+    for background in backgrounds:
+        if isinstance(background, dict):
+            value = background.get("name", "").strip()
+        else:
+            value = str(background).strip()
+        if value:
+            names.add(value)
+    return sorted(names, key=str.casefold)
+
+
+def get_class_names(spell):
+    classes_data = spell.get("classes", {})
+    from_class_list = classes_data.get("fromClassList", [])
+    names = set()
+    for class_entry in from_class_list:
+        value = class_entry.get("name", "").strip()
+        if value:
+            names.add(value)
+    return sorted(names, key=str.casefold)
+
+
+def get_subclass_names(spell):
+    classes_data = spell.get("classes", {})
+    from_subclass = classes_data.get("fromSubclass", [])
+    names = set()
+    for subclass_entry in from_subclass:
+        subclass_data = subclass_entry.get("subclass", {})
+        short_name = str(subclass_data.get("shortName", "")).strip()
+        full_name = str(subclass_data.get("name", "")).strip()
+        value = short_name if short_name else full_name
+        if value:
+            names.add(value)
+    return sorted(names, key=str.casefold)
+
+
+def build_table_rows(spells):
+    rows = []
+    for spell in sorted(spells, key=lambda s: str(s.get("name", "")).casefold()):
+        spell_name = spell.get("name", "Unknown Spell")
+        spell_source = spell.get("source", "UNK")
+        rows.append([
+            {
+                "type": "statblock",
+                "tag": "spell",
+                "name": spell_name,
+                "source": spell_source,
+            }
+        ])
+    return rows
+
+
+def build_table(table_name, table_source, spells):
+    return {
+        "type": "table",
+        "name": table_name,
+        "source": table_source,
+        "rows": build_table_rows(spells),
+    }
+
+
+def generate_spell_tables(spells, criteria):
+    tables = []
+
+    if "name" in criteria:
+        source = spells[0].get("source", "UNK") if spells else "UNK"
+        tables.append(build_table("Spells [Name]", source, spells))
+
+    grouping_specs = [
+        ("background", get_background_names, "Background"),
+        ("class", get_class_names, "Class"),
+        ("subclass", get_subclass_names, "Subclass"),
+    ]
+
+    for criterion, extractor, label in grouping_specs:
+        if criterion not in criteria:
+            continue
+
+        grouped_spells = {}
+        for spell in spells:
+            for group_name in extractor(spell):
+                grouped_spells.setdefault(group_name, []).append(spell)
+
+        for group_name in sorted(grouped_spells.keys(), key=str.casefold):
+            table_source = grouped_spells[group_name][0].get("source", "UNK") if grouped_spells[group_name] else "UNK"
+            table_name = f"Spells [{label}: {group_name}]"
+            tables.append(build_table(table_name, table_source, grouped_spells[group_name]))
+
+    return tables
+
+
+def flatten_tables_for_tabular_export(tables):
+    rows = []
+    for table in tables:
+        table_name = table.get("name", "")
+        table_source = table.get("source", "UNK")
+
+        criterion = "Unknown"
+        group_name = "All"
+
+        if table_name.startswith("Spells [") and table_name.endswith("]"):
+            content = table_name[8:-1]
+            if ": " in content:
+                criterion, group_name = content.split(": ", 1)
+            else:
+                criterion = content
+
+        for row in table.get("rows", []):
+            if not row:
+                continue
+            cell = row[0]
+            rows.append(
+                {
+                    "table_name": table_name,
+                    "table_source": table_source,
+                    "criterion": criterion,
+                    "group": group_name,
+                    "spell_name": cell.get("name", ""),
+                    "spell_source": cell.get("source", ""),
+                }
+            )
+    return rows
+
+
+def is_program_generated_table(table):
+    if not isinstance(table, dict):
+        return False
+    table_name = str(table.get("name", ""))
+    return table_name.startswith("Spells [") and table_name.endswith("]")
+
+
+def remove_generated_tables(data):
+    if not isinstance(data, dict):
+        return
+    tables = data.get("table")
+    if isinstance(tables, list):
+        data["table"] = [table for table in tables if not is_program_generated_table(table)]
+
+
+def add_generated_tables(data, tables):
+    if not isinstance(data, dict):
+        raise ValueError("JSON root must be an object.")
+    if "table" not in data or not isinstance(data["table"], list):
+        data["table"] = []
+    data["table"].extend(tables)
+
+
+def remove_old_table_exports(output_dir, base_name, verbose=True):
+    if not os.path.isdir(output_dir):
+        return
+
+    export_prefix = f"{base_name} - Spell Tables"
+    for file_name in os.listdir(output_dir):
+        if not file_name.startswith(export_prefix):
+            continue
+        if not file_name.lower().endswith((".json", ".csv", ".xlsx")):
+            continue
+
+        file_path = os.path.join(output_dir, file_name)
+        try:
+            os.remove(file_path)
+            if verbose:
+                print(f"Deleted old table export: {file_path}")
+        except FileNotFoundError:
+            continue
+
+
+def save_json_with_tables(json_path, data, dry_run=False, verbose=True):
+    if dry_run:
+        if verbose:
+            print(f"Dry run enabled, skipped writing updated JSON for '{json_path}'.")
+        return
+
+    with open(json_path, "w", encoding="utf-8") as output_file:
+        json.dump(data, output_file, indent=4, ensure_ascii=False)
+    if verbose:
+        print(f"Updated JSON with tables saved to '{json_path}'.")
+
+
+def write_tables_json(output_path, tables):
+    with open(output_path, "w", encoding="utf-8") as file:
+        json_data = {"table": tables}
+        import json
+        json.dump(json_data, file, indent=4, ensure_ascii=False)
+
+
+def write_tables_csv(output_path, table_rows):
+    fieldnames = ["table_name", "table_source", "criterion", "group", "spell_name", "spell_source"]
+    with open(output_path, "w", encoding="utf-8", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        writer.writeheader()
+        for row in table_rows:
+            writer.writerow(row)
+
+
+def write_tables_xlsx(output_path, table_rows):
+    criteria_order = ["Name", "Background", "Class", "Subclass"]
+    df = pd.DataFrame(table_rows)
+
+    with pd.ExcelWriter(output_path, engine="openpyxl") as writer:
+        if df.empty:
+            df.to_excel(writer, sheet_name="Tables", index=False)
+            return
+
+        all_sheet_df = df.sort_values(by=["criterion", "group", "spell_name"], key=lambda col: col.astype(str).str.casefold())
+        all_sheet_df.to_excel(writer, sheet_name="All Tables", index=False)
+
+        for criterion in criteria_order:
+            criterion_df = df[df["criterion"] == criterion]
+            if criterion_df.empty:
+                continue
+            criterion_df = criterion_df.sort_values(by=["group", "spell_name"], key=lambda col: col.astype(str).str.casefold())
+            criterion_df.to_excel(writer, sheet_name=criterion, index=False)
 
 
 def preload_classes(file_path, sheet_name, classes_list):
@@ -96,7 +380,7 @@ def preload_classes(file_path, sheet_name, classes_list):
 
 
 def update_spells_with_classes(json_path, file_path, sheet_name, valid_backgrounds, locations, classes_list,
-                               output_json_path=None, verbose=True):
+                               output_json_path=None, verbose=True, dry_run=False):
     """
     Updates the spell JSON by adding both "classes" and "subclasses" fields
     inside the "classes" object based on valid backgrounds and preloaded class/subclass data.
@@ -110,9 +394,10 @@ def update_spells_with_classes(json_path, file_path, sheet_name, valid_backgroun
     - classes_list (list): The predefined list of classes and sources (main classes and subclasses).
     - output_json_path (str): Path to save the updated JSON. Defaults to None.
     - verbose (bool): Enable verbose output. Defaults to True.
+    - dry_run (bool): If True, do not write updated spell JSON to disk.
 
     Returns:
-    - None: Saves the updated JSON or prints the output.
+    - dict: The updated JSON content.
     """
     import json
 
@@ -199,16 +484,21 @@ def update_spells_with_classes(json_path, file_path, sheet_name, valid_backgroun
                 continue
 
         # Save the updated JSON
-        if output_json_path:
+        if output_json_path and not dry_run:
             with open(output_json_path, 'w', encoding='utf-8') as output_file:
                 json.dump(data, output_file, indent=4, ensure_ascii=False)
                 if verbose:
                     print(f"Updated JSON saved to '{output_json_path}'.")
+        elif output_json_path and dry_run:
+            if verbose:
+                print(f"Dry run enabled, skipped writing updated JSON for '{json_path}'.")
         else:
             print(json.dumps(data, indent=4, ensure_ascii=False))
 
+        return data
+
     except Exception as e:
-        raise Exception(f"An error occurred: {e}")
+        raise Exception(f"An error occurred while processing '{json_path}': {e}")
 
 
 
@@ -217,8 +507,10 @@ def update_spells_with_classes(json_path, file_path, sheet_name, valid_backgroun
 
 
 if __name__ == "__main__":
+    args = parse_args()
+
     # File paths
-    json_paths = [".\Books\Guild Wars.json",".\Books\Guild Wars Prophecies.json",".\Books\Guild Wars Factions.json",".\Books\Guild Wars Nightfall.json",".\Books\Guild Wars Eye of the North.json"]
+    json_paths = args.json_paths if args.json_paths else DEFAULT_JSON_PATHS
     file_path = "C:/Users/emmae/OneDrive/Shared/D&D/Tools/Guild Wars D&D.xlsx"
     sheet_name = "Spell Distribution"
 
@@ -354,8 +646,6 @@ if __name__ == "__main__":
             {"name": "War", "shortName": "War", "source": "XGE"}
         ]}
     ]
-    # Unused, maybe make custom classes the players can then also check.
-    proficiencies_list = ['Light Armor', 'Medium Armor', 'Heavy Armor', 'Simple Weapons', 'Martial Weapons']
     valid_backgrounds = [
         "No Attribute", "Strength", "Axe Mastery", "Hammer Mastery", "Swordsmanship", "Tactics",
         "No Attribute - Warrior", "Expertise", "Beast Mastery", "Marksmanship", "Wilderness Survival",
@@ -368,20 +658,58 @@ if __name__ == "__main__":
         "Leadership", "Command", "Motivation", "Spear Mastery", "No Attribute - Paragon",
         "Mysticism", "Earth Prayers", "Scythe Mastery", "Wind Prayers", "No Attribute - Dervish"
     ]
-    # Unused, just explain to players to select the correct backgrounds
-    locations_list = ['Pre-Searing', 'Ascalon', 'Northern Shiverpeaks', 'Northeastern Kryta']
+    locations_list = []
 
     # Call the function to update spells
     for json_path in json_paths:
-        update_spells_with_classes(
-            json_path=json_path,
-            file_path=file_path,
-            sheet_name=sheet_name,
-            valid_backgrounds=valid_backgrounds,
-            locations=locations_list,
-            classes_list=classes_list,
-            output_json_path=json_path,
-            verbose=False
-        )
-sys.exit()
+        try:
+            updated_data = update_spells_with_classes(
+                json_path=json_path,
+                file_path=file_path,
+                sheet_name=sheet_name,
+                valid_backgrounds=valid_backgrounds,
+                locations=locations_list,
+                classes_list=classes_list,
+                output_json_path=json_path,
+                verbose=args.verbose,
+                dry_run=args.dry_run,
+            )
+        except Exception as error:
+            print(f"Skipping '{json_path}': {error}")
+            continue
+
+        if not args.generate_tables:
+            continue
+
+        spells = updated_data.get("spell", [])
+        tables = generate_spell_tables(spells, args.table_criteria)
+        table_rows = flatten_tables_for_tabular_export(tables)
+
+        remove_generated_tables(updated_data)
+        add_generated_tables(updated_data, tables)
+        save_json_with_tables(json_path, updated_data, dry_run=args.dry_run, verbose=args.verbose)
+
+        source_file_name = os.path.splitext(os.path.basename(json_path))[0]
+        safe_base_name = sanitize_filename(source_file_name)
+        output_dir = os.path.abspath(args.tables_output_dir)
+        os.makedirs(output_dir, exist_ok=True)
+        remove_old_table_exports(output_dir, safe_base_name, verbose=args.verbose)
+
+        if "json" in args.table_formats:
+            json_output_path = os.path.join(output_dir, f"{safe_base_name} - Spell Tables.json")
+            write_tables_json(json_output_path, tables)
+            if args.verbose:
+                print(f"Wrote table JSON: {json_output_path}")
+
+        if "csv" in args.table_formats:
+            csv_output_path = os.path.join(output_dir, f"{safe_base_name} - Spell Tables.csv")
+            write_tables_csv(csv_output_path, table_rows)
+            if args.verbose:
+                print(f"Wrote table CSV: {csv_output_path}")
+
+        if "xlsx" in args.table_formats:
+            xlsx_output_path = os.path.join(output_dir, f"{safe_base_name} - Spell Tables.xlsx")
+            write_tables_xlsx(xlsx_output_path, table_rows)
+            if args.verbose:
+                print(f"Wrote table XLSX: {xlsx_output_path}")
 

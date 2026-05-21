@@ -867,7 +867,7 @@
 				{
 					"name": "Divine Judgement {@recharge 4}",
 					"entries": [
-						"{@actSave wis} {@dc 15}, each hostile creature in a 10-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point Confessor Dorian can see within 60 feet. {@i Failure:} 13 ({@damage 3d8}) radiant damage. {@i Success}: Half damage."
+						"{@actSave wis} {@dc 15}, each hostile creature in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point Confessor Dorian can see within 60 feet. {@i Failure:} 17 ({@damage 4d8}) radiant damage. {@i Success}: Half damage."
 					]
 				}
 			],
@@ -875,41 +875,64 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Dorian casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 15})."
+						"Dorian is an 11th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 15}, +7 to hit with spell attacks). Dorian has the following Monk (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Thaumaturgy|XPHB}"
-					],
-					"rest": {
-						"2e": [
-							"{@spell Heal Area/Karei's Healing Circle|GWP|Heal Area}",
-							"{@spell Heal Other/Jamei's Gaze|GWP|Heal Other}",
-							"{@spell Orison of Healing|GW}",
-							"{@spell Purge Conditions|GW}",
-							"{@spell Remove Hex|GW}",
-							"{@spell Smite|GWP}"
-						]
-					},
-					"restLong": {
-						"1": [
-							"{@spell Darkness|XPHB}",
-							"{@spell Unyielding Aura|GWP}"
-						]
-					},
-					"ability": "cha",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Smite the Unworthy",
-					"headerEntries": [
-						"Confessor Dorian casts Smite, using Charisma as the spellcasting ability (spell save {@dc 15})."
-					],
-					"displayAs": "reaction",
-					"rest": {
-						"1": [
-							"{@spell Smite|GWP}"
-						]
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell Guidance|XPHB}",
+								"{@spell Thaumaturgy|XPHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell Disguise Self|XPHB}",
+								"{@spell Healing Word|XPHB}",
+								"{@spell Orison of Healing|GW}",
+								"{@spell Remove Hex|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Darkness|XPHB}",
+								"{@spell Heal Area/Karei's Healing Circle|GWP|Heal Area}",
+								"{@spell Heal Other/Jamei's Gaze|GWP|Heal Other}",
+								"{@spell Invisibility|XPHB}",
+								"{@spell Smite|GWP}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Aura of Vitality|XPHB}",
+								"{@spell Dispel Magic|XPHB}",
+								"{@spell Hypnotic Pattern|XPHB}",
+								"{@spell Mass Healing Word|XPHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Confusion|XPHB}",
+								"{@spell Dimension Door|XPHB}",
+								"{@spell Purge Conditions|GW}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Dominate Person|XPHB}",
+								"{@spell Mass Cure Wounds|XPHB}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell Unyielding Aura|GWP}"
+							],
+							"slots": 1
+						}
 					},
 					"ability": "cha",
 					"type": "spellcasting"
@@ -935,7 +958,7 @@
 			"shortName": true,
 			"skill": {
 				"persuasion": "+7",
-				"deception": "+7",
+				"deception": "+10",
 				"insight": "+4",
 				"perception": "+4",
 				"intimidation": "+7"
@@ -948,13 +971,23 @@
 				"Breastplate|XPHB",
 				"Shield|XPHB",
 				"Mace|XPHB",
-				"Priest's Pack|XPHB"
+				"Priest's Pack|XPHB",
+				"potion of healing|xdmg",
+				"amulet|xphb"
 			],
 			"damageTags": [
 				"B",
 				"R"
 			],
+			"damageTagsSpell": [
+				"O",
+				"R"
+			],
 			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
 				"wisdom"
 			]
 		},

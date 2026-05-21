@@ -881,6 +881,7 @@
 						"0": {
 							"spells": [
 								"{@spell Guidance|XPHB}",
+								"{@spell Light|XPHB}",
 								"{@spell Thaumaturgy|XPHB}"
 							]
 						},
@@ -973,21 +974,24 @@
 				"Mace|XPHB",
 				"Priest's Pack|XPHB",
 				"potion of healing|xdmg",
-				"amulet|xphb"
+				"amulet|xphb",
+				{
+					"item": "Potion of Arcane Recovery|GW",
+					"quantity": 2,
+					"displayName": ""
+				}
 			],
 			"damageTags": [
 				"B",
 				"R"
 			],
 			"damageTagsSpell": [
-				"O",
-				"R"
+				"O"
 			],
 			"savingThrowForced": [
 				"wisdom"
 			],
 			"savingThrowForcedSpell": [
-				"dexterity",
 				"wisdom"
 			]
 		},
@@ -1069,34 +1073,39 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Hablion casts one of the following spells, requiring no Material components and using Strength as the spellcasting ability (spell save {@dc 16})"
+						"Hablion is a 5th-level spellcaster. His spellcasting ability is Strength (spell save {@dc 16}, +8 to hit with spell attacks). Hablion has the following Warrior (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell \"For Great Justice!\"|GW}",
-						"{@spell Dismember|GW}"
-					],
-					"rest": {
-						"1": [
-							"{@spell Cyclone Axe|GW}",
-							"{@spell Healing Signet|GW}",
-							"{@spell Pass Without Trace|XPHB}",
-							"{@spell Wild Blow|GW}"
-						]
-					},
-					"ability": "str",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Justiciar Hablion casts one of the following spells, requiring no Material components and using Strength as the spellcasting ability."
-					],
-					"displayAs": "bonus",
-					"rest": {
-						"1": [
-							"{@spell Hundred Blades|GW}"
-						]
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell Prestidigitation|XPHB}",
+								"{@spell Sprint|GW}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell \"For Great Justice!\"|GW}",
+								"{@spell Axe Rake|GW}",
+								"{@spell Axe Twist|GWP}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell \"To the Limit!\"|GWP}",
+								"{@spell Dismember|GW}",
+								"{@spell Healing Signet|GW}",
+								"{@spell Hundred Blades|GW}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell \"Fear Me!\"|GWP}",
+								"{@spell Wild Blow|GW}"
+							],
+							"slots": 2
+						}
 					},
 					"ability": "str",
 					"type": "spellcasting"
@@ -1165,11 +1174,21 @@
 				"+1 Handaxe|XDMG",
 				{
 					"item": "Arrow|XPHB",
-					"quantity": 20,
+					"quantity": 40,
 					"displayName": ""
 				},
-				"Quiver|XPHB",
-				"Explorer's Pack|XPHB"
+				{
+					"item": "Quiver|XPHB",
+					"quantity": 2,
+					"displayName": ""
+				},
+				"Explorer's Pack|XPHB",
+				{
+					"item": "Potion of Healing|XDMG",
+					"quantity": 2,
+					"displayName": ""
+				},
+				"Potion of Arcane Recovery|GW"
 			],
 			"save": {
 				"str": "+8",
@@ -1268,19 +1287,25 @@
 			],
 			"gear": [
 				"Wand|XPHB",
-				"Scholar's Pack|XPHB"
+				"Scholar's Pack|XPHB",
+				"Potion of Healing|XDMG",
+				{
+					"item": "Potion of Arcane Recovery|GW",
+					"quantity": 2,
+					"displayName": ""
+				}
 			],
 			"action": [
 				{
 					"name": "Fire Grab",
 					"entries": [
-						"{@atk ms} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 3d6}) fire damage."
+						"{@atk ms} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 4d6}) fire damage."
 					]
 				},
 				{
 					"name": "Fire Blast",
 					"entries": [
-						"{@atk rs} {@hit 7} to hit, reach 90 ft., one target. {@h}7 ({@damage 2d6}) fire damage."
+						"{@atk rs} {@hit 7} to hit, reach 90 ft., one target. {@h}10 ({@damage 3d6}) fire damage."
 					]
 				},
 				{
@@ -1306,40 +1331,72 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Rebekah casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 15})."
+						"Rebekah is an 11th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 15}, +7 to hit with spell attacks). Rebekah has the following Elementalist (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Darkvision|XPHB}",
-						"{@spell Glyph of Elemental Power|GW}",
-						"{@spell Mage Armor|XPHB}",
-						"{@spell Prestidigitation|XPHB}"
-					],
-					"rest": {
-						"2e": [
-							"{@spell Fireball (Guild Wars)|GW}",
-							"{@spell Ward Against Elements|GWP}"
-						]
-					},
-					"restLong": {
-						"2": [
-							"{@spell Searing Heat|GWP}"
-						]
-					},
-					"ability": "int",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Rebekah casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 15})."
-					],
-					"displayAs": "reaction",
-					"rest": {
-						"1e": [
-							"{@spell Shield|XPHB}",
-							"{@spell Silvery Barbs|SCC}"
-						]
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell Elementalism|XPHB}",
+								"{@spell Mending|XPHB}",
+								"{@spell Message|XPHB}",
+								"{@spell Prestidigitation|XPHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell Aura of Restoration|GW}",
+								"{@spell Comprehend Languages|XPHB}",
+								"{@spell Fire Attunement|GW}",
+								"{@spell Flare|GW}",
+								"{@spell Hex Breaker|GW}",
+								"{@spell Mage Armor|XPHB}",
+								"{@spell Shield|XPHB}",
+								"{@spell Silvery Barbs|SCC}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Darkvision|XPHB}",
+								"{@spell Elemental Attunement|GW}",
+								"{@spell Fireball (Guild Wars)|GW}",
+								"{@spell Glyph of Elemental Power|GW}",
+								"{@spell Misty Step|XPHB}",
+								"{@spell Ward Against Elements|GWP}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Conjure Flame|GW}",
+								"{@spell Counterspell|XPHB}",
+								"{@spell Meteor|GW}",
+								"{@spell Searing Heat|GWP}",
+								"{@spell Tongues|XPHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Dimension Door|XPHB}",
+								"{@spell Phoenix|GWP}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Immolation|XGE}",
+								"{@spell Meteor Shower|GWP}",
+								"{@spell Rary's Telepathic Bond|XPHB}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell Rodgort's Invocation|GWP}"
+							],
+							"slots": 1
+						}
 					},
 					"ability": "int",
 					"type": "spellcasting"
@@ -1349,11 +1406,11 @@
 				"O"
 			],
 			"skill": {
-				"arcana": "+10",
+				"arcana": "+7",
 				"history": "+7",
-				"investigation": "+7",
 				"nature": "+7",
-				"religion": "+7"
+				"religion": "+7",
+				"investigation": "+10"
 			},
 			"tokenHref": {
 				"type": "external",
@@ -1371,7 +1428,15 @@
 			"damageTags": [
 				"F"
 			],
+			"damageTagsSpell": [
+				"F",
+				"O"
+			],
 			"savingThrowForced": [
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
 				"dexterity"
 			]
 		},
@@ -1444,19 +1509,26 @@
 			"gear": [
 				"Studded Leather Armor|XPHB",
 				"Crystal|XPHB",
-				"Diplomat's Pack|XPHB"
+				"Diplomat's Pack|XPHB",
+				"Potion of Healing|XDMG",
+				{
+					"item": "Potion of Arcane Recovery|GW",
+					"quantity": 2,
+					"displayName": ""
+				},
+				"Thieves' Tools|XPHB"
 			],
 			"action": [
 				{
 					"name": "Chaos Jolt",
 					"entries": [
-						"{@atk ms} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d12}) psychic damage, plus 3 ({@damage 1d6}) acid, cold, fire, lightning, or thunder damage."
+						"{@atk ms} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d12}) psychic damage, plus 7 ({@damage 2d6}) acid, cold, fire, lightning, or thunder damage."
 					]
 				},
 				{
 					"name": "Chaos Bolt",
 					"entries": [
-						"{@atk rs} {@hit 7} to hit, reach 60 ft., one target. {@h}6 ({@damage 1d12}) psychic damage, plus 3 ({@damage 1d6}) acid, cold, fire, lightning, or thunder damage."
+						"{@atk rs} {@hit 7} to hit, reach 60 ft., one target. {@h}6 ({@damage 1d12}) psychic damage, plus 7 ({@damage 2d6}) acid, cold, fire, lightning, or thunder damage."
 					]
 				}
 			],
@@ -1475,45 +1547,67 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Saul D'Alessio casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 15}, +7 to hit with spell attacks)."
+						"Saul D'Alessio is an 11th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 15}, +7 to hit with spell attacks). Saul D'Alessio has the following Mesmer (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Guidance|XPHB}"
-					],
-					"rest": {
-						"2e": [
-							"{@spell Empathy|GW}",
-							"{@spell Energy Burn|GW}",
-							"{@spell Shatter Enchantment|GW}"
-						]
-					},
-					"restLong": {
-						"1e": [
-							"{@spell Dimension Door|XPHB}",
-							"{@spell Energy Surge|GW}",
-							"{@spell Guilt|GWP}",
-							"{@spell Shame|GWP}"
-						]
-					},
-					"ability": "wis",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Saul D'Alessio casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 15})."
-					],
-					"displayAs": "reaction",
-					"rest": {
-						"2": [
-							"{@spell Silvery Barbs|SCC}"
-						]
-					},
-					"restLong": {
-						"1": [
-							"{@spell Power Spike|GW}"
-						]
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell Message|XPHB}",
+								"{@spell Minor Illusion|XPHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell Bane Signet|GW}",
+								"{@spell Empathy|GW}",
+								"{@spell Signet of Devotion|GW}",
+								"{@spell Silvery Barbs|SCC}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Energy Surge|GW}",
+								"{@spell Misty Step|XPHB}",
+								"{@spell Pass Without Trace|XPHB}",
+								"{@spell Shame|GWP}",
+								"{@spell Shatter Enchantment|GW}",
+								"{@spell Shatter Hex|GW}",
+								"{@spell Signet of Agony|GW}",
+								"{@spell Signet of Weariness|GWP}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Guilt|GWP}",
+								"{@spell Leech Signet|GW}",
+								"{@spell Mantra of Inscriptions|GW}",
+								"{@spell Purge Signet|GW}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Dimension Door|XPHB}",
+								"{@spell Power Spike|GW}",
+								"{@spell Signet of Humility|GW}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Seeming|XPHB}",
+								"{@spell Synaptic Static|XPHB}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell Disintegrate|XPHB}"
+							],
+							"slots": 1
+						}
 					},
 					"ability": "wis",
 					"type": "spellcasting"
@@ -1536,7 +1630,9 @@
 				"insight": "+7",
 				"medicine": "+7",
 				"perception": "+10",
-				"survival": "+10"
+				"survival": "+7",
+				"stealth": "+6",
+				"sleight of hand": "+6"
 			},
 			"bonus": [
 				{
@@ -1550,7 +1646,14 @@
 				"Y"
 			],
 			"damageTagsSpell": [
-				"O"
+				"O",
+				"Y"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"intelligence"
 			]
 		}
 	],

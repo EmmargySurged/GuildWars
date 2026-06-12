@@ -2765,7 +2765,7 @@
         "Evoker|Elementalist|GW2|Evoker|GW2VoE|1",
         "Elite Specialization|Elementalist|GW2|Evoker|GW2VoE|3",
         "Spiritual Connection|Elementalist|GW2|Evoker|GW2VoE|5",
-        "Manifested Familiar|Elementalist|GW2|Evoker|GW2VoE|5",
+        "Familiar Aid|Elementalist|GW2|Evoker|GW2VoE|5",
         "Spiritual Bond|Elementalist|GW2|Evoker|GW2VoE|10",
         "Greater Manifestations|Elementalist|GW2|Evoker|GW2VoE|10",
         "Spiritual Mastery|Elementalist|GW2|Evoker|GW2VoE|15",
@@ -3004,6 +3004,7 @@
         "{@b Skills.} You have adopted the Evoker Elite Specialization. You gain proficiency with {@item Maul|XPHB|Mauls}, {@item Spear|XPHB|Spears (Terrestrial)}, {@item Pistol|GW2|Pistols}, {@item Shortsword|XPHB|Shortswords} {@b or} {@item Warhorn|GW2|Warhorns} and can use their {@variantrule Weapon Skill|GW2|Weapon Skills}. You now qualify to learn Evoker specific {@variantrule Healing Skill|GW2|Healing Skills}, {@variantrule Utility Skill|GW2|Utility Skills}, and {@variantrule Elite Skill|GW2|Elite Skills} when you choose your skills.",
         "{@b Elemental Attunement.} You have learned to attune to the elements. Choose one of the following elements: Fire, Water, Air, or Earth. You attune to that element.",
         "{@b Spirit Familiar.} As an Evoker you made a profound connections to the Spirits of the Wild. Choose one familiar spirit from the {@table Evoker Familiars|GW2VoE} table. Your familiar spirit accompanies you and grants you the passive benefit as described in the table. You can change your familiar spirit when you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}. You gain access to the {@variantrule Profession Skill|GW2} in the {@table Evoker Familiars|GW2VoE} table corresponding to your chosen familiar spirit. To use this {@variantrule Skill|GW2}, you must collect six charges by using {@variantrule Weapon Skill|GW2|Weapon Skills} and expend them. Using a {@variantrule Weapon Skill|GW2|} associated with your chosen familiar's element grants you two charges, while using any other {@variantrule Weapon Skill|GW2} grants you one charge. You can store a maximum of six charges. Charges last until you roll {@variantrule Initiative|XPHB}, exit combat, or 10 minutes pass.",
+        "{@b Manifested Familiar.} You can manifest your familiar spirit to aid you. As a {@action Magic|XPHB} action, you can expend a {@variantrule Hit Point Dice|XPHB} to cast the {@spell Find Familiar|XPHB} spell without material components. When you cast the spell in this way, your familiar is Elemental, taking the form of the spirit you chose with the Evoker feature as shown in the {@table Evoker Familiars|GW2VoE} table. It disappears if you take a {@variantrule Long Rest|XPHB}.",
         {
           "type": "statblock",
           "tag": "table",
@@ -3034,12 +3035,11 @@
       "subclassSource": "GW2VoE",
       "level": 5,
       "entries": [
-        "Your connection to the Spirits of the Wild deepens. Choose a second different element from Fire, Water, Air, or Earth to be able to attune to.",
-        "During your turn, you can now attune to a different element (no {@variantrule Action|XPHB} required). Once you leave an element, it must recharge ({@chance 55|10+}) before you can attune to it again. The element associated with your familiar spirit does not need to recharge."
+        "{@b Elemental Attunement.} Your connection to the Spirits of the Wild deepens. Choose a second different element from Fire, Water, Air, or Earth to be able to attune to. During your turn, you can now attune to a different element (no {@variantrule Action|XPHB} required). Once you leave an element, it must recharge {@recharge 2} before you can attune to it again. The element associated with your familiar spirit does not need to recharge."
       ]
     },
     {
-      "name": "Manifested Familiar",
+      "name": "Familiar Aid",
       "source": "GW2VoE",
       "className": "Elementalist",
       "classSource": "GW2",
@@ -3047,9 +3047,11 @@
       "subclassSource": "GW2VoE",
       "level": 5,
       "entries": [
-        "You can manifest your familiar spirit to aid you. As a {@action Magic|XPHB} action, you can expend a {@variantrule Hit Point Dice|XPHB} to cast the {@spell Find Familiar|XPHB} spell without material components.",
-        "When you cast the spell in this way, your familiar is Elemental, taking the form of the spirit you chose with the Evoker feature as shown in the {@table Evoker Familiars|GW2VoE} table. It disappears if you take a {@variantrule Long Rest|XPHB}.",
-        "Additionally, while your familiar is manifested, you can ask it for aid. As a {@action Magic|XPHB} action, you can cast the {@spell Augury|XPHB} spell without material components, Intelligence is your spellcasting ability for it."
+        "{@b Asking for Aid.} While your familiar spirit is manifested you can ask it for aid. Depending on which familiar you have manifested you can cast different spells, without material components. Each spell can be cast once per manifestation, Intelligence is your spellcasting ability for them:",
+        "- {@b Fox Spirit:} {@spell Detect Magic|XPHB}",
+        "- {@b Otter Spirit:} {@spell Augury|XPHB}",
+        "- {@b Hare Spirit:} {@spell Locate Object|XPHB}",
+        "- {@b Toad Spirit:} {@spell Speak With Dead|XPHB}"
       ]
     },
     {

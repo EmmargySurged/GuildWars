@@ -4791,6 +4791,7 @@
 										"{@creature Dark Oak|GWP}",
 										"{@creature Fevered Devourer|GWP}",
 										"{@creature Galrath|GWP}",
+										"{@creature Henge Guardian|GWP}",
 										"{@creature Jade Armor|GWP}",
 										"{@creature Jade Bow|GWP}",
 										"{@creature Justiciar Hablion|GWP}",
@@ -4819,6 +4820,48 @@
 										"{@creature White Mantle Seeker|GWP}",
 										"{@creature White Mantle Sycophant|GWP}",
 										"{@creature White Mantle Zealot|GWP}"
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Monsters (B)",
+							"page": "",
+							"id": "GWP14b",
+							"entries": [
+								{
+									"type": "section",
+									"name": "Behemoth",
+									"page": "",
+									"id": "GWP14behemoth",
+									"entries": [
+										{
+											"type": "statblock",
+											"name": "Behemoth",
+											"prop": "monsterFluff",
+											"source": "GWP",
+											"data": {
+												"renderCompact": {
+													"isSkipRootName": true
+												}
+											}
+										},
+										{
+											"type": "statblock",
+											"name": "Henge Guardian",
+											"tag": "creature",
+											"source": "GWP",
+											"style": "narrow"
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Root_Behemoth.jpg"
+											},
+											"credit": "ArenaNet"
+										}
 									]
 								}
 							]
@@ -16928,6 +16971,190 @@
 			"savingThrowForcedSpell": [
 				"constitution"
 			]
+		},
+		{
+			"name": "Demagogue",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "GWP",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "31d8 + 155",
+				"average": 294
+			},
+			"speed": {
+				"walk": 45
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 20,
+			"int": 12,
+			"wis": 10,
+			"cha": 12,
+			"passive": 20,
+			"cr": "15",
+			"shortName": "White Mantle",
+			"languages": [
+				"Common",
+				"Krytan",
+				"Mursaat"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"athletics": "+15",
+				"perception": "+10"
+			},
+			"trait": [
+				{
+					"name": "Devotion",
+					"entries": [
+						"The white mantle has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Formation",
+					"entries": [
+						"The white mantle gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of the white mantle that is within 5 feet of it. This bonus is not added to the white mantle's AC or saving throws if the white mantle is {@condition incapacitated|XPHB}."
+					]
+				},
+				{
+					"name": "Halt",
+					"entries": [
+						"When the white mantle hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
+					]
+				},
+				{
+					"name": "Legendary Resistance (2/Day)",
+					"entries": [
+						"If the white mantle fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"gear": [
+				"Chain Mail|XPHB",
+				"Greatsword|XPHB",
+				"Heavy Crossbow|XPHB",
+				{
+					"item": "+1 Bolt|XDMG",
+					"quantity": 20,
+					"displayName": ""
+				},
+				"Crossbow Bolt Case|XPHB"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The white mantle makes three attacks, using Greatsword or Heavy Crossbow in any combination."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}33 ({@damage 8d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 100/400 ft., one target. {@h}20 ({@damage 3d10 + 4}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"bonus": [
+				{
+					"name": "Rush",
+					"entries": [
+						"The white mantle takes the {@action Dash} action."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"White Mantle"
+			],
+			"spellcasting": [
+				{
+					"name": "Charge",
+					"headerEntries": [
+						"The white mantle casts one of the following spells, using Constitution as the spellcasting ability (spell save {@dc 18})."
+					],
+					"displayAs": "bonus",
+					"will": [
+						"{@spell Bull's Charge|GWP} (level 5 Version)"
+					],
+					"ability": "con",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"save": {
+				"str": "+10",
+				"con": "+10"
+			},
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"legendaryActions": 1,
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Demagogue attacks using one of its attacks."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Demagogue moves up to its speed without provoking opportunity attacks."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_Warrior_m_Token.png"
+			},
+			"damageTags": [
+				"P",
+				"S"
+			]
 		}
 	],
 	"monsterFluff": [
@@ -16974,6 +17201,27 @@
 					"credit": "ArenaNet"
 				}
 			]
+		},
+		{
+			"name": "Henge Guardian",
+			"source": "GWP",
+			"_copy": {
+				"name": "Behemoth",
+				"source": "GWP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"The Henge Guardian is the ancient guardian tasked with protecting the Henge of Denravi."
+								]
+							}
+						]
+					}
+				}
+			}
 		},
 		{
 			"name": "Charr",

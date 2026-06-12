@@ -36684,7 +36684,7 @@
 			"entries": [
 				"{@variantrule Boon|GW2}",
 				"While you are under the effect of this {@variantrule Boon|GW2}, at the start of your turn, if you have at least 1 hit point, you regain hit points.",
-				"The amount of healing is determined by the effect that applied it.",
+				"The amount of hit points you regain is determined by the effect that applied it.",
 				"Stacks intensity.",
 				"This {@variantrule Boon|GW2} corrupts into 1 stack of {@variantrule Poison|GW2} for 2 rounds, dealing damage equal to the half the PB of the creature who corrupted the Boon."
 			]
@@ -36694,7 +36694,7 @@
 			"source": "GW2",
 			"entries": [
 				"{@variantrule Boon|GW2}",
-				"While you are under the effect of this {@variantrule Boon|GW2}, you are immune to {@variantrule Blinded|GW2}, {@variantrule Chilled|GW2}, {@variantrule Crippled|GW2}, {@variantrule Fear|GW2}, {@variantrule Immobilized|GW2}, {@variantrule Slow|GW2}, {@variantrule Taunt|GW2}, {@variantrule Weakness|GW2}, and {@variantrule Vulnerability|GW2}.",
+				"While you are under the effect of this {@variantrule Boon|GW2}, you are immune to the {@variantrule Blinded|GW2}, {@variantrule Chilled|GW2}, {@variantrule Crippled|GW2}, {@variantrule Fear|GW2}, {@variantrule Immobilized|GW2}, {@variantrule Slow|GW2}, {@variantrule Taunt|GW2}, {@variantrule Weakness|GW2}, and {@variantrule Vulnerability|GW2} {@variantrule Condition|GW2|Conditions}.",
 				"Stacks duration.",
 				"This {@variantrule Boon|GW2} corrupts into 1 round of {@variantrule Chilled|GW2}."
 			]
@@ -36714,7 +36714,7 @@
 			"source": "GW2",
 			"entries": [
 				"{@variantrule Effect|GW2}",
-				"While you are under the effect of this {@variantrule Effect|GW2}, you cannot gain the {@variantrule Stealth|GW2} {@variantrule Effect|GW2} or the {@condition Invisible|XPHB} condition.",
+				"While you are under the effect of this {@variantrule Effect|GW2}, you cannot gain the {@variantrule Stealth|GW2} {@variantrule Effect|GW2} or the {@condition Invisible|XPHB} {@variantrule Condition|XPHB}.",
 				"Stacks duration (max 5 rounds)."
 			]
 		},
@@ -36731,7 +36731,7 @@
 			"source": "GW2",
 			"entries": [
 				"{@variantrule Aura|GW2}",
-				"While you are under the effect of this {@variantrule Aura|GW2}, when you take damage the source of that damage is {@variantrule Stun|GW2|Stunned} for 1 round if they are within 25 feet of you."
+				"While you are under the effect of this {@variantrule Aura|GW2}, when you take damage, the source of that damage is {@variantrule Stun|GW2|Stunned} for 1 round if they are within 15 feet of you."
 			]
 		},
 		{
@@ -36739,7 +36739,7 @@
 			"source": "GW2",
 			"entries": [
 				"{@variantrule Control Effect|GW2}",
-				"While you are under the effect of this {@variantrule Control Effect|GW2}, you are pushed 10 feet downwards at the start of your turn and can’t take actions, bonus actions, reactions or move.",
+				"While you are under the effect of this {@variantrule Control Effect|GW2}, you are pushed 10 feet downwards at the start of your turn and you cannot take {@variantrule Action|XPHB|Actions}, {@variantrule Bonus Action|XPHB|Bonus Actions}, {@variantrule Reaction|XPHB|Reactions} or move.",
 				"A creature with a {@variantrule Defiance Bar|GW2} takes defiance bar damage per round of {@variantrule Sink|GW2} instead of being affected."
 			]
 		},
@@ -36775,7 +36775,7 @@
 			"source": "GW2",
 			"entries": [
 				"{@variantrule Condition|GW2}",
-				"While you are under the effect of this {@variantrule condition|GW2}, on your turn, you can take either an action or a bonus action, but not both. If you take the Attack action, you can make only one attack regardless of the number of attacks you can normally make.",
+				"While you are under the effect of this {@variantrule condition|GW2}, on your turn, you can take either an {@variantrule Action|XPHB} or a {@variantrule Bonus Action|XPHB}, but not both. If you take the {@action Attack|XPHB} action, you can make only one attack regardless of the number of attacks you can normally make.",
 				"Stacks Duration.",
 				"A creature with a {@variantrule Defiance Bar|GW2} takes 50 defiance bar damage at the start of its turn instead of being affected.",
 				"This {@variantrule Condition|GW2} converts into 1 round of {@variantrule Quickness|GW2}."
@@ -36802,8 +36802,8 @@
 			"source": "GW2",
 			"entries": [
 				"{@variantrule Boon|GW2}",
-				"While you are under the effect of this {@variantrule Boon|GW2}, you are immune to {@variantrule Fear|GW2}, {@variantrule Taunt|GW2}, {@condition Prone|XPHB}, and getting moved against your will.",
-				"Each time you would be {@variantrule Fear|GW2|Feared}, {@variantrule Taunt|GW2|Taunted}, knocked {@condition Prone|XPHB}, or moved against your will you instead remove 1 stack of this {@variantrule Boon|GW2}.",
+				"While you are under the effect of this {@variantrule Boon|GW2}, you are immune to {@variantrule Control Effect|GW2|Control Effects}, the {@condition Paralyzed|XPHB}, {@condition Petrified|XPHB}, {@condition Prone|XPHB} and {@condition Stunned|XPHB} {@variantrule Condition|XPHB|Conditions} and getting moved against your will.",
+				"Each time you would be affected by one of these effects you instead remove 1 stack of this {@variantrule Boon|GW2}.",
 				"Stacks intensity (Max 25).",
 				"This {@variantrule Boon|GW2} corrupts into 1 round of {@variantrule Fear|GW2}."
 			]
@@ -36823,7 +36823,7 @@
 			"source": "GW2",
 			"entries": [
 				"{@variantrule Control Effect|GW2}",
-				"While you are under the effect of this {@variantrule Control Effect|GW2}, you cannot take {@variantrule action|XPHB|actions}, {@variantrule bonus action|XPHB|bonus actions}, {@variantrule reaction|XPHB|reactions} or move. Additionally, you automatically fail strength and dexterity saving throws.",
+				"While you are under the effect of this {@variantrule Control Effect|GW2}, you cannot take {@variantrule Action|XPHB|Actions}, {@variantrule Bonus Action|XPHB|Bonus Actions}, {@variantrule Reaction|XPHB|Reactions} or move. Additionally, you automatically fail strength and dexterity {@variantrule Saving Throw|XPHB|Saving Throws}.",
 				"Creatures immune to the {@condition Stunned|XPHB} {@variantrule Condition|XPHB} are also immune to {@variantrule Stun|GW2}.",
 				"A creature with a {@variantrule Defiance Bar|GW2} takes 100 defiance bar damage per round of {@variantrule Stun|GW2} instead of being affected."
 			]
@@ -36921,8 +36921,7 @@
 			"source": "GW2",
 			"entries": [
 				"{@variantrule Condition|GW2}",
-				"While you are under the effect of this {@variantrule condition|GW2}, you have a 50% chance of dealing half damage when you roll damage.",
-				"While you are under the effect of this {@variantrule condition|GW2}, you regain 50% less {@variantrule Endurance|GW2} at the start of your turn..",
+				"While you are under the effect of this {@variantrule condition|GW2}, you have a 50% chance of dealing half damage when you roll damage and you regain 50% less {@variantrule Endurance|GW2} at the start of your turn.",
 				"Stacks duration.",
 				"A creature with a {@variantrule Defiance Bar|GW2} takes 20 defiance bar damage at the start of its turn instead of being affected.",
 				"This {@variantrule Condition|GW2} converts into 3 stack of {@variantrule Might|GW2} for 2 rounds."

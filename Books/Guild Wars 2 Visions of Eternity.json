@@ -2888,7 +2888,7 @@
           "{@creature Fox Spirit|GW2VoE}",
           "{@creature Fire Elemental|XMM}",
           "Fire",
-          "Once per {@variantrule Skill|GW2}, when you inflict {@variantrule Burning|GW2} on a creature, you gain 1 round of {@variantrule Might|GW2}.",
+          "Once per {@variantrule Skill|GW2}, when you inflict {@variantrule Burning|GW2} on a creature, you gain 1 round of {@variantrule Might|GW2}. You gain PB {@variantrule Attribute|GW2|Power}.",
           "{@optfeature Ignite|GW2VoE}",
           "{@optfeature Conflagration|GW2VoE}"
         ],
@@ -2896,7 +2896,7 @@
           "{@creature Otter Spirit|GW2VoE}",
           "{@creature Water Elemental|XMM}",
           "Water",
-          "When you grant a creature {@variantrule Regeneration|GW2}, they also regain {@dice 1d4} hit points.",
+          "When you grant a creature {@variantrule Regeneration|GW2}, they also regain {@dice 1d4} hit points. You gain PB {@variantrule Attribute|GW2|Healing Power}.",
           "{@optfeature Splash|GW2VoE}",
           "{@optfeature Buoyant Deluge|GW2VoE}"
         ],
@@ -2904,7 +2904,7 @@
           "{@creature Hare Spirit|GW2VoE}",
           "{@creature Air Elemental|XMM}",
           "Air",
-          "While you have {@variantrule Fury|GW2}, your critical hits and {@variantrule Critical Failure|GW2|Critical Failures} inflict an additional {@dice 1d6} lightning damage.",
+          "While you have {@variantrule Fury|GW2}, your critical hits and {@variantrule Critical Failure|GW2|Critical Failures} inflict an additional {@dice 1d6} lightning damage. You gain PB {@variantrule Attribute|GW2|Precision}.",
           "{@optfeature Zap|GW2VoE}",
           "{@optfeature Lightning Blitz|GW2VoE}"
         ],
@@ -2912,7 +2912,7 @@
           "{@creature Toad Spirit|GW2VoE}",
           "{@creature Earth Elemental|XMM}",
           "Earth",
-          "Once per turn, when you {@variantrule Disable|GW2} a creature, you gain 1 round of {@variantrule Protection|GW2}.",
+          "Once per turn, when you {@variantrule Disable|GW2} a creature, you gain 1 round of {@variantrule Protection|GW2}. You gain PB {@variantrule Attribute|GW2|Toughness}.",
           "{@optfeature Calcify|GW2VoE}",
           "{@optfeature Seismic Impact|GW2VoE}"
         ]
@@ -3048,10 +3048,33 @@
       "level": 5,
       "entries": [
         "{@b Asking for Aid.} While your familiar spirit is manifested you can ask it for aid. Depending on which familiar you have manifested you can cast different spells, without material components. Each spell can be cast once per manifestation, Intelligence is your spellcasting ability for them:",
-        "- {@b Fox Spirit:} {@spell Detect Magic|XPHB}",
-        "- {@b Otter Spirit:} {@spell Augury|XPHB}",
-        "- {@b Hare Spirit:} {@spell Locate Object|XPHB}",
-        "- {@b Toad Spirit:} {@spell Speak With Dead|XPHB}"
+        {
+          "type": "table",
+          "name": "Familiar Spells",
+          "source": "GW2",
+          "colLabels": [
+            "Familiar",
+            "Spell"
+          ],
+          "rows": [
+            [
+              "Fox Spirit",
+              "{@spell Detect Magic|XPHB}"
+            ],
+            [
+              "Otter Spirit",
+              "{@spell Augury|XPHB}"
+            ],
+            [
+              "Hare Spirit",
+              "{@spell Locate Object|XPHB}"
+            ],
+            [
+              "Toad Spirit",
+              "{@spell Speak with Dead|XPHB}"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -3119,10 +3142,33 @@
       "level": 20,
       "entries": [
         "Your bond with the elemental spirits reaches its pinnacle. Once per long rest, as a {@action Magic|XPHB} action, you can call upon the spirits for aid. Depedning on your choosen familiar spirit, you can cast one of the following spells without material components, Intelligence is your spellcasting ability for them:",
-        "- {@spell Meteor Swarm|XPHB} (Fox Spirit)",
-        "- {@spell Mass Heal|XPHB} (Otter Spirit)",
-        "- {@spell Storm of Vengeance|XPHB} (Hare Spirit)",
-        "- {@spell Invulnerability|XGE} (Toad Spirit)"
+        {
+          "type": "table",
+          "name": "Familiar Spells",
+          "source": "GW2",
+          "colLabels": [
+            "Familiar",
+            "Spell"
+          ],
+          "rows": [
+            [
+              "Fox Spirit",
+              "{@spell Meteor Swarm|XPHB}"
+            ],
+            [
+              "Otter Spirit",
+              "{@spell Mass Heal|XPHB}"
+            ],
+            [
+              "Hare Spirit",
+              "{@spell Storm of Vengeance|XPHB}"
+            ],
+            [
+              "Toad Spirit",
+              "{@spell Invulnerability|XGE}"
+            ]
+          ]
+        }
       ]
     },
     {

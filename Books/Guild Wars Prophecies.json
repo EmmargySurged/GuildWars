@@ -88642,7 +88642,11 @@
 			"name": "Human",
 			"source": "GWP",
 			"page": "",
-			"traitTags": [],
+			"traitTags": [
+				"Skill Proficiency",
+				"Spellcasting",
+				"Tool Proficiency"
+			],
 			"size": [
 				"S",
 				"M"
@@ -88758,278 +88762,126 @@
 			}
 		},
 		{
-			"name": "Dwarf (Deldrimor)",
+			"name": "Dwarf",
 			"source": "GWP",
-			"creatureTypes": [
-				"humanoid"
+			"page": "",
+			"traitTags": [
+				"Damage Resistance",
+				"Spellcasting"
 			],
 			"size": [
+				"S",
 				"M"
 			],
-			"speed": 25,
-			"lineage": "VRGR",
-			"age": {
-				"mature": 20,
-				"max": 350
-			},
-			"darkvision": 120,
-			"traitTags": [
-				"Tool Proficiency",
-				"Weapon Proficiency"
-			],
-			"languageProficiencies": [
+			"speed": 30,
+			"entries": [
 				{
-					"common": true,
-					"dwarvish": true
+					"type": "entries",
+					"name": "",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Darkvision",
+							"entries": [
+								"You have {@sense Darkvision} with a range of 120 feet."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Resilience",
+							"entries": [
+								"You have {@variantrule Resistance|XPHB} to Poison damage. You also have {@variantrule Advantage|XPHB} on saving throws you make to avoid the {@condition Poisoned|XPHB} condition."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Toughness",
+							"entries": [
+								"Your {@variantrule Hit Points|XPHB|Hit Point} maximum increases by 1, and it increases by 1 again whenever you gain a level."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Dwarven Lineage",
+							"entries": [
+								"You part of a lineage that grants you special traits. Choose a lineage from the Dwarven Lineages table. You gain the level 1 benefit of that lineage. When you reach levels 3 and 5, your gain additional benefits.",
+								"If you learn a spell through your lineage the following rules apply: You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).",
+								{
+									"type": "table",
+									"name": "Dwarven Lineages",
+									"source": "GW",
+									"colLabels": [
+										"Lineage",
+										"Level 1",
+										"Level 3",
+										"Level 5"
+									],
+									"rows": [
+										[
+											"Deldrimor",
+											"You have {@variantrule Resistance|XPHB} to Cold damage.",
+											"You learn the {@spell Augury|XPHB} spell.",
+											"When you fail a Saving Throw, you can call upon the Great Dwarf. Roll a {@dice d20}. If the roll is equal to or less than your level, you instead succeed on the Saving Throw. Once you succeed on a Saving Throw in this way, you can't use this feature again until you finish a {@variantrule Long Rest|XPHB}."
+										],
+										[
+											"Stone Summit",
+											"You have {@variantrule Resistance|XPHB} to Fire damage.",
+											"You learn the {@spell Hellish Rebuke|XPHB} spell. When you cast it without a spell slot, you cast it at a level equal to your Proficiency Bonus.",
+											"When you fail an Attack Roll, you can call upon the Great Destroyer. Roll a {@dice d20}. If the roll is equal to or less than your level, you instead succeed on the Atttack Roll. Once you succeed on an Atttack Roll in this way, you can't use this feature again until you finish a {@variantrule Short Rest|XPHB}."
+										]
+									]
+								}
+							]
+						}
+					]
 				}
 			],
-			"toolProficiencies": [
-				{
-					"choose": {
-						"from": [
-							"smith's tools",
-							"brewer's supplies",
-							"mason's tools"
+			"fluff": {
+				"entries": [
+					"One of the oldest races on Tyria, the Dwarves are humanoids that are stocky, short, and are almost always bearded. The dwarves live in the Shiverpeak Mountains - specifically the Northern Shiverpeaks and the Southern Shiverpeaks.",
+					"In recent years, the dwarves have been plunged into a civil war between the older Deldrimor dwarves and the recent Stone Summit faction. This war has caused unrest throughout the Shiverpeaks and held up most travel between Ascalon and the other human nations.",
+					"The exact origins of the dwarven race is unknown, but their legends claim that the Dwarves were forged by their god, the Great Dwarf, on Anvil Rock in the Northern Shiverpeaks. Over time the dwarves laid claim to the Shiverpeak Mountains, forming the Deldrimor nation. Though they traded with the human nations and were on generally good terms, the dwarves largely kept to themselves.",
+					"Sometime years prior to 1072 AE, Dagnar Stonepate, cousin to the ruling king, Jalis Ironhammer, created a splinter faction that opposed the Deldrimor. The Stone Summit was a group of xenophobic radicals who believed that it was the Dwarves' right to rule over all other races. Inevitably the friction between the two groups erupted into a civil war.",
+					"The Dwarves are a mining and smithing centric society with a monarchy.",
+					"Most of the Dwarves follow and worship the Great Dwarf as their creator and god. Outside of their creation legend, it is said that the Great Dwarf taught the Dwarves the fineness of crafting before he departed to the Great Forge, where all Dwarves go when they die. There are also dwarves who worship, or at least revere, Dwayna, Grenth, or the Great Destroyer. The dwarves who worship or revere Dwayna and Grenth only seem to appear during Wintersday. Many within the Stone Summit worship the Great Destroyer.",
+					"There is also a group of Dwarves within Deldrimor known as the Brotherhood of the Dragon who serve the oracle dragon Glint.",
+					{
+						"type": "section",
+						"name": "Deldrimor",
+						"entries": [
+							"Deldrimor is a kingdom of Dwarves residing in the Shiverpeak Mountains that are ruled by a king. They are very friendly towards other races and passage through the harsh mountain range is welcome to anyone who is a friend of Deldrimor or an enemy to the Stone Summit. They hold a capital in Thunderhead Keep."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Stone Summit",
+						"entries": [
+							"The Stone Summit is a xenophobic faction which has recently broken away from the Deldrimor dwarves while being led by Dagnar Stonepate. They have had some recent successes in seizing power and resources from the Deldrimor Dwarves, most notably in claiming the vast mine of Sorrow's Furnace, which became their main base"
 						]
 					}
-				}
-			],
-			"weaponProficiencies": [
-				{
-					"battleaxe|phb": true,
-					"handaxe|phb": true,
-					"light hammer|phb": true,
-					"warhammer|phb": true,
-					"simple": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium."
-					]
-				},
-				{
-					"name": "Speed",
-					"entries": [
-						"Your speed is not reduced by wearing heavy armor."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Superior Darkvision",
-					"entries": [
-						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Dwarven Combat Training",
-					"entries": [
-						"You have proficiency with all simple weapons and the {@item battleaxe|phb}, {@item handaxe|phb}, {@item light hammer|phb}, and {@item warhammer|phb}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Tool Proficiency",
-					"entries": [
-						"You gain proficiency with the artisan's tools of your choice: {@item Smith's tools|phb}, {@item brewer's supplies|phb}, or {@item mason's tools|phb}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Invoke the Great Dwarf",
-					"entries": [
-						"As a reaction when you fail a saving throw you can send out a prayer to the great Dwarf. When you do so you succeed on that saving throw instead. Once you use this feature you can't do so again until you finish a long rest."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Dwarven Toughness",
-					"entries": [
-						"Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
-					],
-					"type": "entries"
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Dwarf (Stone Summit)",
-			"source": "GWP",
-			"creatureTypes": [
-				"humanoid"
-			],
-			"size": [
-				"M"
-			],
-			"speed": 25,
-			"lineage": "VRGR",
-			"age": {
-				"mature": 20,
-				"max": 350
-			},
-			"darkvision": 120,
-			"traitTags": [
-				"Tool Proficiency",
-				"Weapon Proficiency"
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"dwarvish": true
-				}
-			],
-			"toolProficiencies": [
-				{
-					"choose": {
-						"from": [
-							"smith's tools",
-							"brewer's supplies",
-							"mason's tools"
-						]
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/2/25/Deldrimor_emblem.jpg"
+						},
+						"credit": "ArenaNet"
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars.com/images/5/5a/Concept008.jpg"
+						},
+						"credit": "ArenaNet"
 					}
-				}
-			],
-			"weaponProficiencies": [
-				{
-					"battleaxe|phb": true,
-					"handaxe|phb": true,
-					"light hammer|phb": true,
-					"warhammer|phb": true,
-					"simple": true
-				}
-			],
-			"armorProficiencies": [
-				{
-					"light|phb": true,
-					"medium|phb": true,
-					"heavy|phb": true,
-					"shield|phb": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium."
-					]
-				},
-				{
-					"name": "Speed",
-					"entries": [
-						"Your speed is not reduced by wearing heavy armor."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Superior Darkvision",
-					"entries": [
-						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Dwarven Combat Training",
-					"entries": [
-						"You have proficiency with all simple weapons and the {@item battleaxe|phb}, {@item handaxe|phb}, {@item light hammer|phb}, and {@item warhammer|phb}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Tool Proficiency",
-					"entries": [
-						"You gain proficiency with the artisan's tools of your choice: {@item Smith's tools|phb}, {@item brewer's supplies|phb}, or {@item mason's tools|phb}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Invoke the Great Destroyer",
-					"entries": [
-						"When you take damage, you can send out a prayer to the great Destroyer. When you do so, you can cast {@spell Hellish Rebuke|PHB} at a level equal to your Proficiency Bonus. Once you use this feature, you can't do so again until you finish a long rest."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Dwarven Armor Training",
-					"entries": [
-						"You have proficiency with all armors. If you already have proficiency with all armors, you gain proficiency with two skills of your choice."
-					],
-					"type": "entries"
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+				]
+			}
 		}
 	],
-	"raceFluff": [
-		{
-			"name": "Dwarf (Deldrimor)",
-			"source": "GWP",
-			"entries": [
-				"One of the oldest races on Tyria, the Dwarves are humanoids that are stocky, short, and are almost always bearded. The dwarves live in the Shiverpeak Mountains - specifically the Northern Shiverpeaks and the Southern Shiverpeaks.",
-				"In recent years, the dwarves have been plunged into a civil war between the older Deldrimor dwarves and the recent Stone Summit faction. This war has caused unrest throughout the Shiverpeaks and held up most travel between Ascalon and the other human nations.",
-				"The exact origins of the dwarven race is unknown, but their legends claim that the Dwarves were forged by their god, the Great Dwarf, on Anvil Rock in the Northern Shiverpeaks. Over time the dwarves laid claim to the Shiverpeak Mountains, forming the Deldrimor nation. Though they traded with the human nations and were on generally good terms, the dwarves largely kept to themselves.",
-				"Sometime years prior to 1072 AE, Dagnar Stonepate, cousin to the ruling king, Jalis Ironhammer, created a splinter faction that opposed the Deldrimor. The Stone Summit was a group of xenophobic radicals who believed that it was the Dwarves' right to rule over all other races. Inevitably the friction between the two groups erupted into a civil war.",
-				"The Dwarves are a mining and smithing centric society with a monarchy.",
-				"Most of the Dwarves follow and worship the Great Dwarf as their creator and god. Outside of their creation legend, it is said that the Great Dwarf taught the Dwarves the fineness of crafting before he departed to the Great Forge, where all Dwarves go when they die. There are also dwarves who worship, or at least revere, Dwayna, Grenth, or the Great Destroyer. The dwarves who worship or revere Dwayna and Grenth only seem to appear during Wintersday. Many within the Stone Summit worship the Great Destroyer.",
-				"There is also a group of Dwarves within Deldrimor known as the Brotherhood of the Dragon who serve the oracle dragon Glint.",
-				"Deldrimor is a kingdom of Dwarves residing in the Shiverpeak Mountains that are ruled by a king. They are very friendly towards other races and passage through the harsh mountain range is welcome to anyone who is a friend of Deldrimor or an enemy to the Stone Summit. They hold a capital in Thunderhead Keep."
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://wiki.guildwars.com/images/2/25/Deldrimor_emblem.jpg"
-					},
-					"credit": "ArenaNet"
-				}
-			]
-		},
-		{
-			"name": "Dwarf (Stone Summit)",
-			"source": "GWP",
-			"entries": [
-				"One of the oldest races on Tyria, the Dwarves are humanoids that are stocky, short, and are almost always bearded. The dwarves live in the Shiverpeak Mountains - specifically the Northern Shiverpeaks and the Southern Shiverpeaks.",
-				"In recent years, the dwarves have been plunged into a civil war between the older Deldrimor dwarves and the recent Stone Summit faction. This war has caused unrest throughout the Shiverpeaks and held up most travel between Ascalon and the other human nations.",
-				"The exact origins of the dwarven race is unknown, but their legends claim that the Dwarves were forged by their god, the Great Dwarf, on Anvil Rock in the Northern Shiverpeaks. Over time the dwarves laid claim to the Shiverpeak Mountains, forming the Deldrimor nation. Though they traded with the human nations and were on generally good terms, the dwarves largely kept to themselves.",
-				"Sometime years prior to 1072 AE, Dagnar Stonepate, cousin to the ruling king, Jalis Ironhammer, created a splinter faction that opposed the Deldrimor. The Stone Summit was a group of xenophobic radicals who believed that it was the Dwarves' right to rule over all other races. Inevitably the friction between the two groups erupted into a civil war.",
-				"The Dwarves are a mining and smithing centric society with a monarchy.",
-				"Most of the Dwarves follow and worship the Great Dwarf as their creator and god. Outside of their creation legend, it is said that the Great Dwarf taught the Dwarves the fineness of crafting before he departed to the Great Forge, where all Dwarves go when they die. There are also dwarves who worship, or at least revere, Dwayna, Grenth, or the Great Destroyer. The dwarves who worship or revere Dwayna and Grenth only seem to appear during Wintersday. Many within the Stone Summit worship the Great Destroyer.",
-				"There is also a group of Dwarves within Deldrimor known as the Brotherhood of the Dragon who serve the oracle dragon Glint.",
-				"The Stone Summit is a xenophobic faction which has recently broken away from the Deldrimor dwarves while being led by Dagnar Stonepate. They have had some recent successes in seizing power and resources from the Deldrimor Dwarves, most notably in claiming the vast mine of Sorrow's Furnace, which became their main base"
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://wiki.guildwars.com/images/5/5a/Concept008.jpg"
-					},
-					"credit": "ArenaNet"
-				}
-			]
-		}
-	],
+	"raceFluff": [],
 	"language": [],
 	"subclass": [],
 	"subclassFeature": [],

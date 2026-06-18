@@ -1135,353 +1135,183 @@
     "legendaryGroup": [],
     "race": [
         {
-            "name": "Norn (Spirit of Bear)",
+            "name": "Norn",
             "source": "GWEotN",
-            "lineage": "VRGR",
-            "creatureTypes": [
-                "humanoid"
-            ],
+            "page": "",
+            "traitTags": [],
             "size": [
                 "M"
             ],
             "speed": 30,
-            "age": {
-                "mature": 20,
-                "max": 120
-            },
-            "traitTags": [
-                "Damage Resistance",
-                "Skill Proficiency"
-            ],
-            "resist": [
-                "cold"
-            ],
-            "skillProficiencies": [
-                {
-                    "intimidation": true
-                }
-            ],
-            "languageProficiencies": [
-                {
-                    "common": true
-                }
-            ],
             "entries": [
                 {
-                    "name": "Age",
                     "type": "entries",
+                    "name": "",
                     "entries": [
-                        "Norn can have long lives, living up to 120 and maintaining their good health and vitality for a long time, though very few die of old age."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Creature Type",
-                    "entries": [
-                        "You are a Humanoid. You are also considered a shapeshifter for any prerequisite or effect that requires you to be a shapeshifter."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Size",
-                    "entries": [
-                        "Norn are around 9 feet tall and have broad builds. Your size is Medium."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Menacing",
-                    "entries": [
-                        "You gain proficiency in the Intimidation skill."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Cold Climate Adaptation",
-                    "entries": [
-                        "You have resistance to cold damage and can't be slowed down or hindered by snowy or icy terrain. "
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Become your Totem",
-                    "entries": [
-                        "Once per Long Rest you can choose to transform into a {@creature Black Bear|XMM} for 1 hour.",
-                        "Wild Shape rules apply."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Bear's Endurance",
-                    "entries": [
-                        "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
-                    ]
-                }
-            ],
-            "hasFluff": true,
-            "hasFluffImages": true
-        },
-        {
-            "name": "Norn (Spirit of Wolf)",
-            "source": "GWEotN",
-            "lineage": "VRGR",
-            "creatureTypes": [
-                "humanoid"
-            ],
-            "size": [
-                "M"
-            ],
-            "speed": 30,
-            "age": {
-                "mature": 20,
-                "max": 120
-            },
-            "traitTags": [
-                "Damage Resistance",
-                "Skill Proficiency"
-            ],
-            "resist": [
-                "cold"
-            ],
-            "skillProficiencies": [
-                {
-                    "intimidation": true
-                }
-            ],
-            "languageProficiencies": [
-                {
-                    "common": true,
-                    "norn": true
-                }
-            ],
-            "entries": [
-                {
-                    "name": "Age",
-                    "type": "entries",
-                    "entries": [
-                        "Norn can have long lives, living up to 120 and maintaining their good health and vitality for a long time, though very few die of old age."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Creature Type",
-                    "entries": [
-                        "You are a Humanoid. You are also considered a shapeshifter for any prerequisite or effect that requires you to be a shapeshifter."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Size",
-                    "entries": [
-                        "Norn are around 9 feet tall and have broad builds. Your size is Medium."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Menacing",
-                    "entries": [
-                        "You gain proficiency in the Intimidation skill."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Cold Climate Adaptation",
-                    "entries": [
-                        "You have resistance to cold damage and can't be slowed down or hindered by snowy or icy terrain. "
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Become your Totem",
-                    "entries": [
-                        "Once per Long Rest you can choose to transform into a {@creature Wolf|XMM} for 1 hour.",
-                        "Wild Shape rules apply."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Wolf's Comradery",
-                    "entries": [
-                        "While within five feet of an ally, you and that ally can give each other the help action as a bonus action instead of an action."
+                        {
+                            "type": "entries",
+                            "name": "Cold Climate Adaptation",
+                            "entries": [
+                                "You have {@variantrule Resistance|XPHB} to Cold damage. Moving through {@variantrule Difficult Terrain|XPHB} caused by ice or snow costs you no extra movement."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "",
+                            "entries": [
+                                ""
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Norn Spirit Animal",
+                            "entries": [
+                                "You revere a specific Spirit Animal that grants you special traits. Choose a Spirit Animal from the Spirit Animal table. You gain the level 1 benefit of that lineage. When you reach levels 3 and 5, your gain additional benefits.",
+                                "If you learn a spell through your lineage the following rules apply: You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).",
+                                {
+                                    "type": "table",
+                                    "name": "Spirit Animal",
+                                    "source": "GW",
+                                    "colLabels": [
+                                        "Lineage",
+                                        "Level 1",
+                                        "Level 3",
+                                        "Level 5"
+                                    ],
+                                    "rows": [
+                                        [
+                                            "Bear",
+                                            "Your {@variantrule Hit Points|XPHB|Hit Point} maximum increases by 1, and it increases by 1 again whenever you gain a level.",
+                                            "You learn the {@spell Polymorph|XPHB} spell. You can only target yourself with it, and you can only transform into Ursidae.",
+                                            "You have proficiency in Strength, Dexterity or Constitution saving throws (choose the proficiency when you select the lineage)."
+                                        ],
+                                        [
+                                            "Dragon",
+                                            "You have {@variantrule Resistance|XPHB} to Acid, Fire, Lightning, Poison, or Thunder damage (choose the resistance when you select the lineage).",
+                                            "You learn the {@spell Polymorph|XPHB} spell. You can only target yourself with it, and you can only transform into Squamata.",
+                                            "While {@variantrule Shape-Shifting|XPHB|Shape Shifted} into a Squamata you have a {@variantrule Fly Speed|XPHB} equal to your {@variantrule Speed|XPHB}."
+                                        ],
+                                        [
+                                            "Owl",
+                                            "You have proficiency in the {@skill Perception} skill. If you already have proficiency, choose a difference skill to have proficiency in.",
+                                            "You learn the {@spell Polymorph|XPHB} spell. You can only target yourself with it, and you can only transform into Strigiformes.",
+                                            "When you fail a Wisdom {@variantrule D20 Test|XPHB} you can expend a {@variantrule Hit Point Dice|XPHB}. Rather then regaining {@variantrule Hit Points|XPHB}, you roll the {@variantrule Hit Point Dice|XPHB} and add the number rolled to the test, potentially turning it into a success. If the test still fails, you regain your {@variantrule Hit Point Dice|XPHB}."
+                                        ],
+                                        [
+                                            "Raven",
+                                            "You have proficiency in the {@skill Investigation} skill. If you already have proficiency, choose a difference skill to have proficiency in.",
+                                            "You learn the {@spell Polymorph|XPHB} spell. You can only target yourself with it, and you can only transform into Corvidae.",
+                                            "When you fail a Intelligence {@variantrule D20 Test|XPHB} you can expend a {@variantrule Hit Point Dice|XPHB}. Rather then regaining {@variantrule Hit Points|XPHB}, you roll the {@variantrule Hit Point Dice|XPHB} and add the number rolled to the test, potentially turning it into a success. If the test still fails, you regain your {@variantrule Hit Point Dice|XPHB}."
+                                        ],
+                                        [
+                                            "Snow Leopard",
+                                            "You have proficiency in the {@skill Stealth} skill. If you already have proficiency, choose a difference skill to have proficiency in.",
+                                            "You learn the {@spell Polymorph|XPHB} spell. You can only target yourself with it, and you can only transform into Panthera.",
+                                            "When you fail a Dexterity {@variantrule D20 Test|XPHB} you can expend a {@variantrule Hit Point Dice|XPHB}. Rather then regaining {@variantrule Hit Points|XPHB}, you roll the {@variantrule Hit Point Dice|XPHB} and add the number rolled to the test, potentially turning it into a success. If the test still fails, you regain your {@variantrule Hit Point Dice|XPHB}."
+                                        ],
+                                        [
+                                            "Wolf",
+                                            "Your {@variantrule Speed|XPHB} increases to 35 feet.",
+                                            "You learn the {@spell Polymorph|XPHB} spell. You can only target yourself with it, and you can only transform into Canis Lupus.",
+                                            "You have {@variantrule Advantage|XPHB} on an attack against a creature if at least one of your allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition."
+                                        ]
+                                    ]
+                                }
+                            ]
+                        }
                     ]
                 }
             ],
-            "hasFluff": true,
-            "hasFluffImages": true
-        },
-        {
-            "name": "Norn (Spirit of Owl)",
-            "source": "GWEotN",
-            "lineage": "VRGR",
-            "creatureTypes": [
-                "humanoid"
-            ],
-            "size": [
-                "M"
-            ],
-            "speed": 30,
-            "age": {
-                "mature": 20,
-                "max": 120
-            },
-            "traitTags": [
-                "Damage Resistance",
-                "Skill Proficiency"
-            ],
-            "resist": [
-                "cold"
-            ],
-            "skillProficiencies": [
-                {
-                    "intimidation": true
-                }
-            ],
-            "languageProficiencies": [
-                {
-                    "common": true
-                }
-            ],
-            "entries": [
-                {
-                    "name": "Age",
-                    "type": "entries",
-                    "entries": [
-                        "Norn can have long lives, living up to 120 and maintaining their good health and vitality for a long time, though very few die of old age."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Creature Type",
-                    "entries": [
-                        "You are a Humanoid. You are also considered a shapeshifter for any prerequisite or effect that requires you to be a shapeshifter."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Size",
-                    "entries": [
-                        "Norn are around 9 feet tall and have broad builds. Your size is Medium."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Menacing",
-                    "entries": [
-                        "You gain proficiency in the Intimidation skill."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Cold Climate Adaptation",
-                    "entries": [
-                        "You have resistance to cold damage and can't be slowed down or hindered by snowy or icy terrain. "
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Become your Totem",
-                    "entries": [
-                        "Once per Long Rest you can choose to transform into an {@creature Owl|XMM} for 1 hour.",
-                        "Wild Shape rules apply."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Owl's Wisdom",
-                    "entries": [
-                        "When failing a Wisdom d20 test you can add a d4 to that roll as a reaction. You can use this reaction a number of times equal to your proficiency bonus and you regain all expended uses when you finish a long rest."
-                    ]
-                }
-            ],
-            "hasFluff": true,
-            "hasFluffImages": true
-        },
-        {
-            "name": "Norn (Spirit of Raven)",
-            "source": "GWEotN",
-            "lineage": "VRGR",
-            "creatureTypes": [
-                "humanoid"
-            ],
-            "size": [
-                "M"
-            ],
-            "speed": 30,
-            "age": {
-                "mature": 20,
-                "max": 120
-            },
-            "traitTags": [
-                "Damage Resistance",
-                "Skill Proficiency"
-            ],
-            "resist": [
-                "cold"
-            ],
-            "skillProficiencies": [
-                {
-                    "intimidation": true
-                }
-            ],
-            "languageProficiencies": [
-                {
-                    "common": true
-                }
-            ],
-            "entries": [
-                {
-                    "name": "Age",
-                    "type": "entries",
-                    "entries": [
-                        "Norn can have long lives, living up to 120 and maintaining their good health and vitality for a long time, though very few die of old age."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Creature Type",
-                    "entries": [
-                        "You are a Humanoid. You are also considered a shapeshifter for any prerequisite or effect that requires you to be a shapeshifter."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Size",
-                    "entries": [
-                        "Norn are around 9 feet tall and have broad builds. Your size is Medium."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Menacing",
-                    "entries": [
-                        "You gain proficiency in the Intimidation skill."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Cold Climate Adaptation",
-                    "entries": [
-                        "You have resistance to cold damage and can't be slowed down or hindered by snowy or icy terrain. "
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Become your Totem",
-                    "entries": [
-                        "Once per Long Rest you can choose to transform into a {@creature Raven|XMM} for 1 hour.",
-                        "Wild Shape rules apply."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Raven's Cunning",
-                    "entries": [
-                        "When rolling initiative you can add your Intelligence ability modifier in addition to your Dexterity ability modifier to it."
-                    ]
-                }
-            ],
-            "hasFluff": true,
-            "hasFluffImages": true
+            "fluff": {
+                "entries": [
+                    "The Norn are a race of nine-foot-tall warriors who live in the northernmost Shiverpeaks. They revel in the harsh climes, leading dangerous lives among savage beasts. These mighty hunters are not organized into a single nation. Instead, those who display exceptional strength and prowess in battle establish homesteads, though they are certainly not considered 'rulers'. They often spend years at a time tracking a particularly strong or clever quarry; they never give up on a battle, a pursuit, or a friend.",
+                    "The Norn revere the spirits of nature—from the wolf to the snow lynx -- but the most powerful of these is the Bear Spirit, who, according to myth, blessed the Norn with the ability to change shape and 'become the bear'.",
+                    "A race of shape-shifting half-giants from the north, the Norn value personal strength, victory, and purifying the soul through battle. They revere the spirits of animals and call on them like shamans.",
+                    "The Norn are a highly independent race with a fighter-centric society, holding strength and prowess in combat above everything else. To a Norn, the greatest shame is not dying in battle, but rather not having the tale of their life, especially death, told. Due to their independence, the Norn are hardly seen in large parties with the exception of great hunts, festivities, and in the larger homesteads like Gunnar's Hold.",
+                    "For the Norn, in order to wed, the couple must be of equal reputation, and marriage symbolizes the combining of their tales. During the wedding, someone must speak on the behalf of the two to show their worth for the other.",
+                    "Norn culture is highly individualistic with a focus on personal success and glory—particularly when gained from the hunt or in a battle. The norn do not fear death as they believe the bold and strong can achieve immortality, but they do fear they will be weak and end up forgotten. As a result each norn seeks to prove themselves, to build their legend through feats of individual valour and great victories. Every norn hopes their legend will be told by the skaald and celebrated at a moot with story and song. Norn usually have a great sense of personal honour, for a norn without respect from others is already forgotten. For many norn, the focus on prestige means they're willing to accept any challenge which will prove their worth. They will never give up on their battle, quarry or friends, even if it means years spent tackling a strong enemy or difficult task. Yet for other norn the pursuit of prestige translates to bragging, bullying, unwise snap decisions and an unwillingness to listen to reason.",
+                    "Norn are a hearty, proud people—quick to anger, but also to forgive. They are, by their nature, a race of optimists, keeping a positive outlook even though they have been driven from their homelands. A setback is seen as just another challenge to overcome. They respect those who can best them in a fight so brawling among norn is common. Drinking alcohol, often to excess, is also a large part of norn culture. Being drunk and fighting is not an uncommon combination, for example, norn alemoots feature competitions of 'skill' which require the competitors to be very drunk to compete.",
+                    "A norn might proudly trace their worthy ancestors through many generations and may pass a common name through a family (such as Olaf Olafson, seventh son of Olaf) but a great ancestry and family connections do not grant automatic respect to a norn. Everyone is judged not by their lineage or associated group but by what deeds they have done. There is no such thing as infamy to the norn; they are often tolerant of an individual to whom other races might treat with hostility by association.",
+                    {
+                        "type": "section",
+                        "name": "Bear",
+                        "entries": [
+                            "As the Spirit of ferocity and confidence and the natural embodiment of all bears, Bear is the most revered of all the Spirits of the Wild and is said to be an icon of strength, insight, and wisdom. According to ancient myths, she bestowed the norn with the totem ability to Become the Bear. The norn view Bear as both a Mother who protects her cubs and a Sister who helps people find their inner strength. She is said to give norn the power to face all odds."
+                        ]
+                    },
+                    {
+                        "type": "section",
+                        "name": "Owl",
+                        "entries": [
+                            "As the natural embodiment of all owls, Owl was revered as one of the Spirits of the Wild among the norn. Although she was a gentle Spirit who embodied home and hearth, she was also a silent and clever predator with ambush-like swiftness and precision. Helping the sick and wounded pleased her. Owl put her family's needs and safety above all else, often teaching others that the purpose of the hunt was not just to kill but also to provide and protect. Tales about Owl depict her offering her wisdom to both norn and her fellow Spirits of the Wild. "
+                        ]
+                    },
+                    {
+                        "type": "section",
+                        "name": "Raven",
+                        "entries": [
+                            "As the Spirit of knowledge and foresight and the natural embodiment of ravens, Raven is said to be a trickster who is fond of riddles and wordplay and likes to test the wits of his followers and anyone else who wishes to uncover his secrets. He calls his followers fledglings, inspires artists, and also favours acts of kindness towards ravens who are viewed as his flock. In some cases Raven is believed to personally come to take the life of a norn who was about to die and guide the soul to the Mists.",
+                            "The norn believe that Raven sees and knows all, and requires nothing but the petitioner's promise to always seek wisdom to grant them his blessing of swiftness. He only views someone unworthy in his eyes if the person does not learn from their mistakes, and he rewards the clever, the sincere, and those who seek out new experiences such as travelling the world. Although Raven represents the facets of mind that grant beings the vision to see and the wisdom to understand, his teachings also contain a darker side which some of his wayward shamans would cruelly embrace in their quest for knowledge and power at the expense of others."
+                        ]
+                    },
+                    {
+                        "type": "section",
+                        "name": "Snow Leopard",
+                        "entries": [
+                            "Snow Leopard, also known as Spirit of Snow Leopard or Snow Leopard Spirit, is a Great Spirit of the Wild and the natural embodiment of all snow leopards. She is revered by the norn, who build shrines and lodges to honor her, the most notable being the Snow Leopard Lodge. According to her Speakers, Snow Leopard is dedicated to stealth and prowess on the hunt, as well as independence. She reminds us that sometimes the best approach is the one least expected. She is also associated with strategy, laughter in the face of danger, and is considered to be solitary."
+                        ]
+                    },
+                    {
+                        "type": "section",
+                        "name": "Wolf",
+                        "entries": [
+                            "As the Spirit of teamwork, friendship, family, and the natural embodiment of all wolves, Wolf is said to be dedicated to brotherhood as he imparts the virtues of loyalty, ferocity, and strength in numbers. He is revered as a masculine spirit, and the norn call him their brother, son, father, and uncle when they ask for his blessing. According to old tales, Owl taught Wolf how his hunting would be for naught if his family dined alone, making Wolf heed Owl's wisdom as he returned to his cubs. Although in some cases Raven was believed to personally come to take the life of a norn who was about to die and guide the soul to the Mists, Wolf was also known to do the same to people who walked in his footsteps."
+                        ]
+                    }
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/d/db/Norn_concept_art_4.jpg"
+                        },
+                        "credit": "Kekai Kotaki"
+                    },
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars.com/images/a/ac/%22Jora%22_concept_art.jpg"
+                        },
+                        "credit": "Kekai Kotaki"
+                    },
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars2.com/images/d/d3/Norn_fighter_concept_art.jpg"
+                        },
+                        "credit": "Hyojin Ahn"
+                    },
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars2.com/images/e/eb/Norn_raven.jpg"
+                        },
+                        "credit": "Kekai Kotaki"
+                    },
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://wiki.guildwars2.com/images/8/81/Eir_01_concept_art.jpg"
+                        },
+                        "credit": "Kekai Kotaki"
+                    }
+                ]
+            }
         },
         {
             "name": "Charr (Blood Legion)",
@@ -2004,139 +1834,6 @@
         }
     ],
     "raceFluff": [
-        {
-            "name": "Norn (Spirit of Bear)",
-            "source": "GWEotN",
-            "entries": [
-                "The Norn are a race of nine-foot-tall warriors who live in the northernmost Shiverpeaks. They revel in the harsh climes, leading dangerous lives among savage beasts. These mighty hunters are not organized into a single nation. Instead, those who display exceptional strength and prowess in battle establish homesteads, though they are certainly not considered 'rulers'. They often spend years at a time tracking a particularly strong or clever quarry; they never give up on a battle, a pursuit, or a friend.",
-                "The Norn revere the spirits of nature—from the wolf to the snow lynx -- but the most powerful of these is the Bear Spirit, who, according to myth, blessed the Norn with the ability to change shape and 'become the bear'.",
-                "A race of shape-shifting half-giants from the north, the Norn value personal strength, victory, and purifying the soul through battle. They revere the spirits of animals and call on them like shamans.",
-                "The Norn are a highly independent race with a fighter-centric society, holding strength and prowess in combat above everything else. To a Norn, the greatest shame is not dying in battle, but rather not having the tale of their life, especially death, told. Due to their independence, the Norn are hardly seen in large parties with the exception of great hunts, festivities, and in the larger homesteads like Gunnar's Hold.",
-                "For the Norn, in order to wed, the couple must be of equal reputation, and marriage symbolizes the combining of their tales. During the wedding, someone must speak on the behalf of the two to show their worth for the other.",
-                "Norn culture is highly individualistic with a focus on personal success and glory—particularly when gained from the hunt or in a battle. The norn do not fear death as they believe the bold and strong can achieve immortality, but they do fear they will be weak and end up forgotten. As a result each norn seeks to prove themselves, to build their legend through feats of individual valour and great victories. Every norn hopes their legend will be told by the skaald and celebrated at a moot with story and song. Norn usually have a great sense of personal honour, for a norn without respect from others is already forgotten. For many norn, the focus on prestige means they're willing to accept any challenge which will prove their worth. They will never give up on their battle, quarry or friends, even if it means years spent tackling a strong enemy or difficult task. Yet for other norn the pursuit of prestige translates to bragging, bullying, unwise snap decisions and an unwillingness to listen to reason.",
-                "Norn are a hearty, proud people—quick to anger, but also to forgive. They are, by their nature, a race of optimists, keeping a positive outlook even though they have been driven from their homelands. A setback is seen as just another challenge to overcome. They respect those who can best them in a fight so brawling among norn is common. Drinking alcohol, often to excess, is also a large part of norn culture. Being drunk and fighting is not an uncommon combination, for example, norn alemoots feature competitions of 'skill' which require the competitors to be very drunk to compete.",
-                "A norn might proudly trace their worthy ancestors through many generations and may pass a common name through a family (such as Olaf Olafson, seventh son of Olaf) but a great ancestry and family connections do not grant automatic respect to a norn. Everyone is judged not by their lineage or associated group but by what deeds they have done. There is no such thing as infamy to the norn; they are often tolerant of an individual to whom other races might treat with hostility by association.",
-                "As the Spirit of ferocity and confidence and the natural embodiment of all bears, Bear is the most revered of all the Spirits of the Wild and is said to be an icon of strength, insight, and wisdom. According to ancient myths, she bestowed the norn with the totem ability to Become the Bear. The norn view Bear as both a Mother who protects her cubs and a Sister who helps people find their inner strength. She is said to give norn the power to face all odds."
-            ],
-            "images": [
-                {
-                    "type": "image",
-                    "href": {
-                        "type": "external",
-                        "url": "https://wiki.guildwars.com/images/d/db/Norn_concept_art_4.jpg"
-                    },
-                    "credit": "Kekai Kotaki"
-                },
-                {
-                    "type": "image",
-                    "href": {
-                        "type": "external",
-                        "url": "https://wiki.guildwars.com/images/a/ac/%22Jora%22_concept_art.jpg"
-                    },
-                    "credit": "Kekai Kotaki"
-                }
-            ]
-        },
-        {
-            "name": "Norn (Spirit of Wolf)",
-            "source": "GWEotN",
-            "entries": [
-                "The Norn are a race of nine-foot-tall warriors who live in the northernmost Shiverpeaks. They revel in the harsh climes, leading dangerous lives among savage beasts. These mighty hunters are not organized into a single nation. Instead, those who display exceptional strength and prowess in battle establish homesteads, though they are certainly not considered 'rulers'. They often spend years at a time tracking a particularly strong or clever quarry; they never give up on a battle, a pursuit, or a friend.",
-                "The Norn revere the spirits of nature—from the wolf to the snow lynx -- but the most powerful of these is the Bear Spirit, who, according to myth, blessed the Norn with the ability to change shape and 'become the bear'.",
-                "A race of shape-shifting half-giants from the north, the Norn value personal strength, victory, and purifying the soul through battle. They revere the spirits of animals and call on them like shamans.",
-                "The Norn are a highly independent race with a fighter-centric society, holding strength and prowess in combat above everything else. To a Norn, the greatest shame is not dying in battle, but rather not having the tale of their life, especially death, told. Due to their independence, the Norn are hardly seen in large parties with the exception of great hunts, festivities, and in the larger homesteads like Gunnar's Hold.",
-                "For the Norn, in order to wed, the couple must be of equal reputation, and marriage symbolizes the combining of their tales. During the wedding, someone must speak on the behalf of the two to show their worth for the other.",
-                "Norn culture is highly individualistic with a focus on personal success and glory—particularly when gained from the hunt or in a battle. The norn do not fear death as they believe the bold and strong can achieve immortality, but they do fear they will be weak and end up forgotten. As a result each norn seeks to prove themselves, to build their legend through feats of individual valour and great victories. Every norn hopes their legend will be told by the skaald and celebrated at a moot with story and song. Norn usually have a great sense of personal honour, for a norn without respect from others is already forgotten. For many norn, the focus on prestige means they're willing to accept any challenge which will prove their worth. They will never give up on their battle, quarry or friends, even if it means years spent tackling a strong enemy or difficult task. Yet for other norn the pursuit of prestige translates to bragging, bullying, unwise snap decisions and an unwillingness to listen to reason.",
-                "Norn are a hearty, proud people—quick to anger, but also to forgive. They are, by their nature, a race of optimists, keeping a positive outlook even though they have been driven from their homelands. A setback is seen as just another challenge to overcome. They respect those who can best them in a fight so brawling among norn is common. Drinking alcohol, often to excess, is also a large part of norn culture. Being drunk and fighting is not an uncommon combination, for example, norn alemoots feature competitions of 'skill' which require the competitors to be very drunk to compete.",
-                "A norn might proudly trace their worthy ancestors through many generations and may pass a common name through a family (such as Olaf Olafson, seventh son of Olaf) but a great ancestry and family connections do not grant automatic respect to a norn. Everyone is judged not by their lineage or associated group but by what deeds they have done. There is no such thing as infamy to the norn; they are often tolerant of an individual to whom other races might treat with hostility by association.",
-                "As the Spirit of teamwork, friendship, family, and the natural embodiment of all wolves, Wolf is said to be dedicated to brotherhood as he imparts the virtues of loyalty, ferocity, and strength in numbers. He is revered as a masculine spirit, and the norn call him their brother, son, father, and uncle when they ask for his blessing. According to old tales, Owl taught Wolf how his hunting would be for naught if his family dined alone, making Wolf heed Owl's wisdom as he returned to his cubs. Although in some cases Raven was believed to personally come to take the life of a norn who was about to die and guide the soul to the Mists, Wolf was also known to do the same to people who walked in his footsteps."
-            ],
-            "images": [
-                {
-                    "type": "image",
-                    "href": {
-                        "type": "external",
-                        "url": "https://wiki.guildwars.com/images/d/db/Norn_concept_art_4.jpg"
-                    },
-                    "credit": "Kekai Kotaki"
-                },
-                {
-                    "type": "image",
-                    "href": {
-                        "type": "external",
-                        "url": "https://wiki.guildwars2.com/images/8/81/Eir_01_concept_art.jpg"
-                    },
-                    "credit": "Kekai Kotaki"
-                }
-            ]
-        },
-        {
-            "name": "Norn (Spirit of Owl)",
-            "source": "GWEotN",
-            "entries": [
-                "The Norn are a race of nine-foot-tall warriors who live in the northernmost Shiverpeaks. They revel in the harsh climes, leading dangerous lives among savage beasts. These mighty hunters are not organized into a single nation. Instead, those who display exceptional strength and prowess in battle establish homesteads, though they are certainly not considered 'rulers'. They often spend years at a time tracking a particularly strong or clever quarry; they never give up on a battle, a pursuit, or a friend.",
-                "The Norn revere the spirits of nature—from the wolf to the snow lynx -- but the most powerful of these is the Bear Spirit, who, according to myth, blessed the Norn with the ability to change shape and 'become the bear'.",
-                "A race of shape-shifting half-giants from the north, the Norn value personal strength, victory, and purifying the soul through battle. They revere the spirits of animals and call on them like shamans.",
-                "The Norn are a highly independent race with a fighter-centric society, holding strength and prowess in combat above everything else. To a Norn, the greatest shame is not dying in battle, but rather not having the tale of their life, especially death, told. Due to their independence, the Norn are hardly seen in large parties with the exception of great hunts, festivities, and in the larger homesteads like Gunnar's Hold.",
-                "For the Norn, in order to wed, the couple must be of equal reputation, and marriage symbolizes the combining of their tales. During the wedding, someone must speak on the behalf of the two to show their worth for the other.",
-                "Norn culture is highly individualistic with a focus on personal success and glory—particularly when gained from the hunt or in a battle. The norn do not fear death as they believe the bold and strong can achieve immortality, but they do fear they will be weak and end up forgotten. As a result each norn seeks to prove themselves, to build their legend through feats of individual valour and great victories. Every norn hopes their legend will be told by the skaald and celebrated at a moot with story and song. Norn usually have a great sense of personal honour, for a norn without respect from others is already forgotten. For many norn, the focus on prestige means they're willing to accept any challenge which will prove their worth. They will never give up on their battle, quarry or friends, even if it means years spent tackling a strong enemy or difficult task. Yet for other norn the pursuit of prestige translates to bragging, bullying, unwise snap decisions and an unwillingness to listen to reason.",
-                "Norn are a hearty, proud people—quick to anger, but also to forgive. They are, by their nature, a race of optimists, keeping a positive outlook even though they have been driven from their homelands. A setback is seen as just another challenge to overcome. They respect those who can best them in a fight so brawling among norn is common. Drinking alcohol, often to excess, is also a large part of norn culture. Being drunk and fighting is not an uncommon combination, for example, norn alemoots feature competitions of 'skill' which require the competitors to be very drunk to compete.",
-                "A norn might proudly trace their worthy ancestors through many generations and may pass a common name through a family (such as Olaf Olafson, seventh son of Olaf) but a great ancestry and family connections do not grant automatic respect to a norn. Everyone is judged not by their lineage or associated group but by what deeds they have done. There is no such thing as infamy to the norn; they are often tolerant of an individual to whom other races might treat with hostility by association.",
-                "As the natural embodiment of all owls, Owl was revered as one of the Spirits of the Wild among the norn. Although she was a gentle Spirit who embodied home and hearth, she was also a silent and clever predator with ambush-like swiftness and precision. Helping the sick and wounded pleased her. Owl put her family's needs and safety above all else, often teaching others that the purpose of the hunt was not just to kill but also to provide and protect. Tales about Owl depict her offering her wisdom to both norn and her fellow Spirits of the Wild. "
-            ],
-            "images": [
-                {
-                    "type": "image",
-                    "href": {
-                        "type": "external",
-                        "url": "https://wiki.guildwars.com/images/d/db/Norn_concept_art_4.jpg"
-                    },
-                    "credit": "Kekai Kotaki"
-                },
-                {
-                    "type": "image",
-                    "href": {
-                        "type": "external",
-                        "url": "https://wiki.guildwars2.com/images/d/d3/Norn_fighter_concept_art.jpg"
-                    },
-                    "credit": "Hyojin Ahn"
-                }
-            ]
-        },
-        {
-            "name": "Norn (Spirit of Raven)",
-            "source": "GWEotN",
-            "entries": [
-                "The Norn are a race of nine-foot-tall warriors who live in the northernmost Shiverpeaks. They revel in the harsh climes, leading dangerous lives among savage beasts. These mighty hunters are not organized into a single nation. Instead, those who display exceptional strength and prowess in battle establish homesteads, though they are certainly not considered 'rulers'. They often spend years at a time tracking a particularly strong or clever quarry; they never give up on a battle, a pursuit, or a friend.",
-                "The Norn revere the spirits of nature—from the wolf to the snow lynx -- but the most powerful of these is the Bear Spirit, who, according to myth, blessed the Norn with the ability to change shape and 'become the bear'.",
-                "A race of shape-shifting half-giants from the north, the Norn value personal strength, victory, and purifying the soul through battle. They revere the spirits of animals and call on them like shamans.",
-                "The Norn are a highly independent race with a fighter-centric society, holding strength and prowess in combat above everything else. To a Norn, the greatest shame is not dying in battle, but rather not having the tale of their life, especially death, told. Due to their independence, the Norn are hardly seen in large parties with the exception of great hunts, festivities, and in the larger homesteads like Gunnar's Hold.",
-                "For the Norn, in order to wed, the couple must be of equal reputation, and marriage symbolizes the combining of their tales. During the wedding, someone must speak on the behalf of the two to show their worth for the other.",
-                "Norn culture is highly individualistic with a focus on personal success and glory—particularly when gained from the hunt or in a battle. The norn do not fear death as they believe the bold and strong can achieve immortality, but they do fear they will be weak and end up forgotten. As a result each norn seeks to prove themselves, to build their legend through feats of individual valour and great victories. Every norn hopes their legend will be told by the skaald and celebrated at a moot with story and song. Norn usually have a great sense of personal honour, for a norn without respect from others is already forgotten. For many norn, the focus on prestige means they're willing to accept any challenge which will prove their worth. They will never give up on their battle, quarry or friends, even if it means years spent tackling a strong enemy or difficult task. Yet for other norn the pursuit of prestige translates to bragging, bullying, unwise snap decisions and an unwillingness to listen to reason.",
-                "Norn are a hearty, proud people—quick to anger, but also to forgive. They are, by their nature, a race of optimists, keeping a positive outlook even though they have been driven from their homelands. A setback is seen as just another challenge to overcome. They respect those who can best them in a fight so brawling among norn is common. Drinking alcohol, often to excess, is also a large part of norn culture. Being drunk and fighting is not an uncommon combination, for example, norn alemoots feature competitions of 'skill' which require the competitors to be very drunk to compete.",
-                "A norn might proudly trace their worthy ancestors through many generations and may pass a common name through a family (such as Olaf Olafson, seventh son of Olaf) but a great ancestry and family connections do not grant automatic respect to a norn. Everyone is judged not by their lineage or associated group but by what deeds they have done. There is no such thing as infamy to the norn; they are often tolerant of an individual to whom other races might treat with hostility by association.",
-                "As the Spirit of knowledge and foresight and the natural embodiment of ravens, Raven is said to be a trickster who is fond of riddles and wordplay and likes to test the wits of his followers and anyone else who wishes to uncover his secrets. He calls his followers fledglings, inspires artists, and also favours acts of kindness towards ravens who are viewed as his flock. In some cases Raven is believed to personally come to take the life of a norn who was about to die and guide the soul to the Mists.",
-                "The norn believe that Raven sees and knows all, and requires nothing but the petitioner's promise to always seek wisdom to grant them his blessing of swiftness. He only views someone unworthy in his eyes if the person does not learn from their mistakes, and he rewards the clever, the sincere, and those who seek out new experiences such as travelling the world. Although Raven represents the facets of mind that grant beings the vision to see and the wisdom to understand, his teachings also contain a darker side which some of his wayward shamans would cruelly embrace in their quest for knowledge and power at the expense of others."
-            ],
-            "images": [
-                {
-                    "type": "image",
-                    "href": {
-                        "type": "external",
-                        "url": "https://wiki.guildwars.com/images/d/db/Norn_concept_art_4.jpg"
-                    },
-                    "credit": "Kekai Kotaki"
-                },
-                {
-                    "type": "image",
-                    "href": {
-                        "type": "external",
-                        "url": "https://wiki.guildwars2.com/images/e/eb/Norn_raven.jpg"
-                    },
-                    "credit": "Kekai Kotaki"
-                }
-            ]
-        },
         {
             "name": "Charr (Blood Legion)",
             "source": "GWEotN",

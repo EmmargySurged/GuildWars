@@ -88639,119 +88639,168 @@
 	],
 	"race": [
 		{
-			"name": "Human (Ascalonian)",
+			"name": "Human",
 			"source": "GWP",
-			"lineage": "VRGR",
+			"page": "",
+			"traitTags": [],
+			"size": [
+				"S",
+				"M"
+			],
+			"speed": 30,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Resilience",
+							"entries": [
+								"After you fail a {@variantrule D20 Test|XPHB}, you can gain a {@variantrule Heroic Inspiration|XPHB}, if you do not already have one. You can use this feature a number of times equal to your {@table Proficiency Bonus|XPHB}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Versitility",
+							"entries": [
+								"You gain {@variantrule Proficiency|XPHB} in two {@variantrule Skill|XPHB|Skills} or Tools of your choice."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Human Lineage",
+							"entries": [
+								"You part of a lineage that grants you special traits. Choose a lineage from the Human Lineages table. You gain the level 1 benefit of that lineage. When you reach levels 3 and 5, your gain additional benefits.",
+								"If you learn a spell through your lineage the following rules apply: You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level. Whenever you finish a {@variantrule Long Rest|XPHB} you can replace that spell with a different spell of the same level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).",
+								{
+									"type": "table",
+									"name": "Human Lineages",
+									"source": "GW",
+									"colLabels": [
+										"Lineage",
+										"Level 1",
+										"Level 3",
+										"Level 5"
+									],
+									"rows": [
+										[
+											"Ascalonian",
+											"Your {@variantrule Hit Points|XPHB|Hit Point} maximum increases by 1, and it increases by 1 again whenever you gain a level.",
+											"You gain a +1 bonus to your {@variantrule Armor Class|XPHB}.",
+											"When you roll {@variantrule Initiative|XPHB} you can expend a {@variantrule Heroic Inspiration|XPHB} to gain advantage on the roll and gain a bonus to it equal to your {@table Proficiency Bonus|XPHB}."
+										],
+										[
+											"Krytan",
+											"Your {@variantrule Speed|XPHB} increases to 35 feet.",
+											"Moving through nonmagical {@variantrule Difficult Terrain|XPHB} costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.",
+											"When you use your {@variantrule Speed|XPHB} during your turn you can expend a {@variantrule Heroic Inspiration|XPHB} to gain a bonus to your {@variantrule Speed|XPHB} until the start of your next turn. The bonus equals ten times your {@table Proficiency Bonus|XPHB}."
+										],
+										[
+											"Orrian",
+											"You know the {@spell Prestidigitation|XPHB} cantrip.",
+											"You learn the {@spell Magic Missile|XPHB} spell.",
+											"You learn the {@spell Misty Step|XPHB} spell."
+										]
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Humans are one of the most widespread and influential species in the world of Tyria. They are spread throughout the world of Tyria, including Cantha, Elona, and the eponymous continent Tyria, though it is implied they live further south than Cantha, which is where they may have originated.",
+					"Wherever they originated, humans are not native to the world as they were brought there by the Six Gods. The gods themselves only predate humans by a short period of time.",
+					"Humans arrived on the Tyrian continent in 205 BE. Since their arrival, three major human polities have arisen, Ascalon, Kryta, and Orr. Orr was the first region colonised.",
+					"Before the Exodus of the Gods, the gods lived in Arah (nicknamed the City of the Gods) and aided humans in numerous tasks such as pushing the Charr north so that the settlements that would become known as Ascalon could be established. With their aid, King Doric became the first ruler of all human realms. It was he who prayed to Dwayna to stop a war in 115 BE; it was he who pleaded to the gods a year before the exodus to stop the many conflicts caused by the gift of magic being given too freely; and it is his blood that seals the bloodstones.",
+					"After the creation of the bloodstones, the colonies of Ascalon and Kryta gradually split off into their own kingdoms - turning the unified human kingdom into three. During this time, open conflicts raged between the various human guilds and are now referred to as the Guild Wars. The Guild Wars were so widespread that they drew the Tyrian human kingdoms into war with each other in order to stop the battling in their own streets. It took the foreign threat of Charr to finally bring an end to the internecine conflict. The event now known as the Charr invasion ravaged the three human kingdoms, forcing them to put aside their squabbling or face destruction.",
+					{
+						"type": "section",
+						"name": "Ascalonian",
+						"entries": [
+							"Ascalon is a land filled with wheat fields, blossoming flowers, and natural irrigation throughout the fertile landscape. Ascalon is located between the Shiverpeak Mountains and the Blazeridge Mountains.",
+							"During the last Guild War, the people of Rin looked to Adelbern to lead them; he was crowned king due to his feats and popularity. Duke Barradin was the next heir to the throne before Adelbern was crowned and, as such, some of his supporters were not happy when a soldier was named instead. Some royalists, including nobles and members of the court, became bandits and took to the countryside.",
+							"Even though Ascalon is a beautiful place, it is riddled with threats from Skale, Grawl, bandits, and the Charr."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Krytan",
+						"entries": [
+							"Kryta was the third and last human kingdom to be established in Tyria. Originally a colony of Elona, it was established in 300 AE, it gained its independence in 358 AE. The kingdom's royal family are descendants of King Doric, however it is not known how far Doric's lineage goes into the Krytan royalty. There have been few notable members of this royalty, outside the last king, King Jadon, the only known monarch is Mad King Thorn. Those of the royal bloodline are buried in the Mausoleum, which is guarded by the undead dragon Rotscale.",
+							"Kryta is home to many important landmarks, such as the Wizard's Tower and the Temple of the Ages. It is also the origin of the now-mysterious Druids, former Krytans who left into the Maguuma Jungle to the west long ago.",
+							"Sometime in the distant past, several large watchtowers were built along the northern coast to defend Kryta against a threat to the north."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Orrian",
+						"entries": [
+							"Situated on a peninsula south of Ascalon and west of the Crystal Desert, Orr was a vibrant, proud, and prosperous nation. Its citizens were the favoured of the gods, living in the shadows of Arah, the deserted city once inhabited by the likes of Melandru, Dwayna, and Balthazar. Deeply spiritual, the Orrians looked after the buildings and structures left behind when the gods left Tyria, caring for them in the hopes that one day, the divine beings who created magic and bestowed it upon the world would return.",
+							"The Orrians were a peaceful people, hoping only to do their duty toward their gods and content to be rewarded in either this life or the next. When the guilds began feuding, Orr as a nation tried to stay out of the conflict. This was not the sort of struggle that entire kingdoms got involved in. But when the strife overflowed into armed conflict, and guilds from the other human nations began fighting in the streets of Arah, Orr rose to defend itself and the city of the gods.",
+							"Soon after Orr mobilised its armies, Kryta and Ascalon did as well, and what had started as a dispute between localised groups became an all-out war. The Guild Wars raged for nearly fifty years. During that time, none of the three human empires was able to assert dominance over either of the other two. While Ascalon, Orr, and Kryta were busy fighting with each other, they became blind to the threat from the north—the Charr.",
+							"The Kingdom of Orr was the first human kingdom established on the continent of Tyria, created by both god and man. From 100 BE, the kingdom was ruled alongside Ascalon by King Doric until his death in 1BE. Orr gained its independence in the year 2 AE. At the time of the Second Great Corsair War and King Zoran's reign, Orrian territory is known to have extended into the Tarnished Coast, and included the caverns now known as the Shards of Orr. Orr was once the most vibrant, proud, and prosperous human nation in the known world. Its citizens believed themselves to be the favoured of the Six Human Gods, living in the shadows of Arah which was once inhabited by the gods themselves. Orr was known as the nexus of arcane activity and research."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wiki.guildwars2.com/images/e/e2/Human_01_concept_art_%28white%29.jpg"
+						},
+						"credit": "Richard Anderson"
+					}
+				]
+			}
+		},
+		{
+			"name": "Dwarf (Deldrimor)",
+			"source": "GWP",
 			"creatureTypes": [
 				"humanoid"
 			],
 			"size": [
 				"M"
 			],
-			"speed": 30,
+			"speed": 25,
+			"lineage": "VRGR",
 			"age": {
 				"mature": 20,
-				"max": 80
+				"max": 350
 			},
+			"darkvision": 120,
 			"traitTags": [
-				"Spellcasting",
-				"Damage Resistance"
+				"Tool Proficiency",
+				"Weapon Proficiency"
 			],
-			"resist": [
+			"languageProficiencies": [
+				{
+					"common": true,
+					"dwarvish": true
+				}
+			],
+			"toolProficiencies": [
 				{
 					"choose": {
 						"from": [
-							"radiant",
-							"necrotic",
-							"fire",
-							"poison",
-							"acid",
-							"psychic"
-						],
-						"count": 1
+							"smith's tools",
+							"brewer's supplies",
+							"mason's tools"
+						]
 					}
 				}
 			],
-			"additionalSpells": [
+			"weaponProficiencies": [
 				{
-					"innate": {
-						"1": {
-							"rest": {
-								"1": [
-									"Word of Healing|GW"
-								]
-							}
-						}
-					},
-					"known": {
-						"1": [
-							"Aura of Stability|GWEotN#c"
-						]
-					}
-				},
-				{
-					"innate": {
-						"1": {
-							"rest": {
-								"1": [
-									"Life Transfer|GW"
-								]
-							}
-						}
-					},
-					"known": {
-						"1": [
-							"Dark Pact|GW#c"
-						]
-					}
-				},
-				{
-					"innate": {
-						"1": {
-							"rest": {
-								"1": [
-									"Warrior's Endurance|GW"
-								]
-							}
-						}
-					},
-					"known": {
-						"1": [
-							"Sprint|GW#c"
-						]
-					}
-				},
-				{
-					"innate": {
-						"1": {
-							"rest": {
-								"1": [
-									"Spike Trap|GW"
-								]
-							}
-						}
-					},
-					"known": {
-						"1": [
-							"Snare (Guild Wars)|GW#c"
-						]
-					}
-				},
-				{
-					"innate": {
-						"1": {
-							"rest": {
-								"1": [
-									"empathy|GW"
-								]
-							}
-						}
-					},
-					"known": {
-						"1": [
-							"Illusion of Haste|GW#c"
-						]
-					}
+					"battleaxe|phb": true,
+					"handaxe|phb": true,
+					"light hammer|phb": true,
+					"warhammer|phb": true,
+					"simple": true
 				}
 			],
 			"entries": [
@@ -88759,205 +88808,114 @@
 					"name": "Age",
 					"type": "entries",
 					"entries": [
-						"Humans reach adulthood in their late teens and live less than a century."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Creature Type",
-					"entries": [
-						"You are a Humanoid."
+						"Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size",
 					"entries": [
-						"Humans are around 5 1/2 feet tall and have a wide variety of builds. Your size is Medium."
+						"Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium."
 					]
 				},
 				{
-					"type": "entries",
-					"name": "Favoured by the Gods",
+					"name": "Speed",
 					"entries": [
-						"When choosing this species choose a patron god, which gives you a small amount of power in the form a cantrip, a spell and a resistance to a specific damage type. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select this species). You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Short Rest."
-					]
+						"Your speed is not reduced by wearing heavy armor."
+					],
+					"type": "entries"
 				},
 				{
-					"type": "entries",
-					"name": "Dwayna",
+					"name": "Superior Darkvision",
 					"entries": [
-						"",
-						"Cantrip: {@spell Aura of Stability|GW}",
-						"Spell: {@spell Word of Healing|GW}",
-						"Damage Resistance: Radiant"
-					]
+						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					],
+					"type": "entries"
 				},
 				{
-					"type": "entries",
-					"name": "Grenth",
+					"name": "Dwarven Combat Training",
 					"entries": [
-						"",
-						"Cantrip: {@spell Dark Pact|GW}",
-						"Spell: {@spell Life Transfer|GW}",
-						"Damage Resistance: Necrotic"
-					]
+						"You have proficiency with all simple weapons and the {@item battleaxe|phb}, {@item handaxe|phb}, {@item light hammer|phb}, and {@item warhammer|phb}."
+					],
+					"type": "entries"
 				},
 				{
-					"type": "entries",
-					"name": "Balthazar",
+					"name": "Tool Proficiency",
 					"entries": [
-						"",
-						"Cantrip: {@spell Sprint|GW}",
-						"Spell: {@spell Warrior's Endurance|GW}",
-						"Damage Resistance: Fire"
-					]
+						"You gain proficiency with the artisan's tools of your choice: {@item Smith's tools|phb}, {@item brewer's supplies|phb}, or {@item mason's tools|phb}."
+					],
+					"type": "entries"
 				},
 				{
-					"type": "entries",
-					"name": "Melandru",
+					"name": "Invoke the Great Dwarf",
 					"entries": [
-						"",
-						"Cantrip: {@spell Snare (Guild Wars)|GW)}",
-						"Spell: {@spell Spike Trap|GW}",
-						"Damage Resistance: Poison"
-					]
+						"As a reaction when you fail a saving throw you can send out a prayer to the great Dwarf. When you do so you succeed on that saving throw instead. Once you use this feature you can't do so again until you finish a long rest."
+					],
+					"type": "entries"
 				},
 				{
-					"type": "entries",
-					"name": "Lyssa",
+					"name": "Dwarven Toughness",
 					"entries": [
-						"",
-						"Cantrip: {@spell Illusion of Haste|GW}",
-						"Spell: {@spell Expel Hexes|GW}",
-						"Damage Resistance: Psychic"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Battle Ready",
-					"entries": [
-						"When you roll Initiative, you can add your Proficiency Bonus to the roll."
-					]
+						"Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
+					],
+					"type": "entries"
 				}
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
-			"name": "Human (Krytan)",
+			"name": "Dwarf (Stone Summit)",
 			"source": "GWP",
-			"lineage": "VRGR",
 			"creatureTypes": [
 				"humanoid"
 			],
 			"size": [
 				"M"
 			],
-			"speed": 35,
+			"speed": 25,
+			"lineage": "VRGR",
 			"age": {
 				"mature": 20,
-				"max": 80
+				"max": 350
 			},
+			"darkvision": 120,
 			"traitTags": [
-				"Spellcasting",
-				"Damage Resistance"
+				"Tool Proficiency",
+				"Weapon Proficiency"
 			],
-			"resist": [
+			"languageProficiencies": [
+				{
+					"common": true,
+					"dwarvish": true
+				}
+			],
+			"toolProficiencies": [
 				{
 					"choose": {
 						"from": [
-							"radiant",
-							"necrotic",
-							"fire",
-							"poison",
-							"acid",
-							"psychic"
-						],
-						"count": 1
+							"smith's tools",
+							"brewer's supplies",
+							"mason's tools"
+						]
 					}
 				}
 			],
-			"additionalSpells": [
+			"weaponProficiencies": [
 				{
-					"innate": {
-						"1": {
-							"rest": {
-								"1": [
-									"Word of Healing|GW"
-								]
-							}
-						}
-					},
-					"known": {
-						"1": [
-							"Aura of Stability|GWEotN#c"
-						]
-					}
-				},
+					"battleaxe|phb": true,
+					"handaxe|phb": true,
+					"light hammer|phb": true,
+					"warhammer|phb": true,
+					"simple": true
+				}
+			],
+			"armorProficiencies": [
 				{
-					"innate": {
-						"1": {
-							"rest": {
-								"1": [
-									"Life Transfer|GW"
-								]
-							}
-						}
-					},
-					"known": {
-						"1": [
-							"Dark Pact|GW#c"
-						]
-					}
-				},
-				{
-					"innate": {
-						"1": {
-							"rest": {
-								"1": [
-									"Warrior's Endurance|GW"
-								]
-							}
-						}
-					},
-					"known": {
-						"1": [
-							"Sprint|GW#c"
-						]
-					}
-				},
-				{
-					"innate": {
-						"1": {
-							"rest": {
-								"1": [
-									"Spike Trap|GW"
-								]
-							}
-						}
-					},
-					"known": {
-						"1": [
-							"Snare (Guild Wars)|GW#c"
-						]
-					}
-				},
-				{
-					"innate": {
-						"1": {
-							"rest": {
-								"1": [
-									"empathy|GW"
-								]
-							}
-						}
-					},
-					"known": {
-						"1": [
-							"Illusion of Haste|GW#c"
-						]
-					}
+					"light|phb": true,
+					"medium|phb": true,
+					"heavy|phb": true,
+					"shield|phb": true
 				}
 			],
 			"entries": [
@@ -88965,668 +88923,112 @@
 					"name": "Age",
 					"type": "entries",
 					"entries": [
-						"Humans reach adulthood in their late teens and live less than a century."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Creature Type",
-					"entries": [
-						"You are a Humanoid."
+						"Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size",
 					"entries": [
-						"Humans are around 5 1/2 feet tall and have a wide variety of builds. Your size is Medium."
+						"Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium."
 					]
 				},
 				{
-					"type": "entries",
-					"name": "Favoured by the Gods",
+					"name": "Speed",
 					"entries": [
-						"When choosing this species choose a patron god, which gives you a small amount of power in the form a cantrip, a spell and a resistance to a specific damage type. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select this species). You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Short Rest."
-					]
+						"Your speed is not reduced by wearing heavy armor."
+					],
+					"type": "entries"
 				},
 				{
-					"type": "entries",
-					"name": "Dwayna",
+					"name": "Superior Darkvision",
 					"entries": [
-						"",
-						"Cantrip: {@spell Aura of Stability|GW}",
-						"Spell: {@spell Word of Healing|GW}",
-						"Damage Resistance: Radiant"
-					]
+						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					],
+					"type": "entries"
 				},
 				{
-					"type": "entries",
-					"name": "Grenth",
+					"name": "Dwarven Combat Training",
 					"entries": [
-						"",
-						"Cantrip: {@spell Dark Pact|GW}",
-						"Spell: {@spell Life Transfer|GW}",
-						"Damage Resistance: Necrotic"
-					]
+						"You have proficiency with all simple weapons and the {@item battleaxe|phb}, {@item handaxe|phb}, {@item light hammer|phb}, and {@item warhammer|phb}."
+					],
+					"type": "entries"
 				},
 				{
-					"type": "entries",
-					"name": "Balthazar",
+					"name": "Tool Proficiency",
 					"entries": [
-						"",
-						"Cantrip: {@spell Sprint|GW}",
-						"Spell: {@spell Warrior's Endurance|GW}",
-						"Damage Resistance: Fire"
-					]
+						"You gain proficiency with the artisan's tools of your choice: {@item Smith's tools|phb}, {@item brewer's supplies|phb}, or {@item mason's tools|phb}."
+					],
+					"type": "entries"
 				},
 				{
-					"type": "entries",
-					"name": "Melandru",
+					"name": "Invoke the Great Destroyer",
 					"entries": [
-						"",
-						"Cantrip: {@spell Snare (Guild Wars)|GW)}",
-						"Spell: {@spell Spike Trap|GW}",
-						"Damage Resistance: Poison"
-					]
+						"When you take damage, you can send out a prayer to the great Destroyer. When you do so, you can cast {@spell Hellish Rebuke|PHB} at a level equal to your Proficiency Bonus. Once you use this feature, you can't do so again until you finish a long rest."
+					],
+					"type": "entries"
 				},
 				{
-					"type": "entries",
-					"name": "Lyssa",
+					"name": "Dwarven Armor Training",
 					"entries": [
-						"",
-						"Cantrip: {@spell Illusion of Haste|GW}",
-						"Spell: {@spell Expel Hexes|GW}",
-						"Damage Resistance: Psychic"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Swamp Speed",
-					"entries": [
-						"Your base walking speed increases to 35 feet."
-					]
+						"You have proficiency with all armors. If you already have proficiency with all armors, you gain proficiency with two skills of your choice."
+					],
+					"type": "entries"
 				}
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
-		},
-		{
-			"name": "Human (Orrian)",
-			"source": "GWP",
-			"lineage": "VRGR",
-			"creatureTypes": [
-				"humanoid"
-			],
-			"size": [
-				"M"
-			],
-			"speed": 30,
-			"age": {
-				"mature": 20,
-				"max": 80
-			},
-			"traitTags": [
-				"Spellcasting",
-				"Damage Resistance"
-			],
-			"resist": [
-				{
-					"choose": {
-						"from": [
-							"radiant",
-							"necrotic",
-							"fire",
-							"poison",
-							"acid",
-							"psychic"
-						],
-						"count": 2
-					}
-				}
-			],
-			"additionalSpells": [
-				{
-					"innate": {
-						"1": {
-							"rest": {
-								"1": [
-									"Word of Healing|GW"
-								]
-							}
-						}
-					},
-					"known": {
-						"1": [
-							"Aura of Stability|GWEotN#c"
-						]
-					}
-				},
-				{
-					"innate": {
-						"1": {
-							"rest": {
-								"1": [
-									"Life Transfer|GW"
-								]
-							}
-						}
-					},
-					"known": {
-						"1": [
-							"Dark Pact|GW#c"
-						]
-					}
-				},
-				{
-					"innate": {
-						"1": {
-							"rest": {
-								"1": [
-									"Warrior's Endurance|GW"
-								]
-							}
-						}
-					},
-					"known": {
-						"1": [
-							"Sprint|GW#c"
-						]
-					}
-				},
-				{
-					"innate": {
-						"1": {
-							"rest": {
-								"1": [
-									"Spike Trap|GW"
-								]
-							}
-						}
-					},
-					"known": {
-						"1": [
-							"Snare (Guild Wars)|GW#c"
-						]
-					}
-				},
-				{
-					"innate": {
-						"1": {
-							"rest": {
-								"1": [
-									"empathy|GW"
-								]
-							}
-						}
-					},
-					"known": {
-						"1": [
-							"Illusion of Haste|GW#c"
-						]
-					}
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Humans reach adulthood in their late teens and live less than a century."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Creature Type",
-					"entries": [
-						"You are a Humanoid."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Humans are around 5 1/2 feet tall and have a wide variety of builds. Your size is Medium."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Favoured by the Gods",
-					"entries": [
-						"When choosing this species choose a patron god, which gives you a small amount of power in the form a cantrip, a spell and a resistance to a specific damage type. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select this species). You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Short Rest."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Dwayna",
-					"entries": [
-						"",
-						"Cantrip: {@spell Aura of Stability|GW}",
-						"Spell: {@spell Word of Healing|GW}",
-						"Damage Resistance: Radiant"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Grenth",
-					"entries": [
-						"",
-						"Cantrip: {@spell Dark Pact|GW}",
-						"Spell: {@spell Life Transfer|GW}",
-						"Damage Resistance: Necrotic"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Balthazar",
-					"entries": [
-						"",
-						"Cantrip: {@spell Sprint|GW}",
-						"Spell: {@spell Warrior's Endurance|GW}",
-						"Damage Resistance: Fire"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Melandru",
-					"entries": [
-						"",
-						"Cantrip: {@spell Snare (Guild Wars)|GW)}",
-						"Spell: {@spell Spike Trap|GW}",
-						"Damage Resistance: Poison"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Lyssa",
-					"entries": [
-						"",
-						"Cantrip: {@spell Illusion of Haste|GW}",
-						"Spell: {@spell Expel Hexes|GW}",
-						"Damage Resistance: Psychic"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Closer to the Gods",
-					"entries": [
-						"You can choose a second patron god for the Favored by the Gods feature. You can also cast each spell twice per short rest."
-					]
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-        {
-            "name": "Dwarf (Deldrimor)",
-            "source": "GWP",
-            "creatureTypes": [
-                "humanoid"
-            ],
-            "size": [
-                "M"
-            ],
-            "speed": 25,
-            "lineage": "VRGR",
-            "age": {
-                "mature": 20,
-                "max": 350
-            },
-            "darkvision": 120,
-            "traitTags": [
-                "Tool Proficiency",
-                "Weapon Proficiency"
-            ],
-            "languageProficiencies": [
-                {
-                    "common": true,
-                    "dwarvish": true
-                }
-            ],
-            "toolProficiencies": [
-                {
-                    "choose": {
-                        "from": [
-                            "smith's tools",
-                            "brewer's supplies",
-                            "mason's tools"
-                        ]
-                    }
-                }
-            ],
-            "weaponProficiencies": [
-                {
-                    "battleaxe|phb": true,
-                    "handaxe|phb": true,
-                    "light hammer|phb": true,
-                    "warhammer|phb": true,
-                    "simple": true
-                }
-            ],
-            "entries": [
-                {
-                    "name": "Age",
-                    "type": "entries",
-                    "entries": [
-                        "Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Size",
-                    "entries": [
-                        "Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium."
-                    ]
-                },
-                {
-                    "name": "Speed",
-                    "entries": [
-                        "Your speed is not reduced by wearing heavy armor."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Superior Darkvision",
-                    "entries": [
-                        "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Dwarven Combat Training",
-                    "entries": [
-                        "You have proficiency with all simple weapons and the {@item battleaxe|phb}, {@item handaxe|phb}, {@item light hammer|phb}, and {@item warhammer|phb}."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Tool Proficiency",
-                    "entries": [
-                        "You gain proficiency with the artisan's tools of your choice: {@item Smith's tools|phb}, {@item brewer's supplies|phb}, or {@item mason's tools|phb}."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Invoke the Great Dwarf",
-                    "entries": [
-                        "As a reaction when you fail a saving throw you can send out a prayer to the great Dwarf. When you do so you succeed on that saving throw instead. Once you use this feature you can't do so again until you finish a long rest."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Dwarven Toughness",
-                    "entries": [
-                        "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
-                    ],
-                    "type": "entries"
-                }
-            ],
-            "hasFluff": true,
-            "hasFluffImages": true
-        },
-        {
-            "name": "Dwarf (Stone Summit)",
-            "source": "GWP",
-            "creatureTypes": [
-                "humanoid"
-            ],
-            "size": [
-                "M"
-            ],
-            "speed": 25,
-            "lineage": "VRGR",
-            "age": {
-                "mature": 20,
-                "max": 350
-            },
-            "darkvision": 120,
-            "traitTags": [
-                "Tool Proficiency",
-                "Weapon Proficiency"
-            ],
-            "languageProficiencies": [
-                {
-                    "common": true,
-                    "dwarvish": true
-                }
-            ],
-            "toolProficiencies": [
-                {
-                    "choose": {
-                        "from": [
-                            "smith's tools",
-                            "brewer's supplies",
-                            "mason's tools"
-                        ]
-                    }
-                }
-            ],
-            "weaponProficiencies": [
-                {
-                    "battleaxe|phb": true,
-                    "handaxe|phb": true,
-                    "light hammer|phb": true,
-                    "warhammer|phb": true,
-                    "simple": true
-                }
-            ],
-            "armorProficiencies": [
-                {
-                    "light|phb": true,
-                    "medium|phb": true,
-                    "heavy|phb": true,
-                    "shield|phb": true
-                }
-            ],
-            "entries": [
-                {
-                    "name": "Age",
-                    "type": "entries",
-                    "entries": [
-                        "Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Size",
-                    "entries": [
-                        "Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium."
-                    ]
-                },
-                {
-                    "name": "Speed",
-                    "entries": [
-                        "Your speed is not reduced by wearing heavy armor."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Superior Darkvision",
-                    "entries": [
-                        "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Dwarven Combat Training",
-                    "entries": [
-                        "You have proficiency with all simple weapons and the {@item battleaxe|phb}, {@item handaxe|phb}, {@item light hammer|phb}, and {@item warhammer|phb}."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Tool Proficiency",
-                    "entries": [
-                        "You gain proficiency with the artisan's tools of your choice: {@item Smith's tools|phb}, {@item brewer's supplies|phb}, or {@item mason's tools|phb}."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Invoke the Great Destroyer",
-                    "entries": [
-                        "When you take damage, you can send out a prayer to the great Destroyer. When you do so, you can cast {@spell Hellish Rebuke|PHB} at a level equal to your Proficiency Bonus. Once you use this feature, you can't do so again until you finish a long rest."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Dwarven Armor Training",
-                    "entries": [
-                        "You have proficiency with all armors. If you already have proficiency with all armors, you gain proficiency with two skills of your choice."
-                    ],
-                    "type": "entries"
-                }
-            ],
-            "hasFluff": true,
-            "hasFluffImages": true
-        }
+		}
 	],
 	"raceFluff": [
 		{
-			"name": "Human (Ascalonian)",
+			"name": "Dwarf (Deldrimor)",
 			"source": "GWP",
 			"entries": [
-				"Humans are one of the most widespread and influential species in the world of Tyria. They are spread throughout the world of Tyria, including Cantha, Elona, and the eponymous continent Tyria, though it is implied they live further south than Cantha, which is where they may have originated.",
-				"Wherever they originated, humans are not native to the world as they were brought there by the Six Gods. The gods themselves only predate humans by a short period of time.",
-				"Humans arrived on the Tyrian continent in 205 BE. Since their arrival, three major human polities have arisen, Ascalon, Kryta, and Orr. Orr was the first region colonised.",
-				"Before the Exodus of the Gods, the gods lived in Arah (nicknamed the City of the Gods) and aided humans in numerous tasks such as pushing the Charr north so that the settlements that would become known as Ascalon could be established. With their aid, King Doric became the first ruler of all human realms. It was he who prayed to Dwayna to stop a war in 115 BE; it was he who pleaded to the gods a year before the exodus to stop the many conflicts caused by the gift of magic being given too freely; and it is his blood that seals the bloodstones.",
-				"After the creation of the bloodstones, the colonies of Ascalon and Kryta gradually split off into their own kingdoms - turning the unified human kingdom into three. During this time, open conflicts raged between the various human guilds and are now referred to as the Guild Wars. The Guild Wars were so widespread that they drew the Tyrian human kingdoms into war with each other in order to stop the battling in their own streets. It took the foreign threat of Charr to finally bring an end to the internecine conflict. The event now known as the Charr invasion ravaged the three human kingdoms, forcing them to put aside their squabbling or face destruction.",
-				"Ascalon is a land filled with wheat fields, blossoming flowers, and natural irrigation throughout the fertile landscape. Ascalon is located between the Shiverpeak Mountains and the Blazeridge Mountains.",
-				"During the last Guild War, the people of Rin looked to Adelbern to lead them; he was crowned king due to his feats and popularity. Duke Barradin was the next heir to the throne before Adelbern was crowned and, as such, some of his supporters were not happy when a soldier was named instead. Some royalists, including nobles and members of the court, became bandits and took to the countryside.",
-				"Even though Ascalon is a beautiful place, it is riddled with threats from Skale, Grawl, bandits, and the Charr."
+				"One of the oldest races on Tyria, the Dwarves are humanoids that are stocky, short, and are almost always bearded. The dwarves live in the Shiverpeak Mountains - specifically the Northern Shiverpeaks and the Southern Shiverpeaks.",
+				"In recent years, the dwarves have been plunged into a civil war between the older Deldrimor dwarves and the recent Stone Summit faction. This war has caused unrest throughout the Shiverpeaks and held up most travel between Ascalon and the other human nations.",
+				"The exact origins of the dwarven race is unknown, but their legends claim that the Dwarves were forged by their god, the Great Dwarf, on Anvil Rock in the Northern Shiverpeaks. Over time the dwarves laid claim to the Shiverpeak Mountains, forming the Deldrimor nation. Though they traded with the human nations and were on generally good terms, the dwarves largely kept to themselves.",
+				"Sometime years prior to 1072 AE, Dagnar Stonepate, cousin to the ruling king, Jalis Ironhammer, created a splinter faction that opposed the Deldrimor. The Stone Summit was a group of xenophobic radicals who believed that it was the Dwarves' right to rule over all other races. Inevitably the friction between the two groups erupted into a civil war.",
+				"The Dwarves are a mining and smithing centric society with a monarchy.",
+				"Most of the Dwarves follow and worship the Great Dwarf as their creator and god. Outside of their creation legend, it is said that the Great Dwarf taught the Dwarves the fineness of crafting before he departed to the Great Forge, where all Dwarves go when they die. There are also dwarves who worship, or at least revere, Dwayna, Grenth, or the Great Destroyer. The dwarves who worship or revere Dwayna and Grenth only seem to appear during Wintersday. Many within the Stone Summit worship the Great Destroyer.",
+				"There is also a group of Dwarves within Deldrimor known as the Brotherhood of the Dragon who serve the oracle dragon Glint.",
+				"Deldrimor is a kingdom of Dwarves residing in the Shiverpeak Mountains that are ruled by a king. They are very friendly towards other races and passage through the harsh mountain range is welcome to anyone who is a friend of Deldrimor or an enemy to the Stone Summit. They hold a capital in Thunderhead Keep."
 			],
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "external",
-						"url": "https://wiki.guildwars2.com/images/e/e2/Human_01_concept_art_%28white%29.jpg"
+						"url": "https://wiki.guildwars.com/images/2/25/Deldrimor_emblem.jpg"
 					},
-					"credit": "Richard Anderson"
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://wiki.guildwars.com/images/8/8e/%22Great_Wall%22_concept_art_2.jpg"
-					},
-					"credit": "Daniel Dociu"
+					"credit": "ArenaNet"
 				}
 			]
 		},
 		{
-			"name": "Human (Krytan)",
+			"name": "Dwarf (Stone Summit)",
 			"source": "GWP",
 			"entries": [
-				"Humans are one of the most widespread and influential species in the world of Tyria. They are spread throughout the world of Tyria, including Cantha, Elona, and the eponymous continent Tyria, though it is implied they live further south than Cantha, which is where they may have originated.",
-				"Wherever they originated, humans are not native to the world as they were brought there by the Six Gods. The gods themselves only predate humans by a short period of time.",
-				"Humans arrived on the Tyrian continent in 205 BE. Since their arrival, three major human polities have arisen, Ascalon, Kryta, and Orr. Orr was the first region colonised.",
-				"Before the Exodus of the Gods, the gods lived in Arah (nicknamed the City of the Gods) and aided humans in numerous tasks such as pushing the Charr north so that the settlements that would become known as Ascalon could be established. With their aid, King Doric became the first ruler of all human realms. It was he who prayed to Dwayna to stop a war in 115 BE; it was he who pleaded to the gods a year before the exodus to stop the many conflicts caused by the gift of magic being given too freely; and it is his blood that seals the bloodstones.",
-				"After the creation of the bloodstones, the colonies of Ascalon and Kryta gradually split off into their own kingdoms - turning the unified human kingdom into three. During this time, open conflicts raged between the various human guilds and are now referred to as the Guild Wars. The Guild Wars were so widespread that they drew the Tyrian human kingdoms into war with each other in order to stop the battling in their own streets. It took the foreign threat of Charr to finally bring an end to the internecine conflict. The event now known as the Charr invasion ravaged the three human kingdoms, forcing them to put aside their squabbling or face destruction.",
-				"Kryta was the third and last human kingdom to be established in Tyria. Originally a colony of Elona, it was established in 300 AE, it gained its independence in 358 AE. The kingdom's royal family are descendants of King Doric, however it is not known how far Doric's lineage goes into the Krytan royalty. There have been few notable members of this royalty, outside the last king, King Jadon, the only known monarch is Mad King Thorn. Those of the royal bloodline are buried in the Mausoleum, which is guarded by the undead dragon Rotscale.",
-				"Kryta is home to many important landmarks, such as the Wizard's Tower and the Temple of the Ages. It is also the origin of the now-mysterious Druids, former Krytans who left into the Maguuma Jungle to the west long ago.",
-				"Sometime in the distant past, several large watchtowers were built along the northern coast to defend Kryta against a threat to the north."
+				"One of the oldest races on Tyria, the Dwarves are humanoids that are stocky, short, and are almost always bearded. The dwarves live in the Shiverpeak Mountains - specifically the Northern Shiverpeaks and the Southern Shiverpeaks.",
+				"In recent years, the dwarves have been plunged into a civil war between the older Deldrimor dwarves and the recent Stone Summit faction. This war has caused unrest throughout the Shiverpeaks and held up most travel between Ascalon and the other human nations.",
+				"The exact origins of the dwarven race is unknown, but their legends claim that the Dwarves were forged by their god, the Great Dwarf, on Anvil Rock in the Northern Shiverpeaks. Over time the dwarves laid claim to the Shiverpeak Mountains, forming the Deldrimor nation. Though they traded with the human nations and were on generally good terms, the dwarves largely kept to themselves.",
+				"Sometime years prior to 1072 AE, Dagnar Stonepate, cousin to the ruling king, Jalis Ironhammer, created a splinter faction that opposed the Deldrimor. The Stone Summit was a group of xenophobic radicals who believed that it was the Dwarves' right to rule over all other races. Inevitably the friction between the two groups erupted into a civil war.",
+				"The Dwarves are a mining and smithing centric society with a monarchy.",
+				"Most of the Dwarves follow and worship the Great Dwarf as their creator and god. Outside of their creation legend, it is said that the Great Dwarf taught the Dwarves the fineness of crafting before he departed to the Great Forge, where all Dwarves go when they die. There are also dwarves who worship, or at least revere, Dwayna, Grenth, or the Great Destroyer. The dwarves who worship or revere Dwayna and Grenth only seem to appear during Wintersday. Many within the Stone Summit worship the Great Destroyer.",
+				"There is also a group of Dwarves within Deldrimor known as the Brotherhood of the Dragon who serve the oracle dragon Glint.",
+				"The Stone Summit is a xenophobic faction which has recently broken away from the Deldrimor dwarves while being led by Dagnar Stonepate. They have had some recent successes in seizing power and resources from the Deldrimor Dwarves, most notably in claiming the vast mine of Sorrow's Furnace, which became their main base"
 			],
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "external",
-						"url": "https://wiki.guildwars2.com/images/e/e2/Human_01_concept_art_%28white%29.jpg"
+						"url": "https://wiki.guildwars.com/images/5/5a/Concept008.jpg"
 					},
-					"credit": "Richard Anderson"
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://wiki.guildwars.com/images/9/98/%22Swamp%22_concept_art_3.jpg"
-					},
-					"credit": "Daniel Dociu"
+					"credit": "ArenaNet"
 				}
 			]
-		},
-		{
-			"name": "Human (Orrian)",
-			"source": "GWP",
-			"entries": [
-				"Humans are one of the most widespread and influential species in the world of Tyria. They are spread throughout the world of Tyria, including Cantha, Elona, and the eponymous continent Tyria, though it is implied they live further south than Cantha, which is where they may have originated.",
-				"Wherever they originated, humans are not native to the world as they were brought there by the Six Gods. The gods themselves only predate humans by a short period of time.",
-				"Humans arrived on the Tyrian continent in 205 BE. Since their arrival, three major human polities have arisen, Ascalon, Kryta, and Orr. Orr was the first region colonised.",
-				"Before the Exodus of the Gods, the gods lived in Arah (nicknamed the City of the Gods) and aided humans in numerous tasks such as pushing the Charr north so that the settlements that would become known as Ascalon could be established. With their aid, King Doric became the first ruler of all human realms. It was he who prayed to Dwayna to stop a war in 115 BE; it was he who pleaded to the gods a year before the exodus to stop the many conflicts caused by the gift of magic being given too freely; and it is his blood that seals the bloodstones.",
-				"After the creation of the bloodstones, the colonies of Ascalon and Kryta gradually split off into their own kingdoms - turning the unified human kingdom into three. During this time, open conflicts raged between the various human guilds and are now referred to as the Guild Wars. The Guild Wars were so widespread that they drew the Tyrian human kingdoms into war with each other in order to stop the battling in their own streets. It took the foreign threat of Charr to finally bring an end to the internecine conflict. The event now known as the Charr invasion ravaged the three human kingdoms, forcing them to put aside their squabbling or face destruction.",
-				"Situated on a peninsula south of Ascalon and west of the Crystal Desert, Orr was a vibrant, proud, and prosperous nation. Its citizens were the favoured of the gods, living in the shadows of Arah, the deserted city once inhabited by the likes of Melandru, Dwayna, and Balthazar. Deeply spiritual, the Orrians looked after the buildings and structures left behind when the gods left Tyria, caring for them in the hopes that one day, the divine beings who created magic and bestowed it upon the world would return.",
-				"The Orrians were a peaceful people, hoping only to do their duty toward their gods and content to be rewarded in either this life or the next. When the guilds began feuding, Orr as a nation tried to stay out of the conflict. This was not the sort of struggle that entire kingdoms got involved in. But when the strife overflowed into armed conflict, and guilds from the other human nations began fighting in the streets of Arah, Orr rose to defend itself and the city of the gods.",
-				"Soon after Orr mobilised its armies, Kryta and Ascalon did as well, and what had started as a dispute between localised groups became an all-out war. The Guild Wars raged for nearly fifty years. During that time, none of the three human empires was able to assert dominance over either of the other two. While Ascalon, Orr, and Kryta were busy fighting with each other, they became blind to the threat from the north—the Charr.",
-				"The Kingdom of Orr was the first human kingdom established on the continent of Tyria, created by both god and man. From 100 BE, the kingdom was ruled alongside Ascalon by King Doric until his death in 1BE. Orr gained its independence in the year 2 AE. At the time of the Second Great Corsair War and King Zoran's reign, Orrian territory is known to have extended into the Tarnished Coast, and included the caverns now known as the Shards of Orr. Orr was once the most vibrant, proud, and prosperous human nation in the known world. Its citizens believed themselves to be the favoured of the Six Human Gods, living in the shadows of Arah which was once inhabited by the gods themselves. Orr was known as the nexus of arcane activity and research."
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://wiki.guildwars2.com/images/e/e2/Human_01_concept_art_%28white%29.jpg"
-					},
-					"credit": "Richard Anderson"
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://wiki.guildwars2.com/images/d/d7/%22Floating_Rings%22_concept_art.jpg"
-					},
-					"credit": "Daniel Dociu"
-				}
-			]
-		},
-        {
-            "name": "Dwarf (Deldrimor)",
-            "source": "GWP",
-            "entries": [
-				"One of the oldest races on Tyria, the Dwarves are humanoids that are stocky, short, and are almost always bearded. The dwarves live in the Shiverpeak Mountains - specifically the Northern Shiverpeaks and the Southern Shiverpeaks.",
-                "In recent years, the dwarves have been plunged into a civil war between the older Deldrimor dwarves and the recent Stone Summit faction. This war has caused unrest throughout the Shiverpeaks and held up most travel between Ascalon and the other human nations.",
-                "The exact origins of the dwarven race is unknown, but their legends claim that the Dwarves were forged by their god, the Great Dwarf, on Anvil Rock in the Northern Shiverpeaks. Over time the dwarves laid claim to the Shiverpeak Mountains, forming the Deldrimor nation. Though they traded with the human nations and were on generally good terms, the dwarves largely kept to themselves.",
-                "Sometime years prior to 1072 AE, Dagnar Stonepate, cousin to the ruling king, Jalis Ironhammer, created a splinter faction that opposed the Deldrimor. The Stone Summit was a group of xenophobic radicals who believed that it was the Dwarves' right to rule over all other races. Inevitably the friction between the two groups erupted into a civil war.",
-                "The Dwarves are a mining and smithing centric society with a monarchy.",
-                "Most of the Dwarves follow and worship the Great Dwarf as their creator and god. Outside of their creation legend, it is said that the Great Dwarf taught the Dwarves the fineness of crafting before he departed to the Great Forge, where all Dwarves go when they die. There are also dwarves who worship, or at least revere, Dwayna, Grenth, or the Great Destroyer. The dwarves who worship or revere Dwayna and Grenth only seem to appear during Wintersday. Many within the Stone Summit worship the Great Destroyer.",
-                "There is also a group of Dwarves within Deldrimor known as the Brotherhood of the Dragon who serve the oracle dragon Glint.",
-                "Deldrimor is a kingdom of Dwarves residing in the Shiverpeak Mountains that are ruled by a king. They are very friendly towards other races and passage through the harsh mountain range is welcome to anyone who is a friend of Deldrimor or an enemy to the Stone Summit. They hold a capital in Thunderhead Keep."
-            ],
-            "images": [
-				
-                {
-                    "type": "image",
-                    "href": {
-                        "type": "external",
-                        "url": "https://wiki.guildwars.com/images/2/25/Deldrimor_emblem.jpg"
-                    },
-                    "credit": "ArenaNet"
-                }
-            ]
-        },
-        {
-            "name": "Dwarf (Stone Summit)",
-            "source": "GWP",
-            "entries": [
-				"One of the oldest races on Tyria, the Dwarves are humanoids that are stocky, short, and are almost always bearded. The dwarves live in the Shiverpeak Mountains - specifically the Northern Shiverpeaks and the Southern Shiverpeaks.",
-                "In recent years, the dwarves have been plunged into a civil war between the older Deldrimor dwarves and the recent Stone Summit faction. This war has caused unrest throughout the Shiverpeaks and held up most travel between Ascalon and the other human nations.",
-                "The exact origins of the dwarven race is unknown, but their legends claim that the Dwarves were forged by their god, the Great Dwarf, on Anvil Rock in the Northern Shiverpeaks. Over time the dwarves laid claim to the Shiverpeak Mountains, forming the Deldrimor nation. Though they traded with the human nations and were on generally good terms, the dwarves largely kept to themselves.",
-                "Sometime years prior to 1072 AE, Dagnar Stonepate, cousin to the ruling king, Jalis Ironhammer, created a splinter faction that opposed the Deldrimor. The Stone Summit was a group of xenophobic radicals who believed that it was the Dwarves' right to rule over all other races. Inevitably the friction between the two groups erupted into a civil war.",
-                "The Dwarves are a mining and smithing centric society with a monarchy.",
-                "Most of the Dwarves follow and worship the Great Dwarf as their creator and god. Outside of their creation legend, it is said that the Great Dwarf taught the Dwarves the fineness of crafting before he departed to the Great Forge, where all Dwarves go when they die. There are also dwarves who worship, or at least revere, Dwayna, Grenth, or the Great Destroyer. The dwarves who worship or revere Dwayna and Grenth only seem to appear during Wintersday. Many within the Stone Summit worship the Great Destroyer.",
-                "There is also a group of Dwarves within Deldrimor known as the Brotherhood of the Dragon who serve the oracle dragon Glint.",
-                "The Stone Summit is a xenophobic faction which has recently broken away from the Deldrimor dwarves while being led by Dagnar Stonepate. They have had some recent successes in seizing power and resources from the Deldrimor Dwarves, most notably in claiming the vast mine of Sorrow's Furnace, which became their main base"
-            ],
-            "images": [
-				
-                {
-                    "type": "image",
-                    "href": {
-                        "type": "external",
-                        "url": "https://wiki.guildwars.com/images/5/5a/Concept008.jpg"
-                    },
-                    "credit": "ArenaNet"
-                }
-            ]
-        }
+		}
 	],
 	"language": [],
 	"subclass": [],

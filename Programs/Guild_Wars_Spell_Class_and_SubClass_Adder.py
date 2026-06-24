@@ -11,11 +11,11 @@ import csv
 DEFAULT_TABLE_CRITERIA = ["name", "background", "class", "subclass"]
 DEFAULT_TABLE_FORMATS = ["json"]
 DEFAULT_JSON_PATHS = [
-    "./Books/Guild Wars.json",
-    "./Books/Guild Wars Prophecies.json",
-    "./Books/Guild Wars Factions.json",
-    "./Books/Guild Wars Nightfall.json",
-    "./Books/Guild Wars Eye of the North.json",
+    "../Books/Guild Wars.json",
+    "../Books/Guild Wars Prophecies.json",
+    "../Books/Guild Wars Factions.json",
+    "../Books/Guild Wars Nightfall.json",
+    "../Books/Guild Wars Eye of the North.json",
 ]
 
 
@@ -678,8 +678,8 @@ if __name__ == "__main__":
             print(f"Skipping '{json_path}': {error}")
             continue
 
-        if not args.generate_tables:
-            continue
+        # if not args.generate_tables:
+        #     continue
 
         spells = updated_data.get("spell", [])
         tables = generate_spell_tables(spells, args.table_criteria)

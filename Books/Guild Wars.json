@@ -10514,7 +10514,7 @@
 			}
 		},
 		{
-			"name": "Fire Storm (Guild Wars)",
+			"name": "Fire Storm",
 			"level": 1,
 			"school": "V",
 			"time": [
@@ -20586,7 +20586,7 @@
 			]
 		},
 		{
-			"name": "Mending (Guild Wars)",
+			"name": "Mending",
 			"level": 3,
 			"school": "E",
 			"time": [
@@ -25997,8 +25997,8 @@
 			],
 			"entries": [
 				"{@variantrule Signet|GW|Signet:} Replaced",
-				"Capture the knowledge of a creature by activating your Signet of Capture.",
-				"Choose one hostile dead creature, which has not been dead for more than 1 day, or spell scroll that you can see within range. Choose one spell which the target had prepared or is inscribed on the scroll, that you could learn and is a Guild Wars spell, and replace this spell with the chosen spell permanently. If you targeted a spell scroll, it gets destroyed as if you had cast the spell from it."
+				"Capture the knowledge of a creature or a scroll by activating your Signet of Capture.",
+				"Choose one hostile dead creature, which has not been dead for more than 1 day, or a spell scroll that you can see within range. Choose one spell which the target had prepared or is inscribed on the scroll, that you could learn, and replace this spell with the chosen spell permanently. If you targeted a spell scroll, it gets destroyed as if you had cast the spell from it."
 			],
 			"source": "GW",
 			"fluff": {
@@ -27778,7 +27778,7 @@
 			]
 		},
 		{
-			"name": "Fireball (Guild Wars)",
+			"name": "Fireball",
 			"level": 2,
 			"school": "V",
 			"time": [
@@ -29701,7 +29701,8 @@
 			"entries": [
 				"Utter a foul curse, exploding a corpse into a well of blood, healing allies in its area every turn. ",
 				"Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target; for the duration, you create a 20-foot-radius, 10-foot-high Cylinder centered on that point. Each friendly creature in that Cylinder gains temporary hit points equal to {@dice 2d6} + your spellcasting ability modifier. A creature also gains these temporary hit points if it enters the Cylinder or ends its turn there, or if the Cylinder moves into its space. A creature can only gain these temporary hit points once per turn.",
-				"On your later turns, you can take a {@action Magic|XPHB} action to exploit another corpse within range, which has not been dead for more than 5 minutes and which has not been exploited by a spell, to move the Cylinder in a straight line to the location of the new corpse."
+				"On your later turns, you can take a {@action Magic|XPHB} action to exploit another corpse within range, which has not been dead for more than 5 minutes and which has not been exploited by a spell, to move the Cylinder in a straight line to the location of the new corpse.",
+				"Instead of exploting a corpse to create/move the well you can instead {@variantrule Sacrifice|GW} 66% to create/move the well at/to your location."
 			],
 			"source": "GW",
 			"fluff": {
@@ -33073,7 +33074,7 @@
 			"entries": [
 				"{@variantrule Elite|GW}",
 				"Create an echo of the next spell you cast, casting it twice in quick succession.",
-				"For the duration, the next time you finish casting a spell of 3rd level or lower, you cast that spell again (no action required), without expending a spell slot or requiring material components."
+				"For the duration, the next time you finish casting a spell of level 3 or lower, you cast that spell again (no action required), without expending a spell slot or requiring material components."
 			],
 			"source": "GW",
 			"fluff": {
@@ -35503,12 +35504,12 @@
 		},
 		{
 			"name": "Martyr",
-			"level": 2,
+			"level": 1,
 			"school": "A",
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "bonus"
 				}
 			],
 			"range": {
@@ -37174,10 +37175,10 @@
 				}
 			],
 			"range": {
-				"type": "point",
+				"type": "emanation",
 				"distance": {
 					"type": "feet",
-					"amount": 120
+					"amount": 20
 				}
 			},
 			"duration": [
@@ -37192,8 +37193,8 @@
 			"entries": [
 				"{@variantrule Elite|GW}, {@variantrule Enchantment|GW}",
 				"Taint the flash of a friendly creature, making them immune to diseases and causing {@condition disease|GW} to any creature who attacks them in melee.",
-				"Choose one friendly creature that you can see within range. End the {@condition disease|GW|diseased} condition on the target. For the duration, the target is immune to the {@condition disease|GW|diseased} condition, and when the target takes damage from a melee attack or deals damage to a creature with a melee attack, target the creature that dealt the damage or took the damage. The new target must make a Constitution saving throw. On a failed save, the target is {@condition disease|GW|diseased} for the duration, taking {@damage 2d8} damage. On a successful save, the target is affected for 1 round only.",
-				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
+				"Target each friendly creature within a 20-foot Emanation. End the {@condition disease|GW|diseased} condition on a target. For the duration, a target is immune to the {@condition disease|GW|diseased} condition, and when a target takes damage from a melee attack or deals damage to a creature with a melee attack, target the creature that dealt the damage or took the damage. The new target must make a Constitution saving throw. On a failed save, the target is {@condition disease|GW|diseased} for the duration, taking {@damage 2d8} damage. On a successful save, the target is affected for 1 round only.",
+				"At the end of each of its turns, a target can make a Constitution saving throw. On a success, the condition ends."
 			],
 			"source": "GW",
 			"fluff": {
@@ -37257,7 +37258,7 @@
 					"type": "entries",
 					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The damage increases by {@dice 1d8} for each slot level above 1, and you can target one additional creature for each slot level above 1."
+						"The damage increases by {@dice 1d8} for each slot level above 1."
 					]
 				}
 			],
@@ -39920,14 +39921,14 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "round",
-						"amount": 2
+						"type": "minute",
+						"amount": 1
 					}
 				}
 			],
 			"entries": [
 				"Create an arcane echo of the next spell you cast, casting it twice in quick succession.",
-				"For the duration, the next time you finish casting a spell of 2nd level or lower, you cast that spell again (no action required), without expending a spell slot or requiring material components."
+				"For the duration, the next time you finish casting a spell of level 2 or lower, you cast that spell again (no action required), without expending a spell slot or requiring material components."
 			],
 			"source": "GW",
 			"fluff": {
@@ -39954,7 +39955,7 @@
 					"type": "entries",
 					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The number of casts increases by 1 for every three slot level above 1."
+						"The number of casts increases by 1 for every two slot level above 1."
 					]
 				}
 			],
@@ -40983,7 +40984,7 @@
 			]
 		},
 		{
-			"name": "Maelstrom (Guild Wars)",
+			"name": "Maelstrom",
 			"level": 4,
 			"school": "V",
 			"time": [
@@ -42858,7 +42859,7 @@
 			],
 			"entries": [
 				"Weave your magic into an exact duplicate of an Elite spell of a friendly creature.",
-				"Choose one friendly creature that you can see within range. For the duration, replace this spell with the elite spell of the target."
+				"Choose one friendly creature that you can see within range. For the duration, replace this spell with the elite spell of the target. You can cast the copied spell once without using a spell slot."
 			],
 			"source": "GW",
 			"fluff": {
@@ -42907,7 +42908,8 @@
 					"type": "entries",
 					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The duration increases to 8 hours (level 5-6 slot), 24 hours (level 7-8 slot) or 10 days (level 9+ slot)"
+						"The duration increases to 8 hours (level 5-6 slot), 24 hours (level 7-8 slot) or 10 days (level 9+ slot).",
+						"If you cast this spell using a level 5+ slot, the number of times you can cast the copied spell for free increases by 1 for each slot level above 4."
 					]
 				}
 			],
@@ -49171,10 +49173,13 @@
 			],
 			"entries": [
 				"Channel your magic into tracking down and charming a wild animal, turning it into a companion.",
-				"As part of the casting of this spell, you can spend {@dice 1d4} hours magically searching for an appropriate creature to charm. If you do so, roll on the {@table Charm Animal Beast List|GW} table by making either a Wisdom (Animal Handling), a Wisdom (Survival), or an Intelligence (Nature) check to determine which beast will appear (your DM might decide to replace animals from the list).",
-				"When you find an appropriate creature to charm, either by searching for it or having already encountered one (in which case it needs to be a beast of challenge rating 1 or lower, with an Intelligence score of 3 or less), you can attempt to charm it by touching it. ",
-				"When you successfully touch it, it must make a Wisdom saving throw if you or your allies are fighting it. On a failed save, or if you or your allies are not fighting it, the target is {@condition charmed} by you for the next 24 hours. While the creature is {@condition charmed} in this way, you can expend a spell slot of equal or higher level than the one used in the casting of this spell to reset the duration of the {@condition charmed} condition on the beast to 24 hours by spending 1 minute caring for it while it is within 5 feet of you. To do this, you must have the {@spell Charm Animal|GW} spell prepared or any other spell that states that it can be used instead.",
-				"The creature is an ally to you and your allies and is considered a {@variantrule Companion|GW}. It rolls its initiative and acts on its turn. While the creature is {@condition charmed}, you have a telepathic link with it as long as the two of you are on the same plane of existence and are within 100 miles of each other. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.",
+				"{@b Finding a Companion.} As part of the casting of this spell, you can spend {@dice 1d4} hours magically searching for an appropriate creature to charm. If you do so, roll on the {@table Charm Animal Beast List|GW} table by making either a Wisdom (Animal Handling), a Wisdom (Survival), or an Intelligence (Nature) check to determine which beast will appear (your DM might decide to replace animals from the list).",
+				"{@b Charming your Companion.} When you find an appropriate creature to charm, either by searching for it or having already encountered one (in which case it needs to be a beast of challenge rating 1 or lower, with an Intelligence score of 3 or less), you can attempt to charm it by touching it. When you successfully touch it, it must make a Wisdom saving throw if you or your allies are fighting it. On a failed save, or if you or your allies are not fighting it, the target is {@condition charmed} by you for the next 24 hours. ",
+				"{@b Maintaining the Bond.} While the creature is {@condition charmed} in this way, you can expend a spell slot of equal or higher level than the one used in the casting of this spell to reset the duration of the {@condition charmed} condition on the beast to 24 hours by spending 1 minute caring for it while it is within 5 feet of you. To do this, you must have the {@spell Charm Animal|GW} spell prepared or any other spell that states that it can be used instead.",
+				"{@b Combat.} The creature is an ally to you and your allies and is considered a {@variantrule Companion|GW}. It rolls its own initiative and acts on its turn. ",
+				"{@b Telepathic Connection.} While the creature is {@condition charmed}, you have a telepathic link with it as long as the two of you are on the same plane of existence and are within 100 miles of each other. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability}",
+				"{@b Death of your Companion.} When the creature reaches 0 {@variantrule Hit Points|XPHB}, it dies. If you do not resurrect it before the duration of the {@condition charmed} condition would have run out, you need to charm it again, using this spell after brining it back from the dead.",
+				"{@b One Companion Only.} You can't have more than one companion at a time. If you cast this spell while you have a companion, your current companion loses its {@condition charmed} condition, and is no longer considered your companion.",
 				"After charming a creature with this spell, you cannot cast this spell again until {@dice 1d6} days have passed."
 			],
 			"source": "GW",
@@ -49191,7 +49196,10 @@
 					"type": "entries",
 					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The duration to find an appropriate animal increases by {@dice 1d4} hours for each slot level above 1, you gain a {@dice 1d4} bonus to the ability check for each slot level above 1, the maximum challenge rating and intelligence score for beasts not found via a table increases by 1 for each slot level above 1, and the time until you can cast the spell again increases by {@dice 1d6} for each slot level above 1."
+						"The duration to find an appropriate animal increases by {@dice 1d4} hours for each slot level above 1. ",
+						"You gain a {@dice 1d4} bonus to the ability check for each slot level above 1. ",
+						"The maximum challenge rating and intelligence score for beasts not found via a table increases by 1 for each slot level above 1.",
+						"The time until you can cast the spell again increases by {@dice 1d6} for each slot level above 1."
 					]
 				}
 			],
@@ -51335,7 +51343,8 @@
 			"entries": [
 				"Turn a corpse into a profane well, stripping all enemies of beneficial spells and preventing new ones from being applied. ",
 				"Choose one dead creature, which has not been dead for more than 5 minutes and which has not been exploited by a spell, that you can see within range. Exploit that target; for the duration, you create a 20-foot-radius, 10-foot-high Cylinder centered on that point. Each hostile creature in that Cylinder must make a Constitution saving throw. On a failed save, all beneficial spells on a target end, and the target cannot be the target of or benefit from beneficial spells while inside the Cylinder. A creature also makes this save if it enters the Cylinder or ends its turn there, or if the Cylinder moves into its space. A creature makes this save only once per turn.",
-				"On your later turns, you can take a {@action Magic|XPHB} action to exploit another corpse within range, which has not been dead for more than 5 minutes and which has not been exploited by a spell, to move the Cylinder in a straight line to the location of the new corpse."
+				"On your later turns, you can take a {@action Magic|XPHB} action to exploit another corpse within range, which has not been dead for more than 5 minutes and which has not been exploited by a spell, to move the Cylinder in a straight line to the location of the new corpse.",
+				"Instead of exploting a corpse to create/move the well you can instead {@variantrule Sacrifice|GW} 66% to create/move the well at/to your location."
 			],
 			"source": "GW",
 			"fluff": {

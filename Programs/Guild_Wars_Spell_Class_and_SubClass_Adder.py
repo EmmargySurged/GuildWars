@@ -11,11 +11,11 @@ import csv
 DEFAULT_TABLE_CRITERIA = ["name", "background", "class", "subclass"]
 DEFAULT_TABLE_FORMATS = ["json"]
 DEFAULT_JSON_PATHS = [
-    "../Books/Guild Wars.json",
-    "../Books/Guild Wars Prophecies.json",
-    "../Books/Guild Wars Factions.json",
-    "../Books/Guild Wars Nightfall.json",
-    "../Books/Guild Wars Eye of the North.json",
+    "./Books/Guild Wars.json",
+    "./Books/Guild Wars Prophecies.json",
+    "./Books/Guild Wars Factions.json",
+    "./Books/Guild Wars Nightfall.json",
+    "./Books/Guild Wars Eye of the North.json",
 ]
 
 
@@ -569,7 +569,8 @@ if __name__ == "__main__":
             {"name": "Circle of Sea", "shortName": "Sea", "source": "XPHB"},
             {"name": "Circle of Spores", "shortName": "Spores", "source": "TCE"},
             {"name": "Circle of Stars", "shortName": "Stars", "source": "XPHB"},
-            {"name": "Circle of the Shepherd", "shortName": "Shepherd", "source": "XGE"}
+            {"name": "Circle of the Shepherd", "shortName": "Shepherd", "source": "XGE"},
+            {"name": "Circle of the Unbroken", "shortName": "Unbroken", "source": "24griffonssaddlebag1"}
         ]},
         {"name": "Fighter", "source": "XPHB", "sub_classes": [
             {"name": "Eldritch Knight", "shortName": "Eldritch Knight", "source": "XPHB"}

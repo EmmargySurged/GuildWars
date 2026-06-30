@@ -13580,7 +13580,7 @@
 			},
 			"entries": [
 				"Create a burst of intensity in a spell by channeling more power into it.",
-				"While casting a spell of level 2 or lower, that inflicts acid, cold, fire, force, lightning, or thunder damage, you can simultaneously cast this spell (even if you use a spell slot for each of them). When doing so, if that spell inflicted damage to at least one creature, choose one of the creatures it dealt damage to and target each hostile creature within a 20-foot Emanation. Each new target takes 50% of the damage the original target took."
+				"While casting a spell of level 2 or lower that inflicts acid, cold, fire, force, lightning, or thunder damage, you can simultaneously cast this spell (even if you use a spell slot for each of them). When doing so, if that spell inflicted damage to at least one creature, choose one of the creatures it dealt damage to and target each other hostile creature within a 20-foot Emanation. Each new target takes 50% of the damage the original target took."
 			],
 			"source": "GWN",
 			"fluff": {
@@ -14156,6 +14156,489 @@
 			],
 			"miscTags": [
 				"SGT"
+			]
+		},
+		{
+			"name": "Lift Enchantment",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Gently snap the weave of magic around a {@condition prone} enemy.",
+				"Choose one {@condition prone} creature within range. The latest beneficial spell on the target ends."
+			],
+			"source": "GWN",
+			"fluff": {
+				"entries": [
+					"Lift Enchantment",
+					"Touch Skill. If target touched foe is knocked down, that foe loses one enchantment."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Nightfall/Non-Elite/Lift_Enchantment.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"1 additional spell is ended for each slot level above 1."
+					]
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Assassin",
+					"source": "GWF"
+				},
+				{
+					"name": "Istan",
+					"source": "GWN"
+				},
+				{
+					"name": "No Attribute - Assassin",
+					"source": "GWF"
+				}
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Malicious Strike",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 0,
+					"unit": "special",
+					"condition": "which you take immediately before hitting a target with a Melee weapon with the light and thrown property"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@variantrule Weapon Attack Spell|GW}",
+				"Exploit an opening in a creature suffering from a condition, inflicting a devastating strike.",
+				"On a hit, the target suffers the weapon attack's critical effects and takes {@damage 2d4} damage."
+			],
+			"source": "GWN",
+			"fluff": {
+				"entries": [
+					"Malicious Strike",
+					"Melee Attack. If this attack hits a foe suffering from a condition, you deal +10...26...30 damage and this attack results in a critical hit."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Malicious_Strike.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"AAD"
+			],
+			"components": {
+				"v": true
+			},
+			"backgrounds": [
+				{
+					"name": "Istan",
+					"source": "GWN"
+				},
+				{
+					"name": "Assassin",
+					"source": "GWF"
+				},
+				{
+					"name": "Critical Strikes",
+					"source": "GWF"
+				},
+				{
+					"name": "Weapon Attack Spell",
+					"source": "GW"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The target also takes {@damage 2d4} damage for each slot level above 2 on a hit."
+					]
+				}
+			]
+		},
+		{
+			"name": "Shadow Walk",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@variantrule Stance|GW}",
+				"Shadowstep to your target while retaining a way back.",
+				"Choose one hostile creature that you can see within range. Teleport within 5 feet of the target to an unoccupied space.",
+				"When this spell ends, teleport to an unoccupied space within 5 feet of the location you originally cast this spell, if you are still on the same plane of existence and within 1 mile of it."
+			],
+			"source": "GWN",
+			"fluff": {
+				"entries": [
+					"Shadow Walk",
+					"Stance. Shadow Step to target foe. For 15 seconds nothing happens. Your attack skills are disabled for 1 second, and your stances and enchantments are disabled for 10 seconds. When this stance ends, you return to your original location."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Shadow_Walk.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Istan",
+					"source": "GWN"
+				},
+				{
+					"name": "Assassin",
+					"source": "GWF"
+				},
+				{
+					"name": "No Attribute - Assassin",
+					"source": "GWF"
+				},
+				{
+					"name": "Stance",
+					"source": "GW"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a large black cloth"
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"TP"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The range of the spell increases by 15 feet for each slot level above 1."
+					]
+				}
+			]
+		},
+		{
+			"name": "Signet of Toxic Shock",
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@variantrule Signet|GW|Signet:} Initiative",
+				"Magically amplify an already existing malady in a creature.",
+				"Choose one {@condition corruption|GW|corrupted} or {@condition poisoned} creature that you can see within range. The target takes {@damage 6d8} poison damage."
+			],
+			"source": "GWN",
+			"fluff": {
+				"entries": [
+					"Signet of Toxic Shock",
+					"Signet. If target foe is suffering from Poison, that foe takes 10...82...100 damage."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Signet_of_Toxic_Shock.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Istan",
+					"source": "GWN"
+				},
+				{
+					"name": "Assassin",
+					"source": "GWF"
+				},
+				{
+					"name": "Deadly Arts",
+					"source": "GWF"
+				},
+				{
+					"name": "Signet",
+					"source": "GW"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"conditionInflict": [
+				"blinded"
+			]
+		},
+		{
+			"name": "Signet of Twilight",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@variantrule Signet|GW|Signet:} Initiative",
+				"Twist a creature's harmful spell on them, ripping them of beneficial ones.",
+				"Choose one creature that you can see within range. For each harmful spell on the target, end one beneficial spell on the target."
+			],
+			"source": "GWN",
+			"fluff": {
+				"entries": [
+					"Signet of Twilight",
+					"Signet. For each hex on target foe, that foe loses one enchantment. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Signet_of_Twilight.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Istan",
+					"source": "GWN"
+				},
+				{
+					"name": "Assassin",
+					"source": "GWF"
+				},
+				{
+					"name": "No Attribute - Assassin",
+					"source": "GWF"
+				},
+				{
+					"name": "Signet",
+					"source": "GW"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"conditionInflict": [
+				"blinded"
+			]
+		},
+		{
+			"name": "Swap",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Swap places with a magically created creature.",
+				"Choose one summoned/created creature that you can see within range. You and that creature instantly swap positions. If the target creature is unwilling to exchange places with you, it can resist the effect by making a Charisma saving throw. On a successful save, the spell has no effect."
+			],
+			"source": "GWN",
+			"fluff": {
+				"entries": [
+					"Swap",
+					"Spell. You and target summoned creature Shadow Step to each other's location."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Swap.jpg"
+						}
+					}
+				]
+			},
+			"backgrounds": [
+				{
+					"name": "Istan",
+					"source": "GWN"
+				},
+				{
+					"name": "Assassin",
+					"source": "GWF"
+				},
+				{
+					"name": "No Attribute - Assassin",
+					"source": "GWF"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a playing card with two arrows forming a circle"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The range of the spell increases by 30 feet for each slot level above 1."
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT",
+				"TP"
 			]
 		}
 	],

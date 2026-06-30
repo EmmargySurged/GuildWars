@@ -14051,17 +14051,22 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The charr casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 13})."
+						"The Charr Ash Walker is a 1st-level spellcaster. Their spellcasting ability is Intelligence (spell save {@dc 13}, +5 to hit with spell attacks). The Charr Ash Walker has the following Necromancer (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Faintheartedness|GW}",
-						"{@spell Life Siphon|GW}"
-					],
-					"daily": {
-						"1e": [
-							"{@spell Lingering Curse|GW}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Faintheartedness|GW}",
+								"{@spell Life Siphon|GW}"
+							],
+							"slots": 2
+						},
+						"2": {
+							"spells": [
+								"{@spell Lingering Curse|GW}"
+							],
+							"slots": 1
+						}
 					},
 					"ability": "int",
 					"type": "spellcasting"
@@ -14106,6 +14111,13 @@
 			},
 			"damageTags": [
 				"N"
+			],
+			"damageTagsSpell": [
+				"N"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
 			]
 		},
 		{
@@ -15008,18 +15020,35 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The charr casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 15})."
+						"The Charr Ashen Claw is an 8th-level spellcaster. Their spellcasting ability is Intelligence (spell save {@dc 15}, +7 to hit with spell attacks). The Charr Ashen Claw has the following Necromancer (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Faintheartedness|GW} (level 2 Version)",
-						"{@spell Life Siphon|GW} (level 2 Version)",
-						"{@spell Mark of Pain|GW}"
-					],
-					"daily": {
-						"2e": [
-							"{@spell Lingering Curse|GW} (level 3 Version)"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Faintheartedness|GW}",
+								"{@spell Life Siphon|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Lingering Curse|GW}",
+								"{@spell Mark of Pain|GW}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						}
 					},
 					"ability": "int",
 					"type": "spellcasting"

@@ -6526,7 +6526,12 @@
 				"G"
 			],
 			"ac": [
-				16
+				{
+					"ac": 16,
+					"from": [
+						"{@item chain mail|xphb}"
+					]
+				}
 			],
 			"hp": {
 				"average": 240,
@@ -6542,21 +6547,21 @@
 			"dex": 12,
 			"con": 17,
 			"int": 14,
-			"wis": 21,
+			"wis": 22,
 			"cha": 14,
 			"save": {
 				"str": "+7",
 				"con": "+7",
 				"int": "+6",
-				"wis": "+9"
+				"wis": "+10"
 			},
 			"skill": {
-				"insight": "+9",
-				"medicine": "+9",
-				"perception": "+9",
+				"insight": "+14",
+				"medicine": "+10",
+				"perception": "+14",
 				"religion": "+10"
 			},
-			"passive": 19,
+			"passive": 24,
 			"languages": [
 				"Common",
 				"Krytan",
@@ -6565,49 +6570,76 @@
 			"cr": "12",
 			"gear": [
 				"chain mail|xphb",
-				"holy symbol|xphb"
+				"+2 Amulet of the Devout|tce",
+				{
+					"item": "Residuum|taldoreicampaignsettingreborn",
+					"quantity": 1,
+					"displayName": "5 lbs of Residuum"
+				}
 			],
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Evennia casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 17}, +9 to hit with spell attacks.)"
+						"Evennia is a 15th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 20}, +12 to hit with spell attacks). Evennia has the following Monk (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Light|XPHB}",
-						"{@spell Mend Ailment|GW}",
-						"{@spell Orison of Healing|GW} (Level 3 Version)",
-						"{@spell Remove Hex|GW} (Level 3 Version)",
-						"{@spell Thaumaturgy|XPHB}"
-					],
-					"daily": {
-						"3e": [
-							"{@spell Balthazar's Aura|GW}",
-							"{@spell Dispel Magic|XPHB}",
-							"{@spell Greater Restoration|XPHB}",
-							"{@spell Heal Other/Jamei's Gaze|GWP} (Level 3 Version)",
-							"{@spell Raise Dead|XPHB}",
-							"{@spell Rebirth|GW}",
-							"{@spell Zone of Truth|XPHB}"
-						]
-					},
-					"ability": "wis",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Evennia casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 17}, +9 to hit with spell attacks.)"
-					],
-					"displayAs": "bonus",
-					"will": [
-						"{@spell Word of Healing|GW} (Level 2)"
-					],
-					"daily": {
-						"2": [
-							"{@spell Divine Intervention|GW}"
-						]
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell Guidance|XPHB}",
+								"{@spell Light|XPHB}",
+								"{@spell Thaumaturgy|XPHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell Mend Ailment|GW}",
+								"{@spell Orison of Healing|GW}",
+								"{@spell Remove Hex|GW}",
+								"{@spell Word of Healing|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Heal Other|GWP}",
+								"{@spell Zone of Truth|XPHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Balthazar's Aura|GW}",
+								"{@spell Dispel Magic|XPHB}",
+								"{@spell Rebirth|GW}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Greater Restoration}",
+								"{@spell Raise Dead|XPHB}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell Divine Intervention|GW}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell Power Word Fortify|XPHB}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell Holy Star of Mystra|FRHoF}"
+							],
+							"slots": 1
+						}
 					},
 					"ability": "wis",
 					"type": "spellcasting"
@@ -6617,19 +6649,19 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Evennia makes three Radiant Burst attacks, she can forgo one of these attacks to cast a spell."
+						"Evennia makes three attacks, using Radiant Blast or Radiant Burst in any combination; she can forgo one of these attacks to take a {@action Magic|XPHB} action."
+					]
+				},
+				{
+					"name": "Radiant Blast",
+					"entries": [
+						"{@atkr m} {@hit 12}, reach 5 ft. {@h}27 ({@damage 4d10 + 5}) Radiant damage."
 					]
 				},
 				{
 					"name": "Radiant Burst",
 					"entries": [
-						"{@atkr m,r} {@hit 9}, reach 5 ft. or range 60 ft. {@h}27 ({@damage 4d10 + 5}) Radiant damage."
-					]
-				},
-				{
-					"name": "Holy Word {@recharge 4}",
-					"entries": [
-						"{@actSave wis} {@dc 17}, each enemy in a 20-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from Evennia. {@actSaveFail} 21 ({@damage 6d6}) Radiant damage, and the target has the {@condition Stunned|XPHB} condition until the end of Evennia's next turn. {@actSaveSuccess} Half damage only."
+						"{@atkr r} {@hit 12}, range 150 ft. {@h}27 ({@damage 5d10}) Radiant damage."
 					]
 				}
 			],
@@ -6647,11 +6679,8 @@
 				"O"
 			],
 			"miscTags": [
-				"RA",
-				"MA"
-			],
-			"conditionInflict": [
-				"stunned"
+				"MA",
+				"RA"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
@@ -6674,18 +6703,34 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Evennia_Token.png"
 			},
-			"damageTags": [
-				"R"
+			"trait": [
+				{
+					"name": "Proficient Spellcaster",
+					"entries": [
+						"Evennia ignores any restrictions on expending more than one spell slot per turn."
+					]
+				}
 			],
-			"damageTagsSpell": [
+			"bonus": [
+				{
+					"name": "Holy Word {@recharge 4}",
+					"entries": [
+						"{@actSave wis} {@dc 20}, each enemy in a 20-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from Evennia. {@actSaveFail} 21 ({@damage 6d6}) Radiant damage, and the target has the {@condition Stunned|XPHB} condition until the end of Evennia's next turn. {@actSaveSuccess} Half damage only."
+					]
+				}
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"isNpc": true,
+			"damageTags": [
 				"R"
 			],
 			"savingThrowForced": [
 				"wisdom"
 			],
 			"savingThrowForcedSpell": [
-				"charisma",
-				"wisdom"
+				"charisma"
 			]
 		},
 		{
@@ -6705,7 +6750,12 @@
 				"G"
 			],
 			"ac": [
-				17
+				{
+					"ac": 17,
+					"from": [
+						"{@item studded leather armor|xphb}"
+					]
+				}
 			],
 			"hp": {
 				"average": 169,
@@ -6742,11 +6792,23 @@
 			"cr": "11",
 			"gear": [
 				{
-					"item": "pistol|xphb",
-					"quantity": 2
+					"item": "scimitar|xphb",
+					"quantity": 2,
+					"displayName": ""
 				},
-				"scimitar|xphb",
-				"studded leather armor|xphb"
+				"studded leather armor|xphb",
+				"+2 longbow|xdmg",
+				{
+					"item": "arrow|XPHB",
+					"quantity": 200,
+					"displayName": ""
+				},
+				"Quiver of Elona|gw",
+				{
+					"item": "Rope Arrow (Rare)|GW",
+					"quantity": 10,
+					"displayName": "Rope Arrows"
+				}
 			],
 			"trait": [
 				{
@@ -6760,7 +6822,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Aidan makes three attacks, using Scimitar or Longbow in any combination, he can forgo one of these attacks to cast a spell."
+						"Aidan makes three attacks, using Scimitar or Longbow in any combination; he can forgo one of these attacks to take a {@action Magic|XPHB} action."
 					]
 				},
 				{
@@ -6772,7 +6834,7 @@
 				{
 					"name": "Longbow",
 					"entries": [
-						"{@atkr r} {@hit 9}, range 600 ft. {@h}10 ({@damage 1d10 + 5}) Piercing damage plus 14 ({@damage 4d6}) Poison damage."
+						"{@atkr r} {@hit 11}, range 600 ft. {@h}10 ({@damage 1d10 + 7}) Piercing damage plus 14 ({@damage 4d6}) Poison damage."
 					]
 				}
 			],
@@ -6802,10 +6864,6 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"attachedItems": [
-				"longbow|phb",
-				"scimitar|phb"
-			],
 			"fluff": {
 				"entries": [
 					"Born in: Kree Foothills",
@@ -6833,72 +6891,53 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Aidan casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 16}, +8 to hit with spell attacks.)"
+						"Aidan is a 7th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 16}, +8 to hit with spell attacks). Aidan has the following Ranger (GW) spells prepared:"
 					],
-					"daily": {
-						"3e": [
-							"{@spell Determined Shot|GW}",
-							"{@spell Dual Shot|GW}"
-						]
-					},
-					"ability": "wis",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Aidan casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 16}, +8 to hit with spell attacks.)"
-					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Incendiary Arrows|GWP}",
-						"{@spell Read the Wind|GW} (Level 3 Version)",
-						"{@spell Troll Unguent|GW}"
-					],
-					"daily": {
-						"1": [
-							"{@spell Resurrection Signet|GW}"
-						]
-					},
-					"ability": "wis",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Aidan casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 16}, +8 to hit with spell attacks.)"
-					],
-					"displayAs": "reaction",
-					"daily": {
-						"3e": [
-							"{@spell Distracting Shot|GW}"
-						]
-					},
-					"ability": "wis",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Aidan casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 16}, +8 to hit with spell attacks.)"
-					],
-					"displayAs": "bonus",
-					"daily": {
-						"1": [
-							"{@spell Dryder's Defenses|GWP}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Determined Shot|GW}",
+								"{@spell Dual Shot|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Incendiary Arrows|GWP}",
+								"{@spell Read the Wind|GW}",
+								"{@spell Resurrection Signet|GW}",
+								"{@spell Troll Unguent|GW}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Distracting Shot|GW}",
+								"{@spell Dryder's Defenses|GWP}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Guardian of Nature|XGE}"
+							],
+							"slots": 1
+						}
 					},
 					"ability": "wis",
 					"type": "spellcasting"
 				}
 			],
 			"spellcastingTags": [
-				"O"
+				"CR"
 			],
 			"damageTags": [
 				"I",
 				"P",
 				"S"
+			],
+			"damageTagsSpell": [
+				"O"
 			]
 		},
 		{
@@ -7883,7 +7922,6 @@
 					"headerEntries": [
 						"Livia is a 17th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 18}, +10 to hit with spell attacks). Livia has the following Wizard spells prepared:"
 					],
-					"displayAs": "action",
 					"spells": {
 						"0": {
 							"spells": [
@@ -8032,6 +8070,7 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Livia_Token.png"
 			},
+			"isNpc": true,
 			"damageTags": [
 				"N"
 			],
@@ -8960,7 +8999,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The centaur makes two attacks, using Ice Staff or Frost Ray in any combination. It can forgo one of the attacks to cast a spell."
+						"Maguuma Centaur Avenger makes two attacks, using Ice Staff or Frost Ray in any combination; they can forgo one of these attacks to take a {@action Magic|XPHB} action."
 					]
 				},
 				{
@@ -8970,7 +9009,7 @@
 					]
 				},
 				{
-					"name": "Distracting Ray",
+					"name": "Frost Ray",
 					"entries": [
 						"{@atkr r} {@hit 7}, range 90 ft. {@h}14 ({@damage 3d6 + 4}) Cold damage, and the target has the {@condition Crippled|GW} condition until the start of the centaur's next turn."
 					]
@@ -9009,20 +9048,6 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"fluff": {
-				"entries": [
-					"Maguuma Avengers are Centaur elementalists of the Maguuma Jungle that attack their foes with water magic."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Maguuma_Avenger.jpg"
-						}
-					}
-				]
-			},
 			"tokenHref": {
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Maguuma_Avenger_Token.png"
@@ -9038,18 +9063,41 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The Maguuma Centaur Avenger casts the following spell using Intelligence as the spellcasting ability (spell save {@dc 15}):"
+						"Maguuma Centaur Avenger is a 9th-level spellcaster. Their spellcasting ability is Intelligence (spell save {@dc 15}, +7 to hit with spell attacks). Maguuma Centaur Avenger has the following Elementalist (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"daily": {
-						"3": [
-							"{@spell Ice Prison|GWP} (Level 3 Version)",
-							"{@spell Rust|GW}"
-						],
-						"4": [
-							"{@spell Glyph of Renewal|GWP}",
-							"{@spell Shard Storm|GWP}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Glyph of Renewal|GWP}",
+								"{@spell Shard Storm|GWP}"
+							],
+							"slots": 3
+						},
+						"2": {
+							"spells": [
+								"{@spell Ice Prison|GWP}",
+								"{@spell Rust|GW}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 0
+						}
 					},
 					"ability": "int",
 					"type": "spellcasting"
@@ -9059,18 +9107,15 @@
 				"O"
 			],
 			"cha": 9,
+			"gear": [
+				"chain shirt|XPHB",
+				"staff|XPHB"
+			],
 			"damageTags": [
 				"B",
 				"C"
 			],
-			"damageTagsSpell": [
-				"C"
-			],
 			"savingThrowForced": [
-				"dexterity"
-			],
-			"savingThrowForcedSpell": [
-				"constitution",
 				"dexterity"
 			]
 		},
@@ -9689,13 +9734,19 @@
 					"entries": [
 						"The devourer can burrow through solid rock at half its burrow speed and leaves a 5-foot-diameter tunnel in its wake."
 					]
+				},
+				{
+					"name": "Proficient Spellcaster",
+					"entries": [
+						"The Fevered Devourer ignores any restrictions on expending more than one spell slot per turn."
+					]
 				}
 			],
 			"action": [
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The devourer makes either one Stinger or Stinger Fling attack, casts either Enfeebling Blood or Weaken Armor, and casts Virulence."
+						"The Fevered Devourer takes two {@action Magic|XPHB} actions and makes one attack, using Stinger or Stinger Fling."
 					]
 				},
 				{
@@ -9740,14 +9791,41 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The Plague Devourer casts the following spell, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 15})."
+						"The Fevered Devourer is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 16}, +8 to hit with spell attacks). The Fevered Devourer has the following Necromancer (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Enfeebling Blood|GW}",
-						"{@spell Virulence|GWP}",
-						"{@spell Weaken Armor|GW}"
-					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Enfeebling Blood|GW}",
+								"{@spell Weaken Armor|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Plague Touch|GW}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Virulence|GWP}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						}
+					},
 					"ability": "wis",
 					"type": "spellcasting"
 				}
@@ -11875,7 +11953,7 @@
 				{
 					"name": "Formation",
 					"entries": [
-						"Galrath gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of Galrath that is within 5 feet of him. This bonus is not added to Galrath's AC or saving throws if Galrath is {@condition incapacitated|XPHB}."
+						"Galrath gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of Galrath's that is within 5 feet of him. This bonus is not added to Galrath's AC or saving throws if Galrath is {@condition incapacitated|XPHB}."
 					]
 				},
 				{
@@ -11900,7 +11978,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Galrath makes four attacks, using Greatsword or Heavy Crossbow in any combination."
+						"Galrath makes four attacks, using Greatsword or Heavy Crossbow in any combination; he can forgo two of these attacks to take a {@action Magic|XPHB} action."
 					]
 				},
 				{
@@ -11929,7 +12007,7 @@
 				{
 					"name": "Rush",
 					"entries": [
-						"The white mantle takes the {@action Dash} action."
+						"Galrath takes the {@action Dash} action."
 					]
 				}
 			],
@@ -11945,13 +12023,41 @@
 				{
 					"name": "Blade Maelstrom",
 					"headerEntries": [
-						"Galrath casts one of the following spells, requiring no Material components and using Constitution as the spellcasting ability."
+						"Galrath is a 9th-level spellcaster. Their spellcasting ability is Strength (spell save {@dc 18}, +10 to hit with spell attacks). Galrath has the following Warrior (GW) spells prepared:"
 					],
-					"displayAs": "bonus",
-					"will": [
-						"{@spell Hundred Blades|GW}"
-					],
-					"ability": "con",
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Shield|XPHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Hundred Blades|GW}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Dispel Magic|XPHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Summon Greater Demon|XGE}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Steel Wind Strike|XGE}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "str",
 					"type": "spellcasting"
 				}
 			],
@@ -11970,6 +12076,12 @@
 			"damageTags": [
 				"P",
 				"S"
+			],
+			"damageTagsSpell": [
+				"O"
+			],
+			"savingThrowForcedSpell": [
+				"charisma"
 			]
 		},
 		{
@@ -12083,33 +12195,63 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Justiciar Hablion casts one of the following spells, requiring no Material components and using Strength as the spellcasting ability (spell save {@dc 20})"
+						"Justiciar Hablion is a 12th-level spellcaster. His spellcasting ability is Strength (spell save {@dc 21}, +13 to hit with spell attacks). Justiciar Hablion has the following Warrior (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Cyclone Axe|GW}",
-						"{@spell Dismember|GW}",
-						"{@spell Healing Signet|GW}",
-						"{@spell Wild Blow|GW}"
-					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell \"For Great Justice!\"|GW}",
+								"{@spell Cyclone Axe|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Dismember|GW}",
+								"{@spell Healing Signet|GW}",
+								"{@spell Hundred Blades|GW}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Wild Blow|GW}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
+					},
 					"ability": "str",
 					"type": "spellcasting"
 				},
 				{
-					"name": "Spellcasting",
+					"name": "Enspelled Handaxe",
 					"headerEntries": [
-						"Justiciar Hablion casts one of the following spells, requiring no Material components and using Strength as the spellcasting ability (spell save {@dc 17})"
+						"Justiciar Hablion uses his Enspelled Handaxe to cast Banishing Smite."
 					],
 					"displayAs": "bonus",
 					"daily": {
-						"3": [
-							"{@spell Hundred Blades|GW}"
-						],
 						"6": [
 							"{@spell Banishing Smite|XPHB}"
 						]
 					},
-					"ability": "str",
 					"type": "spellcasting"
 				}
 			],
@@ -12120,7 +12262,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Justiciar Hablion makes four Executioner's Handaxe or Titanstring Longbow attacks in any combination; he then can make a single attack with his Enspelled (Level 5) Handaxe if he didn't cast {@spell Banishing Smite|XPHB} or {@spell Hundred Blades|GW} this turn and his {@item Animated Shield} is active."
+						"Justiciar Hablion makes four Executioner's Handaxe or Titanstring Longbow attacks in any combination; he makes a single attack with his Enspelled (Level 5) Handaxe if he didn't cast {@spell Banishing Smite|XPHB} or {@spell Hundred Blades|GW} this turn and his {@item Animated Shield} is active."
 					]
 				},
 				{
@@ -12196,6 +12338,7 @@
 				"Enspelled (Level 5) Handaxe|XDMG",
 				"Titanstring Longbow|GW"
 			],
+			"isNpc": true,
 			"damageTags": [
 				"P",
 				"S"
@@ -12517,7 +12660,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Confessor Dorian casts either Unyielding Aura or Smite, makes either a Holy Smite or Holy Flare attack, casts either Heal Other/Jamei's Gaze, Remove Hex, or Purge Conditions, and uses Divine Judgement if available."
+						"Confessor Dorian takes two {@action Magic|XPHB} actions (ignoring any restrictions on expending more than one spell slot per turn), makes either a Holy Smite or Holy Flare attack, and uses Divine Judgement if available."
 					]
 				},
 				{
@@ -12543,28 +12686,65 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Confessor Dorian casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 26})."
+						"Confessor Dorian is a 20th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 26}, +18 to hit with spell attacks). Confessor Dorian has the following Monk (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Heal Other/Jamei's Gaze|GWP} (level 6 Version)",
-						"{@spell Purge Conditions|GW} (level 6 Version)",
-						"{@spell Remove Hex|GW} (level 6 Version)",
-						"{@spell Smite|GWP} (level 6 Version)",
-						"{@spell Unyielding Aura|GWP}"
-					],
-					"ability": "cha",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Smite the Unworthy",
-					"headerEntries": [
-						"Confessor Dorian casts Smite, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 26})."
-					],
-					"displayAs": "reaction",
-					"will": [
-						"{@spell Smite|GWP} (level 9 Version)"
-					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Remove Hex|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Heal Other|GWP}",
+								"{@spell Smite|GWP}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Purge Conditions|GW}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell Unyielding Aura|GWP}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
+					},
 					"ability": "cha",
 					"type": "spellcasting"
 				}
@@ -12621,8 +12801,14 @@
 				"B",
 				"R"
 			],
+			"damageTagsSpell": [
+				"R"
+			],
 			"savingThrowForced": [
 				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
 			]
 		},
 		{
@@ -13517,33 +13703,36 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The jade construct casts one of the following spells, requiring no Material components and using Constitution as the spellcasting ability (spell save {@dc 17})."
+						"The Jade Armor is a 7th-level spellcaster. Its spellcasting ability is Strength (spell save {@dc 17}, +9 to hit with spell attacks). The Jade Armor has the following Warrior (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"daily": {
-						"2": [
-							"{@spell Wild Blow|GW}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Devastating Hammer|GW}",
+								"{@spell Protector's Strike|GWP}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Crushing Blow|GWP}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Wild Blow|GW}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
 					},
-					"will": [
-						"{@spell Crushing Blow|GWP}",
-						"{@spell Devastating Hammer|GW}"
-					],
-					"ability": "con",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Protector",
-					"headerEntries": [
-						"The jade construct casts Protector's Strike, requiring no Material components and using Constitution as the spellcasting ability."
-					],
-					"displayAs": "reaction",
-					"daily": {
-						"2": [
-							"{@spell Protector's Strike|GWP} (level 3 Version)"
-						]
-					},
-					"ability": "con",
+					"ability": "str",
 					"type": "spellcasting"
 				}
 			],
@@ -13710,44 +13899,48 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The jade construct casts one of the following spells, requiring no Material components and using Constitution as the spellcasting ability (spell save {@dc 17})."
+						"The Jade Bow is a 7th-level spellcaster. Its spellcasting ability is Dexterity (spell save {@dc 17}, +9 to hit with spell attacks). The Jade Bow has the following Ranger (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Penetrating Attack/Sundering Attack|GWP}"
-					],
-					"daily": {
-						"3e": [
-							"{@spell Determined Shot|GW}",
-							"{@spell Oath Shot|GWP}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Determined Shot|GW}",
+								"{@spell Oath Shot|GWP}",
+								"{@spell Penetrating Attack|GWP}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Whirling Defense|GW}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
 					},
-					"ability": "con",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Whirling Defender",
-					"headerEntries": [
-						"The jade construct casts Whirling Defense, requiring no Material components and using Constitution as the spellcasting ability."
-					],
-					"displayAs": "reaction",
-					"daily": {
-						"1": [
-							"{@spell Whirling Defense|GW} (level 5 Version)"
-						]
-					},
-					"ability": "con",
+					"ability": "dex",
 					"type": "spellcasting"
 				}
 			],
 			"spellcastingTags": [
-				"O"
+				"CR"
 			],
 			"action": [
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The jade construct makes two attacks, using Wild Swing or Longbow Shot in any combination. If available, it uses Determined or Oath Shot on each Longbow Shot; otherwise, it uses Penetrating Attack/Sundering Attack once per turn. If available, it inflicts Spectral Agony on the first target it hits with an attack."
+						"The jade construct makes two attacks, using Wild Swing or Longbow Shot in any combination. If available, it inflicts Spectral Agony on the first target it hits with an attack."
 					]
 				},
 				{
@@ -13765,7 +13958,7 @@
 				{
 					"name": "Spectral Agony {@recharge}",
 					"entries": [
-						"{@actSave int} {@dc 17}, one creature the jade construct hit with an attack. {@i Failure:} 27 ({@damage 5d10}) Psychic damage, and the target has the {@condition Prone|XPHB} condition. {@i Success:} Half damage only."
+						"{@actSave int} {@dc 17}, one creature the jade construct hit with an attack. {@i Failure:} 27 ({@damage 5d10}) Psychic damage, and the target has the {@condition Restrained|XPHB} condition for 1 round. {@i Success:} Half damage only."
 					]
 				}
 			],
@@ -13795,7 +13988,7 @@
 				"any"
 			],
 			"conditionInflict": [
-				"prone"
+				"restrained"
 			],
 			"damageTags": [
 				"P",
@@ -13893,30 +14086,23 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The charr casts one of the following spells, using Strength as the spellcasting ability (spell save {@dc 13})."
+						"The Charr Axe Fiend is a 3rd-level spellcaster. Their spellcasting ability is Strength (spell save {@dc 13}, +5 to hit with spell attacks). The Charr Axe Fiend has the following Warrior (GW) spells prepared:"
 					],
-					"footerEntries": [
-						"The charr uses Cyclone Axe only when it can hit more than one target and uses Eviscerate once it has gained enough {@variantrule Adrenaline|GW}."
-					],
-					"displayAs": "action",
-					"daily": {
-						"1e": [
-							"{@spell Cyclone Axe|GW}",
-							"{@spell Eviscerate|GWP}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Cyclone Axe|GW}",
+								"{@spell Frenzy|GW}"
+							],
+							"slots": 3
+						},
+						"2": {
+							"spells": [
+								"{@spell Eviscerate|GWP}"
+							],
+							"slots": 2
+						}
 					},
-					"ability": "str",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Frenzy",
-					"headerEntries": [
-						"The charr casts Frenzy, using Strength as the spellcasting ability."
-					],
-					"displayAs": "bonus",
-					"will": [
-						"{@spell Frenzy|GW}"
-					],
 					"ability": "str",
 					"type": "spellcasting"
 				}
@@ -14051,7 +14237,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The Charr Ash Walker is a 1st-level spellcaster. Their spellcasting ability is Intelligence (spell save {@dc 13}, +5 to hit with spell attacks). The Charr Ash Walker has the following Necromancer (GW) spells prepared:"
+						"The Charr Ash Walker is a 3rd-level spellcaster. Their spellcasting ability is Intelligence (spell save {@dc 13}, +5 to hit with spell attacks). The Charr Ash Walker has the following Necromancer (GW) spells prepared:"
 					],
 					"spells": {
 						"1": {
@@ -14111,13 +14297,6 @@
 			},
 			"damageTags": [
 				"N"
-			],
-			"damageTagsSpell": [
-				"N"
-			],
-			"savingThrowForcedSpell": [
-				"constitution",
-				"wisdom"
 			]
 		},
 		{
@@ -14206,27 +14385,29 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The charr casts one of the following spells, requiring no Material components and using Dexterity as the spellcasting ability."
+						"The Charr Stalker is a 3rd-level spellcaster. Their spellcasting ability is Dexterity (spell save {@dc 13}, +5 to hit with spell attacks). The Charr Stalker has the following Ranger (GW) spells prepared:"
 					],
-					"footerEntries": [
-						"The charr casts Ignite Arrows during its first turn, then uses Dual Shot and Penetrating Attack/Sundering Attack."
-					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Ignite Arrows|GWP}"
-					],
-					"daily": {
-						"1e": [
-							"{@spell Dual Shot|GW}",
-							"{@spell Penetrating Attack/Sundering Attack|GWP}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Dual Shot|GW}",
+								"{@spell Penetrating Attack|GWP}"
+							],
+							"slots": 3
+						},
+						"2": {
+							"spells": [
+								"{@spell Ignite Arrows|GWP}"
+							],
+							"slots": 2
+						}
 					},
 					"ability": "dex",
 					"type": "spellcasting"
 				}
 			],
 			"spellcastingTags": [
-				"O"
+				"CR"
 			],
 			"action": [
 				{
@@ -14363,30 +14544,28 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The charr casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 13})."
+						"The Charr Mind Spark is a 5th-level spellcaster. Their spellcasting ability is Charisma (spell save {@dc 13}, +5 to hit with spell attacks). The Charr Mind Spark has the following Mesmer (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Shatter Hex|GW}"
-					],
-					"daily": {
-						"1e": [
-							"{@spell Energy Burn|GW}"
-						]
-					},
-					"ability": "cha",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"The charr casts Power Block, using Charisma as the spellcasting ability (spell save {@dc 13})."
-					],
-					"displayAs": "reaction",
-					"daily": {
-						"1": [
-							"{@spell Power Block|GWP}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Energy Burn|GW}",
+								"{@spell Shatter Hex|GW}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Power Block|GWP}"
+							],
+							"slots": 2
+						}
 					},
 					"ability": "cha",
 					"type": "spellcasting"
@@ -14521,31 +14700,29 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The charr casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 13})."
+						"The Charr Martyr is a 5th-level spellcaster. Their spellcasting ability is Wisdom (spell save {@dc 13}, +5 to hit with spell attacks). The Charr Martyr has the following Monk (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Orison of Healing|GW} (level 2 Version)"
-					],
-					"daily": {
-						"1e": [
-							"{@spell Infuse Health|GW}",
-							"{@spell Shield of Judgment|GWP}"
-						]
-					},
-					"ability": "cha",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"The charr casts Bane Signet, using Wisdom as the spellcasting ability (spell save {@dc 13})."
-					],
-					"displayAs": "reaction",
-					"daily": {
-						"1": [
-							"{@spell Bane Signet|GW}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Bane Signet|GW}",
+								"{@spell Infuse Health|GW}",
+								"{@spell Orison of Healing|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Shield of Judgment|GWP}"
+							],
+							"slots": 2
+						}
 					},
 					"ability": "wis",
 					"type": "spellcasting"
@@ -14679,18 +14856,28 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The charr casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 13})."
+						"The Charr Fire Caller is a 6th-level spellcaster. Their spellcasting ability is Intelligence (spell save {@dc 13}, +5 to hit with spell attacks). The Charr Fire Caller has the following Elementalist (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Flare|GW}"
-					],
-					"daily": {
-						"1e": [
-							"{@spell Conjure Flame|GW}",
-							"{@spell Lava Font|GWP}",
-							"{@spell Meteor Shower|GWP}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Flare|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Lava Font|GWP}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Conjure Flame|GW}",
+								"{@spell Searing Heat|GWP}"
+							],
+							"slots": 3
+						}
 					},
 					"ability": "int",
 					"type": "spellcasting"
@@ -14703,7 +14890,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The charr makes either one Molten Cudgel or Molten Fling attack and then casts either Flare, Conjure Flame, Lava Font, or Meteor Shower or uses a {@action Magic|XPHB} to move Lava Font or Meteor Shower."
+						"The charr makes either one Molten Cudgel or Molten Fling attack and takes a {@action Magic|XPHB} action."
 					]
 				},
 				{
@@ -14836,30 +15023,27 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The charr casts Wild Blow, using Strength as the spellcasting ability (spell save {@dc 14})."
+						"The Charr Blade Storm is a 5th-level spellcaster. Their spellcasting ability is Strength (spell save {@dc 14}, +6 to hit with spell attacks). The Charr Blade Storm has the following Warrior (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"daily": {
-						"2e": [
-							"{@spell Wild Blow|GW}"
-						]
-					},
-					"ability": "str",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"The charr casts either Frenzy of Hundred Blades, using Strength as the spellcasting ability (spell save {@dc 14})."
-					],
-					"displayAs": "bonus",
-					"will": [
-						"{@spell Frenzy|GW} (level 2 Version)"
-					],
-					"daily": {
-						"1": [
-							"{@spell Hundred Blades|GW}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Frenzy|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Hundred Blades|GW}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Wild Blow|GW}"
+							],
+							"slots": 2
+						}
 					},
 					"ability": "str",
 					"type": "spellcasting"
@@ -14872,7 +15056,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The charr makes three attacks, using Blade or Shortbow in any combination. If it attacks with Blade, they cast Hundred Blades as a {@action Bonus Action|XPHB} first and then use Wild Blow until it's no longer available."
+						"The charr makes three attacks, using Blade or Shortbow in any combination."
 					]
 				},
 				{
@@ -14901,10 +15085,6 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"tokenHref": {
-				"type": "external",
-				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Elite_Charr_Guard_(warrior)_Token.png"
-			},
 			"environment": [
 				"any"
 			],
@@ -14923,12 +15103,13 @@
 				"RW",
 				"RNG"
 			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Elite_Charr_Guard_(warrior).jpg"
+			},
 			"damageTags": [
 				"P",
 				"S"
-			],
-			"savingThrowForcedSpell": [
-				"strength"
 			]
 		},
 		{
@@ -15061,7 +15242,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The charr makes either one Ash Touch or Ash Blast attack and then casts either Faintheartedness, Life Siphon, Mark of Pain, or Lingering Curse."
+						"The charr makes either one Ash Touch or Ash Blast attack and takes a {@action Magic|XPHB} action."
 					]
 				},
 				{
@@ -15199,43 +15380,40 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The charr casts one of the following spells, requiring no Material components and using Dexterity as the spellcasting ability."
+						"The Charr Hunter is a 5th-level spellcaster. Their spellcasting ability is Dexterity (spell save {@dc 15}, +7 to hit with spell attacks). The Charr Hunter has the following Ranger (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Ignite Arrows|GWP} (level 3 Version)"
-					],
-					"daily": {
-						"2e": [
-							"{@spell Penetrating Attack/Sundering Attack|GWP}"
-						]
-					},
-					"ability": "dex",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"The charr casts one of the following spells, requiring no Material components and using Dexterity as the spellcasting ability (spell save {@dc 15})."
-					],
-					"displayAs": "reaction",
-					"daily": {
-						"2": [
-							"{@spell Distracting Shot|GW}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Penetrating Attack|GWP}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Ignite Arrows|GWP}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Distracting Shot|GW}"
+							],
+							"slots": 2
+						}
 					},
 					"ability": "dex",
 					"type": "spellcasting"
 				}
 			],
 			"spellcastingTags": [
-				"O"
+				"CR"
 			],
 			"action": [
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The charr casts Ignite Arrows if the spell is not active; it then makes    two attacks, using Scimitar or Longbow in any combination. "
+						"The charr casts Ignite Arrows if the spell is not active; it then makes two attacks, using Scimitar or Longbow in any combination. "
 					]
 				},
 				{
@@ -15390,31 +15568,41 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The charr casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 15})."
+						"The Charr Chaot is a 10th-level spellcaster. Their spellcasting ability is Charisma (spell save {@dc 15}, +7 to hit with spell attacks). The Charr Chaot has the following Mesmer (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Shatter Enchantment|GW}",
-						"{@spell Shatter Hex|GW} (level 3 Version)"
-					],
-					"daily": {
-						"3e": [
-							"{@spell Energy Burn|GW} (level 3 Version)"
-						]
-					},
-					"ability": "cha",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"The charr casts Power Block, using Charisma as the spellcasting ability (spell save {@dc 15})."
-					],
-					"displayAs": "reaction",
-					"daily": {
-						"2": [
-							"{@spell Power Block|GWP}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Energy Burn|GW}",
+								"{@spell Shatter Enchantment|GW}",
+								"{@spell Shatter Hex|GW}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Power Block|GWP}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						}
 					},
 					"ability": "cha",
 					"type": "spellcasting"
@@ -15427,7 +15615,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The charr makes one Mind Touch or Mind Spark attack and then casts either Shatter Enchantment, Shatter Hex, or Energy Burn."
+						"The charr makes one Mind Touch or Mind Spark attack and and takes a {@action Magic|XPHB} action."
 					]
 				},
 				{
@@ -15565,32 +15753,48 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The charr casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 16})."
+						"The Charr Shaman is an 11th-level spellcaster. Their spellcasting ability is Wisdom (spell save {@dc 16}, +8 to hit with spell attacks). The Charr Shaman has the following Monk (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Banish|GW} (level 3 Version)",
-						"{@spell Orison of Healing|GW} (level 4 Version)"
-					],
-					"daily": {
-						"2e": [
-							"{@spell Infuse Health|GW} (level 6 Version)",
-							"{@spell Shield of Judgment|GWP} (level 4 Version)"
-						]
-					},
-					"ability": "cha",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"The charr casts Bane Signet, using Wisdom as the spellcasting ability (spell save {@dc 16})."
-					],
-					"displayAs": "reaction",
-					"daily": {
-						"2": [
-							"{@spell Bane Signet|GW}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Bane Signet|GW}",
+								"{@spell Banish|GW}",
+								"{@spell Infuse Health|GW}",
+								"{@spell Orison of Healing|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Shield of Judgment|GWP}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
 					},
 					"ability": "wis",
 					"type": "spellcasting"
@@ -15603,7 +15807,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The charr makes one Radiant Slice or Radiant Missile attack and then casts either Banish, Orison of Healing, Infuse Health, or Shield of Judgment."
+						"The charr makes one Radiant Slice or Radiant Missile attack and takes a {@action Magic|XPHB} action."
 					]
 				},
 				{
@@ -15736,18 +15940,45 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The charr casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 16})."
+						"The Charr Flame Wielder is a 12th-level spellcaster. Their spellcasting ability is Intelligence (spell save {@dc 16}, +8 to hit with spell attacks). The Charr Flame Wielder has the following Elementalist (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Flare|GW} (level 3 Version)"
-					],
-					"daily": {
-						"1e": [
-							"{@spell Conjure Flame|GW}",
-							"{@spell Lava Font|GWP} (level 3 Version)",
-							"{@spell Meteor Shower|GWP}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Flare|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Lava Font|GWP}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Conjure Flame|GW}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Meteor Shower|GWP}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
 					},
 					"ability": "int",
 					"type": "spellcasting"
@@ -15760,7 +15991,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The charr makes either one Molten Cudgel or Molten Fling attack, then casts Flare, and then casts either Conjure Flame, Lava Font, or Meteor Shower, or uses a {@action Magic|XPHB} to move Lava Font or Meteor Shower."
+						"The charr makes two attacks, using Molten Cudgel or Molten Fling in any combination, and takes a {@action Magic|XPHB} action."
 					]
 				},
 				{
@@ -15805,6 +16036,13 @@
 			},
 			"damageTags": [
 				"F"
+			],
+			"damageTagsSpell": [
+				"B",
+				"F"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
 			]
 		},
 		{
@@ -15852,54 +16090,73 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Dark Oak casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 25}):"
+						"Dark Oak is a 20th-level spellcaster. Their spellcasting ability is Wisdom (spell save {@dc 23}, +15 to hit with spell attacks). Dark Oak has the following Druid spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Comfort Animal|GW} (level 4 Version)",
-						"{@spell Frozen Soil|GWP}",
-						"{@spell Otyugh's Cry|GWP} (level 4 Version)",
-						"{@spell Troll Unguent|GW} (level 4 Version)"
-					],
-					"daily": {
-						"2e": [
-							"{@spell Eruption|GWP} (level 5 Version)",
-							"{@spell Ward Against Elements|GWP} (level 5 Version)",
-							"{@spell Ward Against Melee|GW} (level 5 Version)"
-						],
-						"1e": [
-							"{@spell Earthquake/Dragon's Stomp|GWP} (level 8 Version)",
-							"{@spell Edge of Extinction|GWP} (level 7 Version)",
-							"{@spell Mending|GW} (level 6 Version)",
-							"{@spell Rodgort's Invocation|GWP} (level 9 Version)"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Comfort Animal|GW}",
+								"{@spell Ferocious Strike|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Call of Protection|GWP}",
+								"{@spell Otyugh's Cry|GWP}",
+								"{@spell Troll Unguent|GW}",
+								"{@spell Ward Against Elements|GWP}",
+								"{@spell Ward Against Melee|GW}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Call of Haste|GW}",
+								"{@spell Disrupting Lunge|GW}",
+								"{@spell Eruption|GWP}",
+								"{@spell Mending|GW}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Edge of Extinction|GWP}",
+								"{@spell Frozen Soil|GWP}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Earthquake|GWP}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell Rodgort's Invocation|GWP}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
 					},
-					"ability": "wis",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Dark Oak casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 25}):"
-					],
-					"displayAs": "bonus",
-					"will": [
-						"{@spell Call of Haste|GW}",
-						"{@spell Call of Protection|GWP} (level 3 Version)",
-						"{@spell Ferocious Strike|GW} (level 3 Version)"
-					],
-					"ability": "wis",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Dark Oak casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 25}):"
-					],
-					"displayAs": "reaction",
-					"will": [
-						"{@spell Disrupting Lunge|GW}"
-					],
 					"ability": "wis",
 					"type": "spellcasting"
 				}
@@ -15908,13 +16165,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Dark Oak casts two spells and makes either a Druid's Wrath or a Nature's Fury attack."
+						"Dark Oak takes two {@action Magic|XPHB} actions and makes either a Druid's Wrath or a Nature's Fury attack."
 					]
 				},
 				{
 					"name": "Druid's Wrath",
 					"entries": [
-						"{@atk mw} {@hit 15} to hit, reach 15 ft., one target. {@h}61 ({@damage 8d12 + 9}) bludgeoning damage, plus 3 ({@damage 1d6}) acid, cold, fire, lightning, poison, and thunder damage."
+						"{@atk mw} {@hit 15} to hit, reach 15 ft., one target. {@h}61 ({@damage 8d12 + 9}) bludgeoning damage, plus 18 ({@damage 1d6}) acid, cold, fire, lightning, poison, and thunder damage."
 					]
 				},
 				{
@@ -15928,7 +16185,7 @@
 				{
 					"name": "Summon Ally {@recharge}",
 					"entries": [
-						"Dark Oak magically summons forth a companion. One Beast or Monstrosity with a {@variantrule Challenge Rating|XPHB} equal to or less than one other creature within 1 mile of Dark Oak appears in an unoccupied space within 150 feet of Dark Oak. The creature is an ally to Dark Oak and their allies. In combat, it shares Dark Oak's {@variantrule Initiative|XPHB} count, but it takes its turn immediately after Dark Oak. It obeys Dark Oak's verbal commands (no action required by Dark Oak). If Dark Oak doesn't issue any, it takes the dodge action and uses its movement to avoid danger."
+						"Dark Oak magically summons forth a {@variantrule Companion|GW}. One Beast or Monstrosity with a {@variantrule Challenge Rating|XPHB} equal to or less than one other creature within 1 mile of Dark Oak appears in an unoccupied space within 150 feet of Dark Oak. The creature is an ally to Dark Oak and their allies. In combat, it shares Dark Oak's {@variantrule Initiative|XPHB} count, but it takes its turn immediately after Dark Oak. It obeys Dark Oak's verbal commands (no action required by Dark Oak). If Dark Oak doesn't issue any, it takes the {@action dodge} action and uses its movement to avoid danger."
 					]
 				}
 			],
@@ -15937,7 +16194,7 @@
 				"Shapechanger"
 			],
 			"spellcastingTags": [
-				"O"
+				"CD"
 			],
 			"conditionInflictSpell": [
 				"charmed",
@@ -16002,6 +16259,12 @@
 					"name": "Legendary Resistance (5/Day)",
 					"entries": [
 						"If Dark Oak fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Proficient Spellcaster",
+					"entries": [
+						"Dark Oak ignores any restrictions on expending more than one spell slot per turn."
 					]
 				}
 			],
@@ -16357,13 +16620,19 @@
 					"entries": [
 						"If the mursaat fails a saving throw, it can choose to succeed instead."
 					]
+				},
+				{
+					"name": "Proficient Spellcaster",
+					"entries": [
+						"Lazarus the Dire ignores any restrictions on expending more than one spell slot per turn."
+					]
 				}
 			],
 			"action": [
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The mursaat casts either Life Siphon or Life Transfer, makes either a Necrotic Claw or Necrotic Burst attack, casts either Insidious Parasite or Mark of Subversion, and uses either Out of Phase or Spectral Agony if available."
+						"Lazarus the Dire takes two {@action Magic|XPHB} actions, makes two attacks using Necrotic Claw or Necrotic Burst in any combination, and uses either Out of Phase or Spectral Agony."
 					]
 				},
 				{
@@ -16381,13 +16650,13 @@
 				{
 					"name": "Out of Phase",
 					"entries": [
-						"The mursaat casts {@spell Greater Invisibility|XPHB} on itself, requiring no spell components and using Intelligence as the spellcasting ability."
+						"Lazarus the Dire teleports from the Material Plane to the Ethereal Plane until the start of his next turn."
 					]
 				},
 				{
 					"name": "Spectral Agony {@recharge 5}",
 					"entries": [
-						"{@actSave int} {@dc 19}, one creature the mursaat can see within 120 feet. {@i Failure:} 55 ({@damage 10d10}) Psychic damage, and the target has the {@condition Incapacitated|XPHB} condition until the start of the mursaat's next turn. {@i Success:} Half damage only."
+						"{@actSave int} {@dc 19}, one creature Lazarus the Dire can see within 120 feet. {@i Failure:} 55 ({@damage 10d10}) Psychic damage, and the target has the {@condition Incapacitated|XPHB} condition until the start of Lazarus the Dire's next turn. {@i Success:} Half damage only."
 					]
 				}
 			],
@@ -16398,31 +16667,68 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The mursaat casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 19})."
+						"Lazarus the Dire is a 20th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 19}, +11 to hit with spell attacks). Lazarus the Dire has the following Necromancer (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Insidious Parasite|GWP} (level 4 Version)",
-						"{@spell Life Siphon|GW} (level 4 Version)"
-					],
-					"daily": {
-						"3e": [
-							"{@spell Life Transfer|GWP} (level 6 Version)",
-							"{@spell Mark of Subversion|GWP} (level 6 Version)"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Blood Renewal|GWP}",
+								"{@spell Life Siphon|GW}",
+								"{@spell Life Transfer|GWP}",
+								"{@spell Shield|XPHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Insidious Parasite|GWP}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Mark of Subversion|GWP}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Banishment|XPHB}",
+								"{@spell Power Spike|GW}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Danse Macabre|XGE}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell Circle of Death|XPHB}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell Finger of Death|XPHB}"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell Clone|XPHB}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell Power Word Kill|XPHB}"
+							],
+							"slots": 1
+						}
 					},
-					"ability": "int",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Profane Restoration",
-					"headerEntries": [
-						"The mursaat casts Blood Renewal, requiring no Material components and using Intelligence as the spellcasting ability."
-					],
-					"displayAs": "bonus",
-					"will": [
-						"{@spell Blood Renewal|GWP} (level 9 Version)"
-					],
 					"ability": "int",
 					"type": "spellcasting"
 				}
@@ -16469,14 +16775,15 @@
 				"Y"
 			],
 			"damageTagsSpell": [
-				"N"
+				"N",
+				"Y"
 			],
 			"savingThrowForced": [
 				"intelligence"
 			],
 			"savingThrowForcedSpell": [
-				"constitution",
-				"wisdom"
+				"charisma",
+				"constitution"
 			]
 		},
 		{
@@ -17180,7 +17487,7 @@
 			"cha": 12,
 			"passive": 20,
 			"cr": "15",
-			"shortName": "White Mantle",
+			"shortName": "Demagogue",
 			"languages": [
 				"Common",
 				"Krytan",
@@ -17197,209 +17504,25 @@
 				{
 					"name": "Devotion",
 					"entries": [
-						"The white mantle has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+						"The Demagogue has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
 					]
 				},
 				{
 					"name": "Formation",
 					"entries": [
-						"The white mantle gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of the white mantle that is within 5 feet of it. This bonus is not added to the white mantle's AC or saving throws if the white mantle is {@condition incapacitated|XPHB}."
+						"The Demagogue gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of the Demagogue that is within 5 feet of him. This bonus is not added to the Demagogue's AC or saving throws if the Demagogue is {@condition incapacitated|XPHB}."
 					]
 				},
 				{
 					"name": "Halt",
 					"entries": [
-						"When the white mantle hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
+						"When the Demagogue hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
 					]
 				},
 				{
 					"name": "Legendary Resistance (2/Day)",
 					"entries": [
-						"If the white mantle fails a saving throw, it can choose to succeed instead."
-					]
-				}
-			],
-			"gear": [
-				"Chain Mail|XPHB",
-				"Greatsword|XPHB",
-				"Heavy Crossbow|XPHB",
-				{
-					"item": "+1 Bolt|XDMG",
-					"quantity": 20,
-					"displayName": ""
-				},
-				"Crossbow Bolt Case|XPHB"
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The white mantle makes three attacks, using Greatsword or Heavy Crossbow in any combination."
-					]
-				},
-				{
-					"name": "Greatsword",
-					"entries": [
-						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}33 ({@damage 8d6 + 5}) slashing damage."
-					]
-				},
-				{
-					"name": "Heavy Crossbow",
-					"entries": [
-						"{@atk rw} {@hit 8} to hit, range 100/400 ft., one target. {@h}20 ({@damage 3d10 + 4}) piercing damage."
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"miscTags": [
-				"MW",
-				"MLW",
-				"RW",
-				"RNG"
-			],
-			"bonus": [
-				{
-					"name": "Rush",
-					"entries": [
-						"The white mantle takes the {@action Dash} action."
-					]
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"environment": [
-				"any"
-			],
-			"group": [
-				"White Mantle"
-			],
-			"spellcasting": [
-				{
-					"name": "Charge",
-					"headerEntries": [
-						"The white mantle casts one of the following spells, using Constitution as the spellcasting ability (spell save {@dc 18})."
-					],
-					"displayAs": "bonus",
-					"will": [
-						"{@spell Bull's Charge|GWP} (level 5 Version)"
-					],
-					"ability": "con",
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"O"
-			],
-			"save": {
-				"str": "+10",
-				"con": "+10"
-			},
-			"traitTags": [
-				"Legendary Resistances"
-			],
-			"legendaryActions": 1,
-			"legendary": [
-				{
-					"name": "Attack",
-					"entries": [
-						"Demagogue attacks using one of its attacks."
-					]
-				},
-				{
-					"name": "Move",
-					"entries": [
-						"Demagogue moves up to its speed without provoking opportunity attacks."
-					]
-				}
-			],
-			"tokenHref": {
-				"type": "external",
-				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_Warrior_m_Token.png"
-			},
-			"damageTags": [
-				"P",
-				"S"
-			]
-		},
-		{
-			"name": "Demagogue",
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"human"
-				]
-			},
-			"source": "GWP",
-			"alignment": [
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 18,
-					"from": [
-						"{@item plate armor|xphb}"
-					]
-				}
-			],
-			"hp": {
-				"formula": "31d8 + 155",
-				"average": 294
-			},
-			"speed": {
-				"walk": 45
-			},
-			"initiative": {
-				"proficiency": 1
-			},
-			"str": 20,
-			"dex": 14,
-			"con": 20,
-			"int": 12,
-			"wis": 10,
-			"cha": 12,
-			"passive": 20,
-			"cr": "15",
-			"shortName": "White Mantle",
-			"languages": [
-				"Common",
-				"Krytan",
-				"Mursaat"
-			],
-			"languageTags": [
-				"C"
-			],
-			"skill": {
-				"athletics": "+15",
-				"perception": "+10"
-			},
-			"trait": [
-				{
-					"name": "Devotion",
-					"entries": [
-						"The white mantle has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
-					]
-				},
-				{
-					"name": "Formation",
-					"entries": [
-						"The white mantle gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of the white mantle that is within 5 feet of it. This bonus is not added to the white mantle's AC or saving throws if the white mantle is {@condition incapacitated|XPHB}."
-					]
-				},
-				{
-					"name": "Halt",
-					"entries": [
-						"When the white mantle hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
-					]
-				},
-				{
-					"name": "Legendary Resistance (2/Day)",
-					"entries": [
-						"If the white mantle fails a saving throw, it can choose to succeed instead."
+						"If the Demagogue fails a saving throw, he can choose to succeed instead."
 					]
 				}
 			],
@@ -17418,7 +17541,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The white mantle makes three attacks, using Greatsword or Heavy Crossbow in any combination."
+						"The Demagogue makes two attacks, using Greatsword or Heavy Crowssbow in any combination; he can forgo one of these attacks to take a {@action Magic|XPHB} action."
 					]
 				},
 				{
@@ -17447,7 +17570,7 @@
 				{
 					"name": "Rush",
 					"entries": [
-						"The white mantle takes the {@action Dash} action."
+						"The Demagogue takes the {@action Dash} action."
 					]
 				}
 			],
@@ -17461,15 +17584,48 @@
 			],
 			"spellcasting": [
 				{
-					"name": "Charge",
+					"name": "Spellcasting",
 					"headerEntries": [
-						"The white mantle casts one of the following spells, using Constitution as the spellcasting ability (spell save {@dc 18})."
+						"The Demagogue is a 9th-level spellcaster. His spellcasting ability is Strength (spell save {@dc 18}, +10 to hit with spell attacks). The Demagogue has the following Warrior (GW) spells prepared:"
 					],
-					"displayAs": "bonus",
-					"will": [
-						"{@spell Bull's Charge|GWP} (level 5 Version)"
-					],
-					"ability": "con",
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell Hamstring|GW}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell \"For Great Justice!\"|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Bull's Charge|GWP}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Disrupting Chop|GW}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Fire Shield|XPHB}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "str",
 					"type": "spellcasting"
 				}
 			],
@@ -17483,18 +17639,18 @@
 			"traitTags": [
 				"Legendary Resistances"
 			],
-			"legendaryActions": 1,
+			"legendaryActions": 2,
 			"legendary": [
 				{
 					"name": "Attack",
 					"entries": [
-						"Demagogue attacks using one of its attacks."
+						"The Demagogue attacks using one of his attacks."
 					]
 				},
 				{
 					"name": "Move",
 					"entries": [
-						"Demagogue moves up to its speed without provoking opportunity attacks."
+						"The Demagogue moves up to his speed without provoking opportunity attacks."
 					]
 				}
 			],
@@ -17502,12 +17658,14 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_Warrior_m_Token.png"
 			},
+			"isNpc": true,
 			"damageTags": [
 				"P",
 				"S"
 			],
-			"savingThrowForcedSpell": [
-				"strength"
+			"damageTagsSpell": [
+				"C",
+				"F"
 			]
 		}
 	],
@@ -20253,7 +20411,7 @@
 			]
 		},
 		{
-			"name": "Blood Reneawl",
+			"name": "Blood Renewal",
 			"level": 1,
 			"school": "N",
 			"time": [
@@ -60851,7 +61009,7 @@
 					{
 						"type": "statblock",
 						"tag": "spell",
-						"name": "Blood Reneawl",
+						"name": "Blood Renewal",
 						"source": "GWP"
 					}
 				],
@@ -63044,7 +63202,7 @@
 					{
 						"type": "statblock",
 						"tag": "spell",
-						"name": "Blood Reneawl",
+						"name": "Blood Renewal",
 						"source": "GWP"
 					}
 				],
@@ -64785,7 +64943,7 @@
 					{
 						"type": "statblock",
 						"tag": "spell",
-						"name": "Blood Reneawl",
+						"name": "Blood Renewal",
 						"source": "GWP"
 					}
 				],
@@ -66579,7 +66737,7 @@
 					{
 						"type": "statblock",
 						"tag": "spell",
-						"name": "Blood Reneawl",
+						"name": "Blood Renewal",
 						"source": "GWP"
 					}
 				],
@@ -67553,7 +67711,7 @@
 					{
 						"type": "statblock",
 						"tag": "spell",
-						"name": "Blood Reneawl",
+						"name": "Blood Renewal",
 						"source": "GWP"
 					}
 				],
@@ -68204,7 +68362,7 @@
 					{
 						"type": "statblock",
 						"tag": "spell",
-						"name": "Blood Reneawl",
+						"name": "Blood Renewal",
 						"source": "GWP"
 					}
 				],
@@ -73156,7 +73314,7 @@
 					{
 						"type": "statblock",
 						"tag": "spell",
-						"name": "Blood Reneawl",
+						"name": "Blood Renewal",
 						"source": "GWP"
 					}
 				],
@@ -78995,7 +79153,7 @@
 					{
 						"type": "statblock",
 						"tag": "spell",
-						"name": "Blood Reneawl",
+						"name": "Blood Renewal",
 						"source": "GWP"
 					}
 				],
@@ -81540,7 +81698,7 @@
 					{
 						"type": "statblock",
 						"tag": "spell",
-						"name": "Blood Reneawl",
+						"name": "Blood Renewal",
 						"source": "GWP"
 					}
 				],
@@ -83775,7 +83933,7 @@
 					{
 						"type": "statblock",
 						"tag": "spell",
-						"name": "Blood Reneawl",
+						"name": "Blood Renewal",
 						"source": "GWP"
 					}
 				],
@@ -84786,7 +84944,7 @@
 					{
 						"type": "statblock",
 						"tag": "spell",
-						"name": "Blood Reneawl",
+						"name": "Blood Renewal",
 						"source": "GWP"
 					}
 				],
@@ -85726,7 +85884,7 @@
 					{
 						"type": "statblock",
 						"tag": "spell",
-						"name": "Blood Reneawl",
+						"name": "Blood Renewal",
 						"source": "GWP"
 					}
 				],

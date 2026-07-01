@@ -8127,9 +8127,15 @@
 			],
 			"cr": "4",
 			"gear": [
-				"breastplate|xphb",
+				"hide armor|xphb",
 				"longbow|xphb",
-				"pike|xphb"
+				"pike|xphb",
+				{
+					"item": "arrow|xphb",
+					"quantity": 20,
+					"displayName": ""
+				},
+				"quiver"
 			],
 			"action": [
 				{
@@ -8183,37 +8189,30 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"attachedItems": [
-				"longbow|phb"
-			],
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The Maguuma Centaur Warrior casts the following spell:"
+						"The centaur is a 4th-level spellcaster. Their spellcasting ability is Strength (spell save {@dc 16}, +8 to hit with spell attacks). The centaur has the following Warrior (GW) spells prepared:"
 					],
-					"displayAs": "bonus",
-					"daily": {
-						"1": [
-							"{@spell \"I Will Avenge You!\"|GWP}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell \"I Will Avenge You!\"|GWP}",
+								"{@spell Eviscerate|GWP}",
+								"{@spell Executioner's Strike|GW}",
+								"{@spell Swift Chop|GW}"
+							],
+							"slots": 3
+						}
 					},
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"The Maguuma Centaur Warrior casts one of the following spells:"
-					],
-					"will": [
-						"{@spell Eviscerate|GWP}",
-						"{@spell Executioner's Strike|GW}"
-					],
-					"daily": {
-						"4": [
-							"{@spell Swift Chop|GW}"
-						]
-					},
+					"ability": "str",
 					"type": "spellcasting"
 				}
 			],
@@ -8223,20 +8222,6 @@
 			"group": [
 				"Centaur"
 			],
-			"fluff": {
-				"entries": [
-					"Maguuma Warriors are the warriors of the Maguuma centaurs. They use either a sword or axe."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Maguuma_Warrior.jpg"
-						}
-					}
-				]
-			},
 			"tokenHref": {
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Maguuma_Warrior_Token.png"
@@ -8251,9 +8236,6 @@
 			],
 			"savingThrowForced": [
 				"strength"
-			],
-			"savingThrowForcedSpell": [
-				"constitution"
 			]
 		},
 		{
@@ -8298,9 +8280,19 @@
 			],
 			"cr": "4",
 			"gear": [
-				"breastplate|xphb",
+				"hide armor|xphb",
 				"longbow|xphb",
-				"pike|xphb"
+				"pike|xphb",
+				{
+					"item": "arrow|xphb",
+					"quantity": 40,
+					"displayName": ""
+				},
+				{
+					"item": "quiver",
+					"quantity": 2,
+					"displayName": ""
+				}
 			],
 			"action": [
 				{
@@ -8353,75 +8345,42 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"attachedItems": [
-				"longbow|phb",
-				"pike|phb"
-			],
 			"group": [
 				"Centaur"
 			],
-			"fluff": {
-				"entries": [
-					"Maguuma Hunters are the Centaur rangers of the Maguuma Jungle."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Maguuma_Hunter.jpg"
-						}
-					}
-				]
-			},
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The Maguuma Centaur Hunter casts one of the following spells, requiring no Material components and using Dexterity as the spellcasting ability (spell save {@dc 16}, +8 to hit with spell attacks.)"
+						"The centaur is a 4th-level spellcaster. Their spellcasting ability is Dexterity (spell save {@dc 16}, +8 to hit with spell attacks). The centaur has the following Ranger (GW) spells prepared:"
 					],
-					"footerEntries": [
-						"* The Maguuma Centaur Hunter places this trap as a ritual. There is a 50% chance when encountering them that they have placed one recently."
-					],
-					"will": [
-						"{@spell Flame Trap|GW}*",
-						"{@spell Hunter's Shot|GW}"
-					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell Hunter's Shot|GW}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell Flame Trap|GW}",
+								"{@spell Melandru's Resilience|GWP}",
+								"{@spell Symbiosis|GWP}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						}
+					},
 					"ability": "dex",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"The Maguuma Centaur Hunter casts the following spell:"
-					],
-					"displayAs": "bonus",
-					"daily": {
-						"1": [
-							"{@spell Melandru's Resilience|GWP}"
-						]
-					},
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Centaur Hunter casts the following spell:"
-					],
-					"footerEntries": [
-						"* The Maguuma Centaur Hunter only casts this spell if it is in a party with at least one other creature that can fulfill the spell's condition."
-					],
-					"displayAs": "action",
-					"daily": {
-						"3": [
-							"{@spell Symbiosis|GWP}*"
-						]
-					},
 					"type": "spellcasting"
 				}
 			],
 			"spellcastingTags": [
-				"O"
+				"CR"
 			],
 			"tokenHref": {
 				"type": "external",
@@ -8432,6 +8391,9 @@
 			],
 			"vulnerable": [
 				"force"
+			],
+			"conditionInflict": [
+				"restrained"
 			],
 			"damageTags": [
 				"B",
@@ -8492,7 +8454,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The centaur makes two attacks, using Radiant Staff or Sun Ray in any combination. It can forgo one of the attacks to cast a spell."
+						"The centaur makes two attacks, using Radiant Staff or Sun Ray in any combination; they can forgo one of these attacks to take a {@action Magic|XPHB} action."
 					]
 				},
 				{
@@ -8545,22 +8507,35 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The Maguuma Centaur Protector casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability:"
+						"The centaur is a 9th-level spellcaster. Their spellcasting ability is Wisdom (spell save {@dc 15}, +7 to hit with spell attacks). The centaur has the following Monk (GW) spells prepared:"
 					],
-					"footerEntries": [
-						"* There is a 50% chance per spell that the Maguuma Centaur Protector has already cast this spell on an ally of theirs and is maintaining the {@variantrule Bond|GW}."
-					],
-					"displayAs": "action",
-					"daily": {
-						"1": [
-							"{@spell Blessed Signet|GW}",
-							"{@spell Succor|GWP}*",
-							"{@spell Watchful Spirit|GWP}*"
-						],
-						"2e": [
-							"{@spell Heal Other/Jamei's Gaze|GWP}",
-							"{@spell Life Bond|GW}*"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Heal Other|GWP}",
+								"{@spell Life Bond|GW}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Blessed Signet|GW}",
+								"{@spell Succor|GWP}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Watchful Spirit|GWP}"
+							],
+							"slots": 3
+						}
 					},
 					"ability": "wis",
 					"type": "spellcasting"
@@ -8569,20 +8544,6 @@
 			"spellcastingTags": [
 				"O"
 			],
-			"fluff": {
-				"entries": [
-					"Maguuma Protectors are the monks of the Maguuma centaurs. "
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Maguuma_Avenger.jpg"
-						}
-					}
-				]
-			},
 			"tokenHref": {
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Maguuma_Avenger_Token.png"
@@ -8592,6 +8553,10 @@
 			],
 			"resist": [
 				"cold"
+			],
+			"gear": [
+				"chain shirt|xphb",
+				"staff|xphb"
 			],
 			"damageTags": [
 				"B",
@@ -8653,7 +8618,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The centaur makes two attacks, using Necrotic Staff or Death Ray in any combination. It can forgo one of the attacks to cast a spell."
+						"The centaur makes two attacks, using Necrotic Staff or Death Ray in any combination; they can forgo one of these attacks to take a {@action Magic|XPHB} action."
 					]
 				},
 				{
@@ -8702,20 +8667,6 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"fluff": {
-				"entries": [
-					"Maguuma Warlocks are Necromancer Centaurs that serve a supportive role in their groups. "
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Maguuma_Avenger.jpg"
-						}
-					}
-				]
-			},
 			"tokenHref": {
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Maguuma_Avenger_Token.png"
@@ -8727,32 +8678,59 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The Maguuma Centaur Warlock casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 15}, +7 to hit with spell attacks.)"
+						"The centaur is a 9th-level spellcaster. Their spellcasting ability is Charisma (spell save {@dc 15}, +7 to hit with spell attacks). The centaur has the following Necromancer (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"daily": {
-						"1": [
-							"{@spell Signet of Agony|GW}"
-						],
-						"3": [
-							"{@spell Well of Blood|GW}"
-						],
-						"4": [
-							"{@spell Order of Pain|GW}"
-						]
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell Parasitic Bond|GW}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell Order of Pain|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Signet of Agony|GW}",
+								"{@spell Well of Blood|GW}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
 					},
-					"will": [
-						"{@spell Parasitic Bond|GW} (Level 5 Version)"
-					],
 					"ability": "cha",
 					"type": "spellcasting"
 				}
 			],
 			"spellcastingTags": [
-				"CL"
+				"O"
 			],
 			"resist": [
 				"cold"
+			],
+			"gear": [
+				"chain shirt|XPHB",
+				"staff|XPHB"
 			],
 			"damageTags": [
 				"B",
@@ -8813,7 +8791,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The centaur makes two attacks, using Psychic Staff or Distracting Ray in any combination. It can forgo one of the attacks to cast a spell."
+						"The centaur makes two attacks, using Psychic Staff or Distracting Ray in any combination; they can forgo one of these attacks to take a {@action Magic|XPHB} action."
 					]
 				},
 				{
@@ -8862,20 +8840,6 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"fluff": {
-				"entries": [
-					"Maguuma Enchanters are Centaur mesmers of the Maguuma Jungle. Instead of them casting enchantment spells, as their name suggests, they try to shutdown enemy party members using interrupts and energy denial skills."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Maguuma_Avenger.jpg"
-						}
-					}
-				]
-			},
 			"tokenHref": {
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Maguuma_Avenger_Token.png"
@@ -8891,41 +8855,40 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The Maguuma Centaur Enchanter casts the following spell using Charisma as the spellcasting ability (spell save {@dc 15}):"
+						"The centaur is a 9th-level spellcaster. Their spellcasting ability is Charisma (spell save {@dc 15}, +7 to hit with spell attacks). The centaur has the following Mesmer (GW) spells prepared:"
 					],
-					"displayAs": "reaction",
-					"daily": {
-						"1": [
-							"{@spell Leech Signet|GW}"
-						]
-					},
-					"ability": "cha",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"The Maguuma Centaur Enchanter casts the following spell:"
-					],
-					"displayAs": "bonus",
-					"daily": {
-						"4": [
-							"{@spell Mantra of Earth|GW}"
-						]
-					},
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"The Maguuma Centaur Enchanter casts the following spell using Charisma as the spellcasting ability (spell save {@dc 15}):"
-					],
-					"displayAs": "action",
-					"daily": {
-						"3": [
-							"{@spell Blackout|GWP}",
-							"{@spell Energy Burn|GW}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Mantra of Earth|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Blackout|GWP}",
+								"{@spell Energy Burn|GW}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Leech Signet|GW}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
 					},
 					"ability": "cha",
 					"type": "spellcasting"
@@ -8934,18 +8897,16 @@
 			"spellcastingTags": [
 				"O"
 			],
+			"gear": [
+				"chain shirt|xphb",
+				"staff|xphb"
+			],
 			"damageTags": [
 				"B",
 				"Y"
 			],
-			"damageTagsSpell": [
-				"Y"
-			],
 			"savingThrowForced": [
 				"wisdom"
-			],
-			"savingThrowForcedSpell": [
-				"charisma"
 			]
 		},
 		{
@@ -8999,7 +8960,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Maguuma Centaur Avenger makes two attacks, using Ice Staff or Frost Ray in any combination; they can forgo one of these attacks to take a {@action Magic|XPHB} action."
+						"The centaur makes two attacks, using Ice Staff or Frost Ray in any combination; they can forgo one of these attacks to take a {@action Magic|XPHB} action."
 					]
 				},
 				{
@@ -9063,7 +9024,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Maguuma Centaur Avenger is a 9th-level spellcaster. Their spellcasting ability is Intelligence (spell save {@dc 15}, +7 to hit with spell attacks). Maguuma Centaur Avenger has the following Elementalist (GW) spells prepared:"
+						"The centaur is a 9th-level spellcaster. Their spellcasting ability is Intelligence (spell save {@dc 15}, +7 to hit with spell attacks). The centaur has the following Elementalist (GW) spells prepared:"
 					],
 					"spells": {
 						"1": {
@@ -12434,7 +12395,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Markis makes four Rapier attacks or one Longbow attack using Oath Shot."
+						"Markis makes four Rapier attacks or one Longbow attack using Oath Shot until he misses."
 					]
 				},
 				{
@@ -12501,18 +12462,59 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Markis casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability."
+						"Markis is a 13th-level spellcaster. His spellcasting ability is Dexterity (spell save {@dc 23}, +15 to hit with spell attacks). Markis has the following Ranger (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Oath Shot|GWP}"
-					],
-					"ability": "wis",
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Oath Shot|GWP}"
+							],
+							"slots": 4,
+							"lower": 1
+						},
+						"2": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "dex",
 					"type": "spellcasting"
 				}
 			],
 			"spellcastingTags": [
-				"O"
+				"CR"
 			],
 			"immune": [
 				"poison"
@@ -16648,7 +16650,7 @@
 					]
 				},
 				{
-					"name": "Out of Phase",
+					"name": "Out of Phase {@recharge 3}",
 					"entries": [
 						"Lazarus the Dire teleports from the Material Plane to the Ethereal Plane until the start of his next turn."
 					]
@@ -16897,13 +16899,19 @@
 					"entries": [
 						"If the mursaat fails a saving throw, it can choose to succeed instead."
 					]
+				},
+				{
+					"name": "Proficient Spellcaster",
+					"entries": [
+						"Mercia the Smug ignores any restrictions on expending more than one spell slot per turn."
+					]
 				}
 			],
 			"action": [
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The mursaat casts Ether Feast, casts either Energy Surge (level 3 Version) or Energy Surge (level 6 Version), makes either an Ethereal Claw or Ethereal Burst attack, and uses either Out of Phase or Spectral Agony if available."
+						"Mercia the Smug takes two {@action Magic|XPHB} actions, makes two attacks using Ethereal Claw or Ethereal Burst in any combination, and uses either Out of Phase or Spectral Agony."
 					]
 				},
 				{
@@ -16919,9 +16927,9 @@
 					]
 				},
 				{
-					"name": "Out of Phase",
+					"name": "Out of Phase {@recharge 3}",
 					"entries": [
-						"The mursaat casts {@spell Greater Invisibility|XPHB} on itself, requiring no spell components and using Intelligence as the spellcasting ability."
+						"Mercia the Smug teleports from the Material Plane to the Ethereal Plane until the start of his next turn."
 					]
 				},
 				{
@@ -16938,43 +16946,66 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The mursaat casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 19})."
+						"Mercia the Smug is a 20th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 19}, +11 to hit with spell attacks). Mercia the Smug has the following Mesmer (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Energy Surge|GW} (level 3 Version)",
-						"{@spell Ether Feast|GW} (level 5 Version)"
-					],
-					"daily": {
-						"3": [
-							"{@spell Energy Surge|GW} (level 6 Version)"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Ether Feast|GW}",
+								"{@spell Mantra of Flame|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Energy Surge|GW}",
+								"{@spell Physical Resistance|GWP}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Dispel Magic|XPHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Power Leak|GWP}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Dominate Person|XPHB}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell Mass Suggestion|XPHB}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell Reverse Gravity|XPHB}"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell Dominate Monster|XPHB}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell Psychic Scream|XGE}"
+							],
+							"slots": 1
+						}
 					},
-					"ability": "int",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Distort Reality",
-					"headerEntries": [
-						"The mursaat casts either Mantra of Flame or Physical Resistance, using Intelligence as the spellcasting ability."
-					],
-					"displayAs": "bonus",
-					"will": [
-						"{@spell Mantra of Flame|GW} (level 4 Version)",
-						"{@spell Physical Resistance|GWP} (level 9 Version)"
-					],
-					"ability": "int",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Arcane Disruption",
-					"headerEntries": [
-						"The mursaat casts Power Leak, using Intelligence as the spellcasting ability (spell save {@dc 19})."
-					],
-					"displayAs": "reaction",
-					"will": [
-						"{@spell Power Leak|GWP} (level 8 Version)"
-					],
 					"ability": "int",
 					"type": "spellcasting"
 				}
@@ -17026,8 +17057,9 @@
 				"intelligence"
 			],
 			"savingThrowForcedSpell": [
-				"charisma",
-				"constitution"
+				"dexterity",
+				"intelligence",
+				"wisdom"
 			]
 		},
 		{

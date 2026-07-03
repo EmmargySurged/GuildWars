@@ -6267,21 +6267,21 @@
 			"dex": 12,
 			"con": 17,
 			"int": 14,
-			"wis": 21,
+			"wis": 22,
 			"cha": 14,
 			"save": {
 				"str": "+7",
 				"con": "+7",
 				"int": "+6",
-				"wis": "+9"
+				"wis": "+10"
 			},
 			"skill": {
-				"insight": "+9",
-				"medicine": "+9",
-				"perception": "+9",
+				"insight": "+14",
+				"medicine": "+14",
+				"perception": "+14",
 				"religion": "+10"
 			},
-			"passive": 19,
+			"passive": 24,
 			"languages": [
 				"Common",
 				"Krytan",
@@ -6296,44 +6296,69 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Salma casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 17}):"
+						"Salma is a 15th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 18}, +10 to hit with spell attacks). Salma has the following Monk (GW) spells prepared:"
 					],
-					"displayAs": "action",
 					"will": [
 						"{@spell Light|XPHB}",
 						"{@spell Thaumaturgy|XPHB}"
 					],
-					"daily": {
-						"1e": [
-							"{@spell Flame Strike|XPHB} (level 6 version)",
-							"{@spell Greater Restoration|XPHB}",
-							"{@spell Hold Monster|XPHB} (level 7 version)",
-							"{@spell Raise Dead|XPHB}",
-							"{@spell Unyielding Aura|GWP}",
-							"{@spell Zone of Truth|XPHB}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Bless|XPHB}",
+								"{@spell Healing Word|XPHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Lesser Restoration|XPHB}",
+								"{@spell Zone of Truth|XPHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Dispel Magic|XPHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Guardian of Faith|XPHB}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Flame Strike|XPHB}",
+								"{@spell Greater Restoration|XPHB}",
+								"{@spell Hold Monster|XPHB}",
+								"{@spell Raise Dead|XPHB}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell Divine Intervention|GW}",
+								"{@spell Unyielding Aura|GWP}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell Fire Storm|XPHB}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell Holy Star of Mystra|FRHoF}"
+							],
+							"slots": 1
+						}
 					},
 					"ability": "wis",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Divine Aid (3/Day)",
-					"headerEntries": [
-						"Salma casts {@spell Bless|XPHB}, {@spell Dispel Magic|XPHB}, {@spell Healing Word|XPHB}, or {@spell Lesser Restoration|XPHB}, using the same spellcasting ability as Spellcasting."
-					],
-					"displayAs": "bonus",
-					"hidden": [
-						"daily"
-					],
-					"daily": {
-						"3": [
-							"{@spell Bless|XPHB}",
-							"{@spell Dispel Magic|XPHB}",
-							"{@spell Divine Intervention|GW}",
-							"{@spell Healing Word|XPHB}",
-							"{@spell Lesser Restoration|XPHB}"
-						]
-					},
 					"type": "spellcasting"
 				}
 			],
@@ -6341,19 +6366,19 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Salma makes three Radiant Burst attacks."
+						"Salma makes three attacks, using Radiant Blast or Radiant Burst in any combination; she can forgo one of these attacks to take a {@action Magic|XPHB} action."
+					]
+				},
+				{
+					"name": "Radiant Blast",
+					"entries": [
+						"{@atkr m} {@hit 9}, reach 5 ft. {@h}27 ({@damage 4d10 + 5}) Radiant damage."
 					]
 				},
 				{
 					"name": "Radiant Burst",
 					"entries": [
-						"{@atkr m,r} {@hit 9}, reach 5 ft. or range 60 ft. {@h}27 ({@damage 4d10 + 5}) Radiant damage."
-					]
-				},
-				{
-					"name": "Holy Word {@recharge 4}",
-					"entries": [
-						"{@actSave wis} {@dc 17}, each enemy in a 20-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from Salma. {@actSaveFail} 21 ({@damage 6d6}) Radiant damage, and the target has the {@condition Stunned|XPHB} condition until the end of Salma's next turn. {@actSaveSuccess} Half damage only."
+						"{@atkr r} {@hit 9}, reach 5 ft. {@h}27 ({@damage 5d10}) Radiant damage."
 					]
 				}
 			],
@@ -6369,13 +6394,6 @@
 			],
 			"spellcastingTags": [
 				"O"
-			],
-			"miscTags": [
-				"RA",
-				"MA"
-			],
-			"conditionInflict": [
-				"stunned"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
@@ -6493,6 +6511,22 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Salma_Token.png"
 			},
+			"isNpc": true,
+			"miscTags": [
+				"MA",
+				"RA"
+			],
+			"bonus": [
+				{
+					"name": "Holy Word {@recharge 4}",
+					"entries": [
+						"{@actSave wis} {@dc 17}, each enemy in a 20-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from Salma. {@actSaveFail} 21 ({@damage 6d6}) Radiant damage, and the target has the {@condition Stunned|XPHB} condition until the end of Salma's next turn. {@actSaveSuccess} Half damage only."
+					]
+				}
+			],
+			"conditionInflict": [
+				"stunned"
+			],
 			"damageTags": [
 				"R"
 			],
@@ -6931,6 +6965,7 @@
 			"spellcastingTags": [
 				"CR"
 			],
+			"isNpc": true,
 			"damageTags": [
 				"I",
 				"P",
@@ -7540,312 +7575,6 @@
 			],
 			"savingThrowForcedSpell": [
 				"wisdom"
-			]
-		},
-		{
-			"name": "Silvery",
-			"source": "GWP",
-			"size": [
-				"S",
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"human"
-				]
-			},
-			"alignment": [
-				"N",
-				"G"
-			],
-			"ac": [
-				18
-			],
-			"hp": {
-				"average": 110,
-				"formula": "17d8 + 34"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"initiative": {
-				"proficiency": 1
-			},
-			"str": 12,
-			"dex": 18,
-			"con": 14,
-			"int": 13,
-			"wis": 14,
-			"cha": 19,
-			"save": {
-				"dex": "+7",
-				"cha": "+7"
-			},
-			"skill": {
-				"acrobatics": "+10",
-				"athletics": "+4",
-				"perception": "+5",
-				"performance": "+10",
-				"stealth": "+7"
-			},
-			"passive": 15,
-			"languages": [
-				"Common",
-				"Canthan",
-				"Kurzick"
-			],
-			"cr": "6",
-			"gear": [
-				"rapier|xphb"
-			],
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Silvery casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 15}):"
-					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Minor Illusion|XPHB}",
-						"{@spell Prestidigitation|XPHB}"
-					],
-					"daily": {
-						"1": [
-							"{@spell Tasha's Hideous Laughter|XPHB} (level 3 version)"
-						]
-					},
-					"ability": "cha",
-					"type": "spellcasting"
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Silvery makes three Rapier attacks."
-					]
-				},
-				{
-					"name": "Rapier",
-					"entries": [
-						"{@atkr m} {@hit 7}, reach 5 ft. {@h}8 ({@damage 1d8 + 4}) Piercing damage plus 7 ({@damage 2d6}) Psychic damage."
-					]
-				},
-				{
-					"name": "Beguiling Song",
-					"entries": [
-						"{@actSave wis} {@dc 15}, each creature in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point within 120 feet. {@actSaveFail} 20 ({@damage 3d10 + 4}) Psychic damage, and the target has the {@condition Charmed|XPHB} condition until the end of Silvery's next turn. {@actSaveSuccess} Half damage only."
-					]
-				}
-			],
-			"treasure": [
-				"implements",
-				"individual"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C"
-			],
-			"spellcastingTags": [
-				"O"
-			],
-			"miscTags": [
-				"MA",
-				"MLW",
-				"AOE"
-			],
-			"conditionInflict": [
-				"charmed"
-			],
-			"conditionInflictSpell": [
-				"incapacitated",
-				"prone"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"attachedItems": [
-				"rapier|phb"
-			],
-			"isNpc": true,
-			"group": [
-				"Kurzick"
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Kurzick_noble_f_gray.jpg"
-						}
-					}
-				]
-			},
-			"tokenHref": {
-				"type": "external",
-				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Kurzick_noble_f_gray_Token.png"
-			},
-			"damageTags": [
-				"P",
-				"Y"
-			],
-			"savingThrowForced": [
-				"wisdom"
-			],
-			"savingThrowForcedSpell": [
-				"wisdom"
-			]
-		},
-		{
-			"name": "Mira",
-			"source": "GWP",
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"charr"
-				]
-			},
-			"alignment": [
-				"C",
-				"G"
-			],
-			"ac": [
-				{
-					"ac": 14,
-					"from": [
-						"{@item leather armor|phb}"
-					]
-				}
-			],
-			"hp": {
-				"average": 40,
-				"formula": "9d8"
-			},
-			"speed": {
-				"walk": 30,
-				"climb": 20
-			},
-			"str": 10,
-			"dex": 17,
-			"con": 11,
-			"int": 13,
-			"wis": 14,
-			"cha": 15,
-			"skill": {
-				"athletics": "+2",
-				"perception": "+4",
-				"stealth": "+5",
-				"survival": "+6"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 14,
-			"languages": [
-				"Common plus any one language"
-			],
-			"cr": "1",
-			"trait": [
-				{
-					"name": "Feline Agility",
-					"entries": [
-						"When Mira moves on her turn in combat, she can double her speed until the end of the turn. Once she uses this ability, Mira can't use it again until she moves 0 feet on one of her turns."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Mira makes two attacks with her claws, her shortsword, or her shortbow."
-					]
-				},
-				{
-					"name": "Claws",
-					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) slashing damage."
-					]
-				},
-				{
-					"name": "Shortsword",
-					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
-					]
-				},
-				{
-					"name": "Shortbow",
-					"entries": [
-						"{@atk rw} {@hit 5} to hit, range 80/320 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
-					]
-				}
-			],
-			"attachedItems": [
-				"shortbow|phb",
-				"shortsword|phb"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"X"
-			],
-			"miscTags": [
-				"MW",
-				"MLW",
-				"RW",
-				"RNG"
-			],
-			"hasFluff": true,
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Mira is a level 2 spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 12}, +4 to hit with spell attacks). Mira has the following Ranger (GW) spells prepared:"
-					],
-					"daily": {
-						"1e": [
-							"{@spell ignite arrows|GWP}",
-							"{@spell troll unguent|GW}"
-						]
-					},
-					"ability": "wis",
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"CR"
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Stalker.jpg"
-						}
-					}
-				]
-			},
-			"tokenHref": {
-				"type": "external",
-				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Charr_Stalker_Token.png"
-			},
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"damageTagsSpell": [
-				"F"
 			]
 		},
 		{
@@ -8535,6 +8264,12 @@
 								"{@spell Watchful Spirit|GWP}"
 							],
 							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
 						}
 					},
 					"ability": "wis",
@@ -9057,7 +8792,7 @@
 							"spells": [
 								"Placeholder"
 							],
-							"slots": 0
+							"slots": 1
 						}
 					},
 					"ability": "int",
@@ -9076,7 +8811,14 @@
 				"B",
 				"C"
 			],
+			"damageTagsSpell": [
+				"C"
+			],
 			"savingThrowForced": [
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
 				"dexterity"
 			]
 		},
@@ -9421,7 +9163,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The devourer makes either one Stinger or Stinger Fling attack and casts Virulence."
+						"The devourer makes either one Stinger or Stinger Fling attack and takes a {@action Magic|XPHB} action."
 					]
 				},
 				{
@@ -9468,7 +9210,6 @@
 					"headerEntries": [
 						"The Plague Devourer casts the following spell, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 13})."
 					],
-					"displayAs": "action",
 					"will": [
 						"{@spell Virulence|GWP}"
 					],
@@ -9958,21 +9699,36 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The Rockshot Devourer casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 16})."
+						"The devourer is a 6th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 16}, +8 to hit with spell attacks). The devourer has the following Ranger (GW) spells prepared:"
 					],
-					"daily": {
-						"1e": [
-							"{@spell Dust Trap|GWP} (level 3 Version)",
-							"{@spell Flame Trap|GW} (level 3 Version)",
-							"{@spell Spike Trap|GW} (level 3 Version)"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Dust Trap|GWP}",
+								"{@spell Flame Trap|GW}",
+								"{@spell Spike Trap|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						}
 					},
 					"ability": "wis",
 					"type": "spellcasting"
 				}
 			],
 			"spellcastingTags": [
-				"O"
+				"CR"
 			],
 			"save": {
 				"str": "+10",
@@ -10348,7 +10104,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The white mantle makes one Holy Mace or Radiant Burst attack and casts Judge's Insight or Convert Hexes."
+						"The white mantle takes one {@action Magic|XPHB} action and makes one attack, using Holy Mace or Radiant Burst in any combination."
 					]
 				},
 				{
@@ -10389,31 +10145,36 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The white mantle casts one of the following spells, using Charisma as the spellcasting ability."
+						"The white mantle is an 8th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 15}, +7 to hit with spell attacks). The white mantle has the following Monk (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Judge's Insight|GW}"
-					],
-					"daily": {
-						"3": [
-							"{@spell Convert Hexes|GW}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Judge's Insight|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Shielding Hands|GW}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Convert Hexes|GW}"
+							],
+							"slots": 2
+						}
 					},
-					"ability": "cha",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Intervene",
-					"headerEntries": [
-						"The white mantle casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability."
-					],
-					"displayAs": "bonus",
-					"will": [
-						"{@spell Shielding Hands|GW}"
-					],
 					"daily": {
-						"2": [
+						"1": [
 							"{@spell Divine Intervention|GW}"
 						]
 					},
@@ -10511,7 +10272,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The white mantle uses one of Ritual Dagger, Ritual Dagger Throw, or Vampiric Gaze and casts Order of Pain or Mark of Subversion."
+						"The white mantle makes two attacks, using Ritual Dagger or Ritual Dagger Throw in any combination; it can forgo one of these attacks to take a {@action Magic|XPHB} action."
 					]
 				},
 				{
@@ -10542,17 +10303,40 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The white mantle casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 15}, +7 to hit with spell attacks)."
+						"The white mantle is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 15}, +7 to hit with spell attacks). The white mantle has the following Necromancer (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Order of Pain|GW}",
-						"{@spell Vampiric Gaze|GW} (level 4 Version)"
-					],
-					"daily": {
-						"3": [
-							"{@spell Mark of Subversion|GWP}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Order of Pain|GW}",
+								"{@spell Vampiric Gaze|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Mark of Subversion|GWP}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
 					},
 					"ability": "int",
 					"type": "spellcasting"
@@ -10565,7 +10349,7 @@
 				{
 					"name": "Profane Ritual",
 					"entries": [
-						"The white mantle restores one use of an ability of a friendly creature it can see within 30 feet of it."
+						"The white mantle restores expended spell slots of one other creature it can see within 30 feet. The spell slots can have a combined level equal to the white mantle's proficiency bonus."
 					]
 				}
 			],
@@ -10658,7 +10442,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The white mantle uses two of Chaos Jolt, Chaos Bolt, Empathy, or Guilt or Shame, and then casts either Energy Burn or Shatter Enchantment."
+						"The white mantle makes three attacks, using Chaos Jolt or Chaos Bolt in any combination; it can forgo one of these attacks to take a {@action Magic|XPHB} action."
 					]
 				},
 				{
@@ -10689,19 +10473,41 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The white mantle casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 15}, +7 to hit with spell attacks)."
+						"The white mantle is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 15}, +7 to hit with spell attacks). The white mantle has the following Mesmer (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Empathy|GW} (level 3 Version)",
-						"{@spell Energy Burn|GW}",
-						"{@spell Guilt|GWP}",
-						"{@spell Shame|GWP}"
-					],
-					"daily": {
-						"3": [
-							"{@spell Shatter Enchantment|GW}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Empathy|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Energy Burn|GW}",
+								"{@spell Shame|GWP}",
+								"{@spell Shatter Enchantment|GW}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Guilt|GWP}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						}
 					},
 					"ability": "wis",
 					"type": "spellcasting"
@@ -10795,6 +10601,12 @@
 					"entries": [
 						"When the white mantle hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
 					]
+				},
+				{
+					"name": "Proficient Spellcaster",
+					"entries": [
+						"The white mantle ignores any restrictions on expending more than one spell slot per turn."
+					]
 				}
 			],
 			"gear": [
@@ -10804,7 +10616,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The white mantle casts either Fireball or Glyph of Elemental Power, makes one Fire Grab or Fire Blast attack, and casts Searing Heat or Ward Against Elements."
+						"The white mantle takes two {@action Magic|XPHB} actions and makes one attack, using Fire Grab or Fire Blast."
 					]
 				},
 				{
@@ -10835,18 +10647,47 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The white mantle casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 16})."
+						"The white mantle is an 11th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 16}, +8 to hit with spell attacks). The white mantle has the following Elementalist (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Fireball|GW}",
-						"{@spell Glyph of Elemental Power|GW}"
-					],
-					"daily": {
-						"2": [
-							"{@spell Searing Heat|GWP}",
-							"{@spell Ward Against Elements|GWP}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Flare|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Fireball|GW}",
+								"{@spell Glyph of Elemental Power|GW}",
+								"{@spell Ward Against Elements|GWP}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Searing Heat|GWP}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
 					},
 					"ability": "int",
 					"type": "spellcasting"
@@ -10968,7 +10809,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The white mantle makes three attacks, using Greatsword or Heavy Crossbow in any combination."
+						"The white mantle makes three attacks, using Greatsword or Heavy Crossbow in any combination; it can forgo one of these attacks to take a {@action Magic|XPHB} action."
 					]
 				},
 				{
@@ -11013,13 +10854,29 @@
 				{
 					"name": "Charge",
 					"headerEntries": [
-						"The white mantle casts one of the following spells, using Constitution as the spellcasting ability (spell save {@dc 15})."
+						"The white mantle is a 6th-level spellcaster. Its spellcasting ability is Strength (spell save {@dc 17}, +9 to hit with spell attacks). The white mantle has the following Warrior (GW) spells prepared:"
 					],
-					"displayAs": "bonus",
-					"will": [
-						"{@spell Bull's Charge|GWP}"
-					],
-					"ability": "con",
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Earth Tremor|XGE}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Bull's Charge|GWP}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "str",
 					"type": "spellcasting"
 				}
 			],
@@ -11037,6 +10894,12 @@
 			"damageTags": [
 				"P",
 				"S"
+			],
+			"damageTagsSpell": [
+				"B"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
 			]
 		},
 		{
@@ -11128,7 +10991,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The white mantle makes three attacks, using Rapier or Longbow in any combination. It can forgo one of these attacks to cast Incendiary Arrows."
+						"The white mantle makes three attacks, using Rapier or Longbow in any combination; it can forgo one of these attacks to take a {@action Magic|XPHB} action."
 					]
 				},
 				{
@@ -11189,18 +11052,40 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The white mantle casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 16})."
+						"The white mantle is a 7th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 16}, +8 to hit with spell attacks). The white mantle has the following Ranger (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Incendiary Arrows|GWP}"
-					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Hunter's Mark|XPHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Incendiary Arrows|GWP}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
+					},
 					"ability": "wis",
 					"type": "spellcasting"
 				}
 			],
 			"spellcastingTags": [
-				"O"
+				"CR"
 			],
 			"save": {
 				"dex": "+9",
@@ -11209,6 +11094,9 @@
 			"damageTags": [
 				"P",
 				"S"
+			],
+			"damageTagsSpell": [
+				"O"
 			]
 		},
 		{
@@ -11279,6 +11167,12 @@
 					"entries": [
 						"When the white mantle hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
 					]
+				},
+				{
+					"name": "Proficient Spellcaster",
+					"entries": [
+						"The white mantle ignores any restrictions on expending more than one spell slot per turn."
+					]
 				}
 			],
 			"gear": [
@@ -11290,7 +11184,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The white mantle makes two Holy Mace or Radiant Burst attacks and casts Heal Area/Karei's Healing Circle, Judge's Insight, or Convert Hexes."
+						"The white mantle takes one {@action Magic|XPHB} action and makes two attacks, using Holy Mace or Radiant Burst in any combination."
 					]
 				},
 				{
@@ -11331,35 +11225,53 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The white mantle casts one of the following spells, using Charisma as the spellcasting ability."
+						"The white mantle is a 14th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 17}, +9 to hit with spell attacks). The white mantle has the following Monk (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Heal Area/Karei's Healing Circle|GWP}",
-						"{@spell Judge's Insight|GW} (level 3 Version)"
-					],
-					"daily": {
-						"3": [
-							"{@spell Convert Hexes|GW}"
-						]
-					},
-					"ability": "cha",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Intervene",
-					"headerEntries": [
-						"The white mantle casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability."
-					],
-					"displayAs": "bonus",
-					"will": [
-						"{@spell Shielding Hands|GW} (level 3 Version)"
-					],
-					"daily": {
-						"2e": [
-							"{@spell Divine Intervention|GW}",
-							"{@spell Shield of Regeneration|GW}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Orison of Healing|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Heal Area|GWP}",
+								"{@spell Shield of Regeneration|GW}",
+								"{@spell Shielding Hands|GW}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Mass Healing Word|XPHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Convert Hexes|GW}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Mass Cure Wounds|XPHB}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell Divine Intervention|GW}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell Power Word Fortify|XPHB}"
+							],
+							"slots": 1
+						}
 					},
 					"ability": "cha",
 					"type": "spellcasting"
@@ -11463,7 +11375,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The white mantle uses two of Ritual Dagger, Ritual Dagger Throw, or Vampiric Gaze and casts Order of the Vampire or Mark of Subversion."
+						"The white mantle makes three attacks, using Ritual Dagger or Ritual Dagger Throw in any combination; it can forgo one of these attacks to take a {@action Magic|XPHB} action."
 					]
 				},
 				{
@@ -11494,17 +11406,58 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The white mantle casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 17}, +9 to hit with spell attacks)."
+						"The white mantle is a 15th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 17}, +9 to hit with spell attacks). The white mantle has the following Necromancer (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Order of the Vampire|GWP} (level 3 Version)",
-						"{@spell Vampiric Gaze|GW} (level 6 Version)"
-					],
-					"daily": {
-						"3": [
-							"{@spell Mark of Subversion|GWP}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Order of the Vampire|GWP}",
+								"{@spell Vampiric Gaze|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Mark of Subversion|GWP}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
 					},
 					"ability": "int",
 					"type": "spellcasting"
@@ -11523,7 +11476,7 @@
 				{
 					"name": "Profane Ritual",
 					"entries": [
-						"The white mantle restores all uses of an ability of a friendly creature it can see within 60 feet of it."
+						"The white mantle restores expended spell slots of one other creature it can see within 60 feet. The spell slots can have a combined level equal to the white mantle's proficiency bonus."
 					]
 				}
 			],
@@ -11538,6 +11491,12 @@
 			"damageTags": [
 				"N",
 				"P"
+			],
+			"damageTagsSpell": [
+				"N"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			]
 		},
 		{
@@ -11618,7 +11577,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The white mantle uses two of Chaos Jolt, Chaos Bolt, Empathy (Level 5), or Guilt or Shame, and then casts either Energy Surge or Shatter Enchantment."
+						"The white mantle makes three attacks, using Chaos Jolt or Chaos Bolt in any combination; it can forgo one of these attacks to take a {@action Magic|XPHB} action."
 					]
 				},
 				{
@@ -11649,19 +11608,59 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The white mantle casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 18}, +10 to hit with spell attacks)."
+						"The white mantle is a 16th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 18}, +10 to hit with spell attacks). The white mantle has the following Mesmer (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Empathy|GW} (level 5 Version)",
-						"{@spell Energy Surge|GW}",
-						"{@spell Guilt|GWP}",
-						"{@spell Shame|GWP}"
-					],
-					"daily": {
-						"3": [
-							"{@spell Shatter Enchantment|GW}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Empathy|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Energy Surge|GW}",
+								"{@spell Shame|GWP}",
+								"{@spell Shatter Enchantment|GW}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Guilt|GWP}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
 					},
 					"ability": "wis",
 					"type": "spellcasting"
@@ -11762,6 +11761,12 @@
 					"entries": [
 						"When the white mantle hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
 					]
+				},
+				{
+					"name": "Proficient Spellcaster",
+					"entries": [
+						"The white mantle ignores any restrictions on expending more than one spell slot per turn."
+					]
 				}
 			],
 			"gear": [
@@ -11771,7 +11776,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The white mantle casts either Fireball or Glyph of Renewal, makes one Fire Grab or Fire Blast attack, and casts Searing Heat or Ward Against Elements, or uses a {@action Magic|XPHB} to move Searing Heat."
+						"The white mantle takes two {@action Magic|XPHB} actions and makes one attack, using Fire Grab or Fire Blast in any combination."
 					]
 				},
 				{
@@ -11802,18 +11807,64 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The white mantle casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 18})."
+						"The white mantle is a 17th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 18}, +10 to hit with spell attacks). The white mantle has the following Elementalist (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Fireball|GW} (level 4 Version)",
-						"{@spell Glyph of Renewal|GWP}"
-					],
-					"daily": {
-						"3": [
-							"{@spell Searing Heat|GWP} (level 6 Version)",
-							"{@spell Ward Against Elements|GWP} (level 3 Version)"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Glyph of Renewal|GWP}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Fireball|GW}",
+								"{@spell Ward Against Elements|GWP}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Searing Heat|GWP}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
 					},
 					"ability": "int",
 					"type": "spellcasting"
@@ -12917,13 +12968,19 @@
 					"entries": [
 						"The mursaat has advantage on saving throws against spells and other magical effects."
 					]
+				},
+				{
+					"name": "Proficient Spellcaster",
+					"entries": [
+						"The mursaat ignores any restrictions on expending more than one spell slot per turn."
+					]
 				}
 			],
 			"action": [
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The mursaat casts either Life Siphon or Life Transfer, makes either a Necrotic Claw or Necrotic Burst attack, casts either Insidious Parasite or Mark of Subversion, and uses either Out of Phase or Spectral Agony if available."
+						"The mursaat takes two {@action Magic|XPHB} actions and makes one attack, using Necrotic Claw or Necrotic Burst, and uses either Out of Phase or Spectral Agony."
 					]
 				},
 				{
@@ -12939,9 +12996,9 @@
 					]
 				},
 				{
-					"name": "Out of Phase",
+					"name": "Out of Phase {@recharge 5}",
 					"entries": [
-						"The mursaat casts {@spell Greater Invisibility|XPHB} on itself, requiring no spell components and using Intelligence as the spellcasting ability."
+						"The mursaat teleports from the Material Plane to the Ethereal Plane until the start of their next turn."
 					]
 				},
 				{
@@ -12958,31 +13015,66 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The mursaat casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 18})."
+						"The mursaat is an 18th-level spellcaster. Their spellcasting ability is Intelligence (spell save {@dc 18}, +10 to hit with spell attacks). The mursaat has the following Necromancer (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Insidious Parasite|GWP}",
-						"{@spell Life Siphon|GW} (level 3 Version)"
-					],
-					"daily": {
-						"3": [
-							"{@spell Life Transfer|GWP} (level 5 Version)",
-							"{@spell Mark of Subversion|GWP}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Blood Renewal|GWP}",
+								"{@spell Life Siphon|GW}",
+								"{@spell Life Transfer|GWP}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Insidious Parasite|GWP}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Mark of Subversion|GWP}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Aura of Desecration|IllriggerRevised}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Scrying|XPHB}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell Life Drain|BookOfEbonTides}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell Sanguine Fusillade|GrimHollowPG24}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell Red Rain|GrimHollowPG24}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell Wave of Oblivion|CthulhuTorchlight}"
+							],
+							"slots": 1
+						}
 					},
-					"ability": "int",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Profane Restoration",
-					"headerEntries": [
-						"The mursaat casts Blood Renewal, requiring no Material components and using Intelligence as the spellcasting ability."
-					],
-					"displayAs": "bonus",
-					"will": [
-						"{@spell Blood Renewal|GWP} (level 9 Version)"
-					],
 					"ability": "int",
 					"type": "spellcasting"
 				}
@@ -13008,6 +13100,9 @@
 			],
 			"savingThrowForced": [
 				"intelligence"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			]
 		},
 		{
@@ -13114,13 +13209,19 @@
 					"entries": [
 						"The mursaat has advantage on saving throws against spells and other magical effects."
 					]
+				},
+				{
+					"name": "Proficient Spellcaster",
+					"entries": [
+						"The mursaat ignores any restrictions on expending more than one spell slot per turn."
+					]
 				}
 			],
 			"action": [
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The mursaat casts Orison of Healing, makes either a Radiant Claw or Radiant Burst attack, and uses either Out of Phase or Spectral Agony if available."
+						"The mursaat takes one {@action Magic|XPHB} action and makes one attack, using Radiant Claw or Radiant Burst, and uses either Out of Phase or Spectral Agony."
 					]
 				},
 				{
@@ -13130,15 +13231,15 @@
 					]
 				},
 				{
-					"name": "Necrotic Burst",
+					"name": "Radiant Burst",
 					"entries": [
 						"{@atk rs} {@hit 10} to hit, reach 90 ft., one target. {@h}27 ({@damage 6d8}) radiant damage."
 					]
 				},
 				{
-					"name": "Out of Phase",
+					"name": "Out of Phase {@recharge 3}",
 					"entries": [
-						"The mursaat casts {@spell Greater Invisibility|XPHB} on itself, requiring no spell components and using Intelligence as the spellcasting ability."
+						"The mursaat teleports from the Material Plane to the Ethereal Plane until the start of their next turn."
 					]
 				},
 				{
@@ -13155,30 +13256,66 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The mursaat casts one of the following spells, using Intelligence as the spellcasting ability."
+						"The mursaat is a 19th-level spellcaster. Their spellcasting ability is Intelligence (spell save {@dc 18}, +10 to hit with spell attacks). The mursaat has the following Monk (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Orison of Healing|GW} (level 4 Version)"
-					],
-					"ability": "int",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Otherworldly Succor",
-					"headerEntries": [
-						"The mursaat casts either Draw Conditions or Aura of Faith and either Contemplation of Purity or Vigorous Spirit, requiring no Material components and using Intelligence as the spellcasting ability."
-					],
-					"displayAs": "bonus",
-					"will": [
-						"{@spell Draw Conditions|GW}",
-						"{@spell Vigorous Spirit|GWP} (level 3 Version)"
-					],
-					"daily": {
-						"3": [
-							"{@spell Aura of Faith|GWP}",
-							"{@spell Contemplation of Purity|GWP} (level 4 Version)"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Contemplation of Purity|GWP}",
+								"{@spell Draw Conditions|GW}",
+								"{@spell Orison of Healing|GW}",
+								"{@spell Vigorous Spirit|GWP}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Aura of Faith|GWP}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Mass Healing Word|XPHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Death Ward|XPHB}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Mass Cure Wounds|XPHB}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell Heal|XPHB}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell Resurrection|XPHB}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell Holy Aura|XPHB}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell Mass Heal|XPHB}"
+							],
+							"slots": 1
+						}
 					},
 					"ability": "int",
 					"type": "spellcasting"
@@ -13205,6 +13342,9 @@
 			],
 			"savingThrowForced": [
 				"intelligence"
+			],
+			"savingThrowForcedSpell": [
+				"constitution"
 			]
 		},
 		{
@@ -13314,13 +13454,19 @@
 					"entries": [
 						"The mursaat has advantage on saving throws against spells and other magical effects."
 					]
+				},
+				{
+					"name": "Proficient Spellcaster",
+					"entries": [
+						"The mursaat ignores any restrictions on expending more than one spell slot per turn."
+					]
 				}
 			],
 			"action": [
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The mursaat casts Glyph of {@status Concentration|XPHB}, casts either Enervating Charge or Lightning Orb, casts either Chain Lightning or Thunderclap, makes either a Shocking Claw or Thunder Burst attack, and uses either Out of Phase or Spectral Agony if available."
+						"The mursaat takes two {@action Magic|XPHB} actions and makes one attack, using Shocking Claw or Thunder Burst, and uses either Out of Phase or Spectral Agony."
 					]
 				},
 				{
@@ -13336,9 +13482,9 @@
 					]
 				},
 				{
-					"name": "Out of Phase",
+					"name": "Out of Phase {@recharge 3}",
 					"entries": [
-						"The mursaat casts {@spell Greater Invisibility|XPHB} on itself, requiring no spell components and using Intelligence as the spellcasting ability."
+						"The mursaat teleports from the Material Plane to the Ethereal Plane until the start of their next turn."
 					]
 				},
 				{
@@ -13355,19 +13501,64 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The mursaat casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 19}, +11 to hit with spell attacks)."
+						"The mursaat is a 20th-level spellcaster. Their spellcasting ability is Intelligence (spell save {@dc 19}, +11 to hit with spell attacks). The Mursaat Elementalist has the following Elementalist (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Chain Lightning|GWP}",
-						"{@spell Enervating Charge|GW}",
-						"{@spell Glyph of Concentration|GWP}"
-					],
-					"daily": {
-						"3": [
-							"{@spell Lightning Orb|GW}",
-							"{@spell Thunderclap|GWP}"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Glyph of Concentration|GWP}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Enervating Charge|GW}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Thunderclap|GWP}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Chain Lightning|GWP}",
+								"{@spell Lightning Orb|GW}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Control Winds|XGE}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell Wind Walk|XPHB}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell Whirlwind|XGE}"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell Control Weather|XPHB}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell Storm of Vengeance|XPHB}"
+							],
+							"slots": 1
+						}
 					},
 					"ability": "int",
 					"type": "spellcasting"
@@ -13393,8 +13584,20 @@
 				"T",
 				"Y"
 			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"L",
+				"T"
+			],
 			"savingThrowForced": [
 				"intelligence"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength"
 			]
 		},
 		{
@@ -13495,19 +13698,11 @@
 				"perception": "+15",
 				"arcana": "+18"
 			},
-			"trait": [
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"The mursaat has advantage on saving throws against spells and other magical effects."
-					]
-				}
-			],
 			"action": [
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The mursaat casts Ether Feast, casts either Energy Surge or Energy Surge (level 4 Version), makes either an Ethereal Claw or Ethereal Burst attack, and uses either Out of Phase or Spectral Agony if available."
+						"The mursaat takes two {@action Magic|XPHB} actions and makes one attack, using Ethereal Claw or Ethereal Burst, and uses either Out of Phase or Spectral Agony."
 					]
 				},
 				{
@@ -13523,9 +13718,9 @@
 					]
 				},
 				{
-					"name": "Out of Phase",
+					"name": "Out of Phase {@recharge 3}",
 					"entries": [
-						"The mursaat casts {@spell Greater Invisibility|XPHB} on itself, requiring no spell components and using Intelligence as the spellcasting ability."
+						"The mursaat teleports from the Material Plane to the Ethereal Plane until the start of their next turn."
 					]
 				},
 				{
@@ -13542,43 +13737,66 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The mursaat casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 20})."
+						"The mursaat is a 20th-level spellcaster. Their spellcasting ability is Intelligence (spell save {@dc 20}, +12 to hit with spell attacks). The mursaat has the following Mesmer (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Energy Surge|GW}",
-						"{@spell Ether Feast|GW} (level 3 Version)"
-					],
-					"daily": {
-						"3": [
-							"{@spell Energy Surge|GW} (level 4 Version)"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Ether Feast|GW}",
+								"{@spell Mantra of Flame|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Energy Surge|GW}",
+								"{@spell Physical Resistance|GWP}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Dispel Magic|XPHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Power Leak|GWP}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Dominate Person|XPHB}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell Mass Suggestion|XPHB}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell Reverse Gravity|XPHB}"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell Dominate Monster|XPHB}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell Psychic Scream|XGE}"
+							],
+							"slots": 1
+						}
 					},
-					"ability": "int",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Distort Reality",
-					"headerEntries": [
-						"The mursaat casts either Mantra of Flame or Physical Resistance, using Intelligence as the spellcasting ability."
-					],
-					"displayAs": "bonus",
-					"will": [
-						"{@spell Mantra of Flame|GW} (level 4 Version)",
-						"{@spell Physical Resistance|GWP} (level 9 Version)"
-					],
-					"ability": "int",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Arcane Disruption",
-					"headerEntries": [
-						"The mursaat casts Power Leak, using Intelligence as the spellcasting ability (spell save {@dc 20})."
-					],
-					"displayAs": "reaction",
-					"will": [
-						"{@spell Power Leak|GWP} (level 6 Version)"
-					],
 					"ability": "int",
 					"type": "spellcasting"
 				}
@@ -13597,12 +13815,35 @@
 			"environment": [
 				"any"
 			],
+			"trait": [
+				{
+					"name": "Proficient Spellcaster",
+					"entries": [
+						"The mursaat ignores any restrictions on expending more than one spell slot per turn."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The mursaat has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"shortName": "mursaat",
 			"damageTags": [
 				"S",
 				"Y"
 			],
+			"damageTagsSpell": [
+				"Y"
+			],
 			"savingThrowForced": [
 				"intelligence"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"intelligence",
+				"wisdom"
 			]
 		},
 		{
@@ -13745,7 +13986,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The jade construct makes three attacks, using Hammer Swing, Rock Toss, or {@variantrule Unarmed Strike|XPHB}—Shove in any combination. If it does not have any {@variantrule Adrenaline|GW}, it uses Wild Blow; otherwise, it builds enough Adrenaline to use Devastating Hammer and Crushing Blow in the same turn. If available, it inflicts Spectral Agony on the first target it hits with an attack."
+						"The jade construct makes three attacks, using Hammer Swing, Rock Toss, or {@variantrule Unarmed Strike|XPHB}—Shove in any combination. If available, it inflicts Spectral Agony on the first target it hits with an attack."
 					]
 				},
 				{
@@ -14080,7 +14321,7 @@
 				{
 					"name": "Inspire",
 					"entries": [
-						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB|D20 Tests} until it succeeds on one."
 					]
 				}
 			],
@@ -14231,7 +14472,7 @@
 				{
 					"name": "Inspire",
 					"entries": [
-						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB|D20 Tests} until it succeeds on one."
 					]
 				}
 			],
@@ -14379,7 +14620,7 @@
 				{
 					"name": "Inspire",
 					"entries": [
-						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB|D20 Tests} until it succeeds on one."
 					]
 				}
 			],
@@ -14538,7 +14779,7 @@
 				{
 					"name": "Inspire",
 					"entries": [
-						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB|D20 Tests} until it succeeds on one."
 					]
 				}
 			],
@@ -14694,7 +14935,7 @@
 				{
 					"name": "Inspire",
 					"entries": [
-						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB|D20 Tests} until it succeeds on one."
 					]
 				}
 			],
@@ -14850,7 +15091,7 @@
 				{
 					"name": "Inspire",
 					"entries": [
-						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB|D20 Tests} until it succeeds on one."
 					]
 				}
 			],
@@ -15017,7 +15258,7 @@
 				{
 					"name": "Inspire",
 					"entries": [
-						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB|D20 Tests} until it succeeds on one."
 					]
 				}
 			],
@@ -15195,7 +15436,7 @@
 				{
 					"name": "Inspire",
 					"entries": [
-						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB|D20 Tests} until it succeeds on one."
 					]
 				}
 			],
@@ -15374,7 +15615,7 @@
 				{
 					"name": "Inspire",
 					"entries": [
-						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB|D20 Tests} until it succeeds on one."
 					]
 				}
 			],
@@ -15415,7 +15656,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The charr casts Ignite Arrows if the spell is not active; it then makes two attacks, using Scimitar or Longbow in any combination. "
+						"The white mantle makes two attacks, using Scimitar or Longbow in any combination; it can forgo one of these attacks to take a {@action Magic|XPHB} action."
 					]
 				},
 				{
@@ -15562,7 +15803,7 @@
 				{
 					"name": "Inspire",
 					"entries": [
-						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB|D20 Tests} until it succeeds on one."
 					]
 				}
 			],
@@ -15747,7 +15988,7 @@
 				{
 					"name": "Inspire",
 					"entries": [
-						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB|D20 Tests} until it succeeds on one."
 					]
 				}
 			],
@@ -15934,7 +16175,7 @@
 				{
 					"name": "Inspire",
 					"entries": [
-						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB} until it succeeds on one."
+						"The charr can inspire one other creature that can see or hear it within 60 feet. While inspired, the creature has advantage on all {@variantrule D20 Test|XPHB|D20 Tests} until it succeeds on one."
 					]
 				}
 			],
@@ -16038,13 +16279,6 @@
 			},
 			"damageTags": [
 				"F"
-			],
-			"damageTagsSpell": [
-				"B",
-				"F"
-			],
-			"savingThrowForcedSpell": [
-				"dexterity"
 			]
 		},
 		{
@@ -17165,13 +17399,19 @@
 				{
 					"name": "Magic Resistance",
 					"entries": [
-						"The mursaat has advantage on saving throws against spells and other magical effects."
+						"Optimus Caliph has advantage on saving throws against spells and other magical effects."
 					]
 				},
 				{
 					"name": "Legendary Resistance (5/Day)",
 					"entries": [
-						"If the mursaat fails a saving throw, it can choose to succeed instead."
+						"If Optimus Caliph fails a saving throw, they can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Proficient Spellcaster",
+					"entries": [
+						"Optimus Caliph ignores any restrictions on expending more than one spell slot per turn."
 					]
 				}
 			],
@@ -17179,7 +17419,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The mursaat casts Glyph of {@status Concentration|XPHB}, casts either Enervating Charge or Lightning Orb, casts either Chain Lightning or Thunderclap, makes either a Shocking Claw or Thunder Burst attack, and uses either Out of Phase or Spectral Agony if available."
+						"Optimus Caliph takes three {@action Magic|XPHB} actions and makes one attack, using Shocking Claw or Thunder Burst, and uses either Out of Phase or Spectral Agony."
 					]
 				},
 				{
@@ -17195,15 +17435,15 @@
 					]
 				},
 				{
-					"name": "Out of Phase",
+					"name": "Out of Phase {@recharge 3}",
 					"entries": [
-						"The mursaat casts {@spell Greater Invisibility|XPHB} on itself, requiring no spell components and using Intelligence as the spellcasting ability."
+						"Optimus Caliph teleports from the Material Plane to the Ethereal Plane until the start of their next turn."
 					]
 				},
 				{
 					"name": "Spectral Agony {@recharge 5}",
 					"entries": [
-						"{@actSave int} {@dc 24}, one creature the mursaat can see within 120 feet. {@i Failure:} 110 ({@damage 20d10}) Psychic damage, and the target has the {@condition Incapacitated|XPHB} condition until the start of the mursaat's next turn. {@i Success:} Half damage only."
+						"{@actSave int} {@dc 24}, one creature Optimus Caliph can see within 120 feet. {@i Failure:} 110 ({@damage 20d10}) Psychic damage, and the target has the {@condition Incapacitated|XPHB} condition until the start of Optimus Caliph's next turn. {@i Success:} Half damage only."
 					]
 				}
 			],
@@ -17214,19 +17454,64 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The mursaat casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 24}, +16 to hit with spell attacks)."
+						"Optimus Caliph is a 20th-level spellcaster. Their spellcasting ability is Intelligence (spell save {@dc 24}, +16 to hit with spell attacks). Optimus Caliph has the following Elementalist (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Chain Lightning|GWP} (level 6 Version)",
-						"{@spell Enervating Charge|GW} (level 6 Version)",
-						"{@spell Glyph of Concentration|GWP}"
-					],
-					"daily": {
-						"3e": [
-							"{@spell Lightning Orb|GW} (level 6 Version)",
-							"{@spell Thunderclap|GWP} (level 6 Version)"
-						]
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Glyph of Concentration|GWP}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Enervating Charge|GW}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Thunderclap|GWP}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Chain Lightning|GWP}",
+								"{@spell Lightning Orb|GW}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Control Winds|XGE}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell Wind Walk|XPHB}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell Whirlwind|XGE}"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell Control Weather|XPHB}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell Storm of Vengeance|XPHB}"
+							],
+							"slots": 1
+						}
 					},
 					"ability": "int",
 					"type": "spellcasting"
@@ -17252,19 +17537,19 @@
 				{
 					"name": "Attack",
 					"entries": [
-						"The mursaat attacks using one of its attacks."
+						"Optimus Caliph attacks using one of its attacks."
 					]
 				},
 				{
 					"name": "Move",
 					"entries": [
-						"The mursaat moves up to its speed without provoking opportunity attacks."
+						"Optimus Caliph moves up to its speed without provoking opportunity attacks."
 					]
 				},
 				{
 					"name": "Spellcasting (Costs 2 Actions)",
 					"entries": [
-						"The mursaat uses Spellcasting."
+						"Optimus Caliph uses Spellcasting."
 					]
 				}
 			],
@@ -17276,6 +17561,9 @@
 				"Y"
 			],
 			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
 				"L",
 				"T"
 			],
@@ -17283,7 +17571,9 @@
 				"intelligence"
 			],
 			"savingThrowForcedSpell": [
-				"constitution"
+				"constitution",
+				"dexterity",
+				"strength"
 			]
 		},
 		{
@@ -17354,23 +17644,49 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The Henge Guardian casts one of the following spells, requiring no Material components and using Strength as the spellcasting ability (spell save {@dc 21})."
+						"The Henge Guardian is a 9th-level spellcaster. Its spellcasting ability is Strength (spell save {@dc 21}, +13 to hit with spell attacks). The Henge Guardian has the following Ranger (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Called Shot|GW}",
-						"{@spell Dispel Magic|XPHB} (level 5 Version)",
-						"{@spell Distracting Shot|GW} (level 4 Version)",
-						"{@spell Healing Spring|GWP} (level 5 Version) (cast before combat)",
-						"{@spell Primal Echoes|GW} (level 6 Version) (cast before combat)",
-						"{@spell Serpent's Quickness|GWP}"
-					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell Called Shot|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Healing Spring|GWP}",
+								"{@spell Primal Echoes|GW}",
+								"{@spell Serpent's Quickness|GWP}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Dispel Magic|XPHB}",
+								"{@spell Distracting Shot|GW}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"Placeholder"
+							],
+							"slots": 1
+						}
+					},
 					"ability": "str",
 					"type": "spellcasting"
 				}
 			],
 			"spellcastingTags": [
-				"O"
+				"CR"
 			],
 			"trait": [
 				{
@@ -17435,15 +17751,21 @@
 					]
 				},
 				{
+					"name": "Root Pull {@recharge 5}",
+					"entries": [
+						"{@actSave str} {@dc 21}, each creature in a 150-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. {@i Failure:} The target is pulled up to 90 feet toward the Henge Guardian, taking {@damage 1d6} Bludgeoning damage for every 10 feet pulled. {@i Success:} The target is pulled up to 45 feet toward the Henge Guardian, taking {@damage 1d4} Bludgeoning damage for every 10 feet pulled."
+					]
+				},
+				{
 					"name": "Poison Breath {@recharge 5}",
 					"entries": [
 						"{@actSave con} {@dc 21}, each creature in a 60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@i Failure:} 56 ({@damage 16d6}) Poison damage. {@i Success:} Half damage."
 					]
 				},
 				{
-					"name": "Root Pull {@recharge 5}",
+					"name": "Spellcasting",
 					"entries": [
-						"{@actSave str} {@dc 21}, each creature in a 150-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. {@i Failure:} The target is pulled up to 90 feet toward the Henge Guardian, taking {@damage 1d6} Bludgeoning damage for every 10 feet pulled. {@i Success:} The target is pulled up to 45 feet toward the Henge Guardian, taking {@damage 1d4} Bludgeoning damage for every 10 feet pulled."
+						"The Henge Guardian uses Spellcasting."
 					]
 				},
 				{
@@ -17473,9 +17795,6 @@
 			"savingThrowForced": [
 				"constitution",
 				"strength"
-			],
-			"savingThrowForcedSpell": [
-				"constitution"
 			]
 		},
 		{
@@ -31752,7 +32071,7 @@
 					"type": "entries",
 					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The speed increases by 10% for each slot level above 2."
+						"The speed increases by 25% for each slot level above 2."
 					]
 				}
 			],
@@ -34249,7 +34568,7 @@
 		},
 		{
 			"name": "Ether Prodigy",
-			"level": 2,
+			"level": 3,
 			"school": "E",
 			"time": [
 				{
@@ -34276,8 +34595,8 @@
 				"{@variantrule Elite|GW}, {@variantrule Enchantment|GW}, {@variantrule Overcast|GW|Overcast:} 5",
 				"Channel the latent energy of the ether into you, improving your spellcasting.",
 				"End all beneficial {@status Concentration|XPHB} spells on yourself.",
-				"For the duration, when you would expend a spell slot to cast a spell of level 5 or lower, roll a {@dice d20}. On a 8 or higher, the spell does not expend a spell slot.",
-				"When this spell ends, you take necrotic damage equal to {@dice 1d8} per level of spell slot saved due to this spell. This damage cannot be reduced in any way."
+				"For the duration, at the start of your turn, you regain a level 2 or lower spell slot (your choice).",
+				"When this spell ends, you take necrotic damage equal to {@dice 1d8} per level 2 or lower spell slot you have."
 			],
 			"source": "GWP",
 			"fluff": {
@@ -34304,7 +34623,7 @@
 					"type": "entries",
 					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The level of the spell increases by 1 for every three slot level above 2."
+						"The level of the spell slot increases by 1 (maximum 5) for every slot level above 3."
 					]
 				}
 			],

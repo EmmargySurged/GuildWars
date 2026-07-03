@@ -20380,7 +20380,7 @@
 			],
 			"entries": [
 				"Sear a holy symbol of wrath on the ground, smiting all hostile creatures.",
-				"Choose a point that you can see within range. For the duration, you create a 10-foot-radius, 120-foot-high Cylinder centered on that point. Each creature, in that Cylinder must make a Wisdom saving throw. On a failed save, a target takes {@damage 2d8} radiant damage. On a successful save, a target takes half as much damage. A creature also makes this save if it enters the Cylinder or ends its turn there, or if the Cylinder moves into its space. A creature makes this save only once per turn.",
+				"Choose a point that you can see within range. For the duration, you create a 10-foot-radius, 10-foot-high Cylinder centered on that point. Each creature in that Cylinder must make a Wisdom saving throw. On a failed save, a target takes {@damage 2d8} radiant damage. On a successful save, a target takes half as much damage. A creature also makes this save if it enters the Cylinder or ends its turn there, or if the Cylinder moves into its space. A creature makes this save only once per turn.",
 				"On your later turns, you can take a {@action Magic|XPHB} action to move the Cylinder in a straight line up to 30 feet."
 			],
 			"source": "GWP",
@@ -20552,11 +20552,6 @@
 			],
 			"savingThrow": [
 				"wisdom"
-			],
-			"otherSources": [
-				{
-					"source": "GWF"
-				}
 			]
 		},
 		{
@@ -48468,8 +48463,7 @@
 			"entries": [
 				"{@variantrule Sacrifice|GW|Sacrifice:} 10%",
 				"Sacrifice your own blood to inflict untold agony on a creature.",
-				"Choose one creature within range. Make a melee spell attack against the target. On a hit, the target takes {@damage 3d8} necrotic damage.",
-				"This spell's damage increases by {@dice 2d8} when you reach level 5 ({@dice 5d8}), 11 ({@dice 7d8}), and 17 ({@dice 9d8})."
+				"Choose one creature within range. Make a melee spell attack against the target. On a hit, the target takes {@damage 3d8} necrotic damage."
 			],
 			"source": "GWP",
 			"fluff": {
@@ -48630,6 +48624,15 @@
 			"otherSources": [
 				{
 					"source": "GWF"
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Cantrip Upgrade",
+					"entries": [
+						"This spell's damage increases by {@dice 2d8} when you reach level 5 ({@dice 5d8}), 11 ({@dice 7d8}), and 17 ({@dice 9d8})."
+					]
 				}
 			]
 		},

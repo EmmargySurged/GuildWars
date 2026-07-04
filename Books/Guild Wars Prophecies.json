@@ -7246,18 +7246,23 @@
 			"type": {
 				"type": "humanoid",
 				"tags": [
-					"wizard"
+					"human"
 				]
 			},
 			"alignment": [
 				"G"
 			],
 			"ac": [
-				15
+				{
+					"ac": 15,
+					"from": [
+						"{@spell Mage Armor|XPHB}"
+					]
+				}
 			],
 			"hp": {
-				"average": 81,
-				"formula": "18d8"
+				"formula": "22d8 + 44",
+				"average": 143
 			},
 			"speed": {
 				"walk": 30
@@ -7265,19 +7270,20 @@
 			"initiative": {
 				"proficiency": 1
 			},
-			"str": 9,
+			"str": 6,
 			"dex": 14,
-			"con": 11,
-			"int": 17,
+			"con": 14,
+			"int": 18,
 			"wis": 12,
-			"cha": 11,
+			"cha": 10,
 			"save": {
-				"int": "+6",
-				"wis": "+4"
+				"int": "+7",
+				"wis": "+4",
+				"con": "+5"
 			},
 			"skill": {
-				"arcana": "+6",
-				"history": "+6",
+				"arcana": "+7",
+				"history": "+7",
 				"perception": "+4"
 			},
 			"passive": 14,
@@ -7292,61 +7298,59 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The Shining Blade Elementalist casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 14}):"
-					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Detect Magic|XPHB}",
-						"{@spell Light|XPHB}",
-						"{@spell Lightning Strike|GW}",
-						"{@spell Mage Armor|XPHB} (included in AC)",
-						"{@spell Mage Hand|XPHB}",
-						"{@spell Prestidigitation|XPHB}"
+						"The shining blade is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 15}, +7 to hit with spell attacks). The shining blade has the following Elementalist (GW) spells prepared:"
 					],
 					"daily": {
-						"2e": [
-							"{@spell Ice Spikes|GW} (Level 4 Version)",
-							"{@spell Invisibility|XPHB}"
-						],
 						"1e": [
-							"{@spell Fly|XPHB}",
 							"{@spell Rodgort's Invocation|GWP}"
 						]
 					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell Light|XPHB}",
+								"{@spell Mage Hand|XPHB}",
+								"{@spell Prestidigitation|XPHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell Detect Magic|XPHB}",
+								"{@spell Lightning Strike|GW}",
+								"{@spell Mage Armor|XPHB}",
+								"{@spell Shield|XPHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Ice Spikes|GW}",
+								"{@spell Invisibility|XPHB}",
+								"{@spell Misty Step|XPHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Counterspell|XPHB}",
+								"{@spell Fly|XPHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Dimension Door|XPHB}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Cone of Cold|XPHB}"
+							],
+							"slots": 1
+						}
+					},
 					"ability": "int",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Misty Step (3/Day)",
-					"headerEntries": [
-						"The Shining Blade Elementalist casts {@spell Misty Step|XPHB}, using the same spellcasting ability as Spellcasting."
-					],
-					"displayAs": "bonus",
-					"hidden": [
-						"daily"
-					],
-					"daily": {
-						"3": [
-							"{@spell Misty Step|XPHB}"
-						]
-					},
-					"type": "spellcasting"
-				},
-				{
-					"name": "Protective Magic (3/Day)",
-					"headerEntries": [
-						"The Shining Blade Elementalist casts {@spell Counterspell|XPHB} or {@spell Shield|XPHB} in response to the spell's trigger, using the same spellcasting ability as Spellcasting."
-					],
-					"displayAs": "reaction",
-					"hidden": [
-						"daily"
-					],
-					"daily": {
-						"3": [
-							"{@spell Counterspell|XPHB}",
-							"{@spell Shield|XPHB}"
-						]
-					},
 					"type": "spellcasting"
 				}
 			],
@@ -7354,13 +7358,19 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The Shining Blade Elementalist makes three Arcane Burst attacks."
+						"The shining blade makes three attacks, using Arcane Blast or Arcane Burst in any combination; it can forgo one of these attacks to take a {@action Magic|XPHB} action."
+					]
+				},
+				{
+					"name": "Arcane Blast",
+					"entries": [
+						"{@atkr m} {@hit 6}, reach 5 ft. {@h}16 ({@damage 3d8 + 3}) Force damage."
 					]
 				},
 				{
 					"name": "Arcane Burst",
 					"entries": [
-						"{@atkr m,r} {@hit 6}, reach 5 ft. or range 120 ft. {@h}16 ({@damage 3d8 + 3}) Force damage."
+						"{@atkr r} {@hit 6}, range 120 ft. {@h}16 ({@damage 4d8}) Force damage."
 					]
 				}
 			],
@@ -7379,8 +7389,8 @@
 				"O"
 			],
 			"miscTags": [
-				"RA",
-				"MA"
+				"MA",
+				"RA"
 			],
 			"conditionInflictSpell": [
 				"invisible"
@@ -7408,7 +7418,8 @@
 			"damageTagsSpell": [
 				"C",
 				"F",
-				"L"
+				"L",
+				"O"
 			],
 			"savingThrowForcedSpell": [
 				"constitution",
@@ -7425,7 +7436,7 @@
 			"type": {
 				"type": "humanoid",
 				"tags": [
-					"cleric"
+					"human"
 				]
 			},
 			"alignment": [
@@ -7435,8 +7446,8 @@
 				13
 			],
 			"hp": {
-				"average": 38,
-				"formula": "7d8 + 7"
+				"formula": "14d8 + 28",
+				"average": 91
 			},
 			"speed": {
 				"walk": 30
@@ -7446,7 +7457,7 @@
 			},
 			"str": 16,
 			"dex": 10,
-			"con": 12,
+			"con": 14,
 			"int": 13,
 			"wis": 16,
 			"cha": 13,
@@ -7469,40 +7480,39 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The Shining Blade Monk casts one of the following spells, using Wisdom as the spellcasting ability:"
+						"The shining blade is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, +5 to hit with spell attacks). The shining blade has the following Monk (GW) spells prepared:"
 					],
-					"displayAs": "action",
-					"will": [
-						"{@spell Light|XPHB}",
-						"{@spell Thaumaturgy|XPHB}"
-					],
-					"daily": {
-						"1e": [
-							"{@spell Heal Area/Karei's Healing Circle|GWP}",
-							"{@spell Heal Other/Jamei's Gaze|GWP}",
-							"{@spell Spirit Guardians|XPHB}"
-						]
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell Light|XPHB}",
+								"{@spell Thaumaturgy|XPHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell Bless|XPHB}",
+								"{@spell Healing Word|XPHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Heal Area|GWP}",
+								"{@spell Heal Other|GWP}",
+								"{@spell Lesser Restoration|XPHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Dispel Magic|XPHB}",
+								"{@spell Spirit Guardians|XPHB}"
+							],
+							"slots": 2
+						}
 					},
 					"ability": "wis",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Divine Aid (3/Day)",
-					"headerEntries": [
-						"The Shining Blade Monk casts {@spell Bless|XPHB}, {@spell Dispel Magic|XPHB}, {@spell Healing Word|XPHB}, or {@spell Lesser Restoration|XPHB}, using the same spellcasting ability as Spellcasting."
-					],
-					"displayAs": "bonus",
-					"hidden": [
-						"daily"
-					],
-					"daily": {
-						"3": [
-							"{@spell Bless|XPHB}",
-							"{@spell Dispel Magic|XPHB}",
-							"{@spell Healing Word|XPHB}",
-							"{@spell Lesser Restoration|XPHB}"
-						]
-					},
 					"type": "spellcasting"
 				}
 			],
@@ -7510,7 +7520,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The Shining Blade Monk makes two attacks, using Mace or Radiant Flame in any combination."
+						"The Shining Blade Monk makes two attacks, using Mace or Radiant Flame in any combination; it can forgo one of these attacks to take a {@action Magic|XPHB} action."
 					]
 				},
 				{
@@ -7565,6 +7575,9 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Saidra_Token.png"
 			},
+			"save": {
+				"con": "+4"
+			},
 			"damageTags": [
 				"B",
 				"R"
@@ -7596,8 +7609,8 @@
 				17
 			],
 			"hp": {
-				"average": 170,
-				"formula": "31d8 + 31"
+				"formula": "31d8 + 124",
+				"average": 263
 			},
 			"speed": {
 				"walk": 30
@@ -7607,13 +7620,14 @@
 			},
 			"str": 10,
 			"dex": 14,
-			"con": 12,
+			"con": 18,
 			"int": 20,
 			"wis": 15,
 			"cha": 16,
 			"save": {
 				"int": "+10",
-				"wis": "+7"
+				"wis": "+7",
+				"con": "+9"
 			},
 			"skill": {
 				"arcana": "+15",
@@ -7715,6 +7729,7 @@
 						},
 						"7": {
 							"spells": [
+								"{@spell Plane Shift|XPHB}",
 								"{@spell Teleport|XPHB}"
 							],
 							"slots": 1
@@ -7748,13 +7763,19 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Livia makes four Necrotic Burst attacks."
+						"Livia makes four attacks, using Necrotic Touch or Necrotic Arrow in any combination; she can forgo one of these attacks to take a {@action Magic|XPHB} action."
 					]
 				},
 				{
-					"name": "Necrotic Burst",
+					"name": "Necrotic Touch",
 					"entries": [
-						"{@atkr m,r} {@hit 9}, reach 5 ft. or range 150 ft. {@h}27 ({@damage 4d10 + 5}) Necrotic damage."
+						"{@atkr m} {@hit 9}, reach 5 ft. {@h}27 ({@damage 4d10 + 5}) Necrotic damage."
+					]
+				},
+				{
+					"name": "Necrotic Arrow",
+					"entries": [
+						"{@atkr r} {@hit 9}, range 150 ft. {@h}27 ({@damage 5d10}) Necrotic damage."
 					]
 				}
 			],
@@ -7776,8 +7797,8 @@
 				"CW"
 			],
 			"miscTags": [
-				"RA",
-				"MA"
+				"MA",
+				"RA"
 			],
 			"conditionInflictSpell": [
 				"invisible"
@@ -7804,6 +7825,8 @@
 				"N"
 			],
 			"damageTagsSpell": [
+				"C",
+				"F",
 				"N",
 				"O"
 			],
@@ -12664,6 +12687,12 @@
 					"entries": [
 						"Confessor Dorian has advantage on saving throws against spells and other magical effects."
 					]
+				},
+				{
+					"name": "Proficient Spellcaster",
+					"entries": [
+						"The Confessor Dorian ignores any restrictions on expending more than one spell slot per turn."
+					]
 				}
 			],
 			"gear": [
@@ -12713,7 +12742,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Confessor Dorian takes two {@action Magic|XPHB} actions (ignoring any restrictions on expending more than one spell slot per turn), makes either a Holy Smite or Holy Flare attack, and uses Divine Judgement if available."
+						"Confessor Dorian takes two {@action Magic|XPHB} actions, makes either a Holy Smite or Holy Flare attack, and uses Divine Judgement if available."
 					]
 				},
 				{
@@ -12757,7 +12786,8 @@
 						},
 						"3": {
 							"spells": [
-								"Placeholder"
+								"{@spell Dispel Magic|XPHB}",
+								"{@spell Laeral's Silver Lance|FRHoF}"
 							],
 							"slots": 3
 						},
@@ -12769,7 +12799,7 @@
 						},
 						"5": {
 							"spells": [
-								"Placeholder"
+								"{@spell Alustriel's Mooncloak|FRHoF}"
 							],
 							"slots": 3
 						},
@@ -12781,19 +12811,19 @@
 						},
 						"7": {
 							"spells": [
-								"Placeholder"
+								"{@spell Simbul's Synostodweomer|FRHoF}"
 							],
 							"slots": 2
 						},
 						"8": {
 							"spells": [
-								"Placeholder"
+								"{@spell Holy Star of Mystra|FRHoF}"
 							],
 							"slots": 1
 						},
 						"9": {
 							"spells": [
-								"Placeholder"
+								"{@spell Foresight|XPHB}"
 							],
 							"slots": 1
 						}
@@ -12855,13 +12885,13 @@
 				"R"
 			],
 			"damageTagsSpell": [
-				"R"
+				"O"
 			],
 			"savingThrowForced": [
 				"constitution"
 			],
 			"savingThrowForcedSpell": [
-				"dexterity"
+				"strength"
 			]
 		},
 		{
@@ -18017,6 +18047,318 @@
 			"damageTagsSpell": [
 				"C",
 				"F"
+			]
+		},
+		{
+			"name": "Vizier Khilbron",
+			"source": "GWP",
+			"referenceSources": [
+				"DrDe",
+				"DrDe-TWoO",
+				"FRAiF",
+				"NF",
+				"RHW"
+			],
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				20
+			],
+			"hp": {
+				"formula": "50d12 + 500",
+				"average": 825
+			},
+			"speed": {
+				"walk": 30
+			},
+			"initiative": {
+				"proficiency": 2
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 30,
+			"int": 30,
+			"wis": 18,
+			"cha": 18,
+			"save": {
+				"dex": "+12",
+				"con": "+19",
+				"int": "+19",
+				"wis": "+13",
+				"cha": "+13",
+				"str": "+9"
+			},
+			"skill": {
+				"arcana": "+28",
+				"history": "+28",
+				"insight": "+22",
+				"perception": "+22",
+				"deception": "+22",
+				"intimidation": "+13",
+				"investigation": "+28",
+				"medicine": "+13",
+				"nature": "+28",
+				"persuasion": "+13",
+				"religion": "+28",
+				"sleight of hand": "+12",
+				"stealth": "+12"
+			},
+			"senses": [
+				"Truesight 120 ft."
+			],
+			"passive": 32,
+			"resist": [
+				"cold",
+				"lightning",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"languages": [
+				"all"
+			],
+			"cr": {
+				"cr": "30",
+				"xpLair": 41000
+			},
+			"gear": [
+				"component pouch|xphb"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The vizier is a 20th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 27}, +19 to hit with spell attacks). The vizier has the following Wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell Chill Touch|XPHB}",
+								"{@spell Mage Hand|XPHB}",
+								"{@spell Prestidigitation|XPHB}",
+								"{@spell Vile Touch|GW}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell Consume Corpse|GWP}",
+								"{@spell Death Nova|GW}",
+								"{@spell Detect Magic|XPHB}",
+								"{@spell Disguise Self|XPHB}",
+								"{@spell Necrotic Traversal|GWP}",
+								"{@spell Shield|XPHB}",
+								"{@spell Silvery Barbs|SCC}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Alter Self|XPHB}",
+								"{@spell Detect Thoughts|XPHB}",
+								"{@spell Invisibility|XPHB}",
+								"{@spell Nystul's Magic Aura|XPHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Animate Dead|XPHB}",
+								"{@spell Counterspell|XPHB}",
+								"{@spell Dispel Magic|XPHB}",
+								"{@spell Fear|XPHB}",
+								"{@spell Fireball|XPHB}",
+								"{@spell Lightning Bolt|XPHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Dimension Door|XPHB}",
+								"{@spell Greater Invisibility|XPHB}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Aura of the Lich|GWP}",
+								"{@spell Scrying|XPHB}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell Chain Lightning|XPHB}",
+								"{@spell Forbiddance|XPHB}",
+								"{@spell Guards and Wards|XPHB}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell Finger of Death|XPHB}",
+								"{@spell Plane Shift|XPHB}",
+								"{@spell Teleport|XPHB}"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell Glibness|XPHB}",
+								"{@spell Mind Blank|XPHB}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell Meteor Swarm|XPHB}",
+								"{@spell Power Word Kill|XPHB}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
+					"entries": [
+						"If the vizier fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Spirit Jar",
+					"entries": [
+						"If destroyed, the vizier reforms in {@dice 1d10} days if he has a spirit jar, reviving with all his {@variantrule Hit Points|XPHB}. The new body appears in an unoccupied space within the vizier's lair."
+					]
+				},
+				{
+					"name": "Proficient Spellcaster",
+					"entries": [
+						"The vizier ignores any restrictions on expending more than one spell slot per turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The vizier makes three attacks, using Eldritch Burst or Paralyzing Touch in any combination; he can forgo one of these attacks to take a {@action Magic|XPHB} action."
+					]
+				},
+				{
+					"name": "Eldritch Burst",
+					"entries": [
+						"{@atkr m,r} {@hit 15}, reach 5 ft. or range 120 ft. {@h}60 ({@damage 8d12 + 8}) Force damage."
+					]
+				},
+				{
+					"name": "Paralyzing Touch",
+					"entries": [
+						"{@atkr m} {@hit 15}, reach 5 ft. {@h}25 ({@damage 5d6 + 8}) Cold damage, and the target has the {@condition Paralyzed|XPHB} condition until the start of the lich's next turn."
+					]
+				}
+			],
+			"legendaryActionsLair": 5,
+			"legendary": [
+				{
+					"name": "Deathly Teleport",
+					"entries": [
+						"The vizier teleports up to 60 feet to an unoccupied space he can see, and each creature within 10 feet of the space he left takes 27 ({@damage 5d10}) Necrotic damage."
+					]
+				},
+				{
+					"name": "Disrupt Life",
+					"entries": [
+						"{@actSave con} {@dc 23}, each creature that isn't an Undead in a 20-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the vizier  {@actSaveFail} 59 ({@damage 17d6}) Necrotic damage. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} The vizier can't take this action again until the start of his next turn."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Lich",
+				"source": "XMM"
+			},
+			"environment": [
+				"any"
+			],
+			"treasure": [
+				"arcana"
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"XX"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"RA",
+				"MA",
+				"AOE"
+			],
+			"conditionInflict": [
+				"paralyzed"
+			],
+			"conditionInflictSpell": [
+				"frightened",
+				"invisible"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"shortName": "vizier",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Vizier_Khilbron_Token.png"
+			},
+			"isNpc": true,
+			"legendaryActions": 4,
+			"damageTags": [
+				"C",
+				"N",
+				"O"
+			],
+			"damageTagsSpell": [
+				"B",
+				"F",
+				"L",
+				"N",
+				"O",
+				"P",
+				"R",
+				"S",
+				"Y"
+			],
+			"damageTagsLegendary": [
+				"N"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
 			]
 		}
 	],
@@ -34433,7 +34775,7 @@
 					"type": "entries",
 					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"If you cast this spell using a level 6 spell slot, you can maintain Concentration on it for up to 8 hours. If you use a level 7+ spell slot, the spell doesn't require Concentration, and the duration becomes 24 hours (level 7-8 slot) or 24 hours (level 9+ slot)."
+						"If you cast this spell using a level 6 spell slot, you can maintain {@status Concentration|XPHB} on it for up to 8 hours. If you use a level 7+ spell slot, the spell doesn't require {@status Concentration|XPHB}, and the duration becomes 24 hours (level 7-8 slot) or 10 days (level 9+ slot)."
 					]
 				}
 			],

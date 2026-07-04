@@ -802,8 +802,8 @@
 				}
 			],
 			"hp": {
-				"formula": "10d8 + 20",
-				"average": 65
+				"formula": "20d8 + 40",
+				"average": 130
 			},
 			"speed": {
 				"walk": 35
@@ -1021,8 +1021,8 @@
 				}
 			],
 			"hp": {
-				"formula": "10d8 + 30",
-				"average": 75
+				"formula": "20d10 + 60",
+				"average": 170
 			},
 			"speed": {
 				"walk": 35
@@ -1245,8 +1245,8 @@
 				}
 			],
 			"hp": {
-				"formula": "10d8 + 20",
-				"average": 65
+				"formula": "20d6 + 40",
+				"average": 110
 			},
 			"speed": {
 				"walk": 35
@@ -1467,8 +1467,8 @@
 				}
 			],
 			"hp": {
-				"formula": "10d8 + 30",
-				"average": 75
+				"formula": "15d8 + 45",
+				"average": 112
 			},
 			"speed": {
 				"walk": 35
@@ -1562,28 +1562,27 @@
 						"1": {
 							"spells": [
 								"{@spell Bane Signet|GW}",
-								"{@spell Empathy|GW}",
+								"{@spell Bless|XPHB}",
 								"{@spell Signet of Devotion|GW}",
-								"{@spell Silvery Barbs|SCC}"
+								"{@spell Signet of Disenchantment|GWF}",
+								"{@spell Signet of Rage|GWF}",
+								"{@spell Unnatural Signet|GWF}"
 							],
 							"slots": 4
 						},
 						"2": {
 							"spells": [
-								"{@spell Energy Surge|GW}",
-								"{@spell Misty Step|XPHB}",
 								"{@spell Pass Without Trace|XPHB}",
-								"{@spell Shame|GWP}",
-								"{@spell Shatter Enchantment|GW}",
-								"{@spell Shatter Hex|GW}",
 								"{@spell Signet of Agony|GW}",
+								"{@spell Signet of Rejuvenation|GWF}",
+								"{@spell Signet of Toxic Shock|GWN}",
 								"{@spell Signet of Weariness|GWP}"
 							],
 							"slots": 3
 						},
 						"3": {
 							"spells": [
-								"{@spell Guilt|GWP}",
+								"{@spell Death Pact Signet|GWN}",
 								"{@spell Leech Signet|GW}",
 								"{@spell Mantra of Inscriptions|GW}",
 								"{@spell Purge Signet|GW}"
@@ -1593,7 +1592,9 @@
 						"4": {
 							"spells": [
 								"{@spell Dimension Door|XPHB}",
-								"{@spell Power Spike|GW}",
+								"{@spell Ether Signet|GWF}",
+								"{@spell Hex Eater Signet|GWF}",
+								"{@spell Keystone Signet|GWP}",
 								"{@spell Signet of Humility|GW}"
 							],
 							"slots": 3
@@ -1601,6 +1602,7 @@
 						"5": {
 							"spells": [
 								"{@spell Seeming|XPHB}",
+								"{@spell Signet of Clumsiness|GWN}",
 								"{@spell Synaptic Static|XPHB}"
 							],
 							"slots": 2
@@ -1657,6 +1659,426 @@
 				"constitution",
 				"dexterity",
 				"intelligence"
+			]
+		},
+		{
+			"name": "Gisinger",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "GWBMP",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item hide armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d8 + 45",
+				"average": 112
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 16,
+			"int": 12,
+			"wis": 16,
+			"cha": 12,
+			"passive": 19,
+			"cr": "5",
+			"shortName": "Gisinger",
+			"languages": [
+				"Common",
+				"Krytan"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Devotion",
+					"entries": [
+						"Gisinger has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Formation",
+					"entries": [
+						"Gisinger gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of Gisinger's that is within 5 feet of them. This bonus is not added to Gisinger's AC or saving throws if Gisinger is {@condition incapacitated|XPHB}."
+					]
+				},
+				{
+					"name": "Halt",
+					"entries": [
+						"When Gisinger hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
+					]
+				}
+			],
+			"gear": [
+				"Hide Armor|XPHB",
+				{
+					"item": "Shortsword|XPHB",
+					"quantity": 2,
+					"displayName": ""
+				},
+				"Longbow|XPHB",
+				{
+					"item": "Arrow|XPHB",
+					"quantity": 40,
+					"displayName": ""
+				},
+				{
+					"item": "Quiver|XPHB",
+					"quantity": 2,
+					"displayName": ""
+				},
+				{
+					"item": "potion of healing|XPHB",
+					"quantity": 2,
+					"displayName": ""
+				},
+				"potion of arcane recovery|gw",
+				"Explorer's Pack|xphb"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Gisinger makes two attacks, using Shortsword or Longbow in any combination."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 150/600 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"bonus": [
+				{
+					"name": "Stealth",
+					"entries": [
+						"Gisinger takes the {@action Hide} action."
+					]
+				},
+				{
+					"name": "Call Animal {@recharge 6}",
+					"entries": [
+						"Gisinger magically summons forth a Companion. One random Beast or Monstrosity with a Challenge Rating equal to or less than one other creature within 60 feet of Gisinger appears in an unoccupied space within 150 feet of Gisinger. The creature is an ally to Gisinger and their allies. In combat, it shares Gisinger's Initiative count, but it takes its turn immediately after Gisinger. It obeys Gisinger's verbal commands (no action required by Gisinger). If Gisinger doesn't issue any, it takes the dodge action and uses its movement to avoid danger. The creature stays for 1 minute or until Call Animal is used again."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"environment": [
+				"any"
+			],
+			"group": [
+				"White Mantle"
+			],
+			"skill": {
+				"perception": "+9",
+				"survival": "+9",
+				"stealth": "+10",
+				"acrobatics": "+7",
+				"animal handling": "+9"
+			},
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_ranger_Token.png"
+			},
+			"save": {
+				"dex": "+7",
+				"wis": "+6"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Gisinger is a 5th-level spellcaster. Their spellcasting ability is Wisdom (spell save {@dc 14}, +6 to hit with spell attacks). Gisinger has the following Ranger (GW) spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell Poisonous Bite|GWF}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell Comfort Animal|GW}",
+								"{@spell Melandru's Assault|GWP}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Pounce|GWF}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Call of Haste|GW}",
+								"{@spell Together as One!|GW}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CR"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Bryen",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "GWBMP",
+			"alignment": [
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@spell mage armor|XPHB}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 48",
+				"average": 120
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 16,
+			"int": 18,
+			"wis": 12,
+			"cha": 10,
+			"passive": 11,
+			"cr": "5",
+			"shortName": "White Mantle",
+			"languages": [
+				"Common",
+				"Krytan"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Devotion",
+					"entries": [
+						"Bryen has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Formation",
+					"entries": [
+						"Bryen gains a +1 bonus to {@variantrule Armor Class|XPHB|AC} and {@variantrule Saving Throw|XPHB|Saving Throws} for each ally of Bryen that is within 5 feet of him. This bonus is not added to Bryen's AC or saving throws if Bryen is {@condition incapacitated|XPHB}."
+					]
+				},
+				{
+					"name": "Halt",
+					"entries": [
+						"When Bryen hits a creature with an {@action Opportunity Attack}, the creature's {@variantrule Speed|XPHB} becomes 0 for the rest of the current turn."
+					]
+				}
+			],
+			"gear": [
+				{
+					"item": "Dagger|XPHB",
+					"quantity": 10,
+					"displayName": ""
+				},
+				"Rod|XPHB",
+				"potion of healing|XPHB",
+				{
+					"item": "potion of arcane recovery|gw",
+					"quantity": 2,
+					"displayName": ""
+				},
+				"Dungeoneer's Pack|xphb"
+			],
+			"action": [
+				{
+					"name": "Ritual Dagger",
+					"entries": [
+						"{@atk ms} {@hit 7} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) piercing damage, plus 22 ({@damage 5d8}) necrotic damage."
+					]
+				},
+				{
+					"name": "Ritual Dagger Throw",
+					"entries": [
+						"{@atk rs} {@hit 7} to hit, reach 20/60 ft., one target. {@h}2 ({@damage 1d4}) piercing damage, plus 22 ({@damage 5d8}) necrotic damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"group": [
+				"White Mantle"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Bryen is an 11th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 15}, +7 to hit with spell attacks). Bryen has the following Necromancer (GW) spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell Chill Touch|XPHB}",
+								"{@spell Dancing Lights|XPHB}",
+								"{@spell Infestation|XGE}",
+								"{@spell Mold Earth|XGE}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell Life Siphon|GW}",
+								"{@spell Mage Armor|XPHB}",
+								"{@spell Order of Pain|GW}",
+								"{@spell Shield|XPHB}",
+								"{@spell Vampiric Gaze|GW}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Awaken the Blood|GWP}",
+								"{@spell Shadow Strike|GWP}",
+								"{@spell Vampiric Swarm|GWF}",
+								"{@spell Vampiric Touch|GWP}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Dispel Magic|XPHB}",
+								"{@spell Mark of Subversion|GWP}",
+								"{@spell Speak with Dead|XPHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Evard's Black Tentacles|XPHB}",
+								"{@spell Well of the Profane|GW}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Cultist's Fervor|GWF}",
+								"{@spell Oppressive Gaze|GWF}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell Dirge|FRHoF}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"bonus": [
+				{
+					"name": "Profane Ritual {@recharge 6}",
+					"entries": [
+						"One creature Bryen can see within 60 feet does not need to expend spell slots to cast spells of level 3 or lower until the start of Bryen's next turn."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Mantle_necromancer_Token.png"
+			},
+			"miscTags": [
+				"MA",
+				"MLW",
+				"RA",
+				"THW"
+			],
+			"save": {
+				"int": "+7",
+				"con": "+6"
+			},
+			"isNpc": true,
+			"damageTags": [
+				"N",
+				"P"
+			],
+			"damageTagsSpell": [
+				"B",
+				"I",
+				"N"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"strength"
 			]
 		}
 	],

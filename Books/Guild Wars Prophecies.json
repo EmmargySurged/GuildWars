@@ -1816,10 +1816,10 @@
 									"id": "GWP7i1",
 									"entries": [
 										"To experience the White Mantle's origins the players must find the tome titled \"Saul's Story\", which contains a powerful enchantment that puts a group of readers into a deep slumber, while giving them a dream like vision of the past.",
-										"In the Henge of Denravi the book could be found in the {@area Library of Lost Tomes|GWP7hlib|x}, bought in {@area Mabon Market|GWP7hmabon|x} or be given to the players by the dwarves in the {@area Dragon's Sanctuary|GWP7hdragon|x}.", 
+										"In the Henge of Denravi the book could be found in the {@area Library of Lost Tomes|GWP7hlib|x}, bought in {@area Mabon Market|GWP7hmabon|x} or be given to the players by the dwarves in the {@area Dragon's Sanctuary|GWP7hdragon|x}.",
 										"However they get it, they can quickly find out the purpose of the tome by interacting with it. It allows a group of up to six creatures to enter a deep slumber by opening the book and reading out the first passage aloud together. One they are asleep they will experience a real seeming vision of the past in which they inhabit one of six early White Mantle members. For more information see {@i \"Rise of the White\"}, which can be found in {@i \"Guild Wars Bonus Mission Pack\"} under {@i \"Saul's Story\"}."
 									]
-								}, 
+								},
 								{
 									"type": "entries",
 									"name": "The Characters",
@@ -22512,8 +22512,8 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "bonus"
+					"number": 0,
+					"unit": "special"
 				}
 			],
 			"range": {
@@ -22529,9 +22529,9 @@
 				}
 			],
 			"entries": [
-				"{@variantrule Companion|GW}",
+				"{@variantrule Companion|GW}, {@variantrule Pet Attack|GW}",
 				"Command your companion to attempt a Predator's Pounce.",
-				"Choose one companion that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 2d10} damage, and the beast regains hit points equal to {@dice 2d6} + your spellcasting ability modifier."
+				"Choose one companion that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 2d10} damage, and the beast regains hit points equal to {@dice 4d6} + your spellcasting ability modifier."
 			],
 			"source": "GWP",
 			"fluff": {
@@ -22565,9 +22565,9 @@
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
-					"name": "At Higher Levels",
+					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The number of attacks increases by 1 for each slot level above 1. "
+						"The damage increases by {@dice 1d10} for each level above 1, and the healing increases by {@dice 2d6} for each level above 1."
 					]
 				}
 			],
@@ -22586,6 +22586,10 @@
 				},
 				{
 					"name": "Companion",
+					"source": "GW"
+				},
+				{
+					"name": "Pet Attack",
 					"source": "GW"
 				}
 			],
@@ -24967,8 +24971,8 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "bonus"
+					"number": 0,
+					"unit": "special"
 				}
 			],
 			"range": {
@@ -24988,9 +24992,9 @@
 				}
 			],
 			"entries": [
-				"{@variantrule Companion|GW}",
+				"{@variantrule Companion|GW}, {@variantrule Pet Attack|GW}",
 				"Command your companion to attempt a Feral Lunge, {@condition bleeding|GW} attacking creatures on a hit.",
-				"Choose one companion that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 2d10} damage, and if the target attacked on its last turn, the target must make a Constitution saving throw. On a failed save, the target starts {@condition bleeding|GW} for the duration, taking {@damage 1d6} damage. On a successful save, the target is affected for 1 round only.",
+				"Choose one companion that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 2d10} damage, and if the target starts {@condition bleeding|GW} for the duration, taking {@damage 2d6} damage.",
 				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
 			],
 			"source": "GWP",
@@ -25031,6 +25035,10 @@
 				{
 					"name": "Companion",
 					"source": "GW"
+				},
+				{
+					"name": "Pet Attack",
+					"source": "GW"
 				}
 			],
 			"components": {
@@ -25039,9 +25047,9 @@
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
-					"name": "At Higher Levels",
+					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The number of attacks increases by 1 for each slot level above 1. "
+						"The damage increases by {@dice 1d10} and {@dice 1d6} respectively for each slot level above 1."
 					]
 				}
 			],
@@ -31665,8 +31673,8 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "bonus"
+					"number": 0,
+					"unit": "special"
 				}
 			],
 			"range": {
@@ -31682,9 +31690,9 @@
 				}
 			],
 			"entries": [
-				"{@variantrule Companion|GW}",
+				"{@variantrule Companion|GW}, {@variantrule Pet Attack|GW}",
 				"Imbue your animal companion with Melandru's wild strength, striking everything around it.",
-				"Choose one companion that can hear you within range. The companion uses its reaction to make a melee attack against all creatures that the companion can see within double the companion's range. On a hit, a target suffers the attack's normal effects and takes {@damage 1d10} damage."
+				"Choose one companion that can hear you within range. The companion uses its reaction to make a melee attack against all hostile creatures that the companion can see within double the companion's range. On a hit, a target suffers the attack's normal effects and takes {@damage 1d10} damage."
 			],
 			"source": "GWP",
 			"fluff": {
@@ -31718,6 +31726,10 @@
 				{
 					"name": "Companion",
 					"source": "GW"
+				},
+				{
+					"name": "Pet Attack",
+					"source": "GW"
 				}
 			],
 			"components": {
@@ -31726,9 +31738,9 @@
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
-					"name": "At Higher Levels",
+					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The number of attacks increases by 1 for each slot level above 1. "
+						"The damage increases by {@dice 1d10} for each slot level above 1."
 					]
 				}
 			],
@@ -34152,7 +34164,7 @@
 			"entries": [
 				"{@variantrule Companion|GW}, {@variantrule Shout|GW}",
 				"Call out to your animal companions, protecting them with abjuration magic.",
-				"Choose any number of companions that can hear you within range. When a companion takes damage, you can roll {@dice 1d12} and subtract the number rolled from the damage."
+				"Choose any number of companions that can hear you within range. When a companion takes damage, you can roll {@dice 2d12} and subtract the number rolled from the damage."
 			],
 			"source": "GWP",
 			"fluff": {
@@ -47407,8 +47419,8 @@
 			"school": "A",
 			"time": [
 				{
-					"number": 1,
-					"unit": "bonus"
+					"number": 0,
+					"unit": "special"
 				}
 			],
 			"range": {
@@ -47430,7 +47442,7 @@
 			"entries": [
 				"{@variantrule Companion|GW}, {@variantrule Shout|GW}, {@variantrule Unblockable|GW}",
 				"Invoke the famous ogre beast master Otyugh to protect and enhance your companions.",
-				"Choose any number of {@variantrule Companion|GW|Companions} that can hear you within range. When a target takes damage, you can roll {@dice 2d4} and subtract the number rolled from the damage. Additionally, each target gains the {@variantrule Unblockable|GW} property on their attacks."
+				"Choose any number of {@variantrule Companion|GW|Companions} that can hear you within range. When a target takes damage, you can roll {@dice 2d8} and subtract the number rolled from the damage. Additionally, each target gains the {@variantrule Unblockable|GW} property on their attacks."
 			],
 			"source": "GWP",
 			"fluff": {
@@ -47482,7 +47494,7 @@
 					"type": "entries",
 					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The number subtracted increases by {@dice 2d4} for each slot level above 2."
+						"The number subtracted increases by {@dice 2d8} for each slot level above 2."
 					]
 				}
 			],
@@ -50344,8 +50356,8 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "bonus"
+					"number": 0,
+					"unit": "special"
 				}
 			],
 			"range": {
@@ -50361,9 +50373,9 @@
 				}
 			],
 			"entries": [
-				"{@variantrule Companion|GW}",
+				"{@variantrule Companion|GW}, {@variantrule Pet Attack|GW}",
 				"Command your pet to attempt a Brutal Strike.",
-				"Choose one companion that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 3d10} damage, and if the target was below 50% of their maximum hit points, the target takes an additional {@damage 4d6} damage."
+				"Choose one companion that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 4d10} damage, and if the target was below 50% of their maximum hit points, the target takes an additional {@damage 4d10} damage."
 			],
 			"source": "GWP",
 			"fluff": {
@@ -50394,9 +50406,9 @@
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
-					"name": "At Higher Levels",
+					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The number of attacks increases by 1 for each slot level above 3. "
+						"The damage increases by {@dice 1d10} respectively for each slot level above 3."
 					]
 				}
 			],
@@ -50415,6 +50427,10 @@
 				},
 				{
 					"name": "Companion",
+					"source": "GW"
+				},
+				{
+					"name": "Pet Attack",
 					"source": "GW"
 				}
 			],
@@ -60773,7 +60789,7 @@
 			"entries": [
 				"{@variantrule Companion|GW}, {@variantrule Shout|GW}",
 				"Form a symbiotic bond between yourself and a companion, giving them health regeneration and absorbing damage for them.",
-				"Choose one companion that can hear you within range. For the duration, the companion has resistance to all damage. Also, each time the companion takes damage, you lose health equal to the damage taken. Additionally, for the duration, at the start of each of the companion's turns, the companion regains hit points equal to {@dice 1d4}.",
+				"Choose one companion that can hear you within range. For the duration, the companion has resistance to all damage. Also, each time the companion takes damage, you lose health equal to the damage taken. Additionally, for the duration, at the start of each of the companion's turns, the companion regains hit points equal to {@dice 4d4}.",
 				"If the target drops to 0 hit points, this spell ends."
 			],
 			"source": "GWP",
@@ -60822,7 +60838,7 @@
 					"type": "entries",
 					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The healing increases by {@dice 1d4} for each slot level above 3. The duration increases to 8 hours (level 4-5 slot) or 24 hours (level 6+ slot)."
+						"The healing increases by {@dice 2d4} for each slot level above 3. The duration increases to 8 hours (level 4-5 slot) or 24 hours (level 6+ slot)."
 					]
 				}
 			],
@@ -61068,8 +61084,8 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "bonus"
+					"number": 0,
+					"unit": "special"
 				}
 			],
 			"range": {
@@ -61085,9 +61101,9 @@
 				}
 			],
 			"entries": [
-				"{@variantrule Companion|GW}",
+				"{@variantrule Companion|GW}, {@variantrule Pet Attack|GW}",
 				"Command your pet to attempt a Bestial Pounce, knocking down creatures who cast a spell on their last turn.",
-				"Choose one companion that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 2d10} damage, and, if the target cast a spell on its last turn, the target must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}."
+				"Choose one companion that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 1d10} damage, and, if the target cast a spell on its last turn, is knocked {@condition prone}."
 			],
 			"source": "GWP",
 			"fluff": {
@@ -61124,6 +61140,10 @@
 				{
 					"name": "Companion",
 					"source": "GW"
+				},
+				{
+					"name": "Pet Attack",
+					"source": "GW"
 				}
 			],
 			"components": {
@@ -61132,9 +61152,9 @@
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
-					"name": "At Higher Levels",
+					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The number of attacks increases by 1 for each slot level above 1. "
+						"The damage increases by {@dice 1d10} for each slot level above 1."
 					]
 				}
 			],

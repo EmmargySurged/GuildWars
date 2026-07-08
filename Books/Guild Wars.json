@@ -34091,13 +34091,13 @@
 			]
 		},
 		{
-			"name": "Together as One!",
+			"name": "\"Together as One!\"",
 			"level": 3,
 			"school": "E",
 			"time": [
 				{
-					"number": 1,
-					"unit": "bonus"
+					"number": 0,
+					"unit": "special"
 				}
 			],
 			"range": {
@@ -34117,9 +34117,9 @@
 				}
 			],
 			"entries": [
-				"{@variantrule Companion|GW}, {@variantrule Elite|GW}",
+				"{@variantrule Companion|GW}, {@variantrule Elite|GW}, {@variantrule Shout|GW}",
 				"Inspire your allies to deal more damage with attacks and regain health every turn.",
-				"Choose any number of friendly creatures that can hear you and are within 20-foot of you, or any companion within range. For the duration, a target's weapon attacks deal an additional {@damage 1d6} damage and at the start of each of a target's turns, a target regains hit points equal to {@dice 2d4}.",
+				"Choose any number of friendly creatures that can hear you and are within 20-foot of you, or any companion within range. For the duration, a target's weapon attacks deal an additional {@damage 1d6} damage, and at the start of each of a target's turns, a target regains hit points equal to {@dice 2d4}.",
 				"If a target drops to 0 hit points, this spell ends on that target."
 			],
 			"source": "GW",
@@ -34158,6 +34158,10 @@
 				{
 					"name": "Companion",
 					"source": "GW"
+				},
+				{
+					"name": "Shout",
+					"source": "GW"
 				}
 			],
 			"components": {
@@ -34168,7 +34172,7 @@
 					"type": "entries",
 					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The damage increases by {@dice 1d6} for every two slot levels above 3, and the healing increases by {@dice 1d4} for each slot level above 3."
+						"The damage increases by {@dice 1d6} for every two slot levels above 3, and the healing increases by {@dice 2d4} for each slot level above 3."
 					]
 				}
 			],
@@ -35301,8 +35305,8 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "bonus"
+					"number": 0,
+					"unit": "special"
 				}
 			],
 			"range": {
@@ -35318,9 +35322,9 @@
 				}
 			],
 			"entries": [
-				"{@variantrule Companion|GW}, {@variantrule Elite|GW}",
+				"{@variantrule Companion|GW}, {@variantrule Elite|GW}, {@variantrule Pet Attack|GW}",
 				"Command your companion to attempt a Ferocious Strike.",
-				"Choose one companion that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 3d10} damage. You gain {@dice 1d4} strikes of adrenaline, and your initiative gets increased by {@dice 4d4}."
+				"Choose one companion that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects, takes {@damage 2d10} damage, you gain {@dice 2d4} strikes of adrenaline, and you regain a level 1 spell slot."
 			],
 			"source": "GW",
 			"fluff": {
@@ -35349,15 +35353,6 @@
 			"components": {
 				"v": true
 			},
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
-					"entries": [
-						"The number of attacks increases by 1 for each slot level above 1. "
-					]
-				}
-			],
 			"backgrounds": [
 				{
 					"name": "Southern Shiverpeaks",
@@ -35386,6 +35381,10 @@
 				{
 					"name": "Vabbi",
 					"source": "GWN"
+				},
+				{
+					"name": "Pet Attack",
+					"source": "GW"
 				}
 			],
 			"classes": {
@@ -35453,7 +35452,16 @@
 						}
 					}
 				]
-			}
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The damage increases by {@dice 1d10} for each slot level above 1, the adrenaline gain increases by {@dice 1d4} for each slot level above 1, and the level of the spell slot increases by 1 for every two slot levels above 1."
+					]
+				}
+			]
 		},
 		{
 			"name": "Judgment Strike",
@@ -45694,8 +45702,8 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "bonus"
+					"number": 0,
+					"unit": "special"
 				}
 			],
 			"range": {
@@ -45715,9 +45723,9 @@
 				}
 			],
 			"entries": [
-				"{@variantrule Companion|GW}",
+				"{@variantrule Companion|GW}, {@variantrule Pet Attack|GW}",
 				"Command your companion to maim a creature.",
-				"Choose one companion that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 2d10} damage, and the target must make a Dexterity saving throw. On a failed save, the target is {@condition crippled|GW} for the duration. On a successful save, the target is affected for 1 round only.",
+				"Choose one companion that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects, takes {@damage 2d10} damage, and is {@condition crippled|GW} for the duration.",
 				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the condition ends."
 			],
 			"source": "GW",
@@ -45760,6 +45768,10 @@
 				{
 					"name": "Istan",
 					"source": "GWN"
+				},
+				{
+					"name": "Pet Attack",
+					"source": "GW"
 				}
 			],
 			"components": {
@@ -45773,7 +45785,7 @@
 					"type": "entries",
 					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The number of attacks increases by 1 for each slot level above 1. "
+						"The damage increases by {@dice 1d10} for each slot level above 1."
 					]
 				}
 			],
@@ -47522,8 +47534,8 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 1,
-					"unit": "bonus"
+					"number": 0,
+					"unit": "special"
 				}
 			],
 			"range": {
@@ -47539,9 +47551,9 @@
 				}
 			],
 			"entries": [
-				"{@variantrule Companion|GW}",
+				"{@variantrule Companion|GW}, {@variantrule Pet Attack|GW}",
 				"Command your companion to attempt a Scavenger Strike.",
-				"Choose one companion that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 1d10} damage, and if the target is suffering from a condition, your initiative gets increased by {@dice 2d4}."
+				"Choose one companion that can hear you within range. The companion uses its reaction to make an attack against a creature of your choice that the companion can see within the companion's range. On a hit, the target suffers the attack's normal effects and takes {@damage 1d10} damage, and if the target is suffering from a condition, you regain a level 1 spell slot."
 			],
 			"source": "GW",
 			"fluff": {
@@ -47575,7 +47587,7 @@
 					"type": "entries",
 					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The number of attacks increases by 1 for each slot level above 1. "
+						"The damage increases by {@dice 1d10} for each slot level above 1, and the level of the spell slot increases by 1 for every two slot levels above 1."
 					]
 				}
 			],
@@ -47603,6 +47615,10 @@
 				{
 					"name": "Vabbi",
 					"source": "GWN"
+				},
+				{
+					"name": "Pet Attack",
+					"source": "GW"
 				}
 			],
 			"classes": {
@@ -57540,7 +57556,16 @@
 						}
 					}
 				]
-			}
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The speed increase increases by 33% for each slot level above 3."
+					]
+				}
+			]
 		},
 		{
 			"name": "Taste of Death",
@@ -57908,6 +57933,95 @@
 			},
 			"areaTags": [
 				"ST"
+			]
+		},
+		{
+			"name": "Heroic Refrain",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 5
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"{@variantrule Echo|GWN}, {@variantrule Elite|GW}",
+				"Inspire an ally to heroic deeds by supernaturally enhancing their abilities.",
+				"Choose one ally that can hear you within range. For the duration, the target's ability scores are increased by {@dice 1d4}.",
+				"When a {@variantrule Shout|GW} or {@variantrule Chant|GWN} ends on the target, re-apply this spell to the target."
+			],
+			"source": "GW",
+			"fluff": {
+				"entries": [
+					"Heroic Refrain",
+					"Elite Echo. For 3...13...15 seconds, target non-spirit ally gains +1...3...3 to all attributes. This echo is reapplied every time a chant or shout ends on that ally. PvE Skill"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Core/Elite/Heroic_Refrain.jpg"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"backgrounds": [
+				{
+					"name": "Paragon",
+					"source": "GWN"
+				},
+				{
+					"name": "The Desolation",
+					"source": "GWN"
+				},
+				{
+					"name": "Leadership",
+					"source": "GWN"
+				},
+				{
+					"name": "Echo",
+					"source": "GWN"
+				},
+				{
+					"name": "Elite",
+					"source": "GW"
+				}
+			],
+			"components": {
+				"v": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The change in ability scores increases by 1 for each slot level above 5."
+					]
+				}
 			]
 		}
 	],
@@ -95199,6 +95313,14 @@
 			]
 		},
 		{
+			"name": "Pet Attack",
+			"source": "GW",
+			"entries": [
+				"Shout spells can be used once per turn at any point during your turn (no action required).",
+				"To use a pet attack at least one {@variantrule Companion|GW} with a {@variantrule Reaction|XPHB} left must be within range of the spell."
+			]
+		},
+		{
 			"name": "Preparation",
 			"source": "GW",
 			"entries": [
@@ -95384,6 +95506,13 @@
 			"source": "GW",
 			"entries": [
 				"See {@variantrule Overcast|GW}."
+			]
+		},
+		{
+			"name": "Pet Attack",
+			"source": "GW",
+			"entries": [
+				"See {@variantrule Pet Attack|GW}."
 			]
 		},
 		{

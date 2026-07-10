@@ -8890,7 +8890,7 @@
             ],
             "entries": [
                 "You have gained the uncanny ability to extract arcane energy from your victims.",
-                "Once per combat, you regain your highest expended level spell slot when you land a Critical Hit."
+                "Once per {@variantrule Short Rest|XPHB}, you can choose expended spell slots to recover, when you land a {@variantrule Critical Hit|XPHB} with a weapon. The spell slots can have a combined level equal to your {@table Proficiency Bonus|XPHB}, and none of the slots can be level 6 or higher."
             ]
         },
         {
@@ -8898,12 +8898,14 @@
             "source": "GW",
             "prerequisite": [
                 {
-                    "other": "Circle of the Moon Druid"
+                    "other": "{@subclass Moon|Druid|XPHB|XPHB|Circle of the Moon Druid}"
                 }
             ],
             "entries": [
-                "Blessed by the Moon your Wild Shape has improved even further.",
-                "The maximum {@variantrule Challenge Rating|XPHB} for the form equals your Druid level divided by 2 (round down)."
+                "Blessed by the Moon your {@subclassFeature Circle Forms|Druid|XPHB|Moon|XPHB|3} has improved even further.",
+                "{@b Challenge Rating.} The maximum {@variantrule Challenge Rating|XPHB} for the form equals your Druid level divided by 2 (round down).",
+                "{@b Armor Class.} Until you leave the form, your AC equals 15 plus your Wisdom modifier if that total is higher that the Beast's AC.",
+                "{@b Temporary Hit Points.} You gain a number of {@variantrule Temporary Hit Points|XPHB} equal to four times you Druid level."
             ]
         },
         {
@@ -8911,7 +8913,7 @@
             "source": "GW",
             "entries": [
                 "Nothing infuriates you more than a friend in need.",
-                "While a party member of yours is at 0 hit points, you have a 1d4 bonus on all melee attack rolls against hostile creatures within 150-feet of that party member."
+                "While you are in combat, and another ally of yours is at 0 {@variantrule Hit Points|XPHB} and making {@variantrule Death Saving Throw|XPHB|Death Saving Throws}, you have {@variantrule Advantage|XPHB} on all {@variantrule D20 Test|XPHB|D20 Tests}, as long you are aware of the ally's peril."
             ]
         },
         {
@@ -8919,16 +8921,1192 @@
             "source": "GW",
             "prerequisite": [
                 {
-                    "other": "The Cosmic Omen feature."
+                    "other": "{@subclassFeature Cosmic Omen|Druid|XPHB|Stars|XPHB|6}"
                 }
             ],
             "entries": [
-                "This feat replaces your Cosmic Omen feature.",
+                "This feat replaces your {@subclassFeature Cosmic Omen|Druid|XPHB|Stars|XPHB|6} feature.",
                 "You have gained a more profound insight into the movement of the cosmos and can therefore influence the future more reliably.",
-                "Whenever you finish a Long Rest, you can consult your Star Map for omens and make an Insight check. Until you finish your next Long Rest, you gain access to a special Reaction based on whether you rolled an even or an odd number on the die. If you rolled a natural 20 or a 30+ on your Insight check, you gain access to both (Weal and Woe) and the omen becomes stronger (see the values in parentheses):",
-                "Weal (even). Whenever a creature you can see within 30 (60) feet of you is about to make a D20 Test, you can take a Reaction to roll 1d6 (1d12) and add the number rolled to the total.",
-                "Woe (odd). Whenever a creature you can see within 30 (60) feet of you is about to make a D20 Test, you can take a Reaction to roll 1d6 (1d12) and subtract the number rolled from the total.",
-                "You can use this Reaction a number of times equal to (twice) your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest."
+                "Whenever you finish a {@variantrule Long Rest|XPHB}, you can consult your Star Map for omens and make a Wisdom ({@skill Survival}) check. Until you finish your next {@variantrule Long Rest|XPHB}, you gain access to a special {@variantrule Reaction|XPHB} based on whether you rolled an even or an odd number on the {@dice d20}. If you rolled a 20 on the {@dice d20} or a 30+ on your Wisdom ({@skill Survival}) check, you gain access to both (Weal and Woe) and the omen becomes stronger (see the values in parentheses):",
+                "Weal (even). Whenever a creature you can see within 30 (60) feet of you is about to make a {@variantrule D20 Test|XPHB}, you can take a {@variantrule Reaction|XPHB} to roll {@dice 1d6} ({@dice 2d6}) and add the number rolled to the total.",
+                "Woe (odd). Whenever a creature you can see within 30 (60) feet of you is about to make a {@variantrule D20 Test|XPHB}, you can take a {@variantrule Reaction|XPHB} to roll {@dice 1d6} ({@dice 2d6}) and subtract the number rolled from the total.",
+                "You can use this {@variantrule Reaction|XPHB} a number of times equal to (twice) your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+            ]
+        },
+        {
+            "name": "Warrior Initiate",
+            "source": "GW",
+            "category": "Path of the Warrior",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "con"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Warrior Points",
+                    "entries": [
+                        "You have a number of Warrior Points equal to you {@table Proficiency Bonus|XPHB}. You regain all expended Warrior Points when you finish a {@variantrule Long Rest|XPHB}.",
+                        "You can expend Warrior Points to use certain Path of the Warrior benefits. This feat gives you one such benefit: Warrior Spells."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Warrior Spells",
+                    "entries": [
+                        "Choose a number of level 1 or lower Spells from the {@table Spells [Background: Warrior]|GW|Guild Wars}, {@table Spells [Background: Warrior]|GWP|Prophecies}, {@table Spells [Background: Warrior]|GWF|Factions}, {@table Spells [Background: Warrior]|GWN|Nightfall} or {@table Spells [Background: Warrior]|GWEotN|Eye of the North} tables equal to your {@table Proficiency Bonus|XPHB}. You always have them prepared.",
+                        "Strength, Dexterity, or Constitution is your spellcasting ability for this feat's spells (choose when you select this feat). You can cast them without expending a spell slot by expending Warrior Points equal to the level of the spell. You can also cast the spell using any spell slots you have.",
+                        "Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list. When your {@table Proficiency Bonus|XPHB} increases choose additional spells until the number of prepared spells matches your {@table Proficiency Bonus|XPHB}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Warrior Adept",
+            "source": "GW",
+            "category": "Path of the Warrior",
+            "prerequisite": [
+                {   
+                    "level": 4,
+                    "other": "{@feat Warrior Initiate|GW}"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "con"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Warrior Points Increase",
+                    "entries": [
+                        "You gain additional Warrior Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Warrior Spells",
+                    "entries": [
+                        "You learn additional spells for your Warrior Spells feature. They use the same rules as the ones prepared by your Warrior Spells feature.",
+                        "Choose a number of level 2 or lower Spells from the {@table Spells [Background: Warrior]|GW|Guild Wars}, {@table Spells [Background: Warrior]|GWP|Prophecies}, {@table Spells [Background: Warrior]|GWF|Factions}, {@table Spells [Background: Warrior]|GWN|Nightfall} or {@table Spells [Background: Warrior]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Warrior Master",
+            "source": "GW",
+            "category": "Path of the Warrior",
+            "prerequisite": [
+                {   
+                    "level": 8,
+                    "other": "2 Path of the Warrior Feats"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "con"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Warrior Points Increase",
+                    "entries": [
+                        "You gain additional Warrior Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Warrior Spells",
+                    "entries": [
+                        "You learn additional spells for your Warrior Spells feature. They use the same rules as the ones prepared by your Warrior Spells feature.",
+                        "Choose a number of level 3 or lower Spells from the {@table Spells [Background: Warrior]|GW|Guild Wars}, {@table Spells [Background: Warrior]|GWP|Prophecies}, {@table Spells [Background: Warrior]|GWF|Factions}, {@table Spells [Background: Warrior]|GWN|Nightfall} or {@table Spells [Background: Warrior]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Warrior Exalted",
+            "source": "GW",
+            "category": "Path of the Warrior",
+            "prerequisite": [
+                {   
+                    "level": 12,
+                    "other": "3 Path of the Warrior Feats"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "con"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Warrior Points Increase",
+                    "entries": [
+                        "You gain additional Warrior Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Warrior Spells",
+                    "entries": [
+                        "You learn additional spells for your Warrior Spells feature. They use the same rules as the ones prepared by your Warrior Spells feature.",
+                        "Choose a number of level 4 or lower Spells from the {@table Spells [Background: Warrior]|GW|Guild Wars}, {@table Spells [Background: Warrior]|GWP|Prophecies}, {@table Spells [Background: Warrior]|GWF|Factions}, {@table Spells [Background: Warrior]|GWN|Nightfall} or {@table Spells [Background: Warrior]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Warrior Ascendant",
+            "source": "GW",
+            "category": "Path of the Warrior",
+            "prerequisite": [
+                {   
+                    "level": 16,
+                    "other": "4 Path of the Warrior Feats"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "con"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Warrior Points Increase",
+                    "entries": [
+                        "You gain additional Warrior Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Warrior Spells",
+                    "entries": [
+                        "You learn additional spells for your Warrior Spells feature. They use the same rules as the ones prepared by your Warrior Spells feature.",
+                        "Choose a number of level 5 or lower Spells from the {@table Spells [Background: Warrior]|GW|Guild Wars}, {@table Spells [Background: Warrior]|GWP|Prophecies}, {@table Spells [Background: Warrior]|GWF|Factions}, {@table Spells [Background: Warrior]|GWN|Nightfall} or {@table Spells [Background: Warrior]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ranger Initiate",
+            "source": "GW",
+            "category": "Path of the Ranger",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "wis"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Ranger Points",
+                    "entries": [
+                        "You have a number of Ranger Points equal to you {@table Proficiency Bonus|XPHB}. You regain all expended Ranger Points when you finish a {@variantrule Long Rest|XPHB}.",
+                        "You can expend Ranger Points to use certain Path of the Ranger benefits. This feat gives you one such benefit: Ranger Spells."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Ranger Spells",
+                    "entries": [
+                        "Choose a number of level 1 or lower Spells from the {@table Spells [Background: Ranger]|GW|Guild Wars}, {@table Spells [Background: Ranger]|GWP|Prophecies}, {@table Spells [Background: Ranger]|GWF|Factions}, {@table Spells [Background: Ranger]|GWN|Nightfall} or {@table Spells [Background: Ranger]|GWEotN|Eye of the North} tables equal to your {@table Proficiency Bonus|XPHB}. You always have them prepared.",
+                        "Strength, Dexterity, or Wisdom is your spellcasting ability for this feat's spells (choose when you select this feat). You can cast them without expending a spell slot by expending Ranger Points equal to the level of the spell. You can also cast the spell using any spell slots you have.",
+                        "Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list. When your {@table Proficiency Bonus|XPHB} increases choose additional spells until the number of prepared spells matches your {@table Proficiency Bonus|XPHB}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ranger Adept",
+            "source": "GW",
+            "category": "Path of the Ranger",
+            "prerequisite": [
+                {   
+                    "level": 4,
+                    "other": "{@feat Ranger Initiate|GW}"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "wis"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Ranger Points Increase",
+                    "entries": [
+                        "You gain additional Ranger Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Ranger Spells",
+                    "entries": [
+                        "You learn additional spells for your Ranger Spells feature. They use the same rules as the ones prepared by your Ranger Spells feature.",
+                        "Choose a number of level 2 or lower Spells from the {@table Spells [Background: Ranger]|GW|Guild Wars}, {@table Spells [Background: Ranger]|GWP|Prophecies}, {@table Spells [Background: Ranger]|GWF|Factions}, {@table Spells [Background: Ranger]|GWN|Nightfall} or {@table Spells [Background: Ranger]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ranger Master",
+            "source": "GW",
+            "category": "Path of the Ranger",
+            "prerequisite": [
+                {   
+                    "level": 8,
+                    "other": "2 Path of the Ranger Feats"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "wis"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Ranger Points Increase",
+                    "entries": [
+                        "You gain additional Ranger Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Ranger Spells",
+                    "entries": [
+                        "You learn additional spells for your Ranger Spells feature. They use the same rules as the ones prepared by your Ranger Spells feature.",
+                        "Choose a number of level 3 or lower Spells from the {@table Spells [Background: Ranger]|GW|Guild Wars}, {@table Spells [Background: Ranger]|GWP|Prophecies}, {@table Spells [Background: Ranger]|GWF|Factions}, {@table Spells [Background: Ranger]|GWN|Nightfall} or {@table Spells [Background: Ranger]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ranger Exalted",
+            "source": "GW",
+            "category": "Path of the Ranger",
+            "prerequisite": [
+                {   
+                    "level": 12,
+                    "other": "3 Path of the Ranger Feats"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "wis"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Ranger Points Increase",
+                    "entries": [
+                        "You gain additional Ranger Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Ranger Spells",
+                    "entries": [
+                        "You learn additional spells for your Ranger Spells feature. They use the same rules as the ones prepared by your Ranger Spells feature.",
+                        "Choose a number of level 4 or lower Spells from the {@table Spells [Background: Ranger]|GW|Guild Wars}, {@table Spells [Background: Ranger]|GWP|Prophecies}, {@table Spells [Background: Ranger]|GWF|Factions}, {@table Spells [Background: Ranger]|GWN|Nightfall} or {@table Spells [Background: Ranger]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ranger Ascendant",
+            "source": "GW",
+            "category": "Path of the Ranger",
+            "prerequisite": [
+                {   
+                    "level": 16,
+                    "other": "4 Path of the Ranger Feats"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "wis"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Ranger Points Increase",
+                    "entries": [
+                        "You gain additional Ranger Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Ranger Spells",
+                    "entries": [
+                        "You learn additional spells for your Ranger Spells feature. They use the same rules as the ones prepared by your Ranger Spells feature.",
+                        "Choose a number of level 5 or lower Spells from the {@table Spells [Background: Ranger]|GW|Guild Wars}, {@table Spells [Background: Ranger]|GWP|Prophecies}, {@table Spells [Background: Ranger]|GWF|Factions}, {@table Spells [Background: Ranger]|GWN|Nightfall} or {@table Spells [Background: Ranger]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Monk Initiate",
+            "source": "GW",
+            "category": "Path of the Monk",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "con",
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Monk Points",
+                    "entries": [
+                        "You have a number of Monk Points equal to you {@table Proficiency Bonus|XPHB}. You regain all expended Monk Points when you finish a {@variantrule Long Rest|XPHB}.",
+                        "You can expend Monk Points to use certain Path of the Monk benefits. This feat gives you one such benefit: Monk Spells."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Monk Spells",
+                    "entries": [
+                        "Choose a number of level 1 or lower Spells from the {@table Spells [Background: Monk]|GW|Guild Wars}, {@table Spells [Background: Monk]|GWP|Prophecies}, {@table Spells [Background: Monk]|GWF|Factions}, {@table Spells [Background: Monk]|GWN|Nightfall} or {@table Spells [Background: Monk]|GWEotN|Eye of the North} tables equal to your {@table Proficiency Bonus|XPHB}. You always have them prepared.",
+                        "Constitution, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat). You can cast them without expending a spell slot by expending Monk Points equal to the level of the spell. You can also cast the spell using any spell slots you have.",
+                        "Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list. When your {@table Proficiency Bonus|XPHB} increases choose additional spells until the number of prepared spells matches your {@table Proficiency Bonus|XPHB}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Monk Adept",
+            "source": "GW",
+            "category": "Path of the Monk",
+            "prerequisite": [
+                {   
+                    "level": 4,
+                    "other": "{@feat Monk Initiate|GW}"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "con",
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Monk Points Increase",
+                    "entries": [
+                        "You gain additional Monk Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Monk Spells",
+                    "entries": [
+                        "You learn additional spells for your Monk Spells feature. They use the same rules as the ones prepared by your Monk Spells feature.",
+                        "Choose a number of level 3 or lower Spells from the {@table Spells [Background: Monk]|GW|Guild Wars}, {@table Spells [Background: Monk]|GWP|Prophecies}, {@table Spells [Background: Monk]|GWF|Factions}, {@table Spells [Background: Monk]|GWN|Nightfall} or {@table Spells [Background: Monk]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Monk Master",
+            "source": "GW",
+            "category": "Path of the Monk",
+            "prerequisite": [
+                {   
+                    "level": 8,
+                    "other": "2 Path of the Monk Feats"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "con",
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Monk Points Increase",
+                    "entries": [
+                        "You gain additional Monk Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Monk Spells",
+                    "entries": [
+                        "You learn additional spells for your Monk Spells feature. They use the same rules as the ones prepared by your Monk Spells feature.",
+                        "Choose a number of level 5 or lower Spells from the {@table Spells [Background: Monk]|GW|Guild Wars}, {@table Spells [Background: Monk]|GWP|Prophecies}, {@table Spells [Background: Monk]|GWF|Factions}, {@table Spells [Background: Monk]|GWN|Nightfall} or {@table Spells [Background: Monk]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Monk Exalted",
+            "source": "GW",
+            "category": "Path of the Monk",
+            "prerequisite": [
+                {   
+                    "level": 12,
+                    "other": "3 Path of the Monk Feats"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "con",
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Monk Points Increase",
+                    "entries": [
+                        "You gain additional Monk Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Monk Spells",
+                    "entries": [
+                        "You learn additional spells for your Monk Spells feature. They use the same rules as the ones prepared by your Monk Spells feature.",
+                        "Choose a number of level 7 or lower Spells from the {@table Spells [Background: Monk]|GW|Guild Wars}, {@table Spells [Background: Monk]|GWP|Prophecies}, {@table Spells [Background: Monk]|GWF|Factions}, {@table Spells [Background: Monk]|GWN|Nightfall} or {@table Spells [Background: Monk]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Monk Ascendant",
+            "source": "GW",
+            "category": "Path of the Monk",
+            "prerequisite": [
+                {   
+                    "level": 16,
+                    "other": "4 Path of the Monk Feats"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "con",
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Monk Points Increase",
+                    "entries": [
+                        "You gain additional Monk Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Monk Spells",
+                    "entries": [
+                        "You learn additional spells for your Monk Spells feature. They use the same rules as the ones prepared by your Monk Spells feature.",
+                        "Choose a number of level 9 or lower Spells from the {@table Spells [Background: Monk]|GW|Guild Wars}, {@table Spells [Background: Monk]|GWP|Prophecies}, {@table Spells [Background: Monk]|GWF|Factions}, {@table Spells [Background: Monk]|GWN|Nightfall} or {@table Spells [Background: Monk]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Necromancer Initiate",
+            "source": "GW",
+            "category": "Path of the Necromancer",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "con",
+                            "int",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Necromancer Points",
+                    "entries": [
+                        "You have a number of Necromancer Points equal to you {@table Proficiency Bonus|XPHB}. You regain all expended Necromancer Points when you finish a {@variantrule Long Rest|XPHB}.",
+                        "You can expend Necromancer Points to use certain Path of the Necromancer benefits. This feat gives you one such benefit: Necromancer Spells."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Necromancer Spells",
+                    "entries": [
+                        "Choose a number of level 1 or lower Spells from the {@table Spells [Background: Necromancer]|GW|Guild Wars}, {@table Spells [Background: Necromancer]|GWP|Prophecies}, {@table Spells [Background: Necromancer]|GWF|Factions}, {@table Spells [Background: Necromancer]|GWN|Nightfall} or {@table Spells [Background: Necromancer]|GWEotN|Eye of the North} tables equal to your {@table Proficiency Bonus|XPHB}. You always have them prepared.",
+                        "Constitution, Intelligence, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat). You can cast them without expending a spell slot by expending Necromancer Points equal to the level of the spell. You can also cast the spell using any spell slots you have.",
+                        "Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list. When your {@table Proficiency Bonus|XPHB} increases choose additional spells until the number of prepared spells matches your {@table Proficiency Bonus|XPHB}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Necromancer Adept",
+            "source": "GW",
+            "category": "Path of the Necromancer",
+            "prerequisite": [
+                {   
+                    "level": 4,
+                    "other": "{@feat Necromancer Initiate|GW}"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "con",
+                            "int",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Necromancer Points Increase",
+                    "entries": [
+                        "You gain additional Necromancer Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Necromancer Spells",
+                    "entries": [
+                        "You learn additional spells for your Necromancer Spells feature. They use the same rules as the ones prepared by your Necromancer Spells feature.",
+                        "Choose a number of level 3 or lower Spells from the {@table Spells [Background: Necromancer]|GW|Guild Wars}, {@table Spells [Background: Necromancer]|GWP|Prophecies}, {@table Spells [Background: Necromancer]|GWF|Factions}, {@table Spells [Background: Necromancer]|GWN|Nightfall} or {@table Spells [Background: Necromancer]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Necromancer Master",
+            "source": "GW",
+            "category": "Path of the Necromancer",
+            "prerequisite": [
+                {   
+                    "level": 8,
+                    "other": "2 Path of the Necromancer Feats"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "con",
+                            "int",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Necromancer Points Increase",
+                    "entries": [
+                        "You gain additional Necromancer Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Necromancer Spells",
+                    "entries": [
+                        "You learn additional spells for your Necromancer Spells feature. They use the same rules as the ones prepared by your Necromancer Spells feature.",
+                        "Choose a number of level 5 or lower Spells from the {@table Spells [Background: Necromancer]|GW|Guild Wars}, {@table Spells [Background: Necromancer]|GWP|Prophecies}, {@table Spells [Background: Necromancer]|GWF|Factions}, {@table Spells [Background: Necromancer]|GWN|Nightfall} or {@table Spells [Background: Necromancer]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Necromancer Exalted",
+            "source": "GW",
+            "category": "Path of the Necromancer",
+            "prerequisite": [
+                {   
+                    "level": 12,
+                    "other": "3 Path of the Necromancer Feats"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "con",
+                            "int",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Necromancer Points Increase",
+                    "entries": [
+                        "You gain additional Necromancer Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Necromancer Spells",
+                    "entries": [
+                        "You learn additional spells for your Necromancer Spells feature. They use the same rules as the ones prepared by your Necromancer Spells feature.",
+                        "Choose a number of level 7 or lower Spells from the {@table Spells [Background: Necromancer]|GW|Guild Wars}, {@table Spells [Background: Necromancer]|GWP|Prophecies}, {@table Spells [Background: Necromancer]|GWF|Factions}, {@table Spells [Background: Necromancer]|GWN|Nightfall} or {@table Spells [Background: Necromancer]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Necromancer Ascendant",
+            "source": "GW",
+            "category": "Path of the Necromancer",
+            "prerequisite": [
+                {   
+                    "level": 16,
+                    "other": "4 Path of the Necromancer Feats"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "con",
+                            "int",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Necromancer Points Increase",
+                    "entries": [
+                        "You gain additional Necromancer Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Necromancer Spells",
+                    "entries": [
+                        "You learn additional spells for your Necromancer Spells feature. They use the same rules as the ones prepared by your Necromancer Spells feature.",
+                        "Choose a number of level 9 or lower Spells from the {@table Spells [Background: Necromancer]|GW|Guild Wars}, {@table Spells [Background: Necromancer]|GWP|Prophecies}, {@table Spells [Background: Necromancer]|GWF|Factions}, {@table Spells [Background: Necromancer]|GWN|Nightfall} or {@table Spells [Background: Necromancer]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mesmer Initiate",
+            "source": "GW",
+            "category": "Path of the Mesmer",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Mesmer Points",
+                    "entries": [
+                        "You have a number of Mesmer Points equal to you {@table Proficiency Bonus|XPHB}. You regain all expended Mesmer Points when you finish a {@variantrule Long Rest|XPHB}.",
+                        "You can expend Mesmer Points to use certain Path of the Mesmer benefits. This feat gives you one such benefit: Mesmer Spells."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Mesmer Spells",
+                    "entries": [
+                        "Choose a number of level 1 or lower Spells from the {@table Spells [Background: Mesmer]|GW|Guild Wars}, {@table Spells [Background: Mesmer]|GWP|Prophecies}, {@table Spells [Background: Mesmer]|GWF|Factions}, {@table Spells [Background: Mesmer]|GWN|Nightfall} or {@table Spells [Background: Mesmer]|GWEotN|Eye of the North} tables equal to your {@table Proficiency Bonus|XPHB}. You always have them prepared.",
+                        "Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat). You can cast them without expending a spell slot by expending Mesmer Points equal to the level of the spell. You can also cast the spell using any spell slots you have.",
+                        "Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list. When your {@table Proficiency Bonus|XPHB} increases choose additional spells until the number of prepared spells matches your {@table Proficiency Bonus|XPHB}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mesmer Adept",
+            "source": "GW",
+            "category": "Path of the Mesmer",
+            "prerequisite": [
+                {   
+                    "level": 4,
+                    "other": "{@feat Mesmer Initiate|GW}"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Mesmer Points Increase",
+                    "entries": [
+                        "You gain additional Mesmer Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Mesmer Spells",
+                    "entries": [
+                        "You learn additional spells for your Mesmer Spells feature. They use the same rules as the ones prepared by your Mesmer Spells feature.",
+                        "Choose a number of level 3 or lower Spells from the {@table Spells [Background: Mesmer]|GW|Guild Wars}, {@table Spells [Background: Mesmer]|GWP|Prophecies}, {@table Spells [Background: Mesmer]|GWF|Factions}, {@table Spells [Background: Mesmer]|GWN|Nightfall} or {@table Spells [Background: Mesmer]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mesmer Master",
+            "source": "GW",
+            "category": "Path of the Mesmer",
+            "prerequisite": [
+                {   
+                    "level": 8,
+                    "other": "2 Path of the Mesmer Feats"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Mesmer Points Increase",
+                    "entries": [
+                        "You gain additional Mesmer Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Mesmer Spells",
+                    "entries": [
+                        "You learn additional spells for your Mesmer Spells feature. They use the same rules as the ones prepared by your Mesmer Spells feature.",
+                        "Choose a number of level 5 or lower Spells from the {@table Spells [Background: Mesmer]|GW|Guild Wars}, {@table Spells [Background: Mesmer]|GWP|Prophecies}, {@table Spells [Background: Mesmer]|GWF|Factions}, {@table Spells [Background: Mesmer]|GWN|Nightfall} or {@table Spells [Background: Mesmer]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mesmer Exalted",
+            "source": "GW",
+            "category": "Path of the Mesmer",
+            "prerequisite": [
+                {   
+                    "level": 12,
+                    "other": "3 Path of the Mesmer Feats"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Mesmer Points Increase",
+                    "entries": [
+                        "You gain additional Mesmer Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Mesmer Spells",
+                    "entries": [
+                        "You learn additional spells for your Mesmer Spells feature. They use the same rules as the ones prepared by your Mesmer Spells feature.",
+                        "Choose a number of level 7 or lower Spells from the {@table Spells [Background: Mesmer]|GW|Guild Wars}, {@table Spells [Background: Mesmer]|GWP|Prophecies}, {@table Spells [Background: Mesmer]|GWF|Factions}, {@table Spells [Background: Mesmer]|GWN|Nightfall} or {@table Spells [Background: Mesmer]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mesmer Ascendant",
+            "source": "GW",
+            "category": "Path of the Mesmer",
+            "prerequisite": [
+                {   
+                    "level": 16,
+                    "other": "4 Path of the Mesmer Feats"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Mesmer Points Increase",
+                    "entries": [
+                        "You gain additional Mesmer Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Mesmer Spells",
+                    "entries": [
+                        "You learn additional spells for your Mesmer Spells feature. They use the same rules as the ones prepared by your Mesmer Spells feature.",
+                        "Choose a number of level 9 or lower Spells from the {@table Spells [Background: Mesmer]|GW|Guild Wars}, {@table Spells [Background: Mesmer]|GWP|Prophecies}, {@table Spells [Background: Mesmer]|GWF|Factions}, {@table Spells [Background: Mesmer]|GWN|Nightfall} or {@table Spells [Background: Mesmer]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Elementalist Initiate",
+            "source": "GW",
+            "category": "Path of the Elementalist",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Elementalist Points",
+                    "entries": [
+                        "You have a number of Elementalist Points equal to you {@table Proficiency Bonus|XPHB}. You regain all expended Elementalist Points when you finish a {@variantrule Long Rest|XPHB}.",
+                        "You can expend Elementalist Points to use certain Path of the Elementalist benefits. This feat gives you one such benefit: Elementalist Spells."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Elementalist Spells",
+                    "entries": [
+                        "Choose a number of level 1 or lower Spells from the {@table Spells [Background: Elementalist]|GW|Guild Wars}, {@table Spells [Background: Elementalist]|GWP|Prophecies}, {@table Spells [Background: Elementalist]|GWF|Factions}, {@table Spells [Background: Elementalist]|GWN|Nightfall} or {@table Spells [Background: Elementalist]|GWEotN|Eye of the North} tables equal to your {@table Proficiency Bonus|XPHB}. You always have them prepared.",
+                        "Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat). You can cast them without expending a spell slot by expending Elementalist Points equal to the level of the spell. You can also cast the spell using any spell slots you have.",
+                        "Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list. When your {@table Proficiency Bonus|XPHB} increases choose additional spells until the number of prepared spells matches your {@table Proficiency Bonus|XPHB}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Elementalist Adept",
+            "source": "GW",
+            "category": "Path of the Elementalist",
+            "prerequisite": [
+                {   
+                    "level": 4,
+                    "other": "{@feat Elementalist Initiate|GW}"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Elementalist Points Increase",
+                    "entries": [
+                        "You gain additional Elementalist Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Elementalist Spells",
+                    "entries": [
+                        "You learn additional spells for your Elementalist Spells feature. They use the same rules as the ones prepared by your Elementalist Spells feature.",
+                        "Choose a number of level 3 or lower Spells from the {@table Spells [Background: Elementalist]|GW|Guild Wars}, {@table Spells [Background: Elementalist]|GWP|Prophecies}, {@table Spells [Background: Elementalist]|GWF|Factions}, {@table Spells [Background: Elementalist]|GWN|Nightfall} or {@table Spells [Background: Elementalist]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Elementalist Master",
+            "source": "GW",
+            "category": "Path of the Elementalist",
+            "prerequisite": [
+                {   
+                    "level": 8,
+                    "other": "2 Path of the Elementalist Feats"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Elementalist Points Increase",
+                    "entries": [
+                        "You gain additional Elementalist Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Elementalist Spells",
+                    "entries": [
+                        "You learn additional spells for your Elementalist Spells feature. They use the same rules as the ones prepared by your Elementalist Spells feature.",
+                        "Choose a number of level 5 or lower Spells from the {@table Spells [Background: Elementalist]|GW|Guild Wars}, {@table Spells [Background: Elementalist]|GWP|Prophecies}, {@table Spells [Background: Elementalist]|GWF|Factions}, {@table Spells [Background: Elementalist]|GWN|Nightfall} or {@table Spells [Background: Elementalist]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Elementalist Exalted",
+            "source": "GW",
+            "category": "Path of the Elementalist",
+            "prerequisite": [
+                {   
+                    "level": 12,
+                    "other": "3 Path of the Elementalist Feats"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Elementalist Points Increase",
+                    "entries": [
+                        "You gain additional Elementalist Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Elementalist Spells",
+                    "entries": [
+                        "You learn additional spells for your Elementalist Spells feature. They use the same rules as the ones prepared by your Elementalist Spells feature.",
+                        "Choose a number of level 7 or lower Spells from the {@table Spells [Background: Elementalist]|GW|Guild Wars}, {@table Spells [Background: Elementalist]|GWP|Prophecies}, {@table Spells [Background: Elementalist]|GWF|Factions}, {@table Spells [Background: Elementalist]|GWN|Nightfall} or {@table Spells [Background: Elementalist]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Elementalist Ascendant",
+            "source": "GW",
+            "category": "Path of the Elementalist",
+            "prerequisite": [
+                {   
+                    "level": 16,
+                    "other": "4 Path of the Elementalist Feats"
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Elementalist Points Increase",
+                    "entries": [
+                        "You gain additional Elementalist Points equal to half your {@table Proficiency Bonus|XPHB} (round up)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advanced Elementalist Spells",
+                    "entries": [
+                        "You learn additional spells for your Elementalist Spells feature. They use the same rules as the ones prepared by your Elementalist Spells feature.",
+                        "Choose a number of level 9 or lower Spells from the {@table Spells [Background: Elementalist]|GW|Guild Wars}, {@table Spells [Background: Elementalist]|GWP|Prophecies}, {@table Spells [Background: Elementalist]|GWF|Factions}, {@table Spells [Background: Elementalist]|GWN|Nightfall} or {@table Spells [Background: Elementalist]|GWEotN|Eye of the North} tables equal to half your {@table Proficiency Bonus|XPHB} (round up). You always have them prepared."
+                    ]
+                }
             ]
         }
     ],

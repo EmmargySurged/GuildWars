@@ -3023,7 +3023,7 @@
       "subclassSource": "GW2VoE",
       "level": 3,
       "entries": [
-        "You gain access to the {@table Elementalist Traits|GW2|Evoker} Specialization and learn its Minor Adept {@variantrule traits|GW2|trait} {@optfeature Evocation|GW2VoE}."
+        "{@b Evoker Specialization.} You gain access to the {@table Elementalist Traits|GW2|Evoker} Specialization and learn its Minor Adept {@variantrule traits|GW2|trait} {@optfeature Evocation|GW2VoE}."
       ]
     },
     {
@@ -3035,7 +3035,7 @@
       "subclassSource": "GW2VoE",
       "level": 5,
       "entries": [
-        "{@b Elemental Attunement.} Your connection to the Spirits of the Wild deepens. Choose a second different element from Fire, Water, Air, or Earth to be able to attune to. During your turn, you can now attune to a different element (no {@variantrule Action|XPHB} required). Once you leave an element, it must recharge {@recharge 2} before you can attune to it again. The element associated with your familiar spirit does not need to recharge."
+        "{@b Elemental Attunement.} Your connection to the Spirits of the Wild deepens. Choose a different second element from Fire, Water, Air, or Earth to be able to attune to. During your turn, you can now attune to a different element (no {@variantrule Action|XPHB} required). Once you leave an element, it must recharge {@recharge 2} before you can attune to it again. The element associated with your familiar spirit does not need to recharge."
       ]
     },
     {
@@ -3086,7 +3086,7 @@
       "subclassSource": "GW2VoE",
       "level": 10,
       "entries": [
-        "The spirits allow you to form a deeper connection with the elements. Choose a third different element from Fire, Water, Air, or Earth to be able to attune to."
+        "{@b Elemental Attunement.} The spirits allow you to form a deeper connection with the elements. Choose a different third element from Fire, Water, Air, or Earth to be able to attune to."
       ]
     },
     {
@@ -3098,9 +3098,8 @@
       "subclassSource": "GW2VoE",
       "level": 10,
       "entries": [
-        "You can now manifest your greater familiar spirit to aid you. As a {@action Magic|XPHB} action, you can expend a {@variantrule Hit Point Dice|XPHB} to transform your manifested familiar into its greater form as shown in the {@table Evoker Familiars|GW2VoE} table. After an hour, it reverts to its normal form unless you expend another {@variantrule Hit Point Dice|XPHB} to maintain the transformation.",
-        "The rules for your familiar remain otherwise unchanged.",
-        "Additionally, while your greater familiar is manifested, you can ask for insight. As a {@action Magic|XPHB} action, you can cast the {@spell Commune|XPHB} spell without material components, Intelligence is your spellcasting ability for it."
+        "{@b Elemental Form.} You can now manifest your greater familiar spirit to aid you. As a {@action Magic|XPHB} action, you can expend a {@variantrule Hit Point Dice|XPHB} to transform your manifested familiar into its greater form as shown in the {@table Evoker Familiars|GW2VoE} table. After an hour, it reverts to its normal form unless you expend another {@variantrule Hit Point Dice|XPHB} to maintain the transformation.",
+        "{@b Spirit Insight.} Additionally, while your greater familiar is manifested, you can ask for insight. As a {@action Magic|XPHB} action, you can cast the {@spell Commune|XPHB} spell without material components, Intelligence is your spellcasting ability for it."
       ]
     },
     {
@@ -3112,7 +3111,7 @@
       "subclassSource": "GW2VoE",
       "level": 15,
       "entries": [
-        "You have mastered your connection to the elements. Choose the final element from Fire, Water, Air, or Earth to be able to attune to."
+        "{@b Elemental Attunement.} You have mastered your connection to the elements. Choose the final element from Fire, Water, Air, or Earth to be able to attune to."
       ]
     },
     {
@@ -3124,12 +3123,17 @@
       "subclassSource": "GW2VoE",
       "level": 15,
       "entries": [
-        "Your familiar spirit bestows a gift upon you. You always gain the Primordial Supremacy benefit associated with your chosen familiar spirit's element.",
-        "Additionally, when you attune to that element, the benefit is further enhanced as described below:",
-        "- {@b Fire Attunement}: Your {@sense Darkvision|XPHB} increases by 300 feet and your {@sense True Sight|XPHB} range increases by 60 feet.",
-        "- {@b Water Attunement}: You can temporarily turn your body into water. You can move through a space as narrow as 1 inch wide without squeezing.",
-        "- {@b Air Attunement}: Your {@variantrule Fly Speed|XPHB} increases to 90 feet.",
-        "- {@b Earth Attunement}: Your {@sense Tremorsense|XPHB} increases to 300 feet and your {@variantrule Burrow Speed|XPHB} increases to twice your walking speed."
+        "{@b Permanent Supremacy.} Your familiar spirit bestows a gift upon you. You always gain the Primordial Supremacy benefit associated with your chosen familiar spirit's element.",
+        "{@b Improved Primordial Supremacy.} Additionally, when you attune to that element, the benefit is further enhanced as described below:",
+        {
+          "type": "list",
+          "items": [
+            "{@b Fire Attunement}: Your {@sense Darkvision|XPHB} increases by 300 feet and your {@sense True Sight|XPHB} range increases by 60 feet.",
+            "{@b Water Attunement}: You can temporarily turn your body into water. You can move through a space as narrow as 1 inch wide without squeezing.",
+            "{@b Air Attunement}: Your {@variantrule Fly Speed|XPHB} increases to 90 feet.",
+            "{@b Earth Attunement}: Your {@sense Tremorsense|XPHB} increases to 300 feet and your {@variantrule Burrow Speed|XPHB} increases to twice your walking speed."
+          ]
+        }
       ]
     },
     {
@@ -3141,7 +3145,7 @@
       "subclassSource": "GW2VoE",
       "level": 20,
       "entries": [
-        "Your bond with the elemental spirits reaches its pinnacle. Once per long rest, as a {@action Magic|XPHB} action, you can call upon the spirits for aid. Depending on your chosen familiar spirit, you can cast one of the following spells without material components, Intelligence is your spellcasting ability for them:",
+        "{@b Spirit Magic.} Your bond with the elemental spirits reaches its pinnacle. Once per long rest, as a {@action Magic|XPHB} action, you can call upon the spirits for aid. Depending on your chosen familiar spirit, you can cast one of the following spells without material components, Intelligence is your spellcasting ability for them:",
         {
           "type": "table",
           "name": "Familiar Spells",
@@ -3180,11 +3184,10 @@
       "subclassSource": "GW2VoE",
       "level": 1,
       "entries": [
-        "You have adopted the Antiquary Elite Specialization. You gain proficiency with {@item Rifle|GW2|Rifles}, {@item Staff|XPHB|Staffs}, {@item Spear|XPHB|Spears (Terrestrial)}, {@item Handaxe|XPHB|Handaxes} or {@item Scepter|GW2|Scepters} and can use their {@variantrule Weapon Skill|GW2|Weapon Skills}.",
-        "You now qualify to learn Antiquary specific {@variantrule Healing Skill|GW2|Healing Skills}, {@variantrule Utility Skill|GW2|Utility Skills}, and {@variantrule Elite Skill|GW2|Elite Skills} when you choose your skills.",
-        "You can steal ancient artifacts from your foes. You gain access to the {@optfeature Skritt Swipe|GW2VoE} skill.",
-        "Additionally, you gain a bonus to your Intelligence ({@skill Arcana|XPHB} and {@skill History|XPHB}) checks. The bonus equals your Charisma modifier (minimum bonus of +1).",
-        "Lastly, you have learned to identify valuable trinkets. You can use the {@variantrule Identify|XPHB} spell as a ritual without Material components, Charisma is your spellcasting ability for it."
+        "{@b Skills.} You have adopted the Antiquary Elite Specialization. You gain proficiency with {@item Rifle|GW2|Rifles}, {@item Staff|XPHB|Staffs}, {@item Spear|XPHB|Spears (Terrestrial)}, {@item Handaxe|XPHB|Handaxes} or {@item Scepter|GW2|Scepters} and can use their {@variantrule Weapon Skill|GW2|Weapon Skills}. You now qualify to learn Antiquary specific {@variantrule Healing Skill|GW2|Healing Skills}, {@variantrule Utility Skill|GW2|Utility Skills}, and {@variantrule Elite Skill|GW2|Elite Skills} when you choose your skills.",
+        "{@b Skritt Swipe.} You can steal ancient artifacts from your foes. You gain access to the {@optfeature Skritt Swipe|GW2VoE} skill.",
+        "{@b Historian.} You gain a bonus to your Intelligence ({@skill Arcana|XPHB} and {@skill History|XPHB}) checks. The bonus equals your Charisma modifier (minimum bonus of +1).",
+        "{@b Appraisal.} You have learned to identify valuable trinkets. You can use the {@variantrule Identify|XPHB} spell as a ritual without Material components, Charisma is your spellcasting ability for it."
       ]
     },
     {
@@ -3196,7 +3199,7 @@
       "subclassSource": "GW2VoE",
       "level": 3,
       "entries": [
-        "You gain access to the {@table Thief Traits|GW2|Antiquary} Specialization and learn its Minor Adept {@variantrule traits|GW2|trait} {@optfeature Trinket Collector|GW2VoE}."
+        "{@b Antiquary Specialization.} You gain access to the {@table Thief Traits|GW2|Antiquary} Specialization and learn its Minor Adept {@variantrule traits|GW2|trait} {@optfeature Trinket Collector|GW2VoE}."
       ]
     },
     {
@@ -3208,7 +3211,7 @@
       "subclassSource": "GW2VoE",
       "level": 5,
       "entries": [
-        "Your {@optfeature Skritt Swipe|GW2VoE} skill improves. The range increases to 60 feet, and you can now use it as a {@variantrule Bonus Action|XPHB}."
+        "{@b Swipe Improvement.} Your {@optfeature Skritt Swipe|GW2VoE} skill improves. The range increases to 60 feet, and you can now use it as a {@variantrule Bonus Action|XPHB}."
       ]
     },
     {
@@ -3220,10 +3223,10 @@
       "subclassSource": "GW2VoE",
       "level": 5,
       "entries": [
-        "You have studied various ancient artifacts and learned their secrets. You can innately tell if an item is magical or mundane, as well as its rarity, if it is cursed, and how to us it. You do not learn the specific properties of the item, only general information about it.",
-        "Additionally, you gain proficiency with one type of {@item Artisan's Tools|XPHB} of your choice.",
-        "Furthermore, the time required to attune to a magical item, or end attunement, is reduced to 1 minute.",
-        "Lastly, you have a knack for finding hidden treasures. You can add double your proficiency bonus to any {@skill Perception|XPHB} or {@skill Investigation|XPHB} check you make to locate hidden doors, compartments, or objects."
+        "{@b At first Glance.} You have studied various ancient artifacts and learned their secrets. You can innately tell if an item is magical or mundane, as well as its rarity, if it is cursed, and how to us it. You do not learn the specific properties of the item, only general information about it.",
+        "{@b Crafter.} You gain proficiency with one type of {@item Artisan's Tools|XPHB} of your choice.",
+        "{@b Magic Savant.} The time required to attune to a magical item, or end attunement, is reduced to 1 minute.",
+        "{@b Nothing escapes my Notice.} You have a knack for finding hidden treasures. You can add double your proficiency bonus to any {@skill Perception|XPHB} or {@skill Investigation|XPHB} check you make to locate hidden doors, compartments, or objects."
       ]
     },
     {
@@ -3235,8 +3238,8 @@
       "subclassSource": "GW2VoE",
       "level": 10,
       "entries": [
-        "Your {@optfeature Skritt Swipe|GW2VoE} skill further improves. The range increases to 90 feet, and you now longer need to see the target to use it.",
-        "Additionally, depending on the type of creature you target with the skill, you gain additional benefits as described in the {@table Skritt Swipe Benefits|GW2VoE} table."
+        "{@b Swipe Improvement.} Your {@optfeature Skritt Swipe|GW2VoE} skill further improves. The range increases to 90 feet, and you now longer need to see the target to use it.",
+        "{@b Rapid Adaptation.} Depending on the type of creature you target with the skill, you gain additional benefits as described in the {@table Skritt Swipe Benefits|GW2VoE} table."
       ]
     },
     {
@@ -3248,9 +3251,9 @@
       "subclassSource": "GW2VoE",
       "level": 10,
       "entries": [
-        "You have become an expert in identifying and appraising ancient artifacts. When you buy or sell a magical item, you can do so at a 10% better price.",
-        "Additionally, you can now attune to one additional magical item beyond your normal limit.",
-        "Lastly, when you defeat a creature with a challenge rating equal to or greater than your Level, you can roll a {@dice d100}. If you roll equal to or below the challenge rating of the creature, it is carrying an uncommon magical item (DM's choice) that you can claim."
+        "{@b Haggler.} You have become an expert in identifying and appraising ancient artifacts. When you buy or sell a magical item, you can do so at a 10% better price.",
+        "{@b Magic Master.} You can now attune to one additional magical item beyond your normal limit.",
+        "{@b Scavenger.} When you defeat a creature with a challenge rating equal to or greater than your Level, you can roll a {@dice d100}. If you roll equal to or below the challenge rating of the creature, it is carrying an uncommon magical item (DM's choice) that you can claim."
       ]
     },
     {
@@ -3262,8 +3265,8 @@
       "subclassSource": "GW2VoE",
       "level": 15,
       "entries": [
-        "Your {@optfeature Skritt Swipe|GW2VoE} skill reaches its pinnacle. The range increases to 120 feet, and it no longer requires an action to use.",
-        "Additionally, when you use the skill, you can choose to target two creatures within range instead of one."
+        "{@b Swipe Improvement.} Your {@optfeature Skritt Swipe|GW2VoE} skill reaches its pinnacle. The range increases to 120 feet, and it no longer requires an action to use.",
+        "{@b Double Swipe.} When you use the skill, you can choose to target two creatures within range instead of one."
       ]
     },
     {
@@ -3275,9 +3278,9 @@
       "subclassSource": "GW2VoE",
       "level": 15,
       "entries": [
-        "You have mastered the study of ancient artifacts. You can now attune to two additional magical items beyond your normal limit.",
-        "Additionally, the price you pay or receive when buying or selling magical items increases to 25%.",
-        "Lastly, when you defeat a creature with a challenge rating equal to or greater than your Level, you can roll a {@dice d100}. If you roll equal to or below the challenge rating of the creature, it is carrying a rare magical item (DM's choice) that you can claim."
+        "{@b Magic Incarnate.} You have mastered the study of ancient artifacts. You can now attune to two additional magical items beyond your normal limit.",
+        "{@b Haggle Master.} The price you pay or receive when buying or selling magical items increases to 25%.",
+        "{@b Just Lucky I Guess.} When you defeat a creature with a challenge rating equal to or greater than your Level, you can roll a {@dice d100}. If you roll equal to or below the challenge rating of the creature, it is carrying a rare magical item (DM's choice) that you can claim."
       ]
     },
     {
@@ -3289,9 +3292,9 @@
       "subclassSource": "GW2VoE",
       "level": 20,
       "entries": [
-        "You have perfected your {@optfeature Skritt Swipe|GW2VoE} skill. The range increases to 150 feet, and you can now use it to target up to three creatures within range.",
-        "Additionally, when you use the skill, you can choose which benefit from the {@table Skritt Swipe Benefits|GW2VoE} table to apply for each target, regardless of their creature type.",
-        "Lastly, you can now target friendly creatures with the skill. When you do so, they suffer no harm and instead gain temporary hit points equal to twice your proficiency bonus. Additionally, they can choose one benefit from the {@table Skritt Swipe Benefits|GW2VoE} table to gain for 1 minute."
+        "{@b The perfect Crime.} You have perfected your {@optfeature Skritt Swipe|GW2VoE} skill. The range increases to 150 feet, and you can now use it to target up to three creatures within range.",
+        "{@b Connoisseur of Benefits.} When you use the skill, you can choose which benefit from the {@table Skritt Swipe Benefits|GW2VoE} table to apply for each target, regardless of their creature type.",
+        "{@b Friendly Mugging.} You can now target friendly creatures with the skill. When you do so, they suffer no harm and instead gain temporary hit points equal to twice your proficiency bonus. Additionally, they can choose one benefit from the {@table Skritt Swipe Benefits|GW2VoE} table to gain for 1 minute."
       ]
     }
   ]

@@ -8238,7 +8238,7 @@
 				],
 				[
 					"{@b Daredevil}",
-					"",
+					"{@subclassFeature Daredevil|Thief|GW2|Daredevil|GW2HoT|1||Daredevil}",
 					"{@optfeature Physical Supremacy|GWHoT}",
 					"{@optfeature Marauder's Resilience|GWHoT} or {@optfeature Escapist's Fortitude|GWHoT} or {@optfeature Brawler's Tenacity|GWHoT}",
 					"{@optfeature Weakening Strikes|GWHoT}",
@@ -8248,7 +8248,7 @@
 				],
 				[
 					"{@b Deadeye}",
-					"",
+					"{@subclassFeature Deadeye|Thief|GW2|Deadeye|GW2PoF|1||Deadeye}",
 					"{@optfeature Deadeye's Gaze|GW2PoF}",
 					"{@optfeature Malicious Intent|GW2PoF} or {@optfeature Collateral Damage|GW2PoF} or {@optfeature One in the Chamber|GW2PoF}",
 					"{@optfeature Renewing Gaze|GW2PoF}",
@@ -8258,7 +8258,7 @@
 				],
 				[
 					"{@b Specter}",
-					"",
+					"{@subclassFeature Specter|Thief|GW2|Specter|GW2EoD|1||Specter}",
 					"{@optfeature Specter|GW2EoD}",
 					"{@optfeature Second Opinion|GW2EoD} or {@optfeature Shallow Grave|GW2EoD} or {@optfeature Consume Shadows|GW2EoD}",
 					"{@optfeature Dark Sentry|GW2EoD}",
@@ -8268,7 +8268,7 @@
 				],
 				[
 					"{@b Antiquary}",
-					"",
+					"{@subclassFeature Antiquary|Thief|GW2|Antiquary|GW2VoE|1||Antiquary}",
 					"{@optfeature Trinket Collector|GW2VoE}",
 					"{@optfeature Card Swap|GW2VoE} or {@optfeature Repeat Ransacker|GW2VoE} or {@optfeature Prolific Plunderer|GW2VoE}",
 					"{@optfeature Magpie's Defense|GW2VoE}",
@@ -11279,9 +11279,9 @@
 				{
 					"colLabels": [
 						"Traits",
-						"Healing Skills",
-						"Utility Skills",
-						"Elite Skills"
+						"Healing Skills Known",
+						"Utility Skills Known",
+						"Elite Skills Known"
 					],
 					"rows": [
 						[
@@ -11571,9 +11571,9 @@
 				{
 					"colLabels": [
 						"Traits",
-						"Healing Skills",
-						"Utility Skills",
-						"Elite Skills"
+						"Healing Skills Known",
+						"Utility Skills Known",
+						"Elite Skills Known"
 					],
 					"rows": [
 						[
@@ -11903,9 +11903,9 @@
 				{
 					"colLabels": [
 						"Traits",
-						"Healing Skills",
-						"Utility Skills",
-						"Elite Skills"
+						"Healing Skills Known",
+						"Utility Skills Known",
+						"Elite Skills Known"
 					],
 					"rows": [
 						[
@@ -12244,9 +12244,9 @@
 				{
 					"colLabels": [
 						"Traits",
-						"Healing Skills",
-						"Utility Skills",
-						"Elite Skills"
+						"Healing Skills Known",
+						"Utility Skills Known",
+						"Elite Skills Known"
 					],
 					"rows": [
 						[
@@ -12504,10 +12504,15 @@
 			"entries": [
 				"{@b Elemental Influence.} You have learned to exert finer control over the Elements. Your learn the {@spell Elementalism|XPHB} cantrip, Intelligence is your spellcasting ability for it. You learn {@language Primordial|XPHB} and when you take the {@action Influence|XPHB} action, when trying to influence an Elemental, you can add your Intelligence modifier to the roll. Additionally, when taking the {@action Study|XPHB} action to learn about Elementals, you can add your Intelligence modifier to the roll.",
 				"{@b Elemental Benefits.} The elements have started to resonate with you. Depending on your current attunement, you gain a different benefit:",
-				"- {@b Fire Attunement.} You gain {@sense Darkvision|XPHB} with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.",
-				"- {@b Water Attunement.} You can breathe underwater and gain a swimming speed equal to your walking speed.",
-				"- {@b Air Attunement.} You learn the {@spell Jump|XPHB} and {@spell Feather Fall|XPHB} spells, Intelligence is your spellcasting ability for them. You can cast them without expending a spell slot a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a {@variantrule Long Rest|XPHB}.",
-				"- {@b Earth Attunement.} As a {@variantrule Bonus Action|XPHB}, you gain {@sense Tremorsense|XPHB} with a range of 60 feet for 10 minutes. You can use this {@variantrule Bonus Action|XPHB} a number of times equal to your Intelligence modifier, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+				{
+					"type": "list",
+					"items": [
+						"{@b Fire Attunement.} You gain {@sense Darkvision|XPHB} with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.",
+						"{@b Water Attunement.} You can breathe underwater and gain a swimming speed equal to your walking speed.",
+						"{@b Air Attunement.} You learn the {@spell Jump|XPHB} and {@spell Feather Fall|XPHB} spells, Intelligence is your spellcasting ability for them. You can cast them without expending a spell slot a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a {@variantrule Long Rest|XPHB}.",
+						"{@b Earth Attunement.} As a {@variantrule Bonus Action|XPHB}, you gain {@sense Tremorsense|XPHB} with a range of 60 feet for 10 minutes. You can use this {@variantrule Bonus Action|XPHB} a number of times equal to your Intelligence modifier, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+					]
+				}
 			]
 		},
 		{
@@ -12588,7 +12593,7 @@
 			"classSource": "GW2",
 			"level": 6,
 			"entries": [
-				"Your expertise in Elemental has granted you access to a second Specialization. Choose a Specialization of your choice for which you qualify from the {@table Elementalist Traits|GW2} table. When learning new {@variantrule traits|GW2|traits}, you can choose {@variantrule traits|GW2|traits} from either of your Specializations."
+				"{@b Second Specialization.} Your expertise in Elemental has granted you access to a second Specialization. Choose a Specialization of your choice for which you qualify from the {@table Elementalist Traits|GW2} table. When learning new {@variantrule traits|GW2|traits}, you can choose {@variantrule traits|GW2|traits} from either of your Specializations."
 			]
 		},
 		{
@@ -12599,7 +12604,7 @@
 			"classSource": "GW2",
 			"level": 7,
 			"entries": [
-				"You can now influence the Elements in more profound ways. You learn the {@spell Fire Dance|BookofEbonTides}, {@spell Control Water|XPHB}, {@spell Control Winds|XGE} and {@spell Stone Shape|XPHB} spells, Intelligence is your spellcasting ability for these spells. You can cast them only while attuned to their respective Element. You can cast each of these spells once without expending a spell slot, and you regain the ability to do so when you finish a {@variantrule long rest|XPHB}."
+				"{@b Elemental Spells.} You can now influence the Elements in more profound ways. You learn the {@spell Fire Dance|BookofEbonTides}, {@spell Control Water|XPHB}, {@spell Control Winds|XGE} and {@spell Stone Shape|XPHB} spells, Intelligence is your spellcasting ability for these spells. You can cast them only while attuned to their respective Element. You can cast each of these spells once without expending a spell slot, and you regain the ability to do so when you finish a {@variantrule long rest|XPHB}."
 			]
 		},
 		{
@@ -12621,7 +12626,7 @@
 			"classSource": "GW2",
 			"level": 9,
 			"entries": [
-				"Your extensive training has made you exceptionally prepared for any situation. You can now prepare and use two {@variantrule Utility Skill|GW2|Utility Skills} at a time."
+				"{@b Second Utility Skill Slot.} Your extensive training has made you exceptionally prepared for any situation. You can now prepare and use two {@variantrule Utility Skill|GW2|Utility Skills} at a time."
 			]
 		},
 		{
@@ -12643,7 +12648,7 @@
 			"classSource": "GW2",
 			"level": 11,
 			"entries": [
-				"You have learned to channel your Elemental prowess through more weapons. You can designate a second set of weapons you can enhance, the second set either consists of one weapon wielded in your main hand and one in your off hand, or one two-handed weapon. Once during your turn, you can swap between them (no {@variantrule action|XPHB} required). Once you swamp weapons, you cannot switch again until recharged ({@chance 55|10+})."
+				"{@b Second Weapon Set.} You have learned to channel your Elemental prowess through more weapons. You can designate a second set of weapons you can enhance, the second set either consists of one weapon wielded in your main hand and one in your off hand, or one two-handed weapon. Once during your turn, you can swap between them (no {@variantrule action|XPHB} required). Once you swamp weapons, you cannot switch again until recharged {@recharge 6}."
 			]
 		},
 		{
@@ -12654,7 +12659,7 @@
 			"classSource": "GW2",
 			"level": 12,
 			"entries": [
-				"You can now prepare and use three {@variantrule Utility Skill|GW2|Utility Skills} at a time."
+				"{@b Third Utility Skill Slot.} You can now prepare and use three {@variantrule Utility Skill|GW2|Utility Skills} at a time."
 			]
 		},
 		{
@@ -12676,7 +12681,7 @@
 			"classSource": "GW2",
 			"level": 13,
 			"entries": [
-				"You perfected your Elements. Choose a Specialization of your choice for which you qualify from the {@table Elementalist Traits|GW2} table, that you do not already have access to. When learning new {@variantrule traits|GW2|traits}, you can choose {@variantrule traits|GW2|traits} from any of your Specializations."
+				"{@b Third Specialization.} You perfected your Elements. Choose a Specialization of your choice for which you qualify from the {@table Elementalist Traits|GW2} table, that you do not already have access to. When learning new {@variantrule traits|GW2|traits}, you can choose {@variantrule traits|GW2|traits} from any of your Specializations."
 			]
 		},
 		{
@@ -12687,12 +12692,17 @@
 			"classSource": "GW2",
 			"level": 14,
 			"entries": [
-				"Your connection to the Primordial Forces deepens. You can now cast each spell from the Primordial Mastery feature twice without expending a spell slot, and you regain the ability to do so when you finish a {@variantrule long rest|XPHB}.",
-				"Furthermore, the attunement benefits you gain from the Primordial Influence feature improve:",
-				"- {@b Fire Attunement.} Your {@sense Darkvision|XPHB} range increases by 60 feet. Additionally, you gain {@sense Truesight|XPHB} with a range of 30 feet. If you already have Truesight, its range increases by 30 feet.",
-				"- {@b Water Attunement.} You learn the {@spell Water Walk|XPHB} and {@spell Water Breathing|XPHB} spells, Intelligence is your spellcasting ability for them. You can cast them at will.",
-				"- {@b Air Attunement.} You gain a {@variantrule Fly Speed|XPHB} of 60 feet and can hover.",
-				"- {@b Earth Attunement.} The range of your {@sense Tremorsense|XPHB} increases to 120 feet. Additionally, you gain a {@variantrule Burrow Speed|XPHB} equal to your walking speed."
+				"{@b Improved Primordial Mastery.} Your connection to the Primordial Forces deepens. You can now cast each spell from the Primordial Mastery feature twice without expending a spell slot, and you regain the ability to do so when you finish a {@variantrule long rest|XPHB}.",
+				"{@b Improved Primordial Influence.} Furthermore, the attunement benefits you gain from the Primordial Influence feature improve:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Fire Attunement.} Your {@sense Darkvision|XPHB} range increases by 60 feet. Additionally, you gain {@sense Truesight|XPHB} with a range of 30 feet. If you already have Truesight, its range increases by 30 feet.",
+						"{@b Water Attunement.} You learn the {@spell Water Walk|XPHB} and {@spell Water Breathing|XPHB} spells, Intelligence is your spellcasting ability for them. You can cast them at will.",
+						"{@b Air Attunement.} You gain a {@variantrule Fly Speed|XPHB} of 60 feet and can hover.",
+						"{@b Earth Attunement.} The range of your {@sense Tremorsense|XPHB} increases to 120 feet. Additionally, you gain a {@variantrule Burrow Speed|XPHB} equal to your walking speed."
+					]
+				}
 			]
 		},
 		{
@@ -12725,8 +12735,14 @@
 			"classSource": "GW2",
 			"level": 17,
 			"entries": [
-				"You have mastered the use of {@variantrule elite skill|GW2|Elite Skills} that provide powerful effects. To start, you learn one {@variantrule elite skill|GW2|Elite Skill} of your choice, for which you qualify, from the {@table Elementalist Elite Skills|GW2} table. The number of {@variantrule elite skill|GW2|Elite Skills} you know increases as you gain Elementalist levels, as shown in the Elite Skills Known column of the Elementalist Features table. Whenever that number increases, choose additional {@variantrule Elite Skill|GW2|Elite Skills}, for which you qualify, from the Elementalist {@table Elementalist Elite Skills|GW2} table until the number of {@variantrule Elite Skill|GW2|Elite Skills} on your list matches the number on the table.",
-				"You can only prepare and use one {@variantrule Elite Skill|GW2|Elite Skill} at a time. You can change which {@variantrule Elite Skill|GW2|Elite Skill} you have prepared during a short or long rest."
+				"{@b Elite Skills.} You have mastered the use of {@variantrule elite skill|GW2|Elite Skills} that provide powerful effects. To start, you learn one {@variantrule elite skill|GW2|Elite Skill} of your choice, for which you qualify, from the {@table Elementalist Elite Skills|GW2} table. The number of {@variantrule elite skill|GW2|Elite Skills} you know increases as you gain Elementalist levels, as shown in the Elite Skills Known column of the Elementalist Features table. Whenever that number increases, choose additional {@variantrule Elite Skill|GW2|Elite Skills}, for which you qualify, from the Elementalist {@table Elementalist Elite Skills|GW2} table until the number of {@variantrule Elite Skill|GW2|Elite Skills} on your list matches the number on the table. You can only prepare and use one {@variantrule Elite Skill|GW2|Elite Skill} at a time. You can change which {@variantrule Elite Skill|GW2|Elite Skill} you have prepared during a short or long rest.",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"name": "Elementalist Elite Skills",
+					"source": "GW2",
+					"style": "inset"
+				}
 			]
 		},
 		{
@@ -12737,8 +12753,8 @@
 			"classSource": "GW2",
 			"level": 18,
 			"entries": [
-				"You have ascended to a new height of Elemental mastery. You can cast the spells from the Primordial Mastery feature at will, without expending a spell slot.",
-				"Additionally, the non-improved attunement benefits you gain from the Primordial Influence feature are now always active."
+				"{@b Improved Primordial Mastery.} You have ascended to a new height of Elemental mastery. You can cast the spells from the Primordial Mastery feature at will, without expending a spell slot.",
+				"{@b Improved Primordial Influence.} Additionally, the non-improved attunement benefits you gain from the Primordial Influence feature are now always active."
 			]
 		},
 		{
@@ -12783,11 +12799,15 @@
 			"classSource": "GW2",
 			"level": 1,
 			"entries": [
-				"You have learned unique ways to heal wounds and mend injuries. To start, you learn one {@variantrule Healing Skill|GW2|Healing Skill} of your choice, for which you qualify, from the {@table Engineer Healing Skills|GW2} table. The number of {@variantrule Healing Skill|GW2|Healing Skills} you know increases as you gain Engineer levels, as shown in the Healing Skills Known column of the Engineer Features table. Whenever that number increases, choose additional {@variantrule Healing Skill|GW2|Healing Skills}, for which you qualify, from the {@table Engineer Healing Skills|GW2} table until the number of {@variantrule Healing Skill|GW2|Healing Skill} on your list matches the number on the table.",
-				"You can only prepare and use one {@variantrule Healing Skill|GW2|Healing Skill} at a time, choosing from your learned {@variantrule Healing Skill|GW2|Healing Skills}. You can change which healing skill you have prepared during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}.",
-				"Healing requires innate energy. You have a pool of healing power that replenishes when you finish a {@variantrule Long Rest|XPHB}. The pool has a number of healing points equal to 15 times your Engineer level. Once per {@variantrule Long Rest|XPHB}, when you finish a {@variantrule Short Rest|XPHB}, you can choose to regain healing points equal to 5 times your Engineer level.",
-				"When you use a {@variantrule Skill|GW2} that restores hit points, you must expend healing points from your pool equal to the amount of hit points restored. If you don't have enough healing points in your pool to cover the total hit points restored, you can only restore a number of hit points equal to the remaining healing points in your pool, while the rest is instead applied as {@variantrule Barrier|GW2}, and your pool is reduced to 0.",
-				"If you do not want to use your healing pool, or cannot, you can choose to apply the healing effect as {@variantrule Barrier|GW2} instead of restoring hit points."
+				"{@b Healing Skills.} You have learned unique ways to heal wounds and mend injuries. To start, you learn one {@variantrule Healing Skill|GW2|Healing Skill} of your choice, for which you qualify, from the {@table Engineer Healing Skills|GW2} table. The number of {@variantrule Healing Skill|GW2|Healing Skills} you know increases as you gain Engineer levels, as shown in the Healing Skills Known column of the Engineer Features table. Whenever that number increases, choose additional {@variantrule Healing Skill|GW2|Healing Skills}, for which you qualify, from the {@table Engineer Healing Skills|GW2} table until the number of {@variantrule Healing Skill|GW2|Healing Skill} on your list matches the number on the table. You can only prepare and use one {@variantrule Healing Skill|GW2|Healing Skill} at a time, choosing from your learned {@variantrule Healing Skill|GW2|Healing Skills}. You can change which healing skill you have prepared during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}.",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"name": "Engineer Healing Skills",
+					"source": "GW2",
+					"style": "inset"
+				},
+				"{@b Healing Pool.} Healing requires innate energy. You have a pool of healing power that replenishes when you finish a {@variantrule Long Rest|XPHB}. The pool has a number of healing points equal to 15 times your Engineer level. Once per {@variantrule Long Rest|XPHB}, when you finish a {@variantrule Short Rest|XPHB}, you can choose to regain healing points equal to 5 times your Engineer level. When you use a {@variantrule Skill|GW2} that restores hit points, you must expend healing points from your pool equal to the amount of hit points restored. If you don't have enough healing points in your pool to cover the total hit points restored, you can only restore a number of hit points equal to the remaining healing points in your pool, while the rest is instead applied as {@variantrule Barrier|GW2}, and your pool is reduced to 0. If you do not want to use your healing pool, or cannot, you can choose to apply the healing effect as {@variantrule Barrier|GW2} instead of restoring hit points."
 			]
 		},
 		{
@@ -12798,10 +12818,15 @@
 			"classSource": "GW2",
 			"level": 1,
 			"entries": [
-				"Your Engineer training has given you access to unique ways to enhance your weapons. Depending on the weapon you wield, your Engineer level, if you have proficiency with that weapon, in which hand you wield it, and if qualify for it, you gain access to different {@variantrule weapon skill|GW2|weapon skills} as shown in the {@table Engineer Weapon Skills|GW2} table.",
-				"Whenever you attack with one of the weapons as part of a {@variantrule weapon skill|GW2}, you can use your Intelligence modifier for the attack and damage rolls instead of using Strength or Dexterity. If a {@variantrule weapon skill|GW2} requires a saving throw, the DC equals to 8 plus your Intelligence modifier and proficiency bonus plus any attack bonuses the weapon has.",
-				"Using the {@variantrule skill|GW2|skills} associated with your weapon requires great focus, you can only gain access to the {@variantrule skill|GW2|skills} for one weapon at a time. You can change which weapon you are using during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}.",
-				"When you reach certain levels in this class, you can enhance additional weapons. At level 7 you can enhance a second weapon, if that weapon is wielded in your off hand."
+				"{@b Weapon Skills.} Your Engineer training has given you access to unique ways to enhance your weapons. Depending on the weapon you wield, your Engineer level, if you have proficiency with that weapon, in which hand you wield it, and if qualify for it, you gain access to different {@variantrule weapon skill|GW2|weapon skills} as shown in the {@table Engineer Weapon Skills|GW2} table. Whenever you attack with one of the weapons as part of a {@variantrule weapon skill|GW2}, you can use your Intelligence modifier for the attack and damage rolls instead of using Strength or Dexterity. If a {@variantrule weapon skill|GW2} requires a saving throw, the DC equals to 8 plus your Intelligence modifier and proficiency bonus plus any attack bonuses the weapon has.",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"name": "Engineer Weapon Skills",
+					"source": "GW2",
+					"style": "inset"
+				},
+				"{@b Weapon Focus.} Using the {@variantrule skill|GW2|skills} associated with your weapon requires great focus, you can only gain access to the {@variantrule skill|GW2|skills} for one weapon at a time. You can change which weapon you are using during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}. When you reach certain levels in this class, you can enhance additional weapons. At level 7 you can enhance a second weapon, if that weapon is wielded in your off hand."
 			]
 		},
 		{
@@ -12812,9 +12837,7 @@
 			"classSource": "GW2",
 			"level": 2,
 			"entries": [
-				"You have a versatile Omni-Tool that can adapt to a variety of situations. This tool takes the form of a wrench, screwdriver, or other basic tool. As a {@action Magic|XPHB} action, you can touch the tool and transform it into one of the following: {@item Carpenter's Tools|XPHB}, {@item Jeweler's Tools|XPHB}, {@item Mason's Tools|XPHB}, {@item Smith's Tools|XPHB}, {@item Thieves' Tools|XPHB}, {@item Tinker's Tools|XPHB} or {@item Woodcarver's Tools|XPHB}. Whatever form the tool takes, you have proficiency with it when you use it.",
-				"You can only have one Omni-Tool at a time. If you try to create a new one while you still have your current one, the current one is destroyed.",
-				"If you loose or destroy your Omni-Tool, you can create a new one during a {@variantrule long rest|XPHB}."
+				"{@b Omni-Tool.} You have a versatile Omni-Tool that can adapt to a variety of situations. This tool takes the form of a wrench, screwdriver, or other basic tool. As a {@action Magic|XPHB} action, you can touch the tool and transform it into one of the following: {@item Carpenter's Tools|XPHB}, {@item Jeweler's Tools|XPHB}, {@item Mason's Tools|XPHB}, {@item Smith's Tools|XPHB}, {@item Thieves' Tools|XPHB}, {@item Tinker's Tools|XPHB} or {@item Woodcarver's Tools|XPHB}. Whatever form the tool takes, you have proficiency with it when you use it. You can only have one Omni-Tool at a time. If you try to create a new one while you still have your current one, the current one is destroyed. If you loose or destroy your Omni-Tool, you can create a new one during a {@variantrule long rest|XPHB}."
 			]
 		},
 		{
@@ -12825,9 +12848,15 @@
 			"classSource": "GW2",
 			"level": 3,
 			"entries": [
-				"Your Engineering prowess has granted you access to {@variantrule traits|GW2|traits} that enhance your abilities. To start, you gain access to the Specialization of your subclass and learn its Minor Adept {@variantrule traits|GW2|trait}.",
-				"The number of {@variantrule traits|GW2|traits} you know increases as you gain Engineer levels, as shown in the Traits column of the Engineer Features table. Whenever that number increases, choose additional {@variantrule traits|GW2|traits} from the {@table Engineer Traits|GW2} table until the number of {@variantrule traits|GW2|traits} on your list matches the number on the table. You can only learn {@variantrule traits|GW2|traits} from the Specializations you have access to and must follow the prerequisites for each {@variantrule traits|GW2|trait}.",
-				"Each Major {@variantrule traits|GW2|trait} has three options to choose from. When you learn a Major {@variantrule traits|GW2|trait}, you learn all three options, but you can only prepare one option at a time. You can change which option you have prepared during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}."
+				"{@b Traits.} Your Engineering prowess has granted you access to {@variantrule traits|GW2|traits} that enhance your abilities. To start, you gain access to the Specialization of your subclass and learn its Minor Adept {@variantrule traits|GW2|trait}. The number of {@variantrule traits|GW2|traits} you know increases as you gain Engineer levels, as shown in the Traits column of the Engineer Features table. Whenever that number increases, choose additional {@variantrule traits|GW2|traits} from the {@table Engineer Traits|GW2} table until the number of {@variantrule traits|GW2|traits} on your list matches the number on the table. You can only learn {@variantrule traits|GW2|traits} from the Specializations you have access to and must follow the prerequisites for each {@variantrule traits|GW2|trait}.",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"name": "Engineer Traits",
+					"source": "GW2",
+					"style": "inset"
+				},
+				"{@b Major Traits.} Each Major {@variantrule traits|GW2|trait} has three options to choose from. When you learn a Major {@variantrule traits|GW2|trait}, you learn all three options, but you can only prepare one option at a time. You can change which option you have prepared during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}."
 			]
 		},
 		{
@@ -12860,8 +12889,14 @@
 			"classSource": "GW2",
 			"level": 4,
 			"entries": [
-				"Your engineering prowess has led to you inventing new ways to succeed. To start, you learn five {@variantrule Utility Skill|GW2|Utility Skills} of your choice, for which you qualify, from the {@table Engineer Utility Skills|GW2} table. The number of {@variantrule Utility Skill|GW2|Utility Skills} you know increases as you gain Engineer levels, as shown in the Utility Skills Known column of the Engineer Features table. Whenever that number increases, choose additional {@variantrule Utility Skill|GW2|Utility Skills}, for which you qualify, from the {@table Engineer Utility Skills|GW2} until the number of {@variantrule Utility Skill|GW2|Utility Skills} on your list matches the number on the table.",
-				"You can only prepare and use one {@variantrule Utility Skill|GW2|Utility Skill} at a time. You can change which {@variantrule Utility Skill|GW2|Utility Skill} you have prepared during a short or long rest."
+				"{@b Utility Skills.} Your engineering prowess has led to you inventing new ways to succeed. To start, you learn five {@variantrule Utility Skill|GW2|Utility Skills} of your choice, for which you qualify, from the {@table Engineer Utility Skills|GW2} table. The number of {@variantrule Utility Skill|GW2|Utility Skills} you know increases as you gain Engineer levels, as shown in the Utility Skills Known column of the Engineer Features table. Whenever that number increases, choose additional {@variantrule Utility Skill|GW2|Utility Skills}, for which you qualify, from the {@table Engineer Utility Skills|GW2} until the number of {@variantrule Utility Skill|GW2|Utility Skills} on your list matches the number on the table. You can only prepare and use one {@variantrule Utility Skill|GW2|Utility Skill} at a time. You can change which {@variantrule Utility Skill|GW2|Utility Skill} you have prepared during a short or long rest.",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"name": "Engineer Utility Skills",
+					"source": "GW2",
+					"style": "inset"
+				}
 			]
 		},
 		{
@@ -12883,7 +12918,7 @@
 			"classSource": "GW2",
 			"level": 6,
 			"entries": [
-				"Your expertise in engineering has granted you access to a second Specialization. Choose a Specialization of your choice for which you qualify from the {@table Engineer Traits|GW2} table. When learning new {@variantrule traits|GW2|traits}, you can choose {@variantrule traits|GW2|traits} from either of your Specializations."
+				"{@b Second Specialization.} Your expertise in engineering has granted you access to a second Specialization. Choose a Specialization of your choice for which you qualify from the {@table Engineer Traits|GW2} table. When learning new {@variantrule traits|GW2|traits}, you can choose {@variantrule traits|GW2|traits} from either of your Specializations."
 			]
 		},
 		{
@@ -12894,8 +12929,8 @@
 			"classSource": "GW2",
 			"level": 7,
 			"entries": [
-				"Your Omni-Tool has been modified for rapid repairs. While holding your Omni-Tool, you can use your {@variantrule bonus action|XPHB} to cast the {@spell Mending|XPHB} spell.",
-				"Additionally, while using your Omni-Tool to craft an item using the crafting rules in the {@book Dungeon Master's Guide|XDMG}, the amount of time required to craft it is halved."
+				"{@b Quick Mend.} Your Omni-Tool has been modified for rapid repairs. While holding your Omni-Tool, you can use your {@variantrule Bonus Action|XPHB} to cast the {@spell Mending|XPHB} spell. When doing so you can target creatures with it. If you target a creature with it, the creature can expend and roll one of its {@variantrule Hit Point Dice|XPHB} adding its Constitution modifier to the roll, and regain {@variantrule Hit Points|XPHB} equal to the total.",
+				"{@b Quick Craft.} Additionally, while using your Omni-Tool to craft an item using the crafting rules in the {@book Dungeon Master's Guide|XDMG}, the amount of time required to craft it is halved."
 			]
 		},
 		{
@@ -12917,7 +12952,7 @@
 			"classSource": "GW2",
 			"level": 9,
 			"entries": [
-				"Your extensive training has made you exceptionally prepared for any situation. You can now prepare and use two {@variantrule Utility Skill|GW2|Utility Skills} at a time."
+				"{@b Second Utility Skill Slot.} Your extensive training has made you exceptionally prepared for any situation. You can now prepare and use two {@variantrule Utility Skill|GW2|Utility Skills} at a time."
 			]
 		},
 		{
@@ -12939,7 +12974,7 @@
 			"classSource": "GW2",
 			"level": 11,
 			"entries": [
-				"You have learned to channel your engineering prowess through more weapons. You can designate a second set of weapons you can enhance, the second set either consists of one weapon wielded in your main hand and one in your off hand, or one two-handed weapon. Once during your turn, you can swap between them (no {@variantrule action|XPHB} required). Once you swamp weapons, you cannot switch again until recharged ({@chance 55|10+})."
+				"{@b Second Weapon Set.} You have learned to channel your engineering prowess through more weapons. You can designate a second set of weapons you can enhance, the second set either consists of one weapon wielded in your main hand and one in your off hand, or one two-handed weapon. Once during your turn, you can swap between them (no {@variantrule action|XPHB} required). Once you swamp weapons, you cannot switch again until recharged {@recharge 6}."
 			]
 		},
 		{
@@ -12950,7 +12985,7 @@
 			"classSource": "GW2",
 			"level": 12,
 			"entries": [
-				"You can now prepare and use three {@variantrule Utility Skill|GW2|Utility Skills} at a time."
+				"{@b Third  Utility Skill Slot.}You can now prepare and use three {@variantrule Utility Skill|GW2|Utility Skills} at a time."
 			]
 		},
 		{
@@ -12972,7 +13007,7 @@
 			"classSource": "GW2",
 			"level": 13,
 			"entries": [
-				"You perfected your engineering. Choose a Specialization of your choice for which you qualify from the {@table Engineer Traits|GW2} table, that you do not already have access to. When learning new {@variantrule traits|GW2|traits}, you can choose {@variantrule traits|GW2|traits} from any of your Specializations."
+				"{@b Third Specialization.} You perfected your engineering. Choose a Specialization of your choice for which you qualify from the {@table Engineer Traits|GW2} table, that you do not already have access to. When learning new {@variantrule traits|GW2|traits}, you can choose {@variantrule traits|GW2|traits} from any of your Specializations."
 			]
 		},
 		{
@@ -12983,7 +13018,8 @@
 			"classSource": "GW2",
 			"level": 14,
 			"entries": [
-				"Your Omni-Tool has evolved into an Omega-Tool, capable of transforming into any tool you might need. As a {@action Magic|XPHB} action, you can touch the tool and transform it into any set of {@item Artisan's Tools|XPHB} or {@item Thieves' Tools|XPHB}. Whatever form the tool takes, you have expertise with it when you use it."
+				"{@b Omega-Tool.} Your Omni-Tool has evolved into an Omega-Tool, capable of transforming into any tool you might need. As a {@action Magic|XPHB} action, you can touch the tool and transform it into any set of {@item Artisan's Tools|XPHB} or {@item Thieves' Tools|XPHB}. Whatever form the tool takes, you have expertise with it when you use it.",
+				"{@b Expert Crafter.} While using your Omni-Tool to craft an item using the crafting rules in the {@book Dungeon Master's Guide|XDMG}, the amount of time and money required to craft it is quartered."
 			]
 		},
 		{
@@ -13016,8 +13052,14 @@
 			"classSource": "GW2",
 			"level": 17,
 			"entries": [
-				"You have mastered the use of {@variantrule elite skill|GW2|Elite Skills} that provide powerful effects. To start, you learn one {@variantrule elite skill|GW2|Elite Skill} of your choice, for which you qualify, from the {@table Engineer Elite Skills|GW2} table. The number of {@variantrule elite skill|GW2|Elite Skills} you know increases as you gain Engineer levels, as shown in the Elite Skills Known column of the Engineer Features table. Whenever that number increases, choose additional {@variantrule Elite Skill|GW2|Elite Skills}, for which you qualify, from the Engineer {@table Engineer Elite Skills|GW2} table until the number of {@variantrule Elite Skill|GW2|Elite Skills} on your list matches the number on the table.",
-				"You can only prepare and use one {@variantrule Elite Skill|GW2|Elite Skill} at a time. You can change which {@variantrule Elite Skill|GW2|Elite Skill} you have prepared during a short or long rest."
+				"{@b Elite Skills.} You have mastered the use of {@variantrule elite skill|GW2|Elite Skills} that provide powerful effects. To start, you learn one {@variantrule elite skill|GW2|Elite Skill} of your choice, for which you qualify, from the {@table Engineer Elite Skills|GW2} table. The number of {@variantrule elite skill|GW2|Elite Skills} you know increases as you gain Engineer levels, as shown in the Elite Skills Known column of the Engineer Features table. Whenever that number increases, choose additional {@variantrule Elite Skill|GW2|Elite Skills}, for which you qualify, from the Engineer {@table Engineer Elite Skills|GW2} table until the number of {@variantrule Elite Skill|GW2|Elite Skills} on your list matches the number on the table. You can only prepare and use one {@variantrule Elite Skill|GW2|Elite Skill} at a time. You can change which {@variantrule Elite Skill|GW2|Elite Skill} you have prepared during a short or long rest.",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"name": "Engineer Elite Skills",
+					"source": "GW2",
+					"style": "inset"
+				}
 			]
 		},
 		{
@@ -13028,7 +13070,7 @@
 			"classSource": "GW2",
 			"level": 18,
 			"entries": [
-				"Your advanced engineering allows you to reshape the world around you. While holding your Omega-Tool, you can use a {@action Magic|XPHB} action to cast the {@spell Fabricate|XPHB} spell."
+				"{@b Matter from Nothing.} Your advanced engineering allows you to reshape the world around you. You learn the {@spell Fabricate|XPHB}, {@spell Mordenkainen's Private Sanctum|XPHB}, {@spell Stone Shape|XPHB}, {@spell Move Earth|XPHB}, {@spell Tasha's Bubbling Cauldron|XPHB}, {@spell Mordenkainen's Magnificent Mansion|XPHB} {@spell Creation|XPHB}, {@spell Simulacrum|XPHB} and {@spell Clone|XPHB} spells, Intelligence is your spellcasting ability for them. You can cast them without expending a spell slot or material components while holding your Omega-Tool. Any material components needed for the function of the spell manifest only for the purpose of the spell, if they are used in any other way they disintegrate into ash."
 			]
 		},
 		{
@@ -13073,11 +13115,15 @@
 			"classSource": "GW2",
 			"level": 1,
 			"entries": [
-				"You have learned to use your skills of thievery to heal and mend wounds. To start, you learn one {@variantrule Healing Skill|GW2|Healing Skill} of your choice, for which you qualify, from the {@table Thief Healing Skills|GW2} table. The number of {@variantrule Healing Skill|GW2|Healing Skills} you know increases as you gain Thief levels, as shown in the Healing Skills Known column of the Thief Features table. Whenever that number increases, choose additional {@variantrule Healing Skill|GW2|Healing Skills}, for which you qualify, from the {@table Thief Healing Skills|GW2} table until the number of {@variantrule Healing Skill|GW2|Healing Skill} on your list matches the number on the table.",
-				"You can only prepare and use one {@variantrule Healing Skill|GW2|Healing Skill} at a time, choosing from your learned {@variantrule Healing Skill|GW2|Healing Skills}. You can change which healing skill you have prepared during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}.",
-				"Healing requires innate energy. You have a pool of healing power that replenishes when you finish a {@variantrule Long Rest|XPHB}. The pool has a number of healing points equal to 15 times your Thief level. Once per {@variantrule Long Rest|XPHB}, when you finish a {@variantrule Short Rest|XPHB}, you can choose to regain healing points equal to 5 times your Thief level.",
-				"When you use a {@variantrule Skill|GW2} that restores hit points, you must expend healing points from your pool equal to the amount of hit points restored. If you don't have enough healing points in your pool to cover the total hit points restored, you can only restore a number of hit points equal to the remaining healing points in your pool, while the rest is instead applied as {@variantrule Barrier|GW2}, and your pool is reduced to 0.",
-				"If you do not want to use your healing pool, or cannot, you can choose to apply the healing effect as {@variantrule Barrier|GW2} instead of restoring hit points."
+				"{@b Healing Skills.} You have learned to use your skills of thievery to heal and mend wounds. To start, you learn one {@variantrule Healing Skill|GW2|Healing Skill} of your choice, for which you qualify, from the {@table Thief Healing Skills|GW2} table. The number of {@variantrule Healing Skill|GW2|Healing Skills} you know increases as you gain Thief levels, as shown in the Healing Skills Known column of the Thief Features table. Whenever that number increases, choose additional {@variantrule Healing Skill|GW2|Healing Skills}, for which you qualify, from the {@table Thief Healing Skills|GW2} table until the number of {@variantrule Healing Skill|GW2|Healing Skill} on your list matches the number on the table. You can only prepare and use one {@variantrule Healing Skill|GW2|Healing Skill} at a time, choosing from your learned {@variantrule Healing Skill|GW2|Healing Skills}. You can change which healing skill you have prepared during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}.",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"name": "Thief Healing Skills",
+					"source": "GW2",
+					"style": "inset"
+				},
+				"{@b Healing Pool.} Healing requires innate energy. You have a pool of healing power that replenishes when you finish a {@variantrule Long Rest|XPHB}. The pool has a number of healing points equal to 15 times your Thief level. Once per {@variantrule Long Rest|XPHB}, when you finish a {@variantrule Short Rest|XPHB}, you can choose to regain healing points equal to 5 times your Thief level. When you use a {@variantrule Skill|GW2} that restores hit points, you must expend healing points from your pool equal to the amount of hit points restored. If you don't have enough healing points in your pool to cover the total hit points restored, you can only restore a number of hit points equal to the remaining healing points in your pool, while the rest is instead applied as {@variantrule Barrier|GW2}, and your pool is reduced to 0. If you do not want to use your healing pool, or cannot, you can choose to apply the healing effect as {@variantrule Barrier|GW2} instead of restoring hit points."
 			]
 		},
 		{
@@ -13088,10 +13134,15 @@
 			"classSource": "GW2",
 			"level": 1,
 			"entries": [
-				"Using weapons in unique ways you have mastered the art of thievery. Depending on the weapon you wield, your Thief level, if you have proficiency with that weapon, in which hand you wield it, which weapon you are wielding in your off hand, and if qualify for it, you gain access to different {@variantrule weapon skill|GW2|weapon skills} as shown in the {@table Thief Weapon Skills|GW2} table.",
-				"Whenever you attack with one of the weapons as part of a {@variantrule weapon skill|GW2}, you can use your Charisma modifier for the attack and damage rolls instead of using Strength or Dexterity. If a {@variantrule weapon skill|GW2} requires a saving throw, the DC equals to 8 plus your Charisma modifier and proficiency bonus plus any attack bonuses the weapon has.",
-				"Using the {@variantrule skill|GW2|skills} associated with your weapon requires great focus, you can only gain access to the {@variantrule skill|GW2|skills} for one weapon at a time. You can change which weapon you are using during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}.",
-				"When you reach certain levels in this class, you can use additional weapons. At level 7 you can use a second weapon, if that weapon is wielded in your off hand."
+				"{@b Weapon Skills.} Using weapons in unique ways you have mastered the art of thievery. Depending on the weapon you wield, your Thief level, if you have proficiency with that weapon, in which hand you wield it, which weapon you are wielding in your off hand, and if qualify for it, you gain access to different {@variantrule weapon skill|GW2|weapon skills} as shown in the {@table Thief Weapon Skills|GW2} table. Whenever you attack with one of the weapons as part of a {@variantrule weapon skill|GW2}, you can use your Charisma modifier for the attack and damage rolls instead of using Strength or Dexterity. If a {@variantrule weapon skill|GW2} requires a saving throw, the DC equals to 8 plus your Charisma modifier and proficiency bonus plus any attack bonuses the weapon has.",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"name": "Thief Weapon Skills",
+					"source": "GW2",
+					"style": "inset"
+				},
+				"{@b Weapon Focus.} Using the {@variantrule skill|GW2|skills} associated with your weapon requires great focus, you can only gain access to the {@variantrule skill|GW2|skills} for one weapon at a time. You can change which weapon you are using during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}. When you reach certain levels in this class, you can use additional weapons. At level 7 you can use a second weapon, if that weapon is wielded in your off hand."
 			]
 		},
 		{
@@ -13102,9 +13153,8 @@
 			"classSource": "GW2",
 			"level": 2,
 			"entries": [
-				"You have learned to quickly adapt to new tools and situations. You can use a {@variantrule bonus action|XPHB} to gain proficiency with one {@item Artisan's Tools|XPHB}, {@item Musical Instrument|XPHB}, {@item Gaming Set|XPHB}, or {@table Skill List; Skills|XPHB|Skill} for 1 hour. You can use this feature a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a {@variantrule long rest|XPHB}.",
-				"Additionally, you gain {@variantrule Expertise|XPHB} in one of your Skill Proficiencies of your choice.",
-				"Lastly, you know {@language Thieves' Cant|XPHB}."
+				"{@b Learn Quick.} You have learned to quickly adapt to new tools and situations. You can use a {@variantrule bonus action|XPHB} to gain proficiency with one {@item Artisan's Tools|XPHB}, {@item Musical Instrument|XPHB}, {@item Gaming Set|XPHB}, or {@table Skill List; Skills|XPHB|Skill} for a number of hours equal to half your Thief level. You can use this feature a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a {@variantrule long rest|XPHB}.",
+				"{@b Important Base Knowledge.} You gain {@variantrule Expertise|XPHB} in one of your Skill Proficiencies of your choice. You know {@language Thieves' Cant|XPHB}."
 			]
 		},
 		{
@@ -13115,9 +13165,15 @@
 			"classSource": "GW2",
 			"level": 3,
 			"entries": [
-				"Your Thiefing prowess has granted you access to {@variantrule traits|GW2|traits} that enhance your abilities. To start, you gain access to the Specialization of your subclass and learn its Minor Adept {@variantrule traits|GW2|trait}.",
-				"The number of {@variantrule traits|GW2|traits} you know increases as you gain Thief levels, as shown in the Traits column of the Thief Features table. Whenever that number increases, choose additional {@variantrule traits|GW2|traits} from the {@table Thief Traits|GW2} table until the number of {@variantrule traits|GW2|traits} on your list matches the number on the table. You can only learn {@variantrule traits|GW2|traits} from the Specializations you have access to and must follow the prerequisites for each {@variantrule traits|GW2|trait}.",
-				"Each Major {@variantrule traits|GW2|trait} has three options to choose from. When you learn a Major {@variantrule traits|GW2|trait}, you learn all three options, but you can only prepare one option at a time. You can change which option you have prepared during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}."
+				"{@b Traits.} Your Thiefing prowess has granted you access to {@variantrule traits|GW2|traits} that enhance your abilities. To start, you gain access to the Specialization of your subclass and learn its Minor Adept {@variantrule traits|GW2|trait}. The number of {@variantrule traits|GW2|traits} you know increases as you gain Thief levels, as shown in the Traits column of the Thief Features table. Whenever that number increases, choose additional {@variantrule traits|GW2|traits} from the {@table Thief Traits|GW2} table until the number of {@variantrule traits|GW2|traits} on your list matches the number on the table. You can only learn {@variantrule traits|GW2|traits} from the Specializations you have access to and must follow the prerequisites for each {@variantrule traits|GW2|trait}.",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"name": "Thief Traits",
+					"source": "GW2",
+					"style": "inset"
+				},
+				"{@b Major Traits.} Each Major {@variantrule traits|GW2|trait} has three options to choose from. When you learn a Major {@variantrule traits|GW2|trait}, you learn all three options, but you can only prepare one option at a time. You can change which option you have prepared during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}."
 			]
 		},
 		{
@@ -13150,8 +13206,14 @@
 			"classSource": "GW2",
 			"level": 4,
 			"entries": [
-				"Your Thiefing prowess has led to you inventing new ways to succeed. To start, you learn five {@variantrule Utility Skill|GW2|Utility Skills} of your choice, for which you qualify, from the {@table Thief Utility Skills|GW2} table. The number of {@variantrule Utility Skill|GW2|Utility Skills} you know increases as you gain Thief levels, as shown in the Utility Skills Known column of the Thief Features table. Whenever that number increases, choose additional {@variantrule Utility Skill|GW2|Utility Skills}, for which you qualify, from the {@table Thief Utility Skills|GW2} until the number of {@variantrule Utility Skill|GW2|Utility Skills} on your list matches the number on the table.",
-				"You can only prepare and use one {@variantrule Utility Skill|GW2|Utility Skill} at a time. You can change which {@variantrule Utility Skill|GW2|Utility Skill} you have prepared during a short or long rest."
+				"{@b Utility Skills.} Your Thiefing prowess has led to you inventing new ways to succeed. To start, you learn five {@variantrule Utility Skill|GW2|Utility Skills} of your choice, for which you qualify, from the {@table Thief Utility Skills|GW2} table. The number of {@variantrule Utility Skill|GW2|Utility Skills} you know increases as you gain Thief levels, as shown in the Utility Skills Known column of the Thief Features table. Whenever that number increases, choose additional {@variantrule Utility Skill|GW2|Utility Skills}, for which you qualify, from the {@table Thief Utility Skills|GW2} until the number of {@variantrule Utility Skill|GW2|Utility Skills} on your list matches the number on the table. You can only prepare and use one {@variantrule Utility Skill|GW2|Utility Skill} at a time. You can change which {@variantrule Utility Skill|GW2|Utility Skill} you have prepared during a short or long rest.",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"name": "Thief Utility Skills",
+					"source": "GW2",
+					"style": "inset"
+				}
 			]
 		},
 		{
@@ -13173,7 +13235,7 @@
 			"classSource": "GW2",
 			"level": 6,
 			"entries": [
-				"Your expertise in Thiefing has granted you access to a second Specialization. Choose a Specialization of your choice for which you qualify from the {@table Thief Traits|GW2} table. When learning new {@variantrule traits|GW2|traits}, you can choose {@variantrule traits|GW2|traits} from either of your Specializations."
+				"{@b Second Specialization.} Your expertise in Thiefing has granted you access to a second Specialization. Choose a Specialization of your choice for which you qualify from the {@table Thief Traits|GW2} table. When learning new {@variantrule traits|GW2|traits}, you can choose {@variantrule traits|GW2|traits} from either of your Specializations."
 			]
 		},
 		{
@@ -13184,7 +13246,7 @@
 			"classSource": "GW2",
 			"level": 7,
 			"entries": [
-				"You are an expert in the art of thievery. When you fail an ability check that uses one of your skill or tool proficiencies, you can add your Thief level to the roll, potentially turning a failure into a success. You can use this feature a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a {@variantrule long rest|XPHB}."
+				"{@b Success through Repetition.} You are an expert in the art of thievery. When you fail an ability check that uses one of your skill or tool proficiencies, you can add your Thief level to the roll, potentially turning a failure into a success. You can use this feature a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a {@variantrule long rest|XPHB}."
 			]
 		},
 		{
@@ -13206,7 +13268,7 @@
 			"classSource": "GW2",
 			"level": 9,
 			"entries": [
-				"Your extensive training has made you exceptionally prepared for any situation. You can now prepare and use two {@variantrule Utility Skill|GW2|Utility Skills} at a time."
+				"{@b Second Utility Skill Slot.} Your extensive training has made you exceptionally prepared for any situation. You can now prepare and use two {@variantrule Utility Skill|GW2|Utility Skills} at a time."
 			]
 		},
 		{
@@ -13228,7 +13290,7 @@
 			"classSource": "GW2",
 			"level": 11,
 			"entries": [
-				"You have learned to channel your Thiefing prowess through more weapons. You can designate a second set of weapons you can enhance, the second set either consists of one weapon wielded in your main hand and one in your off hand, or one two-handed weapon. Once during your turn, you can swap between them (no {@variantrule action|XPHB} required). Once you swamp weapons, you cannot switch again until recharged ({@chance 55|10+})."
+				"{@b Second Weapon Set.} You have learned to channel your Thiefing prowess through more weapons. You can designate a second set of weapons you can enhance, the second set either consists of one weapon wielded in your main hand and one in your off hand, or one two-handed weapon. Once during your turn, you can swap between them (no {@variantrule action|XPHB} required). Once you swamp weapons, you cannot switch again until recharged {@recharge 2}."
 			]
 		},
 		{
@@ -13239,7 +13301,7 @@
 			"classSource": "GW2",
 			"level": 12,
 			"entries": [
-				"You can now prepare and use three {@variantrule Utility Skill|GW2|Utility Skills} at a time."
+				"{@b Third Utility Skill Slot.} You can now prepare and use three {@variantrule Utility Skill|GW2|Utility Skills} at a time."
 			]
 		},
 		{
@@ -13261,7 +13323,7 @@
 			"classSource": "GW2",
 			"level": 13,
 			"entries": [
-				"You perfected your Thiefing. Choose a Specialization of your choice for which you qualify from the {@table Thief Traits|GW2} table, that you do not already have access to. When learning new {@variantrule traits|GW2|traits}, you can choose {@variantrule traits|GW2|traits} from any of your Specializations."
+				"{@b Third Specialization.} You perfected your Thiefing. Choose a Specialization of your choice for which you qualify from the {@table Thief Traits|GW2} table, that you do not already have access to. When learning new {@variantrule traits|GW2|traits}, you can choose {@variantrule traits|GW2|traits} from any of your Specializations."
 			]
 		},
 		{
@@ -13272,9 +13334,8 @@
 			"classSource": "GW2",
 			"level": 14,
 			"entries": [
-				"Your Quick Study feature has improved. You now gain {@variantrule Expertise|XPHB} instead of proficiency when you use it. Additionally, you now regain all expended uses of the feature when you finish a {@variantrule Short Rest|XPHB|Short} or a {@variantrule Long Rest|XPHB}.",
-				"Furthermore, you gain {@variantrule Expertise|XPHB} in two of your Skill Proficiencies of your choice.",
-				"Lastly, when you finish a {@variantrule Long Rest|XPHB}, you can choose to know one Language of your choice until you finish your next {@variantrule Long Rest|XPHB}."
+				"{@b Improved Quick Study.} Your Quick Study feature has improved. You now gain {@variantrule Expertise|XPHB} instead of proficiency when you use it. Additionally, you now regain all expended uses of the feature when you finish a {@variantrule Short Rest|XPHB|Short} or a {@variantrule Long Rest|XPHB}.",
+				"{@b Advanced Knowledge.} You gain {@variantrule Expertise|XPHB} in two of your Skill Proficiencies of your choice. When you finish a {@variantrule Long Rest|XPHB}, you can choose to know one Language of your choice until you finish your next {@variantrule Long Rest|XPHB}."
 			]
 		},
 		{
@@ -13307,8 +13368,14 @@
 			"classSource": "GW2",
 			"level": 17,
 			"entries": [
-				"You have mastered the use of {@variantrule elite skill|GW2|Elite Skills} that provide powerful effects. To start, you learn one {@variantrule elite skill|GW2|Elite Skill} of your choice, for which you qualify, from the {@table Thief Elite Skills|GW2} table. The number of {@variantrule elite skill|GW2|Elite Skills} you know increases as you gain Thief levels, as shown in the Elite Skills Known column of the Thief Features table. Whenever that number increases, choose additional {@variantrule Elite Skill|GW2|Elite Skills}, for which you qualify, from the Thief {@table Thief Elite Skills|GW2} table until the number of {@variantrule Elite Skill|GW2|Elite Skills} on your list matches the number on the table.",
-				"You can only prepare and use one {@variantrule Elite Skill|GW2|Elite Skill} at a time. You can change which {@variantrule Elite Skill|GW2|Elite Skill} you have prepared during a short or long rest."
+				"{@b Elite Skills.} You have mastered the use of {@variantrule elite skill|GW2|Elite Skills} that provide powerful effects. To start, you learn one {@variantrule elite skill|GW2|Elite Skill} of your choice, for which you qualify, from the {@table Thief Elite Skills|GW2} table. The number of {@variantrule elite skill|GW2|Elite Skills} you know increases as you gain Thief levels, as shown in the Elite Skills Known column of the Thief Features table. Whenever that number increases, choose additional {@variantrule Elite Skill|GW2|Elite Skills}, for which you qualify, from the Thief {@table Thief Elite Skills|GW2} table until the number of {@variantrule Elite Skill|GW2|Elite Skills} on your list matches the number on the table. You can only prepare and use one {@variantrule Elite Skill|GW2|Elite Skill} at a time. You can change which {@variantrule Elite Skill|GW2|Elite Skill} you have prepared during a short or long rest.",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"name": "Thief Elite Skills",
+					"source": "GW2",
+					"style": "inset"
+				}
 			]
 		},
 		{
@@ -13319,8 +13386,8 @@
 			"classSource": "GW2",
 			"level": 18,
 			"entries": [
-				"You now regain all expended uses of your Consistent Thievery feature when you finish a {@variantrule Short Rest|XPHB|Short} in addition to a {@variantrule Long Rest|XPHB}.",
-				"Additionally, you have learned to become supernaturally stealthy. You can use a {@variantrule Bonus Action|XPHB} to cast the {@spell Greater Invisibility|XPHB} spell on yourself."
+				"{@b Improved Consistent Thievery.} You now regain all expended uses of your Consistent Thievery feature when you finish a {@variantrule Short Rest|XPHB|Short} in addition to a {@variantrule Long Rest|XPHB}.",
+				"{@b Supernatural Stealth.} You have learned to become supernaturally stealthy. You can use a {@variantrule Bonus Action|XPHB} to cast the {@spell Greater Invisibility|XPHB} spell on yourself, Charisma is your spellcasting ability for it. You can cast it without expending a spell slot or material components."
 			]
 		},
 		{
@@ -13365,11 +13432,15 @@
 			"classSource": "GW2",
 			"level": 1,
 			"entries": [
-				"Through countless battles you have learned to staunch the flow of blood. To start, you learn one {@variantrule Healing Skill|GW2|Healing Skill} of your choice, for which you qualify, from the {@table Warrior Healing Skills|GW2} table. The number of {@variantrule Healing Skill|GW2|Healing Skills} you know increases as you gain Warrior levels, as shown in the Healing Skills Known column of the Warrior Features table. Whenever that number increases, choose additional {@variantrule Healing Skill|GW2|Healing Skills}, for which you qualify, from the {@table Warrior Healing Skills|GW2} table until the number of {@variantrule Healing Skill|GW2|Healing Skill} on your list matches the number on the table.",
-				"You can only prepare and use one {@variantrule Healing Skill|GW2|Healing Skill} at a time, choosing from your learned {@variantrule Healing Skill|GW2|Healing Skills}. You can change which healing skill you have prepared during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}.",
-				"Healing requires innate energy. You have a pool of healing power that replenishes when you finish a {@variantrule Long Rest|XPHB}. The pool has a number of healing points equal to 15 times your Warrior level. Once per {@variantrule Long Rest|XPHB}, when you finish a {@variantrule Short Rest|XPHB}, you can choose to regain healing points equal to 5 times your Warrior level.",
-				"When you use a {@variantrule Skill|GW2} that restores hit points, you must expend healing points from your pool equal to the amount of hit points restored. If you don't have enough healing points in your pool to cover the total hit points restored, you can only restore a number of hit points equal to the remaining healing points in your pool, while the rest is instead applied as {@variantrule Barrier|GW2}, and your pool is reduced to 0.",
-				"If you do not want to use your healing pool, or cannot, you can choose to apply the healing effect as {@variantrule Barrier|GW2} instead of restoring hit points."
+				"{@b Healing Skills.} Through countless battles you have learned to staunch the flow of blood. To start, you learn one {@variantrule Healing Skill|GW2|Healing Skill} of your choice, for which you qualify, from the {@table Warrior Healing Skills|GW2} table. The number of {@variantrule Healing Skill|GW2|Healing Skills} you know increases as you gain Warrior levels, as shown in the Healing Skills Known column of the Warrior Features table. Whenever that number increases, choose additional {@variantrule Healing Skill|GW2|Healing Skills}, for which you qualify, from the {@table Warrior Healing Skills|GW2} table until the number of {@variantrule Healing Skill|GW2|Healing Skill} on your list matches the number on the table. You can only prepare and use one {@variantrule Healing Skill|GW2|Healing Skill} at a time, choosing from your learned {@variantrule Healing Skill|GW2|Healing Skills}. You can change which healing skill you have prepared during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}.",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"name": "Warrior Healing Skills",
+					"source": "GW2",
+					"style": "inset"
+				},
+				"{@b Healing Pool.} Healing requires innate energy. You have a pool of healing power that replenishes when you finish a {@variantrule Long Rest|XPHB}. The pool has a number of healing points equal to 15 times your Warrior level. Once per {@variantrule Long Rest|XPHB}, when you finish a {@variantrule Short Rest|XPHB}, you can choose to regain healing points equal to 5 times your Warrior level. When you use a {@variantrule Skill|GW2} that restores hit points, you must expend healing points from your pool equal to the amount of hit points restored. If you don't have enough healing points in your pool to cover the total hit points restored, you can only restore a number of hit points equal to the remaining healing points in your pool, while the rest is instead applied as {@variantrule Barrier|GW2}, and your pool is reduced to 0. If you do not want to use your healing pool, or cannot, you can choose to apply the healing effect as {@variantrule Barrier|GW2} instead of restoring hit points."
 			]
 		},
 		{
@@ -13380,10 +13451,15 @@
 			"classSource": "GW2",
 			"level": 1,
 			"entries": [
-				"Your Warrior training has given you access to unique ways to use your weapons. Depending on the weapon you wield, your Warrior level, if you have proficiency with that weapon, in which hand you wield it, and if qualify for it, you gain access to different {@variantrule weapon skill|GW2|weapon skills} as shown in the {@table Warrior Weapon Skills|GW2} table.",
-				"Whenever you attack with one of the weapons as part of a {@variantrule weapon skill|GW2}, you can use your Constitution modifier for the attack and damage rolls instead of using Strength or Dexterity. If a {@variantrule weapon skill|GW2} requires a saving throw, the DC equals to 8 plus your Constitution modifier and proficiency bonus plus any attack bonuses the weapon has.",
-				"Using the {@variantrule skill|GW2|skills} associated with your weapon requires great focus, you can only gain access to the {@variantrule skill|GW2|skills} for one weapon at a time. You can change which weapon you are using during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}.",
-				"When you reach certain levels in this class, you can use additional weapons. At level 7 you can use a second weapon, if that weapon is wielded in your off hand."
+				"{@b Weapon Skills.} Your Warrior training has given you access to unique ways to use your weapons. Depending on the weapon you wield, your Warrior level, if you have proficiency with that weapon, in which hand you wield it, and if qualify for it, you gain access to different {@variantrule weapon skill|GW2|weapon skills} as shown in the {@table Warrior Weapon Skills|GW2} table. Whenever you attack with one of the weapons as part of a {@variantrule weapon skill|GW2}, you can use your Constitution modifier for the attack and damage rolls instead of using Strength or Dexterity. If a {@variantrule weapon skill|GW2} requires a saving throw, the DC equals to 8 plus your Constitution modifier and proficiency bonus plus any attack bonuses the weapon has.",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"name": "Warrior Weapon Skills",
+					"source": "GW2",
+					"style": "inset"
+				},
+				"{@b Weapon Focus.} Using the {@variantrule skill|GW2|skills} associated with your weapon requires great focus, you can only gain access to the {@variantrule skill|GW2|skills} for one weapon at a time. You can change which weapon you are using during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}. When you reach certain levels in this class, you can use additional weapons. At level 7 you can use a second weapon, if that weapon is wielded in your off hand."
 			]
 		},
 		{
@@ -13394,7 +13470,7 @@
 			"classSource": "GW2",
 			"level": 2,
 			"entries": [
-				"You have learned to push yourself beyond your limits. When you fail an ability check, you can expend a {@variantrule Hit Point Dice|XPHB} to push yourself toward success. Rather than regaining Hit Points, you roll the {@variantrule Hit Point Dice|XPHB} and add the number rolled to the ability check, potentially turning it into a success. If the check still fails, you regain the {@variantrule Hit Point Dice|XPHB}."
+				"{@b Bloody Success.} You have learned to push yourself beyond your limits. When you fail an ability check, you can expend a {@variantrule Hit Point Dice|XPHB} to push yourself toward success. Rather than regaining Hit Points, you roll the {@variantrule Hit Point Dice|XPHB} and add the number rolled to the ability check, potentially turning it into a success. If the check still fails, you regain the {@variantrule Hit Point Dice|XPHB}."
 			]
 		},
 		{
@@ -13405,9 +13481,15 @@
 			"classSource": "GW2",
 			"level": 3,
 			"entries": [
-				"Your mastery over the Battlefield has granted you access to {@variantrule traits|GW2|traits} that enhance your abilities. To start, you gain access to the Specialization of your subclass and learn its Minor Adept {@variantrule traits|GW2|trait}.",
-				"The number of {@variantrule traits|GW2|traits} you know increases as you gain Warrior levels, as shown in the Traits column of the Warrior Features table. Whenever that number increases, choose additional {@variantrule traits|GW2|traits} from the {@table Warrior Traits|GW2} table until the number of {@variantrule traits|GW2|traits} on your list matches the number on the table. You can only learn {@variantrule traits|GW2|traits} from the Specializations you have access to and must follow the prerequisites for each {@variantrule traits|GW2|trait}.",
-				"Each Major {@variantrule traits|GW2|trait} has three options to choose from. When you learn a Major {@variantrule traits|GW2|trait}, you learn all three options, but you can only prepare one option at a time. You can change which option you have prepared during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}."
+				"{@b Traits.} Your mastery over the Battlefield has granted you access to {@variantrule traits|GW2|traits} that enhance your abilities. To start, you gain access to the Specialization of your subclass and learn its Minor Adept {@variantrule traits|GW2|trait}. The number of {@variantrule traits|GW2|traits} you know increases as you gain Warrior levels, as shown in the Traits column of the Warrior Features table. Whenever that number increases, choose additional {@variantrule traits|GW2|traits} from the {@table Warrior Traits|GW2} table until the number of {@variantrule traits|GW2|traits} on your list matches the number on the table. You can only learn {@variantrule traits|GW2|traits} from the Specializations you have access to and must follow the prerequisites for each {@variantrule traits|GW2|trait}.",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"name": "Warrior Traits",
+					"source": "GW2",
+					"style": "inset"
+				},
+				"{@b Major Traits.} Each Major {@variantrule traits|GW2|trait} has three options to choose from. When you learn a Major {@variantrule traits|GW2|trait}, you learn all three options, but you can only prepare one option at a time. You can change which option you have prepared during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}."
 			]
 		},
 		{
@@ -13440,8 +13522,14 @@
 			"classSource": "GW2",
 			"level": 4,
 			"entries": [
-				"You have many ways to win a fight. To start, you learn five {@variantrule Utility Skill|GW2|Utility Skills} of your choice, for which you qualify, from the {@table Warrior Utility Skills|GW2} table. The number of {@variantrule Utility Skill|GW2|Utility Skills} you know increases as you gain Warrior levels, as shown in the Utility Skills Known column of the Warrior Features table. Whenever that number increases, choose additional {@variantrule Utility Skill|GW2|Utility Skills}, for which you qualify, from the {@table Warrior Utility Skills|GW2} until the number of {@variantrule Utility Skill|GW2|Utility Skills} on your list matches the number on the table.",
-				"You can only prepare and use one {@variantrule Utility Skill|GW2|Utility Skill} at a time. You can change which {@variantrule Utility Skill|GW2|Utility Skill} you have prepared during a short or long rest."
+				"{@b Utility Skills. You have many ways to win a fight. To start, you learn five {@variantrule Utility Skill|GW2|Utility Skills} of your choice, for which you qualify, from the {@table Warrior Utility Skills|GW2} table. The number of {@variantrule Utility Skill|GW2|Utility Skills} you know increases as you gain Warrior levels, as shown in the Utility Skills Known column of the Warrior Features table. Whenever that number increases, choose additional {@variantrule Utility Skill|GW2|Utility Skills}, for which you qualify, from the {@table Warrior Utility Skills|GW2} until the number of {@variantrule Utility Skill|GW2|Utility Skills} on your list matches the number on the table. You can only prepare and use one {@variantrule Utility Skill|GW2|Utility Skill} at a time. You can change which {@variantrule Utility Skill|GW2|Utility Skill} you have prepared during a short or long rest.",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"name": "Warrior Utility Skills",
+					"source": "GW2",
+					"style": "inset"
+				}
 			]
 		},
 		{
@@ -13463,7 +13551,7 @@
 			"classSource": "GW2",
 			"level": 6,
 			"entries": [
-				"Your expertise in battle has granted you access to a second Specialization. Choose a Specialization of your choice for which you qualify from the {@table Warrior Traits|GW2} table. When learning new {@variantrule traits|GW2|traits}, you can choose {@variantrule traits|GW2|traits} from either of your Specializations."
+				"{@b Second Specialization.} Your expertise in battle has granted you access to a second Specialization. Choose a Specialization of your choice for which you qualify from the {@table Warrior Traits|GW2} table. When learning new {@variantrule traits|GW2|traits}, you can choose {@variantrule traits|GW2|traits} from either of your Specializations."
 			]
 		},
 		{
@@ -13474,7 +13562,7 @@
 			"classSource": "GW2",
 			"level": 7,
 			"entries": [
-				"You can quickly analyze the battlefield to gain an advantage. You can spend 1 minute studying an area of up to 100 square feet. After doing so, you and your allies gain advantage on {@variantrule ability checks|XPHB} and {@variantrule saving throws|XPHB} made to avoid environmental hazards in that area. Additionally, you and your allies can ignore difficult terrain in that area. This effect lasts for 1 hour or until you use this feature again."
+				"{@b Assess Battlefield.} You can quickly analyze the battlefield to gain an advantage. You can spend 1 minute studying an area of up to 100 square feet. After doing so, you and your allies gain advantage on {@variantrule Ability Checks|XPHB} and {@variantrule Saving Throws|XPHB} made to avoid environmental hazards in that area. Additionally, you and your allies can ignore difficult terrain in that area. This effect lasts for 1 hour or until you use this feature again."
 			]
 		},
 		{
@@ -13496,7 +13584,7 @@
 			"classSource": "GW2",
 			"level": 9,
 			"entries": [
-				"Your extensive training has made you exceptionally prepared for any situation. You can now prepare and use two {@variantrule Utility Skill|GW2|Utility Skills} at a time."
+				"{@b Second Utility Skill Slot.} Your extensive training has made you exceptionally prepared for any situation. You can now prepare and use two {@variantrule Utility Skill|GW2|Utility Skills} at a time."
 			]
 		},
 		{
@@ -13518,7 +13606,7 @@
 			"classSource": "GW2",
 			"level": 11,
 			"entries": [
-				"You have learned to use more weapons. You can designate a second set of weapons you can enhance, the second set either consists of one weapon wielded in your main hand and one in your off hand, or one two-handed weapon. Once during your turn, you can swap between them (no {@variantrule action|XPHB} required). Once you swamp weapons, you cannot switch again until recharged ({@chance 55|10+})."
+				"{@b Second Weapon Set.} You have learned to use more weapons. You can designate a second set of weapons you can enhance, the second set either consists of one weapon wielded in your main hand and one in your off hand, or one two-handed weapon. Once during your turn, you can swap between them (no {@variantrule action|XPHB} required)."
 			]
 		},
 		{
@@ -13529,7 +13617,7 @@
 			"classSource": "GW2",
 			"level": 12,
 			"entries": [
-				"You can now prepare and use three {@variantrule Utility Skill|GW2|Utility Skills} at a time."
+				"{@b Third Utility Skill Slot.}You can now prepare and use three {@variantrule Utility Skill|GW2|Utility Skills} at a time."
 			]
 		},
 		{
@@ -13551,7 +13639,7 @@
 			"classSource": "GW2",
 			"level": 13,
 			"entries": [
-				"You perfected your battle skills. Choose a Specialization of your choice for which you qualify from the {@table Warrior Traits|GW2} table, that you do not already have access to. When learning new {@variantrule traits|GW2|traits}, you can choose {@variantrule traits|GW2|traits} from any of your Specializations."
+				"{@b Third Specialization.} You perfected your battle skills. Choose a Specialization of your choice for which you qualify from the {@table Warrior Traits|GW2} table, that you do not already have access to. When learning new {@variantrule traits|GW2|traits}, you can choose {@variantrule traits|GW2|traits} from any of your Specializations."
 			]
 		},
 		{
@@ -13562,9 +13650,9 @@
 			"classSource": "GW2",
 			"level": 14,
 			"entries": [
-				"Your mind is as strong as your body, pushing you to overcome any challenge. You only need to sleep for 4 hours to gain the benefits of a {@variantrule long rest|XPHB} and only need to rest for 30 minutes to gain the benefits of a {@variantrule short rest|XPHB}. Additionally, you only need half as much food and water as normal.",
-				"Furthermore, you have advantage on saving throws against being {@condition charmed|XPHB} or {@condition frightened|XPHB}.",
-				"Lastly, when you use your Success at any Cost feature, you can choose to roll a d6 instead of a {@variantrule Hit Point Dice|XPHB}. This use of a d6 does not expend a {@variantrule Hit Point Dice|XPHB}."
+				"{@b The Machine.} Your mind is as strong as your body, pushing you to overcome any challenge. You only need to sleep for 4 hours to gain the benefits of a {@variantrule long rest|XPHB} and only need to rest for 30 minutes to gain the benefits of a {@variantrule short rest|XPHB}. Additionally, you only need half as much food and water as normal.",
+				"{@b Undeterred.} You have advantage on saving throws against being {@condition charmed|XPHB} or {@condition frightened|XPHB}.",
+				"{@b Reserve Success.} When you use your Success at any Cost feature, you can choose to roll a d6 instead of a {@variantrule Hit Point Dice|XPHB}. This use of a d6 does not expend a {@variantrule Hit Point Dice|XPHB}."
 			]
 		},
 		{
@@ -13597,8 +13685,14 @@
 			"classSource": "GW2",
 			"level": 17,
 			"entries": [
-				"You have mastered the use of {@variantrule elite skill|GW2|Elite Skills} that provide powerful effects. To start, you learn one {@variantrule elite skill|GW2|Elite Skill} of your choice, for which you qualify, from the {@table Warrior Elite Skills|GW2} table. The number of {@variantrule elite skill|GW2|Elite Skills} you know increases as you gain Warrior levels, as shown in the Elite Skills Known column of the Warrior Features table. Whenever that number increases, choose additional {@variantrule Elite Skill|GW2|Elite Skills}, for which you qualify, from the Warrior {@table Warrior Elite Skills|GW2} table until the number of {@variantrule Elite Skill|GW2|Elite Skills} on your list matches the number on the table.",
-				"You can only prepare and use one {@variantrule Elite Skill|GW2|Elite Skill} at a time. You can change which {@variantrule Elite Skill|GW2|Elite Skill} you have prepared during a short or long rest."
+				"{@b Elite Skills.} You have mastered the use of {@variantrule elite skill|GW2|Elite Skills} that provide powerful effects. To start, you learn one {@variantrule elite skill|GW2|Elite Skill} of your choice, for which you qualify, from the {@table Warrior Elite Skills|GW2} table. The number of {@variantrule elite skill|GW2|Elite Skills} you know increases as you gain Warrior levels, as shown in the Elite Skills Known column of the Warrior Features table. Whenever that number increases, choose additional {@variantrule Elite Skill|GW2|Elite Skills}, for which you qualify, from the Warrior {@table Warrior Elite Skills|GW2} table until the number of {@variantrule Elite Skill|GW2|Elite Skills} on your list matches the number on the table. You can only prepare and use one {@variantrule Elite Skill|GW2|Elite Skill} at a time. You can change which {@variantrule Elite Skill|GW2|Elite Skill} you have prepared during a short or long rest.",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"name": "Warrior Elite Skills",
+					"source": "GW2",
+					"style": "inset"
+				}
 			]
 		},
 		{
@@ -13609,7 +13703,7 @@
 			"classSource": "GW2",
 			"level": 18,
 			"entries": [
-				"You can push yourself to the brink of death and come back stronger. When you fail a {@variantrule D20 Test|XPHB}, you can choose to drop to 1 Hit Point and turn the roll into a 20. You cannot use this feature while {@condition Bloodied|XPHB}."
+				"{@b To the Limit!} You can push yourself to the brink of death and come back stronger. When you fail a {@variantrule D20 Test|XPHB}, you can choose to drop to 1 Hit Point and turn the roll into a 20. You cannot use this feature while {@condition Bloodied|XPHB}."
 			]
 		},
 		{
@@ -20546,7 +20640,7 @@
 			],
 			"entries": [
 				"{@b Casting Time:} Bonus Action",
-				"{@b Recharge:} {@chance 15|18+}",
+				"{@b Recharge:} {@recharge 5}",
 				"{@b Range:} 60 feet",
 				"{@b Target:} 10-foot-radius sphere",
 				"{@b Duration:} 1 round",
@@ -20576,7 +20670,7 @@
 			],
 			"entries": [
 				"{@b Casting Time:} Bonus Action",
-				"{@b Recharge:} {@chance 15|18+}",
+				"{@b Recharge:} {@recharge 4}",
 				"{@b Range:} 60 feet",
 				"{@b Target:} Point",
 				"{@b Duration:} 3 rounds",
@@ -20717,7 +20811,7 @@
 			],
 			"entries": [
 				"{@b Casting Time:} Bonus Action or Action",
-				"{@b Recharge:} {@chance 15|18+}",
+				"{@b Recharge:} {@recharge 4}",
 				"{@b Range:} ",
 				"{@b Target:} Self",
 				"{@b Duration:} ",
@@ -20832,7 +20926,7 @@
 			],
 			"entries": [
 				"{@b Casting Time:} Bonus Action or Action",
-				"{@b Recharge:} {@chance 15|18+}",
+				"{@b Recharge:} {@recharge 5}",
 				"{@b Range:} ",
 				"{@b Target:} Self",
 				"{@b Duration:} ",
@@ -20941,7 +21035,7 @@
 			],
 			"entries": [
 				"{@b Casting Time:} Bonus Action",
-				"{@b Recharge:} {@chance 15|18+}",
+				"{@b Recharge:} {@recharge 4}",
 				"{@b Range:} ",
 				"{@b Target:} Area",
 				"{@b Duration:} ",
@@ -21104,7 +21198,7 @@
 			],
 			"entries": [
 				"{@b Casting Time:} Bonus Action",
-				"{@b Recharge:} {@chance 15|18+}",
+				"{@b Recharge:} {@recharge 5}",
 				"{@b Range:} ",
 				"{@b Target:} Self",
 				"{@b Duration:} ",
@@ -23104,7 +23198,7 @@
 			],
 			"entries": [
 				"{@b Casting Time:} Action",
-				"{@b Recharge:} {@chance 10|19+}",
+				"{@b Recharge:} {@recharge 5}",
 				"{@b Range:} 20 feet",
 				"{@b Target:} Point",
 				"{@b Duration:} 5 rounds",

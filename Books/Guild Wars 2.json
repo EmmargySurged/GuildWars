@@ -8279,6 +8279,73 @@
 			]
 		},
 		{
+			"type": "table",
+			"name": "Thief Stolen Skills",
+			"source": "GW2",
+			"colLabels": [
+				"Creature Type",
+				"Skill"
+			],
+			"rows": [
+				[
+					"Aberration",
+					""
+				],
+				[
+					"Beast",
+					""
+				],
+				[
+					"Celestial",
+					""
+				],
+				[
+					"Construct",
+					""
+				],
+				[
+					"Dragon",
+					"Consume Scale"
+				],
+				[
+					"Elemental",
+					""
+				],
+				[
+					"Fey",
+					""
+				],
+				[
+					"Fiend",
+					""
+				],
+				[
+					"Giant",
+					""
+				],
+				[
+					"Humanoid",
+					""
+				],
+				[
+					"Monstrosity",
+					""
+				],
+				[
+					"Ooze",
+					"Throw Gunk"
+				],
+				[
+					"Plant",
+					"Throw Vine"
+				],
+				[
+					"Undead",
+					"Skull Fear"
+				]
+			]
+		},
+		{
 			"name": "Elementalist Healing Skills",
 			"source": "GW2",
 			"type": "table",
@@ -12443,7 +12510,12 @@
 			"classSource": "GW2",
 			"level": 1,
 			"entries": [
-				"{@b Healing Skills.} Channeling the Element of Water to heal and mend your learned some new skills. To start, you learn one {@variantrule Healing Skill|GW2|Healing Skill} of your choice, for which you qualify, from the {@table Elementalist Healing Skills|GW2} table. The number of {@variantrule Healing Skill|GW2|Healing Skills} you know increases as you gain Elementalist levels, as shown in the Healing Skills Known column of the Elementalist Features table. Whenever that number increases, choose additional {@variantrule Healing Skill|GW2|Healing Skills}, for which you qualify, from the {@table Elementalist Healing Skills|GW2} table until the number of {@variantrule Healing Skill|GW2|Healing Skill} on your list matches the number on the table. You can only prepare and use one {@variantrule Healing Skill|GW2|Healing Skill} at a time, choosing from your learned {@variantrule Healing Skill|GW2|Healing Skills}. You can change which healing skill you have prepared during a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}.",
+				{
+					"type": "statblock",
+					"tag": "variantrule",
+					"name": "Healing Skills",
+					"source": "GW2"
+				},
 				{
 					"type": "statblock",
 					"tag": "table",
@@ -12451,7 +12523,12 @@
 					"source": "GW2",
 					"style": "inset"
 				},
-				"{@b Healing Pool.} Healing requires innate energy. You have a pool of healing power that replenishes when you finish a {@variantrule Long Rest|XPHB}. The pool has a number of healing points equal to 15 times your Elementalist level. Once per {@variantrule Long Rest|XPHB}, when you finish a {@variantrule Short Rest|XPHB}, you can choose to regain healing points equal to 5 times your Elementalist level. When you use a {@variantrule Skill|GW2} that restores hit points, you must expend healing points from your pool equal to the amount of hit points restored. If you don't have enough healing points in your pool to cover the total hit points restored, you can only restore a number of hit points equal to the remaining healing points in your pool, while the rest is instead applied as {@variantrule Barrier|GW2}, and your pool is reduced to 0. If you do not want to use your healing pool, or cannot, you can choose to apply the healing effect as {@variantrule Barrier|GW2} instead of restoring hit points."
+				{
+					"type": "statblock",
+					"tag": "variantrule",
+					"name": "Healing Pool",
+					"source": "GW2"
+				}
 			]
 		},
 		{
@@ -12462,7 +12539,12 @@
 			"classSource": "GW2",
 			"level": 1,
 			"entries": [
-				"{@b Weapon Skills.} You learned to channel your Elemental magic through specific weapons, unleashing their potential. Depending on the weapon you wield, your Elementalist level, if you have proficiency with that weapon, in which hand you wield it, which attunement your are in, and if qualify for it, you gain access to different {@variantrule weapon skill|GW2|weapon skills} as shown in the {@table Elementalist Weapon Skills: Fire Attunement|GW2}, {@table Elementalist Weapon Skills: Water Attunement|GW2}, {@table Elementalist Weapon Skills: Air Attunement|GW2}, and {@table Elementalist Weapon Skills: Earth Attunement|GW2} tables. Whenever you attack with one of the weapons as part of a {@variantrule weapon skill|GW2}, you can use your Intelligence modifier for the attack and damage rolls instead of using Strength or Dexterity. If a {@variantrule weapon skill|GW2} requires a saving throw, the DC equals to 8 plus your Intelligence modifier and proficiency bonus plus any attack bonuses the weapon has.",
+				{
+					"type": "statblock",
+					"tag": "variantrule",
+					"name": "Weapon Skills",
+					"source": "GW2"
+				},
 				{
 					"type": "statblock",
 					"tag": "table",
@@ -12491,7 +12573,12 @@
 					"source": "GW2",
 					"style": "inset"
 				},
-				"{@b Weapon Focus.} Using the {@variantrule skill|GW2|skills} associated with your weapon requires great focus, you can only gain access to the {@variantrule skill|GW2|skills} for one weapon at a time. You can change which weapon you are channeling through during a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}. At level 7 you can channel through a second weapon, if that weapon is wielded in your off hand."
+				{
+					"type": "statblock",
+					"tag": "variantrule",
+					"name": "Weapon Focus",
+					"source": "GW2"
+				}
 			]
 		},
 		{
@@ -12799,7 +12886,12 @@
 			"classSource": "GW2",
 			"level": 1,
 			"entries": [
-				"{@b Healing Skills.} You have learned unique ways to heal wounds and mend injuries. To start, you learn one {@variantrule Healing Skill|GW2|Healing Skill} of your choice, for which you qualify, from the {@table Engineer Healing Skills|GW2} table. The number of {@variantrule Healing Skill|GW2|Healing Skills} you know increases as you gain Engineer levels, as shown in the Healing Skills Known column of the Engineer Features table. Whenever that number increases, choose additional {@variantrule Healing Skill|GW2|Healing Skills}, for which you qualify, from the {@table Engineer Healing Skills|GW2} table until the number of {@variantrule Healing Skill|GW2|Healing Skill} on your list matches the number on the table. You can only prepare and use one {@variantrule Healing Skill|GW2|Healing Skill} at a time, choosing from your learned {@variantrule Healing Skill|GW2|Healing Skills}. You can change which healing skill you have prepared during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}.",
+				{
+					"type": "statblock",
+					"tag": "variantrule",
+					"name": "Healing Skills",
+					"source": "GW2"
+				},
 				{
 					"type": "statblock",
 					"tag": "table",
@@ -12807,7 +12899,12 @@
 					"source": "GW2",
 					"style": "inset"
 				},
-				"{@b Healing Pool.} Healing requires innate energy. You have a pool of healing power that replenishes when you finish a {@variantrule Long Rest|XPHB}. The pool has a number of healing points equal to 15 times your Engineer level. Once per {@variantrule Long Rest|XPHB}, when you finish a {@variantrule Short Rest|XPHB}, you can choose to regain healing points equal to 5 times your Engineer level. When you use a {@variantrule Skill|GW2} that restores hit points, you must expend healing points from your pool equal to the amount of hit points restored. If you don't have enough healing points in your pool to cover the total hit points restored, you can only restore a number of hit points equal to the remaining healing points in your pool, while the rest is instead applied as {@variantrule Barrier|GW2}, and your pool is reduced to 0. If you do not want to use your healing pool, or cannot, you can choose to apply the healing effect as {@variantrule Barrier|GW2} instead of restoring hit points."
+				{
+					"type": "statblock",
+					"tag": "variantrule",
+					"name": "Healing Pool",
+					"source": "GW2"
+				}
 			]
 		},
 		{
@@ -12818,7 +12915,12 @@
 			"classSource": "GW2",
 			"level": 1,
 			"entries": [
-				"{@b Weapon Skills.} Your Engineer training has given you access to unique ways to enhance your weapons. Depending on the weapon you wield, your Engineer level, if you have proficiency with that weapon, in which hand you wield it, and if qualify for it, you gain access to different {@variantrule weapon skill|GW2|weapon skills} as shown in the {@table Engineer Weapon Skills|GW2} table. Whenever you attack with one of the weapons as part of a {@variantrule weapon skill|GW2}, you can use your Intelligence modifier for the attack and damage rolls instead of using Strength or Dexterity. If a {@variantrule weapon skill|GW2} requires a saving throw, the DC equals to 8 plus your Intelligence modifier and proficiency bonus plus any attack bonuses the weapon has.",
+				{
+					"type": "statblock",
+					"tag": "variantrule",
+					"name": "Weapon Skills",
+					"source": "GW2"
+				},
 				{
 					"type": "statblock",
 					"tag": "table",
@@ -12826,7 +12928,12 @@
 					"source": "GW2",
 					"style": "inset"
 				},
-				"{@b Weapon Focus.} Using the {@variantrule skill|GW2|skills} associated with your weapon requires great focus, you can only gain access to the {@variantrule skill|GW2|skills} for one weapon at a time. You can change which weapon you are using during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}. When you reach certain levels in this class, you can enhance additional weapons. At level 7 you can enhance a second weapon, if that weapon is wielded in your off hand."
+				{
+					"type": "statblock",
+					"tag": "variantrule",
+					"name": "Weapon Focus",
+					"source": "GW2"
+				}
 			]
 		},
 		{
@@ -13115,7 +13222,12 @@
 			"classSource": "GW2",
 			"level": 1,
 			"entries": [
-				"{@b Healing Skills.} You have learned to use your skills of thievery to heal and mend wounds. To start, you learn one {@variantrule Healing Skill|GW2|Healing Skill} of your choice, for which you qualify, from the {@table Thief Healing Skills|GW2} table. The number of {@variantrule Healing Skill|GW2|Healing Skills} you know increases as you gain Thief levels, as shown in the Healing Skills Known column of the Thief Features table. Whenever that number increases, choose additional {@variantrule Healing Skill|GW2|Healing Skills}, for which you qualify, from the {@table Thief Healing Skills|GW2} table until the number of {@variantrule Healing Skill|GW2|Healing Skill} on your list matches the number on the table. You can only prepare and use one {@variantrule Healing Skill|GW2|Healing Skill} at a time, choosing from your learned {@variantrule Healing Skill|GW2|Healing Skills}. You can change which healing skill you have prepared during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}.",
+				{
+					"type": "statblock",
+					"tag": "variantrule",
+					"name": "Healing Skills",
+					"source": "GW2"
+				},
 				{
 					"type": "statblock",
 					"tag": "table",
@@ -13123,7 +13235,12 @@
 					"source": "GW2",
 					"style": "inset"
 				},
-				"{@b Healing Pool.} Healing requires innate energy. You have a pool of healing power that replenishes when you finish a {@variantrule Long Rest|XPHB}. The pool has a number of healing points equal to 15 times your Thief level. Once per {@variantrule Long Rest|XPHB}, when you finish a {@variantrule Short Rest|XPHB}, you can choose to regain healing points equal to 5 times your Thief level. When you use a {@variantrule Skill|GW2} that restores hit points, you must expend healing points from your pool equal to the amount of hit points restored. If you don't have enough healing points in your pool to cover the total hit points restored, you can only restore a number of hit points equal to the remaining healing points in your pool, while the rest is instead applied as {@variantrule Barrier|GW2}, and your pool is reduced to 0. If you do not want to use your healing pool, or cannot, you can choose to apply the healing effect as {@variantrule Barrier|GW2} instead of restoring hit points."
+				{
+					"type": "statblock",
+					"tag": "variantrule",
+					"name": "Healing Pool",
+					"source": "GW2"
+				}
 			]
 		},
 		{
@@ -13134,7 +13251,12 @@
 			"classSource": "GW2",
 			"level": 1,
 			"entries": [
-				"{@b Weapon Skills.} Using weapons in unique ways you have mastered the art of thievery. Depending on the weapon you wield, your Thief level, if you have proficiency with that weapon, in which hand you wield it, which weapon you are wielding in your off hand, and if qualify for it, you gain access to different {@variantrule weapon skill|GW2|weapon skills} as shown in the {@table Thief Weapon Skills|GW2} table. Whenever you attack with one of the weapons as part of a {@variantrule weapon skill|GW2}, you can use your Charisma modifier for the attack and damage rolls instead of using Strength or Dexterity. If a {@variantrule weapon skill|GW2} requires a saving throw, the DC equals to 8 plus your Charisma modifier and proficiency bonus plus any attack bonuses the weapon has.",
+				{
+					"type": "statblock",
+					"tag": "variantrule",
+					"name": "Weapon Skills",
+					"source": "GW2"
+				},
 				{
 					"type": "statblock",
 					"tag": "table",
@@ -13142,7 +13264,12 @@
 					"source": "GW2",
 					"style": "inset"
 				},
-				"{@b Weapon Focus.} Using the {@variantrule skill|GW2|skills} associated with your weapon requires great focus, you can only gain access to the {@variantrule skill|GW2|skills} for one weapon at a time. You can change which weapon you are using during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}. When you reach certain levels in this class, you can use additional weapons. At level 7 you can use a second weapon, if that weapon is wielded in your off hand."
+				{
+					"type": "statblock",
+					"tag": "variantrule",
+					"name": "Weapon Focus",
+					"source": "GW2"
+				}
 			]
 		},
 		{
@@ -13432,7 +13559,12 @@
 			"classSource": "GW2",
 			"level": 1,
 			"entries": [
-				"{@b Healing Skills.} Through countless battles you have learned to staunch the flow of blood. To start, you learn one {@variantrule Healing Skill|GW2|Healing Skill} of your choice, for which you qualify, from the {@table Warrior Healing Skills|GW2} table. The number of {@variantrule Healing Skill|GW2|Healing Skills} you know increases as you gain Warrior levels, as shown in the Healing Skills Known column of the Warrior Features table. Whenever that number increases, choose additional {@variantrule Healing Skill|GW2|Healing Skills}, for which you qualify, from the {@table Warrior Healing Skills|GW2} table until the number of {@variantrule Healing Skill|GW2|Healing Skill} on your list matches the number on the table. You can only prepare and use one {@variantrule Healing Skill|GW2|Healing Skill} at a time, choosing from your learned {@variantrule Healing Skill|GW2|Healing Skills}. You can change which healing skill you have prepared during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}.",
+				{
+					"type": "statblock",
+					"tag": "variantrule",
+					"name": "Healing Skills",
+					"source": "GW2"
+				},
 				{
 					"type": "statblock",
 					"tag": "table",
@@ -13440,7 +13572,12 @@
 					"source": "GW2",
 					"style": "inset"
 				},
-				"{@b Healing Pool.} Healing requires innate energy. You have a pool of healing power that replenishes when you finish a {@variantrule Long Rest|XPHB}. The pool has a number of healing points equal to 15 times your Warrior level. Once per {@variantrule Long Rest|XPHB}, when you finish a {@variantrule Short Rest|XPHB}, you can choose to regain healing points equal to 5 times your Warrior level. When you use a {@variantrule Skill|GW2} that restores hit points, you must expend healing points from your pool equal to the amount of hit points restored. If you don't have enough healing points in your pool to cover the total hit points restored, you can only restore a number of hit points equal to the remaining healing points in your pool, while the rest is instead applied as {@variantrule Barrier|GW2}, and your pool is reduced to 0. If you do not want to use your healing pool, or cannot, you can choose to apply the healing effect as {@variantrule Barrier|GW2} instead of restoring hit points."
+				{
+					"type": "statblock",
+					"tag": "variantrule",
+					"name": "Healing Pool",
+					"source": "GW2"
+				}
 			]
 		},
 		{
@@ -13451,7 +13588,12 @@
 			"classSource": "GW2",
 			"level": 1,
 			"entries": [
-				"{@b Weapon Skills.} Your Warrior training has given you access to unique ways to use your weapons. Depending on the weapon you wield, your Warrior level, if you have proficiency with that weapon, in which hand you wield it, and if qualify for it, you gain access to different {@variantrule weapon skill|GW2|weapon skills} as shown in the {@table Warrior Weapon Skills|GW2} table. Whenever you attack with one of the weapons as part of a {@variantrule weapon skill|GW2}, you can use your Constitution modifier for the attack and damage rolls instead of using Strength or Dexterity. If a {@variantrule weapon skill|GW2} requires a saving throw, the DC equals to 8 plus your Constitution modifier and proficiency bonus plus any attack bonuses the weapon has.",
+				{
+					"type": "statblock",
+					"tag": "variantrule",
+					"name": "Weapon Skills",
+					"source": "GW2"
+				},
 				{
 					"type": "statblock",
 					"tag": "table",
@@ -13459,7 +13601,12 @@
 					"source": "GW2",
 					"style": "inset"
 				},
-				"{@b Weapon Focus.} Using the {@variantrule skill|GW2|skills} associated with your weapon requires great focus, you can only gain access to the {@variantrule skill|GW2|skills} for one weapon at a time. You can change which weapon you are using during a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}. When you reach certain levels in this class, you can use additional weapons. At level 7 you can use a second weapon, if that weapon is wielded in your off hand."
+				{
+					"type": "statblock",
+					"tag": "variantrule",
+					"name": "Weapon Focus",
+					"source": "GW2"
+				}
 			]
 		},
 		{
@@ -18988,8 +19135,7 @@
 			"featureType": [
 				"THI",
 				"PS",
-				"REAC",
-				"BACT"
+				"SPEC"
 			],
 			"prerequisite": [
 				{
@@ -18997,15 +19143,15 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Reaction/Bonus Action",
-				"{@b Recharge:} {@chance 25|16+}",
-				"{@b Range:} 600",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
+				"{@b Casting Time:} Special",
+				"{@b Recharge:} {@recharge 4}",
+				"{@b Range:} 60 feet",
+				"{@b Target:} 1 hostile creature",
+				"{@b Duration:} Instantaneous",
 				"{@b Properties:} Shadowstep",
 				"{@b Description:} Shadowstep to your foe and steal from them.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Effect:} Choose one hostile creature within range that you can see. Teleport to an unoccupied space within 5 feet of the target. You gain access to a special {@variantrule Skill|GW2} depending on the creature type of the target as shown in the {@table Thief Stolen Skills|GW2} table. You can use that {@variantrule Skill|GW2} once per Steal. If you Steal again before using your {@variantrule Skill|GW2}, you gain a new {@variantrule Skill|GW2}, replacing the existing one.",
+				"{@b Scaling:} The range increases at levels 5 (90 feet), 10 (150 feet), 15 (300 feet), and 20 (500 feet)."
 			]
 		},
 		{
@@ -36640,9 +36786,14 @@
 			"name": "Endurance",
 			"source": "GW2",
 			"entries": [
-				"While you have Endurance, you spend 50 Endurance to take the {@action Dodge|XPHB} Action as a {@variantrule Bonus Action|XPHB} on your turn or as a {@variantrule Reaction|XPHB} when an attack is made against you or your are about to make a Dexterity {@variantrule Saving Throw|XPHB}.",
-				"You can have a maximum Endurance of 100.",
-				"You regain 20 Endurance at the start of your turn."
+				"You have a pool of physical energy you can expend to perform evasive maneuvers, Endurance. You can have a maximum of 100 Endurance and regain 20 at the start of your turn."
+			]
+		},
+		{
+			"name": "Evade",
+			"source": "GW2",
+			"entries": [
+				"When you are targeted by an attack, or forced to make a Strength, Dexterity, or Constitution {@variantrule Saving Throw|XPHB}, you can spend 50 {@variantrule Endurance|GW2} (no {@variantrule Action|XPHB} required) to move up to half your {@variantrule Speed|XPHB} in any direction without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}, potentially moving out of range of the attack or {@variantrule Saving Throw|XPHB}."
 			]
 		},
 		{
@@ -36693,11 +36844,25 @@
 			]
 		},
 		{
+			"name": "Healing Pool",
+			"source": "GW2",
+			"entries": [
+				"Healing requires innate energy. You have a pool of healing power that replenishes when you finish a {@variantrule Long Rest|XPHB}. The pool has a number of healing points equal to 15 times this class's level. Once per {@variantrule Long Rest|XPHB}, when you finish a {@variantrule Short Rest|XPHB}, you can choose to regain healing points equal to 5 times this class's level. When you use a {@variantrule Skill|GW2} that restores hit points, you must expend healing points from your pool equal to the amount of hit points restored. If you don't have enough healing points in your pool to cover the total hit points restored, you can only restore a number of hit points equal to the remaining healing points in your pool, while the rest is instead applied as {@variantrule Barrier|GW2}, and your pool is reduced to 0. If you do not want to use your healing pool, or cannot, you can choose to apply the healing effect as {@variantrule Barrier|GW2} instead of restoring hit points."
+			]
+		},
+		{
 			"name": "Healing Skill",
 			"source": "GW2",
 			"entries": [
 				"{@variantrule Skill|GW2}",
 				"A healing skill is a special type of {@variantrule Skill|GW2} that restores hit points to a target."
+			]
+		},
+		{
+			"name": "Healing Skills",
+			"source": "GW2",
+			"entries": [
+				"To start, you learn one {@variantrule Healing Skill|GW2|Healing Skill} of your choice, for which you qualify, from your class's Healing Skills table (see below). The number of {@variantrule Healing Skill|GW2|Healing Skills} you know increases as you gain levels in this class, as shown in the Healing Skills Known column of the Class Features table. Whenever that number increases, choose additional {@variantrule Healing Skill|GW2|Healing Skills}, for which you qualify, from the table below until the number of {@variantrule Healing Skill|GW2|Healing Skill} on your list matches the number on the table. You can only prepare and use one {@variantrule Healing Skill|GW2|Healing Skill} at a time, choosing from your learned {@variantrule Healing Skill|GW2|Healing Skills}. You can change which healing skill you have prepared during a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}."
 			]
 		},
 		{
@@ -37099,11 +37264,25 @@
 			]
 		},
 		{
+			"name": "Weapon Focus",
+			"source": "GW2",
+			"entries": [
+				"Using the {@variantrule skill|GW2|skills} associated with your weapon requires great focus, you can only gain access to the {@variantrule skill|GW2|skills} for one weapon at a time. You can change which you are focusing on during a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}. At level 7 you can focus on a second weapon, if that weapon is wielded in your off hand."
+			]
+		},
+		{
 			"name": "Weapon Skill",
 			"source": "GW2",
 			"entries": [
 				"{@variantrule Skill|GW2}",
 				"A weapon skill is a special type of {@variantrule Skill|GW2} that requires a specific weapon to use."
+			]
+		},
+		{
+			"name": "Weapon Skills",
+			"source": "GW2",
+			"entries": [
+				"You learned to wield weapons while brining out their full potential. You gain access to different {@variantrule weapon skill|GW2|weapon skills} as shown in the table(s) below. Whenever you attack with one of the weapons as part of a {@variantrule weapon skill|GW2}, you can use your class's ability modifier for the attack and damage rolls instead of using Strength or Dexterity. If a {@variantrule weapon skill|GW2} requires a saving throw, the DC equals to 8 plus your class's ability modifier and proficiency bonus plus any attack bonuses the weapon has."
 			]
 		}
 	]

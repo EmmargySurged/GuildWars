@@ -3499,6 +3499,28 @@
     "language": [],
     "subclass": [
         {
+            "name": "Daredevil",
+            "shortName": "Daredevil",
+            "source": "GW2HoT",
+            "className": "Thief",
+            "classSource": "GW2",
+            "edition": "one",
+            "subclassFeatures": [
+                "Daredevil|Thief|GW2|Daredevil|GW2HoT|1",
+                "Action Combat|Thief|GW2|Daredevil|GW2HoT|1",
+                "Elite Specialization|Thief|GW2|Daredevil|GW2HoT|3",
+                "Daredevil Combat Trait 1|Thief|GW2|Daredevil|GW2HoT|5",
+                "Daredevil RP Trait 1|Thief|GW2|Daredevil|GW2HoT|5",
+                "Daredevil Combat Trait 2|Thief|GW2|Daredevil|GW2HoT|10",
+                "Daredevil RP Trait 2|Thief|GW2|Daredevil|GW2HoT|10",
+                "Daredevil Combat Trait 3|Thief|GW2|Daredevil|GW2HoT|15",
+                "Daredevil RP Trait 3|Thief|GW2|Daredevil|GW2HoT|15",
+                "Daredevil Combat Trait 4|Thief|GW2|Daredevil|GW2HoT|20"
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true
+        },
+        {
             "name": "Berserker",
             "shortName": "Berserker",
             "source": "GW2HoT",
@@ -3507,6 +3529,7 @@
             "edition": "one",
             "subclassFeatures": [
                 "Berserker|Warrior|GW2|Berserker|GW2HoT|1",
+                "Action Combat|Warrior|GW2|Berserker|GW2HoT|1",
                 "Elite Specialization|Warrior|GW2|Berserker|GW2HoT|3",
                 "Primal Adrenaline|Warrior|GW2|Berserker|GW2HoT|5",
                 "Champion of Fire|Warrior|GW2|Berserker|GW2HoT|5",
@@ -3543,6 +3566,148 @@
     ],
     "subclassFeature": [
         {
+            "name": "Daredevil",
+            "source": "GW2HoT",
+            "className": "Thief",
+            "classSource": "GW2",
+            "subclassShortName": "Daredevil",
+            "subclassSource": "GW2HoT",
+            "level": 1,
+            "entries": [
+                "{@b Skills.} You have adopted the Daredevil Elite Specialization. You gain proficiency with {@item Staff|XPHB|Staffs} and can use their {@variantrule Weapon Skill|GW2|Weapon Skills}. You now qualify to learn Daredevil specific {@variantrule Healing Skill|GW2|Healing Skills}, {@variantrule Utility Skill|GW2|Utility Skills}, and {@variantrule Elite Skill|GW2|Elite Skills} when you choose your skills.",
+                "{@b Steal.} You gain access to the {@optfeature Steal|GW2} skill.",
+                {
+                    "type": "statblock",
+                    "tag": "table",
+                    "name": "Thief Stolen Skills",
+                    "source": "GW2",
+                    "style": "inset"
+                },
+                "{@b Mobile Combatant I.} Your {@variantrule Speed|XPHB} increases by 10 feet. You gain {@variantrule Climb Speed|XPHB} to your {@variantrule Speed|XPHB}.",
+                "{@b Active Defense.} When you Evade you gain a bonus to your {@variantrule Armor Class|XPHB} and {@variantrule Saving Throws|XPHB} until the start of your next turn. The bonus equals your Dexterity modifier. You can only gain this bonus once per round.",
+                "{@b Expert Acrobat.} You gain {@variantrule Proficiency|XPHB} in the {@skill Acrobatics} skill. If you already have {@variantrule Proficiency|XPHB}, you gain {@variantrule Expertise|XPHB} instead."
+            ]
+        },
+        {
+            "name": "Action Combat",
+            "source": "GW2HoT",
+            "className": "Thief",
+            "classSource": "GW2",
+            "subclassShortName": "Daredevil",
+            "subclassSource": "GW2HoT",
+            "level": 1,
+            "entries": [
+                {
+                    "type": "statblock",
+                    "tag": "variantrule",
+                    "name": "Endurance",
+                    "source": "GW2"
+                },
+                {
+                    "type": "statblock",
+                    "tag": "variantrule",
+                    "name": "Evade",
+                    "source": "GW2"
+                }
+            ]
+        },
+        {
+            "name": "Elite Specialization",
+            "source": "GW2HoT",
+            "className": "Thief",
+            "classSource": "GW2",
+            "subclassShortName": "Daredevil",
+            "subclassSource": "GW2HoT",
+            "level": 3,
+            "entries": [
+                "{@b Daredevil Specialization.} You gain access to the {@table Thief Traits|GW2|Daredevil} Specialization and learn its Minor Adept {@variantrule traits|GW2|trait} {@optfeature Physical Supremacy|GW2HoT}."
+            ]
+        },
+        {
+            "name": "Daredevil Combat Trait 1",
+            "source": "GW2HoT",
+            "className": "Thief",
+            "classSource": "GW2",
+            "subclassShortName": "Daredevil",
+            "subclassSource": "GW2HoT",
+            "level": 5,
+            "entries": [
+                "{@b Mobile Combatant II.} Your {@variantrule Speed|XPHB} increases by a further 10 feet. You gain the ability to move along vertical surfaces and across liquids on your turn without falling during the movement."
+            ]
+        },
+        {
+            "name": "Daredevil RP Trait 1",
+            "source": "GW2HoT",
+            "className": "Thief",
+            "classSource": "GW2",
+            "subclassShortName": "Daredevil",
+            "subclassSource": "GW2HoT",
+            "level": 5,
+            "entries": [
+                ""
+            ]
+        },
+        {
+            "name": "Daredevil Combat Trait 2",
+            "source": "GW2HoT",
+            "className": "Thief",
+            "classSource": "GW2",
+            "subclassShortName": "Daredevil",
+            "subclassSource": "GW2HoT",
+            "level": 10,
+            "entries": [
+                ""
+            ]
+        },
+        {
+            "name": "Daredevil RP Trait 2",
+            "source": "GW2HoT",
+            "className": "Thief",
+            "classSource": "GW2",
+            "subclassShortName": "Daredevil",
+            "subclassSource": "GW2HoT",
+            "level": 10,
+            "entries": [
+                ""
+            ]
+        },
+        {
+            "name": "Daredevil Combat Trait 3",
+            "source": "GW2HoT",
+            "className": "Thief",
+            "classSource": "GW2",
+            "subclassShortName": "Daredevil",
+            "subclassSource": "GW2HoT",
+            "level": 15,
+            "entries": [
+                ""
+            ]
+        },
+        {
+            "name": "Daredevil RP Trait 3",
+            "source": "GW2HoT",
+            "className": "Thief",
+            "classSource": "GW2",
+            "subclassShortName": "Daredevil",
+            "subclassSource": "GW2HoT",
+            "level": 15,
+            "entries": [
+                ""
+            ]
+        },
+        {
+            "name": "Daredevil Combat Trait 4",
+            "source": "GW2HoT",
+            "className": "Thief",
+            "classSource": "GW2",
+            "subclassShortName": "Daredevil",
+            "subclassSource": "GW2HoT",
+            "level": 20,
+            "entries": [
+                ""
+            ]
+        },
+        {
             "name": "Berserker",
             "source": "GW2HoT",
             "className": "Warrior",
@@ -3570,6 +3735,29 @@
                     ]
                 },
                 "Once you exit the Berserk state, it must recharge {@recharge 2} before you can enter it again."
+            ]
+        },
+        {
+            "name": "Action Combat",
+            "source": "GW2HoT",
+            "className": "Warrior",
+            "classSource": "GW2",
+            "subclassShortName": "Berserker",
+            "subclassSource": "GW2HoT",
+            "level": 1,
+            "entries": [
+                {
+                    "type": "statblock",
+                    "tag": "variantrule",
+                    "name": "Endurance",
+                    "source": "GW2"
+                },
+                {
+                    "type": "statblock",
+                    "tag": "variantrule",
+                    "name": "Evade",
+                    "source": "GW2"
+                }
             ]
         },
         {

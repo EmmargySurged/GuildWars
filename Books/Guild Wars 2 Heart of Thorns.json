@@ -1186,41 +1186,45 @@
         },
         {
             "name": "Physical Supremacy",
-            "source": "GWHoT",
+            "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "Minor",
-                "Adept"
+                "MIT",
+                "ADT",
+                "THI",
+                "DAR"
             ],
             "prerequisite": [
                 {
-                    "other": "Minor Adept"
+                    "other": "Daredevil Thief"
                 }
             ],
             "entries": [
-                "Gain access to physical skills. Your maximum endurance threshold is increased."
+                "Your {@variantrule Endurance|GW2} increases to 150, and you regain 30 at the start of your turn instead of 20."
             ]
         },
         {
             "name": "Marauder's Resilience",
-            "source": "GWHoT",
+            "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "Major",
-                "Adept"
+                "MJT",
+                "ADT",
+                "THI",
+                "DAR"
             ],
             "prerequisite": [
                 {
-                    "other": "Major Adept"
+                    "other": "{@optfeature Physical Supremacy|GW2HoT}"
                 }
             ],
             "entries": [
-                "Gain vitality based on a portion of your power. Damage is decreased from foes within the range threshold."
+                "For every five points of {@variantrule Attribute|GW2|Power} you have, you gain 1 point of {@variantrule Attribute|GW2|Vitality}."
             ]
         },
         {
             "name": "Escapist's Fortitude",
-            "source": "GWHoT",
+            "source": "GW2HoT",
             "page": "",
             "featureType": [
                 "Major",
@@ -1237,7 +1241,7 @@
         },
         {
             "name": "Brawler's Tenacity",
-            "source": "GWHoT",
+            "source": "GW2HoT",
             "page": "",
             "featureType": [
                 "Major",
@@ -1254,7 +1258,7 @@
         },
         {
             "name": "Weakening Strikes",
-            "source": "GWHoT",
+            "source": "GW2HoT",
             "page": "",
             "featureType": [
                 "Minor",
@@ -1271,7 +1275,7 @@
         },
         {
             "name": "Staff Master",
-            "source": "GWHoT",
+            "source": "GW2HoT",
             "page": "",
             "featureType": [
                 "Major",
@@ -1288,7 +1292,7 @@
         },
         {
             "name": "Havoc Specialist",
-            "source": "GWHoT",
+            "source": "GW2HoT",
             "page": "",
             "featureType": [
                 "Major",
@@ -1305,7 +1309,7 @@
         },
         {
             "name": "Impacting Disruption",
-            "source": "GWHoT",
+            "source": "GW2HoT",
             "page": "",
             "featureType": [
                 "Major",
@@ -1322,7 +1326,7 @@
         },
         {
             "name": "Endurance Thief",
-            "source": "GWHoT",
+            "source": "GW2HoT",
             "page": "",
             "featureType": [
                 "Minor",
@@ -1339,7 +1343,7 @@
         },
         {
             "name": "Lotus Training",
-            "source": "GWHoT",
+            "source": "GW2HoT",
             "page": "",
             "featureType": [
                 "Major",
@@ -1356,7 +1360,7 @@
         },
         {
             "name": "Unhindered Combatant",
-            "source": "GWHoT",
+            "source": "GW2HoT",
             "page": "",
             "featureType": [
                 "Major",
@@ -1373,7 +1377,7 @@
         },
         {
             "name": "Bounding Dodger",
-            "source": "GWHoT",
+            "source": "GW2HoT",
             "page": "",
             "featureType": [
                 "Major",
@@ -3583,7 +3587,7 @@
                     "source": "GW2",
                     "style": "inset"
                 },
-                "{@b Mobile Combatant I.} Your {@variantrule Speed|XPHB} increases by 10 feet. You gain {@variantrule Climb Speed|XPHB} to your {@variantrule Speed|XPHB}.",
+                "{@b Mobile Combatant I.} Your {@variantrule Speed|XPHB} increases by 10 feet. You gain a {@variantrule Climb Speed|XPHB} equal to your {@variantrule Speed|XPHB}.",
                 "{@b Active Defense.} When you Evade you gain a bonus to your {@variantrule Armor Class|XPHB} and {@variantrule Saving Throws|XPHB} until the start of your next turn. The bonus equals your Dexterity modifier. You can only gain this bonus once per round.",
                 "{@b Expert Acrobat.} You gain {@variantrule Proficiency|XPHB} in the {@skill Acrobatics} skill. If you already have {@variantrule Proficiency|XPHB}, you gain {@variantrule Expertise|XPHB} instead."
             ]
@@ -3620,7 +3624,7 @@
             "subclassSource": "GW2HoT",
             "level": 3,
             "entries": [
-                "{@b Daredevil Specialization.} You gain access to the {@table Thief Traits|GW2|Daredevil} Specialization and learn its Minor Adept {@variantrule traits|GW2|trait} {@optfeature Physical Supremacy|GW2HoT}."
+                "{@b Daredevil Specialization.} You gain access to the {@table Thief Traits|GW2|Daredevil} Specialization and learn its Minor Adept {@variantrule Trait|GW2} {@optfeature Physical Supremacy|GW2HoT}."
             ]
         },
         {
@@ -3632,7 +3636,9 @@
             "subclassSource": "GW2HoT",
             "level": 5,
             "entries": [
-                "{@b Mobile Combatant II.} Your {@variantrule Speed|XPHB} increases by a further 10 feet. You gain the ability to move along vertical surfaces and across liquids on your turn without falling during the movement."
+                "{@b Wall Running.} Your {@variantrule Speed|XPHB} increases by a further 10 feet. You gain the ability to move along vertical surfaces and across liquids on your turn without falling during the movement.",
+                "{@b Jumper.} When performing a {@variantrule High Jump|XPHB} or {@variantrule Long Jump|XPHB} you use Dexterity instead of Strength. Your jump distance is tripled.",
+                "{@b Studied Response.} After a creature has hit you with an attack, or you failed a {@variantrule Saving Throw|XPHB} against an effect created by a creature, you can take a {@variantrule Reaction|XPHB} when you are hit by that creature or fail a {@variantrule Saving Throw|XPHB} against that creature, to instead make the attack miss or to succeed on the {@variantrule Saving Throw|XPHB}."
             ]
         },
         {

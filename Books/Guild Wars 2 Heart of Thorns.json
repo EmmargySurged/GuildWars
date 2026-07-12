@@ -1219,7 +1219,7 @@
                 }
             ],
             "entries": [
-                "For every five points of {@variantrule Attribute|GW2|Power} you have, you gain 1 point of {@variantrule Attribute|GW2|Vitality}."
+                "For every seven points of {@variantrule Attribute|GW2|Power} you have, you gain 1 point of {@variantrule Attribute|GW2|Vitality}. When you take {@variantrule Strike Damage|GW2}, if the source of the damage is within 20 feet of you, you take 10% less damage."
             ]
         },
         {
@@ -1227,16 +1227,18 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "Major",
-                "Adept"
+                "MJT",
+                "ADT",
+                "THI",
+                "DAR"
             ],
             "prerequisite": [
                 {
-                    "other": "Major Adept"
+                    "other": "{@optfeature Physical Supremacy|GW2HoT}"
                 }
             ],
             "entries": [
-                "Gain health when you successfully evade an attack. Remove a condition whenever you evade an attack."
+                "Once per turn, when an attack misses you or you succeed on a {@variantrule Saving Throw|XPHB}, you regain {@variantrule Hit Points|XPHB} equal to your Thief level and you remove the latest {@variantrule Condition|GW2} affecting you."
             ]
         },
         {
@@ -1244,16 +1246,18 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "Major",
-                "Adept"
+                "MJT",
+                "ADT",
+                "THI",
+                "DAR"
             ],
             "prerequisite": [
                 {
-                    "other": "Major Adept"
+                    "other": "{@optfeature Physical Supremacy|GW2HoT}"
                 }
             ],
             "entries": [
-                "Physical skills grant endurance when activated."
+                "When you activate a Physical {@variantrule Skill|GW2}, you regain 15 {@variantrule Endurance|GW2}."
             ]
         },
         {
@@ -1261,16 +1265,18 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "Minor",
-                "Master"
+                "MIT",
+                "MAT",
+                "THI",
+                "DAR"
             ],
             "prerequisite": [
                 {
-                    "other": "Minor Master"
+                    "other": "{@optfeature Marauder's Resilience|GW2HoT} or {@optfeature Escapist's Fortitude|GW2HoT} or {@optfeature Brawler's Tenacity|GW2HoT}"
                 }
             ],
             "entries": [
-                "Your next attack after dodging causes weakness to foes struck. Weakened enemies deal less damage to you, and you deal increased strike damage to them."
+                "After you {@variantrule Evade|GW2}, the next time you deal damage to one or more creatures, you also inflict {@variantrule Weakness|GW2} on them for 1 round. You take 10% less {@variantrule Strike Damage|GW2} from creatures affected by {@variantrule Weakness|GW2} and deal 10% more {@variantrule Strike Damage|GW2} to them."
             ]
         },
         {
@@ -1278,16 +1284,19 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "Major",
-                "Master"
+                "MJT",
+                "MAT",
+                "THI",
+                "DAR"
             ],
             "prerequisite": [
                 {
-                    "other": "Major Master"
+                    "other": "{@optfeature Weakening Strikes|GW2HoT}"
                 }
             ],
             "entries": [
-                "While wielding a staff, gain endurance for each initiative point spent. Gain bonus power, which is increased when wielding a staff."
+                "While wielding a {@item Staff|XPHB}, you regain 2 {@variantrule Endurance|GW2} for each {@variantrule Initiative Point|GW2} you spend on a {@variantrule Skill|GW2}.",
+                "You gain a bonus to your {@variantrule Attribute|GW2|Power}. This bonus equals 6 times your Thief level. This bonus is double while wielding a {@item Staff|XPHB}."
             ]
         },
         {
@@ -1295,16 +1304,18 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "Major",
-                "Master"
+                "MJT",
+                "MAT",
+                "THI",
+                "DAR"
             ],
             "prerequisite": [
                 {
-                    "other": "Major Master"
+                    "other": "{@optfeature Weakening Strikes|GW2HoT}"
                 }
             ],
             "entries": [
-                "Strike damage dealt is increased when your endurance is not full."
+                "While you are not at maximum {@variantrule Endurance|GW2}, you deal 15% more {@variantrule Strike Damage|GW2}."
             ]
         },
         {
@@ -1312,16 +1323,19 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "Major",
-                "Master"
+                "MJT",
+                "MAT",
+                "THI",
+                "DAR"
             ],
             "prerequisite": [
                 {
-                    "other": "Major Master"
+                    "other": "{@optfeature Weakening Strikes|GW2HoT}"
                 }
             ],
             "entries": [
-                "Recharge steal and inflict a pulmonary impact when you interrupt an enemy. This trait can only affect enemies with defiance bars once per interval."
+                "When you {@variantrule Interrupt|GW2} a creature, you inflict a {@variantrule Pulmonary Impact|GW2HoT}, dealing {@damage 1d8} damage, and you can attempt to recharge {@optfeature Steal|GW2}.",
+                "{@b Scaling.} The damage increases by {@damage 1d8} when you reach levels 5 ({@damage 2d8}), 11 ({@damage 3d8}), and 17 ({@damage 4d8})."
             ]
         },
         {
@@ -1329,16 +1343,18 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "Minor",
-                "Grandmaster"
+                "MIT",
+                "GMT",
+                "THI",
+                "DAR"
             ],
             "prerequisite": [
                 {
-                    "other": "Minor Grandmaster"
+                    "other": "{@optfeature Staff Master|GW2HoT} or {@optfeature Havoc Specialist|GW2HoT} or {@optfeature Impacting Disruption|GW2HoT}"
                 }
             ],
             "entries": [
-                "Gain endurance when you successfully steal from an enemy."
+                "When successfully use {@optfeature Steal|GW2}, you regain 50 {@variantrule Endurance|GW2}."
             ]
         },
         {
@@ -1346,16 +1362,18 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "Major",
-                "Grandmaster"
+                "MJT",
+                "GMT",
+                "THI",
+                "DAR"
             ],
             "prerequisite": [
                 {
-                    "other": "Major Grandmaster"
+                    "other": "{@optfeature Endurance Thief|GW2HoT}"
                 }
             ],
             "entries": [
-                "Your dodge ability now uses Impaling Lotus, firing daggers at nearby enemies. Gain increased condition damage for a period of time when dodging."
+                "When you {@variantrule Evade|GW2}, you deal 15% more {@variantrule Condition Damage|GW2} for 1 round and you can choose to spin through the air, using your {@variantrule High Jump|XPHB} height for determining if you can jump over creatures, throwing daggers at your enemies. Choose up to three creatures within 20 feet of you along the path of your spin. Each creature must make a Dexterity {@variantrule Saving Throw|XPHB} or take {@damage 1} piercing damage and be inflicted with 2 stacks of {@variantrule Bleeding|GW2} for 1 round, 2 stacks of {@variantrule Torment|GW2} for 1 round, and 1 round of {@variantrule Crippled|GW2}. This movement is considered a {@variantrule Combo Finisher|GW2|Whirl Finisher}."
             ]
         },
         {
@@ -1363,16 +1381,18 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "Major",
-                "Grandmaster"
+                "MJT",
+                "GMT",
+                "THI",
+                "DAR"
             ],
             "prerequisite": [
                 {
-                    "other": "Major Grandmaster"
+                    "other": "{@optfeature Endurance Thief|GW2HoT}"
                 }
             ],
             "entries": [
-                "Your dodge ability is replaced by a long-range dash that removes inhibiting conditions and grants swiftness and damage reduction. Removing conditions in this way temporarily reduces endurance gain."
+                "The distance you can move when you {@variantrule Evade|GW2} is increased by 100% and you can move through enemies. When you {@variantrule Evade|GW2}, you remove {@variantrule Chilled|GW2} and {@variantrule Immobilized|GW2} from yourself, you take 10% less damage for 1 round and you gain {@variantrule Swiftness|GW2} for 2 rounds."
             ]
         },
         {
@@ -1380,16 +1400,19 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "Major",
-                "Grandmaster"
+                "MJT",
+                "GMT",
+                "THI",
+                "DAR"
             ],
             "prerequisite": [
                 {
-                    "other": "Major Grandmaster"
+                    "other": "{@optfeature Endurance Thief|GW2HoT}"
                 }
             ],
             "entries": [
-                "Your dodge ability is replaced by Bound, dealing damage to the area after you evade. Gain increased strike damage for a period of time after you dodge."
+                "When you {@variantrule Evade|GW2}, you deal 15% more {@variantrule Strike Damage|GW2} for 1 round and you can choose to leap through the air, using your {@variantrule High Jump|XPHB} height for determining if you can jump over creatures, striking enemies at your destination. Up to five creatures within 5 feet of your destination must make a Dexterity {@variantrule Saving Throw|XPHB} or take {@damage 2d8} bludgeoning damage. On a successful save, a creature takes half damage. This movement is considered a {@variantrule Combo Finisher|GW2|Leap Finisher}.",
+                "{@b Scaling.} The damage increases by {@damage 1d8} when you reach levels 5 ({@damage 3d8}), 11 ({@damage 4d8}), and 17 ({@damage 5d8})."
             ]
         },
         {
@@ -3871,6 +3894,16 @@
                 "{@b Base Anger.} While in your Berserk state, when you start your turn with less than 10 strikes of Adrenaline, you gain 5 strikes of Adrenaline.",
                 "{@b No Time to Die.} When you are reduced to 0 hit points while in your Berserk state, you can choose to drop to 1 hit point instead and end your Berserk state.",
                 "{@b Regent of Flame.} While in your Berserk state, fire damage you deal ignores resistance and immunity."
+            ]
+        }
+    ],
+    "variantrule": [
+        {
+            "name": "Pulmonary Impact",
+            "source": "GW2HoT",
+            "entries": [
+                "{@variantrule Status|GW2}",
+                "When this {@variantrule Status|GW2} ends, the creature affected by it takes {@variantrule Physical Damage|XPHB} specified by the effect that applied it."
             ]
         }
     ]

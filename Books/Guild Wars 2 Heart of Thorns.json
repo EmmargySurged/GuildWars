@@ -1373,7 +1373,31 @@
                 }
             ],
             "entries": [
-                "When you {@variantrule Evade|GW2}, you deal 15% more {@variantrule Condition Damage|GW2} for 1 round and you can choose to spin through the air, using your {@variantrule High Jump|XPHB} height for determining if you can jump over creatures, throwing daggers at your enemies. Choose up to three creatures within 20 feet of you along the path of your spin. Each creature must make a Dexterity {@variantrule Saving Throw|XPHB} or take {@damage 1} piercing damage and be inflicted with 2 stacks of {@variantrule Bleeding|GW2} for 1 round, 2 stacks of {@variantrule Torment|GW2} for 1 round, and 1 round of {@variantrule Crippled|GW2}. This movement is considered a {@variantrule Combo Finisher|GW2|Whirl Finisher}."
+                "When you {@variantrule Evade|GW2}, you deal 15% more {@variantrule Condition Damage|GW2} for 1 round and your usual movement is replaced by {@optfeature Impaling Lotus|GW2HoT}."
+            ]
+        },
+        {
+            "name": "Impaling Lotus",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "THI",
+                "DAR",
+                "CIW"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Lotus Training|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "{@b Range:} Half your {@variantrule Speed|XPHB}",
+                "{@b Target:} Up to 3 hostile creatures",
+                "{@b Duration:} Instantaneous",
+                "{@b Properties:} {@variantrule Combo Finisher|GW2}: Whirl, Movement",
+                "{@b Description:} Evade attacks and hurl damaging daggers, dealing multiple conditions to enemies.",
+                "{@b Effect:} You spin through the air to an unoccupied space within range that you can see, using your {@variantrule High Jump|XPHB} height for determining if you can jump over creatures, throwing daggers at your enemies. Choose up to three creatures within 20 feet of you along the path of your spin. Each creature must make a Dexterity {@variantrule Saving Throw|XPHB} or take {@damage 1} piercing damage and be inflicted with 2 stacks of {@variantrule Bleeding|GW2} for 1 round, 2 stacks of {@variantrule Torment|GW2} for 1 round, and 1 round of {@variantrule Crippled|GW2}. This movement is considered a {@variantrule Combo Finisher|GW2|Whirl Finisher}.",
+                "{@b Scaling:} The number of conditions inflicted and their duration increases when you reach levels 5 (3 stacks of {@variantrule Bleeding|GW2}, 3 stacks of {@variantrule Torment|GW2}, 2 rounds of {@variantrule Crippled|GW2}), 11 (4 stacks of {@variantrule Bleeding|GW2}, 4 stacks of {@variantrule Torment|GW2}, 3 rounds of {@variantrule Crippled|GW2}), and 17 (5 stacks of {@variantrule Bleeding|GW2}, 5 stacks of {@variantrule Torment|GW2}, 3 rounds of {@variantrule Crippled|GW2})"
             ]
         },
         {
@@ -1392,7 +1416,30 @@
                 }
             ],
             "entries": [
-                "The distance you can move when you {@variantrule Evade|GW2} is increased by 100% and you can move through enemies. When you {@variantrule Evade|GW2}, you remove {@variantrule Chilled|GW2} and {@variantrule Immobilized|GW2} from yourself, you take 10% less damage for 1 round and you gain {@variantrule Swiftness|GW2} for 2 rounds."
+                "When you {@variantrule Evade|GW2}, you take 10% less damage for 1 round and your usual movement is replaced by {@optfeature Dash|GW2HoT}."
+            ]
+        },
+        {
+            "name": "Dash",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "THI",
+                "DAR",
+                "CIW"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Unhindered Combatant|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "{@b Range:} Your {@variantrule Speed|XPHB}",
+                "{@b Target:} Self",
+                "{@b Duration:} Instantaneous",
+                "{@b Properties:} Movement",
+                "{@b Description:} Your dodge ability is replaced by a long-range dash.",
+                "{@b Effect:} You dash along surfaces through any creatures in your way to an unoccupied space within range that you can see. You remove {@variantrule Chilled|GW2} and {@variantrule Immobilized|GW2} from yourself and gain {@variantrule Swiftness|GW2} for 2 rounds."
             ]
         },
         {
@@ -1411,7 +1458,30 @@
                 }
             ],
             "entries": [
-                "When you {@variantrule Evade|GW2}, you deal 15% more {@variantrule Strike Damage|GW2} for 1 round and you can choose to leap through the air, using your {@variantrule High Jump|XPHB} height for determining if you can jump over creatures, striking enemies at your destination. Up to five creatures within 5 feet of your destination must make a Dexterity {@variantrule Saving Throw|XPHB} or take {@damage 2d8} bludgeoning damage. On a successful save, a creature takes half damage. This movement is considered a {@variantrule Combo Finisher|GW2|Leap Finisher}.",
+                "When you {@variantrule Evade|GW2}, you deal 15% more {@variantrule Strike Damage|GW2} for 1 round and your usual movement is replaced by {@optfeature Bound|GW2HoT}."
+            ]
+        },
+        {
+            "name": "Bound",
+            "source": "GW2HoT",
+            "page": "",
+            "featureType": [
+                "THI",
+                "DAR",
+                "CIW"
+            ],
+            "prerequisite": [
+                {
+                    "other": "{@optfeature Bounding Dodger|GW2HoT}"
+                }
+            ],
+            "entries": [
+                "{@b Range:} Half your {@variantrule Speed|XPHB}",
+                "{@b Target:} Up to 5 creatures",
+                "{@b Duration:} Instantaneous",
+                "{@b Properties:} {@variantrule Combo Finisher|GW2}: Leap, Movement",
+                "{@b Description:} Leap into an area, and deliver a massive blow to enemies.",
+                "{@b Effect:}  You leap through the air to an unoccupied space within range that you can see, using your {@variantrule High Jump|XPHB} height for determining if you can jump over creatures, striking enemies at your destination. Up to five creatures within 5 feet of your destination must make a Dexterity {@variantrule Saving Throw|XPHB} or take {@damage 2d8} bludgeoning damage. On a successful save, a creature takes half damage. This movement is considered a {@variantrule Combo Finisher|GW2|Leap Finisher}.",
                 "{@b Scaling.} The damage increases by {@damage 1d8} when you reach levels 5 ({@damage 3d8}), 11 ({@damage 4d8}), and 17 ({@damage 5d8})."
             ]
         },
@@ -3810,7 +3880,7 @@
             "subclassSource": "GW2HoT",
             "level": 5,
             "entries": [
-                "{@b More Adrenaline.} Your maximum Adrenaline outside of Berserk state increases by 10, to a total of 20.", 
+                "{@b More Adrenaline.} Your maximum Adrenaline outside of Berserk state increases by 10, to a total of 20.",
                 "{@b Head Start I.} When you roll {@variantrule Initiative|XPHB} you gain five strikes of Adrenaline.",
                 "{@b Burn!} While in your Berserk state, when you deal non-fire damage to a creature, you can choose to convert that damage to fire damage."
             ]
@@ -3824,7 +3894,7 @@
             "subclassSource": "GW2HoT",
             "level": 5,
             "entries": [
-                "{@b Born in Fire.} You gain resistance to fire damage." ,
+                "{@b Born in Fire.} You gain resistance to fire damage.",
                 "{@b Fire Magic.} You learn the {@spell Control Flames|XGE}, {@spell Produce Flame|XPHB} and {@spell Continual Flame|XPHB} {@variantrule Spell|XPHB|Spells}, Constitution is your spellcasting ability for them. You can cast them without expending a spell slot or material components",
                 "{@b Exotic Language.} You known Ignan."
             ]
@@ -3838,7 +3908,7 @@
             "subclassSource": "GW2HoT",
             "level": 10,
             "entries": [
-                "{@b Even More Adrenaline.} When you take damage from a hostile creature, you gain one strike of Adrenaline." ,
+                "{@b Even More Adrenaline.} When you take damage from a hostile creature, you gain one strike of Adrenaline.",
                 "{@b Head Start II.} When you roll {@variantrule Initiative|XPHB} you gain an additional five strikes of Adrenaline, for a total of ten.",
                 "{@b Burn! Burn!} While in your Berserk state, fire damage you deal ignores resistance."
             ]

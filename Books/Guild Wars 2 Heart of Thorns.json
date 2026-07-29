@@ -3577,6 +3577,53 @@
     "spell": [],
     "table": [
         {
+            "name": "Acrobatic Busking",
+            "source": "GW2HoT",
+            "page": "",
+            "colLabels": [
+                "Difficulty",
+                "Poor",
+                "Lower-Class",
+                "Working-Class",
+                "Upper-Class",
+                "Nobility/Ultra Rich"
+            ],
+            "rows": [
+                [
+                    "Easy",
+                    "{@dice 1d4} gp",
+                    "{@dice 2d4} gp",
+                    "{@dice 4d4} gp",
+                    "{@dice 6d6} gp",
+                    "{@dice 10d8} gp"
+                ],
+                [
+                    "Medium",
+                    "{@dice 1d6} gp",
+                    "{@dice 2d6} gp",
+                    "{@dice 4d6} gp",
+                    "{@dice 8d8} gp",
+                    "{@dice 15d10} gp"
+                ],
+                [
+                    "Hard",
+                    "{@dice 1d8} gp",
+                    "{@dice 2d8} gp",
+                    "{@dice 4d8} gp",
+                    "{@dice 10d10} gp",
+                    "{@dice 20d12} gp"
+                ],
+                [
+                    "Impossible",
+                    "{@dice 1d10} gp",
+                    "{@dice 2d10} gp",
+                    "{@dice 4d10} gp",
+                    "{@dice 12d12} gp",
+                    "{@dice 25d100} gp"
+                ]
+            ]
+        },
+        {
             "name": "Warrior Primal Burst Skills",
             "source": "GW2HoT",
             "page": "",
@@ -3654,13 +3701,13 @@
                 "Daredevil|Thief|GW2|Daredevil|GW2HoT|1",
                 "Action Combat|Thief|GW2|Daredevil|GW2HoT|1",
                 "Elite Specialization|Thief|GW2|Daredevil|GW2HoT|3",
-                "Daredevil Combat Trait 1|Thief|GW2|Daredevil|GW2HoT|5",
-                "Daredevil RP Trait 1|Thief|GW2|Daredevil|GW2HoT|5",
-                "Daredevil Combat Trait 2|Thief|GW2|Daredevil|GW2HoT|10",
-                "Daredevil RP Trait 2|Thief|GW2|Daredevil|GW2HoT|10",
-                "Daredevil Combat Trait 3|Thief|GW2|Daredevil|GW2HoT|15",
-                "Daredevil RP Trait 3|Thief|GW2|Daredevil|GW2HoT|15",
-                "Daredevil Combat Trait 4|Thief|GW2|Daredevil|GW2HoT|20"
+                "Who needs Flight?|Thief|GW2|Daredevil|GW2HoT|5",
+                "Acrobatic Solutions|Thief|GW2|Daredevil|GW2HoT|5",
+                "Never Again|Thief|GW2|Daredevil|GW2HoT|10",
+                "Side Business|Thief|GW2|Daredevil|GW2HoT|10",
+                "Close Quarters Expert|Thief|GW2|Daredevil|GW2HoT|15",
+                "Body and Mind|Thief|GW2|Daredevil|GW2HoT|15",
+                "Momentum Incarnate|Thief|GW2|Daredevil|GW2HoT|20"
             ],
             "hasFluff": true,
             "hasFluffImages": true
@@ -3729,7 +3776,7 @@
                     "style": "inset"
                 },
                 "{@b Mobile Combatant I.} Your {@variantrule Speed|XPHB} increases by 10 feet. You gain a {@variantrule Climb Speed|XPHB} equal to your {@variantrule Speed|XPHB}.",
-                "{@b Active Defense.} When you Evade you gain a bonus to your {@variantrule Armor Class|XPHB} and {@variantrule Saving Throws|XPHB} until the start of your next turn. The bonus equals your Dexterity modifier. You can only gain this bonus once per round.",
+                "{@b Active Defense.} When you {@variantrule Evade|GW2} you gain a bonus to your {@variantrule Armor Class|XPHB} and {@variantrule Saving Throws|XPHB} until the start of your next turn. The bonus equals your Dexterity modifier. You can only gain this bonus once per round.",
                 "{@b Expert Acrobat.} You gain {@variantrule Proficiency|XPHB} in the {@skill Acrobatics} skill. If you already have {@variantrule Proficiency|XPHB}, you gain {@variantrule Expertise|XPHB} instead."
             ]
         },
@@ -3769,7 +3816,7 @@
             ]
         },
         {
-            "name": "Daredevil Combat Trait 1",
+            "name": "Who needs Flight?",
             "source": "GW2HoT",
             "className": "Thief",
             "classSource": "GW2",
@@ -3777,25 +3824,38 @@
             "subclassSource": "GW2HoT",
             "level": 5,
             "entries": [
-                "{@b Wall Running.} Your {@variantrule Speed|XPHB} increases by a further 10 feet. You gain the ability to move along vertical surfaces and across liquids on your turn without falling during the movement.",
-                "{@b Jumper.} When performing a {@variantrule High Jump|XPHB} or {@variantrule Long Jump|XPHB} you use Dexterity instead of Strength. Your jump distance is tripled.",
+                "{@b Mobile Combatant II.} Your {@variantrule Speed|XPHB} increases by a further 10 feet. You gain the ability to move along vertical surfaces and across liquids on your turn without falling during the movement.",
+                "{@b Jumper.} When performing a {@variantrule High Jump|XPHB} or {@variantrule Long Jump|XPHB} you use Dexterity instead of Strength. Your jump distance is tripled."
+            ]
+        },
+        {
+            "name": "Acrobatic Solutions",
+            "source": "GW2HoT",
+            "className": "Thief",
+            "classSource": "GW2",
+            "subclassShortName": "Daredevil",
+            "subclassSource": "GW2HoT",
+            "level": 5,
+            "entries": [
+                "{@b Impressive Acrobat.} You can use your impressive Acrobatic skills to impress people. When you make an {@skill Intimidation|XPHB}, {@skill Performance|XPHB} or {@skill Persuasion|XPHB} check you can make an {@skill Acrobatics|XPHB} check instead, if the situation is appropriate (as determined by the DM).",
+                "{@b Old Reliable.} One per {@variantrule Short Rest|XPHB} when you fail a Dexterity skill check, you can choose to re-attempt the check by doing an {@skill Acrobatics|XPHB} check instead."
+            ]
+        },
+        {
+            "name": "Never Again",
+            "source": "GW2HoT",
+            "className": "Thief",
+            "classSource": "GW2",
+            "subclassShortName": "Daredevil",
+            "subclassSource": "GW2HoT",
+            "level": 10,
+            "entries": [
+                "{@b Mobile Combatant III.} Your {@variantrule Speed|XPHB} increases by a further 10 feet. When you take damage from falling you can reduce that damage by an amount equal to ten times your Thief level.",
                 "{@b Studied Response.} After a creature has hit you with an attack, or you failed a {@variantrule Saving Throw|XPHB} against an effect created by a creature, you can take a {@variantrule Reaction|XPHB} when you are hit by that creature or fail a {@variantrule Saving Throw|XPHB} against that creature, to instead make the attack miss or to succeed on the {@variantrule Saving Throw|XPHB}."
             ]
         },
         {
-            "name": "Daredevil RP Trait 1",
-            "source": "GW2HoT",
-            "className": "Thief",
-            "classSource": "GW2",
-            "subclassShortName": "Daredevil",
-            "subclassSource": "GW2HoT",
-            "level": 5,
-            "entries": [
-                ""
-            ]
-        },
-        {
-            "name": "Daredevil Combat Trait 2",
+            "name": "Side Business",
             "source": "GW2HoT",
             "className": "Thief",
             "classSource": "GW2",
@@ -3803,23 +3863,17 @@
             "subclassSource": "GW2HoT",
             "level": 10,
             "entries": [
-                ""
+                "{@b Busker.} You can use your Acrobatic skills to earn a bit of money on the side. When in a populate enough area, or surrounded by wealthy enough people, you can start busking in an attempt to earn money, or other valuable things. To do so you must describe your character performing acrobatic feats of easy, medium, hard or impossible difficulty for at least one hour. At the end of which you make an {@skill Acrobatics|XPHB} skill check with a DC depending on the difficulty chosen (Easy - DC 15, Medium - DC 20, Hard - DC 25, Impossible - DC 30). If you succeed you are rewarded with an amount of GP depending on the difficulty of the performance and the affluence of the creatures watching it (as determined by the DM). Consult the Acrobatic Busking table below for your reward. Once you busk for a particular audience you cannot earn money from them again for 24 hours.",
+                {
+                    "type": "statblock",
+                    "tag": "table",
+                    "name": "Acrobatic Busking",
+                    "source": "GW2HoT"
+                }
             ]
         },
         {
-            "name": "Daredevil RP Trait 2",
-            "source": "GW2HoT",
-            "className": "Thief",
-            "classSource": "GW2",
-            "subclassShortName": "Daredevil",
-            "subclassSource": "GW2HoT",
-            "level": 10,
-            "entries": [
-                ""
-            ]
-        },
-        {
-            "name": "Daredevil Combat Trait 3",
+            "name": "Close Quarters Expert",
             "source": "GW2HoT",
             "className": "Thief",
             "classSource": "GW2",
@@ -3827,11 +3881,12 @@
             "subclassSource": "GW2HoT",
             "level": 15,
             "entries": [
-                ""
+                "{@b Mobile Combatant IV.} Your {@variantrule Speed|XPHB} increases by a further 15 feet. Once you have dealt damage to a creature, that creature cannot make {@action Opportunity Attack|XPHB|Opportunity Attacks} against you.",
+                "{@b Stored Momentum.} If you end your turn without having spent all your {@variantrule Speed|GW2} you can convert that remaining movement into damage. During your next turn, the first time you deal damage, you gain a bonus to that damage equal to a quarter of the remaining movement. If you deal damage to multiple creatures at once, distribute the extra damage among those creatures."
             ]
         },
         {
-            "name": "Daredevil RP Trait 3",
+            "name": "Body and Mind",
             "source": "GW2HoT",
             "className": "Thief",
             "classSource": "GW2",
@@ -3839,11 +3894,11 @@
             "subclassSource": "GW2HoT",
             "level": 15,
             "entries": [
-                ""
+                "Your Mind has caught up with your body, sharpening your abilities. When you make an Intelligence, Wisdom or Charisma Ability Check you have {@variantrule Advantage|XPHB} on that roll, as long as your not {@condition Bloodied|XPHB}."
             ]
         },
         {
-            "name": "Daredevil Combat Trait 4",
+            "name": "Momentum Incarnate",
             "source": "GW2HoT",
             "className": "Thief",
             "classSource": "GW2",
@@ -3851,7 +3906,8 @@
             "subclassSource": "GW2HoT",
             "level": 20,
             "entries": [
-                ""
+                "{@b Mobile Combatant V.} Your {@variantrule Speed|XPHB} increases by a further 45 feet. You can take the {@action Dash|XPHB} action by spending 2 {@variantrule Action Points|GW2}.",
+                "{@b Impact Strike.} Once per turn, if you hit a creature with a melee weapon attack, and moved at least 10 feet in a straight line toward the creature immediately before, you can force that creature to make a Strength Saving Throw. On a failed save the creature is {@variantrule Launch|GW2|Launched} for a number of feet equal to half the length of the straight line. If the creature hits a solid enough object to stop its trajectory it takes bludgeoning damage equal to the remaining {@variantrule Launch|GW2} distance. If it hits another creature of the same size or larger, it stops and both take bludgeoning damage equal to the remaining {@variantrule Launch|GW2} distance. If it hits a creature smaller than it, that creature get {@variantrule Launch|GW2|Launched} for the remaining distance as well, potentially knocking into other things."
             ]
         },
         {

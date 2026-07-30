@@ -22965,9 +22965,8 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
-				"Deception",
-				"BACT"
+				"Utility Skill",
+				"Deception"
 			],
 			"prerequisite": [
 				{
@@ -22975,16 +22974,30 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Bonus Action",
-				"{@b Recharge:} {@chance 35|14+}",
-				"{@b Range:} ",
-				"{@b Target:} Area",
-				"{@b Duration:} ",
-				"{@b Properties:} Deception, Blind, Stealth",
-				"{@b Description:} Deception. Blind nearby foes and grant stealth to nearby allies.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
-			]
+				"{@b Casting Time:} 0 {@variantrule Action Points|GW2|AP}",
+				"{@b Recharge:} {@recharge 4}",
+				"{@b Range:} Self",
+				"{@b Target:} 10-foot emanation",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Combo Finisher|GW2}: Blast, Deception, {@variantrule Stun Break|GW2}",
+				"{@b Description:} Blind nearby foes and grant stealth to nearby allies.",
+				"{@b Effect:} Up to 5 creatures other than you within range have {@variantrule Blindness|GW2} for 1 round. You gain 1 round of {@variantrule Stealth|GW2}."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Blinding_Powder}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Blinding_Powder.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Shadow Refuge",
@@ -22992,10 +23005,8 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
-				"Deception",
-				"BACT",
-				"CFD"
+				"Utility Skill",
+				"Deception"
 			],
 			"prerequisite": [
 				{
@@ -23003,17 +23014,34 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Bonus Action",
+				"{@b Casting Time:} 1 {@variantrule Action Points|GW2|AP}",
 				"{@b Recharge:} {@recharge 5}",
 				"{@b Range:} 60 feet",
 				"{@b Target:} 10-foot-radius sphere",
-				"{@b Duration:} 1 round",
+				"{@b Duration:} 2 rounds",
 				"{@b Properties:} {@variantrule Combo Field|GW2}: Dark, Deception",
 				"{@b Description:} Create a pulsing refuge at the target area that heals allies and cloaks them in stealth.",
-				"{@b Effect:} Choose a point you can see within range. You create a 10-foot-radius sphere centered on that point that lasts for the duration. Each creature of your choice in that sphere gains 1 round of {@variantrule Stealth|GW2} and regains hit points equal to {@dice 2d4} + your Class ability modifier. A creature also gains these benefits if it enters the sphere or ends its turn there. A creature gains these benefits only once per turn.",
-				"Creatures of your choice that start their turn in the sphere automatically succeed on their {@variantrule Death Saving Throw|GW2} if they are at 0 hit points.",
-				"{@b Scaling:} The healing increases by {@dice 2d4} at levels 5 ({@dice 4d4}), 11 ({@dice 6d4}), and 17 ({@dice 8d4})."
-			]
+				"{@b Effect:} Choose a point you can see within range. You create a 10-foot-radius sphere centered on that point that lasts for the duration. Each creature of your choice in that sphere gains 1 round of {@variantrule Stealth|GW2} and regains {@variantrule Hit Points|XPHB} equal to {@dice 2d4} + your Class ability modifier. A creature also gains these benefits if it enters the sphere or ends its turn there. A creature gains these benefits only once per turn.",
+				"Creatures of your choice that start their turn in the sphere automatically succeed on their {@variantrule Death Saving Throw|XPHB|Death Saving Throws}.",
+				"Creatures of your choice inside the sphere take 20% less damage.",
+				"{@variantrule Stalth|GW2|Stealthed} creatures leaving the sphere become {@variantrule Revealed|GW2} for 1 round."
+				"{@b Scaling:} The healing increases by {@dice 2d4} at levels 5 ({@dice 4d4}), 11 ({@dice 6d4}), and 17 ({@dice 8d4}). The duration increases when you reach levels 5 (3 rounds), 11 (4 rounds), and 17 (6 rounds)."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Shadow_Refuge}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Shadow_Refuge.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Shadowstep",
@@ -23021,7 +23049,7 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
+				"Utility Skill",
 				"Deception",
 				"BACT",
 				"SEQ",
@@ -23033,16 +23061,31 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Bonus Action",
+				"{@b Casting Time:} 0 {@variantrule Action Points|GW2|AP}",
 				"{@b Recharge:} {@recharge 4}",
 				"{@b Range:} 60 feet",
 				"{@b Target:} Point",
 				"{@b Duration:} 3 rounds",
-				"{@b Properties:} Deception, {@variantrule Sequence|GW2}: {@optfeature Shadow Return|GW2} after using {@optfeature Shadowstep|GW2}, {@variantrule Stun Break|GW2}",
+				"{@b Properties:} Deception, {@variantrule Sequence|GW2}: {@optfeature Shadow Return|GW2} after using {@optfeature Shadowstep|GW2}, Shadowstep, {@variantrule Stun Break|GW2}",
 				"{@b Description:} Shadowstep to target area. Becomes Shadow Return, which returns you to your starting area and cures three conditions.",
-				"{@b Effect:} Choose an unoccupied space you can see within range and teleport there. For the duration you can use {@optfeature Shadow Return|GW2}.",
+				"{@b Effect:} Choose an unoccupied space you can see within range and shadowstep there. For the duration you can use {@optfeature Shadow Return|GW2}.",
 				"{@b Scaling:} The range increases by 30 feet at levels 5 (90 feet), 11 (120 feet), and 17 (150 feet)."
-			]
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Shadowstep}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Shadowstep.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Shadow Return",
@@ -23050,11 +23093,8 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
-				"Deception",
-				"BACT",
-				"SEQ",
-				"STU"
+				"Utility Skill",
+				"Deception"
 			],
 			"prerequisite": [
 				{
@@ -23062,16 +23102,31 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Bonus Action",
+				"{@b Casting Time:} 0 {@variantrule Action Points|GW2|AP}",
 				"{@b Recharge:} None",
 				"{@b Range:} 60 feet",
 				"{@b Target:} Self",
 				"{@b Duration:} Instantaneous",
-				"{@b Properties:} Deception, Sequence, {@variantrule Stun Break|GW2}",
+				"{@b Properties:} Deception, Sequence, Shadowstep, {@variantrule Stun Break|GW2}",
 				"{@b Description:} Return to your starting location, and cure three conditions.",
 				"{@b Effect:} Return to the space you occupied when you used {@optfeature Shadowstep|GW2}, ending the latest three {@variantrule Condition|GW2|Conditions} affecting you. If you are out of range, or if that space is occupied, you teleport to the nearest unoccupied space to that location.",
 				"{@b Scaling:} The range increases by 30 feet at levels 5 (90 feet), 11 (120 feet), and 17 (150 feet)."
-			]
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Shadow_Return}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Invisible_Stalker.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Smoke Screen",
@@ -23079,10 +23134,8 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
-				"Deception",
-				"BACT",
-				"ACT"
+				"Utility Skill",
+				"Deception"
 			],
 			"prerequisite": [
 				{
@@ -23090,15 +23143,15 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Bonus Action or Action",
-				"{@b Recharge:} {@chance 25|16+}",
-				"{@b Range:} ",
-				"{@b Target:} Area",
-				"{@b Duration:} ",
-				"{@b Properties:} Deception, Block, Blind",
-				"{@b Description:} Deception. Create a smoke screen that blocks missiles and blinds foes.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
+				"{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
+				"{@b Recharge:} {@recharge 4}",
+				"{@b Range:} Self",
+				"{@b Target:} 10-foot emanation",
+				"{@b Duration:} 2 rounds",
+				"{@b Properties:} {@variantrule Combo Field|GW2}: Smoke, Deception, {@variantrule Unblockable|GW2}",
+				"{@b Description:} Create a smoke screen that blocks missiles and debilitates foes that pass through. Gain stealth when you leave the smoke screen.",
+				"{@b Effect:} You create a 10-foot emanation at your location for the duration. The emanation is {@variantrule Heavily Obsucred|XPHB}. Any creature other than you that enters the emanation must succeed on a Constitution Saving Throw or be inflicted with 1 round of {@variantrule Blindness|GW2}, {@variantrule Weakness|GW2} and 8 stacks of {@variantrule Vulnerability|GW2}. The first time you exit the emanation you gain 1 round of {@variantrule Stealth|GW2}.",
+				"{@b Scaling:} The duration increases when you reach levels 5 (3 rounds), 11 (4 rounds), and 17 (6 rounds)."
 			]
 		},
 		{
@@ -23107,7 +23160,7 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
+				"Utility Skill",
 				"PRE",
 				"BACT",
 				"ACT"
@@ -23135,7 +23188,7 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
+				"Utility Skill",
 				"PRE",
 				"BACT",
 				"SEQ"
@@ -23163,7 +23216,7 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
+				"Utility Skill",
 				"PRE",
 				"BACT",
 				"ACT"
@@ -23191,7 +23244,7 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
+				"Utility Skill",
 				"PRE",
 				"BACT",
 				"SEQ"
@@ -23219,7 +23272,7 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
+				"Utility Skill",
 				"PRE",
 				"BACT",
 				"ACT",
@@ -23248,7 +23301,7 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
+				"Utility Skill",
 				"PRE",
 				"BACT",
 				"SEQ",
@@ -23278,7 +23331,7 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
+				"Utility Skill",
 				"PRE",
 				"BACT",
 				"ACT"
@@ -23306,7 +23359,7 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
+				"Utility Skill",
 				"PRE",
 				"BACT",
 				"SEQ"
@@ -23334,7 +23387,7 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
+				"Utility Skill",
 				"SIG",
 				"BACT"
 			],
@@ -23361,7 +23414,7 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
+				"Utility Skill",
 				"SIG",
 				"BACT"
 			],
@@ -23388,7 +23441,7 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
+				"Utility Skill",
 				"SIG",
 				"BACT"
 			],
@@ -23415,7 +23468,7 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
+				"Utility Skill",
 				"SIG",
 				"BACT"
 			],
@@ -23442,7 +23495,7 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
+				"Utility Skill",
 				"TRI",
 				"ACT"
 			],
@@ -23469,7 +23522,7 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
+				"Utility Skill",
 				"TRI",
 				"BACT"
 			],
@@ -23496,7 +23549,7 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
+				"Utility Skill",
 				"TRI",
 				"BACT"
 			],
@@ -23523,7 +23576,7 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
+				"Utility Skill",
 				"TRI",
 				"BACT",
 				"ACT"
@@ -23551,7 +23604,7 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
+				"Utility Skill",
 				"VEN",
 				"BACT"
 			],
@@ -23578,7 +23631,7 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
+				"Utility Skill",
 				"VEN",
 				"BACT"
 			],
@@ -23605,7 +23658,7 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
+				"Utility Skill",
 				"VEN",
 				"BACT"
 			],
@@ -23632,7 +23685,7 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"US",
+				"Utility Skill",
 				"VEN",
 				"BACT"
 			],
@@ -23766,7 +23819,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -23790,7 +23843,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -23814,7 +23867,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -24140,7 +24193,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -24164,7 +24217,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -24188,7 +24241,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -24515,7 +24568,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -24539,7 +24592,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -24841,7 +24894,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -24865,7 +24918,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -25576,7 +25629,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -25600,7 +25653,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -26788,7 +26841,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -26812,7 +26865,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -26836,7 +26889,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -26860,7 +26913,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -26884,7 +26937,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -26908,7 +26961,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -26932,7 +26985,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -26956,7 +27009,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -26980,7 +27033,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -27004,7 +27057,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -27028,7 +27081,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -27052,7 +27105,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -27076,7 +27129,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -27100,7 +27153,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -27124,7 +27177,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -27148,7 +27201,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -27172,7 +27225,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -27196,7 +27249,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -27220,7 +27273,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -27244,7 +27297,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35314,7 +35367,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35338,7 +35391,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35362,7 +35415,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35386,7 +35439,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35410,7 +35463,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35434,7 +35487,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35458,7 +35511,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35482,7 +35535,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35506,7 +35559,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35530,7 +35583,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35554,7 +35607,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35578,7 +35631,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35602,7 +35655,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35626,7 +35679,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35650,7 +35703,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35674,7 +35727,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35698,7 +35751,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35722,7 +35775,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35770,7 +35823,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35794,7 +35847,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35842,7 +35895,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35890,7 +35943,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35938,7 +35991,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -35986,7 +36039,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -36034,7 +36087,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -36082,7 +36135,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -36130,7 +36183,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -36178,7 +36231,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -36226,7 +36279,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -36274,7 +36327,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -36322,7 +36375,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -36370,7 +36423,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -36394,7 +36447,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -36442,7 +36495,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -36490,7 +36543,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -36538,7 +36591,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -36586,7 +36639,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -36610,7 +36663,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -36658,7 +36711,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -36682,7 +36735,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -36730,7 +36783,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -36754,7 +36807,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -36802,7 +36855,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -36826,7 +36879,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -36874,7 +36927,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{
@@ -36898,7 +36951,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"US"
+				"Utility Skill"
 			],
 			"prerequisite": [
 				{

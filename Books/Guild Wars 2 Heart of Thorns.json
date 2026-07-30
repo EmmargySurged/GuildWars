@@ -913,9 +913,8 @@
             "page": "",
             "featureType": [
                 "Daredevil",
-                "HS",
-                "PHY",
-                "ACT"
+                "Healing Skill",
+                "Physical"
             ],
             "prerequisite": [
                 {
@@ -923,16 +922,31 @@
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Action",
-                "{@b Recharge:} {@chance 35|14+}",
-                "{@b Range:} ",
+                "{@b Casting Time:} {@variantrule Channel|GW2|Channel:} 3 {@variantrule Action Points|GW2|AP}",
+                "{@b Recharge:} {@recharge 4}",
+                "{@b Range:} Self",
                 "{@b Target:} Self",
-                "{@b Duration:} ",
+                "{@b Duration:} Instantaneous",
                 "{@b Properties:} Physical",
-                "{@b Description:} Physical. Channel your energy to gain endurance and health per pulse. Heal for more if your endurance is full.",
-                "{@b Effect:} ",
-                "{@b Scaling:} "
-            ]
+                "{@b Description:} Channel your energy to gain endurance and health per pulse. Heal for more if your endurance is full.",
+                "{@b Effect:} For each {@variantrule Action Points|GW2|AP} spent repeat the following effect: You regain {@variantrule Hit Points|XPHB} equal to {@dice 1d6} + your Class ability modifier, regain additional {@dice 1d6} {@variantrule Hit Points|XPHB} if your {@variantrule Endurance|XPHB} is full, and regain 25 {@variantrule Endurance|XPHB}",
+                "{@b Scaling:} The healing both increases by {@dice 1d6} when you reach levels 5 ({@dice 2d6}), 7 ({@dice 3d6}), and ({@dice 4d6})."
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Channeled_Vigor}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Channeled_Vigor.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Bandit's Defense",

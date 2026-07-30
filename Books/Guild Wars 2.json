@@ -22800,9 +22800,8 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"HS",
-				"DEC",
-				"ACT"
+				"Healing Skill",
+				"Deception"
 			],
 			"prerequisite": [
 				{
@@ -22810,16 +22809,31 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action",
-				"{@b Recharge:} {@chance 25|16+}",
+				"{@b Casting Time:} 4 {@variantrule Action Points|GW2|AP}",
+				"{@b Recharge:} {@recharge 4}",
 				"{@b Range:} Self",
 				"{@b Target:} Self",
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} Deception",
 				"{@b Description:} Vanish in stealth and cure conditions. Then gain regeneration and heal yourself.",
-				"{@b Effect:} Cure {@variantrule Burning|Gw2}, {@variantrule Bleeding|Gw2}, {@variantrule Poison|Gw2}, and {@variantrule Confusion|Gw2} on yourself, then you regain hit points equal to {@dice 4d6} + your Class modifier, gain 1 round of {@variantrule Stealth|Gw2}, and gain 1 round of {@variantrule Regeneration|Gw2}, healing for {@dice 1d6}.",
-				"{@b Scaling:} The healing each increases by {@dice 2d6} and {@dice 1d6} respectively at levels 5 ({@dice 6d6} & {@dice 2d6}), 11 ({@dice 8d6} & {@dice 3d6}), and 17 ({@dice 10d6} & {@dice 4d6})."
-			]
+				"{@b Effect:} Cure {@variantrule Burning|Gw2}, {@variantrule Bleeding|Gw2}, {@variantrule Poison|Gw2}, and {@variantrule Confusion|Gw2} on yourself, then you regain {@variantrule Hit Points|XPHB} equal to {@dice 4d6} + your Class ability modifier, gain 1 round of {@variantrule Stealth|Gw2}, and gain 1 round of {@variantrule Regeneration|Gw2}.",
+				"{@b Scaling:} The healing increases by {@dice 2d6} and the {@variantrule Regeneration|Gw2} duration increases by 1 round at levels 5 ({@dice 6d6} & 2 rounds), 11 ({@dice 8d6} & 3 rounds), and 17 ({@dice 10d6} & 4 rounds)."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Hide_in_Shadows}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Hide_in_Shadows.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Signet of Malice",
@@ -22827,9 +22841,8 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"HS",
-				"SIG",
-				"BACT"
+				"Healing Skill",
+				"Signet"
 			],
 			"prerequisite": [
 				{
@@ -22837,17 +22850,32 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Bonus Action",
-				"{@b Recharge:} {@chance 45|12+}",
+				"{@b Casting Time:} 1 {@variantrule Action Points|GW2|AP}",
+				"{@b Recharge:} {@recharge 3}",
 				"{@b Range:} Self",
 				"{@b Target:} Self",
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} {@variantrule Signet|GW2}",
-				"{@b Signet Passive:} You regain hit points equal to {@dice 1d4} when you deal damage with an attack or {@variantrule Skill|GW2}, or apply a condition to a creature. If you deal damage and apply a condition to the same creature, you only regain hit points once.",
+				"{@b Signet Passive:} You regain {@variantrule Hit Points|XPHB} equal to {@dice 1d4} when you deal damage with an attack or {@variantrule Skill|GW2}, or apply a condition to a creature. If you deal damage and apply a condition to the same creature, you only regain {@variantrule Hit Points|XPHB} once.",
 				"{@b Passive Scaling:} The healing increases by {@dice 1d4} at levels 5 ({@dice 2d4}), 11 ({@dice 3d4}), and 17 ({@dice 4d4}).",
-				"{@b Signet Active:} You regain hit points equal to {@dice 1d8} + your Class modifier.",
+				"{@b Signet Active:} You regain {@variantrule Hit Points|XPHB} equal to {@dice 1d8} + your Class ability modifier.",
 				"{@b Active Scaling:} The healing increases by {@dice 1d8} at levels 5 ({@dice 2d8}), 11 ({@dice 3d8}), and 17 ({@dice 4d8})."
-			]
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Signet_of_Malice}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Signet_of_Malice.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Withdraw",
@@ -22855,10 +22883,8 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"HS",
-				"TRI",
-				"REAC",
-				"BACT"
+				"Healing Skill",
+				"Trick"
 			],
 			"prerequisite": [
 				{
@@ -22866,16 +22892,31 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Bonus Action or Reaction",
-				"{@b Recharge:} {@chance 35|14+}",
+				"{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
+				"{@b Recharge:} {@recharge 3}",
 				"{@b Range:} Self",
 				"{@b Target:} Self",
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} Trick",
 				"{@b Description:} Cure conditions, then roll backward while healing and evading attacks.",
-				"{@b Effect:} You gain the effects of the {@action Dodge|PHB} action until the start of your next turn and cure {@variantrule Chilled|GW2}, {@variantrule Crippled|GW2}, {@variantrule Immobilized|GW2}, and {@variantrule Torment|GW2} on yourself. Additionally, you can move up to 50 feet in a straight line. You regain hit points equal to {@dice 3d8} + your Class modifier.",
+				"{@b Effect:} You {@variantrule Evade|GW2} without spending {@variantrule Endurance|GW2} and cure {@variantrule Chilled|GW2}, {@variantrule Crippled|GW2}, {@variantrule Immobilized|GW2}, and {@variantrule Torment|GW2} on yourself. You regain{@variantrule Hit Points|XPHB} equal to {@dice 3d8} + your Class ability modifier.",
 				"{@b Scaling:} The healing increases by {@dice 1d8} at levels 5 ({@dice 4d8}), 11 ({@dice 5d8}), and 17 ({@dice 6d8})."
-			]
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Withdraw}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Withdraw.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Skelk Venom",
@@ -22883,9 +22924,8 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"HS",
-				"VEN",
-				"ACT"
+				"Healing Skill",
+				"Venom"
 			],
 			"prerequisite": [
 				{
@@ -22893,16 +22933,31 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action",
-				"{@b Recharge:} {@chance 25|16+}",
+				"{@b Casting Time:} 4 {@variantrule Action Points|GW2|AP}",
+				"{@b Recharge:} {@recharge 4}",
 				"{@b Range:} Self",
 				"{@b Target:} 10-foot emanation",
 				"{@b Duration:} 5 rounds",
 				"{@b Properties:} Venom",
 				"{@b Description:} Heal yourself. Your next few attacks heal you.",
-				"{@b Effect:} You regain hit points equal to {@dice 1d6} + your Class modifier. Apply 5 stacks of Skelk Venom to yourself and up to 4 other allies within range for the duration. A creature with Skelk Venom heals for {@dice 1d6} + your Class modifier whenever they deal damage to a creature.",
+				"{@b Effect:} You regain {@variantrule Hit Points|XPHB} equal to {@dice 1d6} + your Class ability modifier. Apply 5 stacks of Skelk Venom to yourself and up to 4 other allies within range for the duration. A creature with Skelk Venom regains {@variantrule Hit Points|XPHB} equal {@dice 1d6} + your Class ability modifier whenever they deal damage to a creature, consuming one stack of Skelk Venom.",
 				"{@b Scaling:} The initial healing increases by {@dice 1d6} at levels 5 ({@dice 2d6}), 11 ({@dice 3d6}), and 17 ({@dice 4d6}). The Skelk Venom healing increases by {@dice 1d6} at level 11 ({@dice 2d6})."
-			]
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Skelk_Venom}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Skelk_Venom.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Blinding Powder",
@@ -22911,7 +22966,7 @@
 			"featureType": [
 				"Thief",
 				"US",
-				"DEC",
+				"Deception",
 				"BACT"
 			],
 			"prerequisite": [
@@ -22938,7 +22993,7 @@
 			"featureType": [
 				"Thief",
 				"US",
-				"DEC",
+				"Deception",
 				"BACT",
 				"CFD"
 			],
@@ -22955,7 +23010,7 @@
 				"{@b Duration:} 1 round",
 				"{@b Properties:} {@variantrule Combo Field|GW2}: Dark, Deception",
 				"{@b Description:} Create a pulsing refuge at the target area that heals allies and cloaks them in stealth.",
-				"{@b Effect:} Choose a point you can see within range. You create a 10-foot-radius sphere centered on that point that lasts for the duration. Each creature of your choice in that sphere gains 1 round of {@variantrule Stealth|GW2} and regains hit points equal to {@dice 2d4} + your Class modifier. A creature also gains these benefits if it enters the sphere or ends its turn there. A creature gains these benefits only once per turn.",
+				"{@b Effect:} Choose a point you can see within range. You create a 10-foot-radius sphere centered on that point that lasts for the duration. Each creature of your choice in that sphere gains 1 round of {@variantrule Stealth|GW2} and regains hit points equal to {@dice 2d4} + your Class ability modifier. A creature also gains these benefits if it enters the sphere or ends its turn there. A creature gains these benefits only once per turn.",
 				"Creatures of your choice that start their turn in the sphere automatically succeed on their {@variantrule Death Saving Throw|GW2} if they are at 0 hit points.",
 				"{@b Scaling:} The healing increases by {@dice 2d4} at levels 5 ({@dice 4d4}), 11 ({@dice 6d4}), and 17 ({@dice 8d4})."
 			]
@@ -22967,7 +23022,7 @@
 			"featureType": [
 				"Thief",
 				"US",
-				"DEC",
+				"Deception",
 				"BACT",
 				"SEQ",
 				"STU"
@@ -22996,7 +23051,7 @@
 			"featureType": [
 				"Thief",
 				"US",
-				"DEC",
+				"Deception",
 				"BACT",
 				"SEQ",
 				"STU"
@@ -23025,7 +23080,7 @@
 			"featureType": [
 				"Thief",
 				"US",
-				"DEC",
+				"Deception",
 				"BACT",
 				"ACT"
 			],
@@ -23605,7 +23660,7 @@
 			"featureType": [
 				"Thief",
 				"ES",
-				"DEC",
+				"Deception",
 				"CHAN"
 			],
 			"prerequisite": [
@@ -24436,7 +24491,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"HS",
+				"Healing Skill",
 				"HUM"
 			],
 			"prerequisite": [
@@ -24451,7 +24506,7 @@
 				"{@b Target:} Self",
 				"{@b Duration:} Instantaneous",
 				"{@b Description:} Beseech Dwayna to restore your health.",
-				"{@b Effect:} You regain hit points equal to {@dice 8d8} + your Class modifier.",
+				"{@b Effect:} You regain hit points equal to {@dice 8d8} + your Class ability modifier.",
 				"{@b Scaling:} The healing increases by {@dice 2d8} when you reach levels 5 ({@dice 10d8}), 11 ({@dice 12d8}), and 17 ({@dice 14d8})."
 			]
 		},
@@ -25497,7 +25552,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"HS",
+				"Healing Skill",
 				"SYL"
 			],
 			"prerequisite": [
@@ -25512,7 +25567,7 @@
 				"{@b Target:} Point",
 				"{@b Duration:} 5 rounds",
 				"{@b Description:} Create a healing seed at targeted location which periodically gives nearby allies regeneration.",
-				"{@b Effect:} You regain hit points equal to {@dice 8d8} + your Class modifier. Choose a point within range. A {@creature Healing Seed|GW2} appears at that point for the duration. At the start of each of your turns, each ally within 5 feet of the seed gains 1 round of {@variantrule Regeneration|GW2}, healing for {@dice 1d4}.",
+				"{@b Effect:} You regain hit points equal to {@dice 8d8} + your Class ability modifier. Choose a point within range. A {@creature Healing Seed|GW2} appears at that point for the duration. At the start of each of your turns, each ally within 5 feet of the seed gains 1 round of {@variantrule Regeneration|GW2}, healing for {@dice 1d4}.",
 				"{@b Scaling:} The healing increases by {@dice 2d8} when you reach levels 5 ({@dice 10d8}), 11 ({@dice 12d8}), and 17 ({@dice 14d8})."
 			]
 		},
@@ -27453,7 +27508,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"HS",
+				"Healing Skill",
 				"WAR",
 				"PHY",
 				"ACT"
@@ -27480,7 +27535,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"HS",
+				"Healing Skill",
 				"WAR",
 				"SHOU",
 				"ACT"
@@ -27507,7 +27562,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"HS",
+				"Healing Skill",
 				"WAR",
 				"SIG",
 				"CHAN"
@@ -27536,7 +27591,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"HS",
+				"Healing Skill",
 				"WAR",
 				"STAN",
 				"ACT"
@@ -34841,7 +34896,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"HS",
+				"Healing Skill",
 				"ELE",
 				"ARC",
 				"CIB",
@@ -34893,7 +34948,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"HS",
+				"Healing Skill",
 				"ELE",
 				"CHAN",
 				"CAN"
@@ -34920,7 +34975,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"HS",
+				"Healing Skill",
 				"ELE",
 				"GLY",
 				"ACT"
@@ -34947,7 +35002,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"HS",
+				"Healing Skill",
 				"ELE",
 				"SIG",
 				"ACT"
@@ -34976,7 +35031,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"HS",
+				"Healing Skill",
 				"ENG",
 				"GAD",
 				"ACT"
@@ -35027,7 +35082,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"HS",
+				"Healing Skill",
 				"ENG",
 				"ELI",
 				"ACT",
@@ -35079,7 +35134,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"HS",
+				"Healing Skill",
 				"ENG",
 				"TUR",
 				"ACT"
@@ -35105,7 +35160,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"HS",
+				"Healing Skill",
 				"ENG",
 				"OVER",
 				"ACT",
@@ -35133,7 +35188,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"HS",
+				"Healing Skill",
 				"ENG",
 				"ACT"
 			],
@@ -35158,7 +35213,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"HS",
+				"Healing Skill",
 				"ENG",
 				"SPEC",
 				"CIB"
@@ -35209,7 +35264,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"HS",
+				"Healing Skill",
 				"ENG",
 				"KIT",
 				"SPEC"

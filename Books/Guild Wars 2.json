@@ -7782,7 +7782,7 @@
 					"{@class Thief|GW2}",
 					"{@optfeature Trail of Knives|GW2}",
 					"{@optfeature Shadow Escape|GW2}",
-					"{@optfeature Smoke Bomb|GW2}",
+					"{@optfeature Smoke Bomb (Thief Skill)|GW2|Smoke Bomb}",
 					"{@optfeature Bandage|GW2}"
 				],
 				[
@@ -21311,6 +21311,204 @@
 						"href": {
 							"type": "external",
 							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Skull_Fear.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
+		},
+		{
+			"name": "Trail of Knives",
+			"source": "GW2",
+			"page": "",
+			"featureType": [
+				"Downed Skill",
+				"Thief"
+			],
+			"prerequisite": [
+				{
+					"other": "A Thief in {@variantrule Downed State|GW2}"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} 1 {@variantrule Action Points|GW2|AP}",
+				"{@b Recharge:} None",
+				"{@b Range:} 90 ft.",
+				"{@b Target:} Up to 3 hostile creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Sequence|GW2}: {@optfeature Venomous Knife|GW2} while {@condition Invisible|XPHB}",
+				"{@b Description:} Throw a knife that bounces off nearby foes, crippling them.",
+				"{@b Effect:} Choose one creature within range. Make a ranged weapon attack against the target. On a hit the target takes {@damage 1d4} piercing damage and is {@variantrule Crippled|GW2} for 1 round. If you hit the target, the knife can leap from the target to a different creature of your choice within 30 feet of the target. Make a new attack roll against the new target, and make a new damage roll, which could cause the knife to leap again. The knife can bounce twice.",
+				"{@b Scaling:} The damage increases by {@damage 1d4} when you reach level 5 ({@damage 2d4}), 11 ({@damage 3d4}), and 17 ({@damage 4d4})."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Trail_of_Knives}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Trail_of_Knives.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
+		},
+		{
+			"name": "Venomous Knife",
+			"source": "GW2",
+			"page": "",
+			"featureType": [
+				"Downed Skill",
+				"Thief",
+				"Stealth Attack"
+			],
+			"prerequisite": [
+				{
+					"other": "A Thief in {@variantrule Downed State|GW2}"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
+				"{@b Recharge:} None",
+				"{@b Range:} 90 ft.",
+				"{@b Target:} 1 creature",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Sequence|GW2}: {@optfeature Venomous Knife|GW2} while {@condition Invisible|XPHB}, Stealth Attack",
+				"{@b Description:} Throw a knife, bleeding and poisoning your target. ",
+				"{@b Effect:} Choose one creature within range. Make a ranged weapon attack against the target. On a hit the target takes {@damage 2d4} piercing damage and is inflicted with 3 stacks of {@variantrule Bleeding|GW2} for 1 round and 2 stacks of {@variantrule Poison|GW2} for 1 round.",
+				"{@b Scaling:} The number of {@variantrule Bleeding|GW2} and {@variantrule Poison|GW2} stacks increase by 1 when you reach level 5 (4 & 3), 11 (5 & 4), and 17 (6 & 5)."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Venomous_Knife}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Venomous_Knife.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
+		},
+		{
+			"name": "Shadow Escape",
+			"source": "GW2",
+			"page": "",
+			"featureType": [
+				"Downed Skill",
+				"Thief"
+			],
+			"prerequisite": [
+				{
+					"other": "A Thief in {@variantrule Downed State|GW2}"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} 0 {@variantrule Action Points|GW2|AP}",
+				"{@b Recharge:} {@recharge 3}",
+				"{@b Range:} Scaling",
+				"{@b Target:} Self",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} Shadowstep",
+				"{@b Description:} Teleport to the target location. ",
+				"{@b Effect:} Choose an unoccupied space that you can see within 30 feet. You Shadowstep to that space.",
+				"{@b Scaling:} The range increases when you reach levels 5 (60 feet), 11 (90 feet), and 17 (150 feet)."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Shadow_Escape}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Shadow_Escape.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
+		},
+		{
+			"name": "Smoke Bomb (Thief Skill)",
+			"source": "GW2",
+			"page": "",
+			"featureType": [
+				"Downed Skill",
+				"Thief"
+			],
+			"prerequisite": [
+				{
+					"other": "A Thief in {@variantrule Downed State|GW2}"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
+				"{@b Recharge:} {@recharge 4}",
+				"{@b Range:} Self",
+				"{@b Target:} Self",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} None",
+				"{@b Description:} Drop a smoke bomb and vanish in stealth. ",
+				"{@b Effect:} You gain 1 round of {@variantrule Stealth|GW2}."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Smoke_Bomb_(thief_skill)}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Smoke_Bomb_(thief_skill).png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
+		},
+		{
+			"name": "Bandage",
+			"source": "GW2",
+			"page": "",
+			"featureType": [
+				"Downed Skill"
+			],
+			"prerequisite": [
+				{
+					"other": "{@variantrule Downed State|GW2}"
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} {@variantrule Channel|GW2|Channel:} ∞ {@variantrule Action Points|GW2|AP}",
+				"{@b Recharge:} {@recharge 1}",
+				"{@b Range:} Self",
+				"{@b Target:} Self",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} None",
+				"{@b Description:} Call your allies for help. Restores health while you channel it.",
+				"{@b Effect:} While {@variantrule Channel|GW2|Channeling} you do not make {@variantrule Death Saving Throw|XPHB|Death Saving Throws} at the start of your turn. If you take {@variantrule Strike Damage|GW2} while {@variantrule Channel|GW2|Channeling}, the {@variantrule Channel|GW2} is {@variantrule Interrupt|GW2|Interrupted}. For every 4 {@variantrule Action Points|GW2|AP} spent repeat the following effect: Attempt a {@dc 15} Wisdom ({@skill Medicine}) check. On a success you gain one {@variantrule Death Saving Throw|XPHB} success."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Bandage}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Bandage.png"
 						},
 						"credit": "ArenaNet"
 					}
@@ -39076,7 +39274,7 @@
 			"entries": [
 				"Rule",
 				"When you reach 0 {@variantrule Hit Points|XPHB}, and you start making {@variantrule Death Saving Throw|XPHB|Death Saving Throws}, you enter the downed State.",
-				"While in downed state, you can only use your class's {@variantrule Downed State Skill|GW2|Downed State Skills} as shown in the table below. {@variantrule Downed State Skill|GW2|Downed State Skills} that have a recharge go on recharge as soon as you enter downed state.",
+				"While in downed state, the only {@variantrule Action|XPHB} you can take is the {@action Generate Action Points|GW2} {@variantrule Action|XPHB}. You can only use your class's {@variantrule Downed State Skill|GW2|Downed State Skills} as shown in the table below. {@variantrule Downed State Skill|GW2|Downed State Skills} that have a recharge, go on recharge as soon as you enter downed state.",
 				"If you reduce a hostile creature to 0 {@variantrule Hit Points|XPHB} while in downed state, you regain 1 {@variantrule Hit Points|XPHB|Hit Point} and exit downed state."
 			]
 		},

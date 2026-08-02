@@ -21340,7 +21340,7 @@
 			"featureType": [
 				"Thief",
 				"SHO",
-				"WS",
+				"Weapon Skill",
 				"BACT",
 				"ACT"
 			],
@@ -21368,8 +21368,8 @@
 			"featureType": [
 				"Thief",
 				"SHO",
-				"WS",
-				"STE",
+				"Weapon Skill",
+				"Stealth Attack",
 				"BACT"
 			],
 			"prerequisite": [
@@ -21396,7 +21396,7 @@
 			"featureType": [
 				"Thief",
 				"SHO",
-				"WS",
+				"Weapon Skill",
 				"EXP",
 				"BACT",
 				"ACT"
@@ -21425,8 +21425,8 @@
 			"featureType": [
 				"Thief",
 				"SHO",
-				"WS",
-				"SEQ",
+				"Weapon Skill",
+				"Sequence",
 				"ACT"
 			],
 			"prerequisite": [
@@ -21453,7 +21453,7 @@
 			"featureType": [
 				"Thief",
 				"SHO",
-				"WS",
+				"Weapon Skill",
 				"BACT"
 			],
 			"prerequisite": [
@@ -21480,7 +21480,7 @@
 			"featureType": [
 				"Thief",
 				"SHO",
-				"WS",
+				"Weapon Skill",
 				"CFP",
 				"BACT",
 				"ACT"
@@ -21509,7 +21509,7 @@
 			"featureType": [
 				"Thief",
 				"SHO",
-				"WS",
+				"Weapon Skill",
 				"REAC",
 				"BACT"
 			],
@@ -21537,8 +21537,8 @@
 			"featureType": [
 				"Thief",
 				"SWO",
-				"WS",
-				"CHAI",
+				"Weapon Skill",
+				"Chain",
 				"REAC",
 				"BACT"
 			],
@@ -21566,8 +21566,8 @@
 			"featureType": [
 				"Thief",
 				"SWO",
-				"WS",
-				"CHAI",
+				"Weapon Skill",
+				"Chain",
 				"BACT",
 				"ACT"
 			],
@@ -21595,7 +21595,7 @@
 			"featureType": [
 				"Thief",
 				"SWO",
-				"WS",
+				"Weapon Skill",
 				"BACT",
 				"ACT"
 			],
@@ -21623,8 +21623,8 @@
 			"featureType": [
 				"Thief",
 				"SWO",
-				"WS",
-				"STE",
+				"Weapon Skill",
+				"Stealth Attack",
 				"REAC",
 				"BACT"
 			],
@@ -21652,7 +21652,7 @@
 			"featureType": [
 				"Thief",
 				"SWO",
-				"WS",
+				"Weapon Skill",
 				"REAC",
 				"BACT"
 			],
@@ -21680,7 +21680,7 @@
 			"featureType": [
 				"Thief",
 				"SWO",
-				"WS",
+				"Weapon Skill",
 				"BACT"
 			],
 			"prerequisite": [
@@ -21707,7 +21707,7 @@
 			"featureType": [
 				"Thief",
 				"SWO",
-				"WS",
+				"Weapon Skill",
 				"BACT",
 				"ACT"
 			],
@@ -21735,7 +21735,7 @@
 			"featureType": [
 				"Thief",
 				"SWO",
-				"WS",
+				"Weapon Skill",
 				"DUA",
 				"BACT",
 				"ACT"
@@ -21764,7 +21764,7 @@
 			"featureType": [
 				"Thief",
 				"SWO",
-				"WS",
+				"Weapon Skill",
 				"DUA",
 				"BACT",
 				"ACT"
@@ -21793,7 +21793,7 @@
 			"featureType": [
 				"Thief",
 				"SWO",
-				"WS",
+				"Weapon Skill",
 				"DUA",
 				"ACT"
 			],
@@ -21820,11 +21820,8 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"DAG",
-				"WS",
-				"CHAI",
-				"ACT",
-				"SEQ"
+				"Dagger",
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -21832,16 +21829,31 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action",
+				"{@b Casting Time:} 3 {@variantrule Action Points|GW2|AP}",
 				"{@b Recharge:} None",
 				"{@b Range:} 5 feet",
-				"{@b Target:} Up to 2 creatures",
+				"{@b Target:} 1 creature",
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Double Strike|GW2} -> {@optfeature Wild Strike|GW2} -> {@optfeature Lotus Strike|GW2}, {@variantrule Sequence|GW2}: {@optfeature Backstab|GW2} while {@condition Invisible|XPHB}",
 				"{@b Description:} Strike your foe twice.",
-				"{@b Effect:} Choose up to 2 creatures within range that are within 5 feet of each other. Make two melee weapon attacks against each target. On a hit, a target takes {@damage 1d4} slashing.",
+				"{@b Effect:} Choose one creature within range. Make two melee weapon attacks against the target. On a hit, the target takes {@damage 1d4} + your Class Ability Modifier slashing damage.",
 				"{@b Scaling:} The damage increases by {@damage 1d4} at levels 5 ({@damage 2d4}), 11 ({@damage 3d4}), and 17 ({@damage 4d4})."
-			]
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Double_Strike}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Double_Strike.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Wild Strike",
@@ -21849,11 +21861,8 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"DAG",
-				"WS",
-				"CHAI",
-				"ACT",
-				"SEQ"
+				"Dagger",
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -21861,16 +21870,31 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Bonus Action",
+				"{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
 				"{@b Recharge:} None",
 				"{@b Range:} 5 feet",
-				"{@b Target:} Up to 2 creatures",
-				"{@b Duration:} ",
+				"{@b Target:} 1 creature",
+				"{@b Duration:} Instantaneous",
 				"{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Double Strike|GW2} -> {@optfeature Wild Strike|GW2} -> {@optfeature Lotus Strike|GW2}, {@variantrule Sequence|GW2}: {@optfeature Backstab|GW2} while {@condition Invisible|XPHB}",
 				"{@b Description:} Strike your foe again, bleeding them. Gain endurance with a successful strike.",
-				"{@b Effect:} Choose up to 2 creatures within range that are within 5 feet of each other. Make a melee weapon attack against each target. On a hit, a target takes {@damage 1d8} slashing damage, is inflicted with 2 stacks of {@variantrule Bleeding|GW2} for 1 round, taking {@damage 1d8} damage and you gain 10 endurance.",
-				"{@b Scaling:} The damage each increases by {@damage 1d8} at levels 5 ({@damage 2d8} & {@damage 2d8}), 11 ({@damage 3d8} & {@damage 3d8}), and 17 ({@damage 4d8} & {@damage 4d8})."
-			]
+				"{@b Effect:} Choose one creature within range. Make a melee weapon attack against the target. On a hit, the target takes {@damage 1d4} + your Class Ability Modifier slashing damage, is inflicted with 2 stacks of {@variantrule Bleeding|GW2} for 1 round. You regain 10 {@variantrule Endurance|GW2} if you hit.",
+				"{@b Scaling:} The damage and the {@variantrule Bleeding|GW2} duration increase at levels 5 ({@damage 2d4} & 2 rounds), 11 ({@damage 3d4} & 3 rounds), and 17 ({@damage 4d4} & 4 rounds)."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Wild_Strike}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Wild_Strike.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Lotus Strike",
@@ -21878,11 +21902,8 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"DAG",
-				"WS",
-				"CHAI",
-				"ACT",
-				"SEQ"
+				"Dagger",
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -21890,16 +21911,31 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Special",
+				"{@b Casting Time:} 1 {@variantrule Action Points|GW2|AP}",
 				"{@b Recharge:} None",
 				"{@b Range:} 5 feet",
-				"{@b Target:} Up to 2 creatures",
+				"{@b Target:} 1 creature",
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Double Strike|GW2} -> {@optfeature Wild Strike|GW2} -> {@optfeature Lotus Strike|GW2}, {@variantrule Sequence|GW2}: {@optfeature Backstab|GW2} while {@condition Invisible|XPHB}",
 				"{@b Description:} Strike your foe and inflict Poison.",
-				"{@b Effect:} Choose up to 2 creatures within range that are within 5 feet of each other. Make a melee weapon attack against each target. On a hit, a target takes {@damage 2d6} piercing damage, is inflicted with 2 stacks of {@variantrule Poison|GW2} for 1 round, taking {@damage 1d10} damage.",
-				"{@b Scaling:} The damage each increases by {@damage 1d6} and {@damage 1d10} respectively at levels 5 ({@damage 3d6} & {@damage 2d10}), 11 ({@damage 4d6} & {@damage 3d10}), and 17 ({@damage 5d6} & {@damage 4d10})."
-			]
+				"{@b Effect:} Choose one creature within range. Make a melee weapon attack against the target. On a hit, the target takes {@damage 1d6} + your Class Ability Modifier piercing damage and is inflicted with 2 stacks of {@variantrule Poison|GW2} for 1 round.",
+				"{@b Scaling:} The damage and the {@variantrule Poison|GW2} duration increase at levels 5 ({@damage 2d6} & 2 rounds), 11 ({@damage 3d6} & 3 rounds), and 17 ({@damage 4d6} & 4 rounds)."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Lotus_Strike}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Lotus_Strike.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Backstab",
@@ -21907,10 +21943,9 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"DAG",
-				"WS",
-				"STE",
-				"BACT"
+				"Dagger",
+				"Weapon Skill",
+				"Stealth Attack"
 			],
 			"prerequisite": [
 				{
@@ -21918,16 +21953,31 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Bonus Action",
-				"{@b Recharge:} None",
+				"{@b Casting Time:} 1 {@variantrule Action Points|GW2|AP}",
+				"{@b Recharge:} {@recharge 1}",
 				"{@b Range:} 5 feet",
 				"{@b Target:} 1 creature",
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} Stealth Attack",
 				"{@b Description:} Attack your foe from the shadows, striking for double damage if you hit from behind or they are defiant.",
-				"{@b Effect:} Choose one creature within 5 feet of you. Make a melee weapon attack against the target. On a hit, the target takes {@damage 2d8} piercing damage. If at least one other ally of yours is within 5 feet of the target, the attack deals {@damage 5d6} piercing damage instead.",
-				"{@b Scaling:} The damage each increases by {@damage 2d8} and {@damage 5d6} respectively at levels 5 ({@damage 4d8} & {@damage 10d6}), 11 ({@damage 6d8} & {@damage 15d6}), and 17 ({@damage 8d8} & {@damage 20d6})."
-			]
+				"{@b Effect:} Choose one creature within range. Make a melee weapon attack against the target. On a hit, the target takes {@damage 2d8} + your Class Ability Modifier piercing damage. If you are {@variantrule Flanking|GW2} the creature, or it is {@variantrule Defiant|GW2}, you deal double damage.",
+				"{@b Scaling:} The damage increases by {@damage 2d8} at levels 5 ({@damage 4d8}), 11 ({@damage 6d8}), and 17 ({@damage 8d8})."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Backstab}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Backstab.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Heartseeker",
@@ -21935,10 +21985,8 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"DAG",
-				"WS",
-				"ACT",
-				"CIL"
+				"Dagger",
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -21946,16 +21994,31 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action",
+				"{@b Casting Time:} 3 {@variantrule Action Points|GW2|AP}",
 				"{@b Cost:} 3 {@variantrule Initiative Points|GW2}",
-				"{@b Range:} 45 feet",
+				"{@b Range:} 15 feet",
 				"{@b Target:} 1 creature",
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} {@variantrule Combo Finisher|GW2}: Leap",
 				"{@b Description:} Leap and strike your foe. The less health your target has, the more damage you cause.",
-				"{@b Effect:} Choose one creature that you can see within range. Leap to the target and make a melee weapon attack against it. On a hit, the target takes {@damage 1d0} piercing damage plus an additional {@damage 1d8} damage if it is {@condition Bloodied|XPHB}, or an additional {@damage 2d8} damage if it is below 25% of its hit point maximum.",
-				"{@b Scaling:} The damage each increases by {@damage 1d10}, {@damage 1d8}, and {@damage 2d8} respectively at levels 5 ({@damage 2d10} & {@damage 2d8}, & {@damage 4d8}), 11 ({@damage 3d10} & {@damage 3d8} & {@damage 6d8}), and 17 ({@damage 4d10} & {@damage 4d8} & {@damage 8d8})."
-			]
+				"{@b Effect:} Choose one creature that you can see within range. Leap to the target and make a melee weapon attack against it. On a hit, the target takes {@damage 1d10} + your Class Ability Modifier piercing damage plus an additional {@damage 1d8} damage if it is {@condition Bloodied|XPHB}, or an additional {@damage 2d8} damage if it is below 25% of its {@variantrule Hit Points|XPHB|Hit Point} maximum.",
+				"{@b Scaling:} The damage each increases by {@damage 1d10}, {@damage 1d8}, and {@damage 2d8} respectively at levels 5 ({@damage 2d10} & {@damage 2d8} & {@damage 4d8}), 11 ({@damage 3d10} & {@damage 3d8} & {@damage 6d8}), and 17 ({@damage 4d10} & {@damage 4d8} & {@damage 8d8})."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Heartseeker}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Heartseeker.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Twisting Fangs",
@@ -21963,8 +22026,8 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"DAG",
-				"WS",
+				"Dagger",
+				"Weapon Skill",
 				"BACT",
 				"ACT"
 			],
@@ -21990,8 +22053,8 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"DAG",
-				"WS",
+				"Dagger",
+				"Weapon Skill",
 				"DUA",
 				"BACT",
 				"CIP",
@@ -22020,12 +22083,9 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"DAG",
-				"WS",
-				"DUA",
-				"BACT",
-				"ACT",
-				"CIW"
+				"Dagger",
+				"Weapon Skill",
+				"Dual Attack"
 			],
 			"prerequisite": [
 				{
@@ -22033,16 +22093,31 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action or Bonus Action",
+				"{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
 				"{@b Cost:} 4 {@variantrule Initiative Points|GW2}",
-				"{@b Range:} 5 feet",
-				"{@b Target:} Up to 5 creatures",
+				"{@b Range:} 10 feet",
+				"{@b Target:} 1 creature",
 				"{@b Duration:} Instantaneous",
-				"{@b Properties:} {@variantrule Combo Finisher|GW2}: Whirl, Dual Wield, Evasive, Bleeding",
+				"{@b Properties:} {@variantrule Combo Finisher|GW2}: Whirl, Dual Wield",
 				"{@b Description:} Do an evasive attack over your target, striking nearby foes three times. Each hit causes bleeding.",
-				"{@b Effect:} You gain the benefits of the {@action Dodge|XPHB} action until the start of your next turn. Choose up to 5 creatures within range. Make three melee weapon attacks against each target. On a hit, a target takes {@damage 1d4} slashing damage and is inflicted with 2 stacks of {@variantrule Bleeding|GW2} for 1 round, taking {@damage 1d8} damage.",
-				"{@b Scaling:} The damage each increases by {@damage 1d4} and {@damage 1d8} respectively at levels 5 ({@damage 2d4} & {@damage 2d8}), 11 ({@damage 3d4} & {@damage 3d8}), and 17 ({@damage 4d4} & {@damage 4d8})."
-			]
+				"{@b Effect:} You spin through the air to an unoccupied space within range that you can see, without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}, using your {@variantrule High Jump|XPHB} height for determining if you can jump over creatures, striking with daggers at your enemies. Choose up to three creatures along the path of your spin. Make a total of three melee weapon attacks against the targets. On a hit, a target takes {@damage 1d4} + your Class Ability Modifier slashing damage and is inflicted with 2 stacks of {@variantrule Bleeding|GW2} for 1 round.",
+				"{@b Scaling:} The damage and number of {@variantrule Bleeding|GW2} stacks increase at levels 5 ({@damage 2d4} & 3 stacks), 11 ({@damage 3d4} & 4 stacks), and 17 ({@damage 4d4} & 5 stacks)."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Death_Blossom}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Death_Blossom.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Dancing Dagger",
@@ -22050,8 +22125,8 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"DAG",
-				"WS",
+				"Dagger",
+				"Weapon Skill",
 				"BACT",
 				"CIP"
 			],
@@ -22079,8 +22154,8 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"DAG",
-				"WS",
+				"Dagger",
+				"Weapon Skill",
 				"BACT",
 				"ACT"
 			],
@@ -22107,10 +22182,10 @@
 			"featureType": [
 				"Thief",
 				"PIS",
-				"WS",
+				"Weapon Skill",
 				"BACT",
 				"ACT",
-				"SEQ",
+				"Sequence",
 				"CIP"
 			],
 			"prerequisite": [
@@ -22137,10 +22212,10 @@
 			"featureType": [
 				"Thief",
 				"PIS",
-				"WS",
-				"STE",
+				"Weapon Skill",
+				"Stealth Attack",
 				"ACT",
-				"SEQ",
+				"Sequence",
 				"CIP"
 			],
 			"prerequisite": [
@@ -22167,7 +22242,7 @@
 			"featureType": [
 				"Thief",
 				"PIS",
-				"WS",
+				"Weapon Skill",
 				"BACT",
 				"ACT",
 				"CIP"
@@ -22196,7 +22271,7 @@
 			"featureType": [
 				"Thief",
 				"PIS",
-				"WS",
+				"Weapon Skill",
 				"CHAN",
 				"CIP"
 			],
@@ -22224,7 +22299,7 @@
 			"featureType": [
 				"Thief",
 				"PIS",
-				"WS",
+				"Weapon Skill",
 				"DUA",
 				"BACT",
 				"CIP"
@@ -22253,7 +22328,7 @@
 			"featureType": [
 				"Thief",
 				"PIS",
-				"WS",
+				"Weapon Skill",
 				"DUA",
 				"CHAN",
 				"CIP"
@@ -22282,7 +22357,7 @@
 			"featureType": [
 				"Thief",
 				"PIS",
-				"WS",
+				"Weapon Skill",
 				"BACT",
 				"CIP"
 			],
@@ -22310,7 +22385,7 @@
 			"featureType": [
 				"Thief",
 				"PIS",
-				"WS",
+				"Weapon Skill",
 				"BACT",
 				"ACT",
 				"CIP",
@@ -22341,7 +22416,7 @@
 			"featureType": [
 				"Thief",
 				"HARP",
-				"WS",
+				"Weapon Skill",
 				"BACT"
 			],
 			"prerequisite": [
@@ -22368,8 +22443,8 @@
 			"featureType": [
 				"Thief",
 				"HARP",
-				"WS",
-				"STE",
+				"Weapon Skill",
+				"Stealth Attack",
 				"ACT"
 			],
 			"prerequisite": [
@@ -22396,7 +22471,7 @@
 			"featureType": [
 				"Thief",
 				"HARP",
-				"WS",
+				"Weapon Skill",
 				"CHAN"
 			],
 			"prerequisite": [
@@ -22423,7 +22498,7 @@
 			"featureType": [
 				"Thief",
 				"HARP",
-				"WS",
+				"Weapon Skill",
 				"BACT",
 				"ACT"
 			],
@@ -22451,7 +22526,7 @@
 			"featureType": [
 				"Thief",
 				"HARP",
-				"WS",
+				"Weapon Skill",
 				"ACT"
 			],
 			"prerequisite": [
@@ -22478,9 +22553,9 @@
 			"featureType": [
 				"Thief",
 				"HARP",
-				"WS",
+				"Weapon Skill",
 				"BACT",
-				"SEQ"
+				"Sequence"
 			],
 			"prerequisite": [
 				{
@@ -22506,10 +22581,10 @@
 			"featureType": [
 				"Thief",
 				"HARP",
-				"WS",
+				"Weapon Skill",
 				"REAC",
 				"BACT",
-				"SEQ"
+				"Sequence"
 			],
 			"prerequisite": [
 				{
@@ -22535,8 +22610,8 @@
 			"featureType": [
 				"Thief",
 				"SPEA",
-				"WS",
-				"CHAI",
+				"Weapon Skill",
+				"Chain",
 				"BACT",
 				"ACT"
 			],
@@ -22564,8 +22639,8 @@
 			"featureType": [
 				"Thief",
 				"SPEA",
-				"WS",
-				"CHAI",
+				"Weapon Skill",
+				"Chain",
 				"ACT"
 			],
 			"prerequisite": [
@@ -22592,8 +22667,8 @@
 			"featureType": [
 				"Thief",
 				"SPEA",
-				"WS",
-				"CHAI",
+				"Weapon Skill",
+				"Chain",
 				"ACT"
 			],
 			"prerequisite": [
@@ -22620,8 +22695,8 @@
 			"featureType": [
 				"Thief",
 				"SPEA",
-				"WS",
-				"STE",
+				"Weapon Skill",
+				"Stealth Attack",
 				"BACT",
 				"ACT"
 			],
@@ -22649,7 +22724,7 @@
 			"featureType": [
 				"Thief",
 				"SPEA",
-				"WS",
+				"Weapon Skill",
 				"ACT"
 			],
 			"prerequisite": [
@@ -22676,7 +22751,7 @@
 			"featureType": [
 				"Thief",
 				"SPEA",
-				"WS",
+				"Weapon Skill",
 				"CHAN"
 			],
 			"prerequisite": [
@@ -22703,8 +22778,8 @@
 			"featureType": [
 				"Thief",
 				"SPEA",
-				"WS",
-				"SEQ",
+				"Weapon Skill",
+				"Sequence",
 				"REAC",
 				"BACT"
 			],
@@ -22732,10 +22807,10 @@
 			"featureType": [
 				"Thief",
 				"SPEA",
-				"WS",
+				"Weapon Skill",
 				"BACT",
 				"ACT",
-				"SEQ"
+				"Sequence"
 			],
 			"prerequisite": [
 				{
@@ -22761,9 +22836,9 @@
 			"featureType": [
 				"Thief",
 				"SPEA",
-				"WS",
+				"Weapon Skill",
 				"ACT",
-				"SEQ"
+				"Sequence"
 			],
 			"prerequisite": [
 				{
@@ -22789,7 +22864,7 @@
 			"featureType": [
 				"Thief",
 				"SPEA",
-				"WS",
+				"Weapon Skill",
 				"BACT",
 				"ACT"
 			],
@@ -23204,7 +23279,7 @@
 				"Utility Skill",
 				"PRE",
 				"BACT",
-				"SEQ"
+				"Sequence"
 			],
 			"prerequisite": [
 				{
@@ -23260,7 +23335,7 @@
 				"Utility Skill",
 				"PRE",
 				"BACT",
-				"SEQ"
+				"Sequence"
 			],
 			"prerequisite": [
 				{
@@ -23289,7 +23364,7 @@
 				"PRE",
 				"BACT",
 				"ACT",
-				"SEQ"
+				"Sequence"
 			],
 			"prerequisite": [
 				{
@@ -23317,7 +23392,7 @@
 				"Utility Skill",
 				"PRE",
 				"BACT",
-				"SEQ",
+				"Sequence",
 				"UNB"
 			],
 			"prerequisite": [
@@ -23375,7 +23450,7 @@
 				"Utility Skill",
 				"PRE",
 				"BACT",
-				"SEQ"
+				"Sequence"
 			],
 			"prerequisite": [
 				{
@@ -24048,7 +24123,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -24072,7 +24147,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -24096,7 +24171,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -24120,7 +24195,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -24144,7 +24219,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -24168,7 +24243,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -24422,7 +24497,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -24446,7 +24521,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -24470,7 +24545,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -24494,7 +24569,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -24518,7 +24593,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -24773,7 +24848,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -24797,7 +24872,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -24821,7 +24896,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -24845,7 +24920,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -24869,7 +24944,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -25099,7 +25174,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -25123,7 +25198,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -25147,7 +25222,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -25171,7 +25246,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -25195,7 +25270,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -25219,7 +25294,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -25243,7 +25318,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -25267,7 +25342,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -25291,7 +25366,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -25315,7 +25390,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -25339,7 +25414,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -25363,7 +25438,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -25387,7 +25462,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -25411,7 +25486,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -25435,7 +25510,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -25459,7 +25534,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -25483,7 +25558,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -25507,7 +25582,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -25531,7 +25606,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -25555,7 +25630,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -25579,7 +25654,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -27406,7 +27481,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -27430,7 +27505,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -27454,7 +27529,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -27478,7 +27553,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -27502,7 +27577,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -27526,7 +27601,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -27550,7 +27625,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -27714,7 +27789,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"WAR",
 				"BACT",
 				"HARP",
@@ -27742,7 +27817,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -27766,7 +27841,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -27790,7 +27865,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -27814,7 +27889,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -27866,11 +27941,11 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"WAR",
 				"ACT",
 				"SPEA",
-				"CHAI"
+				"Chain"
 			],
 			"prerequisite": [
 				{
@@ -27894,11 +27969,11 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"WAR",
 				"BACT",
 				"SPEA",
-				"CHAI"
+				"Chain"
 			],
 			"prerequisite": [
 				{
@@ -27922,11 +27997,11 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"WAR",
 				"SPEC",
 				"SPEA",
-				"CHAI"
+				"Chain"
 			],
 			"prerequisite": [
 				{
@@ -27950,7 +28025,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -27974,7 +28049,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -27998,7 +28073,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -28022,7 +28097,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -28046,7 +28121,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -28070,7 +28145,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -28094,7 +28169,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -28118,7 +28193,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -28170,11 +28245,11 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"WAR",
 				"ACT",
 				"SWO",
-				"CHAI"
+				"Chain"
 			],
 			"prerequisite": [
 				{
@@ -28198,11 +28273,11 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"WAR",
 				"ACT",
 				"SWO",
-				"CHAI"
+				"Chain"
 			],
 			"prerequisite": [
 				{
@@ -28226,11 +28301,11 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"WAR",
 				"ACT",
 				"SWO",
-				"CHAI"
+				"Chain"
 			],
 			"prerequisite": [
 				{
@@ -28254,7 +28329,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -28278,7 +28353,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -28302,7 +28377,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -28326,7 +28401,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -28350,7 +28425,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -28374,7 +28449,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -28426,11 +28501,11 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"WAR",
 				"BACT",
 				"AXE",
-				"CHAI"
+				"Chain"
 			],
 			"prerequisite": [
 				{
@@ -28454,11 +28529,11 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"WAR",
 				"SPEC",
 				"AXE",
-				"CHAI"
+				"Chain"
 			],
 			"prerequisite": [
 				{
@@ -28482,11 +28557,11 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"WAR",
 				"ACT",
 				"AXE",
-				"CHAI"
+				"Chain"
 			],
 			"prerequisite": [
 				{
@@ -28510,7 +28585,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -28534,7 +28609,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -28558,7 +28633,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -28582,7 +28657,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -28635,11 +28710,11 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"WAR",
 				"ACT",
 				"MAC",
-				"CHAI"
+				"Chain"
 			],
 			"prerequisite": [
 				{
@@ -28663,11 +28738,11 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"WAR",
 				"BACT",
 				"MAC",
-				"CHAI"
+				"Chain"
 			],
 			"prerequisite": [
 				{
@@ -28691,11 +28766,11 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"WAR",
 				"SPEC",
 				"MAC",
-				"CHAI"
+				"Chain"
 			],
 			"prerequisite": [
 				{
@@ -28719,7 +28794,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -28743,7 +28818,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -28767,7 +28842,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -28791,7 +28866,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -28815,7 +28890,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -28868,7 +28943,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"WAR",
 				"LONG",
 				"ACT",
@@ -28896,7 +28971,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"WAR",
 				"LONG",
 				"PI",
@@ -28924,7 +28999,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -28948,7 +29023,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -28972,7 +29047,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29027,7 +29102,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"WAR",
 				"RIF",
 				"ACT",
@@ -29056,7 +29131,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29080,7 +29155,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29104,7 +29179,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29128,7 +29203,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29181,11 +29256,11 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"WAR",
 				"ACT",
 				"HAM",
-				"CHAI"
+				"Chain"
 			],
 			"prerequisite": [
 				{
@@ -29209,11 +29284,11 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"WAR",
 				"BACT",
 				"HAM",
-				"CHAI"
+				"Chain"
 			],
 			"prerequisite": [
 				{
@@ -29237,11 +29312,11 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"WAR",
 				"SPEC",
 				"HAM",
-				"CHAI"
+				"Chain"
 			],
 			"prerequisite": [
 				{
@@ -29265,7 +29340,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29289,7 +29364,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29313,7 +29388,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29337,7 +29412,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29390,11 +29465,11 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"WAR",
 				"ACT",
 				"GRE",
-				"CHAI"
+				"Chain"
 			],
 			"prerequisite": [
 				{
@@ -29418,11 +29493,11 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"WAR",
 				"BACT",
 				"GRE",
-				"CHAI"
+				"Chain"
 			],
 			"prerequisite": [
 				{
@@ -29446,11 +29521,11 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"WAR",
 				"SPEC",
 				"GRE",
-				"CHAI"
+				"Chain"
 			],
 			"prerequisite": [
 				{
@@ -29474,7 +29549,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"WAR",
 				"GRE",
 				"CHAN"
@@ -29501,7 +29576,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29525,7 +29600,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29549,7 +29624,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29573,7 +29648,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29597,7 +29672,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29621,7 +29696,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29645,7 +29720,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29669,7 +29744,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29693,7 +29768,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"ELE",
 				"STA",
 				"WATT",
@@ -29721,7 +29796,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"ELE",
 				"ACT",
 				"STA",
@@ -29750,7 +29825,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29774,7 +29849,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29798,7 +29873,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29822,7 +29897,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29846,7 +29921,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29870,7 +29945,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29894,7 +29969,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29918,7 +29993,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29942,7 +30017,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29966,7 +30041,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -29990,7 +30065,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30014,7 +30089,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30038,7 +30113,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30062,7 +30137,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30086,7 +30161,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30110,7 +30185,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30134,7 +30209,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30158,7 +30233,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"ELE",
 				"SCE",
 				"WATT",
@@ -30186,7 +30261,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30210,7 +30285,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30234,7 +30309,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30258,7 +30333,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30282,7 +30357,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30306,7 +30381,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30330,7 +30405,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30354,7 +30429,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30378,7 +30453,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30402,7 +30477,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30426,7 +30501,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30450,7 +30525,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30474,7 +30549,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30498,7 +30573,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30522,11 +30597,11 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"ELE",
 				"ACT",
 				"WATT",
-				"DAG"
+				"Dagger"
 			],
 			"prerequisite": [
 				{
@@ -30550,7 +30625,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30574,7 +30649,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30598,7 +30673,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30622,7 +30697,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30646,7 +30721,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30670,7 +30745,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30694,7 +30769,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30718,7 +30793,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30742,7 +30817,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30766,7 +30841,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30790,7 +30865,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30814,7 +30889,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30838,7 +30913,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30862,7 +30937,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30886,7 +30961,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30910,7 +30985,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30934,7 +31009,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30958,7 +31033,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -30982,7 +31057,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31006,7 +31081,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31030,7 +31105,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31054,7 +31129,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31078,7 +31153,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31102,7 +31177,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31126,7 +31201,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31150,7 +31225,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31174,7 +31249,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31198,7 +31273,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31222,7 +31297,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31246,7 +31321,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31270,7 +31345,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"ELE",
 				"ACT",
 				"WATT",
@@ -31298,7 +31373,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"ELE",
 				"ACT",
 				"WATT",
@@ -31327,7 +31402,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31351,7 +31426,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31375,7 +31450,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31399,7 +31474,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31423,7 +31498,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31447,7 +31522,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31471,7 +31546,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31495,7 +31570,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31519,7 +31594,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31543,7 +31618,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31567,7 +31642,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31591,7 +31666,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31615,7 +31690,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31639,7 +31714,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31663,7 +31738,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31687,7 +31762,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31711,7 +31786,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31735,7 +31810,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31759,7 +31834,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31783,7 +31858,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31807,7 +31882,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31831,7 +31906,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31855,7 +31930,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31879,7 +31954,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31903,7 +31978,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31927,7 +32002,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31951,7 +32026,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31975,7 +32050,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -31999,7 +32074,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -32023,7 +32098,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -32047,7 +32122,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -32071,7 +32146,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -32095,7 +32170,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -32119,7 +32194,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -32143,7 +32218,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -32167,7 +32242,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -32191,7 +32266,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -32215,7 +32290,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -32239,7 +32314,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -32263,7 +32338,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -32287,7 +32362,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -32311,7 +32386,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -32335,7 +32410,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -32359,7 +32434,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -32383,7 +32458,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -32407,7 +32482,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -32431,7 +32506,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -32455,7 +32530,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -32479,7 +32554,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -33523,12 +33598,12 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"ENG",
 				"RIF",
 				"ACT",
 				"CIP",
-				"CHAI",
+				"Chain",
 				"PI"
 			],
 			"prerequisite": [
@@ -33553,11 +33628,11 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"ENG",
 				"RIF",
 				"BACT",
-				"CHAI",
+				"Chain",
 				"EXP"
 			],
 			"prerequisite": [
@@ -33582,7 +33657,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -33606,7 +33681,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -33630,7 +33705,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -33654,7 +33729,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -33678,7 +33753,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"ENG",
 				"ACT",
 				"BACT",
@@ -33707,7 +33782,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -33731,7 +33806,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -33755,7 +33830,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -33779,7 +33854,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -33803,7 +33878,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -33827,7 +33902,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -33851,7 +33926,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -33875,7 +33950,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -33899,7 +33974,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"ENG",
 				"HARP",
 				"ACT",
@@ -33928,7 +34003,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -33952,7 +34027,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -33976,7 +34051,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34000,7 +34075,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34024,7 +34099,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34048,7 +34123,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34072,7 +34147,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34096,7 +34171,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34120,7 +34195,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34144,7 +34219,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34168,7 +34243,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34192,7 +34267,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34216,7 +34291,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34240,7 +34315,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34264,7 +34339,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34288,7 +34363,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34312,7 +34387,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34336,7 +34411,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34360,7 +34435,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34384,7 +34459,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34408,7 +34483,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34432,7 +34507,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34456,7 +34531,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34480,7 +34555,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34504,7 +34579,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34528,7 +34603,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34552,7 +34627,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34576,7 +34651,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34600,7 +34675,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34624,7 +34699,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34648,7 +34723,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS",
+				"Weapon Skill",
 				"ENG",
 				"KIT",
 				"CHAN"
@@ -34674,7 +34749,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34698,7 +34773,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34722,7 +34797,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34746,7 +34821,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34770,7 +34845,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34794,7 +34869,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34818,7 +34893,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34842,7 +34917,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34866,7 +34941,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34890,7 +34965,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34914,7 +34989,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
@@ -34938,7 +35013,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"WS"
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{

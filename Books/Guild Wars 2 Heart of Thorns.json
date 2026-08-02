@@ -647,28 +647,40 @@
             "featureType": [
                 "Daredevil",
                 "Thief",
-                "STA",
-                "WS",
-                "CHAI",
-                "BACT",
-                "ACT"
+                "Staff",
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
-                    "other": "Thief wielding a Staff"
+                    "other": "Daredevil wielding a Staff"
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Bonus Action or Action",
+                "{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
                 "{@b Recharge:} None",
-                "{@b Range:} 180",
-                "{@b Target:} Foe",
-                "{@b Duration:} ",
-                "{@b Properties:} Chain",
-                "{@b Description:} Chain. Strike your enemies with your staff.",
-                "{@b Effect:} ",
-                "{@b Scaling:} "
-            ]
+                "{@b Range:} 5 ft.",
+                "{@b Target:} 1 creature",
+                "{@b Duration:} Instantaneous",
+                "{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Staff Strike|GW2HoT} -> {@optfeature Staff Bash|GW2HoT} -> {@optfeature Punishing Strikes|GW2HoT}, {@variantrule Sequence|GW2}: {@optfeature Hook Strike|GW2HoT} while {@condition Invisible|XPHB}",
+                "{@b Description:} Strike your enemies with your staff.",
+                "{@b Effect:} Choose one creature within range. Make a melee weapon attack against the target. On a hit, the target takes {@damage 1d8} + your Class Ability Modifier bludgeoning damage.",
+                "{@b Scaling:} The damage increases when you reach levels 5 ({@damage 2d8}), 11 ({@damage 3d8}), and 17 ({@damage 4d8})."
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Staff_Strike}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Staff_Strike.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Staff Bash",
@@ -677,28 +689,40 @@
             "featureType": [
                 "Daredevil",
                 "Thief",
-                "STA",
-                "WS",
-                "CHAI",
-                "BACT",
-                "ACT"
+                "Staff",
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
-                    "other": "Thief wielding a Staff. Must follow Staff Strike."
+                    "other": "Daredevil wielding a Staff"
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Bonus Action or Action",
+                "{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
                 "{@b Recharge:} None",
-                "{@b Range:} 180",
-                "{@b Target:} Foes",
-                "{@b Duration:} ",
-                "{@b Properties:} Chain",
-                "{@b Description:} Chain. Swing your staff a second time, striking multiple enemies.",
-                "{@b Effect:} ",
-                "{@b Scaling:} "
-            ]
+                "{@b Range:} 5 ft.",
+                "{@b Target:} 1 creature",
+                "{@b Duration:} Instantaneous",
+                "{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Staff Strike|GW2HoT} -> {@optfeature Staff Bash|GW2HoT} -> {@optfeature Punishing Strikes|GW2HoT}, {@variantrule Sequence|GW2}: {@optfeature Hook Strike|GW2HoT} while {@condition Invisible|XPHB}",
+                "{@b Description:} Swing your staff a second time.",
+                "{@b Effect:} Choose one creature within range. Make a melee weapon attack against the target. On a hit, the target takes {@damage 1d10} + your Class Ability Modifier bludgeoning damage.",
+                "{@b Scaling:} The damage increases when you reach levels 5 ({@damage 2d10}), 11 ({@damage 3d10}), and 17 ({@damage 4d10})."
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Staff_Bash}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Staff_Bash.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Punishing Strikes",
@@ -707,28 +731,40 @@
             "featureType": [
                 "Daredevil",
                 "Thief",
-                "STA",
-                "WS",
-                "CHAI",
-                "Combo Finisher Whirl",
-                "ACT"
+                "Staff",
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
-                    "other": "Thief wielding a Staff. Must follow Staff Bash."
+                    "other": "Daredevil wielding a Staff"
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Action",
+                "{@b Casting Time:} 4 {@variantrule Action Points|GW2|AP}",
                 "{@b Recharge:} None",
-                "{@b Range:} 180",
-                "{@b Target:} Area",
-                "{@b Duration:} ",
-                "{@b Properties:} Chain, Whirl Finisher",
-                "{@b Description:} Chain. Whirl your staff around, striking nearby enemies.",
-                "{@b Effect:} ",
-                "{@b Scaling:} "
-            ]
+                "{@b Range:} 5 ft.",
+                "{@b Target:} Up to 3 creatures",
+                "{@b Duration:} Instantaneous",
+                "{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Staff Strike|GW2HoT} -> {@optfeature Staff Bash|GW2HoT} -> {@optfeature Punishing Strikes|GW2HoT}, {@variantrule Combo Finisher|GW2|Combo Finisher:} Whirl (one for each attack), {@variantrule Sequence|GW2}: {@optfeature Hook Strike|GW2HoT} while {@condition Invisible|XPHB}",
+                "{@b Description:} Whirl your staff around, striking nearby enemies.",
+                "{@b Effect:} Choose up to three creature within range of you. Make a total of four melee weapon against them. On a hit, a target takes {@damage 1d6} + your Class Ability Modifier bludgeoning damage and is inflicted with {@variantrule Vulnerability|GW2} for 1 round.",
+                "{@b Scaling:} The number of attacks increase as you reach levels 5 (five attacks), 11 (six attacks), 17 (seven attacks)."
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Punishing_Strikes}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Punishing_Strikes.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Hook Strike",
@@ -737,27 +773,41 @@
             "featureType": [
                 "Daredevil",
                 "Thief",
-                "STA",
-                "WS",
-                "STE",
-                "ACT"
+                "Staff",
+                "Weapon Skill",
+                "Stealth Attack"
             ],
             "prerequisite": [
                 {
-                    "other": "Thief wielding a Staff"
+                    "other": "Daredevil wielding a Staff"
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Action",
-                "{@b Recharge:} None",
-                "{@b Range:} 180",
-                "{@b Target:} Foe",
-                "{@b Duration:} ",
-                "{@b Properties:} Stealth Attack, Knockdown",
-                "{@b Description:} Stealth Attack. Attack your foes with stealth, knocking enemies down.",
-                "{@b Effect:} ",
-                "{@b Scaling:} "
-            ]
+                "{@b Casting Time:} 3 {@variantrule Action Points|GW2|AP}",
+                "{@b Recharge:} {@recharge 1}",
+                "{@b Range:} 5 ft.",
+                "{@b Target:} 1 creature",
+                "{@b Duration:} Instantaneous",
+                "{@b Properties:} Stealth Attack",
+                "{@b Description:} Attack your foes with stealth, knocking enemies down.",
+                "{@b Effect:} Choose one creature within range. Make a melee weapon attack against the target. On a hit, the target takes {@damage 1d4} + your Class Ability Modifier bludgeoning and must make a Strength Saving Throw, or be {@variantrule Knockdown|GW2} for 1 round.",
+                "{@b Scaling:} The damage increases as you reach levels 5 ({@damage 2d4}), 11 ({@damage 3d4}), and ({@damage 4d4}). The duration of the {@variantrule Knockdown|GW2} increases when you reach level 11 (2 rounds)."
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Hook_Strike}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Hook_Strike.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Weakening Whirl",
@@ -766,28 +816,40 @@
             "featureType": [
                 "Daredevil",
                 "Thief",
-                "STA",
-                "WS",
-                "Combo Finisher Whirl",
-                "BACT",
-                "ACT"
+                "Staff",
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
-                    "other": "Thief wielding a Staff"
+                    "other": "Daredevil wielding a Staff"
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Bonus Action or Action",
-                "{@b Recharge:} None",
-                "{@b Range:} 180",
-                "{@b Target:} Area",
-                "{@b Duration:} ",
-                "{@b Properties:} Whirl Finisher, Inflicts Weakness",
+                "{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
+                "{@b Cost:} 3 {@variantrule Initiative Points|GW2}",
+                "{@b Range:} 5 ft.",
+                "{@b Target:} Up to 3 creatures",
+                "{@b Duration:} Instantaneous",
+                "{@b Properties:} {@variantrule Combo Finisher|GW2|Combo Finisher:} Whirl (one for each attack)",
                 "{@b Description:} Deliver multiple strikes, weakening foes.",
-                "{@b Effect:} ",
-                "{@b Scaling:} "
-            ]
+                "{@b Effect:} Choose up to three creature within range of you. Make a total of three melee weapon against them. On a hit, a target takes {@damage 1d8} + your Class Ability Modifier bludgeoning damage and is inflicted with {@variantrule Weakness|GW2} for 1 round.",
+                "{@b Scaling:} The number of attacks increase as you reach levels 5 (four attacks), 11 (five attacks), 17 (six attacks)."
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Weakening_Whirl}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Weakening_Whirl.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Debilitating Arc",
@@ -796,28 +858,40 @@
             "featureType": [
                 "Daredevil",
                 "Thief",
-                "STA",
-                "WS",
-                "SEQ",
-                "REAC",
-                "BACT"
+                "Staff",
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
-                    "other": "Thief wielding a Staff"
+                    "other": "Daredevil wielding a Staff"
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Reaction/Bonus Action",
-                "{@b Recharge:} {@chance 75|5+}",
-                "{@b Range:} 180",
-                "{@b Target:} Area",
-                "{@b Duration:} ",
-                "{@b Properties:} Leap Away, Breaks Immobilize, Sequence",
+                "{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
+                "{@b Cost:} 3 {@variantrule Initiative Points|GW2}",
+                "{@b Range:} 5 ft.",
+                "{@b Target:} 1 creature",
+                "{@b Duration:} Instantaneous",
+                "{@b Properties:} Movement, {@variantrule Sequence|GW2}: {@optfeature Helmet Breaker|GW2HoT} after hitting with the attack",
                 "{@b Description:} Strike enemies in front of you and roll backward, breaking immobilizing effects. Gain access to Helmet Breaker.",
-                "{@b Effect:} ",
-                "{@b Scaling:} "
-            ]
+                "{@b Effect:} Remove the {@variantrule Immobile|GW2} {@variantrule Condition|GW2} from yourself. Choose one creature within range. Make a melee weapon attack against the target. On a hit, a target takes {@damage 1d10} + your Class Ability Modifier bludgeoning damage, is inflicted with {@variantrule Crippled|GW2} for 1 round, and you gain access to {@optfeature Helmet Breaker|GW2HoT} for 1 round. You move up to 20 feet, in a straight line away from the creature, without provoking {@action Opportunity Attack|XPHB|Opportunity Attack}.",
+                "{@b Scaling:} The damage increases as you reach levels 5 ({@damage 2d10}), 11 ({@damage 3d10}), and 17 ({@damage 4d10})."
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Debilitating_Arc}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Debilitating_Arc.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Helmet Breaker",
@@ -826,29 +900,40 @@
             "featureType": [
                 "Daredevil",
                 "Thief",
-                "STA",
-                "WS",
-                "SEQ",
-                "CIL",
-                "BACT",
-                "ACT"
+                "Staff",
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
-                    "other": "Thief wielding a Staff. Must follow Debilitating Arc."
+                    "other": "Daredevil wielding a Staff"
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Bonus Action or Action",
-                "{@b Recharge:} None",
-                "{@b Range:} 180",
-                "{@b Target:} Foe",
-                "{@b Duration:} ",
-                "{@b Properties:} Leap Finisher, Inflicts Daze",
+                "{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
+                "{@b Cost:} 1 {@variantrule Initiative Points|GW2|Initiative Point}",
+                "{@b Range:} 25 ft.",
+                "{@b Target:} 1 creature",
+                "{@b Duration:} Instantaneous",
+                "{@b Properties:} {@variantrule Combo Finisher|GW2} Leap, Movement",
                 "{@b Description:} Leap at your target with an overhead strike that dazes them.",
-                "{@b Effect:} ",
-                "{@b Scaling:} "
-            ]
+                "{@b Effect:} Choose one creature that you can see within range. Leap within 5 feet of that target to an unoccupied space and make a melee weapon attack against it. On a hit, the target takes {@damage 2d6} + your Class Ability Modifier bludgeoning damage and must succeed on a Constitution Saving Throw or be inflicted with 1 round of {@variantrule Daze|GW2}.",
+                "{@b Scaling:} The damage increases as you reach levels 5 ({@damage 4d6}), 11 ({@damage 6d6}), and 17 ({@damage 8d6})."
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Helmet_Breaker}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Helmet_Breaker.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Dust Strike",
@@ -857,8 +942,8 @@
             "featureType": [
                 "Daredevil",
                 "Thief",
-                "STA",
-                "WS",
+                "Staff",
+                "Weapon Skill",
                 "ACT"
             ],
             "prerequisite": [
@@ -885,8 +970,8 @@
             "featureType": [
                 "Daredevil",
                 "Thief",
-                "STA",
-                "WS",
+                "Staff",
+                "Weapon Skill",
                 "CIL",
                 "ACT"
             ],
@@ -2451,7 +2536,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2475,7 +2560,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2499,7 +2584,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2523,7 +2608,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2547,7 +2632,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2571,7 +2656,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2595,7 +2680,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2619,7 +2704,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2643,7 +2728,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2667,7 +2752,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2691,7 +2776,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2715,7 +2800,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2739,7 +2824,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2763,7 +2848,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2787,7 +2872,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2811,7 +2896,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2835,7 +2920,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {

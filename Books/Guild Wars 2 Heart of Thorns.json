@@ -874,7 +874,7 @@
                 "{@b Duration:} Instantaneous",
                 "{@b Properties:} Movement, {@variantrule Sequence|GW2}: {@optfeature Helmet Breaker|GW2HoT} after hitting with the attack",
                 "{@b Description:} Strike enemies in front of you and roll backward, breaking immobilizing effects. Gain access to Helmet Breaker.",
-                "{@b Effect:} Remove the {@variantrule Immobile|GW2} {@variantrule Condition|GW2} from yourself. Choose one creature within range. Make a melee weapon attack against the target. On a hit, a target takes {@damage 1d10} + your Class Ability Modifier bludgeoning damage, is inflicted with {@variantrule Crippled|GW2} for 1 round, and you gain access to {@optfeature Helmet Breaker|GW2HoT} for 1 round. You move up to 20 feet, in a straight line away from the creature, without provoking {@action Opportunity Attack|XPHB|Opportunity Attack}.",
+                "{@b Effect:} Remove the {@variantrule Immobile|GW2} {@variantrule Condition|GW2} from yourself. Choose one creature within range. Make a melee weapon attack against the target. On a hit, a target takes {@damage 1d10} + your Class Ability Modifier bludgeoning damage, is inflicted with {@variantrule Crippled|GW2} for 1 round, and you gain access to {@optfeature Helmet Breaker|GW2HoT} for 2 rounds. You move up to 20 feet, in a straight line away from the creature, without provoking {@action Opportunity Attack|XPHB|Opportunity Attack}.",
                 "{@b Scaling:} The damage increases as you reach levels 5 ({@damage 2d10}), 11 ({@damage 3d10}), and 17 ({@damage 4d10})."
             ],
 			"fluff": {
@@ -914,9 +914,9 @@
                 "{@b Range:} 25 ft.",
                 "{@b Target:} 1 creature",
                 "{@b Duration:} Instantaneous",
-                "{@b Properties:} {@variantrule Combo Finisher|GW2} Leap, Movement",
+                "{@b Properties:} {@variantrule Combo Finisher|GW2} Leap, Movement, {@variantrule Sequence|GW2}: {@optfeature Debilitating Arc|GW2HoT} after using the skill",
                 "{@b Description:} Leap at your target with an overhead strike that dazes them.",
-                "{@b Effect:} Choose one creature that you can see within range. Leap within 5 feet of that target to an unoccupied space and make a melee weapon attack against it. On a hit, the target takes {@damage 2d6} + your Class Ability Modifier bludgeoning damage and must succeed on a Constitution Saving Throw or be inflicted with 1 round of {@variantrule Daze|GW2}.",
+                "{@b Effect:} Choose one creature that you can see within range. Leap within 5 feet of that target to an unoccupied space and make a melee weapon attack against it. On a hit, the target takes {@damage 2d6} + your Class Ability Modifier bludgeoning damage and must succeed on a Constitution Saving Throw or be inflicted with 1 round of {@variantrule Daze|GW2}. You loose access to this {@variantrule Skill|GW2} until you use {@optfeature Debilitating Arc|GW2HoT} again.",
                 "{@b Scaling:} The damage increases as you reach levels 5 ({@damage 4d6}), 11 ({@damage 6d6}), and 17 ({@damage 8d6})."
             ],
 			"fluff": {
@@ -1039,9 +1039,8 @@
             "page": "",
             "featureType": [
                 "Daredevil",
-                "US",
-                "PHY",
-                "ACT"
+                "Utility Skill",
+                "Physical"
             ],
             "prerequisite": [
                 {
@@ -1049,16 +1048,31 @@
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Action",
-                "{@b Recharge:} {@chance 45|12+}",
-                "{@b Range:} ",
+                "{@b Casting Time:} {@variantrule Channel|GW2}: 6 {@variantrule Action Points|GW2|AP}",
+                "{@b Recharge:} {@recharge 3}",
+                "{@b Range:} Self",
                 "{@b Target:} Self",
-                "{@b Duration:} ",
-                "{@b Properties:} Physical",
-                "{@b Description:} Physical. Briefly block incoming attacks. Blocking an attack grants access to a retaliatory attack.",
-                "{@b Effect:} ",
-                "{@b Scaling:} "
-            ]
+                "{@b Duration:} Instantaneous",
+                "{@b Properties:} Physical, {@variantrule Sequence|GW2}: {@optfeature Reflexive Strike|GW2HoT} after {@variantrule Channel|GW2} ended, if something was blocked, {@variantrule Stun Break|GW2}",
+                "{@b Description:} Briefly block incoming attacks. Blocking an attack grants access to a retaliatory attack.",
+                "{@b Effect:} During the {@variantrule Channel|GW2} you have a +2 bonus to your {@variantrule Armor Class|XPHB} and {@variantrule Saving Throw|XPHB|Saving Throws}. You can double the bonus for a number of turns equal to the number of {@variantrule Action Points|GW2|AP} spent, when you spent {@variantrule Action Points|GW2|AP} {@variantrule Channel|GW2|Channeling} it. If an attack misses you because of this bonus, or you succeed on a {@variantrule Saving Throw|XPHB} because of it, you gain access to {@optfeature Reflexive Strike|GW2HoT} for 2 rounds.",
+                "{@b Scaling:} The bonus increases when you reach levels 5 (+3), 11 (+4), and 17 (+6)."
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Bandit's_Defense}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Bandit's_Defense.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Reflexive Strike",
@@ -1066,11 +1080,8 @@
             "page": "",
             "featureType": [
                 "Daredevil",
-                "US",
-                "PHY",
-                "SEQ",
-                "BACT",
-                "ACT"
+                "Utility Skill",
+                "Physical"
             ],
             "prerequisite": [
                 {
@@ -1078,16 +1089,31 @@
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Bonus Action or Action",
+                "{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
                 "{@b Recharge:} None",
-                "{@b Range:} ",
-                "{@b Target:} Foe",
-                "{@b Duration:} ",
-                "{@b Properties:} Physical",
-                "{@b Description:} Physical. Deliver a massive kick that knocks enemies down.",
-                "{@b Effect:} ",
-                "{@b Scaling:} "
-            ]
+                "{@b Range:} 5 ft.",
+                "{@b Target:} 1 creature",
+                "{@b Duration:} Instantaneous",
+                "{@b Properties:} Physical, {@variantrule Sequence|GW2}: {@optfeature Bandit's Defense|GW2HoT} after using the skill",
+                "{@b Description:} Deliver a massive kick that knocks enemies down.",
+                "{@b Effect:} Choose one creature within range. Make a melee weapon attack against the target. On a hit, the target takes {@damage 1d4} + your Class Ability Modifier bludgeoning damage and must make a Strength Saving Throw of be {@variantrule Knockdown|GW2} for 1 round.",
+                "{@b Scaling:} The damage increases when you reach levels 5 ({@damage 2d4}), 11 ({@damage 3d4}), and 17 ({@damage 4d4})."
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Reflexive_Strike}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Reflexive_Strike.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Distracting Daggers",
@@ -1095,8 +1121,8 @@
             "page": "",
             "featureType": [
                 "Daredevil",
-                "US",
-                "PHY",
+                "Utility Skill",
+                "Physical",
                 "REAC",
                 "BACT"
             ],
@@ -1123,8 +1149,8 @@
             "page": "",
             "featureType": [
                 "Daredevil",
-                "US",
-                "PHY",
+                "Utility Skill",
+                "Physical",
                 "ACT"
             ],
             "prerequisite": [
@@ -1150,8 +1176,8 @@
             "page": "",
             "featureType": [
                 "Daredevil",
-                "US",
-                "PHY",
+                "Utility Skill",
+                "Physical",
                 "SEQ",
                 "BACT",
                 "ACT"
@@ -1179,8 +1205,8 @@
             "page": "",
             "featureType": [
                 "Daredevil",
-                "US",
-                "PHY",
+                "Utility Skill",
+                "Physical",
                 "BACT",
                 "ACT"
             ],
@@ -1208,7 +1234,7 @@
             "featureType": [
                 "Daredevil",
                 "ES",
-                "PHY",
+                "Physical",
                 "BACT",
                 "ACT"
             ],
@@ -2399,7 +2425,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {
@@ -2423,7 +2449,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {
@@ -2447,7 +2473,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {
@@ -2471,7 +2497,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {
@@ -2968,7 +2994,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {
@@ -2992,7 +3018,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {
@@ -3016,7 +3042,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {
@@ -3040,7 +3066,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {
@@ -3136,7 +3162,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {
@@ -3184,7 +3210,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {
@@ -3232,7 +3258,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {
@@ -3280,7 +3306,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {

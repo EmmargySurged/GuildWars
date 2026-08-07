@@ -4277,18 +4277,6 @@
 				"unconscious"
 			],
 			"action": [
-				{
-					"name": "{@optfeature Cleansing Burst|GW2}",
-					"entries": [
-						"When first deployed, the Turret uses its Overcharge skill: {@optfeature Cleansing Burst|GW2}."
-					]
-				},
-				{
-					"name": "{@optfeature Regenerative Mist|GW2}",
-					"entries": [
-						"It then uses the {@optfeature Regenerative Mist|GW2} skill at the start of each of your turns until destroyed."
-					]
-				}
 			],
 			"tokenHref": {
 				"type": "external",
@@ -33717,7 +33705,7 @@
 			"page": "",
 			"featureType": [
 				"Weapon Skill",
-				"ENG",
+				"Engineer",
 				"RIF",
 				"ACT",
 				"CIP",
@@ -33747,7 +33735,7 @@
 			"page": "",
 			"featureType": [
 				"Weapon Skill",
-				"ENG",
+				"Engineer",
 				"RIF",
 				"BACT",
 				"Chain",
@@ -33872,7 +33860,7 @@
 			"page": "",
 			"featureType": [
 				"Weapon Skill",
-				"ENG",
+				"Engineer",
 				"ACT",
 				"BACT",
 				"CIP",
@@ -34093,7 +34081,7 @@
 			"page": "",
 			"featureType": [
 				"Weapon Skill",
-				"ENG",
+				"Engineer",
 				"HARP",
 				"ACT",
 				"CIP",
@@ -34842,9 +34830,8 @@
 			"page": "",
 			"featureType": [
 				"Weapon Skill",
-				"ENG",
-				"KIT",
-				"CHAN"
+				"Engineer",
+				"Kit"
 			],
 			"prerequisite": [
 				{
@@ -34852,15 +34839,30 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} {@variantrule Channel|GW2}: 12",
+				"{@b Casting Time:} {@variantrule Channel|GW2}: 5 {@variantrule Action Points|GW2|AP}",
 				"{@b Recharge:} None",
 				"{@b Range:} Self",
-				"{@b Target:} 45-foot-long 5-foot-wide line",
+				"{@b Target:} 45-foot-long, 5-foot-wide line",
 				"{@b Duration:} Instantaneous",
 				"{@b Description:} Restore health to allies with several pulses of healing energy. Heals more for each boon on the ally.",
-				"{@b Effect:} Project a 45-foot-long 5-foot-wide line of healing energy. Each creature of your choice in the line regains {@variantrule Hit Points|XPHB} equal to 1 + an additional 1 for each unique {@variantrule Boon|GW2} they have. Repeat this effect every 6 {@variantrule Initiative|XPHB}.",
-				"{@b Scaling:} The initial healing increases by 1 when you reach levels 5 (2), 11 (3), and 17 (4)."
-			]
+				"{@b Effect:} For each {@variantrule Action Points|GW2|AP} spent repeat the following effect: Project a 45-foot-long 5-foot-wide line of healing energy. Each creature of your choice in the line regains {@variantrule Hit Points|XPHB} equal to {@dice 1d4} + an additional {@dice 1d4} for each unique {@variantrule Boon|GW2} they have.",
+				"{@b Scaling:} The initial healing increase when you reach levels 5 ({@dice 2d4}), 11 ({@dice 3d4}), and 17 ({@dice 4d4})."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Med_Blaster}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Med_Blaster.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Bandage Blast",
@@ -35239,7 +35241,7 @@
 			"featureType": [
 				"Healing Skill",
 				"Elementalist",
-				"Glyph",
+				"Glyph"
 			],
 			"prerequisite": [
 				{
@@ -35322,9 +35324,8 @@
 			"page": "",
 			"featureType": [
 				"Healing Skill",
-				"ENG",
-				"GAD",
-				"ACT"
+				"Engineer",
+				"Gadeget"
 			],
 			"prerequisite": [
 				{
@@ -35332,16 +35333,31 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action",
-				"{@b Recharge:} {@chance 25|16+}",
+				"{@b Casting Time:} 3 {@variantrule Action Points|GW2|AP}",
+				"{@b Recharge:} {@recharge 4}",
 				"{@b Range:} Self",
 				"{@b Target:} Self",
 				"{@b Duration:} 1 round",
 				"{@b Properties:} Gadget",
 				"{@b Description:} Activate your A.E.D., enabling the system to heal you after a brief period of time. If you take lethal damage while A.E.D. is active, it ends and heals you for a large amount and removes conditions.",
-				"{@b Effect:} For the duration, if you are reduced to 0 {@variantrule Hit Points|XPHB}, the A.E.D. immediately ends and you regain {@dice 6d8} + your Class Ability Modifier {@variantrule Hit Points|XPHB} and end all damaging {@variantrule Condition|GW2|Conditions} affecting you. If the A.E.D. ends without being triggered, you regain {@dice 1d6} + your Class Ability Modifier {@variantrule Hit Points|XPHB}.",
+				"{@b Effect:} For the duration, if you are reduced to 0 {@variantrule Hit Points|XPHB}, the A.E.D. immediately ends and you regain {@dice 6d8} + your Class Ability Modifier {@variantrule Hit Points|XPHB} and end all {@variantrule Damaging Condition|GW2|Damaging Conditions} affecting you. If the A.E.D. ends without being triggered, you regain {@dice 1d6} + your Class Ability Modifier {@variantrule Hit Points|XPHB}.",
 				"{@b Scaling:} The healing each increases by {@dice 3d8} and {@dice 2d6} respectivly when you reach levels 5 ({@dice 9d8} & {@dice 3d6}), 11 ({@dice 12d8} & {@dice 5d6}), and 17th level ({@dice 15d8} & {@dice 7d6})."
-			]
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/A.E.D.}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/A.E.D..png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Static Shock",
@@ -35373,10 +35389,8 @@
 			"page": "",
 			"featureType": [
 				"Healing Skill",
-				"ENG",
-				"ELI",
-				"ACT",
-				"BACT"
+				"Engineer",
+				"Elixir"
 			],
 			"prerequisite": [
 				{
@@ -35384,16 +35398,31 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action or Bonus Action",
-				"{@b Recharge:} {@chance 35|14+}",
+				"{@b Casting Time:} 3 {@variantrule Action Points|GW2|AP}",
+				"{@b Recharge:} {@recharge 4}",
 				"{@b Range:} Self",
 				"{@b Target:} Self",
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} Elixir",
 				"{@b Description:} Drink Elixir H to heal yourself and gain protection, regeneration, and swiftness.",
-				"{@b Effect:} You regain {@dice 1d8} + your Class Ability Modifier {@variantrule Hit Points|XPHB} and gain {@variantrule Protection|GW2|Protection}, {@variantrule Regeneration|GW2|Regeneration}, healing for {@dice 1d4}, and {@variantrule Swiftness|GW2|Swiftness} for 1 round.",
-				"{@b Scaling:} The healing each increases by {@dice 2d8} when you reach levels 5 ({@dice 3d8} & {@dice 2d4}), 11 ({@dice 5d8} & {@dice 3d4}), and 17th level ({@dice 7d8} & {@dice 4d4})."
-			]
+				"{@b Effect:} You regain {@dice 1d8} + your Class Ability Modifier {@variantrule Hit Points|XPHB} and gain {@variantrule Protection|GW2|Protection}, {@variantrule Regeneration|GW2|Regeneration}, and {@variantrule Swiftness|GW2|Swiftness} for 1 round.",
+				"{@b Scaling:} The healing increases when you reach levels 5 ({@dice 3d8}), 11 ({@dice 5d8}), and 17th level ({@dice 7d8})."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Elixir_H}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Elixir_H.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Toss Elixir H",
@@ -35425,9 +35454,8 @@
 			"page": "",
 			"featureType": [
 				"Healing Skill",
-				"ENG",
-				"TUR",
-				"ACT"
+				"Engineer",
+				"Turret"
 			],
 			"prerequisite": [
 				{
@@ -35435,15 +35463,30 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action",
-				"{@b Recharge:} {@chance 35|14+}, after the previous turret is destroyed",
+				"{@b Casting Time:} 3 {@variantrule Action Points|GW2|AP}",
+				"{@b Recharge:} {@recharge 4}, after the previous turret is destroyed",
 				"{@b Range:} 5 feet",
 				"{@b Target:} Point",
 				"{@b Duration:} 5 minutes",
-				"{@b Properties:} Turret",
+				"{@b Properties:} {@variantrule Sequence|GW2}: {@optfeature Cleansing Burst|GW2} after using {@optfeature Healing Turret|GW2}, Turret",
 				"{@b Description:} Deploy a turret that heals you briefly, then regenerates you and your allies. This turret overcharges when it is first placed.",
-				"{@b Effect:} Choose a point within range to deploy a {@creature Healing Turret|GW2}, any skills it uses benefit from your bonuses. The turret immediately uses its {@optfeature Cleansing Burst|GW2} skill, then uses its {@optfeature Regenerative Mist|GW2} skill at the start of each of your turns. While the turret is active, you can use your {@optfeature Detonate Healing Turret|GW2} skill. When you deploy a new healing turret, the previous one is destroyed. If you are within 5 feet of the turret you can pick it up as an object interaction, immediately destroying it and rolling for its recharge."
-			]
+				"{@b Effect:} Choose a point within range to deploy a {@creature Healing Turret|GW2}. The turret immediately Overcharges, using the {@optfeature Cleansing Burst|GW2} {@variantrule Skill|GW2}. For the duration, at the start of your turn, each creature of your choice within 30 feet of your turret, gains 1 round of {@variantrule Regeneration|GW2}. If you are within 5 feet of the turret you can pick it up as an object interaction, immediately destroying it and rolling for its recharge."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Healing_Turret}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Healing_Turret.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Cleansing Burst",
@@ -35451,52 +35494,40 @@
 			"page": "",
 			"featureType": [
 				"Healing Skill",
-				"ENG",
-				"OVER",
-				"ACT",
-				"CFW"
+				"Engineer",
+				"Overcharge"
 			],
 			"prerequisite": [
 				{
-					"other": "Healing Turret"
+					"other": "Engineer"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action",
-				"{@b Recharge:} Can only be used once per turret deployment",
-				"{@b Range:} Self",
-				"{@b Target:} 30-foot-emination",
-				"{@b Duration:} Instantaneous",
-				"{@b Properties:} {@variantrule Combo Field|GW2|Combo Field:} Water,  Overcharge",
+				"{@b Casting Time:} 0 {@variantrule Action Points|GW2|AP}",
+				"{@b Recharge:} {@recharge 2}",
+				"{@b Range:} Any",
+				"{@b Target:} 30-foot-emination around the Turret",
+				"{@b Duration:} 1 Round",
+				"{@b Properties:} {@variantrule Combo Field|GW2|Combo Field:} Water, Overcharge, {@variantrule Sequence|GW2}: {@optfeature Detonate Healing Turret|GW2} while {@optfeature Cleansing Burst|GW2} is on Recharge",
 				"{@b Description:} Release a burst of cleansing energy to remove conditions from nearby allies.",
-				"{@b Effect:} Each creature of your choice in the area regains {@dice 1d8} + your Class Ability Modifier {@variantrule Hit Points|XPHB} and can end up to two {@variantrule Condition|GW2|Conditions} affecting them. The area becomes a {@variantrule Combo Field|GW2} Water until the start of your next turn.",
+				"{@b Effect:} Each creature of your choice in the area regains {@variantrule Hit Points|XPHB} equal to {@dice 1d8} + your Class Ability Modifier, gains 1 round of {@variantrule Regeneration|GW2}, and has the latest two {@variantrule Condition|GW2|Conditions} affecting them ended.",
 				"{@b Scaling:} The healing increases by {@dice 2d8} when you reach levels 5 ({@dice 3d8}), 11 ({@dice 5d8}), and 17th level ({@dice 7d8})."
-			]
-		},
-		{
-			"name": "Regenerative Mist",
-			"source": "GW2",
-			"page": "",
-			"featureType": [
-				"Healing Skill",
-				"ENG",
-				"ACT"
 			],
-			"prerequisite": [
-				{
-					"other": "Healing Turret"
-				}
-			],
-			"entries": [
-				"{@b Casting Time:} Action",
-				"{@b Recharge:} None",
-				"{@b Range:} Self",
-				"{@b Target:} 30-foot-emination",
-				"{@b Duration:} Instantaneous",
-				"{@b Description:} Release a mist that regenerates you and your allies.",
-				"{@b Effect:} Each creature of your choice in the area gains {@variantrule Regeneration|GW2} for 1 round, healing for {@dice 1d6}.",
-				"{@b Scaling:} The healing increases by {@dice 1d6} when you reach levels 5 ({@dice 2d6}), 11 ({@dice 3d6}), and 17th level ({@dice 4d6})."
-			]
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Cleansing_Burst}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Cleansing_Burst.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Detonate Healing Turret",
@@ -35504,26 +35535,39 @@
 			"page": "",
 			"featureType": [
 				"Healing Skill",
-				"ENG",
-				"SPEC",
-				"CIB"
+				"Engineer"
 			],
 			"prerequisite": [
 				{
-					"other": "Engineer having an active Healing Turret"
+					"other": "Engineer"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Special",
-				"{@b Recharge:} None",
-				"{@b Range:} UnliMinor Traited",
-				"{@b Target:} 5-foot-emination",
+				"{@b Casting Time:} 0 {@variantrule Action Points|GW2|AP}",
+				"{@b Recharge:} {@recharge 4}",
+				"{@b Range:} Any",
+				"{@b Target:} 5-foot-emination around the Turret",
 				"{@b Duration:} Instantaneous",
-				"{@b Properties:} {@variantrule Combo Finisher|GW2|Combo Finisher:} Blast, Explosion",
+				"{@b Properties:} {@variantrule Combo Finisher|GW2|Combo Finisher:} Blast, Explosion, {@variantrule Sequence|GW2}: {@optfeature Healing Turret|GW2} after the Turret detonated",
 				"{@b Description:} Detonate your healing turret.",
-				"{@b Effect:} Your {@object Healing Turret|GW2} detonates, creating a {@variantrule Combo Finisher|GW2} Blast and dealing {@damage 2d10} force damage to each creature in the area.",
+				"{@b Effect:} Your {@object Healing Turret|GW2} detonates, dealing {@damage 2d10} force damage to each creature in the area.",
 				"{@b Scaling:} The damage increases by {@damage 2d10} when you reach levels 5 ({@damage 4d10}), 11 ({@damage 6d10}), and 17th level ({@damage 8d10})."
-			]
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Detonate_Healing_Turret}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Detonate_Net_Turret.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Regenerating Mist",
@@ -35555,9 +35599,8 @@
 			"page": "",
 			"featureType": [
 				"Healing Skill",
-				"ENG",
-				"KIT",
-				"SPEC"
+				"Engineer",
+				"Kit"
 			],
 			"prerequisite": [
 				{
@@ -35565,15 +35608,30 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Special",
+				"{@b Casting Time:} 0 {@variantrule Action Points|GW2|AP}",
 				"{@b Recharge:} None",
 				"{@b Range:} Self",
 				"{@b Target:} Self",
-				"{@b Duration:} Until unequipped",
+				"{@b Duration:} Until Unequipped",
 				"{@b Properties:} Engineering Kit",
 				"{@b Description:} Equip a kit that replaces your weapon with healing skills.",
-				"{@b Effect:} Swap your weapon for a Med Kit, which grants you access to the  {@optfeature Med Blaster|GW2}, {@optfeature Bandage Blast|GW2}, {@optfeature Cleansing Field|GW2}, {@optfeature Vital Burst|GW2}, and {@optfeature Infusion Bomb|GW2} {@variantrule Weapons Skills|GW2}."
-			]
+				"{@b Effect:} Swap your weapon for a Med Kit, which grants you access to the {@optfeature Med Blaster|GW2}, {@optfeature Bandage Blast|GW2}, {@optfeature Cleansing Field|GW2}, {@optfeature Vital Burst|GW2}, and {@optfeature Infusion Bomb|GW2} {@variantrule Weapons Skill|GW2|Weapon Skills}."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Med_Kit}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Med_Kit.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Bandage Self",

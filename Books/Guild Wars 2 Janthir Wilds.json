@@ -400,8 +400,8 @@
       "page": "",
       "featureType": [
         "THI",
-        "SPET",
-        "WS",
+        "Spear (Terrestrial)",
+        "Weapon Skill",
         "ACT"
       ],
       "prerequisite": [
@@ -427,8 +427,8 @@
       "page": "",
       "featureType": [
         "THI",
-        "SPET",
-        "WS",
+        "Spear (Terrestrial)",
+        "Weapon Skill",
         "STE",
         "ACT"
       ],
@@ -455,8 +455,8 @@
       "page": "",
       "featureType": [
         "THI",
-        "SPET",
-        "WS",
+        "Spear (Terrestrial)",
+        "Weapon Skill",
         "BACT",
         "ACT"
       ],
@@ -483,8 +483,8 @@
       "page": "",
       "featureType": [
         "THI",
-        "SPET",
-        "WS",
+        "Spear (Terrestrial)",
+        "Weapon Skill",
         "ACT"
       ],
       "prerequisite": [
@@ -510,8 +510,8 @@
       "page": "",
       "featureType": [
         "THI",
-        "SPET",
-        "WS",
+        "Spear (Terrestrial)",
+        "Weapon Skill",
         "ACT"
       ],
       "prerequisite": [
@@ -537,8 +537,8 @@
       "page": "",
       "featureType": [
         "THI",
-        "SPET",
-        "WS",
+        "Spear (Terrestrial)",
+        "Weapon Skill",
         "ACT"
       ],
       "prerequisite": [
@@ -564,8 +564,8 @@
       "page": "",
       "featureType": [
         "THI",
-        "SPET",
-        "WS",
+        "Spear (Terrestrial)",
+        "Weapon Skill",
         "BACT",
         "ACT"
       ],
@@ -592,8 +592,8 @@
       "page": "",
       "featureType": [
         "THI",
-        "SPET",
-        "WS",
+        "Spear (Terrestrial)",
+        "Weapon Skill",
         "BACT",
         "ACT"
       ],
@@ -620,8 +620,8 @@
       "page": "",
       "featureType": [
         "THI",
-        "SPET",
-        "WS",
+        "Spear (Terrestrial)",
+        "Weapon Skill",
         "BACT",
         "ACT"
       ],
@@ -648,8 +648,8 @@
       "page": "",
       "featureType": [
         "THI",
-        "SPET",
-        "WS",
+        "Spear (Terrestrial)",
+        "Weapon Skill",
         "CHAN"
       ],
       "prerequisite": [
@@ -674,7 +674,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -698,7 +698,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -722,7 +722,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -746,7 +746,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -770,7 +770,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -794,7 +794,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -818,7 +818,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -842,34 +842,48 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS",
-				"ELE",
-				"SPET",
-				"WATT",
-				"ACT"
+        "Weapon Skill",
+				"Elementalist",
+				"Spear (Terrestrial)",
+				"Water Attunement"
       ],
       "prerequisite": [
         {
-          "other": "Elementalist in Water Attunement wielding a Spear (Terrestrial)"
+          "other": "Elementalist"
         }
       ],
       "entries": [
-        "{@b Casting Time:} Action",
+        "{@b Casting Time:} 3 {@variantrule Action Points|GW2|AP}",
         "{@b Recharge:} None",
         "{@b Range:} 120 feet",
         "{@b Target:} 1 creature",
         "{@b Properties:} Water Attunement",
         "{@b Description:} Throw a spear of water at your foe that heals you when it strikes.",
-        "{@b Effect:} Choose one creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d8} damage, and you regain hit points equal to {@dice 1d8} + your class ability modifier.",
+        "{@b Effect:} Choose one creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d8} + your Class Ability Modifier damage, and you regain {@variantrule Hit Points|XPHB} equal to {@dice 1d8} + your class ability modifier.",
         "{@b Scaling:} The damage and healing increases by {@dice 1d8} when you reach levels 5 ({@dice 2d8}), 11 ({@dice 3d8}), and 17 ({@dice 4d8})."
-      ]
+      ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Restorative_Spear}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Janthir Wilds/Restorative_Spear.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
     },
     {
       "name": "Ice Beam",
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -893,7 +907,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -917,7 +931,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -941,7 +955,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -965,7 +979,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -989,7 +1003,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1013,7 +1027,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1037,7 +1051,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1061,7 +1075,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1085,7 +1099,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1109,7 +1123,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1133,7 +1147,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1157,7 +1171,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1181,7 +1195,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1205,7 +1219,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1229,7 +1243,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1253,7 +1267,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1277,7 +1291,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1301,7 +1315,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1325,7 +1339,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1349,7 +1363,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1373,7 +1387,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1397,7 +1411,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1421,7 +1435,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1445,7 +1459,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1469,7 +1483,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1493,7 +1507,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1517,7 +1531,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1541,7 +1555,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1565,7 +1579,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1589,7 +1603,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1613,7 +1627,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1637,7 +1651,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1661,7 +1675,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1685,7 +1699,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1733,7 +1747,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1757,7 +1771,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1781,7 +1795,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1805,7 +1819,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {
@@ -1829,7 +1843,7 @@
       "source": "GW2JW",
       "page": "",
       "featureType": [
-        "WS"
+        "Weapon Skill"
       ],
       "prerequisite": [
         {

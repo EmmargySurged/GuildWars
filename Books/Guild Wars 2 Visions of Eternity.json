@@ -1147,24 +1147,42 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "PS"
+        "Profession Skill",
+        "Elementalist",
+        "Evoker",
+        "Familiar"
       ],
       "prerequisite": [
         {
-          "other": "Familiar (Fire Attunement)"
+          "other": "Evoker"
         }
       ],
       "entries": [
-        "{@b Casting Time:} ",
-        "{@b Recharge:} ",
-        "{@b Range:} ",
-        "{@b Target:} Passive",
-        "{@b Duration:} ",
-        "{@b Properties:} Familiar Passive, Grants Might",
-        "{@b Description:} Familiar Passive. Gain might when you inflict burning. Might can be gained once per interval.",
-        "{@b Effect:} ",
-        "{@b Scaling:} "
-      ]
+        "{@b Casting Time:} X {@variantrule Action Points|GW2|AP}",
+        "{@b Cost:} 6 Charges",
+        "{@b Range:} 120 feet",
+        "{@b Target:} 1 creature",
+        "{@b Duration:} Scaling Duration",
+        "{@b Properties:} Familiar",
+        "{@b Description:} The fox fires a ball of flame that burns enemies. Enemies who are struck multiple times in quick succession receive additional burning. ",
+        "{@b Effect:} Choose one creature within range that you can see. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d4} fire damage and starts {@variantrule Burning|GW2} for 1 round. If you deal damage to the creature within the next round increase the {@variantrule Burning|GW2} duration by 1 round each time you do.",
+        "{@b Scaling:} The duration during which you can extend the {@variantrule Burning|GW2} duration and the damage increase when you reach levels 5 ({@damage 2d4} & 2 rounds), 11 ({@damage 3d4} & 3 rounds), and 17 ({@damage 4d4} & 4 rounds)."
+      ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Ignite}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Visions of Eternity/Ignite.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
     },
     {
       "name": "Skritt Swipe",
@@ -1464,72 +1482,126 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "PS"
+        "Profession Skill",
+        "Elementalist",
+        "Evoker",
+        "Familiar"
       ],
       "prerequisite": [
         {
-          "other": "Familiar (Water Attunement)"
+          "other": "Evoker"
         }
       ],
       "entries": [
-        "{@b Casting Time:} ",
-        "{@b Recharge:} ",
-        "{@b Range:} ",
-        "{@b Target:} Passive",
-        "{@b Duration:} ",
-        "{@b Properties:} Familiar Passive, Heal",
-        "{@b Description:} Familiar Passive. Heal allies when you grant them regeneration.",
-        "{@b Effect:} ",
-        "{@b Scaling:} "
-      ]
+        "{@b Casting Time:} 0 {@variantrule Action Points|GW2|AP}",
+        "{@b Cost:} 6 Charges",
+        "{@b Range:} 60 ft.",
+        "{@b Target:} Up to 5 creatures",
+        "{@b Duration:} Instantaneous",
+        "{@b Properties:} Familiar",
+        "{@b Description:} The otter throws small orbs of water at nearby allies, healing them and granting regeneration.",
+        "{@b Effect:} Choose up to five creature within range. Each creature regains {@variantrule Hit Points|XPHB} equal to {@dice 1d6} + you Class Ability Modifier and gains 1 round {@variantrule Regeneration|GW2}.",
+        "{@b Scaling:} The healing increases when you reach levels 5 ({@dice 2d6}), 11 ({@dice 3d6}), and 17 ({@dice 4d6})."
+      ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Splash}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Visions of Eternity/Splash.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
     },
     {
       "name": "Zap",
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "PS"
+        "Profession Skill",
+        "Elementalist",
+        "Evoker",
+        "Familiar"
       ],
       "prerequisite": [
         {
-          "other": "Familiar (Air Attunement)"
+          "other": "Evoker"
         }
       ],
       "entries": [
-        "{@b Casting Time:} ",
-        "{@b Recharge:} ",
-        "{@b Range:} ",
-        "{@b Target:} Passive",
-        "{@b Duration:} ",
-        "{@b Properties:} Familiar Passive, Grants Ferocity",
-        "{@b Description:} Familiar Passive. Gain increased ferocity while under the effects of fury.",
-        "{@b Effect:} ",
-        "{@b Scaling:} "
-      ]
+        "{@b Casting Time:} 0 {@variantrule Action Points|GW2|AP}",
+        "{@b Cost:} 6 Charges",
+        "{@b Range:} 120 ft.",
+        "{@b Target:} Up to 5 creatures",
+        "{@b Duration:} Scaling Duration",
+        "{@b Properties:} Familiar",
+        "{@b Description:} The hare creates a burst of lightning at the target location, damaging enemies and marking them to take increased damage from your critical strikes. ",
+        "{@b Effect:} Choose a point you can see within range. Each creature within 5 feet of that point must make a Dexterity Saving Throw. On a failed save, a creature takes {@damage 1d6} lightning damage and, for 1 round, when you {@variantrule Crit|GW2} them you deal 3% more damage.",
+        "{@b Scaling:} The damage and the duration increases when you reach levels 5 ({@damage 2d6} & 2 rounds), 11 ({@damage 3d6} & 3 rounds), and 17 ({@damage 2d6} & 2 round)."
+      ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Zap_(skill)}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Visions of Eternity/Zap_(skill).png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
     },
     {
       "name": "Calcify",
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "PS"
+        "Profession Skill",
+        "Elementalist",
+        "Evoker",
+        "Familiar"
       ],
       "prerequisite": [
         {
-          "other": "Familiar (Earth Attunement)"
+          "other": "Evoker"
         }
       ],
       "entries": [
-        "{@b Casting Time:} ",
-        "{@b Recharge:} ",
-        "{@b Range:} ",
-        "{@b Target:} Passive",
-        "{@b Duration:} ",
-        "{@b Properties:} Familiar Passive, Grants Protection",
-        "{@b Description:} Familiar Passive. Gain protection when you disable an enemy. Protection can be gained once per interval.",
-        "{@b Effect:} ",
-        "{@b Scaling:} "
-      ]
+        "{@b Casting Time:} 0 {@variantrule Action Points|GW2|AP}",
+        "{@b Cost:} 6 Charge",
+        "{@b Range:} Self",
+        "{@b Target:} 10-foot Emanation",
+        "{@b Duration:} Instantaneous",
+        "{@b Properties:} Familiar",
+        "{@b Description:} The toad unleashes an earthen blast that dazes nearby enemies. Gain barrier if you strike an enemy that is using a skill. Gain barrier up to one time.",
+        "{@b Effect:} Each creature within range, other than you, must make Constitution Saving Throw. On a failed save, a creature takes {@damage 1d6} bludgeoning damage and is {@variantrule Daze|GW2|Dazed} for 1 round. If you {@variantrule Disable|GW2} a creature you gain {@variantrule Barrier|GW2} equal to {@dice 1d10} + your Class Ability Modifier.",
+        "{@b Scaling:} The damage and the barrier increase when you reach levels 5 ({@damage 2d6} & {@dice 2d10}), 11 ({@damage 3d6} & {@dice 3d10}), and 17 ({@damage 4d6} & {@dice 4d10})."
+      ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Calcify}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Visions of Eternity/Calcify.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
     },
     {
       "name": "Conflagration",

@@ -29876,17 +29876,16 @@
 			"featureType": [
 				"Weapon Skill",
 				"Elementalist",
-				"STA",
-				"WATT",
-				"ACT"
+				"Staff",
+				"Water Attunement"
 			],
 			"prerequisite": [
 				{
-					"other": "Elementalist in Water Attunement wielding a Staff"
+					"other": "Elementalist"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action",
+				"{@b Casting Time:} 3 {@variantrule Action Points|GW2|AP}",
 				"{@b Recharge:} None",
 				"{@b Range:} 120 feet",
 				"{@b Target:} 10-foot-radius sphere",
@@ -29895,7 +29894,22 @@
 				"{@b Description:} Spray a jet of water at your foe that splashes to heal nearby allies.",
 				"{@b Effect:} Choose a point you can see within range. Hurl a blast of water at that point. Each hostile creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes {@damage 1d6} cold damage on a failed save, or half as much damage on a successful one. In addition, each friendly creature in the area regains {@variantrule Hit Points|XPHB} equal to {@dice 1d6} + your Class Ability Modifier.",
 				"{@b Scaling:} The damage and healing increases by {@dice 1d6} when you reach levels 5 ({@dice 2d6}), 11 ({@dice 3d6}), and 17 ({@dice 4d6})."
-			]
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Water_Blast}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Water_Blast.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Ice Spike",
@@ -29905,8 +29919,8 @@
 				"Weapon Skill",
 				"Elementalist",
 				"ACT",
-				"STA",
-				"WATT",
+				"Staff",
+				"Water Attunement",
 				"CIB"
 			],
 			"prerequisite": [
@@ -30341,9 +30355,8 @@
 			"featureType": [
 				"Weapon Skill",
 				"Elementalist",
-				"SCE",
-				"WATT",
-				"ACT"
+				"Scepter",
+				"Water Attunement"
 			],
 			"prerequisite": [
 				{
@@ -30351,16 +30364,31 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action",
+				"{@b Casting Time:} 3 {@variantrule Action Points|GW2|AP}",
 				"{@b Recharge:} None",
 				"{@b Range:} 90 feet",
 				"{@b Target:} 1 creature",
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} Water Attunement",
 				"{@b Description:} Fire three ice shards at your foe.",
-				"{@b Effect:} Choose a creature you can see within range. Hurl three ice shards at the target. Make three ranged spell attacks against the target. On a hit, the target takes {@damage 1d4} cold damage.",
+				"{@b Effect:} Choose a creature you can see within range. Hurl three ice shards at the target. Make three ranged spell attacks against the target. On a hit, the target takes {@damage 1d4} + class Ability Modifier cold damage.",
 				"{@b Scaling:} The damage die increases by one stage when you reach level 5 ({@dice d6}), 11 ({@dice d8}), and 17 ({@dice d10})."
-			]
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Ice_Shards}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Ice_Shards.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Shatterstone",
@@ -30705,26 +30733,40 @@
 			"featureType": [
 				"Weapon Skill",
 				"Elementalist",
-				"ACT",
-				"WATT",
+				"Water Attunement",
 				"Dagger"
 			],
 			"prerequisite": [
 				{
-					"other": "Elementalist in Water Attunement wielding a Dagger"
+					"other": "Elementalist"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action",
+				"{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
 				"{@b Recharge:} None",
 				"{@b Range:} 60 feet",
 				"{@b Target:} 60-foot-line",
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} Water Attunement",
 				"{@b Description:} Cast a vapor blade that inflicts vulnerability and returns to you.",
-				"{@b Effect:} Choose a point within range. Send a blade of scalding steam along the ground in a straight line to that point, which then returns to you along the same path. Make two ranged attacks against each creature on the line. On a hit, a creature takes {@damage 1d6} cold damage and is inflicted with 1 stack of {@variantrule Vulnerability|GW2} for 1 round.",
-				"{@b Scaling:} The damage increases by {@damage 1d6} when you reach levels 5 ({@damage 2d6}), 11 ({@damage 3d6}), and 17 ({@damage 4d6})."
-			]
+				"{@b Effect:} Choose a point within range. Send a blade of scalding steam along the ground in a straight line to that point, which then returns to you along the same path. Make two ranged attacks against each creature on the line. On a hit, a creature takes {@damage 1d4} cold damage and is inflicted with 1 stack of {@variantrule Vulnerability|GW2} for 1 round.",
+				"{@b Scaling:} The damage increases by {@damage 1d4} when you reach levels 5 ({@damage 2d4}), 11 ({@damage 3d4}), and 17 ({@damage 4d4})."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Vapor_Blade}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Vapor_Blade.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Cone of Cold",
@@ -31453,26 +31495,40 @@
 			"featureType": [
 				"Weapon Skill",
 				"Elementalist",
-				"ACT",
-				"WATT",
-				"TRID"
+				"Water Attunement",
+				"Trident"
 			],
 			"prerequisite": [
 				{
-					"other": "Elementalist in Water Attunement wielding a Trident underwater"
+					"other": "Elementalist"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action",
+				"{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
 				"{@b Recharge:} None",
 				"{@b Range:} 120 feet",
 				"{@b Target:} 1 creature",
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} Water Attunement",
 				"{@b Description:} Launch a slow-moving homing missile.",
-				"{@b Effect:} Choose a creature you can see within range. Launch a slow-moving homing missile at the target. Make a ranged spell attack with advantage against the target. On a hit, the target takes {@damage 1d10} cold damage.",
-				"{@b Scaling:} The damage increases by {@damage 1d10} when you reach levels 5 ({@damage 2d10}), 11 ({@damage 3d10}), and 17 ({@damage 4d10})."
-			]
+				"{@b Effect:} Choose a creature you can see within range. Launch a slow-moving homing missile at the target. Make a ranged spell attack with advantage against the target. On a hit, the target takes {@damage 1d8} cold damage.",
+				"{@b Scaling:} The damage increases by {@damage 1d8} when you reach levels 5 ({@damage 2d8}), 11 ({@damage 3d8}), and 17 ({@damage 4d8})."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Water_Missile}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Water_Missile.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Ice Globe",
@@ -31482,8 +31538,8 @@
 				"Weapon Skill",
 				"Elementalist",
 				"ACT",
-				"WATT",
-				"TRID",
+				"Water Attunement",
+				"Trident",
 				"BACT"
 			],
 			"prerequisite": [

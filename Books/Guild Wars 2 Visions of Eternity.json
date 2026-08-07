@@ -883,7 +883,7 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "HS",
+        "Healing Skill",
         "THI",
         "ANT",
         "DOU",
@@ -902,7 +902,7 @@
         "{@b Duration:} Instantaneous",
         "{@b Properties:} Double Edge",
         "{@b Description:} Drink an antivenom potion to heal yourself and remove conditions. You may activate the skill while it is recharging, with a chance for the skill to backfire.",
-        "{@b Effect:} You remove the latest {@variantrule Condition|GW2} on yourself, then you regain hit points equal to {@dice 1d10} + your Class modifier.",
+        "{@b Effect:} You remove the latest {@variantrule Condition|GW2} on yourself, then you regain {@variantrule Hit Points|XPHB} equal to {@dice 1d10} + your Class modifier.",
         "You can attempt to use this {@variantrule Skill|GW2} while it is recharging. When you do so, roll for the recharge as normal; if the roll fails, the {@variantrule Skill|GW2} backfires ({@optfeature Antivenom Draught: Backfired|GW2VoE}) and you cannot use it again until you succeed on a recharge roll with {@variantrule Disadvantage|XPHB}. If the roll succeeds, you can use the {@variantrule Skill|GW2} as normal.",
         "{@b Scaling:} The healing increases by {@dice 1d10} at level 11 ({@dice 2d10})."
       ]
@@ -912,7 +912,7 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "HS",
+        "Healing Skill",
         "THI",
         "ANT",
         "BAC",
@@ -931,7 +931,7 @@
         "{@b Duration:} Instantaneous",
         "{@b Properties:} Backfire",
         "{@b Description:} This skill has backfired and cannot be used again until fully recharged.",
-        "{@b Effect:} You remove the latest three {@variantrule Condition|GW2|Conditions} on yourself, then you regain hit points equal to {@dice 4d4} + your Class modifier.",
+        "{@b Effect:} You remove the latest three {@variantrule Condition|GW2|Conditions} on yourself, then you regain {@variantrule Hit Points|XPHB} equal to {@dice 4d4} + your Class modifier.",
         "{@b Scaling:} The healing increases by {@dice 3d4} at levels 5 ({@dice 7d4}), 11 ({@dice 10d4}), and 17 ({@dice 13d4})."
       ]
     },
@@ -1336,8 +1336,8 @@
         "{@b Duration:} Instantaneous",
         "{@b Properties:} {@variantrule Combo Finisher|GW2}: Leap, Defensive Artifact",
         "{@b Description:} Leap to the targeted area and slam down with an enchanted exalted hammer, damaging enemies and healing allies in an area. For a short time after using this skill, activating any weapon skill that costs initiative creates an additional healing burst at your location.",
-        "{@b Effect:}  Choose a point within range. You leap to that point. Each hostile creature in a 5-foot radius centered on that point must make a Constitution {@variantrule Saving Throw|XPHB}. On a failed save, a target takes {@damage 1d4} radiant damage. On a successful save, a target takes half as much damage. Each creature of your choice in that area regains hit points equal to {@dice 1d8} + your Class modifier and gains 1 round of {@variantrule Protection|GW2}.",
-        "For 2 rounds after using this {@variantrule Skill|GW2}, activating any {@variantrule Weapon Skill|GW2} that costs initiative causes each creature of your choice within 5 feet of you to regain hit points equal to {@dice 1d4}.",
+        "{@b Effect:}  Choose a point within range. You leap to that point. Each hostile creature in a 5-foot radius centered on that point must make a Constitution {@variantrule Saving Throw|XPHB}. On a failed save, a target takes {@damage 1d4} radiant damage. On a successful save, a target takes half as much damage. Each creature of your choice in that area regains {@variantrule Hit Points|XPHB} equal to {@dice 1d8} + your Class modifier and gains 1 round of {@variantrule Protection|GW2}.",
+        "For 2 rounds after using this {@variantrule Skill|GW2}, activating any {@variantrule Weapon Skill|GW2} that costs initiative causes each creature of your choice within 5 feet of you to regain {@variantrule Hit Points|XPHB} equal to {@dice 1d4}.",
         "{@b Scaling:} The damage and healing each increase by {@damage 1d4}, {@dice 1d8} and {@dice 1d4} respectively at levels 5 ({@damage 2d4} & {@dice 2d8} & {@dice 2d4}), 11 ({@damage 3d4} & {@dice 3d8} & {@dice 3d4}), and 17 ({@damage 4d4} & {@dice 4d8} & {@dice 4d4})."
       ]
     },
@@ -1398,7 +1398,7 @@
         "{@b Duration:} 1 round",
         "{@b Properties:} Defensive Artifact",
         "{@b Description:} Summon a holo-dancer decoy that taunts enemies. It self-destructs if it is not destroyed, dealing damage to enemies in a large area. For a short time after using this skill, the next utility skill you use has reduced cooldown.",
-        "{@b Effect:} Choose a point that you can see within range. A holo-dancer decoy appears at that point. The decoy has AC 12 and hit points equal to 5 times your Class level. When the decoy appears, each hostile creature in a 10-foot radius centered on that point must make a Wisdom {@variantrule Saving Throw|XPHB}. On a failed save, a target is {@variantrule Taunted|GW2} by the decoy until the end of its next turn. Additionally, each creature of your choice within range of the decoy gains 2 stacks of {@variantrule Might|GW2} when deployed.",
+        "{@b Effect:} Choose a point that you can see within range. A holo-dancer decoy appears at that point. The decoy has AC 12 and {@variantrule Hit Points|XPHB} equal to 5 times your Class level. When the decoy appears, each hostile creature in a 10-foot radius centered on that point must make a Wisdom {@variantrule Saving Throw|XPHB}. On a failed save, a target is {@variantrule Taunted|GW2} by the decoy until the end of its next turn. Additionally, each creature of your choice within range of the decoy gains 2 stacks of {@variantrule Might|GW2} when deployed.",
         "The decoy lasts until it is destroyed or the duration ends. When the duration ends, the decoy self-destructs, and each hostile creature in a 15-foot radius sphere centered on the decoy's location must make a Dexterity {@variantrule Saving Throw|XPHB}. On a failed save, a target takes {@damage 1d6} force damage. On a successful save, a target takes half as much damage. Each creature of your choice within range of the explosion gains 3 stacks of {@variantrule Might|GW2} for 1 round and 1 round of {@variantrule Fury|GW2}.",
         "For 2 rounds after using this skill, the next {@variantrule Utility Skill|GW2} you use has its cooldown reduced by 10.",
         "{@b Scaling:} The damage increases by {@damage 1d6} at levels 5 ({@damage 2d6}), 11 ({@damage 3d6}), and 17 ({@damage 4d6})."
@@ -1632,11 +1632,10 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "HS",
-        "ELE",
-        "EVO",
-        "ACT",
-        "MED"
+        "Healing Skill",
+        "Elementalist",
+        "Evoker",
+        "Meditation"
       ],
       "prerequisite": [
         {
@@ -1644,16 +1643,31 @@
         }
       ],
       "entries": [
-        "{@b Casting Time:} Action",
-        "{@b Recharge:} {@chance 35|14+}",
+        "{@b Casting Time:} 3 {@variantrule Action Points|GW2|AP}",
+        "{@b Recharge:} {@recharge 3}",
         "{@b Range:} Self",
         "{@b Target:} Self",
         "{@b Duration:} Instantaneous",
         "{@b Properties:} Meditation",
         "{@b Description:} Heal yourself and charge your familiar skill.",
-        "{@b Effect:} You regain hit points equal to {@dice 2d8} + your spellcasting ability modifier and fully charge your familiar skill.",
+        "{@b Effect:} You regain {@variantrule Hit Points|XPHB} equal to {@dice 2d8} + your Class Ability Modifier and fully charge your Familiar skill.",
         "{@b Scaling:} The healing increases by {@dice 2d8} when you reach levels 5 ({@dice 4d8}), 11 ({@dice 6d8}), and 17th level ({@dice 8d8})."
-      ]
+      ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Rejuvenate}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Visions of Eternity/Rejuvenate.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
     },
     {
       "name": "Fox's Fury",
@@ -1782,8 +1796,8 @@
       "featureType": [
         "MIT",
         "ADT",
-        "ELE",
-        "EVO"
+        "Elementalist",
+        "Evoker"
       ],
       "prerequisite": [
         {
@@ -1986,7 +2000,7 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "HS"
+        "Healing Skill"
       ],
       "prerequisite": [
         {
@@ -2610,7 +2624,7 @@
       "source": "GW2VoE",
       "page": "",
       "featureType": [
-        "HS"
+        "Healing Skill"
       ],
       "prerequisite": [
         {
@@ -2898,7 +2912,7 @@
           "{@creature Otter Spirit|GW2VoE}",
           "{@creature Water Elemental|XMM}",
           "Water",
-          "When you grant a creature {@variantrule Regeneration|GW2}, they also regain {@dice 1d4} hit points. ",
+          "When you grant a creature {@variantrule Regeneration|GW2}, they also regain {@dice 1d4} {@variantrule Hit Points|XPHB}. ",
           "{@optfeature Splash|GW2VoE}",
           "{@optfeature Buoyant Deluge|GW2VoE}"
         ],
@@ -2943,7 +2957,7 @@
         ],
         [
           "Construct",
-          "You gain temporary hit points equal to the Challenge Rating of the target or your proficiency bonus, whichever is higher."
+          "You gain temporary {@variantrule Hit Points|XPHB} equal to the Challenge Rating of the target or your proficiency bonus, whichever is higher."
         ],
         [
           "Dragon",
@@ -3347,7 +3361,7 @@
       "entries": [
         "{@b The perfect Crime.} You have perfected your {@optfeature Skritt Swipe|GW2VoE} skill. The range increases to 150 feet, and you can now use it to target up to three creatures within range.",
         "{@b Connoisseur of Benefits.} When you use the skill, you can choose which benefit from the {@table Skritt Swipe Benefits|GW2VoE} table to apply for each target, regardless of their creature type.",
-        "{@b Friendly Mugging.} You can now target friendly creatures with the skill. When you do so, they suffer no harm and instead gain temporary hit points equal to twice your proficiency bonus. Additionally, they can choose one benefit from the {@table Skritt Swipe Benefits|GW2VoE} table to gain for 1 minute."
+        "{@b Friendly Mugging.} You can now target friendly creatures with the skill. When you do so, they suffer no harm and instead gain temporary {@variantrule Hit Points|XPHB} equal to twice your proficiency bonus. Additionally, they can choose one benefit from the {@table Skritt Swipe Benefits|GW2VoE} table to gain for 1 minute."
       ]
     }
   ]

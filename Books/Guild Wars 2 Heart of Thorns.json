@@ -2397,11 +2397,10 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "HS",
+                "Healing Skill",
                 "Warrior",
                 "Berserker",
-                "RAG",
-                "BACT"
+                "Rage"
             ],
             "prerequisite": [
                 {
@@ -2409,16 +2408,31 @@
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Bonus Action",
-                "{@b Recharge:} {@chance 35|14+}",
+                "{@b Casting Time:} 1 {@variantrule Action Points|GW2|AP}",
+                "{@b Recharge:} {@recharge 4}",
                 "{@b Range:} Self",
                 "{@b Target:} Self",
                 "{@b Duration:} 1 round",
                 "{@b Properties:} Rage",
                 "{@b Description:} Heal yourself, gain adrenaline, and recharge all primal burst skills. Heal for a percentage of your outgoing damage. This skill extends the duration of berserk mode.",
-                "{@b Effect:} You regain hit points equal to {@dice 1d8} + your Class modifier, gain 10 Adrenaline, recharge your Primal Burst skills, extend the duration of berserk mode by 1 round, and heal for 33% of your outgoing damage for the duration.",
+                "{@b Effect:} You regain hit points equal to {@dice 1d8} + your Class Ability Modifier, gain 10 Adrenaline, recharge your Primal Burst skills, extend the duration of Berserk Mode by 1 round, and heal for 33% of your outgoing damage for the duration.",
                 "{@b Scaling:} The healing increases by {@dice 1d8} when you reach levels 5 ({@dice 2d8}), 11 ({@dice 3d8}), and 17 ({@dice 4d8})."
-            ]
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Blood_Reckoning}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Blood_Reckoning.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Outrage",
@@ -2970,7 +2984,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "HS"
+                "Healing Skill"
             ],
             "prerequisite": [
                 {
@@ -3114,7 +3128,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "HS"
+                "Healing Skill"
             ],
             "prerequisite": [
                 {

@@ -645,220 +645,305 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "THI",
-                "DAR",
-                "STA",
-                "WS",
-                "CHAI",
-                "BACT",
-                "ACT"
+                "Daredevil",
+                "Thief",
+                "Staff",
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
-                    "other": "Thief wielding a Staff"
+                    "other": "Daredevil wielding a Staff"
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Bonus Action or Action",
+                "{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
                 "{@b Recharge:} None",
-                "{@b Range:} 180",
-                "{@b Target:} Foe",
-                "{@b Duration:} ",
-                "{@b Properties:} Chain",
-                "{@b Description:} Chain. Strike your enemies with your staff.",
-                "{@b Effect:} ",
-                "{@b Scaling:} "
-            ]
+                "{@b Range:} 5 ft.",
+                "{@b Target:} 1 creature",
+                "{@b Duration:} Instantaneous",
+                "{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Staff Strike|GW2HoT} -> {@optfeature Staff Bash|GW2HoT} -> {@optfeature Punishing Strikes|GW2HoT}, {@variantrule Sequence|GW2}: {@optfeature Hook Strike|GW2HoT} while {@condition Invisible|XPHB}",
+                "{@b Description:} Strike your enemies with your staff.",
+                "{@b Effect:} Choose one creature within range. Make a melee weapon attack against the target. On a hit, the target takes {@damage 1d8} + your Class Ability Modifier bludgeoning damage.",
+                "{@b Scaling:} The damage increases when you reach levels 5 ({@damage 2d8}), 11 ({@damage 3d8}), and 17 ({@damage 4d8})."
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Staff_Strike}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Staff_Strike.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Staff Bash",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "THI",
-                "DAR",
-                "STA",
-                "WS",
-                "CHAI",
-                "BACT",
-                "ACT"
+                "Daredevil",
+                "Thief",
+                "Staff",
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
-                    "other": "Thief wielding a Staff. Must follow Staff Strike."
+                    "other": "Daredevil wielding a Staff"
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Bonus Action or Action",
+                "{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
                 "{@b Recharge:} None",
-                "{@b Range:} 180",
-                "{@b Target:} Foes",
-                "{@b Duration:} ",
-                "{@b Properties:} Chain",
-                "{@b Description:} Chain. Swing your staff a second time, striking multiple enemies.",
-                "{@b Effect:} ",
-                "{@b Scaling:} "
-            ]
+                "{@b Range:} 5 ft.",
+                "{@b Target:} 1 creature",
+                "{@b Duration:} Instantaneous",
+                "{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Staff Strike|GW2HoT} -> {@optfeature Staff Bash|GW2HoT} -> {@optfeature Punishing Strikes|GW2HoT}, {@variantrule Sequence|GW2}: {@optfeature Hook Strike|GW2HoT} while {@condition Invisible|XPHB}",
+                "{@b Description:} Swing your staff a second time.",
+                "{@b Effect:} Choose one creature within range. Make a melee weapon attack against the target. On a hit, the target takes {@damage 1d10} + your Class Ability Modifier bludgeoning damage.",
+                "{@b Scaling:} The damage increases when you reach levels 5 ({@damage 2d10}), 11 ({@damage 3d10}), and 17 ({@damage 4d10})."
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Staff_Bash}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Staff_Bash.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Punishing Strikes",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "THI",
-                "DAR",
-                "STA",
-                "WS",
-                "CHAI",
-                "CIW",
-                "ACT"
+                "Daredevil",
+                "Thief",
+                "Staff",
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
-                    "other": "Thief wielding a Staff. Must follow Staff Bash."
+                    "other": "Daredevil wielding a Staff"
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Action",
+                "{@b Casting Time:} 4 {@variantrule Action Points|GW2|AP}",
                 "{@b Recharge:} None",
-                "{@b Range:} 180",
-                "{@b Target:} Area",
-                "{@b Duration:} ",
-                "{@b Properties:} Chain, Whirl Finisher",
-                "{@b Description:} Chain. Whirl your staff around, striking nearby enemies.",
-                "{@b Effect:} ",
-                "{@b Scaling:} "
-            ]
+                "{@b Range:} 5 ft.",
+                "{@b Target:} Up to 3 creatures",
+                "{@b Duration:} Instantaneous",
+                "{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Staff Strike|GW2HoT} -> {@optfeature Staff Bash|GW2HoT} -> {@optfeature Punishing Strikes|GW2HoT}, {@variantrule Combo Finisher|GW2|Combo Finisher:} Whirl (one for each attack), {@variantrule Sequence|GW2}: {@optfeature Hook Strike|GW2HoT} while {@condition Invisible|XPHB}",
+                "{@b Description:} Whirl your staff around, striking nearby enemies.",
+                "{@b Effect:} Choose up to three creature within range of you. Make a total of four melee weapon against them. On a hit, a target takes {@damage 1d6} + your Class Ability Modifier bludgeoning damage and is inflicted with {@variantrule Vulnerability|GW2} for 1 round.",
+                "{@b Scaling:} The number of attacks increase as you reach levels 5 (five attacks), 11 (six attacks), 17 (seven attacks)."
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Punishing_Strikes}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Punishing_Strikes.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Hook Strike",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "THI",
-                "DAR",
-                "STA",
-                "WS",
-                "STE",
-                "ACT"
+                "Daredevil",
+                "Thief",
+                "Staff",
+                "Weapon Skill",
+                "Stealth Attack"
             ],
             "prerequisite": [
                 {
-                    "other": "Thief wielding a Staff"
+                    "other": "Daredevil wielding a Staff"
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Action",
-                "{@b Recharge:} None",
-                "{@b Range:} 180",
-                "{@b Target:} Foe",
-                "{@b Duration:} ",
-                "{@b Properties:} Stealth Attack, Knockdown",
-                "{@b Description:} Stealth Attack. Attack your foes with stealth, knocking enemies down.",
-                "{@b Effect:} ",
-                "{@b Scaling:} "
-            ]
+                "{@b Casting Time:} 3 {@variantrule Action Points|GW2|AP}",
+                "{@b Recharge:} {@recharge 1}",
+                "{@b Range:} 5 ft.",
+                "{@b Target:} 1 creature",
+                "{@b Duration:} Instantaneous",
+                "{@b Properties:} Stealth Attack",
+                "{@b Description:} Attack your foes with stealth, knocking enemies down.",
+                "{@b Effect:} Choose one creature within range. Make a melee weapon attack against the target. On a hit, the target takes {@damage 1d4} + your Class Ability Modifier bludgeoning and must make a Strength Saving Throw, or be {@variantrule Knockdown|GW2} for 1 round.",
+                "{@b Scaling:} The damage increases as you reach levels 5 ({@damage 2d4}), 11 ({@damage 3d4}), and ({@damage 4d4}). The duration of the {@variantrule Knockdown|GW2} increases when you reach level 11 (2 rounds)."
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Hook_Strike}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Hook_Strike.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Weakening Whirl",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "THI",
-                "DAR",
-                "STA",
-                "WS",
-                "CIW",
-                "BACT",
-                "ACT"
+                "Daredevil",
+                "Thief",
+                "Staff",
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
-                    "other": "Thief wielding a Staff"
+                    "other": "Daredevil wielding a Staff"
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Bonus Action or Action",
-                "{@b Recharge:} None",
-                "{@b Range:} 180",
-                "{@b Target:} Area",
-                "{@b Duration:} ",
-                "{@b Properties:} Whirl Finisher, Inflicts Weakness",
+                "{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
+                "{@b Cost:} 3 {@variantrule Initiative Points|GW2}",
+                "{@b Range:} 5 ft.",
+                "{@b Target:} Up to 3 creatures",
+                "{@b Duration:} Instantaneous",
+                "{@b Properties:} {@variantrule Combo Finisher|GW2|Combo Finisher:} Whirl (one for each attack)",
                 "{@b Description:} Deliver multiple strikes, weakening foes.",
-                "{@b Effect:} ",
-                "{@b Scaling:} "
-            ]
+                "{@b Effect:} Choose up to three creature within range of you. Make a total of three melee weapon against them. On a hit, a target takes {@damage 1d8} + your Class Ability Modifier bludgeoning damage and is inflicted with {@variantrule Weakness|GW2} for 1 round.",
+                "{@b Scaling:} The number of attacks increase as you reach levels 5 (four attacks), 11 (five attacks), 17 (six attacks)."
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Weakening_Whirl}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Weakening_Whirl.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Debilitating Arc",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "THI",
-                "DAR",
-                "STA",
-                "WS",
-                "SEQ",
-                "REAC",
-                "BACT"
+                "Daredevil",
+                "Thief",
+                "Staff",
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
-                    "other": "Thief wielding a Staff"
+                    "other": "Daredevil wielding a Staff"
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Reaction/Bonus Action",
-                "{@b Recharge:} {@chance 75|5+}",
-                "{@b Range:} 180",
-                "{@b Target:} Area",
-                "{@b Duration:} ",
-                "{@b Properties:} Leap Away, Breaks Immobilize, Sequence",
+                "{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
+                "{@b Cost:} 3 {@variantrule Initiative Points|GW2}",
+                "{@b Range:} 5 ft.",
+                "{@b Target:} 1 creature",
+                "{@b Duration:} Instantaneous",
+                "{@b Properties:} Movement, {@variantrule Sequence|GW2}: {@optfeature Helmet Breaker|GW2HoT} after hitting with the attack",
                 "{@b Description:} Strike enemies in front of you and roll backward, breaking immobilizing effects. Gain access to Helmet Breaker.",
-                "{@b Effect:} ",
-                "{@b Scaling:} "
-            ]
+                "{@b Effect:} Remove the {@variantrule Immobile|GW2} {@variantrule Condition|GW2} from yourself. Choose one creature within range. Make a melee weapon attack against the target. On a hit, a target takes {@damage 1d10} + your Class Ability Modifier bludgeoning damage, is inflicted with {@variantrule Crippled|GW2} for 1 round, and you gain access to {@optfeature Helmet Breaker|GW2HoT} for 2 rounds. You move up to 20 feet, in a straight line away from the creature, without provoking {@action Opportunity Attack|XPHB|Opportunity Attack}.",
+                "{@b Scaling:} The damage increases as you reach levels 5 ({@damage 2d10}), 11 ({@damage 3d10}), and 17 ({@damage 4d10})."
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Debilitating_Arc}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Debilitating_Arc.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Helmet Breaker",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "THI",
-                "DAR",
-                "STA",
-                "WS",
-                "SEQ",
-                "CIL",
-                "BACT",
-                "ACT"
+                "Daredevil",
+                "Thief",
+                "Staff",
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
-                    "other": "Thief wielding a Staff. Must follow Debilitating Arc."
+                    "other": "Daredevil wielding a Staff"
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Bonus Action or Action",
-                "{@b Recharge:} None",
-                "{@b Range:} 180",
-                "{@b Target:} Foe",
-                "{@b Duration:} ",
-                "{@b Properties:} Leap Finisher, Inflicts Daze",
+                "{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
+                "{@b Cost:} 1 {@variantrule Initiative Points|GW2|Initiative Point}",
+                "{@b Range:} 25 ft.",
+                "{@b Target:} 1 creature",
+                "{@b Duration:} Instantaneous",
+                "{@b Properties:} {@variantrule Combo Finisher|GW2} Leap, Movement, {@variantrule Sequence|GW2}: {@optfeature Debilitating Arc|GW2HoT} after using the skill",
                 "{@b Description:} Leap at your target with an overhead strike that dazes them.",
-                "{@b Effect:} ",
-                "{@b Scaling:} "
-            ]
+                "{@b Effect:} Choose one creature that you can see within range. Leap within 5 feet of that target to an unoccupied space and make a melee weapon attack against it. On a hit, the target takes {@damage 2d6} + your Class Ability Modifier bludgeoning damage and must succeed on a Constitution Saving Throw or be inflicted with 1 round of {@variantrule Daze|GW2}. You loose access to this {@variantrule Skill|GW2} until you use {@optfeature Debilitating Arc|GW2HoT} again.",
+                "{@b Scaling:} The damage increases as you reach levels 5 ({@damage 4d6}), 11 ({@damage 6d6}), and 17 ({@damage 8d6})."
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Helmet_Breaker}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Helmet_Breaker.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Dust Strike",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "THI",
-                "DAR",
-                "STA",
-                "WS",
+                "Daredevil",
+                "Thief",
+                "Staff",
+                "Weapon Skill",
                 "ACT"
             ],
             "prerequisite": [
@@ -883,10 +968,10 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "THI",
-                "DAR",
-                "STA",
-                "WS",
+                "Daredevil",
+                "Thief",
+                "Staff",
+                "Weapon Skill",
                 "CIL",
                 "ACT"
             ],
@@ -912,10 +997,9 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "DAR",
-                "HS",
-                "PHY",
-                "ACT"
+                "Daredevil",
+                "Healing Skill",
+                "Physical"
             ],
             "prerequisite": [
                 {
@@ -923,26 +1007,40 @@
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Action",
-                "{@b Recharge:} {@chance 35|14+}",
-                "{@b Range:} ",
+                "{@b Casting Time:} {@variantrule Channel|GW2|Channel:} 3 {@variantrule Action Points|GW2|AP}",
+                "{@b Recharge:} {@recharge 4}",
+                "{@b Range:} Self",
                 "{@b Target:} Self",
-                "{@b Duration:} ",
+                "{@b Duration:} Instantaneous",
                 "{@b Properties:} Physical",
-                "{@b Description:} Physical. Channel your energy to gain endurance and health per pulse. Heal for more if your endurance is full.",
-                "{@b Effect:} ",
-                "{@b Scaling:} "
-            ]
+                "{@b Description:} Channel your energy to gain endurance and health per pulse. Heal for more if your endurance is full.",
+                "{@b Effect:} For each {@variantrule Action Points|GW2|AP} spent repeat the following effect: You regain {@variantrule Hit Points|XPHB} equal to {@dice 1d6} + your Class ability modifier, regain additional {@dice 1d6} {@variantrule Hit Points|XPHB} if your {@variantrule Endurance|GW2} is full, and regain 25 {@variantrule Endurance|GW2}.",
+                "{@b Scaling:} The healing both increases by {@dice 1d6} when you reach levels 5 ({@dice 2d6}), 7 ({@dice 3d6}), and ({@dice 4d6})."
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Channeled_Vigor}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Channeled_Vigor.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Bandit's Defense",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "DAR",
-                "US",
-                "PHY",
-                "ACT"
+                "Daredevil",
+                "Utility Skill",
+                "Physical"
             ],
             "prerequisite": [
                 {
@@ -950,28 +1048,40 @@
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Action",
-                "{@b Recharge:} {@chance 45|12+}",
-                "{@b Range:} ",
+                "{@b Casting Time:} {@variantrule Channel|GW2}: 6 {@variantrule Action Points|GW2|AP}",
+                "{@b Recharge:} {@recharge 3}",
+                "{@b Range:} Self",
                 "{@b Target:} Self",
-                "{@b Duration:} ",
-                "{@b Properties:} Physical",
-                "{@b Description:} Physical. Briefly block incoming attacks. Blocking an attack grants access to a retaliatory attack.",
-                "{@b Effect:} ",
-                "{@b Scaling:} "
-            ]
+                "{@b Duration:} Instantaneous",
+                "{@b Properties:} Physical, {@variantrule Sequence|GW2}: {@optfeature Reflexive Strike|GW2HoT} after {@variantrule Channel|GW2} ended, if something was blocked, {@variantrule Stun Break|GW2}",
+                "{@b Description:} Briefly block incoming attacks. Blocking an attack grants access to a retaliatory attack.",
+                "{@b Effect:} During the {@variantrule Channel|GW2} you have a +2 bonus to your {@variantrule Armor Class|XPHB} and {@variantrule Saving Throw|XPHB|Saving Throws}. You can double the bonus for a number of turns equal to the number of {@variantrule Action Points|GW2|AP} spent, when you spent {@variantrule Action Points|GW2|AP} {@variantrule Channel|GW2|Channeling} it. If an attack misses you because of this bonus, or you succeed on a {@variantrule Saving Throw|XPHB} because of it, you gain access to {@optfeature Reflexive Strike|GW2HoT} for 2 rounds.",
+                "{@b Scaling:} The bonus increases when you reach levels 5 (+3), 11 (+4), and 17 (+6)."
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Bandit's_Defense}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Bandit's_Defense.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Reflexive Strike",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "DAR",
-                "US",
-                "PHY",
-                "SEQ",
-                "BACT",
-                "ACT"
+                "Daredevil",
+                "Utility Skill",
+                "Physical"
             ],
             "prerequisite": [
                 {
@@ -979,25 +1089,40 @@
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Bonus Action or Action",
+                "{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
                 "{@b Recharge:} None",
-                "{@b Range:} ",
-                "{@b Target:} Foe",
-                "{@b Duration:} ",
-                "{@b Properties:} Physical",
-                "{@b Description:} Physical. Deliver a massive kick that knocks enemies down.",
-                "{@b Effect:} ",
-                "{@b Scaling:} "
-            ]
+                "{@b Range:} 5 ft.",
+                "{@b Target:} 1 creature",
+                "{@b Duration:} Instantaneous",
+                "{@b Properties:} Physical, {@variantrule Sequence|GW2}: {@optfeature Bandit's Defense|GW2HoT} after using the skill",
+                "{@b Description:} Deliver a massive kick that knocks enemies down.",
+                "{@b Effect:} Choose one creature within range. Make a melee weapon attack against the target. On a hit, the target takes {@damage 1d4} + your Class Ability Modifier bludgeoning damage and must make a Strength Saving Throw of be {@variantrule Knockdown|GW2} for 1 round.",
+                "{@b Scaling:} The damage increases when you reach levels 5 ({@damage 2d4}), 11 ({@damage 3d4}), and 17 ({@damage 4d4})."
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Reflexive_Strike}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Reflexive_Strike.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Distracting Daggers",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "DAR",
-                "US",
-                "PHY",
+                "Daredevil",
+                "Utility Skill",
+                "Physical",
                 "REAC",
                 "BACT"
             ],
@@ -1023,9 +1148,9 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "DAR",
-                "US",
-                "PHY",
+                "Daredevil",
+                "Utility Skill",
+                "Physical",
                 "ACT"
             ],
             "prerequisite": [
@@ -1050,9 +1175,9 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "DAR",
-                "US",
-                "PHY",
+                "Daredevil",
+                "Utility Skill",
+                "Physical",
                 "SEQ",
                 "BACT",
                 "ACT"
@@ -1079,9 +1204,9 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "DAR",
-                "US",
-                "PHY",
+                "Daredevil",
+                "Utility Skill",
+                "Physical",
                 "BACT",
                 "ACT"
             ],
@@ -1107,9 +1232,9 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "DAR",
+                "Daredevil",
                 "ES",
-                "PHY",
+                "Physical",
                 "BACT",
                 "ACT"
             ],
@@ -1135,7 +1260,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "DAR",
+                "Daredevil",
                 "ES",
                 "SEQ",
                 "ACT"
@@ -1162,7 +1287,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "DAR",
+                "Daredevil",
                 "ES",
                 "SEQ",
                 "ACT"
@@ -1189,10 +1314,10 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MIT",
-                "ADT",
-                "THI",
-                "DAR"
+                "Adept Trait",
+                "Daredevil",
+                "Minor Trait",
+                "Thief"
             ],
             "prerequisite": [
                 {
@@ -1201,17 +1326,32 @@
             ],
             "entries": [
                 "Your {@variantrule Endurance|GW2} increases to 150, and you regain 30 at the start of your turn instead of 20."
-            ]
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Physical_Supremacy}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Physical_Supremacy.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Marauder's Resilience",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MJT",
-                "ADT",
-                "THI",
-                "DAR"
+                "Adept Trait",
+                "Daredevil",
+                "Major Trait",
+                "Thief"
             ],
             "prerequisite": [
                 {
@@ -1220,17 +1360,32 @@
             ],
             "entries": [
                 "For every seven points of {@variantrule Attribute|GW2|Power} you have, you gain 1 point of {@variantrule Attribute|GW2|Vitality}. When you take {@variantrule Strike Damage|GW2}, if the source of the damage is within 20 feet of you, you take 10% less damage."
-            ]
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Marauder's_Resilience}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Marauder's_Resilience.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Escapist's Fortitude",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MJT",
-                "ADT",
-                "THI",
-                "DAR"
+                "Adept Trait",
+                "Daredevil",
+                "Major Trait",
+                "Thief"
             ],
             "prerequisite": [
                 {
@@ -1238,18 +1393,33 @@
                 }
             ],
             "entries": [
-                "Once per turn, when an attack misses you or you succeed on a {@variantrule Saving Throw|XPHB}, you regain {@variantrule Hit Points|XPHB} equal to your Thief level and you remove the latest {@variantrule Condition|GW2} affecting you."
-            ]
+                "Once per turn, when you successfully {@variantrule Evade|GW2} and attack or saving throw, you regain {@variantrule Hit Points|XPHB} equal to your Thief level and you remove the latest {@variantrule Condition|GW2} affecting you."
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Escapist's_Fortitude}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Escapist's_Fortitude.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Brawler's Tenacity",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MJT",
-                "ADT",
-                "THI",
-                "DAR"
+                "Adept Trait",
+                "Daredevil",
+                "Major Trait",
+                "Thief"
             ],
             "prerequisite": [
                 {
@@ -1258,17 +1428,35 @@
             ],
             "entries": [
                 "When you activate a Physical {@variantrule Skill|GW2}, you regain 15 {@variantrule Endurance|GW2}."
-            ]
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Brawler's_Tenacity}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Brawler's_Tenacity.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Weakening Strikes",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MIT",
-                "MAT",
-                "THI",
-                "DAR"
+                "Daredevil",
+                "Evade",
+                "Master Trait",
+                "Minor Trait",
+                "Strike Damage",
+                "Thief",
+                "Weakness"
             ],
             "prerequisite": [
                 {
@@ -1277,17 +1465,32 @@
             ],
             "entries": [
                 "After you {@variantrule Evade|GW2}, the next time you deal damage to one or more creatures, you also inflict {@variantrule Weakness|GW2} on them for 1 round. You take 10% less {@variantrule Strike Damage|GW2} from creatures affected by {@variantrule Weakness|GW2} and deal 10% more {@variantrule Strike Damage|GW2} to them."
-            ]
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Weakening_Strikes}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Weakening_Strikes.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Staff Master",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MJT",
-                "MAT",
-                "THI",
-                "DAR"
+                "Daredevil",
+                "Master Trait",
+                "Major Trait",
+                "Thief"
             ],
             "prerequisite": [
                 {
@@ -1297,17 +1500,32 @@
             "entries": [
                 "While wielding a {@item Staff|XPHB}, you regain 2 {@variantrule Endurance|GW2} for each {@variantrule Initiative Point|GW2} you spend on a {@variantrule Skill|GW2}.",
                 "You gain a bonus to your {@variantrule Attribute|GW2|Power}. This bonus equals 6 times your Thief level. This bonus is double while wielding a {@item Staff|XPHB}."
-            ]
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Staff_Master}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Staff_Master.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Havoc Specialist",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MJT",
-                "MAT",
-                "THI",
-                "DAR"
+                "Daredevil",
+                "Master Trait",
+                "Major Trait",
+                "Thief"
             ],
             "prerequisite": [
                 {
@@ -1316,17 +1534,32 @@
             ],
             "entries": [
                 "While you are not at maximum {@variantrule Endurance|GW2}, you deal 15% more {@variantrule Strike Damage|GW2}."
-            ]
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Havoc_Specialist}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Havoc_Specialist.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Impacting Disruption",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MJT",
-                "MAT",
-                "THI",
-                "DAR"
+                "Daredevil",
+                "Master Trait",
+                "Major Trait",
+                "Thief"
             ],
             "prerequisite": [
                 {
@@ -1334,19 +1567,34 @@
                 }
             ],
             "entries": [
-                "When you {@variantrule Interrupt|GW2} a creature, you inflict a {@variantrule Pulmonary Impact|GW2HoT}, dealing {@damage 1d8} damage, and you can attempt to recharge {@optfeature Steal|GW2}.",
+                "When you {@variantrule Disable|GW2} a creature, you inflict a {@variantrule Pulmonary Impact|GW2HoT}, dealing {@damage 1d8} damage, and you can attempt to recharge {@optfeature Steal|GW2}.",
                 "{@b Scaling.} The damage increases by {@damage 1d8} when you reach levels 5 ({@damage 2d8}), 11 ({@damage 3d8}), and 17 ({@damage 4d8})."
-            ]
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Impacting_Disruption}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Impacting_Disruption.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Endurance Thief",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MIT",
-                "GMT",
-                "THI",
-                "DAR"
+                "Daredevil",
+                "Grandmaster Trait",
+                "Minor Trait",
+                "Thief"
             ],
             "prerequisite": [
                 {
@@ -1355,17 +1603,32 @@
             ],
             "entries": [
                 "When successfully use {@optfeature Steal|GW2}, you regain 50 {@variantrule Endurance|GW2}."
-            ]
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Endurance_Thief}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Endurance_Thief.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Lotus Training",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MJT",
-                "GMT",
-                "THI",
-                "DAR"
+                "Daredevil",
+                "Grandmaster Trait",
+                "Major Trait",
+                "Thief"
             ],
             "prerequisite": [
                 {
@@ -1374,16 +1637,31 @@
             ],
             "entries": [
                 "When you {@variantrule Evade|GW2}, you deal 15% more {@variantrule Condition Damage|GW2} for 1 round and your usual movement is replaced by {@optfeature Impaling Lotus|GW2HoT}."
-            ]
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Lotus_Training}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Lotus_Training.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Impaling Lotus",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "THI",
-                "DAR",
-                "CIW"
+                "Daredevil",
+                "Skill",
+                "Thief"
             ],
             "prerequisite": [
                 {
@@ -1398,17 +1676,32 @@
                 "{@b Description:} Evade attacks and hurl damaging daggers, dealing multiple conditions to enemies.",
                 "{@b Effect:} You spin through the air to an unoccupied space within range that you can see, using your {@variantrule High Jump|XPHB} height for determining if you can jump over creatures, throwing daggers at your enemies. Choose up to three creatures within 20 feet of you along the path of your spin. Each creature must make a Dexterity {@variantrule Saving Throw|XPHB} or take {@damage 1} piercing damage and be inflicted with 2 stacks of {@variantrule Bleeding|GW2} for 1 round, 2 stacks of {@variantrule Torment|GW2} for 1 round, and 1 round of {@variantrule Crippled|GW2}. This movement is considered a {@variantrule Combo Finisher|GW2|Whirl Finisher}.",
                 "{@b Scaling:} The number of conditions inflicted and their duration increases when you reach levels 5 (3 stacks of {@variantrule Bleeding|GW2}, 3 stacks of {@variantrule Torment|GW2}, 2 rounds of {@variantrule Crippled|GW2}), 11 (4 stacks of {@variantrule Bleeding|GW2}, 4 stacks of {@variantrule Torment|GW2}, 3 rounds of {@variantrule Crippled|GW2}), and 17 (5 stacks of {@variantrule Bleeding|GW2}, 5 stacks of {@variantrule Torment|GW2}, 3 rounds of {@variantrule Crippled|GW2})"
-            ]
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Impaling_Lotus}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Lotus_Training.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Unhindered Combatant",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MJT",
-                "GMT",
-                "THI",
-                "DAR"
+                "Daredevil",
+                "Grandmaster Trait",
+                "Major Trait",
+                "Thief"
             ],
             "prerequisite": [
                 {
@@ -1417,16 +1710,31 @@
             ],
             "entries": [
                 "When you {@variantrule Evade|GW2}, you take 10% less damage for 1 round and your usual movement is replaced by {@optfeature Dash|GW2HoT}."
-            ]
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Unhindered_Combatant}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Lotus_Training.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Dash",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "THI",
-                "DAR",
-                "CIW"
+                "Daredevil",
+                "Skill",
+                "Thief"
             ],
             "prerequisite": [
                 {
@@ -1440,17 +1748,32 @@
                 "{@b Properties:} Movement",
                 "{@b Description:} Your dodge ability is replaced by a long-range dash.",
                 "{@b Effect:} You dash along surfaces through any creatures in your way to an unoccupied space within range that you can see. You remove {@variantrule Chilled|GW2} and {@variantrule Immobilized|GW2} from yourself and gain {@variantrule Swiftness|GW2} for 2 rounds."
-            ]
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Dash_(trait_skill)}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Lotus_Training.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Bounding Dodger",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MJT",
-                "GMT",
-                "THI",
-                "DAR"
+                "Daredevil",
+                "Grandmaster Trait",
+                "Major Trait",
+                "Thief"
             ],
             "prerequisite": [
                 {
@@ -1459,16 +1782,31 @@
             ],
             "entries": [
                 "When you {@variantrule Evade|GW2}, you deal 15% more {@variantrule Strike Damage|GW2} for 1 round and your usual movement is replaced by {@optfeature Bound|GW2HoT}."
-            ]
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Bounding_Dodger}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Bounding_Dodger.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Bound",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "THI",
-                "DAR",
-                "CIW"
+                "Daredevil",
+                "Skill",
+                "Thief"
             ],
             "prerequisite": [
                 {
@@ -1483,17 +1821,32 @@
                 "{@b Description:} Leap into an area, and deliver a massive blow to enemies.",
                 "{@b Effect:}  You leap through the air to an unoccupied space within range that you can see, using your {@variantrule High Jump|XPHB} height for determining if you can jump over creatures, striking enemies at your destination. Up to five creatures within 5 feet of your destination must make a Dexterity {@variantrule Saving Throw|XPHB} or take {@damage 2d8} bludgeoning damage. On a successful save, a creature takes half damage. This movement is considered a {@variantrule Combo Finisher|GW2|Leap Finisher}.",
                 "{@b Scaling.} The damage increases by {@damage 1d8} when you reach levels 5 ({@damage 3d8}), 11 ({@damage 4d8}), and 17 ({@damage 5d8})."
-            ]
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Bound}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Bounding_Dodger.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Primal Rage",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MIT",
-                "ADT",
-                "WAR",
-                "BER"
+                "Minor Trait",
+                "Adept Trait",
+                "Warrior",
+                "Berserker"
             ],
             "prerequisite": [
                 {
@@ -1509,7 +1862,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MAT",
+                "Master Trait",
                 "ADT"
             ],
             "prerequisite": [
@@ -1526,7 +1879,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MAT",
+                "Master Trait",
                 "ADT"
             ],
             "prerequisite": [
@@ -1543,7 +1896,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MAT",
+                "Master Trait",
                 "ADT"
             ],
             "prerequisite": [
@@ -1560,7 +1913,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MIT",
+                "Minor Trait",
                 "MAT"
             ],
             "prerequisite": [
@@ -1577,7 +1930,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MJT",
+                "Major Trait",
                 "MAT"
             ],
             "prerequisite": [
@@ -1594,7 +1947,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MJT",
+                "Major Trait",
                 "MAT"
             ],
             "prerequisite": [
@@ -1611,7 +1964,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MJT",
+                "Major Trait",
                 "MAT"
             ],
             "prerequisite": [
@@ -1628,8 +1981,8 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MIT",
-                "GMT"
+                "Minor Trait",
+                "Grandmaster Trait"
             ],
             "prerequisite": [
                 {
@@ -1645,8 +1998,8 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MAT",
-                "GMT"
+                "Master Trait",
+                "Grandmaster Trait"
             ],
             "prerequisite": [
                 {
@@ -1662,8 +2015,8 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MAT",
-                "GMT"
+                "Master Trait",
+                "Grandmaster Trait"
             ],
             "prerequisite": [
                 {
@@ -1679,7 +2032,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "PS"
+                "Profession Skill"
             ],
             "prerequisite": [
                 {
@@ -1703,9 +2056,9 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "PS",
-                "WAR",
-                "BER",
+                "Profession Skill",
+                "Warrior",
+                "Berserker",
                 "PRI",
                 "ACT",
                 "GRE"
@@ -1732,9 +2085,9 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "PS",
-                "WAR",
-                "BER",
+                "Profession Skill",
+                "Warrior",
+                "Berserker",
                 "PRI",
                 "ACT",
                 "HAM",
@@ -1762,9 +2115,9 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "PS",
-                "WAR",
-                "BER",
+                "Profession Skill",
+                "Warrior",
+                "Berserker",
                 "PRI",
                 "ACT",
                 "BACT",
@@ -1793,9 +2146,9 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "PS",
-                "WAR",
-                "BER",
+                "Profession Skill",
+                "Warrior",
+                "Berserker",
                 "PRI",
                 "ACT",
                 "RIF",
@@ -1823,7 +2176,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "PS"
+                "Profession Skill"
             ],
             "prerequisite": [
                 {
@@ -1847,7 +2200,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "PS"
+                "Profession Skill"
             ],
             "prerequisite": [
                 {
@@ -1871,9 +2224,9 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "PS",
-                "WAR",
-                "BER",
+                "Profession Skill",
+                "Warrior",
+                "Berserker",
                 "PRI",
                 "ACT",
                 "AXE"
@@ -1900,7 +2253,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "PS"
+                "Profession Skill"
             ],
             "prerequisite": [
                 {
@@ -1924,9 +2277,9 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "PS",
-                "WAR",
-                "BER",
+                "Profession Skill",
+                "Warrior",
+                "Berserker",
                 "PRI",
                 "ACT",
                 "BACT",
@@ -1954,9 +2307,9 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "PS",
-                "WAR",
-                "BER",
+                "Profession Skill",
+                "Warrior",
+                "Berserker",
                 "PRI",
                 "CHAN",
                 "SWO",
@@ -1984,9 +2337,9 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "PS",
-                "WAR",
-                "BER",
+                "Profession Skill",
+                "Warrior",
+                "Berserker",
                 "PRI",
                 "CHAN",
                 "HARP",
@@ -2014,13 +2367,13 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "PS",
-                "WAR",
-                "BER",
+                "Profession Skill",
+                "Warrior",
+                "Berserker",
                 "PRI",
                 "ACT",
                 "SPEA",
-                "CIW"
+                "Combo Finisher Whirl"
             ],
             "prerequisite": [
                 {
@@ -2044,11 +2397,10 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "HS",
-                "WAR",
-                "BER",
-                "RAG",
-                "BACT"
+                "Healing Skill",
+                "Warrior",
+                "Berserker",
+                "Rage"
             ],
             "prerequisite": [
                 {
@@ -2056,23 +2408,38 @@
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Bonus Action",
-                "{@b Recharge:} {@chance 35|14+}",
+                "{@b Casting Time:} 1 {@variantrule Action Points|GW2|AP}",
+                "{@b Recharge:} {@recharge 4}",
                 "{@b Range:} Self",
                 "{@b Target:} Self",
                 "{@b Duration:} 1 round",
                 "{@b Properties:} Rage",
                 "{@b Description:} Heal yourself, gain adrenaline, and recharge all primal burst skills. Heal for a percentage of your outgoing damage. This skill extends the duration of berserk mode.",
-                "{@b Effect:} You regain hit points equal to {@dice 1d8} + your Class modifier, gain 10 Adrenaline, recharge your Primal Burst skills, extend the duration of berserk mode by 1 round, and heal for 33% of your outgoing damage for the duration.",
+                "{@b Effect:} You regain hit points equal to {@dice 1d8} + your Class Ability Modifier, gain 10 Adrenaline, recharge your Primal Burst skills, extend the duration of Berserk Mode by 1 round, and heal for 33% of your outgoing damage for the duration.",
                 "{@b Scaling:} The healing increases by {@dice 1d8} when you reach levels 5 ({@dice 2d8}), 11 ({@dice 3d8}), and 17 ({@dice 4d8})."
-            ]
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Blood_Reckoning}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Blood_Reckoning.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Outrage",
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {
@@ -2096,7 +2463,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {
@@ -2120,7 +2487,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {
@@ -2144,7 +2511,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {
@@ -2192,8 +2559,8 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MAT",
-                "GMT"
+                "Master Trait",
+                "Grandmaster Trait"
             ],
             "prerequisite": [
                 {
@@ -2209,7 +2576,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2233,7 +2600,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2257,7 +2624,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2281,7 +2648,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2305,7 +2672,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2329,7 +2696,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2353,7 +2720,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2377,7 +2744,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2401,7 +2768,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2425,7 +2792,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2449,7 +2816,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2473,7 +2840,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2497,7 +2864,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2521,7 +2888,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2545,7 +2912,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2569,7 +2936,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2593,7 +2960,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "WS"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -2617,7 +2984,9 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "HS"
+                "Healing Skill",
+                "Tempest",
+                "Elementalist"
             ],
             "prerequisite": [
                 {
@@ -2641,7 +3010,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {
@@ -2665,7 +3034,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {
@@ -2689,7 +3058,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {
@@ -2713,7 +3082,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {
@@ -2761,7 +3130,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "HS"
+                "Healing Skill"
             ],
             "prerequisite": [
                 {
@@ -2785,7 +3154,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "PS"
+                "Profession Skill"
             ],
             "prerequisite": [
                 {
@@ -2809,7 +3178,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {
@@ -2833,7 +3202,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "PS"
+                "Profession Skill"
             ],
             "prerequisite": [
                 {
@@ -2857,7 +3226,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {
@@ -2881,7 +3250,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "PS"
+                "Profession Skill"
             ],
             "prerequisite": [
                 {
@@ -2905,7 +3274,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {
@@ -2929,7 +3298,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "PS"
+                "Profession Skill"
             ],
             "prerequisite": [
                 {
@@ -2953,7 +3322,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "US"
+                "Utility Skill"
             ],
             "prerequisite": [
                 {
@@ -2977,7 +3346,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "PS"
+                "Profession Skill"
             ],
             "prerequisite": [
                 {
@@ -3025,7 +3394,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "PS"
+                "Profession Skill"
             ],
             "prerequisite": [
                 {
@@ -3049,7 +3418,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "PS"
+                "Profession Skill"
             ],
             "prerequisite": [
                 {
@@ -3073,7 +3442,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "PS"
+                "Profession Skill"
             ],
             "prerequisite": [
                 {
@@ -3097,7 +3466,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "PS"
+                "Profession Skill"
             ],
             "prerequisite": [
                 {
@@ -3121,7 +3490,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MIT",
+                "Minor Trait",
                 "ADT"
             ],
             "prerequisite": [
@@ -3138,7 +3507,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MAT",
+                "Master Trait",
                 "ADT"
             ],
             "prerequisite": [
@@ -3155,7 +3524,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MAT",
+                "Master Trait",
                 "ADT"
             ],
             "prerequisite": [
@@ -3172,7 +3541,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MAT",
+                "Master Trait",
                 "ADT"
             ],
             "prerequisite": [
@@ -3189,7 +3558,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MIT",
+                "Minor Trait",
                 "MAT"
             ],
             "prerequisite": [
@@ -3206,7 +3575,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MJT",
+                "Major Trait",
                 "MAT"
             ],
             "prerequisite": [
@@ -3223,7 +3592,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MJT",
+                "Major Trait",
                 "MAT"
             ],
             "prerequisite": [
@@ -3240,7 +3609,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MJT",
+                "Major Trait",
                 "MAT"
             ],
             "prerequisite": [
@@ -3257,8 +3626,8 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MIT",
-                "GMT"
+                "Minor Trait",
+                "Grandmaster Trait"
             ],
             "prerequisite": [
                 {
@@ -3274,8 +3643,8 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MAT",
-                "GMT"
+                "Master Trait",
+                "Grandmaster Trait"
             ],
             "prerequisite": [
                 {
@@ -3291,8 +3660,8 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MAT",
-                "GMT"
+                "Master Trait",
+                "Grandmaster Trait"
             ],
             "prerequisite": [
                 {
@@ -3308,8 +3677,8 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MAT",
-                "GMT"
+                "Master Trait",
+                "Grandmaster Trait"
             ],
             "prerequisite": [
                 {
@@ -3325,7 +3694,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MIT",
+                "Minor Trait",
                 "ADT"
             ],
             "prerequisite": [
@@ -3342,7 +3711,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MAT",
+                "Master Trait",
                 "ADT"
             ],
             "prerequisite": [
@@ -3359,7 +3728,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MAT",
+                "Master Trait",
                 "ADT"
             ],
             "prerequisite": [
@@ -3376,7 +3745,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MAT",
+                "Master Trait",
                 "ADT"
             ],
             "prerequisite": [
@@ -3393,7 +3762,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MIT",
+                "Minor Trait",
                 "MAT"
             ],
             "prerequisite": [
@@ -3410,7 +3779,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MJT",
+                "Major Trait",
                 "MAT"
             ],
             "prerequisite": [
@@ -3427,7 +3796,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MJT",
+                "Major Trait",
                 "MAT"
             ],
             "prerequisite": [
@@ -3444,7 +3813,7 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MJT",
+                "Major Trait",
                 "MAT"
             ],
             "prerequisite": [
@@ -3461,8 +3830,8 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MIT",
-                "GMT"
+                "Minor Trait",
+                "Grandmaster Trait"
             ],
             "prerequisite": [
                 {
@@ -3478,8 +3847,8 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MAT",
-                "GMT"
+                "Master Trait",
+                "Grandmaster Trait"
             ],
             "prerequisite": [
                 {
@@ -3495,8 +3864,8 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MAT",
-                "GMT"
+                "Master Trait",
+                "Grandmaster Trait"
             ],
             "prerequisite": [
                 {
@@ -3512,8 +3881,8 @@
             "source": "GW2HoT",
             "page": "",
             "featureType": [
-                "MAT",
-                "GMT"
+                "Master Trait",
+                "Grandmaster Trait"
             ],
             "prerequisite": [
                 {
@@ -3528,6 +3897,53 @@
     "feat": [],
     "spell": [],
     "table": [
+        {
+            "name": "Acrobatic Busking",
+            "source": "GW2HoT",
+            "page": "",
+            "colLabels": [
+                "Difficulty",
+                "Poor",
+                "Lower-Class",
+                "Working-Class",
+                "Upper-Class",
+                "Nobility/Ultra Rich"
+            ],
+            "rows": [
+                [
+                    "Easy",
+                    "{@dice 1d4} gp",
+                    "{@dice 2d4} gp",
+                    "{@dice 4d4} gp",
+                    "{@dice 6d6} gp",
+                    "{@dice 10d8} gp"
+                ],
+                [
+                    "Medium",
+                    "{@dice 1d6} gp",
+                    "{@dice 2d6} gp",
+                    "{@dice 4d6} gp",
+                    "{@dice 8d8} gp",
+                    "{@dice 15d10} gp"
+                ],
+                [
+                    "Hard",
+                    "{@dice 1d8} gp",
+                    "{@dice 2d8} gp",
+                    "{@dice 4d8} gp",
+                    "{@dice 10d10} gp",
+                    "{@dice 20d12} gp"
+                ],
+                [
+                    "Impossible",
+                    "{@dice 1d10} gp",
+                    "{@dice 2d10} gp",
+                    "{@dice 4d10} gp",
+                    "{@dice 12d12} gp",
+                    "{@dice 25d100} gp"
+                ]
+            ]
+        },
         {
             "name": "Warrior Primal Burst Skills",
             "source": "GW2HoT",
@@ -3606,13 +4022,13 @@
                 "Daredevil|Thief|GW2|Daredevil|GW2HoT|1",
                 "Action Combat|Thief|GW2|Daredevil|GW2HoT|1",
                 "Elite Specialization|Thief|GW2|Daredevil|GW2HoT|3",
-                "Daredevil Combat Trait 1|Thief|GW2|Daredevil|GW2HoT|5",
-                "Daredevil RP Trait 1|Thief|GW2|Daredevil|GW2HoT|5",
-                "Daredevil Combat Trait 2|Thief|GW2|Daredevil|GW2HoT|10",
-                "Daredevil RP Trait 2|Thief|GW2|Daredevil|GW2HoT|10",
-                "Daredevil Combat Trait 3|Thief|GW2|Daredevil|GW2HoT|15",
-                "Daredevil RP Trait 3|Thief|GW2|Daredevil|GW2HoT|15",
-                "Daredevil Combat Trait 4|Thief|GW2|Daredevil|GW2HoT|20"
+                "Who needs Flight?|Thief|GW2|Daredevil|GW2HoT|5",
+                "Acrobatic Solutions|Thief|GW2|Daredevil|GW2HoT|5",
+                "Never Again|Thief|GW2|Daredevil|GW2HoT|10",
+                "Side Business|Thief|GW2|Daredevil|GW2HoT|10",
+                "Close Quarters Expert|Thief|GW2|Daredevil|GW2HoT|15",
+                "Body and Mind|Thief|GW2|Daredevil|GW2HoT|15",
+                "Momentum Incarnate|Thief|GW2|Daredevil|GW2HoT|20"
             ],
             "hasFluff": true,
             "hasFluffImages": true
@@ -3678,10 +4094,11 @@
                     "tag": "table",
                     "name": "Thief Stolen Skills",
                     "source": "GW2",
-                    "style": "inset"
+                    "style": "inset",
+                    "collapsed": true
                 },
                 "{@b Mobile Combatant I.} Your {@variantrule Speed|XPHB} increases by 10 feet. You gain a {@variantrule Climb Speed|XPHB} equal to your {@variantrule Speed|XPHB}.",
-                "{@b Active Defense.} When you Evade you gain a bonus to your {@variantrule Armor Class|XPHB} and {@variantrule Saving Throws|XPHB} until the start of your next turn. The bonus equals your Dexterity modifier. You can only gain this bonus once per round.",
+                "{@b Active Defense.} When you {@variantrule Evade|GW2} you gain a bonus to your {@variantrule Armor Class|XPHB} and {@variantrule Saving Throws|XPHB} until the start of your next turn. The bonus equals your Dexterity modifier. You can only gain this bonus once per round.",
                 "{@b Expert Acrobat.} You gain {@variantrule Proficiency|XPHB} in the {@skill Acrobatics} skill. If you already have {@variantrule Proficiency|XPHB}, you gain {@variantrule Expertise|XPHB} instead."
             ]
         },
@@ -3698,13 +4115,15 @@
                     "type": "statblock",
                     "tag": "variantrule",
                     "name": "Endurance",
-                    "source": "GW2"
+                    "source": "GW2",
+                    "collapsed": true
                 },
                 {
                     "type": "statblock",
                     "tag": "variantrule",
                     "name": "Evade",
-                    "source": "GW2"
+                    "source": "GW2",
+                    "collapsed": true
                 }
             ]
         },
@@ -3721,7 +4140,7 @@
             ]
         },
         {
-            "name": "Daredevil Combat Trait 1",
+            "name": "Who needs Flight?",
             "source": "GW2HoT",
             "className": "Thief",
             "classSource": "GW2",
@@ -3729,25 +4148,38 @@
             "subclassSource": "GW2HoT",
             "level": 5,
             "entries": [
-                "{@b Wall Running.} Your {@variantrule Speed|XPHB} increases by a further 10 feet. You gain the ability to move along vertical surfaces and across liquids on your turn without falling during the movement.",
-                "{@b Jumper.} When performing a {@variantrule High Jump|XPHB} or {@variantrule Long Jump|XPHB} you use Dexterity instead of Strength. Your jump distance is tripled.",
+                "{@b Mobile Combatant II.} Your {@variantrule Speed|XPHB} increases by a further 10 feet. You gain the ability to move along vertical surfaces and across liquids on your turn without falling during the movement.",
+                "{@b Jumper.} When performing a {@variantrule High Jump|XPHB} or {@variantrule Long Jump|XPHB} you use Dexterity instead of Strength. Your jump distance is tripled."
+            ]
+        },
+        {
+            "name": "Acrobatic Solutions",
+            "source": "GW2HoT",
+            "className": "Thief",
+            "classSource": "GW2",
+            "subclassShortName": "Daredevil",
+            "subclassSource": "GW2HoT",
+            "level": 5,
+            "entries": [
+                "{@b Impressive Acrobat.} You can use your impressive Acrobatic skills to impress people. When you make an {@skill Intimidation|XPHB}, {@skill Performance|XPHB} or {@skill Persuasion|XPHB} check you can make an {@skill Acrobatics|XPHB} check instead, if the situation is appropriate (as determined by the DM).",
+                "{@b Old Reliable.} One per {@variantrule Short Rest|XPHB} when you fail a Dexterity skill check, you can choose to re-attempt the check by doing an {@skill Acrobatics|XPHB} check instead."
+            ]
+        },
+        {
+            "name": "Never Again",
+            "source": "GW2HoT",
+            "className": "Thief",
+            "classSource": "GW2",
+            "subclassShortName": "Daredevil",
+            "subclassSource": "GW2HoT",
+            "level": 10,
+            "entries": [
+                "{@b Mobile Combatant III.} Your {@variantrule Speed|XPHB} increases by a further 10 feet. When you take damage from falling you can reduce that damage by an amount equal to ten times your Thief level.",
                 "{@b Studied Response.} After a creature has hit you with an attack, or you failed a {@variantrule Saving Throw|XPHB} against an effect created by a creature, you can take a {@variantrule Reaction|XPHB} when you are hit by that creature or fail a {@variantrule Saving Throw|XPHB} against that creature, to instead make the attack miss or to succeed on the {@variantrule Saving Throw|XPHB}."
             ]
         },
         {
-            "name": "Daredevil RP Trait 1",
-            "source": "GW2HoT",
-            "className": "Thief",
-            "classSource": "GW2",
-            "subclassShortName": "Daredevil",
-            "subclassSource": "GW2HoT",
-            "level": 5,
-            "entries": [
-                ""
-            ]
-        },
-        {
-            "name": "Daredevil Combat Trait 2",
+            "name": "Side Business",
             "source": "GW2HoT",
             "className": "Thief",
             "classSource": "GW2",
@@ -3755,35 +4187,19 @@
             "subclassSource": "GW2HoT",
             "level": 10,
             "entries": [
-                ""
+                "{@b Busker.} You can use your Acrobatic skills to earn a bit of money on the side. When in a populate enough area, or surrounded by wealthy enough people, you can start busking in an attempt to earn money, or other valuable things. To do so you must describe your character performing acrobatic feats of easy, medium, hard or impossible difficulty for at least one hour. At the end of which you make an {@skill Acrobatics|XPHB} skill check with a DC depending on the difficulty chosen (Easy - DC 15, Medium - DC 20, Hard - DC 25, Impossible - DC 30). If you succeed you are rewarded with an amount of GP depending on the difficulty of the performance and the affluence of the creatures watching it (as determined by the DM). Consult the Acrobatic Busking table below for your reward. Once you busk for a particular audience you cannot earn money from them again for 24 hours.",
+                {
+                    "type": "statblock",
+                    "tag": "table",
+                    "name": "Acrobatic Busking",
+                    "source": "GW2HoT",
+                    "style": "inset",
+                    "collapsed": true
+                }
             ]
         },
         {
-            "name": "Daredevil RP Trait 2",
-            "source": "GW2HoT",
-            "className": "Thief",
-            "classSource": "GW2",
-            "subclassShortName": "Daredevil",
-            "subclassSource": "GW2HoT",
-            "level": 10,
-            "entries": [
-                ""
-            ]
-        },
-        {
-            "name": "Daredevil Combat Trait 3",
-            "source": "GW2HoT",
-            "className": "Thief",
-            "classSource": "GW2",
-            "subclassShortName": "Daredevil",
-            "subclassSource": "GW2HoT",
-            "level": 15,
-            "entries": [
-                ""
-            ]
-        },
-        {
-            "name": "Daredevil RP Trait 3",
+            "name": "Close Quarters Expert",
             "source": "GW2HoT",
             "className": "Thief",
             "classSource": "GW2",
@@ -3791,11 +4207,24 @@
             "subclassSource": "GW2HoT",
             "level": 15,
             "entries": [
-                ""
+                "{@b Mobile Combatant IV.} Your {@variantrule Speed|XPHB} increases by a further 15 feet. Once you have dealt damage to a creature, that creature cannot make {@action Opportunity Attack|XPHB|Opportunity Attacks} against you.",
+                "{@b Stored Momentum.} If you end your turn without having spent all your {@variantrule Speed|GW2} you can convert that remaining movement into damage. During your next turn, the first time you deal damage, you gain a bonus to that damage equal to a quarter of the remaining movement. If you deal damage to multiple creatures at once, distribute the extra damage among those creatures."
             ]
         },
         {
-            "name": "Daredevil Combat Trait 4",
+            "name": "Body and Mind",
+            "source": "GW2HoT",
+            "className": "Thief",
+            "classSource": "GW2",
+            "subclassShortName": "Daredevil",
+            "subclassSource": "GW2HoT",
+            "level": 15,
+            "entries": [
+                "Your Mind has caught up with your body, sharpening your abilities. When you make an Intelligence, Wisdom or Charisma Ability Check you have {@variantrule Advantage|XPHB} on that roll, as long as your not {@condition Bloodied|XPHB}."
+            ]
+        },
+        {
+            "name": "Momentum Incarnate",
             "source": "GW2HoT",
             "className": "Thief",
             "classSource": "GW2",
@@ -3803,7 +4232,8 @@
             "subclassSource": "GW2HoT",
             "level": 20,
             "entries": [
-                ""
+                "{@b Mobile Combatant V.} Your {@variantrule Speed|XPHB} increases by a further 45 feet. You can take the {@action Dash|XPHB} action by spending 2 {@variantrule Action Points|GW2}.",
+                "{@b Impact Strike.} Once per turn, if you hit a creature with a melee weapon attack, and moved at least 10 feet in a straight line toward the creature immediately before, you can force that creature to make a Strength Saving Throw. On a failed save, the creature is {@variantrule Launch|GW2|Launched} for a number of feet equal to half the length of the straight line. If the creature hits a solid enough object to stop its trajectory it takes bludgeoning damage equal to the remaining {@variantrule Launch|GW2} distance. If it hits another creature of the same size or larger, it stops and both take bludgeoning damage equal to the remaining {@variantrule Launch|GW2} distance. If it hits a creature smaller than it, that creature get {@variantrule Launch|GW2|Launched} for the remaining distance as well, potentially knocking into other things."
             ]
         },
         {
@@ -3822,7 +4252,8 @@
                     "tag": "table",
                     "name": "Warrior Burst Skills",
                     "source": "GW2",
-                    "style": "inset"
+                    "style": "inset",
+                    "collapsed": true
                 },
                 "{@b Berserk.} Alternatively, you can choose to expend all your Adrenaline to enter a Berserk state (no {@variantrule Action|GW2} required) for a number of rounds equal to a tenth of the amount of Adrenaline you spent. While in this state, you under the following effects:",
                 {
@@ -3849,13 +4280,15 @@
                     "type": "statblock",
                     "tag": "variantrule",
                     "name": "Endurance",
-                    "source": "GW2"
+                    "source": "GW2",
+                    "collapsed": true
                 },
                 {
                     "type": "statblock",
                     "tag": "variantrule",
                     "name": "Evade",
-                    "source": "GW2"
+                    "source": "GW2",
+                    "collapsed": true
                 }
             ]
         },

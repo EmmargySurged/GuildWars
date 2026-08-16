@@ -10302,7 +10302,7 @@
 				],
 				[
 					"{@item Shortsword|XPHB}",
-					"{@optfeature Flurry|GW2}"
+					"{@optfeature Bloodthirster|GW2}"
 				],
 				[
 					"{@item Harpoon Gun|GW2}",
@@ -21508,7 +21508,7 @@
 			],
 			"entries": [
 				"{@b Casting Time:} Reaction/Bonus Action",
-				"{@b Recharge:} {@chance 55|10+}",
+				"{@b Recharge:} {@recharge 2}",
 				"{@b Range:} ",
 				"{@b Target:} Area",
 				"{@b Duration:} ",
@@ -24101,7 +24101,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -24125,7 +24125,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -24149,7 +24149,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -24475,7 +24475,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -24499,7 +24499,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -24523,7 +24523,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -24826,7 +24826,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -24850,7 +24850,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -24874,7 +24874,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -25176,7 +25176,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -25200,7 +25200,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -25887,7 +25887,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -25911,7 +25911,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -25935,7 +25935,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -27865,13 +27865,10 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS",
+				"Profession Skill",
 				"Warrior",
-				"BUR",
-				"CHAN",
-				"Harpoon Gun",
-				"CIP",
-				"PI"
+				"Burst",
+				"Harpoon Gun"
 			],
 			"prerequisite": [
 				{
@@ -27879,16 +27876,32 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} {@variantrule Channel|Gw2}: 18",
-				"{@b Recharge:} {@chance 55|10+}",
+				"{@b Casting Time:} 7 {@variantrule Action Points|GW2|AP}",
+				"{@b Cost:} All your Adrenaline, minimum 10",
+				"{@b Recharge:} {@recharge 2}",
 				"{@b Range:} 120 feet",
 				"{@b Target:} 1 creature",
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} Burst, {@variantrule Combo Finisher|GW2}: Projectile, {@variantrule Piercing|GW2}",
 				"{@b Description:} Fire a forceful shot. Damage increases with adrenaline level.",
-				"{@b Effect:} Choose one creature you can see within range. When the Channel ends, make a ranged weapon attack against the target. On a hit, the target takes {@damage 1d10 + 1d12} piercing damage. The damage increases by {@damage 1d6} per 10 Adrenaline spent beyond the initial 10.",
-				"{@b Scaling:} The damage each increases by {@damage 1d10 + 1d12} and {@damage 1d6} respectively when you reach levels 5 ({@damage 2d10 + 2d12} & {@damage 2d6}), 11 ({@damage 3d10 + 3d12} & {@damage 3d6}), and 17 ({@damage 4d10 + 4d12} & {@damage 4d6})."
-			]
+				"{@b Effect:} Choose one creature you can see within range. Make a ranged weapon attack against the target. On a hit, the target takes {@damage 2d10} + your Class Ability Modifier piercing damage. The damage increases by {@damage 2d10} per 10 Adrenaline spent beyond the initial 10.",
+				"{@b Scaling:} The base damage increases when you reach levels 5 ({@damage 4d10}), 11 ({@damage 6d10}), and 17 ({@damage 8d10})."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Forceful_Shot}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Forceful_Shot.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Mariner's Shot",
@@ -28032,10 +28045,9 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS",
+				"Profession Skill",
 				"Warrior",
-				"ACT",
-				"BUR",
+				"Burst",
 				"Aquatic Spear"
 			],
 			"prerequisite": [
@@ -28044,16 +28056,32 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action",
-				"{@b Recharge:} {@chance 55|10+}",
+				"{@b Casting Time:} 3 {@variantrule Action Points|GW2|AP}",
+				"{@b Cost:} All your Adrenaline, minimum 10",
+				"{@b Recharge:} {@recharge 2}",
 				"{@b Range:} 5 feet",
 				"{@b Target:} Up to 5 creatures",
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} Burst",
 				"{@b Description:} Strike all foes around you. Effect increases with adrenaline level.",
-				"{@b Effect:} Choose up to 5 creatures within range. Make a melee weapon attack against each target. On a hit, the target takes {@damage 2d10} piercing damage is {@variantrule Stunned|XPHB} for a number of rounds equal to a tenth of the Adrenaline spent. A {@variantrule Stunned|XPHB} creature can make a Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.",
-				"{@b Scaling:} The damage increases by {@damage 2d10} when you reach levels 5 ({@damage 4d10}), 11 ({@damage 6d10}), and 17 ({@damage 8d10})."
-			]
+				"{@b Effect:} Target each creature other than you within a 5-foot Emanation. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 2d8} + your Class Ability Modifier piercing damage and is {@variantrule Stunned|XPHB} for a number of rounds equal to a tenth of the Adrenaline spent. On a successful save, a target takes half as much damage only. A {@variantrule Stunned|XPHB} creature can make a Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"{@b Scaling:} The damage increases when you reach levels 5 ({@damage 4d8}), 11 ({@damage 6d8}), and 17 ({@damage 8d8})."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Whirling_Strike}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Whirling_Strike.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Stab (Warrior)",
@@ -28371,14 +28399,14 @@
 			]
 		},
 		{
-			"name": "Flurry",
+			"name": "Bloodthirster",
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS",
+				"Profession Skill",
 				"Warrior",
 				"CHAN",
-				"BUR",
+				"Burst",
 				"Shortsword"
 			],
 			"prerequisite": [
@@ -28387,16 +28415,32 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} {@variantrule Channel|Gw2}: 20",
-				"{@b Recharge:} {@chance 55|10+}",
-				"{@b Range:} 5 feet",
-				"{@b Target:} Up to 3 creatures",
+				"{@b Casting Time:} X {@variantrule Action Points|GW2|AP}",
+				"{@b Cost:} All your Adrenaline, minimum 10",
+				"{@b Recharge:} {@recharge 2}",
+				"{@b Range:} Self",
+				"{@b Target:} 5-foot Emanation",
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} Burst",
-				"{@b Description:} Immobilize your foes with a flurry of bleeding strikes. Effect increases with adrenaline level.",
-				"{@b Effect:} At the beginning of the {@variantrule Channel|Gw2} and then every 4 (3 for 20+ Adrenaline and 2 for 30 Adrenaline) {@variantrule Initiative|XPHB} thereafter, make a melee weapon attack against up to 3 creatures within range. On a hit, a target takes {@damage 1d4} slashing damage and is inflicted with 1 stack of {@variantrule Bleeding|Gw2} for 1 round, taking {@damage 1d8} damage. The first attack also inflicts {@variantrule Immobile|Gw2} for 1 round on a hit.",
-				"{@b Scaling:} The damage each increases by {@damage 1d4} and {@damage 1d8} respectively when you reach levels 5 ({@damage 2d4} & {@damage 2d8}), 11 ({@damage 3d4} & {@damage 3d8}), and 17 ({@damage 4d4} & {@damage 4d8})."
-			]
+				"{@b Description:} Sweep your blade around yourself, slicing nearby enemies. Effect increases with adrenaline level. Heal if you strike a target, healing more if they are bleeding.",
+				"{@b Effect:} Target each creature other than you within a 5-foot Emanation. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 2d10} slashing damage and is inflicted with 3 stacks of {@variantrule Bleeding|GW2} for 1 round, per 10 Adrenaline spent. On a successful save, a target takes half as much damage only. You regain {@variantrule Hit Points|XPHB} equal to {@dice 1d4} per {@variantrule Bleeding|GW2} stack on all creatures who failed their save.",
+				"{@b Scaling:} The damage and duration increases when you reach levels 5 ({@damage 3d10} & 2 rounds), 11 ({@damage 4d10} & 3 rounds), and 17 ({@damage 5d10} & 4 rounds)."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Bloodthirster}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Bloodthirster.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Sever Artery",
@@ -28670,10 +28714,9 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS",
+				"Profession Skill",
 				"Warrior",
-				"ACT",
-				"BUR",
+				"Burst",
 				"Axe"
 			],
 			"prerequisite": [
@@ -28682,16 +28725,32 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action",
-				"{@b Recharge:} {@chance 55|10+}",
-				"{@b Range:} 45 feet",
+				"{@b Casting Time:} 4 {@variantrule Action Points|GW2|AP}",
+				"{@b Cost:} All your Adrenaline, minimum 10",
+				"{@b Recharge:} {@recharge 2}",
+				"{@b Range:} 20 feet",
 				"{@b Target:} 1 creature",
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} Burst, {@variantrule Combo Finisher|GW2}: Leap",
 				"{@b Description:} Leap at your foe with a devastating attack. Effect increases with adrenaline level.",
-				"{@b Effect:} Choose one creature you can see within range. You leap within 5 feet of the target and make a melee weapon attack against it. The attack has an increased {@variantrule Critical Hit|XPHB} range of 10. On a hit, the target takes {@damage 2d10} slashing damage and you gain 5 stacks of {@variantrule Might|GW2} for 1 round. The damage increases by {@damage 1d6} per 10 Adrenaline spent beyond the initial 10. ",
-				"{@b Scaling:} The damage each increases by {@damage 2d10} and {@damage 1d6} respectively when you reach levels 5 ({@damage 4d10} & {@damage 2d6}), 11 ({@damage 6d10} & {@damage 3d6}), and 17 ({@damage 8d10} & {@damage 4d6})."
-			]
+				"{@b Effect:} Choose one creature you can see within range. You leap within 5 feet of the target and make a melee weapon attack against it. The attack has an increased {@variantrule Critical Range|XPHB} of 10. On a hit, the target takes {@damage 2d10} + your Class Ability Modifier slashing damage and you gain 5 stacks of {@variantrule Might|GW2} for 1 round. The damage increases by {@damage 1d10} per 10 Adrenaline spent beyond the initial 10. ",
+				"{@b Scaling:} The base damage increases when you reach levels 5 ({@damage 4d10}), 11 ({@damage 6d10}), and 17 ({@damage 8d10})."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Eviscerate}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Eviscerate.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Chop",
@@ -28917,12 +28976,10 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS",
+				"Profession Skill",
 				"Warrior",
-				"ACT",
-				"BACT",
 				"Mace",
-				"BUR"
+				"Burst"
 			],
 			"prerequisite": [
 				{
@@ -28930,16 +28987,32 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action or Bonus Action",
-				"{@b Recharge:} {@chance 55|10+}",
+				"{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
+				"{@b Cost:} All your Adrenaline, minimum 10",
+				"{@b Recharge:} {@recharge 2}",
 				"{@b Range:} 5 feet",
 				"{@b Target:} 1 creature",
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} Burst",
 				"{@b Description:} Stun your foe with a skull crack. Effect increases with adrenaline level.",
-				"{@b Effect:} Choose one creature you can see within range. Make a melee weapon attack against it. On a hit, the target takes {@damage 2d8} bludgeoning damage and is {@variantrule Stunned|XPHB} for a number of rounds equal to a tenth of the Adrenaline spent. A {@variantrule Stunned|XPHB} creature can make a Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.",
-				"{@b Scaling:} The damage increases by {@damage 2d8} when you reach levels 5 ({@damage 4d8}), 11 ({@damage 6d8}), and 17 ({@damage 8d8})."
-			]
+				"{@b Effect:} Choose one creature you can see within range. Make a melee weapon attack against it. On a hit, the target takes {@damage 2d8} + your Class Ability Modifier bludgeoning damage and is {@variantrule Stunned|XPHB} for a number of rounds equal to a tenth of the Adrenaline spent. A {@variantrule Stunned|XPHB} creature can make a Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"{@b Scaling:} The damage increases when you reach levels 5 ({@damage 4d8}), 11 ({@damage 6d8}), and 17 ({@damage 8d8})."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Skull_Crack}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Skull_Crack.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Mace Smash",
@@ -29189,12 +29262,10 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS",
+				"Profession Skill",
 				"Warrior",
-				"ACT",
 				"Longbow",
-				"BUR",
-				"CFF"
+				"Burst"
 			],
 			"prerequisite": [
 				{
@@ -29202,16 +29273,32 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action",
-				"{@b Recharge:} {@chance 55|10+}",
+				"{@b Casting Time:} 3 {@variantrule Action Points|GW2|AP}",
+				"{@b Cost:} All your Adrenaline, minimum 10",
+				"{@b Recharge:} {@recharge 2}",
 				"{@b Range:} 120 feet",
-				"{@b Target:} 20-foot radius sphere",
-				"{@b Duration:} 1 round per 10 Adrenaline spent",
+				"{@b Target:} 20-foot Radius Patch",
+				"{@b Duration:} 3 rounds per 10 Adrenaline spent",
 				"{@b Properties:} Burst, {@variantrule Combo Field|GW2}: Fire",
 				"{@b Description:} Ignite target area, burning nearby foes. Effect increases with adrenaline level.",
-				"{@b Effect:} Choose a point within range. For the duration, you create a 20-foot-radius Sphere centered on that point, that is a {@variantrule Combo Field|GW2} Fire. Each creature in that Sphere must make a Dexterity saving throw. On a failed save, a target takes {@damage 1d6} fire damage and is inflicted with 1 stack of {@variantrule Burning|GW2} for 1 round, taking {@damage 1d12} damage. On a successful save, a target takes half as much damage only. A creature also makes this save if it enters the Sphere or ends its turn there. A creature makes this save only once per turn.",
-				"{@b Scaling:} The damage each increases by {@damage 1d6} and {@damage 1d12} respectively when you reach levels 5 ({@damage 2d6} & {@damage 2d12}), 11 ({@damage 3d6} & {@damage 3d12}), and 17 ({@damage 4d6} & {@damage 4d12})."
-			]
+				"{@b Effect:} Choose a point that you can see within range. For the duration, you create a 20-foot-radius patch of fire on the floor at the location. Each creature in that Ptach must make a Dexterity saving throw. On a failed save, a target takes {@damage 1d6} fire damage and is inflicted with 1 rouznd of {@variantrule Burning|GW2}. On a successful save, a target takes half as much damage only. A creature also makes this save if it enters the Patch or ends its turn there. A creature makes this save only once per turn.",
+				"{@b Scaling:} The damage and number of stacks increases when you reach levels 5 ({@damage 2d6} & 2 stacks), 11 ({@damage 3d6} & 3 stacks), and 17 ({@damage 4d6} & 4 stacks)."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Combustive_Shot}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Combustive_Shot.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Dual Shot",
@@ -29359,13 +29446,10 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS",
+				"Profession Skill",
 				"Warrior",
-				"CHAN",
 				"Rifle",
-				"BUR",
-				"CIP",
-				"PI"
+				"Burst"
 			],
 			"prerequisite": [
 				{
@@ -29373,17 +29457,32 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} {@variantrule Channel|Gw2}: 12",
-				"{@b Recharge:} {@chance 55|10+}",
+				"{@b Casting Time:} 5 {@variantrule Action Points|GW2|AP}",
+				"{@b Cost:} All your Adrenaline, minimum 10",
+				"{@b Recharge:} {@recharge 2}",
 				"{@b Range:} 150 feet",
 				"{@b Target:} 1 creature",
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} Burst, {@variantrule Combo Finisher|GW2}: Projectile, {@variantrule Piercing|GW2}",
 				"{@b Description:} Fire a powerful shot. Damage increases with adrenaline level. Deal increased damage to enemies that are affected by crowd control or below the health threshold.",
-				"{@b Effect:} Choose one creature you can see within range. When the {@variantrule Channel|Gw2} ends, make a ranged weapon attack against the target. On a hit, the target takes {@damage 1d10 + 1d12} piercing damage. The damage increases by {@damage 1d6} per 10 Adrenaline spent beyond the initial 10. If the target is {@condition Bloodied|XPHB} or under a {@variantrule Control Effect|GW2}, the target takes an additional 20% damage.",
-				"You cannot move while channeling this skill.",
-				"{@b Scaling:} The damage each increases by {@damage 1d10 + 1d12} and {@damage 1d6} respectively when you reach levels 5 ({@damage 2d10 + 2d12} & {@damage 2d6}), 11 ({@damage 3d10 + 3d12} & {@damage 3d6}), and 17 ({@damage 4d10 + 4d12} & {@damage 4d6})."
-			]
+				"{@b Effect:} Choose one creature you can see within range. Make a ranged weapon attack against the target. On a hit, the target takes {@damage 2d12} + your Class Ability Modifer piercing damage. The damage increases by {@damage 1d12} per 10 Adrenaline spent beyond the initial 10. If the target is {@condition Bloodied|XPHB} or under a {@variantrule Control Effect|GW2}, the target takes an additional 20% damage.",
+				"{@b Scaling:} The base damage increases when you reach levels 5 ({@damage 4d12}), 11 ({@damage 6d12}), and 17 ({@damage 8d12})."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Kill_Shot}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Kill_Shot.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Fierce Shot",
@@ -29527,12 +29626,10 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS",
+				"Profession Skill",
 				"Warrior",
-				"ACT",
 				"Hammer",
-				"BUR",
-				"CIB"
+				"Burst"
 			],
 			"prerequisite": [
 				{
@@ -29540,16 +29637,32 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action",
-				"{@b Recharge:} {@chance 55|10+}",
-				"{@b Range:} 60 feet",
+				"{@b Casting Time:} 3 {@variantrule Action Points|GW2|AP}",
+				"{@b Cost:} All your Adrenaline, minimum 10",
+				"{@b Recharge:} {@recharge 2}",
+				"{@b Range:} 30 feet",
 				"{@b Target:} 10-foot radius sphere",
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} Burst, {@variantrule Combo Finisher|GW2}: Blast",
 				"{@b Description:} Jump to the targeted location and slam your hammer down, damaging and stunning foes.",
-				"{@b Effect:} Choose a point you can see within range. Leap to that point and cause a Blast {@variantrule Combo Finisher}. Each creature in the area must make a Constitution saving throw. On a failed save, a creature takes {@damage 2d10} bludgeoning damage and is {@variantrule Stunned|GW2} for a number of rounds equal to a tenth of the Adrenaline spent. On a successful save, a creature takes half damage and isn't stunned. A {@variantrule Stunned|GW2} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
-				"{@b Scaling:} The damage increases by {@damage 2d10} when you reach levels 5 ({@damage 4d10}), 11 ({@damage 6d10}), and 17 ({@damage 8d10})."
-			]
+				"{@b Effect:} Choose a point you can see within range. Leap to that point. Each creature in the area must make a Constitution saving throw. On a failed save, a creature takes {@damage 2d10} bludgeoning damage and is {@variantrule Stunned|GW2} for a number of rounds equal to a tenth of the Adrenaline spent. On a successful save, a creature takes half damage only. A {@variantrule Stunned|GW2} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"{@b Scaling:} The damage increases when you reach levels 5 ({@damage 4d10}), 11 ({@damage 6d10}), and 17 ({@damage 8d10})."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Earthshaker}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Earthshaker.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Hammer Swing (Warrior)",
@@ -29650,7 +29763,7 @@
 			"entries": [
 				"{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
 				"{@b Recharge:} None",
-				"{@b Range:} 5 feet",
+				"{@b Range:} Self",
 				"{@b Target:} 5-foot Emanation",
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} {@variantrule Chain|GW2}: {@optfeature Hammer Swing (Warrior)|GW2} -> {@optfeature Hammer Bash (Warrior)|GW2} -> {@optfeature Hammer Smash|GW2}",
@@ -29775,12 +29888,10 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS",
+				"Profession Skill",
 				"Warrior",
-				"ACT",
-				"BACT",
 				"Greatsword",
-				"BUR"
+				"Burst"
 			],
 			"prerequisite": [
 				{
@@ -29788,16 +29899,32 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action or Bonus Action",
-				"{@b Recharge:} {@chance 55|10+}",
-				"{@b Range:} 5 feet",
-				"{@b Target:} Up to 5 creatures",
+				"{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
+				"{@b Cost:} All your Adrenaline, minimum 10",
+				"{@b Recharge:} {@recharge 2}",
+				"{@b Range:} Self",
+				"{@b Target:} 5-foot Emanation",
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} Burst",
 				"{@b Description:} Deliver a circular attack to foes around you, and gain fury. Deal more damage to foes with low health.",
-				"{@b Effect:} Choose up to 5 creatures within range. Make a melee weapon attack against each target. On a hit, a target takes {@damage 2d10} slashing damage plus {@damage 1d10} slashing damage if it is {@condition Bloodied|XPHB}. You gain 1 round of {@variantrule Fury|GW2} for every 10 strikes of Adrenaline you spent.",
-				"{@b Scaling:} The damage each increases by {@damage 1d10} when you reach levels 5 ({@damage 3d10} & {@damage 2d10}), 11 ({@damage 4d10} & {@damage 3d10}), and 17 ({@damage 5d10} & {@damage 4d10})."
-			]
+				"{@b Effect:} Target each creature other than you within a 5-foot Emanation. Each target must make a Dexterity saving throw. On a failed save, a target takes {@damage 2d10} slashing damage. On a successful save, a target takes half as much damage. {@condition Bloodied|XPHB} creatures takes 50% more damage. If at least one creature took damage, you gain 1 round of {@variantrule Fury|GW2} for every 10 strikes of Adrenaline you spent.",
+				"{@b Scaling:} The damage and duration increases when you reach levels 5 ({@damage 4d10} & 2 rounds), 11 ({@damage 6d10} & 3 rounds), and 17 ({@damage 8d10} & 4 rounds)."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Arcing_Slice}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Arcing_Slice.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Greatsword Swing",
@@ -29939,7 +30066,7 @@
 			],
 			"entries": [
 				"{@b Casting Time:} {@variantrule Channel|Gw2}: 35",
-				"{@b Recharge:} {@chance 55|10+}",
+				"{@b Recharge:} {@recharge 2}",
 				"{@b Range:} 5 feet",
 				"{@b Target:} Up to 3 creatures",
 				"{@b Duration:} Instantaneous",
@@ -30202,7 +30329,7 @@
 			],
 			"entries": [
 				"{@b Casting Time:} Action",
-				"{@b Recharge:} {@chance 55|10+}",
+				"{@b Recharge:} {@recharge 2}",
 				"{@b Range:} 120 feet",
 				"{@b Target:} 15-foot-radius sphere",
 				"{@b Duration:} Instantaneous",
@@ -31821,7 +31948,7 @@
 			],
 			"entries": [
 				"{@b Casting Time:} Action or Bonus Action",
-				"{@b Recharge:} {@chance 55|10+}",
+				"{@b Recharge:} {@recharge 2}",
 				"{@b Range:} 120 feet",
 				"{@b Target:} 1 creature/10-foot-radius sphere",
 				"{@b Duration:} Instantaneous",
@@ -35743,7 +35870,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -35808,7 +35935,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -36017,7 +36144,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -36545,7 +36672,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -36593,7 +36720,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -36641,7 +36768,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -36689,7 +36816,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -36737,7 +36864,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -36785,7 +36912,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -36833,7 +36960,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -36881,7 +37008,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -36929,7 +37056,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -36977,7 +37104,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -37025,7 +37152,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -37073,7 +37200,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -37145,7 +37272,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -37193,7 +37320,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -37241,7 +37368,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -37289,7 +37416,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -37361,7 +37488,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -37433,7 +37560,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -37505,7 +37632,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -37577,7 +37704,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -37649,7 +37776,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -37793,7 +37920,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -37841,7 +37968,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{
@@ -37913,7 +38040,7 @@
 			"source": "GW2",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill"
 			],
 			"prerequisite": [
 				{

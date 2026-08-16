@@ -3149,9 +3149,7 @@
 				"Weapon Skill",
 				"Engineer",
 				"Mechanist",
-				"MAC",
-				"ACT",
-				"CHAI"
+				"Mace"
 			],
 			"prerequisite": [
 				{
@@ -3159,28 +3157,41 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action",
+				"{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
 				"{@b Recharge:} None",
 				"{@b Range:} 5 feet",
-				"{@b Target:} Up to 3 creatures",
+				"{@b Target:} 1 creature",
 				"{@b Duration:} Instantaneous",
-				"{@b Properties:} {@variantrule Chain|GW2|Chain:} {@optfeature Mace Strike|GW2EoD} -> {@optfeature Mace Smash|GW2EoD} -> {@optfeature Mace Blast|GW2EoD}",
+				"{@b Properties:} {@variantrule Chain|GW2|Chain:} {@optfeature Mace Strike|GW2EoD} -> {@optfeature Mace Smash (Mechanist)|GW2EoD} -> {@optfeature Mace Blast|GW2EoD}",
 				"{@b Description:} Strike your target.",
-				"{@b Effect:} Choose up to 3 creatures within range that are within 5 feet of each other. Make a melee weapon attack against each target. On a hit, a target takes {@damage 1d10} bludgeoning damage, and is inflicted with 1 stack of {@variantrule Confusion|GW2} for 1 round, taking {@damage 1d6} damage.",
-				"{@b Scaling:} The damage each increases by {@damage 1d10} and {@damage 1d6} respectively when you reach levels 5 ({@damage 2d10} & {@damage 2d6}), 11 ({@damage 3d10} & {@damage 3d6}), and 17 ({@damage 4d10} & {@damage 4d6})."
-			]
+				"{@b Effect:} Choose one creature within range. Make a melee weapon attack against the target. On a hit, the target takes {@damage 1d4} + your Class Ability Modifier bludgeoning damage, and is inflicted with 1 round of {@variantrule Confusion|GW2}.",
+				"{@b Scaling:} The damage and duration increase when you reach levels 5 ({@damage 2d4} & 2 rounds), 11 ({@damage 3d4} & 3 rounds), and 17 ({@damage 4d4} & 4 rounds)."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Mace_Strike}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/End of Dragons/Mace_Strike.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
-			"name": "Mace Smash",
+			"name": "Mace Smash (Mechanist)",
 			"source": "GW2EoD",
 			"page": "",
 			"featureType": [
 				"Weapon Skill",
 				"Engineer",
 				"Mechanist",
-				"MAC",
-				"BACT",
-				"CHAI"
+				"Mace"
 			],
 			"prerequisite": [
 				{
@@ -3188,16 +3199,31 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Bonus Action",
+				"{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
 				"{@b Recharge:} None",
 				"{@b Range:} 5 feet",
-				"{@b Target:} Up to 3 creatures",
+				"{@b Target:} 1 creature",
 				"{@b Duration:} Instantaneous",
-				"{@b Properties:} {@variantrule Chain|GW2|Chain:} {@optfeature Mace Strike|GW2EoD} -> {@optfeature Mace Smash|GW2EoD} -> {@optfeature Mace Blast|GW2EoD}",
+				"{@b Properties:} {@variantrule Chain|GW2|Chain:} {@optfeature Mace Strike|GW2EoD} -> {@optfeature Mace Smash (Mechanist)|GW2EoD} -> {@optfeature Mace Blast|GW2EoD}",
 				"{@b Description:} Smash your target with a heavy blow from your mace, inflicting confusion.",
-				"{@b Effect:} Choose up to 3 creatures within range that are within 5 feet of each other. Make a melee weapon attack against each target. On a hit, a target takes {@damage 1d12} bludgeoning damage, and is inflicted with 2 stacks of {@variantrule Confusion|GW2} for 1 round, taking {@damage 1d6} damage.",
-				"{@b Scaling:} The damage each increases by {@damage 1d12} and {@damage 1d6} respectively when you reach levels 5 ({@damage 2d12} & {@damage 2d6}), 11 ({@damage 3d12} & {@damage 3d6}), and 17 ({@damage 4d12} & {@damage 4d6})."
-			]
+				"{@b Effect:} Choose one creature within range. Make a melee weapon attack against the target. On a hit, the target takes {@damage 1d6} + your Class Ability Modifier bludgeoning damage, and is inflicted with 2 stacks of {@variantrule Confusion|GW2} for 1 round.",
+				"{@b Scaling:} The damage and duration increase when you reach levels 5 ({@damage 2d6} & 2 rounds), 11 ({@damage 3d6} & 3 rounds), and 17 ({@damage 4d6} & 4 rounds)."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Mace_Smash_(mechanist)}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/End of Dragons/Mace_Smash_(mechanist).png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Mace Blast",
@@ -3207,9 +3233,7 @@
 				"Weapon Skill",
 				"Engineer",
 				"Mechanist",
-				"MAC",
-				"SPEC",
-				"CHAI"
+				"Mace"
 			],
 			"prerequisite": [
 				{
@@ -3217,16 +3241,31 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Special",
+				"{@b Casting Time:} 3 {@variantrule Action Points|GW2|AP}",
 				"{@b Recharge:} None",
 				"{@b Range:} 5 feet",
-				"{@b Target:} Up to 3 creatures",
+				"{@b Target:} 1 creature",
 				"{@b Duration:} Instantaneous",
-				"{@b Properties:} {@variantrule Chain|GW2|Chain:} {@optfeature Mace Strike|GW2EoD} -> {@optfeature Mace Smash|GW2EoD} -> {@optfeature Mace Blast|GW2EoD}, Explosion",
+				"{@b Properties:} {@variantrule Chain|GW2|Chain:} {@optfeature Mace Strike|GW2EoD} -> {@optfeature Mace Smash (Mechanist)|GW2EoD} -> {@optfeature Mace Blast|GW2EoD}, Explosion",
 				"{@b Description:} Smash your target with a final heavy strike, inflicting additional confusion.",
-				"{@b Effect:} Choose up to 3 creatures within range that are within 5 feet of each other. Make a weapon melee attack against each target. On a hit, a target takes {@damage 2d6} bludgeoning damage, and is inflicted with 3 stacks of {@variantrule Confusion|GW2} for 1 round, taking {@damage 1d6} damage.",
-				"{@b Scaling:} The damage each increases by {@damage 2d6} and {@damage 1d6} respectively when you reach levels 5 ({@damage 4d6} & {@damage 2d6}), 11 ({@damage 6d6} & {@damage 3d6}), and 17 ({@damage 8d6} & {@damage 4d6})."
-			]
+				"{@b Effect:} Choose one creature within range. Make a weapon melee attack against the target. On a hit, the target takes {@damage 1d8} + your Class Ability Modifier bludgeoning damage, and is inflicted with 3 stacks of {@variantrule Confusion|GW2} for 1 round.",
+				"{@b Scaling:} The damage and duration increase when you reach levels 5 ({@damage 2d8} & 2 rounds), 11 ({@damage 3d8} & 3 rounds), and 17 ({@damage 4d8} & 4 rounds)."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Mace_Blast}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/End of Dragons/Mace_Blast.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Energizing Slam",
@@ -4875,7 +4914,7 @@
 				"s": true
 			},
 			"miscTags": [
-				"MAC"
+				"Mace"
 			]
 		},
 		{

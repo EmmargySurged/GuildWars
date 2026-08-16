@@ -34185,16 +34185,31 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action",
+				"{@b Casting Time:} 4 {@variantrule Action Points|GW2|AP}",
 				"{@b Recharge:} None",
 				"{@b Range:} 120 feet",
 				"{@b Target:} 5-foot-radius sphere",
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} {@variantrule Combo Finisher|GW2|Combo Finisher:} Projectile ({@chance 20}), Explosion",
 				"{@b Description:} Fire a shot that homes in on your foe and detonates an area around them.",
-				"{@b Effect:} Choose a point within range. Each creature in a 5-foot-radius sphere centered on that point must make a Dexterity saving throw. A creature takes {@damage 1d10} damage and is inflicted with 1 stack of {@variantrule Burning|GW2} for 1 round, taking {@damage 1d12} damage on a failed save, or half as much damage and no {@variantrule Burning|GW2} on a successful one.",
-				"{@b Scaling:} The damage each increases by {@damage 1d10} and {@damage 1d12} respectively when you reach levels 5 ({@damage 2d10} & {@damage 2d12}), 11 ({@damage 3d10} & {@damage 3d12}), and 17 ({@damage 4d10} & {@damage 4d12})."
-			]
+				"{@b Effect:} Choose a point within range. Each creature in a 5-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a creature takes {@damage 1d10} damage and is inflicted with 1 stack of {@variantrule Burning|GW2}. On a successfull save, a creature takes half as much damage only.",
+				"{@b Scaling:} The damage and duration increase when you reach levels 5 ({@damage 2d10} & 2 round), 11 ({@damage 3d10} & 3 round), and 17 ({@damage 4d10} & 4 rounds)."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Homing_Torpedo}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Homing_Torpedo.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Scatter Mines",

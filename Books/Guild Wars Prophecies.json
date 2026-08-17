@@ -19796,7 +19796,31 @@
             }
         }
     ],
-    "feat": [],
+    "feat": [
+        {
+			"name": "Ascalon Born and Raised",
+			"source": "GWP",
+			"page": "",
+			"category": "O",
+			"entries": [
+				"You grew up in the human kingdom of Ascalon, adopting much of their traditions and values. During your time there you learned some valuble skills.",
+				{
+					"type": "entries",
+					"name": "Fight with Honor",
+					"entries": [
+						"While you have a {@variantrule Heroic Inspiration|XPHB} you can expend it as a {@variantrule Bonus Action|XPHB} to challenge a creature to an honourable battle. The creature must be within 60 feet of you and be able to hear you, it does not need to understand you. For 1 minute, or until you deal damage to a different creature, the creature cannot move away from you and must target you with its attacks and abilities."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tough",
+					"entries": [
+						"Your {@variantrule Hit Points|XPHB|Hit Point} maximum increases by an amount equal to your character level when you gain this feat. Whenever you gain a character level thereafter, your {@variantrule Hit Points|XPHB|Hit Point} maximum increases by an additional 1 {@variantrule Hit Points|XPHB|Hit Point}."
+					]
+				}
+			]
+		}
+    ],
     "spell": [
         {
             "name": "Keystone Signet",
@@ -89860,6 +89884,127 @@
     ],
     "variantrule": [],
     "background": [
+        {
+            "name": "Ascalonian",
+            "source": "GWP",
+            "ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+            "feats": [
+				{
+					"alert|XPHB": true,
+                    "savage attacker|XPHB": true,
+                    "ascalon born and raised|GWP": true
+				}
+            ],
+            "skillProficiencies": [
+                {
+                    "athletics": true,
+                    "perception": true
+                }
+            ],
+			"toolProficiencies": [
+				{
+					"gaming set": true
+				}
+			],
+            "startingEquipment": [
+				{
+					"A": [
+						{
+							"item": "Gaming Set|XPHB"
+						},
+						{
+							"item": "Spear|XPHB"
+						},
+						{
+							"item": "Light Crossbow|XPHB"
+						},
+						{
+							"item": "Bolt|XPHB",
+							"quantity": 20
+						},
+						{
+							"item": "Crossbow Bolt Case|XPHB"
+						},
+                        {
+                            "item": "Traveler's Clothes|XPHB"
+                        },
+						{
+							"value": 1990
+						}
+					],
+					"B": [
+						{
+							"value": 5000
+						}
+					]
+				}
+			],
+            "entries": [
+                {
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Ability Scores:",
+							"entry": "Strength, Dexterity, Constitution"
+						},
+						{
+							"type": "item",
+							"name": "Feat:",
+							"entry": "{@feat Ascalon Born and Raised|GWP} or {@feat Alert|XPHB} or {@feat Savage Attacker|XPHB}"
+						},
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Athletics|XPHB} and {@skill Perception|XPHB}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiency:",
+							"entry": "Choose one kind of {@item Gaming Set|XPHB}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "Choose A or B: (A) {@item Gaming Set|XPHB} (same as above), {@item Spear|XPHB}, {@item Light Crossbow|XPHB}, {@item Bolt|XPHB} (20), {@item Traveler's Clothes|XPHB}, {@item Crossbow Bolt Case|XPHB}, 19 GP 9 SP; or (B) 50 GP"
+						}
+					]
+				}
+            ]
+        },
         {
             "name": "Ascalon",
             "source": "GWP",

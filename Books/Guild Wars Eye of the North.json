@@ -1589,11 +1589,9 @@
 						"weighted": {
 							"from": [
                                 "str",
-                                "dex",
                                 "con",
                                 "int",
-                                "wis",
-                                "cha"
+                                "wis"
 							],
 							"weights": [
 								2,
@@ -1606,12 +1604,10 @@
 					"choose": {
 						"weighted": {
 							"from": [
-								"str",
-                                "dex",
+                                "str",
                                 "con",
                                 "int",
-                                "wis",
-                                "cha"
+                                "wis"
 							],
 							"weights": [
 								1,
@@ -1624,14 +1620,22 @@
 			],
             "feats": [
 				{
+                    "Grizzled|SGEHPP": true,
+                    "Healthy|VtM:BB": true,
+                    "Norn Hunting Skills|GW2": true,
+                    "Savage Attacker|XPHB": true,
+                    "Tough|XPHB": true
 				}
             ],
             "skillProficiencies": [
                 {
+                    "Athletics": true,
+                    "Intimidation": true
                 }
             ],
 			"toolProficiencies": [
 				{
+                    "herbalism kit": true
 				}
 			],
             "startingEquipment": [
@@ -1656,22 +1660,22 @@
 						{
 							"type": "item",
 							"name": "Ability Scores:",
-							"entry": "Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma"
+							"entry": "Strength, Constitution, Intelligence, Wisdom"
 						},
 						{
 							"type": "item",
 							"name": "Feat:",
-							"entry": "{@feat |} or {@feat |} or {@feat |}"
+							"entry": "{@feat Grizzled|SGEHPP} or {@feat Healthy|VtM:BB} or {@feat Norn Hunting Skills|GW2} or {@feat Savage Attacker|XPHB} or {@feat Tough|XPHB}"
 						},
 						{
 							"type": "item",
 							"name": "Skill Proficiencies:",
-							"entry": "{@skill |XPHB} and {@skill |XPHB}"
+							"entry": "{@skill Athletics|XPHB} and {@skill Intimidation|XPHB}"
 						},
 						{
 							"type": "item",
 							"name": "Tool Proficiency:",
-							"entry": "{@item |XPHB}"
+							"entry": "{@item Herbalism Kit|XPHB}"
 						},
 						{
 							"type": "item",

@@ -6631,7 +6631,20 @@
 			]
 		}
 	],
-	"feat": [],
+	"feat": [
+		{
+			"name": "Sylvari Plant Magic",
+			"source": "GW2",
+			"page": "",
+			"category": "O",
+			"entries": [
+				"Your innate connection to nature allows you to call for its aid. You learn the following {@variantrule Skill|GW2|Skills} and have them always prepared when you gain access to features that allow you to prepare them:",
+				"{@variantrule Healing Skill|GW2|Healing Skills}: {@optfeature Healing Seed|GW2}",
+				"{@variantrule Utility Skill|GW2|Utility Skills}: {@optfeature Grasping Vines|GW2} and {@optfeature Seed Turret|GW2}.",
+				"{@variantrule Elite Skill|GW2|Elite Skills}: {@optfeature Summon Druid Spirit|GW2}, {@optfeature Summon Sylvan Hound|GW2} and {@optfeature Take Root|GW2}."
+			]
+		}
+	],
 	"spell": [],
 	"table": [
 		{
@@ -10844,7 +10857,7 @@
             ]
         },
 		{
-            "name": "Cycle of Dawn",
+            "name": "Cycle of the Dawn",
             "source": "GW2",
             "ability": [
 				{
@@ -10946,18 +10959,16 @@
             ]
         },
 		{
-            "name": "Cycle of Dusk",
+            "name": "Cycle of the Dusk",
             "source": "GW2",
             "ability": [
 				{
 					"choose": {
 						"weighted": {
 							"from": [
-                                "str",
                                 "dex",
-                                "con",
                                 "int",
-                                "wis",
+								"wis",
                                 "cha"
 							],
 							"weights": [
@@ -10971,11 +10982,9 @@
 					"choose": {
 						"weighted": {
 							"from": [
-								"str",
                                 "dex",
-                                "con",
                                 "int",
-                                "wis",
+								"wis",
                                 "cha"
 							],
 							"weights": [
@@ -10989,21 +10998,41 @@
 			],
             "feats": [
 				{
+					"magic initiate|XPHB": true,
+					"Crafter|XPHB": true,
+					"Musician|XPHB": true,
+					"Sylvari Plant Magic|GW2": true
 				}
             ],
             "skillProficiencies": [
                 {
+					"Arcana": true,
+					"Performance": true
                 }
             ],
 			"toolProficiencies": [
 				{
+					"artisan's tool": true,
+					"musical instrument": true
 				}
 			],
             "startingEquipment": [
 				{
 					"A": [
 						{
-							"value": 0
+							"item": "Artisan's Tools|XPHB"
+						},
+						{
+							"item": "Musical Instrument|XPHB"
+						},
+						{
+							"item": "Traveler's Clothes|XPHB"
+						},
+						{
+							"item": "Mirror|XPHB"
+						},
+						{
+							"value": 3800
 						}
 					],
 					"B": [
@@ -11021,27 +11050,27 @@
 						{
 							"type": "item",
 							"name": "Ability Scores:",
-							"entry": "Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma"
+							"entry": "Dexterity, Intelligence, Wisdom, Charisma"
 						},
 						{
 							"type": "item",
 							"name": "Feat:",
-							"entry": "{@feat |} or {@feat |} or {@feat |}"
+							"entry": "{@feat Crafter|XPHB} or {@feat Magic Initiate|XPHB} or {@feat Musician|XPHB} or {@feat Sylvari Plant Magic|GW2}"
 						},
 						{
 							"type": "item",
 							"name": "Skill Proficiencies:",
-							"entry": "{@skill |XPHB} and {@skill |XPHB}"
+							"entry": "{@skill Arcana|XPHB} and {@skill Performance|XPHB}"
 						},
 						{
 							"type": "item",
 							"name": "Tool Proficiency:",
-							"entry": "{@item |XPHB}"
+							"entry": "Choose one kind of non-Strength {@item Artisan's Tool|XPHB} or {@item Musical Instrument|XPHB}"
 						},
 						{
 							"type": "item",
 							"name": "Equipment:",
-							"entry": "Choose A or B: (A) {@item |XPHB} , {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, 0 GP; or (B) 50 GP"
+							"entry": "Choose A or B: (A) {@item Artisan's Tools|XPHB} or {@item Musical Instrument|XPHB} (same as above), {@item Traveler's Clothes|XPHB}, {@item Mirror|XPHB}, 38 GP; or (B) 50 GP"
 						}
 					]
 				}
@@ -11150,7 +11179,7 @@
             ]
         },
 		{
-            "name": "Cycle of Noon",
+            "name": "Cycle of the Noon",
             "source": "GW2",
             "ability": [
 				{
@@ -26346,21 +26375,6 @@
 			]
 		},
 		{
-			"name": "Sylvari Plant Magic",
-			"source": "GW2",
-			"page": "",
-			"featureType": [
-				"HT",
-				"C"
-			],
-			"entries": [
-				"Your innate connection to nature allows you to call for its aid. You learn the following {@variantrule Skill|GW2|skills} and can prepare them as you gain access to features that allow you to prepare them:",
-				"{@variantrule Healing Skill|GW2|Healing Skills}: {@optfeature Healing Seed|GW2}",
-				"{@variantrule Utility Skill|GW2|Utility Skills}: {@optfeature Grasping Vines|GW2} and {@optfeature Seed Turret|GW2}.",
-				"{@variantrule Elite Skill|GW2|Elite Skills}: {@optfeature Summon Druid Spirit|GW2}, {@optfeature Summon Sylvan Hound|GW2} and {@optfeature Take Root|GW2}."
-			]
-		},
-		{
 			"name": "Healing Seed",
 			"source": "GW2",
 			"page": "",
@@ -40199,7 +40213,7 @@
 				"{@variantrule Property|GW2}",
 				"{@variantrule Skill|GW2|Skills} with this {@variantrule Property|GW2} have a maximum number of {@variantrule Action Points|GW2} that can be spent on them instead of set requirement to activate them.",
 				"When you activate them you can choose how many {@variantrule Action Points|GW2} you want to spend on them, up to the maximum. If you do not have enough {@variantrule Action Points|GW2} to spend how many you want, the {@variantrule Skill|GW2} behaves like any other {@variantrule Skill|GW2} that you do not have enough {@variantrule Action Points|GW2} for.",
-				"Most Channel {@variantrule Skill|GW2|Skills} have an effect that happens when you spend a certain amount of {@variantrule Action Points|GW2} one them. If you reach such a threshold multiple times it triggers multiple times."
+				"Most Channel {@variantrule Skill|GW2|Skills} have an effect that happens when you spend a certain amount of {@variantrule Action Points|GW2} on them. If you reach such a threshold multiple times it triggers multiple times."
 			]
 		},
 		{
@@ -40569,7 +40583,7 @@
 			"source": "GW2",
 			"entries": [
 				"Rule",
-				"During your turn, or When you are targeted by an attack, or forced to make a {@variantrule Saving Throw|XPHB}, you can spend 50 {@variantrule Endurance|GW2} (no {@variantrule Action|XPHB} required) to move up to half your {@variantrule Speed|XPHB} in a straight line without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}, potentially moving out of range of the attack or {@variantrule Saving Throw|XPHB}."
+				"During your turn, or when you are targeted by an attack, or forced to make a {@variantrule Saving Throw|XPHB}, you can spend 50 {@variantrule Endurance|GW2} (no {@variantrule Action|XPHB} required) to move up to half your {@variantrule Speed|XPHB} in a straight line without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}, potentially moving out of range of the attack or {@variantrule Saving Throw|XPHB}."
 			]
 		},
 		{

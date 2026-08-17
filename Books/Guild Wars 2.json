@@ -24671,7 +24671,7 @@
 				"C"
 			],
 			"entries": [
-				"The Legions have tought you well. You learn the following {@variantrule Skill|GW2|skills} and can prepare them as you gain access to features that allow you to prepare them:",
+				"You have grown up with a profound connection to your gods, allowing you to draw on their power in time of need. You learn the following {@variantrule Skill|GW2|skills} and can prepare them as you gain access to features that allow you to prepare them:",
 				"{@variantrule Healing Skill|GW2|Healing Skills}: {@optfeature Prayer to Dwayna|GW2}",
 				"{@variantrule Utility Skill|GW2|Utility Skills}: {@optfeature Prayer to Kormir|GW2} and {@optfeature Prayer to Lyssa|GW2}.",
 				"{@variantrule Elite Skill|GW2|Elite Skills}: {@optfeature Avatar of Melandru|GW2}, {@optfeature Hounds of Balthazar|GW2}, and {@optfeature Reaper of Grenth|GW2}."
@@ -24683,7 +24683,7 @@
 			"page": "",
 			"featureType": [
 				"Healing Skill",
-				"HUM"
+				"Human"
 			],
 			"prerequisite": [
 				{
@@ -24691,15 +24691,30 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action",
-				"{@b Recharge:} {@chance 15|18+}",
+				"{@b Casting Time:} X {@variantrule Action Points|GW2|AP}",
+				"{@b Recharge:} {@recharge 4}",
 				"{@b Range:} Self",
 				"{@b Target:} Self",
 				"{@b Duration:} Instantaneous",
 				"{@b Description:} Beseech Dwayna to restore your health.",
-				"{@b Effect:} You regain {@variantrule Hit Points|XPHB} equal to {@dice 8d8} + your Class Ability Modifier.",
-				"{@b Scaling:} The healing increases by {@dice 2d8} when you reach levels 5 ({@dice 10d8}), 11 ({@dice 12d8}), and 17 ({@dice 14d8})."
-			]
+				"{@b Effect:} You regain {@variantrule Hit Points|XPHB} equal to {@dice 4d8} + your Class Ability Modifier.",
+				"{@b Scaling:} The healing increases when you reach levels 5 ({@dice 8d8}), 11 ({@dice 12d8}), and 17 ({@dice 16d8})."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Prayer_to_Dwayna}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Prayer_to_Dwayna.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Prayer to Kormir",
@@ -25732,7 +25747,7 @@
 				"C"
 			],
 			"entries": [
-				"Your learned the wayy of the Norn. You learn the following {@variantrule Skill|GW2|skills} and can prepare them as you gain access to features that allow you to prepare them:",
+				"Your innate connection to nature allows you to call for its aid. You learn the following {@variantrule Skill|GW2|skills} and can prepare them as you gain access to features that allow you to prepare them:",
 				"{@variantrule Healing Skill|GW2|Healing Skills}: {@optfeature Healing Seed|GW2}",
 				"{@variantrule Utility Skill|GW2|Utility Skills}: {@optfeature Grasping Vines|GW2} and {@optfeature Seed Turret|GW2}.",
 				"{@variantrule Elite Skill|GW2|Elite Skills}: {@optfeature Summon Druid Spirit|GW2}, {@optfeature Summon Sylvan Hound|GW2} and {@optfeature Take Root|GW2}."
@@ -25744,7 +25759,7 @@
 			"page": "",
 			"featureType": [
 				"Healing Skill",
-				"SYL"
+				"Sylvari"
 			],
 			"prerequisite": [
 				{
@@ -25752,15 +25767,30 @@
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action",
+				"{@b Casting Time:} 4 {@variantrule Action Points|GW2|AP}",
 				"{@b Recharge:} {@recharge 5}",
 				"{@b Range:} 20 feet",
 				"{@b Target:} Point",
 				"{@b Duration:} 5 rounds",
 				"{@b Description:} Create a healing seed at targeted location which periodically gives nearby allies regeneration.",
-				"{@b Effect:} You regain {@variantrule Hit Points|XPHB} equal to {@dice 8d8} + your Class Ability Modifier. Choose a point within range. A {@creature Healing Seed|GW2} appears at that point for the duration. At the start of each of your turns, each ally within 5 feet of the seed gains 1 round of {@variantrule Regeneration|GW2}, healing for {@dice 1d4}.",
-				"{@b Scaling:} The healing increases by {@dice 2d8} when you reach levels 5 ({@dice 10d8}), 11 ({@dice 12d8}), and 17 ({@dice 14d8})."
-			]
+				"{@b Effect:} You regain {@variantrule Hit Points|XPHB} equal to {@dice 4d8} + your Class Ability Modifier. Choose a point within range. A {@creature Healing Seed|GW2} appears at that point for the duration. At the start of each of your turns, each ally within 5 feet of the seed gains 1 round of {@variantrule Regeneration|GW2}.",
+				"{@b Scaling:} The healing increases when you reach levels 5 ({@dice 6d8}), 11 ({@dice 8d8}), and 17 ({@dice 10d8})."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Healing_Seed}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Healing_Seed.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Grasping Vines",

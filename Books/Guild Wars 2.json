@@ -10501,9 +10501,7 @@
 					"choose": {
 						"weighted": {
 							"from": [
-                                "str",
                                 "dex",
-                                "con",
                                 "int",
                                 "wis",
                                 "cha"
@@ -10519,9 +10517,7 @@
 					"choose": {
 						"weighted": {
 							"from": [
-								"str",
                                 "dex",
-                                "con",
                                 "int",
                                 "wis",
                                 "cha"
@@ -10537,21 +10533,55 @@
 			],
             "feats": [
 				{
+					"choose":{
+						"from": [
+							"Altered|crookedmoon24",
+							"Asuran Ingenuity|GW2",
+							"Crafter|XPHB",
+							"Fate Gambler|crookedmoon24",
+							"Lucky|XPHB",
+							"Magic Initiate|XPHB",
+							"Skilled|XPHB",
+							"Spellfire Spark|frhof",
+							"Well-Read|boundbyblood",
+							"Well-Versed|northlandsworldbook"
+						],
+						"count": 1
+					}
 				}
             ],
             "skillProficiencies": [
                 {
+					"Arcana": true,
+					"Sleight of Hand": true
                 }
             ],
 			"toolProficiencies": [
 				{
+					"artisan's tool": true
 				}
 			],
             "startingEquipment": [
 				{
 					"A": [
 						{
-							"value": 0
+							"item": "Acid|XPHB"
+						},
+						{
+							"item": "Artisan's Tools|XPHB"
+						},
+						{
+							"item": "Tinderbox|XPHB"
+						},
+						{
+							"item": "Traveler's Clothes|XPHB"
+						},
+						{
+							"item": "Vial|XPHB",
+							"count": 5
+						},
+						{
+							"value": 800
 						}
 					],
 					"B": [
@@ -10569,27 +10599,27 @@
 						{
 							"type": "item",
 							"name": "Ability Scores:",
-							"entry": "Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma"
+							"entry": "Dexterity, Intelligence, Wisdom, Charisma"
 						},
 						{
 							"type": "item",
 							"name": "Feat:",
-							"entry": "{@feat |} or {@feat |} or {@feat |}"
+							"entry": "{@feat Altered|crookedmoon24} or {@feat Asuran Ingenuity|GW2} or {@feat Crafter|XPHB} or {@feat Fate Gambler|crookedmoon24} or {@feat Lucky|XPHB} or {@feat Magic Initiate|XPHB} or {@feat Skilled|XPHB} or {@feat Spellfire Spark|frhof} or {@feat Well-Read|boundbyblood} or {@feat Well-Versed|northlandsworldbook}"
 						},
 						{
 							"type": "item",
 							"name": "Skill Proficiencies:",
-							"entry": "{@skill |XPHB} and {@skill |XPHB}"
+							"entry": "{@skill Arcana|XPHB} and {@skill Sleight of Hand|XPHB}"
 						},
 						{
 							"type": "item",
 							"name": "Tool Proficiency:",
-							"entry": "{@item |XPHB}"
+							"entry": "Choose one kind of {@item Artisan's Tool|XPHB}"
 						},
 						{
 							"type": "item",
 							"name": "Equipment:",
-							"entry": "Choose A or B: (A) {@item |XPHB} , {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, 0 GP; or (B) 50 GP"
+							"entry": "Choose A or B: (A) {@item Acid|XPHB} , {@item Artisan's Tools|XPHB} (same as above), {@item Tinderbox|XPHB}, {@item Traveler's Clothes|XPHB}, 5 {@item Vial|XPHB|Vials}, 8 GP; or (B) 50 GP"
 						}
 					]
 				}

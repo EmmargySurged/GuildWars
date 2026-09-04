@@ -22153,27 +22153,39 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"SHO",
-				"Weapon Skill",
-				"BACT",
-				"ACT"
+				"Shortbow",
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
-					"other": "Thief wielding a Short bow"
+					"other": "Thief"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Bonus Action or Action",
-				"{@b Recharge:} None",
-				"{@b Range:} ",
-				"{@b Target:} Foe/Nearby",
-				"{@b Duration:} ",
-				"{@b Properties:} Bounces",
+				"{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
+				"{@b Range:} 90 ft.",
+				"{@b Target:} Up to PB + 1 creatures",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Combo Finisher|GW2}: Projectile ({@chance 20}), {@variantrule Sequence|GW2} {@optfeature Surprise Shot|GW2} while {@condition Invisible|XPHB}",
 				"{@b Description:} Fire an arrow that bounces between nearby foes and inflicts bleeding when striking poisoned enemies.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
-			]
+				"{@b Effect:} Choose one creature within range. Make a ranged weapon attack against the target. On a hit, the target takes {@damage 1d4} + your Class Ability Modifier piercing damage and, if the target is {@variantrule Poison|GW2|Poisoned}, is inflicted with 1 round of {@variantrule Bleeding|GW2}. If you hit the target, the arrow can leap from the target to a different creature of your choice within 15 feet of the target. Make a new attack roll against the new target, and make a new damage roll, which could cause the arrow to leap again. The arrow can bounce a number of times equal to your {@table Proficency Bonus|XPHB}.",
+				"{@b Scaling:} The damage and the number of conditions inflicted increases when you reach levels 5 ({@damage 2d4} & 2 stacks), 11 ({@damage 3d4} & 3 stacks), and 17 ({@damage 4d4} & 4 stacks)."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Trick_Shot}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Trick_Shot.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Surprise Shot",
@@ -22181,27 +22193,41 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"SHO",
+				"Shortbow",
 				"Weapon Skill",
-				"Stealth Attack",
-				"BACT"
+				"Stealth Attack"
 			],
 			"prerequisite": [
 				{
-					"other": "Thief wielding a Short bow"
+					"other": "Thief"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Bonus Action",
-				"{@b Recharge:} None",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Stealth Attack",
-				"{@b Description:} Stealth Attack. Shoot an arrow that bleeds and immobilizes your foe.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
-			]
+				"{@b Casting Time:} 1 {@variantrule Action Points|GW2|AP}",
+				"{@b Recharge:} {@recharge 1}",
+				"{@b Range:} 90 ft.",
+				"{@b Target:} 1 creature",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} '{@variantrule Combo Finisher|GW2}: Projectile, Stealth Attack",
+				"{@b Description:} Shoot an arrow that bleeds and immobilizes your foe.",
+				"{@b Effect:} Choose one creature that you can see within range. Make a ranged weapon attack against the target. On a hit, the target takes {@damage 1d4} + your Class Ability Modifier piercing damage and is inflicted with 3 stacks of {@variantrule Bleeding|GW} for 1 round and 1 round of {@variantrule Immobile|GW2}.",
+				"{@b Scaling:} The damage, number of conditions inflicted and the duration increases when you reach levels 5 ({@damage 2d4} & 6 {@variantrule Bleeding|GW} stacks), 11 ({@damage 3d4} & 9 {@variantrule Bleeding|GW} stacks & 2 rounds of {@variantrule Immobile|GW2}), and 17 ({@damage 4d4} & 12 {@variantrule Bleeding|GW} stacks & 3 rounds of {@variantrule Immobile|GW2})."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Surprise_Shot}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Surprise_Shot.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Cluster Bomb",
@@ -22209,28 +22235,40 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"SHO",
-				"Weapon Skill",
-				"EXP",
-				"BACT",
-				"ACT"
+				"Shortbow",
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
-					"other": "Thief wielding a Short bow"
+					"other": "Thief"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Bonus Action or Action",
-				"{@b Recharge:} None",
-				"{@b Range:} ",
-				"{@b Target:} Area",
-				"{@b Duration:} ",
-				"{@b Properties:} Explosion",
+				"{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
+				"{@b Cost:} X {@variantrule Initiative Points|GW2}",
+				"{@b Range:} 90 ft.",
+				"{@b Target:} 10-foot-Radius Sphere",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Combo Finisher|GW2}: Blast, {@variantrule Sequence|GW2}: {@optfeature Detonate Cluster|GW2} after activating it, but before it explodes.",
 				"{@b Description:} Fire a cluster bomb at the target area. Detonate in midair for multiple explosions.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
-			]
+				"{@b Effect:} Choose a point within range that you can see. Shot an explosive arrorw at that point. At the end of this turn, each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a creature takes {@damage 2d10} force damage and is inflicted with 1 round of {@variantrule Bleeding|GW2}. On a successful save, a creature takes half as much damage only.",
+				"{@b Scaling:} The damage and number of conditions inflicted increases when you reach levels 5 ({@damage 3d10} & 2 stacks), 11 ({@damage 4d10} & 3 stacks), and 17 ({@damage 5d10} & 4 stacks)."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Cluster_Bomb}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Cluster_Bomb.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Detonate Cluster",
@@ -22238,27 +22276,39 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"SHO",
-				"Weapon Skill",
-				"Sequence",
-				"ACT"
+				"Shortbow",
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
-					"other": "Thief wielding a Short bow"
+					"other": "Thief"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Action",
-				"{@b Recharge:} None",
-				"{@b Range:} ",
-				"{@b Target:} Midair",
-				"{@b Duration:} ",
-				"{@b Properties:} Sequence",
+				"{@b Casting Time:} 0 {@variantrule Action Points|GW2|AP}",
+				"{@b Recharge:} {@recharge 1}",
+				"{@b Range:} 30 ft.",
+				"{@b Target:} PB 10-foot-Radius Spheres",
+				"{@b Duration:} Instantaneous"
 				"{@b Description:} Detonate your cluster bomb in midair.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
-			]
+				"{@b Effect:} Choose a point along the flight path of your {@optfeature Cluster Bomb|GW2}. The {@optfeature Cluster Bomb|GW2} spilts into a number of smaller bombs equal to your {@table Proficency Bonus|XPHB}. Choose a number of points within 30 feet of that point equal to your {@table Proficency Bonus|XPHB}. Each creature in a 5-foot-radius sphere centered on each new point must make a Dexterity saving throw. On a failed save, a creature takes {@damage 1d6} force damage and is inflicted with 1 round of {@variantrule Bleeding|GW2}. On a successful save, a creature takes half as much damage only. The {@optfeature Cluster Bomb|GW2} does not explode at the end of the current turn.",
+				"{@b Scaling:} The damage and number of conditions inflicted increases when you reach levels 5 ({@damage 2d6} & 2 stacks), 11 ({@damage 3d6} & 3 stacks), and 17 ({@damage 4d6} & 4 stacks)."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Detonate_Cluster}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Detonate_Cluster.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Disabling Shot",
@@ -22266,26 +22316,40 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"SHO",
-				"Weapon Skill",
-				"BACT"
+				"Shortbow",
+				"Weapon Skill"
 			],
 			"prerequisite": [
 				{
-					"other": "Thief wielding a Short bow"
+					"other": "Thief"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} Bonus Action",
-				"{@b Recharge:} {@chance 75|5+}",
-				"{@b Range:} ",
-				"{@b Target:} Foe",
-				"{@b Duration:} ",
-				"{@b Properties:} Leap Away",
+				"{@b Casting Time:} 1 {@variantrule Action Points|GW2|AP}",
+				"{@b Cost:} 4 {@variantrule Initiative Points|GW2}",
+				"{@b Range:} 90 ft.",
+				"{@b Target:} 1 creature",
+				"{@b Duration:} Instantaneous",
+				"{@b Properties:} {@variantrule Combo Finisher|GW2}: Projectile",
 				"{@b Description:} Leap away from your foe while firing a crippling shot.",
-				"{@b Effect:} ",
-				"{@b Scaling:} "
-			]
+				"{@b Effect:} Choose one creature that you can see within range. Make a ranged weapon attack against the target. On a hit, the target takes {@damage 1d6} + your Class Ability Modifier piercing damage, is inflicted with {@variantrule Crippled|GW2} for 1 round, and you can move up to half your {@variantrule Speed|XPHB} without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks} from the target.",
+				"{@b Scaling:} The damage increases when you reach levels 5 ({@damage 2d6}), 11 ({@damage 3d6}), and 17 ({@damage 4d6})"
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Disabling_Shot_(thief_short_bow_skill)}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Disabling_Shot_(thief_short_bow_skill).png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Choking Gas",
@@ -22293,7 +22357,7 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"SHO",
+				"Shortbow",
 				"Weapon Skill",
 				"CFP",
 				"BACT",
@@ -22322,7 +22386,7 @@
 			"page": "",
 			"featureType": [
 				"Thief",
-				"SHO",
+				"Shortbow",
 				"Weapon Skill",
 				"REAC",
 				"BACT"
@@ -29189,7 +29253,6 @@
 			"featureType": [
 				"Profession Skill",
 				"Warrior",
-				"CHAN",
 				"Burst",
 				"Shortsword"
 			],

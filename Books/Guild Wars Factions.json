@@ -21,9 +21,7 @@
         "status": "ready",
         "dateAdded": 1701938868,
         "dateLastModified": 1701938868,
-        "optionalFeatureTypes": {
-            
-        }
+        "optionalFeatureTypes": {}
     },
     "adventure": [
         {
@@ -18566,6 +18564,17 @@
                             "name": "Collage of lore",
                             "shortName": "Lore",
                             "source": "XPHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "XPHB"
+                        },
+                        "subclass": {
+                            "name": "Knowledge domain",
+                            "shortName": "Knowledge",
+                            "source": "FRHoF"
                         }
                     },
                     {
@@ -94958,6 +94967,14 @@
                     {
                         "type": "statblock",
                         "tag": "spell",
+                        "name": "Energy Boon",
+                        "source": "GWF"
+                    }
+                ],
+                [
+                    {
+                        "type": "statblock",
+                        "tag": "spell",
                         "name": "Overload",
                         "source": "GWF"
                     }
@@ -103204,408 +103221,396 @@
             "name": "Kaineng City Resident",
             "source": "GWF",
             "ability": [
-				{
-					"choose": {
-						"weighted": {
-							"from": [
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
                                 "str",
                                 "dex",
                                 "con",
                                 "int",
                                 "wis",
                                 "cha"
-							],
-							"weights": [
-								2,
-								1
-							]
-						}
-					}
-				},
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
+                            ],
+                            "weights": [
+                                2,
+                                1
+                            ]
+                        }
+                    }
+                },
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
                                 "dex",
                                 "con",
                                 "int",
                                 "wis",
                                 "cha"
-							],
-							"weights": [
-								1,
-								1,
-								1
-							]
-						}
-					}
-				}
-			],
-            "feats": [
-				{
-				}
-            ],
-            "skillProficiencies": [
-                {
+                            ],
+                            "weights": [
+                                1,
+                                1,
+                                1
+                            ]
+                        }
+                    }
                 }
             ],
-			"toolProficiencies": [
-				{
-				}
-			],
+            "feats": [
+                {}
+            ],
+            "skillProficiencies": [
+                {}
+            ],
+            "toolProficiencies": [
+                {}
+            ],
             "startingEquipment": [
-				{
-					"A": [
-						{
-							"value": 0
-						}
-					],
-					"B": [
-						{
-							"value": 5000
-						}
-					]
-				}
-			],
+                {
+                    "A": [
+                        {
+                            "value": 0
+                        }
+                    ],
+                    "B": [
+                        {
+                            "value": 5000
+                        }
+                    ]
+                }
+            ],
             "entries": [
                 {
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						{
-							"type": "item",
-							"name": "Ability Scores:",
-							"entry": "Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma"
-						},
-						{
-							"type": "item",
-							"name": "Feat:",
-							"entry": "{@feat |} or {@feat |} or {@feat |}"
-						},
-						{
-							"type": "item",
-							"name": "Skill Proficiencies:",
-							"entry": "{@skill |XPHB} and {@skill |XPHB}"
-						},
-						{
-							"type": "item",
-							"name": "Tool Proficiency:",
-							"entry": "{@item |XPHB}"
-						},
-						{
-							"type": "item",
-							"name": "Equipment:",
-							"entry": "Choose A or B: (A) {@item |XPHB} , {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, 0 GP; or (B) 50 GP"
-						}
-					]
-				}
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Ability Scores:",
+                            "entry": "Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma"
+                        },
+                        {
+                            "type": "item",
+                            "name": "Feat:",
+                            "entry": "{@feat |} or {@feat |} or {@feat |}"
+                        },
+                        {
+                            "type": "item",
+                            "name": "Skill Proficiencies:",
+                            "entry": "{@skill |XPHB} and {@skill |XPHB}"
+                        },
+                        {
+                            "type": "item",
+                            "name": "Tool Proficiency:",
+                            "entry": "{@item |XPHB}"
+                        },
+                        {
+                            "type": "item",
+                            "name": "Equipment:",
+                            "entry": "Choose A or B: (A) {@item |XPHB} , {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, 0 GP; or (B) 50 GP"
+                        }
+                    ]
+                }
             ]
         },
         {
             "name": "Kurzick",
             "source": "GWF",
             "ability": [
-				{
-					"choose": {
-						"weighted": {
-							"from": [
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
                                 "str",
                                 "dex",
                                 "con",
                                 "int",
                                 "wis",
                                 "cha"
-							],
-							"weights": [
-								2,
-								1
-							]
-						}
-					}
-				},
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
+                            ],
+                            "weights": [
+                                2,
+                                1
+                            ]
+                        }
+                    }
+                },
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
                                 "dex",
                                 "con",
                                 "int",
                                 "wis",
                                 "cha"
-							],
-							"weights": [
-								1,
-								1,
-								1
-							]
-						}
-					}
-				}
-			],
-            "feats": [
-				{
-				}
-            ],
-            "skillProficiencies": [
-                {
+                            ],
+                            "weights": [
+                                1,
+                                1,
+                                1
+                            ]
+                        }
+                    }
                 }
             ],
-			"toolProficiencies": [
-				{
-				}
-			],
+            "feats": [
+                {}
+            ],
+            "skillProficiencies": [
+                {}
+            ],
+            "toolProficiencies": [
+                {}
+            ],
             "startingEquipment": [
-				{
-					"A": [
-						{
-							"value": 0
-						}
-					],
-					"B": [
-						{
-							"value": 5000
-						}
-					]
-				}
-			],
+                {
+                    "A": [
+                        {
+                            "value": 0
+                        }
+                    ],
+                    "B": [
+                        {
+                            "value": 5000
+                        }
+                    ]
+                }
+            ],
             "entries": [
                 {
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						{
-							"type": "item",
-							"name": "Ability Scores:",
-							"entry": "Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma"
-						},
-						{
-							"type": "item",
-							"name": "Feat:",
-							"entry": "{@feat |} or {@feat |} or {@feat |}"
-						},
-						{
-							"type": "item",
-							"name": "Skill Proficiencies:",
-							"entry": "{@skill |XPHB} and {@skill |XPHB}"
-						},
-						{
-							"type": "item",
-							"name": "Tool Proficiency:",
-							"entry": "{@item |XPHB}"
-						},
-						{
-							"type": "item",
-							"name": "Equipment:",
-							"entry": "Choose A or B: (A) {@item |XPHB} , {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, 0 GP; or (B) 50 GP"
-						}
-					]
-				}
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Ability Scores:",
+                            "entry": "Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma"
+                        },
+                        {
+                            "type": "item",
+                            "name": "Feat:",
+                            "entry": "{@feat |} or {@feat |} or {@feat |}"
+                        },
+                        {
+                            "type": "item",
+                            "name": "Skill Proficiencies:",
+                            "entry": "{@skill |XPHB} and {@skill |XPHB}"
+                        },
+                        {
+                            "type": "item",
+                            "name": "Tool Proficiency:",
+                            "entry": "{@item |XPHB}"
+                        },
+                        {
+                            "type": "item",
+                            "name": "Equipment:",
+                            "entry": "Choose A or B: (A) {@item |XPHB} , {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, 0 GP; or (B) 50 GP"
+                        }
+                    ]
+                }
             ]
         },
         {
             "name": "Luxon",
             "source": "GWF",
             "ability": [
-				{
-					"choose": {
-						"weighted": {
-							"from": [
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
                                 "str",
                                 "dex",
                                 "con",
                                 "int",
                                 "wis",
                                 "cha"
-							],
-							"weights": [
-								2,
-								1
-							]
-						}
-					}
-				},
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
+                            ],
+                            "weights": [
+                                2,
+                                1
+                            ]
+                        }
+                    }
+                },
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
                                 "dex",
                                 "con",
                                 "int",
                                 "wis",
                                 "cha"
-							],
-							"weights": [
-								1,
-								1,
-								1
-							]
-						}
-					}
-				}
-			],
-            "feats": [
-				{
-				}
-            ],
-            "skillProficiencies": [
-                {
+                            ],
+                            "weights": [
+                                1,
+                                1,
+                                1
+                            ]
+                        }
+                    }
                 }
             ],
-			"toolProficiencies": [
-				{
-				}
-			],
+            "feats": [
+                {}
+            ],
+            "skillProficiencies": [
+                {}
+            ],
+            "toolProficiencies": [
+                {}
+            ],
             "startingEquipment": [
-				{
-					"A": [
-						{
-							"value": 0
-						}
-					],
-					"B": [
-						{
-							"value": 5000
-						}
-					]
-				}
-			],
+                {
+                    "A": [
+                        {
+                            "value": 0
+                        }
+                    ],
+                    "B": [
+                        {
+                            "value": 5000
+                        }
+                    ]
+                }
+            ],
             "entries": [
                 {
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						{
-							"type": "item",
-							"name": "Ability Scores:",
-							"entry": "Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma"
-						},
-						{
-							"type": "item",
-							"name": "Feat:",
-							"entry": "{@feat |} or {@feat |} or {@feat |}"
-						},
-						{
-							"type": "item",
-							"name": "Skill Proficiencies:",
-							"entry": "{@skill |XPHB} and {@skill |XPHB}"
-						},
-						{
-							"type": "item",
-							"name": "Tool Proficiency:",
-							"entry": "{@item |XPHB}"
-						},
-						{
-							"type": "item",
-							"name": "Equipment:",
-							"entry": "Choose A or B: (A) {@item |XPHB} , {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, 0 GP; or (B) 50 GP"
-						}
-					]
-				}
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Ability Scores:",
+                            "entry": "Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma"
+                        },
+                        {
+                            "type": "item",
+                            "name": "Feat:",
+                            "entry": "{@feat |} or {@feat |} or {@feat |}"
+                        },
+                        {
+                            "type": "item",
+                            "name": "Skill Proficiencies:",
+                            "entry": "{@skill |XPHB} and {@skill |XPHB}"
+                        },
+                        {
+                            "type": "item",
+                            "name": "Tool Proficiency:",
+                            "entry": "{@item |XPHB}"
+                        },
+                        {
+                            "type": "item",
+                            "name": "Equipment:",
+                            "entry": "Choose A or B: (A) {@item |XPHB} , {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, 0 GP; or (B) 50 GP"
+                        }
+                    ]
+                }
             ]
         },
         {
             "name": "Shing Jea Islander",
             "source": "GWF",
             "ability": [
-				{
-					"choose": {
-						"weighted": {
-							"from": [
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
                                 "str",
                                 "dex",
                                 "con",
                                 "int",
                                 "wis",
                                 "cha"
-							],
-							"weights": [
-								2,
-								1
-							]
-						}
-					}
-				},
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
+                            ],
+                            "weights": [
+                                2,
+                                1
+                            ]
+                        }
+                    }
+                },
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "str",
                                 "dex",
                                 "con",
                                 "int",
                                 "wis",
                                 "cha"
-							],
-							"weights": [
-								1,
-								1,
-								1
-							]
-						}
-					}
-				}
-			],
-            "feats": [
-				{
-				}
-            ],
-            "skillProficiencies": [
-                {
+                            ],
+                            "weights": [
+                                1,
+                                1,
+                                1
+                            ]
+                        }
+                    }
                 }
             ],
-			"toolProficiencies": [
-				{
-				}
-			],
+            "feats": [
+                {}
+            ],
+            "skillProficiencies": [
+                {}
+            ],
+            "toolProficiencies": [
+                {}
+            ],
             "startingEquipment": [
-				{
-					"A": [
-						{
-							"value": 0
-						}
-					],
-					"B": [
-						{
-							"value": 5000
-						}
-					]
-				}
-			],
+                {
+                    "A": [
+                        {
+                            "value": 0
+                        }
+                    ],
+                    "B": [
+                        {
+                            "value": 5000
+                        }
+                    ]
+                }
+            ],
             "entries": [
                 {
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						{
-							"type": "item",
-							"name": "Ability Scores:",
-							"entry": "Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma"
-						},
-						{
-							"type": "item",
-							"name": "Feat:",
-							"entry": "{@feat |} or {@feat |} or {@feat |}"
-						},
-						{
-							"type": "item",
-							"name": "Skill Proficiencies:",
-							"entry": "{@skill |XPHB} and {@skill |XPHB}"
-						},
-						{
-							"type": "item",
-							"name": "Tool Proficiency:",
-							"entry": "{@item |XPHB}"
-						},
-						{
-							"type": "item",
-							"name": "Equipment:",
-							"entry": "Choose A or B: (A) {@item |XPHB} , {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, 0 GP; or (B) 50 GP"
-						}
-					]
-				}
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Ability Scores:",
+                            "entry": "Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma"
+                        },
+                        {
+                            "type": "item",
+                            "name": "Feat:",
+                            "entry": "{@feat |} or {@feat |} or {@feat |}"
+                        },
+                        {
+                            "type": "item",
+                            "name": "Skill Proficiencies:",
+                            "entry": "{@skill |XPHB} and {@skill |XPHB}"
+                        },
+                        {
+                            "type": "item",
+                            "name": "Tool Proficiency:",
+                            "entry": "{@item |XPHB}"
+                        },
+                        {
+                            "type": "item",
+                            "name": "Equipment:",
+                            "entry": "Choose A or B: (A) {@item |XPHB} , {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, {@item |XPHB}, 0 GP; or (B) 50 GP"
+                        }
+                    ]
+                }
             ]
         },
         {

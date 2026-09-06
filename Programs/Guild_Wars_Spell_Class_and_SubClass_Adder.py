@@ -511,7 +511,7 @@ if __name__ == "__main__":
 
     # File paths
     json_paths = args.json_paths if args.json_paths else DEFAULT_JSON_PATHS
-    file_path = "C:/Users/emmae/OneDrive/Shared/D&D/Tools/Guild Wars D&D.xlsx"
+    file_path = "//192.168.2.189/shared/friends/D&D/Tools/Guild Wars D&D.xlsx"
     sheet_name = "Spell Distribution"
 
 

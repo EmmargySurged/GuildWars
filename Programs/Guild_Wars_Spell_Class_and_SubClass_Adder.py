@@ -511,7 +511,7 @@ if __name__ == "__main__":
 
     # File paths
     json_paths = args.json_paths if args.json_paths else DEFAULT_JSON_PATHS
-    file_path = "//192.168.2.189/shared/friends/D&D/Tools/Guild Wars D&D.xlsx"
+    file_path = "//192.168.2.189/data/shared/friends/D&D/Tools/Guild Wars D&D.xlsx"
     sheet_name = "Spell Distribution"
 
 
@@ -615,6 +615,7 @@ if __name__ == "__main__":
             {"name": "Clockwork Sorcery", "shortName": "Clockwork", "source": "XPHB"},
             {"name": "Divine Soul", "shortName": "Divine Soul", "source": "XGE"},
             {"name": "Draconic Sorcery", "shortName": "Draconic", "source": "XPHB"},
+            {"name": "Heroic", "shortName": "Heroic", "source": "valdaplayerpack2"},
             {"name": "Shadow Magic", "shortName": "Shadow Magic", "source": "XGE"},
             {"name": "Spellfire Sorcery", "shortName": "Spellfire", "source": "FRHoF"},
             {"name": "Storm Sorcery", "shortName": "Storm", "source": "XGE"},

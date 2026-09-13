@@ -943,8 +943,7 @@
                 "Daredevil",
                 "Thief",
                 "Staff",
-                "Weapon Skill",
-                "ACT"
+                "Weapon Skill"
             ],
             "prerequisite": [
                 {
@@ -952,16 +951,30 @@
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Action",
-                "{@b Recharge:} {@chance 75|5+}",
-                "{@b Range:} 450",
-                "{@b Target:} Area",
-                "{@b Duration:} ",
-                "{@b Properties:} Inflicts Blindness, Reflects Projectiles",
+                "{@b Casting Time:} X {@variantrule Action Points|GW2|AP}",
+                "{@b Cost:} 4 {@variantrule Initiative Points|GW2}",
+                "{@b Range:} 5-Foot-Emanation",
+                "{@b Target:} Self",
+                "{@b Duration:} 1 round",
                 "{@b Description:} Spin your staff in the air, creating a vortex of dust around you that blinds enemies and reflects projectiles.",
-                "{@b Effect:} ",
-                "{@b Scaling:} "
-            ]
+                "{@b Effect:} Each creature other than yourself within range must make a Constitution {@variantrule Saving Throw|XPHB}. On a failed save, a creature takes {@damage 3d6} bludgeoning damage and is inflicted with 1 round of {@variantrule Blindness|GW2}. On a successful save, a create take half damage only. You {@variantrule Reflect|GW2} for the duration.",
+                "{@b Scaling:} The damage increases when you reach levels 5 ({@damage 6d6}), 11 ({@damage 9d6}), and 17 ({@damage 12d6})."
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Dust_Strike}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Dust_Strike.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Vault",
@@ -1206,9 +1219,7 @@
             "featureType": [
                 "Daredevil",
                 "Utility Skill",
-                "Physical",
-                "BACT",
-                "ACT"
+                "Physical"
             ],
             "prerequisite": [
                 {
@@ -1216,16 +1227,31 @@
                 }
             ],
             "entries": [
-                "{@b Casting Time:} Bonus Action or Action",
-                "{@b Recharge:} {@chance 45|12+}",
-                "{@b Range:} ",
-                "{@b Target:} Foe",
-                "{@b Duration:} ",
-                "{@b Properties:} Physical",
-                "{@b Description:} Physical. Fling multiple daggers at a single enemy, inflicting conditions.",
-                "{@b Effect:} ",
-                "{@b Scaling:} "
-            ]
+                "{@b Casting Time:} 2 {@variantrule Action Points|GW2|AP}",
+                "{@b Recharge:} {@recharge 3}",
+                "{@b Range:} 90 ft.",
+                "{@b Target:} 1 creature",
+                "{@b Duration:} Instantaneous",
+                "{@b Properties:} {@variantrule Combo Finisher|GW2}: Projectile, Physical",
+                "{@b Description:} Fling multiple daggers at a single enemy, inflicting conditions.",
+                "{@b Effect:} Choose one creature that you can see within range. Make three ranged weapon attacks against the target. On a hit, the target takes {@damage 1d10} piercing damage and is inflicted with a condition. The first attack inflicts 3 stacks of {@variantrule Poison|GW2} for 2 rounds, the second attacks inflicts 1 round of {@variantrule Slow|GW2}, and the third attack inflicts 1 round of {@variantrule Immobile|GW2}.",
+                "{@b Scaling:} The damage and condition duration increase when you reach levels 5 ({@damage 2d10} & 3 rounds of {@variantrule Poison|GW2} & 2 rounds of {@variantrule Slow|GW2}), 11 ({@damage 3d10} & 4 rounds of {@variantrule Poison|GW2} & 3 rounds of {@variantrule Slow|GW2} & 2 rounds of {@variantrule Immobile|GW2}), and 17 ({@damage 4d10} & 5 rounds of {@variantrule Poison|GW2} & 4 rounds of {@variantrule Slow|GW2} & 3 rounds of {@variantrule Immobile|GW2})."
+            ],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Impairing_Daggers}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Heart of Thorns/Impairing_Daggers.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
         },
         {
             "name": "Impact Strike",

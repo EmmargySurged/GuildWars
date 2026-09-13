@@ -8683,6 +8683,43 @@
             ]
         },
         {
+            "name": "Point Blank Area of Effect Caster",
+            "source": "GW",
+            "prerequisite": [
+                {
+                    "spellcasting": true
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                 "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Enemy Disadvantage",
+                    "entries": [
+                        "Enemies within 5 feet of you have {@variantrule Disadvantage|XPHB} on saving throws against spells you cast, if you are also forced to make a saving throw against them."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Advantage against your own spells",
+                    "entries": [
+                        "You have {@variantrule Advantage|XPHB} on saving throws against your own spells you cast." 
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Lunar Blessing",
             "source": "GW",
             "prerequisite": [

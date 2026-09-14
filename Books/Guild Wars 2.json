@@ -8224,9 +8224,187 @@
 				"type": "external",
 				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Caithe_Token.png"
 			},
+			"isNpc": true,
+			"group": [
+				"Destiny's Edge"
+			],
 			"damageTags": [
 				"I",
 				"P"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Shadow of the Dragon (Fighting the Nightmare)",
+			"source": "GW2",
+			"referenceSources": [
+				"FRAiF",
+				"RHW"
+			],
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "dragon",
+				"tags": [
+					"mordrem"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "10d12 + 30",
+				"average": 95
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30,
+				"fly": 60,
+				"burrow": 30
+			},
+			"initiative": {
+				"proficiency": 2
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 16,
+			"int": 6,
+			"wis": 8,
+			"cha": 8,
+			"save": {
+				"str": "+5",
+				"con": "+5"
+			},
+			"skill": {
+				"perception": "+3",
+				"stealth": "+4"
+			},
+			"senses": [
+				"Blindsight 10 ft.",
+				"Darkvision 120 ft."
+			],
+			"passive": 13,
+			"cr": {
+				"cr": "2",
+				"xpLair": 11500
+			},
+			"trait": [
+				{
+					"name": "{@variantrule Defiance Bar|GW2}",
+					"entries": [
+						"Starting Value: 150",
+						"Recovery: 15",
+						"Break Effect: {@variantrule Knockdown|GW2} and {@variantrule Defiance Bar|GW2} locked until until the end of its next turn, then regains 75."
+					]
+				}
+			],
+			"legendaryActionsLair": 4,
+			"environment": [
+				"jungle"
+			],
+			"treasure": [
+				"any"
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"conditionImmune": [
+				"poisoned"
+			],
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon makes two Bite attacks. It can replace any number of these attacks with uses of Summon Nightmare Hounds, Stomp, Bad Breath or Entangling Thorns if available."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 15 ft., one target. {@h}10 ({@damage 2d6 + 3}) poison damage."
+					]
+				},
+				{
+					"name": "Stomp {@recharge 3}",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 15 ft., one target. {@h}10 ({@damage 2d6 + 3}) bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition."
+					]
+				},
+				{
+					"name": "Bad Breath {@recharge 5}",
+					"entries": [
+						"{@actSave con} {@dc 13}, each creature in a 30-foot Cone. {@actSaveFail} 2 stacks of {@variantrule Poison|GW2} for 1 round. {@actSaveSuccess} Half number of stacks."
+					]
+				},
+				{
+					"name": "Entangling Thorns {@recharge 5}",
+					"entries": [
+						"The dragon cast {@spell Spike Growth|XPHB} using constitution as its spellcasting ability modifier, ignoring spell components."
+					]
+				},
+				{
+					"name": "Summon Nightmare Hounds {@recharge 6}",
+					"entries": [
+						"The dragon summons a number of {@creature Nightmare Hound|GW2|Nightmare Hounds} equal to the number of hostile creatures within 150 feet of it. Each {@creature Nightmare Hound|GW2} appears within 10 feet of a different hostile creature. The hounds takes their turn immediately after the dragon on the same Initiative count, and they obey the dragon. The hounds remains for 1 hour or until they dies, the dragon dies, or they are more than 300 feet from the dragon."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"fluff": {
+				"entries": [
+					"The Shadow of the Dragon is the form taken by the shadow of evil that has infected the Dream of Dreams. If the player character is a sylvari, it blocks the path to their awakening and must be vanquished before the player can enter the world. Physically, it resembles a dragon champion and seems to be composed of plant matter, with an orange glow at its core not dissimilar to that of the Summoned Husks."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shadow_of_the_Dragon.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/Shadow_of_the_Dragon_Token.png"
+			},
+			"group": [
+				"Mordrem"
+			],
+			"isNpc": true,
+			"damageTags": [
+				"B",
+				"I"
 			],
 			"savingThrowForced": [
 				"constitution"

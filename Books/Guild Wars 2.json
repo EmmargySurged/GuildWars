@@ -8249,7 +8249,8 @@
 			"type": {
 				"type": "dragon",
 				"tags": [
-					"mordrem"
+					"mordrem",
+					"epic boss"
 				]
 			},
 			"alignment": [
@@ -8260,8 +8261,7 @@
 				13
 			],
 			"hp": {
-				"formula": "10d12 + 30",
-				"average": 95
+				"special": "47 ({@dice 5d12 + 15}) plus 47 ({@dice 5d12 + 15}) per player character"
 			},
 			"speed": {
 				"walk": 30,
@@ -8337,9 +8337,9 @@
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "The dragon always takes its turn on Initiative count 20.",
 					"entries": [
-						"The dragon makes two Bite attacks. It can replace any number of these attacks with uses of Summon Nightmare Hounds, Stomp, Bad Breath or Entangling Thorns if available."
+						"On its turn, the dragon can use its interaction as normal. However, it does not take an {@variantrule Action |XPHB} or {@variantrule Bonus Action|XPHB} on its turn unless forced to do so by a spell or other effect. Instead, the dragon takes one of the following Epic Actions at the end of each player character's turn:"
 					]
 				},
 				{

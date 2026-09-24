@@ -2593,8 +2593,28 @@
 													"page": "",
 													"id": "GW215a6a1",
 													"entries": [
-														"As the characters enter the island they find themselves in a dense jungle reminiscent of {@area The Verdence|PLACEHOLDER|x}. Once they have walked a few feet onto the new island the bridge behind them disappears and the two islands rapidly disengage from each other. They then see a flash of white between the trees. If they move towards it, the {@creature White Stag|GW2} dashes away, hiding in the jungle.",
-														"The characters then experience a vision of them catching the stag and being rewarded with the way forward and a powerful boon."
+														{
+															"type": "insetReadaloud",
+															"entries": [
+																"Before you unfolds you a familiar landscape distorted by the dream, {@area The Verdence|GW224caledonverdence|x}, the wilderness surrounding the {@area Village of Astorea|GW224caledonastorea|x}. As you take your first few steps into it you notice a flash of white behind some foliage.",
+																"Upon further investigation you can just make out the silhouette of a white stag. Just as you can make it out, it head snaps in your direction noticing you, quickly dashing away.",
+																"As the stag disappears into the jungle a vision is shown to you:",
+																"You, touching the stag, the way forward being revealed, and you getting a boon for your future endeavors."
+															]
+														},
+														"To proceed to the next set of three islands the characters need to find and catch the {@creature White Stag|GW2}. To find the {@creature White Stag|GW2} they must first succeed on a Wisdom ({@skill Survival}) check contested by the {@creature White Stag|GW2}'s Dexterity ({@skill Stealth}) check. Once they have succeeded, they can start tracking the {@creature White Stag|GW2}, making Wisdom ({@skill Perception}) checks against the {@creature White Stag|GW2}'s Dexterity ({@skill Stealth}) checks. On a success, a {@book Chase|XDMG|2|Chases} starts, using the {@table Wilderness Chase Complications|XDMG} table.",
+														"If they fail the {@book Chase|XDMG|2|Chases}, they must start over with the Wisdom ({@skill Survival}) check. If they succeed they can touch the {@creature White Stag|GW2}. Once they do read out the following:",
+														{
+															"type": "insetReadaloud",
+															"entries": [
+																"As you make contact with the {@creature White Stag|GW2} the world around you becomes a blur, the stag disappears any you find yourself at the edge of the island again, the stag next to you. It bows it's head to you and says:",
+																"\"You have caught me and demonstrated great skill, take my {@boon Minor Boon of the White Stag|GW2|Boon}. Now I ask you, of these three tents of Ventari, which is the most important to you?\"",
+																"\"Act with wisdom, but act.\" - \"It is one thing to know what is right and another to change the world. We all have a calling. You will distinguish yourself through your actions and thereby lift Tyria to a higher state of nobility.\"",
+																"\"All things have a right to grow.\" - \"The blossom is brother to the weed. Diversity of opinion is good. Discussion is healthy. No one should be condemned simply for being different. You will stand up for the rights of all.\"",
+																"\"Where life goes, so too, should you.\" - \"The world is a delicious and gorgeous place created for us to explore, enjoy, and protect. You will seek out the lessons in every experience, and as you grow, you will have more to offer in return.\""
+															]
+														},
+														"Depending on which tenet they choose a different island of reality floats within distance, and a bridge made of vines closes the gap."
 													]
 												},
 												{
@@ -2613,6 +2633,33 @@
 													"id": "GW215a6a3",
 													"entries": [
 														"Vision III - The Shield of the Moon"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Tenet I - \"Act with wisdom, but act.\"",
+													"page": "",
+													"id": "GW215a6a4",
+													"entries": [
+														"Tenet I - \"Act with wisdom, but act.\""
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Tenet II - \"All things have a right to grow.\"",
+													"page": "",
+													"id": "GW215a6a5",
+													"entries": [
+														"Tenet II - \"All things have a right to grow.\""
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Tenet III - \"Where life goes, so too, should you.\"",
+													"page": "",
+													"id": "GW215a6a6",
+													"entries": [
+														"Tenet III - \"Where life goes, so too, should you.\""
 													]
 												}
 											]
@@ -4217,6 +4264,13 @@
 								},
 								{
 									"type": "section",
+									"name": "The Verdence",
+									"page": "",
+									"id": "GW224caledonverdence",
+									"entries": []
+								},
+								{
+									"type": "section",
 									"name": "Village of Astorea",
 									"page": "",
 									"id": "GW224caledonastorea",
@@ -5006,17 +5060,17 @@
 			],
 			"fluff": {
 				"entries": [
-						"Spikeroot Fruits are found growing on short trees in the Caledon Forest. Their extremely hard outer shells make them usable as an ad hoc weapon when the need arises."
-					],
-					"images": [
-						{
-							"type": "image",
-							"href": {
-								"type": "external",
-								"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Throw_Spikeroot_Fruit.png"
-							}
+					"Spikeroot Fruits are found growing on short trees in the Caledon Forest. Their extremely hard outer shells make them usable as an ad hoc weapon when the need arises."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Core/Throw_Spikeroot_Fruit.png"
 						}
-					]
+					}
+				]
 			}
 		},
 		{
@@ -8146,7 +8200,7 @@
 				{
 					"name": "Poison Cloud {@recharge 6}",
 					"entries": [
-						"{@actSave dex} {@dc 12}, each creature in a 10-foot-radius Sphere centered on a point the grub can see within 30 feet. {@i Failure:} 2 ({@damage 1d4}) Poison damage. {@i Success:} Half damage."
+						"{@actSave con} {@dc 12}, each creature in a 10-foot-radius Sphere centered on a point the grub can see within 30 feet. {@i Failure:} 2 ({@damage 1d4}) Poison damage. {@i Success:} Half damage."
 					]
 				}
 			],
@@ -8243,7 +8297,7 @@
 				{
 					"name": "Poison Cloud {@recharge 6}",
 					"entries": [
-						"{@actSave dex} {@dc 13}, each creature in a 15-foot-radius Sphere centered on a point the grub can see within 60 feet. {@i Failure:} 5 ({@damage 2d4}) Poison damage. {@i Success:} Half damage."
+						"{@actSave con} {@dc 13}, each creature in a 15-foot-radius Sphere centered on a point the grub can see within 60 feet. {@i Failure:} 5 ({@damage 2d4}) Poison damage. {@i Success:} Half damage."
 					]
 				}
 			],
@@ -9339,6 +9393,104 @@
 			],
 			"savingThrowForced": [
 				"constitution"
+			]
+		},
+		{
+			"name": "White Stag",
+			"source": "GW2",
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "4d10 + 4",
+				"average": 26
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 12,
+			"int": 14,
+			"wis": 18,
+			"cha": 14,
+			"passive": 18,
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the stag moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 ({@damage 2d6}) damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ram",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}17 ({@damage 4d6 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one {@condition prone} creature. {@h}18 ({@damage 6d4 + 3}) bludgeoning damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Charge"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"languages": [
+				"All"
+			],
+			"senses": [
+				"truesight 120 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"save": {
+				"wis": "+6",
+				"dex": "+5"
+			},
+			"skill": {
+				"stealth": "+7",
+				"acrobatics": "+7",
+				"perception": "+8"
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Creatures/White_Stag_Token.png"
+			},
+			"fluff": {
+				"entries": [
+					"The white stag is a creature of the Dream, symbolizing hope. It is a manifestation of the faith and joy of our race."
+				]
+			},
+			"environment": [
+				"jungle"
+			],
+			"isNpc": true,
+			"damageTags": [
+				"B"
+			],
+			"savingThrowForced": [
+				"strength"
 			]
 		}
 	],
@@ -17904,14 +18056,14 @@
 				"net": true
 			},
 			"entries": [
-				"While wielding this magic weapon, you gain a +1 bonus to your {@variantrule Attribute|GW2|Condition Damage}. If you wield the weapon in two hands using the Two-Handed or Versatile property you instead gain +33 to your {@variantrule Attribute|GW2|Condition Damage}."
+				"While wielding this magic weapon, you gain a +16 bonus to your {@variantrule Attribute|GW2|Condition Damage}. If you wield the weapon in two hands using the Two-Handed or Versatile property you instead gain +33 to your {@variantrule Attribute|GW2|Condition Damage}."
 			],
 			"inherits": {
 				"rarity": "common",
 				"source": "GW2",
 				"namePrefix": "Malign ",
 				"entries": [
-					"While wielding this magic weapon, you gain a +1 bonus to your {@variantrule Attribute|GW2|Condition Damage}. If you wield the weapon in two hands using the Two-Handed or Versatile property you instead gain +33 to your {@variantrule Attribute|GW2|Condition Damage}."
+					"While wielding this magic weapon, you gain a +16 bonus to your {@variantrule Attribute|GW2|Condition Damage}. If you wield the weapon in two hands using the Two-Handed or Versatile property you instead gain +33 to your {@variantrule Attribute|GW2|Condition Damage}."
 				],
 				"valueExpression": "[[baseItem.value]] + 10000"
 			}
@@ -44126,6 +44278,18 @@
 			"source": "GW2",
 			"entries": [
 				"You learned to wield weapons while brining out their full potential. You gain access to different {@variantrule weapon skill|GW2|weapon skills} as shown in the table(s) below. Whenever you attack with one of the weapons as part of a {@variantrule weapon skill|GW2}, you can use your class's ability modifier for the attack and damage rolls instead of using Strength or Dexterity. If a {@variantrule weapon skill|GW2} requires a saving throw, the DC equals to 8 plus your class's ability modifier and proficiency bonus plus any attack bonuses the weapon has."
+			]
+		}
+	],
+	"boon": [
+		{
+			"name": "Minor Boon of the White Stag",
+			"source": "GW2",
+			"type": "Minor Sylvari",
+			"entries": [
+				"Blessed by the White Stag you can invoke this boon only while in the Dream of Dreams.",
+				"As a {@action Magic|XPHB} action you can invoke this boon, granting yourself and all allies you can see a bonus to your {@variantrule Speed|XPHB} and Dexterity ({@skill Stealth}) checks. Your {@variantrule Speed|XPHB} increases by 10 feet, and the bonus to your  Dexterity ({@skill Stealth}) checks is +5.",
+				"This boon lasts until you leave the Dream of Dreams."
 			]
 		}
 	]

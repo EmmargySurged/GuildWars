@@ -20555,7 +20555,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "If you cast this spell using a level 2 spell slot, you can maintain Concentration on it for up to 8 hours. If you use a level 3+ spell slot, the spell doesn't require Concentration, and the duration becomes 24 hours (level 3-4 slot), 10 days (level 5-6 slot) or 30 days (level 7-8 slot). If you use a level 9+ spell slot, the spell lasts until dispelled."
+                        "The duration increases to 4 hours (level 2-3 slot), 8 hours (level 4-5 slot), 24 hours (level 6-7 slot), 10 days (level 8 slot) or until dispelled (level 9+ slot)."
                     ]
                 }
             ],
@@ -30317,7 +30317,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "If you cast this spell using a level 2 spell slot, you can maintain Concentration on it for up to 8 hours. If you use a level 3+ spell slot, the spell doesn't require Concentration, and the duration becomes 24 hours (level 3-4 slot), 10 days (level 5-6 slot) or 30 days (level 7-8 slot). If you use a level 9+ spell slot, the spell lasts until dispelled."
+                        "The duration increases to 4 hours (level 2-3 slot), 8 hours (level 4-5 slot), 24 hours (level 6-7 slot), 10 days (level 8 slot) or until dispelled (level 9+ slot)."
                     ]
                 }
             ],
@@ -30572,7 +30572,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "If you cast this spell using a level 2 spell slot, you can maintain Concentration on it for up to 8 hours. If you use a level 3+ spell slot, the spell doesn't require Concentration, and the duration becomes 24 hours (level 3-4 slot), 10 days (level 5-6 slot) or 30 days (level 7-8 slot). If you use a level 9+ spell slot, the spell lasts until dispelled."
+                        "The duration increases to 4 hours (level 2-3 slot), 8 hours (level 4-5 slot), 24 hours (level 6-7 slot), 10 days (level 8 slot) or until dispelled (level 9+ slot)."
                     ]
                 }
             ],
@@ -30786,7 +30786,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "If you cast this spell using a level 2 spell slot, you can maintain Concentration on it for up to 8 hours. If you use a level 3+ spell slot, the spell doesn't require Concentration, and the duration becomes 24 hours (level 3-4 slot), 10 days (level 5-6 slot) or 30 days (level 7-8 slot). If you use a level 9+ spell slot, the spell lasts until dispelled."
+                        "The duration increases to 4 hours (level 2-3 slot), 8 hours (level 4-5 slot), 24 hours (level 6-7 slot), 10 days (level 8 slot) or until dispelled (level 9+ slot)."
                     ]
                 }
             ],
@@ -42904,7 +42904,7 @@
             "entries": [
                 "{@variantrule Bond|GW}, {@variantrule Enchantment|GW}",
                 "Conjure up a holy veil around a creature, obscuring them from harmful spells.",
-                "Choose one creature that you can see within range. For the duration If the target is the target of a harmful spell which requires {@status concentration}, that spell requires twice as long to cast.",
+                "Choose one creature that you can see within range. For the duration, if the target is the target of a harmful spell with a duration that is not instantaneous, that spell requires twice as long to cast.",
                 "When this spell ends, the latest harmful spell on the target ends."
             ],
             "source": "GW",
@@ -46674,7 +46674,7 @@
             "entries": [
                 "{@variantrule Stance|GW}",
                 "Assume the {@variantrule stance|GW} of the hex breaker, preventing the next hex on yourself and retaliating against the caster.",
-                "For the duration, the next time you are the target of a harmful spell that requires {@status concentration}, you are immune to the spell's effects, and the caster takes {@damage 4d6} psychic damage."
+                "For the duration, the next time you are the target of a harmful spell, with a duration that is not instantaneous, you are immune to the spell's effects, and the caster takes {@damage 4d6} psychic damage."
             ],
             "source": "GW",
             "fluff": {
@@ -51067,7 +51067,7 @@
             "entries": [
                 "{@variantrule Hex|GW}",
                 "Fray a creature's mind, sending psychic shockwaves through them every time you target them with one of your other spells.",
-                "Choose one creature that you can see within range with an initiative higher than 0. The target must make a Wisdom saving throw. On a failed save, for the duration, if the target is the target of a Mesmer-themed spell, which does not require {@status concentration}, the target's initiative gets reduced by {@dice 1d4}. If this spell reduces the target's initiative, the target takes {@damage 1d6} psychic damage per initiative lost. On a successful save, the target is affected for 1 round only.",
+                "Choose one creature that you can see within range with an initiative higher than 0. The target must make a Wisdom saving throw. On a failed save, for the duration, if the target is the target of a Mesmer-themed spell, with a duration that is instantaneous, the target's initiative gets reduced by {@dice 1d4}. If this spell reduces the target's initiative, the target takes {@damage 1d6} psychic damage per initiative lost. On a successful save, the target is affected for 1 round only.",
                 "If the target's initiative is ever 0 or lower, this spell ends, and the target takes {@damage 4d6} psychic damage."
             ],
             "source": "GW",
@@ -57231,8 +57231,8 @@
             ],
             "entries": [
                 "{@variantrule Summoning Ritual|GW|Summoning Ritual:} {@creature Nature Ritual|GW}",
-                "Call forth a spirit of Nature's Renewal, which increases the casting time of all {@status concentration} spells and increases the load of bonds.",
-                "Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit and casts a spell, which requires {@status concentration}, that spell requires twice as long to cast. Additionally, creatures within 120 feet of the nature spirit, which have bonds active, reduce their spell save DC and spell attack bonus by a further 1 for each active bond."
+                "Call forth a spirit of Nature's Renewal, which increases the casting time of all timed spells and increases the load of bonds.",
+                "Summon a nature spirit for the duration. While a creature is within 120 feet of the nature spirit and casts a spell, with a duration that is not instantaneous, that spell requires twice as long to cast. Additionally, creatures within 120 feet of the nature spirit, which have bonds active, reduce their spell save DC and spell attack bonus by a further 1 for each active bond."
             ],
             "source": "GW",
             "fluff": {
@@ -58453,7 +58453,7 @@
                     "type": "entries",
                     "name": "Using a Higher-Level Spell Slot",
                     "entries": [
-                        "If you cast this spell using a level 3 spell slot, you can maintain Concentration on it for up to 8 hours. If you use a level 4+ spell slot, the spell doesn't require Concentration, and the duration becomes 24 hours (level 4 slot), 10 days (level 5-6 slot) or 30 days (level 7-8 slot). If you use a level 9+ spell slot, the spell lasts until dispelled."
+                        "The duration increases to 4 hours (level 3 slot), 8 hours (level 4-5 slot), 24 hours (level 6-7 slot), 10 days (level 8 slot) or until dispelled (level 9+ slot)."
                     ]
                 }
             ],

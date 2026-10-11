@@ -1573,7 +1573,14 @@
 									"name": "Celebration Cave",
 									"id": "GWP7hccave",
 									"entries": [
-										"A cave used by Happy Rain to hold her frequent celebrations, she can be found there after her duties preparing her next big event."
+										"A cave used by Happy Rain to hold her frequent celebrations, she can be found there after her duties preparing her next big event. Every {@dice 3d6} days a random party will take place in the cave.",
+										{
+											"type": "statblock",
+											"tag": "table",
+											"name": "Celebration Cave Party Themes",
+											"source": "GWP",
+											"style": "inset"
+										}
 									]
 								},
 								{
@@ -2381,7 +2388,7 @@
 											"type": "entries",
 											"name": "Razing of the Henge",
 											"entries": [
-												"During a \"Tournament of Beasts\" after a full moon, during which magic is allowed and the wards on Fort Koga are weaker, {@creature Markis|GWP} attempts to assassinate the Shining Blade leadership, using the soldiers he has smuggled into the henge to overwhelm the meager defenses. To accomplish his plan he has prepared the following things:"
+												"During a \"Tournament of Beasts\" after a full moon, during which magic is allowed and the wards on Fort Koga are weaker, {@creature Markis|GWP} attempts to assassinate the Shining Blade leadership, using the soldiers he has smuggled into the henge to overwhelm the meager defenses. To accomplish his plan he has prepared the following things: Exhausting the Shining Blade by having them fight in the tournament. Encouraging the Shining Blade leadership to attend the tournament, placing all important leaders in one place. Smuggling in White Mantle soldiers to overwhelm the Shining Blade. Participating in the Archery Contest, firing a kill shot at the Shining Blade leadership, attempting to kill them. Poisoning the Shining Blade soldiers' food and water, weakening them for the attack. "
 											]
 										}
 									]
@@ -63365,6 +63372,59 @@
 		},
 		{
 			"type": "table",
+			"name": "Celebration Cave Party Themes",
+			"source": "GWP",
+			"caption": "Whenever Happy Rain feels like it.",
+			"colLabels": [
+				"Name",
+				"Description",
+				"Price"
+			],
+			"rows": [
+				[
+					"Masquerade",
+					"Everyone wears a mask, and no one is allowed to speak. The only way to communicate is through gestures and body language. The winner is the one who can get the most people to guess their identity correctly.",
+					"{@item Mask of Changed Appearance|NF}"
+				],
+				[
+					"Costume Party",
+					"Everyone dresses up in a costume of their choice. The winner is the one with the most creative and original costume.",
+					"{@item Hat of Disguise|XDMG}"
+				],
+				[
+					"Talent Show",
+					"Everyone gets a chance to showcase their talents, whether it's singing, dancing, magic tricks, or anything else. The winner is the one with the most impressive performance.",
+					"{@item Robe of Stars|XDMG}"
+				],
+				[
+					"Trivia Night",
+					"A night of trivia questions on various topics. The winner is the one with the most correct answers.",
+					"{@item Headband of Intellect|XDMG}"
+				],
+				[
+					"Karaoke Night",
+					"A night of singing and performing. The winner is the one with the best performance.",
+					"{@item Gem Card|BMT} ({@spell Otto's Irresistible Dance|XPHB})"
+				],
+				[
+					"Game Night",
+					"A night of board games, card games, and other fun activities. The winner is the one with the most victories.",
+					"{@item Deck of Illusions|XDMG}"
+				],
+				[
+					"Food Festival",
+					"A night of trying different foods and drinks. The winner is the one who can identify the most ingredients correctly.",
+					"{@item Alchemy Jug|XDMG}"
+				],
+				[
+					"Art Show",
+					"A night of showcasing art and creativity. The winner is the one with the most impressive piece of art.",
+					"{@item Portable Hole|XDMG}"
+				]
+			]
+		},
+		{
+			"type": "table",
 			"name": "The Tournament of Beasts Schedule",
 			"source": "GWP",
 			"caption": "Every Fithday, Everything strictly non-leathal, with healers on stand-by.",
@@ -63389,48 +63449,48 @@
 				],
 				[
 					"8:00",
-					"Archery Contest",
-					"Individual performance, total compared. Each character wagers how high they can hit on a ranged weapon attack roll using a non-magical ranged weapon of a choice. If they hit their target they get that many points, on a miss, they loose that many points. The total is added together and compared to other participants. Each character gets 5 shots. For each character participating one other contestant is present. The winner is crowned \"Excellent Shot\", getting a 25% discount on all ranged weapons in the henge until they loose their title.",
-					"No magic and no special gear.*"
-				],
-				[
-					"9:00",
 					"The Big One",
 					"Originally called the \"The Melee\" it quickly became know as the \"The Big One\" as it was by far the most popular. One round lasting 45 minutes. Each character faces off against ever stronger opponents, before fighting each other. Combat gets abstracted: Each character has an amount of HP equal to their Constitution Modifier (minimum 1), an attack bonus equal to their Streangth or Dexterity modifier + {@table Proficiency Bonus|XPHB}, with attacks dealing 1 HP damage (2 HP on a {@variantrule Critical Hit|XPHB}), and an {@variantrule Armor Class|XPHB} equal to 10 + Dexterity modifier for unarmored, 12 + Dexterity modifier for light armor, 14 + Dexterity modifier (max. 2) for medium armor, or 16 for heavy armor. The opponents start off with 1 HP, attack bonus of +0, attack dealing 1 HP damage, an {@variantrule Armor Class|XPHB} of 10, and an {@variantrule Initaitive|XPHB} bonus of +0. After an opponent is defeated the characters get all their HP back and another stronger opponent faces them. Each subsequent opponent recieves greater bonuses to their values, the first beyond the initial recieving a {@dice d4} to attack, {@variantrule Armor Class|XPHB}, and {@variantrule Initaitive|XPHB}, and a +1 bonus to HP. The next one a {@dice d6} and +2 bonus, and so forth, until the final opponent has a {@dice d12} and a +5 bonus. Each fight is also simplified, the two participants roll {@variantrule Initaitive|XPHB} and then take turns attacking each other. If the characters can defeat the final opponent they win, unless another characters also did so, if so they face off in a final fight. The winner is crowned \"Arena's Champion\", getting a 25% discount on all melee weapons in the henge until they loose their title.",
 					"No magic and no special gear.*"
 				],
 				[
-					"11:00",
+					"10:00",
 					"Tournament of Legends",
 					"One versus One fights of previous \"The Big One\" winners. For each character add participants so the total number of fighters is a power of 2 (2, 4, 8, 16, etc.). Single elimination tournament, with the characters spread out as much as possible. Characters start out fighting {@table Determine Your XP Budget; XP Budget per Character|XDMG|Easy Encouters}, before proceeding to {@table Determine Your XP Budget; XP Budget per Character|XDMG|Medium Encouters}, and eventually {@table Determine Your XP Budget; XP Budget per Character|XDMG|Hard Encouters}. Between fights they are attended to by medics, who restore all their {@variantrule Hit Points|XPHB}. The last person standing is crowned \"The Big One\", getting a 25% discount on all weapons and armor in the henge until they loose their title.",
 					"Only \"The Big One\" winners. No magic and no special gear.*"
 				],
 				[
-					"12:00",
+					"11:00",
 					"The Feast",
 					"A large open air feast where everyone can get free food and drink.",
 					"No Restrictions"
 				],
 				[
-					"14:00",
-					"Magical Tournament",
-					"A series of magical duels in tournament style brackets. Winner is crowned \"Magic Incarnate\", getting a 25% discount on all foci in the henge until they loose their title.",
+					"13:00",
+					"Magical Showcase",
+					"A series of displays of exceptional magic. Each Participant performs a display of magic and is judged by a the other contestants. Add one particpiant for every character particpiating. There are three categories to be judged on; Showmanship - How the magic was performed? Did they impress with their components? Did they add any flair to it?; Proficiency - How difficult was the magic to perform? Did they change it somehow?; Creativity - Did they more than just cast simple spells? Did they create an unexpected outcome? Each other participant gives them a numerical score from 0 to 10 (inclusive), which get added together for their final standing. The winner is the participant with the highest total score. Participants are encouraged to judge fairly, celebrating their fellow contestants rather than undermining them. When a participant is performing they have one minute to display their choreography. They can make up to three different {@variantrule d20 Tests|XPHB} trying to impress the judges. Winner is crowned \"Magic Incarnate\", getting a 25% discount on all foci in the henge until they loose their title.",
 					"The ability to use magic, no special gear.*"
 				],
 				[
-					"16:00",
-					"Martial Tournament",
-					"A series of non-magical duels in tournament style brackets. Winner is crowned \"Chapion of the Arena\", getting a 25% discount on all weapons and armor in the henge until they loose their title.",
+					"14:00",
+					"Martial Showcase",
+					"A series of displays of exceptional martial prowess. Each Participant performs a display of martial prowess and is judged by a the other contestants. Add one particpiant for every character particpiating. There are three categories to be judged on; Strength - Did it showcase their strengths well?; Dexterity - Did they impress with their speed? Was it particularly precise?; Constituion - How much endurance did it take? Did it show their dedication? Each other participant gives them a numerical score from 0 to 10 (inclusive), which get added together for their final standing. The winner is the participant with the highest total score. Participants are encouraged to judge fairly, celebrating their fellow contestants rather than undermining them. When a participant is performing they have one minute to display their choreography. They can make up to three different {@variantrule d20 Tests|XPHB} trying to impress the judges. Winner is crowned \"Peak of Physical Prowess\", getting a 25% discount on all armor in the henge until they loose their title.",
+					"No magic and no special gear.*"
+				],
+				[
+					"15:00",
+					"Dragonchess Tournament",
+					"A series of {@item Dragonchess Set|XPHB|Dragonchess} games in tournament style brackets. For each character add participants so the total number of players is a power of 2 (2, 4, 8, 16, etc.). Single elimination tournament, with the characters spread out as much as possible. Each match is a best of three, in which they partipants roll opposed rolls. They can choose from Bluff (Charisma ({@skill Deception}) check), Insight (Wisdom ({@skill Insight}) check), or Think (Intelligence ({@skill Investigation}) check). If they choose Bluff and their opponent choose Insight, they make their roll with {@variantrule Disadvantage|XPHB}. If their opponent choose Think their opponents makes their roll with {@variantrule Disadvantage|XPHB}. If they choose Think and their opponent choose Insight, their opponents makes their roll with {@variantrule Disadvantage|XPHB}. In the beginning the characters compete against opponents that choose their move randomly, and a have a +0 bonus to their rolls. As they advance in the tournament the opponents try to predict what the characters will choose and have higher boni, up to a maximum of +5. Winner is crowned \"Mastermind\", getting a 25% discount on all wonderous items in the henge until they loose their title.",
+					"No magic and no special gear.*"
+				],
+				[
+					"17:00",
+					"Archery Contest",
+					"Individual performance, total compared. Each character wagers how high they can hit on a ranged weapon attack roll using a non-magical ranged weapon of a choice. If they hit their target they get that many points, on a miss, they loose that many points. The total is added together and compared to other participants. Each character gets 5 shots. For each character participating one other contestant is present. The winner is crowned \"Excellent Shot\", getting a 25% discount on all ranged weapons in the henge until they loose their title.",
 					"No magic and no special gear.*"
 				],
 				[
 					"18:00",
-					"Dragonchess Tournament",
-					"A series of {@item Dragonchess Set|XPHB|Dragonchess} games in tournament style brackets. Winner is crowned \"Mastermind\", getting a 25% discount on all wonderous items in the henge until they loose their title.",
-					"No magic and no special gear.*"
-				],
-				[
-					"20:00",
 					"The Feast II",
 					"See \"The Feast\"",
 					"No Restrictions"

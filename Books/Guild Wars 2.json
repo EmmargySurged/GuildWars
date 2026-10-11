@@ -2676,7 +2676,7 @@
 															"type": "insetReadaloud",
 															"entries": [
 																"As you make contact with the {@creature White Stag|GW2} the world around you becomes a blur, the stag disappears any you find yourself at the edge of the island again, the stag next to you. It bows it's head to you and says:",
-																"\"You have caught me and demonstrated great skill, take my {@boon Minor Boon of the White Stag|GW2|Boon}. Now I ask you, of these three tents of Ventari, which is the most important to you?\"",
+																"\"You have caught me and demonstrated great skill, take my {@boon Minor Boon of the Hunter|GW2|Boon}. Now I ask you, of these three tents of Ventari, which is the most important to you?\"",
 																"\"Act with wisdom, but act.\" - \"It is one thing to know what is right and another to change the world. We all have a calling. You will distinguish yourself through your actions and thereby lift Tyria to a higher state of nobility.\"",
 																"\"All things have a right to grow.\" - \"The blossom is brother to the weed. Diversity of opinion is good. Discussion is healthy. No one should be condemned simply for being different. You will stand up for the rights of all.\"",
 																"\"Where life goes, so too, should you.\" - \"The world is a delicious and gorgeous place created for us to explore, enjoy, and protect. You will seek out the lessons in every experience, and as you grow, you will have more to offer in return.\""
@@ -2742,20 +2742,20 @@
 															]
 														},
 														"The characters must rescue as many {@creature Sylvari Commoner|GW2} and {@creature Sylvari Warden|GW2} as possible. For each character there are {@dice 1d2} houses with {@dice 1d4} {@creature Sylvari Commoner|GW2} and {@creature Sylvari Warden|GW2} in any combination. Each house has 10 {@variantrule Hit Points|XPHB} and takes {@damage 1d4} fire damage each turn. Once a house reaches 0 {@variantrule Hit Points|XPHB} it collapses, dealing {@damage 3d10} bludgeoning damage to any creatures inside it.",
-														"Once all the fire have been extinguished, or all trapped creatures are rescued, a {@creature Sylvari Warden|GW2} steps forward, explaining that they saw a strange Sylvari shortly before the fire broke out. They point the characters towards a trail that leads into the swamp, explaining that they saw that Sylvari running in that direction. All NPCs has undefined features, that shift if a character looks away and back, as if the Dream cannot quite decide what they should look like.",
-														"Following the trail the characters find an entrance to a cave.",
+														"Once all the fire have been extinguished, or all trapped Sylvari are rescued, a {@creature Sylvari Warden|GW2} steps forward, explaining that they saw a strange Sylvari shortly before the fire broke out. They point the characters towards a trail that leads into the swamp, explaining that they saw that Sylvari running in that direction. All NPCs has undefined features, that shift if a character looks away and back, as if the Dream cannot quite decide what they should look like.",
+														"Saving more than 50% of all trapped Sylvari awards the party with the {@boon Minor Boon of the Hero|GW2}. Following the trail the characters find an entrance to a cave.",
 														{
 															"type": "insetReadaloud",
 															"entries": [
 																"Before you opens the mouth of a small cave. Light does not seem to penetrate into this narrow entrance. You can see clear trails of multiple creatures entering the cave."
 															]
 														},
-														"This magical cave snuffs out any light source, magical or otherwise, and prevents any creature with {@sense Darkvision} to see in its darkness. Only creatures with {@sense Truesight} or {@sense Tremorsense} can \"see\" inside the cave. All other creature have to navigate blind. A few feet into the cave it splits into two paths and all characters feel a strange sensation at the nape of their neck, encouraging them to feel inwards and navigate by intuition. What path they choose does not matter only that the characters reach a unanimous decision based on vibes alone. If they do not they keep encountering forks in the road until they do.",
+														"This magical cave snuffs out any light source, magical or otherwise, and prevents any creature with {@sense Darkvision} to see in its darkness. Only creatures with {@sense Truesight} or {@sense Tremorsense} can \"see\" inside the cave. All other creature have to navigate blind. A few feet into the cave it splits into two paths and all characters feel a strange sensation at the nape of their neck, encouraging them to feel inwards and navigate by intuition. What path they choose does not matter only that the characters reach a unanimous decision based on vibes alone. If they do not, they keep encountering forks in the road until they do.",
 														"If a decision is reached they encounter the following:",
 														{
 															"type": "insetReadaloud",
 															"entries": [
-																"Having lost all sense of time and space you suddenly step into a chamber illuminated by {@variantrule Bright Light|XPHB}. You see a strange looking Sylvari with their back to you fighting a group of {@area Nightmare Court|GW2factionsNightmarecourt|x}. As soon as you make a noise the strange Sylvari turns around. Immediately upon seeing their face you feel a blinding pain stab through your head and the Dream around you starts unraveling. You each start floating through the dreamscape surrounded by the fragments of the island, that rapidly change configuration. You hear a void from everywhere: \"Stop, my child.\" Suddenly you are back on solid ground on a new island. You hear the sounds of bark tearing, rocks breaking, roots snapping, as the ground beneath your feet begins to shift and bulge. You are pushed backwards as something gargantuan breaks free from the very heart of the island breaking into fragments as it does so."
+																"Having lost all sense of time and space you suddenly step into a chamber illuminated by {@variantrule Bright Light|XPHB}. You see a strange looking Sylvari with their back to you fighting a group of {@area Nightmare Court|GW2factionsNightmarecourt|x}. As soon as you make a noise the strange Sylvari turns around. Immediately upon seeing their face you feel a blinding pain stab through your skull, and the Dream around you starts unraveling. You each start floating through the dreamscape surrounded by the fragments of the island, that rapidly change configuration. You hear a voice from everywhere: \"Stop, my child.\" Suddenly you are back on solid ground on a new island. You hear the sounds of bark tearing, rocks breaking, roots snapping, as the ground beneath your feet begins to shift and bulge. You are pushed backwards as something gargantuan breaks free from the very heart of the island, breaking into fragments as it does so."
 															]
 														}
 													]
@@ -49882,13 +49882,23 @@
 	],
 	"boon": [
 		{
-			"name": "Minor Boon of the White Stag",
+			"name": "Minor Boon of the Hero",
 			"source": "GW2",
-			"type": "Minor Sylvari",
+			"type": "Minor",
 			"entries": [
-				"Blessed by the White Stag you can invoke this boon only while in the Dream of Dreams.",
-				"As a {@action Magic|XPHB} action you can invoke this boon, granting yourself and all allies you can see a bonus to your {@variantrule Speed|XPHB} and Dexterity ({@skill Stealth}) checks. Your {@variantrule Speed|XPHB} increases by 10 feet, and the bonus to your  Dexterity ({@skill Stealth}) checks is +5.",
-				"This boon lasts until you leave the Dream of Dreams."
+				"You are a Hero in the making.",
+				"As a {@action Magic|XPHB} action you can invoke this boon, granting yourself and up to four other creatures you can see a {@dice 1d4} bonus to your {@variantrule D20 Test|XPHB|D20 Tests}.",
+				"This boon can be used once and lasts until you finish a {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"name": "Minor Boon of the Hunter",
+			"source": "GW2",
+			"type": "Minor",
+			"entries": [
+				"You have proven your worth as a hunter.",
+				"As a {@action Magic|XPHB} action you can invoke this boon, granting yourself and up to four other creatures you can see a +10 bonus to your {@variantrule Speed|XPHB} and a +5 bonus to your {@variantrule Initiative|XPHB}.",
+				"This boon can be used once and lasts until you finish a {@variantrule Long Rest|XPHB}."
 			]
 		}
 	]

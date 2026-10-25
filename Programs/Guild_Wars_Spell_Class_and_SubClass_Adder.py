@@ -581,6 +581,14 @@ if __name__ == "__main__":
         {"name": "Illrigger", "source": "IllriggerRevised", "sub_classes": [
             {"name": "Architect of Ruin", "shortName": "Architect of Ruin", "source": "IllriggerRevised"}
         ]},
+        {"name": "Magus", "source": "magus2024", "sub_classes": [
+            {"name": "Arcane Order", "shortName": "Arcane Order", "source": "magus2024"},
+            {"name": "Heaven's Guard", "shortName": "Heaven's Guard", "source": "magus2024"},
+            {"name": "Knights Stygian", "shortName": "Knights Stygian", "source": "magus2024"},
+            {"name": "Shadow Court", "shortName": "Shadow Court", "source": "magus2024"},
+            {"name": "Sidereal Cabal", "shortName": "Sidereal Cabal", "source": "magus2024"},
+            {"name": "Sylvan Circle", "shortName": "Sylvan Circle", "source": "magus2024"}
+        ]},
         {"name": "Paladin", "source": "XPHB", "sub_classes": [
             {"name": "Oath of Conquest", "shortName": "Conquest", "source": "XGE"},
             {"name": "Oath of Devotion", "shortName": "Devotion", "source": "XPHB"},

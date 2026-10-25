@@ -2755,7 +2755,7 @@
 														{
 															"type": "insetReadaloud",
 															"entries": [
-																"Having lost all sense of time and space you suddenly step into a chamber illuminated by {@variantrule Bright Light|XPHB}. You see a strange looking Sylvari with their back to you fighting a group of {@area Nightmare Court|GW2factionsNightmarecourt|x}. As soon as you make a noise the strange Sylvari turns around. Immediately upon seeing their face you feel a blinding pain stab through your skull, and the Dream around you starts unraveling. You each start floating through the dreamscape surrounded by the fragments of the island, that rapidly change configuration. You hear a voice from everywhere: \"Stop, my child.\" Suddenly you are back on solid ground on a new island. You hear the sounds of bark tearing, rocks breaking, roots snapping, as the ground beneath your feet begins to shift and bulge. You are pushed backwards as something gargantuan breaks free from the very heart of the island, breaking into fragments as it does so."
+																"Having lost all sense of time and space you suddenly step into a chamber illuminated by {@variantrule Bright Light|XPHB}. You see a strange looking Sylvari with their back to you fighting a group of {@area Nightmare Court|GW2factionsNightmarecourt|x}. As soon as you make a noise the strange Sylvari turns around. Immediately upon seeing their face you feel a blinding pain stab through your skull, and the Dream around you starts unraveling. You each start floating through the dreamscape surrounded by the fragments of the island, that rapidly change configuration. You hear a voice from everywhere: \"Stop, my child.\" Suddenly you are back on solid ground on a new island. You hear the sounds of bark tearing, rocks breaking, roots snapping, as the ground beneath your feet begins to shift and bulge. You are pushed backwards as something gargantuan breaks free from the very heart of the island, breaking it into fragments as it does so."
 															]
 														}
 													]
@@ -2773,7 +2773,34 @@
 																"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Images/Shadow_of_the_Dragon_concept_art.jpg"
 															},
 															"credit": "ArenaNet"
-														}
+														},
+														{
+															"type": "insetReadaloud",
+															"entries": [
+																"As the island fractures, each of you on your own piece, with the dragon on a larger island in the centre, you feel the boons you have gained in your time in the Dream of Dreams stir, if you have not used them now is the time.",
+																"With a loud roar and the sound of bark grinding against itself the Shadow of the Dragon finally frees itself from the ground. It eyes glowing orange with malice, ready to plunge the dream into nightmare."
+															]
+														},
+														"As soon as the fight starts, before rolling {@variantrule Initiative|XPHB} the characters can activate the boons they have acquired earlier in the dream (no {@variantrule Action|XPHB} required).",
+														"Each character and the {@creature Shadow of the Dragon (Fighting the Nightmare)|GW2|Shadow of the Dragon} start out on an island of their own. Any NPCs are distributed randomly between the islands of the characters. The dragon's island is in the centre, with the other islands spread around it equidistant and evenly. At the end of each round, the outer islands drift 10 feet away from the main island. The Characters can help {@creature The Pale Tree|GW2} to tether the islands together with vines, potentially preventing them from moving apart, or even pulling them together. There are a variety of features spread throughout the islands that can help the characters in their attempt to slay the dragon.",
+														"To help the {@creature The Pale Tree|GW2} characters can use their movement to free vines that are being held back by the dragon's magic. For every 20 feet of movement spent on freeing such vines, their island moves 10 feet closer to the main island. They can also defeat any {@creature Nightmare Hound|GW2} on an island to move it 20 feet closer. They can also sacrifice health in order to close the gap (no {@variantrule Action|XPHB} required), by empowering {@creature The Pale Tree|GW2} with their vitality. For every 1 {@variantrule Hit Points|XPHB|Hit Point} sacrificed the island moves 3 feet closer to the main one.",
+														"Randomly distributed throughout the outer islands are the following features:", 
+														{
+															"type": "list",
+															"items": [
+																"Healing Spring - While inside the healing spring characters can use an {@variantrule Action|XPHB} to regain 10 {@variantrule Hit Points|XPHB}, or a {@variantrule Bonus Action|XPHB} to regain {@dice 2d4 + 2} {@variantrule Hit Points|XPHB}.",
+																"Latent Magic - While inside the latent magic characters can use a {@action Magic|XPHB} {@variantrule Action|XPHB} to cast one of the following spells, without material components or spell slots, and using constitution as the spellcasting ability: {@spell Vortex Warp|SCC}, {@spell Misty Step|XPHB}, {@spell Negative Image|talesfromtheshadows}, {@spell Haste|XPHB}, {@spell Fly|XPHB}, or {@spell Mass Healing Word|XPHB}.",
+																"Empowering Stone - Touching the empowering stone grants the character touching it a +3 bonus to attack and damage rolls for the rest of the fight."
+															]
+														},
+														"During it's turn the {@creature Shadow of the Dragon (Fighting the Nightmare)|GW2|Shadow of the Dragon} randomly jumps to a different occupied island from the one it is currently on. If there is no occupied island it jumps to an unoccupied one instead.",
+														{
+															"type": "insetReadaloud",
+															"entries": [
+																"As the last blow falls on the Shadow of the Dragon, it collapses with a roar of disbelief and vengeance. The roar gets so intense that you clasp your ears and shut your eyes. Psychic shockwaves of pain assault your mind as the Dream of Dream attempts to keep itself together. After a few seconds the roar subsides and you open your eyes again. You are back on Tyria, you have left the Dream of Dreams."
+															]
+														},
+														"After defeating the {@creature Shadow of the Dragon (Fighting the Nightmare)|GW2|Shadow of the Dragon} the characters are brought back. They are congratulated by {@creature Caithe|GW2} and {@creature Sylvari Mender|GW2|Mender Serimon}, and are invited to stay in {@area The Grove|GW224grove|x}, in {@area Dreamer's Terrace|GW224grovedreamer|x}."
 													]
 												}
 											]
@@ -5643,6 +5670,13 @@
 										"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Locations/Guild Wars 2/The_Grove_map_(Garden).jpg"
 									},
 									"credit": "ArenaNet"
+								},
+								{
+									"type": "section",
+									"name": "Dreamer's Terrace",
+									"page": "",
+									"id": "GW224grovedreamer",
+									"entries": []
 								}
 							]
 						},
@@ -15401,7 +15435,7 @@
 				[
 					"Attunement I",
 					"",
-					"You can {@variantrule Attunement|XPHB|attune} to one additional magic item beyond your normal liMinor Trait."
+					"You can {@variantrule Attunement|XPHB|attune} to one additional magic item beyond your normal limit."
 				],
 				[
 					"Aurene's Weaponry I",
@@ -15795,7 +15829,7 @@
 				[
 					"Attunement III",
 					"Attunement II",
-					"You can now {@variantrule Attunement|XPHB|attune} to two additional magic items beyond your normal liMinor Trait."
+					"You can now {@variantrule Attunement|XPHB|attune} to two additional magic items beyond your normal limit."
 				],
 				[
 					"Aurene's Weaponry III",
@@ -22883,7 +22917,7 @@
 			"classSource": "GW2",
 			"level": 2,
 			"entries": [
-				"{@b Bloody Success.} You have learned to push yourself beyond your liMinor Traits. When you fail an ability check, you can expend a {@variantrule Hit Point Dice|XPHB} to push yourself toward success. Rather than regaining Hit Points, you roll the {@variantrule Hit Point Dice|XPHB} and add the number rolled to the ability check, potentially turning it into a success. If the check still fails, you regain the {@variantrule Hit Point Dice|XPHB}."
+				"{@b Bloody Success.} You have learned to push yourself beyond your limit. When you fail an ability check, you can expend a {@variantrule Hit Point Dice|XPHB} to push yourself toward success. Rather than regaining Hit Points, you roll the {@variantrule Hit Point Dice|XPHB} and add the number rolled to the ability check, potentially turning it into a success. If the check still fails, you regain the {@variantrule Hit Point Dice|XPHB}."
 			]
 		},
 		{

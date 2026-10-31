@@ -1514,7 +1514,7 @@
 				"{@b Duration:} Instantaneous",
 				"{@b Properties:} Familiar",
 				"{@b Description:} The otter throws small orbs of water at nearby allies, healing them and granting regeneration.",
-				"{@b Effect:} Choose up to five creature within range. Each creature regains {@variantrule Hit Points|XPHB} equal to {@dice 1d6} + you Class Ability Modifier and gains 1 round {@variantrule Regeneration|GW2}.",
+				"{@b Effect:} Choose up to five creatures within range. Each creature regains {@variantrule Hit Points|XPHB} equal to {@dice 1d6} + you Class Ability Modifier and gains 1 round {@variantrule Regeneration|GW2}.",
 				"{@b Scaling:} The healing increases when you reach levels 5 ({@dice 2d6}), 11 ({@dice 3d6}), and 17 ({@dice 4d6})."
 			],
 			"fluff": {
@@ -2638,24 +2638,50 @@
 			"source": "GW2VoE",
 			"page": "",
 			"featureType": [
-				"PS"
+				"Profession Skill",
+				"Warrior",
+				"Paragon",
+				"Chant",
+				"Refrain"
 			],
 			"prerequisite": [
 				{
-					"other": "F2 Skill (Chant)"
+					"other": "Level 1 Paragon"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} ¼",
-				"{@b Recharge:} 8",
-				"{@b Range:} ",
-				"{@b Target:} Area",
-				"{@b Duration:} ",
-				"{@b Properties:} Burst, Chant, Grants Boons",
-				"{@b Description:} {@b Burst. Chant.} Applies boons to allies in an area around you.",
-				"{@b Effect:} {@b Refrain.} After activation, continually applies boons to allies while removing motivation every interval. This effect lasts until you run out of motivation stacks or another chant is activated. Gain increased effects depending on motivation stacks.",
-				"{@b Scaling:} "
-			]
+				"{@b Casting Time:} 1 {@variantrule Action Points|GW2|AP}",
+				"{@b Cost:} 10 Adrenaline",
+				"{@b Recharge:} {@recharge 2}",
+				"{@b Range:} Self",
+				"{@b Target:} 20-foot emanation",
+				"{@b Duration:} 1 round",
+				"{@b Properties:} Burst, Chant",
+				"{@b Description:} Chant: Applies boons to allies in an area around you. Refrain: After activation, continually applies boons to allies while removing motivation every interval. This effect lasts until you run out of motivation stacks or another chant is activated. Gain increased effects depending on motivation stacks.",
+				"{@b Chant Effect:} Choose up to five creatures of your choice within the area that can hear you. Each creature gains 5 stacks of {@variantrule Might|GW2} for 1 round, and 1 round of {@variantrule Fury|GW2}.",
+				"{@b Chant Scaling:} The number of {@variantrule Might|GW2} stacks increase when you reach levels 5 (6 stacks), 11 (6 stacks), and 17 (8 stacks).",
+				"{@b Refrain Effect (1-3 Motivation):} Spend 1 Motivation to apply 1 stack of {@variantrule Might|GW2} for 1 round on up to five creatures of your choice within range that can hear you.",
+				"{@b Refrain Scaling (1-3 Motivation):} The number of {@variantrule Might|GW2} stacks increase when you reach levels 5 (2 stacks), 11 (3 stacks), and 17 (4 stacks).",
+				"{@b Refrain Effect (4-6 Motivation):} Spend 1 Motivation to apply 2 stacks of {@variantrule Might|GW2} for 1 round, and 1 round of {@variantrule Fury|GW2} on up to five creatures of your choice within range that can hear you.",
+				"{@b Refrain Scaling (4-6 Motivation):} The number of {@variantrule Might|GW2} stacks increase when you reach levels 5 (3 stacks), 11 (4 stacks), and 17 (5 stacks).",
+				"{@b Refrain Effect (7-10 Motivation):} Spend 1 Motivation to apply 3 stacks of {@variantrule Might|GW2} for 1 round, and 1 round of {@variantrule Fury|GW2} on up to five creatures of your choice within range that can hear you.",
+				"{@b Refrain Scaling (7-10 Motivation):} The number of {@variantrule Might|GW2} stacks increase when you reach levels 5 (4 stacks), 11 (5 stacks), and 17 (6 stacks)."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/Chant of Action}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Visions of Eternity/Chant_of_Action.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "Chant of Recuperation",
@@ -2710,24 +2736,45 @@
 			"source": "GW2VoE",
 			"page": "",
 			"featureType": [
-				"Healing Skill"
+				"Command",
+				"Echo",
+                "Healing Skill",
+				"Warrior",
+				"Paragon"
 			],
 			"prerequisite": [
 				{
-					"other": "Requires Paragon Elite Specialization"
+					"other": "Level 1 Warrior Paragon"
 				}
 			],
 			"entries": [
-				"{@b Casting Time:} 1",
-				"{@b Recharge:} 20",
-				"{@b Range:} ",
-				"{@b Target:} Area",
-				"{@b Duration:} ",
-				"{@b Properties:} Command, Heal, Removes Conditions",
-				"{@b Description:} Command. Heal yourself and allies in an area around you.",
-				"{@b Effect:} {@b Echo.} Heals again and removes conditions on allies after a set interval or after you use a burst skill.",
-				"{@b Scaling:} "
-			]
+				"{@b Casting Time:} 4 {@variantrule Action Points|GW2|AP}",
+				"{@b Recharge:} {@recharge 4}",
+				"{@b Range:} Self",
+				"{@b Target:} 20-foot emanation",
+				"{@b Duration:} 1 Round",
+				"{@b Properties:} Command, Echo",
+				"{@b Description:} Command: Heal yourself and allies in an Area around you. Echo: Heals again and removes conditions on allies after a set interval or after you use a burst skill.",
+				"{@b Command Effect:} Choose up to five creatures within range. Each creature regains {@variantrule Hit Points|XPHB} equal to {@dice 1d8} + you Class Ability Modifier. For the duration, when you use a Burst {@variantrule Skill|GW2}, this {@variantrule Skill|GW2} ends.",
+				"{@b Command Scaling:} The healing increases when you reach levels 5 ({@dice 2d8}), 11 ({@dice 4d8}), and 17 ({@dice 5d8}).",
+				"{@b Echo Effect:} When this skills ends, you gain 3 strikes of Adrenaline, and you choose up to five creatures within range. Each creature regains {@variantrule Hit Points|XPHB} equal to {@dice 1d4} + you Class Ability Modifier, and has the latest two {@variantrule Conditions|GW2} affecting them ended.",
+				"{@b Echo Scaling:} The healing and Adrenaline gain increases when you reach levels 5 ({@dice 2d4} & 6 strikes), 11 ({@dice 3d4} & 10 strikes), and 17 ({@dice 4d4} & 15 strikes)."
+			],
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars2.com/wiki/\"We Shall Return!\"}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars 2/Visions of Eternity/_We_Shall_Return!_.png"
+						},
+						"credit": "ArenaNet"
+					}
+				]
+			}
 		},
 		{
 			"name": "\"Find Their Weakness!\"",
@@ -2897,7 +2944,29 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
-		}
+		},
+        {
+            "name": "Paragon",
+            "shortName": "Paragon",
+            "source": "GW2VoE",
+            "className": "Warrior",
+            "classSource": "GW2",
+            "edition": "one",
+            "subclassFeatures": [
+                "Paragon|Warrior|GW2|Paragon|GW2VoE|1",
+                "Action Combat|Warrior|GW2|Paragon|GW2VoE|1",
+                "Elite Specialization|Warrior|GW2|Paragon|GW2VoE|3",
+                "Together as One|Warrior|GW2|Paragon|GW2VoE|5",
+                "Convincing Leader|Warrior|GW2|Paragon|GW2VoE|5",
+                "Strike as One|Warrior|GW2|Paragon|GW2VoE|10",
+                "Inspiring Leader|Warrior|GW2|Paragon|GW2VoE|10",
+                "Survive as One|Warrior|GW2|Paragon|GW2VoE|15",
+                "Respected Leader|Warrior|GW2|Paragon|GW2VoE|15",
+                "Be as One|Warrior|GW2|Paragon|GW2VoE|20"
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true
+        }
 	],
 	"subclassFluff": [
 		{
@@ -3457,6 +3526,160 @@
 				"{@b Connoisseur of Benefits.} When you use the skill, you can choose which benefit from the {@table Skritt Swipe Benefits|GW2VoE} table to apply for each target, regardless of their creature type.",
 				"{@b Friendly Mugging.} You can now target friendly creatures with the skill. When you do so, they suffer no harm and instead gain temporary {@variantrule Hit Points|XPHB} equal to twice your proficiency bonus. Additionally, they can choose one benefit from the {@table Skritt Swipe Benefits|GW2VoE} table to gain for 1 minute."
 			]
-		}
+		},
+		{
+			"name": "Paragon",
+			"source": "GW2VoE",
+			"className": "Warrior",
+			"classSource": "GW2",
+			"subclassShortName": "Paragon",
+			"subclassSource": "GW2VoE",
+			"level": 1,
+			"entries": [
+				"{@b Skills.} You have adopted the Paragon Elite Specialization. You gain proficiency with {@item Torch|XPHB|Torches}, {@item Dagger|XPHB|Daggers}, {@item Pistol|GW2|Pistols}, {@item Staff|XPHB|Staffs} {@b or} {@item Spear|XPHB|Spears (Terrestrial)} and can use their {@variantrule Weapon Skill|GW2|Weapon Skills}. You now qualify to learn Paragon specific {@variantrule Healing Skill|GW2|Healing Skills}, {@variantrule Utility Skill|GW2|Utility Skills}, and {@variantrule Elite Skill|GW2|Elite Skills} when you choose your skills.",
+				"{@b Adrenaline I.} You have learned to channel the Adrenaline of battle to fuel powerful attacks called Bursts. When you deal damage to a creature you gain one strike of Adrenaline to a maximum of 10 strikes. Adrenaline lasts until it is expended, you roll initiative or exit combat, or 10 minutes have passed. Once you have accumulated ten strikes of Adrenaline, you can use the Burst {@variantrule Skill|GW2} associated with your equipped main-hand weapon as shown in the {@table Warrior Burst Skills|GW2} table by expending 10 strikes. You cannot expend more than 10 Adrenaline on a single burst {@variantrule Skill|GW2}.",
+                {
+                    "type": "statblock",
+                    "tag": "table",
+                    "name": "Warrior Burst Skills",
+                    "source": "GW2",
+                    "style": "inset",
+                    "collapsed": true
+                },
+				"{@b Chants I.} Alternatively, you can choose to expend 10 Adrenaline to start a Chant. You start knowing the {@optfeature Chant of Action|GW2VoE}, and later learn the {@optfeature Chant of Recuperation|GW2VoE} (level 5), and the {@optfeature Chant of Freedom|GW2VoE} (level 10). Each Chant has an initial effect, and an effect that activates at the start of your turn, called a Refrain, as long as you have enough Motivation to fuel it. You can only have one Chant active at a time, starting a new one immediately ends the old one.",
+				"{@b Motivation I.} When you activate a Chant you gain 2 Motivation. At the start of your turn, if during your previous turn you started a Chant, or extended the duration of Chant, you can spend an amount of Motivation, as indicated by that Chant, to extend the duration by 1 round and trigger its Refrain effect. Depending on how much motivation you had before spending it, the Chant has different effects for its Refrain and can cost different amounts of Motivation. Motivation lasts until it is expended, you roll initiative or exit combat, or 10 minutes have passed. You can have a maximum of 2 Motivation."
+			]
+		},
+        {
+            "name": "Action Combat",
+            "source": "GW2VoE",
+            "className": "Warrior",
+            "classSource": "GW2",
+            "subclassShortName": "Paragon",
+            "subclassSource": "GW2VoE",
+            "level": 1,
+            "entries": [
+                {
+                    "type": "statblock",
+                    "tag": "variantrule",
+                    "name": "Endurance",
+                    "source": "GW2",
+                    "collapsed": true
+                },
+                {
+                    "type": "statblock",
+                    "tag": "variantrule",
+                    "name": "Evade",
+                    "source": "GW2",
+                    "collapsed": true
+                }
+            ]
+        },
+        {
+            "name": "Elite Specialization",
+            "source": "GW2VoE",
+            "className": "Warrior",
+            "classSource": "GW2",
+            "subclassShortName": "Paragon",
+            "subclassSource": "GW2VoE",
+            "level": 3,
+            "entries": [
+                "{@b Paragon Specialization.} You gain access to the {@table Warrior Traits|GW2|Paragon} Specialization and learn its Minor Adept {@variantrule traits|GW2|Trait} {@optfeature Rally the Valiant|GW2VoE}."
+            ]
+        },
+        {
+            "name": "Together as One",
+            "source": "GW2VoE",
+            "className": "Warrior",
+            "classSource": "GW2",
+            "subclassShortName": "Paragon",
+            "subclassSource": "GW2VoE",
+            "level": 5,
+            "entries": [
+				"{@b Shared Start.} You can add your Constitution Modifier to your {@variantrule Initiative|XPHB} rolls. After you roll {@variantrule Initiative|XPHB}, and you can see allies that have a lower {@variantrule Initiative|XPHB} than you, you can retroactively add your Constitution Modifier to their {@variantrule Initiative|XPHB} roll.",
+				"{@b Adrenaline II.} Your maximum Adrenaline increases by 10, to a total of 20.",
+				"{@b Chants II.} You learn the {@optfeature Chant of Recuperation|GW2VoE}.",
+				"{@b Motivation II.} Your maximum Motivation increases by 2, to a total of 4."
+            ]
+        },
+        {
+            "name": "Convincing Leader",
+            "source": "GW2VoE",
+            "className": "Warrior",
+            "classSource": "GW2",
+            "subclassShortName": "Paragon",
+            "subclassSource": "GW2VoE",
+            "level": 5,
+            "entries": [
+				"{@b Charismatic Fortitude.} You gain {@variantrule Expertise|XPHB} in the {@skill Persuasion|XPHB} skill. Additionally, you can add your Constitution modifier to your Charisma {@variantrule Ability Check|XPHB|Ability Checks}."
+            ]
+        },
+        {
+            "name": "Strike as One",
+            "source": "GW2VoE",
+            "className": "Warrior",
+            "classSource": "GW2",
+            "subclassShortName": "Paragon",
+            "subclassSource": "GW2VoE",
+            "level": 10,
+            "entries": [
+				"{@b Shared Target.} During your turn, or when you roll {@variantrule Initiative|XPHB}, you can call a target (no {@variantrule Action|XPHB}) required. For 1 minute, or until you call a new target, allies gain a bonus to attack rolls against the target. The bonus equals half your {@table Proficiency Bonus|XPHB}.",
+                "{@b Adrenaline III.} For each unique {@variantrule Boon|GW2} you grant a creature, you gain one strike of Adrenaline.",
+				"{@b Chants III.} You learn the {@optfeature Chant of Freedom|GW2VoE}.",
+				"{@b Motivation III.} Your maximum Motivation increases by 2, to a total of 6."
+            ]
+        },
+        {
+            "name": "Inspiring Leader",
+            "source": "GW2VoE",
+            "className": "Warrior",
+            "classSource": "GW2",
+            "subclassShortName": "Paragon",
+            "subclassSource": "GW2VoE",
+            "level": 10,
+            "entries": [
+                "{@b Motivator.} When an ally you can see fails an {@variantrule Ability Check|XPHB}, you can take a {@variantrule Reaction|XPHB}, to let them reroll it with a bonus equal to half your Warrior level. They must use the new roll. You can use this {@variantrule Reaction|XPHB} a number of times equal to your Constitution modifier, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+            ]
+        },
+        {
+            "name": "Survive as One",
+            "source": "GW2VoE",
+            "className": "Warrior",
+            "classSource": "GW2",
+            "subclassShortName": "Paragon",
+            "subclassSource": "GW2VoE",
+            "level": 15,
+            "entries": [
+				"{@b Shared Burden.} When an ally you can see takes damage that would reduce them to 0 {@variantrule Hit Points|XPHB}, you can take a {@variantrule Reaction|XPHB}, to distribute the damage among willing allies you can see. You can use this {@variantrule Reaction|XPHB} a number of times equal to your Constitution modifier, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}.",
+                "{@b Adrenaline IV.} Your maximum Adrenaline increases by 10, to a total of 30.",
+				"{@b Motivation IV.} Your maximum Motivation increases by 2, to a total of 8."
+            ]
+        },
+        {
+            "name": "Respected Leader",
+            "source": "GW2VoE",
+            "className": "Warrior",
+            "classSource": "GW2",
+            "subclassShortName": "Paragon",
+            "subclassSource": "GW2VoE",
+            "level": 15,
+            "entries": [
+                "{@b Known Quantity.} When you make a Strength, Constitution, or Charisma {@variantrule Ability Check|XPHB}, you can treat a {@dice d20} roll of 14 or lower as a 15."
+            ]
+        },
+        {
+            "name": "Be as One",
+            "source": "GW2VoE",
+            "className": "Warrior",
+            "classSource": "GW2",
+            "subclassShortName": "Paragon",
+            "subclassSource": "GW2VoE",
+            "level": 20,
+            "entries": [
+				"{@b Shared Knowledge.} One per turn, allies you can see, can, during their turn, use any Class Feature, Spell, or {@variantrule Skill|XPHB} that another ally you can see knows. They use the ability scores of the other creature, and consume their resources, but use their own {@variantrule Action|XPHB}, {@variantrule Bonus Action|XPHB} or {@variantrule Action Points|GW2}.", 
+				"{@b Shard Fortitude.} When one or more allies you can see fails a {@variantrule Saving Throw|XPHB}, and another ally you can see succeeded on the same {@variantrule Saving Throw|XPHB}, all allies affected by the {@variantrule Saving Throw|XPHB} succeed instead.",
+				"{@b Motivation V.} Your maximum Motivation increases by 2, to a total of 10."
+            ]
+        }
 	]
 }

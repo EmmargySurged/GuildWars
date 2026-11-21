@@ -47109,7 +47109,7 @@
 				"Each Boon has an associated {@variantrule Condition|GW2}, which it can be corrupted into or converted from.",
 				"If a creature already under the effect of a Boon receives the same Boon again, one of two outcomes occurs, depending on the Boon’s properties:",
 				"{@bold Stacks Duration:} The Boon’s duration is extended by the duration of the new instance.",
-				"{@bold Stacks Intensity:} The Boon’s effects are applied again. Each instance functions independently, with its own duration. If one instance of the Boon becomes corrupted, all active instances become corrupted. Any {@variantrule condition|GW2} imposed by the corruption is applied only once."
+				"{@bold Stacks Intensity:} The Boon’s effects are applied again. Each instance functions independently, with its own duration. If one instance of the Boon becomes corrupted, all active instances become corrupted. Any {@variantrule Condition|GW2} imposed by the corruption is applied only once."
 			]
 		},
 		{
@@ -47253,10 +47253,10 @@
 						],
 						[
 							"{@b Light Field}",
-							"Each friendly creature within 35 feet of the blast's point of origin looses the latest {@variantrule condition|GW2}.",
+							"Each friendly creature within 35 feet of the blast's point of origin looses the latest {@variantrule Condition|GW2}.",
 							"You gain 1 round of {@variantrule Light Aura|GW2}.",
-							"You remove the latest {@variantrule condition|GW2} from the closest friendly creature to any target hit by the projectile finisher.",
-							"You fire up to three cleansing projectiles at different random friendly targets within 90 feet, each removing the latest {@variantrule condition|GW2}."
+							"You remove the latest {@variantrule Condition|GW2} from the closest friendly creature to any target hit by the projectile finisher.",
+							"You fire up to three cleansing projectiles at different random friendly targets within 90 feet, each removing the latest {@variantrule Condition|GW2}."
 						],
 						[
 							"{@b Lightning Field}",
@@ -47346,7 +47346,7 @@
 			"source": "GW2",
 			"entries": [
 				"{@variantrule Condition|GW2}",
-				"A confused creature takes {@damage 1d6} psychic damage at the start of each of its turns and each time it takes an {@variantrule Action|XPHB}, {@variantrule Bonus Action|XPHB}, {@variantrule Reaction|XPHB} or {@variantrule Legendary Action|XPHB}.",
+				"A confused creature takes {@damage 1d6} psychic damage at the start of each of its turns and each time it takes an {@variantrule Action|XPHB}, {@variantrule Bonus Action|XPHB}, {@variantrule Reaction|XPHB}, {@variantrule Legendary Action|XPHB}, or activates a {@variantrule Skill|GW2}.",
 				"Creatures immune to the {@condition Charmed|XPHB} {@variantrule Condition|XPHB} are also immune to {@variantrule Confusion|GW2}.",
 				"Stacks intensity.",
 				"This {@variantrule Condition|GW2} get converted into 1 round of {@variantrule Resolution|GW2}."
@@ -47887,7 +47887,7 @@
 			"source": "GW2",
 			"entries": [
 				"Rule",
-				"Skills are special abilities that a creature can use to perform various actions in combat or other situations.",
+				"Skills are special abilities that a creature can use to perform various actions in combat or other situations. If a creature cannot take {@variantrule Action|XPHB|Actions}, thay cannot use Skills either.",
 				"The following types of skills exist:",
 				"{@b {@variantrule Weapon Skill|GW2}:} A skill that requires a specific weapon to use.",
 				"{@b {@variantrule Healing Skill|GW2}:} A skill that restores {@variantrule Hit Points|XPHB} to a target.",
@@ -47917,7 +47917,7 @@
 			"source": "GW2",
 			"entries": [
 				"{@variantrule Condition|GW2}",
-				"While you are under the effect of this {@variantrule condition|GW2}, on your turn, you can take either an {@variantrule Action|XPHB} or a {@variantrule Bonus Action|XPHB}, but not both. If you take the {@action Attack|XPHB} action, you can make only one attack regardless of the number of attacks you can normally make.",
+				"While you are under the effect of this {@variantrule Condition|GW2}, on your turn, you can take either an {@variantrule Action|XPHB} or a {@variantrule Bonus Action|XPHB}, but not both. If you take the {@action Attack|XPHB} action, you can make only one attack regardless of the number of attacks you can normally make. Additionally {@variantrule Skill|GW2|Skills} take an additional 50% {@variantrule Action Points|GW2} to activate.",
 				"Stacks Duration.",
 				"A creature with a {@variantrule Defiance Bar|GW2} takes 50 defiance bar damage at the start of its turn instead of being affected.",
 				"This {@variantrule Condition|GW2} converts into 1 round of {@variantrule Quickness|GW2}."
@@ -48052,8 +48052,8 @@
 			"source": "GW2",
 			"entries": [
 				"{@variantrule Condition|GW2}",
-				"A tormented creature takes {@damage 1d8} necrotic damage at the start of each of its turns.",
-				"The damage gets doubled if the creature did not move on its last turn.",
+				"A tormented creature takes {@damage 1d8} necrotic damage at the end of each of its turns.",
+				"The damage gets doubled if the creature did not move on its turn.",
 				"Stacks intensity.",
 				"This {@variantrule Condition|GW2} get converted into 3 stacks of {@variantrule Might|GW2} for 2 rounds."
 			]
@@ -48096,7 +48096,7 @@
 			"source": "GW2",
 			"entries": [
 				"{@variantrule Condition|GW2}",
-				"While you are under the effect of this {@variantrule condition|GW2}, you take 1% more damage whenever you take damage (minimum 1).",
+				"While you are under the effect of this {@variantrule Condition|GW2}, you take 1% more damage whenever you take damage (minimum 1).",
 				"Stacks intensity (Max 25).",
 				"This {@variantrule Condition|GW2} converts into 1 round of {@variantrule Protection|GW2}."
 			]
@@ -48106,7 +48106,7 @@
 			"source": "GW2",
 			"entries": [
 				"{@variantrule Condition|GW2}",
-				"While you are under the effect of this {@variantrule condition|GW2}, you have a 50% chance of dealing half damage when you roll damage and you regain 50% less {@variantrule Endurance|GW2} at the start of your turn.",
+				"While you are under the effect of this {@variantrule Condition|GW2}, you have a 50% chance of dealing half damage when you roll damage and you regain 50% less {@variantrule Endurance|GW2} at the start of your turn.",
 				"Stacks duration.",
 				"A creature with a {@variantrule Defiance Bar|GW2} takes 20 defiance bar damage at the start of its turn instead of being affected.",
 				"This {@variantrule Condition|GW2} converts into 3 stack of {@variantrule Might|GW2} for 2 rounds."

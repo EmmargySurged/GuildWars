@@ -16146,6 +16146,97 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Renewing Surge",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@variantrule Hex|GW|Hex:} You cannot choose to end this spell.",
+				"Force spiritual energy tu build up in a creature.",
+				"Choose one creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, for the duration at the start of each of the target's turns, the target takes {@damage 2d10} force damage. On a successful save, the target is affected for 1 round only, and you do not regain the spell slot when the spell ends.",
+				"When this spell ends, you regain the spell slot expended in the casting of the spell."
+			],
+			"source": "GWN",
+			"fluff": {
+				"entries": [
+					"{@link https://wiki.guildwars.com/wiki/Renewing_Surge}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/EmmargySurged/GuildWars/main/Assets/Spell_Icons/Guild Wars/Factions/Non-Elite/Renewing_Surge.jpg"
+						}
+					}
+				]
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The damage increases by {@dice 1d10} for each slot level above 3."
+					]
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"backgrounds": [
+				{
+					"name": "Ritualist",
+					"source": "GWF"
+				},
+				{
+					"name": "Channeling Magic",
+					"source": "GWF"
+				},
+				{
+					"name": "Hex",
+					"source": "GW"
+				},
+				{
+					"name": "Istan",
+					"source": "GWN"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			}
 		}
 	],
 	"table": [
